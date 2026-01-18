@@ -12,6 +12,11 @@ google-auth>=2.0.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
+# Mapas
+geopandas>=0.14.0
+geobr>=0.2.0
+mapclassify>=2.5.0
+
 # Estatística
 scipy>=1.10.0
 statsmodels>=0.14.0
