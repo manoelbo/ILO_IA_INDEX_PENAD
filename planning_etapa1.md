@@ -87,56 +87,85 @@ etapa1_ia_generativa/
 
 ### 1.1 Criar Projeto no Google Cloud Console
 
-```
-1. Acesse: https://console.cloud.google.com/
-2. Crie um novo projeto (ex: "dissertacao-ia-br")
-3. Anote o PROJECT_ID (vai usar nos scripts)
+```bash
+# Via terminal (recomendado)
+gcloud projects create mestrado-pnad-2026 --name="Mestrado PNAD"
+
+# Ou acesse: https://console.cloud.google.com/projectcreate
+# Nome: mestrado-pnad-2026
 ```
 
 ### 1.2 Ativar APIs Necessárias
 
-```
-No Cloud Console, ative:
-- BigQuery API
-- Cloud Storage API (opcional, para cache)
+```bash
+# Ativar BigQuery API
+gcloud services enable bigquery.googleapis.com --project=mestrado-pnad-2026
 ```
 
-### 1.3 Configurar Credenciais
+### 1.3 Configurar Billing
+
+```bash
+# Listar contas de billing disponíveis
+gcloud billing accounts list
+
+# Vincular billing ao projeto (substitua XXX pelo ID da sua conta)
+gcloud billing projects link mestrado-pnad-2026 --billing-account=XXX
+
+# IMPORTANTE: BigQuery tem 1TB/mês grátis de queries
+# A query da PNAD usa ~500MB, então está no free tier
+```
+
+### 1.4 Configurar Credenciais e Permissões
 
 ```bash
 # Instalar Google Cloud CLI
 # Mac: brew install google-cloud-sdk
 # Windows: https://cloud.google.com/sdk/docs/install
 
-# Autenticar
-gcloud auth login
+# Inicializar e autenticar
+gcloud init
 gcloud auth application-default login
 
 # Definir projeto padrão
-gcloud config set project SEU_PROJECT_ID
+gcloud config set project mestrado-pnad-2026
+
+# Adicionar role BigQuery User (CRÍTICO para evitar erro 403)
+gcloud projects add-iam-policy-binding mestrado-pnad-2026 \
+  --member="user:SEU_EMAIL@gmail.com" \
+  --role="roles/bigquery.user"
 ```
 
-### 1.4 Configurar Billing
+### 1.5 ⚠️ PASSO CRUCIAL: Aceitar Termos de Serviço do BigQuery
 
-```
-1. No Cloud Console > Billing
-2. Vincule uma conta de faturamento ao projeto
-3. IMPORTANTE: BigQuery tem 1TB/mês grátis de queries
-4. A query da PNAD usa ~500MB, então está no free tier
-```
+**Este passo é obrigatório para evitar erro 403!**
 
-### 1.5 Testar Conexão
+1. Acesse: https://console.cloud.google.com/bigquery?project=mestrado-pnad-2026
+2. Execute uma query simples no editor SQL:
+   ```sql
+   SELECT 1 as teste
+   ```
+3. **Aceite qualquer diálogo** de Termos de Serviço que aparecer
+4. No Explorer, clique em **"+ ADD"** ou **"ADICIONAR"**
+5. Selecione **"Star a project by name"**
+6. Digite: `basedosdados`
+7. Clique em **Fixar/Star**
+8. Navegue até: `basedosdados` → `br_ibge_pnadc` → `microdados`
+9. Clique em **"Preview"** para visualizar
+10. **Aceite qualquer aviso** que aparecer
+
+### 1.6 Testar Conexão
 
 ```python
 # Executar no Python para validar
 import basedosdados as bd
 
-# Teste simples
+# Teste simples (NOTE: dataset agora é br_ibge_pnadc, não br_ibge_pnad_continua)
 test = bd.read_sql(
-    "SELECT COUNT(*) as n FROM `basedosdados.br_ibge_pnad_continua.microdados` WHERE ano = 2024 LIMIT 1",
-    billing_project_id="SEU_PROJECT_ID"
+    "SELECT COUNT(*) as n FROM `basedosdados.br_ibge_pnadc.microdados` WHERE ano = 2024 LIMIT 1",
+    billing_project_id="mestrado-pnad-2026"
 )
 print(test)
+# Deve retornar um número > 0
 ```
 
 ---
@@ -165,7 +194,7 @@ for dir_path in [DATA_RAW, DATA_PROCESSED, OUTPUTS_TABLES, OUTPUTS_FIGURES, OUTP
     dir_path.mkdir(parents=True, exist_ok=True)
 
 # Google Cloud
-GCP_PROJECT_ID = "SEU_PROJECT_ID"  # <-- ALTERAR AQUI
+GCP_PROJECT_ID = "mestrado-pnad-2026"  # <-- Usar seu project ID correto
 
 # PNAD
 PNAD_ANO = 2025
@@ -198,13 +227,28 @@ GRANDES_GRUPOS = {
     '9': 'Ocupações elementares'
 }
 
+# Mapeamentos PNAD (códigos como string)
 RACA_MAP = {
-    'Branca': 'Branca',
-    'Preta': 'Negra',
-    'Parda': 'Negra',
-    'Amarela': 'Outras',
-    'Indígena': 'Outras'
+    '1': 'Branca',
+    '2': 'Preta',
+    '3': 'Amarela',
+    '4': 'Parda',
+    '5': 'Indígena',
+    '9': 'Outras'  # Sem declaração
 }
+
+# Agregação de raça
+RACA_AGREGADA_MAP = {
+    '1': 'Branca',
+    '2': 'Negra',  # Preta
+    '4': 'Negra',  # Parda
+    '3': 'Outras',  # Amarela
+    '5': 'Outras',  # Indígena
+    '9': 'Outras'   # Sem declaração
+}
+
+# Posições de ocupação formal (strings)
+POSICAO_FORMAL = ['1', '3', '5']  # Empregado c/ carteira, Militar, Empregador
 
 # Faixas etárias
 IDADE_BINS = [0, 25, 35, 45, 55, 100]
@@ -261,7 +305,7 @@ def download_pnad():
         vd4016 AS rendimento_todos,
         v4019 AS horas_trabalhadas,
         v1028 AS peso
-    FROM `basedosdados.br_ibge_pnad_continua.microdados`
+    FROM `basedosdados.br_ibge_pnadc.microdados`
     WHERE ano = {PNAD_ANO} 
         AND trimestre = {PNAD_TRIMESTRE}
         AND v4010 IS NOT NULL
@@ -445,8 +489,8 @@ def clean_pnad():
     
     # --- VARIÁVEIS DERIVADAS ---
     
-    # Formalidade
-    df['formal'] = df['posicao_ocupacao'].isin(['01', '03', '05']).astype(int)
+    # Formalidade (códigos são strings)
+    df['formal'] = df['posicao_ocupacao'].isin(POSICAO_FORMAL).astype(int)
     logger.info(f"Taxa de formalidade: {df['formal'].mean():.1%}")
     
     # Faixas etárias
@@ -459,8 +503,8 @@ def clean_pnad():
     # Região
     df['regiao'] = df['sigla_uf'].map(REGIAO_MAP)
     
-    # Raça agregada
-    df['raca_agregada'] = df['raca_cor'].map(RACA_MAP)
+    # Raça agregada (códigos são strings)
+    df['raca_agregada'] = df['raca_cor'].astype(str).map(RACA_AGREGADA_MAP)
     
     # Grande grupo ocupacional
     df['grande_grupo'] = df['cod_ocupacao'].str[0].map(GRANDES_GRUPOS)
@@ -1802,5 +1846,89 @@ tqdm>=4.65.0
 
 ---
 
+## TROUBLESHOOTING - PROBLEMAS COMUNS
+
+### 🔴 Erro 403: Access Denied no BigQuery
+
+**Sintoma:**
+```
+403 POST https://bigquery.googleapis.com/bigquery/v2/projects/.../queries
+Access Denied: User does not have permission to query table
+```
+
+**Causas e Soluções:**
+
+1. **Dataset renomeado:** O dataset mudou de `br_ibge_pnad_continua` para `br_ibge_pnadc`
+   - ✅ Solução: Use `basedosdados.br_ibge_pnadc.microdados` em todas as queries
+
+2. **Falta role BigQuery User:**
+   ```bash
+   gcloud projects add-iam-policy-binding mestrado-pnad-2026 \
+     --member="user:SEU_EMAIL@gmail.com" \
+     --role="roles/bigquery.user"
+   ```
+
+3. **Termos de Serviço não aceitos:**
+   - Acesse: https://console.cloud.google.com/bigquery?project=mestrado-pnad-2026
+   - Execute: `SELECT 1`
+   - Aceite todos os diálogos
+   - Adicione o projeto `basedosdados` no Explorer
+   - Faça preview da tabela `br_ibge_pnadc.microdados`
+
+4. **Autenticação expirada:**
+   ```bash
+   gcloud auth application-default login
+   ```
+
+### 🟡 Erro: Formalidade 0% / Raça vazia
+
+**Sintoma:** Taxa de formalidade mostra 0%, coluna `raca_agregada` vazia
+
+**Causa:** Códigos da PNAD são strings ('1', '2'), não inteiros (1, 2)
+
+**Solução:** Use os mapeamentos corretos no `settings.py`:
+```python
+RACA_AGREGADA_MAP = {
+    '1': 'Branca',
+    '2': 'Negra',
+    '4': 'Negra',
+    '3': 'Outras',
+    '5': 'Outras',
+    '9': 'Outras'
+}
+
+POSICAO_FORMAL = ['1', '3', '5']  # strings, não inteiros
+```
+
+E no script de limpeza:
+```python
+df['raca_agregada'] = df['raca_cor'].astype(str).map(RACA_AGREGADA_MAP)
+df['formal'] = df['posicao_ocupacao'].isin(POSICAO_FORMAL).astype(int)
+```
+
+### 🟡 Erro: AttributeError "Can only use .str accessor with string values"
+
+**Sintoma:** Erro no crosswalk ao tentar usar `.str[:3]`
+
+**Causa:** Códigos carregados do CSV como inteiros
+
+**Solução:** Garantir conversão para string:
+```python
+df_ilo['isco_08_str'] = df_ilo['isco_08_str'].astype(str).str.zfill(4)
+df_pnad['cod_ocupacao'] = df_pnad['cod_ocupacao'].astype(str).str.zfill(4)
+```
+
+### 🟢 Dados do trimestre não disponíveis
+
+**Sintoma:** Mensagem "Dados de 2025 Q3 não disponíveis"
+
+**Solução:** O script usa automaticamente o trimestre mais recente. Verifique qual foi baixado:
+```bash
+ls -lh data/raw/pnad_*.parquet
+```
+
+---
+
 *Arquivo criado em: Janeiro 2026*
+*Atualizado com correções: BigQuery 403, dataset br_ibge_pnadc*
 *Para uso com Cursor AI*
