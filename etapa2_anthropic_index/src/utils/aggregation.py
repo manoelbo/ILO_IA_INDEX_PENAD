@@ -1,80 +1,42 @@
-"""
-Funções auxiliares para agregação de scores
-"""
-import pandas as pd
 import numpy as np
+import pandas as pd
 
+def weighted_mean(values, weights):
+    """Calcula a média ponderada de uma série de valores."""
+    if len(values) == 0:
+        return 0
+    return np.average(values, weights=weights)
 
-def normalize_task_name(task: str) -> str:
-    """Normaliza nome da tarefa para matching."""
-    if pd.isna(task):
-        return ""
-    return task.lower().strip()
-
-
-def extract_soc_6digit(onet_code: str) -> str:
+def calculate_indices(df_task):
     """
-    Extrai código SOC 6 dígitos do código O*NET-SOC.
-    
-    Exemplo: '11-1011.00' -> '11-1011'
-             '15-1252.00' -> '15-1252'
+    Calcula os shares de automation e augmentation com base nos modos de colaboração.
+    Espera um DataFrame onde as colunas são os modos (directive, learning, etc.)
     """
-    if pd.isna(onet_code):
-        return None
-    # Remove o sufixo .XX
-    return onet_code.split('.')[0]
-
-
-def calculate_automation_score(row: pd.Series, 
-                               automation_cols: list,
-                               augmentation_cols: list) -> dict:
-    """
-    Calcula scores de automação e aumentação para uma linha.
+    # Garantir que todas as colunas necessárias existam
+    required_modes = ["directive", "feedback loop", "learning", "task iteration", "validation"]
+    for mode in required_modes:
+        if mode not in df_task.columns:
+            df_task[mode] = 0
+            
+    # Calcular Totais Categorizados (excluindo none/not_classified se houver)
+    df_task['total_collab'] = df_task[required_modes].sum(axis=1)
     
-    Retorna dict com automation_score, augmentation_score, filtered_ratio
-    """
-    automation = sum(row.get(col, 0) or 0 for col in automation_cols)
-    augmentation = sum(row.get(col, 0) or 0 for col in augmentation_cols)
-    filtered = row.get('filtered', 0) or 0
+    # Evitar divisão por zero
+    mask = df_task['total_collab'] > 0
     
-    # Total para normalização (deve ser ~1.0)
-    total = automation + augmentation + filtered
+    df_task.loc[mask, 'automation_share'] = (df_task.loc[mask, "directive"] + df_task.loc[mask, "feedback loop"]) / df_task.loc[mask, 'total_collab']
+    df_task.loc[mask, 'augmentation_share'] = (df_task.loc[mask, "learning"] + df_task.loc[mask, "task iteration"] + df_task.loc[mask, "validation"]) / df_task.loc[mask, 'total_collab']
     
-    if total > 0:
-        return {
-            'automation_raw': automation,
-            'augmentation_raw': augmentation,
-            'filtered_ratio': filtered,
-            'automation_score': automation / (automation + augmentation) if (automation + augmentation) > 0 else 0.5,
-            'augmentation_score': augmentation / (automation + augmentation) if (automation + augmentation) > 0 else 0.5
-        }
-    return {
-        'automation_raw': 0,
-        'augmentation_raw': 0,
-        'filtered_ratio': 1.0,
-        'automation_score': np.nan,
-        'augmentation_score': np.nan
-    }
-
-
-def aggregate_to_occupation(df: pd.DataFrame, 
-                            group_col: str = 'soc_code') -> pd.DataFrame:
-    """
-    Agrega scores de tarefas para nível de ocupação.
+    # Preencher NaNs (casos sem colab classificada)
+    df_task['automation_share'] = df_task['automation_share'].fillna(0)
+    df_task['augmentation_share'] = df_task['augmentation_share'].fillna(0)
     
-    Usa média simples dos scores de cada tarefa.
-    """
-    agg_funcs = {
-        'soc_title': 'first',
-        'automation_score': 'mean',
-        'augmentation_score': 'mean',
-        'automation_raw': 'mean',
-        'augmentation_raw': 'mean',
-        'filtered_ratio': 'mean',
-        'task_name': 'count'  # conta tarefas matched
-    }
+    # Índice de Automação: (Share Auto - Share Aug)
+    # Range: -1 (Total Augmentation) a +1 (Total Automation)
+    df_task['automation_index'] = df_task['automation_share'] - df_task['augmentation_share']
     
-    result = df.groupby(group_col).agg(agg_funcs).reset_index()
-    result = result.rename(columns={'task_name': 'n_tasks_matched'})
+    # Modo Dominante
+    df_task['dominant_mode'] = np.where(df_task['automation_index'] > 0, "automation", "augmentation")
+    df_task.loc[df_task['total_collab'] == 0, 'dominant_mode'] = "none"
     
-    return result
+    return df_task
