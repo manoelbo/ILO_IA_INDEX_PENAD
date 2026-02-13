@@ -9,8 +9,14 @@ ETAPA1_RAW = ROOT_DIR / "etapa1_ia_generativa" / "data" / "raw"
 
 # Inputs de Dados
 DATA_INPUT = ETAPA3_DIR / "data_input"
+# Arquivos legados (SOC 2010/2018) - mantidos para referência se necessário
 CROSSWALK_SOC_10_18 = DATA_INPUT / "Crosswalk SOC 2010 a 2018.xlsx"
 CROSSWALK_SOC_ISCO = DATA_INPUT / "Crosswalk SOC 2010 ISCO-08.xls"
+
+# Novo Input: ESCO-O*NET Crosswalk
+ESCO_ONET_CROSSWALK = DATA_INPUT / "ONET Occupations Updated.csv"
+
+# Dados Processados da Etapa Anterior
 ANTHROPIC_INDEX_ONET = ETAPA2_OUTPUTS / "onet_automation_augmentation_index.csv"
 COD_STRUCTURE = ETAPA1_RAW / "Estrutura Ocupação COD.xls"
 
@@ -24,5 +30,4 @@ for path in [DATA_PROCESSED, OUTPUTS_TABLES, OUTPUTS_LOGS]:
     path.mkdir(parents=True, exist_ok=True)
 
 # Configurações de Crosswalk
-# Nota: Os arquivos Excel têm cabeçalhos que precisam ser pulados (skiprows=6 como visto na inspeção)
 SKIP_ROWS_EXCEL = 6

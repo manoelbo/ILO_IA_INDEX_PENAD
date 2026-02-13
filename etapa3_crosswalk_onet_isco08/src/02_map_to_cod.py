@@ -42,13 +42,20 @@ def read_cod_structure(path):
 def run_map_to_cod():
     """Mapeia os índices ISCO-08 para a classificação COD brasileira."""
     
-    logger.info("Iniciando mapeamento ISCO-08 -> COD...")
+    logger.info("Iniciando mapeamento ISCO-08 -> COD (Metodologia ESCO)...")
 
-    # 1. Carregar Índices ISCO-08 (Gerados no passo anterior)
-    isco_csv = OUTPUTS_TABLES / "isco_automation_augmentation_index.csv"
+    # 1. Carregar Índices ISCO-08 (Gerados no passo anterior via ESCO)
+    # Ajustado para ler o arquivo novo com sufixo _esco
+    isco_csv = OUTPUTS_TABLES / "isco_automation_augmentation_index_esco.csv"
     if not isco_csv.exists():
         logger.error(f"Arquivo ISCO não encontrado: {isco_csv}")
-        return
+        # Fallback para o arquivo anterior se necessário, ou abortar
+        isco_csv_legacy = OUTPUTS_TABLES / "isco_automation_augmentation_index.csv"
+        if isco_csv_legacy.exists():
+            logger.warning(f"Usando arquivo legado como fallback: {isco_csv_legacy}")
+            isco_csv = isco_csv_legacy
+        else:
+            return
     
     df_isco = pd.read_csv(isco_csv)
     df_isco['isco_08_code'] = df_isco['isco_08_code'].astype(str).str.zfill(4)
@@ -67,7 +74,7 @@ def run_map_to_cod():
     logger.info(f"Cobertura dos índices Anthropic na estrutura COD: {coverage:.1%}")
 
     # 5. Salvar Resultados
-    output_path = OUTPUTS_TABLES / "cod_automation_augmentation_index.csv"
+    output_path = OUTPUTS_TABLES / "cod_automation_augmentation_index_esco.csv"
     df_final.to_csv(output_path, index=False)
     logger.info(f"Tabela final COD salva em: {output_path}")
 
