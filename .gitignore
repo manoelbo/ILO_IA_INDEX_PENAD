@@ -109,3 +109,12 @@ dmypy.json
 *.out
 *.bbl
 *.blg
+
+# Quarto e Jupyter Book (docs/)
+docs/quarto/_output/
+docs/book/_build/
+.quarto/
+**/.quarto/
+**/*.quarto_ipynb
+notebook/*.html
+notebook/*_files/

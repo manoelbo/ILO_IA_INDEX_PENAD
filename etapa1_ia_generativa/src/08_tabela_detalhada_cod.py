@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT_DIR))
 
-from config.settings import DATA_RAW, DATA_PROCESSED, OUTPUTS_TABLES, OUTPUTS_LOGS, GRANDES_GRUPOS
+from config.settings import DATA_RAW, DATA_OUTPUT, OUTPUTS_TABLES, OUTPUTS_LOGS, GRANDES_GRUPOS
 from src.utils.weighted_stats import weighted_mean, weighted_std
 
 # Para geracao de PDF
@@ -413,7 +413,7 @@ def run_tabela_detalhada():
     
     # 2. Carregar dados PNAD
     logger.info("\nCarregando dados PNAD...")
-    df = pd.read_csv(DATA_PROCESSED / "pnad_ilo_merged.csv")
+    df = pd.read_csv(DATA_OUTPUT / "pnad_ilo_merged.csv")
     logger.info(f"Dados carregados: {len(df):,} observacoes")
     
     # 3. Calcular exposicao por nivel

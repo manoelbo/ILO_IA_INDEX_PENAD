@@ -1,0 +1,28 @@
+---
+description: Uso do Quarto no projeto (relatórios PDF/HTML a partir de notebooks)
+globs: docs/quarto/**,**/_quarto.yml
+alwaysApply: false
+---
+
+# Quarto (docs/quarto)
+
+- O projeto Quarto fica em **docs/quarto/**.
+- Os notebooks-fonte ficam em **notebook/**.
+- Não crie symlinks de notebooks em docs/quarto/; o render usa caminho relativo ao diretório de trabalho.
+
+## Como rodar
+
+A partir de **docs/quarto/**:
+
+```bash
+cd docs/quarto
+quarto render ../../notebook/etapa_1a_preparacao_dados_ilos_pnadc.ipynb
+```
+
+Saída em **docs/quarto/_output/** (HTML e PDF).
+
+Só HTML: `quarto render ../../notebook/etapa_1a_preparacao_dados_ilos_pnadc.ipynb --to html`
+
+## Config
+
+Config em **docs/quarto/_quarto.yml**. Não altere paths dentro do notebook para "sair" de notebook/; o Quarto executa o notebook no contexto do diretório do **notebook** (notebook/), então `data/` continua válido.

@@ -52,7 +52,7 @@ COLORMAPS = {
 
 
 def load_data():
-    df = pd.read_csv(DATA_PROCESSED / "pnad_ilo_merged.csv")
+    df = pd.read_csv(DATA_OUTPUT / "pnad_ilo_merged.csv")
     logger.info(f"Dados carregados: {len(df):,} obs")
     return df
 
@@ -81,17 +81,20 @@ def aggregate_by_state(df):
         total = subset['peso'].sum()
         exp = weighted_mean(subset['exposure_score'], subset['peso'])
         
+        gradient_groups = {
+            'pct_not_exposed':     ['Not Exposed'],
+            'pct_exposicao_baixa': ['Minimal Exposure', 'Exposed: Gradient 1', 'Exposed: Gradient 2'],
+            'pct_exposicao_media': ['Exposed: Gradient 3'],
+            'pct_exposicao_alta':  ['Exposed: Gradient 4'],
+        }
         pct = {}
-        for g in ['Not Exposed', 'Gradient 1-2', 'Gradient 3', 'Gradient 4 (Alta)']:
-            p = subset[subset['exposure_gradient'] == g]['peso'].sum()
-            pct[g] = (p / total * 100) if total > 0 else 0
-        
+        for key, labels in gradient_groups.items():
+            p = subset[subset['exposure_gradient'].isin(labels)]['peso'].sum()
+            pct[key] = (p / total * 100) if total > 0 else 0
+
         results.append({
             'sigla_uf': uf, 'regiao': subset['regiao'].iloc[0],
-            'exposicao_media': exp, 'pct_not_exposed': pct['Not Exposed'],
-            'pct_exposicao_baixa': pct['Gradient 1-2'],
-            'pct_exposicao_media': pct['Gradient 3'],
-            'pct_exposicao_alta': pct['Gradient 4 (Alta)']
+            'exposicao_media': exp, **pct
         })
     return pd.DataFrame(results)
 
@@ -103,17 +106,19 @@ def aggregate_by_region(df):
         total = subset['peso'].sum()
         exp = weighted_mean(subset['exposure_score'], subset['peso'])
         
+        gradient_groups = {
+            'pct_not_exposed':     ['Not Exposed'],
+            'pct_exposicao_baixa': ['Minimal Exposure', 'Exposed: Gradient 1', 'Exposed: Gradient 2'],
+            'pct_exposicao_media': ['Exposed: Gradient 3'],
+            'pct_exposicao_alta':  ['Exposed: Gradient 4'],
+        }
         pct = {}
-        for g in ['Not Exposed', 'Gradient 1-2', 'Gradient 3', 'Gradient 4 (Alta)']:
-            p = subset[subset['exposure_gradient'] == g]['peso'].sum()
-            pct[g] = (p / total * 100) if total > 0 else 0
-        
+        for key, labels in gradient_groups.items():
+            p = subset[subset['exposure_gradient'].isin(labels)]['peso'].sum()
+            pct[key] = (p / total * 100) if total > 0 else 0
+
         results.append({
-            'regiao': regiao, 'exposicao_media': exp,
-            'pct_not_exposed': pct['Not Exposed'],
-            'pct_exposicao_baixa': pct['Gradient 1-2'],
-            'pct_exposicao_media': pct['Gradient 3'],
-            'pct_exposicao_alta': pct['Gradient 4 (Alta)']
+            'regiao': regiao, 'exposicao_media': exp, **pct
         })
     return pd.DataFrame(results)
 
@@ -186,23 +191,23 @@ def generate_all_maps():
     
     # C3: Exposição Baixa
     logger.info("\n=== C3: Exposição Baixa ===")
-    create_map(sm, 'pct_exposicao_baixa', 'Exposição Baixa à IA (%) por Estado\nGradient 1-2 - Brasil 3T/2025',
+    create_map(sm, 'pct_exposicao_baixa', 'Exposição Baixa à IA (%) por Estado\nMinimal Exp. + Gradient 1-2 - Brasil 3T/2025',
                'Blues', 'abbrev_state', '.1f', True, 'mapa_c3_exposicao_baixa_estado')
-    create_map(rm, 'pct_exposicao_baixa', 'Exposição Baixa à IA (%) por Região\nGradient 1-2 - Brasil 3T/2025',
+    create_map(rm, 'pct_exposicao_baixa', 'Exposição Baixa à IA (%) por Região\nMinimal Exp. + Gradient 1-2 - Brasil 3T/2025',
                'Blues', 'name_region', '.1f', True, 'mapa_c3_exposicao_baixa_regiao')
-    
-    # C4: Exposição Média
-    logger.info("\n=== C4: Exposição Média (Grad 3) ===")
-    create_map(sm, 'pct_exposicao_media', 'Exposição Média à IA (%) por Estado\nGradient 3 - Brasil 3T/2025',
+
+    # C4: Exposição Média (Gradient 3)
+    logger.info("\n=== C4: Exposição Média (Gradient 3) ===")
+    create_map(sm, 'pct_exposicao_media', 'Exposição Média à IA (%) por Estado\nExposed: Gradient 3 - Brasil 3T/2025',
                'Oranges', 'abbrev_state', '.1f', True, 'mapa_c4_exposicao_media_estado')
-    create_map(rm, 'pct_exposicao_media', 'Exposição Média à IA (%) por Região\nGradient 3 - Brasil 3T/2025',
+    create_map(rm, 'pct_exposicao_media', 'Exposição Média à IA (%) por Região\nExposed: Gradient 3 - Brasil 3T/2025',
                'Oranges', 'name_region', '.1f', True, 'mapa_c4_exposicao_media_regiao')
-    
-    # C5: Exposição Alta
-    logger.info("\n=== C5: Exposição Alta ===")
-    create_map(sm, 'pct_exposicao_alta', 'Exposição Alta à IA (%) por Estado\nGradient 4 - Brasil 3T/2025',
+
+    # C5: Exposição Alta (Gradient 4)
+    logger.info("\n=== C5: Exposição Alta (Gradient 4) ===")
+    create_map(sm, 'pct_exposicao_alta', 'Exposição Alta à IA (%) por Estado\nExposed: Gradient 4 - Brasil 3T/2025',
                'Reds', 'abbrev_state', '.1f', True, 'mapa_c5_exposicao_alta_estado')
-    create_map(rm, 'pct_exposicao_alta', 'Exposição Alta à IA (%) por Região\nGradient 4 - Brasil 3T/2025',
+    create_map(rm, 'pct_exposicao_alta', 'Exposição Alta à IA (%) por Região\nExposed: Gradient 4 - Brasil 3T/2025',
                'Reds', 'name_region', '.1f', True, 'mapa_c5_exposicao_alta_regiao')
     
     logger.info("\n" + "=" * 50)

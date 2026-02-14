@@ -1,0 +1,32 @@
+---
+description: Uso do Jupyter Book no projeto (livro/site a partir de notebooks)
+globs: docs/book/**,**/myst.yml
+alwaysApply: false
+---
+
+# Jupyter Book (docs/book)
+
+- O projeto do livro fica em **docs/book/**.
+- Os notebooks e **data/** reais ficam em **notebook/**.
+- Em docs/book/, **etapa_1a_preparacao_dados_ilos_pnadc.ipynb** e **data** são **symlinks** para ../../notebook/... Não remova nem substitua por cópias; isso quebra paths e duplica fonte.
+
+## Como rodar
+
+A partir de **docs/book/**:
+
+```bash
+cd docs/book
+jupyter-book start
+```
+
+Ou build do site: `jupyter-book build myst.yml --site`
+
+Índice (TOC) em **docs/book/myst.yml** (campo `project.toc`).
+
+## Adicionar novo notebook ao livro
+
+1. Coloque o .ipynb em **notebook/**.
+2. Crie symlink em docs/book/: `ln -sf ../../notebook/seu_notebook.ipynb docs/book/seu_notebook.ipynb`
+3. Adicione em myst.yml → project.toc: `- file: seu_notebook.ipynb`
+
+O symlink **data** em docs/book/ já atende todos os notebooks que usam `data/`.

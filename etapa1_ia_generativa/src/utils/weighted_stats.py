@@ -60,6 +60,39 @@ def gini_coefficient(values, weights):
     
     return 1 - 2 * B
 
+def weighted_qcut(values, weights, q, labels=None):
+    """Classificação em quantis ponderados por peso amostral.
+
+    Diferente de pd.qcut (que divide por contagem de linhas), esta função
+    calcula os breakpoints de modo que cada faixa represente ~1/q da
+    POPULAÇÃO (soma dos pesos), não da amostra.
+
+    Parâmetros:
+        values  : pd.Series com os valores a classificar
+        weights : pd.Series com os pesos amostrais
+        q       : int, número de quantis (5 = quintis, 10 = decis)
+        labels  : lista de labels (len == q), ou None para retornar inteiros 1..q
+
+    Retorna:
+        pd.Series (Categorical) com os labels atribuídos
+    """
+    mask = values.notna() & weights.notna()
+    breakpoints = [values[mask].min() - 1e-10]
+    for i in range(1, q):
+        bp = weighted_quantile(values[mask], weights[mask], i / q)
+        breakpoints.append(bp)
+    breakpoints.append(values[mask].max() + 1e-10)
+
+    # Remover duplicatas mantendo ordem
+    breakpoints = sorted(set(breakpoints))
+
+    if labels is not None and len(labels) != len(breakpoints) - 1:
+        labels = None
+
+    result = pd.cut(values, bins=breakpoints, labels=labels, include_lowest=True)
+    return result
+
+
 def weighted_stats_summary(values, weights):
     """Retorna dicionário com estatísticas resumidas"""
     return {

@@ -1,0 +1,21 @@
+# Quarto — relatório a partir do notebook (fontes em notebook/)
+# Uso: a partir desta pasta (docs/quarto/): quarto render ../../notebook/etapa_1a_preparacao_dados_ilos_pnadc.ipynb
+
+project:
+  type: default
+  output-dir: _output
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: false
+    html-math-method: katex
+  pdf:
+    toc: true
+    number-sections: true
+    geometry:
+      - top=25mm
+      - left=25mm
+      - right=25mm
+      - bottom=25mm
