@@ -118,3 +118,4 @@ docs/book/_build/
 **/*.quarto_ipynb
 notebook/*.html
 notebook/*_files/
+../EconomicIndex
