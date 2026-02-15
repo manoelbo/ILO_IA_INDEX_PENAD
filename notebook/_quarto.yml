@@ -1,0 +1,22 @@
+# Quarto — relatório a partir do notebook
+# Uso: cd notebook && quarto render etapa_1a_preparacao_dados_ilos_pnadc.ipynb
+# Ou, para só HTML (sem LaTeX): quarto render etapa_1a_preparacao_dados_ilos_pnadc.ipynb --to html
+
+project:
+  type: default
+  output-dir: _output
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: false
+    html-math-method: katex
+  pdf:
+    toc: true
+    number-sections: true
+    geometry:
+      - top=25mm
+      - left=25mm
+      - right=25mm
+      - bottom=25mm

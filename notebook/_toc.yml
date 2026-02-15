@@ -1,0 +1,8 @@
+# Índice do Jupyter Book
+# Inclua aqui novos notebooks conforme for criando etapas
+
+format: jb-book
+root: index.md
+chapters:
+  - file: etapa_1a_preparacao_dados_ilos_pnadc
+    title: Etapa 1a — Preparação dos dados (PNADc + ILO)

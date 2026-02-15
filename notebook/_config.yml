@@ -1,0 +1,19 @@
+# Jupyter Book — material suplementar / anexo técnico da dissertação
+# Uso: jupyter-book build notebook/
+
+title: Material Suplementar — Dissertação IA e Mercado de Trabalho
+author: Manoel Brasil Orlandi
+language: pt-BR
+
+# Executar notebooks ao construir (opcional; use false para só converter)
+execute:
+  execute_notebooks: auto # "auto" = só executa se já tiver saídas
+
+# LaTeX / PDF (opcional)
+latex:
+  latex_engine: xelatex
+
+# Navegação
+html:
+  use_edit_page_button: false
+  use_repository_button: false
