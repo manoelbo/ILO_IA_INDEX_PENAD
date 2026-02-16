@@ -1,0 +1,10 @@
+# Notebooks Etapa 2a e 2b — CAGED + DiD
+# Instalar no ambiente usado pelo kernel do Jupyter: pip install -r requirements.txt
+
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=12.0.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+scipy>=1.9.0
+pyfixest>=0.11.0

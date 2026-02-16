@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ETAPA 2b — Análise Difference-in-Differences: IA Generativa e Emprego Formal no Brasil</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="etapa_2b_analise_did_caged_ilo_files/libs/clipboard/clipboard.min.js"></script>
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/popper.min.js"></script>
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/anchor.min.js"></script>
+<link href="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="etapa_2b_analise_did_caged_ilo_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="etapa_2b_analise_did_caged_ilo_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="etapa_2b_analise_did_caged_ilo_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="etapa_2b_analise_did_caged_ilo_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#estratégia-de-identificação" id="toc-estratégia-de-identificação" class="nav-link active" data-scroll-target="#estratégia-de-identificação"><span class="header-section-number">0.1</span> Estratégia de identificação</a></li>
+  <li><a href="#outcomes" id="toc-outcomes" class="nav-link" data-scroll-target="#outcomes"><span class="header-section-number">0.2</span> Outcomes</a></li>
+  <li><a href="#configuração-do-ambiente" id="toc-configuração-do-ambiente" class="nav-link" data-scroll-target="#configuração-do-ambiente"><span class="header-section-number">0.3</span> 1. Configuração do ambiente</a></li>
+  <li><a href="#carregar-e-explorar-dados" id="toc-carregar-e-explorar-dados" class="nav-link" data-scroll-target="#carregar-e-explorar-dados"><span class="header-section-number">0.4</span> 2. Carregar e explorar dados</a></li>
+  <li><a href="#tabela-de-balanço-pré-tratamento" id="toc-tabela-de-balanço-pré-tratamento" class="nav-link" data-scroll-target="#tabela-de-balanço-pré-tratamento"><span class="header-section-number">0.5</span> 3. Tabela de balanço (pré-tratamento)</a></li>
+  <li><a href="#tendências-paralelas-inspeção-visual" id="toc-tendências-paralelas-inspeção-visual" class="nav-link" data-scroll-target="#tendências-paralelas-inspeção-visual"><span class="header-section-number">0.6</span> 4. Tendências paralelas (inspeção visual)</a></li>
+  <li><a href="#a.-estimação-did-principal" id="toc-a.-estimação-did-principal" class="nav-link" data-scroll-target="#a.-estimação-did-principal"><span class="header-section-number">0.7</span> 5a. Estimação DiD principal</a></li>
+  <li><a href="#b.-checkpoint-resultados-did" id="toc-b.-checkpoint-resultados-did" class="nav-link" data-scroll-target="#b.-checkpoint-resultados-did"><span class="header-section-number">0.8</span> 5b. Checkpoint — Resultados DiD</a></li>
+  <li><a href="#event-study" id="toc-event-study" class="nav-link" data-scroll-target="#event-study"><span class="header-section-number">0.9</span> 6. Event study</a></li>
+  <li><a href="#b.-teste-formal-de-tendências-paralelas" id="toc-b.-teste-formal-de-tendências-paralelas" class="nav-link" data-scroll-target="#b.-teste-formal-de-tendências-paralelas"><span class="header-section-number">0.10</span> 6b. Teste formal de tendências paralelas</a></li>
+  <li><a href="#análise-de-heterogeneidade-triple-did" id="toc-análise-de-heterogeneidade-triple-did" class="nav-link" data-scroll-target="#análise-de-heterogeneidade-triple-did"><span class="header-section-number">0.11</span> 7. Análise de heterogeneidade (Triple-DiD)</a></li>
+  <li><a href="#testes-de-robustez" id="toc-testes-de-robustez" class="nav-link" data-scroll-target="#testes-de-robustez"><span class="header-section-number">0.12</span> 8. Testes de robustez</a></li>
+  <li><a href="#tabelas-latex" id="toc-tabelas-latex" class="nav-link" data-scroll-target="#tabelas-latex"><span class="header-section-number">0.13</span> 9. Tabelas LaTeX</a></li>
+  <li><a href="#síntese-e-conclusões" id="toc-síntese-e-conclusões" class="nav-link" data-scroll-target="#síntese-e-conclusões"><span class="header-section-number">0.14</span> 10. Síntese e conclusões</a></li>
+  <li><a href="#limitações-desta-etapa" id="toc-limitações-desta-etapa" class="nav-link" data-scroll-target="#limitações-desta-etapa"><span class="header-section-number">0.15</span> Limitações desta etapa</a></li>
+  <li><a href="#checklist-de-entregáveis" id="toc-checklist-de-entregáveis" class="nav-link" data-scroll-target="#checklist-de-entregáveis"><span class="header-section-number">0.16</span> Checklist de entregáveis</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="etapa_2b_analise_did_caged_ilo.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ETAPA 2b — Análise Difference-in-Differences: IA Generativa e Emprego Formal no Brasil</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Dissertação:</strong> Inteligência Artificial Generativa e o Mercado de Trabalho Brasileiro: Uma Análise de Exposição Ocupacional e seus Efeitos Distributivos.</p>
+<p><strong>Aluno:</strong> Manoel Brasil Orlandi</p>
+<p><strong>Objetivo deste notebook:</strong> Estimar o efeito causal do lançamento da IA generativa (ChatGPT, novembro/2022) sobre o mercado de trabalho formal brasileiro, usando variação na exposição ocupacional à IA como fonte de identificação. Implementa um design Difference-in-Differences (DiD) com dados do CAGED (2021–2025) e o índice de exposição da OIT.</p>
+<p><strong>Pergunta de pesquisa:</strong> Após o lançamento do ChatGPT, ocupações mais expostas à IA generativa tiveram mudanças diferenciais em contratações, demissões ou salários de admissão, em comparação com ocupações menos expostas?</p>
+<p><strong>Input:</strong> <code>data/output/painel_caged_did_ready.parquet</code> (produzido no Notebook 2a).</p>
+<p><strong>Estratégia de crosswalk:</strong> Análise principal a 2 dígitos ISCO-08 (match por Sub-major Group com fallback a Major Group), com robustez a 4 dígitos via correspondência ISCO-88↔︎ISCO-08 e fallback hierárquico em 6 níveis.</p>
+<p><strong>Referências metodológicas:</strong> Hui, Reshef &amp; Zhou (2024), <em>The Short-Term Effects of Generative AI on Employment</em>; Cunningham (2021), <em>Causal Inference: The Mixtape</em>, Cap. 9; Callaway &amp; Sant’Anna (2021), <em>DiD with multiple time periods</em>; Gmyrek, Berg &amp; Cappelli (2025), ILO Working Paper 140.</p>
+<section id="estratégia-de-identificação" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="estratégia-de-identificação"><span class="header-section-number">0.1</span> Estratégia de identificação</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Unidade de análise</strong></td>
+<td>Ocupação CBO × mês (2 dígitos na espec. principal; 4 dígitos na robustez)</td>
+</tr>
+<tr class="even">
+<td><strong>Tratamento</strong></td>
+<td>Ocupações com alta exposição à IA (top 20% do índice ILO via <code>exposure_score_2d</code>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Controle</strong></td>
+<td>Ocupações com baixa exposição (bottom 80%)</td>
+</tr>
+<tr class="even">
+<td><strong>Evento</strong></td>
+<td>Lançamento do ChatGPT (30/nov/2022)</td>
+</tr>
+<tr class="odd">
+<td><strong>Pré-tratamento</strong></td>
+<td>Jan/2021 — Nov/2022 (23 meses)</td>
+</tr>
+<tr class="even">
+<td><strong>Pós-tratamento</strong></td>
+<td>Dez/2022 — Jun/2025 (31 meses)</td>
+</tr>
+<tr class="odd">
+<td><strong>Outcomes</strong></td>
+<td>Admissões, desligamentos, saldo, salário médio de admissão</td>
+</tr>
+<tr class="even">
+<td><strong>Efeitos fixos</strong></td>
+<td>Ocupação (CBO 4d) + período (ano-mês)</td>
+</tr>
+<tr class="odd">
+<td><strong>Erros padrão</strong></td>
+<td>Clusterizados por ocupação (CBO 4d)</td>
+</tr>
+</tbody>
+</table>
+<p>A hipótese central é que, <strong>na ausência do lançamento do ChatGPT</strong>, ocupações de alta e baixa exposição teriam seguido tendências paralelas. Com <strong>tratamento sharp</strong> (todos tratados no mesmo momento), o estimador TWFE produz estimativas consistentes do ATT médio (Cunningham, Mixtape Cap. 9).</p>
+</section>
+<section id="outcomes" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="outcomes"><span class="header-section-number">0.2</span> Outcomes</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 20%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Outcome</th>
+<th>Variável</th>
+<th>Transformação</th>
+<th>Interpretação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contratações</td>
+<td><code>admissoes</code></td>
+<td><code>ln_admissoes = log(admissoes + 1)</code></td>
+<td>Fluxo de novas contratações</td>
+</tr>
+<tr class="even">
+<td>Demissões</td>
+<td><code>desligamentos</code></td>
+<td><code>ln_desligamentos = log(desligamentos + 1)</code></td>
+<td>Fluxo de demissões</td>
+</tr>
+<tr class="odd">
+<td>Saldo líquido</td>
+<td><code>saldo</code></td>
+<td>Em nível</td>
+<td>Criação líquida de empregos</td>
+</tr>
+<tr class="even">
+<td>Salário de admissão</td>
+<td><code>salario_medio_adm</code></td>
+<td><code>ln_salario_adm = log(salario_medio_adm)</code></td>
+<td>Poder de barganha / demanda</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nota — Winsorização:</strong> O Notebook 2a identificou outlier salarial em Jun/2025. Aplicamos <strong>winsorização nos percentis 1% e 99%</strong> de <code>salario_medio_adm</code> e <code>salario_sm</code> neste notebook antes da estimação, preservando todas as observações.</p>
+</section>
+<section id="configuração-do-ambiente" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="configuração-do-ambiente"><span class="header-section-number">0.3</span> 1. Configuração do ambiente</h3>
+<p>Importar bibliotecas, definir caminhos e parâmetros de estimação. Caminhos relativos ao diretório <code>notebook/</code>.</p>
+<blockquote class="blockquote">
+<p><strong>Sobre os avisos de colinearidade:</strong> O pyfixest pode exibir <em>UserWarning</em> quando uma variável de controle (ex.: <code>pct_mulher_adm</code>) é omitida por <strong>colinearidade</strong> com os efeitos fixos (ocupação e período). Isso ocorre quando a variável tem pouca ou nenhuma variação dentro dos grupos. Não é erro: a estimação segue válida; o controle simplesmente não entra na regressão. Suprimimos esses avisos para deixar o notebook mais legível.</p>
+</blockquote>
+<div id="9b4235e1" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar dependências e instalar apenas o que faltar (rode esta célula primeiro)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> importlib.util</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> subprocess</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># (nome para import, nome para pip install)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>PACOTES <span class="op">=</span> [</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"pandas"</span>, <span class="st">"pandas"</span>),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"numpy"</span>, <span class="st">"numpy"</span>),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"pyfixest"</span>, <span class="st">"pyfixest"</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"matplotlib"</span>, <span class="st">"matplotlib"</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"seaborn"</span>, <span class="st">"seaborn"</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"scipy"</span>, <span class="st">"scipy"</span>),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"pyarrow"</span>, <span class="st">"pyarrow"</span>),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ja_instalado(nome_import):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> importlib.util.find_spec(nome_import) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>faltando <span class="op">=</span> [pip <span class="cf">for</span> imp, pip <span class="kw">in</span> PACOTES <span class="cf">if</span> <span class="kw">not</span> ja_instalado(imp)]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> faltando:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    subprocess.check_call([sys.executable, <span class="st">"-m"</span>, <span class="st">"pip"</span>, <span class="st">"install"</span>, <span class="st">"-q"</span>] <span class="op">+</span> faltando)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Instalado:"</span>, <span class="st">", "</span>.join(faltando))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Todas as dependências já estão instaladas."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Todas as dependências já estão instaladas.</code></pre>
+</div>
+</div>
+<div id="09919bf7" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.1 — Configuração do ambiente</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyfixest <span class="im">as</span> pf</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, category<span class="op">=</span><span class="pp">FutureWarning</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Suprimir aviso do pyfixest quando variável é omitida por colinearidade (ex.: pct_mulher_adm)</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, message<span class="op">=</span><span class="st">".*dropped due to multicollinearity.*"</span>, category<span class="op">=</span><span class="pp">UserWarning</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>DATA_OUTPUT    <span class="op">=</span> Path(<span class="st">"data/output"</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>OUTPUTS_TABLES <span class="op">=</span> Path(<span class="st">"outputs/tables"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>OUTPUTS_FIGURES <span class="op">=</span> Path(<span class="st">"outputs/figures"</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>OUTPUTS_LOGS   <span class="op">=</span> Path(<span class="st">"outputs/logs"</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> [OUTPUTS_TABLES, OUTPUTS_FIGURES, OUTPUTS_LOGS]:</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    d.mkdir(parents<span class="op">=</span><span class="va">True</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>TREATMENT_VAR    <span class="op">=</span> <span class="st">'alta_exp'</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>TREATMENT_VAR_4D  <span class="op">=</span> <span class="st">'alta_exp_4d'</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>CLUSTER_VAR      <span class="op">=</span> <span class="st">'cbo_4d'</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>VCOV_SPEC        <span class="op">=</span> {<span class="st">'CRV1'</span>: <span class="st">'cbo_4d'</span>}</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>REFERENCE_PERIOD  <span class="op">=</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>ALPHA             <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>ANO_TRATAMENTO   <span class="op">=</span> <span class="dv">2022</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>MES_TRATAMENTO   <span class="op">=</span> <span class="dv">12</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>OUTCOMES <span class="op">=</span> {</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes'</span>:       <span class="st">'Log(Admissões)'</span>,</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_desligamentos'</span>:   <span class="st">'Log(Desligamentos)'</span>,</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">'saldo'</span>:              <span class="st">'Saldo Líquido'</span>,</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_adm'</span>:     <span class="st">'Log(Salário Admissão)'</span>,</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Heterogeneidade demográfica (salários por grupo)</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_mulher'</span>:  <span class="st">'Log(Salário Mulheres)'</span>,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_homem'</span>:   <span class="st">'Log(Salário Homens)'</span>,</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_jovem'</span>:   <span class="st">'Log(Salário Jovens)'</span>,</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_naojovem'</span>:<span class="st">'Log(Salário Não-Jovens)'</span>,</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_branco'</span>:  <span class="st">'Log(Salário Brancos)'</span>,</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_negro'</span>:   <span class="st">'Log(Salário Negros)'</span>,</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_superior'</span>:<span class="st">'Log(Salário Superior)'</span>,</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_medio'</span>:   <span class="st">'Log(Salário Médio)'</span>,</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes_mulher'</span>:<span class="st">'Log(Admissões Mulheres)'</span>,</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes_homem'</span>: <span class="st">'Log(Admissões Homens)'</span>,</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes_jovem'</span>: <span class="st">'Log(Admissões Jovens)'</span>,</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes_negro'</span>: <span class="st">'Log(Admissões Negros)'</span>,</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>OUTCOMES_SECONDARY <span class="op">=</span> {<span class="st">'ln_salario_sm'</span>: <span class="st">'Log(Salário em SM)'</span>}</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-v0_8-paper'</span>)</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>sns.set_palette(<span class="st">"Set2"</span>)</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>plt.rcParams.update({<span class="st">'font.size'</span>: <span class="dv">11</span>, <span class="st">'axes.titlesize'</span>: <span class="dv">13</span>, <span class="st">'axes.labelsize'</span>: <span class="dv">12</span>, <span class="st">'figure.dpi'</span>: <span class="dv">150</span>})</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>COLORS <span class="op">=</span> {<span class="st">'pre'</span>: <span class="st">'#1f77b4'</span>, <span class="st">'post'</span>: <span class="st">'#d62728'</span>, <span class="st">'ci'</span>: <span class="st">'#cccccc'</span>, <span class="st">'treated'</span>: <span class="st">'#ff7f0e'</span>, <span class="st">'control'</span>: <span class="st">'#2ca02c'</span>}</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Configuração carregada."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Configuração carregada.</code></pre>
+</div>
+</div>
+</section>
+<section id="carregar-e-explorar-dados" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="carregar-e-explorar-dados"><span class="header-section-number">0.4</span> 2. Carregar e explorar dados</h3>
+<p>Carregar o painel produzido no Notebook 2a, aplicar winsorização P1/P99 nos salários e recalcular os logs. Em seguida, exibir estatísticas descritivas dos outcomes.</p>
+<div id="00390ad4" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.2 — Carregar e explorar dados</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>painel_path <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_did_ready.parquet"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_parquet(painel_path)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Painel carregado: </span><span class="sc">{</span><span class="bu">len</span>(df)<span class="sc">:,}</span><span class="ss"> observações"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Ocupações: </span><span class="sc">{</span>df[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Períodos: </span><span class="sc">{</span>df[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> meses"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Tratamento (</span><span class="sc">{</span>TREATMENT_VAR<span class="sc">}</span><span class="ss">): Alta exposição: </span><span class="sc">{</span>df[TREATMENT_VAR]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">"</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Pré: </span><span class="sc">{</span>df[df[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">0</span>]<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">:,}</span><span class="ss"> obs | Pós: </span><span class="sc">{</span>df[df[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">1</span>]<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">:,}</span><span class="ss"> obs"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col_sal <span class="kw">in</span> [<span class="st">'salario_medio_adm'</span>, <span class="st">'salario_sm'</span>]:</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> col_sal <span class="kw">in</span> df.columns:</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        p1, p99 <span class="op">=</span> df[col_sal].quantile(<span class="fl">0.01</span>), df[col_sal].quantile(<span class="fl">0.99</span>)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        lower <span class="op">=</span> <span class="bu">max</span>(<span class="bu">float</span>(p1), <span class="fl">0.01</span>) <span class="cf">if</span> p1 <span class="op">&lt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="bu">float</span>(p1)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        n_clip <span class="op">=</span> ((df[col_sal] <span class="op">&lt;</span> lower) <span class="op">|</span> (df[col_sal] <span class="op">&gt;</span> p99)).<span class="bu">sum</span>()</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        df[col_sal] <span class="op">=</span> df[col_sal].clip(lower<span class="op">=</span>lower, upper<span class="op">=</span>p99)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Winsorização </span><span class="sc">{</span>col_sal<span class="sc">}</span><span class="ss">: [</span><span class="sc">{</span>lower<span class="sc">:.2f}</span><span class="ss">, </span><span class="sc">{</span>p99<span class="sc">:.2f}</span><span class="ss">], </span><span class="sc">{</span>n_clip<span class="sc">}</span><span class="ss"> obs clipped"</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'ln_salario_adm'</span>] <span class="op">=</span> np.log(df[<span class="st">'salario_medio_adm'</span>])</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'ln_salario_sm'</span>] <span class="op">=</span> np.log(df[<span class="st">'salario_sm'</span>])</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Estatísticas descritivas dos outcomes:"</span>)</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> var, label <span class="kw">in</span> {<span class="op">**</span>OUTCOMES, <span class="op">**</span>OUTCOMES_SECONDARY}.items():</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> var <span class="kw">in</span> df.columns:</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>label<span class="sc">}</span><span class="ss">: N=</span><span class="sc">{</span>df[var]<span class="sc">.</span>notna()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">:,}</span><span class="ss">, média=</span><span class="sc">{</span>df[var]<span class="sc">.</span>mean()<span class="sc">:.3f}</span><span class="ss">, std=</span><span class="sc">{</span>df[var]<span class="sc">.</span>std()<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Painel carregado: 32,988 observações
+Ocupações: 629
+Períodos: 54 meses
+Tratamento (alta_exp): Alta exposição: 20.3%
+  Pré: 14,058 obs | Pós: 18,930 obs
+Winsorização salario_medio_adm: [0.01, 25908.75], 678 obs clipped
+Winsorização salario_sm: [0.01, 20.37], 678 obs clipped
+
+Estatísticas descritivas dos outcomes:
+  Log(Admissões): N=32,988, média=5.657, std=2.291
+  Log(Desligamentos): N=32,988, média=5.629, std=2.257
+  Saldo Líquido: N=32,988, média=279.879, std=2322.995
+  Log(Salário Admissão): N=32,988, média=7.813, std=1.426
+  Log(Salário Mulheres): N=32,988, média=7.422, std=1.880
+  Log(Salário Homens): N=32,988, média=7.809, std=1.302
+  Log(Salário Jovens): N=32,988, média=7.511, std=1.435
+  Log(Salário Não-Jovens): N=32,988, média=7.869, std=1.299
+  Log(Salário Brancos): N=32,988, média=7.795, std=1.452
+  Log(Salário Negros): N=32,988, média=7.005, std=2.536
+  Log(Salário Superior): N=32,988, média=7.253, std=2.604
+  Log(Salário Médio): N=32,988, média=7.709, std=1.213
+  Log(Admissões Mulheres): N=32,988, média=4.116, std=2.397
+  Log(Admissões Homens): N=32,988, média=5.179, std=2.261
+  Log(Admissões Jovens): N=32,988, média=4.746, std=2.317
+  Log(Admissões Negros): N=32,988, média=3.122, std=2.088
+  Log(Salário em SM): N=32,988, média=0.732, std=0.830</code></pre>
+</div>
+</div>
+</section>
+<section id="tabela-de-balanço-pré-tratamento" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="tabela-de-balanço-pré-tratamento"><span class="header-section-number">0.5</span> 3. Tabela de balanço (pré-tratamento)</h3>
+<p>Comparar características das ocupações tratadas vs.&nbsp;controle no período pré-tratamento. Critério de balanço: |diferença normalizada| &lt; 0,25 (diferença em unidades de desvio-padrão pooled). Variáveis com ⚠️ indicam desbalance. <em>Ref. Mixtape Cap. 9:</em> uma tabela de balanço compara as características pré-tratamento dos grupos; diferenças substanciais tornam a hipótese de tendências paralelas menos plausível.</p>
+<div id="f5c18500" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.3 — Tabela de balanço</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df_pre <span class="op">=</span> df[df[<span class="st">'post'</span>] <span class="op">==</span> <span class="dv">0</span>].copy()</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ocup_pre <span class="op">=</span> df_pre.groupby(<span class="st">'cbo_4d'</span>).agg(</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    alta_exp<span class="op">=</span>(<span class="st">'alta_exp'</span>, <span class="st">'first'</span>),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    admissoes_media<span class="op">=</span>(<span class="st">'admissoes'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    desligamentos_media<span class="op">=</span>(<span class="st">'desligamentos'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    saldo_media<span class="op">=</span>(<span class="st">'saldo'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    salario_media<span class="op">=</span>(<span class="st">'salario_medio_adm'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    idade_media<span class="op">=</span>(<span class="st">'idade_media_adm'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    pct_mulher<span class="op">=</span>(<span class="st">'pct_mulher_adm'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    pct_superior<span class="op">=</span>(<span class="st">'pct_superior_adm'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    n_meses<span class="op">=</span>(<span class="st">'periodo'</span>, <span class="st">'nunique'</span>),</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>).reset_index()</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>BALANCE_THRESHOLD <span class="op">=</span> <span class="fl">0.25</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>covariates <span class="op">=</span> {<span class="st">'admissoes_media'</span>: <span class="st">'Admissões (média)'</span>, <span class="st">'desligamentos_media'</span>: <span class="st">'Desligamentos (média)'</span>,</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>              <span class="st">'saldo_media'</span>: <span class="st">'Saldo (média)'</span>, <span class="st">'salario_media'</span>: <span class="st">'Salário médio (R$)'</span>,</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>              <span class="st">'idade_media'</span>: <span class="st">'Idade média'</span>, <span class="st">'pct_mulher'</span>: <span class="st">'% Mulheres'</span>, <span class="st">'pct_superior'</span>: <span class="st">'% Superior'</span>, <span class="st">'n_meses'</span>: <span class="st">'Meses'</span>}</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>results_balance <span class="op">=</span> []</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> var, label <span class="kw">in</span> covariates.items():</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    treated <span class="op">=</span> ocup_pre[ocup_pre[<span class="st">'alta_exp'</span>]<span class="op">==</span><span class="dv">1</span>][var].dropna()</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    control <span class="op">=</span> ocup_pre[ocup_pre[<span class="st">'alta_exp'</span>]<span class="op">==</span><span class="dv">0</span>][var].dropna()</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    mean_t, mean_c <span class="op">=</span> treated.mean(), control.mean()</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    pooled_std <span class="op">=</span> np.sqrt((treated.var() <span class="op">+</span> control.var()) <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    std_diff <span class="op">=</span> (mean_t <span class="op">-</span> mean_c) <span class="op">/</span> pooled_std <span class="cf">if</span> pooled_std <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> np.nan</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    results_balance.append({<span class="st">'Variável'</span>: label, <span class="st">'Controle'</span>: mean_c, <span class="st">'Tratamento'</span>: mean_t, <span class="st">'Diff. Normalizada'</span>: std_diff,</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>                            <span class="st">'Balanceado'</span>: <span class="st">'✓'</span> <span class="cf">if</span> <span class="bu">abs</span>(std_diff) <span class="op">&lt;</span> BALANCE_THRESHOLD <span class="cf">else</span> <span class="st">'⚠️'</span>})</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>df_balance <span class="op">=</span> pd.DataFrame(results_balance)</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_balance.to_string(index<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>df_balance.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">'balance_table_pre.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             Variável    Controle  Tratamento  Diff. Normalizada Balanceado
+    Admissões (média) 2655.337806 3409.836736           0.060150          ✓
+Desligamentos (média) 2321.326358 2916.919394           0.055214          ✓
+        Saldo (média)  334.011448  492.917342           0.086523          ✓
+   Salário médio (R$) 2738.765085 5388.205892           0.684567         ⚠️
+          Idade média   32.752803   31.799216          -0.172254          ✓
+           % Mulheres    0.278944    0.441422           0.696466         ⚠️
+           % Superior    0.155741    0.418939           1.150136         ⚠️
+                Meses   22.570565   21.854962          -0.218711          ✓</code></pre>
+</div>
+</div>
+</section>
+<section id="tendências-paralelas-inspeção-visual" class="level3" data-number="0.6">
+<h3 data-number="0.6" class="anchored" data-anchor-id="tendências-paralelas-inspeção-visual"><span class="header-section-number">0.6</span> 4. Tendências paralelas (inspeção visual)</h3>
+<p>Evolução temporal das métricas de emprego para tratamento vs.&nbsp;controle. A hipótese de tendências paralelas exige que ambos os grupos sigam trajetórias semelhantes <strong>antes</strong> do evento (Nov/2022). A linha vertical marca o lançamento do ChatGPT; se as curvas já divergiam antes dela, a interpretação causal do DiD fica comprometida.</p>
+<div id="283a6afa" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.4 — Tendências paralelas (visual)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>ts_grupo <span class="op">=</span> df.groupby([<span class="st">'periodo_num'</span>, <span class="st">'alta_exp'</span>]).agg(</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    admissoes_total<span class="op">=</span>(<span class="st">'admissoes'</span>, <span class="st">'sum'</span>), desligamentos_total<span class="op">=</span>(<span class="st">'desligamentos'</span>, <span class="st">'sum'</span>),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    saldo_total<span class="op">=</span>(<span class="st">'saldo'</span>, <span class="st">'sum'</span>), salario_medio<span class="op">=</span>(<span class="st">'salario_medio_adm'</span>, <span class="st">'mean'</span>),</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    n_ocupacoes<span class="op">=</span>(<span class="st">'cbo_4d'</span>, <span class="st">'nunique'</span>)).reset_index()</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> [<span class="st">'admissoes_total'</span>, <span class="st">'desligamentos_total'</span>, <span class="st">'saldo_total'</span>]:</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    ts_grupo[<span class="ss">f'</span><span class="sc">{</span>col<span class="sc">}</span><span class="ss">_per_ocup'</span>] <span class="op">=</span> ts_grupo[col] <span class="op">/</span> ts_grupo[<span class="st">'n_ocupacoes'</span>]</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>ts_grupo[<span class="st">'grupo'</span>] <span class="op">=</span> ts_grupo[<span class="st">'alta_exp'</span>].<span class="bu">map</span>({<span class="dv">0</span>: <span class="st">'Controle (Baixa Exp.)'</span>, <span class="dv">1</span>: <span class="st">'Tratamento (Alta Exp.)'</span>})</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>outcomes_plot <span class="op">=</span> {<span class="st">'admissoes_total_per_ocup'</span>: <span class="st">'Admissões médias por ocupação'</span>,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>                 <span class="st">'desligamentos_total_per_ocup'</span>: <span class="st">'Desligamentos médios por ocupação'</span>,</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                 <span class="st">'saldo_total_per_ocup'</span>: <span class="st">'Saldo médio por ocupação'</span>, <span class="st">'salario_medio'</span>: <span class="st">'Salário médio (R$)'</span>}</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">10</span>))</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>evento_periodo <span class="op">=</span> ANO_TRATAMENTO <span class="op">*</span> <span class="dv">100</span> <span class="op">+</span> MES_TRATAMENTO</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (var, title) <span class="kw">in</span> <span class="bu">enumerate</span>(outcomes_plot.items()):</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> axes.flat[i]</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> grupo <span class="kw">in</span> [<span class="st">'Controle (Baixa Exp.)'</span>, <span class="st">'Tratamento (Alta Exp.)'</span>]:</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> ts_grupo[ts_grupo[<span class="st">'grupo'</span>]<span class="op">==</span>grupo]</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>        color <span class="op">=</span> COLORS[<span class="st">'control'</span>] <span class="cf">if</span> <span class="st">'Controle'</span> <span class="kw">in</span> grupo <span class="cf">else</span> COLORS[<span class="st">'treated'</span>]</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>        ax.plot(data[<span class="st">'periodo_num'</span>], data[var], label<span class="op">=</span>grupo, color<span class="op">=</span>color, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    ax.axvline(x<span class="op">=</span>evento_periodo, color<span class="op">=</span><span class="st">'gray'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    ax.set_title(title)<span class="op">;</span> ax.set_xlabel(<span class="st">'Período'</span>)<span class="op">;</span> ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">'Tendências Paralelas: Tratamento vs. Controle'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>plt.savefig(OUTPUTS_FIGURES <span class="op">/</span> <span class="st">'parallel_trends_all_outcomes.png'</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="etapa_2b_analise_did_caged_ilo_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="a.-estimação-did-principal" class="level3" data-number="0.7">
+<h3 data-number="0.7" class="anchored" data-anchor-id="a.-estimação-did-principal"><span class="header-section-number">0.7</span> 5a. Estimação DiD principal</h3>
+<p>Seis modelos por outcome: (1) DiD básico, (2) com FE, (3) <strong>PRINCIPAL</strong> FE + controles 2d, (4) tratamento contínuo 2d, (5) robustez FE+controles 4d, (6) contínuo 4d. Erros clusterizados por ocupação (CBO 4d).</p>
+<div id="73cb71e5" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.5a — Estimação DiD principal</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df_reg <span class="op">=</span> df.copy()</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> [<span class="st">'admissoes'</span>,<span class="st">'desligamentos'</span>,<span class="st">'saldo'</span>,<span class="st">'ln_admissoes'</span>,<span class="st">'ln_desligamentos'</span>,<span class="st">'ln_salario_adm'</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">'idade_media_adm'</span>,<span class="st">'pct_mulher_adm'</span>,<span class="st">'pct_superior_adm'</span>,<span class="st">'post'</span>,<span class="st">'alta_exp'</span>,<span class="st">'exposure_score_2d'</span>,<span class="st">'exposure_score_4d'</span>]:</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> col <span class="kw">in</span> df_reg.columns: df_reg[col] <span class="op">=</span> pd.to_numeric(df_reg[col], errors<span class="op">=</span><span class="st">'coerce'</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>df_reg[<span class="st">'post_alta'</span>] <span class="op">=</span> df_reg[<span class="st">'post'</span>] <span class="op">*</span> df_reg[<span class="st">'alta_exp'</span>]</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>df_reg[<span class="st">'post_exposure_2d'</span>] <span class="op">=</span> df_reg[<span class="st">'post'</span>] <span class="op">*</span> df_reg[<span class="st">'exposure_score_2d'</span>]</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>df_reg[<span class="st">'post_alta_4d'</span>] <span class="op">=</span> df_reg[<span class="st">'post'</span>] <span class="op">*</span> df_reg[<span class="st">'alta_exp_4d'</span>]</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>df_reg[<span class="st">'post_exposure_4d'</span>] <span class="op">=</span> df_reg[<span class="st">'post'</span>] <span class="op">*</span> df_reg[<span class="st">'exposure_score_4d'</span>]</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> estimate_did(df_in, outcome, formula, label):</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> pf.feols(formula, data<span class="op">=</span>df_in, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        names <span class="op">=</span> model.coef().index.tolist()</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        did_name <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> names <span class="cf">if</span> <span class="st">'post'</span> <span class="kw">in</span> c.lower() <span class="kw">and</span> (<span class="st">'alta'</span> <span class="kw">in</span> c.lower() <span class="kw">or</span> <span class="st">'exposure'</span> <span class="kw">in</span> c.lower())]</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> did_name: did_name <span class="op">=</span> [names[<span class="dv">0</span>]]</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        name <span class="op">=</span> did_name[<span class="dv">0</span>]</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        coef <span class="op">=</span> <span class="bu">float</span>(model.coef().loc[name])<span class="op">;</span> se <span class="op">=</span> <span class="bu">float</span>(model.se().loc[name])<span class="op">;</span> pval <span class="op">=</span> <span class="bu">float</span>(model.pvalue().loc[name])</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        stars <span class="op">=</span> <span class="st">'***'</span> <span class="cf">if</span> pval <span class="op">&lt;</span> <span class="fl">0.01</span> <span class="cf">else</span> <span class="st">'**'</span> <span class="cf">if</span> pval <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="cf">else</span> <span class="st">'*'</span> <span class="cf">if</span> pval <span class="op">&lt;</span> <span class="fl">0.10</span> <span class="cf">else</span> <span class="st">''</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> {<span class="st">'model'</span>: label, <span class="st">'outcome'</span>: outcome, <span class="st">'coef'</span>: coef, <span class="st">'se'</span>: se, <span class="st">'p_value'</span>: pval, <span class="st">'stars'</span>: stars, <span class="st">'n_obs'</span>: <span class="bu">len</span>(df_in), <span class="st">'n_clusters'</span>: <span class="va">None</span>}</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e: <span class="bu">print</span>(<span class="ss">f"  ERRO </span><span class="sc">{</span>label<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)<span class="op">;</span> <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>all_results <span class="op">=</span> []</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> outcome, label <span class="kw">in</span> OUTCOMES.items():</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> outcome <span class="kw">not</span> <span class="kw">in</span> df_reg.columns: <span class="cf">continue</span></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    df_out <span class="op">=</span> df_reg[df_reg[outcome].notna()].copy()</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> r <span class="kw">in</span> [estimate_did(df_out, outcome, <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_alta + post + alta_exp"</span>, <span class="st">"Model 1: Basic"</span>),</span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>               estimate_did(df_out, outcome, <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_alta | cbo_4d + periodo"</span>, <span class="st">"Model 2: FE"</span>),</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>               estimate_did(df_out, outcome, <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_alta + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo"</span>, <span class="st">"Model 3: FE + Controls (MAIN)"</span>),</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>               estimate_did(df_out, outcome, <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_exposure_2d + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo"</span>, <span class="st">"Model 4: Continuous (2d)"</span>)]:</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> r: all_results.append(r)</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>    df_4d <span class="op">=</span> df_out[df_out[<span class="st">'exposure_score_4d'</span>].notna()].copy()</span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> r <span class="kw">in</span> [estimate_did(df_4d, outcome, <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_alta_4d + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo"</span>, <span class="st">"Model 5: FE + Controls (4d)"</span>),</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>              estimate_did(df_4d, outcome, <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_exposure_4d + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo"</span>, <span class="st">"Model 6: Continuous (4d)"</span>)]:</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> r: all_results.append(r)</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>df_results <span class="op">=</span> pd.DataFrame(all_results)</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>df_results.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">'did_main_results.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Model 3 (PRINCIPAL):"</span>)</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_results[df_results[<span class="st">'model'</span>]<span class="op">==</span><span class="st">'Model 3: FE + Controls (MAIN)'</span>][[<span class="st">'outcome'</span>,<span class="st">'coef'</span>,<span class="st">'se'</span>,<span class="st">'p_value'</span>,<span class="st">'stars'</span>]].to_string(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Model 3 (PRINCIPAL):
+            outcome       coef        se  p_value stars
+       ln_admissoes  -0.027130  0.026402 0.304556      
+   ln_desligamentos   0.019000  0.026814 0.478853      
+              saldo -77.674731 69.625480 0.265017      
+     ln_salario_adm  -0.065617  0.027789 0.018518    **
+  ln_salario_mulher  -0.044537  0.036202 0.219064      
+   ln_salario_homem   0.003889  0.026967 0.885390      
+   ln_salario_jovem  -0.133735  0.052203 0.010644    **
+ln_salario_naojovem   0.002496  0.027484 0.927677      
+  ln_salario_branco  -0.028496  0.035817 0.426566      
+   ln_salario_negro   0.110582  0.067872 0.103757      
+ln_salario_superior  -0.077509  0.040513 0.056178     *
+   ln_salario_medio  -0.084545  0.031741 0.007930   ***
+ln_admissoes_mulher  -0.046679  0.026165 0.074905     *
+ ln_admissoes_homem  -0.034969  0.026214 0.182701      
+ ln_admissoes_jovem  -0.055804  0.028659 0.051962     *
+ ln_admissoes_negro  -0.003190  0.027197 0.906666      </code></pre>
+</div>
+</div>
+</section>
+<section id="b.-checkpoint-resultados-did" class="level3" data-number="0.8">
+<h3 data-number="0.8" class="anchored" data-anchor-id="b.-checkpoint-resultados-did"><span class="header-section-number">0.8</span> 5b. Checkpoint — Resultados DiD</h3>
+<p>Resumo dos resultados principais (Model 3) e robustez (Model 5), consistência 2d vs 4d.</p>
+<div id="a5562e3c" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.5b — Checkpoint</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>main_results <span class="op">=</span> df_results[df_results[<span class="st">'model'</span>] <span class="op">==</span> <span class="st">'Model 3: FE + Controls (MAIN)'</span>]</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>rob_4d <span class="op">=</span> df_results[df_results[<span class="st">'model'</span>] <span class="op">==</span> <span class="st">'Model 5: FE + Controls (4d)'</span>]</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Model 3 (2d):"</span>)<span class="op">;</span> [<span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>OUTCOMES<span class="sc">.</span>get(r[<span class="st">'outcome'</span>],r[<span class="st">'outcome'</span>])<span class="sc">}</span><span class="ss">: β=</span><span class="sc">{</span>r[<span class="st">'coef'</span>]<span class="sc">:.4f}{</span>r<span class="sc">.</span>get(<span class="st">'stars'</span>,<span class="st">''</span>)<span class="sc">}</span><span class="ss"> (p=</span><span class="sc">{</span>r[<span class="st">'p_value'</span>]<span class="sc">:.3f}</span><span class="ss">)"</span>) <span class="cf">for</span> _,r <span class="kw">in</span> main_results.iterrows()]</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Model 5 (4d):"</span>)<span class="op">;</span> [<span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>OUTCOMES<span class="sc">.</span>get(r[<span class="st">'outcome'</span>],r[<span class="st">'outcome'</span>])<span class="sc">}</span><span class="ss">: β=</span><span class="sc">{</span>r[<span class="st">'coef'</span>]<span class="sc">:.4f}{</span>r<span class="sc">.</span>get(<span class="st">'stars'</span>,<span class="st">''</span>)<span class="sc">}</span><span class="ss"> (p=</span><span class="sc">{</span>r[<span class="st">'p_value'</span>]<span class="sc">:.3f}</span><span class="ss">)"</span>) <span class="cf">for</span> _,r <span class="kw">in</span> rob_4d.iterrows()]</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Consistência 2d vs 4d:"</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> outcome <span class="kw">in</span> OUTCOMES:</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    r2 <span class="op">=</span> main_results[main_results[<span class="st">'outcome'</span>]<span class="op">==</span>outcome]<span class="op">;</span> r4 <span class="op">=</span> rob_4d[rob_4d[<span class="st">'outcome'</span>]<span class="op">==</span>outcome]</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(r2)<span class="op">&gt;</span><span class="dv">0</span> <span class="kw">and</span> <span class="bu">len</span>(r4)<span class="op">&gt;</span><span class="dv">0</span>: <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span><span class="st">'✓ mesma direção'</span> <span class="cf">if</span> (r2.iloc[<span class="dv">0</span>][<span class="st">'coef'</span>]<span class="op">*</span>r4.iloc[<span class="dv">0</span>][<span class="st">'coef'</span>])<span class="op">&gt;</span><span class="dv">0</span> <span class="cf">else</span> <span class="st">'⚠ opostas'</span><span class="sc">}</span><span class="ss"> (2d: </span><span class="sc">{</span>r2<span class="sc">.</span>iloc[<span class="dv">0</span>][<span class="st">'coef'</span>]<span class="sc">:.4f}</span><span class="ss">, 4d: </span><span class="sc">{</span>r4<span class="sc">.</span>iloc[<span class="dv">0</span>][<span class="st">'coef'</span>]<span class="sc">:.4f}</span><span class="ss">)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Model 3 (2d):
+  Log(Admissões): β=-0.0271 (p=0.305)
+  Log(Desligamentos): β=0.0190 (p=0.479)
+  Saldo Líquido: β=-77.6747 (p=0.265)
+  Log(Salário Admissão): β=-0.0656** (p=0.019)
+  Log(Salário Mulheres): β=-0.0445 (p=0.219)
+  Log(Salário Homens): β=0.0039 (p=0.885)
+  Log(Salário Jovens): β=-0.1337** (p=0.011)
+  Log(Salário Não-Jovens): β=0.0025 (p=0.928)
+  Log(Salário Brancos): β=-0.0285 (p=0.427)
+  Log(Salário Negros): β=0.1106 (p=0.104)
+  Log(Salário Superior): β=-0.0775* (p=0.056)
+  Log(Salário Médio): β=-0.0845*** (p=0.008)
+  Log(Admissões Mulheres): β=-0.0467* (p=0.075)
+  Log(Admissões Homens): β=-0.0350 (p=0.183)
+  Log(Admissões Jovens): β=-0.0558* (p=0.052)
+  Log(Admissões Negros): β=-0.0032 (p=0.907)
+Model 5 (4d):
+  Log(Admissões): β=-0.0247 (p=0.353)
+  Log(Desligamentos): β=0.0196 (p=0.456)
+  Saldo Líquido: β=-142.4436* (p=0.053)
+  Log(Salário Admissão): β=-0.0679** (p=0.013)
+  Log(Salário Mulheres): β=-0.0484 (p=0.227)
+  Log(Salário Homens): β=-0.0157 (p=0.554)
+  Log(Salário Jovens): β=-0.1803*** (p=0.000)
+  Log(Salário Não-Jovens): β=-0.0179 (p=0.485)
+  Log(Salário Brancos): β=-0.0342 (p=0.317)
+  Log(Salário Negros): β=0.0361 (p=0.606)
+  Log(Salário Superior): β=-0.0683* (p=0.090)
+  Log(Salário Médio): β=-0.1147*** (p=0.000)
+  Log(Admissões Mulheres): β=-0.0408 (p=0.129)
+  Log(Admissões Homens): β=-0.0310 (p=0.240)
+  Log(Admissões Jovens): β=-0.0520* (p=0.069)
+  Log(Admissões Negros): β=-0.0132 (p=0.640)
+Consistência 2d vs 4d:
+  ln_admissoes: ✓ mesma direção (2d: -0.0271, 4d: -0.0247)
+  ln_desligamentos: ✓ mesma direção (2d: 0.0190, 4d: 0.0196)
+  saldo: ✓ mesma direção (2d: -77.6747, 4d: -142.4436)
+  ln_salario_adm: ✓ mesma direção (2d: -0.0656, 4d: -0.0679)
+  ln_salario_mulher: ✓ mesma direção (2d: -0.0445, 4d: -0.0484)
+  ln_salario_homem: ⚠ opostas (2d: 0.0039, 4d: -0.0157)
+  ln_salario_jovem: ✓ mesma direção (2d: -0.1337, 4d: -0.1803)
+  ln_salario_naojovem: ⚠ opostas (2d: 0.0025, 4d: -0.0179)
+  ln_salario_branco: ✓ mesma direção (2d: -0.0285, 4d: -0.0342)
+  ln_salario_negro: ✓ mesma direção (2d: 0.1106, 4d: 0.0361)
+  ln_salario_superior: ✓ mesma direção (2d: -0.0775, 4d: -0.0683)
+  ln_salario_medio: ✓ mesma direção (2d: -0.0845, 4d: -0.1147)
+  ln_admissoes_mulher: ✓ mesma direção (2d: -0.0467, 4d: -0.0408)
+  ln_admissoes_homem: ✓ mesma direção (2d: -0.0350, 4d: -0.0310)
+  ln_admissoes_jovem: ✓ mesma direção (2d: -0.0558, 4d: -0.0520)
+  ln_admissoes_negro: ✓ mesma direção (2d: -0.0032, 4d: -0.0132)</code></pre>
+</div>
+</div>
+</section>
+<section id="event-study" class="level3" data-number="0.9">
+<h3 data-number="0.9" class="anchored" data-anchor-id="event-study"><span class="header-section-number">0.9</span> 6. Event study</h3>
+<p>Estimação com dummies de interação período × tratamento. O <strong>período de referência é t = −1</strong> (mês antes do ChatGPT, Nov/2022), de modo que todos os demais coeficientes são interpretados em relação a esse mês. <strong>Binning dos extremos</strong> (t ≤ −12 e t ≥ 24) reduz ruído nas pontas da janela. Coeficientes pré-tratamento não significativos e próximos de zero sustentam a hipótese de tendências paralelas.</p>
+<div id="e0dfa8ac" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.6 — Event study (dummies + estimação)</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>BIN_MIN, BIN_MAX, ref_t <span class="op">=</span> <span class="op">-</span><span class="dv">12</span>, <span class="dv">24</span>, <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>df_es <span class="op">=</span> df_reg.copy()</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>df_es[<span class="st">'t_binned'</span>] <span class="op">=</span> df_es[<span class="st">'tempo_relativo_meses'</span>].clip(lower<span class="op">=</span>BIN_MIN, upper<span class="op">=</span>BIN_MAX)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _dname(t): <span class="cf">return</span> <span class="ss">f"did_tm</span><span class="sc">{</span><span class="op">-</span>t<span class="sc">}</span><span class="ss">"</span> <span class="cf">if</span> t <span class="op">&lt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="ss">f"did_t</span><span class="sc">{</span>t<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>did_vars <span class="op">=</span> []<span class="op">;</span> t_to_name <span class="op">=</span> {}</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t <span class="kw">in</span> <span class="bu">sorted</span>(df_es[<span class="st">'t_binned'</span>].unique()):</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> t <span class="op">==</span> ref_t: <span class="cf">continue</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    dname <span class="op">=</span> _dname(t)<span class="op">;</span> t_to_name[t] <span class="op">=</span> dname</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    df_es[dname] <span class="op">=</span> ((df_es[<span class="st">'t_binned'</span>]<span class="op">==</span>t) <span class="op">&amp;</span> (df_es[<span class="st">'alta_exp'</span>]<span class="op">==</span><span class="dv">1</span>)).astype(<span class="bu">int</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    did_vars.append(dname)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>event_study_results <span class="op">=</span> {}</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> outcome, label <span class="kw">in</span> OUTCOMES.items():</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> outcome <span class="kw">not</span> <span class="kw">in</span> df_es.columns: <span class="cf">continue</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    df_out <span class="op">=</span> df_es[df_es[outcome].notna()].copy()</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    formula <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ </span><span class="sc">{</span><span class="st">' + '</span><span class="sc">.</span>join(did_vars)<span class="sc">}</span><span class="ss"> + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo"</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> pf.feols(formula, data<span class="op">=</span>df_out, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>        idx <span class="op">=</span> model.coef().index.tolist()</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>        coefs <span class="op">=</span> []</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">sorted</span>(df_es[<span class="st">'t_binned'</span>].unique()):</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> t <span class="op">==</span> ref_t: coefs.append({<span class="st">'t'</span>:t,<span class="st">'coef'</span>:<span class="dv">0</span>,<span class="st">'se'</span>:<span class="dv">0</span>,<span class="st">'p_value'</span>:np.nan,<span class="st">'is_reference'</span>:<span class="va">True</span>,<span class="st">'is_pre'</span>:t<span class="op">&lt;</span><span class="dv">0</span>})</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>                dname <span class="op">=</span> t_to_name.get(t, _dname(t))</span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> dname <span class="kw">in</span> idx: coefs.append({<span class="st">'t'</span>:t,<span class="st">'coef'</span>:<span class="bu">float</span>(model.coef().loc[dname]),<span class="st">'se'</span>:<span class="bu">float</span>(model.se().loc[dname]),<span class="st">'p_value'</span>:<span class="bu">float</span>(model.pvalue().loc[dname]),<span class="st">'is_reference'</span>:<span class="va">False</span>,<span class="st">'is_pre'</span>:t<span class="op">&lt;</span><span class="dv">0</span>})</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>        df_c <span class="op">=</span> pd.DataFrame(coefs)<span class="op">;</span> df_c[<span class="st">'ci_low'</span>] <span class="op">=</span> df_c[<span class="st">'coef'</span>] <span class="op">-</span> <span class="fl">1.96</span><span class="op">*</span>df_c[<span class="st">'se'</span>]<span class="op">;</span> df_c[<span class="st">'ci_high'</span>] <span class="op">=</span> df_c[<span class="st">'coef'</span>] <span class="op">+</span> <span class="fl">1.96</span><span class="op">*</span>df_c[<span class="st">'se'</span>]</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>        event_study_results[outcome] <span class="op">=</span> df_c</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>        df_c.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="ss">f'event_study_</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss">.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e: <span class="bu">print</span>(<span class="ss">f"  ERRO </span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Event study salvo para </span><span class="sc">{</span><span class="bu">len</span>(event_study_results)<span class="sc">}</span><span class="ss"> outcomes."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Event study salvo para 16 outcomes.</code></pre>
+</div>
+</div>
+<div id="f1b4e1f5" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.6 (cont.) — Gráficos do event study</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>outcomes_with_results <span class="op">=</span> [(o, OUTCOMES[o]) <span class="cf">for</span> o <span class="kw">in</span> OUTCOMES <span class="cf">if</span> o <span class="kw">in</span> event_study_results]</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>n_plot <span class="op">=</span> <span class="bu">len</span>(outcomes_with_results)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>n_cols <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>n_rows <span class="op">=</span> <span class="bu">max</span>(<span class="dv">1</span>, (n_plot <span class="op">+</span> n_cols <span class="op">-</span> <span class="dv">1</span>) <span class="op">//</span> n_cols)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(n_rows, n_cols, figsize<span class="op">=</span>(<span class="dv">4</span> <span class="op">*</span> n_cols, <span class="dv">4</span> <span class="op">*</span> n_rows))</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>axes <span class="op">=</span> np.atleast_1d(axes).flat</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(n_plot, <span class="bu">len</span>(axes)):</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    axes[j].set_visible(<span class="va">False</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (outcome, label) <span class="kw">in</span> <span class="bu">enumerate</span>(outcomes_with_results):</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> axes[i]</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>    df_c <span class="op">=</span> event_study_results[outcome]</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>    ax.fill_between(df_c[<span class="st">'t'</span>], df_c[<span class="st">'ci_low'</span>], df_c[<span class="st">'ci_high'</span>], alpha<span class="op">=</span><span class="fl">0.15</span>, color<span class="op">=</span><span class="st">'gray'</span>)</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>    pre <span class="op">=</span> df_c[df_c[<span class="st">'is_pre'</span>] <span class="op">&amp;</span> <span class="op">~</span>df_c[<span class="st">'is_reference'</span>]]<span class="op">;</span> post <span class="op">=</span> df_c[<span class="op">~</span>df_c[<span class="st">'is_pre'</span>] <span class="op">&amp;</span> <span class="op">~</span>df_c[<span class="st">'is_reference'</span>]]<span class="op">;</span> ref <span class="op">=</span> df_c[df_c[<span class="st">'is_reference'</span>]]</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>    ax.scatter(pre[<span class="st">'t'</span>], pre[<span class="st">'coef'</span>], color<span class="op">=</span>COLORS[<span class="st">'pre'</span>], s<span class="op">=</span><span class="dv">30</span>, label<span class="op">=</span><span class="st">'Pré'</span>)<span class="op">;</span> ax.scatter(post[<span class="st">'t'</span>], post[<span class="st">'coef'</span>], color<span class="op">=</span>COLORS[<span class="st">'post'</span>], s<span class="op">=</span><span class="dv">30</span>, label<span class="op">=</span><span class="st">'Pós'</span>)</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>    ax.scatter(ref[<span class="st">'t'</span>], ref[<span class="st">'coef'</span>], color<span class="op">=</span><span class="st">'black'</span>, s<span class="op">=</span><span class="dv">60</span>, marker<span class="op">=</span><span class="st">'D'</span>, label<span class="op">=</span><span class="st">'Ref.'</span>)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>    ax.plot(df_c[<span class="st">'t'</span>], df_c[<span class="st">'coef'</span>], color<span class="op">=</span><span class="st">'gray'</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>    ax.axhline(y<span class="op">=</span><span class="dv">0</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)<span class="op">;</span> ax.axvline(x<span class="op">=</span><span class="dv">0</span>, color<span class="op">=</span><span class="st">'gray'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>    ax.set_title(label)<span class="op">;</span> ax.set_xlabel(<span class="st">'Meses relativos ao ChatGPT'</span>)<span class="op">;</span> ax.legend(fontsize<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">'Event Study: Efeito da IA Generativa sobre Emprego Formal'</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.savefig(OUTPUTS_FIGURES <span class="op">/</span> <span class="st">'event_study_all_outcomes.png'</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="etapa_2b_analise_did_caged_ilo_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="b.-teste-formal-de-tendências-paralelas" class="level3" data-number="0.10">
+<h3 data-number="0.10" class="anchored" data-anchor-id="b.-teste-formal-de-tendências-paralelas"><span class="header-section-number">0.10</span> 6b. Teste formal de tendências paralelas</h3>
+<p>H₀: todos os coeficientes pré-tratamento são conjuntamente zero. Se rejeitarmos (ou se vários pré forem individualmente significativos), há preocupação com a hipótese de tendências paralelas.</p>
+<div id="0fb8153c" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.6b — Teste formal tendências paralelas</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>results_pt <span class="op">=</span> []</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> outcome, label <span class="kw">in</span> OUTCOMES.items():</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> outcome <span class="kw">not</span> <span class="kw">in</span> event_study_results: <span class="cf">continue</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    df_c <span class="op">=</span> event_study_results[outcome]</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    pre_coefs <span class="op">=</span> df_c[df_c[<span class="st">'is_pre'</span>] <span class="op">&amp;</span> <span class="op">~</span>df_c[<span class="st">'is_reference'</span>]]</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(pre_coefs)<span class="op">==</span><span class="dv">0</span>: <span class="cf">continue</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    n_sig <span class="op">=</span> (pre_coefs[<span class="st">'p_value'</span>] <span class="op">&lt;</span> <span class="fl">0.05</span>).<span class="bu">sum</span>()</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    se_nz <span class="op">=</span> pre_coefs[<span class="st">'se'</span>].replace(<span class="dv">0</span>, np.nan)<span class="op">;</span> max_t <span class="op">=</span> (pre_coefs[<span class="st">'coef'</span>]<span class="op">/</span>se_nz).<span class="bu">abs</span>().<span class="bu">max</span>() <span class="cf">if</span> se_nz.notna().<span class="bu">any</span>() <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    t_stats <span class="op">=</span> (pre_coefs[<span class="st">'coef'</span>]<span class="op">/</span>pre_coefs[<span class="st">'se'</span>].replace(<span class="dv">0</span>,np.nan)).fillna(<span class="dv">0</span>).values<span class="op">;</span> n_pre <span class="op">=</span> <span class="bu">len</span>(t_stats)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    p_joint <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> stats.chi2.cdf(np.mean(t_stats<span class="op">**</span><span class="dv">2</span>)<span class="op">*</span>n_pre, df<span class="op">=</span>n_pre)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    status <span class="op">=</span> <span class="st">'PARALELAS'</span> <span class="cf">if</span> n_sig<span class="op">==</span><span class="dv">0</span> <span class="kw">and</span> p_joint<span class="op">&gt;</span><span class="fl">0.10</span> <span class="cf">else</span> <span class="st">'PREOCUPAÇÃO'</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    results_pt.append({<span class="st">'Outcome'</span>: label, <span class="st">'N coefs pré'</span>: n_pre, <span class="st">'Sig. (p&lt;0.05)'</span>: <span class="bu">int</span>(n_sig), <span class="st">'p-valor conjunto'</span>: <span class="ss">f'</span><span class="sc">{</span>p_joint<span class="sc">:.3f}</span><span class="ss">'</span>, <span class="st">'Status'</span>: status})</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>label<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>n_sig<span class="sc">}</span><span class="ss"> pré sig., p_joint=</span><span class="sc">{</span>p_joint<span class="sc">:.3f}</span><span class="ss"> → </span><span class="sc">{</span>status<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(results_pt).to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">'parallel_trends_test.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Log(Admissões): 0 pré sig., p_joint=0.639 → PARALELAS
+Log(Desligamentos): 5 pré sig., p_joint=0.000 → PREOCUPAÇÃO
+Saldo Líquido: 0 pré sig., p_joint=0.396 → PARALELAS
+Log(Salário Admissão): 0 pré sig., p_joint=0.985 → PARALELAS
+Log(Salário Mulheres): 0 pré sig., p_joint=0.073 → PREOCUPAÇÃO
+Log(Salário Homens): 0 pré sig., p_joint=0.958 → PARALELAS
+Log(Salário Jovens): 0 pré sig., p_joint=0.265 → PARALELAS
+Log(Salário Não-Jovens): 0 pré sig., p_joint=0.696 → PARALELAS
+Log(Salário Brancos): 0 pré sig., p_joint=0.516 → PARALELAS
+Log(Salário Negros): 0 pré sig., p_joint=0.983 → PARALELAS
+Log(Salário Superior): 0 pré sig., p_joint=0.657 → PARALELAS
+Log(Salário Médio): 0 pré sig., p_joint=0.825 → PARALELAS
+Log(Admissões Mulheres): 0 pré sig., p_joint=0.853 → PARALELAS
+Log(Admissões Homens): 0 pré sig., p_joint=0.884 → PARALELAS
+Log(Admissões Jovens): 0 pré sig., p_joint=0.696 → PARALELAS
+Log(Admissões Negros): 0 pré sig., p_joint=0.894 → PARALELAS</code></pre>
+</div>
+</div>
+</section>
+<section id="análise-de-heterogeneidade-triple-did" class="level3" data-number="0.11">
+<h3 data-number="0.11" class="anchored" data-anchor-id="análise-de-heterogeneidade-triple-did"><span class="header-section-number">0.11</span> 7. Análise de heterogeneidade (Triple-DiD)</h3>
+<p>Testar se o efeito da IA é heterogêneo por composição das admissões: idade (jovem ≤30), gênero (% mulher &gt; mediana), educação (% superior &gt; mediana). O coeficiente da tripla interação (Post × AltaExp × Grupo) captura o efeito diferencial para o subgrupo.</p>
+<div id="a69632d8" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.7 — Heterogeneidade (Triple-DiD)</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>df_het <span class="op">=</span> df_reg.copy()</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>pre_mask <span class="op">=</span> df_het[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">0</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>med_mulher <span class="op">=</span> df_het.loc[pre_mask, <span class="st">'pct_mulher_adm'</span>].median()<span class="op">;</span> med_educ <span class="op">=</span> df_het.loc[pre_mask, <span class="st">'pct_superior_adm'</span>].median()</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>df_het[<span class="st">'jovem_adm'</span>] <span class="op">=</span> (df_het[<span class="st">'idade_media_adm'</span>] <span class="op">&lt;=</span> <span class="dv">30</span>).astype(<span class="bu">int</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>df_het[<span class="st">'feminino_adm'</span>] <span class="op">=</span> (df_het[<span class="st">'pct_mulher_adm'</span>] <span class="op">&gt;</span> med_mulher).astype(<span class="bu">int</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>df_het[<span class="st">'alta_educ_adm'</span>] <span class="op">=</span> (df_het[<span class="st">'pct_superior_adm'</span>] <span class="op">&gt;</span> med_educ).astype(<span class="bu">int</span>)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>HET_GROUPS <span class="op">=</span> {<span class="st">'jovem_adm'</span>: <span class="st">'Idade (jovem ≤30)'</span>, <span class="st">'feminino_adm'</span>: <span class="st">'Gênero (feminino)'</span>, <span class="st">'alta_educ_adm'</span>: <span class="st">'Educação (superior)'</span>}</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>results_het <span class="op">=</span> []</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> group_var, group_label <span class="kw">in</span> HET_GROUPS.items():</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    df_het[<span class="st">'post_alta'</span>] <span class="op">=</span> df_het[<span class="st">'post'</span>]<span class="op">*</span>df_het[<span class="st">'alta_exp'</span>]<span class="op">;</span> df_het[<span class="st">'post_group'</span>] <span class="op">=</span> df_het[<span class="st">'post'</span>]<span class="op">*</span>df_het[group_var]</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>    df_het[<span class="st">'alta_group'</span>] <span class="op">=</span> df_het[<span class="st">'alta_exp'</span>]<span class="op">*</span>df_het[group_var]<span class="op">;</span> df_het[<span class="st">'post_alta_group'</span>] <span class="op">=</span> df_het[<span class="st">'post'</span>]<span class="op">*</span>df_het[<span class="st">'alta_exp'</span>]<span class="op">*</span>df_het[group_var]</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> outcome, out_label <span class="kw">in</span> OUTCOMES.items():</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> outcome <span class="kw">not</span> <span class="kw">in</span> df_het.columns: <span class="cf">continue</span></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> pf.feols(<span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ post_alta_group + post_alta + post_group + alta_group + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo"</span>, data<span class="op">=</span>df_het[df_het[outcome].notna()], vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="st">'post_alta_group'</span> <span class="kw">not</span> <span class="kw">in</span> model.coef().index: <span class="cf">continue</span></span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>            main_c <span class="op">=</span> <span class="bu">float</span>(model.coef().loc[<span class="st">'post_alta'</span>])<span class="op">;</span> inter_c <span class="op">=</span> <span class="bu">float</span>(model.coef().loc[<span class="st">'post_alta_group'</span>])<span class="op">;</span> inter_p <span class="op">=</span> <span class="bu">float</span>(model.pvalue().loc[<span class="st">'post_alta_group'</span>])</span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>            results_het.append({<span class="st">'outcome'</span>: outcome, <span class="st">'outcome_label'</span>: out_label, <span class="st">'group'</span>: group_label, <span class="st">'main_effect'</span>: main_c, <span class="st">'interaction'</span>: inter_c, <span class="st">'interaction_pval'</span>: inter_p})</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> inter_p <span class="op">&lt;</span> <span class="fl">0.10</span>: <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>out_label<span class="sc">}</span><span class="ss"> × </span><span class="sc">{</span>group_label<span class="sc">}</span><span class="ss">: β_inter = </span><span class="sc">{</span>inter_c<span class="sc">:.4f}</span><span class="ss"> (p=</span><span class="sc">{</span>inter_p<span class="sc">:.3f}</span><span class="ss">)"</span>)</span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e: <span class="cf">pass</span></span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>df_het_results <span class="op">=</span> pd.DataFrame(results_het)</span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>df_het_results.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">'heterogeneity_triple_did.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Heterogeneidade salva."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Log(Salário Admissão) × Idade (jovem ≤30): β_inter = -0.3235 (p=0.001)
+  Log(Salário Homens) × Idade (jovem ≤30): β_inter = -0.2393 (p=0.012)
+  Log(Salário Brancos) × Idade (jovem ≤30): β_inter = -0.1428 (p=0.097)
+  Log(Salário Negros) × Idade (jovem ≤30): β_inter = -0.3994 (p=0.002)
+  Log(Salário Superior) × Idade (jovem ≤30): β_inter = 0.1452 (p=0.090)
+  Log(Salário Médio) × Idade (jovem ≤30): β_inter = -0.2012 (p=0.022)
+  Log(Admissões Mulheres) × Idade (jovem ≤30): β_inter = 0.1158 (p=0.051)
+  Log(Salário Homens) × Gênero (feminino): β_inter = -0.1008 (p=0.085)
+  Log(Salário Jovens) × Gênero (feminino): β_inter = 0.2747 (p=0.035)
+  Log(Admissões) × Educação (superior): β_inter = -0.1462 (p=0.050)
+  Log(Salário Superior) × Educação (superior): β_inter = -0.6412 (p=0.000)
+  Log(Admissões Homens) × Educação (superior): β_inter = -0.1295 (p=0.087)
+  Log(Admissões Jovens) × Educação (superior): β_inter = -0.1484 (p=0.062)
+  Log(Admissões Negros) × Educação (superior): β_inter = -0.1261 (p=0.074)
+Heterogeneidade salva.</code></pre>
+</div>
+</div>
+</section>
+<section id="testes-de-robustez" class="level3" data-number="0.12">
+<h3 data-number="0.12" class="anchored" data-anchor-id="testes-de-robustez"><span class="header-section-number">0.12</span> 8. Testes de robustez</h3>
+<p>Cinco testes: (1) <strong>Cutoffs alternativos</strong> (top 10%, 25%, mediana) — espera-se mesma direção dos efeitos. (2) <strong>Placebo temporal</strong> (evento fictício Dez/2021, só com dados pré-reais): o coeficiente deve ser não significativo; significância indicaria efeitos espúrios. (3) <strong>Exclusão de TI</strong> (CBO 21xx) — resultado principal deve permanecer estável. (4) <strong>Tendências diferenciais no pré</strong> (trend × tratamento): coeficiente não significativo apoia tendências paralelas. (5) <strong>Crosswalk 2d vs 4d</strong> — mesma direção e magnitude similar reforçam robustez.</p>
+<div id="843edb72" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.8 — Testes de robustez (resumo; código completo nos scripts)</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Os 5 testes são executados em notebook/scripts/etapa_2b/10_robustness.py</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Resultados salvos em outputs/tables/robustness_results.csv</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>rob_path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">'robustness_results.csv'</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> rob_path.exists():</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    df_robust <span class="op">=</span> pd.read_csv(rob_path)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> tt <span class="kw">in</span> df_robust[<span class="st">'test_type'</span>].unique():</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>        sub <span class="op">=</span> df_robust[df_robust[<span class="st">'test_type'</span>]<span class="op">==</span>tt]</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>        n_sig <span class="op">=</span> (sub[<span class="st">'p_value'</span>] <span class="op">&lt;</span> <span class="fl">0.10</span>).<span class="bu">sum</span>()</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>tt<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>n_sig<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span><span class="bu">len</span>(sub)<span class="sc">}</span><span class="ss"> significativos (p&lt;0.10)"</span>)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Execute o script 10_robustness.py para gerar robustness_results.csv"</span>)</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Robustez: cluster em cbo_2d (gerado por 04_did_main.py)</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>rob2_path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">'did_robustez_cbo2d.csv'</span></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> rob2_path.exists():</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>    df_cbo2d <span class="op">=</span> pd.read_csv(rob2_path)</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Robustez (cluster cbo_2d):"</span>)</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_cbo2d[[<span class="st">'outcome'</span>, <span class="st">'coef'</span>, <span class="st">'se'</span>, <span class="st">'p_value'</span>, <span class="st">'stars'</span>]].to_string(index<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Execute 04_did_main.py para gerar did_robustez_cbo2d.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Alternative Cutoff: 5/16 significativos (p&lt;0.10)
+  Placebo: 0/4 significativos (p&lt;0.10)
+  Excl. TI: 1/4 significativos (p&lt;0.10)
+  Differential Trends: 0/4 significativos (p&lt;0.10)
+  Crosswalk 4d: 2/4 significativos (p&lt;0.10)
+
+Robustez (cluster cbo_2d):
+       outcome      coef       se  p_value stars
+ln_salario_adm -0.063085 0.036362 0.089601     *</code></pre>
+</div>
+</div>
+</section>
+<section id="tabelas-latex" class="level3" data-number="0.13">
+<h3 data-number="0.13" class="anchored" data-anchor-id="tabelas-latex"><span class="header-section-number">0.13</span> 9. Tabelas LaTeX</h3>
+<p>Tabela principal (Model 3) para inclusão na dissertação.</p>
+<div id="4f796607" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.9 - Tabela LaTeX</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>main <span class="op">=</span> df_results[df_results[<span class="st">'model'</span>] <span class="op">==</span> <span class="st">'Model 3: FE + Controls (MAIN)'</span>]</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>outcomes_order <span class="op">=</span> [<span class="st">'ln_admissoes'</span>, <span class="st">'ln_desligamentos'</span>, <span class="st">'saldo'</span>, <span class="st">'ln_salario_adm'</span>]</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>col_names <span class="op">=</span> [<span class="st">'(1) Log(Adm.)'</span>, <span class="st">'(2) Log(Desl.)'</span>, <span class="st">'(3) Saldo'</span>, <span class="st">'(4) Log(Salário)'</span>]</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Representação visual no notebook</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>coefs <span class="op">=</span> []<span class="op">;</span> ses <span class="op">=</span> []</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> o <span class="kw">in</span> outcomes_order:</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> main[main[<span class="st">'outcome'</span>]<span class="op">==</span>o]</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(row) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>        r <span class="op">=</span> row.iloc[<span class="dv">0</span>]</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>        coefs.append(<span class="ss">f"</span><span class="sc">{</span>r[<span class="st">'coef'</span>]<span class="sc">:.4f}{</span>r<span class="sc">.</span>get(<span class="st">'stars'</span>, <span class="st">''</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>        ses.append(<span class="ss">f"(</span><span class="sc">{</span>r[<span class="st">'se'</span>]<span class="sc">:.4f}</span><span class="ss">)"</span>)</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>        coefs.append(<span class="st">"—"</span>)<span class="op">;</span> ses.append(<span class="st">"—"</span>)</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>tab_vis <span class="op">=</span> pd.DataFrame([coefs, ses], index<span class="op">=</span>[<span class="st">"Post × Alta Exp."</span>, <span class="st">"Erro padrão"</span>], columns<span class="op">=</span>col_names)</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Tabela principal (Model 3) — visualização:"</span>)</span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>display(tab_vis)</span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">FE Ocupação e FE Período: ✓ em todas as colunas. * p&lt;0,10 ** p&lt;0,05 *** p&lt;0,01."</span>)</span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>coef_line <span class="op">=</span> <span class="vs">r"Post </span><span class="dv">$</span><span class="ch">\t</span><span class="vs">imes</span><span class="dv">$</span><span class="vs"> Alta Exp</span><span class="dv">.</span><span class="vs">"</span><span class="op">;</span> se_line <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> o <span class="kw">in</span> outcomes_order:</span>
+<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> main[main[<span class="st">'outcome'</span>]<span class="op">==</span>o]</span>
+<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(row)<span class="op">&gt;</span><span class="dv">0</span>: r<span class="op">=</span>row.iloc[<span class="dv">0</span>]<span class="op">;</span> coef_line <span class="op">+=</span> <span class="ss">f" &amp; </span><span class="sc">{</span>r[<span class="st">'coef'</span>]<span class="sc">:.4f}{</span>r<span class="sc">.</span>get(<span class="st">'stars'</span>,<span class="st">''</span>)<span class="sc">}</span><span class="ss">"</span><span class="op">;</span> se_line <span class="op">+=</span> <span class="ss">f" &amp; (</span><span class="sc">{</span>r[<span class="st">'se'</span>]<span class="sc">:.4f}</span><span class="ss">)"</span></span>
+<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: coef_line <span class="op">+=</span> <span class="st">" &amp; —"</span><span class="op">;</span> se_line <span class="op">+=</span> <span class="st">" &amp; —"</span></span>
+<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a>lines <span class="op">=</span> [<span class="vs">r"</span><span class="dv">\b</span><span class="vs">egin{table}</span><span class="pp">[htbp]</span><span class="vs">"</span>, <span class="vs">r"</span><span class="er">\</span><span class="vs">centering"</span>, <span class="vs">r"</span><span class="er">\</span><span class="vs">caption{Efeitos DiD sobre Emprego Formal: Resultados Principais}"</span>, <span class="vs">r"</span><span class="er">\</span><span class="vs">label{tab:did_main}"</span>, <span class="vs">r"</span><span class="dv">\b</span><span class="vs">egin{tabular}{lcccc}"</span>, <span class="vs">r"</span><span class="ch">\t</span><span class="vs">oprule"</span>, <span class="vs">r" &amp; </span><span class="kw">(</span><span class="vs">1</span><span class="kw">)</span><span class="vs"> Log</span><span class="kw">(</span><span class="vs">Adm</span><span class="dv">.</span><span class="kw">)</span><span class="vs"> &amp; </span><span class="kw">(</span><span class="vs">2</span><span class="kw">)</span><span class="vs"> Log</span><span class="kw">(</span><span class="vs">Desl</span><span class="dv">.</span><span class="kw">)</span><span class="vs"> &amp; </span><span class="kw">(</span><span class="vs">3</span><span class="kw">)</span><span class="vs"> Saldo &amp; </span><span class="kw">(</span><span class="vs">4</span><span class="kw">)</span><span class="vs"> Log</span><span class="kw">(</span><span class="vs">Salário</span><span class="kw">)</span><span class="vs"> </span><span class="ch">\\</span><span class="vs">"</span>, <span class="vs">r"</span><span class="dv">\m</span><span class="vs">idrule"</span>, coef_line <span class="op">+</span> <span class="vs">r" </span><span class="ch">\\</span><span class="vs">"</span>, se_line <span class="op">+</span> <span class="vs">r" </span><span class="ch">\\</span><span class="vs">"</span>, <span class="vs">r"</span><span class="dv">\m</span><span class="vs">idrule"</span>, <span class="vs">r"FE Ocupação &amp; </span><span class="er">\</span><span class="vs">checkmark &amp; </span><span class="er">\</span><span class="vs">checkmark &amp; </span><span class="er">\</span><span class="vs">checkmark &amp; </span><span class="er">\</span><span class="vs">checkmark </span><span class="ch">\\</span><span class="vs">"</span>, <span class="vs">r"FE Período &amp; </span><span class="er">\</span><span class="vs">checkmark &amp; </span><span class="er">\</span><span class="vs">checkmark &amp; </span><span class="er">\</span><span class="vs">checkmark &amp; </span><span class="er">\</span><span class="vs">checkmark </span><span class="ch">\\</span><span class="vs">"</span>, <span class="vs">r"</span><span class="dv">\b</span><span class="vs">ottomrule"</span>, <span class="vs">r"</span><span class="er">\</span><span class="vs">end{tabular}"</span>, <span class="vs">r"</span><span class="er">\</span><span class="vs">end{table}"</span>]</span>
+<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a>latex_text <span class="op">=</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span>.join(lines)</span>
+<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(OUTPUTS_TABLES <span class="op">/</span> <span class="st">'table_did_main.tex'</span>, <span class="st">'w'</span>) <span class="im">as</span> f: f.write(latex_text)</span>
+<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Tabela LaTeX salva em outputs/tables/table_did_main.tex"</span>)</span>
+<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar LaTeX no notebook (para copiar na dissertação)</span></span>
+<span id="cb23-33"><a href="#cb23-33" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, Markdown</span>
+<span id="cb23-34"><a href="#cb23-34" aria-hidden="true" tabindex="-1"></a>display(Markdown(<span class="st">"**Código LaTeX (para copiar na dissertação):**"</span>))</span>
+<span id="cb23-35"><a href="#cb23-35" aria-hidden="true" tabindex="-1"></a>display(Markdown(<span class="st">"```latex</span><span class="ch">\n</span><span class="st">"</span> <span class="op">+</span> latex_text <span class="op">+</span> <span class="st">"</span><span class="ch">\n</span><span class="st">```"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tabela principal (Model 3) — visualização:</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">(1) Log(Adm.)</th>
+<th data-quarto-table-cell-role="th">(2) Log(Desl.)</th>
+<th data-quarto-table-cell-role="th">(3) Saldo</th>
+<th data-quarto-table-cell-role="th">(4) Log(Salário)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Post × Alta Exp.</th>
+<td>-0.0271</td>
+<td>0.0190</td>
+<td>-77.6747</td>
+<td>-0.0656**</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Erro padrão</th>
+<td>(0.0264)</td>
+<td>(0.0268)</td>
+<td>(69.6255)</td>
+<td>(0.0278)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+FE Ocupação e FE Período: ✓ em todas as colunas. * p&lt;0,10 ** p&lt;0,05 *** p&lt;0,01.
+Tabela LaTeX salva em outputs/tables/table_did_main.tex</code></pre>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><strong>Código LaTeX (para copiar na dissertação):</strong></p>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">table</span>}[htbp]</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\centering</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\caption</span>{Efeitos DiD sobre Emprego Formal: Resultados Principais}</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\label</span>{<span class="ex">tab:did_main</span>}</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tabular</span>}{lcccc}</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">\toprule</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a> <span class="op">&amp;</span> (1) Log(Adm.) <span class="op">&amp;</span> (2) Log(Desl.) <span class="op">&amp;</span> (3) Saldo <span class="op">&amp;</span> (4) Log(Salário) <span class="fu">\\</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\midrule</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>Post <span class="ss">$</span><span class="sc">\times</span><span class="ss">$</span> Alta Exp. <span class="op">&amp;</span> -0.0271 <span class="op">&amp;</span> 0.0190 <span class="op">&amp;</span> -77.6747 <span class="op">&amp;</span> -0.0656** <span class="fu">\\</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a> <span class="op">&amp;</span> (0.0264) <span class="op">&amp;</span> (0.0268) <span class="op">&amp;</span> (69.6255) <span class="op">&amp;</span> (0.0278) <span class="fu">\\</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="fu">\midrule</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>FE Ocupação <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="fu">\\</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>FE Período <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="op">&amp;</span> <span class="fu">\checkmark</span> <span class="fu">\\</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="fu">\bottomrule</span></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tabular</span>}</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">table</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</section>
+<section id="síntese-e-conclusões" class="level3" data-number="0.14">
+<h3 data-number="0.14" class="anchored" data-anchor-id="síntese-e-conclusões"><span class="header-section-number">0.14</span> 10. Síntese e conclusões</h3>
+<p>Resumo dos achados, comparação com a literatura e limitações.</p>
+<div id="47f5f9a7" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2b.10 — Síntese</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTADOS DiD PRINCIPAIS (Model 3)"</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, r <span class="kw">in</span> df_results[df_results[<span class="st">'model'</span>]<span class="op">==</span><span class="st">'Model 3: FE + Controls (MAIN)'</span>].iterrows():</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span>OUTCOMES<span class="sc">.</span>get(r[<span class="st">'outcome'</span>],r[<span class="st">'outcome'</span>])<span class="sc">}</span><span class="ss">: β = </span><span class="sc">{</span>r[<span class="st">'coef'</span>]<span class="sc">:.4f}{</span>r<span class="sc">.</span>get(<span class="st">'stars'</span>,<span class="st">''</span>)<span class="sc">}</span><span class="ss"> (p = </span><span class="sc">{</span>r[<span class="st">'p_value'</span>]<span class="sc">:.3f}</span><span class="ss">)"</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Comparação PNAD: outcomes diferentes (CAGED = fluxos; PNAD = estoques). Ver texto da dissertação."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>RESULTADOS DiD PRINCIPAIS (Model 3)
+  Log(Admissões): β = -0.0271 (p = 0.305)
+  Log(Desligamentos): β = 0.0190 (p = 0.479)
+  Saldo Líquido: β = -77.6747 (p = 0.265)
+  Log(Salário Admissão): β = -0.0656** (p = 0.019)
+  Log(Salário Mulheres): β = -0.0445 (p = 0.219)
+  Log(Salário Homens): β = 0.0039 (p = 0.885)
+  Log(Salário Jovens): β = -0.1337** (p = 0.011)
+  Log(Salário Não-Jovens): β = 0.0025 (p = 0.928)
+  Log(Salário Brancos): β = -0.0285 (p = 0.427)
+  Log(Salário Negros): β = 0.1106 (p = 0.104)
+  Log(Salário Superior): β = -0.0775* (p = 0.056)
+  Log(Salário Médio): β = -0.0845*** (p = 0.008)
+  Log(Admissões Mulheres): β = -0.0467* (p = 0.075)
+  Log(Admissões Homens): β = -0.0350 (p = 0.183)
+  Log(Admissões Jovens): β = -0.0558* (p = 0.052)
+  Log(Admissões Negros): β = -0.0032 (p = 0.907)
+
+Comparação PNAD: outcomes diferentes (CAGED = fluxos; PNAD = estoques). Ver texto da dissertação.</code></pre>
+</div>
+</div>
+</section>
+<section id="limitações-desta-etapa" class="level3" data-number="0.15">
+<h3 data-number="0.15" class="anchored" data-anchor-id="limitações-desta-etapa"><span class="header-section-number">0.15</span> Limitações desta etapa</h3>
+<ol type="1">
+<li><strong>Emprego formal apenas:</strong> CAGED cobre só CLT; informalidade não capturada.</li>
+<li><strong>Fluxos vs.&nbsp;estoques:</strong> Redução em admissões pode refletir menor rotatividade ou menor demanda.</li>
+<li><strong>Difusão gradual da IA:</strong> Tratamento assume impacto abrupto em Nov/2022; na prática a difusão é gradual.</li>
+<li><strong>Janela temporal:</strong> Jan/2021–Jun/2025 (54 meses); 2025 limitado a 6 meses.</li>
+<li><strong>Crosswalk 2d/4d:</strong> Agregação perde variação; crosswalk 4d com fallback pode ter erro de medição.</li>
+<li><strong>Índice global:</strong> ILO calibrado globalmente; pode não capturar especificidades brasileiras.</li>
+<li><strong>Outliers salariais:</strong> Winsorização P1/P99 aplicada.</li>
+</ol>
+</section>
+<section id="checklist-de-entregáveis" class="level3" data-number="0.16">
+<h3 data-number="0.16" class="anchored" data-anchor-id="checklist-de-entregáveis"><span class="header-section-number">0.16</span> Checklist de entregáveis</h3>
+<ul>
+<li><code>outputs/tables/balance_table_pre.csv</code></li>
+<li><code>outputs/figures/parallel_trends_all_outcomes.png</code></li>
+<li><code>outputs/tables/did_main_results.csv</code></li>
+<li><code>outputs/tables/event_study_*.csv</code>, <code>outputs/figures/event_study_all_outcomes.png</code></li>
+<li><code>outputs/tables/parallel_trends_test.csv</code></li>
+<li><code>outputs/tables/heterogeneity_triple_did.csv</code></li>
+<li><code>outputs/tables/robustness_results.csv</code></li>
+<li><code>outputs/tables/table_did_main.tex</code></li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

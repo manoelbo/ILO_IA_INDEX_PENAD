@@ -8,7 +8,9 @@
 
 **Objetivo deste notebook:** Estimar o efeito causal do lançamento da IA generativa (ChatGPT, novembro/2022) sobre o mercado de trabalho formal brasileiro, usando variação na exposição ocupacional à IA como fonte de identificação. Implementa um design Difference-in-Differences (DiD) com dados do CAGED (2021–2025) e o índice de exposição da OIT.
 
-**Estratégia de crosswalk:** Análise principal a **2 dígitos** ISCO-08 (match perfeito CBO↔ISCO), com robustez a **4 dígitos** via dois passos (CBO→ISCO-88→ISCO-08). Ver `abordagens_crosswalk.md` para justificativa completa.
+**Estratégia de crosswalk:** Análise principal a **2 dígitos** ISCO-08 (match por Sub-major Group com fallback hierárquico a Major Group), com robustez a **4 dígitos** via correspondência ISCO-88↔ISCO-08 + fallback hierárquico em 6 níveis. Ver `abordagens_crosswalk.md` para justificativa completa.
+
+**Dados do Notebook 2a (valores reais):** 629 ocupações CBO 4d × 54 meses (Jan/2021–Jun/2025) = 32.988 observações. Cobertura crosswalk: 100% (2d e 4d). Correlação 2d vs 4d: 0,9150. Concordância binária: 93,1%. Tratamento 2d: 20,3% (128 CBOs), 4d: 21,3% (134 CBOs).
 
 **Pergunta de pesquisa:** Após o lançamento do ChatGPT, ocupações mais expostas à IA generativa tiveram mudanças diferenciais em contratações, demissões ou salários de admissão, em comparação com ocupações menos expostas?
 
@@ -39,7 +41,7 @@
 | **Controle** | Ocupações com baixa exposição (bottom 80%) |
 | **Evento** | Lançamento do ChatGPT (30/nov/2022) |
 | **Pré-tratamento** | Jan/2021 — Nov/2022 (23 meses) |
-| **Pós-tratamento** | Dez/2022 — Dez/2025 (37 meses) |
+| **Pós-tratamento** | Dez/2022 — Jun/2025 (31 meses) |
 | **Outcomes** | Admissões, desligamentos, saldo, salário médio de admissão |
 | **Efeitos fixos** | Ocupação (CBO 4d) + período (ano-mês) |
 | **Erros padrão** | Clusterizados por ocupação (CBO 4d) |
@@ -69,6 +71,8 @@ O design tem **tratamento sharp** (todos tratados no mesmo momento — Nov/2022)
 | Saldo líquido | `saldo` | Em nível (pode ser negativo) | Criação líquida de empregos |
 | Salário de admissão | `salario_medio_adm` | `ln_salario_adm = log(salario_medio_adm)` | Poder de barganha / demanda |
 | Salário normalizado | `salario_sm` | `ln_salario_sm = log(salario_sm)` | Controlando inflação |
+
+> **Nota — Tratamento de outliers salariais:** O Notebook 2a identificou um outlier em Jun/2025 (salário médio agregado ~R$11.519 vs ~R$4.000 nos meses anteriores), causado por poucas células com salários extremos (0,01% das admissões). Para evitar distorção nos modelos com salário como controle, aplicar **winsorização nos percentis 1% e 99%** de `salario_medio_adm` antes da estimação. Isso preserva todas as observações sem gerar viés de seleção. A winsorização deve ser feita neste notebook (2b), mantendo o dataset de preparação (2a) intacto.
 
 ---
 
@@ -116,8 +120,8 @@ REFERENCE_PERIOD = -1                  # Mês t=-1 como referência no event stu
 ALPHA            = 0.05                # Nível de significância
 
 # Scores contínuos para tratamento contínuo
-EXPOSURE_SCORE_MAIN = 'exposure_score_2d'  # Principal (match perfeito)
-EXPOSURE_SCORE_4D   = 'exposure_score_4d'  # Robustez (via Muendler + ILO)
+EXPOSURE_SCORE_MAIN = 'exposure_score_2d'  # Principal (Sub-major Group + fallback 1d)
+EXPOSURE_SCORE_4D   = 'exposure_score_4d'  # Robustez (fallback hierárquico 6 níveis via ISCO-88↔08)
 
 # Outcomes principais
 OUTCOMES = {
@@ -182,6 +186,25 @@ print(f"  Pré: {df[df['post']==0].shape[0]:,} obs")
 print(f"  Pós: {df[df['post']==1].shape[0]:,} obs")
 
 # ---------------------------------------------------------------------------
+# Winsorização de salários (outliers — ver nota no Notebook 2a)
+# ---------------------------------------------------------------------------
+from scipy.stats import mstats
+
+for col_sal in ['salario_medio_adm', 'salario_sm']:
+    if col_sal in df.columns:
+        p1 = df[col_sal].quantile(0.01)
+        p99 = df[col_sal].quantile(0.99)
+        n_clip = ((df[col_sal] < p1) | (df[col_sal] > p99)).sum()
+        df[col_sal] = df[col_sal].clip(lower=p1, upper=p99)
+        print(f"\nWinsorização {col_sal}: [{p1:.2f}, {p99:.2f}], {n_clip} obs clipped ({100*n_clip/len(df):.1f}%)")
+
+# Recalcular logs após winsorização
+df['ln_salario_adm'] = np.log(df['salario_medio_adm'])
+df['ln_salario_sm'] = np.log(df['salario_sm'])
+
+print("Logs salariais recalculados após winsorização.")
+
+# ---------------------------------------------------------------------------
 # Estatísticas descritivas dos outcomes
 # ---------------------------------------------------------------------------
 print("\nEstatísticas descritivas dos outcomes:")
@@ -214,7 +237,7 @@ df_pre = df[df['post'] == 0].copy()
 
 # Agregar por ocupação (médias no pré)
 ocup_pre = df_pre.groupby('cbo_4d').agg(
-    exposure_score=('exposure_score', 'first'),
+    exposure_score=('exposure_score_2d', 'first'),
     alta_exp=('alta_exp', 'first'),
     admissoes_media=('admissoes', 'mean'),
     desligamentos_media=('desligamentos', 'mean'),
@@ -374,7 +397,7 @@ df_reg = df.copy()
 for col in ['admissoes', 'desligamentos', 'saldo', 'ln_admissoes',
             'ln_desligamentos', 'ln_salario_adm', 'salario_medio_adm',
             'idade_media_adm', 'pct_mulher_adm', 'pct_superior_adm',
-            'post', 'alta_exp', 'exposure_score']:
+            'post', 'alta_exp', 'exposure_score_2d', 'exposure_score_4d']:
     if col in df_reg.columns:
         df_reg[col] = pd.to_numeric(df_reg[col], errors='coerce')
 
@@ -552,7 +575,7 @@ $$y_{it} = \alpha_i + \gamma_t + \sum_{k \neq -1} \beta_k \cdot \mathbb{1}[t = k
 
 Onde $k$ é o tempo relativo ao tratamento em meses, $\alpha_i$ são efeitos fixos de ocupação, $\gamma_t$ são efeitos fixos de período, e $X_{it}$ são controles.
 
-> **Nota — Binning dos extremos:** Com 60 meses e muitas dummies, os extremos podem ser imprecisos. Agrupar os primeiros/últimos meses (ex: k ≤ −12 e k ≥ 24) em bins melhora a precisão. Com a janela 2021–2025, temos 23 meses pré e 37 meses pós.
+> **Nota — Binning dos extremos:** Com 54 meses e muitas dummies, os extremos podem ser imprecisos. Agrupar os primeiros/últimos meses (ex: k ≤ −12 e k ≥ 24) em bins melhora a precisão. Com a janela Jan/2021–Jun/2025, temos 23 meses pré (t=-23 a t=-1) e 31 meses pós (t=0 a t=30).
 
 ```python
 # Etapa 2b.6 — Event Study
@@ -569,9 +592,9 @@ print(f"Períodos relativos: {periodos_relativos[0]} a {periodos_relativos[-1]}"
 print(f"Referência: t = {ref_t}")
 
 # Binning dos extremos (recomendado)
-# Com janela 2021-2025: ~23 meses pré, ~37 meses pós
+# Com janela Jan/2021–Jun/2025: 23 meses pré (t=-23 a t=-1), 31 meses pós (t=0 a t=30)
 BIN_MIN = -12  # Agrupar t <= -12 (primeiros 11 meses do pré)
-BIN_MAX = 24   # Agrupar t >= 24 (últimos 13 meses do pós)
+BIN_MAX = 24   # Agrupar t >= 24 (últimos 6 meses do pós: t=24 a t=30)
 
 df_es['t_binned'] = df_es['tempo_relativo_meses'].clip(lower=BIN_MIN, upper=BIN_MAX)
 
@@ -1055,7 +1078,7 @@ for outcome, out_label in OUTCOMES.items():
 
         results_robust.append({
             'outcome': outcome, 'test_type': 'Crosswalk 4d',
-            'specification': 'Score 4d (via Muendler+ILO)',
+            'specification': 'Score 4d (fallback hierárquico 6 níveis)',
             'coef': coef, 'se': se, 'p_value': pval, 'stars': stars,
         })
 
@@ -1158,7 +1181,7 @@ latex_main.append(r"\end{tabular}")
 latex_main.append(r"\begin{tablenotes}\small")
 latex_main.append(r"\item Erros padrão clusterizados por ocupação (CBO 4d). * $p<0.10$, ** $p<0.05$, *** $p<0.01$.")
 latex_main.append(r"\item Controles: idade média, \% mulheres e \% superior completo nas admissões.")
-latex_main.append(r"\item Tratamento: top 20\% de exposição à IA (índice ILO, 2 dígitos ISCO-08). Período: 2021–2025.")
+latex_main.append(r"\item Tratamento: top 20\% de exposição à IA (índice ILO, 2 dígitos ISCO-08). Período: Jan/2021–Jun/2025 (54 meses). Salários winsorizados P1/P99.")
 latex_main.append(r"\end{tablenotes}")
 latex_main.append(r"\end{table}")
 
@@ -1255,10 +1278,11 @@ limitacoes = [
     "1. CAGED cobre apenas emprego formal (CLT); informalidade não capturada.",
     "2. Fluxos ≠ estoques: queda em admissões pode indicar menor rotatividade.",
     "3. Índice ILO é global; pode não capturar especificidades brasileiras.",
-    "4. Janela 2021–2025: exclui 2020 (COVID) mas pode capturar efeitos residuais em 2021.",
+    "4. Janela Jan/2021–Jun/2025 (54 meses): exclui 2020 (COVID); 2025 limitado a 6 meses.",
     "5. ChatGPT como proxy de IA generativa; difusão gradual, não instantânea.",
     "6. Crosswalk 2d: agregação em 43 sub-major groups perde variação intragrupo.",
-    "7. Crosswalk 4d: erro de medição possível (Muendler 2004 pode não cobrir CBOs recentes).",
+    "7. Crosswalk 4d: erro de medição possível (fallback hierárquico 6 níveis; Muendler mapeia CBO 1994, não CBO 2002).",
+    "8. Outliers salariais: Jun/2025 apresenta salário agregado ~3× normal; winsorização P1/P99 aplicada.",
 ]
 for lim in limitacoes:
     print(f"  {lim}")
@@ -1278,15 +1302,17 @@ print(f"{'=' * 70}")
 
 3. **Difusão gradual da IA:** O tratamento assume que o ChatGPT impactou o mercado de forma abrupta em Nov/2022. Na prática, a difusão de IA generativa é gradual e heterogênea entre setores e empresas. O event study ajuda a capturar essa dinâmica.
 
-4. **Janela temporal (2021–2025):** A exclusão de 2020 evita contaminação COVID mas reduz o período pré-tratamento a 23 meses (vs. 37 pós). O event study mostra se esse pré-período é suficiente para validar tendências paralelas.
+4. **Janela temporal (Jan/2021–Jun/2025):** A exclusão de 2020 evita contaminação COVID. Dados de 2025 disponíveis apenas até junho (basedosdados), resultando em 54 períodos totais (23 pré, 31 pós). Ainda assim, o pós-tratamento é 1,3× maior que o pré, com poder estatístico adequado. O event study mostra se o pré-período é suficiente para validar tendências paralelas.
 
 5. **Crosswalk 2d (especificação principal):** Ao agregar a 43 sub-major groups, perdemos variação dentro de cada grupo. A especificação de robustez a 4 dígitos ajuda a avaliar a sensibilidade.
 
-6. **Crosswalk 4d (robustez):** O mapeamento via Muendler (2004) CBO→ISCO-88 e ILO ISCO-88→ISCO-08 pode introduzir erro de medição, especialmente para CBOs criados após 2004. Erro de medição tipicamente atenua coeficientes.
+6. **Crosswalk 4d (robustez):** O fallback hierárquico em 6 níveis (match direto CBO↔ISCO-08, via ISCO-88↔08, e agregações 3d/2d/1d) pode introduzir erro de medição. Nota: o arquivo Muendler & Poole (2004) mapeia CBO *1994* (formato X-XX.XX), não a CBO 2002 do CAGED — a estratégia adotada no Notebook 2a usa a similaridade estrutural CBO 2002↔ISCO com tabela oficial ISCO-88↔08. Erro de medição tipicamente atenua coeficientes.
 
 7. **Índice global:** Mesma limitação das etapas anteriores — o índice ILO foi calibrado globalmente.
 
-8. **Nível de agregação:** A análise ao nível ocupação × mês perde variação intraocupacional. Efeitos podem ser heterogêneos por região, setor, ou tamanho de empresa dentro da mesma ocupação.
+8. **Outliers salariais:** Jun/2025 apresenta salário médio agregado ~R$11.519 (vs ~R$4.000 normal), causado por poucas células com salários extremos (0,01% das admissões). Winsorização P1/P99 aplicada neste notebook para limitar influência sem perder observações.
+
+9. **Nível de agregação:** A análise ao nível ocupação × mês perde variação intraocupacional. Efeitos podem ser heterogêneos por região, setor, ou tamanho de empresa dentro da mesma ocupação.
 
 ---
 
@@ -1314,11 +1340,11 @@ etapa2/
 ├── data/
 │   ├── input/
 │   │   ├── Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx
-│   │   ├── cbo-isco-conc.csv (Muendler CBO→ISCO-88)
-│   │   ├── corrtab88-08.xls (ILO ISCO-88→ISCO-08)
+│   │   ├── cbo-isco-conc.csv (Muendler CBO 1994→ISCO-88 — referência apenas)
+│   │   ├── Correspondência ISCO 08 a 88.xlsx (tabela oficial ISCO-08↔ISCO-88, local)
 │   │   └── crosswalk_cbo_isco08_mte.csv (se obtido via LAI — opcional)
 │   ├── raw/
-│   │   └── caged_{ano}.parquet (2021–2025)
+│   │   └── caged_{ano}.parquet (2021–2025, até Jun/2025)
 │   ├── processed/
 │   │   └── ilo_exposure_clean.csv (reusado da Etapa 1)
 │   └── output/
@@ -1336,6 +1362,6 @@ etapa2/
 │   └── figures/
 │       ├── parallel_trends_all_outcomes.png
 │       └── event_study_all_outcomes.png
-├── etapa_2a_preparacao_painel_caged.ipynb (Notebook 2a)
-└── etapa_2b_did_analysis_caged.ipynb (Notebook 2b)
+├── etapa_2a_preparacao_dados_did.ipynb (Notebook 2a — implementado)
+└── etapa_2b_did_analysis_caged.ipynb (Notebook 2b — a implementar)
 ```
