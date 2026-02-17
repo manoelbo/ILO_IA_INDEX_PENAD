@@ -97,9 +97,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#a.-definição-de-tratamento" id="toc-a.-definição-de-tratamento" class="nav-link" data-scroll-target="#a.-definição-de-tratamento"><span class="header-section-number">0.13</span> 5a. Definição de tratamento</a></li>
   <li><a href="#b.-verificar-tratamento-checkpoint" id="toc-b.-verificar-tratamento-checkpoint" class="nav-link" data-scroll-target="#b.-verificar-tratamento-checkpoint"><span class="header-section-number">0.14</span> 5b. Verificar tratamento (CHECKPOINT)</a></li>
   <li><a href="#a.-enriquecimento-do-painel-variáveis-adicionais" id="toc-a.-enriquecimento-do-painel-variáveis-adicionais" class="nav-link" data-scroll-target="#a.-enriquecimento-do-painel-variáveis-adicionais"><span class="header-section-number">0.15</span> 6a. Enriquecimento do painel (variáveis adicionais)</a></li>
-  <li><a href="#salvar-dataset-analítico-final" id="toc-salvar-dataset-analítico-final" class="nav-link" data-scroll-target="#salvar-dataset-analítico-final"><span class="header-section-number">0.16</span> 7. Salvar dataset analítico final</a></li>
-  <li><a href="#limitações-desta-etapa" id="toc-limitações-desta-etapa" class="nav-link" data-scroll-target="#limitações-desta-etapa"><span class="header-section-number">0.17</span> Limitações desta etapa</a></li>
-  <li><a href="#checklist-de-entregáveis" id="toc-checklist-de-entregáveis" class="nav-link" data-scroll-target="#checklist-de-entregáveis"><span class="header-section-number">0.18</span> Checklist de entregáveis</a></li>
+  <li><a href="#anexo-1-integração-anthropic-automation-vs-augmentation" id="toc-anexo-1-integração-anthropic-automation-vs-augmentation" class="nav-link" data-scroll-target="#anexo-1-integração-anthropic-automation-vs-augmentation"><span class="header-section-number">0.16</span> Anexo 1: Integração Anthropic (Automation vs Augmentation)</a></li>
+  <li><a href="#salvar-dataset-analítico-final" id="toc-salvar-dataset-analítico-final" class="nav-link" data-scroll-target="#salvar-dataset-analítico-final"><span class="header-section-number">0.17</span> 7. Salvar dataset analítico final</a></li>
+  <li><a href="#limitações-desta-etapa" id="toc-limitações-desta-etapa" class="nav-link" data-scroll-target="#limitações-desta-etapa"><span class="header-section-number">0.18</span> Limitações desta etapa</a></li>
+  <li><a href="#checklist-de-entregáveis" id="toc-checklist-de-entregáveis" class="nav-link" data-scroll-target="#checklist-de-entregáveis"><span class="header-section-number">0.19</span> Checklist de entregáveis</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="etapa_2a_preparacao_dados_did_caged_ilo.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -202,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p><strong>Nota sobre o Novo CAGED:</strong> A partir de janeiro/2020, o CAGED foi substituído pelo sistema eSocial (Portaria SEPRT 1.127/2019). Usamos dados de 2021+ para consistência metodológica (eSocial já estabilizado).</p>
 </blockquote>
-<div id="f87dfc8f" class="cell" data-execution_count="1">
+<div id="f87dfc8f" class="cell" data-execution_count="34">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar dependências e instalar apenas o que faltar (rode esta célula primeiro)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> importlib.util</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> subprocess</span>
@@ -218,23 +219,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"scipy"</span>, <span class="st">"scipy"</span>),</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"pyfixest"</span>, <span class="st">"pyfixest"</span>),</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"bcb"</span>, <span class="st">"python-bcb"</span>),  <span class="co"># IPCA Banco Central; import: from bcb import sgs</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"google.cloud.bigquery"</span>, <span class="st">"google-cloud-bigquery"</span>),</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ja_instalado(nome_import):</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> importlib.util.find_spec(nome_import) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>faltando <span class="op">=</span> [pip <span class="cf">for</span> imp, pip <span class="kw">in</span> PACOTES <span class="cf">if</span> <span class="kw">not</span> ja_instalado(imp)]</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> faltando:</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    subprocess.check_call([sys.executable, <span class="st">"-m"</span>, <span class="st">"pip"</span>, <span class="st">"install"</span>, <span class="st">"-q"</span>] <span class="op">+</span> faltando)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Instalado:"</span>, <span class="st">", "</span>.join(faltando))</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Todas as dependências já estão instaladas."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"xlrd"</span>, <span class="st">"xlrd"</span>),  <span class="co"># Leitura de .xls (Crosswalk SOC/ISCO, Estrutura COD) — Anexo 1</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"openpyxl"</span>, <span class="st">"openpyxl"</span>),  <span class="co"># Leitura de .xlsx (Crosswalk SOC 2010 a 2018) — Anexo 1</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"google.cloud.bigquery"</span>, <span class="st">"google-cloud-bigquery"</span>),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ja_instalado(nome_import):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> importlib.util.find_spec(nome_import) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>faltando <span class="op">=</span> [pip <span class="cf">for</span> imp, pip <span class="kw">in</span> PACOTES <span class="cf">if</span> <span class="kw">not</span> ja_instalado(imp)]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> faltando:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    subprocess.check_call([sys.executable, <span class="st">"-m"</span>, <span class="st">"pip"</span>, <span class="st">"install"</span>, <span class="st">"-q"</span>] <span class="op">+</span> faltando)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Instalado:"</span>, <span class="st">", "</span>.join(faltando))</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Todas as dependências já estão instaladas."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Todas as dependências já estão instaladas.</code></pre>
+<pre><code>Instalado: xlrd</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-bold">[</span><span class="ansi-blue-fg">notice</span><span class="ansi-bold">]</span> A new release of pip is available: <span class="ansi-red-fg">24.2</span> -&gt; <span class="ansi-green-fg">26.0.1</span>
+
+<span class="ansi-bold">[</span><span class="ansi-blue-fg">notice</span><span class="ansi-bold">]</span> To update, run: <span class="ansi-green-fg">python3.10 -m pip install --upgrade pip</span>
+</pre>
 </div>
 </div>
-<div id="02d36db5" class="cell" data-execution_count="2">
+</div>
+<div id="02d36db5" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.1 — Configuração do ambiente</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
@@ -301,45 +312,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
 <span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>KEEP_CAGED_RAW         <span class="op">=</span> <span class="va">True</span>   <span class="co"># data/raw/caged_*.parquet</span></span>
 <span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>KEEP_PANEL_MENSAL      <span class="op">=</span> <span class="va">True</span>   <span class="co"># painel_caged_mensal.parquet</span></span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>KEEP_PANEL_CROSSWALK   <span class="op">=</span> <span class="va">False</span>   <span class="co"># painel_caged_crosswalk.parquet</span></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>KEEP_PANEL_CROSSWALK   <span class="op">=</span> <span class="va">True</span>   <span class="co"># painel_caged_crosswalk.parquet</span></span>
 <span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>KEEP_PANEL_TRATAMENTO  <span class="op">=</span> <span class="va">False</span>   <span class="co"># painel_caged_tratamento.parquet</span></span>
 <span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>KEEP_PANEL_FINAL       <span class="op">=</span> <span class="va">False</span>   <span class="co"># painel_caged_did_ready.parquet/csv</span></span>
-<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
-<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Deflator (salário real): índice base para IPCA</span></span>
-<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
-<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>INDICE_BASE_ANO <span class="op">=</span> <span class="dv">2024</span></span>
-<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>INDICE_BASE_MES <span class="op">=</span> <span class="dv">12</span>   <span class="co"># Dez/2024 = 100</span></span>
-<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a>INDICE_BASE     <span class="op">=</span> <span class="fl">100.0</span></span>
-<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a>IPCA_MENSAL_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"ipca_mensal.parquet"</span></span>
-<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="co"># Setor tecnológico (CNAE 2.0 seção): J = Informação e comunicação; M = Atividades profissionais/científicas</span></span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>CNAE_SECOES_TECNOLOGICO <span class="op">=</span> [<span class="st">'J'</span>]   <span class="co"># ou ['J', 'M'] para incluir atividades profissionais/científicas</span></span>
-<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>SETOR_TECNOLOGICO_LIMIAR <span class="op">=</span> <span class="fl">0.5</span>    <span class="co"># setor_tecnologico=1 quando pct_tecnologico_adm &gt;= este limiar</span></span>
-<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>KEEP_ANTHROPIC_INDEX   <span class="op">=</span> <span class="va">True</span>    <span class="co"># anthropic_automation_augmentation_cbo.parquet (Anexo 1)</span></span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Cache do índice Anthropic (Automation vs Augmentation) — Anexo 1</span></span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a>ANTHROPIC_INDEX_CACHE  <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"anthropic_automation_augmentation_cbo.parquet"</span></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Deflator (salário real): índice base para IPCA</span></span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>INDICE_BASE_ANO <span class="op">=</span> <span class="dv">2024</span></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>INDICE_BASE_MES <span class="op">=</span> <span class="dv">12</span>   <span class="co"># Dez/2024 = 100</span></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>INDICE_BASE     <span class="op">=</span> <span class="fl">100.0</span></span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a>IPCA_MENSAL_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"ipca_mensal.parquet"</span></span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a><span class="co"># Setor tecnológico (CNAE 2.0 seção): J = Informação e comunicação; M = Atividades profissionais/científicas</span></span>
 <span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a><span class="co"># Grandes grupos CBO (para sanity checks)</span></span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>GRANDES_GRUPOS_CBO <span class="op">=</span> {</span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>    <span class="st">'0'</span>: <span class="st">'Forças Armadas'</span>,</span>
-<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>    <span class="st">'1'</span>: <span class="st">'Dirigentes'</span>,</span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>    <span class="st">'2'</span>: <span class="st">'Profissionais das ciências'</span>,</span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>    <span class="st">'3'</span>: <span class="st">'Técnicos nível médio'</span>,</span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>    <span class="st">'4'</span>: <span class="st">'Trabalhadores de serv. admin.'</span>,</span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>    <span class="st">'5'</span>: <span class="st">'Trabalhadores de serviços/comércio'</span>,</span>
-<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>    <span class="st">'6'</span>: <span class="st">'Agropecuária'</span>,</span>
-<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>    <span class="st">'7'</span>: <span class="st">'Produção industrial'</span>,</span>
-<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a>    <span class="st">'8'</span>: <span class="st">'Operadores de máquinas'</span>,</span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>    <span class="st">'9'</span>: <span class="st">'Manutenção e reparação'</span>,</span>
-<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Configuração carregada."</span>)</span>
-<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Período: </span><span class="sc">{</span>ANO_INICIO<span class="sc">}</span><span class="ss">–</span><span class="sc">{</span>ANO_FIM<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span>(ANO_FIM <span class="op">-</span> ANO_INICIO <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">12</span><span class="sc">}</span><span class="ss"> meses)"</span>)</span>
-<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Evento: ChatGPT — Nov/2022 (pós a partir de </span><span class="sc">{</span>MES_TRATAMENTO<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>ANO_TRATAMENTO<span class="sc">}</span><span class="ss">)"</span>)</span>
-<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Projeto GCP: </span><span class="sc">{</span>GCP_PROJECT_ID<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  ILO file: </span><span class="sc">{</span>ILO_FILE<span class="sc">}</span><span class="ss"> (existe: </span><span class="sc">{</span>ILO_FILE<span class="sc">.</span>exists()<span class="sc">}</span><span class="ss">)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>CNAE_SECOES_TECNOLOGICO <span class="op">=</span> [<span class="st">'J'</span>]   <span class="co"># ou ['J', 'M'] para incluir atividades profissionais/científicas</span></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>SETOR_TECNOLOGICO_LIMIAR <span class="op">=</span> <span class="fl">0.5</span>    <span class="co"># setor_tecnologico=1 quando pct_tecnologico_adm &gt;= este limiar</span></span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Grandes grupos CBO (para sanity checks)</span></span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="co"># ---------------------------------------------------------------------------</span></span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>GRANDES_GRUPOS_CBO <span class="op">=</span> {</span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>    <span class="st">'0'</span>: <span class="st">'Forças Armadas'</span>,</span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>    <span class="st">'1'</span>: <span class="st">'Dirigentes'</span>,</span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>    <span class="st">'2'</span>: <span class="st">'Profissionais das ciências'</span>,</span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>    <span class="st">'3'</span>: <span class="st">'Técnicos nível médio'</span>,</span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a>    <span class="st">'4'</span>: <span class="st">'Trabalhadores de serv. admin.'</span>,</span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>    <span class="st">'5'</span>: <span class="st">'Trabalhadores de serviços/comércio'</span>,</span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a>    <span class="st">'6'</span>: <span class="st">'Agropecuária'</span>,</span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>    <span class="st">'7'</span>: <span class="st">'Produção industrial'</span>,</span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>    <span class="st">'8'</span>: <span class="st">'Operadores de máquinas'</span>,</span>
+<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a>    <span class="st">'9'</span>: <span class="st">'Manutenção e reparação'</span>,</span>
+<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Configuração carregada."</span>)</span>
+<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Período: </span><span class="sc">{</span>ANO_INICIO<span class="sc">}</span><span class="ss">–</span><span class="sc">{</span>ANO_FIM<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span>(ANO_FIM <span class="op">-</span> ANO_INICIO <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">12</span><span class="sc">}</span><span class="ss"> meses)"</span>)</span>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Evento: ChatGPT — Nov/2022 (pós a partir de </span><span class="sc">{</span>MES_TRATAMENTO<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>ANO_TRATAMENTO<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Projeto GCP: </span><span class="sc">{</span>GCP_PROJECT_ID<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  ILO file: </span><span class="sc">{</span>ILO_FILE<span class="sc">}</span><span class="ss"> (existe: </span><span class="sc">{</span>ILO_FILE<span class="sc">.</span>exists()<span class="sc">}</span><span class="ss">)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Configuração carregada.
   Período: 2021–2025 (60 meses)
@@ -352,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="índice-ipca-deflator-para-salário-real" class="level3" data-number="0.6">
 <h3 data-number="0.6" class="anchored" data-anchor-id="índice-ipca-deflator-para-salário-real"><span class="header-section-number">0.6</span> 2. Índice IPCA (deflator para salário real)</h3>
 <p>Carregar série mensal do IPCA (Banco Central SGS) e construir índice com base Dez/2024 = 100, para deflacionar salários nominais no enriquecimento do painel.</p>
-<div id="eeaba3d2" class="cell" data-execution_count="3">
+<div id="eeaba3d2" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.2 — Índice IPCA mensal (base Dez/2024 = 100)</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Fonte: Banco Central SGS (série 433 = variação mensal IPCA). Índice construído por acumulação.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -438,7 +453,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p><strong>Nota sobre otimização:</strong> Usamos a BigQuery Storage API (<code>create_bqstorage_client=True</code>) que transfere dados via gRPC/Arrow, sendo 2-5x mais rápida que o método padrão REST. Se o arquivo parquet já existir, o download é pulado automaticamente.</p>
 </blockquote>
-<div id="451ca3b3" class="cell" data-execution_count="4">
+<div id="451ca3b3" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.2a — Download dos microdados CAGED</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Estratégia: download ano a ano via BigQuery Storage API, com cache local em parquet.</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -502,7 +517,7 @@ Colunas: ['ano', 'mes', 'sigla_uf', 'id_municipio', 'cbo_2002', 'categoria', 'ti
 <h3 data-number="0.8" class="anchored" data-anchor-id="b.-verificar-dados-caged-checkpoint"><span class="header-section-number">0.8</span> 2b. Verificar dados CAGED (CHECKPOINT)</h3>
 <p>Verificar integridade dos dados baixados: cobertura temporal (12 meses/ano), volume por ano, preenchimento de variáveis-chave, e formato dos códigos CBO.</p>
 <p><strong>Critérios de aceite:</strong> - Todos os meses cobertos (Jan–Dez) para cada ano - CBO com &gt;95% de preenchimento - ~20-30M registros por ano</p>
-<div id="63efdd50" class="cell" data-execution_count="5">
+<div id="63efdd50" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.2b — CHECKPOINT: Verificar dados CAGED</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Carrega cada parquet individualmente (para evitar OOM)</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -646,7 +661,7 @@ TOTAL: 198,824,436 movimentações (2021–2025)
 <p><strong>Nota — Otimização de memória:</strong> O processamento é feito ano a ano para evitar OOM (Out-of-Memory) com ~100M+ registros. Flags booleanos são pré-computados como float para permitir agregação vetorizada (evitando lambdas lentas). A mediana é calculada separadamente por ser computacionalmente cara.</p>
 </blockquote>
 <p><strong>Validação da codificação <code>sexo</code> (CAGED/Base dos Dados):</strong> Confirmar que os valores são 1 = Masculino e 3 = Feminino (não há código 2). O agregado <code>pct_mulher_adm</code> usa <code>sexo == 3</code>.</p>
-<div id="c349d573" class="cell" data-execution_count="6">
+<div id="c349d573" class="cell" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conferir codificação de sexo nos microdados CAGED (um ano como amostra)</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>_ano_amostra <span class="op">=</span> <span class="dv">2024</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>_path_amostra <span class="op">=</span> DATA_RAW <span class="op">/</span> <span class="ss">f"caged_</span><span class="sc">{</span>_ano_amostra<span class="sc">}</span><span class="ss">.parquet"</span></span>
@@ -670,7 +685,7 @@ Name: count, dtype: int64
   Esperado: 1 = Masculino, 3 = Feminino (Base dos Dados/CAGED).</code></pre>
 </div>
 </div>
-<div id="cea3a3ad" class="cell" data-execution_count="7">
+<div id="cea3a3ad" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.3a — Agregação: Microdados → Painel Mensal por Ocupação</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Checkpoint: se o painel já existe, carrega direto.</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -802,29 +817,8 @@ Name: count, dtype: int64
 <span id="cb13-129"><a href="#cb13-129" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Ocupações: </span><span class="sc">{</span>painel[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">, Períodos: </span><span class="sc">{</span>painel[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb13-130"><a href="#cb13-130" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Shape: </span><span class="sc">{</span>painel<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Construindo painel a partir dos microdados (ano a ano)...
-
-  Processando 2021...
-    2021: 19,703,604 admissões, 16,851,191 desligamentos
-    → 7,328 linhas no painel
-
-  Processando 2022...
-    2022: 22,243,441 admissões, 20,232,075 desligamentos
-    → 7,341 linhas no painel
-
-  Processando 2023...
-    2023: 22,982,161 admissões, 21,503,821 desligamentos
-    → 7,332 linhas no painel
-
-  Processando 2024...
-    2024: 25,336,277 admissões, 23,659,763 desligamentos
-    → 7,308 linhas no painel
-
-  Processando 2025...
-    2025: 13,763,059 admissões, 12,549,044 desligamentos
-    → 3,679 linhas no painel
-
-Painel salvo: painel_caged_mensal.parquet
+<pre><code>Painel carregado do checkpoint: painel_caged_mensal.parquet
+  32,988 linhas, 629 ocupações, 54 períodos
 
 Painel final: 32,988 linhas
   Ocupações: 629, Períodos: 54
@@ -836,7 +830,7 @@ Painel final: 32,988 linhas
 <section id="b.-verificar-painel-agregado-checkpoint" class="level3" data-number="0.10">
 <h3 data-number="0.10" class="anchored" data-anchor-id="b.-verificar-painel-agregado-checkpoint"><span class="header-section-number">0.10</span> 3b. Verificar painel agregado (CHECKPOINT)</h3>
 <p>Verificar integridade do painel: dimensões, balanceamento (ocupações × períodos), cobertura temporal, distribuição de variáveis-chave e série temporal agregada.</p>
-<div id="f3b53806" class="cell" data-execution_count="8">
+<div id="f3b53806" class="cell" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.3b — CHECKPOINT: Verificar painel agregado</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">60</span>)</span>
@@ -915,7 +909,7 @@ Série temporal (primeiros e últimos 3 meses):
 <section id="verificação-outlier-salarial-em-jun2025" class="level4" data-number="0.10.1">
 <h4 data-number="0.10.1" class="anchored" data-anchor-id="verificação-outlier-salarial-em-jun2025"><span class="header-section-number">0.10.1</span> Verificação: outlier salarial em Jun/2025</h4>
 <p>A série temporal agregada no checkpoint acima pode mostrar salário médio elevado em Jun/2025 (~3× os meses anteriores). Abaixo verificamos se isso reflete <strong>(i)</strong> poucas células ocupação×mês com salário muito alto e/ou poucas movimentações, <strong>(ii)</strong> possível publicação parcial do mês, ou <strong>(iii)</strong> padrão real dos dados. Conforme o diagnóstico, pode-se documentar, filtrar células com poucas movimentações ou truncar a janela em Mai/2025.</p>
-<div id="713ec067" class="cell" data-execution_count="9">
+<div id="713ec067" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Diagnóstico: Jun/2025 — distribuição de salario_medio_adm e células extremas</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>jun <span class="op">=</span> painel[painel[<span class="st">'periodo_num'</span>] <span class="op">==</span> <span class="dv">202506</span>].copy()</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Jun/2025 — Distribuição de salario_medio_adm (células ocupação×mês):"</span>)</span>
@@ -1082,7 +1076,7 @@ Comparativo 2025:
 <p><strong>Nota sobre atenuação:</strong> Se o crosswalk a 4 dígitos introduz erro de medição, o efeito típico é <strong>atenuação</strong> (viés em direção a zero). Encontrar efeito significativo mesmo com erro de medição sugere que o efeito real é provavelmente maior.</p>
 </blockquote>
 <p><strong>Validação do crosswalk:</strong> O notebook não usa Muendler para o match principal; utiliza a correspondência oficial ISCO-08↔︎88 e fallback hierárquico. Na especificação 2d: match direto CBO 2d → ISCO-08 Sub-major Group, com fallback a 1 dígito (Major Group). Na 4d: fallback em 6 níveis (N1→N6). Resultado verificado: cobertura 100% em 2d e 4d, correlação entre exposure_score_2d e exposure_score_4d ~0,915 — consistente com o planejamento e pronto para o DiD no Notebook 2b.</p>
-<div id="5fdb8d1d" class="cell" data-execution_count="10">
+<div id="5fdb8d1d" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.4a — Crosswalk CBO 2002 → ISCO-08 (Dual: 2d principal + 4d robustez)</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Checkpoint: se o painel com crosswalk já existe, carrega direto.</span></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1212,37 +1206,12 @@ Comparativo 2025:
 <span id="cb19-127"><a href="#cb19-127" aria-hidden="true" tabindex="-1"></a>    painel.to_parquet(PAINEL_CROSSWALK_FILE, index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb19-128"><a href="#cb19-128" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Salvo: </span><span class="sc">{</span>PAINEL_CROSSWALK_FILE<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Cache removido: painel_caged_crosswalk.parquet
-Índice ILO carregado: 427 ocupações ISCO-08
-  Score range: [0.090, 0.700]
-  Correspondência ISCO-08↔88: 678 mapeamentos
-
-============================================================
-PARTE A: Crosswalk 2 dígitos (PRINCIPAL)
-============================================================
-  COBERTURA 2d: 100.0%
-    2-digit: 25,101 (76.1%)
-    1-digit (fallback): 7,887 (23.9%)
-
-============================================================
-PARTE B: Crosswalk 4 dígitos (ROBUSTEZ)
-============================================================
-  CBOs 4d únicos: 629
-    N1: 177 (28.1%)
-    N2: 56 (8.9%)
-    N3: 123 (19.6%)
-    N4: 7 (1.1%)
-    N5: 115 (18.3%)
-    N6: 151 (24.0%)
-  COBERTURA 4d: 100.0%
-
-  Correlação Pearson (2d vs 4d): 0.9147
-
-Salvo: painel_caged_crosswalk.parquet</code></pre>
+<pre><code>Crosswalk carregado do checkpoint: painel_caged_crosswalk.parquet
+  32,988 linhas, cobertura 2d: 100.0%, 4d: 100.0%</code></pre>
 </div>
 </div>
 <p><strong>CBOs 2 dígitos sem match direto em ISCO-08:</strong> Subgrupos principais CBO que não possuem equivalente direto em Sub-major Group ISCO-08; recebem score via fallback a 1 dígito (Major Group). Lista abaixo (a partir do painel com crosswalk).</p>
-<div id="7a414cab" class="cell" data-execution_count="11">
+<div id="7a414cab" class="cell" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Listar CBO 2d que caem no fallback a 1 dígito (sem match direto em ISCO-08 Sub-major Group)</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">'match_level_2d'</span> <span class="kw">in</span> painel.columns:</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    fallback_2d <span class="op">=</span> painel[painel[<span class="st">'match_level_2d'</span>] <span class="op">==</span> <span class="st">'1-digit (fallback)'</span>][<span class="st">'cbo_2d'</span>].unique()</span>
@@ -1268,7 +1237,7 @@ Exemplo (cbo_2d=10): cbo_4d presentes: ['1010', '1011', '1020', '1021', '1030', 
 <h3 data-number="0.12" class="anchored" data-anchor-id="b.-verificar-crosswalk-checkpoint"><span class="header-section-number">0.12</span> 4b. Verificar crosswalk (CHECKPOINT)</h3>
 <p>Validar qualidade do crosswalk nas DUAS especificações: principal (2 dígitos) e robustez (4 dígitos). Verificar cobertura, distribuição de scores, correlação entre especificações e sanity check por grande grupo CBO.</p>
 <p><strong>Critérios de aceite:</strong> - Cobertura 2d ≥ 95% (esperado ~100%) - Cobertura 4d ≥ 80% (esperado ~100% com fallback) - Correlação 2d vs 4d &gt; 0.8 (consistência entre especificações)</p>
-<div id="de59ed6d" class="cell" data-execution_count="12">
+<div id="de59ed6d" class="cell" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.4b — CHECKPOINT: Verificar crosswalk CBO → ISCO-08</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">60</span>)</span>
@@ -1436,7 +1405,7 @@ Grande Grupo                               Score 2d   Score 4d
 <blockquote class="blockquote">
 <p><strong>Nota — Tratamento contínuo:</strong> Além das dummies, <code>exposure_score_2d</code> e <code>exposure_score_4d</code> podem ser usados diretamente como tratamento contínuo em especificações alternativas, conforme Hui et al.&nbsp;(2024).</p>
 </blockquote>
-<div id="8798f7cf" class="cell" data-execution_count="13">
+<div id="8798f7cf" class="cell" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.5a — Definição de tratamento</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Thresholds sobre a distribuição de ocupações (2d) ──</span></span>
@@ -1523,7 +1492,7 @@ All          26287        6701  32988</code></pre>
 <section id="b.-verificar-tratamento-checkpoint" class="level3" data-number="0.14">
 <h3 data-number="0.14" class="anchored" data-anchor-id="b.-verificar-tratamento-checkpoint"><span class="header-section-number">0.14</span> 5b. Verificar tratamento (CHECKPOINT)</h3>
 <p>Validar a definição de tratamento: top/bottom ocupações por exposição, distribuição por quintil, e concordância entre especificações 2d e 4d.</p>
-<div id="bc1457bd" class="cell" data-execution_count="14">
+<div id="bc1457bd" class="cell" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.5b — CHECKPOINT: Verificar definição de tratamento</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">60</span>)</span>
@@ -1655,7 +1624,7 @@ CHECKPOINT CONCLUÍDO
 </tr>
 </tbody>
 </table>
-<div id="2519c01b" class="cell" data-execution_count="15">
+<div id="2519c01b" class="cell" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.6a — Enriquecimento do painel</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> periodo_num_to_months(pn):</span>
@@ -1702,104 +1671,339 @@ Colunas totais: 74</code></pre>
 </div>
 </div>
 </section>
-<section id="salvar-dataset-analítico-final" class="level3" data-number="0.16">
-<h3 data-number="0.16" class="anchored" data-anchor-id="salvar-dataset-analítico-final"><span class="header-section-number">0.16</span> 7. Salvar dataset analítico final</h3>
+<section id="anexo-1-integração-anthropic-automation-vs-augmentation" class="level3" data-number="0.16">
+<h3 data-number="0.16" class="anchored" data-anchor-id="anexo-1-integração-anthropic-automation-vs-augmentation"><span class="header-section-number">0.16</span> Anexo 1: Integração Anthropic (Automation vs Augmentation)</h3>
+<p>Integração do <strong>Anthropic Economic Index</strong> (Brynjolfsson et al., 2025 — “Canaries in the Coal Mine”) para diferenciar ocupações onde a IA atua como <strong>Automação</strong> (substitui trabalho) vs <strong>Augmentação</strong> (complementa). O índice é construído a partir dos modos de colaboração (directive, feedback loop = automação; learning, task iteration, validation = augmentação) e mapeado para CBO 4d via SOC → ISCO-08 → COD, com imputação hierárquica para cobertura total.</p>
+<p><strong>Arquivos necessários em <code>data/input</code> (copiar das pastas do repositório se não existirem):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Arquivo</th>
+<th>Origem no repositório</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv</code></td>
+<td><code>EconomicIndex/release_2026_01_15/data/intermediate/</code> ou <code>etapa2_anthropic_index/</code></td>
+</tr>
+<tr class="even">
+<td><code>onet_task_statements.csv</code></td>
+<td><code>EconomicIndex/release_2025_09_15/data/intermediate/</code></td>
+</tr>
+<tr class="odd">
+<td><code>Crosswalk SOC 2010 a 2018.xlsx</code></td>
+<td><code>etapa3_crosswalk_onet_isco08/data_input/</code></td>
+</tr>
+<tr class="even">
+<td><code>Crosswalk SOC 2010 ISCO-08.xls</code></td>
+<td><code>etapa3_crosswalk_onet_isco08/data_input/</code></td>
+</tr>
+<tr class="odd">
+<td><code>Estrutura Ocupação COD.xls</code></td>
+<td><code>etapa1_ia_generativa/data/raw/</code> ou <code>etapa3_crosswalk_onet_isco08/data_input/</code></td>
+</tr>
+</tbody>
+</table>
+<p>Se <code>anthropic_automation_augmentation_cbo.parquet</code> existir em <code>data/processed</code> e <code>KEEP_ANTHROPIC_INDEX = True</code>, o processamento pesado é pulado e o cache é carregado.</p>
+<div id="470b1b6a" class="cell" data-execution_count="32">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Anexo 1 — Copiar inputs para data/input (se ainda não estiverem) para notebook autocontido</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> shutil</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Raiz do projeto: se estamos em notebook/, sobe um nível</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>_cwd <span class="op">=</span> Path(<span class="st">"."</span>).resolve()</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>REPO_ROOT <span class="op">=</span> _cwd.parent <span class="cf">if</span> (_cwd <span class="op">/</span> <span class="st">"etapa3_crosswalk_onet_isco08"</span>).exists() <span class="op">==</span> <span class="va">False</span> <span class="cf">else</span> _cwd</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>origins <span class="op">=</span> [</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    (REPO_ROOT <span class="op">/</span> <span class="st">"EconomicIndex"</span> <span class="op">/</span> <span class="st">"release_2026_01_15"</span> <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"intermediate"</span> <span class="op">/</span> <span class="st">"aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv"</span>, DATA_INPUT <span class="op">/</span> <span class="st">"aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv"</span>),</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    (REPO_ROOT <span class="op">/</span> <span class="st">"EconomicIndex"</span> <span class="op">/</span> <span class="st">"release_2025_09_15"</span> <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"intermediate"</span> <span class="op">/</span> <span class="st">"onet_task_statements.csv"</span>, DATA_INPUT <span class="op">/</span> <span class="st">"onet_task_statements.csv"</span>),</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>    (REPO_ROOT <span class="op">/</span> <span class="st">"etapa3_crosswalk_onet_isco08"</span> <span class="op">/</span> <span class="st">"data_input"</span> <span class="op">/</span> <span class="st">"Crosswalk SOC 2010 a 2018.xlsx"</span>, DATA_INPUT <span class="op">/</span> <span class="st">"Crosswalk SOC 2010 a 2018.xlsx"</span>),</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    (REPO_ROOT <span class="op">/</span> <span class="st">"etapa3_crosswalk_onet_isco08"</span> <span class="op">/</span> <span class="st">"data_input"</span> <span class="op">/</span> <span class="st">"Crosswalk SOC 2010 ISCO-08.xls"</span>, DATA_INPUT <span class="op">/</span> <span class="st">"Crosswalk SOC 2010 ISCO-08.xls"</span>),</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>    (REPO_ROOT <span class="op">/</span> <span class="st">"etapa1_ia_generativa"</span> <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"raw"</span> <span class="op">/</span> <span class="st">"Estrutura Ocupação COD.xls"</span>, DATA_INPUT <span class="op">/</span> <span class="st">"Estrutura Ocupação COD.xls"</span>),</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> src, dst <span class="kw">in</span> origins:</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> src.exists() <span class="kw">and</span> (<span class="kw">not</span> dst.exists() <span class="kw">or</span> dst.stat().st_size <span class="op">==</span> <span class="dv">0</span>):</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>        shutil.copy2(src, dst)</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Copiado: </span><span class="sc">{</span>dst<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">not</span> src.exists() <span class="kw">and</span> dst.exists():</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Já em data/input: </span><span class="sc">{</span>dst<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">not</span> src.exists():</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"AVISO: não encontrado no repo: </span><span class="sc">{</span>src<span class="sc">.</span>relative_to(REPO_ROOT) <span class="cf">if</span> src<span class="sc">.</span>is_relative_to(REPO_ROOT) <span class="cf">else</span> src<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Inputs em data/input conferidos."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Copiado: aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv
+Copiado: onet_task_statements.csv
+Copiado: Crosswalk SOC 2010 a 2018.xlsx
+Copiado: Crosswalk SOC 2010 ISCO-08.xls
+Inputs em data/input conferidos.</code></pre>
+</div>
+</div>
+<div id="ca697ae7" class="cell" data-execution_count="35">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Anexo 1 — Carregar cache ou rodar pipeline Anthropic (Automation vs Augmentation)</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _weighted_mean(values, weights):</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> <span class="op">~</span>(pd.isna(values) <span class="op">|</span> pd.isna(weights))</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> mask.<span class="bu">sum</span>() <span class="op">==</span> <span class="dv">0</span>: <span class="cf">return</span> np.nan</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>    v, w <span class="op">=</span> values[mask], weights[mask]</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.average(v, weights<span class="op">=</span>w) <span class="cf">if</span> w.<span class="bu">sum</span>() <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> v.mean()</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _calculate_indices(df_task):</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>    required_modes <span class="op">=</span> [<span class="st">"directive"</span>, <span class="st">"feedback loop"</span>, <span class="st">"learning"</span>, <span class="st">"task iteration"</span>, <span class="st">"validation"</span>]</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> m <span class="kw">in</span> required_modes:</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> m <span class="kw">not</span> <span class="kw">in</span> df_task.columns: df_task[m] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>    df_task[<span class="st">"total_collab"</span>] <span class="op">=</span> df_task[required_modes].<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> df_task[<span class="st">"total_collab"</span>] <span class="op">&gt;</span> <span class="dv">0</span></span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>    df_task.loc[mask, <span class="st">"automation_share"</span>] <span class="op">=</span> (df_task.loc[mask, <span class="st">"directive"</span>] <span class="op">+</span> df_task.loc[mask, <span class="st">"feedback loop"</span>]) <span class="op">/</span> df_task.loc[mask, <span class="st">"total_collab"</span>]</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>    df_task.loc[mask, <span class="st">"augmentation_share"</span>] <span class="op">=</span> (df_task.loc[mask, <span class="st">"learning"</span>] <span class="op">+</span> df_task.loc[mask, <span class="st">"task iteration"</span>] <span class="op">+</span> df_task.loc[mask, <span class="st">"validation"</span>]) <span class="op">/</span> df_task.loc[mask, <span class="st">"total_collab"</span>]</span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>    df_task[<span class="st">"automation_share"</span>] <span class="op">=</span> df_task[<span class="st">"automation_share"</span>].fillna(<span class="dv">0</span>)</span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>    df_task[<span class="st">"augmentation_share"</span>] <span class="op">=</span> df_task[<span class="st">"augmentation_share"</span>].fillna(<span class="dv">0</span>)</span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>    df_task[<span class="st">"automation_index"</span>] <span class="op">=</span> df_task[<span class="st">"automation_share"</span>] <span class="op">-</span> df_task[<span class="st">"augmentation_share"</span>]</span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>    df_task[<span class="st">"dominant_mode"</span>] <span class="op">=</span> np.where(df_task[<span class="st">"automation_index"</span>] <span class="op">&gt;</span> <span class="dv">0</span>, <span class="st">"automation"</span>, <span class="st">"augmentation"</span>)</span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df_task</span>
+<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>df_anthropic_cbo <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> KEEP_ANTHROPIC_INDEX <span class="kw">and</span> ANTHROPIC_INDEX_CACHE.exists():</span>
+<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a>    df_anthropic_cbo <span class="op">=</span> pd.read_parquet(ANTHROPIC_INDEX_CACHE)</span>
+<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Índice Anthropic carregado do cache: </span><span class="sc">{</span>ANTHROPIC_INDEX_CACHE<span class="sc">.</span>name<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span><span class="bu">len</span>(df_anthropic_cbo)<span class="sc">}</span><span class="ss"> ocupações CBO 4d)"</span>)</span>
+<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Pipeline completo</span></span>
+<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>    AEI_RAW <span class="op">=</span> DATA_INPUT <span class="op">/</span> <span class="st">"aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv"</span></span>
+<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a>    ONET_TASKS <span class="op">=</span> DATA_INPUT <span class="op">/</span> <span class="st">"onet_task_statements.csv"</span></span>
+<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a>    CROSSWALK_10_18 <span class="op">=</span> DATA_INPUT <span class="op">/</span> <span class="st">"Crosswalk SOC 2010 a 2018.xlsx"</span></span>
+<span id="cb33-31"><a href="#cb33-31" aria-hidden="true" tabindex="-1"></a>    CROSSWALK_ISCO <span class="op">=</span> DATA_INPUT <span class="op">/</span> <span class="st">"Crosswalk SOC 2010 ISCO-08.xls"</span></span>
+<span id="cb33-32"><a href="#cb33-32" aria-hidden="true" tabindex="-1"></a>    ESTRUTURA_COD <span class="op">=</span> DATA_INPUT <span class="op">/</span> <span class="st">"Estrutura Ocupação COD.xls"</span></span>
+<span id="cb33-33"><a href="#cb33-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> AEI_RAW.exists() <span class="kw">or</span> <span class="kw">not</span> ONET_TASKS.exists():</span>
+<span id="cb33-34"><a href="#cb33-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">FileNotFoundError</span>(<span class="st">"Coloque aei_raw_claude_ai_*.csv e onet_task_statements.csv em data/input. Veja Anexo 1."</span>)</span>
+<span id="cb33-35"><a href="#cb33-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1) Carregar Anthropic + O*NET</span></span>
+<span id="cb33-36"><a href="#cb33-36" aria-hidden="true" tabindex="-1"></a>    df_raw <span class="op">=</span> pd.read_csv(AEI_RAW)</span>
+<span id="cb33-37"><a href="#cb33-37" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> (df_raw[<span class="st">"facet"</span>] <span class="op">==</span> <span class="st">"onet_task::collaboration"</span>) <span class="op">&amp;</span> (df_raw[<span class="st">"geo_id"</span>] <span class="op">==</span> <span class="st">"GLOBAL"</span>)</span>
+<span id="cb33-38"><a href="#cb33-38" aria-hidden="true" tabindex="-1"></a>    df_collab <span class="op">=</span> df_raw[mask].copy()</span>
+<span id="cb33-39"><a href="#cb33-39" aria-hidden="true" tabindex="-1"></a>    df_collab[[<span class="st">"task_desc"</span>, <span class="st">"mode"</span>]] <span class="op">=</span> df_collab[<span class="st">"cluster_name"</span>].<span class="bu">str</span>.rsplit(<span class="st">"::"</span>, n<span class="op">=</span><span class="dv">1</span>, expand<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb33-40"><a href="#cb33-40" aria-hidden="true" tabindex="-1"></a>    df_collab[<span class="st">"task_desc_clean"</span>] <span class="op">=</span> df_collab[<span class="st">"task_desc"</span>].<span class="bu">str</span>.strip().<span class="bu">str</span>.lower().<span class="bu">str</span>.rstrip(<span class="st">"."</span>)</span>
+<span id="cb33-41"><a href="#cb33-41" aria-hidden="true" tabindex="-1"></a>    df_pivot <span class="op">=</span> df_collab.pivot_table(index<span class="op">=</span><span class="st">"task_desc_clean"</span>, columns<span class="op">=</span><span class="st">"mode"</span>, values<span class="op">=</span><span class="st">"value"</span>, aggfunc<span class="op">=</span><span class="st">"first"</span>).reset_index()</span>
+<span id="cb33-42"><a href="#cb33-42" aria-hidden="true" tabindex="-1"></a>    df_onet <span class="op">=</span> pd.read_csv(ONET_TASKS)</span>
+<span id="cb33-43"><a href="#cb33-43" aria-hidden="true" tabindex="-1"></a>    df_onet[<span class="st">"task_desc_clean"</span>] <span class="op">=</span> df_onet[<span class="st">"Task"</span>].<span class="bu">str</span>.strip().<span class="bu">str</span>.lower().<span class="bu">str</span>.rstrip(<span class="st">"."</span>)</span>
+<span id="cb33-44"><a href="#cb33-44" aria-hidden="true" tabindex="-1"></a>    task_mapping <span class="op">=</span> df_onet[[<span class="st">"task_desc_clean"</span>, <span class="st">"O*NET-SOC Code"</span>]].drop_duplicates()</span>
+<span id="cb33-45"><a href="#cb33-45" aria-hidden="true" tabindex="-1"></a>    task_mapping.columns <span class="op">=</span> [<span class="st">"task_desc_clean"</span>, <span class="st">"onet_soc_code"</span>]</span>
+<span id="cb33-46"><a href="#cb33-46" aria-hidden="true" tabindex="-1"></a>    df_pivot <span class="op">=</span> df_pivot.merge(task_mapping, on<span class="op">=</span><span class="st">"task_desc_clean"</span>, how<span class="op">=</span><span class="st">"inner"</span>)</span>
+<span id="cb33-47"><a href="#cb33-47" aria-hidden="true" tabindex="-1"></a>    mask_count <span class="op">=</span> (df_raw[<span class="st">"facet"</span>] <span class="op">==</span> <span class="st">"onet_task"</span>) <span class="op">&amp;</span> (df_raw[<span class="st">"variable"</span>] <span class="op">==</span> <span class="st">"onet_task_count"</span>) <span class="op">&amp;</span> (df_raw[<span class="st">"geo_id"</span>] <span class="op">==</span> <span class="st">"GLOBAL"</span>)</span>
+<span id="cb33-48"><a href="#cb33-48" aria-hidden="true" tabindex="-1"></a>    df_counts <span class="op">=</span> df_raw[mask_count][[<span class="st">"cluster_name"</span>, <span class="st">"value"</span>]].rename(columns<span class="op">=</span>{<span class="st">"cluster_name"</span>: <span class="st">"task_desc"</span>, <span class="st">"value"</span>: <span class="st">"usage_volume"</span>})</span>
+<span id="cb33-49"><a href="#cb33-49" aria-hidden="true" tabindex="-1"></a>    df_counts[<span class="st">"task_desc_clean"</span>] <span class="op">=</span> df_counts[<span class="st">"task_desc"</span>].<span class="bu">str</span>.strip().<span class="bu">str</span>.lower().<span class="bu">str</span>.rstrip(<span class="st">"."</span>)</span>
+<span id="cb33-50"><a href="#cb33-50" aria-hidden="true" tabindex="-1"></a>    df_counts <span class="op">=</span> df_counts.groupby(<span class="st">"task_desc_clean"</span>)[<span class="st">"usage_volume"</span>].<span class="bu">sum</span>().reset_index()</span>
+<span id="cb33-51"><a href="#cb33-51" aria-hidden="true" tabindex="-1"></a>    df_task <span class="op">=</span> df_pivot.merge(df_counts, on<span class="op">=</span><span class="st">"task_desc_clean"</span>, how<span class="op">=</span><span class="st">"inner"</span>)</span>
+<span id="cb33-52"><a href="#cb33-52" aria-hidden="true" tabindex="-1"></a>    df_task <span class="op">=</span> _calculate_indices(df_task)</span>
+<span id="cb33-53"><a href="#cb33-53" aria-hidden="true" tabindex="-1"></a>    df_onet[<span class="st">"soc_6d"</span>] <span class="op">=</span> df_onet[<span class="st">"O*NET-SOC Code"</span>].<span class="bu">str</span>.split(<span class="st">"."</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="cb33-54"><a href="#cb33-54" aria-hidden="true" tabindex="-1"></a>    soc_mapping <span class="op">=</span> df_onet[[<span class="st">"O*NET-SOC Code"</span>, <span class="st">"soc_6d"</span>, <span class="st">"Title"</span>]].drop_duplicates()</span>
+<span id="cb33-55"><a href="#cb33-55" aria-hidden="true" tabindex="-1"></a>    soc_mapping.columns <span class="op">=</span> [<span class="st">"onet_soc_code"</span>, <span class="st">"soc_6d"</span>, <span class="st">"occupation_title"</span>]</span>
+<span id="cb33-56"><a href="#cb33-56" aria-hidden="true" tabindex="-1"></a>    df_merged <span class="op">=</span> df_task.merge(soc_mapping, on<span class="op">=</span><span class="st">"onet_soc_code"</span>, how<span class="op">=</span><span class="st">"inner"</span>)</span>
+<span id="cb33-57"><a href="#cb33-57" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> agg_wm(x): <span class="cf">return</span> _weighted_mean(x, df_merged.loc[x.index, <span class="st">"usage_volume"</span>])</span>
+<span id="cb33-58"><a href="#cb33-58" aria-hidden="true" tabindex="-1"></a>    df_soc <span class="op">=</span> df_merged.groupby([<span class="st">"soc_6d"</span>, <span class="st">"occupation_title"</span>]).agg(</span>
+<span id="cb33-59"><a href="#cb33-59" aria-hidden="true" tabindex="-1"></a>        automation_share<span class="op">=</span>(<span class="st">"automation_share"</span>, agg_wm), augmentation_share<span class="op">=</span>(<span class="st">"augmentation_share"</span>, agg_wm), usage_volume<span class="op">=</span>(<span class="st">"usage_volume"</span>, <span class="st">"sum"</span>)</span>
+<span id="cb33-60"><a href="#cb33-60" aria-hidden="true" tabindex="-1"></a>    ).reset_index()</span>
+<span id="cb33-61"><a href="#cb33-61" aria-hidden="true" tabindex="-1"></a>    df_soc[<span class="st">"automation_index_cai"</span>] <span class="op">=</span> df_soc[<span class="st">"automation_share"</span>] <span class="op">-</span> df_soc[<span class="st">"augmentation_share"</span>]</span>
+<span id="cb33-62"><a href="#cb33-62" aria-hidden="true" tabindex="-1"></a>    df_soc[<span class="st">"automation_share_cai"</span>] <span class="op">=</span> df_soc[<span class="st">"automation_share"</span>]</span>
+<span id="cb33-63"><a href="#cb33-63" aria-hidden="true" tabindex="-1"></a>    df_soc[<span class="st">"augmentation_share_cai"</span>] <span class="op">=</span> df_soc[<span class="st">"augmentation_share"</span>]</span>
+<span id="cb33-64"><a href="#cb33-64" aria-hidden="true" tabindex="-1"></a>    df_soc.to_csv(DATA_PROCESSED <span class="op">/</span> <span class="st">"onet_automation_augmentation_index.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb33-65"><a href="#cb33-65" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2) Crosswalk SOC -&gt; ISCO-08 (fallback SOC 2018 -&gt; 2010 -&gt; ISCO)</span></span>
+<span id="cb33-66"><a href="#cb33-66" aria-hidden="true" tabindex="-1"></a>    df_10_18 <span class="op">=</span> pd.read_excel(CROSSWALK_10_18, skiprows<span class="op">=</span><span class="dv">7</span>).iloc[:, :<span class="dv">4</span>]</span>
+<span id="cb33-67"><a href="#cb33-67" aria-hidden="true" tabindex="-1"></a>    df_10_18.columns <span class="op">=</span> [<span class="st">"soc_2010_code"</span>, <span class="st">"soc_2010_title"</span>, <span class="st">"soc_2018_code"</span>, <span class="st">"soc_2018_title"</span>]</span>
+<span id="cb33-68"><a href="#cb33-68" aria-hidden="true" tabindex="-1"></a>    df_10_18[<span class="st">"soc_2018_code"</span>] <span class="op">=</span> df_10_18[<span class="st">"soc_2018_code"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.replace(<span class="st">".00"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">False</span>).<span class="bu">str</span>.strip()</span>
+<span id="cb33-69"><a href="#cb33-69" aria-hidden="true" tabindex="-1"></a>    df_10_18 <span class="op">=</span> df_10_18.dropna(subset<span class="op">=</span>[<span class="st">"soc_2010_code"</span>, <span class="st">"soc_2018_code"</span>])</span>
+<span id="cb33-70"><a href="#cb33-70" aria-hidden="true" tabindex="-1"></a>    df_soc_isco <span class="op">=</span> pd.read_excel(CROSSWALK_ISCO, sheet_name<span class="op">=</span><span class="st">"2010 SOC to ISCO-08"</span>, skiprows<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb33-71"><a href="#cb33-71" aria-hidden="true" tabindex="-1"></a>    df_soc_isco.columns <span class="op">=</span> [<span class="st">"soc_2010_code"</span>, <span class="st">"soc_2010_title"</span>, <span class="st">"part"</span>, <span class="st">"isco_08_code"</span>, <span class="st">"isco_08_title"</span>, <span class="st">"comment"</span>]</span>
+<span id="cb33-72"><a href="#cb33-72" aria-hidden="true" tabindex="-1"></a>    df_soc_isco <span class="op">=</span> df_soc_isco.dropna(subset<span class="op">=</span>[<span class="st">"soc_2010_code"</span>, <span class="st">"isco_08_code"</span>])</span>
+<span id="cb33-73"><a href="#cb33-73" aria-hidden="true" tabindex="-1"></a>    df_soc_isco[<span class="st">"isco_08_code"</span>] <span class="op">=</span> df_soc_isco[<span class="st">"isco_08_code"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.replace(<span class="st">".0"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">False</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb33-74"><a href="#cb33-74" aria-hidden="true" tabindex="-1"></a>    df_merged <span class="op">=</span> df_soc.merge(df_10_18, left_on<span class="op">=</span><span class="st">"soc_6d"</span>, right_on<span class="op">=</span><span class="st">"soc_2018_code"</span>, how<span class="op">=</span><span class="st">"inner"</span>).merge(df_soc_isco, on<span class="op">=</span><span class="st">"soc_2010_code"</span>, how<span class="op">=</span><span class="st">"inner"</span>)</span>
+<span id="cb33-75"><a href="#cb33-75" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> agg_isco(x): <span class="cf">return</span> _weighted_mean(x, df_merged.loc[x.index, <span class="st">"usage_volume"</span>])</span>
+<span id="cb33-76"><a href="#cb33-76" aria-hidden="true" tabindex="-1"></a>    df_isco <span class="op">=</span> df_merged.groupby(<span class="st">"isco_08_code"</span>).agg(</span>
+<span id="cb33-77"><a href="#cb33-77" aria-hidden="true" tabindex="-1"></a>        automation_share_cai<span class="op">=</span>(<span class="st">"automation_share_cai"</span>, agg_isco), augmentation_share_cai<span class="op">=</span>(<span class="st">"augmentation_share_cai"</span>, agg_isco),</span>
+<span id="cb33-78"><a href="#cb33-78" aria-hidden="true" tabindex="-1"></a>        automation_index_cai<span class="op">=</span>(<span class="st">"automation_index_cai"</span>, agg_isco), usage_volume<span class="op">=</span>(<span class="st">"usage_volume"</span>, <span class="st">"sum"</span>)</span>
+<span id="cb33-79"><a href="#cb33-79" aria-hidden="true" tabindex="-1"></a>    ).reset_index()</span>
+<span id="cb33-80"><a href="#cb33-80" aria-hidden="true" tabindex="-1"></a>    df_isco[<span class="st">"dominant_mode_cai"</span>] <span class="op">=</span> np.where(df_isco[<span class="st">"automation_index_cai"</span>] <span class="op">&gt;</span> <span class="dv">0</span>, <span class="st">"automation"</span>, <span class="st">"augmentation"</span>)</span>
+<span id="cb33-81"><a href="#cb33-81" aria-hidden="true" tabindex="-1"></a>    df_isco.to_csv(DATA_PROCESSED <span class="op">/</span> <span class="st">"isco_automation_augmentation_index.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="61b60bc4" class="cell" data-execution_count="36">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Anexo 1 — Continuação: ISCO -&gt; COD, imputação hierárquica, salvar cache (só roda se pipeline foi executado)</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> df_anthropic_cbo <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>        df_esco <span class="op">=</span> pd.read_csv(DATA_PROCESSED <span class="op">/</span> <span class="st">"isco_automation_augmentation_index.csv"</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span>:</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">"Execute a célula anterior do Anexo 1 primeiro."</span>)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    ESTRUTURA_COD <span class="op">=</span> DATA_INPUT <span class="op">/</span> <span class="st">"Estrutura Ocupação COD.xls"</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> ESTRUTURA_COD.exists():</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">FileNotFoundError</span>(<span class="st">"Coloque Estrutura Ocupação COD.xls em data/input."</span>)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>        df_cod <span class="op">=</span> pd.read_excel(ESTRUTURA_COD, sheet_name<span class="op">=</span><span class="st">"Estrutura COD"</span>, engine<span class="op">=</span><span class="st">"xlrd"</span>, header<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span>:</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>        df_cod <span class="op">=</span> pd.read_excel(ESTRUTURA_COD, sheet_name<span class="op">=</span><span class="st">"Estrutura COD"</span>, engine<span class="op">=</span><span class="st">"openpyxl"</span>, header<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>    df_cod.columns <span class="op">=</span> [<span class="st">"grande_grupo"</span>, <span class="st">"subgrupo_principal"</span>, <span class="st">"subgrupo"</span>, <span class="st">"grupo_base"</span>, <span class="st">"denominacao"</span>]</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>    df_gb <span class="op">=</span> df_cod.dropna(subset<span class="op">=</span>[<span class="st">"grupo_base"</span>])[[<span class="st">"grupo_base"</span>, <span class="st">"denominacao"</span>]].copy()</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>    df_gb[<span class="st">"cod_cod"</span>] <span class="op">=</span> df_gb[<span class="st">"grupo_base"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.replace(<span class="st">".0"</span>, <span class="st">""</span>, regex<span class="op">=</span><span class="va">False</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>    df_esco[<span class="st">"isco_08_code"</span>] <span class="op">=</span> df_esco[<span class="st">"isco_08_code"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>    df_cod_merge <span class="op">=</span> df_gb[[<span class="st">"cod_cod"</span>, <span class="st">"denominacao"</span>]].merge(df_esco, left_on<span class="op">=</span><span class="st">"cod_cod"</span>, right_on<span class="op">=</span><span class="st">"isco_08_code"</span>, how<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>    metrics_cols <span class="op">=</span> [<span class="st">"automation_share_cai"</span>, <span class="st">"augmentation_share_cai"</span>, <span class="st">"automation_index_cai"</span>]</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>    df_cod_merge[<span class="st">"imputation_method"</span>] <span class="op">=</span> np.where(df_cod_merge[<span class="st">"automation_index_cai"</span>].notna(), <span class="st">"direct_match"</span>, <span class="st">"missing"</span>)</span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a>    df_isco <span class="op">=</span> df_esco.copy()</span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>    df_isco[<span class="st">"isco_3d"</span>] <span class="op">=</span> df_isco[<span class="st">"isco_08_code"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>[:<span class="dv">3</span>]</span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>    df_isco[<span class="st">"isco_2d"</span>] <span class="op">=</span> df_isco[<span class="st">"isco_08_code"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>[:<span class="dv">2</span>]</span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"usage_volume"</span> <span class="kw">not</span> <span class="kw">in</span> df_isco.columns: df_isco[<span class="st">"usage_volume"</span>] <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a>    avg_3d <span class="op">=</span> df_isco.groupby(<span class="st">"isco_3d"</span>).<span class="bu">apply</span>(<span class="kw">lambda</span> g: pd.Series({c: _weighted_mean(g[c], g[<span class="st">"usage_volume"</span>]) <span class="cf">for</span> c <span class="kw">in</span> metrics_cols <span class="cf">if</span> c <span class="kw">in</span> g.columns})).reset_index()</span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a>    avg_2d <span class="op">=</span> df_isco.groupby(<span class="st">"isco_2d"</span>).<span class="bu">apply</span>(<span class="kw">lambda</span> g: pd.Series({c: _weighted_mean(g[c], g[<span class="st">"usage_volume"</span>]) <span class="cf">for</span> c <span class="kw">in</span> metrics_cols <span class="cf">if</span> c <span class="kw">in</span> g.columns})).reset_index()</span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>    df_cod_merge[<span class="st">"cod_3d"</span>] <span class="op">=</span> df_cod_merge[<span class="st">"cod_cod"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>[:<span class="dv">3</span>]</span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>    df_cod_merge[<span class="st">"cod_2d"</span>] <span class="op">=</span> df_cod_merge[<span class="st">"cod_cod"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>[:<span class="dv">2</span>]</span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a>    mask_miss <span class="op">=</span> df_cod_merge[<span class="st">"automation_index_cai"</span>].isna()</span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> idx <span class="kw">in</span> df_cod_merge[mask_miss].index:</span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a>        c3 <span class="op">=</span> df_cod_merge.loc[idx, <span class="st">"cod_3d"</span>]</span>
+<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a>        row3 <span class="op">=</span> avg_3d[avg_3d[<span class="st">"isco_3d"</span>] <span class="op">==</span> c3]</span>
+<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(row3) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> c <span class="kw">in</span> metrics_cols:</span>
+<span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> c <span class="kw">in</span> row3.columns: df_cod_merge.loc[idx, c] <span class="op">=</span> row3[c].iloc[<span class="dv">0</span>]</span>
+<span id="cb34-36"><a href="#cb34-36" aria-hidden="true" tabindex="-1"></a>            df_cod_merge.loc[idx, <span class="st">"imputation_method"</span>] <span class="op">=</span> <span class="st">"hierarchical_3d_mean"</span></span>
+<span id="cb34-37"><a href="#cb34-37" aria-hidden="true" tabindex="-1"></a>    mask_miss <span class="op">=</span> df_cod_merge[<span class="st">"automation_index_cai"</span>].isna()</span>
+<span id="cb34-38"><a href="#cb34-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> idx <span class="kw">in</span> df_cod_merge[mask_miss].index:</span>
+<span id="cb34-39"><a href="#cb34-39" aria-hidden="true" tabindex="-1"></a>        c2 <span class="op">=</span> df_cod_merge.loc[idx, <span class="st">"cod_2d"</span>]</span>
+<span id="cb34-40"><a href="#cb34-40" aria-hidden="true" tabindex="-1"></a>        row2 <span class="op">=</span> avg_2d[avg_2d[<span class="st">"isco_2d"</span>] <span class="op">==</span> c2]</span>
+<span id="cb34-41"><a href="#cb34-41" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(row2) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb34-42"><a href="#cb34-42" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> c <span class="kw">in</span> metrics_cols:</span>
+<span id="cb34-43"><a href="#cb34-43" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> c <span class="kw">in</span> row2.columns: df_cod_merge.loc[idx, c] <span class="op">=</span> row2[c].iloc[<span class="dv">0</span>]</span>
+<span id="cb34-44"><a href="#cb34-44" aria-hidden="true" tabindex="-1"></a>            df_cod_merge.loc[idx, <span class="st">"imputation_method"</span>] <span class="op">=</span> <span class="st">"hierarchical_2d_mean"</span></span>
+<span id="cb34-45"><a href="#cb34-45" aria-hidden="true" tabindex="-1"></a>    mask_still <span class="op">=</span> df_cod_merge[<span class="st">"automation_index_cai"</span>].isna()</span>
+<span id="cb34-46"><a href="#cb34-46" aria-hidden="true" tabindex="-1"></a>    df_cod_merge.loc[mask_still, metrics_cols] <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb34-47"><a href="#cb34-47" aria-hidden="true" tabindex="-1"></a>    df_cod_merge.loc[mask_still, <span class="st">"imputation_method"</span>] <span class="op">=</span> <span class="st">"zero_imputation_no_data"</span></span>
+<span id="cb34-48"><a href="#cb34-48" aria-hidden="true" tabindex="-1"></a>    df_cod_merge[<span class="st">"dominant_mode_cai"</span>] <span class="op">=</span> np.where(df_cod_merge[<span class="st">"automation_index_cai"</span>] <span class="op">&gt;</span> <span class="dv">0</span>, <span class="st">"automation"</span>, <span class="st">"augmentation"</span>)</span>
+<span id="cb34-49"><a href="#cb34-49" aria-hidden="true" tabindex="-1"></a>    df_cod_merge.to_csv(DATA_PROCESSED <span class="op">/</span> <span class="st">"cod_automation_augmentation_index_final.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb34-50"><a href="#cb34-50" aria-hidden="true" tabindex="-1"></a>    df_anthropic_cbo <span class="op">=</span> df_cod_merge[[<span class="st">"cod_cod"</span>, <span class="st">"automation_share_cai"</span>, <span class="st">"augmentation_share_cai"</span>, <span class="st">"automation_index_cai"</span>, <span class="st">"dominant_mode_cai"</span>, <span class="st">"imputation_method"</span>]].copy()</span>
+<span id="cb34-51"><a href="#cb34-51" aria-hidden="true" tabindex="-1"></a>    df_anthropic_cbo <span class="op">=</span> df_anthropic_cbo.rename(columns<span class="op">=</span>{<span class="st">"cod_cod"</span>: <span class="st">"cbo_4d"</span>, <span class="st">"automation_index_cai"</span>: <span class="st">"anthropic_automation_index"</span>})</span>
+<span id="cb34-52"><a href="#cb34-52" aria-hidden="true" tabindex="-1"></a>    df_anthropic_cbo[<span class="st">"cbo_4d"</span>] <span class="op">=</span> df_anthropic_cbo[<span class="st">"cbo_4d"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb34-53"><a href="#cb34-53" aria-hidden="true" tabindex="-1"></a>    df_anthropic_cbo.to_parquet(ANTHROPIC_INDEX_CACHE, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb34-54"><a href="#cb34-54" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Pipeline Anthropic concluído. Cache salvo: </span><span class="sc">{</span>ANTHROPIC_INDEX_CACHE<span class="sc">}</span><span class="ss">. Ocupações: </span><span class="sc">{</span><span class="bu">len</span>(df_anthropic_cbo)<span class="sc">}</span><span class="ss">."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Pipeline Anthropic concluído. Cache salvo: data/processed/anthropic_automation_augmentation_cbo.parquet. Ocupações: 435.</code></pre>
+</div>
+</div>
+<div id="023ac036" class="cell" data-execution_count="37">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Anexo 1 — Merge do índice Anthropic ao painel e criação das dummies (automation vs augmentation)</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Garantir formato cbo_4d string 4 dígitos para o merge</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>_cbo <span class="op">=</span> painel[<span class="st">"cbo_4d"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>df_anthropic_cbo[<span class="st">"cbo_4d"</span>] <span class="op">=</span> df_anthropic_cbo[<span class="st">"cbo_4d"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>cols_merge <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> [<span class="st">"anthropic_automation_index"</span>, <span class="st">"automation_share_cai"</span>, <span class="st">"augmentation_share_cai"</span>, <span class="st">"dominant_mode_cai"</span>] <span class="cf">if</span> c <span class="kw">in</span> df_anthropic_cbo.columns]</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>idx_cbo <span class="op">=</span> df_anthropic_cbo.set_index(<span class="st">"cbo_4d"</span>)[cols_merge]</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>painel <span class="op">=</span> painel.copy()</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> cols_merge:</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>    painel[c] <span class="op">=</span> _cbo.<span class="bu">map</span>(idx_cbo[c] <span class="cf">if</span> c <span class="kw">in</span> idx_cbo.columns <span class="cf">else</span> idx_cbo.squeeze()).values</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Score contínuo: preencher NaN com 0 (imputação hierárquica já cobriu todas as CBOs no índice)</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>painel[<span class="st">"anthropic_automation_index"</span>] <span class="op">=</span> painel[<span class="st">"anthropic_automation_index"</span>].fillna(<span class="fl">0.0</span>)</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Dummies: Automação = 1 quando automation &gt; augmentation (índice &gt; 0); Augmentação = 1 quando augmentation &gt; automation</span></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>painel[<span class="st">"is_automation"</span>] <span class="op">=</span> (painel[<span class="st">"anthropic_automation_index"</span>] <span class="op">&gt;</span> <span class="dv">0</span>).astype(<span class="bu">int</span>)</span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>painel[<span class="st">"is_augmentation"</span>] <span class="op">=</span> (painel[<span class="st">"anthropic_automation_index"</span>] <span class="op">&lt;=</span> <span class="dv">0</span>).astype(<span class="bu">int</span>)</span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Anexo 1 — Merge concluído. anthropic_automation_index: cobertura </span><span class="sc">{</span>painel[<span class="st">'anthropic_automation_index'</span>]<span class="sc">.</span>notna()<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">. "</span></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f"is_automation=</span><span class="sc">{</span>painel[<span class="st">'is_automation'</span>]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">, is_augmentation=</span><span class="sc">{</span>painel[<span class="st">'is_augmentation'</span>]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Anexo 1 — Merge concluído. anthropic_automation_index: cobertura 100.0%. is_automation=5.4%, is_augmentation=94.6%</code></pre>
+</div>
+</div>
+</section>
+<section id="salvar-dataset-analítico-final" class="level3" data-number="0.17">
+<h3 data-number="0.17" class="anchored" data-anchor-id="salvar-dataset-analítico-final"><span class="header-section-number">0.17</span> 7. Salvar dataset analítico final</h3>
 <p>Selecionar colunas finais, remover ocupações sem score de exposição e salvar o dataset pronto para a análise DiD (Notebook 2b).</p>
 <p><strong>Saída:</strong> - <code>data/output/painel_caged_did_ready.parquet</code> — formato eficiente para análise - <code>data/output/painel_caged_did_ready.csv</code> — backup legível</p>
-<div id="f56e1220" class="cell" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.7 — Salvar dataset analítico final</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> KEEP_PANEL_FINAL:</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> PAINEL_FINAL_PARQUET.exists():</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>        PAINEL_FINAL_PARQUET.unlink()</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Cache removido: </span><span class="sc">{</span>PAINEL_FINAL_PARQUET<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> PAINEL_FINAL_CSV.exists():</span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>        PAINEL_FINAL_CSV.unlink()</span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Cache removido: </span><span class="sc">{</span>PAINEL_FINAL_CSV<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Selecionar colunas finais ──</span></span>
-<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>cols_finais <span class="op">=</span> [</span>
-<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Identificação</span></span>
-<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'cbo_4d'</span>, <span class="st">'cbo_2d'</span>, <span class="st">'ano'</span>, <span class="st">'mes'</span>, <span class="st">'periodo'</span>, <span class="st">'periodo_num'</span>,</span>
-<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Outcomes</span></span>
-<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'admissoes'</span>, <span class="st">'desligamentos'</span>, <span class="st">'saldo'</span>, <span class="st">'n_movimentacoes'</span>,</span>
-<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes'</span>, <span class="st">'ln_desligamentos'</span>,</span>
-<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'salario_medio_adm'</span>, <span class="st">'salario_mediano_adm'</span>, <span class="st">'salario_medio_desl'</span>,</span>
-<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_adm'</span>, <span class="st">'salario_sm'</span>, <span class="st">'ln_salario_sm'</span>,</span>
-<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'salario_real_adm'</span>, <span class="st">'ln_salario_real_adm'</span>,</span>
-<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Demografia das admissões (proporções)</span></span>
-<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'idade_media_adm'</span>, <span class="st">'pct_mulher_adm'</span>, <span class="st">'pct_superior_adm'</span>, <span class="st">'pct_branco_adm'</span>, <span class="st">'pct_negro_adm'</span>, <span class="st">'pct_jovem_adm'</span>,</span>
-<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'pct_tecnologico_adm'</span>, <span class="st">'setor_tecnologico'</span>,</span>
-<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Heterogeneidade: salários (log)</span></span>
-<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_homem'</span>, <span class="st">'ln_salario_mulher'</span>, <span class="st">'ln_salario_jovem'</span>, <span class="st">'ln_salario_naojovem'</span>,</span>
-<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_branco'</span>, <span class="st">'ln_salario_negro'</span>, <span class="st">'ln_salario_superior'</span>, <span class="st">'ln_salario_medio'</span>,</span>
-<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Heterogeneidade: volumes (log)</span></span>
-<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes_homem'</span>, <span class="st">'ln_admissoes_mulher'</span>, <span class="st">'ln_admissoes_jovem'</span>, <span class="st">'ln_admissoes_negro'</span>,</span>
-<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Exposição IA — DUAL</span></span>
-<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exposure_score_2d'</span>,   <span class="co"># PRINCIPAL</span></span>
-<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exposure_score_4d'</span>,   <span class="co"># ROBUSTEZ</span></span>
-<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Tratamento — DUAL</span></span>
-<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alta_exp'</span>,            <span class="co"># Top 20% score 2d (PRINCIPAL)</span></span>
-<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alta_exp_10'</span>, <span class="st">'alta_exp_25'</span>, <span class="st">'alta_exp_mediana'</span>, <span class="st">'quintil_exp'</span>,</span>
-<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alta_exp_4d'</span>,         <span class="co"># Top 20% score 4d (ROBUSTEZ)</span></span>
-<span id="cb31-36"><a href="#cb31-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Temporal</span></span>
-<span id="cb31-37"><a href="#cb31-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">'post'</span>, <span class="st">'did'</span>, <span class="st">'did_4d'</span>, <span class="st">'tempo_relativo_meses'</span>, <span class="st">'trend'</span>, <span class="st">'mes_do_ano'</span>,</span>
-<span id="cb31-38"><a href="#cb31-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Classificação</span></span>
-<span id="cb31-39"><a href="#cb31-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">'grande_grupo_cbo'</span>, <span class="st">'grande_grupo_nome'</span>,</span>
-<span id="cb31-40"><a href="#cb31-40" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb31-41"><a href="#cb31-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-42"><a href="#cb31-42" aria-hidden="true" tabindex="-1"></a>cols_existentes <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_finais <span class="cf">if</span> c <span class="kw">in</span> painel.columns]</span>
-<span id="cb31-43"><a href="#cb31-43" aria-hidden="true" tabindex="-1"></a>cols_faltantes <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_finais <span class="cf">if</span> c <span class="kw">not</span> <span class="kw">in</span> painel.columns]</span>
-<span id="cb31-44"><a href="#cb31-44" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> cols_faltantes:</span>
-<span id="cb31-45"><a href="#cb31-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"AVISO: Colunas não encontradas: </span><span class="sc">{</span>cols_faltantes<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-46"><a href="#cb31-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-47"><a href="#cb31-47" aria-hidden="true" tabindex="-1"></a>painel_final <span class="op">=</span> painel[cols_existentes].copy()</span>
-<span id="cb31-48"><a href="#cb31-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-49"><a href="#cb31-49" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Remover ocupações sem score principal (2d) ──</span></span>
-<span id="cb31-50"><a href="#cb31-50" aria-hidden="true" tabindex="-1"></a>n_antes <span class="op">=</span> <span class="bu">len</span>(painel_final)</span>
-<span id="cb31-51"><a href="#cb31-51" aria-hidden="true" tabindex="-1"></a>painel_final <span class="op">=</span> painel_final[painel_final[<span class="st">'exposure_score_2d'</span>].notna()]</span>
-<span id="cb31-52"><a href="#cb31-52" aria-hidden="true" tabindex="-1"></a>n_depois <span class="op">=</span> <span class="bu">len</span>(painel_final)</span>
-<span id="cb31-53"><a href="#cb31-53" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> n_antes <span class="op">&gt;</span> n_depois:</span>
-<span id="cb31-54"><a href="#cb31-54" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Removidas </span><span class="sc">{</span>n_antes <span class="op">-</span> n_depois<span class="sc">:,}</span><span class="ss"> linhas sem exposure_score_2d"</span>)</span>
-<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-56"><a href="#cb31-56" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Verificação para o Notebook 2b ──</span></span>
-<span id="cb31-57"><a href="#cb31-57" aria-hidden="true" tabindex="-1"></a>cols_obrigatorias <span class="op">=</span> [<span class="st">'exposure_score_2d'</span>, <span class="st">'exposure_score_4d'</span>, <span class="st">'alta_exp'</span>, <span class="st">'did'</span>, <span class="st">'tempo_relativo_meses'</span>, <span class="st">'post'</span>]</span>
-<span id="cb31-58"><a href="#cb31-58" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> cols_obrigatorias:</span>
-<span id="cb31-59"><a href="#cb31-59" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> c <span class="kw">not</span> <span class="kw">in</span> painel_final.columns:</span>
-<span id="cb31-60"><a href="#cb31-60" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f"Coluna obrigatória ausente para o DiD (Notebook 2b): </span><span class="sc">{</span>c<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-61"><a href="#cb31-61" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> painel_final[cols_obrigatorias].isna().<span class="bu">any</span>().<span class="bu">any</span>():</span>
-<span id="cb31-62"><a href="#cb31-62" aria-hidden="true" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"NA em coluna obrigatória para o DiD (Notebook 2b)."</span>)</span>
-<span id="cb31-63"><a href="#cb31-63" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"  Verificação: colunas obrigatórias para o 2b presentes e sem NA."</span>)</span>
-<span id="cb31-64"><a href="#cb31-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-65"><a href="#cb31-65" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Salvar ──</span></span>
-<span id="cb31-66"><a href="#cb31-66" aria-hidden="true" tabindex="-1"></a>painel_final.to_parquet(PAINEL_FINAL_PARQUET, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb31-67"><a href="#cb31-67" aria-hidden="true" tabindex="-1"></a>painel_final.to_csv(PAINEL_FINAL_CSV, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb31-68"><a href="#cb31-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-69"><a href="#cb31-69" aria-hidden="true" tabindex="-1"></a><span class="co"># ══════════════════════════════════════════════════════════════════════</span></span>
-<span id="cb31-70"><a href="#cb31-70" aria-hidden="true" tabindex="-1"></a><span class="co"># RESUMO FINAL</span></span>
-<span id="cb31-71"><a href="#cb31-71" aria-hidden="true" tabindex="-1"></a><span class="co"># ══════════════════════════════════════════════════════════════════════</span></span>
-<span id="cb31-72"><a href="#cb31-72" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span><span class="st">'='</span> <span class="op">*</span> <span class="dv">60</span><span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-73"><a href="#cb31-73" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"DATASET ANALÍTICO FINAL — ETAPA 2a"</span>)</span>
-<span id="cb31-74"><a href="#cb31-74" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="st">'='</span> <span class="op">*</span> <span class="dv">60</span><span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-75"><a href="#cb31-75" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Observações:        </span><span class="sc">{</span><span class="bu">len</span>(painel_final)<span class="sc">:,}</span><span class="ss">"</span>)</span>
-<span id="cb31-76"><a href="#cb31-76" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Ocupações (CBO 4d): </span><span class="sc">{</span>painel_final[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-77"><a href="#cb31-77" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Períodos:           </span><span class="sc">{</span>painel_final[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> meses"</span>)</span>
-<span id="cb31-78"><a href="#cb31-78" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    Pré-tratamento:   </span><span class="sc">{</span>painel_final[painel_final[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">0</span>][<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-79"><a href="#cb31-79" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    Pós-tratamento:   </span><span class="sc">{</span>painel_final[painel_final[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">1</span>][<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-80"><a href="#cb31-80" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Cobertura 2d:       </span><span class="sc">{</span>painel_final[<span class="st">'exposure_score_2d'</span>]<span class="sc">.</span>notna()<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">"</span>)</span>
-<span id="cb31-81"><a href="#cb31-81" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Cobertura 4d:       </span><span class="sc">{</span>painel_final[<span class="st">'exposure_score_4d'</span>]<span class="sc">.</span>notna()<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">"</span>)</span>
-<span id="cb31-82"><a href="#cb31-82" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Tratamento 2d:      </span><span class="sc">{</span>painel_final[<span class="st">'alta_exp'</span>]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss"> das obs"</span>)</span>
-<span id="cb31-83"><a href="#cb31-83" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Tratamento 4d:      </span><span class="sc">{</span>painel_final[<span class="st">'alta_exp_4d'</span>]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss"> das obs"</span>)</span>
-<span id="cb31-84"><a href="#cb31-84" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Colunas:            </span><span class="sc">{</span>painel_final<span class="sc">.</span>shape[<span class="dv">1</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-85"><a href="#cb31-85" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Salvo em:"</span>)</span>
-<span id="cb31-86"><a href="#cb31-86" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    </span><span class="sc">{</span>PAINEL_FINAL_PARQUET<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-87"><a href="#cb31-87" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    </span><span class="sc">{</span>PAINEL_FINAL_CSV<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb31-88"><a href="#cb31-88" aria-hidden="true" tabindex="-1"></a>pq_mb <span class="op">=</span> PAINEL_FINAL_PARQUET.stat().st_size <span class="op">/</span> <span class="fl">1e6</span></span>
-<span id="cb31-89"><a href="#cb31-89" aria-hidden="true" tabindex="-1"></a>csv_mb <span class="op">=</span> PAINEL_FINAL_CSV.stat().st_size <span class="op">/</span> <span class="fl">1e6</span></span>
-<span id="cb31-90"><a href="#cb31-90" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    Tamanho: </span><span class="sc">{</span>pq_mb<span class="sc">:.1f}</span><span class="ss"> MB (parquet), </span><span class="sc">{</span>csv_mb<span class="sc">:.1f}</span><span class="ss"> MB (csv)"</span>)</span>
-<span id="cb31-91"><a href="#cb31-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-92"><a href="#cb31-92" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Info:"</span>)</span>
-<span id="cb31-93"><a href="#cb31-93" aria-hidden="true" tabindex="-1"></a>painel_final.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="f56e1220" class="cell" data-execution_count="38">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2a.7 — Salvar dataset analítico final</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> KEEP_PANEL_FINAL:</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> PAINEL_FINAL_PARQUET.exists():</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>        PAINEL_FINAL_PARQUET.unlink()</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Cache removido: </span><span class="sc">{</span>PAINEL_FINAL_PARQUET<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> PAINEL_FINAL_CSV.exists():</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>        PAINEL_FINAL_CSV.unlink()</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Cache removido: </span><span class="sc">{</span>PAINEL_FINAL_CSV<span class="sc">.</span>name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Selecionar colunas finais ──</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>cols_finais <span class="op">=</span> [</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Identificação</span></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'cbo_4d'</span>, <span class="st">'cbo_2d'</span>, <span class="st">'ano'</span>, <span class="st">'mes'</span>, <span class="st">'periodo'</span>, <span class="st">'periodo_num'</span>,</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Outcomes</span></span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'admissoes'</span>, <span class="st">'desligamentos'</span>, <span class="st">'saldo'</span>, <span class="st">'n_movimentacoes'</span>,</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes'</span>, <span class="st">'ln_desligamentos'</span>,</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'salario_medio_adm'</span>, <span class="st">'salario_mediano_adm'</span>, <span class="st">'salario_medio_desl'</span>,</span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_adm'</span>, <span class="st">'salario_sm'</span>, <span class="st">'ln_salario_sm'</span>,</span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'salario_real_adm'</span>, <span class="st">'ln_salario_real_adm'</span>,</span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Demografia das admissões (proporções)</span></span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'idade_media_adm'</span>, <span class="st">'pct_mulher_adm'</span>, <span class="st">'pct_superior_adm'</span>, <span class="st">'pct_branco_adm'</span>, <span class="st">'pct_negro_adm'</span>, <span class="st">'pct_jovem_adm'</span>,</span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'pct_tecnologico_adm'</span>, <span class="st">'setor_tecnologico'</span>,</span>
+<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Heterogeneidade: salários (log)</span></span>
+<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_homem'</span>, <span class="st">'ln_salario_mulher'</span>, <span class="st">'ln_salario_jovem'</span>, <span class="st">'ln_salario_naojovem'</span>,</span>
+<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_salario_branco'</span>, <span class="st">'ln_salario_negro'</span>, <span class="st">'ln_salario_superior'</span>, <span class="st">'ln_salario_medio'</span>,</span>
+<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Heterogeneidade: volumes (log)</span></span>
+<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ln_admissoes_homem'</span>, <span class="st">'ln_admissoes_mulher'</span>, <span class="st">'ln_admissoes_jovem'</span>, <span class="st">'ln_admissoes_negro'</span>,</span>
+<span id="cb38-29"><a href="#cb38-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Exposição IA — DUAL</span></span>
+<span id="cb38-30"><a href="#cb38-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exposure_score_2d'</span>,   <span class="co"># PRINCIPAL</span></span>
+<span id="cb38-31"><a href="#cb38-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exposure_score_4d'</span>,   <span class="co"># ROBUSTEZ</span></span>
+<span id="cb38-32"><a href="#cb38-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Tratamento — DUAL</span></span>
+<span id="cb38-33"><a href="#cb38-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alta_exp'</span>,            <span class="co"># Top 20% score 2d (PRINCIPAL)</span></span>
+<span id="cb38-34"><a href="#cb38-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alta_exp_10'</span>, <span class="st">'alta_exp_25'</span>, <span class="st">'alta_exp_mediana'</span>, <span class="st">'quintil_exp'</span>,</span>
+<span id="cb38-35"><a href="#cb38-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alta_exp_4d'</span>,         <span class="co"># Top 20% score 4d (ROBUSTEZ)</span></span>
+<span id="cb38-36"><a href="#cb38-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Temporal</span></span>
+<span id="cb38-37"><a href="#cb38-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">'post'</span>, <span class="st">'did'</span>, <span class="st">'did_4d'</span>, <span class="st">'tempo_relativo_meses'</span>, <span class="st">'trend'</span>, <span class="st">'mes_do_ano'</span>,</span>
+<span id="cb38-38"><a href="#cb38-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Classificação</span></span>
+<span id="cb38-39"><a href="#cb38-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">'grande_grupo_cbo'</span>, <span class="st">'grande_grupo_nome'</span>,</span>
+<span id="cb38-40"><a href="#cb38-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Anthropic (Automation vs Augmentation) — Anexo 1</span></span>
+<span id="cb38-41"><a href="#cb38-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">'anthropic_automation_index'</span>, <span class="st">'is_automation'</span>, <span class="st">'is_augmentation'</span>,</span>
+<span id="cb38-42"><a href="#cb38-42" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb38-43"><a href="#cb38-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-44"><a href="#cb38-44" aria-hidden="true" tabindex="-1"></a>cols_existentes <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_finais <span class="cf">if</span> c <span class="kw">in</span> painel.columns]</span>
+<span id="cb38-45"><a href="#cb38-45" aria-hidden="true" tabindex="-1"></a>cols_faltantes <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_finais <span class="cf">if</span> c <span class="kw">not</span> <span class="kw">in</span> painel.columns]</span>
+<span id="cb38-46"><a href="#cb38-46" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> cols_faltantes:</span>
+<span id="cb38-47"><a href="#cb38-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"AVISO: Colunas não encontradas: </span><span class="sc">{</span>cols_faltantes<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-48"><a href="#cb38-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-49"><a href="#cb38-49" aria-hidden="true" tabindex="-1"></a>painel_final <span class="op">=</span> painel[cols_existentes].copy()</span>
+<span id="cb38-50"><a href="#cb38-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-51"><a href="#cb38-51" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Remover ocupações sem score principal (2d) ──</span></span>
+<span id="cb38-52"><a href="#cb38-52" aria-hidden="true" tabindex="-1"></a>n_antes <span class="op">=</span> <span class="bu">len</span>(painel_final)</span>
+<span id="cb38-53"><a href="#cb38-53" aria-hidden="true" tabindex="-1"></a>painel_final <span class="op">=</span> painel_final[painel_final[<span class="st">'exposure_score_2d'</span>].notna()]</span>
+<span id="cb38-54"><a href="#cb38-54" aria-hidden="true" tabindex="-1"></a>n_depois <span class="op">=</span> <span class="bu">len</span>(painel_final)</span>
+<span id="cb38-55"><a href="#cb38-55" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> n_antes <span class="op">&gt;</span> n_depois:</span>
+<span id="cb38-56"><a href="#cb38-56" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Removidas </span><span class="sc">{</span>n_antes <span class="op">-</span> n_depois<span class="sc">:,}</span><span class="ss"> linhas sem exposure_score_2d"</span>)</span>
+<span id="cb38-57"><a href="#cb38-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-58"><a href="#cb38-58" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Verificação para o Notebook 2b ──</span></span>
+<span id="cb38-59"><a href="#cb38-59" aria-hidden="true" tabindex="-1"></a>cols_obrigatorias <span class="op">=</span> [<span class="st">'exposure_score_2d'</span>, <span class="st">'exposure_score_4d'</span>, <span class="st">'alta_exp'</span>, <span class="st">'did'</span>, <span class="st">'tempo_relativo_meses'</span>, <span class="st">'post'</span>]</span>
+<span id="cb38-60"><a href="#cb38-60" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> cols_obrigatorias:</span>
+<span id="cb38-61"><a href="#cb38-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> c <span class="kw">not</span> <span class="kw">in</span> painel_final.columns:</span>
+<span id="cb38-62"><a href="#cb38-62" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f"Coluna obrigatória ausente para o DiD (Notebook 2b): </span><span class="sc">{</span>c<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-63"><a href="#cb38-63" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> painel_final[cols_obrigatorias].isna().<span class="bu">any</span>().<span class="bu">any</span>():</span>
+<span id="cb38-64"><a href="#cb38-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"NA em coluna obrigatória para o DiD (Notebook 2b)."</span>)</span>
+<span id="cb38-65"><a href="#cb38-65" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"  Verificação: colunas obrigatórias para o 2b presentes e sem NA."</span>)</span>
+<span id="cb38-66"><a href="#cb38-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-67"><a href="#cb38-67" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Salvar ──</span></span>
+<span id="cb38-68"><a href="#cb38-68" aria-hidden="true" tabindex="-1"></a>painel_final.to_parquet(PAINEL_FINAL_PARQUET, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb38-69"><a href="#cb38-69" aria-hidden="true" tabindex="-1"></a>painel_final.to_csv(PAINEL_FINAL_CSV, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb38-70"><a href="#cb38-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-71"><a href="#cb38-71" aria-hidden="true" tabindex="-1"></a><span class="co"># ══════════════════════════════════════════════════════════════════════</span></span>
+<span id="cb38-72"><a href="#cb38-72" aria-hidden="true" tabindex="-1"></a><span class="co"># RESUMO FINAL</span></span>
+<span id="cb38-73"><a href="#cb38-73" aria-hidden="true" tabindex="-1"></a><span class="co"># ══════════════════════════════════════════════════════════════════════</span></span>
+<span id="cb38-74"><a href="#cb38-74" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span><span class="st">'='</span> <span class="op">*</span> <span class="dv">60</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-75"><a href="#cb38-75" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"DATASET ANALÍTICO FINAL — ETAPA 2a"</span>)</span>
+<span id="cb38-76"><a href="#cb38-76" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="st">'='</span> <span class="op">*</span> <span class="dv">60</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-77"><a href="#cb38-77" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Observações:        </span><span class="sc">{</span><span class="bu">len</span>(painel_final)<span class="sc">:,}</span><span class="ss">"</span>)</span>
+<span id="cb38-78"><a href="#cb38-78" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Ocupações (CBO 4d): </span><span class="sc">{</span>painel_final[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-79"><a href="#cb38-79" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Períodos:           </span><span class="sc">{</span>painel_final[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> meses"</span>)</span>
+<span id="cb38-80"><a href="#cb38-80" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    Pré-tratamento:   </span><span class="sc">{</span>painel_final[painel_final[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">0</span>][<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-81"><a href="#cb38-81" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    Pós-tratamento:   </span><span class="sc">{</span>painel_final[painel_final[<span class="st">'post'</span>]<span class="op">==</span><span class="dv">1</span>][<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-82"><a href="#cb38-82" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Cobertura 2d:       </span><span class="sc">{</span>painel_final[<span class="st">'exposure_score_2d'</span>]<span class="sc">.</span>notna()<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">"</span>)</span>
+<span id="cb38-83"><a href="#cb38-83" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Cobertura 4d:       </span><span class="sc">{</span>painel_final[<span class="st">'exposure_score_4d'</span>]<span class="sc">.</span>notna()<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss">"</span>)</span>
+<span id="cb38-84"><a href="#cb38-84" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Tratamento 2d:      </span><span class="sc">{</span>painel_final[<span class="st">'alta_exp'</span>]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss"> das obs"</span>)</span>
+<span id="cb38-85"><a href="#cb38-85" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Tratamento 4d:      </span><span class="sc">{</span>painel_final[<span class="st">'alta_exp_4d'</span>]<span class="sc">.</span>mean()<span class="sc">:.1%}</span><span class="ss"> das obs"</span>)</span>
+<span id="cb38-86"><a href="#cb38-86" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Colunas:            </span><span class="sc">{</span>painel_final<span class="sc">.</span>shape[<span class="dv">1</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-87"><a href="#cb38-87" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Salvo em:"</span>)</span>
+<span id="cb38-88"><a href="#cb38-88" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    </span><span class="sc">{</span>PAINEL_FINAL_PARQUET<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-89"><a href="#cb38-89" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    </span><span class="sc">{</span>PAINEL_FINAL_CSV<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-90"><a href="#cb38-90" aria-hidden="true" tabindex="-1"></a>pq_mb <span class="op">=</span> PAINEL_FINAL_PARQUET.stat().st_size <span class="op">/</span> <span class="fl">1e6</span></span>
+<span id="cb38-91"><a href="#cb38-91" aria-hidden="true" tabindex="-1"></a>csv_mb <span class="op">=</span> PAINEL_FINAL_CSV.stat().st_size <span class="op">/</span> <span class="fl">1e6</span></span>
+<span id="cb38-92"><a href="#cb38-92" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"    Tamanho: </span><span class="sc">{</span>pq_mb<span class="sc">:.1f}</span><span class="ss"> MB (parquet), </span><span class="sc">{</span>csv_mb<span class="sc">:.1f}</span><span class="ss"> MB (csv)"</span>)</span>
+<span id="cb38-93"><a href="#cb38-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-94"><a href="#cb38-94" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Info:"</span>)</span>
+<span id="cb38-95"><a href="#cb38-95" aria-hidden="true" tabindex="-1"></a>painel_final.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Cache removido: painel_caged_did_ready.parquet
 Cache removido: painel_caged_did_ready.csv
@@ -1817,82 +2021,85 @@ DATASET ANALÍTICO FINAL — ETAPA 2a
   Cobertura 4d:       100.0%
   Tratamento 2d:      20.3% das obs
   Tratamento 4d:      21.3% das obs
-  Colunas:            56
+  Colunas:            59
 
   Salvo em:
     data/output/painel_caged_did_ready.parquet
     data/output/painel_caged_did_ready.csv
-    Tamanho: 7.2 MB (parquet), 20.6 MB (csv)
+    Tamanho: 7.2 MB (parquet), 21.0 MB (csv)
 
   Info:
 &lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 32988 entries, 0 to 32987
-Data columns (total 56 columns):
- #   Column                Non-Null Count  Dtype   
----  ------                --------------  -----   
- 0   cbo_4d                32988 non-null  object  
- 1   cbo_2d                32988 non-null  object  
- 2   ano                   32988 non-null  Int64   
- 3   mes                   32988 non-null  Int64   
- 4   periodo               32988 non-null  object  
- 5   periodo_num           32988 non-null  int64   
- 6   admissoes             32988 non-null  Int64   
- 7   desligamentos         32988 non-null  Int64   
- 8   saldo                 32988 non-null  Int64   
- 9   n_movimentacoes       32988 non-null  Int64   
- 10  ln_admissoes          32988 non-null  Float64 
- 11  ln_desligamentos      32988 non-null  Float64 
- 12  salario_medio_adm     32988 non-null  float64 
- 13  salario_mediano_adm   32988 non-null  float64 
- 14  salario_medio_desl    32988 non-null  float64 
- 15  ln_salario_adm        32988 non-null  float64 
- 16  salario_sm            32988 non-null  float64 
- 17  ln_salario_sm         32988 non-null  float64 
- 18  salario_real_adm      32988 non-null  float64 
- 19  ln_salario_real_adm   32988 non-null  float64 
- 20  idade_media_adm       32988 non-null  Float64 
- 21  pct_mulher_adm        32988 non-null  float64 
- 22  pct_superior_adm      32988 non-null  float64 
- 23  pct_branco_adm        32988 non-null  float64 
- 24  pct_negro_adm         32988 non-null  float64 
- 25  pct_jovem_adm         32988 non-null  float64 
- 26  pct_tecnologico_adm   32988 non-null  float64 
- 27  setor_tecnologico     32988 non-null  int64   
- 28  ln_salario_homem      32988 non-null  float64 
- 29  ln_salario_mulher     32988 non-null  float64 
- 30  ln_salario_jovem      32988 non-null  float64 
- 31  ln_salario_naojovem   32988 non-null  float64 
- 32  ln_salario_branco     32988 non-null  float64 
- 33  ln_salario_negro      32988 non-null  float64 
- 34  ln_salario_superior   32988 non-null  float64 
- 35  ln_salario_medio      32988 non-null  float64 
- 36  ln_admissoes_homem    32988 non-null  float64 
- 37  ln_admissoes_mulher   32988 non-null  float64 
- 38  ln_admissoes_jovem    32988 non-null  float64 
- 39  ln_admissoes_negro    32988 non-null  float64 
- 40  exposure_score_2d     32988 non-null  float64 
- 41  exposure_score_4d     32988 non-null  float64 
- 42  alta_exp              32988 non-null  int64   
- 43  alta_exp_10           32988 non-null  int64   
- 44  alta_exp_25           32988 non-null  int64   
- 45  alta_exp_mediana      32988 non-null  int64   
- 46  quintil_exp           32988 non-null  category
- 47  alta_exp_4d           32988 non-null  int64   
- 48  post                  32988 non-null  int64   
- 49  did                   32988 non-null  int64   
- 50  did_4d                32988 non-null  int64   
- 51  tempo_relativo_meses  32988 non-null  int64   
- 52  trend                 32988 non-null  int64   
- 53  mes_do_ano            32988 non-null  int64   
- 54  grande_grupo_cbo      32988 non-null  object  
- 55  grande_grupo_nome     32988 non-null  object  
-dtypes: Float64(3), Int64(6), category(1), float64(28), int64(13), object(5)
-memory usage: 14.2+ MB</code></pre>
+Data columns (total 59 columns):
+ #   Column                      Non-Null Count  Dtype   
+---  ------                      --------------  -----   
+ 0   cbo_4d                      32988 non-null  object  
+ 1   cbo_2d                      32988 non-null  object  
+ 2   ano                         32988 non-null  Int64   
+ 3   mes                         32988 non-null  Int64   
+ 4   periodo                     32988 non-null  object  
+ 5   periodo_num                 32988 non-null  int64   
+ 6   admissoes                   32988 non-null  Int64   
+ 7   desligamentos               32988 non-null  Int64   
+ 8   saldo                       32988 non-null  Int64   
+ 9   n_movimentacoes             32988 non-null  Int64   
+ 10  ln_admissoes                32988 non-null  Float64 
+ 11  ln_desligamentos            32988 non-null  Float64 
+ 12  salario_medio_adm           32988 non-null  float64 
+ 13  salario_mediano_adm         32988 non-null  float64 
+ 14  salario_medio_desl          32988 non-null  float64 
+ 15  ln_salario_adm              32988 non-null  float64 
+ 16  salario_sm                  32988 non-null  float64 
+ 17  ln_salario_sm               32988 non-null  float64 
+ 18  salario_real_adm            32988 non-null  float64 
+ 19  ln_salario_real_adm         32988 non-null  float64 
+ 20  idade_media_adm             32988 non-null  Float64 
+ 21  pct_mulher_adm              32988 non-null  float64 
+ 22  pct_superior_adm            32988 non-null  float64 
+ 23  pct_branco_adm              32988 non-null  float64 
+ 24  pct_negro_adm               32988 non-null  float64 
+ 25  pct_jovem_adm               32988 non-null  float64 
+ 26  pct_tecnologico_adm         32988 non-null  float64 
+ 27  setor_tecnologico           32988 non-null  int64   
+ 28  ln_salario_homem            32988 non-null  float64 
+ 29  ln_salario_mulher           32988 non-null  float64 
+ 30  ln_salario_jovem            32988 non-null  float64 
+ 31  ln_salario_naojovem         32988 non-null  float64 
+ 32  ln_salario_branco           32988 non-null  float64 
+ 33  ln_salario_negro            32988 non-null  float64 
+ 34  ln_salario_superior         32988 non-null  float64 
+ 35  ln_salario_medio            32988 non-null  float64 
+ 36  ln_admissoes_homem          32988 non-null  float64 
+ 37  ln_admissoes_mulher         32988 non-null  float64 
+ 38  ln_admissoes_jovem          32988 non-null  float64 
+ 39  ln_admissoes_negro          32988 non-null  float64 
+ 40  exposure_score_2d           32988 non-null  float64 
+ 41  exposure_score_4d           32988 non-null  float64 
+ 42  alta_exp                    32988 non-null  int64   
+ 43  alta_exp_10                 32988 non-null  int64   
+ 44  alta_exp_25                 32988 non-null  int64   
+ 45  alta_exp_mediana            32988 non-null  int64   
+ 46  quintil_exp                 32988 non-null  category
+ 47  alta_exp_4d                 32988 non-null  int64   
+ 48  post                        32988 non-null  int64   
+ 49  did                         32988 non-null  int64   
+ 50  did_4d                      32988 non-null  int64   
+ 51  tempo_relativo_meses        32988 non-null  int64   
+ 52  trend                       32988 non-null  int64   
+ 53  mes_do_ano                  32988 non-null  int64   
+ 54  grande_grupo_cbo            32988 non-null  object  
+ 55  grande_grupo_nome           32988 non-null  object  
+ 56  anthropic_automation_index  32988 non-null  float64 
+ 57  is_automation               32988 non-null  int64   
+ 58  is_augmentation             32988 non-null  int64   
+dtypes: Float64(3), Int64(6), category(1), float64(29), int64(15), object(5)
+memory usage: 14.9+ MB</code></pre>
 </div>
 </div>
 </section>
-<section id="limitações-desta-etapa" class="level3" data-number="0.17">
-<h3 data-number="0.17" class="anchored" data-anchor-id="limitações-desta-etapa"><span class="header-section-number">0.17</span> Limitações desta etapa</h3>
+<section id="limitações-desta-etapa" class="level3" data-number="0.18">
+<h3 data-number="0.18" class="anchored" data-anchor-id="limitações-desta-etapa"><span class="header-section-number">0.18</span> Limitações desta etapa</h3>
 <ol type="1">
 <li><p><strong>Novo CAGED (descontinuidade 2020):</strong> A transição para o eSocial (2020) pode afetar a comparabilidade. Mitigamos ao iniciar em 2021 (eSocial já estabilizado, sem efeitos COVID).</p></li>
 <li><p><strong>Fluxos vs.&nbsp;estoques:</strong> O CAGED mede movimentações (admissões/desligamentos), não o estoque de empregados. Quedas em admissões não significam necessariamente queda no emprego total — podem refletir menor rotatividade. Esta é a mesma lógica usada por Hui et al.&nbsp;(2024) com dados do Upwork.</p></li>
@@ -1904,8 +2111,8 @@ memory usage: 14.2+ MB</code></pre>
 </ol>
 <hr>
 </section>
-<section id="checklist-de-entregáveis" class="level3" data-number="0.18">
-<h3 data-number="0.18" class="anchored" data-anchor-id="checklist-de-entregáveis"><span class="header-section-number">0.18</span> Checklist de entregáveis</h3>
+<section id="checklist-de-entregáveis" class="level3" data-number="0.19">
+<h3 data-number="0.19" class="anchored" data-anchor-id="checklist-de-entregáveis"><span class="header-section-number">0.19</span> Checklist de entregáveis</h3>
 <ul class="task-list">
 <li><label><input type="checkbox" checked=""><code>data/raw/caged_{ano}.parquet</code> — Microdados CAGED por ano (2021–2025)</label></li>
 <li><label><input type="checkbox" checked=""><code>data/input/cbo-isco-conc.csv</code> — Concordância Muendler CBO 1994→ISCO-88</label></li>
