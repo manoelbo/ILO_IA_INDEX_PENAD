@@ -8,3 +8,4 @@ matplotlib>=3.7.0
 seaborn>=0.13.0
 scipy>=1.9.0
 pyfixest>=0.11.0
+python-bcb>=0.3.0   # IPCA (Banco Central SGS) para deflator salário real; import: from bcb import sgs
