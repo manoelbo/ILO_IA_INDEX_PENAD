@@ -97,6 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#merge-painel-tridimensional" id="toc-merge-painel-tridimensional" class="nav-link" data-scroll-target="#merge-painel-tridimensional"><span class="header-section-number">0.10</span> 6. Merge — Painel Tridimensional</a></li>
   <li><a href="#validação-e-estatísticas-descritivas" id="toc-validação-e-estatísticas-descritivas" class="nav-link" data-scroll-target="#validação-e-estatísticas-descritivas"><span class="header-section-number">0.11</span> 7. Validação e Estatísticas Descritivas</a></li>
   <li><a href="#exportação" id="toc-exportação" class="nav-link" data-scroll-target="#exportação"><span class="header-section-number">0.12</span> 8. Exportação</a></li>
+  <li><a href="#decomposição-por-faixa-etária-e-exportação-v2" id="toc-decomposição-por-faixa-etária-e-exportação-v2" class="nav-link" data-scroll-target="#decomposição-por-faixa-etária-e-exportação-v2"><span class="header-section-number">0.13</span> 9. Decomposição por Faixa Etária e Exportação v2</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="etapa_3a_preparacao_dados_did_municipio_conectividade.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -186,7 +187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="configuração-do-ambiente" class="level3" data-number="0.5">
 <h3 data-number="0.5" class="anchored" data-anchor-id="configuração-do-ambiente"><span class="header-section-number">0.5</span> 1. Configuração do ambiente</h3>
 <p>Paths, parâmetros e dependências. Conectividade medida em período <strong>pré-tratamento</strong> (Jan–Out/2022) para evitar endogeneidade.</p>
-<div id="cell-4" class="cell" data-execution_count="1">
+<div id="cell-4" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.1 — Configuração</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -195,39 +196,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, category<span class="op">=</span><span class="pp">FutureWarning</span>)</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>DATA_INPUT     <span class="op">=</span> Path(<span class="st">"data/input"</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>DATA_RAW       <span class="op">=</span> Path(<span class="st">"data/raw"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>DATA_PROCESSED <span class="op">=</span> Path(<span class="st">"data/processed"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>DATA_OUTPUT    <span class="op">=</span> Path(<span class="st">"data/output"</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>OUTPUTS_TABLES <span class="op">=</span> Path(<span class="st">"outputs/tables"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> [DATA_INPUT, DATA_RAW, DATA_PROCESSED, DATA_OUTPUT, OUTPUTS_TABLES]:</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    d.mkdir(parents<span class="op">=</span><span class="va">True</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>GCP_PROJECT_ID <span class="op">=</span> <span class="st">"mestrado-pnad-2026"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>ANO_INICIO, ANO_FIM <span class="op">=</span> <span class="dv">2021</span>, <span class="dv">2025</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ANO_TRATAMENTO, MES_TRATAMENTO <span class="op">=</span> <span class="dv">2022</span>, <span class="dv">12</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ANO_PRE_CONECT, MES_FIM_PRE_CONECT <span class="op">=</span> <span class="dv">2022</span>, <span class="dv">10</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>MIN_POPULACAO <span class="op">=</span> <span class="dv">50_000</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>MIN_MOVIMENTACOES_PRE <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>PAINEL_ETAPA2 <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_did_ready.parquet"</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>IPCA_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"ipca_mensal.parquet"</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>ANATEL_PRE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"anatel_pre_tratamento.parquet"</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>IBGE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"ibge_municipios.parquet"</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>CONECTIVIDADE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"conectividade_municipal.parquet"</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>PAINEL_CAGED_MUN <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"painel_caged_municipio.parquet"</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>PAINEL_FINAL <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_municipio_anatel.parquet"</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Configuração carregada. Período pré conectividade: até"</span>, <span class="ss">f"</span><span class="sc">{</span>MES_FIM_PRE_CONECT<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>ANO_PRE_CONECT<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Sempre usar a pasta notebook/data (raiz = pasta que contém 'notebook')</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _find_project_root():</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> Path.cwd().resolve()</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (p <span class="op">/</span> <span class="st">"notebook"</span>).is_dir():</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> p</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.parent <span class="cf">if</span> p.parent <span class="op">!=</span> p <span class="cf">else</span> p</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Path.cwd().resolve()</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>PROJECT_ROOT <span class="op">=</span> _find_project_root()</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>DATA_ROOT <span class="op">=</span> PROJECT_ROOT <span class="op">/</span> <span class="st">"notebook"</span> <span class="op">/</span> <span class="st">"data"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>DATA_INPUT     <span class="op">=</span> DATA_ROOT <span class="op">/</span> <span class="st">"input"</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>DATA_RAW       <span class="op">=</span> DATA_ROOT <span class="op">/</span> <span class="st">"raw"</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>DATA_PROCESSED <span class="op">=</span> DATA_ROOT <span class="op">/</span> <span class="st">"processed"</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>DATA_OUTPUT    <span class="op">=</span> DATA_ROOT <span class="op">/</span> <span class="st">"output"</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>OUTPUTS_TABLES <span class="op">=</span> PROJECT_ROOT <span class="op">/</span> <span class="st">"notebook"</span> <span class="op">/</span> <span class="st">"outputs"</span> <span class="op">/</span> <span class="st">"tables"</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> [DATA_INPUT, DATA_RAW, DATA_PROCESSED, DATA_OUTPUT, OUTPUTS_TABLES]:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    d.mkdir(parents<span class="op">=</span><span class="va">True</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Cache CAGED municipal: para forçar nova agregação (ex.: faixa etária), use USE_CAGED_CACHE = False ou apague o arquivo</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>USE_CAGED_CACHE <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>CAGED_CACHE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"painel_caged_municipio.parquet"</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>PAINEL_CAGED_MUN <span class="op">=</span> CAGED_CACHE_FILE</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>GCP_PROJECT_ID <span class="op">=</span> <span class="st">"mestrado-pnad-2026"</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>ANO_INICIO, ANO_FIM <span class="op">=</span> <span class="dv">2021</span>, <span class="dv">2025</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>ANO_TRATAMENTO, MES_TRATAMENTO <span class="op">=</span> <span class="dv">2022</span>, <span class="dv">12</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>ANO_PRE_CONECT, MES_FIM_PRE_CONECT <span class="op">=</span> <span class="dv">2022</span>, <span class="dv">10</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>MIN_POPULACAO <span class="op">=</span> <span class="dv">50_000</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>MIN_MOVIMENTACOES_PRE <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>PAINEL_ETAPA2 <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_did_ready.parquet"</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>IPCA_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"ipca_mensal.parquet"</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>ANATEL_PRE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"anatel_pre_tratamento.parquet"</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>IBGE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"ibge_municipios.parquet"</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>CONECTIVIDADE_FILE <span class="op">=</span> DATA_PROCESSED <span class="op">/</span> <span class="st">"conectividade_municipal.parquet"</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>PAINEL_FINAL <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_municipio_anatel.parquet"</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>PAINEL_FINAL_V2 <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_municipio_anatel_v2.parquet"</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data root:"</span>, DATA_ROOT.resolve())</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Cache CAGED:"</span>, CAGED_CACHE_FILE.resolve(), <span class="st">"(existe:"</span>, CAGED_CACHE_FILE.exists(), <span class="st">", use_cache:"</span>, USE_CAGED_CACHE, <span class="st">")"</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Configuração carregada. Período pré conectividade: até"</span>, <span class="ss">f"</span><span class="sc">{</span>MES_FIM_PRE_CONECT<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>ANO_PRE_CONECT<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Configuração carregada. Período pré conectividade: até 10/2022</code></pre>
+<pre><code>Data root: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data
+Cache CAGED: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data/processed/painel_caged_municipio.parquet (existe: True , use_cache: False )
+Configuração carregada. Período pré conectividade: até 10/2022</code></pre>
 </div>
 </div>
 </section>
 <section id="anatel-banda-larga-fixa" class="level3" data-number="0.6">
 <h3 data-number="0.6" class="anchored" data-anchor-id="anatel-banda-larga-fixa"><span class="header-section-number">0.6</span> 2. Anatel — Banda Larga Fixa</h3>
 <p>Download via BigQuery (Base dos Dados). Período pré-tratamento: 2021 e Jan–Out/2022. Agregado por município: média de acessos e % fibra.</p>
-<div id="cell-6" class="cell" data-execution_count="2">
+<div id="cell-6" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.2 — Anatel (ou carregar do cache)</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> ANATEL_PRE_FILE.exists():</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    df_anatel <span class="op">=</span> pd.read_parquet(ANATEL_PRE_FILE)</span>
@@ -261,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code>Anatel carregado do cache: 5,570 municípios</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 
 
@@ -315,7 +336,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ibge-domicílios-pib-população" class="level3" data-number="0.7">
 <h3 data-number="0.7" class="anchored" data-anchor-id="ibge-domicílios-pib-população"><span class="header-section-number">0.7</span> 3. IBGE — Domicílios, PIB, População</h3>
 <p>População (2022), PIB municipal (2021), domicílios (Censo 2022 ou proxy) para denominador da penetração e filtro de porte.</p>
-<div id="cell-8" class="cell" data-execution_count="3">
+<div id="cell-8" class="cell" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.3 — IBGE</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Nota: tabela br_ibge_pib.municipio tem apenas id_municipio e pib; população vem de br_ibge_populacao.municipio.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> IBGE_FILE.exists():</span>
@@ -356,7 +377,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code>IBGE carregado do cache: 5,570 municípios</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="22">
 <div>
 
 
@@ -422,7 +443,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="índice-de-conectividade-municipal" class="level3" data-number="0.8">
 <h3 data-number="0.8" class="anchored" data-anchor-id="índice-de-conectividade-municipal"><span class="header-section-number">0.8</span> 4. Índice de Conectividade Municipal</h3>
 <p>Merge Anatel + IBGE. <strong>penetracao_bl</strong> = media_acessos_pre / domicilios. <strong>alta_conectividade</strong> = 1 se penetração &gt; mediana. Filtrar municípios com população ≥ MIN_POPULACAO.</p>
-<div id="cell-10" class="cell" data-execution_count="4">
+<div id="cell-10" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.4 — Conectividade</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_anatel <span class="op">=</span> pd.read_parquet(ANATEL_PRE_FILE)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df_ibge <span class="op">=</span> pd.read_parquet(IBGE_FILE)</span>
@@ -434,9 +455,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>df_conect[<span class="st">"alta_conectividade"</span>] <span class="op">=</span> (df_conect[<span class="st">"penetracao_bl"</span>] <span class="op">&gt;</span> med).astype(<span class="bu">int</span>)</span>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>df_conect[<span class="st">"conectividade_q75"</span>] <span class="op">=</span> (df_conect[<span class="st">"penetracao_bl"</span>] <span class="op">&gt;</span> df_conect[<span class="st">"penetracao_bl"</span>].quantile(<span class="fl">0.75</span>)).astype(<span class="bu">int</span>)</span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>df_conect[<span class="st">"conectividade_q25"</span>] <span class="op">=</span> (df_conect[<span class="st">"penetracao_bl"</span>] <span class="op">&gt;</span> df_conect[<span class="st">"penetracao_bl"</span>].quantile(<span class="fl">0.25</span>)).astype(<span class="bu">int</span>)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>df_conect <span class="op">=</span> df_conect[df_conect[<span class="st">"populacao"</span>] <span class="op">&gt;=</span> MIN_POPULACAO].copy()</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>df_conect.to_parquet(CONECTIVIDADE_FILE, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mediana penetração: </span><span class="sc">{</span>med<span class="sc">:.4f}</span><span class="ss">. Alta conect.: </span><span class="sc">{</span>df_conect[<span class="st">'alta_conectividade'</span>]<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">:,}</span><span class="ss"> municípios. Total: </span><span class="sc">{</span><span class="bu">len</span>(df_conect)<span class="sc">:,}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># % fibra óptica como proxy alternativo de qualidade (cutoff por mediana)</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>mediana_fibra <span class="op">=</span> df_conect[<span class="st">"pct_fibra_pre"</span>].median()</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>df_conect[<span class="st">"alta_fibra"</span>] <span class="op">=</span> (df_conect[<span class="st">"pct_fibra_pre"</span>] <span class="op">&gt;</span> mediana_fibra).astype(<span class="bu">int</span>)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>df_conect <span class="op">=</span> df_conect[df_conect[<span class="st">"populacao"</span>] <span class="op">&gt;=</span> MIN_POPULACAO].copy()</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>df_conect.to_parquet(CONECTIVIDADE_FILE, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mediana penetração: </span><span class="sc">{</span>med<span class="sc">:.4f}</span><span class="ss">. Alta conect.: </span><span class="sc">{</span>df_conect[<span class="st">'alta_conectividade'</span>]<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">:,}</span><span class="ss"> municípios. Total: </span><span class="sc">{</span><span class="bu">len</span>(df_conect)<span class="sc">:,}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Mediana penetração: 0.2681. Alta conect.: 529 municípios. Total: 657</code></pre>
 </div>
@@ -444,8 +468,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="caged-agregação-por-ocupação-município-período" class="level3" data-number="0.9">
 <h3 data-number="0.9" class="anchored" data-anchor-id="caged-agregação-por-ocupação-município-período"><span class="header-section-number">0.9</span> 5. CAGED — Agregação por Ocupação × Município × Período</h3>
-<p>Reagregar microdados CAGED (data/raw/caged_{ano}.parquet) por <strong>(cbo_4d, id_municipio, ano, mes)</strong> com as mesmas métricas da Etapa 2a. Inclui sigla_uf. Processamento ano a ano para evitar OOM.</p>
-<div id="cell-12" class="cell" data-execution_count="5">
+<p>Reagregar microdados CAGED (data/raw/caged_{ano}.parquet) por <strong>(cbo_4d, id_municipio, ano, mes)</strong> com as mesmas métricas da Etapa 2a. Inclui sigla_uf e <strong>decomposição por faixa etária</strong> (jovem &lt;30, intermediário 30–49, senior 50+): adm_jovem, adm_intermediario, adm_senior e salário médio por faixa. Processamento ano a ano para evitar OOM.</p>
+<p><strong>Nota:</strong> Se o cache foi gerado antes da inclusão da faixa etária, use na seção 1 <code>USE_CAGED_CACHE = False</code> e execute de novo, ou apague o arquivo em <code>notebook/data/processed/painel_caged_municipio.parquet</code>.</p>
+<div id="cell-12" class="cell" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.5 — CAGED municipal (ou carregar do cache)</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregação por (cbo_4d, id_municipio, ano, mes) — mesmas métricas da Etapa 2a. Sexo: 1=Masculino, 3=Feminino.</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
@@ -471,112 +496,122 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_branco"</span>] <span class="op">=</span> raca_str.isin([<span class="bu">str</span>(c) <span class="cf">for</span> c <span class="kw">in</span> CODIGOS_RACA_BRANCA]).astype(<span class="bu">float</span>)</span>
 <span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_negro"</span>] <span class="op">=</span> raca_str.isin([<span class="bu">str</span>(c) <span class="cf">for</span> c <span class="kw">in</span> CODIGOS_RACA_NEGRA]).astype(<span class="bu">float</span>)</span>
 <span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_jovem"</span>] <span class="op">=</span> (df[<span class="st">"idade"</span>] <span class="op">&lt;=</span> IDADE_CORTE_JOVEM).astype(<span class="bu">float</span>)</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_superior"</span>] <span class="op">=</span> df[<span class="st">"grau_instrucao"</span>].astype(<span class="bu">str</span>).isin(CODIGOS_ESCOLARIDADE_SUPERIOR).astype(<span class="bu">float</span>)</span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_setor_tech"</span>] <span class="op">=</span> df[<span class="st">"cnae_2_secao"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.strip().isin(CNAE_SECOES_TECNOLOGICO).astype(<span class="bu">float</span>)</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    df_adm <span class="op">=</span> df[df[<span class="st">"saldo_movimentacao"</span>] <span class="op">==</span> <span class="dv">1</span>].copy()</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    df_desl <span class="op">=</span> df[df[<span class="st">"saldo_movimentacao"</span>] <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  [</span><span class="sc">{</span>ano<span class="sc">}</span><span class="ss">] Admissões: </span><span class="sc">{</span><span class="bu">len</span>(df_adm)<span class="sc">:,}</span><span class="ss"> | Desligamentos: </span><span class="sc">{</span><span class="bu">len</span>(df_desl)<span class="sc">:,}</span><span class="ss">"</span>)</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_mulher"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_mulher"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_homem"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_mulher"</span>] <span class="op">==</span> <span class="dv">0</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_branco"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_branco"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_negro"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_negro"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_jovem"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_jovem"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_naojovem"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_jovem"</span>] <span class="op">==</span> <span class="dv">0</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_sup"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_superior"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_med"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_superior"</span>] <span class="op">==</span> <span class="dv">0</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"is_homem"</span>] <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> df_adm[<span class="st">"is_mulher"</span>]</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>    grp <span class="op">=</span> [<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>, <span class="st">"ano"</span>, <span class="st">"mes"</span>]</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>    painel_adm <span class="op">=</span> df_adm.groupby(grp).agg(</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>        sigla_uf<span class="op">=</span>(<span class="st">"sigla_uf"</span>, <span class="st">"first"</span>),</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>        admissoes<span class="op">=</span>(<span class="st">"saldo_movimentacao"</span>, <span class="st">"count"</span>),</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>        salario_medio_adm<span class="op">=</span>(<span class="st">"salario_mensal"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>        idade_media_adm<span class="op">=</span>(<span class="st">"idade"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>        pct_mulher_adm<span class="op">=</span>(<span class="st">"is_mulher"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        pct_superior_adm<span class="op">=</span>(<span class="st">"is_superior"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>        pct_branco_adm<span class="op">=</span>(<span class="st">"is_branco"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        pct_negro_adm<span class="op">=</span>(<span class="st">"is_negro"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>        pct_jovem_adm<span class="op">=</span>(<span class="st">"is_jovem"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>        pct_tecnologico_adm<span class="op">=</span>(<span class="st">"is_setor_tech"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>        salario_medio_mulher<span class="op">=</span>(<span class="st">"sal_mulher"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>        salario_medio_homem<span class="op">=</span>(<span class="st">"sal_homem"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>        salario_medio_branco<span class="op">=</span>(<span class="st">"sal_branco"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>        salario_medio_negro<span class="op">=</span>(<span class="st">"sal_negro"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>        salario_medio_jovem<span class="op">=</span>(<span class="st">"sal_jovem"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>        salario_medio_naojovem<span class="op">=</span>(<span class="st">"sal_naojovem"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>        salario_medio_superior<span class="op">=</span>(<span class="st">"sal_sup"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>        salario_medio_medio<span class="op">=</span>(<span class="st">"sal_med"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>        admissoes_mulher<span class="op">=</span>(<span class="st">"is_mulher"</span>, <span class="st">"sum"</span>),</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>        admissoes_homem<span class="op">=</span>(<span class="st">"is_homem"</span>, <span class="st">"sum"</span>),</span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>        admissoes_jovem<span class="op">=</span>(<span class="st">"is_jovem"</span>, <span class="st">"sum"</span>),</span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>        admissoes_negro<span class="op">=</span>(<span class="st">"is_negro"</span>, <span class="st">"sum"</span>),</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>    ).reset_index()</span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>    mediana <span class="op">=</span> df_adm.groupby(grp)[<span class="st">"salario_mensal"</span>].median().reset_index().rename(columns<span class="op">=</span>{<span class="st">"salario_mensal"</span>: <span class="st">"salario_mediano_adm"</span>})</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>    painel_adm <span class="op">=</span> painel_adm.merge(mediana, on<span class="op">=</span>grp, how<span class="op">=</span><span class="st">"left"</span>)</span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>    painel_desl <span class="op">=</span> df_desl.groupby(grp).agg(</span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>        desligamentos<span class="op">=</span>(<span class="st">"saldo_movimentacao"</span>, <span class="st">"count"</span>),</span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>        salario_medio_desl<span class="op">=</span>(<span class="st">"salario_mensal"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>    ).reset_index()</span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> painel_adm.merge(painel_desl, on<span class="op">=</span>grp, how<span class="op">=</span><span class="st">"outer"</span>).fillna(<span class="dv">0</span>)</span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"saldo"</span>] <span class="op">=</span> p[<span class="st">"admissoes"</span>] <span class="op">-</span> p[<span class="st">"desligamentos"</span>]</span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"n_movimentacoes"</span>] <span class="op">=</span> p[<span class="st">"admissoes"</span>] <span class="op">+</span> p[<span class="st">"desligamentos"</span>]</span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"setor_tecnologico"</span>] <span class="op">=</span> (p[<span class="st">"pct_tecnologico_adm"</span>] <span class="op">&gt;=</span> SETOR_TECNOLOGICO_LIMIAR).astype(<span class="bu">int</span>)</span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"periodo"</span>] <span class="op">=</span> p[<span class="st">"ano"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"-"</span> <span class="op">+</span> p[<span class="st">"mes"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">2</span>)</span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"periodo_num"</span>] <span class="op">=</span> p[<span class="st">"ano"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> <span class="dv">100</span> <span class="op">+</span> p[<span class="st">"mes"</span>].astype(<span class="bu">int</span>)</span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"post"</span>] <span class="op">=</span> (p[<span class="st">"periodo_num"</span>] <span class="op">&gt;=</span> ANO_TRATAMENTO <span class="op">*</span> <span class="dv">100</span> <span class="op">+</span> MES_TRATAMENTO).astype(<span class="bu">int</span>)</span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"ln_admissoes"</span>] <span class="op">=</span> np.log(p[<span class="st">"admissoes"</span>] <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"ln_desligamentos"</span>] <span class="op">=</span> np.log(p[<span class="st">"desligamentos"</span>] <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"ln_salario_adm"</span>] <span class="op">=</span> np.log(p[<span class="st">"salario_medio_adm"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"cbo_2d"</span>] <span class="op">=</span> p[<span class="st">"cbo_4d"</span>].<span class="bu">str</span>[:<span class="dv">2</span>]</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> grp_name <span class="kw">in</span> [<span class="st">"mulher"</span>, <span class="st">"homem"</span>, <span class="st">"branco"</span>, <span class="st">"negro"</span>, <span class="st">"jovem"</span>, <span class="st">"naojovem"</span>, <span class="st">"superior"</span>, <span class="st">"medio"</span>]:</span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> <span class="ss">f"salario_medio_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> col <span class="kw">in</span> p.columns:</span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>            p[<span class="ss">f"ln_salario_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span>] <span class="op">=</span> np.log(p[col].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> grp_name <span class="kw">in</span> [<span class="st">"mulher"</span>, <span class="st">"homem"</span>, <span class="st">"jovem"</span>, <span class="st">"negro"</span>]:</span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> <span class="ss">f"admissoes_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> col <span class="kw">in</span> p.columns:</span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>            p[<span class="ss">f"ln_admissoes_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span>] <span class="op">=</span> np.log(p[col].astype(<span class="bu">float</span>) <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  [</span><span class="sc">{</span>ano<span class="sc">}</span><span class="ss">] Painel: </span><span class="sc">{</span><span class="bu">len</span>(p)<span class="sc">:,}</span><span class="ss"> linhas (</span><span class="sc">{</span>time<span class="sc">.</span>time()<span class="op">-</span>t0<span class="sc">:.0f}</span><span class="ss">s)"</span>)</span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df, df_adm, df_desl</span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> p</span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> PAINEL_CAGED_MUN.exists():</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>    df_caged <span class="op">=</span> pd.read_parquet(PAINEL_CAGED_MUN)</span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"CAGED municipal carregado do cache: </span><span class="sc">{</span><span class="bu">len</span>(df_caged)<span class="sc">:,}</span><span class="ss"> linhas, </span><span class="sc">{</span>df_caged[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">:,}</span><span class="ss"> municípios"</span>)</span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"ETAPA 3a — Agregação CAGED por ocupação × município × período"</span>)</span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>    t0 <span class="op">=</span> time.time()</span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>    paineis <span class="op">=</span> [processar_ano_caged_mun(ano) <span class="cf">for</span> ano <span class="kw">in</span> <span class="bu">range</span>(ANO_INICIO, ANO_FIM <span class="op">+</span> <span class="dv">1</span>)]</span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>    painel <span class="op">=</span> pd.concat(paineis, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a>    painel[<span class="st">"id_municipio"</span>] <span class="op">=</span> painel[<span class="st">"id_municipio"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">7</span>)</span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Garantir colunas texto como string para o PyArrow (evitar ArrowTypeError por tipo object misto)</span></span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> [<span class="st">"sigla_uf"</span>, <span class="st">"cbo_4d"</span>, <span class="st">"cbo_2d"</span>, <span class="st">"periodo"</span>]:</span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> col <span class="kw">in</span> painel.columns:</span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a>            painel[col] <span class="op">=</span> painel[col].astype(<span class="bu">str</span>)</span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a>    painel.to_parquet(PAINEL_CAGED_MUN, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Total: </span><span class="sc">{</span><span class="bu">len</span>(painel)<span class="sc">:,}</span><span class="ss"> linhas | </span><span class="sc">{</span>painel[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> ocupações | </span><span class="sc">{</span>painel[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> municípios | </span><span class="sc">{</span>painel[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> períodos | salvo em </span><span class="sc">{</span>time<span class="sc">.</span>time()<span class="op">-</span>t0<span class="sc">:.0f}</span><span class="ss">s"</span>)</span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a>    df_caged <span class="op">=</span> painel</span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a>df_caged[<span class="st">"id_municipio"</span>] <span class="op">=</span> df_caged[<span class="st">"id_municipio"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">7</span>)</span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>df_caged.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_intermediario"</span>] <span class="op">=</span> ((df[<span class="st">"idade"</span>] <span class="op">&gt;=</span> <span class="dv">30</span>) <span class="op">&amp;</span> (df[<span class="st">"idade"</span>] <span class="op">&lt;</span> <span class="dv">50</span>)).astype(<span class="bu">float</span>)</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_senior"</span>] <span class="op">=</span> (df[<span class="st">"idade"</span>] <span class="op">&gt;=</span> <span class="dv">50</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_superior"</span>] <span class="op">=</span> df[<span class="st">"grau_instrucao"</span>].astype(<span class="bu">str</span>).isin(CODIGOS_ESCOLARIDADE_SUPERIOR).astype(<span class="bu">float</span>)</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"is_setor_tech"</span>] <span class="op">=</span> df[<span class="st">"cnae_2_secao"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.strip().isin(CNAE_SECOES_TECNOLOGICO).astype(<span class="bu">float</span>)</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    df_adm <span class="op">=</span> df[df[<span class="st">"saldo_movimentacao"</span>] <span class="op">==</span> <span class="dv">1</span>].copy()</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    df_desl <span class="op">=</span> df[df[<span class="st">"saldo_movimentacao"</span>] <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  [</span><span class="sc">{</span>ano<span class="sc">}</span><span class="ss">] Admissões: </span><span class="sc">{</span><span class="bu">len</span>(df_adm)<span class="sc">:,}</span><span class="ss"> | Desligamentos: </span><span class="sc">{</span><span class="bu">len</span>(df_desl)<span class="sc">:,}</span><span class="ss">"</span>)</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_mulher"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_mulher"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_homem"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_mulher"</span>] <span class="op">==</span> <span class="dv">0</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_branco"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_branco"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_negro"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_negro"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_jovem"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_jovem"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_naojovem"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_jovem"</span>] <span class="op">==</span> <span class="dv">0</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_intermediario"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_intermediario"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_senior"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_senior"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_sup"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_superior"</span>] <span class="op">==</span> <span class="dv">1</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"sal_med"</span>] <span class="op">=</span> np.where(df_adm[<span class="st">"is_superior"</span>] <span class="op">==</span> <span class="dv">0</span>, df_adm[<span class="st">"salario_mensal"</span>], np.nan)</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>    df_adm[<span class="st">"is_homem"</span>] <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> df_adm[<span class="st">"is_mulher"</span>]</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>    grp <span class="op">=</span> [<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>, <span class="st">"ano"</span>, <span class="st">"mes"</span>]</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>    painel_adm <span class="op">=</span> df_adm.groupby(grp).agg(</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>        sigla_uf<span class="op">=</span>(<span class="st">"sigla_uf"</span>, <span class="st">"first"</span>),</span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        admissoes<span class="op">=</span>(<span class="st">"saldo_movimentacao"</span>, <span class="st">"count"</span>),</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>        salario_medio_adm<span class="op">=</span>(<span class="st">"salario_mensal"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        idade_media_adm<span class="op">=</span>(<span class="st">"idade"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>        pct_mulher_adm<span class="op">=</span>(<span class="st">"is_mulher"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>        pct_superior_adm<span class="op">=</span>(<span class="st">"is_superior"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>        pct_branco_adm<span class="op">=</span>(<span class="st">"is_branco"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>        pct_negro_adm<span class="op">=</span>(<span class="st">"is_negro"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>        pct_jovem_adm<span class="op">=</span>(<span class="st">"is_jovem"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>        pct_tecnologico_adm<span class="op">=</span>(<span class="st">"is_setor_tech"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>        salario_medio_mulher<span class="op">=</span>(<span class="st">"sal_mulher"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>        salario_medio_homem<span class="op">=</span>(<span class="st">"sal_homem"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>        salario_medio_branco<span class="op">=</span>(<span class="st">"sal_branco"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>        salario_medio_negro<span class="op">=</span>(<span class="st">"sal_negro"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>        salario_medio_jovem<span class="op">=</span>(<span class="st">"sal_jovem"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>        salario_medio_naojovem<span class="op">=</span>(<span class="st">"sal_naojovem"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>        salario_medio_intermediario<span class="op">=</span>(<span class="st">"sal_intermediario"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>        salario_medio_senior<span class="op">=</span>(<span class="st">"sal_senior"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>        salario_medio_superior<span class="op">=</span>(<span class="st">"sal_sup"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>        salario_medio_medio<span class="op">=</span>(<span class="st">"sal_med"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>        admissoes_mulher<span class="op">=</span>(<span class="st">"is_mulher"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>        admissoes_homem<span class="op">=</span>(<span class="st">"is_homem"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>        admissoes_jovem<span class="op">=</span>(<span class="st">"is_jovem"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>        adm_jovem<span class="op">=</span>(<span class="st">"is_jovem"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>        adm_intermediario<span class="op">=</span>(<span class="st">"is_intermediario"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a>        adm_senior<span class="op">=</span>(<span class="st">"is_senior"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>        admissoes_negro<span class="op">=</span>(<span class="st">"is_negro"</span>, <span class="st">"sum"</span>),</span>
+<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>    ).reset_index()</span>
+<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>    mediana <span class="op">=</span> df_adm.groupby(grp)[<span class="st">"salario_mensal"</span>].median().reset_index().rename(columns<span class="op">=</span>{<span class="st">"salario_mensal"</span>: <span class="st">"salario_mediano_adm"</span>})</span>
+<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>    painel_adm <span class="op">=</span> painel_adm.merge(mediana, on<span class="op">=</span>grp, how<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>    painel_desl <span class="op">=</span> df_desl.groupby(grp).agg(</span>
+<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a>        desligamentos<span class="op">=</span>(<span class="st">"saldo_movimentacao"</span>, <span class="st">"count"</span>),</span>
+<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>        salario_medio_desl<span class="op">=</span>(<span class="st">"salario_mensal"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>    ).reset_index()</span>
+<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> painel_adm.merge(painel_desl, on<span class="op">=</span>grp, how<span class="op">=</span><span class="st">"outer"</span>).fillna(<span class="dv">0</span>)</span>
+<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"saldo"</span>] <span class="op">=</span> p[<span class="st">"admissoes"</span>] <span class="op">-</span> p[<span class="st">"desligamentos"</span>]</span>
+<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"n_movimentacoes"</span>] <span class="op">=</span> p[<span class="st">"admissoes"</span>] <span class="op">+</span> p[<span class="st">"desligamentos"</span>]</span>
+<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"setor_tecnologico"</span>] <span class="op">=</span> (p[<span class="st">"pct_tecnologico_adm"</span>] <span class="op">&gt;=</span> SETOR_TECNOLOGICO_LIMIAR).astype(<span class="bu">int</span>)</span>
+<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"periodo"</span>] <span class="op">=</span> p[<span class="st">"ano"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"-"</span> <span class="op">+</span> p[<span class="st">"mes"</span>].astype(<span class="bu">int</span>).astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">2</span>)</span>
+<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"periodo_num"</span>] <span class="op">=</span> p[<span class="st">"ano"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> <span class="dv">100</span> <span class="op">+</span> p[<span class="st">"mes"</span>].astype(<span class="bu">int</span>)</span>
+<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"post"</span>] <span class="op">=</span> (p[<span class="st">"periodo_num"</span>] <span class="op">&gt;=</span> ANO_TRATAMENTO <span class="op">*</span> <span class="dv">100</span> <span class="op">+</span> MES_TRATAMENTO).astype(<span class="bu">int</span>)</span>
+<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"ln_admissoes"</span>] <span class="op">=</span> np.log(p[<span class="st">"admissoes"</span>] <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"ln_desligamentos"</span>] <span class="op">=</span> np.log(p[<span class="st">"desligamentos"</span>] <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"ln_salario_adm"</span>] <span class="op">=</span> np.log(p[<span class="st">"salario_medio_adm"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">"cbo_2d"</span>] <span class="op">=</span> p[<span class="st">"cbo_4d"</span>].<span class="bu">str</span>[:<span class="dv">2</span>]</span>
+<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> grp_name <span class="kw">in</span> [<span class="st">"mulher"</span>, <span class="st">"homem"</span>, <span class="st">"branco"</span>, <span class="st">"negro"</span>, <span class="st">"jovem"</span>, <span class="st">"naojovem"</span>, <span class="st">"superior"</span>, <span class="st">"medio"</span>]:</span>
+<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> <span class="ss">f"salario_medio_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> col <span class="kw">in</span> p.columns:</span>
+<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>            p[<span class="ss">f"ln_salario_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span>] <span class="op">=</span> np.log(p[col].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> grp_name <span class="kw">in</span> [<span class="st">"mulher"</span>, <span class="st">"homem"</span>, <span class="st">"jovem"</span>, <span class="st">"negro"</span>]:</span>
+<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> <span class="ss">f"admissoes_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> col <span class="kw">in</span> p.columns:</span>
+<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>            p[<span class="ss">f"ln_admissoes_</span><span class="sc">{</span>grp_name<span class="sc">}</span><span class="ss">"</span>] <span class="op">=</span> np.log(p[col].astype(<span class="bu">float</span>) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  [</span><span class="sc">{</span>ano<span class="sc">}</span><span class="ss">] Painel: </span><span class="sc">{</span><span class="bu">len</span>(p)<span class="sc">:,}</span><span class="ss"> linhas (</span><span class="sc">{</span>time<span class="sc">.</span>time()<span class="op">-</span>t0<span class="sc">:.0f}</span><span class="ss">s)"</span>)</span>
+<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df, df_adm, df_desl</span>
+<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> p</span>
+<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CAGED_CACHE <span class="kw">and</span> CAGED_CACHE_FILE.exists():</span>
+<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>    df_caged <span class="op">=</span> pd.read_parquet(CAGED_CACHE_FILE)</span>
+<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"CAGED municipal carregado do cache: </span><span class="sc">{</span>CAGED_CACHE_FILE<span class="sc">.</span>resolve()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  </span><span class="sc">{</span><span class="bu">len</span>(df_caged)<span class="sc">:,}</span><span class="ss"> linhas, </span><span class="sc">{</span>df_caged[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">:,}</span><span class="ss"> municípios"</span>)</span>
+<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"ETAPA 3a — Agregação CAGED por ocupação × município × período"</span>)</span>
+<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a>    t0 <span class="op">=</span> time.time()</span>
+<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a>    paineis <span class="op">=</span> [processar_ano_caged_mun(ano) <span class="cf">for</span> ano <span class="kw">in</span> <span class="bu">range</span>(ANO_INICIO, ANO_FIM <span class="op">+</span> <span class="dv">1</span>)]</span>
+<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>    painel <span class="op">=</span> pd.concat(paineis, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a>    painel[<span class="st">"id_municipio"</span>] <span class="op">=</span> painel[<span class="st">"id_municipio"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">7</span>)</span>
+<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Garantir colunas texto como string para o PyArrow (evitar ArrowTypeError por tipo object misto)</span></span>
+<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> [<span class="st">"sigla_uf"</span>, <span class="st">"cbo_4d"</span>, <span class="st">"cbo_2d"</span>, <span class="st">"periodo"</span>]:</span>
+<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> col <span class="kw">in</span> painel.columns:</span>
+<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>            painel[col] <span class="op">=</span> painel[col].astype(<span class="bu">str</span>)</span>
+<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a>    painel.to_parquet(CAGED_CACHE_FILE, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Total: </span><span class="sc">{</span><span class="bu">len</span>(painel)<span class="sc">:,}</span><span class="ss"> linhas | </span><span class="sc">{</span>painel[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> ocupações | </span><span class="sc">{</span>painel[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> municípios | </span><span class="sc">{</span>painel[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> períodos | salvo em </span><span class="sc">{</span>time<span class="sc">.</span>time()<span class="op">-</span>t0<span class="sc">:.0f}</span><span class="ss">s"</span>)</span>
+<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a>    df_caged <span class="op">=</span> painel</span>
+<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a>df_caged[<span class="st">"id_municipio"</span>] <span class="op">=</span> df_caged[<span class="st">"id_municipio"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">7</span>)</span>
+<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a>df_caged.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>ETAPA 3a — Agregação CAGED por ocupação × município × período
-  [2021] Carregado: 36,554,795 registros (5s)
+  [2021] Carregado: 36,554,795 registros (7s)
   [2021] Admissões: 19,703,604 | Desligamentos: 16,851,191
-  [2021] Painel: 2,627,059 linhas (108s)
+  [2021] Painel: 2,627,059 linhas (115s)
   [2022] Carregado: 42,475,516 registros (7s)
   [2022] Admissões: 22,243,441 | Desligamentos: 20,232,075
-  [2022] Painel: 2,868,327 linhas (126s)
-  [2023] Carregado: 44,485,982 registros (8s)
+  [2022] Painel: 2,868,327 linhas (137s)
+  [2023] Carregado: 44,485,982 registros (9s)
   [2023] Admissões: 22,982,161 | Desligamentos: 21,503,821
-  [2023] Painel: 2,945,596 linhas (137s)
-  [2024] Carregado: 48,996,040 registros (9s)
+  [2023] Painel: 2,945,596 linhas (145s)
+  [2024] Carregado: 48,996,040 registros (10s)
   [2024] Admissões: 25,336,277 | Desligamentos: 23,659,763
-  [2024] Painel: 3,056,122 linhas (150s)
+  [2024] Painel: 3,056,122 linhas (156s)
   [2025] Carregado: 26,312,103 registros (4s)
   [2025] Admissões: 13,763,059 | Desligamentos: 12,549,044
-  [2025] Painel: 1,597,780 linhas (73s)
-Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | salvo em 649s</code></pre>
+  [2025] Painel: 1,597,780 linhas (76s)
+Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | salvo em 689s</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="24">
 <div>
 
 
@@ -731,7 +766,7 @@ Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | s
 </tbody>
 </table>
 
-<p>5 rows × 51 columns</p>
+<p>5 rows × 56 columns</p>
 </div>
 </div>
 </div>
@@ -739,7 +774,7 @@ Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | s
 <section id="merge-painel-tridimensional" class="level3" data-number="0.10">
 <h3 data-number="0.10" class="anchored" data-anchor-id="merge-painel-tridimensional"><span class="header-section-number">0.10</span> 6. Merge — Painel Tridimensional</h3>
 <p>Merge CAGED municipal + exposição (Etapa 2, uma linha por cbo_4d) + conectividade. Variáveis temporais (post, tempo_relativo_meses) e interações DDD (triple_did, post_alta_exp, post_alta_conect). Salário real com IPCA.</p>
-<div id="cell-14" class="cell" data-execution_count="6">
+<div id="cell-14" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.6 — Merge</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>painel2 <span class="op">=</span> pd.read_parquet(PAINEL_ETAPA2)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>cols_exp <span class="op">=</span> [<span class="st">"cbo_4d"</span>, <span class="st">"exposure_score_2d"</span>, <span class="st">"exposure_score_4d"</span>, <span class="st">"alta_exp"</span>, <span class="st">"alta_exp_4d"</span>,</span>
@@ -750,7 +785,7 @@ Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | s
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df_caged.merge(df_exposure, on<span class="op">=</span><span class="st">"cbo_4d"</span>, how<span class="op">=</span><span class="st">"inner"</span>)</span>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.merge(</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    df_conect[[<span class="st">"id_municipio"</span>, <span class="st">"penetracao_bl"</span>, <span class="st">"pct_fibra_pre"</span>, <span class="st">"alta_conectividade"</span>, <span class="st">"conectividade_q75"</span>, <span class="st">"conectividade_q25"</span>, <span class="st">"pib_per_capita"</span>, <span class="st">"populacao"</span>]],</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    df_conect[[<span class="st">"id_municipio"</span>, <span class="st">"penetracao_bl"</span>, <span class="st">"pct_fibra_pre"</span>, <span class="st">"alta_conectividade"</span>, <span class="st">"alta_fibra"</span>, <span class="st">"conectividade_q75"</span>, <span class="st">"conectividade_q25"</span>, <span class="st">"pib_per_capita"</span>, <span class="st">"populacao"</span>]],</span>
 <span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    on<span class="op">=</span><span class="st">"id_municipio"</span>, how<span class="op">=</span><span class="st">"inner"</span></span>
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"periodo_dt"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"periodo"</span>] <span class="op">+</span> <span class="st">"-01"</span>, errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
@@ -761,23 +796,30 @@ Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | s
 <span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_alta_conect"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>]</span>
 <span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"alta_exp_alta_conect"</span>] <span class="op">=</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>]</span>
 <span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"triple_did"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>]</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> IPCA_FILE.exists():</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>    df_ipca <span class="op">=</span> pd.read_parquet(IPCA_FILE)</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df.merge(df_ipca[[<span class="st">"ano"</span>, <span class="st">"mes"</span>, <span class="st">"indice"</span>]], on<span class="op">=</span>[<span class="st">"ano"</span>, <span class="st">"mes"</span>], how<span class="op">=</span><span class="st">"left"</span>)</span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"salario_real_adm"</span>] <span class="op">=</span> df[<span class="st">"salario_medio_adm"</span>] <span class="op">*</span> (<span class="fl">100.0</span> <span class="op">/</span> df[<span class="st">"indice"</span>].clip(lower<span class="op">=</span><span class="fl">0.01</span>))</span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"salario_real_adm"</span>] <span class="op">=</span> df[<span class="st">"salario_medio_adm"</span>]</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"ln_salario_real_adm"</span>] <span class="op">=</span> np.log(df[<span class="st">"salario_real_adm"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"ln_pib_pc"</span>] <span class="op">=</span> np.log(df[<span class="st">"pib_per_capita"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> MIN_MOVIMENTACOES_PRE <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>    pre <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">==</span> <span class="dv">0</span></span>
-<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>    mov <span class="op">=</span> df.loc[pre].groupby([<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>])[<span class="st">"n_movimentacoes"</span>].<span class="bu">sum</span>().reset_index()</span>
-<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>    mov.columns <span class="op">=</span> [<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>, <span class="st">"mov_pre"</span>]</span>
-<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df.merge(mov, on<span class="op">=</span>[<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>], how<span class="op">=</span><span class="st">"left"</span>)</span>
-<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df[df[<span class="st">"mov_pre"</span>] <span class="op">&gt;=</span> MIN_MOVIMENTACOES_PRE].drop(columns<span class="op">=</span>[<span class="st">"mov_pre"</span>])</span>
-<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Painel final: </span><span class="sc">{</span><span class="bu">len</span>(df)<span class="sc">:,}</span><span class="ss"> linhas | </span><span class="sc">{</span>df[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> ocupações | </span><span class="sc">{</span>df[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> municípios | </span><span class="sc">{</span>df[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> períodos"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Interações para Triple-DiD com proxy fibra</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_alta_fibra"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_fibra"</span>]</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"alta_exp_alta_fibra"</span>] <span class="op">=</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_fibra"</span>]</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"triple_did_fibra"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_fibra"</span>]</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Dummy capital estadual (proxy extrema de conectividade para robustez no 3b)</span></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>capitais_ibge <span class="op">=</span> [<span class="st">"1100205"</span>, <span class="st">"1200401"</span>, <span class="st">"1302603"</span>, <span class="st">"1400100"</span>, <span class="st">"1501402"</span>, <span class="st">"1600303"</span>, <span class="st">"1721000"</span>, <span class="st">"2111300"</span>, <span class="st">"2211001"</span>, <span class="st">"2304400"</span>, <span class="st">"2408102"</span>, <span class="st">"2507507"</span>, <span class="st">"2611606"</span>, <span class="st">"2704302"</span>, <span class="st">"2800308"</span>, <span class="st">"2927408"</span>, <span class="st">"3106200"</span>, <span class="st">"3205309"</span>, <span class="st">"3304557"</span>, <span class="st">"3550308"</span>, <span class="st">"4106902"</span>, <span class="st">"4205407"</span>, <span class="st">"4314902"</span>, <span class="st">"5002704"</span>, <span class="st">"5103403"</span>, <span class="st">"5208707"</span>, <span class="st">"5300108"</span>]</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"capital"</span>] <span class="op">=</span> df[<span class="st">"id_municipio"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">7</span>).isin(capitais_ibge).astype(<span class="bu">int</span>)</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> IPCA_FILE.exists():</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>    df_ipca <span class="op">=</span> pd.read_parquet(IPCA_FILE)</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df.merge(df_ipca[[<span class="st">"ano"</span>, <span class="st">"mes"</span>, <span class="st">"indice"</span>]], on<span class="op">=</span>[<span class="st">"ano"</span>, <span class="st">"mes"</span>], how<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"salario_real_adm"</span>] <span class="op">=</span> df[<span class="st">"salario_medio_adm"</span>] <span class="op">*</span> (<span class="fl">100.0</span> <span class="op">/</span> df[<span class="st">"indice"</span>].clip(lower<span class="op">=</span><span class="fl">0.01</span>))</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"salario_real_adm"</span>] <span class="op">=</span> df[<span class="st">"salario_medio_adm"</span>]</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"ln_salario_real_adm"</span>] <span class="op">=</span> np.log(df[<span class="st">"salario_real_adm"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"ln_pib_pc"</span>] <span class="op">=</span> np.log(df[<span class="st">"pib_per_capita"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> MIN_MOVIMENTACOES_PRE <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>    pre <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">==</span> <span class="dv">0</span></span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>    mov <span class="op">=</span> df.loc[pre].groupby([<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>])[<span class="st">"n_movimentacoes"</span>].<span class="bu">sum</span>().reset_index()</span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>    mov.columns <span class="op">=</span> [<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>, <span class="st">"mov_pre"</span>]</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df.merge(mov, on<span class="op">=</span>[<span class="st">"cbo_4d"</span>, <span class="st">"id_municipio"</span>], how<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df[df[<span class="st">"mov_pre"</span>] <span class="op">&gt;=</span> MIN_MOVIMENTACOES_PRE].drop(columns<span class="op">=</span>[<span class="st">"mov_pre"</span>])</span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Painel final: </span><span class="sc">{</span><span class="bu">len</span>(df)<span class="sc">:,}</span><span class="ss"> linhas | </span><span class="sc">{</span>df[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> ocupações | </span><span class="sc">{</span>df[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> municípios | </span><span class="sc">{</span>df[<span class="st">'periodo'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> períodos"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Painel final: 5,534,808 linhas | 614 ocupações | 657 municípios | 54 períodos</code></pre>
 </div>
@@ -786,7 +828,7 @@ Total: 13,094,884 linhas | 629 ocupações | 5570 municípios | 54 períodos | s
 <section id="validação-e-estatísticas-descritivas" class="level3" data-number="0.11">
 <h3 data-number="0.11" class="anchored" data-anchor-id="validação-e-estatísticas-descritivas"><span class="header-section-number">0.11</span> 7. Validação e Estatísticas Descritivas</h3>
 <p>Balanço pré por grupo de conectividade; distribuição de penetração; correlação penetração × PIB per capita.</p>
-<div id="cell-16" class="cell" data-execution_count="7">
+<div id="cell-16" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.7 — Validação</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>pre <span class="op">=</span> df[df[<span class="st">"post"</span>] <span class="op">==</span> <span class="dv">0</span>]</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Balanço pré-tratamento por conectividade:"</span>)</span>
@@ -811,15 +853,54 @@ Correlação penetração × PIB per capita: 0.304</code></pre>
 <section id="exportação" class="level3" data-number="0.12">
 <h3 data-number="0.12" class="anchored" data-anchor-id="exportação"><span class="header-section-number">0.12</span> 8. Exportação</h3>
 <p>Salvar painel final em parquet e tabela de conectividade em CSV.</p>
-<div id="cell-18" class="cell" data-execution_count="8">
+<div id="cell-18" class="cell" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.8 — Exportação</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>df.to_parquet(PAINEL_FINAL, index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>df_conect.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">"conectividade_municipal.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Painel salvo: </span><span class="sc">{</span>PAINEL_FINAL<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span>PAINEL_FINAL<span class="sc">.</span>stat()<span class="sc">.</span>st_size<span class="op">/</span><span class="fl">1e6</span><span class="sc">:.1f}</span><span class="ss"> MB)"</span>)</span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Conectividade: </span><span class="sc">{</span>OUTPUTS_TABLES <span class="op">/</span> <span class="st">'conectividade_municipal.csv'</span><span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Painel salvo: data/output/painel_caged_municipio_anatel.parquet (595.0 MB)
-Conectividade: outputs/tables/conectividade_municipal.csv</code></pre>
+<pre><code>Painel salvo: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data/output/painel_caged_municipio_anatel.parquet (635.3 MB)
+Conectividade: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/outputs/tables/conectividade_municipal.csv</code></pre>
+</div>
+</div>
+</section>
+<section id="decomposição-por-faixa-etária-e-exportação-v2" class="level3" data-number="0.13">
+<h3 data-number="0.13" class="anchored" data-anchor-id="decomposição-por-faixa-etária-e-exportação-v2"><span class="header-section-number">0.13</span> 9. Decomposição por Faixa Etária e Exportação v2</h3>
+<p>Construir outcomes desagregados por faixa etária (jovem &lt;30, intermediário 30–49, senior 50+) para o Triple-DiD etário no Notebook 3b: share de jovens/seniores nas admissões, log-admissões e log-salário real por faixa, razão salarial jovem/senior.</p>
+<p><strong>Nota:</strong> Células ocupação×município×mês sem admissões em alguma faixa terão NaN; regressões com outcomes por faixa no 3b terão menos observações (perda amostral esperada).</p>
+<div id="cell-20" class="cell" data-execution_count="28">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3a.9 — Decomposição por Faixa Etária e Re-exportação v2</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>colunas_faixa <span class="op">=</span> [<span class="st">"adm_jovem"</span>, <span class="st">"adm_intermediario"</span>, <span class="st">"adm_senior"</span>, <span class="st">"salario_medio_jovem"</span>, <span class="st">"salario_medio_intermediario"</span>, <span class="st">"salario_medio_senior"</span>]</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> <span class="bu">all</span>(c <span class="kw">in</span> df.columns <span class="cf">for</span> c <span class="kw">in</span> colunas_faixa):</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"AVISO: Painel sem colunas de faixa etária (adm_jovem, adm_intermediario, adm_senior, etc.)."</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Rode a seção 5 com USE_CAGED_CACHE = False na seção 1, ou apague o cache:"</span>, CAGED_CACHE_FILE.resolve())</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># adm_total = soma das três faixas (pode diferir de admissoes se houver missings de idade)</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"adm_total"</span>] <span class="op">=</span> df[<span class="st">"adm_jovem"</span>].fillna(<span class="dv">0</span>) <span class="op">+</span> df[<span class="st">"adm_intermediario"</span>].fillna(<span class="dv">0</span>) <span class="op">+</span> df[<span class="st">"adm_senior"</span>].fillna(<span class="dv">0</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"adm_total"</span>] <span class="op">=</span> df[<span class="st">"adm_total"</span>].replace(<span class="dv">0</span>, np.nan)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"share_jovem"</span>] <span class="op">=</span> df[<span class="st">"adm_jovem"</span>] <span class="op">/</span> df[<span class="st">"adm_total"</span>]</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"share_senior"</span>] <span class="op">=</span> df[<span class="st">"adm_senior"</span>] <span class="op">/</span> df[<span class="st">"adm_total"</span>]</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"ln_adm_jovem"</span>] <span class="op">=</span> np.log1p(df[<span class="st">"adm_jovem"</span>].fillna(<span class="dv">0</span>))</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"ln_adm_intermediario"</span>] <span class="op">=</span> np.log1p(df[<span class="st">"adm_intermediario"</span>].fillna(<span class="dv">0</span>))</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"ln_adm_senior"</span>] <span class="op">=</span> np.log1p(df[<span class="st">"adm_senior"</span>].fillna(<span class="dv">0</span>))</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Salário real por faixa (deflator = indice IPCA, mesmo que ln_salario_real_adm)</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"indice"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>        deflator <span class="op">=</span> df[<span class="st">"indice"</span>] <span class="op">/</span> <span class="fl">100.0</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>        deflator <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> faixa <span class="kw">in</span> [<span class="st">"jovem"</span>, <span class="st">"intermediario"</span>, <span class="st">"senior"</span>]:</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>        col_sal <span class="op">=</span> <span class="ss">f"salario_medio_</span><span class="sc">{</span>faixa<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>        df[<span class="ss">f"sal_real_</span><span class="sc">{</span>faixa<span class="sc">}</span><span class="ss">"</span>] <span class="op">=</span> df[col_sal] <span class="op">/</span> deflator</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>        df[<span class="ss">f"ln_sal_real_</span><span class="sc">{</span>faixa<span class="sc">}</span><span class="ss">"</span>] <span class="op">=</span> np.log(df[<span class="ss">f"sal_real_</span><span class="sc">{</span>faixa<span class="sc">}</span><span class="ss">"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"razao_sal_jovem_senior"</span>] <span class="op">=</span> df[<span class="st">"sal_real_jovem"</span>] <span class="op">/</span> df[<span class="st">"sal_real_senior"</span>].replace(<span class="dv">0</span>, np.nan)</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Re-exportar painel v2 com todas as variáveis (faixa etária, fibra, capital)</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>    df.to_parquet(PAINEL_FINAL_V2, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Painel v2 salvo: </span><span class="sc">{</span>PAINEL_FINAL_V2<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span>PAINEL_FINAL_V2<span class="sc">.</span>stat()<span class="sc">.</span>st_size<span class="op">/</span><span class="fl">1e6</span><span class="sc">:.1f}</span><span class="ss"> MB)"</span>)</span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Variáveis: share_jovem, share_senior, ln_adm_* por faixa, ln_sal_real_* por faixa, razao_sal_jovem_senior, alta_fibra, triple_did_fibra, capital"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Painel v2 salvo: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data/output/painel_caged_municipio_anatel_v2.parquet (803.2 MB)
+Variáveis: share_jovem, share_senior, ln_adm_* por faixa, ln_sal_real_* por faixa, razao_sal_jovem_senior, alta_fibra, triple_did_fibra, capital</code></pre>
 </div>
 </div>
 </section>

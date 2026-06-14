@@ -128,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="configuração-do-ambiente" class="level3" data-number="0.2">
 <h3 data-number="0.2" class="anchored" data-anchor-id="configuração-do-ambiente"><span class="header-section-number">0.2</span> 1. Configuração do ambiente</h3>
 <p>Importar bibliotecas, definir caminhos e estilo de gráficos. Caminhos relativos ao diretório <code>notebook/</code>.</p>
-<div id="223bcf8c" class="cell" data-execution_count="1">
+<div id="223bcf8c" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar dependências e instalar apenas o que faltar (rode esta célula primeiro)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> importlib.util</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> subprocess</span>
@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>Todas as dependências já estão instaladas.</code></pre>
 </div>
 </div>
-<div id="02609396" class="cell" data-execution_count="2">
+<div id="02609396" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 2c — Configuração</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -191,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="balanceamento-pré-tratamento" class="level4" data-number="0.3.1">
 <h4 data-number="0.3.1" class="anchored" data-anchor-id="balanceamento-pré-tratamento"><span class="header-section-number">0.3.1</span> 2.1 Balanceamento pré-tratamento</h4>
 <p>Médias das variáveis no período pré-tratamento: grupo de controle (baixa exposição) vs.&nbsp;grupo de tratamento (alta exposição). <em>Diff. Normalizada</em> e indicador de balanceamento (✓ ou ⚠️).</p>
-<div id="461f5544" class="cell" data-execution_count="3">
+<div id="461f5544" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"balance_table_pre.csv"</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -288,7 +288,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="resultados-principais-did" class="level4" data-number="0.3.2">
 <h4 data-number="0.3.2" class="anchored" data-anchor-id="resultados-principais-did"><span class="header-section-number">0.3.2</span> 2.2 Resultados principais DiD</h4>
 <p>Coeficiente do tratamento (alta exposição à IA) para cada modelo (1: Basic, 2: FE, 3: FE + Controls — principal, 4–6: contínuo e 4d) e outcome. Erros padrão clusterizados por ocupação (CBO 4d). Coluna <code>stars</code>: *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
-<div id="764a6a46" class="cell" data-execution_count="4">
+<div id="764a6a46" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"did_main_results.csv"</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -446,7 +446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="testes-de-robustez" class="level4" data-number="0.3.3">
 <h4 data-number="0.3.3" class="anchored" data-anchor-id="testes-de-robustez"><span class="header-section-number">0.3.3</span> 2.3 Testes de robustez</h4>
 <p>Efeito DiD sob: cutoff alternativo (top 10%, 25%, mediana), placebo (tratamento em 12/2021), exclusão de ocupações de TI, tendências diferenciais (pré) e crosswalk 4d.</p>
-<div id="c9841472" class="cell" data-execution_count="5">
+<div id="c9841472" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"robustness_results.csv"</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -801,7 +801,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="robustez-cluster-por-cbo-2d" class="level4" data-number="0.3.4">
 <h4 data-number="0.3.4" class="anchored" data-anchor-id="robustez-cluster-por-cbo-2d"><span class="header-section-number">0.3.4</span> 2.4 Robustez: cluster por CBO 2d</h4>
 <p>Resultado do modelo principal (FE + Controls) com erros padrão clusterizados por CBO 2 dígitos em vez de 4d.</p>
-<div id="39cbf04b" class="cell" data-execution_count="6">
+<div id="39cbf04b" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"did_robustez_cbo2d.csv"</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -850,7 +850,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="teste-de-tendências-paralelas" class="level4" data-number="0.3.5">
 <h4 data-number="0.3.5" class="anchored" data-anchor-id="teste-de-tendências-paralelas"><span class="header-section-number">0.3.5</span> 2.5 Teste de tendências paralelas</h4>
 <p>Para cada outcome: número de coeficientes pré-tratamento no event study, quantos significativos (p&lt;0.05), p-valor do teste conjunto (pré = 0) e status (PARALELAS ou PREOCUPAÇÃO).</p>
-<div id="56044ce5" class="cell" data-execution_count="7">
+<div id="56044ce5" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"parallel_trends_test.csv"</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -1027,7 +1027,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="heterogeneidade-triple-did" class="level4" data-number="0.3.6">
 <h4 data-number="0.3.6" class="anchored" data-anchor-id="heterogeneidade-triple-did"><span class="header-section-number">0.3.6</span> 2.6 Heterogeneidade (Triple DiD)</h4>
 <p>Efeito principal e interação (tratamento × grupo: jovem, feminino, superior, negro) para cada outcome. <code>interaction_pval</code> indica se o efeito difere entre grupos.</p>
-<div id="bf5d8c15" class="cell" data-execution_count="8">
+<div id="bf5d8c15" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"heterogeneity_triple_did.csv"</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -1547,7 +1547,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="event-study-coeficientes-por-período-relativo" class="level4" data-number="0.3.7">
 <h4 data-number="0.3.7" class="anchored" data-anchor-id="event-study-coeficientes-por-período-relativo"><span class="header-section-number">0.3.7</span> 2.7 Event study (coeficientes por período relativo)</h4>
 <p>Coeficientes do evento (mês relativo ao lançamento do ChatGPT, t = -1 é referência). Abaixo: outcomes principais. Arquivos completos em <code>outputs/tables/event_study_*.csv</code>.</p>
-<div id="c6d09f15" class="cell" data-execution_count="9">
+<div id="c6d09f15" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>event_study_files <span class="op">=</span> <span class="bu">sorted</span>(OUTPUTS_TABLES.glob(<span class="st">"event_study_*.csv"</span>))</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Arquivos event study disponíveis:"</span>, [f.name <span class="cf">for</span> f <span class="kw">in</span> event_study_files])</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -2724,7 +2724,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="figuras-geradas-no-etapa_2b" class="level3" data-number="0.4">
 <h3 data-number="0.4" class="anchored" data-anchor-id="figuras-geradas-no-etapa_2b"><span class="header-section-number">0.4</span> 3. Figuras geradas no etapa_2b</h3>
 <p>Figuras salvas em <code>outputs/figures</code> pelo notebook etapa_2b (tendências paralelas, event study agregado, scatter exposição vs coeficiente). Se a pasta estiver vazia, execute o notebook etapa_2b para gerá-las.</p>
-<div id="6b7157a1" class="cell" data-execution_count="10">
+<div id="6b7157a1" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>figuras <span class="op">=</span> <span class="bu">sorted</span>(OUTPUTS_FIGURES.glob(<span class="st">"*.png"</span>)) <span class="op">+</span> <span class="bu">sorted</span>(OUTPUTS_FIGURES.glob(<span class="st">"*.pdf"</span>))</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> figuras:</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Nenhuma figura encontrada em"</span>, OUTPUTS_FIGURES)</span>
@@ -2774,7 +2774,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="efeito-did-alta-exposição-à-ia-nos-outcomes-principais" class="level4" data-number="0.5.1">
 <h4 data-number="0.5.1" class="anchored" data-anchor-id="efeito-did-alta-exposição-à-ia-nos-outcomes-principais"><span class="header-section-number">0.5.1</span> 4.1 Efeito DiD (alta exposição à IA) nos outcomes principais</h4>
 <p>Coeficiente do tratamento para o modelo principal (Model 3: FE + Controls). Barras: intervalo de confiança 95%. Cores: verde = p&lt;0.01, laranja = p&lt;0.05, cinza = não significativo.</p>
-<div id="7ce34be9" class="cell" data-execution_count="11">
+<div id="7ce34be9" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"did_main_results.csv"</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> path.exists():</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Arquivo não encontrado. Execute o etapa_2b."</span>)</span>
@@ -2815,7 +2815,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="dinâmica-do-efeito-event-study-salário-real-de-admissão" class="level4" data-number="0.5.2">
 <h4 data-number="0.5.2" class="anchored" data-anchor-id="dinâmica-do-efeito-event-study-salário-real-de-admissão"><span class="header-section-number">0.5.2</span> 4.2 Dinâmica do efeito: Event study (salário real de admissão)</h4>
 <p>Coeficientes por mês relativo ao lançamento do ChatGPT (t = -1 é referência). Banda: IC 95%. Permite verificar tendências pré e evolução pós-tratamento.</p>
-<div id="a8a02754" class="cell" data-execution_count="12">
+<div id="a8a02754" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"event_study_ln_salario_real_adm.csv"</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> path.exists():</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"event_study_ln_salario_jovem.csv"</span></span>
@@ -2847,7 +2847,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tabela-visual-de-significância-outcomes-principais-modelo-principal" class="level4" data-number="0.5.3">
 <h4 data-number="0.5.3" class="anchored" data-anchor-id="tabela-visual-de-significância-outcomes-principais-modelo-principal"><span class="header-section-number">0.5.3</span> 4.3 Tabela visual de significância (outcomes principais × modelo principal)</h4>
 <p>Heatmap: célula escura = significativo (<em><strong>/</strong>/</em>), clara = não significativo. Facilita ver onde os efeitos são robustos.</p>
-<div id="ed08762e" class="cell" data-execution_count="13">
+<div id="ed08762e" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> OUTPUTS_TABLES <span class="op">/</span> <span class="st">"did_main_results.csv"</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> path.exists():</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(path)</span>
@@ -2891,7 +2891,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tabela-síntese-de-achados-e-relevância-estatística" class="level3" data-number="0.7">
 <h3 data-number="0.7" class="anchored" data-anchor-id="tabela-síntese-de-achados-e-relevância-estatística"><span class="header-section-number">0.7</span> 6. Tabela-síntese de achados e relevância estatística</h3>
 <p>Tabela única com os principais achados: descrição, coeficiente, E.P., p-valor, significância (*** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10) e tipo (Principal, Robustez, Heterogeneidade). <strong>Cores:</strong> verde = achados mais relevantes (*** ou **); âmbar = * ou relevante; neutro = não significativo.</p>
-<div id="6508a1f4" class="cell" data-execution_count="14">
+<div id="6508a1f4" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Construir tabela-síntese a partir dos CSVs</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stars(p):</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> p <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> pd.isna(p): <span class="cf">return</span> <span class="st">""</span></span>

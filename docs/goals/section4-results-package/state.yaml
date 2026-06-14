@@ -1,0 +1,316 @@
+version: 2
+
+goal:
+  title: "Section 4 Results Package"
+  slug: "section4-results-package"
+  kind: existing_plan
+  tranche: "Complete the local implementation tranche for the dissertation Section 4 empirical results package."
+  status: complete
+  oracle:
+    signal: "The full execution loop passes and outputs/dissertation_section4 contains the required Portuguese report, Figure 1, Tables 1, 2, 3A-3D, and long audit CSV with validation gates satisfied."
+    cadence: "after each Worker package and at final audit"
+    final_proof: "Final Judge or PM audit maps generated artifacts, command results, baseline parity, validation failures, table contents, and sample-loss records back to the user's requested package."
+  intake:
+    original_request: "Prepare a GoalBuddy goal for the updated Section 4 results package plan."
+    interpreted_outcome: "Generate a reproducible empirical package for dissertation Section 4 with corrected CAGED preparation, aggregate and decomposition results, sociodemographic heterogeneity, and a Portuguese final report."
+    input_shape: existing_plan
+    audience: "dissertation author and research team"
+    authority: requested
+    proof_type: artifact
+    completion_proof: "The requested report, figure, tables, long audit CSV, code updates, and validation checks are present and verified after regeneration."
+    likely_misfire: "Creating a nice-looking report or partial tables while leaving sex coding wrong, using aggregate proxies for heterogeneity, skipping baseline parity, or omitting validation gates and significance stars."
+    blind_spots_considered:
+      - "Raw CAGED code values may differ from assumed mappings; validate before recoding."
+      - "Minimum-wage conversion for income panels needs a clear source or local wage table."
+      - "Scenario-grid outputs may be stale unless regenerated in the requested loop."
+      - "Raw-microdata reconstruction can silently lose treated or control CBOs unless sample loss is recorded."
+      - "The scripts in the execution loop may write intermediate outputs outside outputs/dissertation_section4; the first task must identify those paths before Worker activation."
+    existing_plan_facts:
+      - "Main aggregate result is baseline_mte2d_top20_vs_rest."
+      - "Conceptual decomposition scenarios are high_transformation_g34_vs_unexposed, augmentation_g12_vs_unexposed, and any_exposed_g1234_vs_unexposed."
+      - "Table 3 must be generated for each of the four exposure definitions."
+      - "Final report must include Figure 1, Tables 1, 2, and 3A-3D with *, **, and *** significance notation."
+      - "Table 3 is rebuilt from raw CAGED microdata, not current aggregate proxies."
+      - "Income panels use pre-treatment median CBO wage in minimum-wage units: <=2, >2 to 5, and >5."
+      - "Education panels use fundamental or less, high school, and higher education."
+      - "Age panels use 14-24, 25-34, 35-59, and 60+."
+      - "Sex panels use men and women."
+      - "Generate a long audit appendix CSV including race/color and additional estimable cuts."
+      - "Stage 2a must set CODIGO_SEXO_MULHER = 3 and fail if pct_mulher_adm.max() == 0."
+      - "Stage 2a must validate sexo, raca_cor, and grau_instrucao codes before recoding groups."
+      - "Create src/scripts/build_dissertation_section4_results.py."
+      - "Create outputs/dissertation_section4 with the exact report, figure, table, and CSV paths requested by the user."
+      - "Table 1 and Table 2 model: Y_ot ~ post_treat + idade_media_adm + pct_mulher_adm + pct_superior_adm | cbo_4d + periodo, clustered by cbo_4d."
+      - "Table 3 model: Y_ogt ~ post_treat + controles_gerais | cbo_4d + periodo, clustered by cbo_4d."
+      - "Table 3 outcomes are admissions, separations, net balance, and real admission wage."
+      - "Execution loop: run Stage 2a, Stage 2b, treatment scenario grid, Section 4 builder, py_compile, and git diff --check."
+      - "Do not edit notebooks."
+      - "Final report language is Portuguese; scripts and shared control docs are English."
+
+rules:
+  pm_owns_state: true
+  one_active_task: true
+  max_write_workers: 1
+  no_implementation_without_worker_or_pm_task: true
+  no_completion_without_judge_or_pm_audit: true
+  planning_is_not_completion: true
+  queued_required_worker_blocks_completion: true
+  continuous_until_full_outcome: true
+  missing_input_or_credentials_do_not_stop_goal: true
+  preserve_and_validate_existing_plan: true
+  intake_misfire_must_be_audited: true
+  goal_pressure_requires_oracle: true
+  no_completion_on_weak_proof: true
+  slice_policy:
+    max_consecutive_tiny_tasks: 2
+    prefer_vertical_slices: true
+    judge_picks_largest_safe_slice: true
+    worker_completes_whole_slice: true
+
+agents:
+  scout: installed
+  worker: installed
+  judge: installed
+
+visual_board:
+  selected: local
+  local:
+    status: live
+    url: "http://goalbuddy.localhost:41737/section4-results-package/"
+    command: "npx goalbuddy board docs/goals/section4-results-package"
+
+active_task: null
+
+tasks:
+  - id: T001
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Validate and operationalize the user's existing Section 4 plan before any implementation writes."
+    inputs:
+      - "User-provided Section 4 plan preserved in goal.intake.existing_plan_facts"
+      - "src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+      - "src/scripts/etapa_2b_analise_did_caged_ilo.py"
+      - "src/scripts/run_treatment_scenario_grid.py"
+      - "scenario_cbo_classification.csv and existing scenario outputs, wherever the repo stores them"
+      - "Raw CAGED input locations and current generated CAGED panel outputs"
+      - "Any existing Stage 2b baseline result artifacts"
+    constraints:
+      - "Read-only: do not edit implementation files or generated outputs."
+      - "Preserve the user's plan facts; validate them rather than replacing them."
+      - "Identify exact generated intermediate paths that the execution loop may update before activating Worker tasks."
+      - "Reject a Worker scope that would edit notebooks."
+      - "Reject completion if the baseline parity method is not explicit."
+    expected_output:
+      - "Decision: approved | needs_revision | blocked"
+      - "Exact allowed_files for T002 and T003, including any generated intermediate paths required by the loop"
+      - "Baseline parity check procedure"
+      - "Raw CAGED reconstruction plan for income, education, age, sex, race/color, and extra estimable cuts"
+      - "Minimum-wage source or local conversion strategy"
+      - "Validation checklist for crosswalk_spec, four exposure definitions, pct_mulher_adm, significance stars, Table 3 outcomes, and sample-loss reasons"
+      - "Stop conditions that should block implementation"
+    receipt:
+      result: done
+      decision: approved
+      full_outcome_complete: false
+      note: notes/T001-plan-validation.md
+      summary: "Plan approved with exact Worker scopes; Stage 2a cache is stale because pct_mulher_adm is all zero and must be rebuilt or invalidated after changing female code to 3."
+
+  - id: T002
+    type: worker
+    assignee: Worker
+    status: done
+    reasoning_hint: medium
+    objective: "Implement the Stage 2a sex-code correction and raw categorical-code validations confirmed by T001."
+    allowed_files:
+      - "src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+      - "data/processed/painel_caged_mensal.parquet"
+      - "data/processed/painel_caged_crosswalk.parquet"
+      - "data/processed/painel_caged_crosswalk.csv"
+      - "data/processed/painel_caged_tratamento.parquet"
+      - "data/output/painel_caged_did_ready.parquet"
+      - "data/output/painel_caged_did_ready.csv"
+      - "outputs/crosswalk_audit/source_dictionaries/mte_cbo2002_cbo94_ciuo88_by_family.csv"
+    verify:
+      - "python src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+      - "python -m py_compile src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+    stop_if:
+      - "T001 has not approved the exact code/value assumptions."
+      - "The raw CAGED sex codes are not compatible with CODIGO_SEXO_MULHER = 3."
+      - "Validation shows pct_mulher_adm.max() == 0 after the correction."
+      - "sexo, raca_cor, or grau_instrucao contain unmapped codes and no defensible fallback is available."
+      - "Need to edit files outside allowed_files."
+      - "Verification fails twice for the same unexplained reason."
+    expected_output:
+      - "Stage 2a uses CODIGO_SEXO_MULHER = 3."
+      - "Stage 2a validates sexo, raca_cor, and grau_instrucao before recoding."
+      - "Stage 2a fails loudly if pct_mulher_adm remains all zero."
+      - "Receipt records changed files and verification commands."
+    receipt:
+      result: done
+      changed_files:
+        - "src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+        - "data/processed/painel_caged_mensal.parquet"
+        - "data/processed/painel_caged_crosswalk.parquet"
+        - "data/processed/painel_caged_crosswalk.csv"
+        - "data/processed/painel_caged_tratamento.parquet"
+        - "data/output/painel_caged_did_ready.parquet"
+        - "data/output/painel_caged_did_ready.csv"
+      commands:
+        - cmd: "python src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+          status: pass
+        - cmd: "python -m py_compile src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+          status: pass
+      summary: "Stage 2a now uses CODIGO_SEXO_MULHER = 3, validates raw sexo/raca_cor/grau_instrucao codes, rejects all-zero pct_mulher_adm, detects the stale monthly cache, and regenerated Stage 2a outputs with pct_mulher_adm mean about 0.311 in the final panel."
+
+  - id: T003
+    type: worker
+    assignee: Worker
+    status: done
+    reasoning_hint: medium
+    objective: "Create the Section 4 results builder and generate the full dissertation_section4 artifact package."
+    allowed_files:
+      - "data/processed/painel_caged_mensal.parquet"
+      - "data/processed/painel_caged_crosswalk.parquet"
+      - "data/processed/painel_caged_crosswalk.csv"
+      - "data/processed/painel_caged_tratamento.parquet"
+      - "data/output/painel_caged_did_ready.parquet"
+      - "data/output/painel_caged_did_ready.csv"
+      - "outputs/crosswalk_audit/source_dictionaries/mte_cbo2002_cbo94_ciuo88_by_family.csv"
+      - "src/scripts/build_dissertation_section4_results.py"
+      - "outputs/dissertation_section4/**"
+      - "data/output/painel_2b_ready.parquet"
+      - "outputs/tables/balance_table_pre.csv"
+      - "outputs/tables/did_main_results.csv"
+      - "outputs/tables/did_robustez_cbo2d.csv"
+      - "outputs/tables/event_study_*.csv"
+      - "outputs/tables/parallel_trends_test.csv"
+      - "outputs/tables/heterogeneity_triple_did.csv"
+      - "outputs/tables/robustness_results.csv"
+      - "outputs/tables/table_did_main.tex"
+      - "outputs/figures/parallel_trends_all_outcomes.png"
+      - "outputs/figures/event_study_all_outcomes.png"
+      - "outputs/treatment_scenario_grid/**"
+    verify:
+      - "python src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+      - "python src/scripts/etapa_2b_analise_did_caged_ilo.py"
+      - "python src/scripts/run_treatment_scenario_grid.py"
+      - "python src/scripts/build_dissertation_section4_results.py"
+      - "python -m py_compile src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py src/scripts/build_dissertation_section4_results.py"
+      - "git diff --check -- src/scripts outputs/dissertation_section4"
+    stop_if:
+      - "T001 has not approved the exact input artifacts and intermediate write paths."
+      - "crosswalk_spec is not mte_official_no_numeric_fallback."
+      - "Any of the four exposure definitions is missing from scenario_cbo_classification.csv."
+      - "The regenerated baseline diverges from Stage 2b and the divergence cannot be explained and fixed."
+      - "Any final table lacks significance-star notation where significance output is expected."
+      - "Any Table 3 scenario lacks one of the four required outcomes."
+      - "Raw-microdata reconstruction drops treated or control CBOs without recording reasons."
+      - "Need to edit notebooks."
+      - "Need to edit files outside allowed_files."
+      - "Verification fails twice for the same unexplained reason."
+    expected_output:
+      - "src/scripts/build_dissertation_section4_results.py exists and is in English."
+      - "outputs/dissertation_section4/section4_results_report.md exists and is in Portuguese."
+      - "Figure 1 aggregate event-study PNG exists."
+      - "Tables 1 and 2 exist as Markdown and CSV."
+      - "Four Table 3 scenario files exist as Markdown and CSV."
+      - "tables/table3_heterogeneity_all_scenarios_long.csv exists and includes audit/detail rows, including race/color when estimable."
+      - "Receipt records changed files, generated outputs, and verification command statuses."
+    receipt:
+      result: done
+      full_outcome_complete: true
+      note: notes/T003-worker-package.md
+      changed_files:
+        - "src/scripts/build_dissertation_section4_results.py"
+        - "outputs/dissertation_section4/**"
+      commands:
+        - cmd: "python src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+          status: pass
+        - cmd: "python src/scripts/etapa_2b_analise_did_caged_ilo.py"
+          status: pass
+        - cmd: "python src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "python src/scripts/build_dissertation_section4_results.py"
+          status: pass
+        - cmd: "python -m py_compile src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py src/scripts/build_dissertation_section4_results.py"
+          status: pass
+        - cmd: "git diff --check -- src/scripts outputs/dissertation_section4"
+          status: pass
+      summary: "Created the English Section 4 builder, regenerated the full package, validated required scenarios/baseline parity/pct_mulher_adm/stars/Table 3 outcomes/sample-loss reasons, and wrote the Portuguese report plus all required figure/table outputs."
+
+  - id: T004
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Audit the generated Section 4 package against the user plan before final completion."
+    inputs:
+      - "T001 receipt"
+      - "T002 receipt"
+      - "T003 receipt"
+      - "Current git diff"
+      - "outputs/dissertation_section4 artifacts"
+      - "Last verification command outputs"
+    constraints:
+      - "Read-only: do not edit implementation files or generated outputs."
+      - "Reject completion if any required artifact, model specification, validation gate, significance notation, or Table 3 outcome is missing."
+      - "Reject completion if sample-loss reasons are absent for dropped treated/control CBOs."
+      - "Reject completion if the report is not in Portuguese or scripts are not in English."
+      - "Reject completion if queued Worker work is still required."
+    expected_output:
+      - "complete | not_complete"
+      - "full_outcome_complete: true | false"
+      - "Artifact checklist with pass/fail status"
+      - "Command verification checklist with pass/fail status"
+      - "Missing evidence and next task if not complete"
+    receipt:
+      result: complete
+      full_outcome_complete: true
+      note: notes/T004-package-audit.md
+      summary: "All required Section 4 artifacts and validation gates passed. Four failed estimations are confined to long-audit race/color code 9 wage rows and have sample-loss reasons; no main Table 3 rows failed."
+
+  - id: T999
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Perform the final GoalBuddy completion audit for the Section 4 results package."
+    inputs:
+      - "All done task receipts"
+      - "Last verification"
+      - "Current dirty diff"
+      - "docs/goals/section4-results-package/goal.md"
+      - "docs/goals/section4-results-package/state.yaml"
+    constraints:
+      - "Do not implement."
+      - "Reject completion if T004 is not done with full_outcome_complete: true."
+      - "Reject completion if required Worker work is still queued or active."
+      - "Map completion explicitly to the original user request and goal oracle."
+    expected_output:
+      - "complete | not_complete"
+      - "full_outcome_complete: true | false"
+      - "Evidence mapping to the original request"
+      - "Any residual risks"
+      - "Next task if not complete"
+    receipt:
+      result: complete
+      full_outcome_complete: true
+      note: notes/T999-final-audit.md
+      summary: "Final GoalBuddy audit maps the generated artifacts, command verification, and validation evidence back to the original user request and goal oracle."
+
+checks:
+  dirty_fingerprint: unknown
+  last_verification:
+    result: pass
+    task: T999
+    commands:
+      - "python src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py"
+      - "python src/scripts/etapa_2b_analise_did_caged_ilo.py"
+      - "python src/scripts/run_treatment_scenario_grid.py"
+      - "python src/scripts/build_dissertation_section4_results.py"
+      - "python -m py_compile src/scripts/etapa_2a_preparacao_dados_did_caged_ilo.py src/scripts/build_dissertation_section4_results.py"
+      - "git diff --check -- src/scripts outputs/dissertation_section4"
+      - "Artifact audit for outputs/dissertation_section4"
+      - "Extra whitespace check for relevant untracked scripts and Markdown outputs"

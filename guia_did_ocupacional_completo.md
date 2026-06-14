@@ -68,6 +68,7 @@ DADOS NECESSÁRIOS:
 ## 2.1 O Que é Difference-in-Differences?
 
 O DiD é uma técnica de inferência causal que estima o efeito de um tratamento comparando:
+
 - A **mudança ao longo do tempo** no grupo tratado
 - Com a **mudança ao longo do tempo** no grupo controle
 
@@ -119,17 +120,13 @@ Usamos um **Event Study** que estima coeficientes separados para cada período. 
 ### Argumentos a Favor
 
 1. **Choque Exógeno:** O lançamento do ChatGPT foi um evento tecnológico, não uma resposta a condições do mercado de trabalho brasileiro.
-
 2. **Variação Pré-Determinada:** O índice de exposição ILO foi construído com base em características das tarefas, não em resultados do mercado de trabalho.
-
 3. **Timing Preciso:** Sabemos exatamente quando o tratamento ocorreu (novembro 2022).
 
 ### Potenciais Problemas
 
 1. **Tendências Pré-Existentes:** Ocupações cognitivas já estavam em trajetória diferente (ex: crescimento de TI).
-
 2. **Choques Correlacionados:** Outros eventos (juros, pandemia) podem ter afetado ocupações expostas de forma diferente.
-
 3. **Erro de Medida:** Classificação ocupacional na PNAD pode ser imprecisa.
 
 ---
@@ -140,59 +137,67 @@ Usamos um **Event Study** que estima coeficientes separados para cada período. 
 
 ### Características
 
-| Aspecto | Detalhe |
-|---------|---------|
-| **Fonte** | IBGE - Instituto Brasileiro de Geografia e Estatística |
-| **Periodicidade** | Trimestral |
-| **Cobertura** | Brasil inteiro (urbano e rural) |
-| **Amostra** | ~211.000 domicílios/trimestre, ~500.000 pessoas |
-| **Período Necessário** | 2021T1 a 2024T4 (mínimo) |
+
+| Aspecto                | Detalhe                                                |
+| ---------------------- | ------------------------------------------------------ |
+| **Fonte**              | IBGE - Instituto Brasileiro de Geografia e Estatística |
+| **Periodicidade**      | Trimestral                                             |
+| **Cobertura**          | Brasil inteiro (urbano e rural)                        |
+| **Amostra**            | ~211.000 domicílios/trimestre, ~500.000 pessoas        |
+| **Período Necessário** | 2021T1 a 2024T4 (mínimo)                               |
+
 
 ### Variáveis Necessárias da PNAD
 
-| Variável | Código PNAD | Descrição | Uso |
-|----------|-------------|-----------|-----|
-| **Identificação** | | | |
-| UF | UF | Unidade da Federação | Controle regional |
-| Ano | Ano | Ano de referência | Construir período |
-| Trimestre | Trimestre | Trimestre de referência | Construir período |
-| **Demográficas** | | | |
-| Idade | V2009 | Idade em anos | Controle + heterogeneidade |
-| Sexo | V2007 | Masculino/Feminino | Controle + heterogeneidade |
-| Raça/Cor | V2010 | Branca, Preta, Parda, etc. | Controle + análise distributiva |
-| **Educação** | | | |
-| Anos de estudo | VD3005 | Anos de estudo completos | Controle |
-| Nível de instrução | VD3004 | Nível mais alto concluído | Controle |
-| **Trabalho** | | | |
-| Ocupação | V4010 | Código COD (4 dígitos) | **Variável-chave para merge** |
-| Condição de ocupação | VD4002 | Ocupado/Desocupado | **Outcome principal** |
-| Horas trabalhadas | VD4035 | Horas na semana de referência | Outcome secundário |
-| Rendimento habitual | VD4016 | Rendimento mensal habitual | Outcome secundário |
-| Posição na ocupação | VD4008 | Empregado, conta própria, etc. | Identificar formalidade |
-| Tipo de vínculo | VD4009 | Com/sem carteira, estatutário | Identificar formalidade |
-| **Peso Amostral** | | | |
-| Peso | V1028 | Peso da pessoa | **Obrigatório para inferência** |
+
+| Variável             | Código PNAD | Descrição                      | Uso                             |
+| -------------------- | ----------- | ------------------------------ | ------------------------------- |
+| **Identificação**    |             |                                |                                 |
+| UF                   | UF          | Unidade da Federação           | Controle regional               |
+| Ano                  | Ano         | Ano de referência              | Construir período               |
+| Trimestre            | Trimestre   | Trimestre de referência        | Construir período               |
+| **Demográficas**     |             |                                |                                 |
+| Idade                | V2009       | Idade em anos                  | Controle + heterogeneidade      |
+| Sexo                 | V2007       | Masculino/Feminino             | Controle + heterogeneidade      |
+| Raça/Cor             | V2010       | Branca, Preta, Parda, etc.     | Controle + análise distributiva |
+| **Educação**         |             |                                |                                 |
+| Anos de estudo       | VD3005      | Anos de estudo completos       | Controle                        |
+| Nível de instrução   | VD3004      | Nível mais alto concluído      | Controle                        |
+| **Trabalho**         |             |                                |                                 |
+| Ocupação             | V4010       | Código COD (4 dígitos)         | **Variável-chave para merge**   |
+| Condição de ocupação | VD4002      | Ocupado/Desocupado             | **Outcome principal**           |
+| Horas trabalhadas    | VD4035      | Horas na semana de referência  | Outcome secundário              |
+| Rendimento habitual  | VD4016      | Rendimento mensal habitual     | Outcome secundário              |
+| Posição na ocupação  | VD4008      | Empregado, conta própria, etc. | Identificar formalidade         |
+| Tipo de vínculo      | VD4009      | Com/sem carteira, estatutário  | Identificar formalidade         |
+| **Peso Amostral**    |             |                                |                                 |
+| Peso                 | V1028       | Peso da pessoa                 | **Obrigatório para inferência** |
+
 
 ## 3.2 Índice de Exposição: ILO GenAI Exposure Index
 
 ### Características
 
-| Aspecto | Detalhe |
-|---------|---------|
-| **Fonte** | Gmyrek, Berg et al. (2025) - ILO Working Paper |
-| **Classificação** | ISCO-08 (4 dígitos) |
-| **Metodologia** | LLM classifica tarefas + validação humana |
-| **Escala** | 0 (nenhuma exposição) a 1 (exposição total) |
-| **Cobertura** | ~430 ocupações ISCO-08 |
+
+| Aspecto           | Detalhe                                        |
+| ----------------- | ---------------------------------------------- |
+| **Fonte**         | Gmyrek, Berg et al. (2025) - ILO Working Paper |
+| **Classificação** | ISCO-08 (4 dígitos)                            |
+| **Metodologia**   | LLM classifica tarefas + validação humana      |
+| **Escala**        | 0 (nenhuma exposição) a 1 (exposição total)    |
+| **Cobertura**     | ~430 ocupações ISCO-08                         |
+
 
 ### Variáveis do Índice ILO
 
-| Variável | Descrição | Uso |
-|----------|-----------|-----|
-| `isco08_code` | Código ISCO-08 (4 dígitos) | Chave para merge |
-| `exposure_score` | Índice de exposição geral | **Tratamento principal** |
-| `automation_score` | Potencial de automação | Análise complementar |
-| `augmentation_score` | Potencial de aumentação | Análise complementar |
+
+| Variável             | Descrição                  | Uso                      |
+| -------------------- | -------------------------- | ------------------------ |
+| `isco08_code`        | Código ISCO-08 (4 dígitos) | Chave para merge         |
+| `exposure_score`     | Índice de exposição geral  | **Tratamento principal** |
+| `automation_score`   | Potencial de automação     | Análise complementar     |
+| `augmentation_score` | Potencial de aumentação    | Análise complementar     |
+
 
 ## 3.3 Compatibilidade COD-ISCO
 
@@ -1286,29 +1291,32 @@ $$Y_{iot} = \alpha + \beta \cdot (Post_t \times AltaExp_o) + \theta X_{it} + \de
 
 ### Tabela de Variáveis
 
-| Símbolo | Nome | Tipo | Descrição |
-|---------|------|------|-----------|
-| $Y_{iot}$ | Outcome | Dependente | Ocupado (0/1), horas, ln(renda) |
-| $Post_t$ | Pós-tratamento | Dummy | 1 se $t \geq 2023T1$ |
-| $AltaExp_o$ | Alta exposição | Dummy | 1 se ocupação no top 20% de exposição |
-| $Post \times AltaExp$ | **Interação DiD** | Dummy | **Coeficiente de interesse ($\beta$)** |
-| $X_{it}$ | Controles | Vetor | Idade, idade², mulher, negro_pardo, superior |
-| $\delta_o$ | EF Ocupação | Fixo | Absorve diferenças permanentes entre ocupações |
-| $\mu_t$ | EF Período | Fixo | Absorve choques comuns a todos |
-| $\varepsilon_{iot}$ | Erro | Resíduo | Clusterizado por ocupação |
+
+| Símbolo               | Nome              | Tipo       | Descrição                                      |
+| --------------------- | ----------------- | ---------- | ---------------------------------------------- |
+| $Y_{iot}$             | Outcome           | Dependente | Ocupado (0/1), horas, ln(renda)                |
+| $Post_t$              | Pós-tratamento    | Dummy      | 1 se $t \geq 2023T1$                           |
+| $AltaExp_o$           | Alta exposição    | Dummy      | 1 se ocupação no top 20% de exposição          |
+| $Post \times AltaExp$ | **Interação DiD** | Dummy      | **Coeficiente de interesse ($\beta$)**         |
+| $X_{it}$              | Controles         | Vetor      | Idade, idade², mulher, negro_pardo, superior   |
+| $\delta_o$            | EF Ocupação       | Fixo       | Absorve diferenças permanentes entre ocupações |
+| $\mu_t$               | EF Período        | Fixo       | Absorve choques comuns a todos                 |
+| $\varepsilon_{iot}$   | Erro              | Resíduo    | Clusterizado por ocupação                      |
+
 
 ### Interpretação de $\beta$
 
 > "$\beta$ representa a mudança diferencial na probabilidade de estar ocupado para trabalhadores em ocupações de alta exposição (comparados aos de baixa exposição), após o lançamento do ChatGPT (comparado ao período anterior)."
 
 **Exemplo:** Se $\beta = -0.03$, então:
+
 - "Trabalhadores em ocupações de alta exposição tiveram probabilidade de ocupação 3 pontos percentuais menor após o ChatGPT, relativo à diferença pré-existente com ocupações de baixa exposição."
 
 ## 5.2 Modelo de Event Study
 
 ### Equação
 
-$$Y_{iot} = \alpha + \sum_{j \neq ref} \beta_j \cdot (1\{t=j\} \times AltaExp_o) + \theta X_{it} + \delta_o + \mu_t + \varepsilon_{iot}$$
+$$Y_{iot} = \alpha + \sum_{j \neq ref} \beta_j \cdot (1t=j \times AltaExp_o) + \theta X_{it} + \delta_o + \mu_t + \varepsilon_{iot}$$
 
 ### Interpretação
 
@@ -1325,11 +1333,13 @@ $$+ \beta_4 (Post \times AltaExp \times Jovem) + \theta X_{it} + \delta_o + \mu_
 
 ### Interpretação
 
-| Coeficiente | Pergunta que Responde |
-|-------------|----------------------|
-| $\beta_1$ | Efeito para não-jovens em ocupações expostas |
-| $\beta_4$ | Efeito **adicional** para jovens em ocupações expostas |
-| $\beta_1 + \beta_4$ | Efeito **total** para jovens em ocupações expostas |
+
+| Coeficiente         | Pergunta que Responde                                  |
+| ------------------- | ------------------------------------------------------ |
+| $\beta_1$           | Efeito para não-jovens em ocupações expostas           |
+| $\beta_4$           | Efeito **adicional** para jovens em ocupações expostas |
+| $\beta_1 + \beta_4$ | Efeito **total** para jovens em ocupações expostas     |
+
 
 **Se $\beta_4 < 0$:** Jovens são mais afetados que experientes
 
@@ -1758,21 +1768,25 @@ print(robustez_out.to_string(index=False))
 
 ## 9.1 Limitações da Estratégia de Identificação
 
-| Limitação | Descrição | Mitigação |
-|-----------|-----------|-----------|
-| **Tendências paralelas** | Não é possível testar definitivamente; apenas verificar no período pré | Event study, placebos |
-| **Choques correlacionados** | Outros eventos (juros, pandemia) podem confundir | Controles, exclusão de TI |
-| **SUTVA** | Spillovers entre ocupações não são captados | Reconhecer na interpretação |
-| **Erro de medida** | Classificação ocupacional imprecisa na PNAD | Agregação, robustez |
+
+| Limitação                   | Descrição                                                              | Mitigação                   |
+| --------------------------- | ---------------------------------------------------------------------- | --------------------------- |
+| **Tendências paralelas**    | Não é possível testar definitivamente; apenas verificar no período pré | Event study, placebos       |
+| **Choques correlacionados** | Outros eventos (juros, pandemia) podem confundir                       | Controles, exclusão de TI   |
+| **SUTVA**                   | Spillovers entre ocupações não são captados                            | Reconhecer na interpretação |
+| **Erro de medida**          | Classificação ocupacional imprecisa na PNAD                            | Agregação, robustez         |
+
 
 ## 9.2 Limitações dos Dados
 
-| Limitação | Descrição | Implicação |
-|-----------|-----------|------------|
-| **Frequência** | Apenas trimestral (não mensal como ADP) | Menos precisão temporal |
-| **Amostra** | ~300k ocupados/trimestre (vs. 25M no ADP) | Menos poder para subgrupos |
-| **Survey** | Auto-declaração (não administrativo) | Mais erro de medida |
-| **Sem painel individual** | Não acompanhamos mesma pessoa | Não podemos ver transições |
+
+| Limitação                 | Descrição                                 | Implicação                 |
+| ------------------------- | ----------------------------------------- | -------------------------- |
+| **Frequência**            | Apenas trimestral (não mensal como ADP)   | Menos precisão temporal    |
+| **Amostra**               | ~300k ocupados/trimestre (vs. 25M no ADP) | Menos poder para subgrupos |
+| **Survey**                | Auto-declaração (não administrativo)      | Mais erro de medida        |
+| **Sem painel individual** | Não acompanhamos mesma pessoa             | Não podemos ver transições |
+
 
 ## 9.3 Limitações de Interpretação
 
@@ -1785,66 +1799,76 @@ print(robustez_out.to_string(index=False))
 # 10. Checklist Final
 
 ## Antes de Começar
-- [ ] Python 3.8+ instalado
-- [ ] Pacotes: pandas, numpy, matplotlib, seaborn, pyfixest
-- [ ] Acesso ao BigQuery (ou arquivos PNAD locais)
-- [ ] Índice ILO disponível
+
+- Python 3.8+ instalado
+- Pacotes: pandas, numpy, matplotlib, seaborn, pyfixest
+- Acesso ao BigQuery (ou arquivos PNAD locais)
+- Índice ILO disponível
 
 ## Fase 1: Dados
-- [ ] Baixar PNAD 2021T1 a 2024T4
-- [ ] Baixar/carregar índice ILO
-- [ ] Verificar estrutura dos dados
+
+- Baixar PNAD 2021T1 a 2024T4
+- Baixar/carregar índice ILO
+- Verificar estrutura dos dados
 
 ## Fase 2: Preparação
-- [ ] Limpar PNAD (filtros, tipos)
-- [ ] Criar variáveis temporais (periodo, post)
-- [ ] Criar variáveis de outcome (ocupado, formal, ln_renda)
-- [ ] Criar variáveis demográficas (mulher, negro_pardo, jovem)
-- [ ] Merge com índice ILO
-- [ ] Criar variáveis de tratamento (alta_exp, did)
-- [ ] Verificar cobertura do merge (>95%)
+
+- Limpar PNAD (filtros, tipos)
+- Criar variáveis temporais (periodo, post)
+- Criar variáveis de outcome (ocupado, formal, ln_renda)
+- Criar variáveis demográficas (mulher, negro_pardo, jovem)
+- Merge com índice ILO
+- Criar variáveis de tratamento (alta_exp, did)
+- Verificar cobertura do merge (>95%)
 
 ## Fase 3: Descritiva
-- [ ] Tabela de balanço
-- [ ] Gráfico de tendências paralelas
-- [ ] Estatísticas por quintil de exposição
+
+- Tabela de balanço
+- Gráfico de tendências paralelas
+- Estatísticas por quintil de exposição
 
 ## Fase 4: Estimação
-- [ ] DiD médio (3+ especificações)
-- [ ] Event study
-- [ ] Gráfico do event study
-- [ ] Heterogeneidade por idade
-- [ ] Event study por subgrupo
+
+- DiD médio (3+ especificações)
+- Event study
+- Gráfico do event study
+- Heterogeneidade por idade
+- Event study por subgrupo
 
 ## Fase 5: Robustez
-- [ ] Cortes alternativos (10%, 25%, contínuo)
-- [ ] Placebo temporal
-- [ ] Exclusão de TI
-- [ ] Diferentes outcomes
+
+- Cortes alternativos (10%, 25%, contínuo)
+- Placebo temporal
+- Exclusão de TI
+- Diferentes outcomes
 
 ## Fase 6: Documentação
-- [ ] Salvar tabelas em CSV
-- [ ] Salvar figuras em PNG (alta resolução)
-- [ ] Documentar código
-- [ ] Escrever seção de resultados
+
+- Salvar tabelas em CSV
+- Salvar figuras em PNG (alta resolução)
+- Documentar código
+- Escrever seção de resultados
 
 ---
 
 # Referências
 
 ## Metodológicas
+
 - Angrist, J. D., & Pischke, J. S. (2009). *Mostly Harmless Econometrics*. Princeton University Press.
 - Cunningham, S. (2021). *Causal Inference: The Mixtape*. Yale University Press.
 - Goodman-Bacon, A. (2021). Difference-in-differences with variation in treatment timing. *Journal of Econometrics*, 225(2), 254-277.
 
 ## Substantivas
+
 - Brynjolfsson, E., Chandar, B., & Chen, R. (2025). Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence. *Stanford Digital Economy Lab*.
 - Gmyrek, P., Berg, J., et al. (2025). Generative AI and Jobs: A Refined Global Index of Occupational Exposure. *ILO Working Paper*.
 - Eloundou, T., Manning, S., et al. (2023). GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models. *OpenAI*.
 
 ## Dados
-- IBGE. Pesquisa Nacional por Amostra de Domicílios Contínua - PNAD Contínua. Disponível em: https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html
-- Base dos Dados. Disponível em: https://basedosdados.org/
+
+- IBGE. Pesquisa Nacional por Amostra de Domicílios Contínua - PNAD Contínua. Disponível em: [https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html](https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html)
+- Base dos Dados. Disponível em: [https://basedosdados.org/](https://basedosdados.org/)
 
 ---
 

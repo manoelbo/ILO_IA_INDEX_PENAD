@@ -1,0 +1,325 @@
+version: 2
+
+goal:
+  title: "CBO/ISCO-OIT Treatment Scenario Grid"
+  slug: treatment-scenario-grid
+  kind: existing_plan
+  tranche: "Validate the user-provided scenario-grid plan, implement and run the unified empirical comparison, and produce a ranked dissertation recommendation."
+  status: done
+  oracle:
+    signal: "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py completes and writes the required outputs under outputs/treatment_scenario_grid/."
+    cadence: "after the implementation package and at final audit"
+    final_proof: "Required output files exist; every scenario has an explicit status; stage 2 and stage 3 results or failure reasons are recorded; dissertation_recommendation.md ranks main, robustness, exploratory, and discard/report-as-underpowered specifications."
+  intake:
+    original_request: "Prepare a GoalBuddy goal to test treatment scenarios for the CBO/ISCO-OIT exposure design and recommend the best path for the dissertation."
+    interpreted_outcome: "A verified scenario-grid execution compares the current MTE/OIT baseline with score- and gradient-based alternatives and recommends a specification hierarchy for the dissertation."
+    input_shape: existing_plan
+    audience: "dissertation author and future dissertation readers"
+    authority: requested
+    proof_type: "artifact+metric+review+decision"
+    completion_proof: "The scenario-grid script runs, the output folder contains all required CSV/Markdown files, every scenario has a result status, and the final recommendation is grounded in methodology, sample adequacy, empirical stability, and narrative fit."
+    likely_misfire: "Creating another plan or descriptive document without estimating the stage 2 and stage 3 models for every scenario."
+    blind_spots_considered:
+      - "Many-to-many CBO-to-ISCO mappings make all/any gradient rules substantively different."
+      - "Strict all-destination gradient rules may be conceptually clean but underpowered."
+      - "The recommendation must not be selected based on statistical significance alone."
+      - "Dissertation HTML numbers are stale and must not be used as current empirical evidence."
+      - "The existing MTE main panel and outputs must not be overwritten by exploratory scenario outputs."
+    existing_plan_facts:
+      - "Use the current path CBO 4d -> MTE/CIUO88 -> ISCO-88 -> ISCO-08 4d -> ILO score/gradient."
+      - "Compare baseline_mte2d_top20_vs_rest and baseline_isco4d_all_top20_vs_rest with the new scenarios."
+      - "Test top 30, all/any Gradient 3-4, all/any Gradient 1-4, high transformation vs unexposed, augmentation vs unexposed, and any exposed vs unexposed."
+      - "Run comparable stage 2 and stage 3 regressions for every non-empty scenario."
+      - "Write outputs only under outputs/treatment_scenario_grid/ for the scenario-grid work."
+      - "Reports in Markdown should be in Portuguese; script and technical column names should be in English."
+
+rules:
+  pm_owns_state: true
+  one_active_task: true
+  max_write_workers: 1
+  no_implementation_without_worker_or_pm_task: true
+  no_completion_without_judge_or_pm_audit: true
+  planning_is_not_completion: true
+  queued_required_worker_blocks_completion: true
+  continuous_until_full_outcome: true
+  missing_input_or_credentials_do_not_stop_goal: true
+  preserve_and_validate_existing_plan: true
+  intake_misfire_must_be_audited: true
+  goal_pressure_requires_oracle: true
+  no_completion_on_weak_proof: true
+  slice_policy:
+    max_consecutive_tiny_tasks: 2
+    prefer_vertical_slices: true
+    judge_picks_largest_safe_slice: true
+    worker_completes_whole_slice: true
+
+agents:
+  scout: installed
+  worker: installed
+  judge: installed
+
+visual_board:
+  selected: local
+  local:
+    status: generated
+    url: null
+    command: "npx goalbuddy board docs/goals/treatment-scenario-grid"
+
+active_task: null
+
+tasks:
+  - id: T001
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Validate and operationalize the existing scenario-grid plan against the current project files before any implementation."
+    inputs:
+      - "/Users/manebrasil/.codex/attachments/1a2b5f0c-218c-4737-8c4a-aa540f4b0117/pasted-text.txt"
+      - "docs/goals/treatment-scenario-grid/goal.md"
+      - "src/scripts"
+      - "data/processed/ilo_exposure_clean.csv"
+      - "outputs/crosswalk_audit/official_mte_bridge/caged_mte_bridge_full.csv"
+      - "data/output/painel_2b_ready.parquet"
+      - "data/output/painel_caged_municipio_anatel.parquet"
+      - "current saved stage 2 and stage 3 result CSVs"
+    constraints:
+      - "Read-only."
+      - "Do not implement the scenario-grid script."
+      - "Preserve the user-provided scenario IDs unless the receipt explains a necessary correction."
+      - "Define exact allowed_files, verification commands, and stop_if conditions for the Worker package."
+    expected_output:
+      - "Decision: approved | needs_adjustment | blocked"
+      - "Validated scenario matrix and any ambiguity resolution for all vs any rules."
+      - "Exact Worker objective for implementing and running the scenario grid."
+      - "allowed_files for the Worker."
+      - "verify commands for the Worker."
+      - "stop_if conditions for the Worker."
+      - "Any files or outputs that are missing and how the goal should proceed around them."
+    receipt:
+      result: done
+      decision: approved
+      summary: "Validated the existing plan against current project state: required source files exist, stage 2 and stage 3 panels use mte_official_no_numeric_fallback, current saved stage 2/3 result CSVs exist, and the Worker can implement one unified scenario-grid script without overwriting main outputs."
+      evidence:
+        - "data/processed/ilo_exposure_clean.csv: 427 ISCO rows with score and gradient columns."
+        - "outputs/crosswalk_audit/official_mte_bridge/caged_mte_bridge_full.csv: MTE bridge with CBO titles, ISCO destinations, scores, panel rows, and admissions."
+        - "data/output/painel_2b_ready.parquet: 23,319 rows, 436 CBOs, crosswalk_spec=mte_official_no_numeric_fallback."
+        - "data/output/painel_caged_municipio_anatel.parquet: 4,564,006 rows, 432 CBOs, crosswalk_spec=mte_official_no_numeric_fallback."
+        - "outputs/tables/did_main_results.csv and outputs/tables/triple_did_main_etapa3b.csv exist for baseline validation."
+      worker_package:
+        task: T002
+        allowed_files:
+          - "src/scripts/run_treatment_scenario_grid.py"
+          - "outputs/treatment_scenario_grid/"
+        verify:
+          - "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+          - "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+          - "test -f outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+          - "test -f outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+          - "test -f outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+          - "test -f outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+          - "test -f outputs/treatment_scenario_grid/scenario_comparison_report.md"
+          - "test -f outputs/treatment_scenario_grid/dissertation_recommendation.md"
+          - "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+
+  - id: T002
+    type: worker
+    assignee: Worker
+    status: done
+    reasoning_hint: medium
+    objective: "Implement and run the unified treatment scenario grid selected by T001."
+    allowed_files:
+      - "src/scripts/run_treatment_scenario_grid.py"
+      - "outputs/treatment_scenario_grid/baseline_validation.csv"
+      - "outputs/treatment_scenario_grid/dissertation_recommendation.md"
+      - "outputs/treatment_scenario_grid/missing_isco08_score_audit.csv"
+      - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+      - "outputs/treatment_scenario_grid/scenario_comparison_report.md"
+      - "outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+      - "outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+      - "outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+    verify:
+      - "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+      - "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+      - "test -f outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+      - "test -f outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+      - "test -f outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+      - "test -f outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+      - "test -f outputs/treatment_scenario_grid/scenario_comparison_report.md"
+      - "test -f outputs/treatment_scenario_grid/dissertation_recommendation.md"
+      - "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+    stop_if:
+      - "Need to overwrite outputs/tables or current main empirical outputs."
+      - "Need to edit notebooks or dissertation HTML files."
+      - "A required source panel or MTE bridge file is missing and no safe current alternative exists."
+      - "The current panels do not use crosswalk_spec = mte_official_no_numeric_fallback and the issue cannot be isolated in the scenario-grid script."
+      - "Baseline validation cannot be performed or fails outside a documented tolerance."
+      - "Verification fails twice for the same root cause."
+    receipt:
+      result: done
+      changed_files:
+        - "src/scripts/run_treatment_scenario_grid.py"
+        - "outputs/treatment_scenario_grid/baseline_validation.csv"
+        - "outputs/treatment_scenario_grid/dissertation_recommendation.md"
+        - "outputs/treatment_scenario_grid/missing_isco08_score_audit.csv"
+        - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+        - "outputs/treatment_scenario_grid/scenario_comparison_report.md"
+        - "outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+        - "outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+        - "outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+      commands:
+        - cmd: "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "test -f outputs/treatment_scenario_grid/{scenario_cbo_classification.csv,scenario_sample_summary.csv,stage2_scenario_results.csv,stage3_scenario_results.csv,scenario_comparison_report.md,dissertation_recommendation.md}"
+          status: pass
+      summary: "Implemented and ran the unified scenario grid. All 11 scenarios were estimated in stage 2 and stage 3; baseline validation passed across 13 saved-result rows within tolerance 1e-6; only isco4d_all_g34_vs_rest is marked underpowered_but_estimated. Added an explicit audit for 8 CBOs with at least one ISCO destination missing an ILO score; no CBO lacked all scored destinations."
+
+  - id: T003
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Audit the scenario-grid outputs and decide whether the dissertation recommendation is methodologically defensible."
+    inputs:
+      - "T001 receipt"
+      - "T002 receipt"
+      - "outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+      - "outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+      - "outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+      - "outputs/treatment_scenario_grid/scenario_comparison_report.md"
+      - "outputs/treatment_scenario_grid/dissertation_recommendation.md"
+      - "/Users/manebrasil/Library/Mobile Documents/com~apple~CloudDocs/Documents/Projects/Dissetação Mestrado/Minha Dissertação Até Agora/"
+    constraints:
+      - "Read-only."
+      - "Do not choose the preferred specification based on statistical significance alone."
+      - "Ignore empirical numbers in the dissertation HTML as stale."
+      - "Separate main specification, robustness checks, exploratory conceptual analyses, and underpowered/discarded scenarios."
+    expected_output:
+      - "Decision: defensible | needs_revision | blocked"
+      - "Recommended scenario hierarchy."
+      - "Missing evidence, if any."
+      - "Whether another Worker revision is required."
+    receipt:
+      result: done
+      decision: needs_revision
+      full_outcome_complete: false
+      summary: "Required files, scenario coverage, row counts, and baseline validation are present. However, isco4d_any_g1234_vs_rest and any_exposed_g1234_vs_unexposed have identical CBO role assignments, so the reports should explicitly flag them as redundant rather than treating them as independent evidence."
+      evidence:
+        - "All 11 required scenario IDs appear in sample, stage 2, and stage 3 outputs."
+        - "Stage 2 has 44 estimated result rows; stage 3 has 99 estimated result rows."
+        - "scenario_sample_summary.csv uses only allowed statuses: estimated and underpowered_but_estimated."
+        - "baseline_validation.csv shows all 13 baseline comparisons passed."
+        - "Role audit found identical_roles: isco4d_any_g1234_vs_rest and any_exposed_g1234_vs_unexposed."
+      requested_revision:
+        - "Update script/report generation to identify duplicated role assignments."
+        - "Regenerate outputs so dissertation_recommendation.md explains that the any-exposed G1-4 scenario duplicates the any-G1-4-vs-rest rule in the current CBO universe."
+        - "Re-run py_compile, the scenario-grid script, and git diff --check."
+
+  - id: T004
+    type: worker
+    assignee: Worker
+    status: done
+    reasoning_hint: medium
+    objective: "Revise the scenario-grid script or reports only if T003 rejects the recommendation or identifies missing required evidence."
+    allowed_files:
+      - "src/scripts/run_treatment_scenario_grid.py"
+      - "outputs/treatment_scenario_grid/baseline_validation.csv"
+      - "outputs/treatment_scenario_grid/dissertation_recommendation.md"
+      - "outputs/treatment_scenario_grid/missing_isco08_score_audit.csv"
+      - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+      - "outputs/treatment_scenario_grid/scenario_comparison_report.md"
+      - "outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+      - "outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+      - "outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+    verify:
+      - "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+      - "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+      - "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+    stop_if:
+      - "T003 did not request a revision."
+      - "Need files outside allowed_files."
+      - "Need to overwrite current main empirical outputs."
+      - "Verification fails twice for the same root cause."
+    receipt:
+      result: done
+      changed_files:
+        - "src/scripts/run_treatment_scenario_grid.py"
+        - "outputs/treatment_scenario_grid/baseline_validation.csv"
+        - "outputs/treatment_scenario_grid/dissertation_recommendation.md"
+        - "outputs/treatment_scenario_grid/missing_isco08_score_audit.csv"
+        - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+        - "outputs/treatment_scenario_grid/scenario_comparison_report.md"
+        - "outputs/treatment_scenario_grid/scenario_sample_summary.csv"
+        - "outputs/treatment_scenario_grid/stage2_scenario_results.csv"
+        - "outputs/treatment_scenario_grid/stage3_scenario_results.csv"
+      commands:
+        - cmd: "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+      summary: "Regenerated the scenario-grid outputs after adding duplicate-role reporting. scenario_comparison_report.md now lists isco4d_any_g1234_vs_rest and any_exposed_g1234_vs_unexposed as identical role assignments, and dissertation_recommendation.md warns not to interpret them as independent robustness evidence."
+
+  - id: T999
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Final audit: decide whether the full original scenario-grid outcome is complete."
+    inputs:
+      - "All done task receipts"
+      - "Last verification"
+      - "Current dirty diff"
+      - "docs/goals/treatment-scenario-grid/goal.md"
+      - "outputs/treatment_scenario_grid/"
+    constraints:
+      - "Read-only."
+      - "Reject completion if any required scenario lacks a status."
+      - "Reject completion if required output files are missing."
+      - "Reject completion if queued Worker work is still required for the original outcome."
+      - "Reject completion if the recommendation does not map to methodology, ILO adherence, sample adequacy, empirical stability, and dissertation narrative fit."
+    expected_output:
+      - "complete | not_complete"
+      - "full_outcome_complete: true | false"
+      - "Evidence mapped to the goal oracle."
+      - "Missing evidence or next task if not complete."
+    receipt:
+      result: done
+      decision: complete
+      full_outcome_complete: true
+      summary: "The full scenario-grid outcome is complete. The unified script exists, compiles, runs successfully, writes all required outputs, covers all 11 required scenarios, estimates all required stage 2 and stage 3 outcome rows, validates the current baseline against saved outputs, identifies the one underpowered scenario, and provides a ranked dissertation recommendation."
+      evidence:
+        - "Required files exist in outputs/treatment_scenario_grid/: scenario_cbo_classification.csv, scenario_sample_summary.csv, stage2_scenario_results.csv, stage3_scenario_results.csv, scenario_comparison_report.md, dissertation_recommendation.md."
+        - "scenario_cbo_classification.csv has 436 CBO rows and 436 unique CBOs."
+        - "scenario_sample_summary.csv has 22 rows: 11 scenarios x 2 stages."
+        - "stage2_scenario_results.csv has 44 estimated rows: 11 scenarios x 4 outcomes."
+        - "stage3_scenario_results.csv has 99 estimated rows: 11 scenarios x 9 outcomes."
+        - "scenario statuses: 10 estimated and 1 underpowered_but_estimated; no invalid statuses."
+        - "baseline_validation.csv has 13 rows and all passed; max coefficient difference is 8.67e-17."
+        - "scenario_comparison_report.md includes a Cenários Redundantes section identifying isco4d_any_g1234_vs_rest and any_exposed_g1234_vs_unexposed as identical role assignments."
+        - "dissertation_recommendation.md recommends baseline_mte2d_top20_vs_rest as principal, selected variants as robustness, and gradient scenarios as mechanism/exploration."
+      commands:
+        - cmd: "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+          status: pass
+        - cmd: "Requirement audit Python snippet over outputs/treatment_scenario_grid"
+          status: pass
+
+checks:
+  dirty_fingerprint: unknown
+  last_verification:
+    result: pass
+    task: T999
+    commands:
+      - "/opt/homebrew/opt/python@3.11/libexec/bin/python -m py_compile src/scripts/run_treatment_scenario_grid.py"
+      - "/opt/homebrew/opt/python@3.11/libexec/bin/python src/scripts/run_treatment_scenario_grid.py"
+      - "git diff --check -- src/scripts/run_treatment_scenario_grid.py"
+      - "Requirement audit Python snippet over outputs/treatment_scenario_grid"

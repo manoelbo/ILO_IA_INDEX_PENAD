@@ -119,3 +119,10 @@ docs/book/_build/
 notebook/*.html
 notebook/*_files/
 ../EconomicIndex
+
+# Arquivo morto (exploração inicial)
+archive/
+
+# Outputs dos notebooks (HTML renderizados)
+src/notebooks/_output/
+src/notebooks/*_files/

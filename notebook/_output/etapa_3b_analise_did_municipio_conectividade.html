@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="etapa_3b_analise_did_municipio_conectividade_files/libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="etapa_3b_analise_did_municipio_conectividade_files/libs/clipboard/clipboard.min.js"></script>
 <script src="etapa_3b_analise_did_municipio_conectividade_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="etapa_3b_analise_did_municipio_conectividade_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="etapa_3b_analise_did_municipio_conectividade_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,6 +70,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="etapa_3b_analise_did_municipio_conectividade_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="etapa_3b_analise_did_municipio_conectividade_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="etapa_3b_analise_did_municipio_conectividade_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -82,14 +85,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#estratégia-de-identificação" id="toc-estratégia-de-identificação" class="nav-link active" data-scroll-target="#estratégia-de-identificação"><span class="header-section-number">0.1</span> Estratégia de identificação</a></li>
-  <li><a href="#configuração-e-carga-de-dados" id="toc-configuração-e-carga-de-dados" class="nav-link" data-scroll-target="#configuração-e-carga-de-dados"><span class="header-section-number">0.2</span> 1. Configuração e carga de dados</a></li>
-  <li><a href="#tabela-de-balanço-por-conectividade-pré-tratamento" id="toc-tabela-de-balanço-por-conectividade-pré-tratamento" class="nav-link" data-scroll-target="#tabela-de-balanço-por-conectividade-pré-tratamento"><span class="header-section-number">0.3</span> 2. Tabela de balanço por conectividade (pré-tratamento)</a></li>
-  <li><a href="#did-por-subgrupo-de-conectividade-motivação" id="toc-did-por-subgrupo-de-conectividade-motivação" class="nav-link" data-scroll-target="#did-por-subgrupo-de-conectividade-motivação"><span class="header-section-number">0.4</span> 3. DiD por subgrupo de conectividade (motivação)</a></li>
-  <li><a href="#triple-did-modelo-principal" id="toc-triple-did-modelo-principal" class="nav-link" data-scroll-target="#triple-did-modelo-principal"><span class="header-section-number">0.5</span> 4. Triple-DiD — Modelo principal</a></li>
-  <li><a href="#event-study-por-grupo-de-conectividade" id="toc-event-study-por-grupo-de-conectividade" class="nav-link" data-scroll-target="#event-study-por-grupo-de-conectividade"><span class="header-section-number">0.6</span> 5. Event study por grupo de conectividade</a></li>
-  <li><a href="#testes-de-robustez-e-síntese" id="toc-testes-de-robustez-e-síntese" class="nav-link" data-scroll-target="#testes-de-robustez-e-síntese"><span class="header-section-number">0.7</span> 6. Testes de robustez e síntese</a></li>
-  <li><a href="#verificação-metodológica-conferência-com-o-plano-etapa-3" id="toc-verificação-metodológica-conferência-com-o-plano-etapa-3" class="nav-link" data-scroll-target="#verificação-metodológica-conferência-com-o-plano-etapa-3"><span class="header-section-number">0.8</span> Verificação metodológica (conferência com o plano Etapa 3)</a></li>
+  <li><a href="#dependências" id="toc-dependências" class="nav-link active" data-scroll-target="#dependências"><span class="header-section-number">0.1</span> 0. Dependências</a></li>
+  <li><a href="#estratégia-de-identificação" id="toc-estratégia-de-identificação" class="nav-link" data-scroll-target="#estratégia-de-identificação"><span class="header-section-number">0.2</span> Estratégia de identificação</a></li>
+  <li><a href="#configuração-e-carga-de-dados" id="toc-configuração-e-carga-de-dados" class="nav-link" data-scroll-target="#configuração-e-carga-de-dados"><span class="header-section-number">0.3</span> 1. Configuração e carga de dados</a></li>
+  <li><a href="#tabela-de-balanço-por-conectividade-pré-tratamento" id="toc-tabela-de-balanço-por-conectividade-pré-tratamento" class="nav-link" data-scroll-target="#tabela-de-balanço-por-conectividade-pré-tratamento"><span class="header-section-number">0.4</span> 2. Tabela de balanço por conectividade (pré-tratamento)</a></li>
+  <li><a href="#did-por-subgrupo-de-conectividade-motivação" id="toc-did-por-subgrupo-de-conectividade-motivação" class="nav-link" data-scroll-target="#did-por-subgrupo-de-conectividade-motivação"><span class="header-section-number">0.5</span> 3. DiD por subgrupo de conectividade (motivação)</a></li>
+  <li><a href="#triple-did-modelo-principal" id="toc-triple-did-modelo-principal" class="nav-link" data-scroll-target="#triple-did-modelo-principal"><span class="header-section-number">0.6</span> 4. Triple-DiD — Modelo principal</a></li>
+  <li><a href="#event-study-por-grupo-de-conectividade" id="toc-event-study-por-grupo-de-conectividade" class="nav-link" data-scroll-target="#event-study-por-grupo-de-conectividade"><span class="header-section-number">0.7</span> 5. Event study por grupo de conectividade</a></li>
+  <li><a href="#testes-de-robustez-e-síntese" id="toc-testes-de-robustez-e-síntese" class="nav-link" data-scroll-target="#testes-de-robustez-e-síntese"><span class="header-section-number">0.8</span> 6. Testes de robustez e síntese</a></li>
+  <li><a href="#correção-de-tendência-diferencial-pré-caminho-1" id="toc-correção-de-tendência-diferencial-pré-caminho-1" class="nav-link" data-scroll-target="#correção-de-tendência-diferencial-pré-caminho-1"><span class="header-section-number">0.9</span> 7. Correção de tendência diferencial pré (Caminho 1)</a></li>
+  <li><a href="#proxies-alternativos-de-conectividade-caminho-2" id="toc-proxies-alternativos-de-conectividade-caminho-2" class="nav-link" data-scroll-target="#proxies-alternativos-de-conectividade-caminho-2"><span class="header-section-number">0.10</span> 8. Proxies alternativos de conectividade (Caminho 2)</a></li>
+  <li><a href="#decomposição-etária-do-triple-did" id="toc-decomposição-etária-do-triple-did" class="nav-link" data-scroll-target="#decomposição-etária-do-triple-did"><span class="header-section-number">0.11</span> 9. Decomposição etária do Triple-DiD</a></li>
+  <li><a href="#modelo-reformulado-impacto-sobre-jovens" id="toc-modelo-reformulado-impacto-sobre-jovens" class="nav-link" data-scroll-target="#modelo-reformulado-impacto-sobre-jovens"><span class="header-section-number">0.12</span> 10. Modelo reformulado: impacto sobre jovens</a></li>
+  <li><a href="#verificação-metodológica-conferência-com-o-plano-etapa-3" id="toc-verificação-metodológica-conferência-com-o-plano-etapa-3" class="nav-link" data-scroll-target="#verificação-metodológica-conferência-com-o-plano-etapa-3"><span class="header-section-number">0.13</span> Verificação metodológica (conferência com o plano Etapa 3)</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="etapa_3b_analise_did_municipio_conectividade.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -117,8 +125,370 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Dissertação:</strong> Inteligência Artificial Generativa e o Mercado de Trabalho Brasileiro.</p>
 <p><strong>Objetivo:</strong> Estimar o efeito diferencial da IA generativa entre municípios de alta e baixa conectividade (Triple-DiD). Unidade: ocupação × município × mês. Coeficiente de interesse: <strong>β₇</strong> (triple_did = post × alta_exp × alta_conectividade).</p>
 <p><strong>Input:</strong> <code>data/output/painel_caged_municipio_anatel.parquet</code> (Notebook 3a).</p>
-<section id="estratégia-de-identificação" class="level3" data-number="0.1">
-<h3 data-number="0.1" class="anchored" data-anchor-id="estratégia-de-identificação"><span class="header-section-number">0.1</span> Estratégia de identificação</h3>
+<section id="dependências" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="dependências"><span class="header-section-number">0.1</span> 0. Dependências</h3>
+<p>Conferir pacotes instalados e instalar o necessário para o notebook (pandas, numpy, pyfixest e dependências como platformdirs).</p>
+<div id="cell-3" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.0 — Conferir e instalar dependências</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install pandas numpy pyfixest platformdirs pyarrow <span class="op">-</span>q</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Pacotes principais (após install):"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip <span class="bu">list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Pacotes principais (após install):
+Package                            Version
+---------------------------------- --------------
+aiohappyeyeballs                   2.6.1
+aiohttp                            3.13.2
+aiosignal                          1.4.0
+altair                             5.4.1
+annotated-types                    0.6.0
+anyio                              4.12.0
+appnope                            0.1.3
+argon2-cffi                        25.1.0
+argon2-cffi-bindings               25.1.0
+arrow                              1.3.0
+asttokens                          2.4.1
+async-lru                          2.0.5
+attrs                              23.2.0
+Authlib                            1.6.6
+babel                              2.17.0
+backports.tarfile                  1.2.0
+basedosdados                       2.0.2
+beartype                           0.22.8
+beautifulsoup4                     4.12.2
+bleach                             6.2.0
+blinker                            1.8.2
+brotli                             1.2.0
+cachetools                         5.5.0
+catboost                           1.2.8
+certifi                            2023.5.7
+cffi                               1.17.1
+charset-normalizer                 2.1.1
+click                              8.1.7
+cloudpickle                        3.1.2
+cobble                             0.1.4
+coloredlogs                        15.0.1
+comm                               0.2.0
+commonmark                         0.9.1
+contourpy                          1.3.3
+coverage                           7.13.0
+cryptography                       44.0.0
+cssselect2                         0.8.0
+cycler                             0.12.1
+cyclopts                           4.3.0
+dataclasses-json                   0.6.7
+db-dtypes                          1.5.0
+debugpy                            1.8.0
+decorator                          5.1.1
+defusedxml                         0.7.1
+diskcache                          5.6.3
+distlib                            0.3.6
+distro                             1.8.0
+dnspython                          2.8.0
+docstring_parser                   0.17.0
+docutils                           0.22.3
+einops                             0.7.0
+email-validator                    2.3.0
+et_xmlfile                         2.0.0
+exceptiongroup                     1.3.1
+executing                          2.0.1
+faicons                            0.2.2
+fakeredis                          2.32.1
+fastjsonschema                     2.21.1
+fastmcp                            2.14.0
+fastuuid                           0.14.0
+filelock                           3.12.2
+filetype                           1.2.0
+flatbuffers                        24.3.25
+fonttools                          4.61.1
+formulaic                          1.2.1
+fqdn                               1.5.1
+frozenlist                         1.4.1
+fsspec                             2023.12.2
+ftfy                               6.3.1
+geobr                              0.2.2
+geopandas                          1.1.0
+gitdb                              4.0.11
+GitPython                          3.1.43
+google-ai-generativelanguage       0.6.15
+google-api-core                    2.25.1
+google-api-python-client           2.178.0
+google-auth                        2.40.3
+google-auth-httplib2               0.2.0
+google-auth-oauthlib               1.2.3
+google-cloud-bigquery              3.40.0
+google-cloud-bigquery-connection   1.20.0
+google-cloud-bigquery-storage      2.36.0
+google-cloud-core                  2.5.0
+google-cloud-storage               2.19.0
+google-crc32c                      1.8.0
+google-generativeai                0.8.5
+google-resumable-media             2.8.0
+googleapis-common-protos           1.70.0
+graphviz                           0.21
+great-tables                       0.20.0
+greenlet                           3.2.4
+grpc-google-iam-v1                 0.14.3
+grpcio                             1.76.0
+grpcio-status                      1.71.2
+h11                                0.14.0
+html5lib                           1.1
+htmltools                          0.6.0
+httpcore                           1.0.2
+httplib2                           0.22.0
+httpx                              0.28.1
+httpx-sse                          0.4.3
+huggingface-hub                    0.26.2
+humanfriendly                      10.0
+idna                               3.4
+imbalanced-learn                   0.14.0
+importlib_metadata                 8.7.0
+importlib_resources                6.5.2
+iniconfig                          2.3.0
+interface-meta                     1.3.0
+ipykernel                          6.26.0
+ipython                            8.17.2
+ipywidgets                         8.1.7
+isoduration                        20.11.0
+jaraco.classes                     3.4.0
+jaraco.context                     6.0.1
+jaraco.functools                   4.3.0
+jedi                               0.19.1
+Jinja2                             3.1.2
+jiter                              0.12.0
+joblib                             1.4.2
+json5                              0.12.1
+jsonpatch                          1.33
+jsonpointer                        3.0.0
+jsonschema                         4.23.0
+jsonschema-path                    0.3.4
+jsonschema-specifications          2023.12.1
+jupyter                            1.1.1
+jupyter-book                       2.1.2
+jupyter_client                     8.6.0
+jupyter-console                    6.6.3
+jupyter_core                       5.5.0
+jupyter-events                     0.12.0
+jupyter-lsp                        2.2.6
+jupyter_server                     2.16.0
+jupyter_server_terminals           0.5.3
+jupyterlab                         4.4.5
+jupyterlab_pygments                0.3.0
+jupyterlab_server                  2.27.3
+jupyterlab_widgets                 3.0.15
+kaggle                             1.7.4.5
+keyring                            25.7.0
+kiwisolver                         1.4.9
+langchain                          0.3.8
+langchain-core                     0.3.21
+langchain-text-splitters           0.3.0
+langsmith                          0.1.145
+lightgbm                           4.6.0
+litellm                            1.80.10
+llvmlite                           0.46.0
+loguru                             0.7.3
+lupa                               2.6
+lxml                               5.3.0
+mammoth                            1.9.0
+mapclassify                        2.10.0
+markdown-it-py                     3.0.0
+markdownify                        0.14.1
+marker-pdf                         0.3.10
+markitdown                         0.0.1a3
+MarkupSafe                         2.1.3
+marshmallow                        3.22.0
+matplotlib                         3.10.5
+matplotlib-inline                  0.1.6
+mcp                                1.24.0
+mdurl                              0.1.2
+mistune                            3.1.3
+mock-open                          1.4.0
+more-itertools                     10.8.0
+mpmath                             1.2.1
+multidict                          6.0.4
+mypy-extensions                    1.0.0
+mysql-connector-python             9.5.0
+narwhals                           2.1.1
+nbclient                           0.10.2
+nbconvert                          7.16.6
+nbformat                           5.10.4
+nest-asyncio                       1.5.8
+networkx                           3.6.1
+nodeenv                            1.10.0
+notebook                           7.4.5
+notebook_shim                      0.2.4
+numba                              0.63.1
+numpy                              1.26.4
+oauthlib                           3.3.1
+onnxruntime                        1.20.1
+openai                             2.13.0
+openapi-pydantic                   0.5.1
+opencv-python                      4.10.0.84
+openpyxl                           3.1.5
+opentelemetry-api                  1.39.1
+opentelemetry-exporter-prometheus  0.60b1
+opentelemetry-sdk                  1.39.1
+opentelemetry-semantic-conventions 0.60b1
+orjson                             3.10.7
+overrides                          7.7.0
+packaging                          25.0
+pandas                             2.2.2
+pandas-gbq                         0.33.0
+pandocfilters                      1.5.1
+parso                              0.8.3
+pathable                           0.4.4
+pathvalidate                       3.3.1
+patsy                              1.0.1
+pdf2image                          1.17.0
+pdfminer.six                       20250506
+pdfplumber                         0.11.7
+pdftext                            0.3.19
+pexpect                            4.8.0
+pillow                             10.4.0
+pip                                26.0.1
+pipenv                             2023.6.26
+platformdirs                       4.5.1
+playwright                         1.54.0
+plotly                             6.3.0
+pluggy                             1.6.0
+prometheus_client                  0.22.1
+prompt-toolkit                     3.0.41
+propcache                          0.4.1
+proto-plus                         1.26.1
+protobuf                           5.29.5
+psutil                             7.2.1
+ptyprocess                         0.7.0
+pure-eval                          0.2.2
+puremagic                          1.28
+py-key-value-aio                   0.3.0
+py-key-value-shared                0.3.0
+pyarrow                            17.0.0
+pyasn1                             0.6.1
+pyasn1_modules                     0.4.2
+pycparser                          2.22
+pydantic                           2.12.5
+pydantic_core                      2.41.5
+pydantic-settings                  2.6.1
+pydata-google-auth                 1.9.1
+pydeck                             0.9.1
+pydocket                           0.15.4
+pydub                              0.25.1
+pydyf                              0.12.1
+pyee                               13.0.0
+pyfixest                           0.40.1
+Pygments                           2.16.1
+PyJWT                              2.10.1
+pyogrio                            0.12.1
+pyparsing                          3.2.3
+PyPDF2                             3.0.1
+pypdfium2                          4.30.0
+pyperclip                          1.11.0
+pyphen                             0.17.2
+pyproj                             3.7.2
+pytest                             9.0.2
+pytest-cov                         7.0.0
+python-bcb                         0.3.3
+python-dateutil                    2.8.2
+python-dotenv                      1.1.0
+python-json-logger                 3.3.0
+python-multipart                   0.0.20
+python-pptx                        1.0.2
+python-slugify                     8.0.4
+pytz                               2024.2
+PyYAML                             6.0.1
+pyzmq                              25.1.1
+RapidFuzz                          3.10.1
+redis                              7.1.0
+referencing                        0.35.1
+regex                              2024.11.6
+requests                           2.31.0
+requests-oauthlib                  2.0.0
+requests-toolbelt                  1.0.0
+rfc3339-validator                  0.1.4
+rfc3986-validator                  0.1.1
+rich                               14.2.0
+rich-rst                           1.3.2
+rpds-py                            0.20.0
+rsa                                4.9.1
+safetensors                        0.4.2
+scikit-learn                       1.5.2
+scipy                              1.12.0
+seaborn                            0.13.2
+Send2Trash                         1.8.3
+sentence-transformers              5.2.0
+setuptools                         68.0.0
+shapely                            2.1.0
+shellingham                        1.5.4
+six                                1.16.0
+smmap                              5.0.1
+sniffio                            1.3.0
+sortedcontainers                   2.4.0
+soupsieve                          2.6
+SpeechRecognition                  3.14.0
+SQLAlchemy                         2.0.35
+sse-starlette                      3.0.3
+stack-data                         0.6.3
+starlette                          0.50.0
+statsmodels                        0.14.5
+streamlit                          1.40.1
+surya-ocr                          0.6.13
+sympy                              1.13.1
+tabled-pdf                         0.1.4
+tabulate                           0.9.0
+tenacity                           8.5.0
+terminado                          0.18.1
+texify                             0.2.1
+text-unidecode                     1.3
+threadpoolctl                      3.5.0
+tiktoken                           0.12.0
+tinycss2                           1.4.0
+tinyhtml5                          2.0.0
+tokenizers                         0.20.3
+toml                               0.10.2
+tomlkit                            0.11.8
+torch                              2.5.1
+torchaudio                         2.5.1
+torchsde                           0.2.6
+torchvision                        0.20.1
+tornado                            6.3.3
+tqdm                               4.66.1
+traitlets                          5.13.0
+trampoline                         0.1.2
+transformers                       4.46.3
+typer                              0.20.0
+types-python-dateutil              2.9.0.20250809
+typing_extensions                  4.15.0
+typing-inspect                     0.9.0
+typing-inspection                  0.4.2
+tzdata                             2024.1
+uri-template                       1.3.0
+uritemplate                        4.2.0
+urllib3                            1.26.13
+uvicorn                            0.38.0
+virtualenv                         20.23.1
+virtualenv-clone                   0.5.7
+wcwidth                            0.2.10
+weasyprint                         68.1
+webcolors                          24.11.1
+webencodings                       0.5.1
+websocket-client                   1.8.0
+websockets                         15.0.1
+wheel                              0.40.0
+widgetsnbextension                 4.0.14
+wordcloud                          1.9.4
+wrapt                              2.1.1
+xgboost                            3.1.2
+xlrd                               2.0.2
+XlsxWriter                         3.2.0
+yarl                               1.22.0
+youtube-transcript-api             0.6.3
+zipp                               3.23.0
+zopfli                             0.4.0</code></pre>
+</div>
+</div>
+</section>
+<section id="estratégia-de-identificação" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="estratégia-de-identificação"><span class="header-section-number">0.2</span> Estratégia de identificação</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -158,54 +528,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
-<section id="configuração-e-carga-de-dados" class="level3" data-number="0.2">
-<h3 data-number="0.2" class="anchored" data-anchor-id="configuração-e-carga-de-dados"><span class="header-section-number">0.2</span> 1. Configuração e carga de dados</h3>
+<section id="configuração-e-carga-de-dados" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="configuração-e-carga-de-dados"><span class="header-section-number">0.3</span> 1. Configuração e carga de dados</h3>
 <p>Carregar painel 3a, winsorizar salários (P1/P99).</p>
-<div id="cell-4" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.1 — Configuração e carga</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyfixest <span class="im">as</span> pf</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, category<span class="op">=</span><span class="pp">FutureWarning</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, message<span class="op">=</span><span class="st">".*multicollinearity.*"</span>, category<span class="op">=</span><span class="pp">UserWarning</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>DATA_OUTPUT <span class="op">=</span> Path(<span class="st">"data/output"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>OUTPUTS_TABLES <span class="op">=</span> Path(<span class="st">"outputs/tables"</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>OUTPUTS_FIGURES <span class="op">=</span> Path(<span class="st">"outputs/figures"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> [OUTPUTS_TABLES, OUTPUTS_FIGURES]:</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    d.mkdir(parents<span class="op">=</span><span class="va">True</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>PAINEL_FILE <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_municipio_anatel.parquet"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>VCOV_SPEC <span class="op">=</span> {<span class="st">"CRV1"</span>: <span class="st">"id_municipio"</span>}</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>OUTCOMES <span class="op">=</span> {<span class="st">"ln_salario_real_adm"</span>: <span class="st">"Log(Sal. Real Adm.)"</span>, <span class="st">"ln_admissoes"</span>: <span class="st">"Log(Admissões)"</span>, <span class="st">"pct_superior_adm"</span>: <span class="st">"% Superior"</span>, <span class="st">"idade_media_adm"</span>: <span class="st">"Idade Média"</span>}</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_parquet(PAINEL_FILE)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> [<span class="st">"salario_medio_adm"</span>, <span class="st">"salario_real_adm"</span>]:</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> c <span class="kw">in</span> df.columns:</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        lo, hi <span class="op">=</span> df[c].quantile(<span class="fl">0.01</span>), df[c].quantile(<span class="fl">0.99</span>)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        df[c] <span class="op">=</span> df[c].clip(lo, hi)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"ln_salario_real_adm"</span> <span class="kw">in</span> df.columns:</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"ln_salario_real_adm"</span>] <span class="op">=</span> np.log(df[<span class="st">"salario_real_adm"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Painel: </span><span class="sc">{</span><span class="bu">len</span>(df)<span class="sc">:,}</span><span class="ss"> obs | </span><span class="sc">{</span>df[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">:,}</span><span class="ss"> municípios | </span><span class="sc">{</span>df[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> ocupações"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-6" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.1 — Configuração e carga</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyfixest <span class="im">as</span> pf</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, category<span class="op">=</span><span class="pp">FutureWarning</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>, message<span class="op">=</span><span class="st">".*multicollinearity.*"</span>, category<span class="op">=</span><span class="pp">UserWarning</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Sempre usar a pasta notebook/data</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _find_project_root():</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> Path.cwd().resolve()</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (p <span class="op">/</span> <span class="st">"notebook"</span>).is_dir():</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> p</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.parent <span class="cf">if</span> p.parent <span class="op">!=</span> p <span class="cf">else</span> p</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Path.cwd().resolve()</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>PROJECT_ROOT <span class="op">=</span> _find_project_root()</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>DATA_ROOT <span class="op">=</span> PROJECT_ROOT <span class="op">/</span> <span class="st">"notebook"</span> <span class="op">/</span> <span class="st">"data"</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>DATA_OUTPUT <span class="op">=</span> DATA_ROOT <span class="op">/</span> <span class="st">"output"</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>CACHE_DIR <span class="op">=</span> DATA_ROOT <span class="op">/</span> <span class="st">"cache"</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>OUTPUTS_TABLES <span class="op">=</span> PROJECT_ROOT <span class="op">/</span> <span class="st">"notebook"</span> <span class="op">/</span> <span class="st">"outputs"</span> <span class="op">/</span> <span class="st">"tables"</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>OUTPUTS_FIGURES <span class="op">=</span> PROJECT_ROOT <span class="op">/</span> <span class="st">"notebook"</span> <span class="op">/</span> <span class="st">"outputs"</span> <span class="op">/</span> <span class="st">"figures"</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>USE_CACHE_3B <span class="op">=</span> <span class="va">True</span>  <span class="co"># Se True, seção 8 usa cache e checkpoints; se False, tudo em memória</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> [OUTPUTS_TABLES, OUTPUTS_FIGURES, CACHE_DIR]:</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    d.mkdir(parents<span class="op">=</span><span class="va">True</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>PAINEL_FILE <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_municipio_anatel.parquet"</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>PAINEL_FILE_V2 <span class="op">=</span> DATA_OUTPUT <span class="op">/</span> <span class="st">"painel_caged_municipio_anatel_v2.parquet"</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>VCOV_SPEC <span class="op">=</span> {<span class="st">"CRV1"</span>: <span class="st">"id_municipio"</span>}</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>OUTCOMES <span class="op">=</span> {<span class="st">"ln_salario_real_adm"</span>: <span class="st">"Log(Sal. Real Adm.)"</span>, <span class="st">"ln_admissoes"</span>: <span class="st">"Log(Admissões)"</span>, <span class="st">"pct_superior_adm"</span>: <span class="st">"% Superior"</span>, <span class="st">"idade_media_adm"</span>: <span class="st">"Idade Média"</span>}</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data output:"</span>, DATA_OUTPUT.resolve())</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> PAINEL_FILE_V2.exists():</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_parquet(PAINEL_FILE_V2)</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Painel v2 (faixa etária, fibra, capital) carregado:"</span>, PAINEL_FILE_V2.resolve())</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_parquet(PAINEL_FILE)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Painel (sem v2) carregado:"</span>, PAINEL_FILE.resolve())</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> [<span class="st">"salario_medio_adm"</span>, <span class="st">"salario_real_adm"</span>]:</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> c <span class="kw">in</span> df.columns:</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>        lo, hi <span class="op">=</span> df[c].quantile(<span class="fl">0.01</span>), df[c].quantile(<span class="fl">0.99</span>)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>        df[c] <span class="op">=</span> df[c].clip(lo, hi)</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"ln_salario_real_adm"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"ln_salario_real_adm"</span>] <span class="op">=</span> np.log(df[<span class="st">"salario_real_adm"</span>].clip(lower<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Painel: </span><span class="sc">{</span><span class="bu">len</span>(df)<span class="sc">:,}</span><span class="ss"> obs | </span><span class="sc">{</span>df[<span class="st">'id_municipio'</span>]<span class="sc">.</span>nunique()<span class="sc">:,}</span><span class="ss"> municípios | </span><span class="sc">{</span>df[<span class="st">'cbo_4d'</span>]<span class="sc">.</span>nunique()<span class="sc">}</span><span class="ss"> ocupações"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Painel: 5,534,808 obs | 657 municípios | 614 ocupações</code></pre>
+<pre><code>Data output: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data/output
+Painel v2 (faixa etária, fibra, capital) carregado: /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data/output/painel_caged_municipio_anatel_v2.parquet
+Painel: 5,534,808 obs | 657 municípios | 614 ocupações</code></pre>
 </div>
 </div>
 </section>
-<section id="tabela-de-balanço-por-conectividade-pré-tratamento" class="level3" data-number="0.3">
-<h3 data-number="0.3" class="anchored" data-anchor-id="tabela-de-balanço-por-conectividade-pré-tratamento"><span class="header-section-number">0.3</span> 2. Tabela de balanço por conectividade (pré-tratamento)</h3>
-<div id="cell-6" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.2 — Balanço</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pre <span class="op">=</span> df[df[<span class="st">"post"</span>] <span class="op">==</span> <span class="dv">0</span>]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pre.groupby(<span class="st">"alta_conectividade"</span>).agg(</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    n_obs<span class="op">=</span>(<span class="st">"cbo_4d"</span>, <span class="st">"count"</span>),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    admissoes_media<span class="op">=</span>(<span class="st">"admissoes"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    salario_medio<span class="op">=</span>(<span class="st">"salario_medio_adm"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    penetracao_media<span class="op">=</span>(<span class="st">"penetracao_bl"</span>, <span class="st">"mean"</span>),</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>).<span class="bu">round</span>(<span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="tabela-de-balanço-por-conectividade-pré-tratamento" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="tabela-de-balanço-por-conectividade-pré-tratamento"><span class="header-section-number">0.4</span> 2. Tabela de balanço por conectividade (pré-tratamento)</h3>
+<div id="cell-8" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.2 — Balanço</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pre <span class="op">=</span> df[df[<span class="st">"post"</span>] <span class="op">==</span> <span class="dv">0</span>]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pre.groupby(<span class="st">"alta_conectividade"</span>).agg(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    n_obs<span class="op">=</span>(<span class="st">"cbo_4d"</span>, <span class="st">"count"</span>),</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    admissoes_media<span class="op">=</span>(<span class="st">"admissoes"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    salario_medio<span class="op">=</span>(<span class="st">"salario_medio_adm"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    penetracao_media<span class="op">=</span>(<span class="st">"penetracao_bl"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>).<span class="bu">round</span>(<span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                      n_obs  admissoes_media  salario_medio  penetracao_media
 alta_conectividade                                                           
@@ -214,33 +605,33 @@ alta_conectividade
 </div>
 </div>
 </section>
-<section id="did-por-subgrupo-de-conectividade-motivação" class="level3" data-number="0.4">
-<h3 data-number="0.4" class="anchored" data-anchor-id="did-por-subgrupo-de-conectividade-motivação"><span class="header-section-number">0.4</span> 3. DiD por subgrupo de conectividade (motivação)</h3>
+<section id="did-por-subgrupo-de-conectividade-motivação" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="did-por-subgrupo-de-conectividade-motivação"><span class="header-section-number">0.5</span> 3. DiD por subgrupo de conectividade (motivação)</h3>
 <p>Estimar DiD (post × alta_exp) separadamente para municípios de alta e baixa conectividade.</p>
-<div id="cell-8" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.3 — DiD por subgrupo</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_alta_exp"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_exp"</span>]</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> conn_label, mask <span class="kw">in</span> [(<span class="st">"Alta conect."</span>, df[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> <span class="dv">1</span>), (<span class="st">"Baixa conect."</span>, df[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> <span class="dv">0</span>)]:</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> df.loc[mask].dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>])</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    m <span class="op">=</span> pf.feols(<span class="st">"ln_salario_real_adm ~ post_alta_exp | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>d, vcov<span class="op">=</span>VCOV_SPEC)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> m.coef().get(<span class="st">"post_alta_exp"</span>, m.coef().iloc[<span class="dv">0</span>])</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>conn_label<span class="sc">}</span><span class="ss">: coef = </span><span class="sc">{</span><span class="bu">float</span>(c)<span class="sc">:.4f}</span><span class="ss">, se = </span><span class="sc">{</span><span class="bu">float</span>(m.se().loc[<span class="st">'post_alta_exp'</span>])<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-10" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.3 — DiD por subgrupo</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_alta_exp"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_exp"</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> conn_label, mask <span class="kw">in</span> [(<span class="st">"Alta conect."</span>, df[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> <span class="dv">1</span>), (<span class="st">"Baixa conect."</span>, df[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> <span class="dv">0</span>)]:</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> df.loc[mask].dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>])</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    m <span class="op">=</span> pf.feols(<span class="st">"ln_salario_real_adm ~ post_alta_exp | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>d, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> m.coef().get(<span class="st">"post_alta_exp"</span>, m.coef().iloc[<span class="dv">0</span>])</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>conn_label<span class="sc">}</span><span class="ss">: coef = </span><span class="sc">{</span><span class="bu">float</span>(c)<span class="sc">:.4f}</span><span class="ss">, se = </span><span class="sc">{</span><span class="bu">float</span>(m.se().loc[<span class="st">'post_alta_exp'</span>])<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Alta conect.: coef = -0.0058, se = 0.0018
 Baixa conect.: coef = -0.0089, se = 0.0046</code></pre>
 </div>
 </div>
 </section>
-<section id="triple-did-modelo-principal" class="level3" data-number="0.5">
-<h3 data-number="0.5" class="anchored" data-anchor-id="triple-did-modelo-principal"><span class="header-section-number">0.5</span> 4. Triple-DiD — Modelo principal</h3>
+<section id="triple-did-modelo-principal" class="level3" data-number="0.6">
+<h3 data-number="0.6" class="anchored" data-anchor-id="triple-did-modelo-principal"><span class="header-section-number">0.6</span> 4. Triple-DiD — Modelo principal</h3>
 <p>outcome ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo</p>
-<div id="cell-10" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.4 — Triple-DiD principal</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>formula <span class="op">=</span> <span class="st">"ln_salario_real_adm ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> pf.feols(formula, data<span class="op">=</span>df.dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>]), vcov<span class="op">=</span>VCOV_SPEC)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m.summary())</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>results_triple <span class="op">=</span> pd.DataFrame({<span class="st">"coef"</span>: m.coef(), <span class="st">"se"</span>: m.se(), <span class="st">"p_value"</span>: m.pvalue()})</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>results_triple.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">"triple_did_main_etapa3b.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-12" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.4 — Triple-DiD principal</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>formula <span class="op">=</span> <span class="st">"ln_salario_real_adm ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> pf.feols(formula, data<span class="op">=</span>df.dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>]), vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m.summary())</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>results_triple <span class="op">=</span> pd.DataFrame({<span class="st">"coef"</span>: m.coef(), <span class="st">"se"</span>: m.se(), <span class="st">"p_value"</span>: m.pvalue()})</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>results_triple.to_csv(OUTPUTS_TABLES <span class="op">/</span> <span class="st">"triple_did_main_etapa3b.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>###
 
@@ -261,54 +652,693 @@ None</code></pre>
 </div>
 </div>
 </section>
-<section id="event-study-por-grupo-de-conectividade" class="level3" data-number="0.6">
-<h3 data-number="0.6" class="anchored" data-anchor-id="event-study-por-grupo-de-conectividade"><span class="header-section-number">0.6</span> 5. Event study por grupo de conectividade</h3>
+<section id="event-study-por-grupo-de-conectividade" class="level3" data-number="0.7">
+<h3 data-number="0.7" class="anchored" data-anchor-id="event-study-por-grupo-de-conectividade"><span class="header-section-number">0.7</span> 5. Event study por grupo de conectividade</h3>
 <p>Dummies (tempo_relativo × alta_exp) para alta e baixa conectividade; referência t = -1.</p>
-<div id="cell-12" class="cell" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.5 — Event study por conectividade</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Dummies (tempo_relativo × alta_exp) para alta e baixa conectividade; referência t = -1.</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Nomes das variáveis: sem "-" na fórmula (formulaic interpreta "did_t-12" como did_t menos 12).</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _nome_did(t):</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"did_m</span><span class="sc">{</span><span class="op">-</span>t<span class="sc">}</span><span class="ss">"</span> <span class="cf">if</span> t <span class="op">&lt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="ss">f"did_</span><span class="sc">{</span>t<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>BIN_MIN, BIN_MAX, REF <span class="op">=</span> <span class="op">-</span><span class="dv">12</span>, <span class="dv">24</span>, <span class="op">-</span><span class="dv">1</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"t_bin"</span>] <span class="op">=</span> df[<span class="st">"tempo_relativo_meses"</span>].clip(lower<span class="op">=</span>BIN_MIN, upper<span class="op">=</span>BIN_MAX)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> conn_val, label <span class="kw">in</span> [(<span class="dv">1</span>, <span class="st">"Alta"</span>), (<span class="dv">0</span>, <span class="st">"Baixa"</span>)]:</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> df[(df[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> conn_val) <span class="op">&amp;</span> df[<span class="st">"ln_salario_real_adm"</span>].notna()].copy()</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    ts <span class="op">=</span> [t <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">sorted</span>(d[<span class="st">"t_bin"</span>].unique()) <span class="cf">if</span> t <span class="op">!=</span> REF]</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    did_vars <span class="op">=</span> [_nome_did(t) <span class="cf">for</span> t <span class="kw">in</span> ts]</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t, v <span class="kw">in</span> <span class="bu">zip</span>(ts, did_vars):</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        d[v] <span class="op">=</span> ((d[<span class="st">"t_bin"</span>] <span class="op">==</span> t) <span class="op">&amp;</span> (d[<span class="st">"alta_exp"</span>] <span class="op">==</span> <span class="dv">1</span>)).astype(<span class="bu">int</span>)</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> did_vars:</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        m <span class="op">=</span> pf.feols(<span class="ss">f"ln_salario_real_adm ~ </span><span class="sc">{</span><span class="st">' + '</span><span class="sc">.</span>join(did_vars)<span class="sc">}</span><span class="ss"> | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>d, vcov<span class="op">=</span>VCOV_SPEC)</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>label<span class="sc">}</span><span class="ss"> conect.: </span><span class="sc">{</span><span class="bu">len</span>(ts)<span class="sc">}</span><span class="ss"> coeficientes estimados"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-14" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.5 — Event study por conectividade</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Dummies (tempo_relativo × alta_exp) para alta e baixa conectividade; referência t = -1.</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Nomes das variáveis: sem "-" na fórmula (formulaic interpreta "did_t-12" como did_t menos 12).</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _nome_did(t):</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"did_m</span><span class="sc">{</span><span class="op">-</span>t<span class="sc">}</span><span class="ss">"</span> <span class="cf">if</span> t <span class="op">&lt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="ss">f"did_</span><span class="sc">{</span>t<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>BIN_MIN, BIN_MAX, REF <span class="op">=</span> <span class="op">-</span><span class="dv">12</span>, <span class="dv">24</span>, <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"t_bin"</span>] <span class="op">=</span> df[<span class="st">"tempo_relativo_meses"</span>].clip(lower<span class="op">=</span>BIN_MIN, upper<span class="op">=</span>BIN_MAX)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> conn_val, label <span class="kw">in</span> [(<span class="dv">1</span>, <span class="st">"Alta"</span>), (<span class="dv">0</span>, <span class="st">"Baixa"</span>)]:</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> df[(df[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> conn_val) <span class="op">&amp;</span> df[<span class="st">"ln_salario_real_adm"</span>].notna()].copy()</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    ts <span class="op">=</span> [t <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">sorted</span>(d[<span class="st">"t_bin"</span>].unique()) <span class="cf">if</span> t <span class="op">!=</span> REF]</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    did_vars <span class="op">=</span> [_nome_did(t) <span class="cf">for</span> t <span class="kw">in</span> ts]</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t, v <span class="kw">in</span> <span class="bu">zip</span>(ts, did_vars):</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>        d[v] <span class="op">=</span> ((d[<span class="st">"t_bin"</span>] <span class="op">==</span> t) <span class="op">&amp;</span> (d[<span class="st">"alta_exp"</span>] <span class="op">==</span> <span class="dv">1</span>)).astype(<span class="bu">int</span>)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> did_vars:</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>        m <span class="op">=</span> pf.feols(<span class="ss">f"ln_salario_real_adm ~ </span><span class="sc">{</span><span class="st">' + '</span><span class="sc">.</span>join(did_vars)<span class="sc">}</span><span class="ss"> | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>d, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>label<span class="sc">}</span><span class="ss"> conect.: </span><span class="sc">{</span><span class="bu">len</span>(ts)<span class="sc">}</span><span class="ss"> coeficientes estimados"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Alta conect.: 36 coeficientes estimados
 Baixa conect.: 36 coeficientes estimados</code></pre>
 </div>
 </div>
 </section>
-<section id="testes-de-robustez-e-síntese" class="level3" data-number="0.7">
-<h3 data-number="0.7" class="anchored" data-anchor-id="testes-de-robustez-e-síntese"><span class="header-section-number">0.7</span> 6. Testes de robustez e síntese</h3>
+<section id="testes-de-robustez-e-síntese" class="level3" data-number="0.8">
+<h3 data-number="0.8" class="anchored" data-anchor-id="testes-de-robustez-e-síntese"><span class="header-section-number">0.8</span> 6. Testes de robustez e síntese</h3>
 <p>Placebo temporal (Dez/2021); cutoff Q75. Correção FDR para múltiplos outcomes (opcional). Síntese: comparar com Etapa 2 — efeito concentrado onde a adoção de IA é viável.</p>
-<div id="cell-14" class="cell" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.6 — Robustez (placebo) e múltiplos outcomes</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Placebo: post = 1 a partir de Dez/2021</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_placebo"</span>] <span class="op">=</span> ((df[<span class="st">"ano"</span>] <span class="op">==</span> <span class="dv">2021</span>) <span class="op">&amp;</span> (df[<span class="st">"mes"</span>] <span class="op">&gt;=</span> <span class="dv">12</span>)) <span class="op">|</span> (df[<span class="st">"ano"</span>] <span class="op">&gt;</span> <span class="dv">2021</span>)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"triple_did_placebo"</span>] <span class="op">=</span> df[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>]</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_alta_exp_placebo"</span>] <span class="op">=</span> df[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df[<span class="st">"alta_exp"</span>]</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>m_placebo <span class="op">=</span> pf.feols(<span class="st">"ln_salario_real_adm ~ triple_did_placebo + post_alta_exp_placebo | cbo_4d + uf_periodo"</span>,</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>                     data<span class="op">=</span>df.dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>]), vcov<span class="op">=</span>VCOV_SPEC)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Placebo Dez/2021 (triple_did_placebo):"</span>, m_placebo.coef().get(<span class="st">"triple_did_placebo"</span>), <span class="st">"p ="</span>, m_placebo.pvalue().get(<span class="st">"triple_did_placebo"</span>))</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Esperado: não significativo."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-16" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.6 — Robustez (placebo) e múltiplos outcomes</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Placebo: post = 1 a partir de Dez/2021</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_placebo"</span>] <span class="op">=</span> ((df[<span class="st">"ano"</span>] <span class="op">==</span> <span class="dv">2021</span>) <span class="op">&amp;</span> (df[<span class="st">"mes"</span>] <span class="op">&gt;=</span> <span class="dv">12</span>)) <span class="op">|</span> (df[<span class="st">"ano"</span>] <span class="op">&gt;</span> <span class="dv">2021</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"triple_did_placebo"</span>] <span class="op">=</span> df[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>]</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"post_alta_exp_placebo"</span>] <span class="op">=</span> df[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df[<span class="st">"alta_exp"</span>]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>m_placebo <span class="op">=</span> pf.feols(<span class="st">"ln_salario_real_adm ~ triple_did_placebo + post_alta_exp_placebo | cbo_4d + uf_periodo"</span>,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                     data<span class="op">=</span>df.dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>]), vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Placebo Dez/2021 (triple_did_placebo):"</span>, m_placebo.coef().get(<span class="st">"triple_did_placebo"</span>), <span class="st">"p ="</span>, m_placebo.pvalue().get(<span class="st">"triple_did_placebo"</span>))</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Esperado: não significativo."</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> json</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(CACHE_DIR <span class="op">/</span> <span class="st">"placebo_secao6.json"</span>, <span class="st">"w"</span>) <span class="im">as</span> f:</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>        json.dump({<span class="st">"triple_did_placebo"</span>: {<span class="st">"coef"</span>: <span class="bu">float</span>(m_placebo.coef().get(<span class="st">"triple_did_placebo"</span>)), <span class="st">"se"</span>: <span class="bu">float</span>(m_placebo.se().get(<span class="st">"triple_did_placebo"</span>)), <span class="st">"pval"</span>: <span class="bu">float</span>(m_placebo.pvalue().get(<span class="st">"triple_did_placebo"</span>))}}, f, indent<span class="op">=</span><span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Placebo Dez/2021 (triple_did_placebo): 0.03653039627709792 p = 5.672064404560473e-05
 Esperado: não significativo.</code></pre>
 </div>
 </div>
 </section>
-<section id="verificação-metodológica-conferência-com-o-plano-etapa-3" class="level3" data-number="0.8">
-<h3 data-number="0.8" class="anchored" data-anchor-id="verificação-metodológica-conferência-com-o-plano-etapa-3"><span class="header-section-number">0.8</span> Verificação metodológica (conferência com o plano Etapa 3)</h3>
+<section id="correção-de-tendência-diferencial-pré-caminho-1" class="level3" data-number="0.9">
+<h3 data-number="0.9" class="anchored" data-anchor-id="correção-de-tendência-diferencial-pré-caminho-1"><span class="header-section-number">0.9</span> 7. Correção de tendência diferencial pré (Caminho 1)</h3>
+<p>Se o placebo falha por tendência pré-existente no grupo alta_exp × alta_conectividade, controlar por <strong>alta_exp × alta_conectividade × trend</strong> (trend = 1, 2, …, T). Se β₇ (triple_did) permanece significativo após incluir a tendência, o efeito é robusto; se não, o efeito era explicado pela tendência pré.</p>
+<div id="cell-18" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.7 — Tendência diferencial pré (Caminho 1)</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>periodos_ordenados <span class="op">=</span> <span class="bu">sorted</span>(df[<span class="st">"periodo"</span>].unique())</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>trend_map <span class="op">=</span> {p: i <span class="op">+</span> <span class="dv">1</span> <span class="cf">for</span> i, p <span class="kw">in</span> <span class="bu">enumerate</span>(periodos_ordenados)}</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"trend"</span>] <span class="op">=</span> df[<span class="st">"periodo"</span>].<span class="bu">map</span>(trend_map)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"trend_exp_conect"</span>] <span class="op">=</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>] <span class="op">*</span> df[<span class="st">"trend"</span>]</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"trend_exp"</span>] <span class="op">=</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"trend"</span>]</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"trend_conect"</span>] <span class="op">=</span> df[<span class="st">"alta_conectividade"</span>] <span class="op">*</span> df[<span class="st">"trend"</span>]</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>formula_trend <span class="op">=</span> (</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect"</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">" + trend_exp_conect + trend_exp + trend_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>model_trend <span class="op">=</span> pf.feols(formula_trend, data<span class="op">=</span>df.dropna(subset<span class="op">=</span>[outcome]), vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Modelo com tendência diferencial pré:"</span>)</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model_trend.summary())</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Comparar com modelo original (seção 4)</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>formula_orig <span class="op">=</span> <span class="st">"ln_salario_real_adm ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>model_orig <span class="op">=</span> pf.feols(formula_orig, data<span class="op">=</span>df.dropna(subset<span class="op">=</span>[<span class="st">"ln_salario_real_adm"</span>]), vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Comparação: Original vs. com tendência"</span>)</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>pf.etable([model_orig, model_trend])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Modelo com tendência diferencial pré:
+###
+
+Estimation:  OLS
+Dep. var.: ln_salario_real_adm, Fixed effects: cbo_4d+uf_periodo
+Inference:  CRV1
+Observations:  5534808
+
+| Coefficient          |   Estimate |   Std. Error |   t value |   Pr(&gt;|t|) |   2.5% |   97.5% |
+|:---------------------|-----------:|-------------:|----------:|-----------:|-------:|--------:|
+| triple_did           |      0.006 |        0.010 |     0.668 |      0.504 | -0.012 |   0.025 |
+| post_alta_exp        |     -0.005 |        0.009 |    -0.596 |      0.552 | -0.023 |   0.012 |
+| post_alta_conect     |     -0.015 |        0.007 |    -2.070 |      0.039 | -0.030 |  -0.001 |
+| alta_exp_alta_conect |      0.034 |        0.010 |     3.375 |      0.001 |  0.014 |   0.054 |
+| trend_exp_conect     |     -0.001 |        0.000 |    -1.321 |      0.187 | -0.001 |   0.000 |
+| trend_exp            |      0.000 |        0.000 |     0.616 |      0.538 | -0.000 |   0.001 |
+| trend_conect         |      0.001 |        0.000 |     2.463 |      0.014 |  0.000 |   0.002 |
+---
+RMSE: 0.555 R2: 0.969 R2 Within: 0.0 
+None
+
+Comparação: Original vs. com tendência</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div id="wlxoxwixkf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>
+#wlxoxwixkf table {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+#wlxoxwixkf thead, tbody, tfoot, tr, td, th { border-style: none !important; }
+ tr { background-color: transparent !important; }
+#wlxoxwixkf p { margin: 0 !important; padding: 0 !important; }
+ #wlxoxwixkf .gt_table { display: table !important; border-collapse: collapse !important; line-height: normal !important; margin-left: auto !important; margin-right: auto !important; color: #333333 !important; font-size: 16px !important; font-weight: normal !important; font-style: normal !important; background-color: #FFFFFF !important; width: auto !important; border-top-style: solid !important; border-top-width: 2px !important; border-top-color: #A8A8A8 !important; border-right-style: none !important; border-right-width: 2px !important; border-right-color: #D3D3D3 !important; border-bottom-style: hidden !important; border-bottom-width: 2px !important; border-bottom-color: #A8A8A8 !important; border-left-style: none !important; border-left-width: 2px !important; border-left-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_caption { padding-top: 4px !important; padding-bottom: 4px !important; }
+ #wlxoxwixkf .gt_title { color: #333333 !important; font-size: 125% !important; font-weight: initial !important; padding-top: 4px !important; padding-bottom: 4px !important; padding-left: 5px !important; padding-right: 5px !important; border-bottom-color: #FFFFFF !important; border-bottom-width: 0 !important; }
+ #wlxoxwixkf .gt_subtitle { color: #333333 !important; font-size: 85% !important; font-weight: initial !important; padding-top: 3px !important; padding-bottom: 5px !important; padding-left: 5px !important; padding-right: 5px !important; border-top-color: #FFFFFF !important; border-top-width: 0 !important; }
+ #wlxoxwixkf .gt_heading { background-color: #FFFFFF !important; text-align: center !important; border-bottom-color: #FFFFFF !important; border-left-style: none !important; border-left-width: 1px !important; border-left-color: #D3D3D3 !important; border-right-style: none !important; border-right-width: 1px !important; border-right-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_bottom_border { border-bottom-style: solid !important; border-bottom-width: 2px !important; border-bottom-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_col_headings { border-top-style: solid !important; border-top-width: 2px !important; border-top-color: black !important; border-bottom-style: solid !important; border-bottom-width: 0.5px !important; border-bottom-color: black !important; border-left-style: none !important; border-left-width: 1px !important; border-left-color: #D3D3D3 !important; border-right-style: none !important; border-right-width: 1px !important; border-right-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_col_heading { color: #333333 !important; background-color: #FFFFFF !important; font-size: 100% !important; font-weight: normal !important; text-transform: inherit !important; border-left-style: none !important; border-left-width: 0px !important; border-left-color: white !important; border-right-style: none !important; border-right-width: 0px !important; border-right-color: white !important; vertical-align: bottom !important; padding-top: 4px !important; padding-bottom: 5px !important; padding-left: 5px !important; padding-right: 5px !important; overflow-x: hidden !important; }
+ #wlxoxwixkf .gt_column_spanner_outer { color: #333333 !important; background-color: #FFFFFF !important; font-size: 100% !important; font-weight: normal !important; text-transform: inherit !important; padding-top: 0 !important; padding-bottom: 0 !important; padding-left: 4px !important; padding-right: 4px !important; }
+ #wlxoxwixkf .gt_column_spanner_outer:first-child { padding-left: 0 !important; }
+ #wlxoxwixkf .gt_column_spanner_outer:last-child { padding-right: 0 !important; }
+ #wlxoxwixkf .gt_column_spanner { border-bottom-style: solid !important; border-bottom-width: 0.5px !important; border-bottom-color: black !important; vertical-align: bottom !important; padding-top: 4px !important; padding-bottom: 4px !important; overflow-x: hidden !important; display: inline-block !important; width: 100% !important; }
+ #wlxoxwixkf .gt_spanner_row { border-bottom-style: hidden !important; }
+ #wlxoxwixkf .gt_group_heading { padding-top: 0px !important; padding-bottom: 0px !important; padding-left: 5px !important; padding-right: 5px !important; color: #333333 !important; background-color: #FFFFFF !important; font-size: 0px !important; font-weight: initial !important; text-transform: inherit !important; border-top-style: solid !important; border-top-width: 0.5px !important; border-top-color: black !important; border-bottom-style: solid !important; border-bottom-width: 0.5px !important; border-bottom-color: black !important; border-left-style: none !important; border-left-width: 1px !important; border-left-color: white !important; border-right-style: none !important; border-right-width: 1px !important; border-right-color: white !important; vertical-align: middle !important; text-align: left !important; }
+ #wlxoxwixkf .gt_empty_group_heading { padding: 0.5px !important; color: #333333 !important; background-color: #FFFFFF !important; font-size: 0px !important; font-weight: initial !important; border-top-style: solid !important; border-top-width: 0.5px !important; border-top-color: black !important; border-bottom-style: solid !important; border-bottom-width: 0.5px !important; border-bottom-color: black !important; vertical-align: middle !important; }
+ #wlxoxwixkf .gt_from_md> :first-child { margin-top: 0 !important; }
+ #wlxoxwixkf .gt_from_md> :last-child { margin-bottom: 0 !important; }
+ #wlxoxwixkf .gt_row { padding-top: 4px !important; padding-bottom: 4px !important; padding-left: 5px !important; padding-right: 5px !important; margin: 10px !important; border-top-style: none !important; border-top-width: 1px !important; border-top-color: #D3D3D3 !important; border-left-style: none !important; border-left-width: 0px !important; border-left-color: white !important; border-right-style: none !important; border-right-width: 0px !important; border-right-color: white !important; vertical-align: middle !important; overflow-x: hidden !important; }
+ #wlxoxwixkf .gt_stub { color: #333333 !important; background-color: #FFFFFF !important; font-size: 100% !important; font-weight: initial !important; text-transform: inherit !important; border-right-style: hidden !important; border-right-width: 2px !important; border-right-color: #D3D3D3 !important; padding-left: 5px !important; padding-right: 5px !important; }
+ #wlxoxwixkf .gt_stub_row_group { color: #333333 !important; background-color: #FFFFFF !important; font-size: 100% !important; font-weight: initial !important; text-transform: inherit !important; border-right-style: solid !important; border-right-width: 2px !important; border-right-color: #D3D3D3 !important; padding-left: 5px !important; padding-right: 5px !important; vertical-align: top !important; }
+ #wlxoxwixkf .gt_row_group_first td { border-top-width: 0.5px !important; }
+ #wlxoxwixkf .gt_row_group_first th { border-top-width: 0.5px !important; }
+ #wlxoxwixkf .gt_striped { color: #333333 !important; background-color: #F4F4F4 !important; }
+ #wlxoxwixkf .gt_table_body { border-top-style: solid !important; border-top-width: 0.5px !important; border-top-color: black !important; border-bottom-style: solid !important; border-bottom-width: 2px !important; border-bottom-color: black !important; }
+ #wlxoxwixkf .gt_grand_summary_row { color: #333333 !important; background-color: #FFFFFF !important; text-transform: inherit !important; padding-top: 8px !important; padding-bottom: 8px !important; padding-left: 5px !important; padding-right: 5px !important; }
+ #wlxoxwixkf .gt_first_grand_summary_row_bottom { border-top-style: double !important; border-top-width: 6px !important; border-top-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_last_grand_summary_row_top { border-bottom-style: double !important; border-bottom-width: 6px !important; border-bottom-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_sourcenotes { color: #333333 !important; background-color: #FFFFFF !important; border-bottom-style: none !important; border-bottom-width: 2px !important; border-bottom-color: #D3D3D3 !important; border-left-style: none !important; border-left-width: 2px !important; border-left-color: #D3D3D3 !important; border-right-style: none !important; border-right-width: 2px !important; border-right-color: #D3D3D3 !important; }
+ #wlxoxwixkf .gt_sourcenote { font-size: 90% !important; padding-top: 4px !important; padding-bottom: 4px !important; padding-left: 5px !important; padding-right: 5px !important; text-align: left !important; }
+ #wlxoxwixkf .gt_left { text-align: left !important; }
+ #wlxoxwixkf .gt_center { text-align: center !important; }
+ #wlxoxwixkf .gt_right { text-align: right !important; font-variant-numeric: tabular-nums !important; }
+ #wlxoxwixkf .gt_font_normal { font-weight: normal !important; }
+ #wlxoxwixkf .gt_font_bold { font-weight: bold !important; }
+ #wlxoxwixkf .gt_font_italic { font-style: italic !important; }
+ #wlxoxwixkf .gt_super { font-size: 65% !important; }
+ #wlxoxwixkf .gt_footnote_marks { font-size: 75% !important; vertical-align: 0.4em !important; position: initial !important; }
+ #wlxoxwixkf .gt_asterisk { font-size: 100% !important; vertical-align: 0 !important; }
+ 
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th colspan="2" id="ln_salario_real_adm" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">ln_salario_real_adm</span></th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">(1)</th>
+<th id="1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">(2)</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="3" class="gt_group_heading" data-quarto-table-cell-role="th">coef</th>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">triple_did</th>
+<td class="gt_row gt_center">-0.016<br>
+(0.008)</td>
+<td class="gt_row gt_center">0.006<br>
+(0.010)</td>
+</tr>
+<tr class="odd">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">post_alta_exp</th>
+<td class="gt_row gt_center">0.008<br>
+(0.008)</td>
+<td class="gt_row gt_center">-0.005<br>
+(0.009)</td>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">post_alta_conect</th>
+<td class="gt_row gt_center">0.017*<br>
+(0.008)</td>
+<td class="gt_row gt_center">-0.015*<br>
+(0.007)</td>
+</tr>
+<tr class="odd">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">alta_exp_alta_conect</th>
+<td class="gt_row gt_center">0.037***<br>
+(0.010)</td>
+<td class="gt_row gt_center">0.034***<br>
+(0.010)</td>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">trend_exp_conect</th>
+<td class="gt_row gt_center"></td>
+<td class="gt_row gt_center">-0.001<br>
+(0.000)</td>
+</tr>
+<tr class="odd">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">trend_exp</th>
+<td class="gt_row gt_center"></td>
+<td class="gt_row gt_center">0.000<br>
+(0.000)</td>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">trend_conect</th>
+<td class="gt_row gt_center"></td>
+<td class="gt_row gt_center">0.001*<br>
+(0.000)</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" class="gt_group_heading" data-quarto-table-cell-role="th">fe</th>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">uf_periodo</th>
+<td class="gt_row gt_center">x</td>
+<td class="gt_row gt_center">x</td>
+</tr>
+<tr class="odd">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">cbo_4d</th>
+<td class="gt_row gt_center">x</td>
+<td class="gt_row gt_center">x</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="3" class="gt_group_heading" data-quarto-table-cell-role="th">stats</th>
+</tr>
+<tr class="odd">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">Observations</th>
+<td class="gt_row gt_center">5534808</td>
+<td class="gt_row gt_center">5534808</td>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">S.E. type</th>
+<td class="gt_row gt_center">by: id_municipio</td>
+<td class="gt_row gt_center">by: id_municipio</td>
+</tr>
+<tr class="odd">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">R<sup>2</sup></th>
+<td class="gt_row gt_center">0.969</td>
+<td class="gt_row gt_center">0.969</td>
+</tr>
+<tr class="even">
+<th class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th">R<sup>2</sup> Within</th>
+<td class="gt_row gt_center">0.000</td>
+<td class="gt_row gt_center">0.000</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="odd">
+<td colspan="3" class="gt_sourcenote">Significance levels: * p &lt; 0.05, ** p &lt; 0.01, *** p &lt; 0.001. Format of coefficient cell: Coefficient (Std. Error)</td>
+</tr>
+</tfoot>
+
+</table>
+
+
+</div>
+</div>
+</div>
+</section>
+<section id="proxies-alternativos-de-conectividade-caminho-2" class="level3" data-number="0.10">
+<h3 data-number="0.10" class="anchored" data-anchor-id="proxies-alternativos-de-conectividade-caminho-2"><span class="header-section-number">0.10</span> 8. Proxies alternativos de conectividade (Caminho 2)</h3>
+<p>Testar quatro proxies além da mediana de penetração: (1) extremos Q75 vs Q25, (2) % fibra óptica, (3) tratamento contínuo (dose-resposta), (4) apenas capitais. Para cada um, rodar Triple-DiD e placebo temporal (Dez/2021). Se algum proxy passar no placebo, sugere que o problema está na definição de conectividade.</p>
+<p><strong>Nota:</strong> Rode as células 8a a 8g em sequência. Com <code>USE_CACHE_3B = True</code>, cada célula carrega só a amostra necessária do cache e libera memória ao final.</p>
+<div id="cell-20" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8a — Preparação e gravação do cache (Proxies)</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Garantir placebo da seção 6; se não rodou, calcula aqui</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    _ <span class="op">=</span> m_placebo.pvalue()</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">NameError</span>:</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"post_placebo"</span>] <span class="op">=</span> ((df[<span class="st">"ano"</span>] <span class="op">==</span> <span class="dv">2021</span>) <span class="op">&amp;</span> (df[<span class="st">"mes"</span>] <span class="op">&gt;=</span> <span class="dv">12</span>)) <span class="op">|</span> (df[<span class="st">"ano"</span>] <span class="op">&gt;</span> <span class="dv">2021</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"triple_did_placebo"</span>] <span class="op">=</span> df[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"alta_conectividade"</span>]</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"post_alta_exp_placebo"</span>] <span class="op">=</span> df[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df[<span class="st">"alta_exp"</span>]</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    m_placebo <span class="op">=</span> pf.feols(<span class="st">"ln_salario_real_adm ~ triple_did_placebo + post_alta_exp_placebo | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>df.loc[df[outcome].notna()], vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Variáveis de dose e capital</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>exp_col <span class="op">=</span> <span class="st">"ilo_exposure_score"</span> <span class="cf">if</span> <span class="st">"ilo_exposure_score"</span> <span class="kw">in</span> df.columns <span class="cf">else</span> <span class="st">"alta_exp"</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"dose_triple"</span>] <span class="op">=</span> df[<span class="st">"penetracao_bl"</span>] <span class="op">*</span> (df[exp_col] <span class="cf">if</span> exp_col <span class="op">==</span> <span class="st">"ilo_exposure_score"</span> <span class="cf">else</span> df[exp_col].astype(<span class="bu">float</span>)) <span class="op">*</span> df[<span class="st">"post"</span>]</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"dose_exp_post"</span>] <span class="op">=</span> (df[exp_col].astype(<span class="bu">float</span>) <span class="cf">if</span> exp_col <span class="op">==</span> <span class="st">"alta_exp"</span> <span class="cf">else</span> df[exp_col]) <span class="op">*</span> df[<span class="st">"post"</span>]</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"dose_conect_post"</span>] <span class="op">=</span> df[<span class="st">"penetracao_bl"</span>] <span class="op">*</span> df[<span class="st">"post"</span>]</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"dose_exp_conect"</span>] <span class="op">=</span> (df[exp_col].astype(<span class="bu">float</span>) <span class="cf">if</span> exp_col <span class="op">==</span> <span class="st">"alta_exp"</span> <span class="cf">else</span> df[exp_col]) <span class="op">*</span> df[<span class="st">"penetracao_bl"</span>]</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"capital"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"triple_did_capital"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"capital"</span>]</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"post_capital"</span>] <span class="op">=</span> df[<span class="st">"post"</span>] <span class="op">*</span> df[<span class="st">"capital"</span>]</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">"alta_exp_capital"</span>] <span class="op">=</span> df[<span class="st">"alta_exp"</span>] <span class="op">*</span> df[<span class="st">"capital"</span>]</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Amostra de regressão</span></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"8a: Preparando amostra de regressão…"</span>)</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>df_reg <span class="op">=</span> df.loc[df[outcome].notna()].copy()</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Amostra extremos Q25/Q75</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>q25, q75 <span class="op">=</span> df[<span class="st">"penetracao_bl"</span>].quantile(<span class="fl">0.25</span>), df[<span class="st">"penetracao_bl"</span>].quantile(<span class="fl">0.75</span>)</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>df_extremos <span class="op">=</span> df[(df[<span class="st">"penetracao_bl"</span>] <span class="op">&lt;=</span> q25) <span class="op">|</span> (df[<span class="st">"penetracao_bl"</span>] <span class="op">&gt;=</span> q75)].copy()</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"alta_conect_extremo"</span>] <span class="op">=</span> (df_extremos[<span class="st">"penetracao_bl"</span>] <span class="op">&gt;=</span> q75).astype(<span class="bu">int</span>)</span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"triple_did_extremo"</span>] <span class="op">=</span> df_extremos[<span class="st">"post"</span>] <span class="op">*</span> df_extremos[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_extremos[<span class="st">"alta_conect_extremo"</span>]</span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"post_alta_conect_ext"</span>] <span class="op">=</span> df_extremos[<span class="st">"post"</span>] <span class="op">*</span> df_extremos[<span class="st">"alta_conect_extremo"</span>]</span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"alta_exp_alta_conect_ext"</span>] <span class="op">=</span> df_extremos[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_extremos[<span class="st">"alta_conect_extremo"</span>]</span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"post_placebo"</span>] <span class="op">=</span> ((df_extremos[<span class="st">"ano"</span>] <span class="op">==</span> <span class="dv">2021</span>) <span class="op">&amp;</span> (df_extremos[<span class="st">"mes"</span>] <span class="op">&gt;=</span> <span class="dv">12</span>)) <span class="op">|</span> (df_extremos[<span class="st">"ano"</span>] <span class="op">&gt;</span> <span class="dv">2021</span>)</span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"triple_placebo_ext"</span>] <span class="op">=</span> df_extremos[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_extremos[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_extremos[<span class="st">"alta_conect_extremo"</span>]</span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"post_placebo_alta_exp"</span>] <span class="op">=</span> df_extremos[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_extremos[<span class="st">"alta_exp"</span>]</span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>df_extremos[<span class="st">"post_placebo_alta_conect_ext"</span>] <span class="op">=</span> df_extremos[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_extremos[<span class="st">"alta_conect_extremo"</span>]</span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a>df_ext <span class="op">=</span> df_extremos.loc[df_extremos[outcome].notna()].copy()</span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a>    df_reg.to_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a>    df_ext.to_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_ext.parquet"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (CACHE_DIR <span class="op">/</span> <span class="st">"resultados_proxy.csv"</span>).exists():</span>
+<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a>        (CACHE_DIR <span class="op">/</span> <span class="st">"resultados_proxy.csv"</span>).unlink()</span>
+<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Cache salvo em"</span>, CACHE_DIR.resolve())</span>
+<span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_reg, df_extremos, df_ext</span>
+<span id="cb17-48"><a href="#cb17-48" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"8a concluído. Memória liberada."</span>)</span>
+<span id="cb17-49"><a href="#cb17-49" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb17-50"><a href="#cb17-50" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"8a concluído (sem cache). df_reg e df_ext em memória para 8b–8f."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8a: Preparando amostra de regressão…
+Cache salvo em /Users/manebrasil/Documents/Projects/Dissetação Mestrado/notebook/data/cache
+8a concluído. Memória liberada.</code></pre>
+</div>
+</div>
+<div id="cell-21" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8b — Proxy Original (mediana)</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>RESULTADOS_PROXY_CSV <span class="op">=</span> CACHE_DIR <span class="op">/</span> <span class="st">"resultados_proxy.csv"</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B <span class="kw">and</span> (CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>).exists():</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    df_reg <span class="op">=</span> pd.read_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"df_reg"</span> <span class="kw">not</span> <span class="kw">in</span> <span class="bu">dir</span>():</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">"Rode a célula 8a antes."</span>)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="co"># m_placebo: do escopo (seção 6) ou do cache</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    pval_placebo <span class="op">=</span> m_placebo.pvalue().get(<span class="st">"triple_did_placebo"</span>)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">NameError</span>:</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> json</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(CACHE_DIR <span class="op">/</span> <span class="st">"placebo_secao6.json"</span>) <span class="im">as</span> f:</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>        pval_placebo <span class="op">=</span> json.load(f)[<span class="st">"triple_did_placebo"</span>][<span class="st">"pval"</span>]</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>formula_orig <span class="op">=</span> <span class="st">"ln_salario_real_adm ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>m_orig <span class="op">=</span> pf.feols(formula_orig, data<span class="op">=</span>df_reg, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"Original (mediana)"</span>, <span class="st">"coef"</span>: m_orig.coef().get(<span class="st">"triple_did"</span>), <span class="st">"se"</span>: m_orig.se().get(<span class="st">"triple_did"</span>), <span class="st">"pval"</span>: m_orig.pvalue().get(<span class="st">"triple_did"</span>), <span class="st">"placebo_pval"</span>: pval_placebo}</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([row]).to_csv(RESULTADOS_PROXY_CSV, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_reg</span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"8b concluído."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8b concluído.</code></pre>
+</div>
+</div>
+<div id="cell-22" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8c — Proxy Extremos (Q75/Q25)</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B <span class="kw">and</span> (CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_ext.parquet"</span>).exists():</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    df_ext <span class="op">=</span> pd.read_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_ext.parquet"</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"df_ext"</span> <span class="kw">not</span> <span class="kw">in</span> <span class="bu">dir</span>():</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">"Rode a célula 8a antes."</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>formula_ext <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ triple_did_extremo + post_alta_exp + post_alta_conect_ext + alta_exp_alta_conect_ext | cbo_4d + uf_periodo"</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>m_ext <span class="op">=</span> pf.feols(formula_ext, data<span class="op">=</span>df_ext, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>m_placebo_ext <span class="op">=</span> pf.feols(<span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ triple_placebo_ext + post_placebo_alta_exp + post_placebo_alta_conect_ext + alta_exp_alta_conect_ext | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>df_ext, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>pval_placebo_ext <span class="op">=</span> m_placebo_ext.pvalue().get(<span class="st">"triple_placebo_ext"</span>, np.nan)</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"Extremos Q75/Q25"</span>, <span class="st">"coef"</span>: m_ext.coef().get(<span class="st">"triple_did_extremo"</span>), <span class="st">"se"</span>: m_ext.se().get(<span class="st">"triple_did_extremo"</span>), <span class="st">"pval"</span>: m_ext.pvalue().get(<span class="st">"triple_did_extremo"</span>), <span class="st">"placebo_pval"</span>: pval_placebo_ext}</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([row]).to_csv(RESULTADOS_PROXY_CSV, mode<span class="op">=</span><span class="st">"a"</span>, header<span class="op">=</span><span class="va">False</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_ext</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"8c concluído."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8c concluído.</code></pre>
+</div>
+</div>
+<div id="cell-23" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8d — Proxy % Fibra (requer painel v2)</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B <span class="kw">and</span> (CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>).exists():</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    df_reg <span class="op">=</span> pd.read_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"df_reg"</span> <span class="kw">not</span> <span class="kw">in</span> <span class="bu">dir</span>():</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">"Rode a célula 8a antes."</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"triple_did_fibra"</span> <span class="kw">in</span> df_reg.columns:</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    df_reg[<span class="st">"triple_placebo_fibra"</span>] <span class="op">=</span> df_reg[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_reg[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_reg[<span class="st">"alta_fibra"</span>]</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>    df_reg[<span class="st">"post_placebo_alta_fibra"</span>] <span class="op">=</span> df_reg[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_reg[<span class="st">"alta_fibra"</span>]</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>    formula_fibra <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ triple_did_fibra + post_alta_exp + post_alta_fibra + alta_exp_alta_fibra | cbo_4d + uf_periodo"</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>    m_fibra <span class="op">=</span> pf.feols(formula_fibra, data<span class="op">=</span>df_reg, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>    m_pl_fibra <span class="op">=</span> pf.feols(<span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ triple_placebo_fibra + post_alta_exp_placebo + post_placebo_alta_fibra + alta_exp_alta_fibra | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>df_reg, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"</span><span class="sc">% F</span><span class="st">ibra"</span>, <span class="st">"coef"</span>: m_fibra.coef().get(<span class="st">"triple_did_fibra"</span>), <span class="st">"se"</span>: m_fibra.se().get(<span class="st">"triple_did_fibra"</span>), <span class="st">"pval"</span>: m_fibra.pvalue().get(<span class="st">"triple_did_fibra"</span>), <span class="st">"placebo_pval"</span>: m_pl_fibra.pvalue().get(<span class="st">"triple_placebo_fibra"</span>)}</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"</span><span class="sc">% F</span><span class="st">ibra"</span>, <span class="st">"coef"</span>: np.nan, <span class="st">"se"</span>: np.nan, <span class="st">"pval"</span>: np.nan, <span class="st">"placebo_pval"</span>: np.nan}</span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([row]).to_csv(RESULTADOS_PROXY_CSV, mode<span class="op">=</span><span class="st">"a"</span>, header<span class="op">=</span><span class="va">False</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_reg</span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"8d concluído."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/feols_.py:2847: UserWarning: 
+            3 variables dropped due to multicollinearity.
+            The following variables are dropped: ['triple_did_fibra', 'post_alta_fibra', 'alta_exp_alta_fibra'].
+            
+  warnings.warn(
+/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/feols_.py:2847: UserWarning: 
+            3 variables dropped due to multicollinearity.
+            The following variables are dropped: ['triple_placebo_fibra', 'post_placebo_alta_fibra', 'alta_exp_alta_fibra'].
+            
+  warnings.warn(</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8d concluído.</code></pre>
+</div>
+</div>
+<div id="cell-24" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8e — Proxy Contínuo (dose-resposta)</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B <span class="kw">and</span> (CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>).exists():</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    df_reg <span class="op">=</span> pd.read_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"df_reg"</span> <span class="kw">not</span> <span class="kw">in</span> <span class="bu">dir</span>():</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">"Rode a célula 8a antes."</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>formula_cont <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ dose_triple + dose_exp_post + dose_conect_post + dose_exp_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>m_cont <span class="op">=</span> pf.feols(formula_cont, data<span class="op">=</span>df_reg, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"Contínuo"</span>, <span class="st">"coef"</span>: m_cont.coef().get(<span class="st">"dose_triple"</span>), <span class="st">"se"</span>: m_cont.se().get(<span class="st">"dose_triple"</span>), <span class="st">"pval"</span>: m_cont.pvalue().get(<span class="st">"dose_triple"</span>), <span class="st">"placebo_pval"</span>: np.nan}</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([row]).to_csv(RESULTADOS_PROXY_CSV, mode<span class="op">=</span><span class="st">"a"</span>, header<span class="op">=</span><span class="va">False</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_reg</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"8e concluído."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8e concluído.</code></pre>
+</div>
+</div>
+<div id="cell-25" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8f — Proxy Capitais (requer painel v2)</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> <span class="st">"ln_salario_real_adm"</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B <span class="kw">and</span> (CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>).exists():</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    df_reg <span class="op">=</span> pd.read_parquet(CACHE_DIR <span class="op">/</span> <span class="st">"painel_3b_df_reg.parquet"</span>)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"df_reg"</span> <span class="kw">not</span> <span class="kw">in</span> <span class="bu">dir</span>():</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">"Rode a célula 8a antes."</span>)</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"capital"</span> <span class="kw">in</span> df_reg.columns:</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>        formula_cap <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>outcome<span class="sc">}</span><span class="ss"> ~ triple_did_capital + post_alta_exp + post_capital + alta_exp_capital | cbo_4d + uf_periodo"</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>        m_cap <span class="op">=</span> pf.feols(formula_cap, data<span class="op">=</span>df_reg, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>        row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"Capitais"</span>, <span class="st">"coef"</span>: m_cap.coef().get(<span class="st">"triple_did_capital"</span>), <span class="st">"se"</span>: m_cap.se().get(<span class="st">"triple_did_capital"</span>), <span class="st">"pval"</span>: m_cap.pvalue().get(<span class="st">"triple_did_capital"</span>), <span class="st">"placebo_pval"</span>: np.nan}</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span>:</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>        row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"Capitais"</span>, <span class="st">"coef"</span>: np.nan, <span class="st">"se"</span>: np.nan, <span class="st">"pval"</span>: np.nan, <span class="st">"placebo_pval"</span>: np.nan}</span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> {<span class="st">"proxy"</span>: <span class="st">"Capitais"</span>, <span class="st">"coef"</span>: np.nan, <span class="st">"se"</span>: np.nan, <span class="st">"pval"</span>: np.nan, <span class="st">"placebo_pval"</span>: np.nan}</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([row]).to_csv(RESULTADOS_PROXY_CSV, mode<span class="op">=</span><span class="st">"a"</span>, header<span class="op">=</span><span class="va">False</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_reg</span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"8f concluído."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8f concluído.</code></pre>
+</div>
+</div>
+<div id="cell-26" class="cell" data-execution_count="17">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.8g — Montagem da tabela</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>RESULTADOS_PROXY_CSV <span class="op">=</span> CACHE_DIR <span class="op">/</span> <span class="st">"resultados_proxy.csv"</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> RESULTADOS_PROXY_CSV.exists():</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Rode as células 8b–8f antes para gerar resultados_proxy.csv"</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    tab_proxy <span class="op">=</span> pd.read_csv(RESULTADOS_PROXY_CSV)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>    tab_proxy[<span class="st">"sig"</span>] <span class="op">=</span> tab_proxy[<span class="st">"pval"</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> p: <span class="st">"***"</span> <span class="cf">if</span> p <span class="op">&lt;</span> <span class="fl">0.01</span> <span class="cf">else</span> (<span class="st">"**"</span> <span class="cf">if</span> p <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="cf">else</span> (<span class="st">"*"</span> <span class="cf">if</span> p <span class="op">&lt;</span> <span class="fl">0.1</span> <span class="cf">else</span> <span class="st">""</span>)))</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Tabela comparativa — Triple-DiD por proxy de conectividade"</span>)</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(tab_proxy.to_string())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tabela comparativa — Triple-DiD por proxy de conectividade
+                proxy      coef        se          pval  placebo_pval  sig
+0  Original (mediana) -0.015759  0.008346  5.944694e-02      0.000057    *
+1    Extremos Q75/Q25 -0.021561  0.007295  3.322350e-03      0.017556  ***
+2             % Fibra       NaN       NaN           NaN           NaN     
+3            Contínuo -0.058241  0.011591  6.506810e-07           NaN  ***
+4            Capitais -0.113379  0.016465  1.345479e-11           NaN  ***</code></pre>
+</div>
+</div>
+</section>
+<section id="decomposição-etária-do-triple-did" class="level3" data-number="0.11">
+<h3 data-number="0.11" class="anchored" data-anchor-id="decomposição-etária-do-triple-did"><span class="header-section-number">0.11</span> 9. Decomposição etária do Triple-DiD</h3>
+<p>Rodar Triple-DiD para cada outcome por faixa etária (admissões e salário por jovem/intermediário/senior, share de jovens/seniores, razão salarial jovem/senior). Se a hipótese de compensação etária estiver correta: share_jovem ↓, share_senior ↑, ln_sal_real_jovem ↓, razao_sal_jovem_senior ↓.</p>
+<p><strong>Cache:</strong> Com <code>USE_CACHE_3B = True</code>, os resultados são salvos em <code>resultados_idade.csv</code>. Se o kernel cair ou você reexecutar a célula, os outcomes já calculados são carregados do cache e só os faltantes são estimados (um por vez, com menos memória).</p>
+<div id="cell-28" class="cell" data-execution_count="18">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.9 — Decomposição etária do Triple-DiD (com cache; reaproveita resultados anteriores)</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>outcomes_idade <span class="op">=</span> {</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Admissões jovens (log)"</span>: <span class="st">"ln_adm_jovem"</span>,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Admissões intermediários (log)"</span>: <span class="st">"ln_adm_intermediario"</span>,</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Admissões seniores (log)"</span>: <span class="st">"ln_adm_senior"</span>,</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Share jovens nas admissões"</span>: <span class="st">"share_jovem"</span>,</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Share seniores nas admissões"</span>: <span class="st">"share_senior"</span>,</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Salário real jovens (log)"</span>: <span class="st">"ln_sal_real_jovem"</span>,</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Salário real intermediários (log)"</span>: <span class="st">"ln_sal_real_intermediario"</span>,</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Salário real seniores (log)"</span>: <span class="st">"ln_sal_real_senior"</span>,</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Razão salarial jovem/senior"</span>: <span class="st">"razao_sal_jovem_senior"</span>,</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>CACHE_IDADE_CSV <span class="op">=</span> CACHE_DIR <span class="op">/</span> <span class="st">"resultados_idade.csv"</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>COLS_REGR <span class="op">=</span> [<span class="st">"triple_did"</span>, <span class="st">"post_alta_exp"</span>, <span class="st">"post_alta_conect"</span>, <span class="st">"alta_exp_alta_conect"</span>, <span class="st">"cbo_4d"</span>, <span class="st">"uf_periodo"</span>, <span class="st">"id_municipio"</span>]</span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>resultados_idade <span class="op">=</span> {}</span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> CACHE_IDADE_CSV.exists() <span class="kw">and</span> USE_CACHE_3B:</span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>    cache_df <span class="op">=</span> pd.read_csv(CACHE_IDADE_CSV)</span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _, r <span class="kw">in</span> cache_df.iterrows():</span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a>        resultados_idade[r[<span class="st">"outcome_name"</span>]] <span class="op">=</span> {<span class="st">"coef"</span>: r[<span class="st">"coef"</span>], <span class="st">"se"</span>: r[<span class="st">"se"</span>], <span class="st">"pval"</span>: r[<span class="st">"pval"</span>], <span class="st">"n"</span>: <span class="bu">int</span>(r[<span class="st">"n"</span>])}</span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Carregados </span><span class="sc">{</span><span class="bu">len</span>(resultados_idade)<span class="sc">}</span><span class="ss"> resultados do cache."</span>)</span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>formula_base <span class="op">=</span> <span class="st">"</span><span class="sc">{outcome}</span><span class="st"> ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> nome, outcome_var <span class="kw">in</span> outcomes_idade.items():</span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> nome <span class="kw">in</span> resultados_idade:</span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> outcome_var <span class="kw">not</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"SKIP </span><span class="sc">{</span>nome<span class="sc">}</span><span class="ss">: coluna </span><span class="sc">{</span>outcome_var<span class="sc">}</span><span class="ss"> não encontrada (rode 3a com painel v2)."</span>)</span>
+<span id="cb32-29"><a href="#cb32-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb32-30"><a href="#cb32-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Só as colunas necessárias para a regressão (reduz memória)</span></span>
+<span id="cb32-31"><a href="#cb32-31" aria-hidden="true" tabindex="-1"></a>    use_cols <span class="op">=</span> [outcome_var] <span class="op">+</span> [c <span class="cf">for</span> c <span class="kw">in</span> COLS_REGR <span class="cf">if</span> c <span class="kw">in</span> df.columns]</span>
+<span id="cb32-32"><a href="#cb32-32" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> df[outcome_var].notna()</span>
+<span id="cb32-33"><a href="#cb32-33" aria-hidden="true" tabindex="-1"></a>    df_valid <span class="op">=</span> df.loc[mask, use_cols].copy()</span>
+<span id="cb32-34"><a href="#cb32-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(df_valid) <span class="op">&lt;</span> <span class="dv">1000</span>:</span>
+<span id="cb32-35"><a href="#cb32-35" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"SKIP </span><span class="sc">{</span>nome<span class="sc">}</span><span class="ss">: apenas </span><span class="sc">{</span><span class="bu">len</span>(df_valid)<span class="sc">}</span><span class="ss"> obs válidas"</span>)</span>
+<span id="cb32-36"><a href="#cb32-36" aria-hidden="true" tabindex="-1"></a>        <span class="kw">del</span> df_valid</span>
+<span id="cb32-37"><a href="#cb32-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb32-38"><a href="#cb32-38" aria-hidden="true" tabindex="-1"></a>    formula <span class="op">=</span> formula_base.<span class="bu">format</span>(outcome<span class="op">=</span>outcome_var)</span>
+<span id="cb32-39"><a href="#cb32-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb32-40"><a href="#cb32-40" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> pf.feols(formula, data<span class="op">=</span>df_valid, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb32-41"><a href="#cb32-41" aria-hidden="true" tabindex="-1"></a>        coef <span class="op">=</span> <span class="bu">float</span>(model.coef().get(<span class="st">"triple_did"</span>))</span>
+<span id="cb32-42"><a href="#cb32-42" aria-hidden="true" tabindex="-1"></a>        se <span class="op">=</span> <span class="bu">float</span>(model.se().get(<span class="st">"triple_did"</span>))</span>
+<span id="cb32-43"><a href="#cb32-43" aria-hidden="true" tabindex="-1"></a>        pval <span class="op">=</span> <span class="bu">float</span>(model.pvalue().get(<span class="st">"triple_did"</span>))</span>
+<span id="cb32-44"><a href="#cb32-44" aria-hidden="true" tabindex="-1"></a>        n <span class="op">=</span> <span class="bu">len</span>(df_valid)</span>
+<span id="cb32-45"><a href="#cb32-45" aria-hidden="true" tabindex="-1"></a>        resultados_idade[nome] <span class="op">=</span> {<span class="st">"coef"</span>: coef, <span class="st">"se"</span>: se, <span class="st">"pval"</span>: pval, <span class="st">"n"</span>: n}</span>
+<span id="cb32-46"><a href="#cb32-46" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> USE_CACHE_3B:</span>
+<span id="cb32-47"><a href="#cb32-47" aria-hidden="true" tabindex="-1"></a>            pd.DataFrame([{<span class="st">"outcome_name"</span>: nome, <span class="st">"outcome_var"</span>: outcome_var, <span class="st">"coef"</span>: coef, <span class="st">"se"</span>: se, <span class="st">"pval"</span>: pval, <span class="st">"n"</span>: n}]).to_csv(CACHE_IDADE_CSV, mode<span class="op">=</span><span class="st">"a"</span>, header<span class="op">=</span><span class="kw">not</span> CACHE_IDADE_CSV.exists(), index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb32-48"><a href="#cb32-48" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"OK </span><span class="sc">{</span>nome<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb32-49"><a href="#cb32-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb32-50"><a href="#cb32-50" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"ERRO </span><span class="sc">{</span>nome<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb32-51"><a href="#cb32-51" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_valid</span>
+<span id="cb32-52"><a href="#cb32-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-53"><a href="#cb32-53" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> resultados_idade:</span>
+<span id="cb32-54"><a href="#cb32-54" aria-hidden="true" tabindex="-1"></a>    df_resultados_idade <span class="op">=</span> pd.DataFrame(resultados_idade).T</span>
+<span id="cb32-55"><a href="#cb32-55" aria-hidden="true" tabindex="-1"></a>    df_resultados_idade[<span class="st">"sig"</span>] <span class="op">=</span> df_resultados_idade[<span class="st">"pval"</span>].<span class="bu">apply</span>(</span>
+<span id="cb32-56"><a href="#cb32-56" aria-hidden="true" tabindex="-1"></a>        <span class="kw">lambda</span> p: <span class="st">"***"</span> <span class="cf">if</span> p <span class="op">&lt;</span> <span class="fl">0.01</span> <span class="cf">else</span> (<span class="st">"**"</span> <span class="cf">if</span> p <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="cf">else</span> (<span class="st">"*"</span> <span class="cf">if</span> p <span class="op">&lt;</span> <span class="fl">0.1</span> <span class="cf">else</span> <span class="st">""</span>))</span>
+<span id="cb32-57"><a href="#cb32-57" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb32-58"><a href="#cb32-58" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Triple-DiD por outcome etário (coef = triple_did):"</span>)</span>
+<span id="cb32-59"><a href="#cb32-59" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_resultados_idade.to_string())</span>
+<span id="cb32-60"><a href="#cb32-60" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb32-61"><a href="#cb32-61" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Nenhum outcome etário disponível. Execute o Notebook 3a e exporte o painel v2."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Carregados 9 resultados do cache.
+Triple-DiD por outcome etário (coef = triple_did):
+                                       coef        se          pval          n  sig
+Admissões jovens (log)            -0.330124  0.043301  8.659740e-14  5534808.0  ***
+Admissões intermediários (log)    -0.351799  0.050120  5.585532e-12  5534808.0  ***
+Admissões seniores (log)          -0.182257  0.027490  7.022161e-11  5534808.0  ***
+Share jovens nas admissões        -0.001168  0.005800  8.405146e-01  4404189.0     
+Share seniores nas admissões      -0.001866  0.002645  4.805814e-01  4404189.0     
+Salário real jovens (log)         -0.631805  0.076151  6.661338e-16  5534808.0  ***
+Salário real intermediários (log) -0.534896  0.076899  8.498313e-12  5534808.0  ***
+Salário real seniores (log)       -0.723624  0.116553  9.486867e-10  5534808.0  ***
+Razão salarial jovem/senior       -7.271724  8.598501  3.980303e-01  1391959.0     </code></pre>
+</div>
+</div>
+</section>
+<section id="modelo-reformulado-impacto-sobre-jovens" class="level3" data-number="0.12">
+<h3 data-number="0.12" class="anchored" data-anchor-id="modelo-reformulado-impacto-sobre-jovens"><span class="header-section-number">0.12</span> 10. Modelo reformulado: impacto sobre jovens</h3>
+<p>Hipótese: após o ChatGPT, a <strong>participação de jovens nas contratações</strong> (share_jovem) caiu mais em ocupações expostas à IA e em municípios conectados. Outcome principal: <strong>share_jovem</strong> = admissões de jovens (&lt;30) / total de admissões. Três especificações (pura, com tendência, com controles demográficos), placebo temporal e event study por conectividade.</p>
+<p><strong>Memória:</strong> A célula usa apenas as colunas necessárias em cada bloco e libera os DataFrames entre as etapas para evitar travamento.</p>
+<div id="cell-30" class="cell" data-execution_count="19">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Etapa 3b.10 — Modelo reformulado: share_jovem (DataFrames mínimos para reduzir memória)</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"share_jovem"</span> <span class="kw">not</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"share_jovem não disponível. Execute o Notebook 3a e exporte o painel v2."</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Colunas necessárias para as 3 especificações (evita cópia do painel inteiro)</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    cols_j <span class="op">=</span> [<span class="st">"share_jovem"</span>, <span class="st">"triple_did"</span>, <span class="st">"post_alta_exp"</span>, <span class="st">"post_alta_conect"</span>, <span class="st">"alta_exp_alta_conect"</span>, <span class="st">"alta_exp"</span>, <span class="st">"alta_conectividade"</span>, <span class="st">"cbo_4d"</span>, <span class="st">"uf_periodo"</span>, <span class="st">"id_municipio"</span>]</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"periodo"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>        cols_j.append(<span class="st">"periodo"</span>)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> c <span class="kw">in</span> [<span class="st">"pct_superior_adm"</span>, <span class="st">"pct_mulher_adm"</span>, <span class="st">"ln_pib_pc"</span>]:</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> c <span class="kw">in</span> df.columns:</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>            cols_j.append(c)</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>    cols_j <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_j <span class="cf">if</span> c <span class="kw">in</span> df.columns]</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>    df_j <span class="op">=</span> df.loc[df[<span class="st">"share_jovem"</span>].notna(), cols_j].copy()</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"periodo"</span> <span class="kw">in</span> df_j.columns <span class="kw">and</span> <span class="st">"trend_exp_conect"</span> <span class="kw">not</span> <span class="kw">in</span> df_j.columns:</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>        periodos_ordenados <span class="op">=</span> <span class="bu">sorted</span>(df_j[<span class="st">"periodo"</span>].unique())</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>        trend_map <span class="op">=</span> {p: i <span class="op">+</span> <span class="dv">1</span> <span class="cf">for</span> i, p <span class="kw">in</span> <span class="bu">enumerate</span>(periodos_ordenados)}</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>        df_j[<span class="st">"trend"</span>] <span class="op">=</span> df_j[<span class="st">"periodo"</span>].<span class="bu">map</span>(trend_map)</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>        df_j[<span class="st">"trend_exp_conect"</span>] <span class="op">=</span> df_j[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_j[<span class="st">"alta_conectividade"</span>] <span class="op">*</span> df_j[<span class="st">"trend"</span>]</span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>        df_j[<span class="st">"trend_exp"</span>] <span class="op">=</span> df_j[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_j[<span class="st">"trend"</span>]</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>        df_j[<span class="st">"trend_conect"</span>] <span class="op">=</span> df_j[<span class="st">"alta_conectividade"</span>] <span class="op">*</span> df_j[<span class="st">"trend"</span>]</span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>    formula_j1 <span class="op">=</span> <span class="st">"share_jovem ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>    m_jovem_1 <span class="op">=</span> pf.feols(formula_j1, data<span class="op">=</span>df_j, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>    formula_j2 <span class="op">=</span> <span class="st">"share_jovem ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect + trend_exp_conect + trend_exp + trend_conect | cbo_4d + uf_periodo"</span></span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a>    m_jovem_2 <span class="op">=</span> pf.feols(formula_j2, data<span class="op">=</span>df_j, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a>    controles <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> [<span class="st">"pct_superior_adm"</span>, <span class="st">"pct_mulher_adm"</span>, <span class="st">"ln_pib_pc"</span>] <span class="cf">if</span> c <span class="kw">in</span> df_j.columns]</span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>    formula_j3 <span class="op">=</span> <span class="st">"share_jovem ~ triple_did + post_alta_exp + post_alta_conect + alta_exp_alta_conect + trend_exp_conect + trend_exp + trend_conect + "</span> <span class="op">+</span> <span class="st">" + "</span>.join(controles) <span class="op">+</span> <span class="st">" | cbo_4d + uf_periodo"</span> <span class="cf">if</span> controles <span class="cf">else</span> formula_j2</span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>    m_jovem_3 <span class="op">=</span> pf.feols(formula_j3, data<span class="op">=</span>df_j.dropna(subset<span class="op">=</span>controles) <span class="cf">if</span> controles <span class="cf">else</span> df_j, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Três especificações — outcome: share_jovem"</span>)</span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a>    pf.etable([m_jovem_1, m_jovem_2, m_jovem_3])</span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_j</span>
+<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Placebo: só colunas necessárias</span></span>
+<span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a>    mask_pre <span class="op">=</span> (df[<span class="st">"ano"</span>] <span class="op">&lt;</span> <span class="dv">2022</span>) <span class="op">|</span> ((df[<span class="st">"ano"</span>] <span class="op">==</span> <span class="dv">2022</span>) <span class="op">&amp;</span> (df[<span class="st">"mes"</span>] <span class="op">&lt;</span> <span class="dv">11</span>)) <span class="cf">if</span> <span class="st">"ano"</span> <span class="kw">in</span> df.columns <span class="cf">else</span> (df[<span class="st">"periodo_dt"</span>] <span class="op">&lt;</span> pd.Timestamp(<span class="st">"2022-11-01"</span>)) <span class="cf">if</span> <span class="st">"periodo_dt"</span> <span class="kw">in</span> df.columns <span class="cf">else</span> pd.Series(<span class="va">False</span>, index<span class="op">=</span>df.index)</span>
+<span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a>    cols_pre <span class="op">=</span> [<span class="st">"share_jovem"</span>, <span class="st">"alta_exp"</span>, <span class="st">"alta_conectividade"</span>, <span class="st">"alta_exp_alta_conect"</span>, <span class="st">"cbo_4d"</span>, <span class="st">"uf_periodo"</span>, <span class="st">"id_municipio"</span>]</span>
+<span id="cb34-36"><a href="#cb34-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"ano"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb34-37"><a href="#cb34-37" aria-hidden="true" tabindex="-1"></a>        cols_pre.extend([<span class="st">"ano"</span>, <span class="st">"mes"</span>])</span>
+<span id="cb34-38"><a href="#cb34-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"periodo_dt"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb34-39"><a href="#cb34-39" aria-hidden="true" tabindex="-1"></a>        cols_pre.append(<span class="st">"periodo_dt"</span>)</span>
+<span id="cb34-40"><a href="#cb34-40" aria-hidden="true" tabindex="-1"></a>    cols_pre <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_pre <span class="cf">if</span> c <span class="kw">in</span> df.columns]</span>
+<span id="cb34-41"><a href="#cb34-41" aria-hidden="true" tabindex="-1"></a>    df_pre <span class="op">=</span> df.loc[mask_pre, cols_pre].copy()</span>
+<span id="cb34-42"><a href="#cb34-42" aria-hidden="true" tabindex="-1"></a>    df_pre <span class="op">=</span> df_pre.dropna(subset<span class="op">=</span>[<span class="st">"share_jovem"</span>])</span>
+<span id="cb34-43"><a href="#cb34-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"periodo_dt"</span> <span class="kw">not</span> <span class="kw">in</span> df_pre.columns <span class="kw">and</span> <span class="st">"ano"</span> <span class="kw">in</span> df_pre.columns:</span>
+<span id="cb34-44"><a href="#cb34-44" aria-hidden="true" tabindex="-1"></a>        df_pre[<span class="st">"periodo_dt"</span>] <span class="op">=</span> pd.to_datetime(df_pre[<span class="st">"ano"</span>].astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"-"</span> <span class="op">+</span> df_pre[<span class="st">"mes"</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">2</span>) <span class="op">+</span> <span class="st">"-01"</span>, errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
+<span id="cb34-45"><a href="#cb34-45" aria-hidden="true" tabindex="-1"></a>    df_pre[<span class="st">"post_placebo"</span>] <span class="op">=</span> (df_pre[<span class="st">"periodo_dt"</span>] <span class="op">&gt;=</span> pd.Timestamp(<span class="st">"2021-12-01"</span>)).astype(<span class="bu">int</span>) <span class="cf">if</span> <span class="st">"periodo_dt"</span> <span class="kw">in</span> df_pre.columns <span class="cf">else</span> ((df_pre[<span class="st">"ano"</span>] <span class="op">==</span> <span class="dv">2021</span>) <span class="op">&amp;</span> (df_pre[<span class="st">"mes"</span>] <span class="op">&gt;=</span> <span class="dv">12</span>)) <span class="op">|</span> (df_pre[<span class="st">"ano"</span>] <span class="op">&gt;</span> <span class="dv">2021</span>)</span>
+<span id="cb34-46"><a href="#cb34-46" aria-hidden="true" tabindex="-1"></a>    df_pre[<span class="st">"triple_placebo"</span>] <span class="op">=</span> df_pre[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_pre[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_pre[<span class="st">"alta_conectividade"</span>]</span>
+<span id="cb34-47"><a href="#cb34-47" aria-hidden="true" tabindex="-1"></a>    df_pre[<span class="st">"post_placebo_alta_exp"</span>] <span class="op">=</span> df_pre[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_pre[<span class="st">"alta_exp"</span>]</span>
+<span id="cb34-48"><a href="#cb34-48" aria-hidden="true" tabindex="-1"></a>    df_pre[<span class="st">"post_placebo_alta_conect"</span>] <span class="op">=</span> df_pre[<span class="st">"post_placebo"</span>].astype(<span class="bu">int</span>) <span class="op">*</span> df_pre[<span class="st">"alta_conectividade"</span>]</span>
+<span id="cb34-49"><a href="#cb34-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"alta_exp_alta_conect"</span> <span class="kw">not</span> <span class="kw">in</span> df_pre.columns:</span>
+<span id="cb34-50"><a href="#cb34-50" aria-hidden="true" tabindex="-1"></a>        df_pre[<span class="st">"alta_exp_alta_conect"</span>] <span class="op">=</span> df_pre[<span class="st">"alta_exp"</span>] <span class="op">*</span> df_pre[<span class="st">"alta_conectividade"</span>]</span>
+<span id="cb34-51"><a href="#cb34-51" aria-hidden="true" tabindex="-1"></a>    m_placebo_j <span class="op">=</span> pf.feols(<span class="st">"share_jovem ~ triple_placebo + post_placebo_alta_exp + post_placebo_alta_conect + alta_exp_alta_conect | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>df_pre, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb34-52"><a href="#cb34-52" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Placebo share_jovem (Dez/2021): coef = </span><span class="sc">{</span>m_placebo_j<span class="sc">.</span>coef()<span class="sc">.</span>get(<span class="st">'triple_placebo'</span>, np.nan)<span class="sc">:.4f}</span><span class="ss">, p = </span><span class="sc">{</span>m_placebo_j<span class="sc">.</span>pvalue()<span class="sc">.</span>get(<span class="st">'triple_placebo'</span>, np.nan)<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
+<span id="cb34-53"><a href="#cb34-53" aria-hidden="true" tabindex="-1"></a>    <span class="kw">del</span> df_pre</span>
+<span id="cb34-54"><a href="#cb34-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-55"><a href="#cb34-55" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Event study: só colunas necessárias; um grupo de conectividade por vez</span></span>
+<span id="cb34-56"><a href="#cb34-56" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"tempo_relativo_meses"</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb34-57"><a href="#cb34-57" aria-hidden="true" tabindex="-1"></a>        BIN_MIN, BIN_MAX, REF <span class="op">=</span> <span class="op">-</span><span class="dv">12</span>, <span class="dv">24</span>, <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb34-58"><a href="#cb34-58" aria-hidden="true" tabindex="-1"></a>        cols_es <span class="op">=</span> [<span class="st">"share_jovem"</span>, <span class="st">"tempo_relativo_meses"</span>, <span class="st">"alta_conectividade"</span>, <span class="st">"alta_exp"</span>, <span class="st">"cbo_4d"</span>, <span class="st">"uf_periodo"</span>, <span class="st">"id_municipio"</span>]</span>
+<span id="cb34-59"><a href="#cb34-59" aria-hidden="true" tabindex="-1"></a>        cols_es <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cols_es <span class="cf">if</span> c <span class="kw">in</span> df.columns]</span>
+<span id="cb34-60"><a href="#cb34-60" aria-hidden="true" tabindex="-1"></a>        df_es <span class="op">=</span> df.loc[df[<span class="st">"share_jovem"</span>].notna(), cols_es].copy()</span>
+<span id="cb34-61"><a href="#cb34-61" aria-hidden="true" tabindex="-1"></a>        df_es[<span class="st">"t_bin"</span>] <span class="op">=</span> df_es[<span class="st">"tempo_relativo_meses"</span>].clip(lower<span class="op">=</span>BIN_MIN, upper<span class="op">=</span>BIN_MAX)</span>
+<span id="cb34-62"><a href="#cb34-62" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> conn_val, label <span class="kw">in</span> [(<span class="dv">1</span>, <span class="st">"Alta"</span>), (<span class="dv">0</span>, <span class="st">"Baixa"</span>)]:</span>
+<span id="cb34-63"><a href="#cb34-63" aria-hidden="true" tabindex="-1"></a>            d <span class="op">=</span> df_es[df_es[<span class="st">"alta_conectividade"</span>] <span class="op">==</span> conn_val].copy()</span>
+<span id="cb34-64"><a href="#cb34-64" aria-hidden="true" tabindex="-1"></a>            ts <span class="op">=</span> [t <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">sorted</span>(d[<span class="st">"t_bin"</span>].unique()) <span class="cf">if</span> t <span class="op">!=</span> REF]</span>
+<span id="cb34-65"><a href="#cb34-65" aria-hidden="true" tabindex="-1"></a>            did_vars <span class="op">=</span> [<span class="ss">f"did_m</span><span class="sc">{</span><span class="op">-</span>t<span class="sc">}</span><span class="ss">"</span> <span class="cf">if</span> t <span class="op">&lt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="ss">f"did_</span><span class="sc">{</span>t<span class="sc">}</span><span class="ss">"</span> <span class="cf">for</span> t <span class="kw">in</span> ts]</span>
+<span id="cb34-66"><a href="#cb34-66" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> t, v <span class="kw">in</span> <span class="bu">zip</span>(ts, did_vars):</span>
+<span id="cb34-67"><a href="#cb34-67" aria-hidden="true" tabindex="-1"></a>                d[v] <span class="op">=</span> ((d[<span class="st">"t_bin"</span>] <span class="op">==</span> t) <span class="op">&amp;</span> (d[<span class="st">"alta_exp"</span>] <span class="op">==</span> <span class="dv">1</span>)).astype(<span class="bu">int</span>)</span>
+<span id="cb34-68"><a href="#cb34-68" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> did_vars:</span>
+<span id="cb34-69"><a href="#cb34-69" aria-hidden="true" tabindex="-1"></a>                m_es <span class="op">=</span> pf.feols(<span class="ss">f"share_jovem ~ </span><span class="sc">{</span><span class="st">' + '</span><span class="sc">.</span>join(did_vars)<span class="sc">}</span><span class="ss"> | cbo_4d + uf_periodo"</span>, data<span class="op">=</span>d, vcov<span class="op">=</span>VCOV_SPEC)</span>
+<span id="cb34-70"><a href="#cb34-70" aria-hidden="true" tabindex="-1"></a>                <span class="bu">print</span>(<span class="ss">f"Event study share_jovem — </span><span class="sc">{</span>label<span class="sc">}</span><span class="ss"> conect.: </span><span class="sc">{</span><span class="bu">len</span>(ts)<span class="sc">}</span><span class="ss"> coeficientes"</span>)</span>
+<span id="cb34-71"><a href="#cb34-71" aria-hidden="true" tabindex="-1"></a>            <span class="kw">del</span> d</span>
+<span id="cb34-72"><a href="#cb34-72" aria-hidden="true" tabindex="-1"></a>        <span class="kw">del</span> df_es</span>
+<span id="cb34-73"><a href="#cb34-73" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"3b.10 concluído."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/model_matrix_fixest_.py:215: UserWarning: 1 singleton fixed effect(s) detected. These observations are dropped from the model.
+  warnings.warn(
+/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/model_matrix_fixest_.py:215: UserWarning: 1 singleton fixed effect(s) detected. These observations are dropped from the model.
+  warnings.warn(
+/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/model_matrix_fixest_.py:215: UserWarning: 1 singleton fixed effect(s) detected. These observations are dropped from the model.
+  warnings.warn(</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Três especificações — outcome: share_jovem</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/model_matrix_fixest_.py:215: UserWarning: 3 singleton fixed effect(s) detected. These observations are dropped from the model.
+  warnings.warn(</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Placebo share_jovem (Dez/2021): coef = -0.0064, p = 0.3391</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/model_matrix_fixest_.py:215: UserWarning: 1 singleton fixed effect(s) detected. These observations are dropped from the model.
+  warnings.warn(</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Event study share_jovem — Alta conect.: 36 coeficientes</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/lib/python3.10/site-packages/pyfixest/estimation/model_matrix_fixest_.py:215: UserWarning: 6 singleton fixed effect(s) detected. These observations are dropped from the model.
+  warnings.warn(</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Event study share_jovem — Baixa conect.: 36 coeficientes
+3b.10 concluído.</code></pre>
+</div>
+</div>
+</section>
+<section id="verificação-metodológica-conferência-com-o-plano-etapa-3" class="level3" data-number="0.13">
+<h3 data-number="0.13" class="anchored" data-anchor-id="verificação-metodológica-conferência-com-o-plano-etapa-3"><span class="header-section-number">0.13</span> Verificação metodológica (conferência com o plano Etapa 3)</h3>
 <ul>
 <li><strong>β₇ (triple_did):</strong> Interpretar como a diferença do efeito da IA entre municípios de alta e baixa conectividade. β₇ &lt; 0 em salário real = efeito mais negativo onde a adoção de IA é viável.</li>
 <li><strong>Conectividade pré-tratamento:</strong> Medida Jan–Out/2022 para evitar endogeneidade.</li>

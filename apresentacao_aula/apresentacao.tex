@@ -1,0 +1,657 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\definecolor{DeepTeal}{HTML}{20393D}
+\setbeamercolor{frametitle}{fg=white,bg=DeepTeal}
+\setbeamerfont{frametitle}{series=\bfseries,size=\Large}
+\setbeamertemplate{frametitle}{\nointerlineskip\begin{beamercolorbox}[wd=\paperwidth,ht=0.86cm,dp=0.23cm,leftskip=0.35cm]{frametitle}\insertframetitle\end{beamercolorbox}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamersize{text margin left=0.75cm,text margin right=0.75cm}
+\setbeamerfont{itemize/enumerate body}{size=\large}
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Exposição à Inteligência Artificial e Mercado de Trabalho no Brasil},
+  pdfauthor={Manoel Brasil},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Exposição à Inteligência Artificial e Mercado de Trabalho no
+Brasil}
+\subtitle{Amostra, estatísticas descritivas e estratégia empírica}
+\author{Manoel Brasil}
+\date{}
+\institute{Orientadora: Profa. Danyelle Karine Santos Branco\newline 14
+de Maio}
+
+\begin{document}
+\frame{\titlepage}
+
+
+\begin{frame}{Resumo da Apresentação}
+\phantomsection\label{resumo-da-apresentauxe7uxe3o}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Etapa 1:} PNAD Contínua + índice ILO --- quem está exposto à
+  IA no Brasil?
+\item
+  \textbf{Etapa 2:} Novo CAGED + DiD --- ocupações expostas mudaram após
+  o ChatGPT?
+\item
+  \textbf{Etapa 3:} CAGED municipal + Anatel --- conectividade amplifica
+  o efeito?
+\item
+  Para cada etapa: \textbf{amostra}, \textbf{estatísticas descritivas}
+  e, quando houver inferência causal, \textbf{modelo econométrico}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pergunta de Pesquisa e Desenho Geral}
+\phantomsection\label{pergunta-de-pesquisa-e-desenho-geral}
+\textbf{Pergunta:} a IA generativa já deixou sinais mensuráveis no
+mercado de trabalho brasileiro?
+
+O desenho empírico avança em três camadas:
+
+\begin{itemize}
+\tightlist
+\item
+  Primeiro, mapeio a exposição ocupacional à IA na força de trabalho
+  brasileira.
+\item
+  Depois, testo se ocupações mais expostas tiveram trajetória diferente
+  após o lançamento do ChatGPT.
+\item
+  Por fim, verifico se o efeito é maior onde a infraestrutura digital
+  facilita a difusão da tecnologia.
+\end{itemize}
+\end{frame}
+
+\section{Etapa 1: PNADc + ILO}\label{etapa-1-pnadc-ilo}
+
+\begin{frame}{Etapa 1 --- Construção da Base}
+\phantomsection\label{etapa-1-construuxe7uxe3o-da-base}
+\begin{center}
+\resizebox{0.78\textwidth}{!}{\input{tables/tab_amostra_etapa1.tex}}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+\tightlist
+\item
+  A unidade de observação é o trabalhador ocupado na PNADc.
+\item
+  O peso amostral transforma a amostra em população representada.
+\item
+  A variável central é o score ocupacional do ILO Global Index,
+  associado à ocupação COD por crosswalk hierárquico.
+\item
+  Tratamento de extremos: rendimento habitual limitado aos percentis
+  ponderados 1 e 99.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 1 --- Estatísticas Descritivas e Amostra}
+\phantomsection\label{etapa-1-estatuxedsticas-descritivas-e-amostra}
+\begin{center}
+\resizebox{0.96\textwidth}{!}{\input{tables/tab_descritiva_etapa1.tex}}
+\end{center}
+
+\vspace{0.15cm}
+
+\textbf{Leitura:} esta tabela resume o corte transversal usado para
+descrever a exposição à IA. As médias são ponderadas pelo peso da PNADc,
+portanto representam a força de trabalho ocupada, não apenas a amostra
+observada.
+\end{frame}
+
+\begin{frame}{Evidência Visual Preliminar --- Distribuição}
+\phantomsection\label{eviduxeancia-visual-preliminar-distribuiuxe7uxe3o}
+\begin{columns}[T]
+\begin{column}{0.58\linewidth}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{figures/fig_01_histograma_kde_exposicao.png}
+\end{column}
+
+\begin{column}{0.42\linewidth}
+\textbf{O que o gráfico mostra?}
+
+\begin{itemize}
+\tightlist
+\item
+  A distribuição é assimétrica: muita massa em baixa exposição.
+\item
+  Há uma cauda relevante de ocupações com exposição alta.
+\item
+  A média sozinha esconde a heterogeneidade entre tipos de ocupação.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Evidência Visual Preliminar --- Gradientes}
+\phantomsection\label{eviduxeancia-visual-preliminar-gradientes}
+\begin{columns}[T]
+\begin{column}{0.58\linewidth}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{figures/fig_01_populacao_por_gradiente_ilo.png}
+\end{column}
+
+\begin{column}{0.42\linewidth}
+\textbf{Como interpretar os gradientes?}
+
+\begin{itemize}
+\tightlist
+\item
+  Gradientes 1 e 2 indicam exposição parcial, mais próxima de
+  complementaridade.
+\item
+  Gradientes 3 e 4 indicam exposição alta e mais consistente entre
+  tarefas.
+\item
+  O grupo G3-G4 é a base conceitual para definir ocupações de alta
+  exposição nas etapas causais.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Evidência Visual Preliminar --- Perfil Demográfico}
+\phantomsection\label{eviduxeancia-visual-preliminar-perfil-demogruxe1fico}
+\begin{columns}[T]
+\begin{column}{0.6\linewidth}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{figures/fig_04_demograficos_exposicao_3grupos.png}
+\end{column}
+
+\begin{column}{0.4\linewidth}
+\textbf{Padrão substantivo}
+
+\begin{itemize}
+\tightlist
+\item
+  Mulheres, brancos, jovens e mais escolarizados aparecem mais em alta
+  exposição.
+\item
+  Esse padrão não é individual; reflete principalmente sorting
+  ocupacional.
+\item
+  A etapa 2 parte exatamente desse grupo de ocupações mais expostas.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Etapa 2: CAGED + ILO}\label{etapa-2-caged-ilo}
+
+\begin{frame}{Por que CAGED + Diferenças em Diferenças?}
+\phantomsection\label{por-que-caged-diferenuxe7as-em-diferenuxe7as}
+A etapa 1 é descritiva: mostra \textbf{quem está exposto}, mas não
+identifica efeito causal.
+
+A etapa 2 muda a pergunta:
+
+\begin{quote}
+Após o lançamento do ChatGPT, ocupações altamente expostas à IA tiveram
+mudanças diferenciais em salário ou volume de admissões?
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  O CAGED mede fluxos mensais do mercado formal.
+\item
+  O evento é o lançamento do ChatGPT em novembro de 2022.
+\item
+  O tratamento vem da exposição ocupacional medida pelo índice ILO.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 2 --- Ficha Técnica do Painel}
+\phantomsection\label{etapa-2-ficha-tuxe9cnica-do-painel}
+\begin{center}
+\resizebox{0.78\textwidth}{!}{\input{tables/tab_amostra_etapa2.tex}}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+\tightlist
+\item
+  Unidade da regressão: ocupação CBO 4 dígitos × mês.
+\item
+  As 32.988 células ocupação-mês resumem 198,8 milhões de movimentações
+  individuais do CAGED.
+\item
+  Tratamento de extremos: salários de admissão limitados aos percentis 1
+  e 99; logs recalculados após o ajuste.
+\item
+  Grupo tratado: ocupações no top 20\% do score ILO.
+\item
+  Grupo controle: demais ocupações.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 2 --- Estatísticas Descritivas dos Outcomes}
+\phantomsection\label{etapa-2-estatuxedsticas-descritivas-dos-outcomes}
+\begin{center}
+\resizebox{0.96\textwidth}{!}{\input{tables/tab_descritiva_etapa2.tex}}
+\end{center}
+
+\vspace{0.15cm}
+
+\textbf{Leitura:} as variáveis de quantidade medem fluxos de emprego; as
+variáveis salariais medem preço do trabalho no momento da admissão, a
+margem mais limpa para capturar mudanças recentes de demanda.
+\end{frame}
+
+\begin{frame}{Estratégia Empírica --- Modelo da Etapa 2}
+\phantomsection\label{estratuxe9gia-empuxedrica-modelo-da-etapa-2}
+\textbf{Equação de regressão}
+
+\[
+y_{ot} =
+\beta\,(\text{Pós}_t \times \text{AltaExp}_o)
++ \gamma X_{ot}
++ \alpha_o
++ \delta_t
++ \varepsilon_{ot}
+\]
+
+\vspace{0.3cm}
+
+\begin{itemize}
+\tightlist
+\item
+  \(o\) indexa ocupações CBO 4 dígitos.
+\item
+  \(t\) indexa meses.
+\item
+  A variação de interesse combina \textbf{antes/depois} do ChatGPT com
+  \textbf{alta/baixa exposição} ocupacional.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 2 --- Legenda Detalhada do Modelo}
+\phantomsection\label{etapa-2-legenda-detalhada-do-modelo}
+\begin{itemize}
+\tightlist
+\item
+  \(y_{ot}\) é o outcome da ocupação \(o\) no mês \(t\): log do salário
+  real, log das admissões, desligamentos ou composição das admissões.
+\item
+  \(\text{AltaExp}_o\) vale 1 para ocupações no top 20\% do score ILO.
+  Ela captura a diferença \textbf{transversal} entre ocupações mais e
+  menos expostas.
+\item
+  \(\text{Pós}_t\) vale 1 a partir de dezembro de 2022. Ela captura a
+  diferença \textbf{temporal} após o lançamento do ChatGPT.
+\item
+  \(\beta\) é o coeficiente de interesse: o efeito diferencial
+  pós-ChatGPT nas ocupações altamente expostas, sob tendências
+  paralelas.
+\item
+  \(X_{ot}\) inclui controles que mudam ao longo do tempo, como idade
+  média, participação feminina e participação com superior.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 2 --- Efeitos Fixos e Erros-Padrão}
+\phantomsection\label{etapa-2-efeitos-fixos-e-erros-padruxe3o}
+\begin{itemize}
+\tightlist
+\item
+  \(\alpha_o\) é o efeito fixo de ocupação. Ele absorve diferenças
+  permanentes entre ocupações, como prestígio, complexidade técnica e
+  nível salarial estrutural.
+\item
+  \(\delta_t\) é o efeito fixo de mês. Ele absorve choques comuns a todo
+  o mercado formal, como inflação, sazonalidade e ciclo macroeconômico.
+\item
+  \(\varepsilon_{ot}\) é o erro idiossincrático.
+\item
+  Os erros-padrão são clusterizados por CBO 4d, porque o tratamento
+  varia no nível da ocupação.
+\item
+  A hipótese central é: sem o ChatGPT, ocupações tratadas e controle
+  seguiriam trajetórias paralelas.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 2 --- Balanço Pré-Tratamento}
+\phantomsection\label{etapa-2-balanuxe7o-pruxe9-tratamento}
+\begin{center}
+\resizebox{0.90\textwidth}{!}{\input{tables/tab_balanco_etapa2.tex}}
+\end{center}
+
+\vspace{0.15cm}
+
+\textbf{Leitura:} as variáveis de fluxo são mais comparáveis no
+pré-tratamento. Salário, escolaridade e composição feminina são
+desbalanceados porque a própria exposição à IA está concentrada em
+ocupações \emph{white collar}. Os efeitos fixos de ocupação tratam
+diferenças permanentes.
+\end{frame}
+
+\section{Etapa 3: CAGED + Anatel}\label{etapa-3-caged-anatel}
+
+\begin{frame}{Por que Adicionar Conectividade Municipal?}
+\phantomsection\label{por-que-adicionar-conectividade-municipal}
+A IA generativa é uma tecnologia digital. Mesmo que duas ocupações
+tenham a mesma exposição técnica, a difusão pode ser maior onde há
+melhor infraestrutura de internet.
+
+A etapa 3 testa se o canal ocupacional da etapa 2 é amplificado em
+municípios com maior conectividade.
+
+\begin{itemize}
+\tightlist
+\item
+  Unidade: município × ocupação × mês.
+\item
+  Fonte de conectividade: indicadores municipais da Anatel.
+\item
+  Estratégia: diferença-em-diferenças-em-diferenças.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 3 --- Ficha Técnica do Painel Municipal}
+\phantomsection\label{etapa-3-ficha-tuxe9cnica-do-painel-municipal}
+\begin{center}
+\resizebox{0.82\textwidth}{!}{\input{tables/tab_amostra_etapa3.tex}}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+\tightlist
+\item
+  O painel municipal resume 161,9 milhões de movimentações em 5.534.808
+  células município-ocupação-mês.
+\item
+  Essa granularidade permite comparar ocupações semelhantes em ambientes
+  digitais diferentes.
+\item
+  Tratamento de extremos: salário nominal e salário real de admissão
+  limitados aos percentis 1 e 99.
+\item
+  Alta conectividade é definida antes do tratamento, evitando que o
+  próprio choque pós-2022 redefina o grupo.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 3 --- Estatísticas Descritivas}
+\phantomsection\label{etapa-3-estatuxedsticas-descritivas}
+\begin{center}
+\resizebox{0.96\textwidth}{!}{\input{tables/tab_descritiva_etapa3.tex}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Etapa 3 --- Conectividade e Amostra}
+\phantomsection\label{etapa-3-conectividade-e-amostra}
+\begin{center}
+\resizebox{0.82\textwidth}{!}{\input{tables/tab_split_conectividade_etapa3.tex}}
+\end{center}
+
+\vspace{0.15cm}
+
+\textbf{Leitura:} municípios de alta conectividade são estruturalmente
+diferentes. Por isso, a etapa 3 não compara apenas municípios conectados
+contra não conectados; ela usa a interação com exposição ocupacional e
+período pós-ChatGPT.
+\end{frame}
+
+\begin{frame}{Estratégia Empírica --- Modelo da Etapa 3}
+\phantomsection\label{estratuxe9gia-empuxedrica-modelo-da-etapa-3}
+\textbf{Equação Triple-DiD}
+
+\[
+\begin{aligned}
+y_{mot} =\;&
+\beta_1(\text{Pós}_t \times \text{AltaExp}_o)
++ \beta_2(\text{Pós}_t \times \text{AltaConect}_m) \\
+&+ \beta_3(\text{AltaExp}_o \times \text{AltaConect}_m)
++ \beta_4(\text{Pós}_t \times \text{AltaExp}_o \times \text{AltaConect}_m) \\
+&+ \gamma X_{mot} + \alpha_{mo} + \delta_t + \varepsilon_{mot}
+\end{aligned}
+\]
+
+\vspace{0.2cm}
+
+O foco é \(\beta_4\): o efeito adicional em ocupações expostas, no
+pós-ChatGPT, dentro de municípios mais conectados.
+\end{frame}
+
+\begin{frame}{Etapa 3 --- Legenda Detalhada do Triple-DiD}
+\phantomsection\label{etapa-3-legenda-detalhada-do-triple-did}
+\begin{itemize}
+\tightlist
+\item
+  \(m\) indexa municípios, \(o\) ocupações e \(t\) meses.
+\item
+  \(\text{AltaConect}_m\) vale 1 para municípios acima do ponto de corte
+  de conectividade no pré-tratamento.
+\item
+  \(\beta_1\) captura o canal ocupacional médio da etapa 2.
+\item
+  \(\beta_2\) captura mudanças pós-ChatGPT em municípios conectados para
+  todas as ocupações.
+\item
+  \(\beta_3\) captura diferenças estruturais entre ocupações expostas
+  localizadas em municípios conectados.
+\item
+  \(\beta_4\) isola a amplificação digital: exposição ocupacional alta
+  \textbf{mais} capacidade local de difusão da tecnologia.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etapa 3 --- Efeitos Fixos e Identificação}
+\phantomsection\label{etapa-3-efeitos-fixos-e-identificauxe7uxe3o}
+\begin{itemize}
+\tightlist
+\item
+  \(\alpha_{mo}\) é o efeito fixo de município × ocupação.
+\item
+  Ele compara a mesma ocupação dentro do mesmo município ao longo do
+  tempo.
+\item
+  Isso absorve diferenças permanentes, como estrutura produtiva local,
+  nível salarial local e composição ocupacional fixa.
+\item
+  \(\delta_t\) remove choques agregados comuns a todos os municípios e
+  ocupações.
+\item
+  A identificação vem da diferença relativa pós-ChatGPT entre ocupações
+  expostas e não expostas, em municípios com alta e baixa conectividade.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Encerramento}
+\phantomsection\label{encerramento}
+\textbf{Mensagem central da apresentação}
+
+\begin{itemize}
+\tightlist
+\item
+  A etapa 1 mostra a geografia social da exposição à IA no Brasil.
+\item
+  A etapa 2 transforma essa exposição em tratamento econométrico.
+\item
+  A etapa 3 testa o mecanismo de difusão: a infraestrutura digital pode
+  amplificar o choque.
+\item
+  As tabelas descritivas e de amostra são o elo entre dados brutos,
+  especificação e interpretação.
+\end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
