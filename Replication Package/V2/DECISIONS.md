@@ -161,19 +161,26 @@ This does not cross the preregistered 1 percentage point trimming threshold.
 The future dissertation text must disclose the direction and magnitude even
 though no tail months are removed.
 
-## 2026-07-26 — OPEN: PDET monthly adjusted-series reconciliation
+## 2026-07-26 — RESOLVED: PDET adjusted-series reconciliation
 
 The V1 MOV identity validates the parser, and the Base dos Dados FOR identity
 validates extraction, but neither test validates reassignment from declaration
-month to `competenciamov`. Checkpoint B therefore retains one declared
-pending item: compare V2 admissions, separations, and net balance month by
-month with the official PDET Novo CAGED series with adjustments.
+month to `competenciamov`. Checkpoint B therefore required a direct comparison
+of V2 admissions, separations, and net balance with the official adjusted PDET
+Novo CAGED series.
 
-Tasks 10-13 may proceed while this reconciliation is built. Task 14 may be
-executed technically, but its coefficients must not be interpreted, promoted,
-or copied to `COMPARACAO_V1_V2.md` until the PDET comparison is closed or every
-deviation has a documented sample restriction. A systematic one-month shift
-is a blocking reassignment bug.
+The frozen May 2026 PDET workbook, sheet `Tabela 5.1 - com ajustes`, covers all
+65 fact months from January 2021 through May 2026. Every V2 monthly admission,
+separation, and balance value is exactly identical to the official series:
+zero differing months, zero maximum absolute difference, and zero cumulative
+absolute difference for all three outcomes.
+
+As a direct reassignment diagnostic, shifting the official series one month
+backward or forward produces a total absolute discrepancy of 28,189,094,
+while the zero-shift comparison produces zero. The central
+`competenciamov` reassignment logic is therefore externally validated and no
+systematic one-month bug is present. The PDET gate is closed, so Task 14 may
+now be estimated and interpreted under the remaining preregistered gates.
 
 ## 2026-07-26 — National-panel wage bounds and new CBO coverage
 

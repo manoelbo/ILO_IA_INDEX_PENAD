@@ -1419,5 +1419,15 @@
     "series": 433,
     "sha256": "c505e489fc04e5f213836fea61939be7213385bbcadb350ae542a5af08e73aef",
     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/2021&dataFinal=31/05/2026"
+  },
+  "pdet/3-tabelas_Maio_de_2026.xlsx": {
+    "accessed_at": "2026-07-26T17:08:13.398022Z",
+    "bytes": 43063935,
+    "drive_file_id": "12DjeOFjIgeJNp-3OxslJqJNNmA1ViQMj",
+    "drive_folder": "https://drive.google.com/drive/folders/1F89h6odTPGIGMb9eDiJKCute9W89QmqN?usp=sharing",
+    "series": "Tabela 5.1 - com ajustes",
+    "sha256": "7250e35e8af6e12f2919b22057a0133781b1481a93242d3fa78fde41374c9f96",
+    "source_page": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/estatisticas-trabalho/novo-caged/2026/maio/pagina-inicial",
+    "url": "https://drive.usercontent.google.com/download?id=12DjeOFjIgeJNp-3OxslJqJNNmA1ViQMj&export=download&confirm=t"
   }
 }

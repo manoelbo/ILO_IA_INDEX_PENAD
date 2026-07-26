@@ -26,3 +26,22 @@ The plan requires this delta to be positive and on the order of 8%. The observed
 For each flow and month, the CSV decomposes the total delta as `MOV revision + FOR contribution + EXC contribution`, where the EXC contribution is negative.
 
 The optional live BigQuery comparison was not required for this local reconciliation. The frozen V1 extracts already provide the exact Base dos Dados MOV rows used by V1.
+
+## Official PDET adjusted-series validation
+
+The May 2026 official Novo CAGED workbook was frozen by SHA-256 and its
+`Tabela 5.1 - com ajustes` series was compared with the signed V2 movements
+for every fact month from January 2021 through May 2026.
+
+- Months compared: 65.
+- Months with any difference: 0.
+- Maximum and total absolute admission difference: 0.
+- Maximum and total absolute separation difference: 0.
+- Maximum and total absolute balance difference: 0.
+- Total absolute discrepancy after a one-month backward shift: 28,189,094.
+- Total absolute discrepancy after a one-month forward shift: 28,189,094.
+
+This exact match validates the new reassignment by `competenciamov`, which
+the V1 MOV identity and annual Base dos Dados FOR identity could not test.
+There is no systematic one-month shift. The Checkpoint B PDET pendency is
+closed before Task 14 interpretation.
