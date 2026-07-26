@@ -1364,6 +1364,18 @@
     "sha256": "e3f5317074d0cf48037e82f41fbec7199c5e9273689403c75f3af1ef3fe06d91",
     "url": "ftp://ftp.mtps.gov.br/pdet/microdados/NOVO%20CAGED/2026/202605/CAGEDMOV202605.7z"
   },
+  "cnae/cnae2.0_subclasses.zip": {
+    "accessed_at": "2026-07-26T16:55:36.742449Z",
+    "bytes": 296176,
+    "sha256": "27eb7be377d3c7fa46baeefc6f9e61ca8402f0de6e936025b0da29489a5f6424",
+    "url": "https://ftp.ibge.gov.br/Informacoes_Gerais_e_Referencia/Classificacoes/CNAE/cnae2.0_subclasses.zip"
+  },
+  "cnae/cnae_divisions.csv": {
+    "bytes": 8225,
+    "generated_at": "2026-07-26T16:55:36.742449Z",
+    "sha256": "93884cba51ca8ac7e9e6259a4d940ef7d3ec7fec24950526235467f8bc59e292",
+    "source": "cnae/cnae2.0_subclasses.zip"
+  },
   "crosswalk/Correspondência ISCO 08 a 88.xlsx": {
     "bytes": 48861,
     "frozen_at": "2026-07-26T16:33:29.443383Z",

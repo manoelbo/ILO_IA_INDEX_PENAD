@@ -189,3 +189,26 @@ from the 629-family frozen V1 treatment universe. It appears in five cells and
 has one signed movement in each. The family is preserved as `No score`, with
 `treated_main` missing and `included_main = false`. The 629 frozen treatment
 assignments remain unchanged; no live MTE query or inferred match was used.
+
+## 2026-07-26 — Sector-panel CNAE hierarchy and declared exception
+
+Task 13 freezes the official IBGE CNAE 2.0 structure by file hash and carries
+both subclass-derived division and section into the sector panel. The official
+dictionary contains 87 divisions in 21 sections. The sector aggregation
+reproduces every Task 12 CBO4-month admission and separation count exactly,
+with zero duplicate keys and zero missingness-rule violations.
+
+One administrative category is outside that dictionary:
+`secao = Z, subclasse = 9999999`. It occurs in 1,093 valid signed rows with a
+net signed weight of 1,047. This is a declared exception to the all-official
+CNAE-domain criterion. The records are preserved as the explicit
+`divisao = ZZ, cnae_status = undocumented_preserved` bucket and are never
+remapped to official section U or official division 99. Any sector model must
+exclude or separately disclose this bucket rather than assign it an invented
+economic meaning.
+
+The resulting panel has 6,124,959 CBO4-subclass-month cells. Of 85,043
+subclass-month cells, 80,087 (94.17%) contain both treated and control CBO
+families. The generated 279 MiB Parquet is retained as a hashed local
+replication artifact rather than committed as a Git blob; its SHA-256 and byte
+size are recorded in the Task 13 support report.

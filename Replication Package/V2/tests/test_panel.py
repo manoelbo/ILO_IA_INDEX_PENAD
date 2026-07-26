@@ -53,15 +53,15 @@ def test_national_panel_preserves_zero_flow_missingness(
     partition.mkdir(parents=True)
     movements = pd.DataFrame(
         [
-            ["111105", 1, 1, 1000.0, 20, "3", "9", "2"],
-            ["111105", 1, -1, 1000.0, 20, "3", "9", "2"],
-            ["111105", -1, 1, 2000.0, 40, "1", "7", "1"],
-            ["222205", 1, 1, 3000.0, 30, "3", "10", "3"],
-            ["222205", -1, 1, 4000.0, 35, "1", "8", "1"],
-            ["333305", 1, 1, 2500.0, 28, "1", "8", "1"],
-            ["000000", 1, 1, 5000.0, 30, "1", "9", "1"],
-            ["222205", 1, 1, 0.0, 30, "1", "9", "1"],
-            ["222205", 1, 1, 5000.0, 10, "1", "9", "1"],
+            ["111105", 1, 1, 1000.0, 20, "3", "9", "2", "A", "111301"],
+            ["111105", 1, -1, 1000.0, 20, "3", "9", "2", "A", "111301"],
+            ["111105", -1, 1, 2000.0, 40, "1", "7", "1", "A", "111301"],
+            ["222205", 1, 1, 3000.0, 30, "3", "10", "3", "C", "1011201"],
+            ["222205", -1, 1, 4000.0, 35, "1", "8", "1", "C", "1011201"],
+            ["333305", 1, 1, 2500.0, 28, "1", "8", "1", "Z", "9999999"],
+            ["000000", 1, 1, 5000.0, 30, "1", "9", "1", "A", "111301"],
+            ["222205", 1, 1, 0.0, 30, "1", "9", "1", "C", "1011201"],
+            ["222205", 1, 1, 5000.0, 10, "1", "9", "1", "C", "1011201"],
         ],
         columns=[
             "cbo2002ocupacao",
@@ -72,6 +72,8 @@ def test_national_panel_preserves_zero_flow_missingness(
             "sexo",
             "graudeinstrucao",
             "racacor",
+            "secao",
+            "subclasse",
         ],
     )
     movements.to_parquet(partition / "part.parquet", index=False)
@@ -114,6 +116,38 @@ def test_national_panel_preserves_zero_flow_missingness(
     assert metrics["new_unclassified_cbo_families"] == ["3333"]
     module.validate_national_panel(panel)
 
+    national_path = tmp_path / "national.parquet"
+    panel.to_parquet(national_path, index=False)
+    cnae = pd.DataFrame(
+        {
+            "divisao": ["01", "10"],
+            "secao": ["A", "C"],
+            "divisao_descricao": ["Agriculture", "Food manufacturing"],
+        }
+    )
+    sector_path = tmp_path / "sector.parquet"
+    coexistence_path = tmp_path / "coexistence.csv"
+    sector_metrics = module.build_sector_panel(
+        tmp_path / "movements" / "competenciamov=*" / "part.parquet",
+        ipca,
+        classification,
+        cnae,
+        national_path,
+        sector_path,
+        coexistence_path,
+        start_period=202101,
+        end_period=202101,
+        scratch_parent=tmp_path,
+    )
+    sector = pd.read_parquet(sector_path)
+
+    assert sector_metrics["national_count_divergences"] == 0
+    assert sector_metrics["undocumented_cnae_signed_weight"] == 1
+    assert set(sector["divisao"]) == {"01", "10", "ZZ"}
+    assert not sector.duplicated(
+        ["cbo_4d", "subclasse", "periodo_num"]
+    ).any()
+
 
 def test_panel_validation_rejects_wage_in_zero_flow_cell() -> None:
     module = load_panel_module()
@@ -138,3 +172,13 @@ def test_panel_validation_rejects_wage_in_zero_flow_cell() -> None:
 
     with pytest.raises(RuntimeError, match="zero-flow admission"):
         module.validate_national_panel(invalid)
+
+
+def test_frozen_cnae_dictionary_has_official_division_structure() -> None:
+    module = load_panel_module()
+
+    divisions = module.load_cnae_divisions(module.DEFAULT_CNAE_DICTIONARY)
+
+    assert len(divisions) == 87
+    assert divisions["secao"].nunique() == 21
+    assert divisions["divisao"].nunique() == 87

@@ -5,10 +5,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
 import math
 import os
 import tempfile
+import zipfile
 from collections.abc import Callable
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,6 +20,7 @@ import duckdb
 import numpy as np
 import pandas as pd
 import requests
+import xlrd
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -48,6 +51,35 @@ DEFAULT_SUPPORT = (
     / "reconciliation"
     / "painel_nacional_support.json"
 )
+DEFAULT_CNAE_RAW = (
+    PACKAGE_ROOT
+    / "data"
+    / "vintage"
+    / "cnae"
+    / "cnae2.0_subclasses.zip"
+)
+DEFAULT_CNAE_DICTIONARY = (
+    PACKAGE_ROOT
+    / "data"
+    / "vintage"
+    / "cnae"
+    / "cnae_divisions.csv"
+)
+DEFAULT_SECTOR_PANEL = (
+    PACKAGE_ROOT / "data" / "derived" / "painel_cbo_cnae.parquet"
+)
+DEFAULT_CNAE_MONTH_SUPPORT = (
+    PACKAGE_ROOT
+    / "results"
+    / "reconciliation"
+    / "cnae_month_treatment_support.csv"
+)
+DEFAULT_SECTOR_SUPPORT = (
+    PACKAGE_ROOT
+    / "results"
+    / "reconciliation"
+    / "painel_cbo_cnae_support.json"
+)
 DEFAULT_SCRATCH_PARENT = PACKAGE_ROOT / "data" / "interim"
 
 IPCA_SERIES = 433
@@ -58,6 +90,10 @@ IPCA_URL = (
 START_PERIOD = 202101
 END_PERIOD = 202605
 IPCA_BASE_PERIOD = "202412"
+CNAE_URL = (
+    "https://ftp.ibge.gov.br/Informacoes_Gerais_e_Referencia/"
+    "Classificacoes/CNAE/cnae2.0_subclasses.zip"
+)
 WAGE_MIN = 0.0
 WAGE_MAX = 1_000_000.0
 
@@ -219,6 +255,140 @@ def freeze_ipca(
     }
 
 
+def _normalize_division(value: Any) -> str:
+    if isinstance(value, (int, float)) and not pd.isna(value):
+        number = int(value)
+        if float(value) == number and 1 <= number <= 99:
+            return f"{number:02d}"
+    text = str(value).strip()
+    if text.endswith(".0"):
+        text = text[:-2]
+    return text.zfill(2) if text.isdigit() and len(text) <= 2 else ""
+
+
+def build_cnae_divisions(payload: bytes) -> pd.DataFrame:
+    with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+        workbook_bytes = archive.read("estrutura.xls")
+    workbook = xlrd.open_workbook(
+        file_contents=workbook_bytes,
+        on_demand=True,
+        formatting_info=False,
+    )
+    sheet = workbook.sheet_by_index(0)
+    current_section = ""
+    current_section_title = ""
+    records: list[dict[str, str]] = []
+    for row_index in range(sheet.nrows):
+        values = [
+            str(sheet.cell_value(row_index, column)).strip()
+            for column in range(sheet.ncols)
+        ]
+        section_candidate = values[1]
+        if (
+            len(section_candidate) == 1
+            and "A" <= section_candidate <= "U"
+        ):
+            current_section = section_candidate
+            current_section_title = values[6]
+        division = _normalize_division(
+            sheet.cell_value(row_index, 2)
+        )
+        if division:
+            if not current_section:
+                raise RuntimeError(
+                    f"CNAE division {division} has no section context"
+                )
+            records.append(
+                {
+                    "divisao": division,
+                    "secao": current_section,
+                    "divisao_descricao": values[6],
+                    "secao_descricao": current_section_title,
+                }
+            )
+    workbook.release_resources()
+    divisions = (
+        pd.DataFrame(records)
+        .drop_duplicates("divisao")
+        .sort_values("divisao")
+        .reset_index(drop=True)
+    )
+    if (
+        len(divisions) != 87
+        or divisions["divisao"].nunique() != 87
+        or divisions["secao"].nunique() != 21
+    ):
+        raise RuntimeError(
+            "Official CNAE structure must contain 87 divisions in "
+            "21 sections"
+        )
+    return divisions
+
+
+def freeze_cnae(
+    raw_path: Path = DEFAULT_CNAE_RAW,
+    dictionary_path: Path = DEFAULT_CNAE_DICTIONARY,
+    manifest_path: Path = DEFAULT_MANIFEST,
+    *,
+    fetch: Callable[[str], bytes] = _fetch_url,
+    now: Callable[[], datetime] = lambda: datetime.now(timezone.utc),
+) -> dict[str, Any]:
+    payload = fetch(CNAE_URL)
+    divisions = build_cnae_divisions(payload)
+    frozen_at = utc_iso(now())
+    _atomic_bytes(raw_path, payload)
+    dictionary_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = dictionary_path.with_suffix(
+        f"{dictionary_path.suffix}.tmp"
+    )
+    divisions.to_csv(temporary, index=False)
+    os.replace(temporary, dictionary_path)
+
+    manifest = _read_manifest(manifest_path)
+    manifest[f"cnae/{raw_path.name}"] = {
+        "accessed_at": frozen_at,
+        "bytes": raw_path.stat().st_size,
+        "sha256": sha256_file(raw_path),
+        "url": CNAE_URL,
+    }
+    manifest[f"cnae/{dictionary_path.name}"] = {
+        "bytes": dictionary_path.stat().st_size,
+        "generated_at": frozen_at,
+        "sha256": sha256_file(dictionary_path),
+        "source": f"cnae/{raw_path.name}",
+    }
+    _write_manifest(manifest, manifest_path)
+    return {
+        "sections": int(divisions["secao"].nunique()),
+        "divisions": int(divisions["divisao"].nunique()),
+        "raw_sha256": sha256_file(raw_path),
+        "dictionary_sha256": sha256_file(dictionary_path),
+    }
+
+
+def load_cnae_divisions(path: Path) -> pd.DataFrame:
+    frame = pd.read_csv(
+        path,
+        dtype={
+            "divisao": str,
+            "secao": str,
+            "divisao_descricao": str,
+            "secao_descricao": str,
+        },
+    )
+    frame["divisao"] = frame["divisao"].str.zfill(2)
+    if (
+        len(frame) != 87
+        or frame["divisao"].nunique() != 87
+        or frame["secao"].nunique() != 21
+    ):
+        raise RuntimeError(
+            "Frozen CNAE dictionary must contain 87 divisions in "
+            "21 sections"
+        )
+    return frame
+
+
 def _sql_literal(value: str | Path) -> str:
     return "'" + str(value).replace("'", "''") + "'"
 
@@ -255,6 +425,8 @@ def _create_movement_views(
             CAST(sexo AS VARCHAR) AS sexo,
             CAST(graudeinstrucao AS VARCHAR) AS graudeinstrucao,
             CAST(racacor AS VARCHAR) AS racacor
+            ,CAST(secao AS VARCHAR) AS secao_raw
+            ,lpad(CAST(subclasse AS VARCHAR), 7, '0') AS subclasse
         FROM read_parquet(
             {source},
             hive_partitioning = true,
@@ -277,7 +449,9 @@ def _create_movement_views(
             idade,
             sexo,
             graudeinstrucao,
-            racacor
+            racacor,
+            secao_raw,
+            subclasse
         FROM analytic_source
         WHERE regexp_full_match(cbo2002ocupacao, '[0-9]{{4,6}}')
           AND substring(cbo2002ocupacao, 1, 4) <> '0000'
@@ -420,6 +594,502 @@ def _aggregate_national(
         ORDER BY cbo_4d, periodo_num
         """
     ).df()
+
+
+def _sector_output_sql() -> str:
+    return """
+        WITH winsorized AS (
+            SELECT
+                movement.*,
+                greatest(
+                    bounds.wage_p01,
+                    least(movement.salario, bounds.wage_p99)
+                ) AS salario_winsor
+            FROM sector_movements AS movement
+            INNER JOIN wage_bounds AS bounds
+              USING (cbo_4d, ano)
+        ),
+        totals AS (
+            SELECT
+                cbo_4d,
+                subclasse,
+                secao,
+                divisao,
+                cnae_status,
+                periodo_num,
+                CAST(sum(
+                    CASE WHEN movimento = 1 THEN peso ELSE 0 END
+                ) AS BIGINT) AS admissoes,
+                CAST(sum(
+                    CASE WHEN movimento = -1 THEN peso ELSE 0 END
+                ) AS BIGINT) AS desligamentos,
+                sum(CASE
+                    WHEN movimento = 1
+                    THEN peso * salario_winsor ELSE 0
+                END) AS salario_soma_adm,
+                sum(CASE
+                    WHEN movimento = -1
+                    THEN peso * salario_winsor ELSE 0
+                END) AS salario_soma_desl,
+                sum(CASE
+                    WHEN movimento = 1 THEN peso * idade ELSE 0
+                END) AS idade_soma_adm,
+                sum(CASE
+                    WHEN movimento = -1 THEN peso * idade ELSE 0
+                END) AS idade_soma_desl,
+                sum(CASE
+                    WHEN movimento = 1 AND sexo = '3' THEN peso
+                    ELSE 0
+                END) AS mulher_soma_adm,
+                sum(CASE
+                    WHEN movimento = -1 AND sexo = '3' THEN peso
+                    ELSE 0
+                END) AS mulher_soma_desl,
+                sum(CASE
+                    WHEN movimento = 1
+                     AND graudeinstrucao IN ('9', '10', '11', '80')
+                    THEN peso ELSE 0
+                END) AS superior_soma_adm,
+                sum(CASE
+                    WHEN movimento = -1
+                     AND graudeinstrucao IN ('9', '10', '11', '80')
+                    THEN peso ELSE 0
+                END) AS superior_soma_desl,
+                sum(CASE
+                    WHEN movimento = 1 AND racacor IN ('2', '3')
+                    THEN peso ELSE 0
+                END) AS negra_soma_adm,
+                sum(CASE
+                    WHEN movimento = -1 AND racacor IN ('2', '3')
+                    THEN peso ELSE 0
+                END) AS negra_soma_desl
+            FROM winsorized
+            GROUP BY
+                cbo_4d,
+                subclasse,
+                secao,
+                divisao,
+                cnae_status,
+                periodo_num
+        ),
+        cells AS (
+            SELECT
+                cbo_4d,
+                subclasse,
+                secao,
+                divisao,
+                cnae_status,
+                CAST(floor(periodo_num / 100) AS INTEGER) AS ano,
+                CAST(periodo_num % 100 AS INTEGER) AS mes,
+                periodo_num,
+                admissoes,
+                desligamentos,
+                admissoes - desligamentos AS saldo,
+                admissoes + desligamentos AS n_movimentacoes,
+                CASE WHEN admissoes > 0
+                     THEN salario_soma_adm / admissoes END
+                    AS salario_medio_adm,
+                CASE WHEN desligamentos > 0
+                     THEN salario_soma_desl / desligamentos END
+                    AS salario_medio_desl,
+                CASE WHEN admissoes > 0
+                     THEN idade_soma_adm / admissoes END
+                    AS idade_media_adm,
+                CASE WHEN desligamentos > 0
+                     THEN idade_soma_desl / desligamentos END
+                    AS idade_media_desl,
+                CASE WHEN admissoes > 0
+                     THEN mulher_soma_adm / admissoes END
+                    AS pct_mulher_adm,
+                CASE WHEN desligamentos > 0
+                     THEN mulher_soma_desl / desligamentos END
+                    AS pct_mulher_desl,
+                CASE WHEN admissoes > 0
+                     THEN superior_soma_adm / admissoes END
+                    AS pct_superior_adm,
+                CASE WHEN desligamentos > 0
+                     THEN superior_soma_desl / desligamentos END
+                    AS pct_superior_desl,
+                CASE WHEN admissoes > 0
+                     THEN negra_soma_adm / admissoes END
+                    AS pct_negra_adm,
+                CASE WHEN desligamentos > 0
+                     THEN negra_soma_desl / desligamentos END
+                    AS pct_negra_desl
+            FROM totals
+            WHERE admissoes >= 0
+              AND desligamentos >= 0
+              AND (admissoes > 0 OR desligamentos > 0)
+        )
+        SELECT
+            cells.*,
+            ipca.indice,
+            coalesce(
+                classification.cbo_ilo_gradient,
+                'No score'
+            ) AS cbo_ilo_gradient,
+            CASE
+                WHEN classification.cbo_ilo_gradient IN (
+                    'Exposed: Gradient 1',
+                    'Exposed: Gradient 2',
+                    'Exposed: Gradient 3',
+                    'Exposed: Gradient 4'
+                ) THEN 1.0
+                WHEN classification.cbo_ilo_gradient = 'Not Exposed'
+                THEN 0.0
+                ELSE NULL
+            END AS treated_main,
+            coalesce(
+                classification.cbo_ilo_gradient IN (
+                    'Exposed: Gradient 1',
+                    'Exposed: Gradient 2',
+                    'Exposed: Gradient 3',
+                    'Exposed: Gradient 4',
+                    'Not Exposed'
+                ),
+                false
+            ) AS included_main,
+            printf('%04d-%02d', cells.ano, cells.mes) AS periodo,
+            CAST(cells.periodo_num >= 202212 AS TINYINT) AS post,
+            cells.salario_medio_adm * 100.0 / ipca.indice
+                AS salario_real_adm,
+            cells.salario_medio_desl * 100.0 / ipca.indice
+                AS salario_real_desl,
+            ln(1 + cells.admissoes) AS ln_admissoes,
+            ln(1 + cells.desligamentos) AS ln_desligamentos,
+            ln(cells.salario_medio_adm * 100.0 / ipca.indice)
+                AS ln_salario_real_adm,
+            ln(cells.salario_medio_desl * 100.0 / ipca.indice)
+                AS ln_salario_real_desl,
+            asinh(cells.saldo) AS asinh_saldo
+        FROM cells
+        INNER JOIN ipca_table AS ipca
+          USING (periodo_num)
+        LEFT JOIN classification_table AS classification
+          USING (cbo_4d)
+    """
+
+
+def build_sector_panel(
+    movements_glob: Path,
+    ipca: pd.DataFrame,
+    classification: pd.DataFrame,
+    cnae_divisions: pd.DataFrame,
+    national_panel_path: Path,
+    sector_panel_path: Path,
+    coexistence_path: Path,
+    *,
+    start_period: int = START_PERIOD,
+    end_period: int = END_PERIOD,
+    scratch_parent: Path = DEFAULT_SCRATCH_PARENT,
+) -> dict[str, Any]:
+    scratch_parent.mkdir(parents=True, exist_ok=True)
+    sector_panel_path.parent.mkdir(parents=True, exist_ok=True)
+    coexistence_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_panel = sector_panel_path.with_suffix(
+        f"{sector_panel_path.suffix}.tmp"
+    )
+    with tempfile.TemporaryDirectory(
+        prefix="t13-duckdb-",
+        dir=scratch_parent,
+    ) as temporary:
+        connection = duckdb.connect()
+        try:
+            _configure_connection(connection, Path(temporary))
+            _create_movement_views(
+                connection,
+                movements_glob,
+                start_period,
+                end_period,
+            )
+            divisions = cnae_divisions[
+                ["divisao", "secao"]
+            ].copy()
+            divisions["divisao"] = (
+                divisions["divisao"].astype(str).str.zfill(2)
+            )
+            connection.register("cnae_input", divisions)
+            connection.execute(
+                """
+                CREATE TEMP TABLE cnae_divisions AS
+                SELECT
+                    CAST(divisao AS VARCHAR) AS divisao,
+                    CAST(secao AS VARCHAR) AS secao
+                FROM cnae_input
+                """
+            )
+            connection.execute(
+                """
+                CREATE TEMP VIEW sector_joined AS
+                SELECT
+                    movement.*,
+                    CASE
+                        WHEN movement.secao_raw = 'Z'
+                         AND movement.subclasse = '9999999'
+                        THEN 'Z'
+                        ELSE dictionary.secao
+                    END AS secao,
+                    CASE
+                        WHEN movement.secao_raw = 'Z'
+                         AND movement.subclasse = '9999999'
+                        THEN 'ZZ'
+                        ELSE dictionary.divisao
+                    END AS divisao,
+                    CASE
+                        WHEN movement.secao_raw = 'Z'
+                         AND movement.subclasse = '9999999'
+                        THEN 'undocumented_preserved'
+                        ELSE 'official'
+                    END AS cnae_status,
+                    dictionary.secao AS dictionary_section
+                FROM valid_movements AS movement
+                LEFT JOIN cnae_divisions AS dictionary
+                  ON substring(movement.subclasse, 1, 2)
+                   = dictionary.divisao
+                """
+            )
+            invalid_industry = int(
+                connection.execute(
+                    """
+                    SELECT count(*)
+                    FROM sector_joined
+                    WHERE cnae_status = 'official'
+                      AND (
+                          dictionary_section IS NULL
+                          OR dictionary_section <> secao_raw
+                      )
+                    """
+                ).fetchone()[0]
+            )
+            if invalid_industry:
+                raise RuntimeError(
+                    "Valid national rows fail CNAE division-section "
+                    f"validation: {invalid_industry}"
+                )
+            connection.execute(
+                """
+                CREATE TEMP VIEW sector_movements AS
+                SELECT * EXCLUDE (dictionary_section)
+                FROM sector_joined
+                """
+            )
+            connection.execute(
+                """
+                CREATE TEMP TABLE wage_bounds AS
+                SELECT
+                    cbo_4d,
+                    ano,
+                    approx_quantile(salario, 0.01) AS wage_p01,
+                    approx_quantile(salario, 0.99) AS wage_p99
+                FROM valid_movements
+                WHERE peso = 1
+                GROUP BY cbo_4d, ano
+                """
+            )
+            ipca_input = ipca[["periodo_num", "indice"]].copy()
+            classes = classification[
+                ["cbo_4d", "cbo_ilo_gradient"]
+            ].copy()
+            classes["cbo_4d"] = (
+                classes["cbo_4d"].astype(str).str.zfill(4)
+            )
+            connection.register("ipca_input", ipca_input)
+            connection.register("classification_input", classes)
+            connection.execute(
+                """
+                CREATE TEMP TABLE ipca_table AS
+                SELECT
+                    CAST(periodo_num AS INTEGER) AS periodo_num,
+                    CAST(indice AS DOUBLE) AS indice
+                FROM ipca_input
+                """
+            )
+            connection.execute(
+                """
+                CREATE TEMP TABLE classification_table AS
+                SELECT
+                    CAST(cbo_4d AS VARCHAR) AS cbo_4d,
+                    CAST(cbo_ilo_gradient AS VARCHAR)
+                        AS cbo_ilo_gradient
+                FROM classification_input
+                """
+            )
+            connection.execute(
+                f"""
+                COPY ({_sector_output_sql()})
+                TO {_sql_literal(temporary_panel)}
+                (FORMAT PARQUET, COMPRESSION ZSTD)
+                """
+            )
+            os.replace(temporary_panel, sector_panel_path)
+            sector_source = _sql_literal(sector_panel_path)
+            national_source = _sql_literal(national_panel_path)
+
+            validation = connection.execute(
+                f"""
+                SELECT
+                    count(*) AS cells,
+                    count(*) - count(DISTINCT (
+                        cbo_4d, subclasse, periodo_num
+                    )) AS duplicate_cells,
+                    count(*) FILTER (
+                        WHERE admissoes = 0 AND (
+                            salario_medio_adm IS NOT NULL
+                            OR idade_media_adm IS NOT NULL
+                            OR pct_mulher_adm IS NOT NULL
+                            OR pct_superior_adm IS NOT NULL
+                            OR pct_negra_adm IS NOT NULL
+                        )
+                    ) AS bad_admission_missingness,
+                    count(*) FILTER (
+                        WHERE desligamentos = 0 AND (
+                            salario_medio_desl IS NOT NULL
+                            OR idade_media_desl IS NOT NULL
+                            OR pct_mulher_desl IS NOT NULL
+                            OR pct_superior_desl IS NOT NULL
+                            OR pct_negra_desl IS NOT NULL
+                        )
+                    ) AS bad_separation_missingness,
+                    max(salario_medio_adm) AS max_admission_wage,
+                    max(salario_medio_desl) AS max_separation_wage,
+                    quantile_cont(n_movimentacoes, 0.10)
+                        AS cell_size_p10,
+                    count(DISTINCT secao) AS sections,
+                    count(DISTINCT divisao) AS divisions
+                FROM read_parquet({sector_source})
+                """
+            ).fetchone()
+            divergences = int(
+                connection.execute(
+                    f"""
+                    WITH sector AS (
+                        SELECT
+                            cbo_4d,
+                            periodo_num,
+                            sum(admissoes) AS admissoes,
+                            sum(desligamentos) AS desligamentos
+                        FROM read_parquet({sector_source})
+                        GROUP BY cbo_4d, periodo_num
+                    ),
+                    comparison AS (
+                        SELECT
+                            coalesce(s.cbo_4d, n.cbo_4d) AS cbo_4d,
+                            coalesce(
+                                s.periodo_num, n.periodo_num
+                            ) AS periodo_num,
+                            s.admissoes AS sector_admissions,
+                            n.admissoes AS national_admissions,
+                            s.desligamentos AS sector_separations,
+                            n.desligamentos AS national_separations
+                        FROM sector AS s
+                        FULL OUTER JOIN read_parquet(
+                            {national_source}
+                        ) AS n
+                          USING (cbo_4d, periodo_num)
+                    )
+                    SELECT count(*)
+                    FROM comparison
+                    WHERE sector_admissions IS DISTINCT FROM
+                          national_admissions
+                       OR sector_separations IS DISTINCT FROM
+                          national_separations
+                    """
+                ).fetchone()[0]
+            )
+            coexistence_temporary = coexistence_path.with_suffix(
+                f"{coexistence_path.suffix}.tmp"
+            )
+            connection.execute(
+                f"""
+                COPY (
+                    SELECT
+                        subclasse,
+                        secao,
+                        divisao,
+                        periodo_num,
+                        count(DISTINCT cbo_4d) FILTER (
+                            WHERE treated_main = 1
+                        ) AS treated_cbo_families,
+                        count(DISTINCT cbo_4d) FILTER (
+                            WHERE treated_main = 0
+                        ) AS control_cbo_families,
+                        treated_cbo_families > 0
+                          AND control_cbo_families > 0
+                          AS has_treated_control_coexistence
+                    FROM read_parquet({sector_source})
+                    GROUP BY
+                        subclasse, secao, divisao, periodo_num
+                    ORDER BY subclasse, periodo_num
+                )
+                TO {_sql_literal(coexistence_temporary)}
+                (FORMAT CSV, HEADER)
+                """
+            )
+            os.replace(coexistence_temporary, coexistence_path)
+            coexistence = connection.execute(
+                f"""
+                SELECT
+                    count(*) AS cnae_month_cells,
+                    count(*) FILTER (
+                        WHERE has_treated_control_coexistence
+                    ) AS coexisting_cells
+                FROM read_csv_auto(
+                    {_sql_literal(coexistence_path)},
+                    header = true
+                )
+                """
+            ).fetchone()
+            undocumented = connection.execute(
+                """
+                SELECT count(*), coalesce(sum(peso), 0)
+                FROM sector_movements
+                WHERE cnae_status = 'undocumented_preserved'
+                """
+            ).fetchone()
+        finally:
+            connection.close()
+
+    metrics = {
+        "cells": int(validation[0]),
+        "sector_panel_bytes": sector_panel_path.stat().st_size,
+        "sector_panel_sha256": sha256_file(sector_panel_path),
+        "coexistence_bytes": coexistence_path.stat().st_size,
+        "coexistence_sha256": sha256_file(coexistence_path),
+        "duplicate_cells": int(validation[1]),
+        "bad_admission_missingness": int(validation[2]),
+        "bad_separation_missingness": int(validation[3]),
+        "max_admission_wage": float(validation[4]),
+        "max_separation_wage": float(validation[5]),
+        "cell_size_p10": float(validation[6]),
+        "sections": int(validation[7]),
+        "divisions_including_undocumented": int(validation[8]),
+        "official_divisions": int(cnae_divisions["divisao"].nunique()),
+        "national_count_divergences": divergences,
+        "cnae_month_cells": int(coexistence[0]),
+        "coexisting_treated_control_cells": int(coexistence[1]),
+        "coexisting_treated_control_share": (
+            float(coexistence[1] / coexistence[0])
+            if coexistence[0]
+            else math.nan
+        ),
+        "undocumented_cnae_rows": int(undocumented[0]),
+        "undocumented_cnae_signed_weight": int(undocumented[1]),
+    }
+    blocking = {
+        "duplicate_cells": metrics["duplicate_cells"],
+        "bad_admission_missingness": metrics[
+            "bad_admission_missingness"
+        ],
+        "bad_separation_missingness": metrics[
+            "bad_separation_missingness"
+        ],
+        "national_count_divergences": metrics[
+            "national_count_divergences"
+        ],
+    }
+    if any(blocking.values()):
+        raise RuntimeError(f"Sector-panel validation failed: {blocking}")
+    return metrics
 
 
 def _attach_panel_fields(
@@ -645,7 +1315,14 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "command",
-        choices=("freeze-ipca", "build", "all"),
+        choices=(
+            "freeze-ipca",
+            "build",
+            "all",
+            "freeze-cnae",
+            "build-sector",
+            "all-sector",
+        ),
     )
     parser.add_argument(
         "--movements-glob",
@@ -660,6 +1337,26 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ipca", type=Path, default=DEFAULT_IPCA)
     parser.add_argument("--panel", type=Path, default=DEFAULT_PANEL)
     parser.add_argument("--support", type=Path, default=DEFAULT_SUPPORT)
+    parser.add_argument(
+        "--cnae-dictionary",
+        type=Path,
+        default=DEFAULT_CNAE_DICTIONARY,
+    )
+    parser.add_argument(
+        "--sector-panel",
+        type=Path,
+        default=DEFAULT_SECTOR_PANEL,
+    )
+    parser.add_argument(
+        "--cnae-month-support",
+        type=Path,
+        default=DEFAULT_CNAE_MONTH_SUPPORT,
+    )
+    parser.add_argument(
+        "--sector-support",
+        type=Path,
+        default=DEFAULT_SECTOR_SUPPORT,
+    )
     return parser.parse_args()
 
 
@@ -667,6 +1364,8 @@ def main() -> int:
     args = parse_args()
     if args.command in {"freeze-ipca", "all"}:
         print(json.dumps(freeze_ipca(), sort_keys=True))
+    if args.command in {"freeze-cnae", "all-sector"}:
+        print(json.dumps(freeze_cnae(), sort_keys=True))
     if args.command in {"build", "all"}:
         if not args.ipca.is_file():
             raise FileNotFoundError(f"Frozen IPCA input not found: {args.ipca}")
@@ -680,6 +1379,33 @@ def main() -> int:
             pd.read_csv(args.classification, dtype={"cbo_4d": str}),
         )
         write_panel_artifacts(panel, metrics, args.panel, args.support)
+        print(json.dumps(metrics, sort_keys=True))
+    if args.command in {"build-sector", "all-sector"}:
+        required = [
+            args.ipca,
+            args.classification,
+            args.cnae_dictionary,
+            args.panel,
+        ]
+        missing = [str(path) for path in required if not path.is_file()]
+        if missing:
+            raise FileNotFoundError(
+                "Sector-panel inputs are missing:\n" + "\n".join(missing)
+            )
+        metrics = build_sector_panel(
+            args.movements_glob,
+            pd.read_parquet(args.ipca),
+            pd.read_csv(args.classification, dtype={"cbo_4d": str}),
+            load_cnae_divisions(args.cnae_dictionary),
+            args.panel,
+            args.sector_panel,
+            args.cnae_month_support,
+        )
+        args.sector_support.parent.mkdir(parents=True, exist_ok=True)
+        args.sector_support.write_text(
+            json.dumps(metrics, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
         print(json.dumps(metrics, sort_keys=True))
     return 0
 
