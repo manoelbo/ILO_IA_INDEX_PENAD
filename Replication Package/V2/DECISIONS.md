@@ -838,3 +838,22 @@ Checkpoint G is complete for executed mechanisms: every new estimated
 exercise has support and adjusted p-values. The planned public/private
 falsification remains explicitly not executed because the official source
 fields do not identify ownership.
+
+## 2026-07-26 — Independent Python-R cross-replication
+
+Task 31 exports the exact 22,049-row principal sample and independently
+re-estimates the five central outcomes in R. The R implementation does not
+call Python or `pyfixest`: the three PPML models use iterative proportional
+fitting, and the two linear models use alternating two-way
+Frisch-Waugh-Lovell projections. Both covariance calculations use an
+independent CBO4-clustered CRV1 score sandwich.
+
+The small-sample correction counts the 65 month effects plus the treatment
+regressor while excluding CBO4 effects nested within the CBO4 cluster. This
+reproduces the `pyfixest` correction rather than relying on a package default.
+
+All five models have identical sample sizes and 341 CBO4 clusters. The
+maximum absolute Python-R coefficient difference is
+`1.1209513178789265e-10`; the maximum standard-error difference is
+`1.2007179972517434e-11`. Coefficients and standard errors therefore agree
+well beyond the required six decimal places, including real admission wage.

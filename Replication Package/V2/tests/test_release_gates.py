@@ -87,7 +87,7 @@ def test_gate_04_all_inferential_outputs_have_live_estimators() -> None:
     )
     inferential = [node for node in dag if node.inferential]
 
-    assert len(inferential) == 13
+    assert len(inferential) == 14
     assert all(node.disposition == runner.REESTIMATED for node in inferential)
     assert all(
         any(

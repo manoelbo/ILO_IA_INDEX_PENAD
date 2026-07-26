@@ -131,6 +131,8 @@ def source_id_for(artifact_path: str) -> str:
         return "code.models.employer_size"
     if path.startswith("mechanisms/exposure"):
         return "code.models.exposure_sensitivity"
+    if path.startswith("replication/cross_replication"):
+        return "R.cross_replication"
     if path == "mechanisms/employer_size.md":
         return "code.models.employer_size"
     if path == "mechanisms/hourly_wage.md":

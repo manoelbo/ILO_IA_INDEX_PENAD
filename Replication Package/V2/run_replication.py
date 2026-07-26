@@ -273,6 +273,29 @@ def _analysis_nodes() -> list[DagNode]:
             ),
             True,
         ),
+        DagNode(
+            "export_cross_replication_sample",
+            "Export the exact principal sample for independent R replay",
+            _python(
+                "code/replication/export_cross_replication.py"
+            ),
+            DATA_REBUILT,
+        ),
+        DagNode(
+            "python_r_cross_replication",
+            "Independently re-estimate five central models in R",
+            (
+                "Rscript",
+                str(PACKAGE_ROOT / "R" / "cross_replication.R"),
+            ),
+            REESTIMATED,
+            (
+                "replication/cross_replication_r.csv",
+                "replication/cross_replication_comparison.csv",
+                "replication/cross_replication_status.json",
+            ),
+            True,
+        ),
     ]
 
 
