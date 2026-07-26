@@ -1,0 +1,3204 @@
+{
+  "artifacts": {
+    "diagnostics/DDD_MULTIPLICITY_RESULTS.md": {
+      "artifact_path": "diagnostics/DDD_MULTIPLICITY_RESULTS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.heterogeneity",
+      "units": {}
+    },
+    "diagnostics/HONEST_DID_RESULTS.md": {
+      "artifact_path": "diagnostics/HONEST_DID_RESULTS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "R.honest_did",
+      "units": {}
+    },
+    "diagnostics/PLACEBO_RESULTS.md": {
+      "artifact_path": "diagnostics/PLACEBO_RESULTS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.placebos",
+      "units": {}
+    },
+    "diagnostics/PRETREND_DIAGNOSTICS.md": {
+      "artifact_path": "diagnostics/PRETREND_DIAGNOSTICS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.pretrends",
+      "units": {}
+    },
+    "diagnostics/ddd_family_support.csv": {
+      "artifact_path": "diagnostics/ddd_family_support.csv",
+      "categorical_domains": {
+        "dimension": [
+          "age_canaries",
+          "education",
+          "income",
+          "race_color",
+          "sex"
+        ],
+        "dimension_kind": [
+          "cbo_predetermined",
+          "micro"
+        ],
+        "group_id": [
+          "age_22_25",
+          "age_26_30",
+          "age_31_34",
+          "age_35_40",
+          "age_41_49",
+          "age_50_plus",
+          "fundamental_or_less",
+          "high_income",
+          "high_school",
+          "higher_education",
+          "low_income",
+          "men",
+          "middle_income",
+          "race_black",
+          "race_indigenous",
+          "race_pardo",
+          "race_unknown",
+          "race_white",
+          "race_yellow",
+          "women"
+        ],
+        "group_label": [
+          "Age 22-25",
+          "Age 26-30",
+          "Age 31-34",
+          "Age 35-40",
+          "Age 41-49",
+          "Age 50+",
+          "Black",
+          "Higher education",
+          "Indigenous",
+          "Men",
+          "Over 2 through 5 minimum wages",
+          "Over 5 minimum wages",
+          "Pardo",
+          "Primary or less",
+          "Secondary",
+          "Unidentified",
+          "Up to 2 minimum wages",
+          "White",
+          "Women",
+          "Yellow"
+        ],
+        "support_status": [
+          "adequate",
+          "limited",
+          "thin"
+        ]
+      },
+      "columns": [
+        "dimension",
+        "dimension_kind",
+        "group_id",
+        "group_label",
+        "panel_cells",
+        "target_cells_with_flows",
+        "target_treated_cbo_with_flows",
+        "target_control_cbo_with_flows",
+        "negative_admission_cells",
+        "negative_separation_cells",
+        "support_status"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.heterogeneity",
+      "units": {
+        "dimension": "declared_in_source",
+        "dimension_kind": "declared_in_source",
+        "group_id": "declared_in_source",
+        "group_label": "declared_in_source",
+        "negative_admission_cells": "count",
+        "negative_separation_cells": "count",
+        "panel_cells": "count",
+        "support_status": "declared_in_source",
+        "target_cells_with_flows": "count",
+        "target_control_cbo_with_flows": "declared_in_source",
+        "target_treated_cbo_with_flows": "declared_in_source"
+      }
+    },
+    "diagnostics/ddd_multiplicity_results.csv": {
+      "artifact_path": "diagnostics/ddd_multiplicity_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "dimension": [
+          "age_canaries",
+          "education",
+          "income",
+          "race_color",
+          "sex"
+        ],
+        "dimension_kind": [
+          "cbo_predetermined",
+          "micro"
+        ],
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "group_id": [
+          "age_22_25",
+          "age_26_30",
+          "age_31_34",
+          "age_35_40",
+          "age_41_49",
+          "age_50_plus",
+          "fundamental_or_less",
+          "high_income",
+          "high_school",
+          "higher_education",
+          "low_income",
+          "men",
+          "middle_income",
+          "race_black",
+          "race_indigenous",
+          "race_pardo",
+          "race_unknown",
+          "race_white",
+          "race_yellow",
+          "women"
+        ],
+        "group_label": [
+          "Age 22-25",
+          "Age 26-30",
+          "Age 31-34",
+          "Age 35-40",
+          "Age 41-49",
+          "Age 50+",
+          "Black",
+          "Higher education",
+          "Indigenous",
+          "Men",
+          "Over 2 through 5 minimum wages",
+          "Over 5 minimum wages",
+          "Pardo",
+          "Primary or less",
+          "Secondary",
+          "Unidentified",
+          "Up to 2 minimum wages",
+          "White",
+          "Women",
+          "Yellow"
+        ],
+        "model_id": [
+          "age_canaries__age_22_25__admissoes",
+          "age_canaries__age_22_25__asinh_saldo",
+          "age_canaries__age_22_25__desligamentos",
+          "age_canaries__age_22_25__ln_salario_real_adm",
+          "age_canaries__age_22_25__n_movimentacoes",
+          "age_canaries__age_26_30__admissoes",
+          "age_canaries__age_26_30__asinh_saldo",
+          "age_canaries__age_26_30__desligamentos",
+          "age_canaries__age_26_30__ln_salario_real_adm",
+          "age_canaries__age_26_30__n_movimentacoes",
+          "age_canaries__age_31_34__admissoes",
+          "age_canaries__age_31_34__asinh_saldo",
+          "age_canaries__age_31_34__desligamentos",
+          "age_canaries__age_31_34__ln_salario_real_adm",
+          "age_canaries__age_31_34__n_movimentacoes",
+          "age_canaries__age_35_40__admissoes",
+          "age_canaries__age_35_40__asinh_saldo",
+          "age_canaries__age_35_40__desligamentos",
+          "age_canaries__age_35_40__ln_salario_real_adm",
+          "age_canaries__age_35_40__n_movimentacoes",
+          "age_canaries__age_41_49__admissoes",
+          "age_canaries__age_41_49__asinh_saldo",
+          "age_canaries__age_41_49__desligamentos",
+          "age_canaries__age_41_49__ln_salario_real_adm",
+          "age_canaries__age_41_49__n_movimentacoes",
+          "age_canaries__age_50_plus__admissoes",
+          "age_canaries__age_50_plus__asinh_saldo",
+          "age_canaries__age_50_plus__desligamentos",
+          "age_canaries__age_50_plus__ln_salario_real_adm",
+          "age_canaries__age_50_plus__n_movimentacoes",
+          "education__fundamental_or_less__admissoes",
+          "education__fundamental_or_less__asinh_saldo",
+          "education__fundamental_or_less__desligamentos",
+          "education__fundamental_or_less__ln_salario_real_adm",
+          "education__fundamental_or_less__n_movimentacoes",
+          "education__high_school__admissoes",
+          "education__high_school__asinh_saldo",
+          "education__high_school__desligamentos",
+          "education__high_school__ln_salario_real_adm",
+          "education__high_school__n_movimentacoes",
+          "education__higher_education__admissoes",
+          "education__higher_education__asinh_saldo",
+          "education__higher_education__desligamentos",
+          "education__higher_education__ln_salario_real_adm",
+          "education__higher_education__n_movimentacoes",
+          "income__high_income__admissoes",
+          "income__high_income__asinh_saldo",
+          "income__high_income__desligamentos",
+          "income__high_income__ln_salario_real_adm",
+          "income__high_income__n_movimentacoes",
+          "income__low_income__admissoes",
+          "income__low_income__asinh_saldo",
+          "income__low_income__desligamentos",
+          "income__low_income__ln_salario_real_adm",
+          "income__low_income__n_movimentacoes",
+          "income__middle_income__admissoes",
+          "income__middle_income__asinh_saldo",
+          "income__middle_income__desligamentos",
+          "income__middle_income__ln_salario_real_adm",
+          "income__middle_income__n_movimentacoes",
+          "race_color__race_black__admissoes",
+          "race_color__race_black__asinh_saldo",
+          "race_color__race_black__desligamentos",
+          "race_color__race_black__ln_salario_real_adm",
+          "race_color__race_black__n_movimentacoes",
+          "race_color__race_indigenous__admissoes",
+          "race_color__race_indigenous__asinh_saldo",
+          "race_color__race_indigenous__desligamentos",
+          "race_color__race_indigenous__ln_salario_real_adm",
+          "race_color__race_indigenous__n_movimentacoes",
+          "race_color__race_pardo__admissoes",
+          "race_color__race_pardo__asinh_saldo",
+          "race_color__race_pardo__desligamentos",
+          "race_color__race_pardo__ln_salario_real_adm",
+          "race_color__race_pardo__n_movimentacoes",
+          "race_color__race_unknown__admissoes",
+          "race_color__race_unknown__asinh_saldo",
+          "race_color__race_unknown__desligamentos",
+          "race_color__race_unknown__ln_salario_real_adm",
+          "race_color__race_unknown__n_movimentacoes",
+          "race_color__race_white__admissoes",
+          "race_color__race_white__asinh_saldo",
+          "race_color__race_white__desligamentos",
+          "race_color__race_white__ln_salario_real_adm",
+          "race_color__race_white__n_movimentacoes",
+          "race_color__race_yellow__admissoes",
+          "race_color__race_yellow__asinh_saldo",
+          "race_color__race_yellow__desligamentos",
+          "race_color__race_yellow__ln_salario_real_adm",
+          "race_color__race_yellow__n_movimentacoes",
+          "sex__men__admissoes",
+          "sex__men__asinh_saldo",
+          "sex__men__desligamentos",
+          "sex__men__ln_salario_real_adm",
+          "sex__men__n_movimentacoes",
+          "sex__women__admissoes",
+          "sex__women__asinh_saldo",
+          "sex__women__desligamentos",
+          "sex__women__ln_salario_real_adm",
+          "sex__women__n_movimentacoes"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "result_status": [
+          "estimated"
+        ],
+        "support_status": [
+          "adequate",
+          "limited",
+          "thin"
+        ],
+        "term": [
+          "post_treat_group"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "dimension",
+        "dimension_kind",
+        "group_id",
+        "group_label",
+        "result_status",
+        "error",
+        "nominal_p_value",
+        "declared_ddd_terms",
+        "absorbed_lower_terms",
+        "full_formula_contract",
+        "bh_adjusted_p_value",
+        "nominal_significant_005",
+        "bh_significant_005",
+        "support_status",
+        "target_treated_cbo_with_flows",
+        "target_control_cbo_with_flows"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.heterogeneity",
+      "units": {
+        "absorbed_lower_terms": "declared_in_source",
+        "bh_adjusted_p_value": "probability",
+        "bh_significant_005": "declared_in_source",
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "declared_ddd_terms": "declared_in_source",
+        "dimension": "declared_in_source",
+        "dimension_kind": "declared_in_source",
+        "effect_percent": "percent",
+        "error": "declared_in_source",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "full_formula_contract": "declared_in_source",
+        "group_id": "declared_in_source",
+        "group_label": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "nominal_p_value": "probability",
+        "nominal_significant_005": "declared_in_source",
+        "outcome": "declared_in_source",
+        "result_status": "declared_in_source",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "support_status": "declared_in_source",
+        "target_control_cbo_with_flows": "declared_in_source",
+        "target_treated_cbo_with_flows": "declared_in_source",
+        "term": "declared_in_source"
+      }
+    },
+    "diagnostics/ddd_multiplicity_support.json": {
+      "artifact_path": "diagnostics/ddd_multiplicity_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "adequate_support_groups",
+        "all_formulas_have_complete_ddd_terms",
+        "bh_adjusted_p_lt_005",
+        "estimated_models",
+        "failed_models",
+        "family_size_in_adjustment",
+        "limited_support_groups",
+        "multiplicity_method",
+        "negative_count_cells",
+        "nominal_p_lt_005",
+        "panel_bytes",
+        "panel_rows",
+        "panel_sha256",
+        "planned_family_size",
+        "thin_support_groups"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.heterogeneity",
+      "units": {}
+    },
+    "diagnostics/group_placebo_backend_validation.csv": {
+      "artifact_path": "diagnostics/group_placebo_backend_validation.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "estimator",
+        "reference_coefficient",
+        "lightweight_coefficient",
+        "absolute_difference"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.placebos",
+      "units": {
+        "absolute_difference": "declared_in_source",
+        "estimator": "declared_in_source",
+        "lightweight_coefficient": "declared_in_source",
+        "outcome": "declared_in_source",
+        "reference_coefficient": "declared_in_source"
+      }
+    },
+    "diagnostics/group_placebo_distribution.csv": {
+      "artifact_path": "diagnostics/group_placebo_distribution.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ]
+      },
+      "columns": [
+        "repetition",
+        "seed",
+        "outcome",
+        "estimator",
+        "coefficient",
+        "n_obs",
+        "n_clusters",
+        "treated_cbo_count",
+        "control_cbo_count"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.placebos",
+      "units": {
+        "coefficient": "model_outcome_scale",
+        "control_cbo_count": "count",
+        "estimator": "declared_in_source",
+        "n_clusters": "count",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "repetition": "declared_in_source",
+        "seed": "declared_in_source",
+        "treated_cbo_count": "count"
+      }
+    },
+    "diagnostics/group_placebo_status.json": {
+      "artifact_path": "diagnostics/group_placebo_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "all_assignments_preserve_treated_count",
+        "backend",
+        "control_cbo_count",
+        "model_count",
+        "outcomes",
+        "repetitions",
+        "seed",
+        "status",
+        "treated_cbo_count"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.placebos",
+      "units": {}
+    },
+    "diagnostics/group_placebo_summary.csv": {
+      "artifact_path": "diagnostics/group_placebo_summary.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ]
+      },
+      "columns": [
+        "observed_coefficient",
+        "observed_percentile",
+        "empirical_two_sided_p_value",
+        "repetitions",
+        "placebo_mean",
+        "placebo_standard_deviation",
+        "placebo_p025",
+        "placebo_p975",
+        "outcome",
+        "estimator",
+        "seed",
+        "treated_cbo_count",
+        "control_cbo_count"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.placebos",
+      "units": {
+        "control_cbo_count": "count",
+        "empirical_two_sided_p_value": "probability",
+        "estimator": "declared_in_source",
+        "observed_coefficient": "declared_in_source",
+        "observed_percentile": "percent",
+        "outcome": "declared_in_source",
+        "placebo_mean": "declared_in_source",
+        "placebo_p025": "declared_in_source",
+        "placebo_p975": "declared_in_source",
+        "placebo_standard_deviation": "declared_in_source",
+        "repetitions": "declared_in_source",
+        "seed": "declared_in_source",
+        "treated_cbo_count": "count"
+      }
+    },
+    "diagnostics/honest_did_asinh_saldo.png": {
+      "artifact_path": "diagnostics/honest_did_asinh_saldo.png",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "image/png",
+      "source_id": "R.honest_did",
+      "units": {}
+    },
+    "diagnostics/honest_did_event_coefficients.csv": {
+      "artifact_path": "diagnostics/honest_did_event_coefficients.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols"
+        ],
+        "outcome": [
+          "asinh_saldo",
+          "ln_salario_real_adm"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "estimator",
+        "position",
+        "event_time",
+        "coefficient",
+        "is_pre"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "R.honest_did",
+      "units": {
+        "coefficient": "model_outcome_scale",
+        "estimator": "declared_in_source",
+        "event_time": "declared_in_source",
+        "is_pre": "declared_in_source",
+        "outcome": "declared_in_source",
+        "position": "declared_in_source"
+      }
+    },
+    "diagnostics/honest_did_event_vcov_long.csv": {
+      "artifact_path": "diagnostics/honest_did_event_vcov_long.csv",
+      "categorical_domains": {
+        "outcome": [
+          "asinh_saldo",
+          "ln_salario_real_adm"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "row_position",
+        "column_position",
+        "row_event_time",
+        "column_event_time",
+        "covariance"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "R.honest_did",
+      "units": {
+        "column_event_time": "declared_in_source",
+        "column_position": "declared_in_source",
+        "covariance": "declared_in_source",
+        "outcome": "declared_in_source",
+        "row_event_time": "declared_in_source",
+        "row_position": "declared_in_source"
+      }
+    },
+    "diagnostics/honest_did_ln_salario_real_adm.png": {
+      "artifact_path": "diagnostics/honest_did_ln_salario_real_adm.png",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "image/png",
+      "source_id": "R.honest_did",
+      "units": {}
+    },
+    "diagnostics/honest_did_sensitivity.csv": {
+      "artifact_path": "diagnostics/honest_did_sensitivity.csv",
+      "categorical_domains": {
+        "method": [
+          "C-LF"
+        ],
+        "outcome": [
+          "asinh_saldo",
+          "ln_salario_real_adm"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "target",
+        "M",
+        "lb",
+        "ub",
+        "excludes_zero",
+        "internal_grid_lower",
+        "internal_grid_upper",
+        "ci_open_at_internal_grid",
+        "method",
+        "Delta"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "R.honest_did",
+      "units": {
+        "Delta": "declared_in_source",
+        "M": "declared_in_source",
+        "ci_open_at_internal_grid": "declared_in_source",
+        "excludes_zero": "declared_in_source",
+        "internal_grid_lower": "declared_in_source",
+        "internal_grid_upper": "declared_in_source",
+        "lb": "declared_in_source",
+        "method": "declared_in_source",
+        "outcome": "declared_in_source",
+        "target": "declared_in_source",
+        "ub": "declared_in_source"
+      }
+    },
+    "diagnostics/honest_did_summary.csv": {
+      "artifact_path": "diagnostics/honest_did_summary.csv",
+      "categorical_domains": {
+        "grid_step": [
+          "0.05"
+        ],
+        "method": [
+          "C-LF"
+        ],
+        "outcome": [
+          "asinh_saldo",
+          "ln_salario_real_adm"
+        ],
+        "threshold_status": [
+          "finite_within_grid",
+          "not_robust_at_M_0"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "target",
+        "target_estimate",
+        "target_standard_error",
+        "original_ci_low",
+        "original_ci_high",
+        "largest_evaluated_M_excluding_zero",
+        "threshold_status",
+        "open_interval_count",
+        "first_open_interval_M",
+        "robustness_threshold_precedes_open_grid",
+        "grid_min",
+        "grid_max",
+        "grid_step",
+        "num_pre_periods",
+        "num_post_periods",
+        "method",
+        "Delta",
+        "plot_path"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "R.honest_did",
+      "units": {
+        "Delta": "declared_in_source",
+        "first_open_interval_M": "declared_in_source",
+        "grid_max": "declared_in_source",
+        "grid_min": "declared_in_source",
+        "grid_step": "declared_in_source",
+        "largest_evaluated_M_excluding_zero": "declared_in_source",
+        "method": "declared_in_source",
+        "num_post_periods": "declared_in_source",
+        "num_pre_periods": "declared_in_source",
+        "open_interval_count": "count",
+        "original_ci_high": "declared_in_source",
+        "original_ci_low": "declared_in_source",
+        "outcome": "declared_in_source",
+        "plot_path": "declared_in_source",
+        "robustness_threshold_precedes_open_grid": "declared_in_source",
+        "target": "declared_in_source",
+        "target_estimate": "declared_in_source",
+        "target_standard_error": "declared_in_source",
+        "threshold_status": "declared_in_source"
+      }
+    },
+    "diagnostics/pretrend_diagnostics.csv": {
+      "artifact_path": "diagnostics/pretrend_diagnostics.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "model_name": [
+          "balanced_dynamic_exact_model"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "pretrend_classification_name": [
+          "preregistered_pass_warning_fail"
+        ],
+        "pretrend_status": [
+          "fail"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "estimator",
+        "model_name",
+        "formula",
+        "event_window",
+        "reference_event_time",
+        "n_obs",
+        "n_clusters",
+        "reported_event_study_n_obs",
+        "reported_event_study_n_clusters",
+        "n_matches_reported",
+        "clusters_match_reported",
+        "joint_lead_test_name",
+        "joint_lead_window",
+        "joint_lead_count",
+        "joint_lead_statistic",
+        "joint_lead_df",
+        "joint_lead_p_value",
+        "linear_pretrend_test_name",
+        "linear_pretrend_coefficient",
+        "linear_pretrend_standard_error",
+        "linear_pretrend_p_value",
+        "dynamic_diagnostic_name",
+        "dynamic_pre_coefficients",
+        "dynamic_pre_p_lt_005",
+        "dynamic_min_p_value",
+        "pretrend_classification_name",
+        "pretrend_status",
+        "non_rejection_is_proof",
+        "complete_case_input"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.pretrends",
+      "units": {
+        "clusters_match_reported": "count",
+        "complete_case_input": "declared_in_source",
+        "dynamic_diagnostic_name": "declared_in_source",
+        "dynamic_min_p_value": "probability",
+        "dynamic_pre_coefficients": "declared_in_source",
+        "dynamic_pre_p_lt_005": "declared_in_source",
+        "estimator": "declared_in_source",
+        "event_window": "declared_in_source",
+        "formula": "declared_in_source",
+        "joint_lead_count": "count",
+        "joint_lead_df": "declared_in_source",
+        "joint_lead_p_value": "probability",
+        "joint_lead_statistic": "declared_in_source",
+        "joint_lead_test_name": "declared_in_source",
+        "joint_lead_window": "declared_in_source",
+        "linear_pretrend_coefficient": "declared_in_source",
+        "linear_pretrend_p_value": "probability",
+        "linear_pretrend_standard_error": "declared_in_source",
+        "linear_pretrend_test_name": "declared_in_source",
+        "model_name": "declared_in_source",
+        "n_clusters": "count",
+        "n_matches_reported": "declared_in_source",
+        "n_obs": "count",
+        "non_rejection_is_proof": "declared_in_source",
+        "outcome": "declared_in_source",
+        "pretrend_classification_name": "declared_in_source",
+        "pretrend_status": "declared_in_source",
+        "reference_event_time": "declared_in_source",
+        "reported_event_study_n_clusters": "count",
+        "reported_event_study_n_obs": "count"
+      }
+    },
+    "diagnostics/pretrend_diagnostics_support.json": {
+      "artifact_path": "diagnostics/pretrend_diagnostics_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "all_cluster_counts_match_reported_event_study",
+        "all_n_match_reported_event_study",
+        "classification_counts",
+        "diagnostics_named_distinctly",
+        "honest_did_linear_outcomes",
+        "joint_lead_count",
+        "joint_lead_window",
+        "non_rejection_is_proof",
+        "outcome_count",
+        "reference_event_time"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.pretrends",
+      "units": {}
+    },
+    "diagnostics/temporal_placebo_gate.json": {
+      "artifact_path": "diagnostics/temporal_placebo_gate.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "decision_rule",
+        "may_proceed_to_group_placebo",
+        "may_proceed_to_phase_6",
+        "outcome_count",
+        "significance_level",
+        "significant_outcomes",
+        "status"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.placebos",
+      "units": {}
+    },
+    "diagnostics/temporal_placebo_results.csv": {
+      "artifact_path": "diagnostics/temporal_placebo_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "model_id": [
+          "temporal_placebo__admissoes",
+          "temporal_placebo__asinh_saldo",
+          "temporal_placebo__desligamentos",
+          "temporal_placebo__ln_salario_real_adm",
+          "temporal_placebo__n_movimentacoes"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "term": [
+          "placebo_time_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "falsification",
+        "false_event_period",
+        "true_pre_start",
+        "true_pre_end"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.placebos",
+      "units": {
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "false_event_period": "declared_in_source",
+        "falsification": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source",
+        "true_pre_end": "declared_in_source",
+        "true_pre_start": "declared_in_source"
+      }
+    },
+    "mechanisms/EMPLOYER_SIZE.md": {
+      "artifact_path": "mechanisms/EMPLOYER_SIZE.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.employer_size",
+      "units": {}
+    },
+    "mechanisms/EXPOSURE_MEASURE_SENSITIVITY.md": {
+      "artifact_path": "mechanisms/EXPOSURE_MEASURE_SENSITIVITY.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.exposure_sensitivity",
+      "units": {}
+    },
+    "mechanisms/HOURLY_WAGE.md": {
+      "artifact_path": "mechanisms/HOURLY_WAGE.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.hourly_wage",
+      "units": {}
+    },
+    "mechanisms/SEPARATION_MECHANISMS.md": {
+      "artifact_path": "mechanisms/SEPARATION_MECHANISMS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.separation_mechanisms",
+      "units": {}
+    },
+    "mechanisms/STOCK_PROXY.md": {
+      "artifact_path": "mechanisms/STOCK_PROXY.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.stock_proxy",
+      "units": {}
+    },
+    "mechanisms/employer_registration_support.csv": {
+      "artifact_path": "mechanisms/employer_registration_support.csv",
+      "categorical_domains": {
+        "dimension": [
+          "tipoempregador",
+          "tipoestabelecimento"
+        ],
+        "label": [
+          "CAEPF",
+          "CNO",
+          "CNPJ",
+          "CNPJ root",
+          "CPF",
+          "Not identified",
+          "Undocumented preserved code"
+        ]
+      },
+      "columns": [
+        "dimension",
+        "code",
+        "physical_rows",
+        "signed_rows",
+        "signed_admissions",
+        "signed_separations",
+        "label"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.employer_size",
+      "units": {
+        "code": "declared_in_source",
+        "dimension": "declared_in_source",
+        "label": "declared_in_source",
+        "physical_rows": "count",
+        "signed_admissions": "declared_in_source",
+        "signed_rows": "count",
+        "signed_separations": "declared_in_source"
+      }
+    },
+    "mechanisms/employer_size_ddd_results.csv": {
+      "artifact_path": "mechanisms/employer_size_ddd_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "model_id": [
+          "size_10__admissoes",
+          "size_10__asinh_saldo",
+          "size_10__desligamentos",
+          "size_10__ln_salario_real_adm",
+          "size_10__n_movimentacoes",
+          "size_1__admissoes",
+          "size_1__asinh_saldo",
+          "size_1__desligamentos",
+          "size_1__ln_salario_real_adm",
+          "size_1__n_movimentacoes",
+          "size_2__admissoes",
+          "size_2__asinh_saldo",
+          "size_2__desligamentos",
+          "size_2__ln_salario_real_adm",
+          "size_2__n_movimentacoes",
+          "size_3__admissoes",
+          "size_3__asinh_saldo",
+          "size_3__desligamentos",
+          "size_3__ln_salario_real_adm",
+          "size_3__n_movimentacoes",
+          "size_4__admissoes",
+          "size_4__asinh_saldo",
+          "size_4__desligamentos",
+          "size_4__ln_salario_real_adm",
+          "size_4__n_movimentacoes",
+          "size_5__admissoes",
+          "size_5__asinh_saldo",
+          "size_5__desligamentos",
+          "size_5__ln_salario_real_adm",
+          "size_5__n_movimentacoes",
+          "size_6__admissoes",
+          "size_6__asinh_saldo",
+          "size_6__desligamentos",
+          "size_6__ln_salario_real_adm",
+          "size_6__n_movimentacoes",
+          "size_7__admissoes",
+          "size_7__asinh_saldo",
+          "size_7__desligamentos",
+          "size_7__ln_salario_real_adm",
+          "size_7__n_movimentacoes",
+          "size_8__admissoes",
+          "size_8__asinh_saldo",
+          "size_8__desligamentos",
+          "size_8__ln_salario_real_adm",
+          "size_8__n_movimentacoes",
+          "size_9__admissoes",
+          "size_9__asinh_saldo",
+          "size_9__desligamentos",
+          "size_9__ln_salario_real_adm",
+          "size_9__n_movimentacoes"
+        ],
+        "multiplicity_family_size": [
+          "50"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "size_label": [
+          "1,000 or more",
+          "1-4 employees",
+          "10-19 employees",
+          "100-249 employees",
+          "20-49 employees",
+          "250-499 employees",
+          "5-9 employees",
+          "50-99 employees",
+          "500-999 employees",
+          "Zero employees"
+        ],
+        "term": [
+          "post_treat_group"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "size_code",
+        "size_label",
+        "bh_adjusted_p_value",
+        "multiplicity_family_size"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.heterogeneity",
+      "units": {
+        "bh_adjusted_p_value": "probability",
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "multiplicity_family_size": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "separation_dropped": "declared_in_source",
+        "size_code": "declared_in_source",
+        "size_label": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source"
+      }
+    },
+    "mechanisms/employer_size_status.json": {
+      "artifact_path": "mechanisms/employer_size_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "bh_significant_count",
+        "family_size",
+        "model_count",
+        "outcome_count",
+        "panel_rows",
+        "public_private_falsification",
+        "size_group_count",
+        "status"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.employer_size",
+      "units": {}
+    },
+    "mechanisms/employer_size_support.csv": {
+      "artifact_path": "mechanisms/employer_size_support.csv",
+      "categorical_domains": {
+        "size_label": [
+          "1,000 or more",
+          "1-4 employees",
+          "10-19 employees",
+          "100-249 employees",
+          "20-49 employees",
+          "250-499 employees",
+          "5-9 employees",
+          "50-99 employees",
+          "500-999 employees",
+          "Zero employees"
+        ]
+      },
+      "columns": [
+        "size_code",
+        "size_label",
+        "signed_admissions_target",
+        "signed_separations_target",
+        "positive_cells",
+        "treated_cbo_with_positive_flow",
+        "control_cbo_with_positive_flow"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.employer_size",
+      "units": {
+        "control_cbo_with_positive_flow": "declared_in_source",
+        "positive_cells": "count",
+        "signed_admissions_target": "declared_in_source",
+        "signed_separations_target": "declared_in_source",
+        "size_code": "declared_in_source",
+        "size_label": "declared_in_source",
+        "treated_cbo_with_positive_flow": "declared_in_source"
+      }
+    },
+    "mechanisms/exposure_rank_correlations.csv": {
+      "artifact_path": "mechanisms/exposure_rank_correlations.csv",
+      "categorical_domains": {
+        "anthropic_measure": [
+          "anthropic_automation_index"
+        ],
+        "ilo_measure": [
+          "isco08_mean_score_2025"
+        ],
+        "sample": [
+          "direct_matches",
+          "direct_plus_hierarchical"
+        ]
+      },
+      "columns": [
+        "sample",
+        "n_cbo",
+        "spearman_rho",
+        "ilo_measure",
+        "anthropic_measure"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.exposure_sensitivity",
+      "units": {
+        "anthropic_measure": "declared_in_source",
+        "ilo_measure": "declared_in_source",
+        "n_cbo": "declared_in_source",
+        "sample": "declared_in_source",
+        "spearman_rho": "declared_in_source"
+      }
+    },
+    "mechanisms/exposure_sensitivity_results.csv": {
+      "artifact_path": "mechanisms/exposure_sensitivity_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "measure_id": [
+          "anthropic_continuous",
+          "model_consensus",
+          "vintage_2023"
+        ],
+        "measure_scale": [
+          "Automation Potential vs Not affected",
+          "Exposed vs Not Exposed among consensus destinations",
+          "one SD of the automation-minus-augmentation index"
+        ],
+        "model_id": [
+          "anthropic_continuous__admissoes",
+          "anthropic_continuous__asinh_saldo",
+          "anthropic_continuous__desligamentos",
+          "anthropic_continuous__ln_salario_real_adm",
+          "anthropic_continuous__n_movimentacoes",
+          "model_consensus__admissoes",
+          "model_consensus__asinh_saldo",
+          "model_consensus__desligamentos",
+          "model_consensus__ln_salario_real_adm",
+          "model_consensus__n_movimentacoes",
+          "vintage_2023__admissoes",
+          "vintage_2023__asinh_saldo",
+          "vintage_2023__desligamentos",
+          "vintage_2023__ln_salario_real_adm",
+          "vintage_2023__n_movimentacoes"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "term": [
+          "post_anthropic_z",
+          "post_treat_2023",
+          "post_treat_consensus"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "measure_id",
+        "measure_scale",
+        "p_value_adjusted_bh"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.exposure_sensitivity",
+      "units": {
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "measure_id": "declared_in_source",
+        "measure_scale": "declared_in_source",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "p_value_adjusted_bh": "probability",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source"
+      }
+    },
+    "mechanisms/exposure_sensitivity_status.json": {
+      "artifact_path": "mechanisms/exposure_sensitivity_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "adjusted_rejections_5pct",
+        "all_models_converged",
+        "bh_family_size",
+        "checkpoint_g_support_complete",
+        "isco_model_agreement_count",
+        "measure_count",
+        "model_count"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.exposure_sensitivity",
+      "units": {}
+    },
+    "mechanisms/exposure_sensitivity_support.csv": {
+      "artifact_path": "mechanisms/exposure_sensitivity_support.csv",
+      "categorical_domains": {
+        "measure_id": [
+          "anthropic_continuous",
+          "model_consensus",
+          "vintage_2023"
+        ],
+        "treatment_term": [
+          "post_anthropic_z",
+          "post_treat_2023",
+          "post_treat_consensus"
+        ]
+      },
+      "columns": [
+        "measure_id",
+        "scale",
+        "treatment_term",
+        "panel_rows",
+        "cbo_families",
+        "treated_cbo_families",
+        "control_cbo_families",
+        "months"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.exposure_sensitivity",
+      "units": {
+        "cbo_families": "count",
+        "control_cbo_families": "count",
+        "measure_id": "declared_in_source",
+        "months": "count",
+        "panel_rows": "count",
+        "scale": "declared_in_source",
+        "treated_cbo_families": "count",
+        "treatment_term": "declared_in_source"
+      }
+    },
+    "mechanisms/hourly_wage_coverage.csv": {
+      "artifact_path": "mechanisms/hourly_wage_coverage.csv",
+      "categorical_domains": {},
+      "columns": [
+        "periodo_num",
+        "total_admissions",
+        "valid_hours_admissions",
+        "partial_known",
+        "intermittent_known",
+        "valid_hours_admissions_pct",
+        "partial_known_pct",
+        "intermittent_known_pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.hourly_wage",
+      "units": {
+        "intermittent_known": "declared_in_source",
+        "intermittent_known_pct": "percent",
+        "partial_known": "declared_in_source",
+        "partial_known_pct": "percent",
+        "periodo_num": "declared_in_source",
+        "total_admissions": "declared_in_source",
+        "valid_hours_admissions": "declared_in_source",
+        "valid_hours_admissions_pct": "percent"
+      }
+    },
+    "mechanisms/hourly_wage_results.csv": {
+      "artifact_path": "mechanisms/hourly_wage_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols"
+        ],
+        "model_id": [
+          "hourly_wage__ln_horas_semanais_adm",
+          "hourly_wage__ln_salario_hora_real_adm",
+          "hourly_wage__ln_salario_real_adm",
+          "hourly_wage__pct_intermitente_adm",
+          "hourly_wage__pct_parcial_adm"
+        ],
+        "multiplicity_family_size": [
+          "5"
+        ],
+        "outcome": [
+          "ln_horas_semanais_adm",
+          "ln_salario_hora_real_adm",
+          "ln_salario_real_adm",
+          "pct_intermitente_adm",
+          "pct_parcial_adm"
+        ],
+        "outcome_label": [
+          "Intermittent-work admission share",
+          "Log real hourly admission wage",
+          "Log real monthly admission wage",
+          "Log weekly contracted admission hours",
+          "Partial-work admission share"
+        ],
+        "term": [
+          "post_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "outcome_label",
+        "bh_adjusted_p_value",
+        "multiplicity_family_size"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.hourly_wage",
+      "units": {
+        "bh_adjusted_p_value": "probability",
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "multiplicity_family_size": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "outcome_label": "declared_in_source",
+        "p_value": "probability",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source"
+      }
+    },
+    "mechanisms/hourly_wage_status.json": {
+      "artifact_path": "mechanisms/hourly_wage_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "continuity_gate",
+        "coverage_months",
+        "family_size",
+        "model_count",
+        "panel_rows",
+        "status"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.hourly_wage",
+      "units": {}
+    },
+    "mechanisms/hourly_wage_support.csv": {
+      "artifact_path": "mechanisms/hourly_wage_support.csv",
+      "categorical_domains": {
+        "outcome": [
+          "ln_horas_semanais_adm",
+          "ln_salario_hora_real_adm",
+          "ln_salario_real_adm",
+          "pct_intermitente_adm",
+          "pct_parcial_adm"
+        ],
+        "outcome_label": [
+          "Intermittent-work admission share",
+          "Log real hourly admission wage",
+          "Log real monthly admission wage",
+          "Log weekly contracted admission hours",
+          "Partial-work admission share"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "outcome_label",
+        "input_cells",
+        "complete_case_cells",
+        "n_obs",
+        "cells_dropped",
+        "minimum_clusters"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.hourly_wage",
+      "units": {
+        "cells_dropped": "count",
+        "complete_case_cells": "count",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "outcome_label": "declared_in_source"
+      }
+    },
+    "mechanisms/separation_event_study.csv": {
+      "artifact_path": "mechanisms/separation_event_study.csv",
+      "categorical_domains": {
+        "family": [
+          "contract_end",
+          "dismissal_with_cause",
+          "dismissal_without_cause",
+          "mutual_agreement",
+          "resignation",
+          "unknown_separation"
+        ],
+        "family_label": [
+          "Contract termination",
+          "Dismissal with cause or reciprocal fault",
+          "Dismissal without cause",
+          "Mutual agreement",
+          "Resignation",
+          "Unknown separation type"
+        ]
+      },
+      "columns": [
+        "family",
+        "family_label",
+        "event_time",
+        "periodo",
+        "is_reference",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "n_obs",
+        "n_clusters",
+        "effect_percent",
+        "bh_adjusted_p_value"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.separation_mechanisms",
+      "units": {
+        "bh_adjusted_p_value": "probability",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_df": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "effect_percent": "percent",
+        "event_time": "declared_in_source",
+        "family": "declared_in_source",
+        "family_label": "declared_in_source",
+        "is_reference": "declared_in_source",
+        "n_clusters": "count",
+        "n_obs": "count",
+        "p_value": "probability",
+        "periodo": "declared_in_source",
+        "standard_error": "model_outcome_scale"
+      }
+    },
+    "mechanisms/separation_family_reconciliation.csv": {
+      "artifact_path": "mechanisms/separation_family_reconciliation.csv",
+      "categorical_domains": {},
+      "columns": [
+        "periodo_num",
+        "panel_total",
+        "raw_total",
+        "named_families",
+        "excluded",
+        "named_plus_excluded",
+        "difference",
+        "raw_panel_difference",
+        "scope"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.separation_mechanisms",
+      "units": {
+        "difference": "declared_in_source",
+        "excluded": "declared_in_source",
+        "named_families": "count",
+        "named_plus_excluded": "declared_in_source",
+        "panel_total": "declared_in_source",
+        "periodo_num": "declared_in_source",
+        "raw_panel_difference": "declared_in_source",
+        "raw_total": "declared_in_source",
+        "scope": "declared_in_source"
+      }
+    },
+    "mechanisms/separation_family_support.csv": {
+      "artifact_path": "mechanisms/separation_family_support.csv",
+      "categorical_domains": {
+        "all_sample_named_total_reference": [
+          "118723283"
+        ],
+        "family": [
+          "contract_end",
+          "dismissal_with_cause",
+          "dismissal_without_cause",
+          "mutual_agreement",
+          "resignation",
+          "unknown_separation"
+        ],
+        "family_label": [
+          "Contract termination",
+          "Dismissal with cause or reciprocal fault",
+          "Dismissal without cause",
+          "Mutual agreement",
+          "Resignation",
+          "Unknown separation type"
+        ],
+        "signed_total_main_sample": [
+          "12139016",
+          "1545886",
+          "25093945",
+          "34961446",
+          "72095",
+          "747994"
+        ]
+      },
+      "columns": [
+        "family",
+        "family_label",
+        "codes",
+        "signed_total_main_sample",
+        "share_of_named_main_pct",
+        "positive_cells",
+        "input_cells",
+        "months_with_positive_flow",
+        "treated_cbo_with_positive_flow",
+        "control_cbo_with_positive_flow",
+        "all_sample_named_total_reference"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.separation_mechanisms",
+      "units": {
+        "all_sample_named_total_reference": "declared_in_source",
+        "codes": "declared_in_source",
+        "control_cbo_with_positive_flow": "declared_in_source",
+        "family": "declared_in_source",
+        "family_label": "declared_in_source",
+        "input_cells": "count",
+        "months_with_positive_flow": "count",
+        "positive_cells": "count",
+        "share_of_named_main_pct": "proportion_or_percentage_as_declared_by_source",
+        "signed_total_main_sample": "declared_in_source",
+        "treated_cbo_with_positive_flow": "declared_in_source"
+      }
+    },
+    "mechanisms/separation_mechanisms_status.json": {
+      "artifact_path": "mechanisms/separation_mechanisms_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "event_family_size",
+        "event_model_count",
+        "event_rows",
+        "event_support",
+        "family_count",
+        "panel_rows",
+        "panel_sha256",
+        "reconciliation_exact",
+        "static_family_size",
+        "static_model_count",
+        "status"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.separation_mechanisms",
+      "units": {}
+    },
+    "mechanisms/separation_static_results.csv": {
+      "artifact_path": "mechanisms/separation_static_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0",
+          "10",
+          "122",
+          "2614",
+          "75"
+        ],
+        "estimator": [
+          "ppml"
+        ],
+        "family": [
+          "contract_end",
+          "dismissal_with_cause",
+          "dismissal_without_cause",
+          "mutual_agreement",
+          "resignation",
+          "unknown_separation"
+        ],
+        "family_label": [
+          "Contract termination",
+          "Dismissal with cause or reciprocal fault",
+          "Dismissal without cause",
+          "Mutual agreement",
+          "Resignation",
+          "Unknown separation type"
+        ],
+        "model_id": [
+          "separation_static__contract_end",
+          "separation_static__dismissal_with_cause",
+          "separation_static__dismissal_without_cause",
+          "separation_static__mutual_agreement",
+          "separation_static__resignation",
+          "separation_static__unknown_separation"
+        ],
+        "outcome": [
+          "separation_count"
+        ],
+        "term": [
+          "post_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "family",
+        "family_label",
+        "bh_adjusted_p_value"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.separation_mechanisms",
+      "units": {
+        "bh_adjusted_p_value": "probability",
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "family": "declared_in_source",
+        "family_label": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source"
+      }
+    },
+    "mechanisms/stock_proxy_large_cbo_series.csv": {
+      "artifact_path": "mechanisms/stock_proxy_large_cbo_series.csv",
+      "categorical_domains": {},
+      "columns": [
+        "cbo_4d",
+        "periodo_num",
+        "saldo",
+        "cumulative_net_flow_change",
+        "pre_gross_flow",
+        "stock_proxy_index"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.stock_proxy",
+      "units": {
+        "cbo_4d": "declared_in_source",
+        "cumulative_net_flow_change": "declared_in_source",
+        "periodo_num": "declared_in_source",
+        "pre_gross_flow": "declared_in_source",
+        "saldo": "declared_in_source",
+        "stock_proxy_index": "declared_in_source"
+      }
+    },
+    "mechanisms/stock_proxy_result.csv": {
+      "artifact_path": "mechanisms/stock_proxy_result.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols"
+        ],
+        "model_id": [
+          "stock_proxy_index__principal"
+        ],
+        "multiplicity_family_size": [
+          "1"
+        ],
+        "outcome": [
+          "stock_proxy_index"
+        ],
+        "term": [
+          "post_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "bh_adjusted_p_value",
+        "multiplicity_family_size"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.stock_proxy",
+      "units": {
+        "bh_adjusted_p_value": "probability",
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "multiplicity_family_size": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source"
+      }
+    },
+    "mechanisms/stock_proxy_status.json": {
+      "artifact_path": "mechanisms/stock_proxy_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "balanced_grid",
+        "base_index_max",
+        "base_index_min",
+        "cbo_count",
+        "invalid_pre_flow_scale_cbo_count",
+        "month_count",
+        "nonpositive_base_net_flow_cbo_count",
+        "panel_rows",
+        "panel_sha256",
+        "status"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.stock_proxy",
+      "units": {}
+    },
+    "mechanisms/stock_proxy_support.csv": {
+      "artifact_path": "mechanisms/stock_proxy_support.csv",
+      "categorical_domains": {},
+      "columns": [
+        "cbo_4d",
+        "treated_main",
+        "pre_gross_flow",
+        "base_net_flow",
+        "final_cumulative_net_flow_change",
+        "final_stock_proxy_index",
+        "valid_pre_flow_scale",
+        "observed_months"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.stock_proxy",
+      "units": {
+        "base_net_flow": "declared_in_source",
+        "cbo_4d": "declared_in_source",
+        "final_cumulative_net_flow_change": "declared_in_source",
+        "final_stock_proxy_index": "declared_in_source",
+        "observed_months": "count",
+        "pre_gross_flow": "declared_in_source",
+        "treated_main": "declared_in_source",
+        "valid_pre_flow_scale": "declared_in_source"
+      }
+    },
+    "models/01_sector_fixed_effect_support.csv": {
+      "artifact_path": "models/01_sector_fixed_effect_support.csv",
+      "categorical_domains": {},
+      "columns": [
+        "level_id",
+        "fixed_effect_cell",
+        "cells",
+        "observations_per_cell_p10",
+        "observations_per_cell_min",
+        "median_treated_cbos_per_cell",
+        "median_control_cbos_per_cell",
+        "coexisting_cells",
+        "coexisting_cell_share",
+        "treated_cbos_in_coexisting_cells",
+        "control_cbos_in_coexisting_cells"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.sector_models",
+      "units": {
+        "cells": "count",
+        "coexisting_cell_share": "proportion_or_percentage_as_declared_by_source",
+        "coexisting_cells": "count",
+        "control_cbos_in_coexisting_cells": "count",
+        "fixed_effect_cell": "declared_in_source",
+        "level_id": "declared_in_source",
+        "median_control_cbos_per_cell": "declared_in_source",
+        "median_treated_cbos_per_cell": "declared_in_source",
+        "observations_per_cell_min": "count",
+        "observations_per_cell_p10": "count",
+        "treated_cbos_in_coexisting_cells": "count"
+      }
+    },
+    "models/SECTOR_FIXED_EFFECT_RESULTS.md": {
+      "artifact_path": "models/SECTOR_FIXED_EFFECT_RESULTS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.sector_models",
+      "units": {}
+    },
+    "models/event_study_coefficients.csv": {
+      "artifact_path": "models/event_study_coefficients.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "estimator",
+        "event_time",
+        "periodo",
+        "is_reference",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "n_obs",
+        "n_clusters",
+        "effect_percent"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.event_study",
+      "units": {
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_df": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "event_time": "declared_in_source",
+        "is_reference": "declared_in_source",
+        "n_clusters": "count",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "periodo": "declared_in_source",
+        "standard_error": "model_outcome_scale"
+      }
+    },
+    "models/event_study_grid.csv": {
+      "artifact_path": "models/event_study_grid.csv",
+      "categorical_domains": {},
+      "columns": [
+        "event_time",
+        "periodo",
+        "periodo_num",
+        "is_reference"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.event_study",
+      "units": {
+        "event_time": "declared_in_source",
+        "is_reference": "declared_in_source",
+        "periodo": "declared_in_source",
+        "periodo_num": "declared_in_source"
+      }
+    },
+    "models/event_study_support.json": {
+      "artifact_path": "models/event_study_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "event_time_max",
+        "event_time_min",
+        "models",
+        "reference_event_time",
+        "reference_period",
+        "tail_grouping"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.event_study",
+      "units": {}
+    },
+    "models/long_run_horizons.csv": {
+      "artifact_path": "models/long_run_horizons.csv",
+      "categorical_domains": {},
+      "columns": [
+        "event_time",
+        "periodo",
+        "periodo_num",
+        "horizon",
+        "partial_horizon"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.event_study",
+      "units": {
+        "event_time": "declared_in_source",
+        "horizon": "declared_in_source",
+        "partial_horizon": "declared_in_source",
+        "periodo": "declared_in_source",
+        "periodo_num": "declared_in_source"
+      }
+    },
+    "models/sector_fixed_effect_ladder.csv": {
+      "artifact_path": "models/sector_fixed_effect_ladder.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "194",
+          "264",
+          "286",
+          "288",
+          "355"
+        ],
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "model_id": [
+          "level_2__admissoes",
+          "level_2__asinh_saldo",
+          "level_2__desligamentos",
+          "level_2__ln_salario_real_adm",
+          "level_2__n_movimentacoes",
+          "level_2_two_way__admissoes",
+          "level_2_two_way__asinh_saldo",
+          "level_2_two_way__desligamentos",
+          "level_2_two_way__ln_salario_real_adm",
+          "level_2_two_way__n_movimentacoes",
+          "level_3__admissoes",
+          "level_3__asinh_saldo",
+          "level_3__desligamentos",
+          "level_3__ln_salario_real_adm",
+          "level_3__n_movimentacoes"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "role": [
+          "co_principal_sector",
+          "inference_robustness",
+          "support_diagnostic"
+        ],
+        "term": [
+          "post_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "level_id",
+        "role",
+        "substantive_interpretation_allowed"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.sector_models",
+      "units": {
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "level_id": "declared_in_source",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "role": "declared_in_source",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "substantive_interpretation_allowed": "declared_in_source",
+        "term": "declared_in_source"
+      }
+    },
+    "models/sector_fixed_effect_support.json": {
+      "artifact_path": "models/sector_fixed_effect_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "admissions",
+        "all_models_converged",
+        "cbo_clusters",
+        "division_panel_bytes",
+        "division_panel_cells",
+        "division_panel_sha256",
+        "duplicate_cells",
+        "level_3_minimum_required",
+        "level_3_substantive_interpretation_allowed",
+        "level_3_treated_cbo_support",
+        "model_count",
+        "official_divisions",
+        "official_sections",
+        "separations",
+        "two_way_division_clusters"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.sector_models",
+      "units": {}
+    },
+    "models/sector_level1_vs_level2.csv": {
+      "artifact_path": "models/sector_level1_vs_level2.csv",
+      "categorical_domains": {
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "level_1_coefficient",
+        "level_1_standard_error",
+        "level_1_p_value",
+        "level_2_coefficient",
+        "level_2_standard_error",
+        "level_2_p_value",
+        "coefficient_delta_level_2_minus_level_1"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.sector_models",
+      "units": {
+        "coefficient_delta_level_2_minus_level_1": "declared_in_source",
+        "level_1_coefficient": "declared_in_source",
+        "level_1_p_value": "probability",
+        "level_1_standard_error": "declared_in_source",
+        "level_2_coefficient": "declared_in_source",
+        "level_2_p_value": "probability",
+        "level_2_standard_error": "declared_in_source",
+        "outcome": "declared_in_source"
+      }
+    },
+    "models/specification_ladder.csv": {
+      "artifact_path": "models/specification_ladder.csv",
+      "categorical_domains": {
+        "causal_role": [
+          "co_reported_exposure_measure",
+          "descriptive_post_treatment",
+          "principal",
+          "robustness",
+          "sample_sensitivity"
+        ],
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "model_id": [
+          "01_no_controls__admissoes",
+          "01_no_controls__asinh_saldo",
+          "01_no_controls__desligamentos",
+          "01_no_controls__ln_salario_real_adm",
+          "01_no_controls__n_movimentacoes",
+          "02_pre_treatment_controls_x_post__admissoes",
+          "02_pre_treatment_controls_x_post__asinh_saldo",
+          "02_pre_treatment_controls_x_post__desligamentos",
+          "02_pre_treatment_controls_x_post__ln_salario_real_adm",
+          "02_pre_treatment_controls_x_post__n_movimentacoes",
+          "03_contemporary_controls__admissoes",
+          "03_contemporary_controls__asinh_saldo",
+          "03_contemporary_controls__desligamentos",
+          "03_contemporary_controls__ln_salario_real_adm",
+          "03_contemporary_controls__n_movimentacoes",
+          "04_include_minimal_as_control__admissoes",
+          "04_include_minimal_as_control__asinh_saldo",
+          "04_include_minimal_as_control__desligamentos",
+          "04_include_minimal_as_control__ln_salario_real_adm",
+          "04_include_minimal_as_control__n_movimentacoes",
+          "05_continuous_exposure__admissoes",
+          "05_continuous_exposure__asinh_saldo",
+          "05_continuous_exposure__desligamentos",
+          "05_continuous_exposure__ln_salario_real_adm",
+          "05_continuous_exposure__n_movimentacoes",
+          "06_start_2022_01__admissoes",
+          "06_start_2022_01__asinh_saldo",
+          "06_start_2022_01__desligamentos",
+          "06_start_2022_01__ln_salario_real_adm",
+          "06_start_2022_01__n_movimentacoes",
+          "07_end_2025_12__admissoes",
+          "07_end_2025_12__asinh_saldo",
+          "07_end_2025_12__desligamentos",
+          "07_end_2025_12__ln_salario_real_adm",
+          "07_end_2025_12__n_movimentacoes"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "sample": [
+          "continuous",
+          "expanded_minimal",
+          "v_a"
+        ],
+        "step_id": [
+          "01_no_controls",
+          "02_pre_treatment_controls_x_post",
+          "03_contemporary_controls",
+          "04_include_minimal_as_control",
+          "05_continuous_exposure",
+          "06_start_2022_01",
+          "07_end_2025_12"
+        ],
+        "step_label": [
+          "Contemporary composition",
+          "Minimal Exposure included as control",
+          "No contemporaneous controls",
+          "Pre-treatment composition interacted with post",
+          "Sample ends December 2025",
+          "Sample starts January 2022",
+          "Standardized continuous exposure"
+        ],
+        "term": [
+          "post_exposure_z",
+          "post_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "step_id",
+        "step_label",
+        "causal_role",
+        "sample",
+        "start_period",
+        "end_period"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.specification_ladder",
+      "units": {
+        "causal_role": "declared_in_source",
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "end_period": "declared_in_source",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "sample": "declared_in_source",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "start_period": "declared_in_source",
+        "step_id": "declared_in_source",
+        "step_label": "declared_in_source",
+        "term": "declared_in_source"
+      }
+    },
+    "models/specification_ladder_support.json": {
+      "artifact_path": "models/specification_ladder_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "all_models_converged",
+        "continuous_exposure_cbo_families",
+        "model_count",
+        "omitted_steps",
+        "outcomes_per_step",
+        "step_count",
+        "steps"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.specification_ladder",
+      "units": {}
+    },
+    "reconciliation/GATE_MODELO_ANTIGO.md": {
+      "artifact_path": "reconciliation/GATE_MODELO_ANTIGO.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.gate_v1_model",
+      "units": {}
+    },
+    "reconciliation/RECONCILIACAO.md": {
+      "artifact_path": "reconciliation/RECONCILIACAO.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.ingest.reconcile_v1",
+      "units": {}
+    },
+    "reconciliation/build_movements_metrics.json": {
+      "artifact_path": "reconciliation/build_movements_metrics.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "archives_processed",
+        "negative_weight_rows",
+        "observed_free_space_delta_bytes",
+        "output_bytes",
+        "partitions_written",
+        "peak_scratch_bytes",
+        "total_exclusion_rows"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.ingest.build_movements",
+      "units": {}
+    },
+    "reconciliation/cnae_month_treatment_support.csv": {
+      "artifact_path": "reconciliation/cnae_month_treatment_support.csv",
+      "categorical_domains": {},
+      "columns": [
+        "subclasse",
+        "secao",
+        "divisao",
+        "periodo_num",
+        "treated_cbo_families",
+        "control_cbo_families",
+        "has_treated_control_coexistence"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.panel.build_panel",
+      "units": {
+        "control_cbo_families": "count",
+        "divisao": "declared_in_source",
+        "has_treated_control_coexistence": "declared_in_source",
+        "periodo_num": "declared_in_source",
+        "secao": "declared_in_source",
+        "subclasse": "declared_in_source",
+        "treated_cbo_families": "count"
+      }
+    },
+    "reconciliation/completude_por_competencia.csv": {
+      "artifact_path": "reconciliation/completude_por_competencia.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "linhas_mov",
+        "linhas_for",
+        "linhas_exc",
+        "meses_for_possiveis",
+        "fracao_for_sobre_mov_pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {
+        "competenciamov": "declared_in_source",
+        "fracao_for_sobre_mov_pct": "percent",
+        "linhas_exc": "declared_in_source",
+        "linhas_for": "declared_in_source",
+        "linhas_mov": "declared_in_source",
+        "meses_for_possiveis": "declared_in_source"
+      }
+    },
+    "reconciliation/completude_por_competencia.png": {
+      "artifact_path": "reconciliation/completude_por_competencia.png",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "image/png",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {}
+    },
+    "reconciliation/completude_por_grupo_cbo.csv": {
+      "artifact_path": "reconciliation/completude_por_grupo_cbo.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "grande_grupo_cbo",
+        "linhas_mov",
+        "linhas_for",
+        "linhas_exc",
+        "meses_for_possiveis",
+        "fracao_for_sobre_mov_pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {
+        "competenciamov": "declared_in_source",
+        "fracao_for_sobre_mov_pct": "percent",
+        "grande_grupo_cbo": "declared_in_source",
+        "linhas_exc": "declared_in_source",
+        "linhas_for": "declared_in_source",
+        "linhas_mov": "declared_in_source",
+        "meses_for_possiveis": "declared_in_source"
+      }
+    },
+    "reconciliation/completude_por_tratamento.csv": {
+      "artifact_path": "reconciliation/completude_por_tratamento.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "grupo_tratamento",
+        "linhas_mov",
+        "linhas_for",
+        "linhas_exc",
+        "meses_for_possiveis",
+        "fracao_for_sobre_mov_pct",
+        "diferencial_tratado_controle_pp",
+        "diferencial_acima_1pp"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {
+        "competenciamov": "declared_in_source",
+        "diferencial_acima_1pp": "declared_in_source",
+        "diferencial_tratado_controle_pp": "declared_in_source",
+        "fracao_for_sobre_mov_pct": "percent",
+        "grupo_tratamento": "declared_in_source",
+        "linhas_exc": "declared_in_source",
+        "linhas_for": "declared_in_source",
+        "linhas_mov": "declared_in_source",
+        "meses_for_possiveis": "declared_in_source"
+      }
+    },
+    "reconciliation/continuidade_variaveis.csv": {
+      "artifact_path": "reconciliation/continuidade_variaveis.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "linhas_liquidas",
+        "admissoes_liquidas",
+        "desligamentos_liquidos",
+        "tipo_mov_admissao_ni",
+        "tipo_mov_desligamento_ni",
+        "categoria_ni",
+        "indicador_aprendiz_ni",
+        "unidade_salario_ni",
+        "unidade_salario_nao_mensal",
+        "raca_cor_ni",
+        "grau_instrucao_ni",
+        "tipo_empregador_ni",
+        "tipo_empregador_codigo_1",
+        "tipo_estabelecimento_codigo_menos_1",
+        "horas_validas_admissoes",
+        "horas_validas_desligamentos",
+        "transferencia_70_liquida",
+        "transferencia_80_liquida",
+        "transferencia_70_linhas",
+        "transferencia_80_linhas",
+        "exc_mesmo_mes_linhas",
+        "tipo_mov_admissao_ni_pct",
+        "tipo_mov_desligamento_ni_pct",
+        "categoria_ni_pct",
+        "indicador_aprendiz_ni_pct",
+        "unidade_salario_ni_pct",
+        "unidade_salario_nao_mensal_pct",
+        "raca_cor_ni_pct",
+        "grau_instrucao_ni_pct",
+        "tipo_empregador_ni_pct",
+        "tipo_empregador_codigo_1_pct",
+        "tipo_estabelecimento_codigo_menos_1_pct",
+        "horas_validas_admissoes_pct",
+        "horas_validas_desligamentos_pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {
+        "admissoes_liquidas": "declared_in_source",
+        "categoria_ni": "declared_in_source",
+        "categoria_ni_pct": "percent",
+        "competenciamov": "declared_in_source",
+        "desligamentos_liquidos": "declared_in_source",
+        "exc_mesmo_mes_linhas": "declared_in_source",
+        "grau_instrucao_ni": "declared_in_source",
+        "grau_instrucao_ni_pct": "percent",
+        "horas_validas_admissoes": "declared_in_source",
+        "horas_validas_admissoes_pct": "percent",
+        "horas_validas_desligamentos": "declared_in_source",
+        "horas_validas_desligamentos_pct": "percent",
+        "indicador_aprendiz_ni": "declared_in_source",
+        "indicador_aprendiz_ni_pct": "percent",
+        "linhas_liquidas": "declared_in_source",
+        "raca_cor_ni": "declared_in_source",
+        "raca_cor_ni_pct": "percent",
+        "tipo_empregador_codigo_1": "declared_in_source",
+        "tipo_empregador_codigo_1_pct": "percent",
+        "tipo_empregador_ni": "declared_in_source",
+        "tipo_empregador_ni_pct": "percent",
+        "tipo_estabelecimento_codigo_menos_1": "declared_in_source",
+        "tipo_estabelecimento_codigo_menos_1_pct": "percent",
+        "tipo_mov_admissao_ni": "declared_in_source",
+        "tipo_mov_admissao_ni_pct": "percent",
+        "tipo_mov_desligamento_ni": "declared_in_source",
+        "tipo_mov_desligamento_ni_pct": "percent",
+        "transferencia_70_linhas": "declared_in_source",
+        "transferencia_70_liquida": "declared_in_source",
+        "transferencia_80_linhas": "declared_in_source",
+        "transferencia_80_liquida": "declared_in_source",
+        "unidade_salario_nao_mensal": "declared_in_source",
+        "unidade_salario_nao_mensal_pct": "percent",
+        "unidade_salario_ni": "declared_in_source",
+        "unidade_salario_ni_pct": "percent"
+      }
+    },
+    "reconciliation/crosswalk_coverage.json": {
+      "artifact_path": "reconciliation/crosswalk_coverage.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "cbo_families",
+        "classification",
+        "coverage"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.panel.crosswalk",
+      "units": {}
+    },
+    "reconciliation/diagnostico_vintage_metrics.json": {
+      "artifact_path": "reconciliation/diagnostico_vintage_metrics.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "cutoff",
+        "max_difference_month",
+        "max_recent_treatment_control_difference_pp",
+        "months",
+        "recent_incomplete_months",
+        "same_month_exclusion_rows",
+        "transfer_70_physical_rows",
+        "transfer_80_physical_rows",
+        "window_decision_blocked"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {}
+    },
+    "reconciliation/gate_modelo_antigo.csv": {
+      "artifact_path": "reconciliation/gate_modelo_antigo.csv",
+      "categorical_domains": {
+        "outcome": [
+          "asinh_saldo",
+          "ln_admissoes",
+          "ln_desligamentos",
+          "ln_salario_real_adm"
+        ],
+        "v1_outcome": [
+          "asinh_saldo",
+          "ln_admissoes",
+          "ln_desligamentos",
+          "ln_salario_adm"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "v1_outcome",
+        "v1_coef",
+        "v1_se",
+        "v1_p_value",
+        "v2_coef",
+        "v2_se",
+        "v2_p_value",
+        "n_obs",
+        "n_cbo",
+        "formula",
+        "fixed_effects",
+        "vcov",
+        "cluster",
+        "delta",
+        "delta_abs",
+        "delta_pct",
+        "v1_significant_5pct",
+        "v2_significant_5pct",
+        "changed_sign",
+        "crossed_significance_5pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.gate_v1_model",
+      "units": {
+        "changed_sign": "declared_in_source",
+        "cluster": "declared_in_source",
+        "crossed_significance_5pct": "declared_in_source",
+        "delta": "declared_in_source",
+        "delta_abs": "declared_in_source",
+        "delta_pct": "percent",
+        "fixed_effects": "declared_in_source",
+        "formula": "declared_in_source",
+        "n_cbo": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "v1_coef": "declared_in_source",
+        "v1_outcome": "declared_in_source",
+        "v1_p_value": "probability",
+        "v1_se": "declared_in_source",
+        "v1_significant_5pct": "declared_in_source",
+        "v2_coef": "declared_in_source",
+        "v2_p_value": "probability",
+        "v2_se": "declared_in_source",
+        "v2_significant_5pct": "declared_in_source",
+        "vcov": "declared_in_source"
+      }
+    },
+    "reconciliation/gate_modelo_antigo_support.json": {
+      "artifact_path": "reconciliation/gate_modelo_antigo_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "fwl_max_abs_coefficient_difference",
+        "independent_fwl_validation",
+        "outcomes",
+        "sign_change_outcomes",
+        "sign_changes",
+        "significance_5pct_crossing_outcomes",
+        "significance_5pct_crossings",
+        "treatment_contrast",
+        "window_end",
+        "window_start"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.gate_v1_model",
+      "units": {}
+    },
+    "reconciliation/origem_por_competencia.csv": {
+      "artifact_path": "reconciliation/origem_por_competencia.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "linhas_mov",
+        "linhas_for",
+        "linhas_exc",
+        "linhas_exc_mesmo_mes",
+        "liquido"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.diagnose_vintage",
+      "units": {
+        "competenciamov": "declared_in_source",
+        "linhas_exc": "declared_in_source",
+        "linhas_exc_mesmo_mes": "declared_in_source",
+        "linhas_for": "declared_in_source",
+        "linhas_mov": "declared_in_source",
+        "liquido": "declared_in_source"
+      }
+    },
+    "reconciliation/painel_cbo_cnae_support.json": {
+      "artifact_path": "reconciliation/painel_cbo_cnae_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "bad_admission_missingness",
+        "bad_separation_missingness",
+        "cell_size_p10",
+        "cells",
+        "cnae_month_cells",
+        "coexistence_bytes",
+        "coexistence_sha256",
+        "coexisting_treated_control_cells",
+        "coexisting_treated_control_share",
+        "divisions_including_undocumented",
+        "duplicate_cells",
+        "max_admission_wage",
+        "max_separation_wage",
+        "national_count_divergences",
+        "official_divisions",
+        "sections",
+        "sector_panel_bytes",
+        "sector_panel_sha256",
+        "undocumented_cnae_rows",
+        "undocumented_cnae_signed_weight"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.panel.build_panel",
+      "units": {}
+    },
+    "reconciliation/painel_nacional_support.json": {
+      "artifact_path": "reconciliation/painel_nacional_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "cbo_families",
+        "cells",
+        "invalid_rows_rejected",
+        "max_admission_wage",
+        "max_separation_wage",
+        "months",
+        "months_per_cbo_max",
+        "months_per_cbo_min",
+        "new_unclassified_cbo_families",
+        "raw_rows",
+        "valid_rows",
+        "wage_bound_groups",
+        "wage_winsorization",
+        "zero_admission_cells",
+        "zero_separation_cells"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.panel.build_panel",
+      "units": {}
+    },
+    "reconciliation/pdet_vs_v2_mensal.csv": {
+      "artifact_path": "reconciliation/pdet_vs_v2_mensal.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "pdet_admissoes",
+        "pdet_desligamentos",
+        "pdet_saldo",
+        "v2_admissoes",
+        "v2_desligamentos",
+        "v2_saldo",
+        "diferenca_admissoes",
+        "diferenca_admissoes_abs",
+        "diferenca_admissoes_pct",
+        "diferenca_desligamentos",
+        "diferenca_desligamentos_abs",
+        "diferenca_desligamentos_pct",
+        "diferenca_saldo",
+        "diferenca_saldo_abs",
+        "diferenca_saldo_pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.reconcile_pdet",
+      "units": {
+        "competenciamov": "declared_in_source",
+        "diferenca_admissoes": "declared_in_source",
+        "diferenca_admissoes_abs": "declared_in_source",
+        "diferenca_admissoes_pct": "percent",
+        "diferenca_desligamentos": "declared_in_source",
+        "diferenca_desligamentos_abs": "declared_in_source",
+        "diferenca_desligamentos_pct": "percent",
+        "diferenca_saldo": "declared_in_source",
+        "diferenca_saldo_abs": "declared_in_source",
+        "diferenca_saldo_pct": "percent",
+        "pdet_admissoes": "declared_in_source",
+        "pdet_desligamentos": "declared_in_source",
+        "pdet_saldo": "declared_in_source",
+        "v2_admissoes": "declared_in_source",
+        "v2_desligamentos": "declared_in_source",
+        "v2_saldo": "declared_in_source"
+      }
+    },
+    "reconciliation/pdet_vs_v2_support.json": {
+      "artifact_path": "reconciliation/pdet_vs_v2_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "max_admission_absolute_difference",
+        "max_balance_absolute_difference",
+        "max_separation_absolute_difference",
+        "months",
+        "months_with_any_difference",
+        "shift_scores_total_absolute_difference",
+        "systematic_month_shift_detected",
+        "total_admission_absolute_difference",
+        "total_balance_absolute_difference",
+        "total_separation_absolute_difference"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.ingest.reconcile_pdet",
+      "units": {}
+    },
+    "reconciliation/treatment_classification_validation.json": {
+      "artifact_path": "reconciliation/treatment_classification_validation.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "different_assignments",
+        "missing_from_reference",
+        "missing_from_v2",
+        "reference_cbo_families",
+        "v2_cbo_families"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.panel.crosswalk",
+      "units": {}
+    },
+    "reconciliation/v1_vs_v2_mensal.csv": {
+      "artifact_path": "reconciliation/v1_vs_v2_mensal.csv",
+      "categorical_domains": {},
+      "columns": [
+        "competenciamov",
+        "v1_admissoes",
+        "v1_desligamentos",
+        "v2_mov_admissoes",
+        "v2_for_admissoes",
+        "v2_exc_admissoes",
+        "v2_admissoes",
+        "delta_admissoes_abs",
+        "delta_admissoes_pct",
+        "delta_admissoes_revisao_mov",
+        "delta_admissoes_for",
+        "delta_admissoes_exc",
+        "v2_mov_desligamentos",
+        "v2_for_desligamentos",
+        "v2_exc_desligamentos",
+        "v2_desligamentos",
+        "delta_desligamentos_abs",
+        "delta_desligamentos_pct",
+        "delta_desligamentos_revisao_mov",
+        "delta_desligamentos_for",
+        "delta_desligamentos_exc",
+        "v1_movimentacoes",
+        "v2_movimentacoes",
+        "delta_movimentacoes_abs",
+        "delta_movimentacoes_pct"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.ingest.reconcile_v1",
+      "units": {
+        "competenciamov": "declared_in_source",
+        "delta_admissoes_abs": "declared_in_source",
+        "delta_admissoes_exc": "declared_in_source",
+        "delta_admissoes_for": "declared_in_source",
+        "delta_admissoes_pct": "percent",
+        "delta_admissoes_revisao_mov": "declared_in_source",
+        "delta_desligamentos_abs": "declared_in_source",
+        "delta_desligamentos_exc": "declared_in_source",
+        "delta_desligamentos_for": "declared_in_source",
+        "delta_desligamentos_pct": "percent",
+        "delta_desligamentos_revisao_mov": "declared_in_source",
+        "delta_movimentacoes_abs": "declared_in_source",
+        "delta_movimentacoes_pct": "percent",
+        "v1_admissoes": "declared_in_source",
+        "v1_desligamentos": "declared_in_source",
+        "v1_movimentacoes": "declared_in_source",
+        "v2_admissoes": "declared_in_source",
+        "v2_desligamentos": "declared_in_source",
+        "v2_exc_admissoes": "declared_in_source",
+        "v2_exc_desligamentos": "declared_in_source",
+        "v2_for_admissoes": "declared_in_source",
+        "v2_for_desligamentos": "declared_in_source",
+        "v2_mov_admissoes": "declared_in_source",
+        "v2_mov_desligamentos": "declared_in_source",
+        "v2_movimentacoes": "declared_in_source"
+      }
+    },
+    "treatment/CBO_4121_TREATMENT_VARIANTS.md": {
+      "artifact_path": "treatment/CBO_4121_TREATMENT_VARIANTS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.panel.treatment_variants",
+      "units": {}
+    },
+    "treatment/treatment_variant_comparison.csv": {
+      "artifact_path": "treatment/treatment_variant_comparison.csv",
+      "categorical_domains": {
+        "classification": [
+          "Exposed: Gradient 1",
+          "Exposed: Gradient 2",
+          "Exposed: Gradient 3",
+          "Exposed: Gradient 4",
+          "Minimal Exposure",
+          "No score",
+          "Not Exposed"
+        ]
+      },
+      "columns": [
+        "variant",
+        "classification",
+        "cbo_families",
+        "changed_vs_v_a"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.panel.treatment_variants",
+      "units": {
+        "cbo_families": "count",
+        "changed_vs_v_a": "declared_in_source",
+        "classification": "declared_in_source",
+        "variant": "declared_in_source"
+      }
+    },
+    "treatment/treatment_variant_support.json": {
+      "artifact_path": "treatment/treatment_variant_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "cbo6_with_pre_admissions",
+        "cbo_families",
+        "employment_weight_fallback_cbo_families",
+        "matched_cbo6_pre_admissions",
+        "matched_pre_admission_share",
+        "pre_admissions",
+        "variant_changes_vs_v_a"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.panel.treatment_variants",
+      "units": {}
+    }
+  },
+  "format_version": 1
+}

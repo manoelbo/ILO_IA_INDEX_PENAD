@@ -1,0 +1,14 @@
+{
+  "cbo6_with_pre_admissions": 2652,
+  "cbo_families": 629,
+  "employment_weight_fallback_cbo_families": 2,
+  "matched_cbo6_pre_admissions": 32826892,
+  "matched_pre_admission_share": 0.7891584982952153,
+  "pre_admissions": 41597337,
+  "variant_changes_vs_v_a": {
+    "V-A": 0,
+    "V-B": 8,
+    "V-C": 16,
+    "V-D": 53
+  }
+}

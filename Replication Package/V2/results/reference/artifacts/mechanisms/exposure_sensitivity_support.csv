@@ -1,0 +1,4 @@
+measure_id,scale,treatment_term,panel_rows,cbo_families,treated_cbo_families,control_cbo_families,months
+vintage_2023,Automation Potential vs Not affected,post_treat_2023,20599,320,10,310,65
+model_consensus,Exposed vs Not Exposed among consensus destinations,post_treat_consensus,21301,330,59,271,65
+anthropic_continuous,one SD of the automation-minus-augmentation index,post_anthropic_z,10631,168,0,0,65

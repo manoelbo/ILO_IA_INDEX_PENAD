@@ -1,0 +1,14 @@
+{
+  "fwl_max_abs_coefficient_difference": 1.4099832412739488e-14,
+  "independent_fwl_validation": "pass",
+  "outcomes": 4,
+  "sign_change_outcomes": [],
+  "sign_changes": 0,
+  "significance_5pct_crossing_outcomes": [
+    "ln_salario_real_adm"
+  ],
+  "significance_5pct_crossings": 1,
+  "treatment_contrast": "Exposed gradients 1-4 versus Not Exposed; Minimal Exposure and No score excluded",
+  "window_end": 202506,
+  "window_start": 202101
+}

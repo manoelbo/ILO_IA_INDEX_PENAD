@@ -1,0 +1,29 @@
+variant,classification,cbo_families,changed_vs_v_a
+V-A,Exposed: Gradient 4,0,0
+V-A,Exposed: Gradient 3,31,0
+V-A,Exposed: Gradient 2,31,0
+V-A,Exposed: Gradient 1,13,0
+V-A,Minimal Exposure,95,0
+V-A,Not Exposed,266,0
+V-A,No score,193,0
+V-B,Exposed: Gradient 4,0,8
+V-B,Exposed: Gradient 3,30,8
+V-B,Exposed: Gradient 2,32,8
+V-B,Exposed: Gradient 1,11,8
+V-B,Minimal Exposure,96,8
+V-B,Not Exposed,267,8
+V-B,No score,193,8
+V-C,Exposed: Gradient 4,0,16
+V-C,Exposed: Gradient 3,31,16
+V-C,Exposed: Gradient 2,27,16
+V-C,Exposed: Gradient 1,8,16
+V-C,Minimal Exposure,97,16
+V-C,Not Exposed,273,16
+V-C,No score,193,16
+V-D,Exposed: Gradient 4,3,53
+V-D,Exposed: Gradient 3,20,53
+V-D,Exposed: Gradient 2,37,53
+V-D,Exposed: Gradient 1,7,53
+V-D,Minimal Exposure,79,53
+V-D,Not Exposed,290,53
+V-D,No score,193,53

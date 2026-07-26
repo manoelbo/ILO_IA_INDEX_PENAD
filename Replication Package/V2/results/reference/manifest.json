@@ -1,0 +1,416 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1875,
+      "path": "diagnostics/DDD_MULTIPLICITY_RESULTS.md",
+      "sha256": "54dbe9f850427fd81c710033647d31040e51d12730583f830b55f5e3b4b0aa1c"
+    },
+    {
+      "bytes": 1501,
+      "path": "diagnostics/HONEST_DID_RESULTS.md",
+      "sha256": "98b9ab2bc16bdf1245a16c6428b6a76ae3b6304cd24e04558cfb863ef581b318"
+    },
+    {
+      "bytes": 1447,
+      "path": "diagnostics/PLACEBO_RESULTS.md",
+      "sha256": "be6be57a542dec68255921ea884dcca62890ea5b7f08d6c84cc1dce041fcd9a6"
+    },
+    {
+      "bytes": 1126,
+      "path": "diagnostics/PRETREND_DIAGNOSTICS.md",
+      "sha256": "57d3f326acd627ea2e134233e58dbad6c934a32d467df9554501e54bfaed711e"
+    },
+    {
+      "bytes": 1661,
+      "path": "diagnostics/ddd_family_support.csv",
+      "sha256": "1236c070debc343dfd823288bf034e0c08d7364bc34b07a0d3faa4d555e510c5"
+    },
+    {
+      "bytes": 69967,
+      "path": "diagnostics/ddd_multiplicity_results.csv",
+      "sha256": "720a4ce43345866570f595fc13685569ffcb1ad33433313b2e5c5f3e51efaa85"
+    },
+    {
+      "bytes": 527,
+      "path": "diagnostics/ddd_multiplicity_support.json",
+      "sha256": "df641af28143f013580d5f707474dc23518e077fc55d6aa8704ec9e8d949fc7b"
+    },
+    {
+      "bytes": 505,
+      "path": "diagnostics/group_placebo_backend_validation.csv",
+      "sha256": "1a67600ee1cdca41b55ea0387305bb4708936a1c21464403d818f39a7494c3dc"
+    },
+    {
+      "bytes": 174482,
+      "path": "diagnostics/group_placebo_distribution.csv",
+      "sha256": "5246b1d470d5c9d7e1febc3f783ae3b11ff378b3737952847108479f7f1db2f9"
+    },
+    {
+      "bytes": 252,
+      "path": "diagnostics/group_placebo_status.json",
+      "sha256": "b92b2b7adb608e8d27af92d2be9212a8d62b9a6bdb1e9dfdb064406821a67dd1"
+    },
+    {
+      "bytes": 1062,
+      "path": "diagnostics/group_placebo_summary.csv",
+      "sha256": "1da5d6a00381e4475b9558778f215a0b9b0a0e35a669424aa3a26890ec950298"
+    },
+    {
+      "bytes": 88016,
+      "path": "diagnostics/honest_did_asinh_saldo.png",
+      "sha256": "06de4e2a50e9c99fd7d310c1009acd49cd352ae369c5f711145b450beb166215"
+    },
+    {
+      "bytes": 4813,
+      "path": "diagnostics/honest_did_event_coefficients.csv",
+      "sha256": "750cdc59d43aef526cf0e745c50b9366d7fcfc651f8ba5294b851ce347f3342c"
+    },
+    {
+      "bytes": 205668,
+      "path": "diagnostics/honest_did_event_vcov_long.csv",
+      "sha256": "cb692d7173e7a4a0dd979b62c6f49ebd16f3d25bb40761742bab2de744cc85e4"
+    },
+    {
+      "bytes": 87193,
+      "path": "diagnostics/honest_did_ln_salario_real_adm.png",
+      "sha256": "35df410c85e4a3e8d28c7c337bd662957dc7f83bcb40ce7cb4068e323ce2da36"
+    },
+    {
+      "bytes": 12630,
+      "path": "diagnostics/honest_did_sensitivity.csv",
+      "sha256": "7734252ba986fa5d53d3e54f3a0f74e7c35978213a2c446605cf2d42d090f389"
+    },
+    {
+      "bytes": 742,
+      "path": "diagnostics/honest_did_summary.csv",
+      "sha256": "be1638ccbe64048d29f4e0d8662d75adc89384785a834fccb9ae6a2bda760221"
+    },
+    {
+      "bytes": 2937,
+      "path": "diagnostics/pretrend_diagnostics.csv",
+      "sha256": "c096caf0eef800b6335c7723ca17ffe1853accf0737c27e1069437996f46d444"
+    },
+    {
+      "bytes": 554,
+      "path": "diagnostics/pretrend_diagnostics_support.json",
+      "sha256": "12dd85f7c818f3deaf72d55838dcc3fffd254eb34ed3f90aa6051f239e91a21d"
+    },
+    {
+      "bytes": 276,
+      "path": "diagnostics/temporal_placebo_gate.json",
+      "sha256": "4e4ff433e8895d5e97ea4555b28c592096257beae39be7d6d6aead2de695c0f4"
+    },
+    {
+      "bytes": 2168,
+      "path": "diagnostics/temporal_placebo_results.csv",
+      "sha256": "0227b6088215375cb43122678cb846192d82d533fbb708e3d2372a5f43674620"
+    },
+    {
+      "bytes": 1175,
+      "path": "mechanisms/EMPLOYER_SIZE.md",
+      "sha256": "9d42a70d00f46b52f2faeb4a2f1c7e6f2f982606dbba5a713b6600a9c8786865"
+    },
+    {
+      "bytes": 3157,
+      "path": "mechanisms/EXPOSURE_MEASURE_SENSITIVITY.md",
+      "sha256": "a31c85f7237639e0d4d4866c1766d556da59e862ec1855395f49a463848cb46a"
+    },
+    {
+      "bytes": 1214,
+      "path": "mechanisms/HOURLY_WAGE.md",
+      "sha256": "84f541f6e15bdea42e5cfec60c0b84e951a901f4d1fd7a03f53eedc05b7c3d80"
+    },
+    {
+      "bytes": 1974,
+      "path": "mechanisms/SEPARATION_MECHANISMS.md",
+      "sha256": "aeba6e0b42ab64400ca8f8958ba0198f43d44bd41bd60826431890f91bbbc4e6"
+    },
+    {
+      "bytes": 1071,
+      "path": "mechanisms/STOCK_PROXY.md",
+      "sha256": "956f59c9a388a43e3c7beb72feca36970da955e433f2a4931de28e18541d2ae5"
+    },
+    {
+      "bytes": 561,
+      "path": "mechanisms/employer_registration_support.csv",
+      "sha256": "2ca46173a8cc822bec39059fdfe80bad3b2d4ec09abad39e12fc7a51d21e5479"
+    },
+    {
+      "bytes": 22820,
+      "path": "mechanisms/employer_size_ddd_results.csv",
+      "sha256": "e8621bb43235e1fa266a6268263bf204bff3a35b05374431c3fe0964227eaf0d"
+    },
+    {
+      "bytes": 433,
+      "path": "mechanisms/employer_size_status.json",
+      "sha256": "d93693eceee3414200df27b8e24d0861ba3061b0e3e203c17e17f129f21f4742"
+    },
+    {
+      "bytes": 626,
+      "path": "mechanisms/employer_size_support.csv",
+      "sha256": "b3dec5befe259813939c6f568fefeb44fe2ff7e23177aeb1ba6767e9766e9c9f"
+    },
+    {
+      "bytes": 245,
+      "path": "mechanisms/exposure_rank_correlations.csv",
+      "sha256": "b17704d494f3220db1b88b27304d8d5f7af843fac1b9c9e1cfe791d716d90b76"
+    },
+    {
+      "bytes": 6435,
+      "path": "mechanisms/exposure_sensitivity_results.csv",
+      "sha256": "7bd6f2352933eda9170154d4d34da21b937d858a1dc7e61341c491f2f621a9f1"
+    },
+    {
+      "bytes": 213,
+      "path": "mechanisms/exposure_sensitivity_status.json",
+      "sha256": "e1fc34a76ad44774af0bbfdd36095bacf878a391f88ef00e882ab9e356a8afd8"
+    },
+    {
+      "bytes": 405,
+      "path": "mechanisms/exposure_sensitivity_support.csv",
+      "sha256": "46c8309f8b5cf0f0f76a653d7a49db34493110c6ca36c94faf08caf024ae08c7"
+    },
+    {
+      "bytes": 5089,
+      "path": "mechanisms/hourly_wage_coverage.csv",
+      "sha256": "372554c5adace03034fad18837ad3aaaa3df63db834616281555bb6f2417ec47"
+    },
+    {
+      "bytes": 2231,
+      "path": "mechanisms/hourly_wage_results.csv",
+      "sha256": "061c07f8f43b2425ffab6a3a53698fef5f699e0f904d1f35cbeb9776082d549d"
+    },
+    {
+      "bytes": 391,
+      "path": "mechanisms/hourly_wage_status.json",
+      "sha256": "bc7132c81c758c9213f1d65ad9489f796c68866735cef06821bc94fa89379e8d"
+    },
+    {
+      "bytes": 484,
+      "path": "mechanisms/hourly_wage_support.csv",
+      "sha256": "af17921294dc76fffb11d8006a93c13478ec866e969eb515070ad525e2bfb23b"
+    },
+    {
+      "bytes": 59074,
+      "path": "mechanisms/separation_event_study.csv",
+      "sha256": "4c22fef01652bad80904ff35515e10c84b8d2023daacec03f7910d59093f73a3"
+    },
+    {
+      "bytes": 3820,
+      "path": "mechanisms/separation_family_reconciliation.csv",
+      "sha256": "bf9bd8f75db9e9e01208babe6a2ffc689850f91c044434dedff2d1e8a3972991"
+    },
+    {
+      "bytes": 849,
+      "path": "mechanisms/separation_family_support.csv",
+      "sha256": "3fd78868709f37ff908baec315443157168bba3002b5f83c72173fd318445cab"
+    },
+    {
+      "bytes": 1164,
+      "path": "mechanisms/separation_mechanisms_status.json",
+      "sha256": "a60c34a734dffcffb80e7b33abe183a29e5d46513f5e7fde4c4ba2f8dd7d337f"
+    },
+    {
+      "bytes": 2694,
+      "path": "mechanisms/separation_static_results.csv",
+      "sha256": "bf6b2ab2e96515634bc10341b7979cf2376f4ce1dd0fa6924fe09353615bf184"
+    },
+    {
+      "bytes": 16719,
+      "path": "mechanisms/stock_proxy_large_cbo_series.csv",
+      "sha256": "209eb7066dce70675ce20a01b670a1dc648597d5494ab0b71ebe61901c1cae98"
+    },
+    {
+      "bytes": 673,
+      "path": "mechanisms/stock_proxy_result.csv",
+      "sha256": "2dafb2349f3a641ae9f47ea3c56f3ae78d594f7396a21f6de5d1b2e89498668d"
+    },
+    {
+      "bytes": 343,
+      "path": "mechanisms/stock_proxy_status.json",
+      "sha256": "4db37254f5814801e09fe0f1fee286d3d32673011497ccfe638d705534f438b0"
+    },
+    {
+      "bytes": 17176,
+      "path": "mechanisms/stock_proxy_support.csv",
+      "sha256": "8c9df70aba2464553c5c3bcd55101e00a16d95b40ac2a316f9ef933c78fbf399"
+    },
+    {
+      "bytes": 449,
+      "path": "models/01_sector_fixed_effect_support.csv",
+      "sha256": "cd9a40f3e5f6d7e8dee26b75dda1122c506f8e9812cf8fd222dc0a8b96acaef0"
+    },
+    {
+      "bytes": 793,
+      "path": "models/SECTOR_FIXED_EFFECT_RESULTS.md",
+      "sha256": "bf1ef96222c2eaf1a3dd07a176746652543f4adf03e822a4f73b167b61be24b9"
+    },
+    {
+      "bytes": 38122,
+      "path": "models/event_study_coefficients.csv",
+      "sha256": "5d87a5c7aa227277bde6d2aeba1b1e9fb9374824a905835476fd774cca3aeb22"
+    },
+    {
+      "bytes": 1175,
+      "path": "models/event_study_grid.csv",
+      "sha256": "0ac470e6170196662bf3914b577c27e8aa7d7be939f2fd7b30fd9cdf5bde372a"
+    },
+    {
+      "bytes": 1862,
+      "path": "models/event_study_support.json",
+      "sha256": "a31f222c282ea2257320675e0706407f3b388648917a2ec144a3e7a9f9dd220d"
+    },
+    {
+      "bytes": 1839,
+      "path": "models/long_run_horizons.csv",
+      "sha256": "8295ceabfaa68d55e6d2d2df0fc44a644e74dff94e04d22e743b6b07deefc966"
+    },
+    {
+      "bytes": 6193,
+      "path": "models/sector_fixed_effect_ladder.csv",
+      "sha256": "32e7ba84eade737f5a02fba4a9a0caf08b534557f6bd81805950014e52bd3481"
+    },
+    {
+      "bytes": 539,
+      "path": "models/sector_fixed_effect_support.json",
+      "sha256": "bf941044cfefd867ae95343342b8bd84b14e2810bfd446efbcb902efb3bcc685"
+    },
+    {
+      "bytes": 944,
+      "path": "models/sector_level1_vs_level2.csv",
+      "sha256": "4676a963516925c6b5670f94884daa332c0c05d9aeb9035961e3caf2e5e3b0c3"
+    },
+    {
+      "bytes": 16497,
+      "path": "models/specification_ladder.csv",
+      "sha256": "068e29f5d34b8e5857209072fda7be9a136cab356069a034ccf5ba815fa0401f"
+    },
+    {
+      "bytes": 391,
+      "path": "models/specification_ladder_support.json",
+      "sha256": "b8cafbebc315355474ae46b8d517d66a4bf8f97d1b34096643565fff4f15f88a"
+    },
+    {
+      "bytes": 1228,
+      "path": "reconciliation/GATE_MODELO_ANTIGO.md",
+      "sha256": "89e29e6855c87771b0ef92152b301038568e36b6c71618f542ada22063d7130d"
+    },
+    {
+      "bytes": 3731,
+      "path": "reconciliation/RECONCILIACAO.md",
+      "sha256": "15ab143a7952c52f9337b1ebe12fa036364923d4e488cbfb279270a2b1dd95d4"
+    },
+    {
+      "bytes": 242,
+      "path": "reconciliation/build_movements_metrics.json",
+      "sha256": "df3d481677481020528b242345d26e6da57f495fe11cfce916dbc2c0066d41ae"
+    },
+    {
+      "bytes": 2591806,
+      "path": "reconciliation/cnae_month_treatment_support.csv",
+      "sha256": "bad9deb4e8e9b20bf98cf707e7724bd226b7ff82bc69153c353098c5255d65d2"
+    },
+    {
+      "bytes": 3188,
+      "path": "reconciliation/completude_por_competencia.csv",
+      "sha256": "6047c097a856da6d527021d1ef34b3d9649e730aab14e49ab0683023e0035562"
+    },
+    {
+      "bytes": 117229,
+      "path": "reconciliation/completude_por_competencia.png",
+      "sha256": "85fa84187ffc16b77b535f696feffc4835e8766efa78d2ef2a91bfe0625c4aed"
+    },
+    {
+      "bytes": 27380,
+      "path": "reconciliation/completude_por_grupo_cbo.csv",
+      "sha256": "c8967820ddecb58a33bee47f23961b3f33c12e8b6982f929d9a9318128b92749"
+    },
+    {
+      "bytes": 10624,
+      "path": "reconciliation/completude_por_tratamento.csv",
+      "sha256": "96b3904940861651aa5c1de4aa3e13b4184d37c9aec6d63bfb6a931e4cab99a4"
+    },
+    {
+      "bytes": 22556,
+      "path": "reconciliation/continuidade_variaveis.csv",
+      "sha256": "7ef0e6d733489cd062f347194ef230bcc99928f2f97129bb4f6713cf6a7bf951"
+    },
+    {
+      "bytes": 322,
+      "path": "reconciliation/crosswalk_coverage.json",
+      "sha256": "3a41b2440f645ba8f2df4eea705b8158f5e1b66f3dafa8860a3ade17f07f6277"
+    },
+    {
+      "bytes": 318,
+      "path": "reconciliation/diagnostico_vintage_metrics.json",
+      "sha256": "1fe79193e5284e1673ee6845b8eb05e3f0d63cc7a834d59c13552855505cc207"
+    },
+    {
+      "bytes": 1782,
+      "path": "reconciliation/gate_modelo_antigo.csv",
+      "sha256": "96beccaaaf47ee8b18385a608e4f0cf39fe34e2cc3bc18dbb0ba6bc4bb08dea5"
+    },
+    {
+      "bytes": 443,
+      "path": "reconciliation/gate_modelo_antigo_support.json",
+      "sha256": "89763772c358e2523ff65fab1b02e7ef0ca637d95d4ef1d5d619f46ee1375cc9"
+    },
+    {
+      "bytes": 2781,
+      "path": "reconciliation/origem_por_competencia.csv",
+      "sha256": "727bdacd3d0db43423b7ab96764263d0330879d0a2b9cf4239e9fb503d21f9b0"
+    },
+    {
+      "bytes": 804,
+      "path": "reconciliation/painel_cbo_cnae_support.json",
+      "sha256": "380c450c31f3d12feeb6aa064dd6450344f4c9bf463a1f7fd5f6b189be493e52"
+    },
+    {
+      "bytes": 531,
+      "path": "reconciliation/painel_nacional_support.json",
+      "sha256": "1f2538f02bd4577be1ada2ebed69d54db32018e5bdd9a760ce6b4a8d01508522"
+    },
+    {
+      "bytes": 5307,
+      "path": "reconciliation/pdet_vs_v2_mensal.csv",
+      "sha256": "76a9abd7468f18160ac1d3c46407c3f9058a9c51e86208b2c6413955b4fd6b34"
+    },
+    {
+      "bytes": 455,
+      "path": "reconciliation/pdet_vs_v2_support.json",
+      "sha256": "01d1af764220b4e441906c9720b35ebd445248f9ef0009407965447ff55ccba6"
+    },
+    {
+      "bytes": 147,
+      "path": "reconciliation/treatment_classification_validation.json",
+      "sha256": "1ae3deac421424dd93be3a5ccbfc077be3fb8ba411d3abd534f7f10b9aa80084"
+    },
+    {
+      "bytes": 11079,
+      "path": "reconciliation/v1_vs_v2_mensal.csv",
+      "sha256": "4e3d2fcd317d547e26dce68a0b7a925bf94f571cf60b6788e5aa174acbb19f06"
+    },
+    {
+      "bytes": 1177,
+      "path": "treatment/CBO_4121_TREATMENT_VARIANTS.md",
+      "sha256": "dff7abbc9dd4373f5f68c636adc45e01a60ade35d759b569ee6b5227dd1e8411"
+    },
+    {
+      "bytes": 791,
+      "path": "treatment/treatment_variant_comparison.csv",
+      "sha256": "483d99469e09781dab79f1fb9e0e2cb8859d1f141195fc51465335fc235da89d"
+    },
+    {
+      "bytes": 328,
+      "path": "treatment/treatment_variant_support.json",
+      "sha256": "6833783ef35ffc618660c07740ae80718207d73081d4abdf9c9e17dbb5bdd43e"
+    }
+  ],
+  "contracts_sha256": "5fb5818649f9e8ec3e55587b292e8d105023c238327f84b421c3f3f6917ebe6c",
+  "format_version": 1,
+  "signature": {
+    "algorithm": "sha256",
+    "digest": "c5c0fdf5754a83e0cdd38ec113215c821e051977ef87bd52b90d43eb6d3c4677"
+  },
+  "signature_scope": "canonical JSON of all manifest fields except signature"
+}
