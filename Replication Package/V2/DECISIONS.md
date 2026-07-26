@@ -219,3 +219,18 @@ subclass-month cells, 80,087 (94.17%) contain both treated and control CBO
 families. The generated 279 MiB Parquet is retained as a hashed local
 replication artifact rather than committed as a Git blob; its SHA-256 and byte
 size are recorded in the Task 13 support report.
+
+## 2026-07-26 — Task 14 reference measurement
+
+Task 14 was estimated only after the adjusted PDET monthly-series gate closed.
+The exact V1 specification, sample window, treatment contrast, controls, fixed
+effects, and cluster estimator were held fixed. No coefficient changes sign.
+The real admission-wage coefficient moves from -0.020706 (SE 0.013992,
+`p = 0.1398`) to -0.046974 (SE 0.010317, `p = 0.00000738`) and is the only
+outcome to cross the 5% significance threshold.
+
+The V2 coefficients for log admissions, log separations, and asinh net balance
+are -0.024528, -0.033882, and -0.607197, respectively. The literal model
+retains 18,281 V2 observations and the same 341 CBO4 families, versus 18,307
+observations in the frozen V1 reference. Checkpoint C remains non-blocking:
+the result is disclosed and does not authorize specification selection.
