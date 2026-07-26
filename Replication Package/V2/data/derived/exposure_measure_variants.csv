@@ -1,0 +1,630 @@
+cbo_4d,vintage_2023_label,vintage_2023_mean_score,vintage_2023_pooled_sd,vintage_2023_destinations,model_consensus_label,model_consensus_mean_score,model_consensus_pooled_sd,model_consensus_destinations,all_2025_destinations
+1010,No score,,,0,No score,,,0,0
+1011,No score,,,0,No score,,,0,0
+1020,No score,,,0,No score,,,0,0
+1021,No score,,,0,No score,,,0,0
+1030,No score,,,0,No score,,,0,0
+1031,No score,,,0,No score,,,0,0
+1111,Not affected,0.22,0.07,1,Not Exposed,0.31,0.04,1,1
+1112,No score,,,0,No score,,,0,0
+1113,Not affected,0.22,0.07,1,Not Exposed,0.31,0.04,1,1
+1114,No score,,,0,No score,,,0,0
+1115,No score,,,0,No score,,,0,0
+1130,No score,,,0,No score,,,0,0
+1141,No score,,,0,No score,,,0,0
+1142,No score,,,0,No score,,,0,0
+1143,No score,,,0,No score,,,0,0
+1144,No score,,,0,No score,,,0,0
+1210,No score,,,0,No score,,,0,0
+1221,No score,,,0,No score,,,0,0
+1222,No score,,,0,No score,,,0,0
+1223,No score,,,0,No score,,,0,0
+1224,No score,,,0,No score,,,0,0
+1225,No score,,,0,No score,,,0,0
+1226,No score,,,0,No score,,,0,0
+1227,No score,,,0,No score,,,0,0
+1231,No score,,,0,No score,,,0,0
+1232,No score,,,0,No score,,,0,0
+1233,No score,,,0,No score,,,0,0
+1234,No score,,,0,No score,,,0,0
+1236,No score,,,0,No score,,,0,0
+1237,No score,,,0,No score,,,0,0
+1238,No score,,,0,No score,,,0,0
+1311,No score,,,0,No score,,,0,0
+1312,No score,,,0,No score,,,0,0
+1313,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+1411,No score,,,0,No score,,,0,0
+1412,No score,,,0,No score,,,0,0
+1413,No score,,,0,No score,,,0,0
+1414,The Big Uknown,0.525,0.21406774628607647,2,Exposed: Gradient 2,0.44,0.15,1,2
+1415,The Big Uknown,0.41000000000000003,0.2157544901039142,2,Exposed: Gradient 1,0.37,0.13,1,2
+1416,Not affected,0.35,0.14089002803605372,2,Minimal Exposure,0.41000000000000003,0.06782329983125268,2,2
+1417,Not affected,0.32,0.1507599795322732,7,Exposed: Gradient 2,0.4275,0.09161741100904347,4,7
+1418,No score,,,0,No score,,,0,0
+1421,Not affected,0.2866666666666667,0.1370725679663473,3,Minimal Exposure,0.375,0.07017834423809101,2,3
+1422,Not affected,0.27,0.09,1,No score,,,0,1
+1423,The Big Uknown,0.417,0.1917837323653912,10,Exposed: Gradient 2,0.4628571428571428,0.11234059000764285,7,10
+1424,Not affected,0.29,0.16,1,Exposed: Gradient 2,0.41,0.09,1,1
+1425,No score,,,0,No score,,,0,0
+1426,Not affected,0.31,0.13,1,Exposed: Gradient 2,0.44,0.07,1,1
+1427,No score,,,0,No score,,,0,0
+2010,No score,,,0,No score,,,0,0
+2011,No score,,,0,No score,,,0,0
+2012,No score,,,0,No score,,,0,0
+2020,No score,,,0,No score,,,0,0
+2021,No score,,,0,No score,,,0,0
+2030,Not affected,0.355,0.16770509831248423,2,Minimal Exposure,0.38,0.04,1,2
+2031,No score,,,0,No score,,,0,0
+2032,No score,,,0,No score,,,0,0
+2033,No score,,,0,No score,,,0,0
+2034,No score,,,0,No score,,,0,0
+2035,The Big Uknown,0.41,0.17,1,Exposed: Gradient 2,0.47,0.06,1,1
+2041,Not affected,0.29500000000000004,0.18728320800328044,2,Not Exposed,0.23,0.07,1,2
+2110,No score,,,0,No score,,,0,0
+2111,The Big Uknown,0.5,0.15,1,Exposed: Gradient 3,0.56,0.09,1,1
+2112,The Big Uknown,0.5,0.15,1,Exposed: Gradient 3,0.56,0.09,1,1
+2120,No score,,,0,No score,,,0,0
+2121,No score,,,0,No score,,,0,0
+2122,No score,,,0,No score,,,0,0
+2123,Not affected,0.3742857142857143,0.1396277850835819,7,Exposed: Gradient 3,0.532,0.09249864863877742,5,7
+2124,Not affected,0.3742857142857143,0.1396277850835819,7,Exposed: Gradient 3,0.532,0.09249864863877742,5,7
+2131,Augmentation Potential,0.35,0.18,1,Exposed: Gradient 1,0.38,0.14,1,1
+2132,Not affected,0.325,0.19241881404893857,2,Minimal Exposure,0.33,0.09,1,2
+2133,Augmentation Potential,0.395,0.21136461387848252,2,Exposed: Gradient 1,0.38,0.14,1,2
+2134,Not affected,0.32,0.13,1,Minimal Exposure,0.36,0.1,1,1
+2140,No score,,,0,No score,,,0,0
+2141,Augmentation Potential,0.41333333333333333,0.1755625877635159,3,Minimal Exposure,0.3833333333333333,0.07630348761506398,3,3
+2142,Not affected,0.34,0.04,1,Not Exposed,0.3,0.06,1,1
+2143,Not affected,0.32,0.09660917830792959,3,No score,,,0,3
+2144,Not affected,0.31,0.06,1,No score,,,0,1
+2145,Not affected,0.31,0.18,1,Minimal Exposure,0.35,0.12,1,1
+2146,Not affected,0.27,0.06,1,Not Exposed,0.29,0.05,1,1
+2147,Not affected,0.27,0.06,1,Not Exposed,0.29,0.05,1,1
+2148,Augmentation Potential,0.38,0.17,1,Exposed: Gradient 2,0.44,0.12,1,1
+2149,Not affected,0.2866666666666667,0.1370725679663473,3,Minimal Exposure,0.375,0.07017834423809101,2,3
+2151,No score,,,0,No score,,,0,0
+2152,Not affected,0.29,0.19,1,Not Exposed,0.23,0.05,1,1
+2153,Not affected,0.24,0.17,1,Not Exposed,0.27,0.05,1,1
+2211,Not affected,0.355,0.16770509831248423,2,Minimal Exposure,0.38,0.04,1,2
+2212,No score,,,0,No score,,,0,0
+2221,Not affected,0.3,0.13,1,No score,,,0,1
+2222,No score,,,0,No score,,,0,0
+2232,Not affected,0.21,0.13,1,Not Exposed,0.15,0.06,1,1
+2233,Not affected,0.18,0.18,1,Not Exposed,0.14,0.05,1,1
+2234,Augmentation Potential,0.33,0.22,1,Minimal Exposure,0.33,0.09,1,1
+2235,Not affected,0.255,0.18790511790085263,6,Not Exposed,0.26333333333333336,0.1154219312878719,3,6
+2236,Not affected,0.245,0.13901438774457844,2,Not Exposed,0.24000000000000002,0.07778174593052023,2,2
+2237,Not affected,0.245,0.13901438774457844,2,Not Exposed,0.24000000000000002,0.07778174593052023,2,2
+2238,Not affected,0.245,0.13901438774457844,2,Not Exposed,0.24000000000000002,0.07778174593052023,2,2
+2239,Not affected,0.245,0.13901438774457844,2,Not Exposed,0.24000000000000002,0.07778174593052023,2,2
+2241,Augmentation Potential,0.3333333333333333,0.20789954839350233,3,Not Exposed,0.24,0.09273618495495704,2,3
+2251,Not affected,0.3,0.20037464909513877,2,Not Exposed,0.27,0.12,1,2
+2252,Not affected,0.3,0.20037464909513877,2,Not Exposed,0.27,0.12,1,2
+2253,Not affected,0.3,0.20037464909513877,2,Not Exposed,0.27,0.12,1,2
+2261,No score,,,0,No score,,,0,0
+2263,No score,,,0,No score,,,0,0
+2311,No score,,,0,No score,,,0,0
+2312,Not affected,0.17,0.09,1,Not Exposed,0.21,0.05,1,1
+2313,Augmentation Potential,0.32,0.23,1,Not Exposed,0.26,0.09,1,1
+2321,Augmentation Potential,0.36,0.1598436736314578,2,No score,,,0,2
+2331,Augmentation Potential,0.36,0.1598436736314578,2,No score,,,0,2
+2332,Augmentation Potential,0.36,0.1598436736314578,2,No score,,,0,2
+2341,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2342,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2343,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2344,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2345,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2346,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2347,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2348,Not affected,0.355,0.15532224567009068,2,Minimal Exposure,0.37,0.12,1,2
+2349,No score,,,0,No score,,,0,0
+2392,Not affected,0.33,0.16,1,No score,,,0,1
+2394,Augmentation Potential,0.35,0.19,1,No score,,,0,1
+2410,Not affected,0.34,0.15,1,Minimal Exposure,0.36,0.09,1,1
+2412,Not affected,0.31,0.18,1,Minimal Exposure,0.37,0.09,1,1
+2413,Not affected,0.31,0.18,1,Minimal Exposure,0.37,0.09,1,1
+2422,No score,,,0,No score,,,0,0
+2423,Not affected,0.31,0.18,1,Minimal Exposure,0.37,0.09,1,1
+2424,No score,,,0,No score,,,0,0
+2429,No score,,,0,No score,,,0,0
+2511,The Big Uknown,0.45,0.15,1,Exposed: Gradient 2,0.48,0.12,1,1
+2512,The Big Uknown,0.54,0.13,1,Exposed: Gradient 3,0.55,0.08,1,1
+2513,The Big Uknown,0.45,0.15,1,Exposed: Gradient 2,0.48,0.12,1,1
+2514,No score,,,0,No score,,,0,0
+2515,The Big Uknown,0.41,0.15,1,Exposed: Gradient 1,0.39,0.14,1,1
+2516,Not affected,0.29,0.12,1,Not Exposed,0.28,0.1,1,1
+2521,The Big Uknown,0.47571428571428565,0.18313594816475567,7,Exposed: Gradient 2,0.488,0.11530828244319659,5,7
+2522,The Big Uknown,0.485,0.1935846068260594,2,Exposed: Gradient 3,0.54,0.1007472083980494,2,2
+2523,The Big Uknown,0.47000000000000003,0.23255106965997813,5,Exposed: Gradient 2,0.4525,0.1403344220068619,4,5
+2524,The Big Uknown,0.41,0.17136705245369271,3,Minimal Exposure,0.365,0.10452272480183436,2,3
+2525,Not affected,0.2866666666666667,0.1370725679663473,3,Minimal Exposure,0.375,0.07017834423809101,2,3
+2526,No score,,,0,No score,,,0,0
+2527,No score,,,0,No score,,,0,0
+2531,The Big Uknown,0.506,0.18908728143373368,10,Exposed: Gradient 2,0.4883333333333333,0.11021443744910292,6,10
+2532,No score,,,0,No score,,,0,0
+2533,No score,,,0,No score,,,0,0
+2534,No score,,,0,No score,,,0,0
+2541,No score,,,0,No score,,,0,0
+2542,No score,,,0,No score,,,0,0
+2543,No score,,,0,No score,,,0,0
+2544,No score,,,0,No score,,,0,0
+2545,No score,,,0,No score,,,0,0
+2611,The Big Uknown,0.53,0.17378147196982768,4,Exposed: Gradient 3,0.5466666666666667,0.093571125650788,3,4
+2612,Automation Potential,0.65,0.09,1,Exposed: Gradient 3,0.55,0.04,1,1
+2613,The Big Uknown,0.44,0.16,1,No score,,,0,1
+2614,The Big Uknown,0.59,0.22,1,No score,,,0,1
+2615,The Big Uknown,0.53,0.17378147196982768,4,Exposed: Gradient 3,0.5466666666666667,0.093571125650788,3,4
+2616,The Big Uknown,0.53,0.17378147196982768,4,Exposed: Gradient 3,0.5466666666666667,0.093571125650788,3,4
+2617,The Big Uknown,0.534,0.16776173580408615,5,Exposed: Gradient 3,0.5275000000000001,0.10615436872781073,4,5
+2618,Augmentation Potential,0.355,0.21650635094610965,2,Minimal Exposure,0.35,0.11,1,2
+2619,No score,,,0,No score,,,0,0
+2621,Not affected,0.28500000000000003,0.2874456470360962,2,Minimal Exposure,0.33999999999999997,0.12083045973594572,2,2
+2622,Not affected,0.28500000000000003,0.2874456470360962,2,Minimal Exposure,0.33999999999999997,0.12083045973594572,2,2
+2623,No score,,,0,No score,,,0,0
+2624,Not affected,0.32999999999999996,0.16309506430300091,2,Not Exposed,0.21,0.04,1,2
+2625,Not affected,0.28500000000000003,0.2874456470360962,2,Minimal Exposure,0.33999999999999997,0.12083045973594572,2,2
+2626,Augmentation Potential,0.38,0.3,1,No score,,,0,1
+2627,Augmentation Potential,0.38,0.3,1,No score,,,0,1
+2628,Not affected,0.15,0.08,1,Not Exposed,0.19,0.1,1,1
+2629,No score,,,0,No score,,,0,0
+2631,Not affected,0.22,0.09,1,Not Exposed,0.17,0.12,1,1
+2711,No score,,,0,No score,,,0,0
+3001,No score,,,0,No score,,,0,0
+3003,Not affected,0.32999999999999996,0.13435028842544405,2,No score,,,0,2
+3010,No score,,,0,No score,,,0,0
+3011,Augmentation Potential,0.37,0.2039607805437114,2,Not Exposed,0.305,0.0736545993132812,2,2
+3012,No score,,,0,No score,,,0,0
+3020,No score,,,0,No score,,,0,0
+3030,No score,,,0,No score,,,0,0
+3110,No score,,,0,No score,,,0,0
+3111,Augmentation Potential,0.37,0.2039607805437114,2,Not Exposed,0.305,0.0736545993132812,2,2
+3112,Augmentation Potential,0.37,0.2039607805437114,2,Not Exposed,0.305,0.0736545993132812,2,2
+3113,Augmentation Potential,0.37,0.2039607805437114,2,Not Exposed,0.305,0.0736545993132812,2,2
+3114,No score,,,0,No score,,,0,0
+3115,Augmentation Potential,0.3233333333333333,0.19206480387850577,3,Not Exposed,0.29000000000000004,0.08225975119502045,3,3
+3116,Augmentation Potential,0.37,0.2039607805437114,2,Not Exposed,0.305,0.0736545993132812,2,2
+3117,Not affected,0.22999999999999998,0.17767010628315238,3,Not Exposed,0.24,0.14106735979665885,3,3
+3120,No score,,,0,No score,,,0,0
+3121,Not affected,0.31,0.12,1,Not Exposed,0.28,0.07,1,1
+3122,Not affected,0.31,0.12,1,Not Exposed,0.28,0.07,1,1
+3123,Not affected,0.345,0.15124483462254174,2,Minimal Exposure,0.36,0.12668859459319926,2,2
+3131,Not affected,0.27,0.14,1,Not Exposed,0.27,0.05,1,1
+3132,Not affected,0.32999999999999996,0.13435028842544405,2,No score,,,0,2
+3133,Not affected,0.32999999999999996,0.13435028842544405,2,No score,,,0,2
+3134,Not affected,0.32999999999999996,0.13435028842544405,2,No score,,,0,2
+3135,No score,,,0,No score,,,0,0
+3141,Not affected,0.34,0.14,1,Not Exposed,0.26,0.08,1,1
+3142,No score,,,0,No score,,,0,0
+3143,Not affected,0.34,0.14,1,Not Exposed,0.26,0.08,1,1
+3144,No score,,,0,No score,,,0,0
+3146,No score,,,0,No score,,,0,0
+3147,Not affected,0.29,0.15,1,Not Exposed,0.28,0.06,1,1
+3148,No score,,,0,No score,,,0,0
+3161,Not affected,0.23,0.12,1,Not Exposed,0.26,0.09,1,1
+3163,Not affected,0.29,0.15,1,Not Exposed,0.28,0.06,1,1
+3171,The Big Uknown,0.4366666666666667,0.1991370270832513,3,Exposed: Gradient 2,0.4766666666666666,0.14372040758206733,3,3
+3172,The Big Uknown,0.54,0.19,1,No score,,,0,1
+3180,The Big Uknown,0.44,0.16,1,Minimal Exposure,0.35,0.11,1,1
+3181,The Big Uknown,0.44,0.16,1,Minimal Exposure,0.35,0.11,1,1
+3182,The Big Uknown,0.44,0.16,1,Minimal Exposure,0.35,0.11,1,1
+3183,The Big Uknown,0.44,0.16,1,Minimal Exposure,0.35,0.11,1,1
+3184,The Big Uknown,0.44,0.16,1,Minimal Exposure,0.35,0.11,1,1
+3185,No score,,,0,No score,,,0,0
+3186,No score,,,0,No score,,,0,0
+3187,No score,,,0,No score,,,0,0
+3188,Not affected,0.28,0.21,1,Not Exposed,0.17,0.04,1,1
+3191,No score,,,0,No score,,,0,0
+3192,No score,,,0,No score,,,0,0
+3201,No score,,,0,No score,,,0,0
+3211,Not affected,0.275,0.15041608956491323,2,Not Exposed,0.235,0.08440971508067066,2,2
+3212,No score,,,0,No score,,,0,0
+3213,Not affected,0.275,0.15041608956491323,2,Not Exposed,0.235,0.08440971508067066,2,2
+3221,Not affected,0.22571428571428573,0.2076299691317047,7,Not Exposed,0.2357142857142857,0.13937176828869743,7,7
+3222,Not affected,0.25,0.23,1,No score,,,0,1
+3223,Not affected,0.21000000000000002,0.12786711852544425,2,Not Exposed,0.24,0.07,2,2
+3224,Not affected,0.16,0.1,1,Not Exposed,0.16,0.1,1,1
+3225,Not affected,0.165,0.088175960442742,4,Not Exposed,0.20750000000000002,0.10108783309577865,4,4
+3226,No score,,,0,No score,,,0,0
+3227,Not affected,0.22571428571428573,0.2076299691317047,7,Not Exposed,0.2357142857142857,0.13937176828869743,7,7
+3231,Not affected,0.275,0.15041608956491323,2,Not Exposed,0.235,0.08440971508067066,2,2
+3241,Not affected,0.2,0.11,1,Not Exposed,0.22,0.03,1,1
+3242,Augmentation Potential,0.33499999999999996,0.22819947414488054,2,Exposed: Gradient 1,0.345,0.1738533865071371,2,2
+3250,No score,,,0,No score,,,0,0
+3251,No score,,,0,No score,,,0,0
+3252,The Big Uknown,0.42,0.13,1,Not Exposed,0.26,0.05,1,1
+3253,No score,,,0,No score,,,0,0
+3281,Augmentation Potential,0.33499999999999996,0.22819947414488054,2,Exposed: Gradient 1,0.345,0.1738533865071371,2,2
+3311,No score,,,0,No score,,,0,0
+3312,No score,,,0,No score,,,0,0
+3313,No score,,,0,No score,,,0,0
+3321,No score,,,0,No score,,,0,0
+3322,No score,,,0,No score,,,0,0
+3331,No score,,,0,No score,,,0,0
+3341,No score,,,0,No score,,,0,0
+3411,Not affected,0.24,0.17,1,Not Exposed,0.27,0.05,1,1
+3412,Augmentation Potential,0.35,0.2,1,No score,,,0,1
+3413,No score,,,0,No score,,,0,0
+3421,No score,,,0,No score,,,0,0
+3422,The Big Uknown,0.46,0.16,1,No score,,,0,1
+3423,The Big Uknown,0.48,0.20285462775100796,2,Exposed: Gradient 2,0.43,0.11,1,2
+3424,Augmentation Potential,0.37,0.27,1,No score,,,0,1
+3425,Not affected,0.3,0.2,1,No score,,,0,1
+3426,No score,,,0,No score,,,0,0
+3511,The Big Uknown,0.5439999999999999,0.21873271360269822,5,Exposed: Gradient 3,0.5125,0.13226394066411298,4,5
+3513,The Big Uknown,0.48,0.1950640920313116,2,Exposed: Gradient 3,0.57,0.1,1,2
+3514,Augmentation Potential,0.39,0.2,1,No score,,,0,1
+3515,The Big Uknown,0.6140000000000001,0.20871990801071183,5,Exposed: Gradient 3,0.54,0.130384048104053,4,5
+3516,The Big Uknown,0.42,0.13,1,Not Exposed,0.26,0.05,1,1
+3517,The Big Uknown,0.46,0.22,1,Exposed: Gradient 3,0.53,0.12,1,1
+3518,Not affected,0.29500000000000004,0.18728320800328044,2,Not Exposed,0.23,0.07,1,2
+3519,No score,,,0,No score,,,0,0
+3522,Not affected,0.4266666666666667,0.18033918659631973,3,Not Exposed,0.26,0.04949747468305833,2,3
+3523,The Big Uknown,0.41,0.18,1,Minimal Exposure,0.36,0.1,1,1
+3524,No score,,,0,No score,,,0,0
+3532,Automation Potential,0.535,0.1915071800220556,2,Exposed: Gradient 2,0.43,0.11,1,2
+3541,The Big Uknown,0.5766666666666667,0.18381754238616316,3,Exposed: Gradient 2,0.49,0.08,1,3
+3542,The Big Uknown,0.48,0.14,1,Minimal Exposure,0.39,0.08,1,1
+3543,The Big Uknown,0.47571428571428565,0.18313594816475567,7,Exposed: Gradient 2,0.488,0.11530828244319659,5,7
+3544,Augmentation Potential,0.455,0.17168284713389395,2,Exposed: Gradient 2,0.445,0.15898113095584646,2,2
+3545,The Big Uknown,0.46,0.22,1,Exposed: Gradient 3,0.53,0.12,1,1
+3546,Augmentation Potential,0.38,0.19,1,Minimal Exposure,0.35,0.09,1,1
+3547,The Big Uknown,0.57,0.14,1,Exposed: Gradient 2,0.44,0.1,1,1
+3548,Automation Potential,0.63,0.18261982367749674,2,Exposed: Gradient 3,0.5,0.11510864433221339,2,2
+3711,The Big Uknown,0.5599999999999999,0.22248595461286988,4,Exposed: Gradient 3,0.5125,0.13226394066411298,4,4
+3712,No score,,,0,No score,,,0,0
+3713,The Big Uknown,0.42,0.13,1,Not Exposed,0.26,0.05,1,1
+3714,No score,,,0,No score,,,0,0
+3721,Augmentation Potential,0.355,0.21650635094610965,2,Minimal Exposure,0.35,0.11,1,2
+3722,Augmentation Potential,0.355,0.18034688796871434,2,Minimal Exposure,0.35,0.11,1,2
+3731,No score,,,0,No score,,,0,0
+3732,No score,,,0,No score,,,0,0
+3741,Augmentation Potential,0.355,0.21650635094610965,2,Minimal Exposure,0.35,0.11,1,2
+3742,Augmentation Potential,0.355,0.21650635094610965,2,Minimal Exposure,0.35,0.11,1,2
+3743,Augmentation Potential,0.355,0.18034688796871434,2,Minimal Exposure,0.35,0.11,1,2
+3744,Augmentation Potential,0.355,0.18034688796871434,2,Minimal Exposure,0.35,0.11,1,2
+3751,Augmentation Potential,0.405,0.20420577856662137,4,Minimal Exposure,0.36,0.08573214099741124,2,4
+3761,No score,,,0,No score,,,0,0
+3762,Not affected,0.2,0.2,1,Not Exposed,0.13,0.06,1,1
+3763,No score,,,0,No score,,,0,0
+3764,Not affected,0.09,0.02,1,Not Exposed,0.25,0.06,1,1
+3771,Augmentation Potential,0.3333333333333333,0.20789954839350233,3,Not Exposed,0.24,0.09273618495495704,2,3
+3772,Augmentation Potential,0.3333333333333333,0.20789954839350233,3,Not Exposed,0.24,0.09273618495495704,2,3
+3911,The Big Uknown,0.42,0.13,1,Not Exposed,0.26,0.05,1,1
+3912,Not affected,0.3228571428571429,0.14786231874998595,7,Not Exposed,0.266,0.059531504264548875,5,7
+3951,No score,,,0,No score,,,0,0
+4101,No score,,,0,No score,,,0,0
+4102,Augmentation Potential,0.47333333333333333,0.2070158340696565,3,Minimal Exposure,0.4,0.09354143466934853,2,3
+4110,Automation Potential,0.595,0.18377975949489106,4,Exposed: Gradient 2,0.43,0.11,1,4
+4121,Automation Potential,0.6266666666666666,0.21202725191719002,3,Exposed: Gradient 3,0.5933333333333334,0.1375580685464223,3,3
+4122,Automation Potential,0.6459999999999999,0.1923642378406132,5,Exposed: Gradient 2,0.49,0.149833240637717,2,5
+4131,The Big Uknown,0.5733333333333333,0.18882678717691395,3,Exposed: Gradient 2,0.43,0.11,1,3
+4132,Automation Potential,0.535,0.1915071800220556,2,Exposed: Gradient 2,0.43,0.11,1,2
+4141,Augmentation Potential,0.38,0.16401219466856726,2,Minimal Exposure,0.4,0.09354143466934853,2,2
+4142,The Big Uknown,0.505,0.16132265804901677,2,Exposed: Gradient 2,0.43,0.11,1,2
+4151,The Big Uknown,0.476,0.24621941434419828,5,Exposed: Gradient 2,0.47,0.16628289148315892,2,5
+4152,The Big Uknown,0.44499999999999995,0.23669600757089249,2,Exposed: Gradient 2,0.43,0.11,1,2
+4153,No score,,,0,No score,,,0,0
+4201,No score,,,0,No score,,,0,0
+4211,Not affected,0.5,0.2835489375751565,3,Exposed: Gradient 2,0.42000000000000004,0.1695582495781317,2,3
+4212,The Big Uknown,0.52,0.24,1,Exposed: Gradient 2,0.45,0.19,1,1
+4213,No score,,,0,No score,,,0,0
+4221,Automation Potential,0.6183333333333334,0.1805008464122968,6,Exposed: Gradient 2,0.47333333333333333,0.13059692016106486,3,6
+4222,The Big Uknown,0.495,0.22544400635190992,2,Exposed: Gradient 2,0.43,0.11,1,2
+4223,Automation Potential,0.585,0.23135470602518549,2,No score,,,0,2
+4231,No score,,,0,No score,,,0,0
+4241,The Big Uknown,0.48,0.1950640920313116,2,Exposed: Gradient 3,0.57,0.1,1,2
+4242,No score,,,0,No score,,,0,0
+5101,Not affected,0.27375000000000005,0.2313513291511419,8,Not Exposed,0.25666666666666665,0.14138206706965664,6,8
+5102,No score,,,0,No score,,,0,0
+5103,No score,,,0,No score,,,0,0
+5111,Augmentation Potential,0.525,0.2796873254189399,2,Exposed: Gradient 1,0.39,0.1906567596493762,2,2
+5112,Augmentation Potential,0.37,0.27,1,No score,,,0,1
+5114,No score,,,0,No score,,,0,0
+5115,No score,,,0,No score,,,0,0
+5121,Not affected,0.14,0.06,1,Not Exposed,0.14,0.08,1,1
+5131,Not affected,0.22999999999999998,0.21529050141610986,2,Not Exposed,0.21000000000000002,0.1004987562112089,2,2
+5132,Not affected,0.19000000000000003,0.15209646062066445,3,Not Exposed,0.20333333333333334,0.06574360974438673,3,3
+5133,Not affected,0.27,0.21805962487356528,2,Not Exposed,0.26,0.12,1,2
+5134,Not affected,0.27,0.21805962487356528,2,Not Exposed,0.26,0.12,1,2
+5135,No score,,,0,No score,,,0,0
+5136,No score,,,0,No score,,,0,0
+5141,Augmentation Potential,0.36,0.29,1,No score,,,0,1
+5142,Not affected,0.10285714285714286,0.04558016038155377,7,Not Exposed,0.1157142857142857,0.05653245410688394,7,7
+5143,Not affected,0.1125,0.057391201416244986,4,Not Exposed,0.1175,0.0298956518577535,4,4
+5151,Not affected,0.12,0.0541602560309064,3,Not Exposed,0.14500000000000002,0.047696960070847276,2,3
+5152,Not affected,0.12,0.0541602560309064,3,Not Exposed,0.14500000000000002,0.047696960070847276,2,3
+5153,No score,,,0,No score,,,0,0
+5161,Not affected,0.22,0.2853944638566067,2,Not Exposed,0.175,0.18513508581573618,2,2
+5162,Not affected,0.285,0.21383404780343096,2,Not Exposed,0.215,0.12031209415515966,2,2
+5163,Not affected,0.22999999999999998,0.17767010628315238,3,Not Exposed,0.24,0.14106735979665885,3,3
+5164,Not affected,0.11,0.02,1,Not Exposed,0.14,0.03,1,1
+5165,Not affected,0.11,0.05,1,Not Exposed,0.17,0.17,1,1
+5166,Not affected,0.1,0.04,1,Not Exposed,0.09,0.02,1,1
+5167,The Big Uknown,0.53,0.19,1,Minimal Exposure,0.3,0.16,1,1
+5168,No score,,,0,No score,,,0,0
+5169,No score,,,0,No score,,,0,0
+5171,Not affected,0.19666666666666666,0.1599652740093577,3,Not Exposed,0.19333333333333336,0.08339997335464537,3,3
+5172,Not affected,0.14,0.07141428428542851,2,Not Exposed,0.14,0.035355339059327376,2,2
+5173,Not affected,0.19,0.0972111104761179,2,Not Exposed,0.2,0.07280109889280519,2,2
+5174,Augmentation Potential,0.27666666666666667,0.21982316125063397,3,Minimal Exposure,0.2866666666666667,0.16152055252780956,3,3
+5191,Augmentation Potential,0.26,0.26,1,No score,,,0,1
+5192,No score,,,0,No score,,,0,0
+5193,No score,,,0,No score,,,0,0
+5198,No score,,,0,No score,,,0,0
+5199,Not affected,0.39357142857142857,0.2848836139011645,14,Minimal Exposure,0.2854545454545454,0.19354884919521836,11,14
+5201,No score,,,0,No score,,,0,0
+5211,The Big Uknown,0.374,0.25702918122267754,5,Not Exposed,0.24,0.14577379737113252,2,5
+5231,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+5241,Automation Potential,0.585,0.23135470602518549,2,No score,,,0,2
+5242,Not affected,0.16999999999999998,0.08602325267042626,2,Not Exposed,0.21000000000000002,0.10559356040971438,2,2
+5243,Not affected,0.16999999999999998,0.08602325267042626,2,Not Exposed,0.21000000000000002,0.10559356040971438,2,2
+6110,Not affected,0.24,0.16,1,Not Exposed,0.19,0.11,1,1
+6120,Not affected,0.17,0.08,1,Not Exposed,0.17,0.12,1,1
+6121,No score,,,0,No score,,,0,0
+6122,Not affected,0.17,0.11,1,Not Exposed,0.18,0.12,1,1
+6123,No score,,,0,No score,,,0,0
+6124,No score,,,0,No score,,,0,0
+6125,Not affected,0.18,0.08,1,Not Exposed,0.17,0.11,1,1
+6126,No score,,,0,No score,,,0,0
+6127,No score,,,0,No score,,,0,0
+6128,No score,,,0,No score,,,0,0
+6130,Not affected,0.18,0.12,1,Not Exposed,0.17,0.1,1,1
+6131,Not affected,0.18,0.12,1,Not Exposed,0.17,0.1,1,1
+6132,No score,,,0,No score,,,0,0
+6133,Not affected,0.2,0.19,1,Not Exposed,0.19,0.1,1,1
+6134,No score,,,0,No score,,,0,0
+6201,Not affected,0.24,0.16,1,Not Exposed,0.19,0.11,1,1
+6210,Not affected,0.24,0.16,1,Not Exposed,0.19,0.11,1,1
+6220,Not affected,0.14,0.10246950765959599,3,Not Exposed,0.15666666666666665,0.09826268648655784,3,3
+6221,Not affected,0.17,0.11,1,Not Exposed,0.18,0.12,1,1
+6222,Not affected,0.17,0.11,1,Not Exposed,0.18,0.12,1,1
+6223,No score,,,0,No score,,,0,0
+6224,No score,,,0,No score,,,0,0
+6225,Not affected,0.17,0.08,1,Not Exposed,0.17,0.12,1,1
+6226,Not affected,0.18,0.08,1,Not Exposed,0.17,0.11,1,1
+6227,Not affected,0.18,0.08,1,Not Exposed,0.17,0.11,1,1
+6228,Not affected,0.18,0.08,1,Not Exposed,0.17,0.11,1,1
+6230,Not affected,0.22200000000000003,0.18648324321504062,5,Not Exposed,0.184,0.10864621484432856,5,5
+6231,Not affected,0.19333333333333336,0.16649991658322902,3,Not Exposed,0.17,0.10801234497346433,3,3
+6232,Not affected,0.18,0.12,1,Not Exposed,0.17,0.1,1,1
+6233,Not affected,0.20000000000000004,0.18672618098881225,3,Not Exposed,0.17666666666666667,0.10842303978193729,3,3
+6234,Augmentation Potential,0.33,0.2,1,Not Exposed,0.22,0.11,1,1
+6301,No score,,,0,No score,,,0,0
+6310,Not affected,0.24,0.24,1,Not Exposed,0.18,0.07,1,1
+6311,Not affected,0.21,0.21587033144922904,2,Not Exposed,0.165,0.09526279441628827,2,2
+6312,Not affected,0.24,0.24,1,Not Exposed,0.18,0.07,1,1
+6313,Not affected,0.22,0.18,1,No score,,,0,1
+6314,Not affected,0.24,0.24,1,Not Exposed,0.18,0.07,1,1
+6320,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6321,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6322,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6323,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6324,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6325,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6326,Not affected,0.14,0.05,1,Not Exposed,0.12,0.05,1,1
+6410,Not affected,0.12,0.05,1,Not Exposed,0.12,0.03,1,1
+6420,Not affected,0.12,0.05,1,Not Exposed,0.12,0.03,1,1
+6430,No score,,,0,No score,,,0,0
+7101,Not affected,0.27,0.17930421077041106,2,Not Exposed,0.22999999999999998,0.11335784048754632,2,2
+7102,Not affected,0.14333333333333334,0.09428090415820634,3,Not Exposed,0.17,0.09660917830792959,3,3
+7111,Not affected,0.21250000000000002,0.16618889854620253,4,Not Exposed,0.1725,0.1023169096484056,4,4
+7112,Not affected,0.27,0.17930421077041106,2,Not Exposed,0.22999999999999998,0.11335784048754632,2,2
+7113,Not affected,0.22,0.2,1,Not Exposed,0.19,0.12,1,1
+7114,Not affected,0.13,0.05,1,Not Exposed,0.11,0.02,1,1
+7121,Not affected,0.21,0.17,1,Not Exposed,0.21,0.1,1,1
+7122,Not affected,0.12,0.04,1,Not Exposed,0.11,0.02,1,1
+7151,Not affected,0.12,0.04,1,Not Exposed,0.13,0.02,1,1
+7152,Not affected,0.11,0.03,2,Not Exposed,0.1,0.01870828693386971,2,2
+7153,Not affected,0.09,0.02,1,Not Exposed,0.1,0.03,1,1
+7154,Not affected,0.22,0.2,1,Not Exposed,0.23,0.11,1,1
+7155,Not affected,0.13999999999999999,0.08902246907382427,4,Not Exposed,0.16,0.08602325267042628,4,4
+7156,Not affected,0.18,0.07,1,Not Exposed,0.19,0.06,1,1
+7157,Not affected,0.12,0.04,1,Not Exposed,0.13,0.02,1,1
+7161,Not affected,0.09,0.02,1,Not Exposed,0.1,0.03,1,1
+7162,Not affected,0.11,0.05,1,Not Exposed,0.13,0.08,1,1
+7163,Not affected,0.1,0.0,1,Not Exposed,0.14,0.0,1,1
+7164,Not affected,0.12,0.05,1,Not Exposed,0.11,0.01,1,1
+7165,Not affected,0.1,0.0,1,Not Exposed,0.1,0.02,1,1
+7166,Not affected,0.11333333333333333,0.033993463423951896,3,Not Exposed,0.11,0.031091263510296053,3,3
+7170,Not affected,0.1,0.0,1,Not Exposed,0.09,0.02,1,1
+7201,No score,,,0,No score,,,0,0
+7202,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7211,Not affected,0.21,0.15,1,Not Exposed,0.2,0.1,1,1
+7212,Not affected,0.17,0.08,1,Not Exposed,0.18,0.05,1,1
+7213,Not affected,0.16,0.09,1,Not Exposed,0.17,0.05,1,1
+7214,Not affected,0.21,0.14560219778561034,3,Not Exposed,0.21999999999999997,0.12396235987858034,3,3
+7221,Not affected,0.16,0.11,1,Not Exposed,0.17,0.05,1,1
+7222,Not affected,0.32499999999999996,0.17698870020427857,2,Not Exposed,0.26,0.1,1,2
+7223,Not affected,0.11,0.02,1,Not Exposed,0.13,0.01,1,1
+7224,Not affected,0.32499999999999996,0.17698870020427857,2,Not Exposed,0.26,0.1,1,2
+7231,Not affected,0.32499999999999996,0.17698870020427857,2,Not Exposed,0.26,0.1,1,2
+7232,Not affected,0.27,0.15247950681976907,2,Not Exposed,0.275,0.12196310917650467,2,2
+7233,Not affected,0.13,0.03,1,Not Exposed,0.12,0.0,1,1
+7241,Not affected,0.16,0.13,1,Not Exposed,0.18,0.1,1,1
+7242,Not affected,0.12,0.04,1,Not Exposed,0.11,0.02,1,1
+7243,Not affected,0.11,0.04,1,Not Exposed,0.13,0.05,1,1
+7244,Not affected,0.21,0.15,1,Not Exposed,0.21,0.09,1,1
+7245,Augmentation Potential,0.355,0.2530316185775999,2,Minimal Exposure,0.35,0.13,1,2
+7246,No score,,,0,No score,,,0,0
+7250,Not affected,0.17,0.08,1,Not Exposed,0.18,0.05,1,1
+7251,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7252,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7253,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7254,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7255,No score,,,0,No score,,,0,0
+7256,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7257,Augmentation Potential,0.32999999999999996,0.23505318547086315,2,Minimal Exposure,0.35,0.13,1,2
+7301,Not affected,0.14,0.06,1,Not Exposed,0.17,0.05,1,1
+7311,Augmentation Potential,0.355,0.2530316185775999,2,Minimal Exposure,0.35,0.13,1,2
+7312,Augmentation Potential,0.355,0.2530316185775999,2,Minimal Exposure,0.35,0.13,1,2
+7313,Not affected,0.16,0.1,1,No score,,,0,1
+7321,Not affected,0.15000000000000002,0.091104335791443,2,Not Exposed,0.15,0.08,1,2
+7401,No score,,,0,No score,,,0,0
+7411,Not affected,0.16999999999999998,0.0806225774829855,2,Not Exposed,0.195,0.06837397165588671,2,2
+7421,Not affected,0.1,0.03,1,Not Exposed,0.14,0.02,1,1
+7501,No score,,,0,No score,,,0,0
+7502,Not affected,0.14,0.06,1,Not Exposed,0.17,0.06,1,1
+7510,Not affected,0.15,0.08,1,Not Exposed,0.18,0.05,1,1
+7511,Not affected,0.15,0.08,1,Not Exposed,0.18,0.05,1,1
+7521,Not affected,0.15,0.13019216566291536,2,Not Exposed,0.165,0.049749371855330994,2,2
+7522,Not affected,0.18000000000000002,0.14352700094407322,3,Not Exposed,0.17,0.061913918736689035,3,3
+7523,Not affected,0.19,0.15,1,Not Exposed,0.18,0.07,1,1
+7524,Not affected,0.24,0.15,1,Not Exposed,0.18,0.08,1,1
+7601,Not affected,0.265,0.1614775526195514,2,Not Exposed,0.255,0.13238202294873727,2,2
+7602,No score,,,0,No score,,,0,0
+7603,No score,,,0,No score,,,0,0
+7604,Not affected,0.15,0.09,1,Not Exposed,0.17,0.06,1,1
+7605,No score,,,0,No score,,,0,0
+7606,The Big Uknown,0.42,0.13,1,Not Exposed,0.26,0.05,1,1
+7610,No score,,,0,No score,,,0,0
+7611,Not affected,0.1,0.04,1,Not Exposed,0.13,0.03,1,1
+7612,Not affected,0.18999999999999997,0.1498888477061141,3,Not Exposed,0.21,0.12622730819174324,3,3
+7613,Not affected,0.25,0.1638596960817394,2,Not Exposed,0.255,0.13388427838995884,2,2
+7614,Not affected,0.22999999999999998,0.17767010628315238,3,Not Exposed,0.24,0.14106735979665885,3,3
+7618,Not affected,0.3228571428571429,0.14786231874998595,7,Not Exposed,0.266,0.059531504264548875,5,7
+7620,No score,,,0,No score,,,0,0
+7621,Not affected,0.11,0.05,1,Not Exposed,0.11,0.03,1,1
+7622,Not affected,0.11,0.05,1,Not Exposed,0.11,0.03,1,1
+7623,Not affected,0.11,0.05,1,Not Exposed,0.11,0.03,1,1
+7630,Not affected,0.13,0.08,1,Not Exposed,0.15,0.05,1,1
+7631,Not affected,0.28,0.21,1,Not Exposed,0.17,0.04,1,1
+7632,Not affected,0.25,0.16124515496597097,2,Not Exposed,0.25,0.1374772708486752,2,2
+7633,Not affected,0.25,0.16124515496597097,2,Not Exposed,0.25,0.1374772708486752,2,2
+7640,No score,,,0,No score,,,0,0
+7641,Not affected,0.15,0.09,1,Not Exposed,0.17,0.06,1,1
+7642,Not affected,0.24,0.15921683328090658,2,Not Exposed,0.255,0.1329473580030833,2,2
+7643,Not affected,0.15,0.09,1,Not Exposed,0.17,0.06,1,1
+7650,Not affected,0.13,0.08,1,Not Exposed,0.15,0.05,1,1
+7651,Not affected,0.15,0.09,1,Not Exposed,0.17,0.06,1,1
+7652,Not affected,0.14,0.0916515138991168,2,Not Exposed,0.15,0.07176350047203663,2,2
+7653,Not affected,0.265,0.1614775526195514,2,Not Exposed,0.255,0.13238202294873727,2,2
+7654,No score,,,0,No score,,,0,0
+7661,Not affected,0.24,0.19144189719076649,2,Exposed: Gradient 1,0.315,0.18567444627627142,2,2
+7662,Not affected,0.285,0.163783393541592,2,Minimal Exposure,0.3,0.130384048104053,2,2
+7663,Not affected,0.17,0.09,1,Not Exposed,0.22,0.09,1,1
+7664,Augmentation Potential,0.31,0.21,1,Not Exposed,0.27,0.06,1,1
+7681,Not affected,0.125,0.07399324293474371,2,Not Exposed,0.14500000000000002,0.03354101966249685,2,2
+7682,Not affected,0.12,0.04,1,Not Exposed,0.12,0.02,1,1
+7683,Not affected,0.15,0.09,1,Not Exposed,0.17,0.06,1,1
+7686,Not affected,0.24,0.19144189719076649,2,Exposed: Gradient 1,0.315,0.18567444627627142,2,2
+7687,Not affected,0.17,0.09,1,Not Exposed,0.22,0.09,1,1
+7701,Not affected,0.14,0.1,1,Not Exposed,0.16,0.06,1,1
+7711,Not affected,0.14,0.1,1,Not Exposed,0.16,0.06,1,1
+7721,Not affected,0.21,0.17,1,Not Exposed,0.22,0.15,1,1
+7731,Not affected,0.18,0.11,1,Not Exposed,0.14,0.05,1,1
+7732,Not affected,0.18,0.11,1,Not Exposed,0.14,0.05,1,1
+7733,Not affected,0.14,0.13,1,No score,,,0,1
+7734,Not affected,0.2333333333333333,0.17726314400411108,3,Minimal Exposure,0.285,0.15467708298258018,2,3
+7735,No score,,,0,No score,,,0,0
+7741,No score,,,0,No score,,,0,0
+7751,Not affected,0.14,0.1,1,Not Exposed,0.16,0.06,1,1
+7764,Not affected,0.1,0.02,1,Not Exposed,0.14,0.01,1,1
+7771,Not affected,0.13,0.07,1,Not Exposed,0.13,0.02,1,1
+7772,Not affected,0.13,0.07,1,Not Exposed,0.13,0.02,1,1
+7801,No score,,,0,No score,,,0,0
+7811,No score,,,0,No score,,,0,0
+7813,No score,,,0,No score,,,0,0
+7817,Not affected,0.18,0.17,1,Not Exposed,0.16,0.09,1,1
+7821,Not affected,0.16,0.09,1,Not Exposed,0.18,0.03,1,1
+7822,Not affected,0.24,0.21035683967962632,2,Not Exposed,0.19,0.0744983221287567,2,2
+7823,Not affected,0.24,0.25,1,No score,,,0,1
+7824,No score,,,0,No score,,,0,0
+7825,Not affected,0.23,0.19,1,Minimal Exposure,0.24,0.22,1,1
+7826,Not affected,0.26,0.21,1,Not Exposed,0.2,0.08,1,1
+7827,Not affected,0.12,0.06,1,Not Exposed,0.14,0.02,1,1
+7828,Not affected,0.11,0.05,1,Not Exposed,0.13,0.08,1,1
+7831,No score,,,0,No score,,,0,0
+7832,Not affected,0.185,0.15960889699512368,2,Not Exposed,0.17,0.07968688725254613,2,2
+7841,Augmentation Potential,0.31,0.17663521732655693,3,Not Exposed,0.285,0.11280514172678478,2,3
+7842,Not affected,0.1,0.0,1,Not Exposed,0.12,0.02,1,1
+7911,No score,,,0,No score,,,0,0
+8101,Not affected,0.31,0.20211382931407737,2,Not Exposed,0.265,0.08986100377805716,2,2
+8102,Not affected,0.275,0.18607794065928396,2,Not Exposed,0.26,0.13341664064126332,2,2
+8103,No score,,,0,No score,,,0,0
+8110,Not affected,0.31,0.20211382931407737,2,Not Exposed,0.265,0.08986100377805716,2,2
+8111,Not affected,0.31,0.20211382931407737,2,Not Exposed,0.265,0.08986100377805716,2,2
+8112,Not affected,0.31,0.20211382931407737,2,Not Exposed,0.265,0.08986100377805716,2,2
+8113,Not affected,0.30666666666666664,0.20146684315015434,3,Not Exposed,0.265,0.08986100377805716,2,3
+8114,Not affected,0.31,0.20211382931407737,2,Not Exposed,0.265,0.08986100377805716,2,2
+8115,Not affected,0.275,0.17051392904979934,2,Not Exposed,0.24,0.07,1,2
+8116,Not affected,0.31,0.20211382931407737,2,Not Exposed,0.265,0.08986100377805716,2,2
+8117,Not affected,0.245,0.1547578754054216,4,Not Exposed,0.23500000000000001,0.10874281585465773,4,4
+8118,Not affected,0.3,0.1541103500742244,2,Minimal Exposure,0.295,0.11800423721205947,2,2
+8121,Not affected,0.3,0.1541103500742244,2,Minimal Exposure,0.295,0.11800423721205947,2,2
+8131,No score,,,0,No score,,,0,0
+8181,Not affected,0.12,0.0541602560309064,3,Not Exposed,0.14500000000000002,0.047696960070847276,2,3
+8201,No score,,,0,No score,,,0,0
+8202,No score,,,0,No score,,,0,0
+8211,Not affected,0.27,0.15247950681976907,2,Not Exposed,0.275,0.12196310917650467,2,2
+8212,Not affected,0.32499999999999996,0.17698870020427857,2,Not Exposed,0.26,0.1,1,2
+8213,Not affected,0.32499999999999996,0.17698870020427857,2,Not Exposed,0.26,0.1,1,2
+8214,Not affected,0.27,0.15247950681976907,2,Not Exposed,0.275,0.12196310917650467,2,2
+8221,Not affected,0.32499999999999996,0.17698870020427857,2,Not Exposed,0.26,0.1,1,2
+8231,Not affected,0.14,0.06,1,Not Exposed,0.17,0.06,1,1
+8232,Not affected,0.14,0.06,1,Not Exposed,0.17,0.06,1,1
+8233,Not affected,0.18,0.15297058540778355,2,Not Exposed,0.2,0.09354143466934853,2,2
+8281,Not affected,0.19,0.15,1,Not Exposed,0.18,0.07,1,1
+8301,Not affected,0.25,0.1550806241927082,2,Not Exposed,0.265,0.12599603168354154,2,2
+8311,Augmentation Potential,0.36,0.26,1,No score,,,0,1
+8321,Augmentation Potential,0.36,0.26,1,No score,,,0,1
+8331,Not affected,0.25,0.1550806241927082,2,Not Exposed,0.265,0.12599603168354154,2,2
+8332,Augmentation Potential,0.35,0.19235384061671346,2,Minimal Exposure,0.35,0.13,1,2
+8401,Not affected,0.215,0.16163229875244614,2,Not Exposed,0.17,0.08,1,2
+8411,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8412,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8413,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8414,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8415,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8416,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8417,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8418,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8421,Not affected,0.21666666666666667,0.1412641340027806,3,Not Exposed,0.21333333333333335,0.1284090685617215,3,3
+8422,Not affected,0.255,0.1558043645088288,2,Not Exposed,0.25,0.1374772708486752,2,2
+8481,Not affected,0.14,0.05,1,Not Exposed,0.13,0.03,1,1
+8482,Not affected,0.16,0.09,1,No score,,,0,1
+8483,Not affected,0.14,0.07,1,Not Exposed,0.17,0.08,1,1
+8484,Not affected,0.29,0.19,1,No score,,,0,1
+8485,Not affected,0.14,0.05,1,Not Exposed,0.13,0.03,1,1
+8486,No score,,,0,No score,,,0,0
+8601,Not affected,0.265,0.19248376554920157,4,Not Exposed,0.27,0.09,1,4
+8611,Augmentation Potential,0.34,0.24,1,No score,,,0,1
+8612,Augmentation Potential,0.34,0.24,1,No score,,,0,1
+8621,Not affected,0.27,0.16031219541881397,2,Not Exposed,0.23500000000000001,0.07794228634059948,2,2
+8622,Not affected,0.31,0.19,1,Not Exposed,0.27,0.09,1,1
+8623,Not affected,0.31,0.19,1,Not Exposed,0.27,0.09,1,1
+8624,Not affected,0.31,0.19,1,Not Exposed,0.27,0.09,1,1
+8625,Not affected,0.31,0.19,1,Not Exposed,0.27,0.09,1,1
+9101,Not affected,0.20500000000000002,0.14080127840328724,2,No score,,,0,2
+9102,No score,,,0,No score,,,0,0
+9109,No score,,,0,No score,,,0,0
+9111,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+9112,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+9113,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+9131,Not affected,0.15,0.12369316876852983,4,Not Exposed,0.17250000000000001,0.06887488656977955,4,4
+9141,Not affected,0.17666666666666667,0.1382831234179436,3,Not Exposed,0.19000000000000003,0.0804155872120988,3,3
+9142,No score,,,0,No score,,,0,0
+9143,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+9144,Not affected,0.115,0.08291561975888499,2,Not Exposed,0.155,0.04031128874149274,2,2
+9151,No score,,,0,No score,,,0,0
+9152,No score,,,0,No score,,,0,0
+9153,No score,,,0,No score,,,0,0
+9154,No score,,,0,No score,,,0,0
+9191,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+9192,No score,,,0,No score,,,0,0
+9193,Not affected,0.185,0.14585952145814823,2,Not Exposed,0.19,0.085146931829632,2,2
+9501,No score,,,0,No score,,,0,0
+9502,No score,,,0,No score,,,0,0
+9503,No score,,,0,No score,,,0,0
+9511,Not affected,0.14,0.06,1,Not Exposed,0.17,0.05,1,1
+9513,No score,,,0,No score,,,0,0
+9531,Not affected,0.18,0.07,1,Not Exposed,0.19,0.06,1,1
+9541,Not affected,0.14,0.06,1,Not Exposed,0.17,0.05,1,1
+9542,Not affected,0.14,0.06,1,Not Exposed,0.17,0.05,1,1
+9543,Not affected,0.13,0.08,1,Not Exposed,0.15,0.05,1,1
+9911,No score,,,0,No score,,,0,0
+9912,No score,,,0,No score,,,0,0
+9913,No score,,,0,No score,,,0,0
+9914,No score,,,0,No score,,,0,0
+9921,Not affected,0.265,0.14773286702694155,2,Not Exposed,0.265,0.13009611831257686,2,2
+9922,No score,,,0,No score,,,0,0
+9999,No score,,,0,No score,,,0,0

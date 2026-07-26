@@ -769,3 +769,72 @@ CPF rows, and the previously preserved 28 undocumented employer-code rows.
 The establishment field likewise retains its single undocumented `-1` row.
 The public-versus-private falsification remains not executed because these
 counts do not add an ownership distinction.
+
+## 2026-07-26 — Exposure-measure sensitivity contract
+
+Task 27 is frozen before estimating any alternative-measure coefficient. The
+family contains fifteen estimates: the five principal outcomes under each of
+three alternative exposure definitions. Nominal p-values receive one global
+Benjamini-Hochberg adjustment across all fifteen estimates. Every definition
+uses CBO4 and month fixed effects, CBO4-clustered inference, the full
+January 2021-May 2026 window, and no contemporary controls.
+
+The 2023 vintage uses the workbook's native `potential23` categories rather
+than retrofitting the 2025 gradient thresholds. For every CBO4, the category
+is the equal-destination mode across its mapped ISCO-08 occupations; ties are
+resolved conservatively toward `Not affected`, then `Augmentation Potential`,
+then `Automation Potential`, with the workbook's `The Big Uknown` category
+last. Only `Automation Potential` and `Not affected` enter the binary
+treated-control estimate. The corresponding `mean_score_2023` and `SD_2023`
+are retained and summarized as measurement support.
+
+For model agreement, GPT-4o and Gemini task predictions are aggregated
+separately to ISCO-08 means and population standard deviations and classified
+with the frozen 2025 mean-plus-dispersion rule. An ISCO destination is retained
+only when the two complete gradient labels agree. CBO4 exposure is then
+recalculated from the frozen 2025 mean and SD over those consensus
+destinations. The resulting exposed-versus-`Not Exposed` estimate is a
+restricted-support robustness check, not a replacement classification.
+
+The Anthropic exercise uses `anthropic_automation_index` as a standardized
+continuous CBO4 measure, so its interaction coefficient is per one
+cross-occupation standard deviation. `zero_imputation_no_data` rows and the
+non-CBO `Grupo de base` row are excluded: a technical zero without source
+evidence is not interpreted as observed zero exposure. Rank agreement with
+the continuous 2025 ILO score is reported both for direct Anthropic matches
+and for all direct plus hierarchical matches. Because the Anthropic measure
+contrasts automation with augmentation rather than total generative-AI
+exposure, its coefficient has a different substantive scale and is not
+treated as a numeric replication of the binary ILO estimate.
+
+## 2026-07-26 — Exposure-measure sensitivity results
+
+All fifteen Task 27 models converged. The native 2023 comparison has limited
+treated support: 10 `Automation Potential` CBO4 families versus 310 `Not
+affected` families. Its five adjusted p-values exceed 0.18. The three flow
+coefficients and admission-wage coefficient remain negative, but none is
+promoted as a robust effect under this thin treated support.
+
+GPT-4o and Gemini agree on the complete gradient label for 321 of 427 ISCO-08
+occupations. The resulting CBO4 consensus sample contains 59 treated and 271
+control families. The real admission-wage coefficient is -0.056058 with SE
+0.011816 and global BH-adjusted `p = 0.0000468`; it is the only adjusted
+rejection in the fifteen-estimate family. The flow and net-balance contrasts
+do not reject at 5%.
+
+The Anthropic sample contains 168 CBO4 families after excluding source-free
+zero imputations. Its automation-minus-augmentation rank correlation with
+the 2025 ILO exposure score is -0.1214 for 92 direct matches and -0.0802 for
+127 direct plus hierarchical matches. Per one standard deviation of the
+Anthropic index, all three flow coefficients are within 0.003 log point of
+zero. The wage coefficient is -0.019817 with BH-adjusted `p = 0.1847`.
+
+These results retain the frozen ILO 2025 classification as the principal
+measure. The consensus result shows that the negative admission-wage pattern
+is not driven by occupations where GPT-4o and Gemini assign different
+gradient classes. The Anthropic result is interpreted as weak agreement
+between distinct constructs, not as a failed replication of total exposure.
+Checkpoint G is complete for executed mechanisms: every new estimated
+exercise has support and adjusted p-values. The planned public/private
+falsification remains explicitly not executed because the official source
+fields do not identify ownership.
