@@ -685,3 +685,48 @@ The principal estimate is +1.4292 index points with SE 1.3093,
 does not provide statistically precise evidence of a differential cumulative
 net-flow trajectory. It is not interpreted as a stock-level effect and does
 not override the failed national pretrend diagnostics.
+
+## 2026-07-26 — Hourly wage and work-schedule contract
+
+Task 25 passes the pre-estimation continuity gate. Valid positive contracted
+hours cover at least 97.61% of signed admissions in every month. The isolated
+April 2022 dip immediately returns to 100% in May; the maximum adjacent
+change is 2.39 percentage points, far below the preregistered structural-break
+rule of a 10-point adjacent change or three consecutive months below 95%.
+
+The official frozen layout defines `salário` as declared monthly salary and
+`horascontratuais` as contracted weekly hours. The hourly measure is monthly
+salary divided by five times weekly hours, the conventional monthly divisor
+that maps 44 weekly hours to 220 monthly hours. Positive hourly values are
+winsorized within CBO4-year at P1/P99 using the same signed-vintage principle
+as the monthly wage outcome, then deflated with the frozen IPCA.
+
+The five-outcome Task 25 family is frozen as log real monthly admission wage,
+log real hourly admission wage, log weekly contracted admission hours,
+partial-work admission share, and intermittent-work admission share. All
+use the principal OLS CBO4 and month fixed-effects design, CBO4 clustering,
+and no contemporary controls. Nominal p-values receive one global
+Benjamini-Hochberg adjustment with family size five. Indicator code 9 and
+missing values remain unknown and are excluded from the corresponding share
+denominator rather than assigned to zero.
+
+## 2026-07-26 — Hourly wage and work-schedule results
+
+The continuity gate passes in the recomputed analytic sample: valid hours
+coverage ranges from 97.67% to 100%, and the largest adjacent change is 2.33
+percentage points. Partial-work known-code coverage ranges from 98.35% to
+98.87%; intermittent-work coverage ranges from 95.03% to 100%.
+
+The monthly real admission-wage coefficient reproduces the Task 18 estimate
+exactly at -0.050740. The real hourly-wage coefficient is more negative at
+-0.069508 (approximately -6.71%), with SE 0.016668, nominal
+`p = 0.0000387`, and BH-adjusted `p = 0.0000967`. Weekly hours is +0.001552
+(`BH p = 0.5624`), the partial-work share is -0.000779
+(`BH p = 0.6880`), and the intermittent-work share is +0.000746
+(`BH p = 0.8226`).
+
+The descriptive decomposition therefore places the wage difference on the
+hourly-price margin rather than contracted hours, partial work, or
+intermittent work. This does not restore causal interpretation: the exact
+national wage event study fails the joint pretrend test, and HonestDiD loses
+sign exclusion by `M = 0.10`.
