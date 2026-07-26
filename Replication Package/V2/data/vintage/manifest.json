@@ -1393,5 +1393,19 @@
     "frozen_at": "2026-07-26T16:33:29.443383Z",
     "sha256": "2177427c649350884b77617731d8a591c133c6f86da37375aa498cf72f03f867",
     "source_path": "outputs/crosswalk_audit/source_dictionaries/mte_cbo2002_cbo94_ciuo88_by_family.csv"
+  },
+  "derived/ipca_mensal.parquet": {
+    "base_period": "202412",
+    "bytes": 5709,
+    "generated_at": "2026-07-26T16:41:18.205253Z",
+    "sha256": "4a4d3a7e9c31e12a7f33788afd1b4382499f6ab1293bebf69804b7fcdff8c3bf",
+    "source": "ipca/sgs_433_202101_202605.json"
+  },
+  "ipca/sgs_433_202101_202605.json": {
+    "accessed_at": "2026-07-26T16:41:18.205253Z",
+    "bytes": 2412,
+    "series": 433,
+    "sha256": "c505e489fc04e5f213836fea61939be7213385bbcadb350ae542a5af08e73aef",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/2021&dataFinal=31/05/2026"
   }
 }

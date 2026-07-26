@@ -1,0 +1,19 @@
+{
+  "cbo_families": 630,
+  "cells": 39742,
+  "invalid_rows_rejected": 3574530,
+  "max_admission_wage": 298641.6,
+  "max_separation_wage": 114433.0,
+  "months": 65,
+  "months_per_cbo_max": 65,
+  "months_per_cbo_min": 2,
+  "new_unclassified_cbo_families": [
+    "2414"
+  ],
+  "raw_rows": 252838929,
+  "valid_rows": 249264399,
+  "wage_bound_groups": 3746,
+  "wage_winsorization": "record-level DuckDB approx_quantile P1/P99 within CBO4 x year, positive-weight records",
+  "zero_admission_cells": 403,
+  "zero_separation_cells": 355
+}

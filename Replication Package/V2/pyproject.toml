@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Replication package for the dissertation empirical refresh."
 requires-python = "==3.10.*"
 dependencies = [
+    "duckdb==1.5.5",
     "geopandas==1.1.0",
     "matplotlib==3.10.8",
     "numpy==2.2.6",

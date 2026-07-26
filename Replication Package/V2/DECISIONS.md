@@ -174,3 +174,18 @@ executed technically, but its coefficients must not be interpreted, promoted,
 or copied to `COMPARACAO_V1_V2.md` until the PDET comparison is closed or every
 deviation has a documented sample restriction. A systematic one-month shift
 is a blocking reassignment bug.
+
+## 2026-07-26 — National-panel wage bounds and new CBO coverage
+
+Task 12 winsorizes valid positive nominal wage records at approximate P1/P99
+within CBO4 and calendar year before aggregation. The same pooled
+occupation-year bounds are applied to admissions and separations. Bounds are
+computed from positive-weight records so exclusion rows do not create new
+quantile mass; all signed rows use the resulting bounds when flow and wage
+totals are aggregated.
+
+The refreshed vintage contains one valid CBO4 family, `2414`, that is absent
+from the 629-family frozen V1 treatment universe. It appears in five cells and
+has one signed movement in each. The family is preserved as `No score`, with
+`treated_main` missing and `included_main = false`. The 629 frozen treatment
+assignments remain unchanged; no live MTE query or inferred match was used.
