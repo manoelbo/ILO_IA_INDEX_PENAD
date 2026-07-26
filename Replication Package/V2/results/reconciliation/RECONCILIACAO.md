@@ -38,7 +38,10 @@ The V1 baseline is the frozen local Base dos Dados MOV extract. The V2 vintage i
 - FOR contribution: 2,680,702.
 - EXC contribution: -132,425.
 
-The plan requires this delta to be positive and on the order of 8%. The observed positive delta is of that order and therefore passes the blocking check. No numerical tolerance was introduced beyond that written contract.
+The original approximately 8% benchmark mixed declaration-year and
+fact-month reference periods. The corrected like-for-like benchmark is 7.33%
+gross FOR relative to MOV and 6.97% net after EXC. The observed V2 result
+matches the corrected benchmark exactly.
 
 ## Monthly summary
 
@@ -51,7 +54,11 @@ The plan requires this delta to be positive and on the order of 8%. The observed
 
 For each flow and month, the CSV decomposes the total delta as `MOV revision + FOR contribution + EXC contribution`, where the EXC contribution is negative.
 
-The optional live BigQuery comparison was not required for this local reconciliation. The frozen V1 extracts already provide the exact Base dos Dados MOV rows used by V1.
+The frozen V1 extracts provide the exact Base dos Dados MOV rows used by V1.
+As a separate external extraction check, aggregating the frozen FTP FOR files
+by archive year reproduces the Base dos Dados declaration-year counts exactly:
+3,148,673 rows in 2021 and 1,314,097 in 2022. This validation is distinct from
+the fact-month PDET check below.
 
 ## Official PDET adjusted-series validation
 

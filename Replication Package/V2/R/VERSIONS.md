@@ -13,3 +13,8 @@ Verification:
 ```bash
 Rscript -e 'library(fixest); library(HonestDiD); library(data.table)'
 ```
+
+The five-model Python-R cross-replication uses an independent base-R
+fixed-effect and IPF PPML implementation rather than calling `fixest`.
+`HonestDiD` and `data.table` remain the declared backends for the sensitivity
+analysis and its input handling.

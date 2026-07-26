@@ -1,70 +1,126 @@
-# V2 Status: EXECUTION STARTED
+# V2 Dissertation Replication Package
 
-## Current decision
+Status: **release candidate**. The empirical package is complete; the final
+release label is assigned only after the public reproduction command, complete
+test suite, signed-reference refresh, and Checkpoint H audit all pass.
 
-The refreshed empirical round started on 25 July 2026. This directory contains
-only outputs produced by the preregistered V2 pipeline; provisional or
-simulated empirical results are prohibited.
+V2 supersedes V1 because it materially improves data lineage, outcome
+construction, estimator coverage, and reproducibility. It is not selected
+because it produces larger or more significant coefficients.
 
-The foundation storage gate is open:
+## Quick start
 
-- 43 GiB free was verified before the approved plan was finalized, above the
-  required 15 GiB minimum;
-- 54 GiB free was measured again when execution started;
-- the official cutoff is fixed at May 2026: 65 competencies and 195
-  MOV/FOR/EXC archives from January 2021 through May 2026.
-
-No user data will be deleted to create storage space, and the project
-will not mix a new tail of months with an older historical vintage.
-
-## Conditions required to execute
-
-Execution proceeds only while all of the following remain true:
-
-- at least 15 GiB is available without deleting user data;
-- one complete official Novo CAGED vintage is frozen from January 2021
-  through May 2026;
-- the historical 2021–2025 competencies are downloaded from that same
-  vintage and reconciled with official aggregates;
-- IPCA and every crosswalk or metadata source are frozen to compatible
-  vintages with checksums and schemas;
-- monthly continuity, treatment support, wage domains, movement codes,
-  and demographic code domains pass fail-fast validation;
-- the central models remain estimable with defensible support.
-
-## Frozen methodological contract
-
-When released, V2 will retain the public interface:
+From this directory:
 
 ```bash
-python run_replication.py \
-  --section all|3|4-5 \
-  --mode reproduce|full
+uv sync
+.venv/bin/python run_replication.py \
+  --section 4-5 \
+  --mode reproduce
 ```
 
-The empirical hierarchy is pre-specified:
+Inspect the complete DAG and input preflight without estimating:
 
-- principal contrast: G1–G4 versus `Not Exposed`, excluding
+```bash
+.venv/bin/python run_replication.py \
+  --section 4-5 \
+  --mode reproduce \
+  --dry-run
+```
+
+Run the release tests:
+
+```bash
+OPENBLAS_NUM_THREADS=1 \
+OMP_NUM_THREADS=1 \
+MKL_NUM_THREADS=1 \
+NUMBA_NUM_THREADS=1 \
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
+.venv/bin/pytest -q tests
+```
+
+## Public interface
+
+```text
+run_replication.py
+  --section {all,3,4-5}
+  --mode {reproduce,full}
+  [--raw-dir PATH]
+  [--output-dir PATH]
+  [--skip-figures]
+  [--dry-run]
+```
+
+- `reproduce` validates the signed reference and re-estimates every
+  inferential family from the frozen derived inputs.
+- `full` additionally rebuilds the signed movement partitions, treatment
+  classification, and national and sector panels from the 195 raw archives.
+- `--section 3` validates the frozen Section 3 reference.
+- `--section 4-5` runs the 17-node empirical DAG.
+- `--output-dir` copies the rendered bundle to another destination without
+  replacing the canonical results.
+
+The log distinguishes `RE-ESTIMATED`, `FROZEN ESTIMATE VALIDATED`,
+`DATA REBUILT`, and `ARTIFACT RENDERED`.
+
+## Frozen data contract
+
+- official cutoff: May 2026;
+- period: January 2021-May 2026;
+- raw vintage: 195 official MOV/FOR/EXC archives;
+- signed fact-month layer: 77 Parquet partitions;
+- reconstruction identity: `MOV + FOR − EXC`;
+- official validation: exact monthly agreement with the adjusted PDET series
+  for all 65 months and all three aggregates;
+- treatment crosswalk and external exposure sources: local frozen copies with
+  checksums, never live scraping during estimation.
+
+The corrected 2021 reconstruction is 36,554,795 MOV + 2,680,702 FOR −
+132,425 EXC = 39,103,072 net movements. Gross FOR is 7.33% of MOV and the net
+adjustment is 6.97%.
+
+## Empirical contract
+
+- principal contrast: G1-G4 versus `Not Exposed`, excluding
   `Minimal Exposure`;
-- admissions and separations: PPML primary, OLS `log(1+y)` secondary;
+- admissions, separations, and gross flows: PPML principal and OLS
+  `log(1+y)` secondary;
 - admission wage: OLS on valid log real wages;
-- net flow: `asinh(net flow)` as a complementary outcome;
-- CBO4 × month benchmark, with CBO × CNAE only as a supported robustness
-  design;
-- balanced event window `-23…+23`, November 2022 as reference, no
-  endpoint clipping;
-- no contemporaneous composition controls in the preferred causal
-  specification;
-- exact-model pretrends, support diagnostics, multiplicity correction,
-  and HonestDiD where compatible;
-- DDD only with `post × treatment × subgroup` and all lower-order terms.
+- net flow: OLS on `asinh(net flow)` as a complementary outcome;
+- CBO4 and month fixed effects, with CBO4-clustered inference;
+- no contemporary composition controls in the principal specification;
+- balanced event window `-23…+23`, with November 2022 omitted and no grouped
+  endpoints;
+- sector robustness retains both CNAE section and division and uses CBO4 ×
+  division two-way clustering;
+- DDD requires `post × treatment × subgroup` and all lower-order terms;
+- planned inference families report multiplicity adjustment and support.
 
-The detailed design and stop rules are in
-`../../Final Review/Codex/05_v2_empirical_plan.md`.
+## Headline evidence and interpretation boundary
 
-## Prohibited interpretation
+The principal no-control estimates are -0.053772 for admissions, -0.042014
+for separations, -0.048093 for gross flows, -0.050740 for real admission wage,
+and -0.551267 for asinh net balance. Only admission wage rejects at 5%.
 
-V2 will not be selected because it produces larger or more significant
-coefficients. It will be selected only if it materially improves data
-lineage, outcome construction, identification, dynamic specification,
-or artifact reproducibility.
+All five exact event-study specifications fail the joint pretrend diagnostic.
+The wage HonestDiD interval does not exclude zero even at `M = 0`.
+Accordingly, V2 does **not** support an unqualified national causal claim.
+The estimates should be described as post-ChatGPT treated-versus-control
+differences under the frozen occupational-exposure design.
+
+The public-versus-private falsification is explicitly not executed: the
+available official fields encode registration form rather than employer
+ownership. No ownership coefficient is fabricated.
+
+## Audit map
+
+- `CHECKPOINTS.md`: checkpoint verdicts and evidence.
+- `DECISIONS.md`: pre-estimation decisions, exceptions, and resolutions.
+- `COMPARACAO_V1_V2.md`: one-line-per-change empirical comparison.
+- `results/reconciliation/RECONCILIACAO.md`: vintage, PDET, and exact V1-model
+  reconciliation.
+- `results/reference/manifest.json`: signed semantic reference inventory.
+- `results/replication/`: independent Python-R agreement evidence.
+
+The dissertation-text revision is intentionally outside this package and
+must be handled as a separate round.
