@@ -315,3 +315,21 @@ December 2024-November 2025, and December 2025-May 2026. The last horizon is
 marked partial. All three event-study PPML models converge with zero
 separation removals; the count and net-flow grids retain 15,935 cells, while
 the valid real-admission-wage grid retains 15,907.
+
+## 2026-07-26 — Complete national specification ladder
+
+All seven preregistered Task 18 steps and all five outcomes were estimated and
+exported. All 35 models converge, no PPML observation is removed for
+separation, and no step is omitted. The no-control benchmark estimates PPML
+effects of -5.24% for admissions, -4.11% for separations, and -4.70% for gross
+flows; none is statistically significant at 5%. Its log real admission-wage
+coefficient is -0.050740 (SE 0.010332, cluster-t `p < 0.00001`), while the
+asinh net-balance coefficient is -0.551267 (SE 0.378317).
+
+The real admission-wage coefficient remains negative and significant in every
+step, including standardized continuous exposure. Including `Minimal
+Exposure` in the control group yields significant negative admissions and
+gross-flow estimates, but this is retained only as a declared sample
+sensitivity and is not promoted over the frozen principal contrast.
+Contemporary-composition results remain labeled descriptive and potentially
+post-treatment.
