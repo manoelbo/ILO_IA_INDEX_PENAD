@@ -109,9 +109,9 @@
         "target_cells_with_flows",
         "target_treated_cbo_with_flows",
         "target_control_cbo_with_flows",
+        "support_status",
         "negative_admission_cells",
-        "negative_separation_cells",
-        "support_status"
+        "negative_separation_cells"
       ],
       "json_top_level_keys": [],
       "media_type": "text/csv",
@@ -2119,6 +2119,15 @@
         "treated_cbos_in_coexisting_cells": "count"
       }
     },
+    "models/SECONDARY_FLOW_ESTIMATORS.md": {
+      "artifact_path": "models/SECONDARY_FLOW_ESTIMATORS.md",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [],
+      "media_type": "text/markdown",
+      "source_id": "code.models.secondary_flow_models",
+      "units": {}
+    },
     "models/SECTOR_FIXED_EFFECT_RESULTS.md": {
       "artifact_path": "models/SECTOR_FIXED_EFFECT_RESULTS.md",
       "categorical_domains": {},
@@ -2234,6 +2243,114 @@
         "periodo": "declared_in_source",
         "periodo_num": "declared_in_source"
       }
+    },
+    "models/secondary_log_flow_results.csv": {
+      "artifact_path": "models/secondary_log_flow_results.csv",
+      "categorical_domains": {
+        "cells_dropped_estimator": [
+          "0"
+        ],
+        "estimator": [
+          "ols"
+        ],
+        "flow_outcome": [
+          "admissoes",
+          "desligamentos",
+          "n_movimentacoes"
+        ],
+        "model_id": [
+          "secondary_log1p__admissoes",
+          "secondary_log1p__desligamentos",
+          "secondary_log1p__n_movimentacoes"
+        ],
+        "outcome": [
+          "log1p_admissoes",
+          "log1p_desligamentos",
+          "log1p_n_movimentacoes"
+        ],
+        "role": [
+          "secondary_estimator"
+        ],
+        "term": [
+          "post_treat"
+        ]
+      },
+      "columns": [
+        "model_id",
+        "outcome",
+        "term",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "cluster_df",
+        "cluster_counts",
+        "minimum_clusters",
+        "n_obs",
+        "input_cells",
+        "complete_case_cells",
+        "cells_dropped",
+        "cells_dropped_missing",
+        "cells_dropped_estimator",
+        "separation_dropped",
+        "converged",
+        "formula",
+        "fixed_effects",
+        "cluster_variables",
+        "controls",
+        "effect_percent",
+        "flow_outcome",
+        "role"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "code.models.secondary_flow_models",
+      "units": {
+        "cells_dropped": "count",
+        "cells_dropped_estimator": "count",
+        "cells_dropped_missing": "count",
+        "ci_high": "model_outcome_scale",
+        "ci_low": "model_outcome_scale",
+        "cluster_counts": "count",
+        "cluster_df": "declared_in_source",
+        "cluster_variables": "declared_in_source",
+        "coefficient": "model_outcome_scale",
+        "complete_case_cells": "count",
+        "controls": "declared_in_source",
+        "converged": "declared_in_source",
+        "effect_percent": "percent",
+        "estimator": "declared_in_source",
+        "fixed_effects": "declared_in_source",
+        "flow_outcome": "declared_in_source",
+        "formula": "declared_in_source",
+        "input_cells": "count",
+        "minimum_clusters": "count",
+        "model_id": "declared_in_source",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "p_value": "probability",
+        "role": "declared_in_source",
+        "separation_dropped": "declared_in_source",
+        "standard_error": "model_outcome_scale",
+        "term": "declared_in_source"
+      }
+    },
+    "models/secondary_log_flow_support.json": {
+      "artifact_path": "models/secondary_log_flow_support.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "all_models_converged",
+        "cbo_clusters",
+        "model_count",
+        "outcomes",
+        "role"
+      ],
+      "media_type": "application/json",
+      "source_id": "code.models.secondary_flow_models",
+      "units": {}
     },
     "models/sector_fixed_effect_ladder.csv": {
       "artifact_path": "models/sector_fixed_effect_ladder.csv",
@@ -3143,6 +3260,118 @@
         "v2_mov_desligamentos": "declared_in_source",
         "v2_movimentacoes": "declared_in_source"
       }
+    },
+    "replication/cross_replication_comparison.csv": {
+      "artifact_path": "replication/cross_replication_comparison.csv",
+      "categorical_domains": {
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ],
+        "python_estimator": [
+          "ols",
+          "ppml"
+        ],
+        "r_estimator": [
+          "ols",
+          "ppml"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "python_estimator",
+        "python_coefficient",
+        "python_standard_error",
+        "python_n_obs",
+        "python_n_clusters",
+        "r_estimator",
+        "r_coefficient",
+        "r_standard_error",
+        "r_n_obs",
+        "r_n_clusters",
+        "coefficient_absolute_difference",
+        "standard_error_absolute_difference",
+        "same_n",
+        "same_clusters",
+        "coefficient_six_decimals",
+        "standard_error_six_decimals"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "R.cross_replication",
+      "units": {
+        "coefficient_absolute_difference": "declared_in_source",
+        "coefficient_six_decimals": "declared_in_source",
+        "outcome": "declared_in_source",
+        "python_coefficient": "declared_in_source",
+        "python_estimator": "declared_in_source",
+        "python_n_clusters": "count",
+        "python_n_obs": "count",
+        "python_standard_error": "declared_in_source",
+        "r_coefficient": "declared_in_source",
+        "r_estimator": "declared_in_source",
+        "r_n_clusters": "count",
+        "r_n_obs": "count",
+        "r_standard_error": "declared_in_source",
+        "same_clusters": "count",
+        "same_n": "declared_in_source",
+        "standard_error_absolute_difference": "declared_in_source",
+        "standard_error_six_decimals": "declared_in_source"
+      }
+    },
+    "replication/cross_replication_r.csv": {
+      "artifact_path": "replication/cross_replication_r.csv",
+      "categorical_domains": {
+        "estimator": [
+          "ols",
+          "ppml"
+        ],
+        "outcome": [
+          "admissoes",
+          "asinh_saldo",
+          "desligamentos",
+          "ln_salario_real_adm",
+          "n_movimentacoes"
+        ]
+      },
+      "columns": [
+        "outcome",
+        "estimator",
+        "coefficient",
+        "standard_error",
+        "n_obs",
+        "n_clusters"
+      ],
+      "json_top_level_keys": [],
+      "media_type": "text/csv",
+      "source_id": "R.cross_replication",
+      "units": {
+        "coefficient": "model_outcome_scale",
+        "estimator": "declared_in_source",
+        "n_clusters": "count",
+        "n_obs": "count",
+        "outcome": "declared_in_source",
+        "standard_error": "model_outcome_scale"
+      }
+    },
+    "replication/cross_replication_status.json": {
+      "artifact_path": "replication/cross_replication_status.json",
+      "categorical_domains": {},
+      "columns": [],
+      "json_top_level_keys": [
+        "max_coefficient_absolute_difference",
+        "max_standard_error_absolute_difference",
+        "models",
+        "r_backend",
+        "same_n_and_clusters",
+        "six_decimal_agreement"
+      ],
+      "media_type": "application/json",
+      "source_id": "R.cross_replication",
+      "units": {}
     },
     "treatment/CBO_4121_TREATMENT_VARIANTS.md": {
       "artifact_path": "treatment/CBO_4121_TREATMENT_VARIANTS.md",

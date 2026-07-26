@@ -1,8 +1,8 @@
 # V2 Dissertation Replication Package
 
-Status: **release candidate**. The empirical package is complete; the final
-release label is assigned only after the public reproduction command, complete
-test suite, signed-reference refresh, and Checkpoint H audit all pass.
+Status: **released** on 26 July 2026. The public reproduction command, complete
+test suite, signed-reference refresh, Python-R cross-replication, and
+Checkpoint H audit all pass.
 
 V2 supersedes V1 because it materially improves data lineage, outcome
 construction, estimator coverage, and reproducibility. It is not selected
@@ -62,6 +62,11 @@ run_replication.py
 
 The log distinguishes `RE-ESTIMATED`, `FROZEN ESTIMATE VALIDATED`,
 `DATA REBUILT`, and `ARTIFACT RENDERED`.
+
+The validated local `reproduce` run completed all 17 nodes. Its HonestDiD node
+dominated runtime and took approximately 102 minutes on the release machine;
+future runs should expect this step to be computationally expensive even when
+it emits no intermediate log lines.
 
 ## Frozen data contract
 

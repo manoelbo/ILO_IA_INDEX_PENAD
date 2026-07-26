@@ -870,3 +870,22 @@ On the exact 22,049-cell principal sample, the secondary coefficients are
 movements. Their corresponding PPML coefficients are -0.053772, -0.042014,
 and -0.048093. None of the secondary OLS estimates rejects at 5%. PPML remains
 principal because that hierarchy was frozen before estimation.
+
+## 2026-07-26 — Checkpoint H release decision
+
+The V2 package is released only after the public 17-node reproduction command
+completed, all 115 tests passed, the 87-artifact semantic reference validated,
+and the independent base-R replay agreed with Python beyond six decimal
+places. The completed replay re-estimated all 15 inferential nodes.
+
+The release decision does not convert failed identifying diagnostics into a
+causal claim. All five exact-model event studies fail the joint pretrend
+diagnostic, and the admission-wage HonestDiD interval includes zero at
+`M = 0`. V2 supersedes V1 for data construction and auditability, while the
+dissertation prose must use the narrower interpretation recorded in
+`COMPARACAO_V1_V2.md`.
+
+No blocking criterion is silently waived. The public-versus-private
+falsification remains a declared non-execution because the available fields
+do not identify ownership; every other Checkpoint H criterion is closed with
+an executable or file-based receipt.

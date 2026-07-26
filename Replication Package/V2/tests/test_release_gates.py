@@ -176,7 +176,7 @@ def test_gate_08_reference_files_match_signed_manifest() -> None:
         PACKAGE_ROOT / "results" / "reference"
     )
 
-    assert summary["artifacts"] == 81
+    assert summary["artifacts"] == 87
     assert summary["manifest_signature_valid"]
     assert summary["semantic_contracts_valid"]
 

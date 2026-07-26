@@ -148,3 +148,27 @@ Evidence:
 - the non-execution is recorded as
   `not_executed_nonidentifying_fields`; no ownership coefficient was
   fabricated.
+
+## Checkpoint H — Release package
+
+Status: **PASS** on 26 July 2026.
+
+Evidence:
+
+- the public `--section 4-5 --mode reproduce --skip-figures` command completed
+  all 17 DAG nodes and reported 84 non-PNG artifacts in the rendered bundle;
+- all 15 inferential nodes were re-estimated rather than copied from frozen
+  coefficient tables;
+- the complete test suite passes: 115 tests across every `tests/test_*.py`
+  module, including all ten release gates and data-construction coverage;
+- the final semantic reference contains 87 artifacts and passes source,
+  schema, unit, category-domain, SHA-256, and manifest-signature validation;
+- the independent base-R replay has the same sample and 341 clusters for all
+  five central models;
+- the maximum Python-R coefficient difference is `1.1209513178789265e-10`
+  and the maximum standard-error difference is
+  `1.2007179972517434e-11`, exceeding the six-decimal agreement requirement;
+- `COMPARACAO_V1_V2.md` covers every planned change, every mechanism, and the
+  complete Task 14 gate;
+- the package is delivered without rewriting the dissertation text, which
+  remains a separate authoring round.
