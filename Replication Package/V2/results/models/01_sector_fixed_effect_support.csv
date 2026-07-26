@@ -1,0 +1,4 @@
+level_id,fixed_effect_cell,cells,observations_per_cell_p10,observations_per_cell_min,median_treated_cbos_per_cell,median_control_cbos_per_cell,coexisting_cells,coexisting_cell_share,treated_cbos_in_coexisting_cells,control_cbos_in_coexisting_cells
+level_1,periodo,65,12139.4,11665,75.0,264.0,65,1.0,75,266
+level_2,secao^periodo,1365,99.0,9,61.0,138.0,1365,1.0,75,266
+level_3,secao^periodo^cbo_2d,44973,1.0,1,0.0,3.0,14541,0.32332732973117206,55,102

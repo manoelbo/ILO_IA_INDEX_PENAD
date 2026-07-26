@@ -333,3 +333,33 @@ gross-flow estimates, but this is retained only as a declared sample
 sensitivity and is not promoted over the frozen principal contrast.
 Contemporary-composition results remain labeled descriptive and potentially
 post-treatment.
+
+## 2026-07-26 — Sector fixed-effect ladder
+
+The sector support table was frozen before coefficient estimation. Every one
+of the 1,365 section-month cells contains treated and control CBOs, with
+median counts of 61 and 138, respectively. Level 3 is much thinner: its
+observation-count p10 is one and only 32.33% of section-month-CBO2 cells have
+both groups. It nevertheless retains 55 treated CBOs in coexisting cells,
+above the preregistered threshold of 20, so it is estimable but remains a
+fragile support diagnostic.
+
+The co-principal level 2 estimates are -0.075076 for admissions, -0.066446 for
+separations, -0.070665 for gross flows, -0.035598 for log real admission wage,
+and -0.139494 for asinh net balance. Relative to level 1, sector adjustment
+makes all three flow coefficients more negative, attenuates the wage
+coefficient, and sharply attenuates net balance. This difference is reported
+as a change in estimand, not used to choose a preferred result.
+
+With CBO-only clustering, level 2 admissions and gross flows cross 5%.
+Two-way clustering across 341 CBO4 and 87 official CNAE divisions raises
+their p-values to 0.0538 and 0.0643; separations has `p = 0.0855`. The wage
+coefficient remains statistically precise (`p < 0.00001`). Bidirectional
+standard errors are larger for all five outcomes and remain a robustness
+result rather than the principal inference.
+
+The official division panel excludes the declared undocumented Z/ZZ bucket,
+removing exactly 583 admissions and 464 separations already disclosed in
+Task 13. All 15 sector models converge. PPML removes 161 separated admission
+cells and 70 separated separation cells; singleton and missing-outcome losses
+are recorded per model.

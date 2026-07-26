@@ -62,3 +62,25 @@ Evidence:
   dispersion, employment weight, native label, and the conservative V-D tie;
 - no coefficient was estimated with B, C, or D before the classification
   comparison was frozen.
+
+## Checkpoint E — Econometric core
+
+Status: **PASS** on 26 July 2026.
+
+Evidence:
+
+- the shared estimator passes the no-contemporaneous-controls contract and
+  reports cluster-t inference, convergence, separation, losses, N, and
+  cluster counts;
+- the balanced event grid is complete from -23 through +23 with November 2022
+  as the unique reference and no grouped tails;
+- all 35 national ladder models converge and all seven preregistered steps are
+  exported, including the continuous measure beside the binary measure;
+- the sector-support table precedes coefficient output and shows treated and
+  control coexistence in all 1,365 level-2 section-month cells;
+- level 1 and level 2 are reported side by side for all five outcomes and
+  their coefficient differences are explicit;
+- level 3 retains 55 treated CBOs in coexisting cells, exceeds the threshold
+  of 20, and remains labeled a support diagnostic;
+- two-way robustness uses 341 CBO4 and 87 CNAE-division clusters, never the
+  21-section dimension.
