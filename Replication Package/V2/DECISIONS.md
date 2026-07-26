@@ -128,3 +128,49 @@ The approved `tipoestabelecimento = -1` category occurs exactly once, in June
 2025. The approved undocumented `tipoempregador = 1` category has a signed
 total of 6,910 rows across 43 fact months. Both remain separate categories and
 are excluded from semantic public-versus-private assignment in Task 26.
+
+## 2026-07-26 — External Checkpoint B review and corrected FOR benchmark
+
+The author independently re-aggregated the 77 signed movement partitions
+instead of relying on the generated reports and reproduced the 2021 totals
+exactly: MOV 36,554,795, FOR 2,680,702, EXC 132,425, and net movements
+39,103,072.
+
+The external review also established that `ano` in the Base dos Dados
+`microdados_movimentacao_fora_prazo` table refers to the declaration
+competency, not the fact competency. Aggregating the frozen FTP FOR archives
+by archive year reproduces the Base dos Dados counts exactly, including
+3,148,673 rows in 2021 and 1,314,097 in 2022. This independently validates the
+FTP extraction in a second time dimension.
+
+The original approximately 8% acceptance benchmark mixed declaration and fact
+reference periods. The corrected 2021 fact-month benchmark is 7.33% gross FOR
+relative to MOV and 6.97% net after EXC. The observed V2 result matches both
+corrected benchmarks.
+
+## 2026-07-26 — Disclosure direction for recent completeness
+
+The full-window rule A remains unchanged. In 11 of the 12 recent incomplete
+months, the treated-minus-control FOR/MOV difference is non-positive; the
+range is -0.281 to +0.073 percentage points and the maximum absolute
+difference is 0.281 percentage points in June 2025. Controls therefore have
+slightly more pending late declarations than treated CBOs, in the same
+direction as the V1 bias but roughly one order of magnitude smaller.
+
+This does not cross the preregistered 1 percentage point trimming threshold.
+The future dissertation text must disclose the direction and magnitude even
+though no tail months are removed.
+
+## 2026-07-26 — OPEN: PDET monthly adjusted-series reconciliation
+
+The V1 MOV identity validates the parser, and the Base dos Dados FOR identity
+validates extraction, but neither test validates reassignment from declaration
+month to `competenciamov`. Checkpoint B therefore retains one declared
+pending item: compare V2 admissions, separations, and net balance month by
+month with the official PDET Novo CAGED series with adjustments.
+
+Tasks 10-13 may proceed while this reconciliation is built. Task 14 may be
+executed technically, but its coefficients must not be interpreted, promoted,
+or copied to `COMPARACAO_V1_V2.md` until the PDET comparison is closed or every
+deviation has a documented sample restriction. A systematic one-month shift
+is a blocking reassignment bug.
