@@ -1,0 +1,16 @@
+{
+  "cbo_families": 629,
+  "classification": {
+    "Exposed: Gradient 1": 13,
+    "Exposed: Gradient 2": 31,
+    "Exposed: Gradient 3": 31,
+    "Exposed: Gradient 4": 0,
+    "Minimal Exposure": 95,
+    "No score": 193,
+    "Not Exposed": 266
+  },
+  "coverage": {
+    "matched_official_mte": 436,
+    "no_score": 193
+  }
+}

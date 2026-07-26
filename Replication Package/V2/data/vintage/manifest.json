@@ -1363,5 +1363,35 @@
     "data_modificacao_ftp": "2026-06-30T17:21:57Z",
     "sha256": "e3f5317074d0cf48037e82f41fbec7199c5e9273689403c75f3af1ef3fe06d91",
     "url": "ftp://ftp.mtps.gov.br/pdet/microdados/NOVO%20CAGED/2026/202605/CAGEDMOV202605.7z"
+  },
+  "crosswalk/Correspondência ISCO 08 a 88.xlsx": {
+    "bytes": 48861,
+    "frozen_at": "2026-07-26T16:33:29.443383Z",
+    "sha256": "8c48906150a91c9c0ca4d34532008f60f5c4d205bfc024e031c4f2d6b0b4a223",
+    "source_path": "data/input/Correspondência ISCO 08 a 88.xlsx"
+  },
+  "crosswalk/Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx": {
+    "bytes": 2598951,
+    "frozen_at": "2026-07-26T16:33:29.443383Z",
+    "sha256": "c1940b87e7293b1eb95b530b6d3da7cd806b61d217c4bff1e69372b2cff5c90a",
+    "source_path": "data/input/Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx"
+  },
+  "crosswalk/ISCO 08 Estruturas e Definições.xlsx": {
+    "bytes": 303771,
+    "frozen_at": "2026-07-26T16:33:29.443383Z",
+    "sha256": "df10744491b4216ed3580e8263b6324502e774c16667a1d7ecdbee50e85505e7",
+    "source_path": "data/input/ISCO 08 Estruturas e Definições.xlsx"
+  },
+  "crosswalk/cbo-isco-conc.csv": {
+    "bytes": 371648,
+    "frozen_at": "2026-07-26T16:33:29.443383Z",
+    "sha256": "d70e6b5273975a25c29a35daa0c94cd752b0791f9f85dd9f9ebe9122fa5daec5",
+    "source_path": "data/input/cbo-isco-conc.csv"
+  },
+  "crosswalk/mte_cbo2002_cbo94_ciuo88_by_family.csv": {
+    "bytes": 104487,
+    "frozen_at": "2026-07-26T16:33:29.443383Z",
+    "sha256": "2177427c649350884b77617731d8a591c133c6f86da37375aa498cf72f03f867",
+    "source_path": "outputs/crosswalk_audit/source_dictionaries/mte_cbo2002_cbo94_ciuo88_by_family.csv"
   }
 }

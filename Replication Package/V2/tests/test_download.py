@@ -128,3 +128,14 @@ def test_verify_only_detects_same_size_hash_corruption(tmp_path: Path) -> None:
     divergences = module.verify_inventory([record], tmp_path, manifest)
 
     assert divergences == ["CAGEDMOV202101.7z: sha256 mismatch"]
+
+
+def test_archive_manifest_count_ignores_frozen_non_archive_inputs() -> None:
+    module = load_download_module()
+    manifest = {
+        "CAGEDMOV202101.7z": {"sha256": "a" * 64},
+        "crosswalk/example.csv": {"sha256": "b" * 64},
+        "pdet/tabelas_202605.xlsx": {"sha256": "c" * 64},
+    }
+
+    assert module.archive_manifest_count(manifest) == 1

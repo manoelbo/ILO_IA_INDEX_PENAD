@@ -23,6 +23,16 @@ DEFAULT_MANIFEST = DEFAULT_DATA_DIR / "manifest.json"
 TransferFunction = Callable[[str, Path, int, float], None]
 
 
+def archive_manifest_count(
+    manifest: dict[str, dict[str, object]],
+) -> int:
+    """Count only Novo CAGED archives in the extensible vintage manifest."""
+    return sum(
+        Path(relative_path).name.endswith(".7z")
+        for relative_path in manifest
+    )
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -279,14 +289,16 @@ def main() -> int:
         args.manifest,
         timeout=args.timeout,
     )
-    if len(manifest) != len(records):
+    archive_count = archive_manifest_count(manifest)
+    if archive_count != len(records):
         raise RuntimeError(
-            f"Manifest has {len(manifest)} entries; expected {len(records)}"
+            f"Manifest has {archive_count} archive entries; "
+            f"expected {len(records)}"
         )
     unfinished = list(args.data_dir.glob("*.part"))
     if unfinished:
         raise RuntimeError(f"Unfinished partial downloads: {unfinished}")
-    print(f"Downloaded and recorded {len(manifest)} archives")
+    print(f"Downloaded and recorded {archive_count} archives")
     return 0
 
 
