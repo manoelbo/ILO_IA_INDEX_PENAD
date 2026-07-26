@@ -91,6 +91,7 @@ def build_archive(
     *,
     invalid_sex: bool = False,
     undocumented_employer: bool = False,
+    undocumented_establishment: bool = False,
     omit_column: bool = False,
 ) -> Path:
     source_dir = tmp_path / "source"
@@ -113,6 +114,8 @@ def build_archive(
         rows[2]["sexo"] = "2"
     if undocumented_employer:
         rows[2]["tipoempregador"] = "1"
+    if undocumented_establishment:
+        rows[2]["tipoestabelecimento"] = "-1"
 
     text_path = source_dir / f"CAGED{archive_type}202101.txt"
     with text_path.open("w", encoding="utf-8", newline="") as handle:
@@ -178,6 +181,21 @@ def test_undocumented_employer_code_is_preserved_without_remapping(
     frame = module.parse_archive(archive_path)
 
     assert frame.loc[2, "tipoempregador"] == "1"
+
+
+def test_undocumented_establishment_code_is_preserved_without_remapping(
+    tmp_path: Path,
+) -> None:
+    module = load_parse_module()
+    archive_path = build_archive(
+        tmp_path,
+        "MOV",
+        undocumented_establishment=True,
+    )
+
+    frame = module.parse_archive(archive_path)
+
+    assert frame.loc[2, "tipoestabelecimento"] == "-1"
 
 
 def test_invalid_column_count_fails_fast(tmp_path: Path) -> None:

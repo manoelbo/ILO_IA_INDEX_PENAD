@@ -50,3 +50,56 @@ accepted as an observed undocumented category and preserved without remapping.
 It remains in all national aggregates, is audited month by month in Task 9,
 and is reported separately rather than assigned to either side of the
 public-versus-private contrast in Task 26.
+
+## 2026-07-26 — OPEN: same-month exclusion records
+
+Task 7 is paused by the preregistered temporal-domain check. The plan states
+that EXC facts must be strictly earlier than the archive month, but the frozen
+official vintage contains 11 same-month exclusions:
+
+- `CAGEDEXC202101`: 6 rows with `competenciamov = competenciaexc = 202101`;
+- `CAGEDEXC202102`: 5 rows with `competenciamov = competenciaexc = 202102`.
+
+No EXC archive contains a fact month later than its archive month, and the
+remaining 63 EXC archives satisfy the strict-earlier relationship.
+
+No record has been discarded or moved to another fact month. The proposed
+resolution is to accept `competenciamov <= competencia_arquivo` for EXC only,
+preserve all 11 rows with weight `-1` in their stated fact month, keep FOR
+strictly earlier, and add an explicit same-month EXC count to the Task 9
+continuity audit.
+
+## 2026-07-26 — RESOLVED: preserve same-month exclusions
+
+The author approved the proposed temporal rule. EXC records may satisfy
+`competenciamov <= competencia_arquivo`; the 11 observed same-month exclusions
+remain in their stated fact month with weight `-1`. Future-dated EXC records
+remain invalid, FOR remains strictly retroactive, and same-month EXC counts are
+carried into the reconciliation output for the Task 9 continuity audit.
+
+## 2026-07-26 — OPEN: undocumented `tipoestabelecimento = -1`
+
+Task 7 stopped at the domain fail-fast gate while parsing
+`CAGEDMOV202506.7z`. The frozen official layout defines
+`tipoestabelecimento` as `{1, 3, 4, 5, 9}`, but this archive contains one row
+with the undocumented value `-1`.
+
+The row is a June 2025 separation (`tipomovimentacao = 31`) in CBO 5121. Its
+geography and industry fields also use non-identified values
+(`regiao = 99`, `uf = 99`, `municipio = 999999`, `secao = Z`,
+`subclasse = 9999999`). The employer type is the documented CPF code `2`.
+This evidence does not establish an official semantic meaning for `-1`.
+
+No row was dropped, remapped, or admitted into the parser domain. The
+least-assumptive proposed resolution is to preserve `-1` as an observed
+undocumented establishment-type category, accept it without semantic
+remapping, retain the row in national flow aggregates, and audit the code by
+fact month before any public-versus-private exercise in Task 26.
+
+## 2026-07-26 — RESOLVED: preserve undocumented establishment code
+
+The author approved the proposed resolution. `tipoestabelecimento = -1` is
+accepted as an observed undocumented category and preserved without remapping.
+The row remains in national flow aggregates, the code is audited by fact month
+in Task 9, and it is not assigned to either side of the public-versus-private
+contrast in Task 26.

@@ -84,7 +84,9 @@ DOMAIN_VALUES = {
     # frozen layout. It is preserved as an undocumented category and must not
     # be remapped to any documented employer type.
     "tipoempregador": {"0", "1", "2", "9"},
-    "tipoestabelecimento": {"1", "3", "4", "5", "9"},
+    # Code -1 occurs once in the frozen MOV202506 archive but is absent from
+    # the frozen layout. Preserve it without assigning a semantic category.
+    "tipoestabelecimento": {"-1", "1", "3", "4", "5", "9"},
     "tipomovimentacao": {
         "10",
         "20",
