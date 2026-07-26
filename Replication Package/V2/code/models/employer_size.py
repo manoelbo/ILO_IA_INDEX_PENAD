@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,11 @@ import duckdb
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import fit_model
 from heterogeneity import benjamini_hochberg
 
@@ -315,8 +321,10 @@ def build_size_panel(
                 "salario_soma_adm",
             ],
         ]
-        values = totals.merge(
+        values = audited_merge(
+            totals,
             target,
+            merge_id=f"employer_size_{size_code}_target_totals",
             on=keys,
             how="left",
             suffixes=("_total", "_target"),
@@ -360,8 +368,10 @@ def build_size_panel(
             ],
             ignore_index=True,
         )
-        panel = grid.merge(
+        panel = audited_merge(
+            grid,
             long,
+            merge_id=f"employer_size_{size_code}_grid",
             on=[*keys, "subgroup"],
             how="left",
             validate="one_to_one",

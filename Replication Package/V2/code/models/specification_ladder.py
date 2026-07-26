@@ -6,12 +6,18 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import (
     CONTEMPORARY_CONTROLS,
     fit_model,
@@ -152,14 +158,17 @@ def prepare_ladder_data(
     classes["cbo_4d"] = classes["cbo_4d"].astype(str).str.zfill(4)
     data = panel.copy()
     data["cbo_4d"] = data["cbo_4d"].astype(str).str.zfill(4)
-    data = data.drop(
+    data_without_classes = data.drop(
         columns=[
             column
             for column in ("isco08_mean_score", "gradient_v_a")
             if column in data
         ]
-    ).merge(
+    )
+    data = audited_merge(
+        data_without_classes,
         classes,
+        merge_id="specification_ladder_attach_classes",
         on="cbo_4d",
         how="left",
         validate="many_to_one",
@@ -174,8 +183,10 @@ def prepare_ladder_data(
                 control,
             )
         pre_records.append(record)
-    data = data.merge(
+    data = audited_merge(
+        data,
         pd.DataFrame(pre_records),
+        merge_id="specification_ladder_attach_pre_controls",
         on="cbo_4d",
         how="left",
         validate="many_to_one",

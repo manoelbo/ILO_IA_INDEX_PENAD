@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,11 @@ import duckdb
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import fit_model
 
 
@@ -405,8 +411,10 @@ def compare_levels(
             "p_value": "level_2_p_value",
         }
     )
-    comparison = level_one.merge(
+    comparison = audited_merge(
+        level_one,
         level_two,
+        merge_id="sector_models_level_one_to_level_two",
         on="outcome",
         validate="one_to_one",
     )

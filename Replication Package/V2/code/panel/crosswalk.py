@@ -9,6 +9,7 @@ import json
 import math
 import os
 import shutil
+import sys
 from collections.abc import Callable, Mapping
 from datetime import datetime, timezone
 from pathlib import Path
@@ -16,6 +17,12 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -422,12 +429,15 @@ def compare_with_reference(
     ].copy()
     current["cbo_4d"] = current["cbo_4d"].map(normalize_code)
     reference["cbo_4d"] = reference["cbo_4d"].map(normalize_code)
-    comparison = current.merge(
+    comparison = audited_merge(
+        current,
         reference,
+        merge_id="crosswalk_current_to_reference",
         on="cbo_4d",
         how="outer",
         suffixes=("_v2", "_reference"),
         indicator=True,
+        validate="one_to_one",
     )
     missing_from_v2 = int(comparison["_merge"].eq("right_only").sum())
     missing_from_reference = int(

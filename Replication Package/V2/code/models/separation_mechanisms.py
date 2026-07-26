@@ -8,6 +8,7 @@ import hashlib
 import json
 import math
 import os
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any, Sequence
@@ -16,6 +17,11 @@ import duckdb
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import cluster_t_inference, fit_model
 from event_study import (
     EVENT_PERIOD,
@@ -341,16 +347,20 @@ def build_family_panel(
     )
     base["_join"] = 1
     families["_join"] = 1
-    panel = base.merge(
+    panel = audited_merge(
+        base,
         families,
+        merge_id="separation_expand_families",
         on="_join",
         how="inner",
         validate="many_to_many",
     ).drop(columns="_join")
     counts = family_counts.copy()
     counts["cbo_4d"] = counts["cbo_4d"].astype(str).str.zfill(4)
-    panel = panel.merge(
+    panel = audited_merge(
+        panel,
         counts,
+        merge_id="separation_attach_family_counts",
         on=["cbo_4d", "periodo_num", "family"],
         how="left",
         validate="one_to_one",
@@ -412,8 +422,10 @@ def build_reconciliation(
             ),
         )
     )
-    reconciliation = panel_total.merge(
+    reconciliation = audited_merge(
+        panel_total,
         monthly,
+        merge_id="separation_reconcile_monthly_totals",
         on="periodo_num",
         how="outer",
         validate="one_to_one",

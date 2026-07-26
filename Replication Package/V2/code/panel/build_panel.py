@@ -9,6 +9,7 @@ import io
 import json
 import math
 import os
+import sys
 import tempfile
 import zipfile
 from collections.abc import Callable
@@ -21,6 +22,12 @@ import numpy as np
 import pandas as pd
 import requests
 import xlrd
+
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -102,6 +109,10 @@ COMPOSITION_BASES = (
     "pct_mulher",
     "pct_superior",
     "pct_negra",
+)
+COMPLETE_HIGHER_EDUCATION_CODES = frozenset({"9", "10", "11", "80"})
+COMPLETE_HIGHER_EDUCATION_SQL = ", ".join(
+    f"'{code}'" for code in sorted(COMPLETE_HIGHER_EDUCATION_CODES)
 )
 
 
@@ -481,7 +492,7 @@ def _aggregate_national(
         """
     )
     return connection.execute(
-        """
+        f"""
         WITH winsorized AS (
             SELECT
                 movement.*,
@@ -529,12 +540,12 @@ def _aggregate_national(
                 END) AS mulher_soma_desl,
                 sum(CASE
                     WHEN movimento = 1
-                     AND graudeinstrucao IN ('9', '10', '11', '80')
+                     AND graudeinstrucao IN ({COMPLETE_HIGHER_EDUCATION_SQL})
                     THEN peso ELSE 0
                 END) AS superior_soma_adm,
                 sum(CASE
                     WHEN movimento = -1
-                     AND graudeinstrucao IN ('9', '10', '11', '80')
+                     AND graudeinstrucao IN ({COMPLETE_HIGHER_EDUCATION_SQL})
                     THEN peso ELSE 0
                 END) AS superior_soma_desl,
                 sum(CASE
@@ -597,7 +608,7 @@ def _aggregate_national(
 
 
 def _sector_output_sql() -> str:
-    return """
+    return f"""
         WITH winsorized AS (
             SELECT
                 movement.*,
@@ -647,12 +658,12 @@ def _sector_output_sql() -> str:
                 END) AS mulher_soma_desl,
                 sum(CASE
                     WHEN movimento = 1
-                     AND graudeinstrucao IN ('9', '10', '11', '80')
+                     AND graudeinstrucao IN ({COMPLETE_HIGHER_EDUCATION_SQL})
                     THEN peso ELSE 0
                 END) AS superior_soma_adm,
                 sum(CASE
                     WHEN movimento = -1
-                     AND graudeinstrucao IN ('9', '10', '11', '80')
+                     AND graudeinstrucao IN ({COMPLETE_HIGHER_EDUCATION_SQL})
                     THEN peso ELSE 0
                 END) AS superior_soma_desl,
                 sum(CASE
@@ -1103,8 +1114,10 @@ def _attach_panel_fields(
         raise ValueError(f"IPCA input is missing columns: {missing_ipca}")
     if ipca["periodo_num"].duplicated().any():
         raise RuntimeError("IPCA input has duplicate months")
-    out = panel.merge(
+    out = audited_merge(
+        panel,
         ipca[["periodo_num", "indice"]],
+        merge_id="national_panel_attach_ipca",
         on="periodo_num",
         how="left",
         validate="many_to_one",
@@ -1128,8 +1141,10 @@ def _attach_panel_fields(
         ["cbo_4d", "cbo_ilo_gradient"]
     ].copy()
     classes["cbo_4d"] = classes["cbo_4d"].astype(str).str.zfill(4)
-    out = out.merge(
+    out = audited_merge(
+        out,
         classes,
+        merge_id="national_panel_attach_treatment",
         on="cbo_4d",
         how="left",
         validate="many_to_one",

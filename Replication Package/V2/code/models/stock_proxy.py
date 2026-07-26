@@ -7,12 +7,18 @@ import argparse
 import hashlib
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import fit_model
 
 
@@ -116,13 +122,18 @@ def build_stock_proxy(
         [cbos, periods],
         names=["cbo_4d", "periodo_num"],
     ).to_frame(index=False)
-    panel = grid.merge(
+    panel = audited_merge(
+        grid,
         source.drop(columns="treated_main"),
+        merge_id="stock_proxy_grid_to_flows",
         on=["cbo_4d", "periodo_num"],
         how="left",
         validate="one_to_one",
-    ).merge(
+    )
+    panel = audited_merge(
+        panel,
         treatment,
+        merge_id="stock_proxy_attach_treatment",
         on="cbo_4d",
         how="left",
         validate="many_to_one",

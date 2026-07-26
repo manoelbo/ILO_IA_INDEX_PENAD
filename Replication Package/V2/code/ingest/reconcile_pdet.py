@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import shutil
+import sys
 import tempfile
 import unicodedata
 from datetime import datetime, timezone
@@ -18,6 +19,12 @@ import duckdb
 import pandas as pd
 import requests
 from openpyxl import load_workbook
+
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -350,7 +357,14 @@ def _shift_score(
         shifted["competenciamov"],
         shift,
     )
-    joined = shifted.merge(v2, on="competenciamov", how="inner")
+    joined = audited_merge(
+        shifted,
+        v2,
+        merge_id=f"pdet_shift_score_{shift}",
+        on="competenciamov",
+        how="inner",
+        validate="one_to_one",
+    )
     return int(
         sum(
             (
@@ -368,8 +382,10 @@ def reconcile_monthly(
     official: pd.DataFrame,
     v2: pd.DataFrame,
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
-    comparison = official.merge(
+    comparison = audited_merge(
+        official,
         v2,
+        merge_id="pdet_official_to_v2_monthly",
         on="competenciamov",
         how="outer",
         validate="one_to_one",

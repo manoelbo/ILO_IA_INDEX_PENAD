@@ -5,12 +5,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Mapping
 
 import matplotlib
 import pandas as pd
 import pyarrow.dataset as ds
+
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 
 
 matplotlib.use("Agg")
@@ -299,8 +306,10 @@ def finalize_treatment_completeness(
     differential = (
         fractions["treated"] - fractions["control"]
     ).rename("diferencial_tratado_controle_pp")
-    result = result.merge(
+    result = audited_merge(
+        result,
         differential,
+        merge_id="vintage_attach_treatment_completeness_delta",
         on="competenciamov",
         how="left",
         validate="many_to_one",

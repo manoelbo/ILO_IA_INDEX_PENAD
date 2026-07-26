@@ -8,6 +8,7 @@ import hashlib
 import json
 import math
 import os
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any, Sequence
@@ -16,6 +17,11 @@ import duckdb
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import fit_model
 
 
@@ -468,8 +474,10 @@ def _micro_panels(
                 dimension_actual["actual_group"].eq(group_id),
                 [*keys, *AGGREGATE_COLUMNS],
             ].copy()
-            values = totals.merge(
+            values = audited_merge(
+                totals,
                 target,
+                merge_id=f"ddd_{dimension}_{group_id}_target_totals",
                 on=keys,
                 how="left",
                 suffixes=("_total", "_target"),
@@ -501,13 +509,13 @@ def _micro_panels(
                 comparison_frames,
                 ignore_index=True,
             )
-            panel = (
-                base.merge(
-                    values_long,
-                    on=keys,
-                    how="left",
-                    validate="one_to_many",
-                )
+            panel = audited_merge(
+                base,
+                values_long,
+                merge_id=f"ddd_{dimension}_{group_id}_grid",
+                on=keys,
+                how="left",
+                validate="one_to_many",
             )
             panel["subgroup"] = panel["subgroup"].fillna("target")
             missing_values = panel["admissoes"].isna()
@@ -580,8 +588,10 @@ def _income_panels(
         national["included_main"].eq(True)
     ].copy()
     source["cbo_4d"] = source["cbo_4d"].astype(str).str.zfill(4)
-    source = source.merge(
+    source = audited_merge(
+        source,
         assignments,
+        merge_id="ddd_attach_income_assignments",
         on="cbo_4d",
         how="left",
         validate="many_to_one",
@@ -964,7 +974,8 @@ def main() -> int:
         flush=True,
     )
     results = run_ddd_models(panel)
-    results = results.merge(
+    results = audited_merge(
+        results,
         support[
             [
                 "dimension",
@@ -974,6 +985,7 @@ def main() -> int:
                 "target_control_cbo_with_flows",
             ]
         ],
+        merge_id="ddd_attach_model_support",
         on=["dimension", "group_id"],
         how="left",
         validate="many_to_one",

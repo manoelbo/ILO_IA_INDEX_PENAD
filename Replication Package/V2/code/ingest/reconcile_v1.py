@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from collections import Counter
 from pathlib import Path
 from typing import Sequence
@@ -11,6 +12,12 @@ from typing import Sequence
 import pandas as pd
 import pyarrow.dataset as ds
 import pyarrow.parquet as pq
+
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -172,8 +179,10 @@ def reconcile_monthly_totals(
     result["competenciamov"] = result["competenciamov"].astype(str)
     for flow, sign in FLOW_SIGNS.items():
         components = _flow_components(v2, flow, sign)
-        result = result.merge(
+        result = audited_merge(
+            result,
             components,
+            merge_id=f"reconcile_v1_attach_{flow}_components",
             on="competenciamov",
             how="left",
             validate="one_to_one",

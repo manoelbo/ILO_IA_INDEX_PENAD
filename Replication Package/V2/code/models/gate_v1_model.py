@@ -6,12 +6,19 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
 import pyfixest as pf
+
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -235,8 +242,10 @@ def build_comparison(
     reference: pd.DataFrame,
     estimates: pd.DataFrame,
 ) -> pd.DataFrame:
-    comparison = reference.merge(
+    comparison = audited_merge(
+        reference,
         estimates,
+        merge_id="v1_gate_reference_to_estimates",
         on="outcome",
         how="inner",
         validate="one_to_one",

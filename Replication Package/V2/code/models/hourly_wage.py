@@ -7,6 +7,7 @@ import argparse
 import json
 import math
 import os
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,11 @@ import duckdb
 import numpy as np
 import pandas as pd
 
+COMMON_DIR = Path(__file__).resolve().parents[1] / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
+
+from merge_audit import audited_merge
 from estimators import fit_model
 
 
@@ -339,8 +345,10 @@ def build_hourly_panel(
     base["cbo_4d"] = base["cbo_4d"].astype(str).str.zfill(4)
     metrics = measures.copy()
     metrics["cbo_4d"] = metrics["cbo_4d"].astype(str).str.zfill(4)
-    panel = base.merge(
+    panel = audited_merge(
+        base,
         metrics,
+        merge_id="hourly_wage_attach_measures",
         on=["cbo_4d", "periodo_num"],
         how="left",
         validate="one_to_one",

@@ -18,8 +18,11 @@ import pandas as pd
 
 MODULE_DIR = Path(__file__).resolve().parent
 PANEL_DIR = MODULE_DIR.parent / "panel"
+COMMON_DIR = MODULE_DIR.parent / "common"
 if str(PANEL_DIR) not in sys.path:
     sys.path.insert(0, str(PANEL_DIR))
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
 
 from crosswalk import (
     ILO_FILENAME,
@@ -28,6 +31,7 @@ from crosswalk import (
     pooled_equal_weight_sd,
 )
 from estimators import fit_model
+from merge_audit import audited_merge
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
@@ -347,7 +351,14 @@ def rank_correlations(
     raw = anthropic_raw.copy()
     raw["cbo_4d"] = raw["cbo_4d"].astype(str).str.strip()
     raw = raw.loc[raw["cbo_4d"].str.fullmatch(r"\d{4}")].copy()
-    merged = ilo.merge(raw, on="cbo_4d", how="inner", validate="one_to_one")
+    merged = audited_merge(
+        ilo,
+        raw,
+        merge_id="exposure_sensitivity_ilo_to_anthropic",
+        on="cbo_4d",
+        how="inner",
+        validate="one_to_one",
+    )
     rows = []
     samples = {
         "direct_matches": merged["imputation_method"].eq("direct_match"),
@@ -395,8 +406,10 @@ def prepare_measure_samples(
 ) -> dict[str, pd.DataFrame]:
     data = panel.copy()
     data["cbo_4d"] = data["cbo_4d"].astype(str).str.zfill(4)
-    measures = data.merge(
+    measures = audited_merge(
+        data,
         cbo_variants,
+        merge_id="exposure_sensitivity_attach_ilo_variants",
         on="cbo_4d",
         how="left",
         validate="many_to_one",
@@ -426,8 +439,10 @@ def prepare_measure_samples(
         consensus["post"] * consensus["treatment_consensus"]
     )
 
-    anthro = data.merge(
+    anthro = audited_merge(
+        data,
         anthropic[["cbo_4d", "anthropic_z"]],
+        merge_id="exposure_sensitivity_attach_anthropic",
         on="cbo_4d",
         how="inner",
         validate="many_to_one",
