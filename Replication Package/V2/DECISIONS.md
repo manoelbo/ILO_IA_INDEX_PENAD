@@ -451,3 +451,73 @@ Running one M value at a time with garbage collection retained the exact
 method, 1,000-point internal inversion grid, and numerical results while
 holding memory stable. The serial run completed successfully; this
 operational choice is encoded in the replication script.
+
+## 2026-07-26 — DDD multiplicity family and subgroup contract
+
+Task 21 defines one confirmatory multiplicity family before estimating any V2
+heterogeneity coefficient. It contains 100 planned DDD contrasts: five
+principal outcomes crossed with all 20 target-versus-complement groups in the
+five existing dimensions (sex, Canaries age, race/color, education, and
+pre-treatment occupational income). Missing or non-estimable rows remain in
+the table and the adjustment retains the planned family size of 100.
+
+Benjamini-Hochberg is the preregistered fallback selected by the plan.
+Romano-Wolf is not used because this family mixes nonlinear PPML and linear
+estimators across overlapping target-versus-complement samples; a single
+valid joint resampling scheme is not available in the current estimator
+contract. Every table reports the nominal cluster-t p-value and the global
+BH-adjusted p-value side by side.
+
+Every DDD formula contains exactly the focal
+`post × treatment × subgroup` term plus all three two-way lower-order terms:
+`post × treatment`, `post × subgroup`, and `treatment × subgroup`.
+Micro-group models use CBO4, month, and target/complement fixed effects and
+cluster by CBO4. Income groups are assigned at the CBO4 level and use CBO4
+and month fixed effects under the same CBO4 clustering. No contemporary
+composition controls enter these principal heterogeneity models.
+
+Sex uses documented codes 1 (men) and 3 (women). Canaries age groups are
+22-25, 26-30, 31-34, 35-40, 41-49, and 50+. Race/color uses white, black,
+pardo, yellow, Indigenous, and the combined unidentified codes 6/9.
+Education uses codes 1-5, 6-7, and 8-11/80. Each micro target is compared
+with the complement of the other documented groups in its dimension; records
+outside that dimension's declared groups are excluded rather than assigned
+an invented category.
+
+Income is a predetermined occupational characteristic. Each CBO4 is assigned
+from its median positive-weight admission wage in minimum-wage units during
+January 2021-November 2022: up to 2, over 2 through 5, and over 5 minimum
+wages. This median is frozen before DDD estimation. Micro outcomes retain the
+signed MOV + FOR - EXC weights and the Task 12 CBO-year wage bounds. Negative
+subgroup count cells are a fail-fast condition; they are never clipped to
+zero or silently dropped from PPML.
+
+For the income dimension, both treatment and income group are predetermined
+at the CBO4 level. Their lower-order interaction `treatment × subgroup` is
+therefore time invariant within CBO4 and exactly absorbed by the CBO4 fixed
+effect. The full DDD contract continues to declare all four interaction
+terms, while the estimable design matrix records `treat_group` as absorbed.
+This is the same collinearity that linear fixed-effect software removes
+automatically; passing the redundant column to PPML instead produces a
+singular matrix. Removing only this exactly absorbed column is an
+identification correction, not specification selection.
+
+## 2026-07-26 — DDD multiplicity results
+
+All 100 preregistered DDD contrasts are estimable after recording the exactly
+absorbed income lower-order term. There are zero negative signed subgroup
+count cells. The generated panel has 815,813 rows and its SHA-256 is
+`b8bf00bb27dea79403075b8bf567f42b817a923335c1062980076cc341849b6c`.
+
+Thirty-four contrasts have nominal `p < 0.05`; 21 remain below 0.05 after the
+global Benjamini-Hochberg correction with the frozen family size of 100.
+These adjusted results remain exploratory because the national exact-model
+pretrend diagnostics fail and because subgroup DDDs do not repair the
+national identifying assumption.
+
+Eighteen groups have adequate occupational support under the frozen 20
+treated/50 control threshold. Middle-income occupations have limited support
+(26 treated and 32 control CBOs). High-income occupations have thin support
+(3 treated and 6 control CBOs). The high-income real-wage DDD remains
+BH-significant but must be disclosed as thin-support evidence and not promoted
+as a headline heterogeneity.
