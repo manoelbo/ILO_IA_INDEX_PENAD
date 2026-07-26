@@ -300,3 +300,18 @@ smallest cluster count minus one, including under two-way clustering. The
 reported p-value and confidence interval therefore use the same t reference.
 Model records also expose convergence, separation removals, complete-case
 loss, other estimator removals, N, and cluster counts.
+
+## 2026-07-26 — Single balanced event-time convention
+
+All V2 dynamic models use December 2022 as event time zero, November 2022 as
+the omitted `t = -1` reference, and the complete symmetric grid from `t = -23`
+through `t = +23`. No endpoint coefficient pools heterogeneous months. The
+balanced grid therefore runs from January 2021 through November 2024 for every
+outcome.
+
+Long-run summaries are named separately and never substituted for event-time
+coefficients: December 2022-November 2023, December 2023-November 2024,
+December 2024-November 2025, and December 2025-May 2026. The last horizon is
+marked partial. All three event-study PPML models converge with zero
+separation removals; the count and net-flow grids retain 15,935 cells, while
+the valid real-admission-wage grid retains 15,907.
