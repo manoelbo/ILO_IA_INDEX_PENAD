@@ -857,3 +857,16 @@ maximum absolute Python-R coefficient difference is
 `1.1209513178789265e-10`; the maximum standard-error difference is
 `1.2007179972517434e-11`. Coefficients and standard errors therefore agree
 well beyond the required six decimal places, including real admission wage.
+
+## 2026-07-26 — Secondary log-flow estimators
+
+The packaging audit found that the Task 16 principal PPML models had been
+implemented but the preregistered secondary OLS `log(1 + y)` table had not
+been emitted. The omission is closed explicitly rather than silently treating
+PPML as the only planned estimator.
+
+On the exact 22,049-cell principal sample, the secondary coefficients are
+-0.010731 for admissions, -0.029210 for separations, and -0.021221 for gross
+movements. Their corresponding PPML coefficients are -0.053772, -0.042014,
+and -0.048093. None of the secondary OLS estimates rejects at 5%. PPML remains
+principal because that hierarchy was frozen before estimation.

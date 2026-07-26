@@ -36,6 +36,7 @@ def test_reproduce_dag_reestimates_every_inferential_family() -> None:
     required_scripts = {
         "gate_v1_model.py",
         "specification_ladder.py",
+        "secondary_flow_models.py",
         "event_study.py",
         "sector_models.py",
         "pretrends.py",
@@ -47,6 +48,8 @@ def test_reproduce_dag_reestimates_every_inferential_family() -> None:
         "employer_size.py",
         "exposure_sensitivity.py",
         "honest_did.R",
+        "export_cross_replication.py",
+        "cross_replication.R",
     }
     assert all(script in command_text for script in required_scripts)
     inferential = [node for node in dag if node.inferential]

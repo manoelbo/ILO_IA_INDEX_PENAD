@@ -163,6 +163,18 @@ def _analysis_nodes() -> list[DagNode]:
             True,
         ),
         DagNode(
+            "secondary_log_flow_estimators",
+            "Re-estimate the secondary OLS log(1 + flow) models",
+            _python("code/models/secondary_flow_models.py"),
+            REESTIMATED,
+            (
+                "models/secondary_log_flow_results.csv",
+                "models/secondary_log_flow_support.json",
+                "models/SECONDARY_FLOW_ESTIMATORS.md",
+            ),
+            True,
+        ),
+        DagNode(
             "sector_fixed_effects",
             "Re-estimate the sector fixed-effect and inference ladder",
             _python("code/models/sector_models.py"),

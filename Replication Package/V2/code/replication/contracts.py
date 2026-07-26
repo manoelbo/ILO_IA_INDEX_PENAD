@@ -105,6 +105,10 @@ def source_id_for(artifact_path: str) -> str:
         return "code.models.event_study"
     if path.startswith("models/specification_ladder"):
         return "code.models.specification_ladder"
+    if path.startswith("models/secondary_log_flow") or path.endswith(
+        "models/secondary_flow_estimators.md"
+    ):
+        return "code.models.secondary_flow_models"
     if path.startswith("models/sector") or path.endswith(
         "models/01_sector_fixed_effect_support.csv"
     ):

@@ -9,7 +9,11 @@ script_argument <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = T
 if (length(script_argument) != 1L) {
   stop("Unable to resolve honest_did.R location.")
 }
-script_path <- normalizePath(sub("^--file=", "", script_argument))
+script_path_raw <- sub("^--file=", "", script_argument)
+if (!file.exists(script_path_raw)) {
+  script_path_raw <- gsub("~\\+~", " ", script_path_raw)
+}
+script_path <- normalizePath(script_path_raw, mustWork = TRUE)
 package_root <- dirname(dirname(script_path))
 diagnostics_dir <- file.path(package_root, "results", "diagnostics")
 coefficients_path <- file.path(
