@@ -234,3 +234,32 @@ are -0.024528, -0.033882, and -0.607197, respectively. The literal model
 retains 18,281 V2 observations and the same 341 CBO4 families, versus 18,307
 observations in the frozen V1 reference. Checkpoint C remains non-blocking:
 the result is disclosed and does not authorize specification selection.
+
+## 2026-07-26 — Preregistered treatment-variant aggregation
+
+Variant A is the principal treatment classification and remains exactly the
+frozen Task 11 rule. Variants B, C, and D are sensitivity analyses only. No
+variant may replace A because of its coefficient, standard error, or
+significance.
+
+Employment weights for variants B and D are signed pre-treatment admissions
+from January 2021 through November 2022 at the CBO6 level, under the same
+record-domain restrictions as the national panel. When one CBO6 maps to
+multiple scored ISCO-08 destinations, its admission weight is divided equally
+among those destinations. CBO6 records without a scored destination do not
+receive an invented allocation. If a scored CBO4 has no positive matched
+pre-treatment weight, equal destination weights are used and the fallback is
+flagged.
+
+Variant B uses those destination weights for the CBO4 mean and for the pooled
+within-task plus between-destination standard deviation. Variant C retains the
+equal-weight mean but uses only pooled ILO within-task dispersion,
+`sqrt(mean(SD_ILO^2))`, in the threshold rule; the between-destination
+standard deviation is reported separately and never folded back into the
+classification.
+
+Variant D classifies each ISCO-08 destination using its native ILO label and
+aggregates labels by weighted mode. A tie is resolved toward the less exposed
+label, a conservative deterministic rule fixed before estimation. The same
+equal-weight fallback applies only when a scored CBO4 has no positive matched
+pre-treatment weight.
