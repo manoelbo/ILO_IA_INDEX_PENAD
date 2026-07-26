@@ -1,0 +1,12 @@
+{
+  "balanced_grid": true,
+  "base_index_max": 100.0,
+  "base_index_min": 100.0,
+  "cbo_count": 341,
+  "invalid_pre_flow_scale_cbo_count": 1,
+  "month_count": 65,
+  "nonpositive_base_net_flow_cbo_count": 64,
+  "panel_rows": 22165,
+  "panel_sha256": "2b3f06e92a643da4d8e4e5c5021dbe01e3fcdbd948fba60b7e1e5080e12d9326",
+  "status": "completed"
+}

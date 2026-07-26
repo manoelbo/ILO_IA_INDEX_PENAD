@@ -643,3 +643,45 @@ Support is broad for the five substantive families. Unknown separation type
 is thin: only 69 treated and 230 control CBOs ever have positive flow, and
 PPML removes 2,614 static cells and 2,587 balanced-window cells for fixed
 effects with no outcome variation. These removals are reported explicitly.
+
+## 2026-07-26 — Cumulative net-flow index normalization
+
+Task 24 cannot identify an employment-stock level without the out-of-scope
+December 2020 RAIS anchor. A literal ratio of cumulative balance to the
+January 2021 balance is also invalid: 63 of the 340 main-sample CBOs observed
+in that month have a non-positive balance, including one zero. That
+normalization would create undefined or directionally inverted indices.
+
+The frozen proxy therefore completes the 341-by-65 CBO-month grid with zero
+flows, accumulates net flows from January 2021, subtracts each CBO's January
+2021 cumulative value so that the base month is exactly zero change, and
+scales the change by that CBO's total gross movements during the full
+pre-treatment period January 2021-November 2022. The reported index is
+`100 + 100 × cumulative net-flow change / pre-treatment gross flow`.
+
+One main-sample occupation, CBO 3227, has zero gross flow throughout the
+pre-treatment period. Its grid is retained, but its normalized index is
+missing and it is excluded from the index regression rather than assigned an
+artificial denominator. The resulting model has 340 estimable CBOs.
+
+This is an occupation-size-normalized cumulative net-flow index, not an
+employment-stock index. It does not recover the unobserved initial stock and
+does not capture exits outside Novo CAGED. The principal model is OLS with
+CBO4 and month fixed effects, CBO4-clustered inference, and no contemporary
+controls. Because Task 24 adds one planned contrast, its within-exercise BH
+family size is one; nominal and adjusted p-values are still shown side by
+side for the Checkpoint G contract.
+
+## 2026-07-26 — Cumulative net-flow index result
+
+The completed grid has 22,165 rows (341 CBOs by 65 months). CBO 3227 is the
+only occupation without a valid pre-treatment flow scale, leaving 22,100
+estimable observations and 340 CBO clusters. The five largest occupations by
+pre-treatment gross flow were exported month by month for direct trajectory
+inspection.
+
+The principal estimate is +1.4292 index points with SE 1.3093,
+`p = 0.2758`, and identical within-exercise BH-adjusted p-value. The estimate
+does not provide statistically precise evidence of a differential cumulative
+net-flow trajectory. It is not interpreted as a stock-level effect and does
+not override the failed national pretrend diagnostics.
