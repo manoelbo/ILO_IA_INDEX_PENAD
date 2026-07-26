@@ -404,3 +404,50 @@ No result is removed or re-specified in response. Task 22 remains the formal
 blocking gate, but every Task 19 result requires non-causal language unless a
 later design resolves the identifying concern under a separately
 preregistered analysis.
+
+## 2026-07-26 — HonestDiD target and sensitivity grid
+
+Task 20 applies the installed `HonestDiD` implementation only to the two
+linear outcomes: log real admission wage and asinh net balance. PPML event
+studies are not converted to linear models or passed to `HonestDiD`.
+
+The scalar target is the equally weighted average of the 24 post-treatment
+event-study coefficients from event times 0 through 23. This target is fixed
+before running the sensitivity analysis and is more representative of the
+balanced post window than selecting one event month. The input vector retains
+all 22 estimated pre-period coefficients from event times -23 through -2 and
+the full cluster-robust covariance matrix exported by Task 19.
+
+The sensitivity set is `DeltaRM`, implemented by
+`createSensitivityResults_relativeMagnitudes` with the recommended `C-LF`
+method, 95% confidence level, and a fixed `Mbar` grid from 0 through 2 in
+increments of 0.05. The reported robustness value is the largest evaluated
+`Mbar` whose robust interval excludes zero. If no interval excludes zero, the
+result is reported as not robust even at `Mbar = 0`; if every interval
+excludes zero, the result is reported as at least 2 rather than extrapolated
+beyond the frozen grid.
+
+## 2026-07-26 — HonestDiD results and open-grid disclosure
+
+The average balanced-window asinh net-balance estimate is -3.3079. Its
+original 95% interval is [-4.6931, -1.9227]. The `DeltaRM` robust interval
+remains negative at `Mbar = 0.05`, [-6.1550, -0.5518], and includes zero at
+`Mbar = 0.10`, [-8.1925, 1.4008]. The largest evaluated M that excludes zero
+is therefore 0.05.
+
+The average log real admission-wage estimate is -0.0154, with original 95%
+interval [-0.0392, 0.0085]. Its HonestDiD interval includes zero already at
+`Mbar = 0`, so no evaluated M supports an interval excluding zero.
+
+At larger M values, `HonestDiD` warns that confidence intervals are open at
+an internal test-inversion grid endpoint. The sensitivity CSV flags every
+such row. The first open interval occurs at M=0.25 for asinh net balance and
+M=0.20 for log real admission wage, after each outcome has already included
+zero. The warnings therefore limit the reported width of high-M intervals
+but do not determine either robustness threshold.
+
+The vectorized 82-interval call exceeded memory and exited with code 137.
+Running one M value at a time with garbage collection retained the exact
+method, 1,000-point internal inversion grid, and numerical results while
+holding memory stable. The serial run completed successfully; this
+operational choice is encoded in the replication script.
