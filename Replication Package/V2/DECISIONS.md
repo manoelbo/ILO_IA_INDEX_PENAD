@@ -285,3 +285,18 @@ A, B, and C classify the family as Gradient 3. In D, weighted native-label
 mass is tied exactly between Gradient 2 and Gradient 4; the preregistered
 less-exposed tie rule therefore yields Gradient 2. This is a sensitivity
 result, not a basis for replacing A.
+
+## 2026-07-26 — Cluster-t inference for the shared estimator
+
+The shared estimator accepts fixed effects and one- or two-way cluster
+dimensions as parameters. Principal specifications reject contemporaneous
+admission-composition controls at runtime. Count models use `fepois`; log real
+admission wage and asinh net balance use OLS.
+
+`pyfixest` reports normal-reference intervals for nonlinear models by default.
+The V2 reporting layer instead applies the preregistered cluster-t rule to the
+coefficient and cluster-robust standard error: degrees of freedom equal the
+smallest cluster count minus one, including under two-way clustering. The
+reported p-value and confidence interval therefore use the same t reference.
+Model records also expose convergence, separation removals, complete-case
+loss, other estimator removals, N, and cluster counts.
