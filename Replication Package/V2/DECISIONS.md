@@ -585,3 +585,61 @@ is `6.2833e-11`, below the `1e-8` parity tolerance. The complete comparison
 is retained in `group_placebo_backend_validation.csv`; the backend change is
 operational only and does not change assignments, samples, outcomes, fixed
 effects, or estimands.
+
+## 2026-07-26 — Separation-mechanism interpretation and family
+
+Task 23 is frozen before inspecting any type-specific coefficient. The
+separation family contains six mutually exclusive outcomes: dismissal
+without cause (31), resignation (40), contract termination (43 and 45),
+dismissal with cause or reciprocal fault (32 and 33), mutual agreement (90),
+and unknown separation type (98). Retirement (50), death (60), and transfer
+separations (80) are excluded from the substantive sum and reconciled
+explicitly to the all-separation total.
+
+The interpretation is directional and was specified in the plan. A decline
+in dismissal without cause points to a firm-side retention decision. A
+decline in resignations points instead to a worker-side reduction in outside
+options. Contract endings, cause dismissals, agreements, and unknown types
+remain separate mechanisms and will not be folded into either narrative.
+These interpretations are conditional on design validity; the failed
+national pretrend diagnostics continue to preclude strong causal language.
+
+Each family outcome uses the principal national specification: PPML,
+CBO4 and month fixed effects, CBO4-clustered inference, and no contemporary
+controls. The static six-outcome family receives one global
+Benjamini-Hochberg adjustment with frozen family size six. The complete
+non-reference event-study coefficient family receives a separate global BH
+adjustment; it is not pooled with the static tests. Support and reconciliation
+are reported before coefficient interpretation.
+
+## 2026-07-26 — Separation-mechanism results
+
+The signed reconciliation is exact in every month and in total. The six
+named families contain 118,723,283 separations; retirement, death, and
+transfer exclusions contain 492,219; together they reproduce all 119,215,502
+national-panel separations with zero residual. Transfer code 80 remains
+absent, as already documented.
+
+Dismissal without cause, the preregistered firm-retention margin, has an
+essentially zero static estimate: coefficient -0.000020, effect -0.002%,
+nominal `p = 0.9995`, and BH-adjusted `p = 0.9995`. The resignation margin
+has the largest substantively interpretable decline: coefficient -0.116649,
+effect -11.01%, nominal `p = 0.0749`, and BH-adjusted `p = 0.3299`.
+Contract termination is -2.97% (`BH p = 0.7119`), dismissal with cause is
+-14.33% (`BH p = 0.4237`), mutual agreement is -2.31%
+(`BH p = 0.7119`), and unknown separation type is -18.96%
+(`BH p = 0.3299`). No static mechanism survives the six-outcome adjustment.
+
+The pattern therefore does not support a firm-retention account. At most, it
+is descriptive evidence consistent with fewer worker-initiated exits and a
+weaker outside option. That reading is not statistically robust after
+multiplicity correction and remains non-causal because the national
+pretrends fail. The complete dynamic table contains all 282 family-event
+rows on the frozen -23 through +23 grid; 62 dynamic coefficients survive its
+separate BH adjustment, which is interpreted as further time-pattern
+instability rather than selected mechanism evidence.
+
+Support is broad for the five substantive families. Unknown separation type
+is thin: only 69 treated and 230 control CBOs ever have positive flow, and
+PPML removes 2,614 static cells and 2,587 balanced-window cells for fixed
+effects with no outcome variation. These removals are reported explicitly.
