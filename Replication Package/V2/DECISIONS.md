@@ -521,3 +521,67 @@ treated/50 control threshold. Middle-income occupations have limited support
 (3 treated and 6 control CBOs). The high-income real-wage DDD remains
 BH-significant but must be disclosed as thin-support evidence and not promoted
 as a headline heterogeneity.
+
+## 2026-07-26 — Placebo falsification contract
+
+Task 22 is frozen before inspecting any placebo coefficient. The temporal
+placebo uses the main 75-treated/266-control national sample, restricts the
+data to the true pre-treatment period from January 2021 through November
+2022, and assigns a false treatment start in December 2021. It re-estimates
+the exact principal estimator family without contemporary controls: PPML for
+admissions, separations, and gross movements; OLS for log real admission wage
+and asinh net balance; CBO4 and month fixed effects; and CBO4-clustered
+inference.
+
+The blocking rule is intentionally conservative and applies to the complete
+five-outcome national design: every temporal-placebo coefficient must have
+`p >= 0.05`. If any one has `p < 0.05`, Checkpoint F fails, the group placebo
+is recorded as `NOT EXECUTED`, and no Phase 6 model is run. The specification
+will not be altered after seeing the falsification result.
+
+Conditional on passing that gate, the group placebo reassigns exactly 75 of
+the same 341 CBO4 families to treatment without replacement in each of 500
+repetitions. The seed is `20260726`. Each repetition uses the full January
+2021-May 2026 principal sample and the same outcome-specific estimators,
+fixed effects, clustering, and no-control contract. For each of the five
+outcomes, the report will locate the observed Task 18 principal coefficient
+in the random-assignment distribution and provide its empirical percentile
+and finite-sample-corrected two-sided randomization p-value.
+
+## 2026-07-26 — Placebo falsification results
+
+The blocking temporal placebo passes for all five principal outcomes.
+Cluster-t p-values are 0.9205 for admissions, 0.1909 for separations, 0.5330
+for gross movements, 0.0814 for log real admission wage, and 0.6791 for
+asinh net balance. The wage placebo is the closest to the threshold, but it
+remains above the frozen 5% rule. Checkpoint F therefore permits the group
+placebo and Phase 6; no specification was changed in response.
+
+All 500 group reassignments completed with exactly 75 treated and 266 control
+CBO4 families in every repetition. The observed coefficients fall at
+percentiles 16.6 for admissions, 13.8 for separations, 14.0 for gross
+movements, 0.0 for log real admission wage, and 5.8 for asinh net balance.
+The corresponding finite-sample-corrected two-sided randomization p-values
+are 0.2994, 0.2954, 0.2715, 0.0020, and 0.0898. Thus the observed wage
+coefficient is more negative than all 500 random assignments. This is a
+group-label falsification result, not a remedy for the failed exact-model
+pretrend diagnostics.
+
+The initial repeated-estimation process was terminated by the operating
+system with code 137 before the first ten-repetition checkpoint because the
+reference estimator retained memory between fits. Loading the R estimator
+under the same system pressure was also terminated before estimation. The
+final randomization loop therefore uses an algebraically equivalent,
+low-memory coefficient backend: iterative proportional fitting matches the
+CBO4 and month margins and solves the PPML treatment score; two-way
+Frisch-Waugh-Lovell residualization recovers the OLS coefficients. Cluster
+covariance does not alter point estimates, and group-placebo inference comes
+from the randomization distribution itself.
+
+The first frozen random assignment was estimated by both the shared
+reference estimator and the low-memory backend before the 500-repetition
+run. Across the five outcomes, the maximum absolute coefficient difference
+is `6.2833e-11`, below the `1e-8` parity tolerance. The complete comparison
+is retained in `group_placebo_backend_validation.csv`; the backend change is
+operational only and does not change assignments, samples, outcomes, fixed
+effects, or estimands.
