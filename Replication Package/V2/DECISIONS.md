@@ -363,3 +363,44 @@ removing exactly 583 admissions and 464 separations already disclosed in
 Task 13. All 15 sector models converge. PPML removes 161 separated admission
 cells and 70 separated separation cells; singleton and missing-outcome losses
 are recorded per model.
+
+## 2026-07-26 — Exact-model pretrend classification
+
+Task 19 keeps the Task 17 balanced event-study model unchanged: the same
+January 2021-November 2024 window, November 2022 reference, estimator, CBO4
+and month fixed effects, complete-case sample, and CBO4 cluster dimension.
+Every diagnostic must reproduce the event-study N and cluster count exactly.
+
+Three distinct diagnostics are reported and must not be described as the same
+test:
+
+1. a cluster-robust Wald test that all 22 estimated leads from event times
+   -23 through -2 equal zero;
+2. a generalized-least-squares linear slope through the omitted event-time
+   -1 reference, estimated from those same leads and their full cluster-robust
+   covariance matrix;
+3. a dynamic lead inspection that counts individually significant leads at
+   5% using the same cluster-t reference as the coefficient table.
+
+The outcome classification is frozen before running the diagnostics. It is
+`fail` if either formal test has `p < 0.05` or at least two individual leads
+have `p < 0.05`; it is `pass` only if both formal tests have `p > 0.10` and no
+individual lead has `p < 0.05`; all other cases are `warning`. A
+non-significant diagnostic is never interpreted as proof of parallel trends.
+
+## 2026-07-26 — Exact-model pretrend results
+
+All five outcomes fail the preregistered Task 19 classification. The joint
+lead Wald p-values are below 0.001 for admissions, separations, gross flows,
+real admission wage, and asinh net balance. The linear-slope test also rejects
+for all three PPML flow outcomes, but not for real admission wage or asinh net
+balance. This divergence is retained as evidence that the joint, linear, and
+dynamic diagnostics answer different questions.
+
+Each re-estimated dynamic model exactly matches the reported Task 17 sample:
+15,935 cells and 341 CBO4 clusters for the three count outcomes and asinh net
+balance, and 15,907 cells with the same 341 clusters for real admission wage.
+No result is removed or re-specified in response. Task 22 remains the formal
+blocking gate, but every Task 19 result requires non-causal language unless a
+later design resolves the identifying concern under a separately
+preregistered analysis.
