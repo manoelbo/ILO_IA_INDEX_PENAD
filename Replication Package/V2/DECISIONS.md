@@ -103,3 +103,28 @@ accepted as an observed undocumented category and preserved without remapping.
 The row remains in national flow aggregates, the code is audited by fact month
 in Task 9, and it is not assigned to either side of the public-versus-private
 contrast in Task 26.
+
+## 2026-07-26 — Full-window rule after completeness diagnostics
+
+Task 9 uses late declarations divided by same-month MOV rows (`FOR / MOV`), the
+same denominator as the frozen audit. Across the 12 fact months that have had
+fewer than 12 opportunities to receive late declarations, the maximum absolute
+difference between the 75 treated and 266 control CBO4 groups is 0.281
+percentage points, in June 2025. This is below the preregistered 1 percentage
+point threshold.
+
+Window rule A is therefore selected before any model is estimated: retain the
+full January 2021-May 2026 window and include month fixed effects. No recent
+months are trimmed. The progressively incomplete tail remains disclosed in the
+completeness outputs.
+
+## 2026-07-26 — Transfer and undocumented-code continuity
+
+Task 9 finds zero physical rows with transfer codes 70 or 80 in the full
+January 2021-May 2026 analytic vintage. The P0.9 transfer filter is therefore
+inert and remains documented rather than removed.
+
+The approved `tipoestabelecimento = -1` category occurs exactly once, in June
+2025. The approved undocumented `tipoempregador = 1` category has a signed
+total of 6,910 rows across 43 fact months. Both remain separate categories and
+are excluded from semantic public-versus-private assignment in Task 26.
