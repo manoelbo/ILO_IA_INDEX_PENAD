@@ -28,6 +28,18 @@ DEFAULT_CLASSIFICATION = (
 DEFAULT_COVERAGE = (
     PACKAGE_ROOT / "results" / "reconciliation" / "crosswalk_coverage.json"
 )
+DEFAULT_REFERENCE = (
+    REPOSITORY_ROOT
+    / "outputs"
+    / "treatment_scenario_grid"
+    / "scenario_cbo_classification.csv"
+)
+DEFAULT_VALIDATION = (
+    PACKAGE_ROOT
+    / "results"
+    / "reconciliation"
+    / "treatment_classification_validation.json"
+)
 
 MTE_CACHE_FILENAME = "mte_cbo2002_cbo94_ciuo88_by_family.csv"
 CBO_ISCO_FILENAME = "cbo-isco-conc.csv"
@@ -392,6 +404,60 @@ def classification_counts(frame: pd.DataFrame) -> dict[str, int]:
     }
 
 
+def compare_with_reference(
+    classification: pd.DataFrame,
+    reference_path: Path,
+) -> dict[str, int]:
+    if not reference_path.is_file():
+        raise FileNotFoundError(
+            f"Treatment-classification reference not found: {reference_path}"
+        )
+    reference = pd.read_csv(
+        reference_path,
+        usecols=["cbo_4d", "cbo_ilo_gradient"],
+        dtype={"cbo_4d": str, "cbo_ilo_gradient": str},
+    )
+    current = classification[
+        ["cbo_4d", "cbo_ilo_gradient"]
+    ].copy()
+    current["cbo_4d"] = current["cbo_4d"].map(normalize_code)
+    reference["cbo_4d"] = reference["cbo_4d"].map(normalize_code)
+    comparison = current.merge(
+        reference,
+        on="cbo_4d",
+        how="outer",
+        suffixes=("_v2", "_reference"),
+        indicator=True,
+    )
+    missing_from_v2 = int(comparison["_merge"].eq("right_only").sum())
+    missing_from_reference = int(
+        comparison["_merge"].eq("left_only").sum()
+    )
+    different = int(
+        (
+            comparison["_merge"].eq("both")
+            & comparison["cbo_ilo_gradient_v2"].ne(
+                comparison["cbo_ilo_gradient_reference"]
+            )
+        ).sum()
+    )
+    payload = {
+        "v2_cbo_families": int(len(current)),
+        "reference_cbo_families": int(len(reference)),
+        "missing_from_v2": missing_from_v2,
+        "missing_from_reference": missing_from_reference,
+        "different_assignments": different,
+    }
+    if missing_from_v2 or missing_from_reference or different:
+        raise RuntimeError(
+            "Treatment classification differs from the V1 reference: "
+            f"{different} assignments differ, "
+            f"{missing_from_v2} CBOs missing from V2, "
+            f"{missing_from_reference} CBOs missing from the reference"
+        )
+    return payload
+
+
 def write_coverage_report(
     classification: pd.DataFrame,
     path: Path,
@@ -444,6 +510,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_COVERAGE,
     )
+    parser.add_argument(
+        "--reference",
+        type=Path,
+        default=DEFAULT_REFERENCE,
+    )
+    parser.add_argument(
+        "--validation",
+        type=Path,
+        default=DEFAULT_VALIDATION,
+    )
     return parser.parse_args()
 
 
@@ -466,8 +542,17 @@ def main() -> int:
                 "Treatment classification mismatch: "
                 f"expected {EXPECTED_CLASSIFICATION}, got {observed}"
             )
+        validation = compare_with_reference(
+            classification, args.reference
+        )
         args.classification.parent.mkdir(parents=True, exist_ok=True)
         classification.to_csv(args.classification, index=False)
+        args.validation.parent.mkdir(parents=True, exist_ok=True)
+        args.validation.write_text(
+            json.dumps(validation, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        print(json.dumps(validation, sort_keys=True))
     print(json.dumps(coverage, sort_keys=True))
     return 0
 

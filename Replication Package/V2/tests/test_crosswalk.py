@@ -6,6 +6,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pandas as pd
+
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = PACKAGE_ROOT / "code" / "panel" / "crosswalk.py"
@@ -79,3 +81,33 @@ def test_known_crosswalk_reproduces_t10_and_t11_counts() -> None:
         "Not Exposed": 266,
         "No score": 193,
     }
+
+
+def test_reference_comparison_requires_identical_cbo_assignments(
+    tmp_path: Path,
+) -> None:
+    module = load_crosswalk_module()
+    current = pd.DataFrame(
+        {
+            "cbo_4d": ["1111", "2222"],
+            "cbo_ilo_gradient": [
+                "Not Exposed",
+                "Exposed: Gradient 2",
+            ],
+        }
+    )
+    reference_path = tmp_path / "reference.csv"
+    current.to_csv(reference_path, index=False)
+
+    assert module.compare_with_reference(
+        current, reference_path
+    )["different_assignments"] == 0
+
+    changed = current.copy()
+    changed.loc[1, "cbo_ilo_gradient"] = "Minimal Exposure"
+    try:
+        module.compare_with_reference(changed, reference_path)
+    except RuntimeError as error:
+        assert "1 assignments differ" in str(error)
+    else:
+        raise AssertionError("A changed CBO assignment must fail")
