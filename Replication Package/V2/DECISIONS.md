@@ -263,3 +263,25 @@ aggregates labels by weighted mode. A tie is resolved toward the less exposed
 label, a conservative deterministic rule fixed before estimation. The same
 equal-weight fallback applies only when a scored CBO4 has no positive matched
 pre-treatment weight.
+
+## 2026-07-26 — Treatment-variant classification results
+
+Variant A reproduces the frozen 0/31/31/13/95/266/193 classification exactly.
+Relative to A, employment-weighted variant B changes 8 CBO4 families,
+task-only-dispersion variant C changes 16, and native-label variant D changes
+53. Variant D is the only sensitivity that assigns any CBOs to Gradient 4
+(three families). Two scored CBO4 families have no positive matched
+pre-treatment CBO6 weight; their documented equal-weight fallback leaves
+their `Not Exposed` classification unchanged in every variant.
+
+The pre-treatment weight frame contains 41,597,337 signed valid admissions;
+32,826,892 (78.92%) belong to CBO6 codes with a scored destination in the
+frozen crosswalk. This coverage is reported rather than extrapolated to
+unscored occupations.
+
+CBO 4121 reaches ISCO-08 targets 3341, 4131, and 4132. Target 4132 has the
+highest frozen ILO mean score, 0.70, but it is not the CBO's only destination.
+A, B, and C classify the family as Gradient 3. In D, weighted native-label
+mass is tied exactly between Gradient 2 and Gradient 4; the preregistered
+less-exposed tie rule therefore yields Gradient 2. This is a sensitivity
+result, not a basis for replacing A.

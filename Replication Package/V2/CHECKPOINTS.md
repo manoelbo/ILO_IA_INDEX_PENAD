@@ -45,3 +45,20 @@ Evidence:
 The author designated this as a measurement checkpoint rather than a pipeline
 stop rule. Execution therefore proceeds regardless of coefficient direction
 or significance.
+
+## Checkpoint D — Treatment classification
+
+Status: **PASS** on 26 July 2026.
+
+Evidence:
+
+- V-A reproduces the frozen Task 11 classification exactly and remains the
+  principal treatment definition;
+- V-B, V-C, and V-D were implemented under rules recorded in `DECISIONS.md`
+  before variant estimation and remain sensitivity definitions;
+- the comparison table reports all seven classification categories for all
+  four variants and counts 0, 8, 16, and 53 changes relative to V-A;
+- the CBO 4121 report exposes every ISCO-08 destination, score, task
+  dispersion, employment weight, native label, and the conservative V-D tie;
+- no coefficient was estimated with B, C, or D before the classification
+  comparison was frozen.
