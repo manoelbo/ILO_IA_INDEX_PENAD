@@ -1,0 +1,9 @@
+dimension,code,physical_rows,signed_rows,signed_admissions,signed_separations,label
+tipoempregador,0,241496308,240580596,125157797,115422799,CNPJ root
+tipoempregador,1,28,28,16,12,Undocumented preserved code
+tipoempregador,2,7720234,7696360,3928407,3767953,CPF
+tipoempregador,9,47829,47829,23091,24738,Not identified
+tipoestabelecimento,-1,1,1,0,1,Undocumented preserved code
+tipoestabelecimento,1,236715730,235814422,122726813,113087609,CNPJ
+tipoestabelecimento,3,7509094,7486244,3823814,3662430,CAEPF
+tipoestabelecimento,4,5039574,5024146,2558684,2465462,CNO

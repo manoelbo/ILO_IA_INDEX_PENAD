@@ -730,3 +730,42 @@ hourly-price margin rather than contracted hours, partial work, or
 intermittent work. This does not restore causal interpretation: the exact
 national wage event study fails the joint pretrend test, and HonestDiD loses
 sign exclusion by `M = 0.10`.
+
+## 2026-07-26 — Establishment size and employer-nature boundary
+
+Task 26 uses the ten documented `tamestabjan` categories as separate
+target-versus-complement DDD groups and crosses them with all five principal
+outcomes, producing one frozen 50-contrast BH family. Each DDD includes
+`post × treatment × size group` plus all three lower-order terms, CBO4,
+month, and target/complement fixed effects, CBO4 clustering, and no
+contemporary controls. Codes 90, 97, 98, and 99 are excluded from semantic
+size assignment and reported in support.
+
+The planned public-versus-private falsification is not identified by the
+available fields. The official dictionary defines `tipoempregador` only as
+CNPJ root (0), CPF (2), or non-identified (9), and
+`tipoestabelecimento` only as CNPJ (1), CAEPF (3), CNO (4), CEI (5), or
+non-identified (9). Neither is public/private. Category 101 explicitly
+combines general employees with public employees hired under the CLT.
+
+Consequently, employer and establishment registration-code support is
+published, including the preserved undocumented codes, but the
+public-versus-private coefficient is recorded as `NOT EXECUTED:
+non-identifying source fields`. No registration category is relabeled as
+public or private.
+
+## 2026-07-26 — Establishment-size results
+
+All ten documented size categories have positive flows in all 75 treated
+CBOs and at least 257 control CBOs. All 50 preregistered DDD contrasts are
+estimated. Three real-wage contrasts have nominal `p < 0.05`: zero employees
+(+0.0277), 1-4 employees (+0.0262), and 500-999 employees (-0.0435). None
+survives the global family adjustment; the smallest BH-adjusted p-value is
+0.3757, and the family has zero adjusted rejections.
+
+No size band is therefore promoted as a robust heterogeneity. The
+registration support contains 240,580,596 signed CNPJ-root rows, 7,696,360
+CPF rows, and the previously preserved 28 undocumented employer-code rows.
+The establishment field likewise retains its single undocumented `-1` row.
+The public-versus-private falsification remains not executed because these
+counts do not add an ownership distinction.
