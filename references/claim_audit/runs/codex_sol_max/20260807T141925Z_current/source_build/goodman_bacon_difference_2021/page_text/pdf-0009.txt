@@ -1,0 +1,71 @@
+balanced panel and partial out unit and time fixed effects from 𝑦𝑦𝑖𝑖𝑖𝑖 and 𝐷𝐷𝑖𝑖𝑖𝑖 using the Frisch-Waugh
+
+                                                                                                        1
+theorem (Frisch and Waugh 1933). Denote grand means by 𝑥𝑥 = 𝑁𝑁𝑁𝑁 ∑𝑖𝑖 ∑𝑡𝑡 𝑥𝑥𝑖𝑖𝑖𝑖 , and adjusted
+
+                                                                  � 𝐷𝐷𝐷𝐷 then equals the univariate regression
+variables by 𝑥𝑥�𝑖𝑖𝑖𝑖 = (𝑥𝑥𝑖𝑖𝑖𝑖 − 𝑥𝑥) − (𝑥𝑥𝑖𝑖 − 𝑥𝑥) − (𝑥𝑥𝑡𝑡 − 𝑥𝑥). 𝛽𝛽
+
+coefficient between adjusted outcome and treatment variables:
+
+                                                                          1                 � 𝑖𝑖𝑖𝑖
+                                               � (𝑦𝑦
+                                              𝑐𝑐𝑐𝑐𝑐𝑐          � 𝑖𝑖𝑖𝑖 )
+                                                      �𝑖𝑖𝑖𝑖 , 𝐷𝐷              ∑𝑖𝑖 ∑𝑡𝑡 𝑦𝑦
+                                                                                      �𝑖𝑖𝑖𝑖 𝐷𝐷
+                                                                       = 𝑁𝑁𝑁𝑁
+                                                   � (𝐷𝐷
+                                                 𝑣𝑣𝑣𝑣𝑣𝑣   � 𝑖𝑖𝑖𝑖 )          1               2
+                                                                               ∑ ∑ �
+                                                                           𝑁𝑁𝑁𝑁 𝑖𝑖 𝑡𝑡 𝐷𝐷𝑖𝑖𝑖𝑖
+
+The numerator equals the sample covariance between 𝑦𝑦𝑖𝑖𝑖𝑖 and 𝐷𝐷𝑖𝑖𝑖𝑖 minus the sample covariances
+
+between unit means and between time means:
+
+                             1                                   1                          1
+ � (𝑦𝑦
+𝑐𝑐𝑐𝑐𝑐𝑐         � 𝑖𝑖𝑖𝑖 ) =
+       �𝑖𝑖𝑖𝑖 , 𝐷𝐷                � �( 𝑦𝑦𝑖𝑖𝑖𝑖 − 𝑦𝑦)(𝐷𝐷𝑖𝑖𝑡𝑡 − 𝐷𝐷) − �( 𝑦𝑦𝑖𝑖 − 𝑦𝑦)(𝐷𝐷𝑖𝑖 − 𝐷𝐷) − �( 𝑦𝑦𝑡𝑡 − 𝑦𝑦)(𝐷𝐷𝑡𝑡 − 𝐷𝐷) (6)
+                            𝑁𝑁𝑁𝑁                                 𝑁𝑁                         𝑇𝑇
+                                 𝑖𝑖    𝑡𝑡                                        𝑖𝑖                                   𝑡𝑡
+
+The appendix shows how to simplify this covariance using the binary nature of 𝐷𝐷𝑖𝑖𝑖𝑖 , and by
+
+replacing the 𝑦𝑦𝑖𝑖 and 𝑦𝑦𝑡𝑡 terms with weighted averages of pre- and post-treatment means or means
+
+in each group. 10 This gives the following theorem:
+
+Theorem 1. Difference-in-Differences Decomposition Theorem
+Assume that the data contain 𝑘𝑘 = 1, . . . , 𝐾𝐾 groups of units ordered by the time when they receive
+a binary treatment, 𝑡𝑡𝑘𝑘∗ ∈ (1, 𝑇𝑇]. There may be one group, 𝑈𝑈, that never receives treatment. The
+               � 𝐷𝐷𝐷𝐷 , in a two-way fixed-effects model (2) is a weighted average of all possible two-
+OLS estimate, 𝛽𝛽
+by-two DD estimators.
+
+                   � 𝐷𝐷𝐷𝐷 = � 𝑠𝑠𝑘𝑘𝑘𝑘 𝛽𝛽
+                   𝛽𝛽                � 2𝑥𝑥2 + � � 𝑠𝑠𝑘𝑘ℓ [𝜇𝜇𝑘𝑘ℓ 𝛽𝛽
+                                                               � 2𝑥𝑥2,𝑘𝑘 + (1 − 𝜇𝜇𝑘𝑘ℓ ) 𝛽𝛽
+                                                                                        � 2𝑥𝑥2,ℓ ]
+                                        𝑘𝑘𝑘𝑘                      𝑘𝑘ℓ                      𝑘𝑘ℓ                                          (7)
+                               𝑘𝑘≠𝑈𝑈                𝑘𝑘≠𝑈𝑈 ℓ>𝑘𝑘
+
+Where the two-by-two DD estimators are:
+
+                              � 2𝑥𝑥2 ≡ �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘) � − �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑗𝑗) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑗𝑗) �
+                              𝛽𝛽 𝑘𝑘𝑘𝑘     𝑘𝑘               𝑘𝑘                𝑈𝑈               𝑈𝑈
+
+
+10
+  Note that the first two terms in equation (6) collapse to a function of pre/post mean differences because 𝐷𝐷𝑖𝑖𝑖𝑖 = 𝐷𝐷                 �𝑖𝑖 =
+                                                                                     𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)                𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)
+0 in the untreated group, 𝐷𝐷𝑖𝑖𝑖𝑖 = 0 in pre-treatment periods, and 𝑦𝑦𝑖𝑖 = 𝐷𝐷𝑘𝑘 𝑦𝑦𝑖𝑖               − (1 − 𝐷𝐷𝑘𝑘 )𝑦𝑦𝑖𝑖         . The sums over 𝑖𝑖
+thus include only the treated units and the sum over 𝑡𝑡 includes only post-periods (𝑡𝑡 > 𝑡𝑡𝑘𝑘∗ ). Similarly, sum over time
+can be broken into pieces based on the different groups’ treatment times, and the time means of 𝑦𝑦𝑖𝑖𝑖𝑖 weight together
+                           � 𝑖𝑖𝑖𝑖 ) follows from replacing 𝑦𝑦𝑖𝑖𝑖𝑖 with 𝐷𝐷𝑖𝑖𝑖𝑖 in the expression for 𝑐𝑐𝑐𝑐𝑐𝑐
+                       � (𝐷𝐷
+each group’s mean. 𝑣𝑣𝑣𝑣𝑣𝑣                                                                                � (𝑦𝑦          � 𝑖𝑖𝑖𝑖 ).
+                                                                                                                �𝑖𝑖𝑖𝑖 , 𝐷𝐷
+
+                                                                       7
+

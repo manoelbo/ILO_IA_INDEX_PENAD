@@ -1,0 +1,61 @@
+have a college degree.
+
+    Occupations with a high share of college graduates have declining employment overall, with
+
+muted differences between more-exposed and less-exposed occupations compared to our main re-
+
+sults. In contrast, occupations with a low share of college graduates have rising overall employment,
+
+with the least AI-exposed occupations growing and the most exposed occupations declining in em-
+
+ployment. Further, for lower college share occupations, the dispersion in employment outcomes is
+
+visible in higher age groups as well, with workers up to age 40 showing separation in employment
+
+trends by AI exposure. These findings suggest that deteriorating education outcomes cannot fully
+
+explain our main results. They also suggest that for non-college workers, experience may serve as
+
+less of a buffer to labor market disruption than for college workers.
+
+
+Occupational Interest Rate Exposure While estimates with firm-time effects control for
+
+overall hiring trends within firms, another possibility is that even within firms occupations with high
+
+AI exposure have high interest rate exposure, leading to contraction in hiring. We use occupational
+
+interest rate exposure data from Zens et al. (2020) to test for the correlation between interest rate
+
+exposure and AI exposure. Figure A22 in fact finds that AI exposure and interest rate exposure
+
+are negatively correlated overall, with occupations such as construction having high interest rate
+
+exposure and low AI exposure. Figures A23 and A24 repeat our analysis separately for occupations
+
+below and above the median in interest rate exposure. Both cases are consistent with our main
+
+results, suggesting that occupational differences in interest rate exposure do not drive our results.
+
+
+Other Robustness Checks Figures A25 and A26 show results separately for men and women.
+
+The results are similar, suggesting that diverging prospects for men and women are not driving
+
+our findings. Figure A27 shows that results are similar when we do not take a balanced sample of
+
+firms. Figure A28 shows similar results when including part-time and temporary workers.27
+
+
+Comparison to CPS Data A useful benchmark for our findings is to compare them to estimates
+
+from the monthly Current Population Survey (CPS). In Online Appendix C we perform similar
+
+analyses in the CPS, finding high levels of noise consistent with small sample sizes in fine age-
+  27
+     Another possibility is that employment trends reflect Covid-19 stimulus checks distorting labor supply. How-
+ever, these payments were income-conditioned, and AI-exposed occupations average higher incomes (Kochhar, 2023),
+making this channel unlikely in explaning our findings.
+
+
+                                                       15

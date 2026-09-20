@@ -1,0 +1,44 @@
+2586                                   REVIEW OF ECONOMIC STUDIES
+
+
+
+
+                                                                                                                              Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                     F IGURE 6
+          Event-study coefficient {βr } for employment, estimated using the event-study specification in (20).
+
+
+
+effects) r years after DTB passage.36 The remaining terms include time-varying controls,
+birth-cohort-by-ACS-year fixed effects, and state fixed effects. We normalize the event-study
+coefficient β−2 to 0.37 We focus on the results where the outcome is employment.
+    Figure 6 plots the estimated event-study coefficients {β̂ r } from specification (20) (Lovenheim
+and Willen, 2019b). In the event-study for men (left panel), the pre-period coefficients are rel-
+atively close to zero, whereas the longer-run post-period coefficients are negative. By contrast,
+the results for women (right panel) suggest a downward-sloping pre-existing trend.
+    LW write that, the “primary concern in our identification strategy is the existence of secu-
+lar trends that differ systematically with treatment” (p. 318), such as confounding changes in
+labour supply or educational attainment. Given that the concern is long-run trends that are likely
+to evolve smoothly over time, smoothness restrictions of the form SD seem natural in this con-
+text. Indeed, in some of their robustness checks, LW estimate models with group-specific linear
+trends, which roughly corresponds with the case SD (0).38 It thus seems natural to consider
+relaxations of the form SD (M), which allows for deviations from non-linearity of no more than
+M between consecutive periods.
+    Figure 7 reports results for the treatment effect on employment for the cohort 15 years after
+the passage of a DTB law (as in Table 2 of LW), constructing robust confidence sets about
+how non-linear the difference in trends can be. In blue, we plot the original OLS confidence
+
+
+        36. Treatment timing in LW is staggered, and therefore the results in Sun and Abraham (2020) imply that βr
+can be interpreted as a sensible weighted average of causal effects under parallel trends only if treatment effects are
+homogeneous across adoption cohorts. For simplicity, we focus on the robustness of the results to violations of parallel
+trends using the original specification in LW, which is valid under the assumption of homogeneous treatment effects.
+As discussed in Section 2.1, our sensitivity analysis can also be applied to estimators that are robust to treatment effect
+heterogeneity.
+        37. LW normalize event time −1 to 0, but discuss how cohorts at event time -1 may have been partially treated
+since LW impute the year that a student starts school with error. Since our robust confidence sets assume that there is no
+causal effect in the pre-period (τ pr e = 0), we instead treat event-time −2 as the reference period in our analysis.
+        38. The two are not exactly equivalent, however, because LW include parametric trends into what they call a
+“parametric event-study” model (see their specification (2)), which imposes that treatment effects are linear in time
+since treatment, rather than the flexible dynamic event-study specification (20).
+

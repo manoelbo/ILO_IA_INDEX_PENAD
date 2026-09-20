@@ -1,0 +1,53 @@
+C      Institutional Setting
+C.1     Wage Setting Systems in Denmark
+
+The Danish labor market is characterized by both high flexibility and strong collective
+
+institutions. Union density is relatively high at 65%, and the coverage rate of collective
+
+bargaining agreements (CBAs) is even higher at 81% (Jäger, Naidu and Schoefer, 2024;
+
+Munch and Olney, 2024). While unions negotiate CBAs, coverage is not dependent on
+
+union membership. A worker may be a union member without being covered by a CBA,
+
+and conversely, a non-union member may still be covered. Whether a worker is covered
+
+depends on whether their employer is a member of an employer organization.
+
+    Beginning in the 1980s and continuing through the 1990s, the Danish wage-setting
+
+system underwent significant decentralization (Dahl, Le Maire and Munch, 2013). Today,
+
+many workers negotiate at least part of their wages individually, even when they are
+
+formally covered by a CBA. When a CBA is negotiated, the resulting wage-setting
+
+structure typically falls into one of the following three categories:
+
+    • Sector-Level Bargaining (Centralized): Wages are negotiated centrally, with
+
+      wages largely determined by the combination of industry and occupation. These
+
+      agreements may include provisions for returns to tenure or education.
+
+    • Two-Tiered Bargaining: The union and employer organization negotiate either
+
+      a minimum hourly wage or a minimum income level for each industry-occupation
+
+      category. Actual wages are then negotiated at the firm level, potentially with union
+
+      support.
+
+    • Firm-Level Bargaining (Decentralized): No specific wages are set at the
+
+      collective level. Instead, all wage negotiations occur directly between the firm and
+
+      its employees. The precise form of firm-level bargaining can vary.
+
+    Table C.1 provides an overview of the wage-setting systems in our 11 study occupations.
+
+Decentralized (two-tiered or firm-level) bargaining systems are the most prevalent in our
+
+                                             40
+

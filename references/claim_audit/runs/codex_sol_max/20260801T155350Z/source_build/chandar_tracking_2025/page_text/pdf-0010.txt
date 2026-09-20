@@ -1,0 +1,213 @@
+                                                                             Employment Share Comparison
+                                          1.15
+                                                                                                               Software developers
+                                                                                                               Customer service representatives
+                                                                                                               All Computer Occupations
+                                          1.10
+        Normalized Employment Share
+
+
+
+
+                                          1.05
+
+
+                                          1.00
+
+
+                                          0.95
+
+
+                                          0.90
+
+
+                                          0.85
+                                                  -01
+
+
+                                                              -07
+
+
+                                                                          -01
+
+
+                                                                                      -07
+
+
+                                                                                                  -01
+
+
+                                                                                                         -07
+
+
+                                                                                                                 -01
+
+
+                                                                                                                             -07
+
+
+                                                                                                                                          -01
+                                                  21
+
+
+                                                            21
+
+
+                                                                         22
+
+
+                                                                                    22
+
+
+                                                                                              23
+
+
+                                                                                                        23
+
+
+                                                                                                                24
+
+
+                                                                                                                            24
+
+
+                                                                                                                                        25
+                                             20
+
+
+                                                           20
+
+
+                                                                       20
+
+
+                                                                                   20
+
+
+                                                                                             20
+
+
+                                                                                                        20
+
+
+                                                                                                               20
+
+
+                                                                                                                          20
+
+
+                                                                                                                                      20
+                                                                                             Quarter
+                                                                    Real Average Weekly Earnings Comparison
+                                          1.100
+                                                        Software developers
+                                                        Customer service representatives
+                                          1.075         All Computer Occupations
+        Normalized Real Weekly Earnings
+
+
+
+
+                                          1.050
+
+                                          1.025
+
+                                          1.000
+
+                                          0.975
+
+                                          0.950
+
+                                          0.925
+
+                                          0.900
+                                                   -01
+
+
+                                                               -07
+
+
+                                                                           -01
+
+
+                                                                                       -07
+
+
+                                                                                                  -01
+
+
+                                                                                                         -07
+
+
+                                                                                                                  -01
+
+
+                                                                                                                              -07
+
+
+                                                                                                                                          -01
+                                                  21
+
+
+                                                             21
+
+
+                                                                         22
+
+
+                                                                                     22
+
+
+                                                                                              23
+
+
+                                                                                                        23
+
+
+                                                                                                                24
+
+
+                                                                                                                            24
+
+
+                                                                                                                                        25
+                                                 20
+
+
+                                                            20
+
+
+                                                                        20
+
+
+                                                                                   20
+
+
+                                                                                             20
+
+
+                                                                                                        20
+
+
+                                                                                                               20
+
+
+                                                                                                                          20
+
+
+                                                                                                                                      20
+
+
+
+
+                                                                                              Quarter
+
+Figure 2: Employment share and real earnings trends for software developers, computer
+occupations, and customer service representatives. Computer occupations include all occu-
+pations with Census occupation codes 1005 through 1108.
+
+
+
+
+                                                                                             10
+

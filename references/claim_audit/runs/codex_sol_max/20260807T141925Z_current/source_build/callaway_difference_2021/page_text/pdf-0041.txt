@@ -1,0 +1,89 @@
+                                                                                                         
+         ny                           Gg     
+                                                 rc,treat        rc,treat
+                                                                             
+                                                                                rc,ny        rc,ny
+     AT Tor,rc (g, t; δ) = EM                   mg,t      (X) − mg,g−δ−1 (X) − mt+δ,t (X) − mt+δ,g−δ−1 (X)    ,
+                                    EM [Gg ]
+
+the inverse probability weighted (IPW) estimands
+
+                        nev
+                                                    wtreat (g, t) − wtreat (g, g − δ − 1) · Y
+                                                                                            
+                    AT Tipw,rc (g, t; δ) = EM
+                                                 comp              comp
+                                         − EM [(wnev   (g, t) − wnev      (g, g − δ − 1)) · Y ] ,
+                        ny                       treat             treat
+                                                                                              
+                    AT Tipw,rc (g, t; δ) = EM w         (g, t) − w        (g, g − δ − 1) · Y
+                                               comp                       comp
+                                                                                                         
+                                         − EM wny       (g, t, t + δ) − wny      (g, g − δ − 1, t + δ) · Y ,
+
+and the doubly-robust (DR) estimands
+                                                                                                                 
+     nev                       Gg     
+                                            rc,treat           rc,treat
+                                                                              
+                                                                                       rc,nev          rc,nev
+ AT Tdr,rc (g, t; δ) = EM                 mg,t       (X) − mg,g−δ−1 (X) − mc,t                (X) − mc,g−δ−1 (X)
+                            EM [Gg ]
+                          h                                                                                     i
+                     + EM wtreat (g, t) Y − mrc,treat                 treat                          rc,treat
+                                                                
+                                                  g,t      (X)    − w       (g, g −  δ −  1)   Y − m g,g−δ−1  (X)
+                          h                                                                                    i
+                             comp                  rc,nev           comp                           rc,nev
+                     − EM wnev    (g, t) Y − mc,t         (X) − wnev      (g, g − δ − 1) Y − mc,g−δ−1 (X) ,
+                                                                                                                   
+     ny                        Gg     
+                                            rc,treat           rc,treat
+                                                                              
+                                                                                       rc,ny          rc,ny
+ AT Tdr,rc (g, t; δ) = EM                 mg,t       (X) − mg,g−δ−1 (X) − mt+δ,t (X) − mt+δ,g−δ−1 (X)
+                            EM [Gg ]
+                          h                                                                                     i
+                     + EM wtreat (g, t) Y − mrc,treat                 treat                          rc,treat
+                                                                
+                                                  g,t      (X)    − w       (g, g −  δ −  1)   Y − m g,g−δ−1  (X)
+                          h                                                                                               i
+                                                          rc,ny
+                     − EM wnycomp
+                                  (g, t, t + δ) Y − mt+δ,t (X) − wny        comp
+                                                                                  (g, g − δ − 1, t + δ) Y − mrc,ny
+                                                                                                                t+δ,g−δ−1 (X)   .
+
+
+
+    The OR, IPW and DR estimands respectively generalize Heckman et al. (1997), Abadie (2005) and Sant’Anna
+and Zhao (2020) estimands for the two groups, two periods DiD setup to the staggered DiD setup with multiple
+periods and multiple groups.
+
+Theorem B.1. Let Assumptions 1, 3, 6, and B.1 hold.
+    (i) If Assumption 4 in the main text holds, then, for all g and t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and t ≥ g −δ,
+
+                                           nev                    nev                   nev
+                         AT T (g, t) = AT Tipw,rc (g, t; δ) = AT Tor,rc (g, t; δ) = AT Tdr,rc (g, t; δ) .
+
+
+
+    (ii) If Assumption 5 in the main text holds, then, for all g and t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and
+t ≥ g − δ,
+                                        ny                     ny                    ny
+                      AT T (g, t) = AT Tipw,rc (g, t; δ) = AT Tor,rc (g, t; δ) = AT Tdr,rc (g, t; δ) .
+
+    We defer the proof of Theorem B.1 to the Supplementary Appendix. The identification results in Theorem B.1
+suggest a simple two-step estimation procedure for the AT T (g, t) with repeated cross-section data that is analogous
+to the panel data case discussed in Section 4. The asymptotic properties of such two-step estimators follow from
+analogous arguments; the details are omitted for brevity. Likewise, we can aggregate these estimators to provide
+summary measures of the causal effects like those discussed in Section 3.
+
+
+References
+Abadie, A. (2005), “Semiparametric difference-in-difference estimators,” Review of Economic Studies, 72, 1–19.
+
+
+
+                                                                41
+

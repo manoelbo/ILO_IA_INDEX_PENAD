@@ -1,0 +1,53 @@
+denote the number of observations with treatment d0 at period t − 1 and d at period t. Let
+                         X              Ng,t                          X                  Ng,t
+       DID+,t =                                (Yg,t − Yg,t−1 ) −                               (Yg,t − Yg,t−1 ) ,
+                  g:Dg,t =1,Dg,t−1   =0
+                                        N1,0,t                    g:D =D              =0
+                                                                                         N0,0,t
+                                                                       g,t    g,t−1
+                        X             Ng,t                               X               Ng,t
+       DID−,t =                              (Yg,t − Yg,t−1 ) −                                 (Yg,t − Yg,t−1 ) .
+                  g:Dg,t =Dg,t−1   =1
+                                      N1,1,t                    g:D
+                                                                                         N0,1,t
+                                                                      g,t =0,Dg,t−1   =1
+
+
+Note that DID+,t is not defined when there is no group such that Dg,t = 1, Dg,t−1 = 0, or no group
+such that Dg,t = 0, Dg,t−1 = 0. In such instances, we let DID+,t = 0. Similarly, let DID−,t = 0
+when there is no group such that Dg,t = 1, Dg,t−1 = 1 or no group such that Dg,t = 0, Dg,t−1 = 1.
+Finally, let
+                                  X T                               
+                                        N1,0,t          N0,1,t
+                          DIDM =               DID+,t +        DID−,t .
+                                   t=2
+                                         NS              NS
+
+Theorem 3 If Assumptions 1, 2, 4, 5, and 9-12 hold, E [DIDM ] = δ S .
+
+In Section ?? of the Web Appendix, we also show that when G goes to infinity, DIDM is a
+consistent and asymptotically normal estimator of δ S . The DIDM estimator is computed by the
+fuzzydid and did_multiplegt Stata packages.
+Here is the intuition underlying Theorem 3. DID+,t compares the evolution of the mean outcome
+between t − 1 and t in two sets of groups: the joiners, and those remaining untreated. Under
+Assumptions 4 and 5, DID+,t estimates the joiners’ treatment effect. Similarly, DID−,t compares
+the evolution of the outcome between t − 1 and t in two sets of groups: those remaining treated,
+and the leavers. Under Assumptions 9 and 10, it estimates the leavers’ treatment effect. Finally,
+DIDM is a weighted average of those DIDs. Note that in staggered designs, there are no groups
+whose treatment decreases over time, so DIDM is only a weighted average of the DID+,t estima-
+tors. Note also that one can separately estimate the joiners’ and the leavers’ treatment effect,
+by computing separately weighted averages of the DID+,t and DID−,t estimators. The former
+estimator only relies on Assumptions 4 and 5, while the latter only relies on Assumptions 9 and
+10.
+DIDM is related to two other estimators. First, it is related to the Wald-TC estimator in point
+2 of Theorem S1 in the Web Appendix of de Chaisemartin and D’Haultfœuille (2018), but the
+weighting of DID+,t and DID−,t therein differs. As a result, DIDM estimates ∆S under weaker
+assumptions. DIDM is also related to the multi-period DID estimator in Imai and Kim (2018).
+However, the multi-period DID estimator is a weighted average of the DID+,t , so it does not
+estimate the leavers’ treatment effect, and applies to a smaller population. Besides, Imai and
+Kim (2018) do not establish the properties of their estimator. Finally, they do not generalize it
+to non-binary treatments, something we do in Section ?? of the Web Appendix.
+
+
+                                                        16
+

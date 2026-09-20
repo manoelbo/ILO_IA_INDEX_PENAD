@@ -1,0 +1,75 @@
+O. Teutloff et al.                                                                                     Journal of Economic Behavior and Organization 235 (2025) 106845
+
+Table 2
+Difference in Difference regression results - models (1) – (4) show the overall effects, models (5) – (8) the effects by project length, and models (9) – (11) show
+the results by worker experience level. Overall, job demand in the substitutable categories decreased compared to the counterfactual.
+                            Overall effects                              Effects by project length                                Effects by worker experience
+                            (1)        (2)        (3)        (4)         (5)           (6)       (7)         (8)                  (9)       (10)            (11)
+  Intercept                 5.21∗∗∗    7.21∗∗∗                           3.95∗∗∗       3.20∗∗∗   2.49∗∗∗     3.09∗∗∗              2.96∗∗∗   4.65∗∗∗         4.01∗∗∗
+                            (0.19)     (0.70)                            (0.18)        (0.19)    (0.19)      (0.22)               (0.21)    (0.20)          (0.19)
+ Substitutable              0.05       −0.13      0.05                   0.02          −0.21     −0.21       −0.44                0.25      0.04            −0.01
+                            (0.37)     (0.34)     (0.38)                 (0.36)        (0.37)    (0.39)      (0.41)               (0.43)    (0.37)          (0.37)
+ Complemented               −0.10      −0.05      −0.10                  −0.08         0.01      −0.16       −0.21                −0.21     −0.13           −0.05
+                            (0.24)     (0.21)     (0.24)                 (0.22)        (0.25)    (0.24)      (0.27)               (0.26)    (0.24)          (0.24)
+ After                      0.16∗∗∗    0.12∗∗                            0.11∗∗        0.14∗∗∗   0.19∗∗∗     0.06                 0.29∗∗∗   0.13∗∗∗         0.17∗∗∗
+                            (0.04)     (0.05)                            (0.04)        (0.04)    (0.04)      (0.05)               (0.05)    (0.04)          (0.04)
+ Substitutable ×After       −0.28∗∗    −0.29∗∗    −0.28∗∗    −0.28∗∗     −0.29∗∗       −0.14     −0.12       −0.06                −0.19∗    −0.28∗∗         −0.30∗∗
+                            (0.09)     (0.09)     (0.09)     (0.09)      (0.09)        (0.10)    (0.07)      (0.09)               (0.08)    (0.09)          (0.10)
+ Complemented ×After        −0.05      −0.01      −0.05      −0.05       −0.02         0.01      −0.02       −0.06                −0.16∗    −0.03           −0.04
+                            (0.05)     (0.05)     (0.05)     (0.05)      (0.05)        (0.05)    (0.06)      (0.07)               (0.07)    (0.05)          (0.05)
+ Controls                   –          ✓          –          –           Exp. project duration (𝑥 weeks or less)                  Worker experience level
+ Week fixed effects         –          –          ✓          ✓           3          9         18        52                        Novice   Intermediate   Veteran
+ Cluster fixed effects      –          –          –          ✓
+ Observations               11 960     11 524     11 960     11 960      11 955        11 847    11 443      11 615               11 552    11 960          11 942
+ 𝑅2                         0.005      0.13       0.02       0.97        0.004         0.007     0.01        0.01                 0.02      0.005           0.004
+
+Notes: ∗ p < 0.05, ∗∗ p < 0.01, ∗∗∗ p < 0.001.
+
+
+
+
+3.2. Regression results
+
+    Here, we turn to investigating the effect the introduction of ChatGPT had on job demand in the three different AI exposure
+categories: substitutable, complementary, and unaffected. In Fig. 4(a), we plot the total number of job postings in each AI exposure
+category. All three categories follow approximately similar time trends before the introduction of ChatGPT. This is confirmed in
+the event study plot shown in Fig. 4(b). It illustrates that the difference between the two treatment labels (complementary and
+substitutable) and the unaffected control group remained on average constant before the launch of ChatGPT.
+    Specifically, no significant differences in time trends between the treatment and control groups are evident, and the disparity
+between both treatment groups and the control group is effectively negligible across all but one week in the pre-treatment period.2
+    We present our difference-in-differences regression results in Table 2 (models 1 – 4). Model (1) shows the results without any fixed
+effects. In model (2), we add two control variables: the percentages of projects with different durations (under 3 weeks, 3–9 weeks,
+9–18 weeks, and 18–52 weeks) and projects aimed at three experience levels of freelancers (novice, intermediate, and veteran). Since
+our unit of observation is the number of new job postings within each cluster-by-week cell, we introduce these control variables as
+percentage shares of the number of job postings within each cell. In model (3), we introduce week fixed effects, and in model (4),
+we further incorporate cluster fixed effects.
+    Overall, we find the following: After the launch of ChatGPT, the number of job postings in the substitutable clusters decreased
+by 24% (100 ∗ 𝑒.28 − 1), relative to the unaffected clusters.3
+    The decrease can be decomposed into two effects: (i) the number of new job postings in the unaffected clusters increased by
+17% after the introduction of ChatGPT (100 ∗ 𝑒.16 − 1) and (ii) the number of substitutable job postings decreased by 7% (−24% +
+17%) after the introduction of GPT.
+    Additionally, we find that the point estimates on the term Complementary×After are also negative but not statistically significant.
+As we show below, this is partly due to the fact that some complementary clusters experienced a decrease in demand after the launch
+of ChatGPT while others experienced an increase.
+    The difference-in-differences estimates remain highly consistent across the four different model specifications, increasing our
+confidence that no unobserved confounders are driving our results.
+
+3.2.1. Project duration heterogeneity
+   To investigate the heterogeneity of the effects of ChatGPT by expected project length, we split the data into subsets based on
+the expected project length and then aggregate the four data subsets into week × cluster cells. The results are presented in Table 2
+(models 5 – 8). We find that the demand reduction in the substitutable clusters is driven by a decrease in short projects lasting three
+weeks or less.
+   Conversely, we observe an increase in labor demand in the unaffected clusters even for short projects, as evidenced by the positive
+coefficient on the After indicator variable. The difference between the unaffected and complemented clusters is not statistically
+
+
+   2 An exception is noted during the week of the 31st of January 2022 when a transitory spike occurred in the substitution group relative to the two other
+
+groups. We cannot ascertain whether this is related to an error in the data collection or an exceptional number of job postings on the platform. Nevertheless, as
+detailed in Appendix E, our findings remain substantially unchanged even when we exclude the data from this anomalous week in our pre-treatment analysis.
+   3 Throughout this section, we transform log points into percentages using the formula 100 × (𝑒𝑥 − 1), i. e., 100 ∗ (𝑒−0.28 − 1) ≈ −24%).
+
+
+
+                                                                                  10
+

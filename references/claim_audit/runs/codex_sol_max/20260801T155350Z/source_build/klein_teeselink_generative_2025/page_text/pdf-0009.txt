@@ -1,0 +1,37 @@
+2.2    Job Listing Data
+The second Revelio Labs dataset contains almost the entire universe of online job
+postings in the UK over the same period, 63,497,648 in total. The data are collected
+from vacancies from major job boards, company career pages, and recruitment plat-
+forms. Each posting includes the job title, employer, posting and removal dates,
+salary information, and full job ads. This job listing data captures labor demand
+flows and allows us to observe how hiring intentions and job characteristics evolve.
+We use this dataset for two purposes: to examine how hiring intentions evolve across
+exposed and less-exposed firms and across exposed and less-exposed occupations.
+    To construct our firm-level hiring intentions data, we use the same sample of
+firms with at least 100 employees in October 2022 used in our total employment
+analysis, but focus on flows (job listings) instead of employment stocks. We create
+a monthly panel at the firm level, tracking job posting activity from January 2021
+through June 2025. Given that approximately 50% of firms do not post job listings
+in any given month, we construct a binary outcome variable indicating whether a
+firm posted any job listings in a given month, rather than using posting counts.
+This measure captures the extensive margin of hiring activity. We again match each
+firm to its pre-treatment LLM exposure score calculated from the October 2022
+workforce composition, as described above. We also break postings down by job
+roles (50 in total) to study which types of roles exposed firms hire more or less of.
+    This firm-level posting dataset allows us to test whether firms with higher LLM
+exposure adjust their hiring intensity differently than less-exposed firms following
+ChatGPT’s introduction, providing insights into how anticipated productivity gains
+or workforce restructuring needs translate into recruitment behavior. In addition, by
+examining the occupational composition of job postings within firms, we can identify
+whether highly exposed firms disproportionately reduce hiring for specific types of
+roles (for example, those with high LLM exposure scores) relative to less exposed
+firms, allowing us to test for within-firm occupational reallocation in response to
+LLM adoption.
+    To construct our occupation-level hiring intentions data, we first match each va-
+cancy to O*NET SOC occupation codes using a job-role-SOC crosswalk provided by
+Revelio Labs. This crosswalk maps each unique role (1,500 in total) to 384 broader
+categories that directly correspond to the occupations listed in Eloundou et al.
+
+
+                                         9
+

@@ -1,0 +1,44 @@
+              SKILL CONTENT OF TECHNICAL CHANGE                        1307
+
+deepening: the log of capital investment ow per worker and the
+log capital to labor ratio.
+     Using these data, we t stacked rst-difference industry task
+shift models of the form,
+(14)    DT jkt 5 a 1 d 70–80 1 d 80–90 1 d 90–98 1 wCI jt 1 uKI jt 1 e jkt,
+where CI j t is industry j’s real log investment in computer capital
+per FTE over the contemporaneous decade in industry, KI jt is the
+analogous measure for real capital investment, the d’s are time
+dummies equal to one in each of the decades post-1960 corre-
+sponding to their subscripts, and a is a common intercept. In this
+equation, the d’s measure the trend change in industry task input
+in the 1970s, 1980s, and 1990s relative to the base period of the
+1960s.
+     Estimates of equation (14) are found in Table IV. Two sets of
+Huber-White standard errors are tabulated for each model. Those
+in parentheses account for the fact that the NIPA capital mea-
+sures are observed at a more aggregate level than the dependent
+variables measured from the CPS and Census (42 sectors versus
+123 sectors for this exercise). The standard errors in brackets
+additionally account for potential serial correlation in industry
+task changes over succeeding decades (cf. Bertrand, Duo, and
+Mullainathan [2004]).
+     As is visible in the table, the NIPA measure of computer
+investment consistently predicts relative declines in industry in-
+put of both routine cognitive and manual tasks and growth in
+input of nonroutine analytic and interactive tasks. How large are
+these relationships? We can gauge the model’s explanatory power
+by comparing the magnitude of the estimated d’s conditional on
+computer investment with the unconditional within-industry
+trends in task input observed for each decade. To facilitate this
+comparison, the bottom panel of Table IV tabulates the uncondi-
+tional decadal trends. As with the Table III estimates, we nd
+that industries making relatively greater investments in com-
+puter capital are responsible for the bulk of the observed substi-
+tution away from routine cognitive and manual tasks and toward
+nonroutine analytic and interactive tasks. Holding computer in-
+vestment constant, we can explain more than 100 percent of the
+overall trend increase in nonroutine cognitive/analytic task input,
+a substantial part of the trend increase in nonroutine cognitive/
+interactive input, and substantial parts of the trend decreases in
+routine cognitive and routine manual inputs.
+

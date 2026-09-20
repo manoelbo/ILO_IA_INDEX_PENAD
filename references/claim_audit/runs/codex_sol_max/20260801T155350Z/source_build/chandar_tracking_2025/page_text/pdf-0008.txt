@@ -1,0 +1,213 @@
+                                                               Employment Share Trends by GPT Exposure Quartile
+                                                  1.100
+
+                                                  1.075
+
+                                                  1.050
+        Normalized Employment Share
+
+
+
+
+                                                  1.025
+                                                                                                                             Q1
+                                                                                                                             Q2
+                                                  1.000                                                                      Q3
+                                                                                                                             Q4
+                                                  0.975
+
+                                                  0.950
+
+                                                  0.925
+
+                                                  0.900
+                                                          -01
+
+
+                                                                   -07
+
+
+                                                                          -01
+
+
+                                                                                 -07
+
+
+                                                                                        -01
+
+
+                                                                                                  -07
+
+
+                                                                                                         -01
+
+
+                                                                                                                -07
+
+
+                                                                                                                       -01
+                                                          21
+
+
+                                                                  21
+
+
+                                                                         22
+
+
+                                                                                22
+
+
+                                                                                       23
+
+
+                                                                                                 23
+
+
+                                                                                                        24
+
+
+                                                                                                               24
+
+
+                                                                                                                      25
+                                                      20
+
+
+                                                                 20
+
+
+                                                                         20
+
+
+                                                                                20
+
+
+                                                                                       20
+
+
+                                                                                                 20
+
+
+                                                                                                        20
+
+
+                                                                                                               20
+
+
+                                                                                                                      20
+                                                                                       Quarter
+                                                               Real Average Weekly Earnings by GPT Exposure Quartile
+                                                  1.100
+
+                                                  1.075
+        Normalized Real Average Weekly Earnings
+
+
+
+
+                                                  1.050
+
+                                                  1.025
+                                                                                                                             Q1
+                                                                                                                             Q2
+                                                  1.000                                                                      Q3
+                                                                                                                             Q4
+                                                  0.975
+
+                                                  0.950
+
+                                                  0.925
+
+                                                  0.900
+                                                          -01
+
+
+                                                                   -07
+
+
+                                                                          -01
+
+
+                                                                                 -07
+
+
+                                                                                        -01
+
+
+                                                                                                  -07
+
+
+                                                                                                         -01
+
+
+                                                                                                                -07
+
+
+                                                                                                                       -01
+                                                          21
+
+
+                                                                  21
+
+
+                                                                         22
+
+
+                                                                                22
+
+
+                                                                                       23
+
+
+                                                                                                 23
+
+
+                                                                                                        24
+
+
+                                                                                                               24
+
+
+                                                                                                                      25
+                                                      20
+
+
+                                                                 20
+
+
+                                                                         20
+
+
+                                                                                20
+
+
+                                                                                       20
+
+
+                                                                                                 20
+
+
+                                                                                                        20
+
+
+                                                                                                               20
+
+
+                                                                                                                      20
+
+
+
+
+                                                                                       Quarter
+
+Figure 1: Employment and earnings trends by AI exposure. The top panel shows the share
+of employment by quartile of AI exposure, normalized to start at 1 in 2022 Q4. The AI
+exposure measure is the GPT-4-based β measure from Eloundou et al. (2024). Earnings are
+real usual weekly earnings, adjusted for inflation using the CPI-U and normalized to start
+at 1 in 2022 Q4.
+
+
+
+                                                                                            8
+

@@ -1,0 +1,48 @@
+Becker, G. (1964). Human Capital: A Theoretical and Empirical Analysis with Special Reference
+  to Education.
+Bick, A., Blandin, A., and Deming, D. J. (2024). The rapid adoption of generative AI. Technical
+  report, National Bureau of Economic Research.
+Brynjolfsson, E., Chandar, B., and Chen, R. (2025a). Canaries in the Coal Mine? Six Facts about the
+  Recent Employment Effects of Artificial Intelligence.
+Brynjolfsson, E., Li, D., and Raymond, L. (2025b). Generative AI at Work. The Quarterly Journal of
+  Economics, page qjae044.
+Callaway, B. and Sant’Anna, P. H. C. (2021). Difference-in-Differences with Multiple Time Periods.
+  Journal of Econometrics, 225(2):200–230.
+Chandar, B. (2025). Tracking Employment Changes in AI-Exposed Jobs. Available at SSRN 5384519.
+Chen, F. and Stratton, J. (2025). Generative AI and Organizational Structure. Unpublished
+  manuscript.
+Chodorow-Reich, G. (2014). The Employment Effects of Credit Market Disruptions: Firm-Level
+  Evidence from the 2008–09 Financial Crisis. Quarterly Journal of Economics, 129(1):1–59.
+Crane, L. D. and Soto, P. E. (2026). AI and Coder Employment: Compiling the Evidence.
+Cruces, G., Meijide, D. F., Galiani, S., Gálvez, R. H., and Lombardi, M. (2026). Does generative AI
+  narrow education-based productivity gaps? Evidence from a randomized experiment. Techni-
+  cal report, National Bureau of Economic Research.
+Cui, Z., Demirer, M., Jaffe, S., Musolff, L., Peng, S., and Salz, T. (2025). The Effects of Generative
+  AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers.
+  Available at SSRN.
+Davis, S. J., Haltiwanger, J. C., and Schuh, S. (1998). Job creation and destruction. MIT Press Books.
+Dell’Acqua, F., Ayoubi, C., Lifshitz, H., Sadun, R., Mollick, E., Mollick, L., Han, Y., Goldman, J.,
+  Nair, H., Taub, S., et al. (2025). The Cybernetic Teammate: A Field Experiment on Generative AI
+  Reshaping Teamwork and Expertise. Technical report, National Bureau of Economic Research.
+Dell’Acqua, F., McFowland III, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K., Rajendran, S.,
+  Krayer, L., Candelon, F., and Lakhani, K. R. (2023). Navigating the Jagged Technological Fron-
+  tier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and
+  Quality. Harvard Business School Technology & Operations Management Unit Working Paper.
+Deming, D. J. (2023). Why Do Wages Grow Faster for Educated Workers? Technical report,
+  National Bureau of Economic Research.
+Dominski, J. and Lee, Y. S. (2025). Advancing AI Capabilities and Evolving Labor Outcomes. arXiv
+  Preprint arXiv:2507.08244.
+Eckhardt, S. and Goldschlag, N. (2025). AI and Jobs: The Final Word (Until the Next One). Eco-
+  nomic Innovation Group. Accessed 2025-08-30.
+Eloundou, T., Manning, S., Mishkin, P., and Rock, D. (2024). GPTs Are GPTs: Labor Market Impact
+  Potential of LLMs. Science, 384(6702):1306–1308.
+FactSet Research Systems Inc. (2025). Events and transcripts (callstreet). Earnings-call transcripts
+  and events data (CallStreet).
+Federal Reserve Board (2025). Transcript of Chair Powell’s Press Conference. Federal Open Market
+  Committee Press Conference Transcript.
+
+
+
+
+                                                 43
+

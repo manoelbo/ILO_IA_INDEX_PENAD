@@ -1,0 +1,45 @@
+             SKILL CONTENT OF TECHNICAL CHANGE               1291
+
+          d ln rj bj~1 2 v! 2 1             d2 ln rj 1 2 v
+                 5              ,0    and           5      . 0.
+            dr         vr                    drdbj     vr
+        Although we cannot observe b j , a logical proxy for it is
+        the observed industry level of routine task input in the
+        precomputerization era. We therefore test whether in-
+        dustries that were historically (i.e., precomputer era)
+        intensive in routine tasks adopted computer capital to a
+        greater extent than industries that were not.
+    P2. Due to the complementarity between routine and non-
+        routine inputs, a decline in the price of computer capital
+        also raises demand for nonroutine task input. This de-
+        mand increase is proportionately larger in routine-task-
+        intensive industries:
+            d ln nj ~bj 2 1!~1 2 v!        d2 ln n 1 2 v
+                   5                , 0,           5     . 0.
+              dr           vr               drdb      vr
+        Recall, however, that labor supply to routine tasks de-
+        clines with r. Rising routine task demand must therefore
+        be satised with computer capital. Hence, sectors that
+        invest relatively more in computer capital will show a
+        larger rise in nonroutine labor input and a larger decline
+        in routine labor input.
+    P3. The previous propositions refer to industry demands.
+        Analogously, we expect that occupations that make rela-
+        tively larger investments in computer capital will show
+        larger increases in labor input of nonroutine tasks and
+        larger decreases in labor input of routine tasks.
+
+
+                  II. EMPIRICAL IMPLEMENTATION
+     Our analysis requires measures of tasks performed in par-
+ticular jobs and their changes over time. We draw on information
+from the Fourth [1977] Edition and Revised Fourth [1991] edition
+of the U. S. Department of Labor’s Dictionary of Occupational
+Titles (DOT). Many of the details of our data construction are
+provided in the Data Appendix. Here we discuss the most salient
+features. The U. S. Department of Labor released the rst edition
+of the DOT in 1939 to “furnish public employment ofces . . . with
+information and techniques [to] facilitate proper classication
+and placement of work seekers” [U. S. Department of Labor
+1939;xi, as quoted in Miller et al. 1980]. Although the DOT was
+

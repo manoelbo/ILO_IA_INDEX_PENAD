@@ -1,0 +1,2417 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Report rdf:about="urn:isbn:978-92-2-042184-0">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Geneva</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>International Labour Organization</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gmyrek</foaf:surname>
+                        <foaf:givenName>Pawel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berg</foaf:surname>
+                        <foaf:givenName>Janine</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kamiński</foaf:surname>
+                        <foaf:givenName>Karol</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Konopczyński</foaf:surname>
+                        <foaf:givenName>Filip</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ładna</foaf:surname>
+                        <foaf:givenName>Agnieszka</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nafradi</foaf:surname>
+                        <foaf:givenName>Balint</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rosłaniec</foaf:surname>
+                        <foaf:givenName>Konrad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Troszyński</foaf:surname>
+                        <foaf:givenName>Marek</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2"/>
+        <dc:title>Generative AI and jobs: A refined global index of occupational exposure</dc:title>
+        <dcterms:abstract>This study updates the ILO’s 2023 Global Index of Occupational Exposure to Generative AI (GenAI), incorporating recent advances in the technology and increasing user familiarity with GenAI tools. Using a representative sample from the 29,753 tasks in the Polish occupational classification system and a survey of 1,640 people employed in each 1-digit ISCO-08 groups, we collect 52,558 data points regarding perceive potential of automation for 2,861 tasks. We then compare this input with a survey and several rounds of Delphi-style discussions among a smaller group of international experts. Based on this process, we create a repository of knowledge about task automation that goes beyond national specificities and use it to develop an AI assistant able to predict scores for tasks in the technical documentation of ISCO-08.</dcterms:abstract>
+        <dc:date>2025-05-20</dc:date>
+        <dc:identifier>DOI 10.54394/HETP0387</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:24</dcterms:dateSubmitted>
+        <z:shortTitle>Generative AI and jobs</z:shortTitle>
+        <z:language>English</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:identifier>ISBN 978-92-2-042184-0</dc:identifier>
+        <bib:pages>72</bib:pages>
+        <prism:number>140</prism:number>
+        <z:type>ILO Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/2/Gmyrek et al. - 2025 - Generative AI and jobs A refined global index of occupational exposure.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Stanford Digital Economy Lab</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brynjolfsson</foaf:surname>
+                        <foaf:givenName>Erik</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chandar</foaf:surname>
+                        <foaf:givenName>Bharat</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Ruyu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_101"/>
+        <dc:title>Canaries in the coal mine? Six facts about the recent employment effects of artificial intelligence</dc:title>
+        <dcterms:abstract>Using high-frequency administrative data from ADP, we document six facts characterizing labor market shifts following the widespread adoption of generative AI. Early-career workers (ages 22-25) in AI-exposed occupations experienced 16% relative employment declines, controlling for firm-level shocks, while employment for experienced workers remained stable. Adjustments occur primarily via employment rather than compensation, with employment changes concentrated in occupations where AI automates rather than augments labor. Results are robust to excluding technology firms and occupations that are remotable. These six facts provide early large-scale evidence consistent with generative AI disproportionately impacting entry-level workers in the American labor market.</dcterms:abstract>
+        <dc:date>2025-11-13</dc:date>
+        <z:citationKey>brynjolfsson_canaries_2025</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_101">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/101/CanariesintheCoalMine_Nov25.pdf"/>
+        <dc:title>CanariesintheCoalMine_Nov25</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://academic.oup.com/qje/article/118/4/1279/1925105">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1162/003355303322552801</dc:identifier>
+                <prism:volume>118</prism:volume>
+                <dc:title>The Quarterly Journal of Economics</dc:title>
+                <prism:number>4</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Levy</foaf:surname>
+                        <foaf:givenName>Frank</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Murnane</foaf:surname>
+                        <foaf:givenName>Richard J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_5"/>
+        <dc:title>The skill content of recent technological change: An empirical exploration</dc:title>
+        <dc:date>2003-11</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/qje/article/118/4/1279/1925105</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>1279–1333</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_5">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/5/Autor et al. - 2003 - The skill content of recent technological change An empirical exploration.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.aeaweb.org/doi/10.1257/aer.20160696">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0002-8282"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Acemoglu</foaf:surname>
+                        <foaf:givenName>Daron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Restrepo</foaf:surname>
+                        <foaf:givenName>Pascual</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:title>The Race between Man and Machine: Implications of Technology for Growth, Factor Shares, and Employment</dc:title>
+        <dcterms:abstract>We examine the concerns that new technologies will render labor redundant in a framework in which tasks previously performed by labor can be automated and new versions of existing tasks, in which labor has a comparative advantage, can be created. In a static version where capital is fixed and technology is exogenous, automation reduces employment and the labor share, and may even reduce wages, while the creation of new tasks has the opposite effects. Our full model endogenizes capital accumulation and the direction of research toward automation and the creation of new tasks. If the long-run rental rate of capital relative to the wage is sufficiently low, the long-run equilibrium involves automation of all tasks. Otherwise, there exists a stable balanced growth path in which the two types of innovations go hand-in-hand. Stability is a consequence of the fact that automation reduces the cost of producing using labor, and thus discourages further automation and encourages the creation of new tasks. In an extension with heterogeneous skills, we show that inequality increases during transitions driven both by faster automation and the introduction of new tasks, and characterize the conditions under which inequality stabilizes in the long run. (JEL D63, E22, E23, E24, J24, O33, O41)</dcterms:abstract>
+        <dc:date>2018-06-01</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubs.aeaweb.org/doi/10.1257/aer.20160696</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:28</dcterms:dateSubmitted>
+        <z:shortTitle>The Race between Man and Machine</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>1488-1542</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0002-8282">
+        <dc:identifier>DOI 10.1257/aer.20160696</dc:identifier>
+        <prism:volume>108</prism:volume>
+        <dc:title>American Economic Review</dc:title>
+        <dc:identifier>ISSN 0002-8282</dc:identifier>
+        <prism:number>6</prism:number>
+        <dcterms:alternative>American Economic Review</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/6/Acemoglu e Restrepo - 2018 - The Race between Man and Machine Implications of Technology for Growth, Factor Shares, and Employme.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://sms.onlinelibrary.wiley.com/doi/10.1002/smj.3286">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0143-2095,%201097-0266"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Felten</foaf:surname>
+                        <foaf:givenName>Edward</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Raj</foaf:surname>
+                        <foaf:givenName>Manav</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Seamans</foaf:surname>
+                        <foaf:givenName>Robert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_7"/>
+        <dc:title>Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses</dc:title>
+        <dcterms:abstract>Research Summary: We create and validate a new measure of an occupation's exposure to AI that we call the AI Occupational Exposure (AIOE). We use the AIOE to construct a measure of AI exposure at the industry level, which we call the AI Industry Exposure (AIIE) and a measure of AI exposure at the county level, which we call the AI Geographic Exposure (AIGE). We also describe several ways in which the AIOE can be used to create firm level measures of AI exposure. We validate the measures and describe how they can be used in different applications by management, organization and strategy scholars.</dcterms:abstract>
+        <dc:date>12/2021</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://sms.onlinelibrary.wiley.com/doi/10.1002/smj.3286</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:30</dcterms:dateSubmitted>
+        <z:shortTitle>Occupational, industry, and geographic exposure to artificial intelligence</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>2195-2217</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0143-2095,%201097-0266">
+        <dc:identifier>DOI 10.1002/smj.3286</dc:identifier>
+        <prism:volume>42</prism:volume>
+        <dc:title>Strategic Management Journal</dc:title>
+        <dc:identifier>ISSN 0143-2095, 1097-0266</dc:identifier>
+        <prism:number>12</prism:number>
+        <dcterms:alternative>Strategic Management Journal</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_7">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/7/Felten et al. - 2021 - Occupational, industry, and geographic exposure to artificial intelligence A novel dataset and its.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2303.10130">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Eloundou</foaf:surname>
+                        <foaf:givenName>Tyna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Manning</foaf:surname>
+                        <foaf:givenName>Sam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mishkin</foaf:surname>
+                        <foaf:givenName>Pamela</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rock</foaf:surname>
+                        <foaf:givenName>Daniel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Computers and Society</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Economics - General Economics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models</dc:title>
+        <dcterms:abstract>We investigate the potential implications of large language models (LLMs), such as Generative Pretrained Transformers (GPTs), on the U.S. labor market, focusing on the increased capabilities arising from LLM-powered software compared to LLMs on their own. Using a new rubric, we assess occupations based on their alignment with LLM capabilities, integrating both human expertise and GPT-4 classifications. Our findings reveal that around 80% of the U.S. workforce could have at least 10% of their work tasks affected by the introduction of LLMs, while approximately 19% of workers may see at least 50% of their tasks impacted. We do not make predictions about the development or adoption timeline of such LLMs. The projected effects span all wage levels, with higher-income jobs potentially facing greater exposure to LLM capabilities and LLM-powered software. Significantly, these impacts are not restricted to industries with higher recent productivity growth. Our analysis suggests that, with access to an LLM, about 15% of all worker tasks in the US could be completed significantly faster at the same level of quality. When incorporating software and tooling built on top of LLMs, this share increases to between 47 and 56% of all tasks. This finding implies that LLM-powered software will have a substantial effect on scaling the economic impacts of the underlying models. We conclude that LLMs such as GPTs exhibit traits of general-purpose technologies, indicating that they could have considerable economic, social, and policy implications.</dcterms:abstract>
+        <dc:date>2023-08-21</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2303.10130</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2303.10130</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:31</dcterms:dateSubmitted>
+        <z:shortTitle>GPTs are GPTs</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2303.10130 [econ.GN]</dc:description>
+        <prism:number>arXiv:2303.10130</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/8/Eloundou et al. - 2023 - GPTs are GPTs An Early Look at the Labor Market Impact Potential of Large Language Models.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2304.11771">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brynjolfsson</foaf:surname>
+                        <foaf:givenName>Erik</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Danielle</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Raymond</foaf:surname>
+                        <foaf:givenName>Lindsey</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_9"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Economics - General Economics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Quantitative Finance - General Finance</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Generative AI at Work</dc:title>
+        <dcterms:abstract>We study the staggered introduction of a generative AI-based conversational assistant using data from 5,172 customer support agents. Access to AI assistance increases worker productivity, as measured by issues resolved per hour, by 15% on average, with substantial heterogeneity across workers. Less experienced and lower-skilled workers improve both the speed and quality of their output while the most experienced and highest-skilled workers see small gains in speed and small declines in quality. We also find evidence that AI assistance facilitates worker learning and improves English fluency, particularly among international agents. While AI systems improve with more training data, we find that the gains from AI adoption are largest for relatively rare problems, where human agents have less baseline training and experience. Finally, we provide evidence that AI assistance improves the experience of work along two key dimensions: customers are more polite and less likely to ask to speak to a manager.</dcterms:abstract>
+        <dc:date>2024-11-06</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2304.11771</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2304.11771</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:33</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2304.11771 [econ.GN]</dc:description>
+        <prism:number>arXiv:2304.11771</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_9">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/9/Brynjolfsson et al. - 2024 - Generative AI at Work.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.ssrn.com/abstract=4573321">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1556-5068"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dell'Acqua</foaf:surname>
+                        <foaf:givenName>Fabrizio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McFowland</foaf:surname>
+                        <foaf:givenName>Edward</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mollick</foaf:surname>
+                        <foaf:givenName>Ethan R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lifshitz-Assaf</foaf:surname>
+                        <foaf:givenName>Hila</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kellogg</foaf:surname>
+                        <foaf:givenName>Katherine</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rajendran</foaf:surname>
+                        <foaf:givenName>Saran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krayer</foaf:surname>
+                        <foaf:givenName>Lisa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Candelon</foaf:surname>
+                        <foaf:givenName>François</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lakhani</foaf:surname>
+                        <foaf:givenName>Karim R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_10"/>
+        <dc:title>Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality</dc:title>
+        <dc:date>2023</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.ssrn.com/abstract=4573321</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:34</dcterms:dateSubmitted>
+        <z:shortTitle>Navigating the Jagged Technological Frontier</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1556-5068">
+        <dc:identifier>DOI 10.2139/ssrn.4573321</dc:identifier>
+        <dc:title>SSRN Electronic Journal</dc:title>
+        <dc:identifier>ISSN 1556-5068</dc:identifier>
+        <dcterms:alternative>SSRN Journal</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_10">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/10/Dell'Acqua et al. - 2023 - Navigating the Jagged Technological Frontier Field Experimental Evidence of the Effects of AI on Kn.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://www.nber.org/papers/w32140">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cambridge, MA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>National Bureau of Economic Research</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_11"/>
+        <dc:title>Applying AI to rebuild middle class jobs</dc:title>
+        <dcterms:abstract>While the utopian vision of the current Information Age was that computerization would flatten economic hierarchies by democratizing information, the opposite has occurred. Information, it turns out, is merely an input into a more consequential economic function, decision-making, which is the province of elite experts. The unique opportunity that AI offers to the labor market is to extend the relevance, reach, and value of human expertise. Because of AI’s capacity to weave information and rules with acquired experience to support decision-making, it can be applied to enable a larger set of workers possessing complementary knowledge to perform some of the higher-stakes decision-making tasks that are currently arrogated to elite experts, e.g., medical care to doctors, document production to lawyers, software coding to computer engineers, and undergraduate education to professors. My thesis is not a forecast but an argument about what is possible: AI, if used well, can assist with restoring the middle-skill, middle-class heart of the US labor market that has been hollowed out by automation and globalization.</dcterms:abstract>
+        <dc:date>2024-02</dc:date>
+        <dc:identifier>DOI 10.3386/w32140</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.nber.org/papers/w32140</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <prism:number>32140</prism:number>
+        <z:type>NBER Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_11">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/11/Autor - 2024 - Applying AI to rebuild middle class jobs.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://doi.org/10.20955/wp.2024.027">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Federal Reserve Bank of St. Louis</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bick</foaf:surname>
+                        <foaf:givenName>Alexander</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Blandin</foaf:surname>
+                        <foaf:givenName>Adam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Deming</foaf:surname>
+                        <foaf:givenName>David J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:title>The rapid adoption of generative AI</dc:title>
+        <dcterms:abstract>Generative artificial intelligence (AI) is a potentially important new technology, but its impact on the economy depends on the speed and intensity of adoption. This paper reports results from a series of nationally representative U.S. surveys of generative AI use at work and at home. As of late 2024, 45% of the U.S. population age 18-64 uses generative AI. Among employed respondents, 27% used generative AI for work at least once in the previous week: 10% used it every workday, and 17% on some but not all workdays. Relative to each technology’s first mass-market product launch, work adoption of generative AI has been as fast as the personal computer (PC), and overall adoption has been faster than either PCs or the internet. Between 1 and 7% of all work hours are currently assisted by generative AI, and respondents report time savings equivalent to 1.4% of total work hours. Potential productivity gains vary widely by industry, and firm climate and policies play an important role in adoption patterns.</dcterms:abstract>
+        <dc:date>2025-10-27</dc:date>
+        <dc:identifier>DOI 10.20955/wp.2024.027</dc:identifier>
+        <z:citationKey>bick_rapid_2024</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.20955/wp.2024.027</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:36</dcterms:dateSubmitted>
+        <z:language>English</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <prism:number>2024-027F</prism:number>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/12/Bick et al. - 2025 - The rapid adoption of generative AI.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_31">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/31/REBALANCING AI.pdf"/>
+        <dc:title>REBALANCING AI</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_32">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/32/TASKS AUTOMATION AND THE RISE IN US WAGE INEQUALITY.pdf"/>
+        <dc:title>TASKS AUTOMATION AND THE RISE IN US WAGE INEQUALITY</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_33">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/33/The impact of generative artificial intelligence on socioeconomic inequalities and policy making.pdf"/>
+        <dc:title>The impact of generative artificial intelligence on socioeconomic inequalities and policy making</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_34">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/34/Why the Power of Technology Rarely Goes to the People.pdf"/>
+        <dc:title>Why the Power of Technology Rarely Goes to the People</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://direct.mit.edu/rest/article/89/1/118-133/57634">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0034-6535,%201530-9142"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goos</foaf:surname>
+                        <foaf:givenName>Maarten</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Manning</foaf:surname>
+                        <foaf:givenName>Alan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_24"/>
+        <dc:title>Lousy and Lovely Jobs: The Rising Polarization of Work in Britain</dc:title>
+        <dcterms:abstract>This paper shows that the United Kingdom since 1975 has exhibited a pattern of job polarization with rises in employment shares in the highest- and lowest-wage occupations. This is not entirely consistent with the idea of skill-biased technical change as a hypothesis about the impact of technology on the labor market. We argue that the “routinization” hypothesis recently proposed by Autor, Levy, and Murnane (2003) is a better explanation of job polarization, though other factors may also be important. We show that job polarization can explain one-third of the rise in the log(50/10) wage differential and one-half of the rise in the log(90/ 50).</dcterms:abstract>
+        <dc:date>02/2007</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://direct.mit.edu/rest/article/89/1/118-133/57634</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:22</dcterms:dateSubmitted>
+        <z:shortTitle>Lousy and Lovely Jobs</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>118-133</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0034-6535,%201530-9142">
+        <dc:identifier>DOI 10.1162/rest.89.1.118</dc:identifier>
+        <prism:volume>89</prism:volume>
+        <dc:title>Review of Economics and Statistics</dc:title>
+        <dc:identifier>ISSN 0034-6535, 1530-9142</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Review of Economics and Statistics</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/24/Goos e Manning - 2007 - Lousy and Lovely Jobs The Rising Polarization of Work in Britain.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://publications.iadb.org/en/mirror-mirror-wall-which-jobs-will-ai-replace-after-all-new-index-occupational-exposure">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Inter-American Development Bank</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Benítez</foaf:surname>
+                        <foaf:givenName>Miguel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parrado</foaf:surname>
+                        <foaf:givenName>Eric</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_25"/>
+        <dc:title>Mirror, Mirror on the Wall: Which Jobs Will AI Replace After All?: A New Index of Occupational Exposure</dc:title>
+        <dcterms:abstract>This paper introduces the AI Generated Index of Occupational Exposure (GENOE), a novel measure quantifying the potential impact of artificial intelligence on occupations and their associated tasks. Our methodology employs synthetic AI surveys, leveraging large language models to conduct expert-like assessments. This approach allows for a more comprehensive evaluation of job replacement likelihood, minimizing human bias and reducing assumptions about the mechanisms through which AI innovations could replace job tasks and skills. The index not only considers task automation, but also contextual factors such as social and ethical considerations and regulatory constraints that may affect the likelihood of replacement. Our findings indicate that the average likelihood of job replacement is estimated at 0.28 in the next year, increasing to 0.38 and 0.44 over the next five and ten years, respectively. To validate our methodology, we successfully replicate other measures of occupational exposure that rely on human expert assessments, substituting these with AI-based evaluations. The GENOE index provides valuable insights for policymakers, employers, and workers, offering a data-driven foundation for strategic workforce planning and adaptation in the face of rapid technological change.</dcterms:abstract>
+        <dc:date>2024-08-27</dc:date>
+        <dc:identifier>DOI 10.18235/0013125</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://publications.iadb.org/en/mirror-mirror-wall-which-jobs-will-ai-replace-after-all-new-index-occupational-exposure</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:23</dcterms:dateSubmitted>
+        <z:shortTitle>Mirror, Mirror on the Wall</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_25">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/25/Benítez e Parrado - 2024 - Mirror, Mirror on the Wall Which Jobs Will AI Replace After All A New Index of Occupational Expos.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.journals.uchicago.edu/doi/10.1086/705716">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1086/705716</dc:identifier>
+                <prism:volume>128</prism:volume>
+                <dc:title>Journal of Political Economy</dc:title>
+                <prism:number>6</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Acemoglu</foaf:surname>
+                        <foaf:givenName>Daron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Restrepo</foaf:surname>
+                        <foaf:givenName>Pascual</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_26"/>
+        <dc:title>Robots and jobs: Evidence from US labor markets</dc:title>
+        <dc:date>2020-06</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.journals.uchicago.edu/doi/10.1086/705716</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>2188–2244</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_26">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/26/Acemoglu e Restrepo - 2020 - Robots and jobs Evidence from US labor markets.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-0-444-53452-1">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>DOI 10.1016/S0169-7218(11)02410-5</dc:identifier>
+                <prism:volume>4</prism:volume>
+                <dc:identifier>ISBN 978-0-444-53452-1</dc:identifier>
+                <dc:title>Handbook of Labor Economics</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>Elsevier</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Acemoglu</foaf:surname>
+                        <foaf:givenName>Daron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_27"/>
+        <dc:title>Skills, Tasks and Technologies: Implications for Employment and Earnings</dc:title>
+        <dcterms:abstract>A central organizing framework of the voluminous recent literature studying changes in the returns to skills and the evolution of earnings inequality is what we refer to as the canonical model, which elegantly and powerfully operationalizes the supply and demand for skills by assuming two distinct skill groups that perform two diﬀerent and imperfectly substitutable tasks or produce two imperfectly substitutable goods. Technology is assumed to take a factor-augmenting form, which, by complementing either high or low skill workers, can generate skill biased demand shifts. In this paper, we argue that despite its notable successes, the canonical model is largely silent on a number of central empirical developments of the last three decades, including: (1) signiﬁcant declines in real wages of low skill workers, particularly low skill males; (2) non-monotone changes in wages at diﬀerent parts of the earnings distribution during diﬀerent decades; (3) broad-based increases in employment in high skill and low skill occupations relative to middle skilled occupations (i.e., job ‘‘polarization’’); (4) rapid diﬀusion of new technologies that directly substitute capital for labor in tasks previously performed by moderately skilled workers; and (5) expanding oﬀshoring in opportunities, enabled by technology, which allow foreign labor to substitute for domestic workers speciﬁc tasks. Motivated by these patterns, we argue that it is valuable to consider a richer framework for analyzing how recent changes in the earnings and employment distribution in the United States and other advanced economies are shaped by the interactions among worker skills, job tasks, evolving technologies, and shifting trading opportunities. We propose a tractable task-based model in which the assignment of skills to tasks is endogenous and technical change may involve the substitution of machines for certain tasks previously performed by labor. We further consider how the evolution of technology in this task-based setting may be endogenized. We show how such a framework can be used to interpret several central recent trends, and we also suggest further directions for empirical exploration.</dcterms:abstract>
+        <dc:date>2011</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0169721811024105</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:25</dcterms:dateSubmitted>
+        <z:shortTitle>Skills, Tasks and Technologies</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>1043-1171</bib:pages>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_27">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/27/Acemoglu e Autor - 2011 - Skills, Tasks and Technologies Implications for Employment and Earnings.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.aeaweb.org/doi/10.1257/jep.33.2.3">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0895-3309"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Acemoglu</foaf:surname>
+                        <foaf:givenName>Daron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Restrepo</foaf:surname>
+                        <foaf:givenName>Pascual</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_28"/>
+        <dc:title>Automation and New Tasks: How Technology Displaces and Reinstates Labor</dc:title>
+        <dcterms:abstract>We present a framework for understanding the effects of automation and other types of technological changes on labor demand, and use it to interpret changes in US employment over the recent past. At the center of our framework is the allocation of tasks to capital and labor—the task content of production. Automation, which enables capital to replace labor in tasks it was previously engaged in, shifts the task content of production against labor because of a displacement effect. As a result, automation always reduces the labor share in value added and may reduce labor demand even as it raises productivity. The effects of automation are counterbalanced by the creation of new tasks in which labor has a comparative advantage. The introduction of new tasks changes the task content of production in favor of labor because of a reinstatement effect, and always raises the labor share and labor demand. We show how the role of changes in the task content of production—due to automation and new tasks—can be inferred from industry-level data. Our empirical decomposition suggests that the slower growth of employment over the last three decades is accounted for by an acceleration in the displacement effect, especially in manufacturing, a weaker reinstatement effect, and slower growth of productivity than in previous decades.</dcterms:abstract>
+        <dc:date>2019-05-01</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubs.aeaweb.org/doi/10.1257/jep.33.2.3</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:27</dcterms:dateSubmitted>
+        <z:shortTitle>Automation and New Tasks</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>3-30</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0895-3309">
+        <dc:identifier>DOI 10.1257/jep.33.2.3</dc:identifier>
+        <prism:volume>33</prism:volume>
+        <dc:title>Journal of Economic Perspectives</dc:title>
+        <dc:identifier>ISSN 0895-3309</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Journal of Economic Perspectives</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_28">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/28/Acemoglu e Restrepo - 2019 - Automation and New Tasks How Technology Displaces and Reinstates Labor.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.aeaweb.org/doi/10.1257/jel.20241680">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0022-0515,%202328-8175"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Acemoglu</foaf:surname>
+                        <foaf:givenName>Daron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Robinson</foaf:surname>
+                        <foaf:givenName>James A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_29"/>
+        <dc:title>Culture, Institutions, and Social Equilibria: A Framework</dc:title>
+        <dcterms:abstract>This paper proposes a new framework for studying the interplay between culture and institutions. We interpret culture as a repertoire, consisting of (cultural) attributes and allowing rich cultural responses to political changes. Combinations of attributes produce cultural configurations, which provide social meaning, coordination, and political justification. Our framework has several distinctive features. First, it proposes a “systems approach” to culture: the meaning and function of attributes are determined within the whole configuration and political equilibrium. Second, it emphasizes discontinuous or “saltational” changes in culture—rather than gradual, evolutionary changes—as attributes are reconnected and acquire new meanings in response to evolving circumstances and as outcomes in ongoing “cultural struggles.” Third, our framework puts the spotlight on how fluidly different cultures can respond to conditions, depending on the nature of their attributes and constraints on their connections. Finally, it enriches the study of the codetermination of political, institutional and cultural outcomes. (JEL D02, D72, E02, N30, N40, Z10)</dcterms:abstract>
+        <dc:date>2025-06-01</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubs.aeaweb.org/doi/10.1257/jel.20241680</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:28</dcterms:dateSubmitted>
+        <z:shortTitle>Culture, Institutions, and Social Equilibria</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>637-692</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0022-0515,%202328-8175">
+        <dc:identifier>DOI 10.1257/jel.20241680</dc:identifier>
+        <prism:volume>63</prism:volume>
+        <dc:title>Journal of Economic Literature</dc:title>
+        <dc:identifier>ISSN 0022-0515, 2328-8175</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Journal of Economic Literature</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_29">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/29/Acemoglu e Robinson - 2025 - Culture, Institutions, and Social Equilibria A Framework.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091823-025129">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1941-1383,%201941-1391"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Acemoglu</foaf:surname>
+                        <foaf:givenName>Daron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Johnson</foaf:surname>
+                        <foaf:givenName>Simon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_30"/>
+        <dc:title>Learning From Ricardo and Thompson: Machinery and Labor in the Early Industrial Revolution and in the Age of Artificial Intelligence</dc:title>
+        <dcterms:abstract>David Ricardo initially believed machinery would help workers but revised his opinion, likely based on the impact of automation in the textile industry. Despite cotton textiles becoming one of the largest sectors in the British economy, real wages for cotton weavers did not rise for decades. As E.P. Thompson emphasized, automation forced workers into unhealthy factories with close surveillance and little autonomy. Automation can increase wages, but only when accompanied by new tasks that raise the marginal productivity of labor and/or when there is sufficient additional hiring in complementary sectors. Wages are unlikely to rise when workers cannot push for their share of productivity growth. Today, artificial intelligence may boost average productivity, but it also may replace many workers while degrading job quality for those who remain employed. As in Ricardo's time, the impact of automation on workers today is more complex than an automatic linkage from higher productivity to better wages.</dcterms:abstract>
+        <dc:date>2024-08-22</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091823-025129</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:31</dcterms:dateSubmitted>
+        <z:shortTitle>Learning From Ricardo and Thompson</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <bib:pages>597-621</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1941-1383,%201941-1391">
+        <dc:identifier>DOI 10.1146/annurev-economics-091823-025129</dc:identifier>
+        <prism:volume>16</prism:volume>
+        <dc:title>Annual Review of Economics</dc:title>
+        <dc:identifier>ISSN 1941-1383, 1941-1391</dc:identifier>
+        <prism:number>1</prism:number>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_30">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/30/Acemoglu e Johnson - 2024 - Learning From Ricardo and Thompson Machinery and Labor in the Early Industrial Revolution and in th.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://academic.oup.com/ej/article/117/521/F189-F217/5086601">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0013-0133,%201468-0297"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kerr</foaf:surname>
+                        <foaf:givenName>William R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kugler</foaf:surname>
+                        <foaf:givenName>Adriana D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <dc:title>Does Employment Protection Reduce Productivity? Evidence from US States</dc:title>
+        <dc:date>2007-06-01</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/ej/article/117/521/F189-F217/5086601</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:34</dcterms:dateSubmitted>
+        <z:shortTitle>Does Employment Protection Reduce Productivity?</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>http://doi.wiley.com/10.1002/tdm_license_1.1</dc:rights>
+        <bib:pages>F189-F217</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0013-0133,%201468-0297">
+        <dc:identifier>DOI 10.1111/j.1468-0297.2007.02055.x</dc:identifier>
+        <prism:volume>117</prism:volume>
+        <dc:title>The Economic Journal</dc:title>
+        <dc:identifier>ISSN 0013-0133, 1468-0297</dc:identifier>
+        <prism:number>521</prism:number>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/39/Autor et al. - 2007 - Does Employment Protection Reduce Productivity Evidence from US States.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-0-443-29766-3">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>DOI 10.1016/bs.heslab.2025.07.004</dc:identifier>
+                <prism:volume>6</prism:volume>
+                <dc:identifier>ISBN 978-0-443-29766-3</dc:identifier>
+                <dc:title>Handbook of Labor Economics</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>Elsevier</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dorn</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hanson</foaf:surname>
+                        <foaf:givenName>Gordon H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jones</foaf:surname>
+                        <foaf:givenName>Maggie R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Setzler</foaf:surname>
+                        <foaf:givenName>Bradley</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_40"/>
+        <dc:title>Places versus people: The ins and outs of labor market adjustment to globalization</dc:title>
+        <dc:date>2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S1573446325000045</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:35</dcterms:dateSubmitted>
+        <z:shortTitle>Places versus people</z:shortTitle>
+        <z:language>English</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>https://www.elsevier.com/tdm/userlicense/1.0/</dc:rights>
+        <bib:pages>549–653</bib:pages>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_40">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/40/Autor et al. - 2025 - Places versus people The ins and outs of labor market adjustment to globalization.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.journals.uchicago.edu/doi/10.1086/669332">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1086/669332</dc:identifier>
+                <prism:volume>31</prism:volume>
+                <dc:title>Journal of Labor Economics</dc:title>
+                <prism:number>S1</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Handel</foaf:surname>
+                        <foaf:givenName>Michael J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_41"/>
+        <dc:title>Putting tasks to the test: Human capital, job tasks, and wages</dc:title>
+        <dc:date>2013-04</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.journals.uchicago.edu/doi/10.1086/669332</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>S59–S96</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_41">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/41/Autor e Handel - 2013 - Putting tasks to the test Human capital, job tasks, and wages.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.science.org/doi/10.1126/science.1251868">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0036-8075,%201095-9203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_43"/>
+        <dc:title>Skills, education, and the rise of earnings inequality among the “other 99 percent”</dc:title>
+        <dcterms:abstract>The singular focus of public debate on the “top 1 percent” of households overlooks the component of earnings inequality that is arguably most consequential for the “other 99 percent” of citizens: the dramatic growth in the wage premium associated with higher education and cognitive ability. This Review documents the central role of both the supply and demand for skills in shaping inequality, discusses why skill demands have persistently risen in industrialized countries, and considers the economic value of inequality alongside its potential social costs. I conclude by highlighting the constructive role for public policy in fostering skills formation and preserving economic mobility.</dcterms:abstract>
+        <dc:date>2014-05-23</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/10.1126/science.1251868</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:37</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>843-851</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0036-8075,%201095-9203">
+        <dc:identifier>DOI 10.1126/science.1251868</dc:identifier>
+        <prism:volume>344</prism:volume>
+        <dc:title>Science</dc:title>
+        <dc:identifier>ISSN 0036-8075, 1095-9203</dc:identifier>
+        <prism:number>6186</prism:number>
+        <dcterms:alternative>Science</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_43">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/43/Autor - 2014 - Skills, education, and the rise of earnings inequality among the “other 99 percent”.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.aeaweb.org/doi/10.1257/000282806777212620">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1257/000282806777212620</dc:identifier>
+                <prism:volume>96</prism:volume>
+                <dc:title>American Economic Review</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Katz</foaf:surname>
+                        <foaf:givenName>Lawrence F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kearney</foaf:surname>
+                        <foaf:givenName>Melissa S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_44"/>
+        <dc:title>The polarization of the U.S. labor market</dc:title>
+        <dcterms:abstract>A), routine (R), and manual (M); and we consider them to correspond roughly to high-, intermediate-, and low-skilled occupations. Lastly, we observe that workers’ ability to engage in speciﬁc tasks is contingent on their education. We assume that there are two types of workers: college workers, who can perform abstract tasks; and high school workers who can substitute between routine and manual tasks.</dcterms:abstract>
+        <dc:date>2006-05</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubs.aeaweb.org/doi/10.1257/000282806777212620</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>189–194</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_44">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/44/Autor et al. - 2006 - The polarization of the U.S. labor market.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.aeaweb.org/doi/10.1257/pandp.20191110">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2574-0768,%202574-0776"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Autor</foaf:surname>
+                        <foaf:givenName>David H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_45"/>
+        <dc:title>Work of the Past, Work of the Future</dc:title>
+        <dcterms:abstract>US cities today are vastly more educated and skill-intensive than they were five decades ago. Yet, urban non-college workers perform substantially less skilled jobs than decades earlier. This deskilling reflects the joint effects of automation and, secondarily, rising international trade, which have eliminated the bulk of non-college production, administrative support, and clerical jobs, yielding a disproportionate polarization of urban labor markets. The unwinding of the urban non-college occupational skill gradient has, I argue, abetted a secular fall in real non-college wages by: (1) shunting non-college workers out of specialized middle-skill occupations into low-wage occupations that require only generic skills; (2) diminishing the set of non-college workers that hold middle-skill jobs in high-wage cities; and (3) attenuating, to a startling degree, the steep urban wage premium for non-college workers that prevailed in earlier decades. Changes in the nature of work--many of which are technological in origin--have been more disruptive and less beneficial for non-college than college workers.</dcterms:abstract>
+        <dc:date>2019-05-01</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubs.aeaweb.org/doi/10.1257/pandp.20191110</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:37:40</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>1-32</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2574-0768,%202574-0776">
+        <dc:identifier>DOI 10.1257/pandp.20191110</dc:identifier>
+        <prism:volume>109</prism:volume>
+        <dc:title>AEA Papers and Proceedings</dc:title>
+        <dc:identifier>ISSN 2574-0768, 2574-0776</dc:identifier>
+        <dcterms:alternative>AEA Papers and Proceedings</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_45">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/45/Autor - 2019 - Work of the Past, Work of the Future.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/10.1111/ilr.12412">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1111/ilr.12412</dc:identifier>
+                <prism:volume>163</prism:volume>
+                <dc:title>International Labour Review</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adamczyk</foaf:surname>
+                        <foaf:givenName>Willian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ehrl</foaf:surname>
+                        <foaf:givenName>Philipp</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Monasterio</foaf:surname>
+                        <foaf:givenName>Leonardo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_47"/>
+        <dc:title>Skills and employment transitions in Brazil</dc:title>
+        <dcterms:abstract>This paper introduces two methods to derive internationally comparable skills and occupational distance based on machine learning and natural language processing techniques. We apply these measures to analyse employment transitions and workers’ wage distribution in Brazil using the universe of formal labour contracts covering the period from 2003 to 2018. Our findings show that workers who use non-routine cognitive skills intensively are better off in terms of employment, wages, and occupational switching. Overall, we observe signs of a routine-biased technological change and employment polarisation, however, this trend has only emerged since the Brazilian economic crisis of 2014.</dcterms:abstract>
+        <dc:date>2024-06</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/10.1111/ilr.12412</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>199–224</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_47">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/47/Adamczyk et al. - 2024 - Skills and employment transitions in Brazil.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://www.nber.org/papers/w33777">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cambridge, MA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>National Bureau of Economic Research</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Humlum</foaf:surname>
+                        <foaf:givenName>Anders</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vestergaard</foaf:surname>
+                        <foaf:givenName>Emilie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_102"/>
+        <dc:title>Still waters, rapid currents: Early labor market transformation under generative AI</dc:title>
+        <dcterms:abstract>We study the early labor market impacts of AI chatbots by linking large-scale adoption surveys to administrative labor market records in Denmark. We document rapid currents: most employers in exposed occupations have adopted chatbot initiatives, workers report productivity benefits, and new AI-related tasks are widespread. Yet these currents have not broken the surface: using difference-in-differences, we estimate precise null effects on earnings and recorded hours at both the worker and workplace levels, ruling out effects larger than 2% two years after the launch of ChatGPT. What moves is the structure of work: employers absorb AI through task reorganization—including new tasks in content generation, AI oversight, and AI integration—and adopters transition into higher-paying occupations where AI chatbots are more relevant, though still too few to move average earnings. Technological change reshapes work well before it surfaces in earnings or hours.</dcterms:abstract>
+        <dc:date>2025-05</dc:date>
+        <dc:identifier>DOI 10.3386/w33777</dc:identifier>
+        <z:citationKey>humlum_still_2025</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.nber.org/papers/w33777</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <dc:description>Revised March 2026</dc:description>
+        <prism:number>33777</prism:number>
+        <z:type>NBER Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_102">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/102/humlum_nber_2026-03.pdf"/>
+        <dc:title>humlum_nber_2026-03</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="urn:isbn:978-92-861-6087-5">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Luxembourg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>European Investment Bank</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aldasoro</foaf:surname>
+                        <foaf:givenName>Iñaki</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gambacorta</foaf:surname>
+                        <foaf:givenName>Leonardo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pal</foaf:surname>
+                        <foaf:givenName>Rozalia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Revoltella</foaf:surname>
+                        <foaf:givenName>Debora</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weiss</foaf:surname>
+                        <foaf:givenName>Christoph</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wolski</foaf:surname>
+                        <foaf:givenName>Marcin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_57"/>
+        <dc:title>AI adoption, productivity and employment: Evidence from European firms</dc:title>
+        <dcterms:abstract>This paper provides new evidence on how the adoption of artificial intelligence (AI) affects productivity and employment in Europe. Using matched EIBIS-ORBIS data on more than 12,000 non-financial firms in the European Union (EU) and United States (US), we instrument the adoption of AI by EU firms by assigning the adoption rates of US peers to isolate exogenous technological exposure. Our results show that AI adoption increases the level of labor productivity by 4%. Productivity gains are due to capital deepening, as we find no adverse effects on firm-level employment. This suggests that AI increases worker output rather than replacing labor in the short run, though longer-term effects remain uncertain. However, productivity benefits of AI adoption are unevenly distributed and concentrate in medium and large firms. Moreover, AI-adopting firms are more innovative and their workers earn higher wages. Our analysis also highlights the critical role of complementary investments in software and data or workforce training to fully unlock the productivity gains of AI adoption.</dcterms:abstract>
+        <dc:date>2026-01</dc:date>
+        <dc:identifier>DOI 10.2867/1772538</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.2867/1772538</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:39:13</dcterms:dateSubmitted>
+        <z:language>English</z:language>
+        <z:libraryCatalog>DOI.org (CSL JSON)</z:libraryCatalog>
+        <dc:identifier>ISBN 978-92-861-6087-5</dc:identifier>
+        <bib:pages>40</bib:pages>
+        <dc:identifier>ISSN 2599-736X</dc:identifier>
+        <prism:number>2026/02</prism:number>
+        <z:type>EIB Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_57">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/57/Aldasoro et al. - 2026 - AI adoption, productivity and employment Evidence from European firms.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0167268124004591">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:01672681"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Teutloff</foaf:surname>
+                        <foaf:givenName>Ole</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Einsiedler</foaf:surname>
+                        <foaf:givenName>Johanna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kässi</foaf:surname>
+                        <foaf:givenName>Otto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Braesemann</foaf:surname>
+                        <foaf:givenName>Fabian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mishkin</foaf:surname>
+                        <foaf:givenName>Pamela</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Del Rio-Chanona</foaf:surname>
+                        <foaf:givenName>R. Maria</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_58"/>
+        <dc:title>Winners and losers of generative AI: Early Evidence of Shifts in Freelancer Demand</dc:title>
+        <dcterms:abstract>We examine how ChatGPT has changed the demand for freelancers in jobs where generative AI tools can act as substitutes or complements to human labor. Using BERTopic we partition job postings from a leading online freelancing platform into 116 fine-grained skill clusters and with GPT-4o we classify them as substitutable, complementary or unaffected by LLMs. Our analysis reveals that labor demand increased after the launch of ChatGPT, but only in skill clusters that were complementary to or unaffected by the AI tool. In contrast, demand for substitutable skills, such as writing and translation, decreased by 20–50% relative to the counterfactual trend, with the sharpest decline observed for short-term (1-3 week) jobs. Within complementary skill clusters, the results are mixed: demand for machine learning programming grew by 24%, and demand for AI-powered chatbot development nearly tripled, while demand for novice workers declined in general. This result suggests a shift toward more specialized expertise for freelancers rather than uniform growth across all complementary areas.</dcterms:abstract>
+        <dc:date>07/2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0167268124004591</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:39:15</dcterms:dateSubmitted>
+        <z:shortTitle>Winners and losers of generative AI</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>106845</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:01672681">
+        <dc:identifier>DOI 10.1016/j.jebo.2024.106845</dc:identifier>
+        <prism:volume>235</prism:volume>
+        <dc:title>Journal of Economic Behavior &amp; Organization</dc:title>
+        <dc:identifier>ISSN 01672681</dc:identifier>
+        <dcterms:alternative>Journal of Economic Behavior &amp; Organization</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_58">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/58/Teutloff et al. - 2025 - Winners and losers of generative AI Early Evidence of Shifts in Freelancer Demand.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubsonline.informs.org/doi/10.1287/orsc.2023.18441">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1287/orsc.2023.18441</dc:identifier>
+                <prism:volume>35</prism:volume>
+                <dc:title>Organization Science</dc:title>
+                <prism:number>6</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hui</foaf:surname>
+                        <foaf:givenName>Xiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reshef</foaf:surname>
+                        <foaf:givenName>Oren</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhou</foaf:surname>
+                        <foaf:givenName>Luofeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_59"/>
+        <dc:title>The short-term effects of generative artificial intelligence on employment: Evidence from an online labor market</dc:title>
+        <dcterms:abstract>Generative Artificial Intelligence (AI) holds the potential to either complement knowledge workers by increasing their productivity or substitute them entirely. We examine the short-term effects of the recent release of the large language model (LLM), ChatGPT, on the employment outcomes of freelancers on a large online platform. We find that freelancers in highly affected occupations suffer from the introduction of generative AI, experiencing reductions in both employment and earnings. We find similar effects studying the release of other image-based, generative AI models. Exploring the heterogeneity by freelancers’ employment history, we do not find evidence that high-quality service, measured by their past performance and employment, moderates the adverse effects on employment. In fact, we find suggestive evidence that top freelancers are disproportionately affected by AI. These results suggest that in the short term generative AI reduces overall demand for knowledge workers of all types, and may have the potential to narrow gaps among workers.</dcterms:abstract>
+        <dc:date>2024-11</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubsonline.informs.org/doi/10.1287/orsc.2023.18441</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>1977–1989</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_59">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/59/Hui et al. - 2024 - The short-term effects of generative artificial intelligence on employment Evidence from an online.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>SSRN</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klein Teeselink</foaf:surname>
+                        <foaf:givenName>Bouke</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_60"/>
+        <dc:title>Generative AI and labor market outcomes: Evidence from the United Kingdom</dc:title>
+        <dcterms:abstract>This paper examines the effects of LLMs on UK labor market outcomes. We use a difference-in-differences design that compares outcomes across firms and occupations from 2021 to 2025 based on their differential exposure to LLM capabilities. Our results show that highly exposed firms reduce employment, with effects concentrated in junior positions. These firms sharply curtail new hiring, with technical and creative roles experiencing the steepest declines. At the occupation level, roles more exposed to LLMs also show substantial reductions in job listings. The observed effects concentrate almost entirely in high-wage segments. Hence, our findings suggest that LLMs may compress wage inequality.</dcterms:abstract>
+        <dc:date>2025-12-21</dc:date>
+        <dc:identifier>DOI 10.2139/ssrn.5516798</dc:identifier>
+        <z:citationKey>klein_teeselink_generative_2025</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>46</bib:pages>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/60/Klein Teeselink - 2025 - Generative AI and labor market outcomes Evidence from the United Kingdom.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425555">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>SSRN</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hosseini Maasoum</foaf:surname>
+                        <foaf:givenName>Seyed Mahdi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lichtinger</foaf:surname>
+                        <foaf:givenName>Guy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_61"/>
+        <dc:title>Generative AI as seniority-biased technological change: Evidence from U.S. résumé and job posting data</dc:title>
+        <dcterms:abstract>This paper studies whether generative AI (GenAI) constitutes seniority-biased technological change, disproportionately reducing demand for junior workers. We develop a conceptual framework in which GenAI adoption reduces junior labor demand through task displacement and labor-saving productivity gains. We test the framework’s mechanisms and implications using U.S. résumé data covering 65 million workers at more than 280,000 firms, allowing us to track firm-level employment by seniority. GenAI adoption is identified through text analysis that detects ‘GenAI integrator’ job postings, signaling active GenAI implementation by firms. Following adoption, junior employment declines in adopting firms relative to non-adopters, while senior employment trends remain largely unchanged. This decline is concentrated in occupations most exposed to GenAI and is driven primarily by slower hiring rather than increased separations. Moreover, in adopting firms, GenAI-exposed tasks become increasingly less likely to appear in junior task bundles.</dcterms:abstract>
+        <dc:date>2025-08-31</dc:date>
+        <dc:identifier>DOI 10.2139/ssrn.5425555</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425555</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>109</bib:pages>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_61">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/61/Hosseini Maasoum e Lichtinger - 2025 - Generative AI as seniority-biased technological change Evidence from U.S. résumé and job posting da.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://hai.stanford.edu/ai-index/2026-ai-index-report">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>Stanford Institute for Human-Centered Artificial Intelligence</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stanford Institute for Human-Centered Artificial Intelligence</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_68"/>
+        <dc:title>AI Index Report 2026</dc:title>
+        <dc:date>2026</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://hai.stanford.edu/ai-index/2026-ai-index-report</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:type>Annual Report</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_68">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/68/Stanford Institute for Human-Centered Artificial Intelligence - 2026 - AI Index Report 2026.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>Anthropic</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Appel</foaf:surname>
+                        <foaf:givenName>Ruth</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Massenkoff</foaf:surname>
+                        <foaf:givenName>Maxim</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McCrory</foaf:surname>
+                        <foaf:givenName>Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McCain</foaf:surname>
+                        <foaf:givenName>Miles</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heller</foaf:surname>
+                        <foaf:givenName>Ryan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Neylon</foaf:surname>
+                        <foaf:givenName>Tyler</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tamkin</foaf:surname>
+                        <foaf:givenName>Alex</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_70"/>
+        <dc:title>Anthropic Economic Index report: Economic primitives</dc:title>
+        <dc:date>2026-01-15</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.anthropic.com/research/anthropic-economic-index-january-2026-report</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <z:type>Research Report</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_70">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/70/Appel et al. - 2026 - Anthropic Economic Index report Economic primitives.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://www.nber.org/papers/w31422">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cambridge, MA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>National Bureau of Economic Research</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Agarwal</foaf:surname>
+                        <foaf:givenName>Nikhil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moehring</foaf:surname>
+                        <foaf:givenName>Alex</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rajpurkar</foaf:surname>
+                        <foaf:givenName>Pranav</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Salz</foaf:surname>
+                        <foaf:givenName>Tobias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_72"/>
+        <dc:title>Combining human expertise with artificial intelligence: Experimental evidence from radiology</dc:title>
+        <dcterms:abstract>While Artificial Intelligence (AI) algorithms have achieved performance levels comparable to human experts on various predictive tasks, human experts can still access valuable contextual information not yet incorporated into AI predictions. Humans assisted by AI predictions could outperform both human-alone or AI-alone. We conduct an experiment with professional radiologists that varies the availability of AI assistance and contextual information to study the effectiveness of human-AI collaboration and to investigate how to optimize it. Our findings reveal that (i) providing AI predictions does not uniformly increase diagnostic quality, and (ii) providing contextual information does increase quality. Radiologists do not fully capitalize on the potential gains from AI assistance because of large deviations from the benchmark Bayesian model with correct belief updating. The observed errors in belief updating can be explained by radiologists’ partially underweighting the AI’s information relative to their own and not accounting for the correlation between their own information and AI predictions. In light of these biases, we design a collaborative system between radiologists and AI. Our results demonstrate that, unless the documented mistakes can be corrected, the optimal solution involves assigning cases either to humans or to AI, but rarely to a human assisted by AI.</dcterms:abstract>
+        <dc:date>2023-07</dc:date>
+        <dc:identifier>DOI 10.3386/w31422</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.nber.org/papers/w31422</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <prism:number>31422</prism:number>
+        <z:type>NBER Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_72">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/72/Agarwal et al. - 2023 - Combining human expertise with artificial intelligence Experimental evidence from radiology.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_74">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/74/w32966.pdf"/>
+        <dc:title>w32966</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://repositorio.ipea.gov.br/bitstreams/e09cc868-669f-4064-b396-693e22e0ce07/download">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Brasília</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Instituto de Pesquisa Econômica Aplicada</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Osorio</foaf:surname>
+                        <foaf:givenName>Rafael Guerreiro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_75"/>
+        <dc:title>O sistema classificatório de “cor ou raça” do IBGE</dc:title>
+        <dc:date>2003-11</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://repositorio.ipea.gov.br/bitstreams/e09cc868-669f-4064-b396-693e22e0ce07/download</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>Português</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <prism:number>996</prism:number>
+        <z:type>Texto para Discussão</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_75">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/75/Osorio - 2003 - O sistema classificatório de “cor ou raça” do IBGE.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Report rdf:about="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5384519">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Stanford Digital Economy Laboratory</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chandar</foaf:surname>
+                        <foaf:givenName>Bharat</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_78"/>
+        <dc:title>Tracking employment changes in AI-exposed jobs</dc:title>
+        <dc:date>2025-06-03</dc:date>
+        <dc:identifier>DOI 10.2139/ssrn.5384519</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5384519</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <bib:pages>23</bib:pages>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_78">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/78/Chandar - 2025 - Tracking Employment Changes in AI-Exposed Jobs.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Legislation rdf:about="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12342.htm">
+        <z:itemType>statute</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>Brasil</foaf:surname></foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <z:citationKey>brasil_decreto_12342_2024</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12342.htm</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25</dcterms:dateSubmitted>
+        <z:shortTitle>Decreto nº 12.342/2024</z:shortTitle>
+        <z:language>pt-BR</z:language>
+        <z:code>Dirio Oficial da Unio</z:code>
+        <dc:title>Decreto nº 12.342, de 30 de dezembro de 2024</dc:title>
+        <z:codeNumber>12.342</z:codeNumber>
+        <dc:date>2024-12-30</dc:date>
+    </bib:Legislation>
+    <bib:Article rdf:about="https://doi.org/10.1093/restud/rdad018">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0034-6527,%201467-937X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rambachan</foaf:surname>
+                        <foaf:givenName>Ashesh</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roth</foaf:surname>
+                        <foaf:givenName>Jonathan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_81"/>
+        <dc:title>A More Credible Approach to Parallel Trends</dc:title>
+        <dcterms:abstract>Abstract
+            This paper proposes tools for robust inference in difference-in-differences and event-study designs where the parallel trends assumption may be violated. Instead of requiring that parallel trends holds exactly, we impose restrictions on how different the post-treatment violations of parallel trends can be from the pre-treatment differences in trends (“pre-trends”). The causal parameter of interest is partially identified under these restrictions. We introduce two approaches that guarantee uniformly valid inference under the imposed restrictions, and we derive novel results showing that they have desirable power properties in our context. We illustrate how economic knowledge can inform the restrictions on the possible violations of parallel trends in two economic applications. We also highlight how our approach can be used to conduct sensitivity analyses showing what causal conclusions can be drawn under various restrictions on the possible violations of the parallel trends assumption.</dcterms:abstract>
+        <dc:date>2023</dc:date>
+        <z:citationKey>rambachan_more_2023</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1093/restud/rdad018</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-28 18:06:48</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>https://academic.oup.com/pages/standard-publication-reuse-rights</dc:rights>
+        <bib:pages>2555-2591</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0034-6527,%201467-937X">
+        <dc:identifier>DOI 10.1093/restud/rdad018</dc:identifier>
+        <prism:volume>90</prism:volume>
+        <dc:title>The Review of Economic Studies</dc:title>
+        <dc:identifier>ISSN 0034-6527, 1467-937X</dc:identifier>
+        <prism:number>5</prism:number>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_81">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/81/Rambachan e Roth - 2023 - A More Credible Approach to Parallel Trends.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1093/qje/qjad054">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1093/qje/qjad054</dc:identifier>
+                <prism:volume>139</prism:volume>
+                <dc:title>The Quarterly Journal of Economics</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Jiafeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roth</foaf:surname>
+                        <foaf:givenName>Jonathan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_90"/>
+        <link:link rdf:resource="#item_82"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Economics - Econometrics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Methodology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Logs with Zeros? Some Problems and Solutions</dc:title>
+        <dcterms:abstract>When studying an outcome Y that is weakly-positive but can equal zero (e.g. earnings), researchers frequently estimate an average treatment eﬀect (ATE) for a “log-like” transformation that behaves like logpY q for large Y but is deﬁned at zero (e.g. logp1`Y q, arcsinhpY q). We argue that ATEs for log-like transformations should not be interpreted as approximating percentage eﬀects, since unlike a percentage, they depend on the units of the outcome. In fact, we show that if the treatment aﬀects the extensive margin, one can obtain a treatment eﬀect of any magnitude simply by re-scaling the units of Y before taking the log-like transformation. This arbitrary unit-dependence arises because an individual-level percentage eﬀect is not well-deﬁned for individuals whose outcome changes from zero to non-zero when receiving treatment, and the units of the outcome implicitly determine how much weight the ATE for a log-like transformation places on the extensive margin. We further establish a trilemma: when the outcome can equal zero, there is no treatment eﬀect parameter that is an average of individual-level treatment eﬀects, unit-invariant, and point-identiﬁed. We discuss several alternative approaches that may be sensible in settings with an intensive and extensive margin, including (i) expressing the ATE in levels as a percentage (e.g. using Poisson regression), (ii) explicitly calibrating the value placed on the intensive and extensive margins, and (iii) estimating separate eﬀects for the two margins (e.g. using Lee bounds). We illustrate these approaches in three empirical applications.</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <z:citationKey>chen_logs_2024</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1093/qje/qjad054</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-28 18:06:49</dcterms:dateSubmitted>
+        <z:shortTitle>Logs with zeros?</z:shortTitle>
+        <z:language>en</z:language>
+        <bib:pages>891-936</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_90">
+       <rdf:value>Comment: Accepted, Quarterly Journal of Economics</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_82">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/82/Chen e Roth - 2024 - Logs with Zeros Some Problems and Solutions.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1257/aer.20181169">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1257/aer.20181169</dc:identifier>
+                <prism:volume>110</prism:volume>
+                <dc:title>American Economic Review</dc:title>
+                <dc:identifier>ISSN 0002-8282</dc:identifier>
+                <prism:number>9</prism:number>
+                <dcterms:alternative>American Economic Review</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>de Chaisemartin</foaf:surname>
+                        <foaf:givenName>Clément</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>D'Haultfœuille</foaf:surname>
+                        <foaf:givenName>Xavier</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_92"/>
+        <link:link rdf:resource="#item_84"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Economics - Econometrics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects</dc:title>
+        <dcterms:abstract>Linear regressions with period and group ﬁxed eﬀects are widely used to estimate treatment eﬀects. We show that they estimate weighted sums of the average treatment eﬀects (ATE) in each group and period, with weights that may be negative. Due to the negative weights, the linear regression coeﬃcient may for instance be negative while all the ATEs are positive. We propose another estimator that solves this issue. In the two applications we revisit, it is signiﬁcantly diﬀerent from the linear regression estimator.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <z:citationKey>de_chaisemartin_two-way_2020</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1257/aer.20181169</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-28 18:06:52</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <bib:pages>2964-2996</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_92">
+        <rdf:value>Comment: First version: March 2018. 71 pages (main paper until page 36, then supplement)</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_84">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/84/de Chaisemartin e D'Haultfœuille - 2020 - Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1016/j.jeconom.2020.09.006">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1016/j.jeconom.2020.09.006</dc:identifier>
+                <prism:volume>225</prism:volume>
+                <dc:title>Journal of Econometrics</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Liyang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abraham</foaf:surname>
+                        <foaf:givenName>Sarah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_94"/>
+        <link:link rdf:resource="#item_85"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Economics - Econometrics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects</dc:title>
+        <dcterms:abstract>To estimate the dynamic effects of an absorbing treatment, researchers often use two-way ﬁxed effects regressions that include leads and lags of the treatment. We show that in settings with variation in treatment timing across units, the coefﬁcient on a given lead or lag can be contaminated by effects from other periods, and apparent pretrends can arise solely from treatment effects heterogeneity. We propose an alternative estimator that is free of contamination, and illustrate the relative shortcomings of two-way ﬁxed effects regressions with leads and lags through an empirical application.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:citationKey>sun_estimating_2021</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1016/j.jeconom.2020.09.006</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-28 18:06:53</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <bib:pages>175-199</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_94">
+       <rdf:value>Comment: 51 pages, 3 figures</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_85">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/85/Sun e Abraham - 2021 - Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1016/j.jeconom.2020.12.001">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1016/j.jeconom.2020.12.001</dc:identifier>
+                <prism:volume>225</prism:volume>
+                <dc:title>Journal of Econometrics</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Callaway</foaf:surname>
+                        <foaf:givenName>Brantly</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sant'Anna</foaf:surname>
+                        <foaf:givenName>Pedro H. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_86"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Economics - Econometrics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Mathematics - Statistics Theory</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Applications</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Difference-in-Differences with Multiple Time Periods</dc:title>
+        <dcterms:abstract>In this article, we consider identiﬁcation, estimation, and inference procedures for treatment eﬀect parameters using Diﬀerence-in-Diﬀerences (DiD) with (i) multiple time periods, (ii) variation in treatment timing, and (iii) when the “parallel trends assumption” holds potentially only after conditioning on observed covariates. We show that a family of causal eﬀect parameters are identiﬁed in staggered DiD setups, even if diﬀerences in observed characteristics create non-parallel outcome dynamics between groups. Our identiﬁcation results allow one to use outcome regression, inverse probability weighting, or doubly-robust estimands. We also propose diﬀerent aggregation schemes that can be used to highlight treatment eﬀect heterogeneity across diﬀerent dimensions as well as to summarize the overall eﬀect of participating in the treatment. We establish the asymptotic properties of the proposed estimators and prove the validity of a computationally convenient bootstrap procedure to conduct asymptotically valid simultaneous (instead of pointwise) inference. Finally, we illustrate the relevance of our proposed tools by analyzing the eﬀect of the minimum wage on teen employment from 2001–2007. Open-source software is available for implementing the proposed methods.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:citationKey>callaway_difference_2021</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1016/j.jeconom.2020.12.001</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-28 18:06:54</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <bib:pages>200-230</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_86">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/86/Callaway e Sant'Anna - 2021 - Difference-in-Differences with Multiple Time Periods.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1016/j.jeconom.2021.03.014">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1016/j.jeconom.2021.03.014</dc:identifier>
+                <prism:volume>225</prism:volume>
+                <dc:title>Journal of Econometrics</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goodman-Bacon</foaf:surname>
+                        <foaf:givenName>Andrew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_87"/>
+        <dc:title>Difference-in-Differences with Variation in Treatment Timing</dc:title>
+        <dcterms:abstract>The canonical difference-in-differences (DD) model contains two time periods, “pre” and “post”, and two groups, “treatment” and “control”. Most DD applications, however, exploit variation across groups of units that receive treatment at different times. This paper derives an expression for this general DD estimator, and shows that it is a weighted average of all possible two-group/ two-period DD estimators in the data. This result provides detailed guidance about how to use regression DD in practice. I define the DD estimand and show how it averages treatment effect heterogeneity and that it is biased when effects change over time. I propose a new balance test derived from a unified definition of common trends. I show how to decompose the difference between two specifications, and I apply it to models that drop untreated units, weight, disaggregate time fixed effects, control for unit-specific time trends, or exploit a third difference.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:citationKey>goodman_bacon_difference_2021</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1016/j.jeconom.2021.03.014</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>254-277</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_87">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/87/Goodman-Bacon - 2021 - Difference-in-Differences with Variation in Treatment Timing.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1369-7412,%201467-9868"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Benjamini</foaf:surname>
+                        <foaf:givenName>Yoav</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hochberg</foaf:surname>
+                        <foaf:givenName>Yosef</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_97"/>
+        <dc:title>Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing</dc:title>
+        <dcterms:abstract>The common approach to the multiplicity problem calls for controlling the familywise error rate (FWER). This approach, though, has faults, and we point out a few. A different approach to problems of multiple significance testing is presented. It calls for controlling the expected proportion of falsely rejected hypotheses-the false discovery rate. This error rate is equivalent to the FWER when all hypotheses are true but is smaller otherwise. Therefore, in problems where the control of the false discovery rate rather than that of the FWER is desired, there is potential for a gain in power. A simple sequential Bonferronitype procedure is proved to control the false discovery rate for independent test statistics, and a simulation study shows that the gain in power is substantial. The use of the new procedure and the appropriateness of the criterion are illustrated with examples.</dcterms:abstract>
+        <dc:date>1995</dc:date>
+        <z:citationKey>benjamini_controlling_1995</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-28 18:07:41</dcterms:dateSubmitted>
+        <z:shortTitle>Controlling the False Discovery Rate</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model</dc:rights>
+        <bib:pages>289-300</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1369-7412,%201467-9868">
+        <dc:identifier>DOI 10.1111/j.2517-6161.1995.tb02031.x</dc:identifier>
+        <prism:volume>57</prism:volume>
+        <dc:title>Journal of the Royal Statistical Society: Series B (Methodological)</dc:title>
+        <dc:identifier>ISSN 1369-7412, 1467-9868</dc:identifier>
+        <prism:number>1</prism:number>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_97">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/97/Benjamini e Hochberg - 1995 - Controlling the False Discovery Rate A Practical and Powerful Approach to Multiple Testing.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1162/rest.88.4.641">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1162/rest.88.4.641</dc:identifier>
+                <prism:volume>88</prism:volume>
+                <dc:title>The Review of Economics and Statistics</dc:title>
+                <prism:number>4</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Santos Silva</foaf:surname>
+                        <foaf:givenName>J. M. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tenreyro</foaf:surname>
+                        <foaf:givenName>Silvana</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_99"/>
+        <dc:title>The Log of Gravity</dc:title>
+        <dc:date>2006</dc:date>
+        <z:citationKey>santos_silva_log_2006</z:citationKey>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1162/rest.88.4.641</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>en</z:language>
+        <bib:pages>641-658</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_99">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/99/Santos Silva e Tenreyro - 2006 - The Log of Gravity.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>00_Inbox</dc:title>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-92-2-042184-0"/>
+        <dcterms:hasPart rdf:resource="https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/"/>
+        <dcterms:hasPart rdf:resource="https://academic.oup.com/qje/article/118/4/1279/1925105"/>
+        <dcterms:hasPart rdf:resource="https://pubs.aeaweb.org/doi/10.1257/aer.20160696"/>
+        <dcterms:hasPart rdf:resource="https://sms.onlinelibrary.wiley.com/doi/10.1002/smj.3286"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2303.10130"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2304.11771"/>
+        <dcterms:hasPart rdf:resource="https://www.ssrn.com/abstract=4573321"/>
+        <dcterms:hasPart rdf:resource="https://www.nber.org/papers/w32140"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.20955/wp.2024.027"/>
+        <dcterms:hasPart rdf:resource="#item_31"/>
+        <dcterms:hasPart rdf:resource="#item_32"/>
+        <dcterms:hasPart rdf:resource="#item_33"/>
+        <dcterms:hasPart rdf:resource="#item_34"/>
+        <dcterms:hasPart rdf:resource="https://direct.mit.edu/rest/article/89/1/118-133/57634"/>
+        <dcterms:hasPart rdf:resource="https://publications.iadb.org/en/mirror-mirror-wall-which-jobs-will-ai-replace-after-all-new-index-occupational-exposure"/>
+        <dcterms:hasPart rdf:resource="https://www.journals.uchicago.edu/doi/10.1086/705716"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-0-444-53452-1"/>
+        <dcterms:hasPart rdf:resource="https://pubs.aeaweb.org/doi/10.1257/jep.33.2.3"/>
+        <dcterms:hasPart rdf:resource="https://pubs.aeaweb.org/doi/10.1257/jel.20241680"/>
+        <dcterms:hasPart rdf:resource="https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091823-025129"/>
+        <dcterms:hasPart rdf:resource="https://academic.oup.com/ej/article/117/521/F189-F217/5086601"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-0-443-29766-3"/>
+        <dcterms:hasPart rdf:resource="https://www.journals.uchicago.edu/doi/10.1086/669332"/>
+        <dcterms:hasPart rdf:resource="https://www.science.org/doi/10.1126/science.1251868"/>
+        <dcterms:hasPart rdf:resource="https://pubs.aeaweb.org/doi/10.1257/000282806777212620"/>
+        <dcterms:hasPart rdf:resource="https://pubs.aeaweb.org/doi/10.1257/pandp.20191110"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/10.1111/ilr.12412"/>
+        <dcterms:hasPart rdf:resource="https://www.nber.org/papers/w33777"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-92-861-6087-5"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0167268124004591"/>
+        <dcterms:hasPart rdf:resource="https://pubsonline.informs.org/doi/10.1287/orsc.2023.18441"/>
+        <dcterms:hasPart rdf:resource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798"/>
+        <dcterms:hasPart rdf:resource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425555"/>
+        <dcterms:hasPart rdf:resource="https://hai.stanford.edu/ai-index/2026-ai-index-report"/>
+        <dcterms:hasPart rdf:resource="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report"/>
+        <dcterms:hasPart rdf:resource="https://www.nber.org/papers/w31422"/>
+        <dcterms:hasPart rdf:resource="#item_74"/>
+        <dcterms:hasPart rdf:resource="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12342.htm"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1093/restud/rdad018"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1093/qje/qjad054"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1257/aer.20181169"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1016/j.jeconom.2020.09.006"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1016/j.jeconom.2020.12.001"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1016/j.jeconom.2021.03.014"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1162/rest.88.4.641"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_5">
+        <dc:title>01_Introduction</dc:title>
+        <dcterms:hasPart rdf:resource="https://academic.oup.com/qje/article/118/4/1279/1925105"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.20955/wp.2024.027"/>
+        <dcterms:hasPart rdf:resource="https://www.nber.org/papers/w31422"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_3">
+        <dc:title>02_Exposure_Indices</dc:title>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-92-2-042184-0"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2303.10130"/>
+        <dcterms:hasPart rdf:resource="https://publications.iadb.org/en/mirror-mirror-wall-which-jobs-will-ai-replace-after-all-new-index-occupational-exposure"/>
+        <dcterms:hasPart rdf:resource="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_4">
+        <dc:title>03_Empirical_Studies</dc:title>
+        <dcterms:hasPart rdf:resource="https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/"/>
+        <dcterms:hasPart rdf:resource="https://www.nber.org/papers/w33777"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-92-861-6087-5"/>
+        <dcterms:hasPart rdf:resource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798"/>
+        <dcterms:hasPart rdf:resource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425555"/>
+        <dcterms:hasPart rdf:resource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5384519"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_7">
+        <dc:title>04_Econometrics_and_Methodology</dc:title>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1093/restud/rdad018"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1093/qje/qjad054"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1257/aer.20181169"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1016/j.jeconom.2020.09.006"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1016/j.jeconom.2020.12.001"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1016/j.jeconom.2021.03.014"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1162/rest.88.4.641"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_6">
+        <dc:title>04_Others</dc:title>
+        <dcterms:hasPart rdf:resource="https://repositorio.ipea.gov.br/bitstreams/e09cc868-669f-4064-b396-693e22e0ce07/download"/>
+        <dcterms:hasPart rdf:resource="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12342.htm"/>
+    </z:Collection>
+</rdf:RDF>

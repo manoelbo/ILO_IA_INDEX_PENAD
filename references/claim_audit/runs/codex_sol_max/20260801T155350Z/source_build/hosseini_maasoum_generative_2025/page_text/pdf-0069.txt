@@ -1,0 +1,53 @@
+tasks x ∈ (α, x̂ ), augmented productivity is γ̃ J ( x ) = (1 + δ J )γ J ( x ), so the ratio of post- to
+pre-AI labor demand is
+
+                                         ∗post
+                                       lJ        (x)
+                                                                       σ
+                                                               Ppost
+                                                           
+                                         ∗pre          =                    (1 + δ J ) σ −1 .                            (31)
+                                        lJ      (x)            Ppre
+
+Since GenAI weakly reduces unit costs on every task—automated tasks satisfy c A ( x ) <
+w J /γ J ( x ) by assumption, augmented tasks have unit cost wk /((1 + δk )γk ( x )) ≤ wk /γk ( x ),
+and the threshold reallocation only occurs when it is cost-reducing—the post-AI cost in-
+dex satisfies Ppost ≤ Ppre , with strict inequality whenever α > 0 or δk > 0 for some k.35
+Write ρ ≡ ( Ppost /Ppre )σ ∈ (0, 1].
+    The ratio (31) is uniform across common junior tasks, so the sign of the productivity
+effect is determined by whether ρ · (1 + δ J )σ−1 exceeds, equals, or falls below one:
+
+    • σ < 1: (1 + δ J )σ−1 ≤ 1 (with equality iff δ J = 0) and ρ ≤ 1. The product is ≤ 1, with
+       strict inequality whenever δ J > 0 or α > 0. The productivity effect is non-positive.
+
+    • σ > 1: (1 + δ J )σ−1 ≥ 1 but ρ ≤ 1. Within-task augmentation raises labor demand
+       per task, while the reduction in the cost index lowers it. The sign is ambiguous in
+       general.
+
+    • σ = 1: (1 + δ J )0 = 1, so the ratio reduces to ρ = Ppost /Ppre ≤ 1. The within-task
+       augmentation effect vanishes and only the cost-index effect remains. The produc-
+       tivity effect is non-positive, and strictly negative whenever Ppost < Ppre .36
+
+Sufficient condition for net decline when σ ≤ 1.
+    When σ ≤ 1, the productivity effect is non-positive, so
+                                                 Z α                        Z x̂′
+                                                         ∗pre                        ∗post
+                                 ∆L∗J ≤ −              l J ( x ) dx +               lJ       ( x ) dx.                   (32)
+                                                  0                           x̂
+  35 The CES cost index P is increasing in each task’s unit cost. Since cost minimization assigns each task to
+
+the cheapest available input, and GenAI either automates tasks at lower cost or augments human produc-
+tivity, every task’s effective unit cost weakly decreases
+                                                      R after GenAI    adoption.
+   36 With σ = 1, the production function is Y = exp     1
+                                                        0 ln y ( x ) dx and cost minimization equalizes expen-
+diture across tasks: p( x ) y( x ) = P · Y for all x. Since p( x ) = w J /γ J ( x ) and y( x ) = γ J ( x ) l J ( x ), we obtain
+                                                                             ∗post                                      ∗pre
+w J l ∗J ( x ) = P · Y, i.e., l ∗J ( x ) = P Y/w J . After GenAI adoption, l J     ( x ) = Ppost Y/w J < Ppre Y/w J = l J ( x )
+whenever Ppost < Ppre .
+
+
+
+
+                                                               A.24
+

@@ -1,0 +1,66 @@
+                                                                                                                                                                                                               99
+
+                                                          Figure C.33: Conditional treatment effect given radiologist prediction
+                                                  (a) Deviation from Ground Truth                                                                                (b) Incorrect Decision
+ATE of AI on deviation from ground truth
+
+
+
+
+                                                  .05                                                                                                 .1
+
+
+
+
+                                                                                                             ATE of AI on incorrect decision
+                                                    0
+                                                                                                                                                       0
+
+                                                  -.05
+                                                                                                                                                      -.1
+                                                   -.1
+
+                                                                                                                                                      -.2
+                                                  -.15
+
+
+                                                   -.2                                                                                                -.3
+                                                         [0,0.2) [0.2,0.4) [0.4,0.6) [0.6,0.8) [0.8,1]                                                      [0,0.2)   [0.2,0.4) [0.4,0.6) [0.6,0.8)       [0.8,1]
+                                                                Radiologist probability bins without AI                                                            Radiologist probability bins without AI
+
+
+       Note: Main specifications similar to figure 3 with the exception that all patholgies with AI are considered.
+
+
+
+
+                                                               Figure C.34: Conditional treatment effect given AI prediction
+                                                  (a) Deviation from Ground Truth                                                                                (b) Incorrect Decision
+                                           .15                                                                                                 .15
+ATE on deviation from ground truth
+
+
+
+
+                                                                                                             ATE on incorrect decision
+
+
+
+
+                                             .1                                                                                                  .1
+
+
+                                           .05
+                                                                                                                                               .05
+
+                                             0
+                                                                                                                                                 0
+
+                                           -.05
+                                                                                                                                               -.05
+                                                    [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]                                             [0,0.2)      [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                                      AI prediction bins                                                                                    AI prediction bins
+
+
+       Note: Main specifications similar to figure 3 with the exception that all patholgies with AI are considered.
+

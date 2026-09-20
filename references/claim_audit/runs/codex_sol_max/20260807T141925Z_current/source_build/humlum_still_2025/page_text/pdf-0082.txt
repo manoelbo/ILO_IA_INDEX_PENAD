@@ -1,0 +1,36 @@
+structure typically falls into one of the following three categories:
+
+
+   • Sector-Level Bargaining (Centralized): Wages are negotiated centrally, with
+         wages largely determined by the combination of industry and occupation. These
+         agreements may include provisions for returns to tenure or education.
+
+   • Two-Tiered Bargaining: The union and employer organization negotiate either
+         a minimum hourly wage or a minimum income level for each industry-occupation
+         category. Actual wages are then negotiated at the firm level, potentially with union
+         support.
+
+   • Firm-Level Bargaining (Decentralized): No specific wages are set at the
+         collective level. Instead, all wage negotiations occur directly between the firm and
+         its employees. The precise form of firm-level bargaining can vary.
+
+
+       Table C.1 provides an overview of the wage-setting systems in our 11 study occupations.
+Decentralized (two-tiered or firm-level) bargaining systems are the most prevalent in our
+sample of 11 occupations. The main exception is teachers, who primarily work in the
+public sector and are typically subject to centralized wage-setting agreements.
+       However, not all workers in our sample are necessarily covered by CBAs. According to
+Danish union representatives, CBA coverage is especially limited in small private firms.28
+To provide an indication of expected coverage, Columns (1)-(3) of Table C.1 show the
+share of our sample employed in either large private firms (defined as firms with at least
+25 employees) or in the public sector, as proxies for likely CBA coverage. Columns (4)-(6)
+report the type of wage-setting system in place among workers who are covered by a CBA,
+utilizing the data collection from Dahl, Le Maire and Munch (2013).
+  28
+    We thank David Rosenqvist from Dansk Metal, the largest union for workers in the manufacturing
+sector, for sharing his insights with us.
+
+
+
+
+                                               32

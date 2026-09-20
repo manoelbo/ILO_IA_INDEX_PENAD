@@ -1,0 +1,47 @@
+6   Conclusion
+
+Predictions about genAI’s economic impact vary widely, driven by uncertainty over the share
+of work it can assist and the size of its productivity potential. This paper presents evidence
+from the first nationally representative U.S. surveys on generative AI use at work and home.
+We find that a substantial share of individuals already use genAI. Thus far, the pace of overall
+adoption is rapid compared with past ICT technologies. At work, genAI adoption has followed
+a similar pace to PCs and is far ahead of genAI adoption by firms. We document wide variation
+in genAI use across demographic groups and occupations, and provide evidence that both task
+composition and firm policies appear to play an important role in workers’ adoption choices.
+Although the intensity of genAI use varies widely, genAI already assists a noticeable share of
+total work hours, suggesting the potential for meaningful productivity gains.
+
+   Our findings help lay the groundwork for understanding the labor market implications of
+genAI. They can also inform responses by managers and policymakers along several dimensions,
+such as data center and electricity needs, workforce training, and competitive dynamics.
+
+
+References
+Abbate, J. (1999). “Getting small: a short history of the personal computer”. In: Proceedings
+   of the IEEE 87.9, pp. 1695–1698.
+Acemoglu, D. (2024). The Simple Macroeconomics of AI. Working Paper. National Bureau of
+   Economic Research.
+Acemoglu, D., D. Autor, J. Hazell, and P. Restrepo (2022). “Artificial intelligence and jobs:
+   Evidence from online vacancies”. In: Journal of Labor Economics 40.S1, S293–S340.
+Albanesi, S., A. Dias da Silva, J. F. Jimeno, A. Lamo, and A. Wabitsch (Nov. 2024). New
+   Technologies and Jobs in Europe. Working Paper. OIGI.
+Babina, T., A. Fedyk, A. He, and J. Hodson (2024). “Artificial intelligence, firm growth, and
+   product innovation”. In: Journal of Financial Economics 151, p. 103745.
+Barrero, J. M., N. Bloom, and S. J. Davis (2021). Why Working From Home Will Stick. Working
+   Paper. National Bureau of Economic Research.
+Bick, A. and A. Blandin (2023). “Employer reallocation during the COVID-19 pandemic: Val-
+   idation and application of a do-it-yourself CPS”. In: Review of Economic Dynamics 49,
+   pp. 58–76.
+Bick, A., A. Blandin, A. Caplan, and T. Caplan (2025a). “Heterogeneity in Work From Home:
+   Evidence from Six U.S. Datasets”. In: Federal Reserve Bank of St. Louis Review 107.14,
+   pp. 1–23.
+Bick, A., A. Blandin, A. Caplan, and T. Caplan (2025b). “Measuring Trends in Work From
+   Home: Evidence from Six U.S. Datasets”. In: Federal Reserve Bank of St. Louis Review
+   107.15, pp. 1–23.
+Bonney, K., C. Breaux, C. Buffington, E. Dinlersoz, L. S. Foster, N. Goldschlag, J. C. Halti-
+   wanger, Z. Kroff, and K. Savage (2024). Tracking firm use of AI in real time: A snapshot
+
+
+
+                                              26
+

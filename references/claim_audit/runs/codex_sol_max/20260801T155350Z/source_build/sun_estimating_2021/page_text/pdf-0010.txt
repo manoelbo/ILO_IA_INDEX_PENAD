@@ -1,0 +1,63 @@
+treatment at various times, and there may or may not be never treated units. This observation suggests an
+
+event study in the applied literature nests two popular research designs: difference-in-differences design, but
+
+also the design where units receive their first treatments at various times, which is our focus.2
+
+    We summarize the main specifications in this sample of twelve applied papers in Table 1.3 The columns
+
+of Table 1 collect key properties of these specifications. In Section 3.1, we introduce a general class of
+
+specifications that encompasses all of these specification. The estimates for relative period coefficients µ`
+
+from all these papers therefore fall under our analysis in the next section.
+
+    These papers demonstrated that event studies are used to address a broad range of research questions.
+
+As an example of this literature, Bailey and Goodman-Bacon (2015) use the rollout of the first Community
+
+Health Centers (CHCs) to study the longer-term health effects of increasing access to primary care. As
+
+another example, Tewari (2014) uses variation in the timing of deregulation across states to estimate the
+
+impact of financial development on homeownership.
+
+
+
+3     Estimators from linear two-way fixed effects regression
+
+We consider a two-way fixed effects (FE) regression of the following form, estimated on a panel of i =
+
+1, . . ., N units for t = 0, 1, . . .,T calendar time periods:
+
+                                                              Õ
+                                           Yi,t = αi + λt +         µg 1{t − Ei ∈ g} + υi,t                                  (4)
+                                                              g∈G
+
+
+Here Yi,t is the outcome of interest for unit i at time t, Ei is the time for unit i to initially receive a binary
+
+absorbing treatment, and αi and λt are the unit and time fixed effects. The set G collects disjoint sets g
+
+of relative periods ` ∈ [−T,T]. We allow some relative periods to be excluded from the specification and
+
+denote the excluded set with g excl = {` : ` <   g}. We denote by µg the relative period coefficients from
+                                               Ð
+                                                        g∈G
+regression (4), i.e. the population regression coefficients. Their corresponding OLS estimators are denoted
+
+   µg respectively.
+by b
+
+    We are interested in the properties of µg when there are variations in the initial treatment timing, and
+    2 This setup is the same as the staggered adoption design proposed by Athey and Imbens (2018), but we keep the term event
+
+study because it is common in the applied literature.
+    3 We focus on the first specification underlying the event study estimates in each paper, which we view as a reasonable proxy
+
+for the main specification in the paper.
+
+
+
+                                                                    10
+

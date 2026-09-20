@@ -1,0 +1,18 @@
+               Figure A.1: AI adoption among US-matched and all US firms
+
+
+
+
+Note: Average AI adoption rates across all US firms and US firms matched with EU counterparts.
+Propensity score matching is based on the 5 nearest neighbors in terms of investment intensity, innovator
+binary indicator, bond issuance binary indicator and business monitoring system binary indicator in the
+same sector and company size category. The difference between the unconditional and conditional US
+means is decomposed into the component that can be explained by the matching variables, normalization
+fixed effects and the residual, based on the Oaxaca-Blinder decomposition. Values are weighted by value
+added.
+
+
+
+
+                                                   28
+

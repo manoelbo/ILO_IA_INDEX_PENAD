@@ -1,0 +1,33 @@
+3.1    Empirical Strategy
+
+Evaluating the labor market impacts of AI chatbots raises several conceptual questions:
+What are the relevant treatments to consider? If the treatments have an effect, in which
+recorded labor market outcomes would they manifest? And how can we identify these
+impacts in the data?
+   Motivated by the dual nature of adoption—with variation across workplaces depending
+on their chatbot initiatives and within workplaces depending on individual use—we analyze
+impacts at both the worker and workplace levels.
+   Appendix A.2 presents a theoretical framework for how adoption translates into labor
+market outcomes at the worker and workplace levels, guiding the following analyses:
+
+  1. Worker earnings: If chatbots raise individual productivity, a natural question is
+      whether and how these improvements translate into earnings for users relative to
+      comparable non-users (Krueger, 1993). Wage effects depend on whether adoption is
+      worker- or firm-driven, whether chatbot use displaces users from higher-value tasks
+      or is valued as a nonpecuniary amenity, and the structure of wage setting (Autor
+      and Thompson, 2025; Becker, 1964; Card et al., 2018; Rosen, 1986). Section 3.2
+      investigates these questions by estimating the impacts of chatbot use on workers’
+      earnings by their intensity of use, employer initiatives, reported productivity gains,
+      new AI-related workloads, and wage-setting systems.
+
+  2. Workplace employment: If chatbots reduce the need for labor, adopting workplaces
+      might slow hiring or lay off workers. Conversely, if the tools boost productivity
+      and spur demand, adopting workplaces could expand employment. In particular,
+      concerns have been raised that generative AI could displace entry-level positions
+      (Amodei, 2025; Brynjolfsson, Chandar and Chen, 2025). Section 3.4 analyzes these
+      possibilities by estimating the effects of employer chatbot initiatives on workplace
+      employment, early-career jobs, job churn, and incumbent worker outcomes.
+
+  3. Job mobility: If chatbots are especially useful for newcomers to an occupation,
+
+                                            17

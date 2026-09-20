@@ -1,0 +1,77 @@
+                   Headcount over Time by Age Group
+                   Customer Service Representatives
+ 1.4
+ 1.3
+ 1.2                                                                    Early Career 1 (22-25)
+                                                                        Early Career 2 (26-30)
+ 1.1                                                                    Developing (31-34)
+                                                                        Mid-Career 1 (35-40)
+ 1.0                                                                    Mid-Career 2 (41-49)
+                                                                        Senior (50+)
+ 0.9
+ 0.8
+ 0.7
+       -01
+
+             -07
+
+                    -01
+
+                          -07
+
+                                -01
+
+                                           -07
+
+                                                 -01
+
+                                                        -07
+
+                                                              -01
+       21
+
+             21
+
+                   22
+
+                          22
+
+                                23
+
+                                      23
+
+                                                 24
+
+                                                       24
+
+                                                              25
+   20
+
+            20
+
+                  20
+
+                        20
+
+                               20
+
+                                     20
+
+                                             20
+
+                                                       20
+
+                                                            20
+
+
+
+
+                                    Date
+Figure A19: Employment changes for customer service representatives by age, normalized to 1 in
+October 2022. Data come from the monthly CPS.
+
+
+
+
+                                                  53
+

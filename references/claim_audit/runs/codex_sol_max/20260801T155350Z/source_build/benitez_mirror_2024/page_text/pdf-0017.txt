@@ -1,0 +1,28 @@
+the indexes developed by Felten et al. (2021) and Webb (2019). However, GENOE demonstrates
+moderate correlations with the indexes created by Frey and Osborne (2017) and Pizzinelli et al.
+(2023). The similarities and differences can be attributed to several key factors in methodological
+approach and focus.
+   Firstly, Frey and Osborne’s index places a higher emphasis on routinization, which aligns with
+our follow-up surveys, indicating a similar rationale behind our LLM models’ assessment. As
+shown in Appendix Figure A.2, the GENOE index is higher for occupations intensive in routine
+manual and routine cognitive tasks. Both Pizzinelli et al.’s C-AIOE and Frey and Osborne’s in-
+dexes also rank high for routine-intensive occupations, with Frey and Osborne’s index higher for
+manual tasks and Pizzinelli et al.’s index higher for cognitive tasks.
+   Additionally, both Frey and Osborne (2017) and Pizzinelli et al. (2023) incorporate contextual
+elements beyond merely overlapping tasks or abilities with AI advancements. Pizzinelli et al.’s
+core adjustment to Felten et al.’s index involves considering potential complementarities between
+technology and labor arising from the physical and social factors of occupations. These include
+ethical considerations, training, and technology integration into the workplace. Similarly, Frey
+and Osborne’s index adopts a holistic approach akin to ours. They evaluate not just isolated tasks
+or abilities but the overall occupation within a specific context and task composition to determine
+the extent of computerization.
+   The divergence from Felten et al.’s and Webb’s indexes may be attributed to their more narrow
+focus on specific technological advancements or task-technology matches, without fully account-
+ing for the broader occupational context or potential complementarities between AI and human
+labor.
+
+
+
+
+                                                 13
+

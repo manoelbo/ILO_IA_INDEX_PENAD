@@ -1,0 +1,37 @@
+Remote work. Another potential confounder is the post-pandemic normalization of
+remote work. Work-from-home arrangements may reduce demand for junior workers
+for reasons unrelated to automation, for example by increasing supervision costs and
+weakening opportunities for on-the-job learning. This concern is particularly relevant be-
+cause occupations that are well suited to remote work overlap substantially with those
+most exposed to GenAI (Lambert and Schindler, 2026). To assess this possibility, we
+re-estimate our seniority triple-difference specification (Equation 11) separately using
+employment in positions with high and low remote suitability, based on the position-
+level remote_suitability score in the Revelio individual-positions data.30 The seniority-
+biased decline in junior employment at adopting firms appears in both groups and is
+similar in magnitude across them. In particular, we continue to find a substantial ju-
+nior decline among low-remote-suitability positions, which are unlikely to be performed
+from home. These results suggest that our findings are not driven by the post-pandemic
+normalization of remote work. Appendix A.24 provides additional details on the data,
+methodology, and results, including the corresponding triple-difference estimates in Fig-
+ure A.26.
+
+
+Labor supply shocks.     A final concern is reverse causality—namely, that firms adopting
+GenAI were disproportionately affected by negative supply shocks to junior labor, which
+prompted adoption. To assess this possibility, we examine a more direct measure of labor
+demand: job postings. Since the job postings data do not include seniority information,
+this analysis captures total demand for workers rather than its distribution by seniority,
+and the job postings data begin only in 2021Q4. Figure A.27, reported in Appendix A.25,
+presents the results: starting in 2023Q1, the number of job postings declined significantly
+in adopting firms relative to non-adopters. This provides suggestive evidence that the
+observed decline in junior employment reflects a contraction in labor demand rather than
+a supply-driven shock.
+ 30 More  details on Revelio’s remote-suitability classification methodology are available    at
+https://www.reveliolabs.com/news/business/which-companies-will-succeed-in-the-new-world-of-
+remote-work/.
+
+
+
+
+                                              39
+

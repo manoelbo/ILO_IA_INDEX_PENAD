@@ -1,0 +1,154 @@
+                                Figure A.2: Validation Checks – Usual Weekly Earnings and Occupation Shares
+    (a) Weekly Earnings Percentiles: Unweighted                                                                                         (b) Weekly Earnings Percentiles: Weighted
+                 4,000
+
+
+
+
+                                                                                                                                              4,000
+                        3,000
+
+
+
+
+                                                                                                                                                     3,000
+       Usual Weekly Earnings
+
+
+
+
+                                                                                                                                    Usual Weekly Earnings
+              2,000
+
+
+
+
+                                                                                                                                           2,000
+    1,000
+
+
+
+
+                                                                                                                                 1,000
+                 0
+
+
+
+
+                                                                                                                                              0
+                                           1         5        10           25         50          75          90   95   99                                              1         5         10        25         50         75          90   95   99
+                                                             Usual Weekly Earnings Percentile                                                                                              Usual Weekly Earnings Percentile
+                                                                                CPS                       RPS                                                                                              CPS                      RPS
+
+
+                                      (c) Occupation Shares: Unweighted                                                                                                (d) Occupation Shares: Weighted
+                                      20
+
+
+
+
+                                                                                                                                                                   20
+
+
+                                                                                                       Mgmt
+
+                                                   Corr: 0.88                                                                                                                   Corr: 1.00
+                                      15
+
+
+
+
+                                                                                                                                                                   15
+
+
+
+
+                                                                                                                                                                                                                                 Mgmt
+                                Share in RPS
+
+
+
+
+                                                                                                                                                             Share in RPS
+                                     10
+
+
+
+
+                                                                                                                                                                  10
+
+
+
+
+                                                                                                                                                                                                                      OfficeAdmin
+                                                                                            OfficeAdmin
+                                                                                                                                                                                                             Sales
+                                                                CompMath            Sales
+                                                                                                                                                                                                            TranspMat
+                                                                           BusFin                                                                                                                        HealthTech
+                                                                          EduLib                                                                                                                        BusFin
+                                                                                                                                                                                                      EduLib
+                                                                                                                                                                                                     ConstrExtr
+                                      5
+
+
+
+
+                                                                                                                                                                   5
+
+
+
+
+                                                                   Prod                                                                                                                            Prod
+                                                                                                                                                                                                  FoodServ
+                                                                                                                                                                                               CompMath
+                                                                        HealthTech
+                                                                            TranspMat
+                                                                     ConstrExtr
+                                                              HealthSup                                                                                                                     HealthSup
+                                                         ArtsEnt                                                                                                                             BldMaint
+                                                                   FoodServ
+                                                                                                                                                                                           InstallRep
+                                                           PersCare
+                                                        CommSoc
+                                                             InstallRep                                                                                                                 PersCare
+                                                                                                                                                                                       ArtsEnt
+                                                                                                                                                                                       ArchEng
+                                                          ArchEng
+                                                               BldMaint                                                                                                               CommSoc
+                                                     LifeSci                                                                                                                          ProtServ
+                                                                                                                                                                                  LifeSci
+                                                    LegalProtServ
+                                                   FarmFishFor                                                                                                                  FarmFishFor
+                                                                                                                                                                                 Legal
+                                      0
+
+
+
+
+                                                                                                                                                                   0
+
+
+
+
+                                               0                   5             10                         15          20                                                  0                    5          10                        15          20
+                                                                            Share in CPS                                                                                                               Share in CPS
+
+                                                            45 Degree Line                                Fitted Line                                                                     45 Degree Line                            Fitted Line
+
+
+
+Notes: Figures on the left use unweighted RPS data, figures on the right use weighted RPS data. We use the
+same sample of RPS respondents in both figures. All figures use weighted CPS data. Data samples for the weekly
+earnings figures are employees ages 18-64 in the pooled August and November 2024 RPS and CPS-ORG with
+weekly earnings below the CPS topcode of $4140 and an implied hourly wage of at least the federal minimum
+wage of $7.25. Since the CPS topcode varies across month, we apply the lower topcode in both months. Sample
+sizes for the RPS and CPS are 4778 and 12133, respectively. Data samples for the occupation comparison are
+employed respondents ages 18-64 in the pooled August and November 2024 RPS and CPS with sample sizes of
+6935 and 85546, respectively.
+
+
+
+
+                                                                                                                             7
+

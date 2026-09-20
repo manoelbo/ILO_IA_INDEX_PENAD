@@ -1,0 +1,34 @@
+### 5.2.5 Resultados por faixa salarial ocupacional
+A Tabela 5.2.5 traz as estimativas por faixa salarial ocupacional, definida pela mediana pré-tratamento da CBO e não pela renda individual. Aqui a coluna de suporte pesa mais do que em qualquer outro recorte.
+**Tabela 5.2.5: Estimativas dentro dos grupos por faixa salarial ocupacional**
+
+[TABLE]
+Faixa de renda | Resultado | DiD no grupo | EP | p BH | Pretrend | Suporte
+Até 2 SM | Admissões (PPML, nível) | −0,0304 | 0,0321 | 0,453 | fail | adequate
+Até 2 SM | Desligamentos (PPML, nível) | −0,0409 | 0,0299 | 0,271 | fail | adequate
+Até 2 SM | Salário real de admissão (log) | −0,0493\*\*\* | 0,0140 | 0,003 | fail | adequate
+Até 2 SM | Saldo líquido (asinh) | 0,2144 | 0,3569 | 0,642 | fail | adequate
+Mais de 2 a 5 SM | Admissões (PPML, nível) | −0,1914\*\* | 0,0664 | 0,021 | fail | limited
+Mais de 2 a 5 SM | Desligamentos (PPML, nível) | −0,1028 | 0,0800 | 0,298 | fail | limited
+Mais de 2 a 5 SM | Salário real de admissão (log) | −0,0434 | 0,0258 | 0,198 | fail | limited
+Mais de 2 a 5 SM | Saldo líquido (asinh) | −1,2484 | 0,8350 | 0,244 | warning | limited
+Mais de 5 SM | Admissões (PPML, nível) | −0,0068 | 0,0954 | 0,952 | fail | thin
+Mais de 5 SM | Desligamentos (PPML, nível) | 0,1564 | 0,1053 | 0,272 | not_estimated | thin
+Mais de 5 SM | Salário real de admissão (log) | 0,0117 | 0,0345 | 0,785 | fail | thin
+Mais de 5 SM | Saldo líquido (asinh) | −3,4227 | 2,1171 | 0,244 | fail | thin
+[/TABLE]
+
+> *Notas: cada linha traz o DiD estimado dentro da amostra da própria faixa, com erro-padrão clusterizado por CBO de quatro dígitos. Família C, de 130 testes; estrelas calculadas exclusivamente sobre o p ajustado de Benjamini-Hochberg: \\* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. As faixas utilizam a mediana salarial pré-tratamento da CBO, expressa em salários mínimos, e não a renda individual corrente. **A coluna de suporte é parte do resultado:** `limited` indica 26 CBOs tratadas e 32 de controle; `thin` indica 3 tratadas e 6 de controle, base insuficiente para inferência substantiva. `not_estimated` no pretrend registra que a inclinação GLS não é identificada naquela célula. Fonte: `results/models/group_did_results.csv`.\*
+O único movimento nominalmente forte está nas admissões da faixa de 2 a 5 salários mínimos, com −0,1914 e p ajustado de 0,021 no DiD dentro do grupo. Ele precisa ser lido com a coluna de suporte ao lado: a faixa reúne 26 CBOs tratadas e 32 de controle, o que a classifica como suporte `limited`.
+O contraste DDD, porém, **não sustenta** a leitura de que a redução dos desligamentos se concentraria na renda intermediária. O DDD de desligamentos dessa faixa é de −0,0543 (p ajustado de 0,707) e o de admissões, de −0,1474 (p ajustado de 0,164). Nenhum dos quinze contrastes de renda sobrevive ao ajuste de multiplicidade com suporte adequado.<br><br>Na faixa de até 2 salários mínimos, nem as estimativas dentro do grupo nem os contrastes DDD ficam abaixo de 5% depois do ajuste: as admissões dão +0,1183, com p ajustado de 0,325. Esse resultado não sustenta diferença entre faixas de renda.
+Acima de 5 salários mínimos, a limitação é severa: a comparação depende de 3 CBOs tratadas e 6 de controle. Existe nessa faixa um contraste DDD de salário positivo que sobrevive nominalmente ao ajuste, mas ele repousa sobre três ocupações tratadas e, por isso, **fica registrado na tabela com o rótulo de suporte ****`thin`**** e não é usado como base de afirmação**.
+A Figura 5.2.5.1 traz os event studies e as trajetórias das admissões por renda pré-tratamento.
+**Figura 5.2.5.1: Admissões — event studies e trajetórias por renda pré-tratamento**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/230c0c5e-7145-4568-bd88-6a94acbd37cf/figure_5_2_5_1_income_admissions.png]
+A maior volatilidade da faixa superior decorre do pequeno número de ocupações: os coeficientes dependem de apenas 3 CBOs expostas e 7 não expostas, o que amplia a incerteza das estimativas.
+A Figura 5.2.5.2 faz o mesmo para o salário real de admissão.
+**Figura 5.2.5.2: Salário real de admissão — event studies e trajetórias por renda pré-tratamento**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/de949134-0684-4087-9a5f-7526bb134454/figure_5_2_5_2_income_wage.png]
+Os coeficientes salariais oscilam em torno de zero e seus intervalos de confiança são amplos. Os testes conjuntos não rejeitam os pretrends nas duas primeiras faixas (p=0,417 e p=0,277), mas ambas são classificadas como falha porque apresentam três coeficientes pré-tratamento individualmente significativos. No topo, o teste conjunto é limítrofe (p=0,057) e gera alerta. Não há, portanto, evidência de heterogeneidade salarial robusta.
+O resultado dialoga com a Subseção 3.5.5, que mostrou a alta exposição crescendo até as faixas intermediárias e depois se estabilizando. A comparação é indicativa, porque lá os trabalhadores são classificados por renda e aqui uso a mediana salarial da CBO. O padrão também converge em parte com [Klein Teeselink (2025)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798), que encontra maior ajuste nos segmentos de alta remuneração do Reino Unido e pouca alteração nos de baixa remuneração. A correspondência não é exata: aqui o sinal está na faixa intermediária e o topo não tem suporte. Já a ausência de contrastes salariais é compatível com [Brynjolfsson, Chandar e Chen (2025)](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/), que encontram ajustes mais visíveis no emprego do que na remuneração.
+Não aparece uma heterogeneidade por renda sustentada pelo conjunto dos diagnósticos. Nenhum contraste DDD com suporte adequado permanece abaixo de 5% após o ajuste de multiplicidade. O único que cruza esse limiar é o salário na faixa acima de 5 salários mínimos, com coeficiente de +0,0643 e p BH de 0,043, mas o suporte é baixo: apenas 3 CBOs tratadas e 6 de controle, além de pré-tendência falha. A queda salarial de −0,0493 na faixa de até 2 salários mínimos é um DiD dentro do grupo e apenas reproduz o diferencial nacional; ela não demonstra que as faixas de renda respondem de modo diferente. Portanto, não há base para afirmar proteção do topo, compressão salarial ou redução diferencial do emprego líquido por faixa de renda.

@@ -1,0 +1,3 @@
+Não foi possível produzir o candidate: `quality_control/prompts/ROW-0170.md` não existe no workspace. Como seu hash é obrigatório e esse caminho não está autorizado para escrita, interrompi o worker sem acessar PDFs nem gerar artefatos.
+
+Materialize o prompt nesse caminho e reenvie a tarefa.

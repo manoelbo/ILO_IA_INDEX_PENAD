@@ -1,0 +1,52 @@
+doubling of adoption rates suggests that this initiative is powerful relative to the amount
+
+of individual heterogeneity in net benefits.
+
+
+Benefits for users. Table D.2, Columns 3-6 show how reported benefits among chatbot
+
+users vary with employer initiatives. The average benefit reported by users is:
+
+
+                     B̄(E) = E[Bi (α) | i ≤ i∗ (α)] = γαc + (1 − γ)αb ,                   (8)
+
+
+where γ = 2ββ̂b ≥ 0. Equation (8) provides two key insights into how employer initiatives
+
+relate to reported user benefits.
+
+   First, employer initiatives that reduce adoption costs (αc ) lower the average benefit
+
+among users due to a selection effect: lower costs induce adoption by workers with lower
+
+idiosyncratic benefits (i.e., higher i). This negative selection effect, γ, is stronger when
+
+workers are more homogeneous in their net benefits from using AI chatbots (i.e., when β̂
+
+is numerically small, so that employer initiatives generate larger increases in adoption; cf.
+
+Equation (7)) but more heterogeneous in their gross benefits from the tools (i.e., when βb
+
+is large in absolute value, implying that marginal users have lower idiosyncratic benefits).
+
+   Second, employer initiatives that increase benefits (αb ) have two offsetting effects
+
+on average reported benefits. On the one hand, a higher αb directly raises each user’s
+
+individual benefit Bi . On the other hand, it expands adoption, drawing in users with
+
+lower idiosyncratic benefits (i.e., higher i), thereby triggering the same negative selection
+
+effect as a reduction in αc . The net effect of an increase in αb on the average reported
+
+benefits among users B̄ is positive if and only if γ < 1. This condition is more likely to
+
+hold when workers are relatively similar in their gross benefits from the tools (i.e., when
+
+βb is small) but differ more in their adoption costs (i.e., when βc is large).
+
+
+
+
+                                               5
+

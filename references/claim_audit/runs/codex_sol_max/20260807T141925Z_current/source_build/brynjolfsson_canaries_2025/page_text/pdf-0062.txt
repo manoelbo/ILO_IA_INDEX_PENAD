@@ -1,0 +1,46 @@
+                         Table A1: Example occupations by exposure category
+
+Metric                      Least exposed (examples)             Most exposed (examples)
+Eloundou et al. (2024)
+GPT-4 β
+                            • Maintenance and Repair Workers,    • Customer Service Representatives
+                              General                            • Accountants and Auditors
+                            • Nursing, Psychiatric, and Home     • Software Developers, Applications
+                              Health Aides                         and Systems Software
+                            • Laborers and Freight, Stock, and   • Secretaries and Administrative
+                              Material Movers, Hand                Assistants
+                            • Maids and Housekeeping Cleaners
+
+Handa et al. (2025)
+(Overall)
+                            • Taxi Drivers and Chauffers         • Computer Programmers
+                            • First-Line Supervisors of          • Financial Managers
+                              Production and Operating           • Accountants and Auditors
+                              Workers                            • Sales Representatives, Wholesale
+                            • Laborers and Freight, Stock, and     and Manufacturing
+                              Material Movers, Hand
+                            • Maids and Housekeeping Cleaners
+
+Handa et al. (2025)
+(Automation)
+                            • Maintenance and Repair Workers,    • General and Operations Managers
+                              General                            • Accountants and Auditors
+                            • Managers, All Other                • Software Developers, Applications
+                            • Nursing, Psychiatric, and Home       and Systems Software
+                              Health Aides                       • Receptionists and Information
+                            • Driver/Sales Workers and Truck       Clerks
+                              Drivers
+
+Handa et al. (2025)
+(Augmentation)
+                            • Cooks                              • Chief Executives
+                            • Welding, Soldering, and Brazing    • Maintenance and Repair Workers,
+                              Workers                              General
+                            • Tellers                            • Registered Nurses
+                            • Drafters                           • Computer and Information
+                                                                   Systems Managers
+
+
+
+
+                                                  62

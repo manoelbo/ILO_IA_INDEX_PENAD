@@ -1,0 +1,52 @@
+32     ILO Working Paper 140
+
+
+
+
+     Task                                              Justification
+
+     Conducting a card game       0.55   0.19   0.25   While generative AI can assist with understanding game rules,
+     - checking the condition                          verifying bets, and conducting some aspects of digital card
+     of cards used for the                             games, the physical handling of cards, checking their condi-
+     game in terms of mark-                            tions, and ensuring fairness in shuffling and dealing still re-
+     ing, degree of wear and                           quire a human touch. The theoretical group's lower score re-
+     quantity, verifying the                           flects the challenge of applying AI to specific physical and
+     correctness of bets, shuf-                        interactive elements of the task. Therefore, the lower revised
+     fling, dealing and reveal-                        score is more reflective of the practical limitations in automat-
+     ing cards, announcing                             ing such work.
+     the sum of cards, making
+     payouts according to the
+     rates established in the
+     game rules.
+
+     Installing and initiating    0.55   0.19   0.25   Installing and initiating mechanical and electrical robots and
+     mechanical and electri-                           peripheral equipment at new workstations requires hands-on
+     cal robots and peripheral                         skills, precise calibration, and the ability to interact with phys-
+     equipment at new work-                            ical hardware. While generative AI can assist with planning,
+     stations                                          documentation, and troubleshooting guides, the physical in-
+                                                       stallation and configuration still require human expertise.
+                                                       Therefore, the lower score of 0.1925 is more reflective of re-
+                                                       ality, though slightly adjusted upward to 0.25 to acknowledge
+                                                       AI's support role in providing information or instructions dur-
+                                                       ing the task.
+
+     Organizing thematic          0.16   0.38   0.3    While generative AI can suggest ideas and develop thematic
+     activities (recreational,                         activities based on input parameters, organizing such activities
+     sports, entertainment)                            requires an understanding of group dynamics, spontaneous
+     for different age groups                          decision-making, and the ability to adjust plans based on par-
+                                                       ticipant interactions and preferences. AI can assist in planning
+                                                       and offering content ideas, but human oversight remains nec-
+                                                       essary to ensure engagement and safety, especially when ca-
+                                                       tering to varied age groups. Therefore, a score of 0.3 reflects
+                                                       AI's supportive role rather than full automation capability in
+                                                       this task.
+
+     Performing financial es-     0.37   0.64   0.64   The task of performing financial estimates to develop a house-
+     timates to develop a                              hold budget can be significantly automated with generative AI
+     household budget                                  tools like ChatGPT due to the structured and data-driven na-
+                                                       ture of budget calculations. GenAI can generate budget tem-
+                                                       plates, provide financial advice based on data inputs, and sim-
+                                                       ulate different financial scenarios, which aligns closely with the
+                                                       theoretical group's higher score of 0.64, indicating strong po-
+                                                       tential for automation with AI's current capabilities.
+

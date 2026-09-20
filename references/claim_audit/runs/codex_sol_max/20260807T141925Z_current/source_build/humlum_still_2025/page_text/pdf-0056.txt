@@ -1,0 +1,33 @@
+    In summary, average reported benefits among users provide a lower bound on the
+causal effect of employer initiatives on individual benefits, due to negative selection.
+    The fact that Table 1 shows higher reported benefits in encouraged settings is therefore
+striking. It implies two things: (i) employer encouragement primarily raises perceived
+benefits (αb ), since reductions in adoption costs alone would generate only the negative
+selection effect; and (ii) these benefit increases outweigh the adverse selection—implying
+γ < 1, so that encouragement is powerful relative to individual heterogeneity.
+    By contrast, enterprise chatbots and training—when implemented in isolation—are
+associated with lower reported benefits, potentially reflecting either that these initiatives
+reduce individual benefits (αb1 < 0) or that negative selection effects dominate any positive
+gains.
+
+A.1.3     Discussion
+
+The preceding analysis examines the implications of workers self-selecting into chatbot
+adoption based on individual benefits. Beyond this margin, at least two additional forms
+of selection may be at play.
+    First, firms that encourage chatbots may be those with the greatest underlying benefits
+from the tools—even absent any initiatives—introducing potential reverse causality. In our
+framework, this corresponds to E being positively related to αb0 . Second, employers may
+target encouragement toward employees expected to benefit most individually, resembling
+a rotation of the cost and benefit schedules in Figure A.1 rather than simple vertical
+shifts.
+    Section F addresses both margins empirically. First, Section F.5 examines whether
+employers select into encouragement based on underlying benefits from chatbot use. We
+show that the effects of encouragement remain robust when controlling for firm- and
+worker-level characteristics, including firm age, size, and productivity, as well as workers’
+detailed task mixes. Second, Section F.6 implements a “coworker encouragement” design,
+using the average encouragement reported by a worker’s colleagues to capture workplace-
+
+
+
+                                             6

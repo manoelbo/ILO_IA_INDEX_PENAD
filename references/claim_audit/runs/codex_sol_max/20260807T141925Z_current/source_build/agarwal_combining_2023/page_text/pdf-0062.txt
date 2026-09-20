@@ -1,0 +1,16 @@
+                                                                                           62
+
+The AUC is a number between 0 and 100%, with numbers close to 100% representing better
+algorithm performance. The AUC is equal to the probability that a randomly chosen positive
+case is ranked higher than a randomly chosen negative case.
+
+                            Figure B.5: Performance of AI Tool
+
+
+
+
+Example Images
+Below are 50 example images with the associated AI tool predictions. These images are
+randomly chosen to allow you to familiarize yourself with the AI support tool and its accuracy
+[Here we only provide two out of the fifty images].
+

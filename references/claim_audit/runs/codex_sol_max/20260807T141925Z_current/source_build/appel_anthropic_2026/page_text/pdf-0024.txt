@@ -1,0 +1,19 @@
+Figure 2.1: Education years needed to understand the human prompt and share of workers with at least a Bachelor’s Degree.
+Education data from “Educational attainment for workers 25 years and older by detailed occupation” (BLS), based on microdata
+from the 2022 and 2023 American Community Survey.2 We calculate average years of schooling for tasks associated with a particular
+occupation. We then calculate the percentage of workers with a bachelor’s degree or higher in that occupation.
+
+
+
+              Ultimately, the strongest validation will come from the primitives’ ability to
+              capture meaningful variation in labor market outcomes. The data we release
+              enable external researchers to analyze economic shifts in new ways. Early
+             work has been encouraging—the automation/augmentation distinction from
+              prior reports has already been used by external researchers to analyze labor
+              market shifts (Brynjolfsson, Chandar & Chen, 2025).
+
+
+
+
+The Anthropic Economic Index Report                                                                                             24
+

@@ -1,0 +1,39 @@
+   The central finding is that displacement intensity exceeds 50% only for junior-type
+occupations (52.0%), meaning that when GenAI is used for tasks characteristic of these
+occupations, the typical task tilts toward automation. For senior-type occupations, aug-
+mentation intensity dominates at 59.6% (displacement intensity: 40.4%). In other words,
+tasks in junior-intensive occupations are more likely to engage GenAI as a substitute,
+while tasks in senior-intensive occupations are more likely to engage GenAI as a comple-
+ment.
+   This pattern is driven by the augmentation side. The individual collaboration mode
+shares show that task iteration rises monotonically with seniority (12.5% to 22.8%) and
+validation increases from 1.1% to 3.7%, while the directive share remains roughly flat
+across terciles. We also report the average O*NET experience requirements for each tercile
+as a complementary validation: occupations classified as junior-type by Revelio indeed
+require substantially less experience (1.4 years vs. 3.6 years for senior-type), confirming
+that the two seniority measures capture similar variation.
+
+
+A.7.3   Regression Evidence
+
+To assess whether the descriptive patterns hold within broad occupation groups, we
+regress occupation-level GenAI usage shares on the seniority measures, controlling for
+two-digit SOC fixed effects with heteroskedasticity-robust standard errors. This com-
+parison exploits variation in seniority within occupation families—for instance, compar-
+ing secretaries to managers within “Office and Administrative Support,” or paralegals to
+lawyers within “Legal” occupations.
+   Table A.2 reports the results. The key finding is that displacement intensity declines
+significantly with seniority, confirming the descriptive pattern within narrow occupation
+groups. A one-standard-deviation increase in Revelio seniority is associated with a 3.68
+percentage point decline in displacement intensity with 2-digit SOC fixed effects (p =
+0.002). The individual mode shares tell a consistent story: the augmentation share in-
+creases significantly with seniority, driven primarily by task iteration (1.74 pp, p = 0.029)
+and validation (0.82 pp, p = 0.005), while the displacement share declines (−1.91 pp,
+p = 0.018). These results are consistent with the framework’s prediction that GenAI
+serves as a substitute for routine task execution in junior-intensive occupations and as a
+
+
+
+
+                                            A.29
+

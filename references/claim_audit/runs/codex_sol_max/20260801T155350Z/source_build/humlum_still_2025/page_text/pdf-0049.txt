@@ -1,0 +1,56 @@
+Sorting. Workers not only decide whether to adopt chatbots, but also which firms to
+
+sort into. Since all adopters receive the same net benefit from encouragement, α̂1 , workers
+
+effectively face a choice between sorting into encouraged firms and adopting AI chatbots,
+
+or sorting into non-encouraged firms and not adopting. The condition for sorting into
+
+encouraged firms is given by:
+
+
+                     Ej(i) = 1 [log Yi1 (1) − log Yi0 (0) ≥ Ci1 ]                         (24)
+                                h                                       i
+                           = 1 α̂0 + α̂1 + β̂ × i + log W1 − log W0 ≥ 0 .                 (25)
+
+
+This implies a strict cutoff rule for worker sorting:
+
+                                                1
+             Ej(i) = 1 [i ≤ i∗ ] ,   with i∗ = − (α̂0 + α̂1 + log W1 − log W0 ).          (26)
+                                                β̂
+
+A.2.3    Equilibrium
+
+An equilibrium is a set of encouragement policies {Ej }j∈J , skill prices {Wj }j∈J , allocation
+
+of workers to firms {Ij }j∈J , and adoption decisions {{Aij }i∈Ij }j∈J , such that firms
+
+encourage AI chatbots and hire workers to maximize profits (Equations (15) and (16)),
+
+workers sort into firms and adopt AI chatbots to maximize utility (Equations (23) and
+
+(26)), and labor and product markets clear (Equations (13) and (14)).
+
+   The initial equilibrium without AI chatbots is simple: because all firms are symmetric,
+
+they each employ an equal share of the baseline human capital stock. The following
+
+paragraphs characterize the equilibrium when AI chatbots are available.
+
+
+Sorting. Worker sorting across firms when AI chatbots are available is straightforward:
+
+Assuming adopters receive higher benefits from encouraged firms (α̂1 ≥ 0), the equilibrium
+
+features full segregation, with all adopters in encouraged firms, all non-adopters in non-
+
+encouraged firms, or both. We focus on the empirically relevant case in which some, but
+
+not all, firms encourage AI chatbot use, and some, but not all, workers adopt.
+
+
+
+
+                                                14
+

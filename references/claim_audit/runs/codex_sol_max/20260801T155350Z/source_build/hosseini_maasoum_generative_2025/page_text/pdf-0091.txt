@@ -1,0 +1,50 @@
+   Table A.5: Descriptive Statistics: All Firms, GenAI Adopters, and Non-Adopters
+
+Variable                                                              All Firms       Non-Adopters         GenAI Adopters
+Panel A. Workforce Composition and Characteristics
+Firm size (average)                                                      123.6             107.6                  546.4
+                                                                        (437.2)           (368.1)               (1215.8)
+Share junior employees (Entry/Junior)                                    0.548             0.553                  0.414
+                                                                        (0.227)           (0.226)                (0.209)
+Share senior employees (Associate+)                                      0.454             0.449                  0.588
+                                                                        (0.227)           (0.226)                (0.209)
+Average number of new hires (per quarter)                                  7.0               6.1                   29.9
+                                                                         (25.0)            (21.6)                 (65.8)
+Share of new hires junior                                                0.667             0.674                  0.496
+                                                                        (0.351)           (0.352)                (0.305)
+Average number of separations (per quarter)                                5.6               4.9                   23.7
+                                                                         (22.2)            (19.4)                 (57.0)
+Share of separations junior                                              0.680             0.687                  0.517
+                                                                        (0.353)           (0.353)                (0.309)
+Average number of promotions for juniors (per quarter)                   0.429             0.354                    2.4
+                                                                          (1.9)             (1.5)                  (6.2)
+Juniors in high-exposure jobs (% of all juniors)                         0.233             0.224                  0.467
+                                                                        (0.235)           (0.229)                (0.281)
+Juniors in low-exposure jobs (% of all juniors)                          0.264             0.270                  0.102
+                                                                        (0.272)           (0.273)                (0.162)
+Seniors in high-exposure jobs (% of all seniors)                         0.131             0.124                  0.332
+                                                                        (0.176)           (0.170)                (0.226)
+Seniors in low-exposure jobs (% of all seniors)                          0.128             0.131                  0.044
+                                                                        (0.179)           (0.180)                (0.088)
+Panel B. Industry and Headquarters Location
+Share in NAICS sector 51 (Information)                                   0.071             0.064                  0.243
+Share in NAICS sector 52 (Finance and Insurance)                         0.067             0.067                  0.086
+Share in NAICS sector 54 (Professional Services)                         0.156             0.152                  0.277
+Share in NAICS sector 5 (Other)                                          0.066             0.065                  0.093
+Share in non-NAICS 5 sectors                                             0.640             0.652                  0.301
+HQ in California                                                         0.138             0.135                  0.203
+HQ in Texas                                                              0.075             0.075                  0.060
+HQ in New York                                                           0.080             0.080                  0.091
+HQ in Other States                                                       0.714             0.717                  0.651
+Observations                                                          11,751,820        11,323,931               427,889
+Number of firms                                                        281,111           270,678                  10,433
+ Notes: The table reports averages (unless otherwise indicated) of the main variables across firm-by-quarter observations from
+ 2015Q1 to 2025Q1, separately for the full sample, GenAI adopters, and non-adopters. Standard deviations (for non-binary
+ variables) are reported in parentheses. Panel A reports workforce composition, such as hiring and separations, and automation
+ exposure. Panel B reports industry and headquarters state distributions.
+
+
+
+
+                                                            A.46
+

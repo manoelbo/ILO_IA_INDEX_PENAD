@@ -1,0 +1,50 @@
+function of time spent using genAI, si = γui :
+
+                                                 N
+                                                 X
+                                        ∆L =           γui ei .                              (5)
+                                                 i=1
+
+
+In this expression, ui is weekly hours spent using genAI by worker i and γ is the productivity
+gain associated with one hour of genAI use.
+
+   Given our estimates of genAI use, Appendix D.1 shows that the value of γ that would
+generate a 2.1% increase in aggregate effective labor supply can be written as:
+                                              P           
+                                                  i w̃i li
+                                    γ = 2.1% · P                                             (6)
+                                                 i w̃i ui
+
+
+As discussed in Section 5.1, RPS data provide a lower and upper bound for li , li and li .
+Evaluating (6) using the midpoint of these bounds, li ≡ (li + li )/2 yields a wage-weighted share
+of total work hours spent using genAI of 5.7%, which yields γ = 0.30. This implies that each
+hour spent using genAI increases the worker’s productivity for that hour by 30%. This is similar
+in magnitude to the average productivity gain of 27% from several randomized experiments of
+genAI usage (Cui et al., 2024; Dell’Acqua et al., 2023; Noy and Zhang, 2023; Peng et al., 2023).
+
+    Our estimated aggregate productivity gain from genAI (1.2%) exceeds the 0.7% estimate by
+Acemoglu (2024) based on a similar framework. In our framework and in Acemoglu (2024), the
+aggregate productivity gain is the product of three numbers: the AI-exposure-adjusted labor
+share of GDP, the wage-weighted share of labor that is supplied by genAI, and the productivity
+gain from genAI. We use the same labor share as Acemoglu (2024). Our survey data imply a
+wage-weighted genAI adoption share of 7.0%, while Acemoglu (2024) assumes a slightly lower
+wage-weighted adoption share of 4.6% based on task-exposure predictions. As discussed above,
+we estimate a productivity gain from genAI of 30%; Acemoglu (2024) assumes a productivity
+gain from genAI of 27% based on micro experimental evidence. Adjusting our productivity value
+γ from 30% to 27% lowers our estimated aggregate productivity gain to 1.1%; the remaining
+0.4 percentage point gap is due to our higher adoption estimate.
+
+    We conclude with two points about our estimate of aggregate productivity gains. First,
+Acemoglu (2024) assumes these productivity gains take a decade to materialize. In contrast, our
+estimates reflect current adoption and time savings, implying a faster pace of diffusion. Second,
+our estimate does not capture potential productivity gains from using genAI to reorganize or
+completely automate production processes, which could further increase output per worker.
+With previous technologies, these more systematic gains occurred with substantial time lags,
+implying that this omission may be modest in the short run (Bresnahan and Trajtenberg, 1995;
+Brynjolfsson and Hitt, 2000; David, 1990; Jovanovic and Rousseau, 2005).
+
+
+                                                 25
+

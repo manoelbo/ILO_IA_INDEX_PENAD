@@ -1,0 +1,27 @@
+Freeman, R. B. (1984), ‘Longitudinal analyses of the effects of trade unions’, Journal of labor
+  Economics 2(1), 1–26.
+
+Freeman, R. B. and Medoff, J. L. (1984), ‘What do unions do’, Indus. & Lab. Rel. Rev. 38, 244.
+
+Gentzkow, M., Shapiro, J. M. and Sinkinson, M. (2011), ‘The effect of newspaper entry and exit
+ on electoral politics’, American Economic Review 101(7), 2980–3018.
+
+Goodman-Bacon, A. (2018), Difference-in-differences with variation in treatment timing. Work-
+ ing Paper.
+
+Imai, K. and Kim, I. S. (2018), ‘On the use of two-way fixed effects regression models for causal
+  inference with panel data’.
+
+Jakubson, G. (1991), ‘Estimation and testing of the union wage effect using panel data’, The
+  Review of Economic Studies 58(5), 971–991.
+
+Vella, F. and Verbeek, M. (1998), ‘Whose wages do unions raise? a dynamic model of unionism
+  and wage rate determination for young men’, Journal of Applied Econometrics 13(2), 163–183.
+
+Wooldridge, J. M. (2002), Econometric analysis of cross section and panel data, MIT press.
+
+
+
+
+                                               27
+

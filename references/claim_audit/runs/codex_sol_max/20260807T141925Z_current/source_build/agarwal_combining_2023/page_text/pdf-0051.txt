@@ -1,0 +1,51 @@
+                                                                                             51
+
+Jon Kleinberg, Himabindu Lakkaraju, Jure Leskovec, Jens Ludwig, and Sendhil Mul-
+  lainathan. Human decisions and machine predictions. Q. J. Econ., 133(1):237–293, August
+  2017.
+
+Barnett S Kramer, Christine D Berg, Denise R Aberle, and Philip C Prorok. Lung cancer
+  screening with low-dose helical CT: results from the national lung screening trial (NLST).
+  J. Med. Screen., 18(3):109–111, 2011.
+
+Vivian Lai, Chacha Chen, Q Vera Liao, Alison Smith-Renner, and Chenhao Tan. Towards a
+  science of Human-AI decision making: A survey of empirical studies. December 2021.
+
+Curtis P Langlotz. Will artificial intelligence replace radiologists?     Radiology: Artificial
+ Intelligence, 1(3):e190058, May 2019.
+
+Xiaoxuan Liu, Livia Faes, Aditya U Kale, Siegfried K Wagner, Dun Jack Fu, Alice Bruynseels,
+  Thushika Mahendiran, Gabriella Moraes, Mohith Shamdas, Christoph Kern, Joseph R
+  Ledsam, Martin K Schmid, Konstantinos Balaskas, Eric J Topol, Lucas M Bachmann,
+  Pearse A Keane, and Alastair K Denniston. A comparison of deep learning performance
+  against health-care professionals in detecting diseases from medical imaging: a systematic
+  review and meta-analysis. The Lancet Digital Health, 1(6):e271–e297, October 2019.
+
+Robert Mccluskey, A Enshaei, and B A S Hasan. Finding the Ground-Truth from multiple
+  labellers: Why parameters of the task matter. ArXiv, 2021.
+
+Hussein Mozannar and David Sontag. Consistent estimators for learning to defer to an expert.
+ In Proceedings of the 37th International Conference on Machine Learning, volume 119 of
+ Proceedings of Machine Learning Research, pages 7076–7087. PMLR, 2020.
+
+S Mullainathan and Z Obermeyer. A machine learning approach to low-value health care:
+  wasted tests, missed heart attacks and mis-predictions, 2019.
+
+Justin G Norden and Nirav R Shah. What AI in health care can learn from the long road to
+  autonomous vehicles. NEJM Catalyst Innovations in Care Delivery, 3(2), 2022.
+
+Shakked Noy and Whitney Zhang. Experimental evidence on the productivity effects of
+  generative artificial intelligence. March 2023.
+
+Ziad Obermeyer and Ezekiel J Emanuel. Predicting the future — big data, machine learning,
+  and clinical medicine. N. Engl. J. Med., 375(13):1216–1219, September 2016.
+
+Serena Pacilè, January Lopez, Pauline Chone, Thomas Bertinotti, Jean Marie Grouin, and
+  Pierre Fillard. Improving breast cancer detection accuracy of mammography with the
+  concurrent use of an artificial intelligence tool. Radiol Artif Intell, 2(6):e190208, November
+  2020.
+
+David M Panicek and Hedvig Hricak. How sure are you, doctor? a standardized lexicon
+ to describe the radiologist’s level of certainty. AJR Am. J. Roentgenol., 207(1):2–3, July
+ 2016.
+

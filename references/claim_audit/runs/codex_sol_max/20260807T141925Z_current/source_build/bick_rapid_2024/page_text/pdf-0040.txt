@@ -1,0 +1,181 @@
+                                    Figure A.3: Validation Checks – Industry and Major Shares
+                           (a) Industry: Unweighted                                                                        (b) Industry: Weighted
+             20
+
+
+
+
+                                                                                                          20
+                           Corr: 0.89                                                                                   Corr: 0.91
+             15
+
+
+
+
+                                                                                                          15
+                                                                                                                                                                    HealthSoc
+       Share in RPS
+
+
+
+
+                                                                                                    Share in RPS
+                                                                             HealthSoc
+            10
+
+
+
+
+                                                                                                         10
+                                                                  Retail                                                                           Constr Retail
+                                                           Constr
+                                                              Edu
+                                                                Manuf
+                                                              ProfSciTech                                                                              Manuf
+                                                                                                                                                     Edu
+                                           FinIns                                                                                      OtherServ
+                                                                                                                                              HospFood
+                                           OtherServ                                                                                                 ProfSciTech
+                                                 HospFood                                                                                Utilities
+                                                                                                                                       FinIns
+                               InfoServ
+             5
+
+
+
+
+                                                                                                          5
+                                              Utilities
+                                                                                                                            InfoServ
+                                ArtsEntRec
+                                                                                                                              ArtsEntRecAdminSupp
+                               RealEstate AdminSupp
+                             AgriForFish                                                                                   AgriForFish
+                                                                                                                             RealEstate Govt
+                               Wholesale Govt
+                          MgmtEnterp
+                            TranspWare                                                                                   TranspWare
+                                                                                                                             Wholesale
+                                                                                                                       MgmtEnterp
+                          MiningOilGas                                                                                  MiningOilGas
+             0
+
+
+
+
+                                                                                                          0
+                      0                   5               10                  15           20                      0                   5               10            15           20
+                                                     Share in CPS                                                                                 Share in CPS
+
+                                    45 Degree Line                          Fitted Line                                          45 Degree Line                    Fitted Line
+
+
+                      (c) Major Shares: Unweighted                                                                 (d) Major Shares: Weighted
+             25
+
+
+
+
+                                                                                                          25
+
+
+
+
+                                                                                     Bus                                                                                    Bus
+             20
+
+
+
+
+                                                                                                          20
+
+
+
+
+                           Corr: 0.83                                                                                   Corr: 0.86
+       Share in RPS
+
+
+
+
+                                                                                                    Share in RPS
+                 15
+
+
+
+
+                                                                                                              15
+
+
+
+
+                                          CompMathStats
+
+                                                                                                                                         Other
+                                                                                                                                       CompMathStats
+                                              Other
+        10
+
+
+
+
+                                                                                                     10
+
+
+
+
+                                                  Edu
+                                                                                                                                      Psych Edu
+                                                     Eng
+                                          Psych                                                                                               Eng
+                                                                                                                                            SocSci
+                                               SocSci
+             5
+
+
+
+
+                                                                                                          5
+
+
+
+
+                                     LiberalHist      SciEngRel                                                                            BioAgEnvSciEngRel
+                                                                                                                                  LiberalHist
+                                                                                                                                    Comm
+                                       Comm BioAgEnv
+
+                                    LitLang
+                                 PhysSci                                                                                         LitLang
+                                                                                                                              PhysSci
+                                       VisPerfArts                                                                                  VisPerfArts
+                            MultiSciEng                                                                                  MultiSciEng
+             0
+
+
+
+
+                                                                                                          0
+
+
+
+
+                      0               5               10       15               20         25                      0               5               10       15         20         25
+                                                     Share in ACS                                                                                 Share in ACS
+
+                                    45 Degree Line                          Fitted Line                                          45 Degree Line                    Fitted Line
+
+
+
+Notes: Figures on the left use unweighted RPS data, figures on the right use weighted RPS data. We use the
+same sample of RPS respondents in both figures. All figures use weighted CPS and ACS data, respectively. Data
+samples for the industry comparison are employed respondents ages 18-64 in the pooled August and November
+2024 RPS and CPS with sample sizes of 6935 and 85546 , respectively. Data samples for the college major
+comparison are respondents with a college degree ages 18-64 in the pooled August and November 2024 RPS
+with sample sizes of 3840 and 85546 in the 2022 ACS, respectively.
+
+
+
+
+                                                                                                8
+

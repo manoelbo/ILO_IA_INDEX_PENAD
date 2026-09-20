@@ -1,0 +1,53 @@
+                                                                                                                                                        43
+
+m (figures 9 and 10). Both for the case where radiologists are Bayesian and the observed
+behavior in our experiment, we find that the AI decides almost all cases if the cost of a false
+negative – a missed diagnosis – is less than $100 per case. If radiologists acted as Bayesians
+with correct beliefs, the share of cases that involve human-AI collaboration rises markedly
+above a cost of $100, but even for costs as high as $10,000, this share does not exceed 50% for
+airspace opacity and does not exceed 40% for cardiomediastinal abnormality. Moreover, under
+Bayesian decision-making, the share of cases where only the radiologist decides is negligible
+for both pathologies and the only reason for using an unassisted radiologist is to save on time
+costs. When we conduct the same exercise and use the observed behavior of radiologists, we
+find that humans are involved in approximately 50% of cases for airspace opacity if the cost
+of a false positive is sufficiently large. For cardiomediastinal abnormality, the share of cases
+with humans involved only reaches 10% for very large costs of false positives. Moreover, the
+majority of cases where a radiologist is involved have the radiologist make decisions without
+AI for both pathologies. A more complete assessment of the optimal combination of human
+and machine decisions, therefore, confirms the intuition from above that cases are either
+decided by the radiologist or the AI but not by both of them together.
+
+                                                  Figure 9: Airspace Opacity Modality Shares
+                                      (a) Bayes                                                                (b) Humans
+                  1.0                                                                         1.0
+
+
+                  0.8                                                                         0.8
+ Share of Cases
+
+
+
+
+                                                                             Share of Cases
+
+
+
+
+                  0.6                                                                         0.6
+
+
+                  0.4                                                                         0.4
+
+
+                  0.2     AI                                                                  0.2     AI
+                          Human                                                                       Human
+                          Bayesian Human + AI                                                         Human + AI
+                  0.0 1                                                                       0.0 1
+                     10             102                  103           104                       10            102                  103           104
+                             Social Cost of False Negative (Dollars)                                    Social Cost of False Negative (Dollars)
+
+
+Note: The graphs show the share of cases decided by each modality (humans, AI, humans+AI) conditional on the cost of a
+false negative in dollars, denoted m in the text, for airspace opacity. Panel (a) focuses on a Bayesian decision maker. Panel (b)
+focuses on a human decision-maker with decisions and time-taken as in our experiment.
+

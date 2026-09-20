@@ -1,0 +1,42 @@
+          Canaries in the Coal Mine? Six Facts about the Recent
+
+                   Employment Effects of Artificial Intelligence
+
+                   Erik Brynjolfsson∗            Bharat Chandar†              Ruyu Chen‡§¶
+
+                                            November 13, 2025
+
+
+
+                                                   Abstract
+
+          Using high-frequency administrative data from ADP, we document six facts characterizing
+       labor market shifts following the widespread adoption of generative AI. Early-career workers
+       (ages 22-25) in AI-exposed occupations experienced 16% relative employment declines, control-
+       ling for firm-level shocks, while employment for experienced workers remained stable. Adjust-
+       ments occur primarily via employment rather than compensation, with employment changes
+       concentrated in occupations where AI automates rather than augments labor. Results are ro-
+       bust to excluding technology firms and occupations that are remotable. These six facts provide
+       early large-scale evidence consistent with generative AI disproportionately impacting entry-level
+       workers in the American labor market.
+
+
+
+
+   ∗
+     Stanford University and NBER; erikb@stanford.edu
+   †
+     Stanford University; chandarb@stanford.edu
+   ‡
+     Stanford University; ruyuchen@stanford.edu
+   §
+     We thank to David Autor, Sarah Bana, Eric Bergman, Nick Bloom, Cody Cook, Chris Forman, Joshua Gans,
+Basil Halperin, Christina Langer, Fei-Fei Li, Frank Li, Omeed Maghzian, Jiaxin Pei, Daniel Rock, Brad Ross, Phil
+Trammell, Andrew Wang, and participants at the Stanford Digital Economy Lab workshop for helpful feedback. We
+are grateful to ADP for access to the data and the Stanford Digital Economy Lab for financial support. All errors
+are our own.
+   ¶
+     Latest version: https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/
+
+
+                                                       1

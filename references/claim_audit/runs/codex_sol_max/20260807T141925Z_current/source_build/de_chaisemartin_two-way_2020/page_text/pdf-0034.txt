@@ -1,0 +1,42 @@
+Proof of Proposition 2
+
+It follows from the first order conditions attached to Regression 2 and a few lines of algebra that
+εf d,g,t = Dg,t − Dg,t−1 − D.,t + D.,t−1 . Therefore, under Assumption 6 and if Ng,t does not vary
+across t, one has that for all (g, t) such that Dg,t = 1, 1 ≤ t ≤ T − 1, wf d,g,t is proportional to
+1 − Dg,t−1 − (2D.,t − D.,t−1 − D.,t+1 ). D.,t − D.,t−1 ≤ 1, and under Assumption 6 D.,t − D.,t+1 ≤ 0,
+so 1 − Dg,t−1 − (2D.,t − D.,t−1 − D.,t+1 ) can only be strictly negative if Dg,t−1 = 1. Then, for all
+(g, t) such that Dg,t = 1, 1 ≤ t ≤ T − 1, wf d,g,t is strictly negative if and only if Dg,t−1 = 1 and
+2D.,t − D.,t−1 − D.,t+1 > 0.
+Similarly, when t = T , under the same assumptions as above, one has that for all g such
+that Dg,T = 1, wf d,g,T is proportional to 1 − Dg,T −1 − (D.,T − D.,T −1 ). D.,T − D.,T −1 ≤ 1, so
+1 − Dg,T −1 − (D.,T − D.,T −1 ) can only be strictly negative if Dg,T −1 = 1. Then, wf d,g,T is strictly
+negative if and only if Dg,T −1 = 1 and D.,T − D.,T −1 > 0.
+Finally, when t = 1, one has that for all g such that Dg,1 = 1, Dg,2 = 1 under Assumption 6, so
+wf d,g,1 is proportional to D.,2 − D.,1 , which is greater than 0 under Assumption 6.
+
+
+Proof of Theorem 3
+
+First, by definition of DIDM ,
+                             T
+                             X                                                       
+                                            N1,0,t                 N0,1,t
+              E (DIDM ) =          E               E (DID+,t |D) +        E (DID−,t |D)   .           (17)
+                             t=2
+                                             NS                     NS
+
+Let t be greater than 2, and let us focus for now on the case where there is at least one g1 such
+that Dg1 ,t−1 = 0 and Dg1 ,t = 1. Then Assumption 11 ensures that there is a least another group
+g2 such that Dg2 ,t−1 = Dg2 ,t = 0. For every g such that Dg,t−1 = 0 and Dg,t = 1, we have
+
+                   E (Yg,t − Yg,t−1 |D) =E (∆g,t |D) + E (Yg,t (0) − Yg,t−1 (0)|D) .                  (18)
+
+Under Assumptions 12, 4, and 5, for all t ≥ 2, there exists a real number ψ0,t such that for all g
+
+   E (Yg,t (0) − Yg,t−1 (0)|D) = E (Yg,t (0) − Yg,t−1 (0)|Dg ) = E (Yg,t (0) − Yg,t−1 (0)) = ψ0,t .   (19)
+
+
+
+
+                                                      34
+

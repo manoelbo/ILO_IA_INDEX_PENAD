@@ -1,0 +1,46 @@
+sson et al., 2021). To gain early insights into potential productivity gains from genAI, this
+section documents worker-reported time savings and shows how this data can inform estimates
+of aggregate and industry/firm-level productivity gains.
+
+
+5.1    How Much Do Workers Use Generative AI?
+
+We begin by documenting sizable variation in the intensity of genAI use among workers. This
+is important because, as we show in the next section, workers who use genAI more intensively
+tend to experience greater time savings.
+
+   Figure 8a reports how much time genAI users spent using the technology in a given day.
+Specifically, we ask “Please think back to the days LAST WEEK on which you used Generative
+AI at work. On average, how much time did you spend actively using Generative AI at work? ”
+Respondents could select from three options: 15 minutes or less per day, between 15 minutes
+and one hour per day, or more than an hour per day.13
+
+    Figure 8a shows that 36.9% of genAI users report using genAI for an hour or more per day
+at work, 42.8% used it for between 15 and 60 minutes per day, and 20.3% used it for less than
+15 minutes per day. We also show these estimates separately by workers’ daily frequency of
+use. Frequency and intensity of genAI use are positively correlated. 65.7% of daily genAI users
+report using it an hour or more each day, compared to only 6.4% of those who used it in the
+last month but not the last week. Overall, our results indicate wide variation in the frequency
+and intensity of genAI use at work.
+
+    We estimate bounds on the share of total work hours assisted by genAI by combining
+data on usage intensity with data on days and hours worked in the previous week. (For this
+calculation, we restrict attention to our November 2024 wave, which contains more detailed
+intensity categories; see Appendix Figure B.2). For example, consider a worker who reports
+(i) working 40 hours last week over 5 days, (ii) using genAI on multiple but not all workdays
+last week, and (iii) using genAI for between 15 and 59 minutes per day on days that they used
+it. The lower bound implies the respondent used genAI on two days for 15 minutes each day
+(15/59 · 2/40 = 1.3% of their weekly hours); the upper bound implies using genAI on four
+workdays for 1 hour each day (1 · 4/40 = 10% of their weekly hours).
+
+    We first aggregate these estimates across the 26.4% of workers in the November 2024 wave
+who report using genAI in the past week. Among workers who use genAI, between 4.9 and 19.2%
+of all work hours were assisted by genAI. Next, we include the 73.6% of non-genAI-workers in
+our calculation, who spend no time using genAI by construction. Among all workers, between
+  13
+    Respondents who did not use genAI last week but did use it in the last four weeks were asked about their
+average usage on the days they used genAI over the last four weeks.
+
+
+                                                    19
+

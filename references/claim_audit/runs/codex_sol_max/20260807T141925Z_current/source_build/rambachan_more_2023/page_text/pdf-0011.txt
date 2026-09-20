@@ -1,0 +1,63 @@
+       RAMBACHAN AND ROTH              A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                2565
+
+previously discussed restrictions, such as  S D P B (M) := SD (M) ∩  P B ,  S D I (M) := SD
+(M) ∩  I , and  R M I ( M̄) :=  R M ( M̄) ∩  I .
+
+   2.4.7. Polyhedral restrictions. Although the restrictions described above will be sensi-
+ble in many empirical contexts, researchers will often have context-specific knowledge that
+motivates alternative restrictions than what we introduced above. To accommodate such cases,
+we consider the broad class of s that can be written as polyhedra (sets defined by linear
+inequalities), or the finite union of polyhedra.
+
+
+
+
+                                                                                                                            Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+Definition 1 (Polyhedral restriction). The class  is polyhedral if it takes the form  = {δ :
+Aδ ≤ d} for some known matrix A and vector d.
+    All of the examples described above can be written either as polyhedral restrictions or finite
+unions of such restrictions. For instance, SD (M) and  S D P B (M) can be written directly as
+polyhedra.11 Likewise,  R M ( M̄) and  S D R M ( M̄) can be written as the finite union of polyhedra,
+where each polyhedron corresponds with a different location for the maximum pre-treatment
+violation.12
+    The class of (finite unions of) polyhedra is quite broad, and allows for a variety of other
+restrictions that may be relevant in empirical work. For example, researchers studying labour
+market training and related programs may be concerned about Ashenfelter’s dip (Ashenfelter,
+1978), in which earnings for the treated group trend downwards (relative to control) before treat-
+ment and upwards afterwards. In this type of setting, researchers might naturally use a polyhedral
+ to impose (i) restrictions on the signs of the pre-treatment and post-treatment biases, as well
+as (ii) restrictions on the magnitude of the rebound effect relative to the pre-treatment shock.
+
+
+2.5.    Inferential goal
+                                                                 √
+As discussed above, the event study coefficients β̂n will satisfy n(β̂ n − β) →d N (0, ∗ )
+for a wide variety of commonly used estimators. This suggests the finite-sample normal
+approximation
+                                                β̂ n ≈d N (β,       n) ,                                             (9)
+
+where ≈d denotes approximate equality in distribution and n = ∗ /n. We will construct
+confidence sets that are uniformly valid for all parameter values θ in the identified set when
+the approximation in (9) holds exactly with n known. That is, we construct confidence sets
+Cn (β̂ n , n ) satisfying
+                                                                      
+                        inf inf   Pβ̂ n ∼N (δ+τ, n ) θ ∈ Cn (β̂ n , n ) ≥ 1 − α.           (10)
+                       δ∈,τ θ∈S(δ+τ,)
+
+
+In Section 3.3, we will show that finite-sample size control in the normal model in the sense of
+(10) translates to uniform asymptotic size control over a large class of data-generating processes
+when n is replaced by a consistent estimate ˆ n . That is, we will show that the constructed
+confidence sets further satisfy
+
+                                                                                                            
+       11. In our ongoing three-period DiD example, SD (M) = {δ : ASD δ ≤ d SD } for ASD = −1         1 1         SD =
+                                                                                                          −1 and d
+        
+(M, M) . This generalizes naturally when there are multiple pre-periods and multiple post-periods.
+                                                R M ( M̄) = {δ : ∀ t ≥ 0, |δ
+       12. For example, define the polyhedra s,+                                                              RM
+                                                                             t+1 − δt | ≤ M̄(δs+1 − δs )} and s,− = {δ :
+                                                                       R M ( M̄) ∪  R M ( M̄)).
+∀ t ≥ 0, |δt+1 − δt | ≤ − M̄(δs+1 − δs )}. Then  R M ( M̄) = s<0 (s,+                 s,−
+

@@ -1,0 +1,45 @@
+Skill prices. Equilibrium skill prices adjust to equalize the supply and demand of
+
+human capital across encouraged and non-encouraged employers, which in turn depend
+
+on workers’ sorting and adoption decision rules as well as firms’ encouragement and hiring
+
+policies.
+
+   Let κ denote the encouragement cost of the marginal adopting employer. From
+
+Equation (19), equilibrium skill price differentials satisfy:
+
+                                                       κ
+                                 log W1 − log W0 =        .                            (27)
+                                                      1−ϵ
+
+Thus, the cost of employer encouragement is priced into skill differentials: workers are not
+
+rewarded for these costly investments.
+
+   A simple case arises when all employers face the same encouragement cost, κj = κ for
+
+all j. In this case, all firms are marginal to encouraging use, and the share of encouraged
+
+employers adjusts to match the relative supply of human capital by adopting workers. For
+
+analytical simplicity, the model predictions in Section A.2.4 focus first on the case with
+
+homogeneous encouragement costs. Section A.3.2 extends the analysis to the general case
+
+with heterogeneous costs.
+
+   Figure A.2 illustrates the inverse aggregate supply and demand curves for relative
+
+human capital at encouraged firms. Panel (a) depicts the case where firms face the same
+
+encouragement cost κ, while Panel (b) illustrates the more general case with heterogeneous
+
+encouragement costs.
+
+
+
+
+                                             15
+

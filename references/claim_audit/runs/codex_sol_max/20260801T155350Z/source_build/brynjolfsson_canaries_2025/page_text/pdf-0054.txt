@@ -1,0 +1,78 @@
+                   Headcount over Time by Age Group
+                          Home Health Aides
+ 4.0
+ 3.5
+ 3.0
+                                                                        Early Career 1 (22-25)
+ 2.5                                                                    Early Career 2 (26-30)
+                                                                        Developing (31-34)
+ 2.0                                                                    Mid-Career 1 (35-40)
+                                                                        Mid-Career 2 (41-49)
+ 1.5                                                                    Senior (50+)
+
+ 1.0
+ 0.5
+       -01
+
+             -07
+
+                    -01
+
+                          -07
+
+                                -01
+
+                                           -07
+
+                                                 -01
+
+                                                        -07
+
+                                                              -01
+       21
+
+             21
+
+                   22
+
+                          22
+
+                                23
+
+                                      23
+
+                                                 24
+
+                                                       24
+
+                                                              25
+   20
+
+            20
+
+                  20
+
+                        20
+
+                               20
+
+                                     20
+
+                                             20
+
+                                                       20
+
+                                                            20
+
+
+
+
+                                    Date
+Figure A20: Employment changes for home health aides by age, normalized to 1 in October 2022.
+Data come from the monthly CPS.
+
+
+
+
+                                                  54
+

@@ -1,0 +1,33 @@
+                                                              Table 1: Survey of Applied Papers
+
+      Paper                               Binary          Variation in     Pre-Treatment        Exclude         Bin Distant        Includes            Panel
+                                         Absorbing         Treatment          Relative          Distant          Relative        Never Treated      Balanced in
+                                         Treatment          Timing             Period           Relative         Periods             Units         Relative Time
+                                                                             Excluded           Periods
+       Bosch and Campos-Vazquez              X
+       (2014)
+       Fitzpatrick and Lovenheim
+       (2014)
+       Gallagher (2014)                      X                 X                  -1                                 X                 X
+       Tewari (2014)                         X                 X                   0                                                                     X
+       Ujhelyi (2014)                        X                 X                  -1                                 X                 X
+       Bailey and Goodman-Bacon              X                 X                  -1                                 X                 X                 X
+
+
+
+
+37
+       (2015)
+       Deryugina (2017)                      X                 X                  -1                                 X                 X                 X
+       Deschenes et al. (2017)               X
+       He and Wang (2017)                    X                 X                  -1                                 X
+       Lafortune et al. (2017)               X                 X                   0                X                                  X
+       Kuziemko et al. (2018                 X                 X                  -1                                 X
+       Markevich and Zhuravskaya
+       (2018)
+     Notes: This table consolidates key properties of main event study specifications across a sample of applied papers. We follow the selection criteria in
+     Roth (2019): the original sample consists of 70 total papers, but is further constrained to these twelve papers with publicly available data and code.
+     The data and code are used to determine exactly the specification estimated in these papers. We focus on the first specification underlying the event
+     study estimates in each paper, which we view as a reasonable proxy for the main specification in the paper. Note that two papers (Fitzpatrick and
+     Lovenheim (2014); Markevich and Zhuravskaya (2018)) have none of the attributes listed in the columns.
+

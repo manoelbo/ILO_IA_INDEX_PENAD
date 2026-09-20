@@ -1,0 +1,52 @@
+     Registros: Sistema de Informações Hospitalares (SIH)
+
+O SIH é baseado em um documento, as Autorizações de Internação Hospitalar
+(AIH). As AIH são o instrumento pelo qual são pagos os serviços hospitalares presta-
+dos ao SUS. O SIH existe desde 1981.
+     • Não há informações sobre as características dos internados, tampouco a infor-
+      mação de “cor ou raça”;
+     • Atualmente, encontra-se em implantação o Cartão SUS, que permitirá identifi-
+      car a “cor ou raça” das pessoas que passam por internações hospitalares.
+
+
+     Registros: Sistema de Informações Ambulatoriais (SIA)
+
+O SIA é o equivalente do SIH para os procedimentos ambulatoriais realizados com
+cobertura do SUS encaminhados por guias de pagamento (esses instrumentos têm
+mudado de nome e forma ao longo do tempo). Registra a produção ambulatorial
+desde 1994.
+     • Não há informações sobre as características dos atendidos, tampouco a infor-
+      mação de “cor ou raça”;
+     • A deficiência de informações socioeconômicas do SIA também pode vir a ser
+      suprida pelo Cartão SUS.
+
+
+     Registros: Cadastro do Cartão SUS
+
+Embora o SIH e o SIA cumpram razoavelmente bem a função de gerenciar o paga-
+mento aos prestadores de serviços, a consolidação do SUS e de seu modelo descentra-
+lizado, com o aumento progressivo das transferências diretas para municípios, que
+pagam diretamente os prestadores, implicou a necessidade de aprimoramento do re-
+gistro da produção ambulatorial e hospitalar. Além disso, o SIH e o SIA não permiti-
+am a caracterização socioeconômica do usuário e o acompanhamento de seu perfil de
+utilização dos serviços, informações essenciais para a melhoria da gestão e do plane-
+jamento das ações de saúde. O Cartão SUS em processo de implementação suprirá
+essas deficiências. A idéia é simplesmente cadastrar os usuários do SUS em um banco
+de dados nacional e fornecer-lhes um cartão magnético que será usado ao serem aten-
+didos na rede hospitalar e ambulatorial conveniada. Segundo o Ministério da Saúde,
+até julho de 2002, 35 milhões de cadastros já haviam sido encaminhados pelas secre-
+tarias municipais de saúde.
+     • O quesito “cor ou raça” faz parte do cadastro dos usuários;
+
+     • O registro da informação de “cor ou raça” no formulário de cadastro do Car-
+      tão SUS é feito empregando as cinco categorias usuais do IBGE. A cor é auto-
+      atribuída ou heteroatribuída pelo responsável pelo usuário, “sem juízo de valor
+      do entrevistador”;
+     • Não foi possível obter dados sobre o preenchimento da informação de “cor ou
+      raça” na base do cadastro, ainda em fase de implementação.
+
+
+
+
+44                         texto para discussão | 996 | nov. 2003                ipea
+

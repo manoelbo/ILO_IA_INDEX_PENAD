@@ -1,0 +1,138 @@
+A.20     Mentions of “AI” on Earnings Calls
+Figure A.24 shows that mentions of “AI” on U.S. firms’ earnings calls began rising steeply as early as
+2022Q4, tripling by 2023Q2. This pattern is referenced in Section 5.2 as evidence that firms were aware of
+and responding to the diffusion of GenAI almost immediately after the release of ChatGPT, consistent with
+the forward-looking interpretation of the junior employment decline.
+
+
+                               2000                                                                               250
+
+                                                                     ChatGPT launch
+
+                                                                                                                  200
+                               1500
+
+
+                                                                                                                  150
+                   All Firms
+
+
+
+
+                                                                                                                        S&P 500
+                               1000
+
+                                                                                                                  100
+
+
+                                500
+                                                                                                                  50
+
+                                                                          All Firms
+                                                                          S&P 500
+                                  0                                                                               0
+                                    q2
+
+
+                                           q4
+
+
+                                                  q2
+
+
+                                                         q4
+
+
+                                                                q2
+
+
+                                                                       q4
+
+
+                                                                                 q2
+
+
+                                                                                        q4
+
+
+                                                                                               q2
+
+
+                                                                                                      q4
+
+
+                                                                                                             q2
+                                  19
+
+
+                                         19
+
+
+                                                20
+
+
+                                                       20
+
+
+                                                              21
+
+
+                                                                     21
+
+
+                                                                               22
+
+
+                                                                                      22
+
+
+                                                                                             23
+
+
+                                                                                                    23
+
+
+                                                                                                           24
+                                20
+
+
+                                         20
+
+
+                                                20
+
+
+                                                       20
+
+
+                                                              20
+
+
+                                                                     20
+
+
+                                                                              20
+
+
+                                                                                      20
+
+
+                                                                                             20
+
+
+                                                                                                    20
+
+
+                                                                                                           20
+                                                                      Date
+
+
+                                Figure A.24: Mentions of “AI” on Earnings Calls
+  Notes: Reproduced from Sherwood News (2024), using data from FactSet CallStreet earnings tran-
+  scripts (FactSet Research Systems Inc., 2025).
+
+
+
+
+                                                                     A.53
+

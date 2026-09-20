@@ -1,0 +1,48 @@
+                           Survey Questionnaire – English Translation
+
+6.c Purposes of Prior Use [if 5=’Yes, only for work or ’Yes, for work and leisure’ for any option]
+Have you used an AI chatbot to perform the following work tasks?
+    • [Job task 1-6]
+    • None of the above
+
+7. Time use on AI chatbots [if 5=’Yes, only for work or ’Yes, for work and leisure’ for any option]
+Think back to the days when you used AI chatbots for your work. How much time did you spend using AI
+chatbots on average?
+     • Less than 15 minutes per day
+     • Between 15 minutes and an hour per day
+     • More than an hour per day
+
+8. Paid subscription [if 5=’Yes, only for work or ’Yes, for work and leisure’ for ‘ChatGPT’]
+Do you have an active Plus subscription for ChatGPT?
+    • Yes
+    • No
+
+                                       Block 3: Employer Initiatives
+9. Employer policies
+What is your employer’s policy regarding the use of AI chatbots?
+    • Allowed and encouraged
+    • Allowed but not encouraged
+    • Not allowed
+    • No policy
+    • Don't know
+
+10. Enterprise AI chatbot
+Does your workplace have its own AI chatbot?
+    • Yes, a custom-designed product
+    • Yes, a standard product
+    • No
+    • Don't know
+
+11.a Training courses
+Have you participated in courses on using AI chatbots?
+    • Yes
+    • No
+
+11.b Training courses [if 11.a = ’Yes’]
+Was your AI chatbot course organized by your employer?
+    • Yes
+    • No
+
+
+                                                    115
+

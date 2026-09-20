@@ -1,0 +1,33 @@
+CI1−α (δ S ) is asymptotically conservative.
+                                  √                      
+ By (38), the convergence to 0 of G E(T S )/E(P S ) − δ S , (37), and since ψg = Jf (U ∞ )×λg ,
+                                            "    1
+                                                    P               #
+                       √ DIDM − δ S       σ σ G √G g ψg
+                          G           =                     + oP (1) .
+                                b
+                                σ        σG σ b     σ
+
+                                                                                             d
+Let ZG denote the term into brackets. By the first step above and Slutsky’s lemma ZG −→
+N (0, 1). Fix η > 0. Because lim inf G σ 2G ≥ σ 2 , there exists G0 such that for every G ≥ G0 ,
+                                √       DIDM − δ S
+                                    G              ≤ (1 + η)|ZG |.
+                                           b
+                                           σ
+
+Then, letting Φ denote the cdf of the standard normal distribution, we get
+                                                                    
+                                                  z1−α/2         zα/2
+                    lim sup Pr δ ∈ CI1−α ≥ Φ
+                                 S
+                                                            −Φ           .
+                         G                         1+η            1+η
+
+The result follows by letting η tend to zero.
+
+
+
+
+                                                 32
+

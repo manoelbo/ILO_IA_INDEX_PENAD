@@ -1,0 +1,49 @@
+1302              QUARTERLY JOURNAL OF ECONOMICS
+
+
+phenomenon—i.e., due to sectoral shifts. After the 1960s, by
+contrast, the growth in nonroutine task input was dominated by
+within-industry task shifts.
+     Trends in both routine cognitive and routine manual tasks
+show a similarly striking pattern. Both types of routine task
+input increased during the 1960s, due to a combination of be-
+tween- and within-industry shifts. In the decades following, how-
+ever, input of both routine cognitive and routine manual tasks
+sharply declined, and the bulk of these declines was due to with-
+in-industry shifts. Moreover, the rate of within-industry decline
+increased in each subsequent decade.
+     As distinct from the other four task measures, we observe
+steady within- and between-industry shifts against nonroutine
+manual tasks for the entire four decades of our sample. Since our
+conceptual framework indicates that nonroutine manual tasks
+are largely orthogonal to computerization, we view this pattern as
+neither supportive nor at odds with our model.
+     In summary, the trends against routine cognitive and man-
+ual tasks and favoring nonroutine cognitive tasks that we seek to
+analyze are dominated by within-industry shifts, particularly
+from the 1970s forward. We next analyze whether computeriza-
+tion can explain these task shifts.17 Because our model makes no
+prediction for how computerizing industries will adjust demand
+for nonroutine manual tasks, we do not include this variable in
+our industry-level analysis below (see Autor, Levy, and Murnane
+[2001] for detailed analysis).
+
+
+                IV. COMPUTERIZATION AND TASK CHANGE:
+                    INDUSTRY LEVEL RELATIONSHIPS
+     As industries adopt computer technology, our model predicts
+that they will simultaneously reduce labor input of routine cog-
+nitive and manual tasks and increase labor input of nonroutine
+cognitive tasks. We test these hypotheses below.
+
+
+     17. Our model also implies that the expenditure shares of routine-task-
+intensive industries should have increased as r declined. By contrast, the predic-
+tion for the employment share of routine-task-intensive industries is ambiguous
+since these industries should have differentially substituted computer capital for
+labor input. Because our data measure employment, not expenditures, we are
+unable to test the implication for expenditure shares. Closely related, computer-
+intensive industries should have experienced relatively larger gains in labor
+productivity as r declined. Stiroh [2002] presents evidence that this occurred in
+the 1990s.
+

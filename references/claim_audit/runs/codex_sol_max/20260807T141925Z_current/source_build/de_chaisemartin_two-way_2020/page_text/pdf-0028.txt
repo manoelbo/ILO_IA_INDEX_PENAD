@@ -1,0 +1,52 @@
+A     Proofs
+
+One useful lemma
+
+Our results rely on the following lemma.
+Lemma 1 If Assumptions 1-5 hold, for all (g, g 0 , t, t0 ) ∈ {1, ..., G}2 × {1, ..., T }2 ,
+
+             E (Yg,t |D) − E (Yg,t0 |D) − (E (Yg0 ,t |D) − E (Yg0 ,t0 |D))
+           =Dg,t E (∆g,t |D) − Dg,t0 E (∆g,t0 |D) − (Dg0 ,t E (∆g0 ,t |D) − Dg0 ,t0 E (∆g0 ,t0 |D)) .
+
+Proof of Lemma 1
+
+For all (g, t) ∈ {1, ..., G} × {1, ..., T },
+                                           Ng,t
+                                                           !
+                                       1 X
+                 E (Yg,t |D) =E                 Yi,g,t D
+                                      Ng,t i=1
+                                           Ng,t
+                                                                                                    !
+                                       1 X
+                              =E                (Yi,g,t (0) + Di,g,t (Yi,g,t (1) − Yi,g,t (0))) D
+                                      Ng,t i=1
+                              =E (Yg,t (0)|D) + Dg,t E (∆g,t |D)
+                              =E (Yg,t (0)|Dg ) + Dg,t E (∆g,t |D) ,
+
+where the third equality follows from Assumption 2, and the fourth from Assumption 3. There-
+fore,
+
+             E (Yg,t |D) − E (Yg,t0 |D) − (E (Yg0 ,t |D) − E (Yg0 ,t0 |D))
+           =E (Yg,t (0) − Yg,t0 (0)|Dg ) − E (Yg0 ,t (0) − Yg0 ,t0 (0)|Dg0 )
+           +Dg,t E (∆g,t |D) − Dg,t0 E (∆g,t0 |D) − (Dg0 ,t E (∆g0 ,t |D) − Dg0 ,t0 E (∆g0 ,t0 |D))
+           =E (Yg,t (0) − Yg,t0 (0)) − E (Yg0 ,t (0) − Yg0 ,t0 (0))
+           +Dg,t E (∆g,t |D) − Dg,t0 E (∆g,t0 |D) − (Dg0 ,t E (∆g0 ,t |D) − Dg0 ,t0 E (∆g0 ,t0 |D))
+           =Dg,t E (∆g,t |D) − Dg,t0 E (∆g,t0 |D) − (Dg0 ,t E (∆g0 ,t |D) − Dg0 ,t0 E (∆g0 ,t0 |D)) ,
+
+where the first equality follows from Assumption 3, the second from the linearity of the condi-
+tional expectation and Assumption 4, and the third from Assumption 5.
+
+
+Proof of Theorem 1
+
+It follows from the Frisch-Waugh theorem and the definition of εg,t that
+                                      P Ng,t εg,t E (Yg,t |D)
+                             E βbf e D =
+                                            g,t
+                                             P                     .                                    (4)
+                                                g,t Ng,t εg,t Dg,t
+
+
+                                                        28
+

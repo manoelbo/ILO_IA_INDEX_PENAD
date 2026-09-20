@@ -1,0 +1,46 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                         1283
+
+computing power [Nordhaus 2001], engineers have become vastly
+more procient at applying the loom’s basic capabilities—rapid
+execution of stored instructions—to a panoply of tasks. How does
+this advance affect the task composition of human work? The
+answer depends both upon how computers substitute for or com-
+plement workers in carrying out specic tasks, and how these
+tasks substitute for one another. We illustrate these cases by
+considering the application of computers to routine and nonrou-
+tine cognitive and manual tasks.
+     In our usage, a task is “routine” if it can be accomplished by
+machines following explicit programmed rules. Many manual
+tasks that workers used to perform, such as monitoring the tem-
+perature of a steel nishing line or moving a windshield into place
+on an assembly line, t this description. Because these tasks
+require methodical repetition of an unwavering procedure, they
+can be exhaustively specied with programmed instructions and
+performed by machines.
+     A problem that arises with many commonplace manual and
+cognitive tasks, however, is that the procedures for accomplishing
+them are not well understood. As Polanyi [1966] observed, “We
+can know more than we can tell [p. 4] . . . The skill of a driver
+cannot be replaced by a thorough schooling in the theory of the
+motorcar; the knowledge I have of my own body differs altogether
+from the knowledge of its physiology; and the rules of rhyming
+and prosody do not tell me what a poem told me, without any
+knowledge of its rules [p. 20].” We refer to tasks tting Polanyi’s
+description as “nonroutine,” that is, tasks for which the rules are
+not sufciently well understood to be specied in computer code
+and executed by machines. Navigating a car through city trafc
+or deciphering the scrawled handwriting on a personal check—
+minor undertakings for most adults—are not routine tasks by our
+denition (see Beamish, Levy, and Murnane [1999] and Autor,
+Levy and Murnane [2002] for examples). The reason is that these
+tasks require visual and motor processing capabilities that can-
+not at present be described in terms of a set of programmable
+rules [Pinker 1997]. 4
+     Our conceptual model suggests that, because of its declining
+cost, computer-controlled machinery should have substantially
+
+     4. If a manual task is performed in a well-controlled environment, however,
+it can often be automated despite the seeming need for adaptive visual or manual
+processing. As Simon [1960] observed, environmental control is a substitute for
+exibility.
+

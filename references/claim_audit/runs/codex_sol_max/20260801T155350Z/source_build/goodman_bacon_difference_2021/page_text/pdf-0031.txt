@@ -1,0 +1,61 @@
+                                             𝑛𝑛𝑅𝑅 𝑛𝑛𝑘𝑘𝑅𝑅 𝑛𝑛𝑈𝑈𝑅𝑅
+                        � 2𝑥𝑥2
+                        𝛽𝛽            =�                           � 2𝑥𝑥2
+                                                                   𝛽𝛽                                            (22)
+                           𝑘𝑘𝑘𝑘,𝑅𝑅×𝑡𝑡                     𝑅𝑅    𝑅𝑅
+                                            ∑𝑅𝑅 𝑛𝑛 𝑛𝑛𝑘𝑘 𝑛𝑛𝑈𝑈 𝑘𝑘𝑘𝑘,𝑅𝑅
+                                                   𝑅𝑅
+                                      𝑅𝑅
+
+
+                                            𝑛𝑛𝑅𝑅 𝑛𝑛𝑘𝑘𝑅𝑅 𝑛𝑛ℓ𝑅𝑅
+                       � 2𝑥𝑥2 = �
+                       𝛽𝛽                                        �𝜇𝜇 𝑘𝑘ℓ
+                                                                                                  � 2𝑥𝑥2,ℓ �
+                                                                         � 2𝑥𝑥2,𝑘𝑘 + (1 − 𝜇𝜇𝑘𝑘ℓ ) 𝛽𝛽
+                                                                         𝛽𝛽                                      (23)
+                          𝑘𝑘ℓ,𝑅𝑅×𝑡𝑡                      𝑅𝑅
+                                           ∑𝑅𝑅 𝑛𝑛𝑅𝑅 𝑛𝑛𝑘𝑘 𝑛𝑛ℓ  𝑅𝑅            𝑘𝑘ℓ,𝑅𝑅×𝑡𝑡                𝑘𝑘ℓ,𝑅𝑅×𝑡𝑡
+                                     𝑅𝑅
+
+2x2 DD’s from large regions get more weight (via the 𝑛𝑛𝑅𝑅 ), but the distribution of timing groups
+
+within region (the 𝑛𝑛𝑎𝑎𝑅𝑅 𝑛𝑛𝑏𝑏𝑅𝑅 terms) also determine the importance of each region. Regions with no
+
+units in group 𝑘𝑘 contribute nothing to 2x2 DD’s involving that group, in contrast to the simpler
+
+estimator where that region would contribute controls for group 𝑘𝑘. If no region contains units from
+
+a given pair of groups that pair drops out of the disaggregated time effects specification. These
+
+within-region 2x2 DD’s in (22) and (23) are weighted together using the cross-region average of
+
+the sample share products, ∑𝑅𝑅 𝑛𝑛𝑅𝑅 𝑛𝑛𝑘𝑘𝑅𝑅 𝑛𝑛ℓ𝑅𝑅 as well as treatment variances.
+
+    Adding region-by-year effects to the unilateral divorce analysis cuts the estimated effect by a
+
+factor of three (-1.16). Figure 11 plots the 2x2 DD’s and the weights from this specification against
+
+those from the baseline model. 43 of the 156 2x2 terms in the baseline model drop out of the
+
+within-region specification, and table 2 shows that about three quarters of the difference in the
+
+estimates comes from the way these fixed effects change the weights.
+
+                                               IV.         CONCLUSION
+Difference-in-differences is perhaps the most widely applicable quasi-experimental research
+
+design. Its transparency makes it simple to describe, test, interpret, and teach. This paper extends
+
+all of these advantages from canonical two-by-two DD models to general and much more common
+
+DD models with variation in the timing of treatment.
+
+        My central result, the DD decomposition theorem, shows that a two-way fixed effects DD
+
+coefficient equals a weighted average of all possible simple 2x2 DD’s that compare one group that
+
+changes treatment status to another group that does not. Many ways in which the theoretical
+
+                                                              29
+

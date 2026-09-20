@@ -1,0 +1,49 @@
+{
+  "extended_window": [
+    -23,
+    41
+  ],
+  "frozen_comparison": "executed",
+  "frozen_rows_matched": 5,
+  "frozen_window": [
+    -23,
+    23
+  ],
+  "full_lead_count": 22,
+  "matched_lead_count": 10,
+  "matched_lead_window": "-11_to_-2",
+  "max_absolute_joint_statistic_difference": 0.0,
+  "n_obs_identical": true,
+  "outcomes": [
+    "admissoes",
+    "desligamentos",
+    "n_movimentacoes",
+    "ln_salario_real_adm",
+    "asinh_saldo"
+  ],
+  "power_reading_counts": {
+    "violation_not_specific_to_2021": 5
+  },
+  "principal_specification_changed": false,
+  "sample_2022_window": [
+    -11,
+    41
+  ],
+  "selection_on_pretest": false,
+  "tasks": [
+    "T8A.1",
+    "T8A.3",
+    "T8A.6"
+  ],
+  "wage_coverage": {
+    "cbo_complete_wage_coverage": 333,
+    "cbo_dropped": 8,
+    "cbo_total": 341,
+    "cells_retained": 15651,
+    "control_cbo_retained": 260,
+    "coverage_resolves_pretrend": false,
+    "treated_cbo_retained": 73,
+    "unrestricted_joint_lead_p_value": 0.00015800979666675302,
+    "window_months": 47
+  }
+}

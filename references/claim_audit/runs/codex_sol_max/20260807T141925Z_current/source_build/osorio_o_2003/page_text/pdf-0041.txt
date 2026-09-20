@@ -1,0 +1,51 @@
+       tre as cinco categorias possíveis (quatro no Censo de 1980). Todavia, há de se
+       ponderar que a informação de cor nem sempre é “auto-atribuída”. A pessoa en-
+       trevistada no domicílio pode apontar a “cor ou raça” dos demais residentes adul-
+       tos, sem que estes saibam e concordem com a categoria à qual foram atribuídos;
+       além disso, por razões óbvias, são pessoas adultas que declaram a cor das crianças
+       que ainda não o podem fazer;
+    • A taxa de respostas recusadas ou ignoradas ao quesito de “cor ou raça” é ínfima
+       (0,7% em 2000).
+
+
+    Levantamento: Pesquisa Nacional por Amostra de Domicílios (Pnad) do IBGE
+
+Tão importante quanto o Censo, a Pnad é realizada anualmente, exceto nos anos cen-
+sitários. Iniciada no fim da década de 1960, tal pesquisa foi sendo aprimorada ao lon-
+go da década de 1970. Desde 1976, só não foi a campo em 1994. O IBGE
+disponibiliza para venda em microdados ao público todas as Pnad de 1976 em diante.
+A Pnad cobre todo o território nacional, exceto a zona rural da Região Norte, e suas
+informações são representativas para as Unidades da Federação e as Regiões Metropo-
+litanas. As Pnad captam informações genéricas sobre as moradias e as características
+demográficas, educacionais, do trabalho – com grande detalhamento – e dos rendi-
+mentos dos moradores dos domicílios amostrados. Uma Pnad costuma ter, além de
+seu corpo básico de quesitos, módulos suplementares temáticos com questões dedica-
+das a um ou mais assuntos específicos, e.g. saúde (1981 e 1998) e mobilidade social
+(1973, 1976, 1982, 1988 e 1996).
+    • A primeira Pnad a captar a cor dos entrevistados foi a de 1976 – nessa época, o
+       quesito ainda não era denominado “cor ou raça”, apenas “cor”;
+    • As Pnad de 1977 a 1981, e a de 1983, não possuem a informação sobre cor;
+
+    • Nos anos de 1982, 1984, 1985, e 1986, a cor foi captada pela Pnad, mas o
+       quesito não fazia parte do corpo básico da pesquisa, pertencendo então aos bo-
+       letins temáticos suplementares. Em 1985, o suplemento captou também a cor
+       dos filhos residentes fora do domicílio;
+    • A partir de 1987, a cor passa a ser coletada como parte do corpo básico da Pnad;
+
+    • De 1992 em diante, o sistema classificatório empregado na Pnad passa a en-
+       globar a categoria “indígena” e a ser designado “cor ou raça”;
+    • A informação de “cor ou raça” da Pnad é captada da mesma forma que no
+       Censo, por meio de auto-atribuição induzida, estando sujeita aos mesmos pro-
+       blemas relativos à definição da cor dos demais residentes pelo membro entre-
+       vistado do grupo doméstico;
+    • A taxa de respostas inexistentes ao quesito de “cor ou raça” é baixíssima em to-
+       das as Pnad que o captaram, sendo que na década de 1990 foi sempre inferior
+       a 0,5% da população;
+    • Na Pnad de 1976, a cor foi captada também por meio de autodeclaração           es-
+       pontânea, na qual é registrada a categoria de cor mencionada pelo entrevistado.
+
+
+
+
+ipea                       texto para discussão | 996 | nov. 2003                     39
+

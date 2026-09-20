@@ -1,0 +1,28 @@
+                       Table C.23: Model Selection: Top Level with AI without Accounting for Measurement Error
+
+                                      (1)         (2)         (3)       (4)          (5)         (6)        (7)         (8)        (9)        (10)        (11)        (12)
+Automation Bias (b)                  0.49        0.37        0.56       0.53        0.37        0.38       0.42        0.37        0.48       0.52        0.36        0.38
+                                    (0.02)      (0.02)      (0.03)     (0.03)      (0.02)      (0.02)     (0.02)      (0.02)      (0.03)     (0.02)      (0.02)      (0.02)
+Own Info Bias (d)                    1.00        0.89        0.95       0.95        0.90        0.90       0.93        0.90        0.91       0.94        0.90        0.89
+                                    (0.02)      (0.02)      (0.02)     (0.02)      (0.02)      (0.02)     (0.02)      (0.02)      (0.02)     (0.02)      (0.02)      (0.02)
+Constant                             0.32        0.13        0.29       0.31        0.12        0.13       0.21        0.14        0.20       0.27        0.14        0.12
+                                    (0.04)      (0.04)      (0.04)     (0.04)      (0.04)      (0.04)     (0.04)      (0.04)      (0.04)     (0.04)      (0.04)      (0.04)
+Focal sA                               ✓           ✓           ✓         ✓            ✓           ✓          ✓           ✓          ✓          ✓           ✓           ✓
+Other sA                                           ✓                                  ✓           ✓                      ✓                                 ✓           ✓
+Focal sE                                                      ✓           ✓           ✓           ✓                                 ✓          ✓           ✓           ✓
+Other sE                                                                  ✓                       ✓                                            ✓                       ✓
+Clinical History sE                                                                                         ✓           ✓           ✓          ✓           ✓           ✓
+J-Statistic                          3.47        1.06        2.04       2.94        4.6         1.98       0.01        1.75        0.0         3.7        9.19         0.0
+MMSC-BIC                            -4.97       -7.38       -2.18      -1.28       -3.84       -6.46      -4.21       -10.91       0.0       -0.52       -7.69         0.0
+Number of Moments                     5           5            4          4          5            5         4            6          3           4          7            3
+Observations                        11420       11420       11420      11420       11420       11420      11420       11420       11420      11420       11420       11420
+R-Squared                            0.58        0.55        0.56       0.56        0.55        0.55       0.56        0.55        0.56       0.56        0.55        0.55
+
+Note: This table presents results of the model selection exercise as described in Table 3 for top-level pathologies with AI assistance without accounting for measurement
+error in the radiologist reports.
+
+
+
+
+                                                                                                                                                                              111
+

@@ -1,0 +1,6 @@
+group,outcome_id,outcome,definition,transformation_and_estimator,coefficient_interpretation,verified_estimator,source
+Fluxos,admissoes,"Admissões (PPML, nível)",Número de admissões formais na CBO-mês,PPML sobre a contagem em nível,Semi-elasticidade; não é log-log,ppml,results/models/specification_ladder.csv
+Fluxos,desligamentos,"Desligamentos (PPML, nível)",Número de desligamentos formais na CBO-mês,PPML sobre a contagem em nível,Semi-elasticidade; não é log-log,ppml,results/models/specification_ladder.csv
+Fluxos,n_movimentacoes,"Fluxo bruto (PPML, nível)",Admissões mais desligamentos na CBO-mês,PPML sobre a contagem em nível,Semi-elasticidade; não é log-log,ppml,results/models/specification_ladder.csv
+Salários,ln_salario_real_adm,Salário real de admissão (log),Salário médio de admissão deflacionado pelo IPCA,Log; OLS,Diferença aproximada em proporção,ols,results/models/specification_ladder.csv
+Saldo,asinh_saldo,Saldo líquido (asinh),Admissões menos desligamentos na CBO-mês,asinh; OLS,Não interpretar como percentual,ols,results/models/specification_ladder.csv

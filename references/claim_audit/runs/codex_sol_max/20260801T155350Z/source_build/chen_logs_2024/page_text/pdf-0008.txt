@@ -1,0 +1,59 @@
+as a percentage, since the presence of the extensive margin effect makes it arbitrarily dependent
+on the units. Indeed, a percentage effect is not a well-defined for individuals moving from zero
+to non-zero outcomes. Whether the zeros correspond to a discrete economic choice or not will be
+relevant, however, when considering the choice of alternative target parameter, a topic we return to
+in Section 4 below.
+
+2.1.1    Intuition for the special case of logp1 ` Y q
+
+We can also develop some intuition for Proposition 1 by considering the special case where mpyq “
+logp1 ` yq. In that case, we have that
+                                                                „    ˆ                ˙
+                                                                         1 ` aY p1q
+               θpaq “ Erlogp1 ` aY p1qq ´ logp1 ` aY p0qqs “ E log                         .      (1)
+                                                                         1 ` aY p0q
+
+Note that                                  $ ´        ¯
+                                                Y p1q
+                                           ’
+                                           ’
+                                           ’log Y p0q      if Y p1q ą 0, Y p0q ą 0
+                                           ’
+                                        ˙ ’
+                                            0              if Y p1q “ 0, Y p0q “ 0
+                           ˆ               ’
+                             1 ` aY p1q    &
+                   lim log               “
+                  aÑ8        1 ` aY p0q    ’
+                                           ’8              if Y p1q ą 0, Y p0q “ 0
+                                           ’
+                                           ’
+                                           ’
+                                           ’
+                                           %´8             if Y p1q “ 0, Y p0q ą 0.
+
+We thus see that the term inside the expectation in (1) diverges to 8 for individuals with Y p1q ą
+0, Y p0q “ 0, and likewise diverges to ´8 when Y p1q “ 0, Y p0q ą 0. If on average the extensive
+margin effect is positive, then there are more individuals for whom the limit is `8 rather than
+´8, and thus (under appropriate regularity conditions) the ATE diverges to 8. Analogously, if the
+extensive margin effect is negative, then the ATE diverges to ´8. Hence, we see that the magnitude
+of the ATE for logp1 ` aY q diverges as a Ñ 8 when the average effect on the extensive margin is
+non-zero. By contrast, as a Ñ 0, logp1 ` aY pdqq Ñ logp1q “ 0 for both d “ 0 and d “ 1, and thus
+the treatment effect converges to 0. Proposition 1 shows that this dependence on units occurs for
+any log-like transformation, not just logp1 ` Y q, and thus this issue cannot be fixed by choosing a
+                                                                     ?
+different log-like transformation (logpc ` Y q, arcsinhpY q, arcsinhp Y q, etc.)
+
+2.2     Additional remarks and extensions
+Remark 1 (ATEs for logpc ` Y q). In some settings, researchers consider the ATE for logpc ` Y q
+and investigate sensitivity to the parameter c. Observe that logp1 ` aY q “ logpap1{a ` Y qq “
+logpaq ` logp1{a ` Y q, and thus the ATE for logp1 ` aY q is equal to the ATE for logp1{a ` Y q.
+Hence, varying the constant term for logpc ` Y q is equivalent to varying the scaling of the outcome
+when using mpyq “ logp1 ` yq. Proposition 1 thus implies that if treatment affects the extensive
+margin, one can obtain any desired magnitude for the ATE for logpc ` Y q via the choice of c. In
+particular, the ATE for logpc ` Y q grows large in magnitude as c Ñ 0, and small as c Ñ 8.
+Remark 2 (Finite changes in scaling). Proposition 1 shows that any magnitude of |θpaq| can be
+achieved via the appropriate choice of a. How much does θpaq change for finite changes in the scaling
+
+                                                 8
+

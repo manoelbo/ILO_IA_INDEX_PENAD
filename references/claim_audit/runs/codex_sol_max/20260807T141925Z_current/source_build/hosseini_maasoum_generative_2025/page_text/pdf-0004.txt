@@ -1,0 +1,44 @@
+dataset covers more than 280,000 U.S. firms, more than 160 million employment spells
+from roughly 65 million unique workers between 2015 and 2025, and almost 200 mil-
+lion job postings. A key advantage of the data is the standardized seniority classification
+assigned to each position by Revelio’s algorithm, which enables us to track junior and
+senior employment within firms over time.4
+    We identify GenAI adoption by detecting job postings that explicitly recruit “GenAI
+integrator” roles. The method follows the approach of Hampole et al. (2025) and proceeds
+in two steps: first flagging postings with GenAI-related keywords, then using a large
+language model (LLM) to determine whether the posting reflects a genuine integrator
+position—one dedicated to implementing or operating GenAI technology in the firm’s
+workflow. A firm is classified as an adopter if it has posted at least one such vacancy,
+thereby capturing firms that have actively initiated the integration of GenAI into their
+operations.5
+    By this definition, 10,433 firms in our sample adopted GenAI by March 2025. Although
+adopters represent only about 3.7 percent of the 281,000 firms in our sample, they are
+substantially larger on average and account for roughly 16 percent of total employment
+in our dataset. Our analysis shows that adoption of GenAI was minimal and relatively
+stable prior to 2023, but accelerated sharply thereafter, with a surge of new firms posting
+integrator roles following the release of ChatGPT in late 2022. We further validate this
+firm-level adoption measure using worker-side data. Applying a list of GenAI keywords
+to position descriptions, we find a sharp differential increase in AI-related mentions at
+adopting firms after the launch of ChatGPT, supporting the interpretation that our adop-
+tion measure captures genuine changes in workplace technology use.
+    The main empirical exercise of the paper is to test the framework’s central implica-
+tion: whether GenAI adoption disproportionately reduces junior employment relative
+   4 We validate the data in Appendices A.1 and A.2. First, we show that the composition of the LinkedIn
+
+sample relative to QCEW, OEWS, and QWI benchmarks remains stable over the GenAI diffusion period.
+Second, we test for differential reclassification: the concern that adopting firms changed how positions were
+classified as junior after 2022. Using both job-title keywords and workers’ actual labor-market experience,
+we find that the content of each seniority group evolves similarly at adopting and non-adopting firms, with
+no break around the ChatGPT launch. This indicates that the decline in junior employment is unlikely to
+be driven by changes in seniority classification.
+   5 Our concept of a GenAI integrator is closely related to the “robot integrator” in Acemoglu and Restrepo
+
+(2020), defined as “companies that install, program, and maintain robots.” They use the presence of robot
+integrators as a proxy for local robot adoption and show that commuting zones more exposed to robots
+have a higher number of integrators.
+
+
+
+
+                                                     4
+

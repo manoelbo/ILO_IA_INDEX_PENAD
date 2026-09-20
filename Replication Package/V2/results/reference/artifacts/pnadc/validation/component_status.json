@@ -1,0 +1,13 @@
+{
+  "causal_effect_claim_authorized": false,
+  "component": "pnadc",
+  "cross_language_max_coefficient_difference": 2.0122792321330962e-16,
+  "cross_language_max_standard_error_difference": 1.252350839697769e-08,
+  "cross_language_pretrend_models": 12,
+  "cross_language_status": "pass",
+  "family": "E",
+  "family_size": 6,
+  "interpretation": "complementary_composition_and_stock_evidence",
+  "pretrend_failures": 12,
+  "status": "pass_with_noncausal_limit"
+}

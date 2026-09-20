@@ -1,0 +1,82 @@
+                    Figure 7: Effect of LLM exposure on occupation-level job-posting salary
+                                   (a) Level                                                                              (b) Log
+
+
+
+
+                                                                                                       0.01
+                     0
+
+
+
+
+                                                                                                       0.00
+                     −500
+
+
+
+
+                                                                                                       −0.01
+      Coefficient
+
+
+
+
+                                                                                        Coefficient
+                     −1000
+
+
+
+
+                                                                                                       −0.02
+                     −1500
+
+
+
+
+                                                                                                       −0.03
+                     −2000
+
+
+
+
+                             −10   0                         10      20    30                                  −10   0               10          20   30
+
+                                       Periods to treatment                                                               Periods to treatment
+
+
+
+
+                                                                           (c) St. Dev.
+                                                              1500
+                                                              1000
+                                               Coefficient
+
+                                                              500
+                                                              0
+                                                              −500
+
+
+
+
+                                                                     −10    0                         10       20    30
+
+                                                                                Periods to treatment
+
+
+
+
+Notes: This figure plots event study estimates of the effect of occupation-level LLM exposure on
+salaries in job listings. The dependent variables are posted salary per job listing (Panel A), log
+salary (Panel B), and the standard deviation of the posted salary (Panel C). All other definitions
+are as in Figure 6.
+
+
+
+4.3                     Heterogeneous Treatment Effects
+Our main results show the average treatment effects across all firms and occupations,
+but the impact of LLM exposure is likely to vary with organizational and labor mar-
+
+
+                                                                                    22
+

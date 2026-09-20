@@ -1,0 +1,40 @@
+to 4.1% for individuals who use the tools daily, and to 4.0% for those who report large
+time savings.18 By contrast, the relationship between adoption and occupation switching
+is fairly similar across employer chatbot initiatives, ranging in 2024 from about 1.1% to
+1.9% across initiatives.
+
+
+Occupational Heterogeneity. Figure 7, Panel (b), splits the effects of chatbot adoption
+on mobility by survey occupation.19 Positive effects appear in multiple occupations, but
+are strongest and most statistically significant among IT supporters, and to some extent,
+office clerks. These are occupations where individual workers likely have more flexibility
+in choosing their toolset, allowing newcomers to take advantage of AI chatbots. In
+contrast, financial advisors and customer support specialists often work with established
+IT systems, making it harder for newcomers to compensate for missing skills by using
+chatbots on an individual basis. These patterns align with Dillon et al. (2025), who show
+that workers primarily adopt Microsoft Copilot for tasks where they can use the tools
+without coordinating with others. Finally, the absence of switching effects in licensed
+occupations—such as teachers and accountants, which require several years of prior
+education—strengthens the interpretation that the mobility effects observed elsewhere
+reflect a genuine link between chatbot use and newcomers acquiring occupation-relevant
+skills.
+
+
+Job Characteristics for Adopters Who Switch Occupations. Adopters who switch
+occupations are particularly informative for two reasons. First, occupational switching
+is the only administrative outcome that moves with workers’ chatbot adoption. Second,
+since job switching is a core source of labor market progression, the characteristics of these
+  18
+     The effect magnitudes in Figure 6, Panel (b) are generally smaller than the endline estimates in
+Figure 5, Panel (c). This reflects that the pooled specifications estimate trends over the full sample
+period, absorbing part of the post-period treatment variation (see Equation (3)).
+  19
+     Because survey respondents, by construction, are employed in the survey occupations at the time of
+sampling (June 2024), the worker-level adoption analysis is primarily suited for studying occupational
+switching into these occupations. In Section 3.4, we examine potential displacement effects out of the
+survey occupations by studying incumbent workers—those employed in the survey occupations prior to
+the arrival of AI chatbots—based on their employers’ subsequent adoption of the tools.
+
+
+
+                                                  28

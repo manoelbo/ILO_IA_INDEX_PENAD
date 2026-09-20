@@ -1,0 +1,56 @@
+1324                   QUARTERLY JOURNAL OF ECONOMICS
+
+     APPENDIX 2: COMPUTERIZATION AND INDUSTRY TASK INPUT, 1960 –1998:
+                     USING COMPOSITE TASK MEASURES
+  DEPENDENT VARIABLE: 10 3 ANNUAL WITHIN -INDUSTRY CHANGE IN TASK INPUT,
+           MEASURED IN PERCENTILES OF 1960 TASK DISTRIBUTION
+
+                                                   1. 1990–       2. 1980–      3. 1970–       4. 1960–
+                                                     1998           1990          1980           1970
+
+A. D Nonroutine         D Computer use                 8.21        12.09            6.50          8.57
+  analytic              1984–1997                     (4.55)        (4.55)         (4.21)        (5.74)
+                        Intercept                      0.64        20.67            0.07        20.07
+                                                      (0.96)        (0.94)         (0.86)        (1.14)
+                        R2                             0.02          0.05           0.02          0.02
+                        Weighted mean D                2.26          1.67           1.32          1.51
+B. D Nonroutine         D Computer use                 9.83          9.93           5.67        10.45
+  interactive           1984–1997                     (4.39)        (4.74)         (3.47)        (5.00)
+                        Intercept                      0.54          0.53           1.42          0.00
+                                                      (0.92)        (0.98)         (0.71)        (1.00)
+                        R2                             0.04          0.03           0.02          0.03
+                        Weighted mean D                2.48          2.45           2.51          1.93
+C. D Routine            D Computer use              213.40         24.59          24.76         27.02
+  cognitive             1984–1997                     (4.44)        (5.58)         (3.70)        (4.75)
+                        Intercept                      0.23        20.39            0.56        20.05
+                                                      (0.94)        (1.16)         (0.76)        (0.95)
+                        R2                             0.06          0.00           0.01          0.02
+                        Weighted mean D              22.41         21.28          20.35         21.35
+D. D Routine            D Computer use              223.17        215.27         213.25           3.98
+  manual                1984–1997                     (6.99)        (6.86)         (5.34)        (4.13)
+                        Intercept                    20.52         20.80            1.97          1.35
+                                                      (1.47)        (1.42)         (1.09)        (0.82)
+                        R2                             0.07          0.03           0.04          0.01
+                        Weighted mean D              25.09         23.76          20.56           2.09
+
+    n is 140 consistent CIC industries. Standard errors are in parentheses. Each column of panels A–D
+presents a separate OLS regression of ten times the annual change in industry-level task input between the
+endpoints of the indicated time interval (measured in centiles of the 1960 task distribution) on the annual
+percentage point change in industry computer use during 1984 –1997 (mean 0.193) and a constant. Computer
+use is the fraction of industry workers using a computer at their jobs, estimated from the October 1984 and
+1997 CPS samples. Estimates are weighted by mean industry share of total employment in FTEs over the
+endpoints of the years used to form the dependent variable. Samples used are Census 1960, 1970, and 1980
+and CPS MORG 1980, 1990, and 1998. See the Data Appendix for details on construction of the composite
+task variables. See Table I for denitions and examples of task variables.
+
+
+
+
+                                         DATA APPENDIX
+
+A.1. Samples Used from Current Population Survey and Census
+of Populations
+    To calculate occupational and education distributions econo-
+mywide and within industries for 1960 to 1998, we used obser-
+vations on all noninstitutionalized, employed workers ages
+

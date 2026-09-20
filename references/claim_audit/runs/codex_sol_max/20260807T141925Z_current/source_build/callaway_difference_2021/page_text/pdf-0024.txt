@@ -1,0 +1,85 @@
+unit variance, and finite third moment, independent of the original sample {Wi }ni=1 . A popular exam-
+                                                                     √                      √
+ple involves iid Bernoulli variates {Vi } with P (V = 1 − κ) = κ/ 5 and P (V = κ) = 1 − κ/ 5, where
+      √      
+κ=      5 + 1 /2, as suggested by Mammen (1993).
+                    ∗,dr,nev                           dr,nev
+    We define AT
+               [  T t≥(g−δ) , a bootstrap draw of AT
+                                                  [  T t≥(g−δ) , via
+
+                                      ∗,dr,nev       dr,nev      h                 i
+                                 AT
+                                 [  T t≥(g−δ) = AT
+                                                [                     b dr,nev (W ) .
+                                                   T t≥(g−δ) + En V · Ψ                                                 (4.6)
+                                                                        t≥(g−δ)
+
+The next theorem establishes the asymptotic validity of the multiplier bootstrap procedure proposed
+above.
+
+Theorem 3. Under the assumptions of Theorem 2
+                         √
+                                                       
+                                   ∗,dr,nev      dr,nev   d
+                           n AT T t≥(g−δ) − AT T t≥(g−δ) → N (0, Σ),
+                              [             [
+                                                                               ∗
+
+                                             d
+where Σ is as in Theorem 2, and → denotes weak convergence (convergence in distribution) of the bootstrap
+                                             ∗
+law in probability, i.e., conditional on the original sample {Wi }ni=1 . Additionally, for any continuous
+functional Γ(·),14
+
+                                       √
+                                                                       
+                                                  ∗,dr,nev       dr,nev     d
+                               Γ           n AT
+                                              [ T t≥(g−δ) − AT
+                                                            [  T t≥(g−δ)    → Γ (N (0, Σ)) .
+                                                                               ∗
+
+    We now describe a practical bootstrap algorithm to compute studentized confidence bands that cover
+AT T (g, t) simultaneously over all t ≥ g − δ with a pre-specified probability 1 − α in large samples.
+This is similar to the bootstrap procedures used in Kline and Santos (2012), Belloni et al. (2017) and
+Chernozhukov et al. (2018) in different contexts.
+                                                                                   ∗,dr,nev
+Algorithm 1. 1) Draw a realization of {Vi }ni=1 . 2) Compute AT [  T t≥(g−δ) as in (4.6), denote its (g, t)-
+               ∗
+element as AT
+           [  T (g, t) , and form a bootstrap draw of its limiting distribution as
+                                                          √     ∗                    
+                                           R̂∗ (g, t) =    n AT
+                                                              [ T (g, t) − AT
+                                                                           [  T (g, t) .
+
+3) Repeat steps 1-2 B times. 4) Compute a bootstrap estimator of the main diagonal of Σ1/2 such as
+the bootstrap interquartile range normalized by the interquartile range of the standard normal distribu-
+      b 1/2 (g, t) = (q0.75 (g, t) − q0.25 (g, t)) / (z0.75 − z0.25 ) , where qp (g, t) is the pth sample quantile of the
+tion, Σ
+R̂∗ (g, t) in the B draws, and zp is the pth quantile of the standard normal distribution. 5) For each boot-
+strap draw, compute t−testt≥(g−δ) = max(g,t) R̂∗ (g, t) Σ   b (g, t)−1/2 . 5) Construct b
+                                                                                        c1−α as the empirical
+(1 − a)-quantile of the B bootstrap draws of t−testt≥(g−δ) . 6) Construct the bootstrapped simultaneous
+                                                                                       b (g, t)−1/2 /√n].
+                                                                   nev
+confidence band for AT T (g, t), t ≥ (g − δ) , as C
+                                                  b (g, t) = [AT
+                                                              [  T dr (g, t; δ) ± b
+                                                                                  c1−α Σ
+
+    The next corollary to Theorem 3 states that the simultaneous confidence band for AT T (g, t) described
+in Algorithm 1 has correct asymptotic coverage.
+
+Corollary 1. Under the assumptions of Theorem 2, for any 0 < α < 1, as n → ∞,
+                                                                               
+              P AT T (g, t) ∈ C
+                              b (g, t) ∀t ∈ {2, . . . , T } , g ∈ Gδ : t ≥ g − δ → 1 − α,
+
+  14
+       Since the number of periods T is fixed, Γ(·) should be interpreted as a continuous functional between Euclidean spaces.
+
+
+                                                                  24
+

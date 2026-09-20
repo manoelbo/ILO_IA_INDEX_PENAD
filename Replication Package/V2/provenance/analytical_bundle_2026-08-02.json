@@ -1,0 +1,41 @@
+{
+  "bundle": {
+    "bytes": 4138541083,
+    "files": 161,
+    "location": "../_bundle/v2",
+    "manifest": "config/analytical_bundle_manifest.csv",
+    "manifest_sha256": "e650c7c27084884bc2824753104cf785cdec4846a23618d2660900703eb019c8",
+    "status": "pass"
+  },
+  "captured_at": "2026-08-03T04:02:54-03:00",
+  "excluded_raw_duplicates": [
+    {
+      "analytical_path": "derived/spatial/vintage/Acessos_Banda_Larga_Fixa_2021.csv",
+      "raw_cache_path": "spatial/Acessos_Banda_Larga_Fixa_2021.csv",
+      "sha256": "668fb5484857ac3bec724179e942ef0a8ee54c4467deae5cdaf43e7ccdb2a7f8"
+    },
+    {
+      "analytical_path": "derived/spatial/vintage/Acessos_Banda_Larga_Fixa_2022.csv",
+      "raw_cache_path": "spatial/Acessos_Banda_Larga_Fixa_2022.csv",
+      "sha256": "8ea712c61c565565fb068bc9f255e393b25f9a48c95061fc89d63ae166d3ba0c"
+    },
+    {
+      "analytical_path": "derived/spatial/vintage/Acessos_Banda_Larga_Fixa_Total.csv",
+      "raw_cache_path": "spatial/Acessos_Banda_Larga_Fixa_Total.csv",
+      "sha256": "228be95b21e4d01f6caed1e6c247027ae69bb1130fe6b0b4de09971fcd86b028"
+    },
+    {
+      "analytical_path": "derived/spatial/vintage/Densidade_Banda_Larga_Fixa.csv",
+      "raw_cache_path": "spatial/Densidade_Banda_Larga_Fixa.csv",
+      "sha256": "660e049fb4a97485c9ce533b4de1471c9b8bfee73e995cf9e831626d66387071"
+    },
+    {
+      "analytical_path": "derived/spatial/vintage/ibge_municipios_censo2022.parquet",
+      "raw_cache_path": "spatial/ibge_municipios_censo2022.parquet",
+      "sha256": "66c65598a2a5d5c9d18459542587058719dd084f7b8efa97c45d00814392bd7f"
+    }
+  ],
+  "format_version": 1,
+  "repository_stub": "data/.gitignore",
+  "scope": "Frozen analytical inputs required by reproduce mode; official raw sources remain in the full-mode cache."
+}

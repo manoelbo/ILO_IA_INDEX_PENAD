@@ -1,0 +1,31 @@
+B.2        Survey Sample
+
+Table B.1 outlines how successive sample restrictions define our analysis sample. In total,
+we obtained about 25,000 complete and valid responses per survey round that can be
+linked to registry data. The attrition and response rates in our survey are comparable
+to those obtained in previous Danish surveys (Hvidberg, Kreiner and Stantcheva, 2023).
+While our main analysis focuses on responses from the 2024 round, we use the 2023 round
+to examine the dynamics of our estimated effects.
+
+
+                                          Table B.1: Sample Construction
+                                         2024 Survey                                          2023 Survey
+                                                                              Main Survey                    Follow-Up Only
+                                Individuals   Percent of invitees   Individuals Percent of invitees Individuals Percent of invitees
+ 1.   Invitees                    115,000           100.0             100,000          100.0           15,000           100.0
+ 2.   Respondents                  30,411            26.4              29,067           29.1            4,094           27.3
+ 3.   In target occupation(s)      26,925            23.4              25,121           25.1            3,504           23.4
+ 4.   Complete responses           25,241            21.9             18,109            18.1           2,561            17.1
+ 5.   Linked to registers         24,796             21.6              17,907           17.9            2,559           17.1
+
+Notes: This table outlines how successive sample restrictions define our analysis sample. We conducted two survey rounds
+in November 2023 and 2024, each inviting 115,000 workers to participate. The 2023 survey included both a main survey
+and a two-week follow-up, with 15,000 workers invited only to the follow-up. Row 2 reports the number of individuals who
+responded to the survey. Row 3 shows the respondents who were still employed in one of our 11 target occupations at the
+time of the surveys. Row 4 presents the respondents who fully completed the survey questionnaire. Row 5 indicates the
+complete responses that could be linked to registry data.
+
+
+
+
+                                                                    21

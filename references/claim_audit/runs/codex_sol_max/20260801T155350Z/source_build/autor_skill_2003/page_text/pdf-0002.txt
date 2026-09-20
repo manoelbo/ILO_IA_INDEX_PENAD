@@ -1,0 +1,48 @@
+1280               QUARTERLY JOURNAL OF ECONOMICS
+
+
+ing its cause. It fails to answer the question of what it is that
+computers do— or what it is that people do with computers—that
+causes educated workers to be relatively more in demand.
+     This paper proposes an answer to this question. We formalize
+and test a simple theory of how the rapid adoption of computer
+technology—spurred by precipitous real price declines— changes
+the tasks performed by workers at their jobs and ultimately the
+demand for human skills. Our approach builds on an intuitive set
+of observations offered by organizational theorists, computer sci-
+entists, and most recently economists about what computers do—
+that is, the tasks they are best suited to accomplish—and how
+these capabilities complement or substitute for human skills in
+workplace settings.2 The simple observations that undergird our
+analysis are (1) that computer capital substitutes for workers in
+carrying out a limited and well-dened set of cognitive and man-
+ual activities, those that can be accomplished by following explicit
+rules (what we term “routine tasks”); and (2) that computer
+capital complements workers in carrying out problem-solving and
+complex communication activities (“nonroutine” tasks). (See Ta-
+ble I for examples.) Provided that routine and nonroutine tasks
+are imperfect substitutes, these observations imply measurable
+changes in the task composition of jobs, which we test below.
+     To answer the core questions of our paper, the ideal experi-
+ment would provide two identical autarkic economies, one facing
+a dramatic decline in the price of computing power and the other
+not. By contrasting these economies, it would be straightforward
+to assess how computerization reshapes the task composition of
+work and hence the structure of labor demand. Because this
+experiment is not available, we develop a simple economic model
+to predict how demand for workplace tasks responds to an econ-
+omywide decline in the price of computer capital. The model predicts
+that industries and occupations that are initially intensive in labor
+input of routine tasks will make relatively larger investments in
+computer capital as its price declines. These industries and occupa-
+tions will reduce labor input of routine tasks, for which computer
+
+     2. Simon [1960] provides the rst treatment of this question with which we are
+familiar, and his essay introduces many of the ideas explored here. Other early works
+include Drucker [1954] and Nelson and Winter [1982]. Adler [1986], Orr [1996], and
+Zuboff [1988] discuss what computers and related technology do in the workplace, but
+do not consider economic implications. Acemoglu [1998], Goldin and Katz [1998],
+Bresnahan [1999], Bartel, Ichniowski, and Shaw [2000], Lindbeck and Snower
+[2000], Lang [2002], and Bresnahan, Brynjolfsson, and Hitt [2002] provide economic
+analyses of why technology and human capital are complementary.
+

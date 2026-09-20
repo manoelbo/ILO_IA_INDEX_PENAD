@@ -1,0 +1,56 @@
+1.2    Register Data
+
+We use several administrative registers at Statistics Denmark. Our matched employer-
+
+employee data come from the Employment Statistics of Employees (BFL), which records
+
+earnings, hours, occupation, and industry for all job spells in Denmark on a monthly
+
+basis from 2008 onward. This register is compiled by the Danish tax authorities and
+
+subsequently harmonized by Statistics Denmark. We complement this with demographics
+
+data on individuals from the Population Register (BEF), and wealth information from
+
+the Personal Wealth Register (FORMPERS). Finally, we draw firm financial data (e.g.,
+
+annual revenue and employment) from the Firm Statistics (FIRM) Register. Because our
+
+survey was sent to workers identified in the register data by their (deidentified) social
+
+security numbers (pnr), all respondents can be matched to the register data. While labor
+
+market data in the BFL register are updated continuously, we only have firm financial
+
+data up to 2022. For that reason, we focus our effect analyses on labor market outcomes.
+
+
+1.3    Survey Sample
+
+We invited 115,000 workers to participate in each of our survey rounds in 2023 and
+
+2024. The registers at Statistics Denmark enabled us to target these invitations by
+
+occupation and workplace. In particular, for each of our 11 occupations, we conducted a
+
+workplace-based sampling procedure, first drawing a random set of workplaces within each
+
+occupation and then sampling all relevant workers at these workplaces. This sampling
+
+procedure maximizes the statistical power of the workplace-level analyses while keeping
+
+our sample representative. Appendix B.1 details the sampling protocol. We sent three
+
+reminders per survey round, two by e-mail and one by text. The invitation letters are
+
+in Appendix I. We received about 25,000 valid and complete responses to each survey.
+
+Appendix B.2 details our survey response rates. While our main analysis focuses on
+
+responses from the 2024 round, we use the 2023 round to examine early adopters.
+
+
+
+
+                                           7
+

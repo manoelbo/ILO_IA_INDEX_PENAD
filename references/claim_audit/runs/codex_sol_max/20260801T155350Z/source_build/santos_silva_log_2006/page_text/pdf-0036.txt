@@ -1,0 +1,32 @@
+Koenker, R. and G.S. Bassett Jr. (1978). “Regression Quantiles,” Econometrica, 46,
+    33-50.
+Manning, W.G. and J. Mullahy (2001). “Estimating Log Models: To Transform or Not
+    to Transform?,” Journal of Health Economics 20, 461-494.
+McCallum, J. (1995). “National Borders Matter: Canada-US Regional Trade Patterns,”
+    American Economic Review, 85, 615-623.
+McCullagh, P. and J.A. Nelder (1989). Generalized Linear Models, 2nd ed., London:
+    Chapman and Hall.
+Papke, L.E. and J.M. Wooldridge (1996). “Econometric Methods for Fractional Re-
+    sponse Variables with an Application to 401(k) Plan Participation Rates,” Journal
+    of Applied Econometrics, 11, 619-632.
+Park, R. (1966). “Estimation with Heteroskedastic Error Terms,” Econometrica, 34,
+    888.
+Ramsey, J.B. (1969). “Tests for Specification Errors in Classical Linear Least Squares
+    Regression Analysis,” Journal of the Royal Statistical Society B, 31, 350-371.
+Robinson, P.M. (1987). “Asymptotically Eﬃcient Estimation in the Presence of Het-
+    eroskedasticity of Unknown Form,” Econometrica, 55, 875-891.
+Rose, A. (2000). “One Money One Market: Estimating the Eﬀect of Common Currencies
+    on Trade,” Economic Policy, 15, 7-46.
+Tenreyro, S. and R. Barro (2002). “Economic Eﬀects of Currency Unions,” FRB Boston
+    Series, Working Paper No. 02-4.
+Tinbergen, J. (1962). The World Economy. Suggestions for an International Economic
+    Policy. New York, NY: Twentieth Century Fund.
+Wei, S. (1996), “Intra-National versus International Trade: How Stubborn Are Nation
+    States in Globalization?,” NBER Working Paper No. 5331.
+White, H. (1980). “A Heteroskedasticity-Consistent Covariance Matrix Estimator and
+    a Direct Test for Heteroskedasticity,” Econometrica, 48, 817-838.
+Winkelmann, R. (2003). Econometric Analysis of Count Data, 4th ed. Berlin: Springer-
+    Verlag.
+
+                                         35
+

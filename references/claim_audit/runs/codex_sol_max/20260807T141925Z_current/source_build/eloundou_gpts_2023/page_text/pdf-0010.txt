@@ -1,0 +1,39 @@
+                                            WORKING PAPER
+
+
+
+
+Figure 2: Human raters (x-axis) and GPT-4 ratings (y-axis) show a high degree of agreement about LLM
+exposure by occupation. We compute occupation-level exposure in these figures by averaging the task-level
+exposures under the 𝛽 method. O*NET designates some tasks as "core" and others "supplemental". Core
+tasks are given twice the weight of supplemental tasks, and all weights sum to one. Near the highest levels of
+exposure following the 𝛽 method of aggregating exposure scores to occupations, GPT-4 ratings tend to be
+lower than Human ratings. We present the raw scatter plot and the binscatter. Near the top end of exposure
+ratings, humans are on average more likely to rate an occupation as exposed.
+
+
+    • Forward-looking and subject to change, with some early evidence. Accurately predicting future
+      LLM applications remains a significant challenge, even for experts (OpenAI, 2023b). The discovery of
+      new emergent capabilities, changes in human perception biases, and shifts in technological development
+      can all affect the accuracy and reliability of predictions regarding the potential impact of LLMs
+      on worker tasks and the development of LLM-powered software. Our projections are inherently
+      forward-looking and based on current trends, evidence, and perceptions of technological possibilities.
+      As a result, they may change as new advancements arise in the field. For example, some tasks that
+      seem unlikely for LLMs or LLM-powered software to impact today might change with the introduction
+      of new model capabilities. Conversely, tasks that appear exposed might face unforeseen challenges
+      limiting language model applications.
+    • Sources of disagreement. While we did not rigorously examine sources of disagreement, we found a
+      few places where humans and the model tended to get "stuck" in their assessments:
+         – Tasks or activities where while an LLM could theoretically help or accomplish the task, adopting
+           it to do so would require multiple people to change their habits or expectations (e.g. meetings,
+           negotiations),
+         – Tasks or activities where there is currently some regulation or norm that requires or suggests
+           human oversight, judgment or empathy (e.g. making decisions, counseling), and
+         – Tasks or activities where there already exists a technology that can reasonably automate the task
+           (e.g. making reservations).
+
+
+4    Results
+General-purpose technologies are relatively rare and characterized by their pervasiveness, improvement over
+time, and the development of significant co-invention and spillovers (Lipsey et al., 2005). Our assessment of
+

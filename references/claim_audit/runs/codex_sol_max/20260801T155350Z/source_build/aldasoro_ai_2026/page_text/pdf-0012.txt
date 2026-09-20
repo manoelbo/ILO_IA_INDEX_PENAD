@@ -1,0 +1,35 @@
+ness? A. Not used in the business. B. Used in parts of the business. C. Entire business
+is organized around this technology.” We define AI adopters as firms that use big data
+analytics and AI in parts of the business or if the entire business is organized around AI.
+
+    EIBIS provides a comprehensive dataset that captures a wide spectrum of firm-level
+characteristics and investment-related information across surveyed firms. It includes
+quantitative data – such as annual turnover, number of employees, value of fixed assets,
+total wages, investment in different categories of tangible and intangible assets – as well
+as demographic data, for instance on firm age and sector, offering a deep understanding
+of the structural profile of businesses. Beyond these metrics, EIBIS also gathers qual-
+itative insights through survey responses, shedding light on firms’ internal perceptions
+and strategic outlooks. This includes assessments of managerial competencies, financing
+strategies, perceived barriers to invest and investment focus.
+
+    To enrich and validate the self-reported survey data, EIBIS is complemented by ad-
+ministrative financial information sourced from Moody’s ORBIS database. This integra-
+tion allows for a more robust analysis by incorporating detailed financial statements on
+balance sheets and profit and loss accounts. The combination of subjective perceptions
+and objective financial data enables a better understanding of investment dynamics and
+firm performance in different sectors, countries and market segments.
+
+
+3.1    Descriptive statistics and stylized facts
+
+AI innovation in Europe continues to lag behind the United States. In particular, the EU
+trails the US in the number of AI-related patents, with the gap widening further after
+the pandemic (EIB, 2025). While the absolute number of AI patents is higher in the US
+than in the EU (Figure 1a), the higher share of AI patents relative to total patents also
+underscores the stronger specialization in AI innovation in the US (Figure 1b).
+
+
+
+
+                                            6
+

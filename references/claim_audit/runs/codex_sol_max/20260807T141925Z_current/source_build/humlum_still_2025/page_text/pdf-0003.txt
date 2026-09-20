@@ -1,0 +1,37 @@
+       AI chatbots mark the rise of generative artificial intelligence (AI): these tools have
+seen the fastest worker take-up of any new technology (Bick, Blandin and Deming, 2025),
+and controlled experiments demonstrate large productivity gains for users (Brynjolfsson,
+Li and Raymond, 2025; Noy and Zhang, 2023). Yet even as generative AI tools have
+become widespread, substantial disagreement remains about their labor market effects,
+with forecasts ranging from dramatic displacement within a few years (Amodei, 2025) to
+modest impacts over a decade (Acemoglu, 2025).1 This disagreement partly reflects how
+little evidence exists on how labor markets actually absorb new technologies in their early
+stages. How does work reorganize at the onset of major technological change?
+       This paper argues that early labor market transformation under generative AI is best
+understood as rapid currents under still waters: substantial reorganization of work occurs
+as workplaces integrate AI chatbots and workers take on new AI-related tasks, absorbing
+change before it surfaces in earnings or recorded hours.
+       To study this process, we develop a unique data infrastructure linking workplace adop-
+tion and work reorganization to administrative labor market outcomes. In collaboration
+with Statistics Denmark, we conducted a series of large-scale, representative surveys of
+AI chatbot adoption in 11 highly exposed occupations—where labor market effects are
+likely to emerge earliest and strongest—linking responses to administrative labor market
+records.2 Our latest survey round, conducted in late 2024, includes responses from 25,000
+workers across 7,000 workplaces. These linked survey–register data allow us to examine
+both recorded labor market outcomes—such as earnings and hours—and adjustments that
+typically go unrecorded, including changes in job tasks and work organization. Crucially,
+even within these highly exposed occupations, many otherwise similar workplaces and
+workers have taken markedly different adoption paths, allowing us to examine how chatbot
+   1
+      Anthropic CEO Dario Amodei predicts that AI could eliminate half of all entry-level white-collar
+jobs, driving unemployment to 10–20% within the next one to five years (Amodei, 2025). In contrast,
+Acemoglu (2025) predicts that AI will increase annual TFP growth by less than 0.07 percentage points
+over the next ten years.
+    2
+      Our list of occupations is accountants, customer support specialists, financial advisors, HR profession-
+als, IT support specialists, journalists, legal professionals, marketing professionals, office clerks, software
+developers, and teachers.
+
+
+
+                                                      1

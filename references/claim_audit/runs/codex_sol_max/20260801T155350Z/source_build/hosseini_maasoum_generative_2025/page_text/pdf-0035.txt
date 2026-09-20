@@ -1,0 +1,43 @@
+they view slower hiring as less costly than future layoffs.29 Supplemental Appendix A.5
+formalizes this mechanism in a simple dynamic model in which expectations of future
+automation—combined with labor-adjustment costs—lead firms to reduce hiring today.
+    One might still question whether firms were sufficiently aware of GenAI tools by early
+2023 for such expectation shifts to occur. However, the sharp surge in adoption from
+2023Q1 onward—as shown in Figure 2 and documented by studies such as Bick et al.
+(2024)—suggests that firms’ behavior changed almost immediately following the release
+of ChatGPT. Consistent with this, mentions of “AI” in firms’ earnings calls began rising
+steeply as early as 2022Q4, tripling by 2023Q2 (Appendix A.20). Finally, Supplemen-
+tal Appendix A.21 compiles anecdotal evidence indicating that several prominent U.S.
+companies publicly adjusted their hiring practices and internal workflows in early 2023,
+explicitly attributing these changes to the adoption or anticipated impact of GenAI.
+
+
+5.3    Staggered Event-Study of Junior Employment Around Adoption
+
+We complement the triple-difference analyses with a staggered event study that traces
+junior employment dynamics around the timing of GenAI adoption, proxied by the first
+period in which a firm posts a GenAI integrator vacancy. This design helps distinguish
+adoption effects from broader time-specific shocks by exploiting variation in adoption
+timing across firms. However, it is sensitive to measurement error in the adoption proxy—
+for example, if firms begin using GenAI before posting for an integrator role or only sev-
+eral periods afterward. Specifically, we estimate:
+
+
+                                             J                  K
+   log(JuniorEmploymentit ) = α + ∑ β j (Lag j )it + ∑ γk (Leadk )it + µi + λt + ε it ,                (13)
+                                           j =2               k =1
+
+
+where log(JuniorEmploymentit ) denotes the log number of junior workers at firm i at
+time t; (Lag j )it is an indicator equal to one if the current period t is j periods before
+adoption; and (Leadk )it is defined analogously for periods after adoption. µi and λt are
+firm and time fixed effects, and ε it is an error term.
+  29 Indeed, in Section 5.5 we show that the decline in junior employment is driven by reduced hiring rather
+
+than increased separations.
+
+
+
+
+                                                    35
+

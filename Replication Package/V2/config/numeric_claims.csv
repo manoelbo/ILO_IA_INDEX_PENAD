@@ -1,0 +1,93 @@
+claim_id,manuscript_locator,description,component,artifact_path,field,filter,aggregation,expected_value,value_type,tolerance
+s3_001,Section 3.2,Analytical sample observations,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""Sample observations""}",scalar,207.901,number,1e-12
+s3_002,Section 3.2,Population represented in millions,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""Population represented (millions)""}",scalar,97.8,number,1e-12
+s3_003,Section 3.2,Population scored in millions,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""Population with exposure score (millions)""}",scalar,97.0,number,1e-12
+s3_004,Section 3.2,Population score coverage percentage,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""Score coverage (% population)""}",scalar,99.2,number,1e-12
+s3_005,Section 3.2,Four digit match percentage,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""4-digit match (% rows)""}",scalar,97.9,number,1e-12
+s3_006,Section 3.2,Three digit match percentage,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""3-digit match (% rows)""}",scalar,1.3,number,1e-12
+s3_007,Section 3.2,Unscored row percentage,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""No score (% rows)""}",scalar,0.8,number,1e-12
+s3_008,Section 3.2,Federal unit count,section3,tables/table_3_1_base_specs.csv,Value,"{""Item"":""Federal units""}",scalar,27,integer,0
+s3_009,Section 3.3,Not exposed population in millions,section3,tables/table_3_2_gradients.csv,Population (M),"{""Category"":""Not exposed""}",scalar,52.2,number,1e-12
+s3_010,Section 3.3,Minimal exposure population in millions,section3,tables/table_3_2_gradients.csv,Population (M),"{""Category"":""Minimal exposure""}",scalar,15.2,number,1e-12
+s3_011,Section 3.3,Gradient one population in millions,section3,tables/table_3_2_gradients.csv,Population (M),"{""Category"":""Gradient 1""}",scalar,8.7,number,1e-12
+s3_012,Section 3.3,Gradient two population in millions,section3,tables/table_3_2_gradients.csv,Population (M),"{""Category"":""Gradient 2""}",scalar,10.0,number,1e-12
+s3_013,Section 3.3,Gradient three population in millions,section3,tables/table_3_2_gradients.csv,Population (M),"{""Category"":""Gradient 3""}",scalar,4.8,number,1e-12
+s3_014,Section 3.3,Gradient four population in millions,section3,tables/table_3_2_gradients.csv,Population (M),"{""Category"":""Gradient 4""}",scalar,5.0,number,1e-12
+s3_015,Section 3.4,Finance high exposure percentage,section3,tables/table_3_4_sector_exposure.csv,High (%),"{""Sector"":""Finanças e Seguros""}",scalar,54.9,number,1e-12
+s3_016,Section 3.4,Commerce high exposure population,section3,tables/table_3_4_sector_exposure.csv,High (M),"{""Sector"":""Comércio""}",scalar,1.36,number,1e-12
+s3_017,Section 3.5,Men exposure mean,section3,backing_data/table_3_5_demographics_summary.csv,Exposure Mean,"{""Dimension"":""Sex"",""Category"":""Homem""}",scalar,0.259,number,1e-12
+s3_018,Section 3.5,Women exposure mean,section3,backing_data/table_3_5_demographics_summary.csv,Exposure Mean,"{""Dimension"":""Sex"",""Category"":""Mulher""}",scalar,0.303,number,1e-12
+s3_019,Section 3.5,Women high exposure percentage,section3,backing_data/table_3_5_demographics_summary.csv,High (%),"{""Dimension"":""Sex"",""Category"":""Mulher""}",scalar,14.5,number,1e-12
+s3_020,Section 3.5,White exposure mean,section3,backing_data/table_3_5_demographics_summary.csv,Exposure Mean,"{""Dimension"":""Race"",""Category"":""Branca""}",scalar,0.305,number,1e-12
+s3_021,Section 3.5,Black and brown exposure mean,section3,backing_data/table_3_5_demographics_summary.csv,Exposure Mean,"{""Dimension"":""Race"",""Category"":""Negra""}",scalar,0.257,number,1e-12
+s3_022,Section 3.5,Young adult high exposure percentage,section3,backing_data/table_3_5_demographics_summary.csv,High (%),"{""Dimension"":""Age"",""Category"":""18-24""}",scalar,16.2,number,1e-12
+s3_023,Section 3.5,Older worker high exposure percentage,section3,backing_data/table_3_5_demographics_summary.csv,High (%),"{""Dimension"":""Age"",""Category"":""55+""}",scalar,5.9,number,1e-12
+s3_024,Section 3.5,College complete exposure mean,section3,backing_data/table_3_5_demographics_summary.csv,Exposure Mean,"{""Dimension"":""Education"",""Category"":""College complete""}",scalar,0.364,number,1e-12
+s3_025,Section 3.5,Formal high exposure percentage,section3,backing_data/table_3_5_demographics_summary.csv,High (%),"{""Dimension"":""Formality"",""Category"":""Formal""}",scalar,14.8,number,1e-12
+s3_026,Section 3.5,Informal high exposure percentage,section3,backing_data/table_3_5_demographics_summary.csv,High (%),"{""Dimension"":""Formality"",""Category"":""Informal""}",scalar,6.7,number,1e-12
+caged_001,Section 5.1,National admissions coefficient,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""01_no_controls"",""outcome"":""admissoes""}",scalar,-0.0537723981585714,number,1e-9
+caged_002,Section 5.1,National separations coefficient,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""01_no_controls"",""outcome"":""desligamentos""}",scalar,-0.042014072599854,number,1e-9
+caged_003,Section 5.1,National gross flows coefficient,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""01_no_controls"",""outcome"":""n_movimentacoes""}",scalar,-0.0480931611194387,number,1e-9
+caged_004,Section 5.1,National real admission wage coefficient,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""01_no_controls"",""outcome"":""ln_salario_real_adm""}",scalar,-0.0507404538197659,number,1e-9
+caged_005,Section 5.1,National net flow coefficient,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""01_no_controls"",""outcome"":""asinh_saldo""}",scalar,-0.5512668862460224,number,1e-9
+caged_006,Section 5.1,National model observation count,caged,models/specification_ladder.csv,n_obs,"{""step_id"":""01_no_controls"",""outcome"":""admissoes""}",scalar,22049,integer,0
+caged_007,Section 5.1,Wage coefficient with pre-treatment controls,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""02_pre_treatment_controls_x_post"",""outcome"":""ln_salario_real_adm""}",scalar,-0.0359977297931129,number,1e-9
+caged_008,Section 5.1,Admissions coefficient including minimal exposure,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""04_include_minimal_as_control"",""outcome"":""admissoes""}",scalar,-0.0887042633781861,number,1e-9
+caged_009,Section 5.1,Continuous exposure wage coefficient,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""05_continuous_exposure"",""outcome"":""ln_salario_real_adm""}",scalar,-0.0187992210945705,number,1e-9
+caged_010,Section 5.1,Wage coefficient from January 2022,caged,models/specification_ladder.csv,coefficient,"{""step_id"":""06_start_2022_01"",""outcome"":""ln_salario_real_adm""}",scalar,-0.0363296228445698,number,1e-9
+caged_011,Section 5.1.1,Sector controlled admissions coefficient,caged,models/sector_level1_vs_level2.csv,level_2_coefficient,"{""outcome"":""admissoes""}",scalar,-0.0750759843556983,number,1e-9
+caged_012,Section 5.1.1,Sector controlled separations coefficient,caged,models/sector_level1_vs_level2.csv,level_2_coefficient,"{""outcome"":""desligamentos""}",scalar,-0.0664461413486197,number,1e-9
+caged_013,Section 5.1.1,Sector controlled gross flows coefficient,caged,models/sector_level1_vs_level2.csv,level_2_coefficient,"{""outcome"":""n_movimentacoes""}",scalar,-0.070665001815619,number,1e-9
+caged_014,Section 5.1.1,Sector controlled wage coefficient,caged,models/sector_level1_vs_level2.csv,level_2_coefficient,"{""outcome"":""ln_salario_real_adm""}",scalar,-0.0355982033430299,number,1e-9
+caged_015,Section 5.1.1,Sector controlled net flow coefficient,caged,models/sector_level1_vs_level2.csv,level_2_coefficient,"{""outcome"":""asinh_saldo""}",scalar,-0.1394936331044451,number,1e-9
+caged_016,Section 5.1,First horizon admissions coefficient,caged,models/long_run_horizon_estimates.csv,coefficient,"{""outcome"":""admissoes"",""horizon_key"":""h1""}",scalar,-0.0522962427609128,number,1e-9
+caged_017,Section 5.1,Fourth horizon admissions coefficient,caged,models/long_run_horizon_estimates.csv,coefficient,"{""outcome"":""admissoes"",""horizon_key"":""h4""}",scalar,-0.0600378661568039,number,1e-9
+caged_018,Section 5.1,First horizon wage coefficient,caged,models/long_run_horizon_estimates.csv,coefficient,"{""outcome"":""ln_salario_real_adm"",""horizon_key"":""h1""}",scalar,-0.0514346360538396,number,1e-9
+caged_019,Section 5.1,Fourth horizon wage coefficient,caged,models/long_run_horizon_estimates.csv,coefficient,"{""outcome"":""ln_salario_real_adm"",""horizon_key"":""h4""}",scalar,-0.054782304235749,number,1e-9
+caged_020,Section 5.2,Pardo admissions DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""race_color"",""group_id"":""race_pardo"",""outcome"":""admissoes""}",scalar,-0.0816688320456307,number,1e-9
+caged_021,Section 5.2,Pardo separations DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""race_color"",""group_id"":""race_pardo"",""outcome"":""desligamentos""}",scalar,-0.0886056999192962,number,1e-9
+caged_022,Section 5.2,Black admissions DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""race_color"",""group_id"":""race_black"",""outcome"":""admissoes""}",scalar,-0.0088280992367837,number,1e-9
+caged_023,Section 5.2,Age 41 to 49 admissions DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""age_canaries"",""group_id"":""age_41_49"",""outcome"":""admissoes""}",scalar,0.0840960337151365,number,1e-9
+caged_024,Section 5.2,Age 41 to 49 gross flows DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""age_canaries"",""group_id"":""age_41_49"",""outcome"":""n_movimentacoes""}",scalar,0.0775704258993593,number,1e-9
+caged_025,Section 5.2,Higher education admissions DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""education"",""group_id"":""higher_education"",""outcome"":""admissoes""}",scalar,-0.1107991714359958,number,1e-9
+caged_026,Section 5.2,Higher education gross flows BH p value,caged,diagnostics/ddd_multiplicity_results.csv,bh_adjusted_p_value,"{""dimension"":""education"",""group_id"":""higher_education"",""outcome"":""n_movimentacoes""}",scalar,0.0476516878253198,number,1e-9
+caged_027,Section 5.2,Higher education wage DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""education"",""group_id"":""higher_education"",""outcome"":""ln_salario_real_adm""}",scalar,0.0076245250837482,number,1e-9
+caged_028,Section 5.2,High income wage DDD coefficient,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""dimension"":""income"",""group_id"":""high_income"",""outcome"":""ln_salario_real_adm""}",scalar,0.0643376408548928,number,1e-9
+caged_029,Section 5.2,High income support classification,caged,diagnostics/ddd_multiplicity_results.csv,support_status,"{""dimension"":""income"",""group_id"":""high_income"",""outcome"":""ln_salario_real_adm""}",scalar,thin,string,0
+caged_030,Section 5.2,Family A DDD row count,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,{},count,100,integer,0
+caged_031,Section 5.2,Nominally significant DDD count,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""nominal_significant_005"":true}",count,34,integer,0
+caged_032,Section 5.2,BH significant DDD count,caged,diagnostics/ddd_multiplicity_results.csv,coefficient,"{""bh_significant_005"":true}",count,21,integer,0
+caged_033,Section 5.1,Wage composition share,caged,audit/a_wage_composition_summary.json,composition_share_of_aggregate,{},json_path,0.22661965727505995,number,1e-9
+caged_034,Section 5.1,Wage composition share with pre-controls,caged,audit/a_wage_composition_summary.json,pre_treatment_controls_implied_share,{},json_path,0.29055167852893704,number,1e-9
+caged_035,Section 5.1,Within education wage component,caged,audit/a_wage_composition_summary.json,within_education_price_component,{},json_path,-0.039241669565149545,number,1e-9
+caged_036,Section 4.2,Scored CBO family count,caged,audit/cd_exposure_and_control_summary.json,block_c.gradient_four.scored_cbo_families,{},json_path,436,integer,0
+caged_037,Section 4.2,Maximum observed exposure score,caged,audit/cd_exposure_and_control_summary.json,block_c.gradient_four.highest_observed_score,{},json_path,0.5933333333333334,number,1e-12
+caged_038,Section 4.2,CBO families reaching gradient four threshold,caged,audit/cd_exposure_and_control_summary.json,block_c.gradient_four.families_at_or_above_threshold,{},json_path,0,integer,0
+caged_039,Section 4.2,Unscored CBO family count,caged,audit/cd_exposure_and_control_summary.json,block_c.unscored_families,{},json_path,193,integer,0
+caged_040,Section 4.2,Transfer row count,caged,audit/e_transfer_summary.json,movement_type_usability.transfer_rows_found,{},json_path,0,integer,0
+caged_041,Section 4.2,Ignored admission movement type share,caged,audit/e_transfer_summary.json,movement_type_usability.admission_type_ignored_pct,{},json_path,93.23627985890789,number,1e-9
+caged_042,Section 5.2.6,Family C within-group DiD row count,caged,models/group_did_results.csv,coefficient,{},count,130,integer,0
+caged_043,Section 5.2.6,Family C BH discovery count,caged,models/group_did_results.csv,bh_significant_005,"{""bh_significant_005"":true}",count,40,integer,0
+caged_044,Section 5.2.6,Family C wage-group count,caged,models/group_did_results.csv,outcome,"{""outcome"":""ln_salario_real_adm""}",count,26,integer,0
+caged_045,Section 5.2.6,Family C negative wage BH discovery count,caged,models/group_did_results.csv,bh_significant_005,"{""outcome"":""ln_salario_real_adm"",""bh_significant_005"":true,""coefficient__lt"":0}",count,22,integer,0
+caged_046,Section 5.2.6,Family A wage DDD BH discovery count,caged,diagnostics/ddd_multiplicity_results.csv,bh_significant_005,"{""outcome"":""ln_salario_real_adm"",""bh_significant_005"":true}",count,2,integer,0
+rais_001,Appendix D.1,RAIS formal stock coefficient,rais,tables/table_d_1_rais.csv,coefficient,"{""outcome"":""estoque_3112""}",scalar,-0.042924582022777366,number,1e-9
+rais_002,Appendix D.1,RAIS formal stock BH p value,rais,tables/table_d_1_rais.csv,bh_adjusted_p_value,"{""outcome"":""estoque_3112""}",scalar,0.018494378301440628,number,1e-9
+rais_003,Appendix D.1,RAIS rotation coefficient,rais,tables/table_d_1_rais.csv,coefficient,"{""outcome"":""ln_taxa_rotatividade""}",scalar,-0.017838973055256082,number,1e-9
+rais_004,Appendix D.1,RAIS rotation pretrend status,rais,tables/table_d_1_rais.csv,pretrend_status,"{""outcome"":""ln_taxa_rotatividade""}",scalar,pass,string,0
+rais_005,Appendix D.1,RAIS tenure coefficient,rais,tables/table_d_1_rais.csv,coefficient,"{""outcome"":""ln_tempo_emprego_medio""}",scalar,-0.026355560624062142,number,1e-9
+rais_006,Appendix B.1,RAIS registered outcome count,rais,tables/table_b_1_rais_pretrends.csv,outcome,{},count,3,integer,0
+pnadc_001,Appendix D.2,PNADc informality coefficient,pnadc,tables/table_d_2_pnadc.csv,coefficient,"{""outcome"":""informal""}",scalar,0.008539599906295872,number,1e-9
+pnadc_002,Appendix D.2,PNADc self-employment coefficient,pnadc,tables/table_d_2_pnadc.csv,coefficient,"{""outcome"":""conta_propria""}",scalar,0.021259441234948002,number,1e-9
+pnadc_003,Appendix D.2,PNADc total employment stock coefficient,pnadc,tables/table_d_2_pnadc.csv,coefficient,"{""outcome"":""ocupados_total""}",scalar,0.061563096231557396,number,1e-9
+pnadc_004,Appendix D.2,PNADc formal employment stock coefficient,pnadc,tables/table_d_2_pnadc.csv,coefficient,"{""outcome"":""ocupados_formais""}",scalar,0.04200978798741341,number,1e-9
+pnadc_005,Appendix D.2,PNADc informal employment stock coefficient,pnadc,tables/table_d_2_pnadc.csv,coefficient,"{""outcome"":""ocupados_informais""}",scalar,0.08172334208240889,number,1e-9
+pnadc_006,Appendix D.2,PNADc log income coefficient,pnadc,tables/table_d_2_pnadc.csv,coefficient,"{""outcome"":""ln_renda""}",scalar,-0.009282282998631361,number,1e-9
+pnadc_007,Appendix B.2,PNADc registered outcome count,pnadc,tables/table_b_2_pnadc_pretrends.csv,outcome,"{""sample"":""full""}",count,6,integer,0
+pnadc_008,Appendix B.2,PNADc full pretrend failure count,pnadc,tables/table_b_2_pnadc_pretrends.csv,outcome,"{""sample"":""full"",""pretrend_status"":""fail""}",count,6,integer,0
+spatial_001,Appendix B.3,Spatial admissions placebo coefficient,spatial,tables/table_b_3_spatial_placebo.csv,coefficient,"{""outcome"":""ln_admissoes""}",scalar,0.0096072850910056,number,1e-9
+spatial_002,Appendix B.3,Spatial separations placebo coefficient,spatial,tables/table_b_3_spatial_placebo.csv,coefficient,"{""outcome"":""ln_desligamentos""}",scalar,0.0076691708642856,number,1e-9
+spatial_003,Appendix B.3,Spatial real treatment estimate count,spatial,tables/table_b_3_spatial_placebo.csv,outcome,"{""real_treatment_coefficient_estimated"":true}",count,0,integer,0
+spatial_004,Appendix B.4,Fixed broadband effective UF clusters,spatial,tables/table_b_4_spatial_support.csv,effective_uf_clusters,"{""proxy"":""fixed_broadband_penetration""}",scalar,11.729728321876642,number,1e-9
+spatial_005,Appendix B.4,Digital intensive share effective UF clusters,spatial,tables/table_b_4_spatial_support.csv,effective_uf_clusters,"{""proxy"":""digital_intensive_admission_share""}",scalar,9.194907954202687,number,1e-9
+spatial_006,Appendix B.4,Digital intensive share support status,spatial,tables/table_b_4_spatial_support.csv,classification,"{""proxy"":""digital_intensive_admission_share""}",scalar,insufficient,string,0

@@ -1,0 +1,68 @@
+                        Figure F.4: Have Encouraged Workers Fared Differently?
+
+                                              (a) Log Earnings and Log Hours
+                 .15
+
+
+
+
+                  .1
+
+
+
+
+                 .05
+
+
+
+
+                   0
+
+
+
+
+                -.05
+                   2021m1       2021m7         2022m1      2022m7        2023m1        2023m7       2024m1        2024m7
+
+                                                               log(Earnings)           log(Hours)
+
+
+                                (b) Occupational Heterogeneity: Log Earnings
+                                  All
+
+                       Software Dev.
+
+                          Legal Prof.
+
+                        Accountants
+
+                 Customer Service
+
+                           Marketing
+
+                 Financial Advisors
+
+                            HR Prof.
+
+                        Office Clerks
+
+                           Teachers
+
+                          IT Support
+                                        -.1             -.05                0             .05                .1            .15
+
+                                                                                2023    2024
+
+
+Notes: This figure presents the differential labor market outcomes of workers who are encouraged to use AI chatbots by their
+employers, compared to all other workers, indexed to the launch of ChatGPT in November 2022. Panel (a) is based on the
+dynamic difference-in-differences specification in Equation (2), with shaded areas representing 95% confidence intervals. The
+corresponding “first-stage” effect on adoption is 0.363 (0.006). Panel (b) first shows a pooled estimate (All) and then reports
+impacts separately for each of our 11 study occupations. These effects are based on the pooled difference-in-differences
+specification in Equation (3), with whiskers representing 95% confidence intervals. Sample: All completed responses from
+the 2024 survey linked to registry data.
+
+
+
+
+                                                                       49

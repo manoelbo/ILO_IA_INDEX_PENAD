@@ -1,0 +1,70 @@
+                     Figure E.16: Workplace Effects of AI Chatbots (Encouraged DiD):
+                                                              Heterogeneity by Occupation
+
+                                (a) Job Creation                                                                        (b) Job Destruction
+                   All                                                                                      All
+
+        Software Dev.                                                                            Software Dev.
+
+           Legal Prof.                                                                              Legal Prof.
+
+         Accountants                                                                              Accountants
+
+    Customer Service                                                                         Customer Service
+
+            Marketing                                                                                Marketing
+
+    Financial Advisors                                                                       Financial Advisors
+
+             HR Prof.                                                                                 HR Prof.
+
+         Office Clerks                                                                            Office Clerks
+
+            Teachers                                                                                 Teachers
+
+           IT Support                                                                               IT Support
+                         -.2   -.15   -.1   -.05          0       .05   .1   .15        .2                        -.2    -.15   -.1   -.05          0      .05   .1   .15   .2
+
+                                                   2023        2024                                                                          2023       2024
+
+
+
+
+               (b) Adopter Propensity of Hires                                                   (b) Adopter Propensity of Separations
+                   All                                                                                      All
+
+        Software Dev.                                                                            Software Dev.
+
+           Legal Prof.                                                                              Legal Prof.
+
+         Accountants                                                                              Accountants
+
+    Customer Service                                                                         Customer Service
+
+            Marketing                                                                                Marketing
+
+    Financial Advisors                                                                       Financial Advisors
+
+             HR Prof.                                                                                 HR Prof.
+
+         Office Clerks                                                                            Office Clerks
+
+            Teachers                                                                                 Teachers
+
+           IT Support                                                                               IT Support
+                         -.2   -.15   -.1   -.05          0       .05   .1   .15        .2                        -.2    -.15   -.1   -.05          0      .05   .1   .15   .2
+
+                                                   2023        2024                                                                          2023       2024
+
+
+Notes: This figure shows occupation-specific estimates for the workplace effects of encouraged-use policies. Panels (a)
+and (b) show job creation and destruction rates (measured as the share of hires and separations, respectively, in total
+employment). Panels (c) and (d) show the adopter propensity of hires and separations (see Appendix H.1 for details).
+Estimates are based on the pooled specification in Equation (2), with 95% confidence intervals shown as whiskers. Sample:
+All completed 2024 survey responses linked to registry data.
+
+
+
+
+                                                                                   84
+

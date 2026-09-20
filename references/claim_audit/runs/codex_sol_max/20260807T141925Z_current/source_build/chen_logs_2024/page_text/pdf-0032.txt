@@ -1,0 +1,55 @@
+References
+Abadie, Alberto, “Bootstrap Tests for Distributional Treatment Effects in Instrumental Variable
+ Models,” Journal of the American Statistical Association, 2002, 97 (457), 284–292. Publisher:
+ [American Statistical Association, Taylor & Francis, Ltd.].
+
+Aczél, J., Lectures on Functional Equations and Their Applications, Academic Press, January 1966.
+ Google-Books-ID: n7vckU_1tY4C.
+
+Ager, Philipp, Leah Boustan, and Katherine Eriksson, “The Intergenerational Effects of a
+ Large Wealth Shock: White Southerners after the Civil War,” American Economic Review, 2021,
+ 111 (11), 3767–94.
+
+Aihounton, Ghislain B D and Arne Henningsen, “Units of measurement and the inverse
+ hyperbolic sine transformation,” The Econometrics Journal, June 2021, 24 (2), 334–351.
+
+Andrews, Isaiah and Conrad Miller, “Optimal Social Insurance with Heterogeneity,” 2013,
+ p. 26.
+
+Angrist, Joshua D, “Estimation of Limited Dependent Variable Models With Dummy Endogenous
+ Regressors,” Journal of Business & Economic Statistics, January 2001, 19 (1), 2–28. Publisher:
+ Taylor & Francis _eprint: https://doi.org/10.1198/07350010152472571.
+
+Angrist, Joshua D. and Jorn-Steffen Pischke, Mostly Harmless Econometrics: An Empiricist’s
+ Companion, Princeton: Princeton University Press, 2009.
+
+  , Kathryn Graddy, and Guido W. Imbens, “The Interpretation of Instrumental Variables
+  Estimators in Simultaneous Equations Models with an Application to the Demand for Fish,” The
+  Review of Economic Studies, 2000, 67 (3), 499–527. Publisher: [Oxford University Press, Review
+  of Economic Studies, Ltd.].
+
+Arora, Ashish, Sharon Belenzon, and Lia Sheer, “Knowledge spillovers and corporate invest-
+ ment in scientific research,” American Economic Review, 2021, 111 (3), 871–98.
+
+Athey, Susan, Peter J Bickel, Aiyou Chen, Guido Imbens, and Michael Pollmann,
+ “Semiparametric estimation of treatment effects in randomized experiments,” Technical Report,
+ National Bureau of Economic Research 2021.
+
+Azoulay, Pierre, Christian Fons-Rosen, and Joshua S Graff Zivin, “Does science advance
+ one funeral at a time?,” American Economic Review, 2019, 109 (8), 2889–2920.
+
+Baily, Neil, “Some Aspects of Optimal Unemployment Insurance,” Journal of Public Economics,
+ 1978, pp. 379–402.
+
+Bartlett, M. S., “The Use of Transformations,” Biometrics, 1947, 3 (1), 39–52. Publisher: [Wiley,
+ International Biometric Society].
+
+Bastos, Paulo, Joana Silva, and Eric Verhoogen, “Export destinations and input prices,”
+ American Economic Review, 2018, 108 (2), 353–92.
+
+Beerli, Andreas, Jan Ruffner, Michael Siegenthaler, and Giovanni Peri, “The abolition of
+ immigration restrictions and the performance of firms and workers: Evidence from Switzerland,”
+ American Economic Review, 2021, 111 (3), 976–1012.
+
+                                               32
+

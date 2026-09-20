@@ -1,0 +1,39 @@
+5.5    Decomposing the Decline in Junior Employment into Flows
+
+The decline in junior employment in adopting firms can arise through three channels:
+(i) reduced hiring, (ii) increased separations, or (iii) increased promotions to senior posi-
+tions. Our LinkedIn-based résumé data can be viewed as a detailed matched employer-
+employee dataset, allowing us to track these worker flows over time. Specifically, we
+estimate separate DiD regressions of the following form:
+
+
+                        yit = α + β (Adopti × Postt ) + δt + γi + ξ pt + ε it ,                       (15)
+
+   where yit denotes the number of junior hires, number of junior separations, or the
+junior promotion rate31 in firm i at quarter t. γi denotes firm fixed effects, δt are time
+fixed effects and ξ pt are industry-by-time fixed effects.
+   Table 4 reports the estimated β from Equation 15. The results indicate that the sharp
+contraction in junior employment among adopters is driven primarily by a slowdown in
+hiring. Specifically, the coefficient on Hiring implies that, relative to non-adopters, GenAI-
+adopting firms hired on average 4.0 fewer junior workers per quarter after 2023Q1—
+about an 80 percent reduction relative to the pre-period mean of 5.06 hires per firm-
+quarter. Junior separations also declined among adopters, by roughly 1.1 workers per
+quarter, partially offsetting the hiring contraction; but this reduction is about one-fourth
+the magnitude of the hiring decline, so net junior employment still contracts sharply.32
+Junior promotion rates rose by a small but statistically significant 0.033 percentage points
+(relative to a pre-period mean of 0.82 percent). Because promotions move workers out
+of the junior pool, this rise further reduces the junior stock, though its magnitude is very
+small relative to the hiring channel. Appendix A.28 explores sectoral heterogeneity in the
+decline in junior hiring, showing that the contraction is broad-based across industries and
+not driven disproportionately by any single sector.
+
+  31 The junior promotion rate is defined as   Promotionst
+                                                                  , expressed in percentage points.
+                                          Junior Employmentt−1
+  32 See Supplemental Appendix A.26 for the time-series DiD results for junior hires and exits.
+
+
+
+
+                                                   40
+

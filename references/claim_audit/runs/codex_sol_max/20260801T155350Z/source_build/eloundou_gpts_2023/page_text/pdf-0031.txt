@@ -1,0 +1,49 @@
+                                         WORKING PAPER
+
+
+D    Occupations Without Any Exposed Tasks
+
+            Occupations with no labeled exposed tasks
+            Agricultural Equipment Operators
+            Athletes and Sports Competitors
+            Automotive Glass Installers and Repairers
+            Bus and Truck Mechanics and Diesel Engine Specialists
+            Cement Masons and Concrete Finishers
+            Cooks, Short Order
+            Cutters and Trimmers, Hand
+            Derrick Operators, Oil and Gas
+            Dining Room and Cafeteria Attendants and Bartender Helpers
+            Dishwashers
+            Dredge Operators
+            Electrical Power-Line Installers and Repairers
+            Excavating and Loading Machine and Dragline Operators, Surface Mining
+            Floor Layers, Except Carpet, Wood, and Hard Tiles
+            Foundry Mold and Coremakers
+            Helpers–Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters
+            Helpers–Carpenters
+            Helpers–Painters, Paperhangers, Plasterers, and Stucco Masons
+            Helpers–Pipelayers, Plumbers, Pipefitters, and Steamfitters
+            Helpers–Roofers
+            Meat, Poultry, and Fish Cutters and Trimmers
+            Motorcycle Mechanics
+            Paving, Surfacing, and Tamping Equipment Operators
+            Pile Driver Operators
+            Pourers and Casters, Metal
+            Rail-Track Laying and Maintenance Equipment Operators
+            Refractory Materials Repairers, Except Brickmasons
+            Roof Bolters, Mining
+            Roustabouts, Oil and Gas
+            Slaughterers and Meat Packers
+            Stonemasons
+            Tapers
+            Tire Repairers and Changers
+            Wellhead Pumpers
+
+       Table 11: All 34 occupations for which none of our measures labeled any tasks as exposed.
+
+
+References
+Abid, A., Farooqi, M., and Zou, J. (2021). Persistent anti-muslim bias in large language models. In
+  Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society, AIES ’21, page 298–306,
+  New York, NY, USA. Association for Computing Machinery.
+

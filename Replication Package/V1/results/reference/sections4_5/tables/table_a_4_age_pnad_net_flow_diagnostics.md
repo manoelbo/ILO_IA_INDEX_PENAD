@@ -1,0 +1,14 @@
+# Appendix PNAD age net-flow diagnostics
+
+| Grupo | Resultado | DDD grupo–complemento | p DDD | Pretrend grupo | Pretrend DDD | Poder grupo | N grupo | CBOs trat./controle |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 18–24 | Saldo líquido / admissões pré | -0,0200<br>(0,0175) | 0,254 | fail (p=0,028) | pass (p=0,865) | adequate | 18.111 | 75/265 |
+| 18–24 | Saldo líquido / fluxo total | -0,0112<br>(0,0100) | 0,264 | warning (p=0,064) | pass (p=0,796) | adequate | 18.119 | 75/266 |
+| 25–34 | Saldo líquido / admissões pré | 0,0382**<br>(0,0172) | 0,026 | pass (p=0,319) | pass (p=0,263) | adequate | 18.264 | 75/265 |
+| 25–34 | Saldo líquido / fluxo total | 0,0239***<br>(0,0086) | 0,006 | pass (p=0,481) | pass (p=0,215) | adequate | 18.272 | 75/266 |
+| 35–44 | Saldo líquido / admissões pré | -0,0133<br>(0,0157) | 0,396 | pass (p=0,641) | pass (p=0,701) | adequate | 18.234 | 75/265 |
+| 35–44 | Saldo líquido / fluxo total | -0,0096<br>(0,0083) | 0,247 | warning (p=0,053) | pass (p=0,593) | adequate | 18.242 | 75/266 |
+| 45–54 | Saldo líquido / admissões pré | -0,0308<br>(0,0244) | 0,206 | pass (p=0,849) | pass (p=0,934) | adequate | 18.095 | 75/265 |
+| 45–54 | Saldo líquido / fluxo total | -0,0106<br>(0,0115) | 0,357 | pass (p=0,828) | pass (p=0,677) | adequate | 18.103 | 75/266 |
+| 55+ | Saldo líquido / admissões pré | -0,0325<br>(0,0856) | 0,705 | warning (p=0,066) | warning (p=0,054) | adequate | 17.676 | 75/264 |
+| 55+ | Saldo líquido / fluxo total | -0,0084<br>(0,0180) | 0,642 | fail (p=<0,001) | fail (p=<0,001) | adequate | 17.685 | 75/266 |

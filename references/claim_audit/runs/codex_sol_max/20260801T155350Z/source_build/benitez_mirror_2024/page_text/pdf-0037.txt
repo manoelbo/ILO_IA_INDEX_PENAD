@@ -1,0 +1,16 @@
+Figure A.3: AI-Generated Index of Occupational Exposure to AI (GENOE) Over Time Including
+and Excluding Ethical Considerations
+
+
+
+
+Source: Authors’ formulation based on data from O*NET, Felten et al. (2021); Webb (2019); Frey and Osborne (2017);
+Pizzinelli et al. (2023). Note: This figure displays the baseline GENOE for the next one, five, and 10 years, along with
+alternative indexes constructed both with and without ethical considerations. The index measures the likelihood that
+occupations will be displaced by AI within each time horizon and under each methodology.
+
+
+
+
+                                                           33
+

@@ -1,0 +1,75 @@
+                            Figure 2: Effect of LLM exposure on firm-level seniority of jobs
+
+                   0.005
+                                (a) Low seniority jobs                                                                          (b) High seniority jobs
+
+
+
+
+                                                                                                                  0.005
+                   0.000
+
+
+
+
+                                                                                                                  0.000
+     Coefficient
+
+
+
+
+                                                                                                   Coefficient
+
+                                                                                                                  −0.005
+                   −0.005
+
+
+
+
+                                                                                                                  −0.010
+                   −0.010
+
+
+
+
+                              −10     0                         10            20      30                                   −10        0               10          20   30
+
+                                          Periods to treatment                                                                             Periods to treatment
+
+
+
+
+                                                                           (c) Fraction of low seniority jobs
+                                                                 0.0005
+                                                                 0.0000
+                                                  Coefficient
+
+                                                                 −0.0005
+                                                                 −0.0010
+                                                                 −0.0015
+
+
+
+
+                                                                              −10     0                          10        20         30
+
+                                                                                           Periods to treatment
+
+
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on the seniority
+composition of jobs within UK firms. Panel A shows effects on the total number of low-seniority
+positions (seniority levels 1–3), panel B on the total number of high-seniority positions (levels 4–7),
+and panel C on the fraction of jobs that are low-seniority. Coefficients are estimated from Equa-
+tion (3). All regressions include firm fixed effects and industry-by-period fixed effects. Standard
+errors are clustered at the firm level. The vertical line marks November 2022, when ChatGPT was
+publicly released. Shaded areas denote 95% confidence intervals.
+
+
+
+how hiring intentions translate into gradual changes in employment.
+
+
+                                                                                               16
+

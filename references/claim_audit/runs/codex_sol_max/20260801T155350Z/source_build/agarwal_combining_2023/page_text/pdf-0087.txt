@@ -1,0 +1,74 @@
+                                                                                                                                                                                                                           87
+
+       C.4.2                                        By Definition of Ground Truths
+
+       Experiment leave-one-out Ground Truth
+
+       This section computes the main results using a ground truth constructed using a leave-one-
+       out average of assessments by radiologists participating in the experiment in the treatment
+       arm with clinical history but no AI assistance. Specifically,
+                                                                     for each radiologist r and patient
+                                     P     π(ωi =1|sE
+                                                    ir )
+       case i we construct ωir = 1 r′ ̸=r Ni −1 > 0.5 .
+
+                                                                     Figure C.20: Comparing AI performance to Radiologists
+                                                    (a) RMSE Radiologists and AI                                                                                (b) AUROC Radiologists and AI
+                                                                 AI (Pct. 33)                                                                                                              AI (Pct. 32)
+                                           8
+                                                                                                                                                       6
+
+                                           6
+                                                                                                                                                       4
+Density
+
+
+
+
+                                           4                                                                         Density
+
+                                                                                                                                                       2
+                                           2
+
+
+                                           0                                                                                                           0
+                                               .2               .3           .4               .5                .6                                         .5             .6          .7            .8         .9              1
+                                                                          RMSE                                                                                                             AUROC
+
+
+       Note: Main specifications similar to figure 1 with the exception that ground truth is constructed using experiment leave-one-out
+       average.
+
+
+
+
+                                                         Figure C.21: Conditional treatment effect given radiologist prediction
+                                                (a) Deviation from Ground Truth                                                                                           (b) Incorrect Decision
+ATE of AI on deviation from ground truth
+
+
+
+
+                                               .05                                                                                                         .1
+                                                                                                                     ATE of AI on incorrect decision
+
+
+
+
+                                                    0
+                                                                                                                                                           0
+
+                                               -.05
+
+                                                                                                                                                       -.1
+                                                -.1
+
+
+                                               -.15                                                                                                    -.2
+                                                        [0,0.2)   [0.2,0.4) [0.4,0.6) [0.6,0.8)       [0.8,1]                                                   [0,0.2)      [0.2,0.4)    [0.4,0.6)     [0.6,0.8)    [0.8,1]
+                                                               Radiologist probability bins without AI                                                                     Radiologist probability bins without AI
+
+
+       Note: Main specifications similar to figure 2 with the exception that ground truth is constructed using experiment leave-one-out
+       average.
+

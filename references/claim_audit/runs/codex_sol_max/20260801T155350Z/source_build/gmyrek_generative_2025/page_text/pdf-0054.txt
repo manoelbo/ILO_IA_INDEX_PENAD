@@ -1,0 +1,73 @@
+51    ILO Working Paper 140
+
+
+
+
+     Exposure     4-digit code   Occupation Name                                           Mean   SD
+
+     Gradient 1   3433           Gallery, Museum and Library Technicians                   0.37   0.2
+
+     Gradient 1   4415           Filing and Copying Clerks                                 0.37   0.17
+
+     Gradient 1   9621           Messengers, Package Deliverers and Luggage Porters        0.37   0.19
+
+     Gradient 1   3256           Medical Assistants                                        0.35   0.23
+
+     Gradient 1   5211           Stall and Market Salespersons                             0.35   0.17
+
+     Gradient 1   8322           Car, Taxi and Van Drivers                                 0.28   0.23
+
+     Minimal
+     Exposure     3522           Telecommunications Engineering Technicians                0.45   0.04
+
+     Minimal
+     Exposure     2422           Policy Administration Professionals                       0.42   0.06
+
+     Minimal
+     Exposure     2164           Town and Traffic Planners                                 0.41   0.06
+
+     Minimal
+     Exposure     2265           Dieticians and Nutritionists                              0.41   0.07
+
+     Minimal
+     Exposure     1223           Research and Development Managers                         0.4    0.06
+
+     Minimal
+     Exposure     1222           Advertising and Public Relations Managers                 0.39   0.05
+
+     Minimal
+     Exposure     2113           Chemists                                                  0.39   0.1
+
+     Minimal
+     Exposure     3323           Buyers                                                    0.39   0.08
+
+     Minimal
+     Exposure     3333           Employment agents and contractors                         0.39   0.09
+
+     Minimal
+     Exposure     1112           Senior Government Officials                               0.38   0.08
+
+     Minimal
+     Exposure     1120           Managing Directors and Chief Executives                   0.38   0.06
+
+     Minimal
+     Exposure     1321           Manufacturing Managers                                    0.38   0.11
+
+     Minimal
+     Exposure     1324           Supply, Distribution and Related Managers                 0.38   0.05
+
+     Minimal
+     Exposure     1349           Professional Services Managers Not Elsewhere Classified   0.38   0.07
+
+     Minimal
+     Exposure     2133           Environmental Protection Professionals                    0.38   0.04
+
+     Minimal
+     Exposure     2143           Environmental Engineers                                   0.38   0.07
+
+     Minimal
+     Exposure     3114           Electronics Engineering Technicians                       0.38   0.11
+
+     Minimal
+     Exposure     1114           Senior Officials of Special-interest Organizations        0.37   0.06
+

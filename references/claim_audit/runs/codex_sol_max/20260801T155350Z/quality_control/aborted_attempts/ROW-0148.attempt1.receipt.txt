@@ -1,0 +1,1 @@
+Não foi possível gerar o candidato: o arquivo obrigatório `quality_control/prompts/ROW-0148.md` não existe no caminho informado. Nenhum PDF foi aberto e nenhum artefato foi produzido. Restaure esse arquivo para que a revisão possa prosseguir.

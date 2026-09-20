@@ -1,0 +1,51 @@
+staggered adoption designs, as outside of this case it is more difficult to characterize those cells.
+Our characterization relies on the fact that for every t ∈ {2, ..., T }, εf d,g,t = Dg,t − Dg,t−1 −
+(D.,t − D.,t−1 ). εf d,g,t is the difference between the change of the treatment in group g between
+t − 1 and t, and the average change of the treatment across all groups.
+
+Proposition 2 Suppose that Assumptions 1-2 and 6 hold and for all g, Ng,t does not depend on
+t. Then, for all (g, t) such that Dg,t = 1, wf d,g,t < 0 if and only if Dg,t−1 = 1 and D.,t − D.,t−1 >
+D.,t+1 − D.,t (with the convention that D.,T +1 = D.,T ).
+
+Proposition 2 shows that for all t ∈ {2, ..., T − 1} such that the increase in the proportion of
+treated units is larger from t − 1 to t than from t to t + 1, the period-t ATE of groups already
+treated in t − 1 receives a negative weight. Moreover, if, at period T , at least one group becomes
+treated, the ATE of groups already treated in T − 1 also receives a negative weight. Therefore,
+the treatment effect arising at the date when a group starts receiving the treatment does not
+receive a negative weight, only long-run treatment effects do. Then, negative weights are a
+concern when instantaneous and long-run treatment effects may differ. Proposition 2 also shows
+that the prevalence of negative weights depends on how the number of groups that start receiving
+the treatment at date t evolves with t. Assume for instance that this number decreases with
+t: many groups start receiving the treatment at date 1, a bit less start at date 2, etc., a case
+hereafter referred to as the “more early adopters” case. Then, if Ng,t is constant across (g, t),
+D.,t − D.,t−1 is decreasing in t, and all the long-run treatment effects receive negative weights,
+except maybe those of period T if D.,T = D.,T −1 . Conversely, assume that the number of groups
+that start receiving the treatment at date t increases with t: few groups start receiving the
+treatment at date 1, a bit more start at date 2, etc., a case hereafter referred to as the “more
+late adopters” case. Then, if Ng,t is constant across (g, t), D.,t − D.,t−1 is increasing in t, and
+only the period-T long-run treatment effects receive negative weights. Overall, negative weights
+are much more prevalent in the “more early adopters” than in the “more late adopters” case.
+We now come back to general
+                                sharp
+                                       designs where the treatment may not follow a staggered
+adoption. Let βf d = E βf d D denote the expectation of βbf d conditional on the vector of
+               e            b
+treatment assignments D. Just as for βef e , one can show that the minimal value of σ(∆)    e
+compatible with βef d and ∆
+                          e T R = 0 is σ = |βef d |/σ(wf d ), where
+                                          fd
+
+                                                                            1/2
+                                               X          Ng,t
+                           σ(wf d ) =                         (wf d,g,t − 1)2 
+                                                          N1
+                                          (g,t):Dg,t =1
+
+
+is the standard deviation of the wf d -weights. One can also show that σ f d , the minimal value
+      e compatible with βef d and ∆
+of σ(∆)                           e g,t of a different sign than βef d for all (g, t), has the same
+expression as σ f e , except that one needs to replace the weights wg,t by the weights wf d,g,t in its
+
+                                                      13
+

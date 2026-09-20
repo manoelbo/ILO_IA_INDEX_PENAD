@@ -1,0 +1,38 @@
+                                                                                              64
+
+Demonstration
+The brief video below walks you through the interface and a few examples. [At this stage
+participants saw an instruction video which can be found here]
+Consent
+You have been asked to participate in a study conducted by researchers from the Mas-
+sachusetts Institute of Technology (M.I.T.) and Harvard University.
+The information below provides a summary of the research. Your participation in this re-
+search is voluntary and you can withdraw at any time.
+
+  1. Study procedure: We will ask you to examine a number of chest x-rays. We will vary
+     both the amount of information provided about the patient and the availability of an
+     AI support tool.
+
+  2. Potential Risks & Benefits: There are no foreseeable risks associated with this study
+     and you will receive no direct benefit from participating.
+
+Your participation in this study is completely voluntary and you are free to choose whether
+to be in it or not. If you choose to be in this study, you may subsequently withdraw from
+it at any time without penalty or consequences of any kind. The investigator may withdraw
+you from this research if circumstances arise.
+Privacy & Confidentiality
+The only people who will know that you are a research subject are members of the research
+team which might include outside collaborators not affiliated with MIT. No identifiable infor-
+mation about you, or provided by you during the research, will be disclosed to others without
+your written permission, except: if necessary to protect your rights or welfare, or if required
+by law. In addition, your information may be reviewed by authorized MIT representatives
+to ensure compliance with MIT policies and procedures.
+When the results of the research are published or discussed in conferences, no information
+will be included that would reveal your identity.
+Questions
+If you have any questions or concerns about the research, please feel free to contact us directly
+at diagnosticAI@mit.edu.
+Your Rights
+You are not waiving any legal claims, rights or remedies because of your participation in this
+research study. If you feel you have been treated unfairly, or you have questions regarding
+

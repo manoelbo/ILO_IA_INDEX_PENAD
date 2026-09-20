@@ -1,0 +1,49 @@
+1320                  QUARTERLY JOURNAL OF ECONOMICS
+
+
+     We next estimate the contribution of task changes attribut-
+able to computerization to growth in college graduate employ-
+ment. These estimates, shown in panel D, implement equation
+(18) using the within-industry and within-occupation task shifts
+predicted by computerization (panel B). The estimates of the
+“computer-induced” changes in college employment are compara-
+ble in magnitude to, and in some cases larger than, the analogous
+estimates based on observed task inputs. We nd, for example,
+that computer-induced task changes along the extensive margin
+contributed 1.2 percentage points per decade to growth in college
+employment during 1970 to 1998, and 2.2 percentage points dur-
+ing 1980 to 1998. Adding intensive margin task changes raises
+this estimate considerably. In net, we estimate that task shifts
+attributable to computerization increased college employment by
+3.7 percentage points per decade from 1980 to 1998.
+     The nal step of our estimation is to benchmark employment
+changes induced by shifting task demands against conventional
+estimates of demand for college labor calculated for the same
+period. For this benchmarking exercise, we use the familiar con-
+stant elasticity of substitution (CES) framework with two factors
+of production— college equivalent and high school equivalent la-
+bor—to estimate log relative demand shifts favoring college labor
+during 1970 to 1998. Under the assumptions that the economy
+operates on the demand curve and that factors are paid their
+marginal products, the CES model calculates the implied shift in
+college/noncollege relative demand consistent with observed
+shifts in relative employment and earnings of college versus
+noncollege workers.28 This procedure also requires us to assume
+an elasticity of substitution, s, between college and high school
+equivalent workers. Following a large literature, we use values of
+s, ranging from 0 to 2, with a consensus estimate of s 5 1.4.
+     Panel E of the table presents the benchmark CES estimates
+for the period 1970 to 1998. We calculate that relative demand for
+
+     28. The demand model is Q t 5 [a t (a t N c t ) r 1 (1 2 a t )(b t N h t ) r ] 1 / r , where Q is
+aggregate output, N c t , N h t are quantities of employed college and high school
+equivalent labor, a t , b t are factor-augmenting technological parameters, a is an
+index of the share of work activities allocated to college versus high school labor,
+and the elasticity of substitution is given by s 5 1/(1 2 r). The demand index is
+D t 5 s ln(a t /[1 2 a t ]) 1 (s 2 1)ln(a t /b t ). Katz and Murphy [1992], Johnson
+[1997], Murphy, Romer, and Riddell [1999], and Acemoglu [2002] implement
+similar models. Our estimates are based on Table II of Autor, Katz, and Krueger
+[1998] and updated in 1998 (from 1996) for this analysis. Unlike these authors, we
+also include estimates for s 5 0 since our xed coefcients model incorporates this
+assumption.
+

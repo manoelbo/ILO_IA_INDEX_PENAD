@@ -1,0 +1,126 @@
+{
+  "authority": {
+    "baseline_plan_count": 52,
+    "computational_publications": 53,
+    "excluded_noncomputational_publications": [
+      "Table 2.1"
+    ],
+    "reconciliation": {
+      "appendix_numbering": "The current manuscript uses Appendices C and D for occupational cases and complementary evidence.",
+      "newly_present_since_plan": [
+        "Figure 5.2.6"
+      ],
+      "status": "reconciled"
+    },
+    "status": "pass"
+  },
+  "component_counts": {
+    "caged": 33,
+    "pnadc": 2,
+    "rais": 2,
+    "section3": 14,
+    "spatial": 2
+  },
+  "contracts": {
+    "analysis_registry": {
+      "records": 55,
+      "sha256": "e5070078e4eeb7ad0f378ef973d54d78dd711927e06391b6f164182764cc4871"
+    },
+    "analytical_bundle_manifest": {
+      "records": 161,
+      "sha256": "e650c7c27084884bc2824753104cf785cdec4846a23618d2660900703eb019c8"
+    },
+    "manuscript_artifacts": {
+      "records": 53,
+      "sha256": "4716bb52b005c1e136e54f4b2bed62729e5f0de8272be5cf89d20c96ad33a245"
+    },
+    "numeric_claims": {
+      "records": 92,
+      "sha256": "60a22123bc81a7ba1834ac6a2aeb74804d52b56abe1f9497033b253ebaa96a56"
+    },
+    "renv_lock": {
+      "r_version": "4.4.1",
+      "sha256": "5f35c0c5f41c09dc75ac64efaa66974b1abf150a1604597ebad77ec62a340e08"
+    },
+    "uv_lock_sha256": "4aacaca484580d68862c821a55070c6472bff7da7e251ed6432f58e82fe87a0e"
+  },
+  "format_version": 1,
+  "manuscript_labels": [
+    "Figure 3.1",
+    "Figure 3.2",
+    "Figure 3.3",
+    "Figure 3.4",
+    "Figure 3.5",
+    "Figure 3.6",
+    "Figure 3.7",
+    "Figure 3.8",
+    "Figure 3.9",
+    "Figure 3.10",
+    "Figure 5.1",
+    "Figure 5.2.1.1",
+    "Figure 5.2.1.2",
+    "Figure 5.2.2.1",
+    "Figure 5.2.2.2",
+    "Figure 5.2.3.1",
+    "Figure 5.2.3.2",
+    "Figure 5.2.3.3",
+    "Figure 5.2.4.1",
+    "Figure 5.2.4.2",
+    "Figure 5.2.5.1",
+    "Figure 5.2.5.2",
+    "Figure 5.2.6",
+    "Figure C.1",
+    "Figure C.2",
+    "Table 2.1",
+    "Table 3.1",
+    "Table 3.2",
+    "Table 3.3",
+    "Table 3.4",
+    "Table 4.2.1",
+    "Table 4.2.2",
+    "Table 4.2.3",
+    "Table 4.3.1",
+    "Table 5.1",
+    "Table 5.1.1",
+    "Table 5.2.1",
+    "Table 5.2.2",
+    "Table 5.2.3",
+    "Table 5.2.4",
+    "Table 5.2.5",
+    "Table A.1",
+    "Table A.2",
+    "Table A.3",
+    "Table A.4",
+    "Table A.5",
+    "Table A.6",
+    "Table B.1",
+    "Table B.2",
+    "Table B.3",
+    "Table B.4",
+    "Table C.1",
+    "Table D.1",
+    "Table D.2"
+  ],
+  "notion": {
+    "as_of": "2026-08-02T23:20:18.657Z",
+    "page_id": "325cc8ca461082d794db01323b295bb5",
+    "queried_at": "2026-08-03T04:02:54-03:00",
+    "title": "Dissertação de Mestrado V2",
+    "url": "https://app.notion.com/p/325cc8ca461082d794db01323b295bb5"
+  },
+  "validated_candidate": {
+    "components": [
+      "section3",
+      "caged",
+      "rais",
+      "pnadc",
+      "spatial"
+    ],
+    "numeric_claims_passed": 92,
+    "publication_index_records": 53,
+    "reference_manifest_sha256": "35d9084497f070b9333a8df3cdf6701c966a385dc68094a87c7fd8a9f4c9d451",
+    "reference_signature": "cd7db7e34370b5262a552e6009a5e8c3508db62f06483b039075df1361615944",
+    "run_manifest_sha256": "bcdf582be75dc0c90f66ed402c41fe731ce4317115d7be0e489908c06984d45f",
+    "signed_reference_artifacts": 267
+  }
+}

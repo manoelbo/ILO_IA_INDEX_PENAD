@@ -1,0 +1,58 @@
+E.3    Perceived Impacts
+
+This appendix provides further detail on the perceived impacts reported in Section E.3.
+
+As a complement to the difference-in-differences analysis of labor market outcomes,
+
+respondents were asked directly: “Have AI chatbots affected your labor earnings?” If so,
+
+they were then asked: “By how much?”
+
+   While individuals may struggle to assess such counterfactuals precisely, we treat their
+
+responses as supplementary evidence based on a fundamentally different methodology
+
+that helps address some of the limitations of our difference-in-differences analysis.
+
+   First, as shown by Arcidiacono et al. (2020); Fuster, Kaplan and Zafar (2021);
+
+Giustinelli and Shapiro (2024), subjective assessments can reveal individual-specific
+
+treatment effects that may vary along unobservable dimensions not captured in survey
+
+or register data. In particular, our heterogeneity analyses above may fail to isolate the
+
+subset of workers most affected by AI chatbots.
+
+   Second, while difference-in-differences estimates identify only differential impacts
+
+among adopters, subjective assessments are less susceptible to this “missing intercept”
+
+problem. For example, if chatbot availability constitutes an economy-wide shock, it
+
+could affect earnings across entire occupations, regardless of individual or workplace
+
+adoption. While our estimates in Section 3.1 identify effects only up to the wage impact on
+
+non-encouraged non-adopters, we may still ask these workers about their perceived labor
+
+market impacts from AI chatbots. If substantial occupation-wide general equilibrium
+
+effects are unfolding, they may perceive the impact on their earnings even without adopting
+
+the tools themselves.
+
+   Finally, eliciting perceived earnings effects offers a bridge between the self-reported
+
+work benefits in Section D and the observed earnings outcomes in Section 3. This
+
+helps assess whether the weak link between perceived work-related benefits and observed
+
+earnings outcomes reflects misperception on the part of workers—or instead an accurate
+
+understanding that the pass-through from work-related gains to earnings is limited.
+
+   Table E.11 reports workers’ perceived earnings impacts from AI chatbots, with Figure
+
+                                            86
+

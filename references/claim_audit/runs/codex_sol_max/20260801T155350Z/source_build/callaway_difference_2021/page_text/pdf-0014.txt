@@ -1,0 +1,45 @@
+treatment at different lengths of exposure to the treatment.
+   Despite the popularity of these specifications, recent research has shown that one must be very careful
+in attaching a causal interpretation to these aggregated parameters. For instance, Borusyak and Jaravel
+(2017), Goodman-Bacon (2019), de Chaisemartin and D’Haultfœuille (2020), and Athey and Imbens
+(2018) have shown that, in general, β recovers a weighted average of some underlying treatment effect
+parameters but some of the weights on these parameters can be negative. This can potentially lead to
+particularly problematic cases such as the effect of the treatment being positive for all units, but the
+TWFE estimation resulting in estimates of β that are negative. Even in cases where the weights are
+not negative, the weights on underlying treatment effect parameters are entirely driven by the TWFE
+estimation strategy and are sensitive to the size of each group, the timing of treatment, and the total
+number of time periods (see Theorem 1 in Goodman-Bacon (2019)). The results in this section can be
+used in exactly the same setup to identify a single interpretable average treatment effect parameter and,
+thus, provide a way to circumvent the issues with the more common approach.
+   As discussed by Goodman-Bacon (2019), the “negative weight problem” associated with β arises when
+treatment effects evolve over time. Thus, one may wonder if such problems would still be present when
+considering more general, dynamic specifications such as (3.3). Sun and Abraham (2020) shows that this
+is still the case as the βe0 s associated with (3.3) do not recover easy-to-interpret causal parameters and
+still generally suffer from the same sorts of “negative weighting problems.” In contrast to this, we provide
+a simple way to directly aggregate our group-time average treatment effects into average treatment effects
+across different lengths of exposure to the treatment.
+
+3.1     Aggregations to Highlight Treatment Effect Heterogeneity
+Next, we discuss several partial aggregations of the group-time average treatment effects in order to sum-
+marize different dimensions of treatment effect heterogeneity. Although there are additional possibilities,
+we focus our discussion below on how to answer three particular questions: (a) How does the effect of
+participating in the treatment vary with length of exposure to the treatment? (b) Do groups that are
+treated earlier have, on average, higher/lower average treatment effects than groups that are treated
+later? (c) What is the cumulative average treatment effect of the policy across all groups until some
+particular point in time? Throughout this section, to avoid notation clutter, we assume that units do not
+anticipate treatment, i.e., we consider the case where Assumption 3 holds with δ = 0. We also assume
+that a “never treated” group is available.
+
+3.1.1    How do average treatment effects vary with length of exposure to the treatment?
+
+One of the most popular questions that arises in DiD setups with multiple time periods concerns treatment
+effect dynamics: How does the effect of participating in the treatment vary with length of exposure to the
+treatment? For instance, do average treatment effects increase/decrease with elapsed treatment time?
+Indeed, answering this type of question is often the main motivation for using the event study regression
+in (3.3), though, as we mentioned above, that sort of regression may not be suitable for such a task. In
+this section, we propose an aggregation scheme that is suitable to highlight treatment effect heterogeneity
+with respect to length of exposure to the treatment that does not suffer from the drawbacks associated
+
+
+                                                    14
+

@@ -1,0 +1,67 @@
+The first equality follows from the law of iterated expectations and (10). The second equality
+                                                        P
+follows from Assumption 7. By the definition of wg,t , (g,t):Dg,t =1 NNg,t
+                                                                        1
+                                                                           wg,t = 1, hence the third
+equality. The fourth equality follows from the law of iterated expectations.
+
+
+Proof of Theorem 2
+
+It follows from the Frisch-Waugh theorem and the definition of εf d,g,t that
+                           P
+                                 (g,t):t≥2 Ng,t εf d,g,t (E (Yg,t |D) − E (Yg,t−1 |D))
+                 E βbf d D =           P                                               .                              (13)
+                                          (g,t):t≥2 Ng,t εf d,g,t (Dg,t − Dg,t−1 )
+
+Now, by definition of εf d,g,t again,
+                                           G
+                                           X
+                                                 Ng,t εf d,g,t = 0 for all t ∈ {2, ..., T }.                          (14)
+                                           g=1
+
+
+Then,
+                 X
+                           Ng,t εf d,g,t (E (Yg,t |D) − E (Yg,t−1 |D))
+               (g,t):t≥2
+                 X
+           =               Ng,t εf d,g,t (E (Yg,t |D) − E (Yg,t−1 |D) − E (Y1,t |D) − E (Y1,t−1 |D))
+               (g,t):t≥2
+                 X                                                                                        
+           =               Ng,t εf d,g,t            e g,t − Dg,t−1 ∆
+                                               Dg,t ∆              e g,t−1 − D1,t ∆
+                                                                                  e 1,t + D1,t−1 ∆
+                                                                                                 e 1,t−1
+               (g,t):t≥2
+                 X                                                  
+           =                                  e g,t − Dg,t−1 ∆
+                           Ng,t εf d,g,t Dg,t ∆              e g,t−1
+               (g,t):t≥2
+               X
+           =                                                    e g,t
+                      (Ng,t εf d,g,t − Ng,t+1 εf d,g,t+1 ) Dg,t ∆
+                g,t
+                      X                                              
+                                                     Ng,t+1             e g,t .
+           =                   Ng,t       εf d,g,t −        εf d,g,t+1 ∆                                              (15)
+                                                      Ng,t
+               (g,t):Dg,t =1
+
+
+The first and third equalities follow from (14). The second equality follows from Lemma 1. The
+fourth equality follows from a summation by part, and from the fact εf d,g,1 = εf d,g,T +1 = 0. The
+fifth equality follows from Assumption 2.
+A similar reasoning yields
+              X                                                     X                                           
+                                                                                                Ng,t+1
+                        Ng,t εf d,g,t (Dg,t − Dg,t−1 ) =                        Ng,t εf d,g,t −        εf d,g,t+1 .   (16)
+                                                                                                 Ng,t
+            (g,t):t≥2                                           (g,t):Dg,t =1
+
+
+Combining (13), (15), (16), and the law of iterated expectations yields the result.
+
+
+                                                                  33
+

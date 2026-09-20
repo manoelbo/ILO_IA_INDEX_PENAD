@@ -1,0 +1,71 @@
+                                                                                                                                                                                                             91
+
+      C.4.3                                    Testing for Order Effects
+
+      First Treatment (only Design 1 and Design 2)
+
+      The following graphs contain only those cases from the treatment group that the subjects
+      encountered first. This includes the first 15 reads from design 1 and the first 5 reads from
+      design 2. This exercise is to check if the treatment effects for all the reads is different than
+      for the first reads.
+
+                                                                Figure C.26: Comparing AI performance to Radiologists
+                                               (a) RMSE Radiologists and AI                                                                      (b) AUROC Radiologists and AI
+                                                                    AI (Pct. 21)                                                                                   AI (Pct. 64)
+                                     40                                                                                                   20
+
+
+                                     30                                                                                                   15
+Density
+
+
+
+
+                                                                                                              Density
+                                     20                                                                                                   10
+
+
+                                     10                                                                                                   5
+
+
+                                     0                                                                                                    0
+                                          0              .1            .2              .3                .4                                    .75            .8            .85     .9            .95             1
+                                                                      RMSE                                                                                                    AUROC
+
+
+      Note: Main specifications similar to figure 1 with the exception that observations are from the first treatment received in designs
+      1 and 2 only.
+
+
+
+
+                                                              Figure C.27: Conditional treatment effect given AI prediction
+                                              (a) Deviation from Ground Truth                                                                              (b) Incorrect Decision
+                                               .2                                                                                                    .2
+ATE on deviation from ground truth
+
+
+
+
+                                                                                                              ATE on incorrect decision
+
+
+
+
+                                                                                                                                                     0
+                                               0
+
+                                                                                                                                                 -.2
+
+                                              -.2
+                                                                                                                                                 -.4
+
+
+                                              -.4                                                                                                -.6
+                                                    [0,0.2)    [0.2,0.4) [0.4,0.6) [0.6,0.8)   [0.8,1]                                                    [0,0.2)      [0.2,0.4) [0.4,0.6) [0.6,0.8)    [0.8,1]
+                                                                      AI prediction bins                                                                                      AI prediction bins
+
+
+      Note: Main specifications similar to figure 3 with the exception that observations are from the first treatment received in designs
+      1 and 2 only.
+

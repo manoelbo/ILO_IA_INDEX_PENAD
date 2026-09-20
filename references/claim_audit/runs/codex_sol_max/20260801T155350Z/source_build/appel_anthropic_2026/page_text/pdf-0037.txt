@@ -1,0 +1,31 @@
+            3
+                The world map is based on Natural Earth’s world map with the ISO standard
+                point of view for disputed territories, which means that the map may not
+                contain some disputed territories. We note that in addition to the countries
+                shown in gray (“Claude not available”), we do not operate in the Ukrainian
+                regions Crimea, Donetsk, Kherson, Luhansk, and Zaporizhzhia. In
+                accordance with international sanctions and our commitment to supporting
+                Ukraine’s territorial integrity, our services are not available in areas under
+                Russian occupation.
+
+            4
+                “No data” applies to countries with partially missing data. Some territories
+                (e.g., Western Sahara, French Guiana) have their own ISO-3611 code. Some
+                of these have some usage, others have none. Since the Anthropic AI Usage
+                Index is calculated per working-age capita based on working age population
+                data from the World Bank, and population data is not readily available for all
+                of these territories, we cannot calculate the AUI for these territories.
+
+            5
+                We exclude the Seychelles from all geographic analyses because a large
+                fraction of usage we saw during the sampling dates was abusive traffic.
+
+            6
+                We exclude Wyoming from all US state analyses because a large fraction of
+                usage we saw during the sampling dates was abusive traffic.
+
+
+
+
+The Anthropic Economic Index Report                                                              37
+

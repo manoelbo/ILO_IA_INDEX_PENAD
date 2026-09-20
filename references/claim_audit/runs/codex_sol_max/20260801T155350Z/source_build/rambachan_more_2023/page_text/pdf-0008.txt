@@ -1,0 +1,71 @@
+2562                                   REVIEW OF ECONOMIC STUDIES
+
+δ = (δ pr e , δ post ) ∈  restricts the possible values of δ post given the identified value of the pre-
+treatment difference in trends δ pr e .
+    It is natural to place restrictions on the relationship between δ pr e and δ post , since applied
+researchers frequently test the null hypothesis δ pr e = 0 in order to assess the plausibility of the
+assumption that δ post = 0. Our identification framework, which generalizes the partial identifi-
+cation framework in Manski and Pepper (2018), thus helps formalize the intuition motivating
+pre-trends testing.
+    Under the assumption that δ ∈  = {δ : δ post = 0}, the parameter θ will typically be set-
+
+
+
+
+                                                                                                                             Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+identified. The identified set is the set of values for θ that are consistent with a given value of β
+under the restriction δ ∈ ,
+                                                                                             
+                                                                                         0
+                S(β, ) := θ : ∃δ ∈ , τ post ∈ RT̄ s.t. l  τ post = θ, β = δ +                .        (4)
+                                                                                       τ post
+
+When  is a closed and convex set, the identified set has a simple characterization.5
+Lemma 2.1. If  is closed and convex, then S(β, ) is an interval in R, S(β, ) =
+[θ lb (β, ), θ ub (β, )], where
+                                                                                    
+                                               
+                    θ (β, ) := l β post − max l δ post , s.t. δ ∈ , δ pr e = β pr e ,
+                     lb
+                                                                                        (5)
+                                            δ
+                                                                                  
+                                                                   =:bmax (β pr e ,)
+
+
+                                                                                                
+                                                          
+                    θ (β, ) := l β post − min l δ post , s.t. δ ∈ , δ pr e = β pr e .
+                      ub
+                                                                                                                      (6)
+                                            δ
+                                                                                  
+                                                                    =:bmin (β pr e ,)
+
+Proof. Re-arranging terms in (4), the identified set can be equivalently written as S(β, ) =
+{θ : ∃δ ∈  s.t. δ pr e = β pr e , θ = l  β post − l  δ post }. The result is then immediate.
+
+     2.3.1. Example: non-staggered DiD (continued). In the three-period DiD model
+(T = T̄ = 1), the ATT in period 1 is point identified if we assume that the counterfactual
+ ¯
+post-treatment    difference in trends δ1 is exactly zero (parallel trends). Instead, we assume
+δ = (δ−1 , δ1 ) ∈  for some set . When  is closed and convex, the identified set for the ATT
+in period 1 is [β1 − bmax , β1 − bmin ], where bmax = maxδ δ1 s.t (δ−1 , δ1 ) ∈  is the maximum
+possible bias of β̂ 1 given δ−1 = β−1 and bmin is defined analogously.
+     Additionally, it is immediate
+                            K      from the definition of the identified set in (4) that if  is the
+finite union of sets,  = k=1     k , then the identified set is the union of the identified sets for
+its subcomponents,
+                                                           
+                                                           K
+                                            S(β, ) =            S(β, k ).                                           (7)
+                                                           k=1
+
+This fact will be useful, since several empirically relevant choices of  can be written as the
+finite union of convex sets, as we will see below.
+
+
+       5. Our focus is on inference on θ . If one were instead interested in estimating the endpoints of the identified, a
+natural estimator when  is closed and convex would be [θ lb (β̂, ), θ ub (β̂, )], which is the sample analogue to the
+bounds derived in Lemma 2.1; see Supplementary Material, Appendix C for additional discussion.
+

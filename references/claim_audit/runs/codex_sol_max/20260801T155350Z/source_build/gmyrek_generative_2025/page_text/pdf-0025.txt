@@ -1,0 +1,42 @@
+22     ILO Working Paper 140
+
+
+
+
+     rather than replicating the exact gender and economic structure of the employed population
+     (Table 2). With this objective met, we did not apply additional weight-based adjustments to the
+     survey sample. Instead, the deviations between the survey and LFS are treated as a natural vari-
+     ation inherent to a task-specific character of this study, which follows the imbalances in the total
+     number of tasks across 1-digit groups, as well as other assumptions made in Section 4.2.
+
+
+     3.5.2. Participants’ Exposure to GenAI: Screening Questions
+     The screening section of the survey tested participants’ prior exposure to GenAI. A significant
+     majority of survey participants (71.2%) report having heard about this technology, with relatively
+     small differences between genders and occupational groups. Despite this high level of aware-
+     ness, the actual use of GenAI is limited, with most respondents reporting they "never" (50.1%)
+     or "rarely" (26%) use it. Sporadic use (few times a month) is reported by 17.4% of all participants,
+     with only 4.8% reporting regular use and less than 2% using it very often. Among the 1-digit oc-
+     cupational groups, professionals, technicians, public authorities, senior officials and managers
+     use these technologies more frequently than the groups with a stronger presence of manual
+     tasks (Figure 6). This seems consistent with recent studies of GenAI adoption, which suggest
+     higher use of GenAI among occupations with a larger share of cognitive work (Bick et al., 2024;
+     Parker et al., 2025).
+
+
+     XX Figure 6. Frequency of use of GenAI, by 1-digit ISCO-08
+
+
+
+
+     When considering the potential impact of GenAI on jobs within their industries, most respondents
+     expect either no impact (26.5%) or only a slight impact (30.2%). As shown in Figure 7, manual and
+     technical groups have a significantly higher share of such responses. Reports of moderate and
+     significant impact are highest among professionals (33.8% and 20.4%), public authorities, senior
+     official and managers (31.5% and 24%), clerical support workers (22.5 % and 21.1%) and techni-
+     cians (27.3% for moderate impact), though the latter stand out with notably lower expectations
+     of a significant impact (14.4%). This might be due to the inherent complexity of many tasks in this
+     professional group. In comparison, relatively few respondents predict a complete transformation
+     of their occupations, with the highest share of such responses among service and sales work-
+     ers (5.1%) and clerical support workers (4.2%), and a small total number of these observations.
+

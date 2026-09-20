@@ -1,0 +1,35 @@
+              Table 1: Papers using two-way fixed effects regressions published in the AER
+
+                                                                         2010      2011  2012 Total
+          Papers using two-way fixed effects regressions                   5        14    14    33
+          % of published papers                                          5.2%     12.2% 11.2% 9.8%
+          % of empirical papers, excluding lab experiments              12.8%     23.0% 19.2% 19.1%
+
+Notes. This table reports the number of papers using two-way fixed effects regressions published in the AER
+from 2010 to 2012.
+
+
+Table 2 shows descriptive statistics about the 33 2010-2012 AER papers estimating two-way
+fixed effects regressions. Panel A shows that 13 use the FE regression; six use the FD regression;
+six use regressions the FE or FD regression with several treatment variables; three use the FE or
+FD 2SLS regression discussed in Section ?? of the Web Appendix; five use other regressions that
+we deemed sufficiently close to the FE or FD regression to include them in our count.17 Panel B
+shows that more than three fourths of those papers consider sharp designs, while less than one
+fourth consider fuzzy designs. Finally, Panel C assesses whether, in those applications, there are
+groups whose exposure to the treatment remains stable between each pair of consecutive time
+periods, the condition that has to be met to be able to compute the DIDM estimator. For about
+a half of the papers, reading the paper was not enough to assess this with certainty. We then
+assessed whether they presumably have stable groups or not. Overall, 12 papers have stable
+groups, 14 presumably have stable groups, five presumably do not have stable groups, and two
+do not have stable groups.
+In Section ?? of the Web Appendix, we review each of the 33 papers. We explain where two-way
+fixed effects regressions are used in the paper, and we detail our assessment of whether the design
+is a sharp or a fuzzy design, and of whether the stable groups assumption holds or not.
+  17
+       For instance, two papers use regressions with three-way fixed-effects instead of two-way fixed effects.
+
+
+
+
+                                                          20
+

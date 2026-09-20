@@ -1,0 +1,46 @@
+                                                                                                      41
+
+6.1   Computing the Trade-off Between Decision Loss and Costs of Human Effort
+
+Consider a policy τ (·) that chooses between full automation (AI), radiologist with access to
+AI (E + AI), or radiologist without access to AI (E), as a function of the AI signal sA
+                                                                                      i . The
+optimal policy which minimizes the sum of the expected decision-loss (costs of false positives
+and false negatives) and the monetized time cost of using human radiologists solves:
+
+
+                      τ ∗ (sA
+                            i ) = arg       min          −m · Viτ (sAi ) + w · Ciτ (sAi ) .           (8)
+                                        τ ∈{E,E+AI,AI}
+                                                                                                                
+The first term contains the expected decision-loss from a modality given by Viτ (sAi ) = E Virτ (sA )       sA
+                                                                                                             i   ,
+                                                                                                  i
+which is the expected diagnostic quality averaging over radiologists and cases given the modal-
+ity, preferences for false positives and false negatives, and the AI signal. Preferences for false
+positives and false negatives are allowed to vary by pathology but are the same across modal-
+ities. We estimate these preferences using data on the binary treatment recommendations
+of the radiologists in our experiment, given their probability assessments. Details of this
+preference estimation step are available in appendix C.6. The average cost of false negatives
+across pathologies is three times the cost of a false positive. Since we do not know the dollar
+cost of a false negative (m), we will present results for varying values of m.
+                                                                                             
+The second term in the objective function contains Ciτ (sAi ) = Cirτ (sA ) sAi , which is the
+                                                                         i
+expected radiologist time for a given modality. If the case is fully automated, this time
+cost is zero and otherwise those time costs are based on our experimental estimates, which
+show that radiologists spend more time on cases when presented with AI predictions. For
+the interpretation of the magnitudes, we translate both radiologists’ expected time cost and
+the expected decision loss into dollars. For the costs of radiologist time, we set w = $4 per
+minute based on a payment of $10 per case and an average time per read of 2.5 minutes.
+We solve this problem by training a classification tree that assigns the case to a modality
+conditional on the AI signal sA,i . We use 55% of cases as training data for the decision tree,
+20% of cases for validation, and 25% in the test set. For this exercise, we focus on two top-
+level pathologies, cardiomediastinal abnormality, and airspace opacity. Finally, to quantify
+the drawbacks of biased humans, we will contrast the solution from such a system when the
+decisions under E + AI are as observed in the data with the system that uses the Bayesian
+assessments for E + AI.
+An important restriction in this formulation of the delegation problem is that the signal
+received by the expert is exogeneous and does not respond to the availability of AI. This
+assumption rules out models of endogenous information acquisition, for example, rational
+

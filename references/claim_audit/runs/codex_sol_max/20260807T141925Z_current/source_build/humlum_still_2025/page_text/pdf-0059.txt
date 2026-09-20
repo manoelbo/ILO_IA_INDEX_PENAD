@@ -1,0 +1,33 @@
+Labor market competition. Who ultimately benefits from the productivity gains
+of AI chatbots depends crucially on labor market competition. In competitive markets,
+workers are compensated only for productivity gains not driven by firm-level investments
+(Acemoglu and Pischke, 1998; Becker, 1964). Worker-level adoption should then affect
+wages (Figure 5), whereas firm-level adoption should not. Instead, firm-level adoption
+should manifest in employment (Figure 8), as firms move down their product demand
+curves.
+   An important alternative is the non-discriminatory monopsony model of Card et al.
+(2018); Robinson (1969), in which firms exert monopsony power because workers have
+heterogeneous preferences over employers but firms cannot price discriminate across
+workers. In this framework, any earnings effects from chatbots arise at the firm level
+through labor demand adjustments, not through within-firm wage differentials between
+adopters and non-adopters. Thus, within-firm earnings gaps (Figure 5) should not emerge,
+but firm-level outcomes—total wage bills, employment, and average wages—should be
+affected (Figure 8). Whether employment effects translate into wages depends on the
+elasticity of workers’ labor supply across employers—that is, how heterogeneous their firm
+preferences are.
+
+A.2.2     Formal Setup
+
+This section introduces a formal model of chatbot adoption and labor market outcomes.
+We make several simplifying assumptions. First, AI chatbots affect output only when
+actively deployed by workers, reflecting current technology that depends on direct human
+prompting. Second, workers’ adoption decisions follow the Roy framework of Section A.1,
+with heterogeneity in both productivity benefits and adoption costs. We apply a parallel
+Roy model to firms’ encouragement decisions. Finally, product markets are characterized
+by monopolistic competition and labor markets are perfectly competitive. While the
+individual components draw on standard frameworks, no existing model combines worker-
+level adoption decisions with firm-level encouragement policies and equilibrium sorting
+
+
+
+                                            9

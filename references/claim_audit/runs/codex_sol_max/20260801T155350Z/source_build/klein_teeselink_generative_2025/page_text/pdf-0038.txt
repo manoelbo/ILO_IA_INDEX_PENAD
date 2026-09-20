@@ -1,0 +1,49 @@
+A3.2        Within-Firm Analysis of Seniority
+
+Table A10: Effect of LLM exposure on firm-level job outcomes, within firm effects
+
+                               LLM exposure x Post x High seniority            −0.002
+                                                                               (0.002)
+
+                               LLM exposure x Post x Low seniority           −0.007∗∗∗
+                                                                              (0.001)
+
+                               Firm-by-period FE                                 Yes
+                               Firm-seniority FE                                 Yes
+                               Seniority-by-period FE                            Yes
+                               Observations                                   3,792,846
+                               Adjusted R2                                      0.992
+
+Notes: This table reports triple-difference estimates of the effect of LLM exposure on employment
+by seniority level within firms. The dependent variable is log employment at the firm-seniority-
+month level. We interact the post-ChatGPT indicator and firm-level LLM exposure with seniority
+indicators, using mid-seniority positions as the reference category. Low seniority corresponds to
+levels 1–2, mid seniority to levels 3–4, and high seniority to levels 5–7. All regressions include
+firm-by-period fixed effects, firm-by-seniority fixed effects, and seniority-by-period fixed effects.
+All other definitions are as in Table 3.
+
+
+
+A3.3        Firm Selection
+
+Table A11: Effect of LLM exposure on firm-level job outcomes, min. 10 employees
+
+                             Employees     Low seniority        High seniority      Low seniority (%)   Av. comp.
+     LLM exposure x Post      0.0004        −0.002∗∗∗             0.002∗∗∗                −0.001∗∗∗     160.109∗∗∗
+                              (0.001)        (0.001)               (0.001)                 (0.0002)      (52.656)
+
+     Firm fixed effects          Yes            Yes                  Yes                     Yes           Yes
+     Industry-by-period FE       Yes           Yes                   Yes                     Yes           Yes
+     Observations            11,476,930     11,307,751           10,759,217               11,307,751    11,476,930
+     Adj. R-squared             0.973         0.967                 0.968                   0.941         0.944
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes. We use all firms with at least 10 listed employees in October 2022,
+instead of 100 employees as in our main analysis. All other definitions are as in Table 3.
+
+
+
+
+                                                           38
+

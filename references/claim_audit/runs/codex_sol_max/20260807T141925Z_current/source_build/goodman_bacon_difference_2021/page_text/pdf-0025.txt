@@ -1,0 +1,67 @@
+the two estimates has the form of a Oaxaca-Blinder-Kitagawa decomposition (Blinder 1973,
+
+Oaxaca 1973, Kitagawa 1955):
+
+                                    𝐷𝐷𝐷𝐷𝐷𝐷 𝑡𝑡𝑡𝑡 2𝑥𝑥2 𝐷𝐷𝐷𝐷𝐷𝐷      𝐷𝐷𝐷𝐷𝐷𝐷 𝑡𝑡𝑡𝑡 𝑤𝑤𝑤𝑤𝑤𝑤𝑤𝑤ℎ𝑡𝑡𝑡𝑡        𝐷𝐷𝐷𝐷𝐷𝐷 𝑡𝑡𝑡𝑡 𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+
+           𝛽𝛽̂𝑎𝑎𝑎𝑎𝑎𝑎
+              𝐷𝐷𝐷𝐷
+                     − 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 = ��   ��
+                                       �
+                                  𝒔𝒔′ �𝜷𝜷   ����
+                                          𝟐𝟐𝟐𝟐𝟐𝟐
+                                          𝒂𝒂𝒂𝒂𝒂𝒂 − 𝜷𝜷
+                                                      ��� + ��
+                                                   ��𝟐𝟐𝟐𝟐𝟐𝟐      �����
+                                                            (𝒔𝒔′𝒂𝒂𝒂𝒂𝒂𝒂        ���
+                                                                             ��
+                                                                       − 𝒔𝒔′ )𝜷𝜷 𝟐𝟐𝟐𝟐𝟐𝟐
+                                                                                        + �����������������  � 𝟐𝟐𝟐𝟐𝟐𝟐 − 𝜷𝜷
+                                                                                                                        � 𝟐𝟐𝟐𝟐𝟐𝟐 �
+                                                                                          (𝒔𝒔′𝒂𝒂𝒂𝒂𝒂𝒂 − 𝒔𝒔′ )�𝜷𝜷 𝒂𝒂𝒂𝒂𝒂𝒂                 (18)
+
+Dividing each term on the right side of (18) by 𝛽𝛽̂𝑎𝑎𝑎𝑎𝑎𝑎
+                                                   𝐷𝐷𝐷𝐷
+                                                          − 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 shows the proportional contribution of
+
+changes in the 2x2 DD’s, changes in the weights, and the interaction of the two. 34 Differences
+
+arising from the 2x2 DD’s show that control variables are correlated with treatment and the
+
+outcome, often pointing to a real sources of bias. Differences arising because of the weights,
+
+though, change the way the DD deals with heterogeneity and do not indicate that the 2x2 DD’s are
+
+                                                                                             � 𝟐𝟐𝟐𝟐𝟐𝟐
+confounded. It is also simple to learn which terms drive each kind of difference by plotting 𝜷𝜷 𝒂𝒂𝒂𝒂𝒂𝒂
+
+        � 𝟐𝟐𝟐𝟐𝟐𝟐 and 𝒔𝒔 against 𝒔𝒔𝒂𝒂𝒂𝒂𝒂𝒂 . One of the most valuable contributions of the DD decomposition
+against 𝜷𝜷
+
+theorem is to provide simple new tools for learning why estimates change across specifications.
+
+      i.     Dropping Untreated Units
+Papers commonly estimate models with and without untreated units, and the decomposition
+
+theorem shows that this is equivalent to setting all 𝑠𝑠𝑘𝑘𝑘𝑘 = 0 and rescaling the 𝑠𝑠𝑘𝑘ℓ to sum to one.
+
+Table 2 shows that this changes the unilateral divorce estimate so much that it becomes positive
+
+(2.42, s.e. = 1.81), but figure 6 suggests that this occurs not necessarily because of a problem with
+
+the design, but because half of the timing terms are biased by time-varying treatment effects.
+
+     ii.     Population Weighting
+Solon, Haider, and Wooldridge (2015) show that differences between population-weighted (WLS)
+
+and unweighted (OLS) estimates can arise in the presence of unmodeled heterogeneity, and
+
+suggest comparing the two estimators (Deaton 1997, Wooldridge 2001). WLS increases the
+
+
+
+34
+     Grosz, Miller, and Shenhav (2018) propose a similar decomposition for family fixed effects estimates.
+
+                                                                           23
+

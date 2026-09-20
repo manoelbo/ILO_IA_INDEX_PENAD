@@ -1,0 +1,47 @@
+G       Estimation Procedures
+G.1        Empirical Bayes Shrinkage
+
+As a robustness check, we estimate workplace rates of encouragement using Empirical
+Bayes shrinkage with a Beta-Binomial model; see Walters (2024) for a detailed introduction
+to Empirical Bayes methods. The shrinkage is performed separately for each occupation,
+allowing underlying encouragement rates to vary systematically across occupations.
+    We assume the adoption rate at each workplace, pi , follows a Beta prior:
+
+
+                      xi | pi ∼ Binomial(ni , pi ),    pi ∼ Beta(α0 , β0 ).           (51)
+
+
+The Beta prior captures workplace-level variation. We estimate α0 , β0 via Method of
+Moments, matching the Beta distribution’s first two moments to observed data:
+
+                                 m                 m          2
+                              1 X   xi          1 X   xi
+                                                                   
+                                             2
+                         p̄ =          ,    s =          − p̄ .                       (52)
+                              m i=1 ni          m i=1 ni
+
+From the Beta mean and variance formulas:
+                                                  !
+                                p̄(1 − p̄)                        1 − p̄
+                        α0 = p̄            −1 ,         β0 = α0          .
+                                    s2                              p̄
+
+With these, we compute the posterior mean:
+
+                                                   α 0 + xi
+                                 E[pi | xi ] =                .
+                                                 α0 + β0 + ni
+
+This shrinks estimates toward the overall mean, especially for small ni .
+
+G.1.1      Coworker Encouragement Rates
+
+Figure G.1 compares the raw and adjusted distributions of coworker encouragement rates,
+while Table G.1 presents summary statistics for the adjusted rates of workplaces. The
+typical standard deviation within occupations is 17 percentage points. Importantly, our
+results in Section F.6.2 remain robust when using the raw coworker encouragement rates
+instead.
+
+
+                                                 64

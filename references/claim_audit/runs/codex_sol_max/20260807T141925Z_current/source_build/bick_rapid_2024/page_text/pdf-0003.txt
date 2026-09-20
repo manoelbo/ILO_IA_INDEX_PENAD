@@ -1,0 +1,46 @@
+1       Introduction
+
+Generative artificial intelligence (genAI) has quickly emerged as a potentially important work-
+place technology. The large language model ChatGPT debuted in November 2022 and, by
+December 2024, had over 300 million weekly users. Several studies find that genAI boosts pro-
+ductivity in specific cases (Brynjolfsson et al., 2023; Cui et al., 2024; Dell’Acqua et al., 2023;
+Demirci et al., 2025; Dillon et al., 2025; Kanazawa et al., 2025; Noy and Zhang, 2023; Otis
+et al., 2024; Peng et al., 2023), and some project genAI will have large macroeconomic effects
+(Chui et al., 2023; Filippucci et al., 2024). Yet others predict only modest aggregate impacts
+(Acemoglu, 2024). These differing views largely reflect uncertainty about the extent of genAI
+adoption today and in the future.1
+
+    This paper studies the adoption of genAI using data from the first nationally representa-
+tive U.S. surveys of genAI usage at work and at home. Our data come from the Real-Time
+Population Survey (RPS), a national online labor market survey of working age adults aged
+18-64 that has run since 2020 (Bick and Blandin, 2023). We report the combined results of two
+surveys fielded in August and November 2024, which collectively included more than 10,000
+respondents. These surveys include questions about genAI adoption that we adapt from the
+Current Population Survey’s Computer and Internet Supplement (CIU), which was introduced
+in 1984 to document computer (and later, internet) adoption. We also introduce novel ques-
+tions to measure how intensively individuals use the technology, which tasks genAI assists with,
+how much time it saves them, and workplace barriers or support for adoption. The resulting
+microdata will be made publicly available, addressing calls for more research that develops and
+shares novel data (Ethiraj et al., 2019).
+
+   We use this data to address three main questions. First, how many individuals are currently
+using genAI? Pooling our August and November 2024 surveys, 32% of workers reported using
+genAI for work: 10% used it every work day, 17% on some but not all work days, and 5% did
+not use it in the previous week. One third of respondents report using genAI outside of work.
+Overall, 45% of respondents report using genAI either for work or outside of work. The most
+commonly used products are ChatGPT (32% of all respondents), Gemini (19%) and embedded
+products such as Microsoft Copilot (15%).
+
+   To benchmark these results, we show that the rate of workplace genAI adoption in 2024, two
+years after the release of ChatGPT, is similar to the rate of workplace computer adoption in
+    1
+    Acemoglu et al. (2022) analyze online job vacancies related to AI, but their data predates ChatGPT.
+Albanesi et al. (2024), Eisfeldt et al. (2024), and Gathmann et al. (2024) compare occupations according to
+predictions of AI exposure but do not have data on actual adoption. Humlum and Vestergaard (2025) find
+no meaningful impacts of genAI adoption on employment and earnings in Denmark among workers in 11
+occupations that are particularly exposed to genAI.
+
+
+
+                                                    1
+

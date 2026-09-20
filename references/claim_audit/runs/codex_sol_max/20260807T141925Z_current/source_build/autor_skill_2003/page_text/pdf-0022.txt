@@ -1,0 +1,17 @@
+1300             QUARTERLY JOURNAL OF ECONOMICS
+
+
+
+
+                                      FIGURE II
+      Smoothed Differences between the Density of Nonroutine Task Input
+                          in 1960 and Subsequent Years
+  Figure II is constructed using Dictionary of Occupational Titles (DOT) task
+measures by gender and occupation paired to employment data from 1960, 1980,
+and 1998 Census and Current Population Survey samples. Plots depict the change
+in the share of employment between 1960 and the indicated year at each 1960
+percentile of task input. All series use DOT 1977 data paired to employment data
+for the indicated year except for series marked “1991 task measures,” which use
+task data from 1991 DOT. See Table I and Appendix 1 for denitions and
+examples of task variables.
+

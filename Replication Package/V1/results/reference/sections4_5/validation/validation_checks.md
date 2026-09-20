@@ -1,0 +1,142 @@
+# Sections 4–5 replication validation
+
+| Check | Status | Observed | Expected | Detail |
+|---|---:|---|---|---|
+| panel_observations | PASS | 23319 | 23319 | Rows in the default CBO4-month panel. |
+| panel_cbo4 | PASS | 436 | 436 | Unique four-digit occupations. |
+| panel_months | PASS | 54 | 54 | Unique months. |
+| panel_window | PASS | ["2021-01", "2025-06"] | ["2021-01", "2025-06"] | Analytic-panel time window. |
+| classified_cbo4 | PASS | 629 | 629 | Complete CBO4 classification universe. |
+| matched_cbo4 | PASS | 436 | 436 | Official MTE crosswalk matches. |
+| main_treated_cbo4 | PASS | 75 | 75 | G1–G4 occupations in the strict treatment. |
+| main_control_cbo4 | PASS | 266 | 266 | Not Exposed occupations in the strict control. |
+| minimal_exposure_excluded | PASS | True | True | Minimal Exposure must be excluded from the main model. |
+| treated_categories | PASS | ["Exposed: Gradient 1", "Exposed: Gradient 2", "Exposed: Gradient 3"] | ["Exposed: Gradient 1", "Exposed: Gradient 2", "Exposed: Gradient 3"] | Observed treated categories; G4 has no CBO4 in the crosswalk. |
+| event_time_min | PASS | -12 | -12 | Lower event-time bound. |
+| event_time_max | PASS | 24 | 24 | Upper event-time bound. |
+| event_time_reference | PASS | [-1] | [-1] | Omitted event-study reference period. |
+| occupation_case_cbo6 | PASS | 76 | 76 | Non-overlapping primary CBO6 codes across six occupation cases. |
+| main_formula_contract | PASS | formula terms, cluster, and model type | post_treat + four controls \| CBO4 + month; CRV1 by CBO4 | National model contract recorded in full-precision source results. |
+| ddd_formula_contract | PASS | ["post_treat_group", "post_treat", "post_group", "treat_group"] | ["post_treat_group", "post_treat", "post_group", "treat_group"] | Every estimated DDD includes the triple interaction and all lower-order interactions. |
+| dynamic_event_time_contract | PASS | event_study_coefficients_long.csv:1591 rows; event_study_coefficients_long.csv:555 rows | complete -12,...,24 grid and zero t=-1 reference | Static and heterogeneous event-study backing grids. |
+| binary_race_ddd_mirroring | PASS | [true, true, true] | [true, true, true] | Branca and Negra binary DDD coefficients must be exact mirrors. |
+| poisson_robustness_contract | PASS | 6 rows; statuses={'estimated'} | 6 estimated Poisson rows clustered by CBO4 | Count-model robustness for admissions and separations. |
+| occupation_case_age_outcome_coverage | PASS | paths=3888; sensitivities=72; cases=6; ages=6; months=54 | 3888 monthly cells and 72 sensitivity cells (6×6×2) | Complete primary occupation-case coverage across cases, ages, outcomes, and months. |
+| winsorization_contract | PASS | record=[(0.01, 0.99)]; cell_sensitivity=[(0.01, 0.99)]; main_regression=unwinsorized | unwinsorized regressions; P1/P99 descriptive paths; P1/P99 within CBO6-year for occupation-case main wages | Distinct regression, trajectory, and occupation-case wage rules remain separately identified in backing data and source code. |
+| core_reestimation_ln_admissoes | PASS | max_abs_diff=5.204e-17; n=18307 | max_abs_diff<=1e-12 and identical retained N | Independent pyfixest replay with CBO4 and month fixed effects and CRV1 CBO4 clustering. |
+| core_reestimation_ln_desligamentos | PASS | max_abs_diff=9.021e-17; n=18307 | max_abs_diff<=1e-12 and identical retained N | Independent pyfixest replay with CBO4 and month fixed effects and CRV1 CBO4 clustering. |
+| core_reestimation_ln_salario_adm | PASS | max_abs_diff=8.327e-17; n=18307 | max_abs_diff<=1e-12 and identical retained N | Independent pyfixest replay with CBO4 and month fixed effects and CRV1 CBO4 clustering. |
+| core_reestimation_asinh_saldo | PASS | max_abs_diff=1.388e-17; n=18307 | max_abs_diff<=1e-12 and identical retained N | Independent pyfixest replay with CBO4 and month fixed effects and CRV1 CBO4 clustering. |
+| sections4_5_table_count | PASS | 23 | 23 | Published Sections 4–5 tables. |
+| sections4_5_figure_count | PASS | 13 | 13 | Published Sections 4–5 figures. |
+| sections4_5_backing_csv_count | PASS | 49 | 49 | Full-precision backing files linked to artifacts or checks. |
+| author_pipeline_source_count | PASS | 48 | 48 | Packaged author scripts used by the documented full DAG. |
+| derived_inputs_immutable | PASS | True | True | No stage may mutate frozen analytic or backing inputs. |
+| artifact_tables/table_4_2_1_panel_scope.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_1_panel_scope.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_2_ilo_cbo_classification.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_2_ilo_cbo_classification.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_3_crosswalk_coverage.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_3_crosswalk_coverage.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_outcomes.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_4_2_outcomes.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_1_national_results.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_1_national_results.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_1_sex.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_1_sex.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_2_race_color.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_2_race_color.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_3_age_pnad.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_3_age_pnad.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_4_education.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_4_education.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_5_income.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_2_5_income.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_3_1_occupation_cases.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_5_3_1_occupation_cases.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_1_national_main_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_1_national_main_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_1_national_net_flow_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_1_national_net_flow_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_2_sex_main_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_2_sex_main_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_2_sex_net_flow_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_2_sex_net_flow_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_3_race_color_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_3_race_color_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_age_pnad_main_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_age_pnad_main_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_age_pnad_net_flow_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_age_pnad_net_flow_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_canaries_age_main_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_canaries_age_main_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_canaries_age_net_flow_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_4_canaries_age_net_flow_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_5_education_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_5_education_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_6_income_main_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_6_income_main_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_6_income_net_flow_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_a_6_income_net_flow_diagnostics.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_5_3_1_occupation_cases_admissions_by_age.png | PASS | dimensions=(3644, 3873); reference=(3644, 3873); RMS=0.331824 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_5_3_2_occupation_cases_real_admission_wage_by_age.png | PASS | dimensions=(4120, 3873); reference=(4120, 3873); RMS=0.291062 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_age_pnad_all_age_groups_admissions_event_study_paths.png | PASS | dimensions=(5873, 1830); reference=(5873, 1830); RMS=1.256429 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_age_pnad_all_age_groups_real_admission_wage_event_study_paths.png | PASS | dimensions=(5873, 1830); reference=(5873, 1830); RMS=1.623271 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_education_admissions_event_study_paths.png | PASS | dimensions=(4221, 2085); reference=(4221, 2085); RMS=2.137144 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_education_real_admission_wage_event_study_paths.png | PASS | dimensions=(4830, 2085); reference=(4830, 2085); RMS=2.191960 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_income_admissions_event_study_paths.png | PASS | dimensions=(4243, 2085); reference=(4243, 2085); RMS=2.277233 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_income_real_admission_wage_event_study_paths.png | PASS | dimensions=(4830, 2085); reference=(4830, 2085); RMS=2.357046 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_national_main_outcomes_event_study_paths.png | PASS | dimensions=(4310, 2079); reference=(4310, 2079); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_race_color_b_admissions_event_study_paths.png | PASS | dimensions=(3630, 2107); reference=(3630, 2107); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_race_color_b_real_admission_wage_event_study_paths.png | PASS | dimensions=(3651, 2107); reference=(3651, 2107); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_sex_admissions_event_study_paths.png | PASS | dimensions=(4090, 2113); reference=(4090, 2113); RMS=1.916851 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_s5_2_sex_real_admission_wage_event_study_paths.png | PASS | dimensions=(4830, 2113); reference=(4830, 2113); RMS=1.924921 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/core_model_reestimation.csv | PASS | numeric max_abs_diff=0.000e+00 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_4_2a_panel_descriptive_summary.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_4_2b_ilo_cbo_classification.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_4_2c_crosswalk_coverage.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_1_national_main_results.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_2_heterogeneity_sex.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_3_heterogeneity_income.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_4_b.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_4_heterogeneity_age_canaries.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_5_b.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_6_heterogeneity_education.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_2_net_flow_results.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/curated_tables/table_5_3_1_occupation_case_exposure_summary.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/age_cohort_canaries_results.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/crosswalk_exposure_summary.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/event_study_coefficients_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/event_study_pretrend_tests.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/heterogeneity_real_wage_triple_did_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/heterogeneity_triple_did_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/main_results_3plus1.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/net_flow_event_study_coefficients_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/net_flow_event_study_pretrends.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/net_flow_heterogeneity_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/net_flow_results.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/poisson_flow_results.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/national_event_study/real_wage_main_results_3plus1.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_age_pnad/event_study_coefficients_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_age_pnad/event_study_pretrends.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_age_pnad/normalized_paths_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/event_study_coefficients_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/event_study_pretrends.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/income_pnad_b_event_study_coefficients_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/income_pnad_b_event_study_pretrends.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/income_pnad_b_normalized_paths_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/normalized_paths_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/race_color_b_event_study_coefficients_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/race_color_b_event_study_pretrends.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_2_dynamic/race_color_b_normalized_paths_long.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_dictionary.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_exposure_composition.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_exposure_detail.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_membership_variants.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_monthly_paths.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_preperiod_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_record_wage_winsor_bounds.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_sensitivity_matrix.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/occupation_case_wage_winsor_bounds.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/result_selection_log.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/section5_3_occupation_cases/table_5_3_1_occupation_case_exposure_summary.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |

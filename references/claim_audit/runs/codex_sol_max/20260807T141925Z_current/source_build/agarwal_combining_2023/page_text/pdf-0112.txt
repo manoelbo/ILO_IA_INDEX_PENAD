@@ -1,0 +1,28 @@
+                           Table C.24: Model Selection: Pooled with AI without Accounting for Measurement Error
+
+                                       (1)         (2)         (3)         (4)         (5)        (6)          (7)        (8)         (9)        (10)        (11)        (12)
+Automation Bias (b)                   0.45        0.35        0.45        0.46        0.36        0.35        0.39       0.35        0.41        0.45        0.36         0.35
+                                     (0.02)      (0.01)      (0.02)      (0.02)      (0.01)      (0.01)      (0.02)     (0.01)      (0.02)      (0.02)      (0.01)      (0.01)
+Own Info Bias (d)                     1.01        0.93        0.97        0.98        0.93        0.94        0.96       0.93        0.95        0.97        0.94         0.93
+                                     (0.01)      (0.01)      (0.01)      (0.01)      (0.01)      (0.01)      (0.01)     (0.01)      (0.01)      (0.01)      (0.01)      (0.01)
+Constant                              0.21        0.00        0.10        0.14        -0.01       0.01        0.07       0.00        0.04        0.12        0.01        -0.01
+                                     (0.04)      (0.04)      (0.04)      (0.04)      (0.04)      (0.04)      (0.04)     (0.04)      (0.04)      (0.04)      (0.04)      (0.04)
+Focal sA                                ✓           ✓           ✓           ✓           ✓          ✓            ✓          ✓           ✓          ✓           ✓            ✓
+Other sA                                            ✓                                   ✓          ✓                       ✓                                  ✓            ✓
+Focal sE                                                        ✓          ✓            ✓          ✓                                   ✓          ✓           ✓            ✓
+Other sE                                                                   ✓                       ✓                                              ✓                        ✓
+Clinical History sE                                                                                            ✓          ✓           ✓           ✓           ✓            ✓
+J-Statistic                           11.7         0.0         0.0        1.18        4.21        7.31         0.0       8.13        0.0         0.0         2.85         8.57
+MMSC-BIC                             -13.62        0.0         0.0       -3.04       -12.67      -9.57        0.0       -8.75        0.0         0.0        -18.25       -8.31
+Number of Moments                      9            3           3          4            7          7            3          7           3           3          8             7
+Observations                         57100       57100       57100       57100       57100       57100       57100      57100       57100       57100       57100       57100
+R-Squared                             0.58        0.56        0.56        0.56        0.56        0.56        0.57       0.56        0.56        0.56        0.56         0.56
+
+Note: This table presents results of the model selection exercise as described in Table 3 for all pathologies with AI assistance without accounting for measurement error in
+the radiologist reports.
+
+
+
+
+                                                                                                                                                                               112
+

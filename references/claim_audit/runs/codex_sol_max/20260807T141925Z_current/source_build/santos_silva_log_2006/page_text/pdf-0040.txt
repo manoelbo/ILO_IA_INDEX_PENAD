@@ -1,0 +1,33 @@
+                     Table A3: Colonial Ties.
+UK          UK                    France                 Spain
+Australia   Mauritius             Algeria                Argentina
+Bahamas     New Zeland            Benin                  Bolivia
+Bahrain     Nigeria               Burkina Faso           Chile
+Barbados    Pakistan              Cambodia               Colombia
+Belize      Saint Kitts and Nevis Cameroon               Costa Rica
+Cameroon    Seychelles            Central African Rep.   Cuba
+Canada      Sierra Leone          Chad                   Ecuador
+Cyprus      South Africa          Comoros                El Salvador
+Egypt       Sri Lanka             Congo                  Eq. Guinea
+Fiji        Sudan                 Djibouti               Guatemala
+Gambia      Tanzania              Gabon                  Honduras
+Ghana       Trinidad and Tobago Guinea                   Mexico
+Guyana      Uganda                Haiti                  Netherlands
+India       United States         Laos                   Nicaragua
+Ireland     Zambia                Lebanon                Panama
+Israel      Zimbabwe              Madagascar             Paraguay
+Jamaica                           Mali                   Peru
+Jordan                            Mauritania             Venezuela
+Kenya       Portugal              Morocco
+Kuwait      Angola                Niger
+Malawi      Brazil                Senegal
+Malasya     Guinea-Bissau         Syria
+Maldives    Mozambique            Togo
+Malta       Oman                  Tunisia
+                                  Vietnam
+
+
+
+
+                                 39
+

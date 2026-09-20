@@ -1,0 +1,45 @@
+what is the meaning of having negative latent earnings (Y ˚ pdq ă 0)?
+
+
+D       Connection to two-part models
+One approach recommended for settings with weakly-positive outcomes is to estimate a two-part
+model (Mullahy and Norton, 2023). In this section, we briefly review two-part models, and show
+that the marginal effects implied by these models do not correspond with ATEs for the intensive
+margin without further restrictions on the potential outcomes. Thus, while two-part models strike
+us as a reasonable approach if the goal is to model the conditional expectation function of ob-
+served outcomes Y given treatment D (as in Mullahy and Norton (2023)), they will often not be
+appropriate if instead the goal is to learn about a causal effect along the intensive margin.57
+      The idea of a two-part model is to separately model the conditional distribution Y | D using (a)
+a first model for the probability that Y is positive given D, P pY ą 0 | Dq (b) a second model for
+the conditional expectation of Y given that it is positive, ErY | D, Y ą 0s. Common specifications
+include logit or probit for part (a), and a linear regression of the positive values of Y on D for part
+b); see, e.g., Belotti et al. (2015). After obtaining estimates of the two-part model, it is common to
+evaluate the marginal effects of D on both parts, i.e. the implied values of
+
+                               τa “ P pY ą 0 | D “ 1q ´ P pY ą 0 | D “ 0q
+                               τb “ ErY | Y ą 0, D “ 1s ´ ErY | Y ą 0, D “ 0s.
+
+      We now consider how the parameters of the two-part model relate to causal effects in the
+potential outcomes model. Suppose, for simplicity, that the two-part model is well-specified, so
+that it correctly models P pY ą 0 | Dq and ErY | Y ą 0, Ds. Suppose further that D is randomly
+assigned, D KK Y p1q, Y p0q. In this case, we have that
+
+                                τa “ P pY p1q ą 0q ´ P pY p0q ą 0q
+                                τb “ ErY p1q | Y p1q ą 0s ´ ErY p0q | Y p0q ą 0s.
+
+From the previous display, we see that the marginal effect on the first margin, τa , has a causal
+interpretation: it is the treatment’s effect on the probability that the outcome is positive.
+   The interpretation of the marginal effect on the second margin, τb , is more complicated, however.
+For simplicity, suppose are willing to impose the “monotonicity” assumption discussed in Section 4,
+P pY p1q “ 0, Y p0q ą 0q “ 0, so that anyone with a zero outcome under treatment also has a zero
+outcome under control. Then, letting α “ P pY p0q “ 0 | Y p1q ą 0q, we can write τb as
+
+                τb “ p1 ´ αqErY p1q | Y p1q ą 0, Y p0q ą 0s
+                        ` αErY p1q | Y p1q ą 0, Y p0q “ 0s ´ ErY p0q | Y p1q ą 0, Y p0q ą 0s
+ 57
+      We are particularly grateful to John Mullahy for an enlightening discussion of this topic.
+
+
+
+                                                           13
+

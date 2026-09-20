@@ -1,0 +1,36 @@
+Table 2. DD Estimates of the Effect of Unilateral Divorce Analysis on Female Suicide using
+                                Alternative Specifications
+
+                               (1)          (2)           (3)           (4)           (5)           (6)           (7)
+                                                                                                 Group-        Region-
+                                           No                       Propensity      Unit-
+                                                                                                 Specific      by-Year
+                           Baseline     Untreated        WLS          Score        Specific
+                                                                                                  Pre-          Fixed
+                                         States                     Weighting      Trends
+                                                                                                 Trends        Effects
+ Unilateral Divorce          -3.08          2.42        -0.35          1.04           0.59        -6.52         -1.16
+                             [1.27]        [1.81]       [1.97]        [1.78]         [1.35]       [2.98]        [1.37]
+ Difference from
+ baseline                                  5.50          2.73          4.12           3.67         -3.44         1.92
+ specification
+ Share due to:
+             2x2 DDs                         0           0.52            1            0.90           1           0.37
+              Weights                        1           0.39            0            0.47           0           0.76
+           Interaction                       0           0.09            0           -0.36           0          -0.13
+Notes: The table presents DD estimates from the alternative specifications discussed in section III. Column (1) is the
+two-way fixed effects estimate from equation (2). Column (2) drops the pre-1964 reform and non-reform states.
+Column (3) weights by state adult populations in 1964. Column (4) weights by the inverse propensity score estimated
+from a probit model that contains the sex ratio, per-capita income, the general fertility rate, and the infant mortality
+rate all measured in 1960. Column (5) includes state-specific linear time trends. Column (6) comes from a two-step
+procedure that first estimates group-specific trends from 1964-1968, subtracts them from the suicide rate, and
+estimates equation (2) on the transformed outcome variable. Column (7) includes region-by-year fixed effects. Below
+the standard errors I show the difference between each estimate and the baseline result, an the last three rows show
+the share of this difference that comes from changes in the 2x2 DD’s, the weights, or their interaction as shown in
+equation (18).
+
+
+
+
+                                                          43
+

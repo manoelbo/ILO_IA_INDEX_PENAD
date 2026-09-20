@@ -1,0 +1,39 @@
+The corresponding p-values are reported at the bottom of table 4. In the OLS regression,
+the test rejects the hypothesis that the coeﬃcient on the test variable is zero. This means
+that the model estimated using the logarithmic specification is inappropriate. A similar
+result is found for the OLS estimated using ln(1 + Tij ) as the dependent variable and
+NLS. In contrast, the models estimated using the Poisson regressions pass the RESET
+test, i.e., the RESET test provides no evidence of misspecification of the gravity equations
+estimated using the PPML. With this particular specification, the model estimated using
+Tobit also passes the test for the traditional gravity equation.
+  Finally, we also check whether the particular pattern of heteroskedasticity assumed
+by the models is appropriate. As explained in section 3.2, the adequacy of the log-linear
+model was checked using the Park-type test, whereas the hypothesis V [yi |x] ∝ µ (xi β) was
+                                                                            √
+tested by evaluating the significance of the coeﬃcient on the term ln (y̌i ) y̌i in the Gauss-
+Newton regression indicated in expression (13). The p-values of the tests are reported in
+Table 4. Again, the log-linear specification is unequivocally rejected. On the other hand,
+                                                                √
+these results indicate that the estimated coeﬃcient on ln (y̌i ) y̌i is insignificantly diﬀerent
+from zero at the usual 5 percent level. This implies that the Poisson PML assumption,
+V [yi |x] = λ0 E [yi |x] cannot be rejected at this significance level.
+
+                           Table 4: Results of the tests for
+                        type of heteroskedasticity (p-values).
+                     Test (Null hypothesis)    Trade > 0 Full sample
+                    GNR (V [yi |x] ∝ µ (xi β))   0.144      0.115
+                    Park (OLS is valid)          0.000      0.000
+
+5.2.2 The Anderson-van Wincoop Gravity Equation
+
+Table 5 presents the estimated coeﬃcients for the Anderson-van Wincoop (2003) gravity
+equation, which controls more properly for multilateral resistance terms by introducing
+exporter and importer specific eﬀects.
+  As before, the columns show, respectively, the estimated coeﬃcients obtained using
+OLS on the log of trade, OLS on ln(1 + Tij ), Tobit, NLS, PPML on the positive-trade
+
+
+
+
+                                               28
+

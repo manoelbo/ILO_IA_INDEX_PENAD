@@ -1,0 +1,37 @@
+2         The Currents: Adoption and Work Reorganization
+
+In this section, we study how AI chatbots are integrated into the workplace. Section 2.1
+describes employers’ chatbot initiatives, showing that even as chatbots have become
+widespread, otherwise similar firms often adopt markedly different approaches. In Sec-
+tion 2.2, we examine how these strategies reflect in workers’ chatbot use and its reported
+benefits. Finally, in Section 2.3, we study how AI chatbots reshape the organization of
+work, including the creation of new job tasks. Together, these results document the rapid
+currents of adoption and work reorganization set in motion by the arrival of AI chatbots.
+
+
+2.1        Employer Initiatives
+
+Figure 1, Panel (a), shows the prevalence of employer usage policies for AI chatbots
+across our 11 occupations. Firms now broadly embrace AI chatbots: about 43% explicitly
+encourage their use, another 21% allow it, while only about 6% explicitly prohibit it.4
+This widespread adoption of AI chatbots in the workplace is consistent with their general-
+purpose features (Eloundou et al., 2024).
+        Employers not only set usage policies but also invest directly in chatbot adoption.
+Panel (b) shows the chatbot packages adopted by different employers. Among firms that
+encourage chatbot use, 61% have an enterprise chatbot solution, 39% provide training,
+and 29% offer both. Notably, enterprise chatbots and training are present even in some
+workplaces that do not encourage use.
+        Which firms have adopted different AI chatbot initiatives? Table E.1 shows that firms
+encouraging AI chatbot use tend to be slightly younger (each additional 10 years of age is
+associated with a 1.4 percentage point decrease in encouragement), more productive (a
+doubling of productivity corresponds to a 4.7 percentage point increase), and more likely
+to be privately owned (associated with a 4.1 percentage point increase). Yotzov et al.
+    4
+    The widespread embrace of AI chatbots marks a shift from early responses to ChatGPT, when many
+employers restricted its use due to concerns about data confidentiality and output accuracy (Humlum
+and Vestergaard, 2025). Although outright bans are now rare, they persist in some occupations involving
+sensitive data (e.g., financial advisors) or requiring high factual accuracy (e.g., legal professionals).
+
+
+
+                                                   10

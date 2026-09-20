@@ -1,0 +1,47 @@
+2006; Wooldridge, 2010). The researcher might also consider alternative normalizations of the
+outcome that lead to intuitive units, e.g. expressing the outcome in per-capita units or converting
+it to a rank with respect to some reference distribution. Next, we suppose the researcher would like
+to capture concave preferences over the outcome; for example, the researcher might consider income
+gains to be more meaningful for individuals who are initially poor. In this case, it is natural to
+directly specify how much the researcher values a change along the extensive margin relative to the
+intensive margin—e.g., that a change from 0 to 1 is worth an x percent change along the intensive
+margin. Finally, suppose the researcher is interested in separately understanding the effects of the
+treatment along both the intensive and extensive margins. In this case, the researcher may target
+separate parameters for the two margins—e.g., ErlogpY p1qq ´ logpY p0qq | Y p1q ą 0, Y p0q ą 0s, the
+average effect in logs for individuals with positive outcomes under both treatments, captures the
+intensive margin. Separate effects for the two margins are not generally point-identified, but can
+be can be bounded using the method in Lee (2009) or point-identified with additional assumptions
+(Zhang et al., 2008, 2009).
+      Section 5 provides a blueprint for estimating these alternative parameters in practice by apply-
+ing our recommended approaches to three recent empirical applications, including a randomized
+controlled trial (RCT) (Carranza et al., 2022), a difference-in-differences (DiD) setting (Sequeira,
+2016), and an instrumental variables (IV) setting (Berkouwer and Dean, 2022).
+
+Related work. The use of log-like transformations for dealing with zero-valued outcomes has a
+long history. The use of the logp1 ` Y q transformation dates to at least Williams (1937), while
+Bartlett (1947) considers both the logp1 ` Y q and inverse hyperbolic sine transformations.3 More
+recent papers by Burbidge et al. (1988) and Bellemare and Wichman (2020), among others, provide
+results for arcsinhpY q that are frequently cited in economics papers using this transformation.4
+      Previous work has illustrated in simulations or selected empirical applications that results for
+particular transformations such as logp1 ` Y q or arcsinhpY q may be sensitive to the units of the
+outcome (Aihounton and Henningsen, 2021; de Brauw and Herskowitz, 2021). In concurrent work,
+Mullahy and Norton (2023) show theoretically that the marginal effects from linear regressions
+using logp1 ` Y q or arcsinhpY q are sensitive to the scaling of the outcome, with the the limits of the
+marginal effects approaching those of either a levels regression or a (normalized) linear probability
+model, depending on whether the units are made small or large. We complement this work by
+proving that scale-dependence is a necessary feature of any identified ATE that is well-defined
+with zero-valued outcomes, and that the dependence on units is arbitrarily bad for transformations
+that approximate logpY q for large values of Y . Thus, it is not possible to fix the issues with
+logp1 ` Y q or arcsinhpY q by choosing a “better” transformation or using a different estimator. We
+also complement previous empirical examples by providing a systematic analysis of the sensitivity
+to scaling for papers in the American Economic Review using arcsinhpY q.
+  3
+                                           ?
+    Bartlett (1947) proposes using arcsinhp Y q.
+  4
+    MacKinnon and Magee (1990) propose transformations of the form arcsinhpyζq{ζ, where ζ is estimated by as-
+suming arcsinhpyζq{ζ is normally distributed conditional on covariates.
+
+
+                                                     4
+

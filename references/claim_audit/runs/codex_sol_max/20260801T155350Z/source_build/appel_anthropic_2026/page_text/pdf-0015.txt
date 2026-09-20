@@ -1,0 +1,45 @@
+            Signs of faster Claude diffusion in the US among low
+            usage states
+
+            While differences in workforce composition appear to play a role in shaping
+            regional adoption within the US, early evidence suggests Claude is diffusing
+            considerably faster than historical precedent would predict. Economically
+            consequential technologies have historically taken around half a century
+            to achieve full diffusion across the US (Kalanyi et al., 2025). By contrast,
+            comparing Claude adoption rates in November 2025 to three months prior, we
+            estimate that parity in adoption per capita across US states—as measured by
+            the AUI—could be reached within 2–5 years. This estimate comes with a high
+            degree of uncertainty as the precision of our estimates cannot rule out much
+            slower rates of diffusion.
+
+            We generate this estimate through the lens of a simple model of diffusion,
+            which we briefly describe here. We model diffusion as proportional
+            convergence toward a common steady state of equalized usage per capita in
+            which each state s has an AUI equal to 1:
+
+
+
+
+            Under this model, the log deviation of AUI from steady state (AUI = 1) shrinks
+            by a factor of every three months, implying a half-life of ln(.5)/ln() quarters.
+            For example, with quarterly data a value of β = 0.99 implies a half-life of about
+            17 years. To illustrate, starting from an initial AUI of 2, this means AUI would
+            decline to around 1.4 after 17 years and to around 1.1 after 50 years. We take
+            β = 0.99 as a sensible benchmark because it implies a pace of diffusion similar
+            to economically consequential technologies in the 20th century.
+
+            This model of convergence motivates the following regression specification: 8
+
+
+
+
+            Naively estimating this equation by ordinary least squares (OLS) yields
+            an estimate of      ≈ 0.77. Weighted least squares (WLS) where we weight by
+            each state’s workforce yields an estimate of    ≈0.76 (Figure 1.8). Both are
+            statistically distinguishable from 1 at conventional levels. Taken at face value,
+            these estimates imply that it would take little more than two years for each
+            state’s AUI to close most of the gap to 1.
+
+
+The Anthropic Economic Index Report                                                             15
+

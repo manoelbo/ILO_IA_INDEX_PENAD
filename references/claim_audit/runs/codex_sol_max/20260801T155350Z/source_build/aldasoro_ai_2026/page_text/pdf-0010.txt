@@ -1,0 +1,42 @@
+diffuse unevenly across countries, with adoption lags determined by human capital and
+predecessor technologies – a pattern we observe in Europe’s AI uptake. Recent studies
+by Babina et al. (2024) and Bonney et al. (2024) document robust AI adoption among
+US firms, particularly large innovators in knowledge-intensive sectors. Yet evidence for
+non-US firms remains sparse, with Rückert, Weiss, and Revoltella (2020) being a notable
+exception that documents Europe’s adoption gap with the US.
+
+   Our paper extends this work by demonstrating how capital intensity, the financial
+dependence theory of Rajan and Zingales (1998) and firm size mediate AI adoption in
+Europe – findings that align with the analysis of technology-job complementarities of
+Acemoglu et al. (2022) . This seems particularly relevant in the context of the growing
+importance of AI adoption for EU labor markets. Using occupation-level data for 16
+European countries over 2011-2019, Albanesi et al. (2024) document that employment
+shares increase in occupations more exposed to AI, with the strongest gains in occupations
+employing younger and higher-skilled workers.
+
+    Second, research on the productivity effects of AI highlights stark contrasts between
+macroeconomic projections and microeconomic evidence. Most macro studies suggest rel-
+atively modest aggregate effects: for example, Acemoglu (2024) estimates only 0.07% US
+annual growth in total factor productivity over a decade, while the general equilibrium
+model of Filippucci, Gal, and Schief (2024) shows how Baumol’s disease effects could
+limit gains to 0.2–0.6 percentage points annually. In contrast, micro-level field experi-
+ments report large efficiency improvements in the short run: Noy and Zhang (2023) and
+Brynjolfsson, Li, and Raymond (2025) find 14–40% productivity gains in writing and
+customer service tasks, with Gambacorta et al. (2024) showing similar effects for coding.
+Our results reconcile this divergence: we identify a causal 4% labor productivity gain at
+the firm level, echoing the mid-range estimates of Bergeaud (2024), while confirming that
+micro efficiency improvements are not fully reflected in aggregate growth due to adoption
+frictions.
+
+    Third, the literature on distributional effects underscores the unequal impact of AI
+across workers, firms, and regions. Cazzaniga et al. (2024) predicts widening income in-
+equality due to AI-skilled labor complementarity, while Hennig and Khan (2025) warns of
+cross-country divergence as AI benefits concentrate in advanced economies. The concerns
+resonate with evidence that technology diffusion gaps explain at least 25% of global in-
+come differences (Comin and Mestieri, 2018). Our heterogeneity analysis validates these
+
+
+
+
+                                            4
+

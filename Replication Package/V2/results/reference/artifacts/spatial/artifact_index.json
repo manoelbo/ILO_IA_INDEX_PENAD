@@ -1,0 +1,8 @@
+{
+  "component": "spatial",
+  "publication_tables": [
+    "tables/table_b_3_spatial_placebo.csv",
+    "tables/table_b_4_spatial_support.csv"
+  ],
+  "status": "rendered"
+}

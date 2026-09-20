@@ -1,0 +1,48 @@
+should transform the units of their outcome so that most of the non-zero values of Y are large.
+The results in this section suggest—perhaps somewhat counterintuitively—that if one rescales the
+outcome such that the non-zero values are all large, the behavior of the ATE will be driven nearly
+entirely by the effect of the treatment on the extensive margin and not by the distribution of the
+potential outcomes conditional on being positive. Moreover, the rescaling can be chosen to generate
+any magnitude for the ATE if the treatment affects the extensive margin.
+Remark 7 (Zero extensive margin). Proposition 1 applies to settings where treatment has a non-
+zero effect on average on the extensive margin. This raises the question of whether the use of
+log-like transformations is justified in the absence of an extensive margin treatment effect. Our
+Proposition 3 below implies that the ATE for any log-like transformation will be sensitive to the
+units of the outcome for at least some distribution with strictly positive outcomes, but perhaps
+not arbitrarily so in the sense of Proposition 1 (see Section 3.1 for further discussion). Moreover, if
+one were confident that the extensive margin effect were exactly zero for all individuals, one could
+recover the ATE in logs for individuals with positive outcomes by simply dropping individuals with
+Y “ 0. The use of log-like transformations is thus somewhat difficult to justify even in settings
+without an extensive margin.
+
+2.3      Empirical illustrations from the American Economic Review
+We illustrate the results in this section by evaluating the sensitivity to scaling of estimates using the
+arcsinhpY q transformation in recent papers in the American Economic Review (AER). In Novem-
+ber 2022, we used Google Scholar to search for “inverse hyperbolic sine” among papers published
+in the AER since 2018. We searched for papers using arcsinhpY q rather than logp1 ` Y q since
+the former are easier to find with a simple keyword search. Our search returned 17 papers that
+estimate treatment effects for an arcsinh-transformed outcome.12 Of these, 10 explicitly interpret
+the results as percentage changes or elasticities, and 6 of the remaining 7 do not directly interpret
+the units. See Appendix Table 1 for a list of the papers and relevant quotes. Of the 17 total papers
+using arcsinhpY q, 10 had publicly available replication data that allowed us to replicate the original
+estimates and assess their sensitivity to scaling.13 For our replications, we focus on the first specifi-
+cation using arcsinhpY q presented in a table in the paper, which we view as a reasonable proxy for
+the paper’s main specification using arcsinhpY q.14
+       We assess the sensitivity of these results by re-running exactly the same procedure as in the
+original paper, except replacing arcsinhpY q with arcsinhp100 ¨ Y q. Thus, for example, if the original
+paper estimated a treatment effect for the arcsinh of an outcome measured in dollars, we use the
+same procedure to re-estimate the treatment effect for the arcsinh of the outcome measured in cents.
+  12
+      We consider papers with both binary and non-binary treatments, as our theoretical results extend easily to
+non-binary treatments; see Remark 3. Seven of the 10 papers we replicated used a binary treatment.
+   13
+      We include one paper where there was a slight discrepancy between our replication of the original result and the
+result reported in the paper that only affected the third decimal place.
+   14
+      We use the first coefficient presented in a figure for one paper without any tables in the main text using arcsinhpY q.
+If the first specification is a validation check (e.g. a pre-trends test), we use the first specification of causal interest.
+
+
+
+                                                             10
+

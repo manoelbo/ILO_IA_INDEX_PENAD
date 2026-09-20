@@ -1,0 +1,62 @@
+                                                                                                                  9
+
+the other (Blackwell, 1953).
+Assume that the human’s objective is to match the action to the state. Thus, the human
+faces a classification problem. It is without loss of generality to normalize the payoff from
+taking the action that matches the state to zero. Let cF P,r be the disutility of human r if she
+takes the action a = 1 when the state is ω = 0 (false positive) and cF N,r be the disutility if
+she takes the action a = 0 when the state is ω = 1 (false negative). The payoff of the human
+is therefore
+
+              ur (a, ω) = −1 · {a = 1, ω = 0} · cF P,r − 1 · {a = 0, ω = 1} · cF N,r .                           (1)
+
+We allow the human’s posterior belief given the observed signals to deviate from those implied
+                                                              n        o
+by the true probability law πr (·|ω). Specifically, let sir ⊂ sA     E
+                                                                r , sir be the subset of signal
+realizations observed by the human r and pr (ω |sir ) ∈ [0, 1] be the human’s posterior belief
+that the state is ω ∈ {0, 1} when she observes sir . Suppressing the dependence of signals on
+the pair (i, r), the human’s action given the signal s is
+                                                (                                       )
+                                                    pr (ω = 1 |s )            cF P,r
+                           a∗r (s; pr ) = 1 ·                      > crel,r ≡        .                           (2)
+                                                    pr (ω = 0 |s )            cF N,r
+
+The expected payoff from following a∗ (s) is
+
+                 Vr (s; pr ) = E [ur (a∗r (s; pr ) , ω) |s] =        u (a∗r (s; pr ) , ω) πr (ω |s ) ,
+                                                                X
+
+                                                                 ω
+
+
+where decisions are based on the human’s belief pr , but are evaluated according to the true
+law πr . Because we allow for pr to differ from πr , the odds ratio pprr (ω=0|s
+                                                                         (ω=1|s )
+                                                                                )
+                                                                                  may differ from
+                                                                  ∗
+the analogous quantity constructed using πr . Thus, the action ar (s; pr ) can deviate from the
+                                                           
+optimal action a∗r (s; πr ) given the signal s = sA , sE . Except in knife-edge cases, Vr (s; pr )
+is lower than V (s; πr ) whenever a∗ (s; pr ) ̸= a∗ (s; πr ).
+A key objective is to analyze deviations in humans’ use of AI signals from the benchmark
+model of Bayesian updating with correct beliefs (about the joint distribution of the signals
+                                                                   
+and the state). Bayes’ rule implies that, given the signals sA    E
+                                                             i , sir , the log-odds of ω = 1 to
+ω = 0–the key decision-relevant quantity–is given by
+                                                                                                    
+                 πr ωi = 1 sA    E
+                            i , sir                  π r sA          E
+                                                          i ωi = 1, sir               πr ωi = 1 sE
+                                                                                                 ir
+           log                             = log                              + log                          .   (3)
+                  πr (ωi = 0 |sA    E
+                               i , sir )             πr (sA           E
+                                                          i |ωi = 0, sir )            πr (ωi = 0 |sE
+                                                                                                   ir )
+
+
+The second term on the right-hand side is the posterior log-odds ratio for the two states
+

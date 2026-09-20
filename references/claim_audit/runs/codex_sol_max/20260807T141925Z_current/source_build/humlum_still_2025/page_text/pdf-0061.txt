@@ -1,0 +1,49 @@
+Labor demand. With perfectly competitive labor markets, workers are paid their
+marginal revenue product:
+
+                                       ∂Pj Yj              −1
+                                Wj =          = (1 − 1/ϵ)Yj ϵ .                         (16)
+                                        ∂Hj
+
+Since firms’ production and demand curves are symmetric and workers derive the same
+net benefit α̂1 from encouragement across employers, two skill prices exist in equilibrium:
+W1 at encouraged firms and W0 at non-encouraged firms. Let j ∈ {0, 1} indicate whether
+a firm encourages chatbot use.
+
+
+Employer encouragement. Employers derive log utility from flow profits and encour-
+age chatbot use if the resulting profit gain exceeds their encouragement cost κj :
+
+
+                            Ej = 1 [κj ≤ log Πj (1) − log Πj (0)] .                     (17)
+
+                                                                                     1−1/ϵ
+Constant returns to scale and CES demand imply that optimal flow profit is Πj = 1ϵ Yj        ,
+so the profit gain from encouragement equals:
+
+
+                     log Πj (1) − log Πj (0) = (1 − ϵ)(log W1 − log W0 ).               (18)
+
+
+Since this gain is common across employers, encouragement follows a cutoff rule:
+
+
+                 Ej = 1 [κj ≤ κ] ,     with κ = (1 − ϵ)(log W1 − log W0 ).              (19)
+
+
+Adoption. Workers derive log utility from earnings and adopt chatbots if the monetary
+benefit exceeds the adoption cost. Fixing the employer, the adoption rule reduces to:
+
+                                               h                      i
+                     Aij = 1 [Bij ≥ Cij ] = 1 α̂0 + α̂1 Ej + β̂ × i ≥ 0 ,               (20)
+
+
+where x̂ = xb − xc denotes net benefits, yielding the cutoff:
+
+                                                            1
+                  Aij = 1 [i ≤ i∗ (Ej )] ,   with i∗ (E) = − (α̂0 + α̂1 E).             (21)
+                                                            β̂
+
+
+
+                                               11

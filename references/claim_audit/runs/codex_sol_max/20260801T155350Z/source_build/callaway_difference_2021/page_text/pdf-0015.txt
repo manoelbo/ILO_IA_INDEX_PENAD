@@ -1,0 +1,62 @@
+                             Table 1: Weights on AT T (g, t) for Aggregated Parameters
+
+        Parameter                                                      w(g, t)
+
+             θes (e)           wees (g, t) = 1{g + e ≤ T }1{t − g = e}P (G = g|G + e ≤ T )
+          bal
+         θes  (e, e0 )     wees,bal (g, t) = 1{g + e0 ≤ T }1{t − g = e}P (G = g|G + e0 ≤ T )
+            θsel (g̃)            wg̃s (g, t) = 1{t ≥ g}1 {g = g̃}/ (T − g + 1)
+                                 wt̃c (g, t) = 1{t ≥ g}1 t = t̃ P (G = g|G ≤ t)
+                                                         
+               θc (t̃)
+          θccumu (t̃)     wt̃c,cumu (g, t) = 1{t ≥ g}1 t ≤ t̃ P (G = g|G ≤ t)
+                                                         
+
+                  O              O
+                                      (g, t) = 1{t ≥ g}P (G = g|G ≤ T )/ g∈G Tt=2 1{t ≥ g}P (G = g|G ≤ T )
+                                                                          P    P
+                 θW             wW
+                  O            O
+                 θsel         wsel (g, t) = 1{t ≥ g}P (G = g|G ≤ T )/ (T − g + 1)
+        Notes: This table provides expressions for the weights on each AT T (g, t) (as in Equation 3.1) for each
+        parameter discussed in this section. In all cases except for θccumu (t̃), the weights are all non-negative and sum to
+        one. For θccumu (t̃), the
+                                 weights are all non-negative but sum up to t̃ − 1 (rather than one), but this is just a
+        reflection of θccumu t̃ being a cumulative treatment effect measure.
+
+
+with the event study regression in (3.3).
+    Let e denote event-time, i.e., e = t − g denotes the time elapsed since treatment was adopted. Recall
+that G denotes the time period that a unit is first treated. Thus, a way to aggregate the AT T (g, t)’s to
+highlight treatment effect heterogeneity with respect to e is
+                                        X
+                            θes (e) =         1{g + e ≤ T }P (G = g|G + e ≤ T )AT T (g, g + e).                             (3.4)
+                                        g∈G
+
+This is the average effect of participating in the treatment e time periods after the treatment was adopted
+across all groups that are ever observed to have participated in the treatment for exactly e time periods.
+Here, the “on impact” average effect of participating in the treatment occurs for e = 0. θes (e) is the
+natural target for event study regressions that are common in applied work, though it completely avoids
+the pitfalls associated with the dynamic TWFE specification in (3.3).10
+    In event study regressions, it is common to plot βe across different values of e and to interpret
+differences as being due to treatment effect dynamics. Similarly, one can plot θes (e) across different
+e’s to better understand treatment effect dynamics. When doing so, it is important to be aware that
+these comparisons may include compositional changes that can complicate the interpretation of these
+parameters (note that the same complications arise for event study regressions as well). To see this, for
+
+
+
+
+   10
+      Many of the parameters in this section involve expressions that have similar components as the one for θes (e) in (3.4),
+and it is worth mentioning a few extra details for this case that are common to the other expressions below. The term
+involving the indicator function, 1{g + e ≤ T }, limits consideration to identified group-time average treatment effects. The
+summation over groups with group specific weights, in this case given by P (G = g|G + e ≤ T ), calculates an average,
+weighted by group size, of AT T (g, t)’s that are involved in a particular aggregation. In addition, it is straightforward to
+show that θes (e) can be written in the form of θ in Equation (3.1). Throughout this section, we have written each parameter
+of interest in its most intuitive form. Weights for each parameter in this section corresponding to the form of the weights in
+Equation (3.1) are provided in Table 1.
+
+
+                                                                15
+

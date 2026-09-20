@@ -1,0 +1,61 @@
+following triple-difference model (DDD) on the pooled sample including interactions of 𝐺𝐺𝑖𝑖 with
+
+all variables from equation (2): 37
+
+                                𝑦𝑦𝑖𝑖𝑖𝑖 = 𝛼𝛼𝑖𝑖 + 𝛼𝛼𝑡𝑡 + 𝛽𝛽0𝐷𝐷𝐷𝐷 𝐷𝐷𝑖𝑖𝑖𝑖 + 𝛼𝛼𝑡𝑡 𝐺𝐺𝑖𝑖 + 𝛽𝛽 𝐷𝐷𝐷𝐷𝐷𝐷 𝐷𝐷𝑖𝑖𝑖𝑖 𝐺𝐺𝑖𝑖 + 𝑒𝑒𝑖𝑖𝑖𝑖   (19)
+
+                                                                            � 𝐷𝐷𝐷𝐷𝐷𝐷 equals the
+� 𝐷𝐷𝐷𝐷 is the two-way fixed effects DD estimate for the 𝐺𝐺𝑖𝑖 = 0 sample and 𝛽𝛽
+𝛽𝛽 0
+
+
+                                                   � 𝐷𝐷𝐷𝐷 − 𝛽𝛽
+difference between the sub-sample DD coefficients: 𝛽𝛽       � 𝐷𝐷𝐷𝐷 .
+                                                      1        0
+
+
+                                                    � 𝐷𝐷𝐷𝐷 equals an average weighted by the cross-
+            One problem with this estimator is that 𝛽𝛽 1
+
+                                                                                       𝐷𝐷𝐷𝐷
+                                                          � uses the cross-sectional distribution of
+sectional distribution in the in the 𝐺𝐺𝑖𝑖 = 1 sample, but 𝛽𝛽 0
+
+the 𝐺𝐺𝑖𝑖 = 0 sample. If 𝐺𝐺𝑖𝑖 were an indicator for black respondents, then 2x2 DD’s that included
+
+Southern states would get more weight in the black than the white sample while the opposite would
+
+be true for Vermont and New Hampshire. Estimates of (19) difference out cross-state/cross-year
+
+changes in white outcomes weighted by white populations, and so may not capture relative trends
+
+                                         � 𝐷𝐷𝐷𝐷 , which is typically reassuring, could be driven by
+by race within states. A null result for 𝛽𝛽 0
+
+
+                                                                 � 𝐷𝐷𝐷𝐷 .
+completely different 2x2 DD’s than the ones that matter most for 𝛽𝛽 1
+
+            DDD specifications that include a more saturated set of fixed effects overcome this
+
+problem. If treatment rolled out by state (𝑠𝑠), for example, a DDD model can include state-by-time
+
+fixed effects (𝛼𝛼𝑠𝑠 𝛼𝛼𝑡𝑡 ):
+
+                             𝑦𝑦𝑖𝑖𝑖𝑖 = 𝛼𝛼𝑖𝑖 + 𝐺𝐺𝑖𝑖 𝛼𝛼𝑠𝑠 + 𝐺𝐺𝑖𝑖 𝛼𝛼𝑡𝑡 + 𝛼𝛼𝑠𝑠 𝛼𝛼𝑡𝑡 + 𝛽𝛽 𝐷𝐷𝐷𝐷𝐷𝐷 𝐷𝐷𝑖𝑖𝑖𝑖 𝐺𝐺𝑖𝑖 + 𝑒𝑒𝑖𝑖𝑖𝑖      (20)
+
+                                                                      � 𝐷𝐷𝐷𝐷𝐷𝐷 is equivalent to
+The DDD estimate from (20) does equal a weighted average of 2x2 DD’s. 𝛽𝛽
+                                                                                          𝐺𝐺=1      𝐺𝐺=0
+first collapsing the data to mean differences between 𝐺𝐺-groups within (𝑠𝑠, 𝑡𝑡) cells, 𝑦𝑦�𝑠𝑠𝑠𝑠 − 𝑦𝑦�𝑠𝑠𝑠𝑠 ,
+
+                                                             � (𝐺𝐺𝑖𝑖 |𝑠𝑠, 𝑡𝑡) = 𝑔𝑔𝑠𝑠𝑠𝑠 (1 − 𝑔𝑔𝑠𝑠𝑠𝑠 ), where
+then estimating a DD model weighted by cell sizes times the 𝑣𝑣𝑣𝑣𝑣𝑣
+
+
+
+37
+     In this set up the third difference partitions units, so 𝛼𝛼𝑖𝑖 𝐺𝐺𝑖𝑖 is collinear with 𝛼𝛼𝑖𝑖 .
+
+                                                                          25
+

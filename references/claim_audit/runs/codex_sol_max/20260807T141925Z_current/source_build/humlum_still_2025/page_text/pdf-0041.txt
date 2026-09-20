@@ -1,0 +1,52 @@
+Figures and Tables
+
+                          Figure 1: Employer Initiatives for AI Chatbot Use
+
+                                            (a) Employer Usage Policies
+
+  Marketing
+  Software Developers
+  Journalists
+  HR Professionals
+  IT Support
+  Financial Advisors
+  Customer Service
+  Accountants
+  Office Clerks
+  Legal Professionals
+  Teachers
+
+                            0       0.1         0.2       0.3         0.4   0.5       0.6     0.7       0.8       0.9       1
+                                      Encouraged           Allowed      Not Allowed     No Policy      Don’t Know
+
+
+                                       (b) Bundles of Employer Initiatives
+                                                      1
+
+
+
+
+           Use Encouraged (43%)
+
+
+
+     Use Not Encouraged (57%)
+
+
+
+
+                                            0             0.1        0.2      0.3           0.4      0.5          0.6
+                                                                Enterprise Chatbot           Training             Both
+
+
+
+Notes: Panel (a) shows, by occupation, the share of workers subject to different employer policies on the use of AI chatbots
+for work. Figure F.1 provides a workplace-level version of this graph, yielding similar results. Panel (b) shows the share of
+workers affected by different combinations of employer-led initiatives for chatbot adoption. Workers are grouped by whether
+their chatbot use is employer-encouraged or not. Within each group, the bars indicate the share of workers whose employer
+provides an enterprise AI chatbot, provide chatbot training, or both. Sample: All completed responses from the 2024 survey.
+
+
+
+
+                                                                 39

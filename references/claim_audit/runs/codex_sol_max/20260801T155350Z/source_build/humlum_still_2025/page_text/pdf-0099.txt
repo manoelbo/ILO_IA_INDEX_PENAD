@@ -1,0 +1,85 @@
+             Figure E.3: Importance of Employer Policies in AI Chatbot Adoption
+
+                                                (i) Usage Policy: Encouraged
+                                   Ever Used                                                                    p< 0.01
+
+
+
+
+                              Monthly or More                                                 p< 0.01
+
+
+
+
+                              Weekly or More                                  p< 0.01
+
+
+
+
+                                        Daily            p< 0.01
+
+                                                0                   .2                       .4                .6               .8   1
+
+                                                                          Encouraged                   Other (Non-Encouraged)
+
+
+
+                                            (ii) Usage Policy: Not Allowed
+                                   Ever Used                                                 p< 0.01
+
+
+
+
+                              Monthly or More                            p< 0.01
+
+
+
+
+                              Weekly or More                  p< 0.01
+
+
+
+
+                                        Daily       p< 0.01
+
+                                                0                   .2                       .4                .6               .8   1
+
+                                                                                        Not Allowed            Other
+
+
+
+                                                (iii) Firm-Arranged Training
+                                   Ever Used                                                                        p< 0.01
+
+
+
+
+                              Monthly or More                                                     p< 0.01
+
+
+
+
+                              Weekly or More                                       p< 0.01
+
+
+
+
+                                        Daily             p< 0.01
+
+                                                0                   .2                       .4                .6               .8   1
+
+                                                                               Firm-Arranged Training                  Other
+
+Notes: This figure illustrates the impact of employer policies on workers’ use of AI chatbots. The estimates are based
+on predicted values from Equation (69), varying employer initiatives (EmployerInitiative = 1 vs. EmployerInitiative = 0)
+while holding workers’ characteristics X at their mean values. Panel (i) splits workers based on whether their employer
+encourages AI chatbot use, Panel (ii) splits workers based on whether their employer allows AI chatbot use, and Panel (iii)
+splits workers based on whether they have participated in firm-arranged AI chatbot training. Panel (i) is identical to Figure
+D.1. Whiskers represent 95% confidence intervals. The reported p-values test whether the coefficients differ between the two
+groups. Sample: All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                                                      64
+

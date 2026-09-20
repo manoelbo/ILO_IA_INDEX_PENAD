@@ -1,0 +1,38 @@
+suggest a channel through which AI chatbots may deliver broader earnings effects as
+adoption deepens (Kleven et al., 2025).
+
+
+3.4       Workplace Employment
+
+Concerns have been raised that generative AI is already displacing workers, particularly
+those early in their careers. Indeed, Appendix D.2 documents aggregate declines in
+early-career employment in several of our exposed occupations in Denmark, mirroring
+patterns documented in the United States (Brynjolfsson, Chandar and Chen, 2025). A
+key advantage of our data, however, is that we can split these employment trends by
+whether firms have actually adopted generative AI.
+       Panel (a) shows that workplaces encouraging chatbot use have seen no differential
+change in total hours after the arrival of AI chatbots.20 Our estimates are precise, ruling
+out effects larger than 2%.
+       Crucially, Panel (b) shows that the decline in early-career jobs is not driven by firms
+adopting AI chatbots. Difference-in-differences estimates show no differential changes
+in the employment share of early-career workers at adopting workplaces, with estimates
+precise enough to rule out effects greater than a third of a percentage point. These bounds
+imply that AI adoption can account for at most a small fraction of the aggregate declines
+in early-career employment documented in Appendix D.2—declines whose connection to
+generative AI is itself debated (Frank et al., 2026; Iscenko and Curto Millet, 2026).21
+       Beyond levels of employment, AI chatbots may alter the composition of labor demand.
+Even with constant employment levels, adopting and operating new tools may require
+workers with different skills, leading firms to hire new workers at the expense of incumbents
+(Bessen et al., 2023). At the same time, assistance from AI chatbots could instead help
+retain workers (Brynjolfsson, Li and Raymond, 2025).
+  20
+    Appendix F.4 shows that wage bills are similarly flat.
+  21
+    About 43% of workplaces encourage chatbot use (Figure 1). Even if all encouraged workplaces
+experienced the largest decline consistent with our confidence intervals, chatbots would account for at
+most a 0.43 × 0.33 ≈ 0.14 percentage point decline in the aggregate early-career share—small relative
+to the baseline share of about 8% (Table D.1) and the aggregate decline of about 0.6 percentage points
+between October 2022 and December 2024 implied by Figure D.2.
+
+
+                                                  30

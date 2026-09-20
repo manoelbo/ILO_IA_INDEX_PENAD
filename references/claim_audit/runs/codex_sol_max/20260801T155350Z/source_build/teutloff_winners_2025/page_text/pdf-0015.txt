@@ -1,0 +1,57 @@
+O. Teutloff et al.                                                                                               Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+
+
+Fig. 7. Event study: log applicants per job posting - This figure plots the difference in log mean number of applicants between the unaffected cluster
+and substituted and augmented clusters and the corresponding 95% confidence intervals. The vertical line corresponds to ChatGPT launch. Standard
+errors are clustered at job posting cluster level.
+
+
+                                   Table 3
+                                   Difference-in-Difference Results - Additional Outcomes: Column (1) reports the difference-in-
+                                   difference estimates for the effect of ChatGPT on employers’ reported budgets (measured in
+                                   log-$) across the two treatment groups compared to the control group. Column (2) reports the
+                                   effect of ChatGPT launch on average applicants per job posting (log) across the two treatment
+                                   groups compared to the control group. Standard errors are clustered at the cluster level.
+                                                                                        (1)                (2)
+                                    Dependent Variable                                  log(Avg. budget)   log(Avg. Applicants/Job posting)
+                                    Intercept                                           6.44∗∗∗            2.97∗∗∗
+                                                                                        (0.13)             (0.05)
+                                    Substituted                                         −0.50∗∗            0.05
+                                                                                        (0.18)             (0.10)
+                                    Complemented                                        −0.02              0.04
+                                                                                        (0.15)             (0.08)
+                                    After                                               0.08∗              0.06∗∗∗
+                                                                                        (0.03)             (0.02)
+                                    Substituted ×After                                  −0.13              0.20∗∗∗
+                                                                                        (0.07)             (0.05)
+                                    Complemented ×After                                 −0.03              0.07∗∗
+                                                                                        (0.04)             (0.03)
+                                    Observations                                        11 930             11 957
+                                    𝑅2                                                  0.02               0.03
+
+                                   Notes: ∗ p < 0.05, ∗∗ p < 0.01, ∗∗∗ p < 0.001.
+
+
+                                                                                                            ( ∑ 𝐴𝑝𝑝𝑙𝑖𝑐𝑎𝑛𝑡𝑠 )
+                                                                                                               𝑗             𝑗𝑖𝑡
+   From Column (1) of Table 2 and Column (2) of Table 3 we know that log(𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡 ) = −0.28 and log           𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡
+                                                                                                                                 = 0.20,
+with respective standard errors 0.09 and 0.05. The difference between the estimates is within the standard errors, and therefore we
+cannot attribute the increase in applications per job posting to an increase in the supply.6
+
+
+
+
+                                   ( ∑ 𝐴𝑝𝑝𝑙𝑖𝑐𝑎𝑛𝑡𝑠 )                     ) (∑          (           )
+  6   More formally: let 𝑅 = log      𝑗                 𝑗𝑖𝑡
+                                                              , 𝐴 = log  , and 𝑃 = log 𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡 . The empirical estimates imply, that 𝛥𝑅 = 0.2, and 𝛿𝑃 = −.28.
+                                          𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡                          𝑗 𝐴𝑝𝑝𝑙𝑖𝑐𝑎𝑛𝑡𝑠𝑗𝑖𝑡
+                                                                                                                           √
+Solving for 𝛥𝐴 yields −.08. To assess the statistical significance of 𝛥𝐴, we can solve for its standard error: 𝑆𝐸(𝛥𝐴) = 𝑆𝐸(𝛥𝑅)2 + 𝑆𝐸(𝛥𝑃 )2 ≈ .10 (assuming
+independence between 𝑅 and 𝑃 ).
+
+
+                                                                                                    15
+

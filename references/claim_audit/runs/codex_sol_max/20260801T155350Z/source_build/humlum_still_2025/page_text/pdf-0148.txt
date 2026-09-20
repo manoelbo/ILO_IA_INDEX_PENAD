@@ -1,0 +1,44 @@
+                           Survey Questionnaire – English Translation
+
+1. Introduction
+AI chatbots use artificial intelligence to read and write text. You have been selected to participate in this
+survey because you work in a profession where AI chatbots may be relevant.
+Your participation is important regardless of your knowledge of chatbots or artificial intelligence.
+
+                                      Block 1: Occupation and tasks
+2.a Occupation
+Are you employed in [journalism]?
+    • Yes
+    • No
+
+2.b Occupation [if 2.a=’No’]
+Are you employed in one of the following areas?
+If you are employed in multiple areas, please select your primary work area.
+     • HR work
+     • IT support
+     • Office and secretarial work
+     • Customer support
+     • Legal work
+     • Marketing
+     • Auditing and accounting work
+     • Software development
+     • Teaching
+     • Financial consulting
+     • I am not employed in any of the above work areas
+
+3. Task Importance [if 2.b!= ’I am not employed in any of the above work areas’; all tasks]
+We will first ask about some typical work tasks among [journalists].
+For each task, please assess how important the task is for your work.
+Extremely important means that the task is critical for performing your current job.
+[Write commentaries, columns, or scripts]
+    • Not important
+    • Slightly important
+    • Important
+    • Very important
+    • Extremely important
+
+
+
+
+                                                    113
+

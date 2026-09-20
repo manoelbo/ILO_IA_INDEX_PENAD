@@ -1,0 +1,43 @@
+2.1.1    RPS Sample
+
+Qualtrics panel members are recruited to the panel online and, in our case, can participate
+in exchange for 30 to 50 percent of the $5.50 paid per completed survey. The Qualtrics panel
+includes about 15 million members and is not a random sample of the U.S. population. However,
+Qualtrics can target survey invitations to specific demographic groups. The RPS sample was
+designed to be nationally representative across key demographics. We also include measures to
+filter out low quality responses. Details on sampling and data quality procedures can be found
+in Appendix A.1.
+
+   We fielded the RPS with a pilot genAI module in June 2024 and received 2,551 responses.
+We then launched the full genAI module with the August and November 2024 waves and
+received 5,014 and 5,329 responses respectively. All surveys started fielding during the same
+weeks that the CPS conducted its corresponding surveys. Because the results are very similar
+across all surveys but our June pilot featured fewer questions, we report results from the pooled
+August and November surveys. Appendix B replicates the main figures of the paper separately
+by survey waves.
+
+   Appendix Table A.1 compares the unweighted sample composition between the CPS and
+RPS along the demographics targeted in the sampling procedure for our main surveys (columns
+1 and 2). The bottom panel also compares employment status in the CPS and RPS, which was
+not targeted in the sampling procedure. The two surveys yield very similar population shares.
+
+
+2.1.2    Sample Weights and Validation
+
+To address remaining discrepancies, we construct sample weights using the raking algorithm
+of Deming and Stephan (1940), ensuring that the weighted sample proportions align with the
+demographic characteristics targeted in the sampling procedure and that the employment shares
+in the RPS align with the CPS as well. Details on weighting can be found in Appendix A.2.3
+
+   In Appendix A.3, we show that the distribution of usual weekly earnings, occupation, and
+industry shares in the RPS, which were not targeted during sampling, closely align with the
+CPS, in both the raw and weighted data.
+   3
+    In particular, Appendix A.2.1 discusses a weighting adjustment we applied based on an experimental survey
+which randomized the sequencing of questions in the genAI module.
+
+
+
+
+                                                     4
+

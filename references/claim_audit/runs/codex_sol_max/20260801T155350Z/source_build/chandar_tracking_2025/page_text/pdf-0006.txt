@@ -1,0 +1,38 @@
+in months four and eight of the sample.6 Because the MORG data is a subset of the basic
+monthly CPS it has a smaller sample size. The MORG data underwent changes in topcoding
+conventions over the sample period. I manually topcode nominal weekly earnings at $2884.61
+per week to maintain consistency over time. I also convert nominal weekly earnings to real
+weekly earnings using the CPI-U.
+        I merge the CPS data with the AI exposure estimates using the occupation code, using
+a crosswalk from the BLS to merge 2018 SOC codes to Census occupation codes.
+        Computing employment trends by occupation can lead to noisy estimates due to small
+sample sizes. Further, the public monthly CPS file does not offer a straightfoward method to
+compute standard errors for employment estimates by occupation. To mitigate these issues,
+I compute the average monthly employment in each quarter and consider only analyses with
+at least 100 observations in each cell.
+
+
+3.3        Summary Statistics
+
+Table 1 shows the most and least AI-exposed occupations based on the GPT-4-based β
+measure from Eloundou et al. (2024). Professions involving translation, writing, and pro-
+gramming are among the most exposed, while occupations involving manual labor and con-
+struction are among the least exposed.
+
+
+
+4         Results
+
+4.1        Labor Market Trends by AI Exposure
+
+Across all quartiles of AI exposure, there is little evidence of job loss or slower earnings
+growth for more exposed occupations since the release of ChatGPT. Figure 1 shows the
+employment and earnings trends for each quartile of AI exposure measured using the GPT-
+    6
+    Workers are surveyed for four months consecutively and then rotated out of the sample for four months
+before being rotated back in for another four months.
+
+
+
+                                                   6
+

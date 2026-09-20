@@ -1,0 +1,40 @@
+                            Online Appendix
+ Still Waters, Rapid Currents: Early Labor Market
+        Transformation under Generative AI
+                   Anders Humlum              Emilie Vestergaard
+                 University of Chicago     University of Copenhagen
+
+
+
+A Theoretical Framework                                                                     3
+  A.1 Adoption and Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         3
+  A.2 Labor Market Outcomes . . . . . . . . . . . . . . . . . . . . . . . . . . .           7
+
+B Data Construction                                                                        20
+  B.1 Sampling Protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        20
+  B.2 Survey Sample      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   21
+  B.3 Classification of New Job Tasks . . . . . . . . . . . . . . . . . . . . . . .        26
+
+C Institutional Setting                                                                    31
+  C.1 Wage Setting Systems in Denmark . . . . . . . . . . . . . . . . . . . . .            31
+
+D Labor Market Trends                                                                      33
+  D.1 Aggregate Employment . . . . . . . . . . . . . . . . . . . . . . . . . . . .         33
+  D.2 By Age Groups (Brynjolfsson, Chandar and Chen, 2025) . . . . . . . . .               34
+
+E Additional Results                                                                       38
+  E.1 Employer Initiatives . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       38
+  E.2 AI Chatbot Products        . . . . . . . . . . . . . . . . . . . . . . . . . . . .   38
+  E.3 Reported Benefits by Occupation . . . . . . . . . . . . . . . . . . . . . .          40
+  E.4 Workloads and Task Creation . . . . . . . . . . . . . . . . . . . . . . . .          42
+  E.5 Perceived Impacts      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   44
+
+F Robustness Analysis                                                                      45
+  F.1 Employer Initiatives . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       45
+  F.2 Worker Earnings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        46
+  F.3 Job Mobility     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   50
+  F.4 Workplace Employment         . . . . . . . . . . . . . . . . . . . . . . . . . . .   52
+  F.5 Additional Controls      . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   56
+  F.6 Coworker Encouragement . . . . . . . . . . . . . . . . . . . . . . . . . .           58
+
+                                            1

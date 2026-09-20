@@ -1,0 +1,189 @@
+                                                                 Figure C.1: SWAA Validation Checks
+             (a) Occupation Shares: Unweighted                                                                                      (b) Occupation Shares: Weighted
+             25
+
+
+
+
+                                                                                                                                                                                                                        Professional and related
+
+
+
+
+                                                                                                                                25
+             20
+
+
+
+
+                                                                                                    Professional and related
+
+
+
+
+                                                                                                                                20
+                                                                                                                                                                                                        Management, Business and Financial
+                                                                          Services
+                           Corr: 0.88
+                                                                                                                                              Corr: 1.00
+       Share in SWAA
+
+
+
+
+                                                                                                                          Share in SWAA
+                 15
+
+
+
+
+                                                                                                                                    15
+                                                         Office and administrative support                                                                                                   Services
+                                                    Sales and related                Management, Business and Financial
+        10
+
+
+
+
+                                                                                                                                                                            Office and administrative support
+
+
+
+
+                                                                                                                           10
+                                                                                                                                                                       Sales and related
+                                           Production                                                                                                             Transportation and material moving
+                                           Construction and extraction
+             5
+
+
+
+
+                                                                                                                                                           Construction and extraction
+
+
+
+
+                                                                                                                                5
+                                                Transportation and material moving                                                                         Production
+
+                                                                                                                                                     Installation, maintenance, and repair
+                                  Installation, maintenance, and repair
+                           Farming, fishing, and forestry
+                                                                                                                                              Farming, fishing, and forestry
+             0
+
+
+
+
+                                                                                                                                0
+                       0              5              10       15                     20        25                                         0              5              10       15                     20         25
+                                                     Share in CPS                                                                                                       Share in CPS
+
+                                     45 Degree Line                              Fitted Line                                                            45 Degree Line                              Fitted Line
+
+
+                            (c) Industry: Unweighted                                                                                             (d) Industry: Weighted
+             25
+
+
+
+
+                                                                                                                                25
+             20
+
+
+
+
+                                                                                                                                20
+
+
+
+
+                           Corr: 0.95                                                                                                         Corr: 0.96
+       Share in SWAA
+
+
+
+
+                                                                                                                          Share in SWAA
+                 15
+
+
+
+
+                                                                                                                                    15
+
+
+
+
+                                                                        Health
+                                                                                                                                                                                           Health
+
+                                                                                                                                                                                     PBServ
+                                                         RTrade PBServ
+                                                                                                                                                                            RTrade
+        10
+
+
+
+
+                                                                                                                           10
+
+
+
+
+                                                                                                                                                                          Educ
+                                             AccomFood
+                                                    Educ
+                                                       Manu                                                                                                    AccomFood
+                                                                                                                                                                   Const
+                                                 Const                                                                                                                      Manu
+                                                                                                                                                              Transp
+                                                                                                                                                              Fina
+                                           Fina
+                                           Transp
+             5
+
+
+
+
+                                                                                                                                5
+
+
+
+
+                                           Public                                                                                                           Public
+                              Info                                                                                                                Info
+                              ArtEntRecOther                                                                                                      ArtEntRecOther
+                               RealEst
+                             Agriculture                                                                                                          RealEst
+                            UtilWTrade                                                                                                          Agriculture
+                                                                                                                                               UtilWTrade
+                           Mining                                                                                                             Mining
+             0
+
+
+
+
+                                                                                                                                0
+
+
+
+
+                       0               5              10       15                    20          25                                       0               5              10       15                    20           25
+                                                     Share in CPS                                                                                                       Share in CPS
+
+                                     45 Degree Line                              Fitted Line                                                            45 Degree Line                              Fitted Line
+
+
+
+Notes: Figures on the left use unweighted SWAA data, figures on the right use weighted SWAA data using our
+own weights. All figures use weighted CPS data. Data samples are all employed respondents. Sample sizes for
+the December 2024 SWAA and CPS are 4419 and 43202, respectively.
+
+
+
+
+                                                                                                            16
+

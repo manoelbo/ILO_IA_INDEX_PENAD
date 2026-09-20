@@ -1,0 +1,20 @@
+                                                                                                            86
+
+                                    Table C.10: Average Treatment Effects
+
+                                                       Deviation               Deviation from
+                                                       from AI                 Ground Truth
+                      Treatment                              (1)                         (2)
+                      AI × CH                              0.009                       0.010
+                                                          (0.008)                     (0.012)
+                      AI                                  −0.050                      −0.003
+                                                          (0.010)                     (0.008
+                      CH                                  −0.003                      −0.010
+                                                          (0.009)                     (0.013)
+                      Control Mean                         0.241                       0.216
+                                                          (0.011)                     (0.015)
+                      Pathology FE                          Yes                         Yes
+                      Observations                          7000                        7000
+
+Note: Main specifications similar to table 2 with the exception that observations are from design 3 only.
+

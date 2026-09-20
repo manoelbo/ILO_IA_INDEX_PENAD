@@ -1,0 +1,40 @@
+            CHAPTER 2
+
+            Introducing economic primitives
+            The strength of the Anthropic Economic Index lies in showing not only how
+            much AI is used, but how it is used. In prior reports, we showed which tasks
+            Claude is used for, and how people collaborate with Claude. These data have
+            enabled external researchers to analyze labor market shifts (e.g., Brynjolfsson,
+            Chandar & Chen, 2025).
+
+            In this edition of the Anthropic Economic Index, we expand the breadth of
+            data available to external researchers by providing insights on five economic
+           “primitives”, by which we mean simple, foundational measures of the ways
+            that Claude is used, which we generate by asking Claude to answer specific
+            questions about the anonymized transcripts in our sample. Some of our
+            primitives encompass several such questions, and others use a single indicator.
+
+            Because AI capabilities are advancing so rapidly and the economic effects will
+            be unevenly experienced, we need a breadth of signals to uncover not just how
+            Claude is used but also to inform what impact this technology will have.
+
+
+
+
+            Dimensions of AI use that matter for economic impacts
+
+            This report introduces five new economic primitives beyond the one we
+            already measure, collaboration patterns (whether users automate or augment
+            their tasks with Claude). These primitives capture five dimensions of a
+            human-AI conversation: 1) task complexity, 2) human and AI skills, 3) work,
+            coursework or personal use case, 4) the AI’s level of autonomy, and 5) task
+            success (see Table 2.1). AI autonomy captures something different from our
+            existing automation/augmentation distinction. For example, “Translate this
+            paragraph into French” is high automation (directive, minimal back-and-forth)
+            but low AI autonomy (the task requires little decision-making from Claude).
+
+
+
+
+The Anthropic Economic Index Report                                                            19
+

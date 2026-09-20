@@ -1,0 +1,61 @@
+18           ILO Working Paper 140
+
+
+
+
+                       Question                                     Answer Options
+
+         8             To what extent can your job be replaced      Will not be replaced (0%) |-----------------slider----------------|Will be
+                       by Generative AI (e.g. ChatGPT) in the       completely replaced (100%); I don't know
+                       next 5 years?
+
+     In its main section, the survey moves to the assessment of respondents’ perception of tasks’ au-
+     tomation potential. Each respondent is presented with a random selection of 35 tasks from their
+     occupational group at 1-digit ISCO-08 level, as previously described in the sample selection pro-
+     cess (Section 4.2). For each task, respondents are asked to evaluate the susceptibility of the task
+     to automation by generative AI on a scale from 0 to 100, with 0 indicating "not automatable"
+     and 100 indicating "fully automatable".6 In addition to scoring tasks for automation potential,
+     respondents are asked to indicate whether they personally perform a similar task in their cur-
+     rent job by ticking a box next to each task. This allows for the comparison of GenAI’s perceived
+     impact on tasks that are only present in respondents’ occupational group, with those directly
+     relevant to the respondents' current work.
+
+
+         XX Text Box 1. Sample Question for Task Automation Assessment
+
+
+             Below is a list of 35 tasks performed by people in different occupations. Please rate how
+             much you think artificial intelligence can automate each of the tasks. Use the slider to in-
+             dicate your opinion on a scale from 0 to 100, where 0 means no potential for automation,
+             and 100 means full potential for automation.
+
+             Occupation: Actor
+
+             Task 1: Developing one's own artistic concept of a role
+
+             Slider scale (0-100):
+
+             | 0 - No potential for automation using GenAI | ------------ Slider ------------ | 100 - Full poten-
+             tial for automation using GenAI
+
+             | I don't know
+
+             Do you perform this or a similar task in your current job?
+
+             ●● Yes
+             ●● No
+
+
+     3.4. Survey design limitations
+     The survey is designed to capture insights from individuals currently employed in various oc-
+     cupational categories of the 1-digit ISCO-08 framework. This means that tasks of managers are
+     assessed by individuals working as managers, tasks of professionals are assessed by profes-
+     sionals, etc. The subsequent data analysis explores the differences among individuals based on
+     their attitudes about technology, knowledge of AI and other parameters that are captured in
+     the core questions (Table A3).
+
+
+
+     6
+             Respondents could also choose « don’t know » as an answer.
+

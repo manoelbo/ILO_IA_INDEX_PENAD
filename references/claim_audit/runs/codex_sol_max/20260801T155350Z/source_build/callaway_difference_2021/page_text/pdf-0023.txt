@@ -1,0 +1,68 @@
+tively, for all g ∈ Gδ , t ∈ {2, . . . T − δ} such that t ≥ g − δ. Analogously, let Ψdr,nev
+                                                                                     t≥(g−δ) denote the collection
+    dr,nev
+of ψg,t,δ  across all g ∈ Gδ , t ∈ {2, . . . T − δ} such that t ≥ g − δ. Consider the following claim:
+
+                           For each g ∈ Gδ , t ∈ {2, . . . T − δ} such that t ≥ g − δ,
+                           ∃πg∗ ∈ Θps : P pg (X; πg∗ ) = pg (X) = 1 or
+                                                                   
+                                                                                                            (4.5)
+                                                                                  
+                              ∗,nev                             ∗,nev
+                           ∃βg,t,δ  ∈ Θreg : P mnev
+                                                  g,t,δ    X; βg,t,δ    = m nev
+                                                                            g,t,δ (X)  = 1.
+
+Claim (4.5) says that either the working parametric model for the generalized propensity score is correctly
+specified, or the working outcome regression model for the comparison group is correctly specified.
+                                                                        dr,nev
+   The next theorem establishes the joint limiting distribution of AT
+                                                                   [  T t≥(g−δ) .
+
+Theorem 2. Under Assumptions 1-4, 6-8, for each g and t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and
+t ≥ g − δ, provided that (4.5) is true,
+                                                                  n
+                  √          nev                            1 X dr,nev
+                      n(AT
+                        [  T dr (g, t; δ) − AT T (g, t)) = √   ψg,t,δ (Wi ; κ∗,nev
+                                                                             g,t ) + op (1).
+                                                             n
+                                                                 i=1
+
+Furthermore, as n → ∞,
+                                  √          dr,nev                    d
+                                      n(AT
+                                        [  T t≥(g−δ) − AT Tt≥(g−δ) ) −
+                                                                     → N (0, Σ)
+
+where Σ = E[Ψdr,nev       dr,nev      0
+             t≥(g−δ) (W )Ψt≥(g−δ) (W ) ].
+
+   Theorem 2 provides the influence function for estimating the vector of group-time average treatment
+effects, AT Tt≥(g−δ) , as well as its limiting distribution. Importantly, Theorem 2 emphasizes the DR
+                  nev
+property of AT
+             [  T dr (g, t; δ): it recovers the AT T (g, t) provided that either the propensity score working
+model or outcome regression working model for the “never treated” is correctly specified.
+   In order to conduct inference, one can show that the sample analogue of Σ is a consistent estimator
+for Σ, which leads directly to standard errors and pointwise confidence intervals. Instead of following this
+route, we propose to use a simple multiplier bootstrap procedure to conduct asymptotically valid inference.
+Our proposed bootstrap leverages the asymptotic linear representations derived in Theorem 2 and inherits
+important advantages. First, it is easy to implement and very fast to compute. Each bootstrap iteration
+simply amounts to “perturbing” the influence function by a random weight V , and it does not require
+re-estimating the propensity score in each bootstrap draw. Second, in each bootstrap iteration, there are
+always observations from each group. This can be a real problem with the traditional empirical bootstrap
+where there may be no observations from a particular group in some particular bootstrap iteration.
+Third, computation of simultaneously (in g and t) valid confidence bands is relatively straightforward.
+This is particularly important since researchers are likely to use confidence bands to visualize estimation
+uncertainty about AT T (g, t) . Unlike pointwise confidence bands, simultaneous confidences bands do not
+suffer from multiple-testing problems and are guaranteed to cover all AT T (g, t)’s with a probability at
+least 1 − α. Finally, we note that our proposed bootstrap procedure can be readily modified to account
+for clustering, see Remark 10 below.
+    To proceed, let Ψb dr,nev (W ) denote the sample-analogue of Ψdr,nev (W ), where population expec-
+                       t≥(g−δ)                                    t≥(g−δ)
+tations are replaced by their empirical analogue, and the true nuisance functions and their derivatives
+are replaced by their estimators. Let {Vi }ni=1 be a sequence of iid random variables with zero mean,
+
+                                                         23
+

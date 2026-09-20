@@ -1,0 +1,16 @@
+            Figure A.2: Occupational Exposure by Task Nature Across Various Indexes
+
+
+
+
+Source: Authors’ formulation based on data from O*NET, Felten et al. (2021); Webb (2019); Frey and Osborne (2017);
+Pizzinelli et al. (2023). Note: This figure displays the average values of several indexes of occupational exposure,
+categorizing occupations into four groups: routine-manual, routine-cognitive, non-routine manual, and non-routine
+cognitive. These classifications were made following the methodology proposed by Acemoglu and Autor (2011).
+Indexes were standardized for comparability.
+
+
+
+
+                                                          32
+

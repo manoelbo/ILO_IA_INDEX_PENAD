@@ -1,0 +1,48 @@
+           Table F.2: Encouragement, Adoption, and Work (Additional Controls)
+
+                                                      (a) Adoption
+                                        Ever Used        Monthly or More         Weekly or More                Daily
+                                       (1)     (2)         (3)      (4)         (5)        (6)           (7)           (8)
+  Encouraged                          0.365   0.347    0.337     0.321   0.283       0.268              0.136      0.129
+                                     (0.006) (0.006) (0.007) (0.007) (0.006)        (0.006)            (0.005)    (0.005)
+  Worker characteristics controls       ✓       ✓        ✓          ✓      ✓           ✓                  ✓          ✓
+  Firm characteristics controls                 ✓                   ✓                  ✓                             ✓
+  Worker task mix controls                      ✓                   ✓                  ✓                             ✓
+                                      (b) Reported Benefits (Among Ever Used)
+                                      Time Savings          Quality           Creativity               Job Satisfaction
+                                       (1)     (2)      (3)        (4)    (5)         (6)                (7)      (8)
+  Encouraged                       0.098   0.099    0.115   0.112    0.094     0.094    0.071                      0.069
+                                  (0.008) (0.008) (0.009) (0.009) (0.009)     (0.009)  (0.007)                    (0.007)
+  Worker characteristics controls    ✓       ✓        ✓       ✓        ✓          ✓       ✓                          ✓
+  Firm characteristics controls              ✓                ✓                   ✓                                  ✓
+  Worker task mix controls                   ✓                ✓                   ✓                                  ✓
+                            (c) New Workloads from AI Chatbots (Among Ever Used)
+                                    Same Tasks        New Tasks     Same and New Tasks
+                                    (1)     (2)      (3)     (4)      (5)        (6)
+  Encouraged                          0.016   0.016   0.046         0.040      0.008       0.008
+                                     (0.004) (0.004) (0.005)       (0.005)    (0.002)     (0.002)
+  Worker characteristics controls       ✓       ✓       ✓             ✓          ✓           ✓
+  Firm characteristics controls                 ✓                     ✓                      ✓
+  Worker task mix controls                      ✓                     ✓                      ✓
+
+Notes: This table presents estimates of the impact of employer encouragement on AI chatbot adoption (Panel a), the
+reported benefits of adoption (Panel b), the allocation of time savings (Panel c), and new workloads resulting from chatbot
+use among adopters (Panel d). Odd-numbered columns report our main estimates from Equation (1). Even-numbered
+columns report specifications where we augment controls for firms’ characteristics and workers’ detailed task mixes. Robust
+standard errors are shown in parentheses. Sample: All complete responses from the 2024 survey that can be linked to the
+registry data.
+
+
+
+
+F.6       Coworker Encouragement
+
+A key focus of our analysis is the link between employer chatbot initiatives and labor
+market outcomes. Section 2.2 shows how workers’ adoption and reported work effects vary
+with these initiatives, and Section 3 uses employer-encouraged use as the main workplace
+treatment.
+    While our main analysis relies on self-reported employer encouragement, this appendix
+demonstrates robustness to using coworker reports. At the individual level, this helps
+
+
+                                                           58

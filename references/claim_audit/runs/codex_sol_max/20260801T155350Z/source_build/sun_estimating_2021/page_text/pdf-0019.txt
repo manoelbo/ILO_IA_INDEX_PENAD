@@ -1,0 +1,67 @@
+      • σe, · is a vector of the covariance between cohort e and the other cohorts, namely Cov (1{Ei = e}, 1{Ei = e 0 }).
+
+        This term thus scales quadratically in the share of cohort e, and is small for small cohorts.
+
+      • ∆t is a matrix of demeaned relative time indicators. The entry that corresponds to cohort e 0 and
+                                 ` is E[D` | E = e 0 ] − 1 1 0 ∈ I
+        relative time indicator Di,t     i,t  i         T +1 {e   ` }. When T is large, i.e. the panel is long,
+
+        the second term is small and this entry is therefore approximately equal to the relative time indicator.
+
+                                                                                ` for A the covariance matrix
+      • A`−1 is the row of A−1 that corresponds to the relative time indicator Di,t
+
+        of demeaned relative time indicators. Specifically, the entry in A that corresponds to the covariance
+                          ` and D` is
+        between demeaned Di,t
+                                          0
+                                 i,t
+
+
+                               Õ       
+                                         `      `0
+                                                           1
+                                    Cov Di,t , Di,t   −        Cov (1 {Ei ∈ I` }, 1 {Ei ∈ I`0 }) .            (22)
+                                t
+                                                          T +1
+
+                                ` and D` are negatively correlated because no cohorts can be in these two
+        Within any time period Di,t
+                                              0
+                                       i,t
+
+        relative times at the same time. The second covariance term is in general also non-zero because being
+
+        in one cohort predicts (not) being in another cohort. Therefore A is in general not a diagonal matrix
+
+        and A−1 would depend on the distribution of the cohorts non-linearly.
+
+The three elements of (21) demonstrate the weights are non-linear functions of the distribution of the co-
+
+horts, and they are in general non-zero. Nonetheless these weights can be estimated easily by the auxiliary
+
+regression (12).
+
+
+3.7     Invalidity of pretrend tests based on pre-period coefficients.
+
+Contamination undermines the practice of testing for pretrends using pre-period coefficients. Proposition 3
+
+implies that when effects are not homogenous across cohorts, it is problematic to interpret non-zero estimates
+
+for µg as evidence for pretrends, where the set g contains some leads ` < 0. Proposition 4 implies that even
+
+with homogeneous treatment effect, if the effects associated with the excluded periods are not zero, then
+
+contamination may still occur. Therefore without strong assumptions, pre-period coefficients should not be
+
+used to test for pretrends because contamination can lead to estimates that are non-zero in the absence of
+
+pretrends or zero in the presence of pre-trends.
+
+      Testing for pretrends using pre-period coefficients is commonly used in practice. As an example, He
+
+and Wang (2017) mention “the estimated coefficients of the leads of treatments, i.e. δk for all k ≤ −2
+
+                                                             19
+

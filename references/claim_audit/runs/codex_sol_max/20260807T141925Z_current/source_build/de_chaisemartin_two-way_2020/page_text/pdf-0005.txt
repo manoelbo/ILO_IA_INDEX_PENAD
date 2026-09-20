@@ -1,0 +1,45 @@
+we assume that treatment is binary, but our results apply to any ordered treatment, as we show in
+Section ?? of the Web Appendix. Then, for every (i, g, t) ∈ {1, ..., Ng,t }×{1, ..., G}×{1, ..., T }, let
+Di,g,t and (Yi,g,t (0), Yi,g,t (1)) respectively denote the treatment status and the potential outcomes
+without and with treatment of observation i in group g at period t.
+The outcome of observation i in group g and period t is Yi,g,t = Yi,g,t (Di,g,t ). For all (g, t), let
+            Ng,t                          Ng,t                             Ng,t                             Ng,t
+        1 X                           1 X                              1 X                              1 X
+Dg,t =           Di,g,t , Yg,t (0) =           Yi,g,t (0), Yg,t (1) =           Yi,g,t (1), and Yg,t =           Yi,g,t .
+       Ng,t i=1                      Ng,t i=1                         Ng,t i=1                         Ng,t i=1
+
+Dg,t denotes the average treatment in group g at period t, while Yg,t (0), Yg,t (1), and Yg,t re-
+spectively denote the average potential outcomes without and with treatment and the average
+observed outcome in group g at period t.
+Throughout the paper, we maintain the following assumptions.
+
+Assumption 1 (Balanced panel of groups) For all (g, t) ∈ {1, ..., G} × {1, ..., T }, Ng,t > 0.
+
+Assumption 1 requires that no group appears or disappears over time. This assumption is often
+satisfied. Without it, our results still hold but the notation becomes more complicated as the
+denominators of some of the fractions below may then be equal to zero.
+
+Assumption 2 (Sharp design) For all (g, t) ∈ {1, ..., G} × {1, ..., T } and i ∈ {1, ..., Ng,t },
+Di,g,t = Dg,t .
+
+Assumption 2 requires that units’ treatments do not vary within each (g, t) cell, a situation we
+refer to as a sharp design. This is for instance satisfied when the treatment is a group-level
+variable, for instance a county- or a state-law. This is also mechanically satisfied when Ng,t = 1.
+In our survey in Section 6.1, we find that almost 80% of the papers using two-way fixed effects
+regressions and published in the AER between 2010 and 2012 consider sharp designs. We focus
+on sharp designs because of their prevalence, but in Section ?? of the Web Appendix, we show
+that all the results in Sections 3-4 below can be extended to fuzzy designs.
+
+Assumption 3 (Independent groups) The vectors (Yg,t (0), Yg,t (1), Dg,t )1≤t≤T are mutually inde-
+pendent.
+
+We consider Dg,t , Yg,t (0), Yg,t (1) as random variables. For instance, aggregate random shocks
+may affect the average potential outcomes of group g at period t. The treatment status of
+group g at period t may also be random. The expectations below are taken with respect to
+the distribution of those random variables. Assumption 3 allows for the possibility that the
+treatments and potential outcomes of a group may be correlated over time, but it requires that
+the potential outcomes and treatments of different groups be independent.
+
+
+                                                         5
+

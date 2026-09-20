@@ -1,0 +1,37 @@
+                                                                                            65
+
+your rights as a research subject, you may contact the Chairman of the Committee on the
+Use of Humans as Experimental Subjects, M.I.T., Room E25-143B, 77 Massachusetts Ave,
+Cambridge, MA 02139, phone 1-617-253 6787.
+I understand the procedures described above. By clicking next, I am acknowledging my
+questions have been answered to my satisfaction, and I agree to participate in this study.
+Interface questions
+[Each of these questions has a true of false response which was entered through a radio button.
+Participants are not able to start the experiment without answering each question correctly.]
+Before beginning the experiment, we would like to confirm a few facts through the following
+comprehension questions. Please answer True or False to the following questions.
+1) The algorithm’s prediction is based on information from both the X-ray scan as well as
+the clinical history.
+2) When the algorithm does not show a prediction, it is because the algorithm thinks the
+pathology is not present.
+3) The follow up decision refers to any treatment or additional diagnostic procedures that
+one would conduct based on the findings of the report.
+4) Two patients with the same probability score for a condition ought to always receive the
+same “follow-up” recommendation.
+5) When a condition at a higher level of the hierarchy receives a less than ten percent chance
+of being present then all the lower level conditions within this branch automatically receive
+a zero probability of being present.
+6) If the algorithm says that the probability of a pathology is present with 80% probability,
+it means that the AI predicts 80 cases out of 100 have the pathology present.
+7) Suppose your assessment is that the patient definitely has either edema or consolidation,
+and you believe that edema is twice as likely as consolidation. Then you would assign 66.67%
+to edema and 33.33% to consolidation:
+8) I should only indicate pathologies and findings that would be relevant in a radiology report
+for the patient.
+
+
+Interface
+
+Figure B.7 is an example of the clinical history indications available to the participating
+radiologists under the relevant treatment condition. The thoroughness of the information
+

@@ -1,0 +1,111 @@
+            1,comp     2,comp     3,comp     4,comp     5,comp
+        = Ibg,t,δ  + Ibg,t,δ  − Ibg,t,δ  − Ibg,t,δ  − Ibg,t,δ  ,
+
+                                                                        ∗,nev              ∗,nev
+        nev
+where β̄g,t,δ                                                  nev
+              and π̄g are intermediate points that satisfies β̄g,t,δ − βg,t,δ     nev
+                                                                              ≤ βbg,t,δ − βg,t,δ a.s. and π̄g − πg∗ ≤
+bg − πg∗ a.s., respectively, and
+π
+                                        h                                                    i
+                              ccomp = En w
+                              M             comp,nev
+                                                      π
+                                                     (b g ) ·   Yt − Yg−δ−1 − mnev     bnev
+                                                                                       β           .
+                                g,t,δ     bg                                   g,t,δ     g,t,δ
+
+
+From the strong law of large numbers and the fact that V is mean zero, has variance one, and is independent of
+W , it follows that
+                              n
+           1,comp   1 X                                                      
+                                                                                         ∗,nev
+                                                                                               
+         Ibg,t,δ  =√       Vi · wgcomp,nev Wi ; πg∗ · Yi,t − Yi,g−δ−1 − mnev
+                                                                         g,t,δ   W i ; β g,t,δ    + op∗ (1) ,
+                     n i=1
+                         n
+           3,treat   1 X                                h                             
+                                                                                          ∗,nev
+                                                                                                i
+                            Vi · wgcomp,nev Wi ; πg∗ · E wgcomp · Yt − Yg−δ−1 − mnev
+                                                    
+         Ibg,t,δ   =√                                                            g,t,δ  β g,t,δ     + op∗ (1) .
+                      n i=1
+
+Similarly, from Assumptions 7 and 8, and the strong law of large numbers, we conclude that
+                                                 2,comp     4,comp     5,comp
+                                               Ibg,t,δ  = Ibg,t,δ  = Ibg,t,δ  = op∗ (1) .
+
+Now (A.10) follows from combining these results.
+   Next, we show that
+                              n
+                          1 X        
+                                        est,nev                         est,nev              ∗,nev
+                                                                                                    
+                         √       Vi · ψbg,t                  nev
+                                                      bg , βbg,t,δ
+                                                (Wi ; π            ) − ψg,t     (Wi ; πg∗ , βg,t,δ ) = op∗ (1) .     (A.11)
+                           n i=1
+
+From the strong law of large numbers and Assumptions 7 and 8,
+                     n
+                1 X           est,nev              nev
+               √       Vi · ψbg,t     (Wi ; π
+                                            bg , βbg,t,δ )
+                 n i=1
+                       n                                 0                                           
+                   1 X             or,nev
+                                          
+                                                    nev      dr,nev,1    ps,nev           0   dr,nev,2
+               =√          Vi · lg,t        Wi ; βg,t,δ · Mg,t,δ
+                                                   b                  + lg            bg ) · Mg,t,δ
+                                                                                (Wi ; π                  + op∗ (1)
+                    n i=1
+                          n
+                 1 X          est
+                                       bnev
+                                            
+               =√       Vi · lg,t Wi ; κg,t   + op∗ (1) ,
+                  n i=1
+                                       0
+                             0    nev 0
+where, for a generic κnev
+                      g,t = πg , βg,t,δ    ,
+
+                      est               or,nev      nev 0      dr,nev,1                      0   dr,nev,2
+                          W ; κnev                                      + lgps,nev (Wi ; πg ) · Mg,t,δ
+                                                         
+                     lg,t      g,t   = lg,t    W ; βg,t,δ   · Mg,t,δ
+
+Thus, from Lemma 4.3 in Newey and McFadden (1994) and Assumption 7, it follows that
+                                     n
+                                                                                    !
+                              ∗  1 X        
+                                              est       nev
+                                                                est
+                                                                     
+                                                                           ∗,nev
+                                                                                 
+                         V ar   √       Vi · lg,t Wi ; κ
+                                                       bg,t,δ − lg,t Wi ; κg,t,δ
+                                  n i=1
+                                         n                                      2
+                                      1 X  est                     
+                                                                          ∗,nev
+                                                      bnev      est
+                                                            
+                                  =         lg,t Wi ; κg,t,δ − lg,t Wi ; κg,t,δ
+                                      n i=1
+
+                                  = op (1) ,
+
+which, in turn, implies (A.11).
+
+
+
+
+                                                                  39
+

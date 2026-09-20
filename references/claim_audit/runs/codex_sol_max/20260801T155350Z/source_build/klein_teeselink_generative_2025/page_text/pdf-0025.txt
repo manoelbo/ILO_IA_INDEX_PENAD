@@ -1,0 +1,40 @@
+reductions of 4.0 percent (p = 0.030) and salary declines of £476 (p < 0.001).
+
+
+4.4     Robustness Checks
+We conduct several robustness tests to assess the sensitivity of our results to alterna-
+tive specifications and sample restrictions. First, we examine whether our findings
+depend on the fixed effects structure. Tables A7 and A8 present firm-level results
+using year-by-month fixed effects instead of industry-by-year-by-month fixed effects,
+while Table A9 replicates our occupation-level analysis using job category-by-period
+fixed effects. Despite these alternative specifications, all main conclusions persist:
+low-seniority employment declines at exposed firms, hiring decreases are, if anything
+larger, and occupation-level job postings and salaries fall significantly with exposure.
+    Second, we go one step further to address potential endogeneity concerns, and
+implement an extremely restrictive within-firm specification. To do so, we con-
+struct a firm-by-month-by-seniority panel that measures the number of people at
+low, medium, and high seniority levels working in a given firm in a given month.9 We
+then estimate a triple-difference model that interacts our post-ChatGPT dummy,
+firm-level LLM exposure, and seniority indicators, using the mid-seniority group
+as our reference group. This specification includes firm-by-period fixed effects,
+which absorb all time-varying firm-level shocks such as changes in profits, financing
+costs, industry conditions, management, or any other factor affecting the entire firm
+that might be correlated with both LLM exposure and employment decisions. We
+additionally include firm-by-seniority fixed effects (controlling for stable workforce
+composition preferences) and seniority-by-period fixed effects (capturing aggregate
+seniority-level trends). The results in Table A10 show strong evidence that em-
+ployment declines concentrate in low-seniority positions: relative to mid-seniority
+workers, low-seniority employment at high-exposure firms contracts by an additional
+0.7 percent (p < 0.001), while high-seniority positions show no significant differen-
+tial effect. This result confirms the finding that LLM adoption disproportionately
+affects junior positions (see also Brynjolfsson, Chandar and Chen, 2025; Lichtinger
+and Hosseini Maasoum, 2025).
+   9
+    Out of 7 seniority classifications in the Revelio Labs data, we classify the lowest two categories
+as junior (59% of jobs), the next two categories as mid (26%) and the highest three categories as
+senior (15%).
+
+
+
+                                                 25
+

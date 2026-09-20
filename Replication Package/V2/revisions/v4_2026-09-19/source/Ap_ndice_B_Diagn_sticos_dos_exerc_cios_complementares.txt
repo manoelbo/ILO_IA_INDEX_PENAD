@@ -1,0 +1,2 @@
+## Apêndice B: Diagnósticos dos exercícios complementares
+Este apêndice reúne os diagnósticos dos exercícios do Apêndice D e da extensão espacial declarada na subseção 4.5. Em todos eles, o suporte foi publicado antes dos coeficientes, o tamanho de cada família foi fixado por escrito antes da estimação, e nenhum critério de continuidade dependeu do coeficiente de tratamento.

@@ -1,0 +1,42 @@
+the regressors.9 The problem is that these parameters may not permit identification of
+the parameters of E [yi |x].
+  In short, even assuming that all observations on yi are positive, it is not advisable to
+estimate β from the log-linear model. Instead, the non-linear model has to be estimated.
+
+
+3.1 Estimation
+
+Although most empirical studies use the log-linear form of the constant-elasticity model,
+some authors (see Frankel and Wei, 1993, for an example in the international trade liter-
+ature) have estimated multiplicative models using non-linear least squares (NLS), which
+is an asymptotically valid estimator for (6). However, the NLS estimator can be very
+ineﬃcient in this context as it ignores the heteroskedasticity that, as discussed before, is
+characteristic of this type of model.
+  The NLS estimator of β is defined by
+                                                   X
+                                                   n
+                                   β̂ = arg min          [yi − exp (xi b)]2 ,
+                                               b
+                                                   i=1
+
+which implies the following set of first order conditions:
+                                n h
+                                X          ³ ´i      ³ ´
+                                   yi − exp xi β̂ exp xi β̂ xi = 0.                                     (8)
+                                i=1
+                                                          ³ ´
+These equations give more weight to observations where exp xi β̂ is large because that
+is where the curvature of the conditional expectation is more pronounced. However, these
+are generally also the observations with larger variance, which implies that NLS gives more
+weight to noisier observations. Thus, this estimator may be very ineﬃcient, depending
+heavily on a small number of observations.
+  If the form of V [yi |x] was known, this problem could be eliminated using a weighted-
+NLS estimator. However, in practice, all we know about V [yi |x] is that, in general, it
+goes to zero as E [yi |x] passes to zero. Therefore, an optimal weighted-NLS estimator
+   9
+       When E [ ln (yi )| x] is not a linear function of the regressors, estimating (7) by OLS will produce
+consistent estimates of the parameters of the best linear approximation to E [ ln (yi )| x] (see Goldberger,
+1991, p. 53).
+
+                                                     11
+

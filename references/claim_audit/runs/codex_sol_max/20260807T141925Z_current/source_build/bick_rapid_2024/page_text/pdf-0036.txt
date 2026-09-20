@@ -1,0 +1,49 @@
+Figure A.1: Sample Composition in the Weighted RPS vs. CPS for August and November
+2024
+
+
+
+
+                                           80
+                                           70
+                                 20 30 40 50 60
+                                   Share in RPS (in %)
+                                           10
+                                           0
+
+
+
+
+                                                         0   20         40        60   80
+                                                               Share in CPS (in %)
+
+                                                                 45 Degree Line
+
+Notes: The figure shows for all statistics used in the weighting scheme, the weighted fraction of individuals with
+the respective characteristics in the RPS (on the y-axis) and the CPS (on the x-axis).
+
+
+44, 45-54, 55-64), race and ethnicity (non-Hispanic White, non-Hispanic Black, Hispanic, all
+other racial and ethnic groups), education (high school or less, some college or associate degree,
+bachelor’s degree or more), marital status (married + spouse present, never married, other),
+relationship status (spouse living in the same household, partner living in the same household,
+other), presence of children in the household (yes or no), household income over the last 12
+months (<$50k, $50k-100k, >$100k), and region (Midwest, Northeast, South, and West using
+the Census definition). These groupings were chosen to ensure that each cell size is at least 30.
+We also include 2-digit occupation codes in our weighting scheme. Among the 22 occupations,
+we merge several occupations to ensure a sufficient sample size. In particular, for the June
+2024 survey, we merge a) “Architecture and Engineering Occupations” and “Life, Physical,
+and Social Science Occupations”, b) “Community and Social Service Occupations“ and “Legal
+Occupations”, c) “Healthcare Support Occupations” and “Protective Service Occupations”,
+and d) “Farming, Fishing, and Forestry Occupations” and “Construction and Extraction Oc-
+cupations.” For the August and November 2024 survey, we proceeded similarly but, due to
+the larger sample size, did not need to merge “Architecture and Engineering Occupations” and
+“Life, Physical, and Social Science Occupations.”
+
+   Including all the interaction terms, we have a total of 48 statistics (e.g., gender is one, and
+gender x education is another) which we weight on, with a combined 295 categories (e.g., gender
+has two categories, and gender x education has 2 x 6 = 12 categories; for the June 2024 we only
+have 294 categories because of the additional occupational grouping). To visualize the goodness
+
+                                                                    4
+

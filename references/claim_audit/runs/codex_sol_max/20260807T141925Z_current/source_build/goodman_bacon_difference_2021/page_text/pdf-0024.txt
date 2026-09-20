@@ -1,0 +1,51 @@
+     Figure 8 implements both a joint balance test and the reweighted test using two potential
+
+determinants of marriage market equilibria in 1960: per-capita income and the male/female sex
+
+ratio. Panel A shows that average per-capita income in untreated states ($13,431) is lower than the
+
+average in every timing group except for those that implemented unilateral divorce in 1969 (which
+
+actually get more weight as controls) or 1985. The joint 𝐹𝐹-test, however, fails to reject the null
+
+hypothesis that these means are the same. It is not surprising that such a low power test (12
+
+restrictions on 48 states observations) fails to generate strong evidence against the null. The
+
+reweighed test, on the other hand, does detect a difference in per-capita income of $2,285 between
+
+effective treatment states—those that implemented unilateral divorce in 1970 or later—and
+
+effective control states—pre-1964 reform states, non-reform states, and the 1969 states. Panel B
+
+shows that the 1960 sex ratio is higher in almost all treatment states than in the control states.
+
+While the joint test cannot reject the null of equal means, the reweighted test does reject reweighted
+
+balance (𝑝𝑝 = 0.06). 33
+
+C. Evaluating alternative specifications
+Researchers almost always estimate models other than (2) and use differences across specifications
+
+to evaluate internal validity (Oster 2016) or choose projects in the first place. The DD
+
+decomposition theorem suggests a simple way to understand why estimates change. Stacking the
+
+2x2 DD’s and weights from (7) into vectors, we can write 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 = 𝒔𝒔′ 𝜷𝜷
+                                                                        � 𝟐𝟐𝟐𝟐𝟐𝟐 . Any alternative
+
+specification that equals a weighted average can be written similarly, and the difference between
+
+
+
+
+33
+  One can run a joint test of balance across covariates using a seemingly unrelated regressions (SUR), as suggested
+by Lee and Lemieux (2010) in the regression discontinuity context. The results of these 𝜒𝜒2 tests are displayed at the
+top of figure 6. As with the separate balance tests, I fail to reject the null of equal means across groups and covariates.
+The joint reweighted balance test, however, does reject the null of equal weighted means between effective treatment
+and control groups. With 48 states and 12 timing groups, there are not sufficient degrees of freedom to implement a
+full joint test across many covariates. This is an additional rationale for the reweighted test.
+
+                                                           22
+

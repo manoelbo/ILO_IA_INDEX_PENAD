@@ -1,0 +1,43 @@
+    In regression Equation (1), the dependent variable is urbanization in polity j at time t,
+    while the explanatory variables are time and polity fixed effects, and the number of years
+    of French presence in polity j interacted with the time effects. This regression corresponds
+    to Regression 1. The stable groups assumption is satisfied as there are several polities that
+    did not experience any year of French presence. This is a sharp design.
+
+15. Baum-Snow and Lutz (2011), School Desegregation, School Choice, and Changes
+    in Residential Location Patterns by Race. Tables 2 to 6.
+    In regression Equation (1), the dependent variable is, say, whites public school enrolment
+    in MSA j in year t, while the explanatory variables are MSA and region × time fixed ef-
+    fects, and an indicator for whether MSA j is desegregated. This regression corresponds to
+    Regression 1 with controls. The stable groups assumption is satisfied: between each pair
+    of consecutive years, there are MSAs whose desegregation status does not change. This is
+    a sharp design.
+
+16. Dinkelman (2011), The Effects of Rural Electrification on Employment: New
+    Evidence from South Africa. Tables 4 and 5 Columns 5-8, Table 8 Columns 3-4, Table
+    9 Column 2, and Table 10 Columns 2, 4, and 6.
+    In regression Equation (3), the dependent variable is, say, the first difference of the female
+    employment rate for community j between periods 1 and 2, and the explanatory variables
+    are district fixed effects, the change of electrification status of community j between periods
+    1 and 2, and some statistical controls. The land gradient in community j is used as an
+    instrument for the change in electrification. This regression corresponds to the 2SLS version
+    of Regression 2 with some controls. The stable groups assumption is presumably satisfied:
+    it is likely that there are communities whose land gradient is 0. This is a sharp design.
+
+17. Enikolopov et al. (2011), Media and Political Persuasion: Evidence from Rus-
+    sia. Table 3.
+    In regression Equation (5), the dependent variable is the share of votes for party j in
+    election-year t and subregion s, and the explanatory variables are subregion and election
+    fixed effects, and the share of people having access to NTV in subregion s in election-year t.
+    This regression corresponds to Regression 1. The stable groups assumption is not satisfied:
+    the share of people having access to NTV strictly increases in all regions between 1995 and
+    1999, the two elections used in the analysis. This a fuzzy design: the treatment of interest
+    is whether a person has access to NTV, which varies within (subregion,year) cells.
+
+18. Fang and Gavazza (2011), Dynamic Inefficiencies in an Employment-Based
+    Health Insurance System: Theory and Evidence. Tables 2, 3, 5, and 6, Column 3.
+    In regression Equation (7), the dependent variable is the health expenditures of individual
+    j working in industry i in period t and region r, and the explanatory variables are individual
+
+                                               17
+

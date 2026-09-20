@@ -1,0 +1,75 @@
+38        ILO Working Paper 140
+
+
+
+
+     may occur, but without significantly altering the nature of these roles, and the lowest category of
+     Not Exposed occupations, where GenAI currently has no observable potential to automate tasks.
+
+
+      XX Table 5. GenAI Exposure Gradients: Definition and Interpretation
+
+
+      GenAI Exposure                    Definition (Mean & SD of           Interpretation
+                                        Task Scores)
+
+      Exposed: Gradient 4               μ ≥ 0.6 and μ - σ >= 0.5           High and consistent GenAI exposure across tasks with-
+                                                                           in the occupation. Most current tasks in these jobs have
+      (Highest exposure, low task
+                                                                           a high potential of automation, with little variability in
+      variability)
+                                                                           task-level exposure.
+
+      Exposed: Gradient 3               0.5 ≤ μ < 0.6 and μ + σ ≥ 0.5      Above-moderate occupational exposure: even though
+                                                                           some tasks remain less exposed, the overall potential of
+      (Significant exposure, high
+                                                                           automation of the current tasks with GenAI is growing in
+      task variability)
+                                                                           these occupations.
+
+      Exposed: Gradient 2               0.4 ≤ μ < 0.5 and μ + σ ≥ 0.5      Moderate occupational AI exposure, with high task-level
+                                                                           variability. These occupations include a mix of some tasks
+      (Moderate exposure, high
+                                                                           that are exposed to GenAI and others not at risk, making
+      task variability)
+                                                                           the impact uneven.
+
+      Exposed: Gradient 1               μ < 0.4 and μ + σ ≥ 0.5            Low overall GenAI exposure at the occupational level, but
+                                                                           high variability across tasks. Some tasks within these occu-
+      (Low exposure, high task
+                                                                           pations have an elevated automation potential, even if the
+      variability)
+                                                                           occupation as a whole remains strongly reliant on tasks
+                                                                           that have a low potential of automation.
+
+      Minimal Exposure                  μ < 0.5 and μ + σ > 0.4            Occupations with low GenAI exposure, where some tasks
+                                                                           show moderate automation potential, but overall occupa-
+      (Low exposure, moderate
+                                                                           tional exposure remains limited.
+      task variability)
+
+      Not Exposed                       Occupations that don’t meet        Occupations where most tasks remain relatively unaffect-
+                                        any of the above conditions.       ed by GenAI, with low task variability and a stable low mean
+                                                                           exposure score.
+
+     This revised framework addresses some limitations of the earlier categorization system, particu-
+     larly the interpretative challenges posed by the category, “the big unknown". By expanding the
+     exposure categories into a continuous gradient, the updated framework improves the readabil-
+     ity and interpretability of results and enables us to stack employment estimates into the overall
+     category of exposed occupations (Figure 17 in Section 10).18 It also captures in a more nuanced
+     way how GenAI can impact occupations at varying levels of exposure, based on task-level vari-
+     ability and overall occupational risks. Furthermore, the framework's flexibility enhances its ap-
+     plicability to country-specific contexts, allowing policymakers to better understand the distribu-
+     tion of GenAI's potential impact and prioritize interventions for the most affected groups in the
+     national contexts.
+
+
+
+
+     18
+          One of the limitations of the current approach is that neither ISCO-08 nor the Polish classification system includes information on
+          the relative frequency or importance of tasks within occupations. As a result, all tasks are weighted equally when calculating expo-
+          sure scores. Future research could refine this by incorporating task-level weights, for instance by mapping to occupational databases
+          such as O*NET or by collecting self-reported data on task relevance directly from workers. A similar refinement could concern map-
+          ping the level of skills to individual tasks.
+

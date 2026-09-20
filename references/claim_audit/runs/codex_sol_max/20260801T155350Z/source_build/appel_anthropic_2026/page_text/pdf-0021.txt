@@ -1,0 +1,43 @@
+            Task complexity captures that tasks can vary in their complexity, including
+            how long they take to complete and how difficult they are. A “debugging”
+            task in O*NET could refer to Claude fixing a small error in a function or
+            comprehensively refactoring a codebase—with very different implications
+            for labor demand. We measure complexity through estimated human time to
+            complete tasks without AI, time spent completing tasks with AI, and whether
+            users handle multiple tasks within a single conversation.
+
+            Human and AI skills address how automation interacts with skill levels. If
+            AI disproportionately substitutes for tasks requiring less expertise while
+            complementing higher-skilled work, it could be another form of skill-biased
+            technical change—increasing demand for highly skilled workers while
+            displacing lower skilled workers. We measure whether users could have
+            completed tasks without Claude, and the years of education needed to
+            understand both user prompts and Claude’s responses.
+
+            Use case distinguishes professional, educational, and personal use. Labor
+            market effects most directly follow from workplace use, while educational use
+            may signal where the future workforce is building AI-complementary skills.
+
+            AI autonomy measures the degree to which users delegate decision-making
+            to Claude. Our latest report documented rising “directive” use where users
+            delegate tasks entirely. Tracking autonomy levels—from active collaboration
+            to full delegation—helps forecast the pace of automation.
+
+            Task success measures Claude’s assessment of whether Claude completes
+            tasks successfully. Task success helps assess whether tasks can be automated
+            effectively (can a task be automated at all?) and efficiently (how many
+            attempts would it take to automate a task?). That is, task success matters for
+            both the feasibility and the cost of automation labor tasks.
+
+
+
+
+            Selecting and validating the new measures
+
+            The new dimensions of AI use captured in our data were informed by our
+            recent work on the productivity effects of Claude, feedback we received
+            from external researchers, recent literature on AI’s economic impact through
+            the lens of human capital and expertise (Vendraminell et al., 2025), and
+
+The Anthropic Economic Index Report                                                          21
+

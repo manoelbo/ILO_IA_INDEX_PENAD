@@ -1,0 +1,43 @@
+            CHAPTER 4
+
+           Tasks and productivity
+            In this chapter, we examine how time savings, success rates, and autonomy
+            vary across task types, and what this entails for potential impacts on jobs and
+            productivity.
+
+            The patterns reveal that more complex tasks yield greater time savings, but
+            that this trades off against reliability. In a simple task removal exercise inspired
+            by Autor and Thompson (2025), Claude’s tendency to cover higher-education
+            tasks produces a net deskilling effect across most occupations, as the tasks AI
+            handles are often the more skilled components of a job.
+
+            Claude usage spans a meaningful fraction of tasks across a growing share of
+            occupations. We incorporate success rates into a richer model of job coverage;
+            some occupations with modest coverage see large effects because AI succeeds
+            on their most time-intensive work. Adjusting productivity estimates for task
+            reliability roughly halves the implied gains, from 1.8 to about 1.0 percentage
+            points of annual labor productivity growth over the next decade. However,
+            these estimates reflect current model capabilities, and all signs suggest that
+            reliability over increasingly long-running tasks will improve.
+
+
+
+
+           Tradeoffs in task acceleration
+
+            Our estimates suggest that, in general, the more complex tasks in our data
+            yield a greater time savings (or “speedup”) from AI. We derive this by having
+            Claude estimate both how long a task would take a human working alone
+            and the duration when human and AI work together, which we validated in
+            previous work. Speedup is then the human-alone time divided by the human-
+            with-AI time. So reducing a 1 hour task to 10 minutes would give a 6x speedup.
+
+            The left panel of Figure 4.1 below gives the average speedup against our
+            core measure of task complexity, the human years of schooling required to
+            understand the inputs, all at the O*NET task level.1 It shows that in Claude.ai
+            conversations, for example, prompts requiring 12 years of schooling (a high
+            school education) enjoy a speedup of 9x, while those requiring 16 years
+
+
+The Anthropic Economic Index Report                                                                38
+

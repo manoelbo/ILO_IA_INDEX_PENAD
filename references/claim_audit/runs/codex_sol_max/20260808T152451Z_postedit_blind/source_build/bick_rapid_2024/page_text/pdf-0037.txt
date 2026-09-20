@@ -1,0 +1,44 @@
+of fit, we plot in Figure A.1 for all statistics used in the weighting scheme, the weighted fraction
+of individuals with the respective characteristics in the RPS (on the y-axis) and the CPS (on
+the x-axis) for August and November 2024. The lack of sizeable deviations from the 45-degree
+line demonstrates how well the weighting procedure works. The results are similar for each
+survey wave separately, including the June pilot, and are available upon request.
+
+
+A.2.1    Weighting Adjustment Based on Awareness
+
+In addition to the raking procedure described above to ensure representativeness along de-
+mographic characteristics, our weighting scheme incorporates results from a new experimental
+survey that tested alternative question sequences for measuring genAI awareness and use. This
+experiment revealed that our original question sequence likely underestimated genAI awareness.
+In response, we applied a reweighting adjustment to our 2024 survey waves to align them with
+the higher awareness rates observed under the alternative design. This raises reported usage
+levels modestly (by about 5–6 percentage points) without altering any qualitative patterns in
+the results.
+
+    Details. In survey waves prior to August 2025, respondents were first asked whether they
+had heard of generative AI and, conditional on having heard of it, about their usage. To assess
+whether this structure induced systematic differences in reporting, we introduced a randomized
+experiment in a survey conducted in August 2025. Respondents were randomly assigned to
+one of two groups. Group 1 received the original sequential flow, where they were first asked
+whether they had heard of genAI, and then whether they used it. Alternatively, Group 2 was
+first asked whether they used genAI, and if they did not use it they were asked why, with one
+option being that they had not heard of it.
+
+   Measurement differences across groups. We found that a larger share of respondents
+reported having heard of genAI in Group 2. Specifically, 79.6 percent of Group 1 reported having
+heard of genAI, compared with 88.4 percent of Group 2. Across the two groups, a similar
+share of respondents reported using genAI conditional on having heard of genAI, suggesting
+that differential awareness reporting was evenly split between genAI users and non-users. The
+higher awareness rate in Group 2, combined with similar usage rates conditional on awareness
+between Groups 1 and 2, translated into higher overall usage rates in Group 2. Similar patterns
+held across employment status and for usage at home and at work. These results indicate that
+the initial awareness question (for Group 1) generated a downward bias in reported usage rates.
+One possible explanation for this pattern is that some respondents strategically reported that
+they had not heard of genAI because they guessed they would receive fewer questions with that
+answer.
+
+
+
+                                                 5
+

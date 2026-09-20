@@ -1,0 +1,24 @@
+72     ILO Working Paper 140
+
+
+
+
+     We are further grateful to the peer reviewers for their constructive comments, which significant-
+     ly strengthened the quality of this work:
+
+     Sergei Soares, Senior Economist, ILO Research Department
+
+     Aguinaldo Maciente, Employment and Labour Market Policies Specialist, ILO Office for Brazil
+     (CO-Brasilia)
+
+     Jacek Bieliński, Deputy Head of the Department of Sociology, Assistant Professor, Institute of
+     Sociology, Civitas University
+
+     Santiago Garganta, Senior Researcher, CEDLAS, IIE-FCE, National University of La Plata (UNLP).
+
+     Use of AI tools: We used various AI tools to generate task-level scores, as detailed in the paper.
+     Additionally, we used GPT-4o, Gemini 1.5, and DeepSeek for code debugging in R, Python and
+     JavaScript, suggesting text edits, and for translating tasks, occupational descriptions and the
+     survey form from Polish to English (see Appendix). The writing and calculations are our own –
+     and so are any errors.
+

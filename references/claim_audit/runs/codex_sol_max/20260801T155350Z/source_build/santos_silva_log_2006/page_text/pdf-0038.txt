@@ -1,0 +1,42 @@
+Appendix
+                           Table A1: List of countries.
+ Albania               Denmark         Kenya              Romania
+ Algeria               Djibouti        Kiribati           Russian Federation
+ Angola                Dominican Rp. Korea Rp.            Rwanda
+ Argentina             Ecuador         Laos P. Dem. Rp.   Saudi Arabia
+ Australia             Egypt           Lebanon            Senegal
+ Austria               El Salvador     Madagascar         Seychelles
+ Bahamas               Eq. Guinea      Malawi             Sierra Leone
+ Bahrain               Ethiopia        Malaysia           Singapore
+ Bangladesh            Fiji            Maldives           Solomon Islands
+ Barbados              Finland         Mali               South Africa
+ Belgium-Lux.          France          Malta              Spain
+ Belize                Gabon           Mauritania         Sri Lanka
+ Benin                 Gambia          Mauritius          St. Kitts and Nevis
+ Bhutan                Germany         Mexico             Sudan
+ Bolivia               Ghana           Mongolia           Suriname
+ Brazil                Greece          Morocco            Sweden
+ Brunei                Guatemala       Mozambique         Switzerland
+ Bulgaria              Guinea          Nepal              Syrian Arab Rp.
+ Burkina Faso          Guinea-Bissau Netherlands          Tanzania
+ Burundi               Guyana          New Caledonia      Thailand
+ Cambodia              Haiti           New Zealand        Togo
+ Cameroon              Honduras        Nicaragua          Trinidad and Tobago
+ Canada                Hong Kong       Niger              Tunisia
+ Central African Rp.   Hungary         Nigeria            Turkey
+ Chad                  Iceland         Norway             Uganda
+ Chile                 India           Oman               United Arab Em.
+ China                 Indonesia       Pakistan           U.K.
+ Colombia              Iran            Panama             U.S.A.
+ Comoros               Ireland         Papua New Guinea   Uruguay
+ Congo Dem. Rp.        Israel          Paraguay           Venezuela
+ Congo Rp.             Italy           Peru               Vietnam
+ Costa Rica            Jamaica         Philippines        Yemen
+ Cote D’Ivoire         Japan           Poland             Zambia
+ Cyprus                Jordan          Portugal           Zimbabwe
+
+
+
+
+                                      37
+

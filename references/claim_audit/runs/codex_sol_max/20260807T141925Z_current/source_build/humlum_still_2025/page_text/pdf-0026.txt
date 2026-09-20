@@ -1,0 +1,33 @@
+merely a short-term phenomenon. Third, despite evidence in Section 2.2 that employer
+encouragement boosts work-related benefits of AI chatbots, we find no differential changes
+in earnings for workers whose employers encourage their chatbot use.
+
+
+Heterogeneity by Intensity of Adoption. Figure 6, Panel (a) examines the earnings
+impacts of chatbot use by the intensity of workers’ adoption.
+   We first consider the effects of additional investments in employer-provided chatbots
+and training, offering insights into the impacts of AI chatbot use when firms pursue a more
+comprehensive strategy. Yet even when the “full package” of encouraged use, enterprise
+chatbots, and training substantially increases reported benefits (Section 2.2), we find no
+detectable impact on adopter earnings.
+   Next, we consider whether the null effects reflect the limited intensity of individual
+use. In particular, even if most adopters do not use the tools daily, a meaningful fraction
+of workers report more substantial benefits—such as daily time savings exceeding one
+hour. Turning to workers who use AI chatbots daily or who adopted within the first year
+after ChatGPT’s launch, we find no differential earnings changes since the arrival of AI
+chatbots, despite their substantial engagement with the tools. Similarly, among workers
+who report greater benefits from chatbot use—time savings exceeding one hour per day,
+higher-quality output, and enhanced creativity—we find no differential earnings changes
+in the administrative data. Taken together, although “super users” (those with the most
+intensive adoption or highest reported benefits) certainly appear in our data, even their
+more intensive engagement with AI chatbots has not translated into detectable earnings
+gains.
+   Finally, we consider workers who report new workloads from AI chatbots—and new
+AI-related tasks in particular. Even if chatbot use does not directly affect adopter earnings,
+it could influence them indirectly through the creation of new work. Yet neither workers
+with new workloads nor those with new AI-related tasks have experienced differential
+earnings changes since the arrival of AI chatbots.
+
+
+
+                                             24

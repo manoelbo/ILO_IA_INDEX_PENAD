@@ -1,0 +1,8 @@
+{
+  "component": "rais",
+  "publication_tables": [
+    "tables/table_d_1_rais.csv",
+    "tables/table_b_1_rais_pretrends.csv"
+  ],
+  "status": "rendered"
+}

@@ -1,0 +1,38 @@
+41     ILO Working Paper 140
+
+
+
+
+     XX Figure 18. Changes to occupational exposure between 2023 and 2025 within Gradient 4
+
+
+
+
+     On the other hand, several highly digitized occupations have seen an increase in their mean
+     scores. This applies, for example, to web and media developers, statistical and database special-
+     ists, as well as financial and software-related occupations (Figure 17). A key factor behind this shift
+     is the rapid expansion of AI capabilities since our previous study in 2023. At that time, large lan-
+     guage models (LLMs) were primarily viewed as advanced text generators. Since then, they have
+     acquired multimodal abilities, allowing them to process and generate not only text but also im-
+     ages, audio, and video. Additionally, these models have been gaining some agentic capabilities,
+     allowing them to execute multi-step tasks autonomously, interact with software environments,
+     and make decisions based on contextual inputs. These advancements significantly broaden the
+     scope of tasks that can be at least partially automated using GenAI, with software development
+     and multimedia sectors among some of the leading adopters.
+
+     While many of these occupations fall within gradient 3 and 4, one must consider that these roles
+     are deeply intertwined with digital technologies, and indeed, many of these occupations have
+     emerged as a result of technological advancements. The scores reflect the high potential of auto-
+     mation among their current tasks, but these occupations also possess a strong capacity to evolve
+     and develop new tasks through innovative application of GenAI and related digital tools. In pre-
+     vious technological transitions, this type of adaptation was exemplified by the well-known case
+     of bank tellers following the diffusion of automatic teller machines (ATMs) in the 1990s (Bessen,
+     2016). As ATMs automated routine cash withdrawals, they also lowered operational costs, ena-
+     bling banks to open more branches and, in turn, increasing the demand for bank tellers in roles
+     that required more complex customer service and advisory tasks. One can therefore expect many
+     tasks in these occupations not to remain static but rather to evolve alongside technological ad-
+     vancements, driven by the expanding capabilities of GenAI. A key question – largely dependent
+     on the policies shaping this evolution – is to what extent these jobs can retrain and retain exist-
+     ing workers, rather than drive labor churn through workforce replacement and the recruitment
+     of typically younger specialists (Ananian et al., 2006).
+

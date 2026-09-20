@@ -1,0 +1,38 @@
+Figure 3.2: Per capita income predicts how Claude is used across countries.
+Each plot shows the bivariate relationship between the share of a specific use case (work, coursework, or personal) for Claude.ai
+conversations and log GDP per capita. Labels show the ISO-3166-1 country codes. We only include countries with at least 200
+observations in our sample for this figure because of the uncertainty of the measure for low-usage countries in our random sample.
+The underlying data includes Claude.ai Free, Pro and Max usage.
+
+
+
+              Multiple factors could contribute to these patterns:
+              •    Personal use cases may be more common as AI adoption increases and more
+                   diverse users use AI, or existing users explore wider applications of AI. In
+                   contrast, countries with lower per capita adoption (which is correlated with
+                   lower per capita income) may be focused on specific use cases such as coding
+                   or as coursework.
+
+              •    Countries differ in their ability to pay for Claude, and coursework use cases
+                   may be better suited to free Claude usage than complex use cases in work
+                   areas such as software engineering.
+
+              •    Users in higher-income countries may have more other resources, such as
+                   free time and continuous Internet access, that enable non-essential personal
+                   use cases.
+
+
+
+
+              International and US adoption differ across
+              economic primitives
+
+              The economic primitives introduced in this report allow us to analyze some
+              of the factors that may drive differential adoption. When analyzing the
+              relationship between the Anthropic AI Usage Index (AUI) and core economic
+              primitives as well as GDP, we observe that certain patterns hold for both
+              countries and US states. For example, we replicate the finding from our prior
+
+
+The Anthropic Economic Index Report                                                                                                  30
+

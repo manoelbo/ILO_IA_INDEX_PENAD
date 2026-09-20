@@ -1,0 +1,22 @@
+### B.2 Tendências prévias da PNAD Contínua
+**Tabela B.2: Tendências prévias no modelo e na amostra exatos — PNAD Contínua**
+
+[TABLE]
+Desfecho | Amostra | Períodos pré | p conjunto | p linear | Períodos com p \< 0,05 | Classificação
+Informalidade | completa | 42 | \< 0,001 | 0,523 | 0 | falha
+Informalidade | sem 2020 | 38 | \< 0,001 | 0,061 | 0 | falha
+Conta própria | completa | 42 | 0,002 | 0,928 | 0 | falha
+Conta própria | sem 2020 | 38 | \< 0,001 | 0,921 | 0 | falha
+Ocupados, total | completa | 42 | \< 0,001 | \< 0,001 | 2 | falha
+Ocupados, total | sem 2020 | 38 | \< 0,001 | \< 0,001 | 2 | falha
+Ocupados formais | completa | 42 | \< 0,001 | 0,003 | 3 | falha
+Ocupados formais | sem 2020 | 38 | \< 0,001 | 0,003 | 2 | falha
+Ocupados informais | completa | 42 | \< 0,001 | 0,190 | 3 | falha
+Ocupados informais | sem 2020 | 38 | \< 0,001 | 0,647 | 3 | falha
+Rendimento (log) | completa | 42 | \< 0,001 | \< 0,001 | 0 | falha
+Rendimento (log) | sem 2020 | 38 | \< 0,001 | \< 0,001 | 1 | falha
+[/TABLE]
+
+> *Notas: as doze classificações falham, inclusive todas as que excluem 2020. O diferencial de tendência antecede o período pós-tratamento e não é explicado pela mudança de coleta de 2020. As matrizes de covariância dos períodos pré são positivas semidefinidas em todos os casos. A quebra de coleta de 2020 foi diagnosticada como diferencial, com a maior mudança de distância entre expostos e controle chegando a 3,39 pontos no índice de população ponderada; a especificação sem 2020 é obrigatória por desenho e está reportada acima.*
+O suporte foi publicado antes de qualquer coeficiente. Sob a regra de maioria de 0,50, a tabela de tratamento contém 32 grupos ocupacionais tratados, 77 de controle e 14 intermediários excluídos. O painel de estoque reúne 32 tratados e 69 de controle observados; o braço individual reúne 46 grupos com observações expostas e 84 com controle. As dezoito sensibilidades declaradas, que incluem o tratamento do trimestre de transição, a exclusão de 2020, o limiar alternativo de 0,75 e o tratamento por grupo ocupacional no braço individual, preservam os sinais principais e permanecem fora da família E, sem ajuste de multiplicidade e sem promoção.
+**Uma restrição de inferência precisa ficar declarada.** Os erros-padrão são agrupados por grupo ocupacional e **não implementam o desenho amostral complexo completo da PNAD Contínua**: estratos e unidades primárias de amostragem não integram a inferência registrada. As estimativas pontuais usam o peso amostral; a variância, não o plano amostral inteiro.

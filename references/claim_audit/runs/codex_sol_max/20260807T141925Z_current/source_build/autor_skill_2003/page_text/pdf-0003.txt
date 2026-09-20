@@ -1,0 +1,45 @@
+              SKILL CONTENT OF TECHNICAL CHANGE               1281
+
+capital substitutes, and increase demand for nonroutine task input,
+which computer capital complements. In net, these forces will raise
+relative demand for highly educated workers, who hold comparative
+advantage in nonroutine versus routine tasks.
+     To test these predictions, we pair representative data on job
+task requirements from the Dictionary of Occupational Titles
+(DOT) with samples of employed workers from the Census and
+Current Population Survey to form a consistent panel of industry
+and occupational task input over the four-decade period from
+1960 to 1998. A unique virtue of this database is that it permits
+us to analyze changes in task input within industries, education
+groups, and occupations—phenomena that are normally unob-
+servable. By measuring the tasks performed in jobs rather than
+the educational credentials of workers performing those jobs, we
+believe our study supplies a missing conceptual and empirical
+link in the economic literature on technical change and skill
+demand.
+     Our analysis provides four main pieces of evidence support-
+ing our model.
+     1) Commencing in the 1970s, labor input of routine cognitive
+        and manual tasks in the U. S. economy declined, and labor
+        input of nonroutine analytic and interactive tasks rose.
+     2) Shifts in labor input favoring nonroutine and against rou-
+        tine tasks were concentrated in rapidly computerizing
+        industries. These shifts were small and insignicant in
+        the precomputer decade of the 1960s, and accelerated in
+        each subsequent decade.
+     3) The substitution away from routine and toward nonrou-
+        tine labor input was not primarily accounted for by edu-
+        cational upgrading; rather, task shifts are pervasive at all
+        educational levels.
+     4) Paralleling the within-industry task shifts, occupations
+        undergoing rapid computerization reduced input of rou-
+        tine cognitive tasks and increased input of nonroutine
+        cognitive tasks.
+     We consider a number of economic and purely mechanical
+alternative explanations for our results. Two supply side factors
+that we study in particular are the rising educational attainment
+of the workforce and the rising human capital and labor force
+attachment of women— both of which could potentially generate
+shifts in job task composition independent of demand shifts. As
+we show below, the task shifts that we document—and their
+

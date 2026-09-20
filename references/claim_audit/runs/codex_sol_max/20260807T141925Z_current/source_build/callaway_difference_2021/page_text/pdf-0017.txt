@@ -1,0 +1,53 @@
+                                                                                                     bal
+practice, one should consider this “robustness” versus “efficiency” trade-off when choosing between θes
+and θes .
+                        bal (e; e0 ) closely resembles the empirical practice of only reporting event-study-
+Remark 8. We note that θes
+type coefficients for the event periods that do not suffer from compositional changes, see, e.g., McCrary
+(2007) and Bailey and Goodman-Bacon (2015). An important caveat is that our proposed event-study-type
+           bal (e; e0 ) are not based on dynamic TWFE specifications akin to (3.3), and therefore bypass
+estimands θes
+the pitfalls associated with (3.3) highlighted by Sun and Abraham (2020).
+
+3.1.2       How do average treatment effects vary across groups?
+
+It is also straightforward to aggregate our group-time average treatment effects to understand hetero-
+geneity in the effect of participating in the treatment across groups. Although understanding this sort
+of heterogeneity is relatively less common in applied work than trying to understand dynamic effects as
+discussed above, there are still a number of cases in economics where understanding this sort of hetero-
+geneity may be of interest. For example, work on the effect of graduating during a recession on labor
+market outcomes (Oreopoulos et al. (2012)) or the effect of job displacement across the business cycle
+(Farber (2017)) are related to heterogeneous effects across groups. More generally, these parameters are
+useful for understanding if the effect of participating in the treatment was larger for groups that are
+treated earlier relative to groups that are treated later. In addition, in the next section, these parameters
+will be the building block for our main measure of the overall effect of participating in the treatment. To
+consider heterogeneous effects across groups, we consider the following parameter
+                                                                T
+                                                       1       X
+                                     θsel (g̃) =                 AT T (g̃, t).                          (3.7)
+                                                    T − g̃ + 1
+                                                               t=g̃
+
+θsel (g̃) is the average effect of participating in the treatment among units in group g̃, across all their
+post-treatment periods.
+
+3.1.3       What is the cumulative average treatment effect of the policy across all groups until
+            time t̃?
+
+In some applications, researchers may want to construct an aggregated target parameter to highlight
+treatment effect heterogeneity with respect to calendar time. In economics, for example, researchers
+might wish to study heterogeneous treatment effects across the business cycle. The average effect of
+participating in the treatment in time period t (across groups that have adopted the treatment by period
+t) is given by
+                                          X
+                              θc (t̃) =         1{t̃ ≥ g}P (G = g|G ≤ t̃)AT T (g, t)                    (3.8)
+                                          g∈G
+
+An extension to this parameter is to think about the cumulative effect of participating in the treatment
+up to some particular time period. For instance, in active labor market applications, policy makers may
+want to know the cumulative average effect of a given training program on earnings from the year that
+the first group of people were trained until year t̃. This would provide a measure of the cumulative
+
+
+                                                          17
+

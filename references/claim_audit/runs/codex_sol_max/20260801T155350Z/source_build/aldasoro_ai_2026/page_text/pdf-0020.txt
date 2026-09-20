@@ -1,0 +1,48 @@
+resemble EU firms in terms of observable characteristics.6
+
+   We run pooled cross-section regressions to investigate the effects of AI adoption on
+labor productivity and employment :
+
+                     yit = β1 Adopterit + β2 Xit−1 + νage + ϕsize + µcst + ϵit ,                        (1)
+
+where i denotes the firm and t the year. The dependent variable yit is either labor
+productivity or employment at the firm level. The explanatory variable Adopterit takes
+value 1 for AI-adopting firms and 0 otherwise (either the actual series or the AI adoption
+instrumented after matching with US firms, as discussed above)7 and Xit−1 is a vector of
+controls which includes investment, profitability, financial leverage and the logarithm of
+total assets (all lagged by one period to moderate simultaneity effects). We add a full set
+of fixed effects, including (i) size groups ϕsize ∈ {micro, small, medium, large} to control
+for the possibility that AI adoption differs for different size categories, (ii) age groups
+νage ∈ {< 5y, 5 − 10y, 10 − 20y, > 20y} to account for potentially confounding variation
+that may be a function of firm age, and (iii) country-sector-wave fixed effects to absorb
+possible idiosyncratic shocks in AI adoption rates across firms in the same country-sector-
+time group. We control for the three sets of fixed effects in all specifications.8
+
+    To investigate potential heterogeneity in the effects of AI adoption on labor productiv-
+ity, we augment Equation (1) by introducing interaction terms between AI adoption and
+two key dimensions: (i) firm size group and (ii) the share of investment allocated to dif-
+ferent categories of tangible and intangible assets. For the latter, we use EIBIS reported
+data on investment in the last financial year (divided by total assets) attributed to any
+of the six categories: (i) land and buildings, (ii) machinery and equipment, (iii) research
+and development, (iv) data, software and IT, (v) training and (vi) business processes and
+organization.
+
+    When estimating regressions, it is important to account for the fact that we use
+
+   6
+       The effectiveness of the matching procedure is further supported by the strong explanatory power
+of matching covariates in accounting for differences in AI adoption rates between US-matched and non-
+matched firms, as documented in the Appendix.
+     7
+       Since the matching algorithm uses k-nearest neighbors, a US-matched value is set to 1 if the majority
+of the nearest neighbors are AI adopters, and 0 otherwise.
+     8
+       Even in the presence of an exogenous instrument, there may still be unobserved global shocks or
+sectoral trends affecting both US and EU firms. We account for this by running the baseline model with
+different set of fixed effects in Table B.2 in the Appendix. In particular, we separate country-wave from
+sector-wave fixed effects.
+
+
+
+                                                    14
+

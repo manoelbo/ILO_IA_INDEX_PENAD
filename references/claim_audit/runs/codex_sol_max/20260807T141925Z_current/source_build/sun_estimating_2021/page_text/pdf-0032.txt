@@ -1,0 +1,54 @@
+Chetty, Raj, John N. Friedman, SÃžren Leth-Petersen, Torben Heien Nielsen, and Tore Olsen, “Active
+
+  vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts: Evidence from Denmark,” The
+
+  Quarterly Journal of Economics, 2014, 129 (3), 1141–1219.
+
+de Chaisemartin, Clément and Xavier D’Haultfœuille, “Two-Way Fixed Effects Estimators with Hetero-
+
+  geneous Treatment Effects,” American Economic Review, September 2020, 110 (9), 2964–96.
+
+Deryugina, Tatyana, “The Fiscal Cost of Hurricanes: Disaster Aid versus Social Insurance,” American
+
+  Economic Journal: Economic Policy, August 2017, 9 (3), 168–98.
+
+Dobkin, Carlos, Amy Finkelstein, Raymond Kluender, and Matthew J. Notowidigdo, “The Economic
+
+  Consequences of Hospital Admissions,” American Economic Review, February 2018, 108 (2), 308–52.
+
+Gibbons, Charles E., Juan Carlos Suárez Serrato, and Michael B. Urbancic., “Broken or Fixed Ef-
+
+  fects?,” Journal of Econometric Methods, January 2019, 8 (1), 1–12.
+
+Goodman-Bacon, Andrew, “Difference-in-Differences with Variation in Treatment Timing,” Working Pa-
+
+  per 25018, National Bureau of Economic Research September 2018.
+
+He, Guojun and Shaoda Wang, “Do College Graduates Serving as Village Officials Help Rural China?,”
+
+  American Economic Journal: Applied Economics, October 2017, 9 (4), 186–215.
+
+Heckman, James, Hidehiko Ichimura, and Petra E. Todd, “Matching As An Econometric Evaluation
+
+  Estimator: Evidence from Evaluating a Job Training Programme,” Review of Economic Studies, 1997, 64
+
+  (4), 605–654.
+
+  ,   , Jeffrey Smith, and Petra Todd, “Characterizing Selection Bias Using Experimental Data,” Econo-
+
+  metrica, 1998, 66 (5), 1017–1098.
+
+Hendren, Nathaniel, “Knowledge of Future Job Loss and Implications for Unemployment Insurance,”
+
+  American Economic Review, July 2017, 107 (7), 1778–1823.
+
+Malani, Anup and Julian Reif, “Interpreting pre-trends as anticipation: Impact on estimated treatment
+
+  effects from tort reform,” Journal of Public Economics, 2015, 124, 1 – 17.
+
+Rambachan, Ashesh and Jonathan Roth, “An Honest Approach to Parallel Trends,” Working Paper, Har-
+
+  vard University September 2020.
+
+                                                   32
+

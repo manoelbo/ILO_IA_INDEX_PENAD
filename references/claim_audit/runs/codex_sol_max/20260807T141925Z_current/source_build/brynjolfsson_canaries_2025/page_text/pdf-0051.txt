@@ -1,0 +1,11 @@
+Figure A22: Occupational AI exposure according to Eloundou et al. (2024) compared to interest
+rate exposure according to Zens et al. (2020). We measure interest rate exposure using the 2-year
+cumulative impulse response function identified via Cholesky decomposition. We use the crosswalk
+from Autor (2015) available on David Dorn’s website to convert from 1990 occupation codes to
+2010 Census codes. We then use a crosswalk to convert the 2010 Census codes to 2010 SOC codes,
+successfully merging to about 500 occupations.
+
+
+
+
+                                               51

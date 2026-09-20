@@ -1,0 +1,38 @@
+                                                                                                  6
+
+own information and AI information – an example of such a deviation is correlation neglect
+(Enke and Zimmermann, 2019). Our theoretical analysis shows that if agents exhibit only
+automation neglect, then AI assistance unambiguously increases diagnostic quality. All other
+forms of biases we consider result in AI assistance reducing diagnostic quality for certain
+realizations of AI and own information.
+We then use the data from our experiment to estimate empirical analogs of the deviations
+described above and select the model that best describes the treatment effects we document.
+This exercise requires us to solve several challenges unique to a naturalistic setting where the
+experimenter does not control the information structure. We find that in the model that best
+describes our data, agents exhibit automation neglect and act as if their own information
+and AI predictions are independent (conditional on the truth), even though this is not the
+case. Interestingly, we do not find evidence of substantial own-information bias or neglect.
+Finally, we take our data to estimate the trade-off between diagnostic quality and radiologist
+time when AI predictions can be selectively utilized, and design an optimal human-AI collab-
+orative system. For each pathology and conditional on the AI prediction for that pathology,
+our experiment allows us to compute both the diagnostic quality and time taken if a patient
+case is diagnosed by the AI, a randomly chosen radiologist without AI assistance, and a radi-
+ologist assisted with the AI prediction. We use these data to train a classification algorithm
+that yields the frontier of diagnostic quality and total radiologist time. The results from this
+exercise mirror our treatment effect analysis – because radiologists take more time with AI
+and do not correctly incorporate the AI’s information, the majority of cases are optimally
+decided either by the radiologist or the AI alone but not by the radiologist with access to AI.
+
+Related Literature
+A growing body of literature in computer science has explored the predictive performance
+of humans versus machine learning algorithms, with radiology often serving as a key area of
+application (Rajpurkar et al., 2018, 2017). Additionally, the study of human-AI collaboration
+has become an increasingly important facet of medical AI research (Tschandl et al., 2020;
+Reverberi et al., 2022). For comprehensive overviews of these areas, see Rajpurkar et al.
+(2022); Hosny et al. (2018); Zhou et al. (2021); Lai et al. (2021). Research on the effectiveness
+of human-AI collaboration is evolving, with notable studies in radiology including Rajpurkar
+et al. (2020); Kim et al. (2020); Park et al. (2019); Seah et al. (2021); Fogliato et al. (2022). An
+active literature studies whether AI assistance benefits radiologists, and which radiologists
+benefit the most (Rajpurkar et al., 2020; Seah et al., 2021; Ahn et al., 2022; Sim et al.,
+2020; Gaube et al., 2023). In contrast to prior studies, we recruit a large group of high-
+

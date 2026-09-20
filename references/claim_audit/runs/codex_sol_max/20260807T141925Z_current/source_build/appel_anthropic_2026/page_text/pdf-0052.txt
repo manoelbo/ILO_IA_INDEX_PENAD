@@ -1,0 +1,50 @@
+            The counterpart to these transformative labor market effects is the broader
+            impact on growth and productivity. On the one hand, incorporating task
+            reliability into our analysis diminishes the implied effect on labor productivity
+            growth as informed by current Claude usage patterns. If bottleneck tasks bind,
+            the implied impact diminishes further. On the other hand, the continuing
+            growth in model capabilities suggests that both task coverage and task success
+            may increase, which, in turn, could increase productivity impacts.
+
+
+
+
+            1
+                When we study the correlation between primitives with the O*NET,
+                we restrict to tasks appearing in at least 100 conversations to reduce
+                measurement error. In the coverage analysis, we use all tasks above the
+                privacy threshold of 15.
+
+            2
+                Our online appendix is available at https://huggingface.co/datasets/Anthropic/
+                EconomicIndex.
+
+            3
+                See also Tomlinson et al (2025) for a related AI applicability score.
+
+            4
+                We generate embeddings for each task statement using a pretrained sentence
+                transformer (all-mpnet-base-v2) and predict education with Ridge regression.
+
+            5
+                On the other hand, some historical evidence suggests that when technologies
+                automating job tasks appear in patent data, employment and wages
+                subsequently fall for exposed occupations (Webb 2020).
+
+            6
+                When we first assessed the aggregate productivity implications of Claude
+                usage, we relied on a sample of 100k Claude.ai conversations from Fall 2025.
+                Based on the set of tasks for which we observed speedups, we estimated that
+                labor productivity could be 1.8 percentage points higher per year over the
+                next decade. Expanding the sample to 1M observations means that we need
+                to take a stand on how to handle very infrequently occurring tasks—which
+                are very common given that usage follows a power law, as we documented
+                in our past report. We choose a threshold of 0.02% because it replicates
+                our previous results for our sample of Claude.ai conversations. For privacy-
+                preserving reasons, we only ever analyze tasks with at least 15 observations,
+                or an implied threshold of 0.015% for a 100k sample. And so our results are
+                internally consistent across samples. If we do not impose a restriction on our
+
+
+The Anthropic Economic Index Report                                                              52
+

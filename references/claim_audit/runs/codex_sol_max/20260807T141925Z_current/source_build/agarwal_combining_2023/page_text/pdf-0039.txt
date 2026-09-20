@@ -1,0 +1,37 @@
+                                                                                             39
+
+Thus, consistent with the conclusions above, we find evidence for automation neglect, but no
+meaningful own-information bias or neglect. These results suggest that the estimated model
+represents a good approximation to the experimental data.
+Taken together, the results indicate that while there are large potential gains from combining
+radiologists’ assessments with AI predictions, biases in radiologists’ use of AI assistance
+undercuts these gains. We find that radiologists exhibit both automation-neglect and signal
+dependence neglect. These mistakes lead to no better diagnostic performance when provided
+with AI assistance. One approach for addressing this issue is to provide radiologists with
+better training, an avenue we leave for future research. A second approach is to design better
+collaborative systems that are built on predicting the types of cases in which human experts
+outperform AI predictions and vice-versa, and the types of cases in which AI-assisted humans
+do best, an issue we turn to next.
+
+
+6   Designing Human-AI Collaboration
+
+We now consider the design of collaborative systems between AI and radiologists. The designs
+we consider restrict attention to systems that use the AI signal to delegate a case to one of
+three modalities – radiologists alone, the AI alone, or the radiologist with access to the AI.
+As a warm-up for this exercise, it is useful to examine the predictive performance of the
+different modalities, conditional on sA (see figure 7). Recall from the conditional treatment
+effect analysis, radiologists’ assessments improve with AI in the lowest and the two highest
+bins of AI signals. Figure 7 also shows that in two out of three ranges in which the AI improves
+radiologists’ decision-making that its own performance is even better than the performance
+of the radiologists with AI.
+However, this figure misses the differences in the human time costs across modalities. Our
+analysis of the estimated treatment effects shows that radiologists take more time when
+provided with AI predictions. Moreover, using AI predictions alone saves on costly human
+effort. This points to the conclusion that in most cases where AI improves decision-making,
+one is at least as well off by relying exclusively on AI prediction. But using only AI or never
+assisting humans with AI predictions may come at the cost of performance in cases when
+using the human alone is superior.
+Motivated by these observations, we now examine if there is a trade-off between the marginal
+costs of human effort and diagnostic performance.
+

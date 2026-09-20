@@ -1,0 +1,22 @@
+Figure 3.5: Relationship between task success and human education.
+Plots on the left show the bivariate correlation between task success and years of education needed to understand the human
+prompts in the conversation. Plots on the right show partial regression where we additionally control for GDP per capita, AI autonomy,
+automation percent, share of work and coursework use cases, human without AI time, human with AI time, multitasking and human
+ability (see chapter 2 for detailed definitions of these variables). Labels show ISO-3166-1 country codes and ISO-3166-2 region codes.
+We only include countries with at least 200 and states with at least 100 observations in our sample for this figure because of the
+uncertainty of the measure for low-usage states in our random sample. The underlying data includes Claude.ai Free, Pro and Max usage.
+
+
+
+
+              How humans prompt is how Claude responds
+
+              We find a very high correlation between human and AI education, i.e. the
+              number of years of education required to understand a human prompt or the
+              AI’s response (countries: r = 0.925, p < 0.001, N = 117; US states: r = 0.928, p <
+              0.001, N = 50). This highlights the importance of skills and suggests that how
+              humans prompt the AI determines how effective it can be. This also highlights
+
+
+The Anthropic Economic Index Report                                                                                                34
+

@@ -1,0 +1,4 @@
+proxy,municipality_clusters_nominal,uf_clusters_nominal,continuous_proxy_distinct_values,split_proxy_distinct_values,effective_municipality_clusters,effective_uf_clusters,largest_uf_leverage_code,largest_uf_leverage_share,classification
+fixed_broadband_penetration,657,27,657,2,445.52319730391685,11.729728321876642,35,0.20095089216859133,limited
+digital_intensive_admission_share,657,27,655,2,532.5299102188461,9.194907954202689,35,0.25653016023370157,thin
+pnad_internet_use_2021,657,27,27,2,516.8162928342913,10.149988846574818,35,0.23015543834941768,limited

@@ -1,0 +1,46 @@
+1312          QUARTERLY JOURNAL OF ECONOMICS
+
+
+bution— college graduates and high school dropouts—similar
+patterns prevail, but they are less precisely estimated. In all
+cases, the estimates are of the expected sign, but none is statis-
+tically signicant. For college graduates, this is likely to reect
+“topping out,” since this education group was already at the
+extreme of the distribution for all tasks. We are less certain why
+the relationships are weaker for high school dropouts, but one
+possibility is that this group has insufcient human capital to be
+effectively redeployed to alternative job tasks.
+     To assess whether these within-education group shifts are a
+quantitatively important component of the overall change in in-
+dustry task content, panel F of Table V presents a decomposition
+of industry task changes into within and between education
+group components. This exercise shows that in every case, within-
+education group task upgrading explains a substantial share, 24
+to 111 percent, of total task upgrading over these two decades.
+For example, the annual within-industry change in nonroutine
+interactive tasks over the period 1980 –1998 is 4.4 centiles per
+decade, of which 3.1 centiles (71 percent) is accounted for by
+contemporaneous industry computerization. Within-education
+group task changes explain the bulk of these shifts: 78 percent of
+the explained component and 55 percent of the total. Subdividing
+the explained within-education group component further, 59 per-
+cent is due to changes in task assignment among high school
+graduates and those with some college, and the rest is equally
+accounted for by task shifts among college graduates and high
+school dropouts.
+     This exercise demonstrates that within-education group
+shifts in task content are the primary channel through which the
+structure of workplace tasks has shifted over the past two de-
+cades. Furthermore, a large portion of the within-education group
+changes are accounted for by cross-industry patterns of computer
+adoption. This suggests to us that task change is antecedent to
+educational upgrading, rather than merely a reection of it.
+
+V.B. Task Shifts within Occupations
+    The analyses above exploit shifts in occupational composi-
+tion—the extensive margin—to quantify changes in task input.
+This approach is imperfect since it assumes that the tasks per-
+formed within occupations are static, which is unlikely to be
+accurate over long time intervals. Moreover, our task framework
+implies that this assumption should be violated in a specic
+

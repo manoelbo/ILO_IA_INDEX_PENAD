@@ -1,0 +1,58 @@
+Regression 1X (Fixed-effects regression with covariates)
+Let βbfXe denote the coefficient of Dg,t in an OLS regression of Yi,g,t on group and period fixed
+                                      
+effects, Dg,t , and Xg,t . Let β = E βbX .
+                                X
+                                 fe         fe
+
+Then, we need to modify Assumptions 3-5. Hereafter, we let Xg = (Xg,1 , ..., Xg,t ).
+
+Assumption S3 (Independent groups with covariates) The vectors (Yg,t (0), Yg,t (1), Dg,t , Xg,t )1≤t≤T
+are mutually independent.
+
+Assumption S4 (Strong exogeneity and common trends with covariates) There is a vector γ
+of same dimension as Xg,t such that
+
+ E (Yg,t (0) − Yg,t−1 (0) − (Xg,t − Xg,t−1 )0 γ|Dg , Xg ) = E (Yg,t (0) − Yg,t−1 (0) − (Xg,t − Xg,t−1 )0 γ)
+
+and E (Yg,t (0) − Yg,t−1 (0) − (Xg,t − Xg,t−1 )0 γ) does not vary across g.
+
+Rearranging, Assumption S4 requires that
+
+                E (Yg,t (0)|Dg , Xg ) − E (Yg,t−1 (0)|Dg , Xg ) = (Xg,t − Xg,t−1 )0 γ + λt ,
+
+for some constant λt . Then, Assumption S4 allows for the possibility that groups experience
+different evolutions of their Yg,t (0) over time, but it requires that those differential evolutions
+are fully accounted for by a linear model in Xg,t − Xg,t−1 , the change in a group’s covariates.
+Assumption S4 is implied by the linear model that is often invoked to justify the use of the
+FE regression with covariates. For instance, the use of Regression 1X is often justified by the
+following model:
+                                              0
+                      Yg,t (0) = γg + λt + Xg,t γ + ηg,t , E(ηg,t |Dg , Xg ) = 0.               (24)
+Equation (24) implies Assumption S4, but it does not imply Assumption 5.
+An interesting special case is when the control variables are group-specific linear trends. Then,
+Assumption s4 requires that for all t ≥ 2,
+
+                         E (Yg,t (0)|Dg , Xg ) − E (Yg,t−1 (0)|Dg , Xg ) = γg + λt ,
+
+for some constants γg and λt . From t − 1 to t, the evolution of Y (0) in group g should deviate
+from its group-specific linear trend γg by an amount λt common to all groups. Then, Assumption
+S4 is a “common deviation from linear trends” assumption, which may be more plausible than
+the standard common trends assumption.
+Let εX
+     g,t denote the residual of observations in cell (g, t) in the regression of Dg,t on group and
+period fixed effects and Xg,t . One can show that if the regressors in Regression 1 are not collinear,
+                                                                           P
+the average value of εXg,t across all treated (g, t) cells differs from 0:
+                                                                                                      X
+                                                                            (g,t):Dg,t =1 (Ng,t /N1 )εg,t 6= 0.
+Then, let
+                                         X
+                                                        εXg,t
+                                       wg,t = P                Ng,t X
+                                                                       .
+                                                 (g,t):Dg,t =1 N1 εg,t
+
+
+                                                      8
+

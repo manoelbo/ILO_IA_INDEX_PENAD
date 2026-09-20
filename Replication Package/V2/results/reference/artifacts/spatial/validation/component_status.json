@@ -1,0 +1,13 @@
+{
+  "causal_effect_claim_authorized": false,
+  "component": "spatial",
+  "cross_language_max_coefficient_difference": 4.1511238890734603e-13,
+  "cross_language_max_standard_error_difference": 3.583848912080967e-10,
+  "cross_language_status": "pass",
+  "declared_slots": 12,
+  "estimated_coefficients": 0,
+  "family": "F",
+  "p_values_created": 0,
+  "status": "stopped_at_support_gate",
+  "support_gate_open": false
+}

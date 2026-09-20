@@ -1,0 +1,36 @@
+47     ILO Working Paper 140
+
+
+
+
+     levels of exposure, highlighting the expanding abilities of GenAI technology to potentially auto-
+     mate more specialized tasks in professional and technical roles.
+
+     Overall, the revised global employment estimates of GenAI exposure are lower than in our 2023
+     paper, though still, one in four jobs globally (24%) has some degree of exposure, and one in
+     three jobs in high-income countries. What is particularly striking is the continued association of
+     gender with occupations with higher levels of exposure, especially in higher-income countries.
+     Compared to 7.8% of female employment and 2.9% of male employment in high-income coun-
+     tries classified as having high automation potential in 2023, the current study increases these
+     figures to 9.6% for females and 3.5% for males, respectively.
+
+     Notwithstanding these findings, we stress that such exposure does not imply the immediate au-
+     tomation of an entire occupation, but rather the potential for a large share of its current tasks to
+     be performed using this technology. Whether this leads to the disappearance of an occupation
+     or workforce replacement is a more complex question – one that will depend on the initial deci-
+     sion to adopt the technology, but also the extent to which individuals in these occupations are
+     given opportunities to learn to work with these technologies and adapt to the evolving nature
+     of their tasks. As argued by numerous economists, the key to unlocking the productivity bene-
+     fits of GenAI lies not in the search of outright labour savings, but in the extent to which human
+     expertise can be complemented with new technological capacities to reshape occupations and
+     generate additional value-added (Acemoglu, 2024; Autor, 2024).
+
+     Ensuring such positive synergies necessitates an approach to technology’s adoption at the work-
+     place that is human-centered. With one in four workers across the world in an occupation with
+     some degree of GenAI exposure, there is need to ensure that the transition is managed through
+     social dialogue, both to minimize “technological unemployment” and the hardship associated
+     with it, but also to ensure that for the majority who remain employed, the technology is imple-
+     mented in a way that that supports them in carrying out their jobs. Workers know their jobs best
+     and can play an important role in the design, adaptation and use of the technology at the work-
+     place, to the benefit of both working conditions and productivity.
+

@@ -1,0 +1,58 @@
+       productivity effect:
+
+
+                    log YiE (Ai = 1) − log YiE (Ai = 0) = αb0 + αb1 × E + βb × i                 (31)
+
+
+   3. The impact of employer encouragement on adopter earnings is theoretically ambigu-
+
+       ous, as it depends on the relative magnitudes of the productivity and skill price
+
+       effects:
+
+                                                                         κ
+                        log Yi1 (Ai = 1) − log Yi0 (Ai = 1) = αb1 −         ≷ 0.                 (32)
+                                                                        ϵ−1
+
+       Even if employer encouragement enhances the productivity benefits of chatbots
+
+       (αb1 > 0, as documented in Section D.2.3), these gains need not translate into
+
+       higher earnings for adopters. When encouragement is costly (high κ), product
+
+       demand is less elastic (low ϵ), and productivity gains are modest (low αb1 ), employer
+
+       encouragement may reduce adopter earnings. Adopters may still prefer to sort
+
+       into encouraged firms if encouragement sufficiently reduces adoption costs (i.e., if
+                    κ
+       αc1 < αb1 − ϵ−1 ). However, these benefits will not be reflected in their earnings.
+
+
+Occupational mobility. If chatbots create greater benefits Bij for newcomers to
+
+an occupation, we will observe a dynamic correlation between chatbot adoption and
+
+occupational switching (as documented in Section 3.2).22
+
+
+Worker-firm sorting. Following Equation (26), AI chatbots should trigger a realloca-
+
+tion of workers who would like to adopt chatbots (low-i types) into firms that encourage
+
+use (E = 1).
+
+
+Worker outcomes. Figure A.3 summarizes how AI chatbots affect workers’ sorting,
+
+adoption, and earnings. The gray line highlights the equilibrium sorting and adoption
+  22
+    This model prediction reflects an effect running from occupational choice to chatbot adoption. The
+causality may also run the other way, however, with chatbots prompting workers to move into new
+occupations. The theoretical framework abstracts from this occupational-choice margin to keep the
+analysis tractable.
+
+
+
+                                                 17
+

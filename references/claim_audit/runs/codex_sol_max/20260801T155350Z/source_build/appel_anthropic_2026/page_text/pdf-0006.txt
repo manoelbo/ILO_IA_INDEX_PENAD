@@ -1,0 +1,44 @@
+                half (50%) of all usage despite representing only 38% of the working-age
+                population.
+
+                Nevertheless, there are early signs of rapid regional convergence in
+                adoption: usage has increased relatively faster for states that had lower
+                usage in our last report. If sustained, usage per capita would be equalized
+                across the country in 2-5 years, a pace of diffusion roughly 10x faster than
+                the spread of previous economically consequential technologies in the
+                20th century.3
+
+                While this is consistent with rapid AI adoption and diffusion, this estimate
+                comes with uncertainty given that it is based on a change observed over a
+                three month period. Diffusion may ultimately proceed more slowly in the
+                months and years to come.
+
+            iv. Global usage shows little sign of increasing or decreasing
+                regional convergence
+                Globally, Claude usage per capita—as captured by the Anthropic AI
+                Usage Index (AUI)—remains highly uneven and strongly correlated with
+                GDP. These gaps are stable: we see no evidence that low-use countries are
+                catching up or that high-use countries are pulling away.
+
+
+
+            Shifting patterns of usage across tasks
+            and associated occupations
+
+            Even though frontier LLMs have an impressive range of capabilities relevant to
+            every facet of the modern economy, Claude usage remains very concentrated
+            among a small number of tasks. As compared to nearly one year ago, consumer
+            usage on Claude.ai is modestly more concentrated: The share of conversations
+            assigned to the ten most prevalent O*NET tasks was 24% in November
+            2025, 1pp higher than in August and up from 21% in January 2025. The most
+            prevalent task in November 2025—modifying software to correct errors—
+            alone represented 6% of usage.
+
+            In our last Anthropic Economic Index report we began tracking business
+            adoption patterns by studying Claude usage among 1P API customers. The
+            ten most common tasks grew from 28% of API records in August to 32% in
+            November. Rising concentration among a small set of tasks suggests the
+
+
+The Anthropic Economic Index Report                                                            6
+

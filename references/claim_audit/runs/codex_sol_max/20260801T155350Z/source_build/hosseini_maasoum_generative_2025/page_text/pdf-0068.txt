@@ -1,0 +1,57 @@
+the within-task augmentation component is smaller when δS < δ J ; the cost-index channel,
+which is common to both worker types, is unchanged. The absence of displacement—
+the dominant channel for the junior decline—yields a muted net effect on senior labor
+demand.
+
+
+A.6.3   Proof of Proposition 1
+
+Proof. The change in junior labor demand is
+                                                           Z x̂′                             Z x̂
+                           ∗post    ∗pre                              ∗post                          ∗pre
+                   ∆L∗J = L J    − LJ =                              lJ     ( x ) dx −              lJ      ( x ) dx.                     (28)
+                                                               α                              0
+
+Splitting each integral at the shared endpoints α and x̂:
+                 Z x̂                       Z x̂                             Z x̂′                           Z α
+                          ∗post                       ∗pre                              ∗post                           ∗pre
+        ∆L∗J =           lJ     ( x ) dx −          l J ( x ) dx           +           lJ     ( x ) dx −             lJ        ( x ) dx
+                   α                          α                                 x̂                              0
+                   Z α                       Z x̂ h                                       i     Z x̂′
+                           ∗pre                        ∗post               ∗pre                        ∗post
+             =−   l J ( x ) dx +                      lJ           (x) − l J         ( x ) dx +       lJ     ( x ) dx .
+                0                                                                                x̂
+              |      {z      } |α                                     {z                    } |          {z         }
+                    displacement                               productivity                              reallocation
+
+
+
+A.6.4   Sign of the Productivity Effect
+
+We maintain the partial-equilibrium assumption that Y and wages (w J , wS ) are fixed.
+   Under cost minimization with the CES aggregator (1), conditional demand for task x
+is y∗ ( x ) = Y · ( p( x )/P)−σ , where p( x ) is the unit cost of task x and
+
+                                                    Z 1                            1−1 σ
+                                                                       1− σ
+                                             P=                p(z)            dz                                                         (29)
+                                                           0
+
+                                                                                               R                         
+                                                                                                      1
+is the CES cost index (with the Cobb-Douglas limit P = exp                                           0 ln p ( z ) dz          when σ = 1).
+For a junior task x ∈ (α, x̂ ), the unit cost is p( x ) = w J /γ J ( x ) and output is y( x ) =
+γ J ( x ) l J ( x ), so the cost-minimizing labor allocation is
+
+                                      l ∗J ( x ) = Y · Pσ · w−
+                                                             J · γ J (x)
+                                                               σ         σ −1
+                                                                              .                                                           (30)
+
+
+   After GenAI adoption, the cost index changes from Ppre to Ppost . On surviving junior
+
+
+
+                                                               A.23
+

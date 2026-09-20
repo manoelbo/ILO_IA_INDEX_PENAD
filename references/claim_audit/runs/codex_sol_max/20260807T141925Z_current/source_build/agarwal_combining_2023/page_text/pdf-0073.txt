@@ -1,0 +1,34 @@
+                                                                                            73
+
+C.2
+
+
+C.2   Quality of Ground Truth Reads
+
+Here, we summarize evidence that the ground truth measure we construct is high quality
+and robust to various decisions an analyst could make. Recall that the preferred ground
+truth used throughout the paper is defined using the reads of five board-certified radiologists
+from Mount Sinai, who each read all 324 patient cases in the study. For each pathology, we
+aggregate these reports into the ground truth for a patient case i as
+
+                                         X πr (ωi = 1|sE
+                                        " 5                          #
+                                                       i,r )     1
+                               ωi = 1                          >
+                                         r=1       5             2
+
+where we suppress the pathology index for simplicity and r indexes the radiologist. This
+method of aggregating reports is robust to certain types of measurement error and dependence
+across reports as discussed in Wallsten and Diederich (2001). Table C.3 contains summary
+statistics for the ground truth created using the Mount Sinai radiologists and a leave-one-
+out internal ground truth calculated using the reads collected during the experiment under
+the treatment arm with clinical history but no AI assistance. Table C.4 contains additional
+summary statistics for the five Mount Sinai ground truth labelers, including their average
+time and number of clicks. We also show the average agreement of the labels with the original
+radiologist’s read. Taken together, these analyses demonstrate, for the majority of cases, that
+the ground truth labelers agree with the assessment of the radiologist who originally read the
+report in a clinical setting and we can reject that the average probability assessment is equal
+to 0.5 at the 5% level. Moreover, in Section C.4.2 we show that our results are robust to many
+different methods of calculating ground truth, including using the experiment leave-one-out
+ground truth and various aggregation methods of the Mount Sinai reports.
+

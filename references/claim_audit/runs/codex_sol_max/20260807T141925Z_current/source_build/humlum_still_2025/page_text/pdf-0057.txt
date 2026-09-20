@@ -1,0 +1,34 @@
+level variation. Because this approach nets out individual-level targeting, it addresses
+potential bias from employers directing encouragement toward workers with the highest
+idiosyncratic benefits. As shown in Table F.4, results remain largely robust under this
+design.
+
+
+A.2       Labor Market Outcomes
+
+This section provides a theoretical analysis of how AI chatbots affect labor markets and
+discusses how these effects can be identified empirically.
+   Modeling the labor market impacts of AI chatbots raises several key questions: How
+do chatbots enter the production process? What explains why some firms and workers
+adopt them while others do not? Are labor markets competitive, or do firms exercise
+monopsony power? Before committing to a formal framework, Section A.2.1 considers the
+theoretical implications of each issue.
+   Section A.2.2 then introduces a model of chatbot adoption and labor market outcomes,
+embedding the Roy adoption model from Section A.1 into an equilibrium framework in
+which heterogeneous firms adopt chatbot initiatives and hire workers to maximize profits,
+while workers sort across firms and adopt chatbots to maximize utility. Section A.2.4
+derives predictions for how AI chatbots affect labor market outcomes, and Section A.2.5
+applies the model to interpret our difference-in-differences estimates from Section 3.
+   For clarity of exposition, we focus on encouraged use as the employer initiative,
+reflecting its central role in the empirical analysis.
+
+A.2.1     Modeling Choices
+
+Chatbot technology. A first key question is how chatbots enter the production process:
+Are they “co-pilots,” contributing to output only when prompted by humans, or closer
+to “co-workers,” operating autonomously (Ide and Talamas, 2025)? More broadly, do AI
+chatbots complement or substitute for labor?
+   Acemoglu and Restrepo (2018b, 2019) provide a framework for how new technologies
+affect labor productivity through three channels: a negative task displacement effect, where
+
+                                              7

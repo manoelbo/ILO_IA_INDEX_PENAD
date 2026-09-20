@@ -1,0 +1,40 @@
+                                                           WORKING PAPER
+
+
+
+
+                                      GPT-4 Exposure Rating 1           GPT-4 Exposure Rating 2            Human Exposure Rating
+                                      (1)                 (2)           (3)                 (4)           (5)                (6)
+  Software (Webb)                      0.00113∗∗∗         0.00123∗∗∗     0.00111∗∗∗         0.00119∗∗∗     0.00096∗∗∗         0.00101∗∗∗
+                                      (0.00031)          (0.00031)      (0.00031)          (0.00031)      (0.00031)          (0.00031)
+  Robot (Webb)                       −0.00378∗∗∗        −0.00405∗∗∗    −0.00377∗∗∗        −0.00399∗∗∗    −0.00371∗∗∗        −0.00383∗∗∗
+                                     (0.00032)          (0.00031)      (0.00034)          (0.00033)      (0.00029)          (0.00028)
+  AI (Webb)                            0.00080∗∗∗         0.00090∗∗∗     0.00036            0.00045        0.00067∗∗          0.00071∗∗
+                                      (0.00030)          (0.00029)      (0.00030)          (0.00030)      (0.00030)          (0.00030)
+  Suitability for Machine Learning     0.29522∗∗∗         0.26888∗∗∗     0.28468∗∗∗         0.26245∗∗∗     0.19514∗∗∗         0.18373∗∗∗
+                                      (0.04503)          (0.04418)      (0.04404)          (0.04342)      (0.03990)          (0.03886)
+  Normalized Routine Cognitive         0.06601∗∗∗         0.06868∗∗∗     0.04743∗∗∗         0.05015∗∗∗     0.03568∗∗∗         0.03659∗∗∗
+                                      (0.00886)          (0.00894)      (0.00872)          (0.00879)      (0.00671)          (0.00669)
+  Normalized Routine Manual          −0.11147∗∗∗        −0.11371∗∗∗    −0.09390∗∗∗        −0.09561∗∗∗    −0.11045∗∗∗        −0.11152∗∗∗
+                                     (0.00785)          (0.00789)      (0.00817)          (0.00818)      (0.00741)          (0.00744)
+  AI Occupational Exposure Score       0.00993            0.02465∗∗    −0.01537           −0.00265         0.00630            0.01252
+                                      (0.01107)          (0.01059)     (0.01160)          (0.01114)       (0.00918)          (0.00845)
+  Frey & Osborne Automation          −0.03024∗          −0.03950∗∗     −0.00364           −0.01217       −0.03890∗∗         −0.04253∗∗
+                                     (0.01835)          (0.01841)      (0.02007)          (0.01972)      (0.01883)          (0.01858)
+  Log Avg. Salary                      0.05804∗∗∗                        0.04863∗∗∗                        0.02531
+                                      (0.01870)                         (0.01860)                         (0.01727)
+  Constant                           −1.12937∗∗∗        −0.45743∗∗∗    −0.96117∗∗∗        −0.39935∗∗∗    −0.47078∗          −0.17706
+                                     (0.26859)          (0.15327)      (0.26365)          (0.15017)      (0.24684)          (0.13256)
+  N                                  680.00000          681.00000      680.00000          681.00000      680.00000         681.00000
+  𝑅2                                   0.68741            0.68212        0.60737            0.60198        0.71213           0.71126
+
+Table 9: Regression of LLM-exposure scores on prior measures of occupational exposure to AI and automation.
+We also include annualized wages from the BLS-OES survey in May 2021. Each measure is kept in its
+original scale, with the exception of routine cognitive and routine manual scores from (Acemoglu and Autor,
+2011a). Those two scores are standardized to mean zero and variance 1. Generally we find strong positive
+associations with previous efforts, though large residual variance to still be explained by our new measures.
+Columns 1 and 2 are based on our main 𝛽 exposure measure from GPT-4 ratings. Columns 3 and 4 are
+based on a similar slightly different exposure rubric also rated by GPT-4 for robustness. Columns 5 and 6
+reflect human ratings on the same rubric as columns 1 and 2. Occupation-level scores are built using the
+core/supplemental task weights, assigning supplemental tasks as having half the weight of core tasks.
+

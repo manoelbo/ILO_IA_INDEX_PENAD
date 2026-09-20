@@ -1,0 +1,49 @@
+3.3     Effect of GenAI on Labor Demand by Seniority
+
+After the firm adopts GenAI, juniors perform tasks (α, x̂ ′ ) and seniors perform tasks
+[ x̂ ′ , 1], where x̂ ′ is the post-AI allocation threshold, determined by the standard equal-
+cost condition under augmented productivities (see Supplemental Appendix A.6 for the
+derivation):
+                                                     γS ( x̂ ′ )   1 + δ J γS ( x̂ )
+                                                             ′
+                                                                 =        ·          .                                               (3)
+                                                     γ J ( x̂ )    1 + δS γ J ( x̂ )
+Since we assume that GenAI augments junior productivity at least as much as senior
+productivity (δ J ≥ δS ), the right-hand side weakly exceeds γS ( x̂ )/γ J ( x̂ ), and because
+γS ( x )/γ J ( x ) is strictly increasing (Assumption 1), it follows that x̂ ′ ≥ x̂: the junior task
+set expands among surviving tasks. When δ J = δS , the threshold is unchanged exactly.
+      The change in junior labor demand can be decomposed into three components. We
+              ∗pre                  ∗post
+denote by lk         ( x ) and lk           ( x ) the cost-minimizing labor allocations before and after AI
+adoption. Total junior labor demand is
+                                        Z x̂                                             Z x̂′
+                             ∗pre                ∗pre                        ∗post                 ∗post
+                            LJ      =           lJ      ( x ) dx,           LJ       =            lJ       ( x ) dx,                 (4)
+                                         0                                                α
+
+                                        ∗post           ∗pre
+and the change is ∆L∗J ≡ L J                     − LJ          .
+
+Proposition 1 (Decomposition). The change in junior labor demand following GenAI adoption
+is:
+                      Z α                               Z x̂ h                                i                Z x̂′
+                              ∗pre                                  ∗post         ∗pre                                 ∗post
+        ∆L∗J = −            l J ( x ) dx         +                 lJ     (x) − l J (x)           dx +      lJ    ( x ) dx .         (5)
+                 |     0
+                             {z             }           |α                   {z                    }   | x̂    {z        }
+                     displacement (<0)                               productivity (≶0)                           reallocation (≥0)
+
+
+Figure 1 illustrates the task partition before and after GenAI adoption. The three compo-
+nents of the decomposition have distinct determinants and signs. First, the displacement
+effect is the direct loss of automated junior tasks. Its magnitude is increasing in α—the
+extent of automation—and it is unambiguously negative.
+      Second, the productivity effect captures the change in labor needed per surviving task.
+Under the partial-equilibrium assumption that aggregate output Y and wages are fixed, it
+γ̃S ( x )/γ̃ J ( x ) remains strictly monotone increasing, so that a unique threshold continues to exist.
+
+
+
+
+                                                                       14
+

@@ -1,0 +1,37 @@
+quartile serves as the reference category. For firm-level job postings, effects are
+significant across all higher quartiles, though the third and fourth quartiles show
+similar magnitudes, which is consistent with a threshold effect. For firm-level em-
+ployment stocks, the evidence is weaker and non-monotonic, with only scattered
+significant effects across bins. The occupation-level analysis reveals clearer non-
+linearities: while the second and third quartiles show minimal effects, the highest
+exposure quartile experiences significantly larger impacts, suggesting that most of
+the occupation-level results we observe are driven by the 25 percent most exposed
+occupations.
+
+
+5    Conclusion
+This paper provides evidence that large language models are reshaping UK la-
+bor markets. Using a difference-in-differences design that exploits variation in
+occupational- and firm-level LLM exposure, we conduct three analyses that show
+how labor markets change in response to the introduction of generative AI. First,
+we examine firm-level employment stocks to understand how workforce size and
+composition evolve within organizations. Second, we analyze firm-level hiring pat-
+terns to capture forward-looking recruitment decisions that precede employment
+adjustments. Third, we investigate occupation-level posting dynamics to identify
+economy-wide demand shifts.
+    Our firm-level employment analysis documents a 0.3 percent reduction in total
+employment per standard deviation increase in LLM exposure, though this effect
+only becomes statistically significant approximately 18 months after ChatGPT’s
+introduction. This reduction is predominantly concentrated in junior positions,
+which decline by 0.4 percent per standard deviation, while senior positions show a
+smaller, statistically insignificant 0.2 percent reduction. The resulting compositional
+shift reduces the fraction of junior workers by 0.1 percentage point per standard
+deviation, mechanically increasing average compensation by £106 as firms retain
+proportionally more higher-paid senior staff, though this compensation effect is only
+marginally significant.
+    While employment stocks adjust gradually, job posting data provide real-time
+evidence of firms’ evolving labor demand. Firm-level posting activity drops following
+
+
+                                          27
+

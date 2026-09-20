@@ -1,0 +1,52 @@
+                                                                                              48
+
+Dirk Bergemann and Stephen Morris. Information design: A unified perspective. J. Econ.
+  Lit., 57(1):44–95, March 2019.
+
+David Blackwell. Equivalent comparisons of experiments. Ann. Math. Stat., 24(2):265–272,
+ 1953.
+
+Erik Brynjolfsson and Tom Mitchell. What can machine learning do? workforce implications.
+  358(6370):1530–, 2017.
+
+Erik Brynjolfsson, Daniel Rock, and Chad Syverson. Artificial intelligence and the modern
+  productivity paradox: A clash of expectations and statistics. November 2017.
+
+Kate Bundorf, Maria Polyakova, and Ming Tai-Seale. How do humans interact with algo-
+ rithms? experimental evidence from health insurance. June 2020.
+
+David C Chan, Matthew Gentzkow, and Chuan Yu. Selection with variation in diagnostic
+ skill: Evidence from radiologists. Q. J. Econ., 137(2):729–783, May 2022.
+
+Amitabh Chandra and Douglas O Staiger. Identifying sources of inefficiency in healthcare.
+ Q. J. Econ., 135(2):785–843, May 2020.
+
+Gary Charness, Uri Gneezy, and Vlastimil Rasocha. Experimental methods: Eliciting beliefs.
+ J. Econ. Behav. Organ., 189:234–256, September 2021.
+
+Daniel L Chen, Martin Schonger, and Chris Wickens. oTree—An open-source platform for
+ laboratory, online, and field experiments. Journal of Behavioral and Experimental Finance,
+ 9:88–97, March 2016.
+
+Emily F Conant, Alicia Y Toledano, Senthil Periaswamy, Sergei V Fotin, Jonathan Go,
+ Justin E Boatsman, and Jeffrey W Hoffmeister. Improving accuracy and efficiency with
+ concurrent use of artificial intelligence for digital breast tomosynthesis. Radiol Artif Intell,
+ 1(4):e180096, July 2019.
+
+John J Conlon, Malavika Mani, Gautam Rao, Matthew W Ridley, and Frank Schilbach. Not
+  learning from others. August 2022.
+
+Janet Currie and W Bentley MacLeod. Diagnosing expertise: Human capital, decision mak-
+  ing, and performance among physicians. J. Labor Econ., 35(1), 2017.
+
+David Danz, Lise Vesterlund, and Alistair J Wilson. Belief elicitation: Limiting truth telling
+ with information on incentives. June 2020.
+
+Berkeley J Dietvorst, Joseph P Simmons, and Cade Massey. Algorithm aversion: people
+  erroneously avoid algorithms after seeing them err. J. Exp. Psychol. Gen., 144(1):114–126,
+  February 2015.
+
+Berkeley J Dietvorst, Joseph P Simmons, and Cade Massey. Overcoming algorithm aversion:
+  People will use imperfect algorithms if they can (even slightly) modify them. Manage. Sci.,
+  64(3):1155–1170, March 2018.
+

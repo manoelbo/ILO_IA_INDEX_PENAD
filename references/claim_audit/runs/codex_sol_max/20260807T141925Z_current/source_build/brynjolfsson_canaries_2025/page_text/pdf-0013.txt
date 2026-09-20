@@ -1,0 +1,60 @@
+4.5      Fact 5: Labor market adjustments are visible in employment more than
+         compensation
+
+In addition to employment we observe workers’ annual base compensation. We use this information
+
+to test for labor market adjustment along the compensation margin.20 Salary data are deflated to
+
+2017 dollars using the PCE index.21
+
+       Results for various occupations are in Figure A11. The findings indicate less divergence in
+
+compensation compared to employment across more and less exposed occupations. Figure 5 shows
+
+results by age and Eloundou et al. (2024)-based exposure quintile. We find little difference in
+
+compensation trends by age or exposure quintile.
+
+       Prior work by Autor and Thompson (2025) notes that technology that replaces inexpert tasks
+
+may reduce occupational employment but increase occupational wages; technology that replaces
+
+expert tasks may do the opposite. The sign of the wage effect depends on the overall share of tasks
+
+displaced as well as the whether these tasks are expert or inexpert. The limited changes we find
+
+for wages suggest that these effects may be offsetting, at least in the short run. Alternatively, the
+
+results could be explained by wage stickiness in the short run, consistent with recent evidence from
+
+Davis and Krolikowski (2025).
+
+
+4.6      Fact 6: Findings are largely consistent under alternative sample construc-
+         tions
+
+We test the robustness of these results to alternative sample constructions and robustness checks.
+
+
+Excluding Technology Occupations One possibility is that our results are explained by a
+
+general slowdown in technology hiring from 2022 to 2023 as firms recovered from the COVID-19
+
+Pandemic.22 Figure A12 shows employment changes by age and exposure quintile after excluding
+
+computer occupations, corresponding to 2010 SOC codes that start with 15-1. Figure A13 shows
+
+results when excluding firms in information technology or computer systems design (NAICS codes
+  20
+     Total compensation may additionally include bonuses, overtime pay, commissions, equity, tips, and other items.
+These may have a greater impact on overall compensation in certain professions and age groups than others.
+  21
+     In contrast to the series for employment, results for compensation end in August 2025, the most recently available
+month for the PCE index.
+  22
+     Under the Tax Cuts and Jobs Act, amendments to Internal Revenue Code §174 enacted in 2022 also disallowed
+companies from immediately deducting R&D expenditures, including software development costs.
+
+
+
+                                                          13

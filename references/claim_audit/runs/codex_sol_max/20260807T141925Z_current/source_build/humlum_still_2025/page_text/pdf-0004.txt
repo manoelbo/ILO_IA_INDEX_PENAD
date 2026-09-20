@@ -1,0 +1,31 @@
+adoption relates to work reorganization and labor market outcomes.
+   We start beneath the surface by examining how workers’ use of, and reported ben-
+efits from, AI chatbots vary with their employer initiatives. Even in workplaces that
+neither encourage use nor provide enterprise tools or training, about 40% of workers
+have used AI chatbots at work, and roughly 7% use them daily. Despite this substantial
+worker-driven baseline, take-up rates almost double in workplaces with active employer
+initiatives. Encouraged-use policies, in particular, are associated with greater regular use
+and higher reported benefits among users, including time savings, quality, creativity, and
+job satisfaction. Overall, adoption and reported benefits peak in workplaces that combine
+encouraged use with enterprise chatbots and training: 93% of workers in such settings
+report having used AI chatbots at work, 28% use them daily, and 19% report saving more
+than one hour per day—patterns consistent with complementarities between new tools
+and organizational investments (Bloom, Sadun and Reenen, 2012; Brynjolfsson and Hitt,
+2000).
+   AI chatbots not only affect existing work—they also create new tasks. Even in the
+absence of employer initiatives, about 8% of chatbot users report taking on entirely new
+tasks arising from chatbot use, rising to roughly 17% in workplaces with active employer
+initiatives. These tasks span content generation (e.g., drafting and ideation), oversight
+of AI outputs (e.g., quality review and compliance), and integration of AI tools into
+workflows (e.g., developing usage policies). Consistent with this reorganization of work,
+most chatbot users (85%) report reallocating time savings from AI chatbots to other job
+tasks. New tasks extend even to workers who have never used AI chatbots, signaling
+broader workplace transformation. These patterns support task-based theories of how new
+technologies reinstate labor demand (Acemoglu and Restrepo, 2018a; Autor et al., 2024).
+   We then rise to the surface, asking whether and how these rapid currents of chatbot
+adoption and work reorganization register in earnings and recorded hours. Our analysis
+boils down to a simple question: have chatbot adopters fared differently from comparable
+non-adopters? To address this question, we link our surveys to administrative records
+
+
+                                             2

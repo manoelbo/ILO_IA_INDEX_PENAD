@@ -1,0 +1,61 @@
+B        Additional Literature
+
+Numerous media articles have highlighted the potential employment effects of AI.28 Some work has
+
+noted that the unemployment rate for college graduates has risen above the rate for non-graduates,
+
+suggesting this as evidence of employment disruptions from AI (Thompson, 2025). Others have
+
+noted that these trends long preceded the spread of AI and have noted that publicly available
+
+data such as the Current Population Survey (CPS) show mixed evidence on employment changes
+
+in AI-exposed occupations (Lim et al., 2025; The Economist, 2025; Smith, 2025; Eckhardt and
+
+Goldschlag, 2025; Frick, 2025).29 A number of technology executives have also warned of potential
+
+job loss from AI (Allen, 2025; Sherman, 2025; Bacon, 2025) or laid off workers with the aim of
+
+incresing AI investments (Jamali, 2025).
+
+
+
+C        Comparison to CPS Data
+
+The CPS surveys about 60,000 households nationwide each month to collect data on employment
+
+and other labor force characteristics. These data are released a few weeks after the reference month,
+
+giving close to real-time estimates of employment statistics. A number of prior analyses have used
+
+the CPS to assess how AI is impacting entry-level work (Chandar, 2025b; Dominski and Lee, 2025;
+
+Lim et al., 2025; Eckhardt and Goldschlag, 2025). We compare some of our main findings in the
+
+ADP data to estimates from the CPS.
+
+       Figures A29 through A31 show employment changes by age for software developers, customer
+
+service representatives, and home health aides by age using data from the CPS. Though there are
+
+millions of workers employed in these professions across the US, the estimates are highly volatile,
+
+with common fluctuations of 20% or greater in estimated employment month-to-month. Figure A32
+
+shows estimated employment changes by age and exposure quintile using the CPS, also suggesting
+
+a high degree of volatility in the estimates.
+  28
+     See Horowitch (2025); Ettenheim (2025); Peck (2025); Hoover (2025); Milmo and Almeida (2025); Wu (2025).
+  29
+     Reports from industry have also shown mixed findings. Job posting platform TrueUp suggests a recent increase in
+postings in the tech sector (Lenny Rachitsky, 2025). On the other hand, Revelio Labs finds a decline in job postings,
+with the decrease steeper for entry-level workers (Simon, 2025). Indeed job posting data suggest declines in postings
+for new graduates but find these declines for less AI-exposed occupations as well (Lim et al., 2025). Chandar (2025b)
+notes that the correlation between job postings and employment has been weak over recent years. SignalFire finds
+steep declines in new graduate hires in the tech sector compared to pre-Pandemic levels (Doshay and Bantock, 2025),
+consistent with the findings in this paper. Data from Gusto also suggests a decline in new graduate hiring (Bowen,
+2025).
+
+
+                                                         64

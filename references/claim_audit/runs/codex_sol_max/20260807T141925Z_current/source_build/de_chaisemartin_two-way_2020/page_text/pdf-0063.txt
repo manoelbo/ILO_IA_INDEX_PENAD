@@ -1,0 +1,62 @@
+The first equality follows from (33). The second follows from Equations (31) and (32). Hence,
+       X                                           X
+              Ng,t εX
+                    g,t E (Yg,t |X, D)) =                 Ng,t εX
+                                                                g,t (Dg,t E (∆g,t |X, D) − Dg,1 E (∆g,1 |X, D)
+        g,t                                         g,t
+
+                                                                     −D1,t E (∆1,t |X, D) + D1,1 E (∆1,1 |X, D))
+                                                   X
+                                               =          Ng,t εX
+                                                                g,t Dg,t E (∆g,t |X, D)
+                                                    g,t
+                                                          X
+                                               =                   Ng,t εX
+                                                                         g,t E (∆g,t |X, D) .                            (34)
+                                                   (g,t):Dg,t =1
+
+
+The first equality follows from Lemma 4. The second follows from Equations (31) and (32). The
+third follows from Assumption 2. Finally, Assumption 2 implies that
+                                           X                               X
+                                                  Ng,t εX
+                                                        g,t Dg,t =                     Ng,t εX
+                                                                                             g,t .                       (35)
+                                            g,t                        (g,t):Dg,t =1
+
+
+Combining (30), (34), (35), and the law of iterated expectations yields the result.
+
+
+Proof of Theorem S5
+
+Reasoning as in the proof of Theorem 3, we get that for all t ≥ 2,
+                             X
+Nd,d0 ,t E (DIDd,d0 ,t |D) =         Ng,t E (Yg,t (max(d, d0 )) − Yg,t (min(d, d0 ))|D)
+                                 g:Dg,t =d0 ,Dg,t−1 =d
+                                           X
+                             =                                E (Yi,g,t (max(Dg,t , Dg,t−1 )) − Yi,g,t (min(Dg,t , Dg,t−1 ))|D) .
+                                 (i,g):Dg,t =d0 ,Dg,t−1 =d
+
+
+For all (g, t), there exists one (d, d0 ) ∈ D2 such that Dg,t = d0 and Dg,t−1 = d. Hence,
+                      T
+                      X             X
+                                              Nd,d0 ,t E (DIDd,d0 ,t |D)
+                      t=2 (d,d0 )∈D2 :d6=d0
+                      T
+                      X X
+                  =                     Nd,d0 ,t E (DIDd,d0 ,t |D)
+                      t=2 (d,d0 )∈D2
+                        X
+                  =                 E (Yi,g,t (max(Dg,t , Dg,t−1 )) − Yi,g,t (min(Dg,t , Dg,t−1 ))|D) .
+                      (i,g,t):t≥2
+
+
+The result follows by definition of DIDM and δ SCR , and the law of iterated expectations.
+
+
+
+
+                                                                     27
+

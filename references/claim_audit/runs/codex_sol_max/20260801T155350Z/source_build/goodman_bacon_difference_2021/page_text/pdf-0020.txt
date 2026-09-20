@@ -1,0 +1,53 @@
+Equation (16) generalizes the definition of common trends and collapses to the typical pairwise
+
+common trends assumption for any two-group estimator. It is immediately clear that identical
+
+trends across all groups satisfies (16), but this is not a necessary condition for it to hold since the
+
+bias induced by a given group’s trend depends on the weights in brackets. 24
+
+         Fortunately, the weights have an intuitive interpretation. The weight on each group’s
+
+counterfactual trend equals the difference between the total weight it gets when it acts as a
+
+treatment group—𝑤𝑤𝑘𝑘𝑇𝑇 from equation (13)—minus the total weight it gets when it acts as a control
+
+group—𝑤𝑤𝑘𝑘𝐶𝐶 . 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 can therefore be written as:
+
+                                            � Δ𝑌𝑌𝑘𝑘0 [𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 ] = 0                                   (17)
+                                              𝑘𝑘
+
+                                                � (assuming equal group sizes). Units treated in the
+Figure 4 plots 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 as a function of 𝐷𝐷
+
+middle of the panel have high treatment variance and get a lot of weight when they act as the
+
+treatment group, while units treated toward the ends of the panel get relatively more weight when
+
+they act as controls. As 𝑡𝑡 ∗ moves closer to 1 or T, 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 becomes negative, which shows that
+
+some timing groups effectively act as controls. This helps define “the” control group in timing-
+
+only designs (the dashed line in figure 6): all groups are controls in some terms, but the earliest
+
+and/or latest units necessarily get more weight as controls than treatments. The weights also map
+
+differential trends to bias. 25 A positive trend in group 𝑘𝑘 induces positive bias when 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 > 0,
+
+negative bias when 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 < 0 (that is, if 𝑘𝑘 is an effective control group), and no bias when
+
+𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 = 0. The size of the bias from a given trend is larger for groups with more weight.
+
+
+24
+  Callaway and Sant'Anna (2018) provide alternative definitions of common trends and tests not based on linearity.
+25
+  Applications typically discuss bias in general terms, arguing that unobservables must be “uncorrelated” with timing,
+but have not been able to specify how counterfactual trends would bias a two-way fixed effects estimate. For example,
+Almond, Hoynes, and Schanzenbach (2011, p 389-190) argue: “Counties with strong support for the low-income
+population (such as northern, urban counties with large populations of poor) may adopt FSP earlier in the period. This
+systematic variation in food stamp adoption could lead to spurious estimates of the program impact if those same
+county characteristics are associated with differential trends in the outcome variables.”
+
+                                                         18
+

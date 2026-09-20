@@ -1,0 +1,54 @@
+Dillon, E., S. Jaffe, S. Peng, and A. Cambon (2025): “Early Impacts of M365 Copilot,”
+
+  Tech. Rep. MSR-TR-2025-18, Microsoft. 2
+
+Dingel, J. I. and B. Neiman (2020): “How many jobs can be done at home?” Journal of Public
+
+  Economics, 189, 104235. 3.3, 4.6, A6, A7
+
+Dominski, J. and Y. S. Lee (2025): “Advancing AI Capabilities and Evolving Labor Outcomes,”
+
+  Tech. rep., arXiv, arXiv:2507.08244 [econ]. 2, 4.6
+
+Doshay, H. and A. Bantock (2025): “The SignalFire State of Tech Talent Report - 2025,” . 7
+
+Eckhardt, S. and N. Goldschlag (2025): “AI and Jobs: The Final Word (Until the Next
+
+  One),” Economic Innovation Group. 2, 4.6
+
+Eloundou, T., S. Manning, P. Mishkin, and D. Rock (2024): “GPTs are GPTs: Labor
+
+  market impact potential of LLMs,” Science, 384, 1306–1308, publisher: American Association
+
+  for the Advancement of Science. 2, 10, 3.2, 4.1, 2, 3, 4.3, 4.4, 9, 4.5, 11, 4.6, A4, A5, A6, A7, A8,
+
+  A12, A13, A14, A15, A16, A17, A21, A1
+
+Ettenheim, L. E. a. K. B. |. G. b. R. (2025): “AI Is Wrecking an Already Fragile Job Market
+
+  for College Graduates,” WSJ, section: Tech. 6
+
+Federal Reserve Bank of New York (2025): “The Labor Market for Recent College Gradu-
+
+  ates,” . 4.2
+
+Felten, E., M. Raj, and R. Seamans (2021): “Occupational, industry, and geographic exposure
+
+  to artificial intelligence: A novel dataset and its potential uses,” Strategic Management Journal,
+
+  42, 2195–2217, _eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.3286. 2
+
+——— (2023): “How will Language Modelers like ChatGPT Affect Occupations and Industries?”
+
+  Tech. rep., arXiv, arXiv:2303.01157 [econ]. 2
+
+Felten, E. W., M. Raj, and R. Seamans (2018): “A Method to Link Advances in Artificial
+
+  Intelligence to Occupational Abilities,” AEA Papers and Proceedings, 108, 54–57. 2
+
+——— (2019): “The Occupational Impact of Artificial Intelligence: Labor, Skills, and Polariza-
+
+  tion,” SSRN Scholarly Paper, Social Science Research Network, Rochester, NY. 2
+
+                                                  30
+

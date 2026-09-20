@@ -1,0 +1,57 @@
+cost κj :
+
+
+                              Ej = 1 [κj ≤ log Πj (1) − log Πj (0)] ,                 (16)
+
+
+where Πj (E) denotes firm j’s flow profits under encouragement policy E ∈ {0, 1}. Let Fκ
+
+denote the CDF of encouragement costs.
+
+    Constant returns to scale (Equation (13)) and CES demand (Equation (14)) imply
+
+that a firm’s optimal flow profit is a constant fraction 1ϵ of revenues:
+
+                                         1       1 1−1/ϵ
+                                     Πj = Pj Yj = Yj     .                            (17)
+                                         ϵ       ϵ
+
+Combining Equations (15) and (17), the profit gain from encouraging chatbots equals:
+
+
+                       log Πj (1) − log Πj (0) = (1 − ϵ)(log W1 − log W0 )            (18)
+
+
+Since the profit gain is common across employers, the encouragement policy follows a
+
+cut-off rule based on encouragement costs:
+
+
+                    Ej = 1 [κj ≤ κ] ,       with κ = (1 − ϵ)(log W1 − log W0 ).       (19)
+
+
+Adoption. Workers derive log-utility from labor earnings and adopt AI chatbots if
+
+the monetary benefit exceeds the adoption cost Cij . Fixing the worker’s employer, the
+
+adoption rule is:
+
+
+                              Aij = 1 [log Yij (1) − log Yij (0) ≥ Cij ]              (20)
+
+                                  = 1 [Bij ≥ Cij ]                                    (21)
+                                        h                         i
+                                  = 1 α̂0 + α̂1 Ej + β̂ × i ≥ 0 ,                     (22)
+
+
+where x̂ = xb − xc denotes net benefits, resulting in the adoption rule from Section A.1.2.
+
+This implies a strict cutoff rule for adoption:
+
+                                                               1
+                    Aij = 1 [i ≤ i∗ (Ej )] ,    with i∗ (E) = − (α̂0 + α̂1 E).        (23)
+                                                               β̂
+
+
+                                                   13
+

@@ -1,0 +1,50 @@
+{
+  "comparison": {
+    "coefficient_models": 646,
+    "coefficient_rows": 16852,
+    "coefficient_rows_failed": 0,
+    "diagnostic_models": 296,
+    "diagnostic_models_failed": 0,
+    "honest_did_coefficient_rows": 92,
+    "honest_did_coefficient_rows_failed": 0,
+    "honest_did_covariance_rows": 4232,
+    "honest_did_covariance_rows_failed": 0,
+    "maximum_coefficient_absolute_difference": 7.541345325989823e-11,
+    "maximum_honest_did_coefficient_absolute_difference": 8.732570222491631e-12,
+    "maximum_honest_did_covariance_absolute_difference": 2.616573624436569e-12,
+    "maximum_standard_error_absolute_difference": 5.022547106998954e-7,
+    "numeric_tolerance": 1e-6,
+    "status": "pass"
+  },
+  "contracts": {
+    "expected_estimated": 646,
+    "explicit_failed_estimation": 0,
+    "sha256": "c35d2bda9893c52967ecb55c8bedca321a6a646781e3b70c9fa55808e5276f11"
+  },
+  "environment": {
+    "MASS": "7.3-60.2",
+    "data.table": "1.17.0",
+    "fixest": "0.14.0",
+    "jsonlite": "2.0.0",
+    "pyfixest": "0.40.1",
+    "python": "3.10",
+    "r": "4.4.1"
+  },
+  "evidence": {
+    "comparison_status_sha256": "cabd478c30096356c6a8b095a2cb874924b679bae9088a42cf75d567cc981d1f",
+    "r_status_sha256": "c61028c1acbe0ceb443d12dc4e48793f5d5aeadfc6b7e0fbd05aed6d2750e1a0"
+  },
+  "format_version": 1,
+  "numerical_contract": {
+    "fixef_iteration_limit": 100000,
+    "fixef_tolerance": 1e-8,
+    "r_glm_tolerance": 1e-9,
+    "reason": "The stricter R IWLS stopping rule aligns the independently computed clustered sandwich covariance with pyfixest without reading Python estimates or changing any specification, sample, coefficient, or acceptance tolerance."
+  },
+  "status_contract_correction": {
+    "model_id": "group_pretrend::A::income::high_income::desligamentos",
+    "registered_status": "estimated",
+    "scientific_diagnostic": "not_interpretable_rank_deficient",
+    "status_coercion_removed": true
+  }
+}

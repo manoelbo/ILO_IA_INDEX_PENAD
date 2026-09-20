@@ -1,0 +1,37 @@
+a relatively stable US national unemployment rate and labor force participation rate over
+the same period. These findings urge caution in interpreting labor market trends from job
+postings alone.
+        Because the CPS is released monthly and is publicly accessible, the method in this paper
+can be used to track changes in occupational employment on an ongoing and transparent
+basis. While the CPS’s sample size limits statistical power for granular groups like entry-level
+workers, its strength lies in providing a consistent, high-frequency view of the entire U.S.
+labor market. This paper thus clarifies the current state of facts and provides a foundation
+for future work using larger-scale administrative or internal Census data to further probe
+the mechanisms behind these divergent outcomes.2
+
+
+
+2         Related Literature
+
+This paper engages with three active areas of research on the labor market effects of arti-
+ficial intelligence. First, it builds on literature that measures AI’s potential exposure. A
+series of influential papers established methodologies for estimating which occupations were
+susceptible to automation (Frey and Osborne, 2017; Brynjolfsson et al., 2018; Felten et al.,
+2018, 2019; Webb, 2019; Felten et al., 2021). More recently, work such as Eloundou et al.
+(2024); Felten et al. (2023); Gmyrek et al. (2023), and Gmyrek et al. (2025) adapted this
+approach for Generative AI, forming the basis for exposure metrics used in this analysis.
+While these studies identify potential disruption, this paper’s contribution is to use broad,
+representative U.S. survey data (the CPS) to provide one of the earliest empirical snapshots
+of realized employment changes in the post-ChatGPT era. This complements studies that
+find significant effects but in more specific settings, such as on online freelance platforms
+(Hui et al., 2023) or within individual firms (Brynjolfsson et al., 2025; Dillon et al., 2025).3
+        Second, this paper contributes to the growing body of work using economy-wide data to
+    2
+        All code is posted online at https://github.com/chandarb/CPS_tracker.
+    3
+        See also Noy and Zhang (2023); Peng et al. (2023); Dell’Acqua et al. (2023).
+
+
+
+                                                        3
+

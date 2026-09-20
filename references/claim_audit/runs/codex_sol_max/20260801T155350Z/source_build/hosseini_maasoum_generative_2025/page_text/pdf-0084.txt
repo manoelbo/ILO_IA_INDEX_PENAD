@@ -1,0 +1,56 @@
+A.13       Job Postings Examples
+The first two boxes (green) show two illustrative examples of job postings that were classified by the LLM
+as “GenAI integrator” postings. For example, the first example is a posting that explicitly includes the
+responsibility to “integrate AI models into existing systems and applications.” Moreover, the job title—
+GenAI Developer Consultant—closely fits our notion of a GenAI integrator.
+
+   Role: Generative AI Developer Consultant (IT Services and IT Consulting, Genesis10)
+
+
+   Summary: We are seeking a talented and motivated Software Engineer to join our team, focusing on de-
+   veloping innovative applications using Generative AI technologies. You will play a key role in designing,
+   building, and deploying solutions that leverage AI to transform user experiences.
+
+
+   Responsibilities:
+
+         • Design and develop scalable applications utilizing Generative AI models.
+
+         • Collaborate with cross-functional teams to deliver solutions.
+
+         • Integrate AI models into existing systems and applications.
+
+         • Optimize and fine-tune AI algorithms for performance and accuracy.
+
+         • Conduct code reviews and mentor junior team members.
+
+   ...
+
+
+   Role: Junior Product Manager (Computer and Network Security, Aryaka Networks)
+
+
+   We are seeking a highly motivated Junior Product Manager with a strong understanding of GenAI secu-
+   rity challenges, hands-on experience in prompt engineering, and preferably experience integrating with
+   GenAI security and safety products/services. This role involves developing and documenting use cases
+   and requires at least one year of Python programming.
+   Key Responsibilities:
+
+         • Collaborate with cross-functional teams to address GenAI security challenges.
+
+         • Apply prompt engineering techniques to optimize AI outputs.
+
+         • Integrate GenAI security and safety products into workflows.
+
+         • Develop and maintain use cases for GenAI applications.
+
+         • Assist in product features enhancing security and safety.
+
+
+   On the other hand, the red boxes show a posting that, despite containing the related keywords Gen-
+
+
+
+
+                                                        A.39
+

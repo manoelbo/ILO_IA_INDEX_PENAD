@@ -1,0 +1,10 @@
+{
+  "source_rows": 130,
+  "figure_rows": 78,
+  "figures": 3,
+  "coefficients_unchanged": true,
+  "BH_unchanged": true,
+  "intervals_preserved": true,
+  "BH_cutoff": 0.015384615384615385,
+  "regressions_run": 0
+}

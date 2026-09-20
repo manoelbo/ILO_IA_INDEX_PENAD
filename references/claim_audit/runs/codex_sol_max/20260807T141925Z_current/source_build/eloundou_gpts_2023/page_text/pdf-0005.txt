@@ -1,0 +1,51 @@
+                                              WORKING PAPER
+
+
+     Furthermore, a positive feedback loop may emerge as LLMs surpass a specific performance threshold,
+allowing them to assist in building the very tooling that enhances their usefulness and usability across various
+contexts. This could lower the cost and engineering expertise required to create such tools, potentially
+accelerating LLM adoption and integration even further (Chen et al., 2021; Peng et al., 2023). LLMs can also
+become valuable assets in machine learning model development—serving as coding assistants for researchers,
+data labeling services, or synthetic data generators. There is potential for such models to contribute to
+economic decision-making at the task level, for instance, by refining methods for task and sub-task allocation
+between humans and machines (Singla et al., 2015; Shahaf and Horvitz, 2010). As LLMs advance over time
+and better align with user preferences, we can anticipate continuous improvement in performance. However, it
+is essential to recognize that these trends also bring a variety of serious risks. (Khlaaf et al., 2022; Weidinger
+et al., 2022; Solaiman et al., 2019)
+
+2.2   The Economic Impacts of Automation Technologies
+A large and growing body of literature addresses the labor market impacts of AI and automation technologies.
+The concept of skill-biased technological change and the task model of automation—often considered
+the standard framework for understanding technology’s influence on labor—originated from research
+demonstrating that technological progress raises the demand for skilled workers over unskilled workers (Katz
+and Murphy, 1992). Numerous studies have built upon this concept, exploring the effects of technological
+change and automation on workers within a task-based framework (Autor et al., 2003; Acemoglu and Autor,
+2011b; Acemoglu and Restrepo, 2018). This strand of research has shown that workers involved in routine and
+repetitive tasks are at a higher risk of technology-driven displacement, a phenomenon known as routine-biased
+technological change. More recent studies have distinguished between technology’s task-displacement and
+task-reinstatement effects (where new technology increases the need for a wider array of labor-intensive tasks)
+(Acemoglu and Restrepo, 2018, 2019). Several studies have shown that automation technologies have resulted
+in wage inequality in the US, driven by relative wage declines for workers specializing in routine tasks (Autor
+et al., 2006; Van Reenen, 2011; Acemoglu and Restrepo, 2022b).
+     Prior research has employed various approaches to estimate the overlap between AI capabilities and
+the tasks and activities workers undertake in different occupations. These methods include mapping patent
+descriptions to worker task descriptions (Webb, 2020; Meindl et al., 2021), linking AI capabilities to
+occupational abilities documented in the O*NET database (Felten et al., 2018, 2023), aligning AI task
+benchmark evaluations with worker tasks via cognitive abilities (Tolan et al., 2021), labeling automation
+potential for a subset of US occupations and using machine learning classifiers to estimate this potential for
+all other US occupations (Frey and Osborne, 2017), modeling task-level automation and aggregating the
+results to occupation-level insights (Arntz et al., 2017), collecting expert forecasts (Grace et al., 2018), and
+most relevantly to this paper, devising a new rubric to assess worker activities for their suitability for machine
+learning (Brynjolfsson et al., 2018, 2023). Some of these approaches have found exposure to AI technologies
+at the task-level tends to be diversified within occupation. Considering each job as a bundle of tasks, it would
+be rare to find any occupation for which AI tools could do nearly all of the work. (Autor et al., 2022a) finds as
+well that automation and augmentation exposures tend to be positively correlated. There is also a growing set
+of studies examining specific economic impacts and opportunities for LLMs (Bommasani et al., 2021; Felten
+et al., 2023; Korinek, 2023; Mollick and Mollick, 2022; Noy and Zhang, 2023; Peng et al., 2023). Alongside
+this work, our measurements help characterize the broader potential relevance of language models to the
+labor market.
+     General-purpose technologies (e.g. printing, the steam engine) are characterized by widespread prolifera-
+tion, continuous improvement, and the generation of complementary innovations (Bresnahan and Trajtenberg,
+1995; Lipsey et al., 2005). Their far-reaching consequences, which unfold over decades, are difficult to
+anticipate, particularly in relation to labor demand (Bessen, 2018; Korinek and Stiglitz, 2018; Acemoglu et al.,
+

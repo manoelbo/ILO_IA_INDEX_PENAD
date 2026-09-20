@@ -1,0 +1,84 @@
+E.2            Results
+E.2.1          Worker Earnings
+
+Figure E.11 shows that the null results for adopter earnings hold separately for workers’
+
+hourly wages, intensive-margin hours, and extensive-margin employment.
+
+    Figure E.12 adds non-adopters in encouraged workplaces to the main earnings plot (Fig-
+
+ure 2.(a)), showing they have also fared similarly to their counterparts in non-encouraged
+
+workplaces following the introduction of AI chatbots.
+
+                 Figure E.11: Have Adopting Workers Experienced Earnings Gains?
+                           (Log Earnings Relative to Non-Encouraged Non-Adopters)
+
+                        (a) log Hourly Wage                                                                                         (b) log Hours
+    .15                                                                                              .15
+
+
+
+
+      .1                                                                                               .1
+
+
+
+
+    .05                                                                                              .05
+
+
+
+
+      0                                                                                                0
+
+
+
+
+    -.05                                                                                             -.05
+      2021m1   2021m7    2022m1    2022m7      2023m1     2023m7     2024m1       2024m7               2021m1      2021m7    2022m1      2022m7    2023m1     2023m7     2024m1       2024m7
+
+                         Encouraged Adopters            Non-Encouraged Adopters                                              Encouraged Adopters            Non-Encouraged Adopters
+
+
+
+                                                         (c) Extensive-Margin Employment
+                                                   .15
+
+
+
+
+                                                    .1
+
+
+
+
+                                                   .05
+
+
+
+
+                                                    0
+
+
+
+
+                                                  -.05
+                                                    2021m1       2021m7    2022m1      2022m7    2023m1     2023m7     2024m1       2024m7
+
+                                                                           Encouraged Adopters            Non-Encouraged Adopters
+
+
+
+Notes: This figure presents the differential labor market outcomes of AI chatbot adopters relative to non-adopters, indexed
+to the launch of ChatGPT in November 2022. Effects are estimated separately for adopters whose employers encourage
+AI chatbot use (“Encouraged”) and those without encouragement (“Non-Encouraged”). Each group is compared to
+non-encouraged non-adopters. Estimates are based on the dynamic difference-in-differences specification in Equation (1).
+Shaded areas represent 95% confidence intervals. Sample: All completed responses from the 2024 survey linked to registry
+data.
+
+
+
+
+                                                                                                78
+

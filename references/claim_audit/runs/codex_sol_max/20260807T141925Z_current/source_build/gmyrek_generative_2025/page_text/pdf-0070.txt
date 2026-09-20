@@ -1,0 +1,49 @@
+67     ILO Working Paper 140
+
+
+
+
+     (Rate by moving the slider on a scale from 0% to 100%, where 0% means "Will not be replaced" and
+     100% means "Will be completely replaced.")
+
+     *Will not be replaced (0%) |--------slider--------| Will be completely replaced (100%); I don’t know*
+
+     Slider-type question
+
+     Display Text/Info:
+
+     The following pages contain tasks performed by representatives of various professions. The
+     tasks you are asked to evaluate in this part of the survey may or may not be performed by you
+     currently or in the past. However, they belong to the set of tasks performed within the group of
+     professions to which you belong. Therefore, we encourage you to evaluate each task, even those
+     you have not encountered, based on both experience and intuition.
+
+     Task Evaluation
+
+     The respondent is asked to evaluate 15 tasks; each task should be evaluated 20 times; the "I don’t
+     know" option is counted as an evaluation. Below is an example of a task description. The profes-
+     sion and task are randomly selected from the database provided to the supplier. Randomization
+     occurs in each stratum (profession according to ISCO-08, 1-digit code).
+
+     O1. Evaluate to what extent you believe Generative Artificial Intelligence (GenAI, e.g.,
+     ChatGPT) can automate the performance of the following task.
+
+     Rate by placing the slider at the appropriate point on a scale from 0 to 100, where 0 means "No
+     automation potential using GenAI" and 100 means "Full automation potential using GenAI for
+     the task performed within the given profession."
+
+     Profession: Road Transport Engineer
+
+     Task: Participating in the development of new control and traffic measurement devices
+
+     0 - No automation potential using GenAI |--------slider--------| 100 - Full automation potential us-
+     ing GenAI
+
+     I don’t know
+
+     O1a. Do you perform this or a similar task at work?
+
+     a. Yes
+
+     b. No
+

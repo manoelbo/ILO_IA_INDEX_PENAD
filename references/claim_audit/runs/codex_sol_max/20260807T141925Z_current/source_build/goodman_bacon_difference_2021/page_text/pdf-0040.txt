@@ -1,0 +1,198 @@
+       Figure 8. Testing for Balance in a Difference-in-Differences Model with Timing:
+                              Reweighted Test versus Joint Test
+                                                                                                  χ2 (24)=23.8 (p-val = 0.47)
+                                                                                                        2
+                                                            Joint Test by Group:
+                                                            Joint Test of Reweighted Differences: χ (2) =11.1 (p-val = 0.00)
+                                                                                     A. 1960 Per-Capita Income
+                                                  25000                   Joint F-Stat:
+                                                                       0.89 (p-val = 0.56)
+             Per-Capita Income, $2014
+
+
+
+
+                                                  20000
+
+
+
+                                                  15703
+
+                                                  13418
+
+
+                                                  10000
+
+                                                                                             Reweighted Diff:
+                                                                                             2285, s.e. = 835
+                                                   5000                                       (p-val = 0.01)
+                                                            RS
+
+                                                             69
+
+                                                             70
+
+                                                             71
+
+                                                             72
+
+                                                             73
+
+                                                             74
+
+                                                             75
+
+                                                             76
+
+                                                             77
+
+
+
+
+                                                                                                                  80
+
+
+
+
+                                                                                                                                 84
+
+                                                                                                                                       85
+                                                          19
+
+                                                          19
+
+                                                          19
+
+                                                          19
+
+                                                          19
+
+                                                          19
+
+                                                          19
+
+                                                          19
+
+                                                          19
+
+
+
+
+                                                                                                                 19
+
+
+
+
+                                                                                                                                19
+
+                                                                                                                                      19
+                                                          N
+                                                        +
+                                                     64
+                                                   e-
+                                                 Pr
+
+
+
+
+                                                                                         B. 1960 M/F Sex Ratio
+                                                 1.1
+                                                                        Joint F-Stat:
+                                                                     1.10 (p-val = 0.39)
+             Age-Adjusted M/F Sex Ratio, 15-44
+
+
+
+
+                                                 .98
+                                                 .96
+
+
+                                                   .9
+
+                                                                     Reweighted Diff:
+                                                                     0.02, s.e. = 0.01
+                                                                      (p-val = 0.06)
+                                                   .8
+                                                      RS
+
+                                                       69
+
+                                                       70
+
+                                                       71
+
+                                                       72
+
+                                                       73
+
+                                                       74
+
+                                                       75
+
+                                                       76
+
+                                                       77
+
+
+
+
+                                                                                                                  80
+
+
+
+
+                                                                                                                                 84
+
+                                                                                                                                       85
+                                                    19
+
+                                                    19
+
+                                                    19
+
+                                                    19
+
+                                                    19
+
+                                                    19
+
+                                                    19
+
+                                                    19
+
+                                                    19
+
+
+
+
+                                                                                                                 19
+
+
+
+
+                                                                                                                                19
+
+                                                                                                                                      19
+                                                    N
+                                                  +
+                 64
+               e-
+             Pr
+
+
+
+
+                                                                 Reweighted Treatment Mean                       Reweighted Control Mean
+
+Notes: The figure plots average per-capita income and male/female sex ratio in 1960 for each timing group in the
+unilateral divorce analysis (combining the non-reform and pre-1964 reform states into the group labeled “Pre-64 +
+NRS”). The horizontal lines equal the average of these variables using the weights from figure 6 (𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 ). Note
+that the 1969 states get more weight as a control group, so they are part of the reweighted control mean. Each panel
+reports the F-statistic and p-value from a joint test of equality across the means, and the reweighted difference,
+standard error, and p-value from the re-weighted balance test. The top of the figure reports χ2 (𝑑𝑑𝑑𝑑) test-statistics for
+both covariates estimated using seemingly unrelated regressions.
+
+
+                                                                                                38
+

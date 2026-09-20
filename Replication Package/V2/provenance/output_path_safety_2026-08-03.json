@@ -1,0 +1,75 @@
+{
+  "format_version": 1,
+  "validated_at": "2026-08-03T20:06:09-03:00",
+  "scope": "Pre-execution output-path safety follow-up after the independent Referee 2 release audit.",
+  "code_identity": {
+    "DATA_AVAILABILITY.md": "5d2b04fe76e7344f9ef7bf63787b961ea9ad0c30595fe92bf75beb798dbe7e4d",
+    "README.md": "3f6606ad704bde9142821ee68b8d36ec615a79a85332d0b29145b2f7c223f065",
+    "code/caged/panel/build_panel.py": "c6a25555c9c48ce8bedf0071ca9a035fa14a60b4c7459ca4985d3ef6f1bd01e1",
+    "run_replication.py": "ecb87349436cee5daf4acd3f5d6d47f4c01b533204335c7a704b2a72268b6fc3",
+    "tests/test_run_replication.py": "80ee4b2c879ec0c753dc5f8da80af2fef6454d0aec7e5553cc5ea084dc719e7c"
+  },
+  "path_safety": {
+    "decision_point": "The public entry point rejects overlap before DAG construction, preflight, output preparation, deletion handling, temporary runtime creation, or input staging.",
+    "disjoint_sibling_output": "accepted",
+    "negative_cases": {
+      "output_ancestor_of_analytical_data": "rejected",
+      "output_ancestor_of_raw_sources": "rejected",
+      "output_descendant_of_analytical_data": "rejected",
+      "output_descendant_of_raw_sources": "rejected",
+      "output_equals_analytical_data": "rejected",
+      "output_equals_raw_sources": "rejected"
+    },
+    "resolved_symlink_alias": "rejected",
+    "status": "pass"
+  },
+  "verification": {
+    "complete_test_suite": {
+      "analytical_bundle_mounted_temporarily": true,
+      "passed": 443,
+      "warnings": 5,
+      "wall_time_seconds": 115.78
+    },
+    "focused_output_path_tests": {
+      "passed": 10,
+      "status": "pass"
+    },
+    "full_dry_run": {
+      "analytical_nodes": 54,
+      "raw_cache_declared_files": 381,
+      "raw_cache_missing_files": 0,
+      "status": "pass"
+    },
+    "post_cleanup_release_tests": {
+      "deselected_mount_dependent_tests": 1,
+      "passed": 37,
+      "status": "pass"
+    },
+    "reproduce_dry_run": {
+      "analytical_bundle_files": 161,
+      "analytical_nodes": 46,
+      "status": "pass"
+    }
+  },
+  "scientific_outputs": {
+    "analytical_artifacts_reestimated_after_safety_fix": false,
+    "full_run_manifest_sha256": "0f5fcceb3e6c4468b084b65c656568b18639854672a8e9ff60cda490c65fa017",
+    "isolated_reproduce_run_manifest_sha256": "7563cfb8b04d36ba8ff480e1492ede180412816fdbaab49855c895d280075464",
+    "reason": "The final change is confined to pre-execution path validation, its tests, and public documentation; it cannot alter data construction, estimation, rendering, or artifact serialization.",
+    "reference_manifest_sha256": "35d9084497f070b9333a8df3cdf6701c966a385dc68094a87c7fd8a9f4c9d451"
+  },
+  "v1_immutability": {
+    "file_records": 310,
+    "sha256": "0cf0fbb567ce7d7794808bd44f9ce9a89a2d3954f1162cf9311e0abfa90fe8f4",
+    "status": "pass"
+  },
+  "public_tree": {
+    "cache_or_environment_directories": 0,
+    "data_root_entries": [
+      ".gitignore"
+    ],
+    "size_megabytes_approximate": 38,
+    "status": "pass"
+  },
+  "status": "pass"
+}

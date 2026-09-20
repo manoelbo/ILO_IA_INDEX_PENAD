@@ -1,0 +1,39 @@
+A.8     GenAI Keywords in Worker Position Descriptions
+
+This appendix reports the full regression results underlying the validation exercise in
+Section 4.2.3. The main text presents the time-series pattern visually (Figure 3); here we
+describe the keyword list and formalize the pattern in a difference-in-differences frame-
+work.
+   We apply a curated list of GenAI keywords to 18.3 million U.S. position descriptions
+spanning 2021 Q1 through 2025 Q1, drawn from the Revelio Labs individual-positions
+data. The keyword list builds on the list used to identify GenAI integrator postings
+in Section 4.2, augmented with additional terms that workers are more likely to use
+when describing their own adoption of GenAI tools on their résumés. Matching is case-
+insensitive; ambiguous short forms (e.g., LLM, GPT, NLP, Bard) are matched with word-
+boundary regex to avoid false positives. Positions with descriptions shorter than 20 char-
+acters are excluded as likely placeholders.
+   The full keyword list is as follows:
+
+   • Original list (job-postings analysis). Models and products: ChatGPT, Chat GPT, GPT,
+      GPT-4, GPT-3, GPT-4o, GPT integration, Claude, Copilot, Gemini. Concepts: large
+      language model (LLM), generative AI, Gen AI, transformer-based model, prompt
+      engineering, prompt design, vector embeddings, vector database, retrieval-augmented
+      generation (RAG). Frameworks, APIs, and infrastructure: LangChain, LlamaIndex, Re-
+      trievalQA, Pinecone, Weaviate, Milvus, OpenAI API, Anthropic Claude API, Azure
+      OpenAI, Google Vertex AI Generative, HuggingFace Transformers.
+
+   • Additional résumé-specific terms. Worker self-description of AI use: AI tools, AI-
+      powered, AI-driven, AI-assisted, AI-based, AI automation. Adjacent ML/DL vocab-
+      ulary: machine learning, ML model, deep learning, neural network, natural lan-
+      guage processing (NLP), computer vision. Consumer-facing GenAI tools: GitHub
+      Copilot, Midjourney, DALL-E, Stable Diffusion, Bard, Perplexity. Workflow terms:
+      fine-tuning, text generation, image generation, AI chatbot, conversational AI.
+
+   The additional terms are designed to capture how workers themselves describe GenAI
+use on their résumés, which differs in tone and vocabulary from how firms advertise inte-
+grator roles in vacancy postings: workers are more likely to name the specific consumer-
+
+
+
+                                              A.32
+

@@ -1,0 +1,64 @@
+       In academia, there is a growing body of research seeking to measure the employment effects of
+
+AI. The advent of this literature included a series of influential papers that established methodolo-
+
+gies for estimating which occupations and tasks were susceptible to automation (Frey and Osborne,
+
+2017; Brynjolfsson and Mitchell, 2017; Brynjolfsson et al., 2018; Felten et al., 2018, 2019; Webb,
+
+2019; Felten et al., 2021). More recently, work such as Eloundou et al. (2024); Felten et al. (2023);
+
+Gmyrek et al. (2023); Handa et al. (2025), and Tomlinson et al. (2025) adapted this approach for
+
+Generative AI, forming the basis for exposure metrics used in this analysis. While these studies
+
+identify potential disruption, ours connect these exposure measures to actual employment changes.
+
+We find that these measures of exposure do indeed predict substantial employment changes for
+
+young workers in the period after the spread of generative AI.
+
+       Our work complements and broadens insights from studies that find significant effects in more
+
+specific settings, such as on online freelance platforms (Hui et al., 2023; Demirci et al., 2025) or
+
+within individual firms (Brynjolfsson et al., 2025; Dillon et al., 2025).8 We measure labor market
+
+changes across occupations spanning the US economy.
+
+       In this sense our work complements a small but growing list of papers that use economy-
+
+wide data to measure AI’s impact. Recent findings have been varied. Humlum and Vestergaard
+
+(2025) use Danish administrative data to conclude there were minimal effects on earnings or hours
+
+worked, while Jiang et al. (2025) find AI exposure is correlated with longer work hours in the
+
+U.S.9 Hampole et al. (2025) use job postings and LinkedIn profile records from Revelio labs from
+
+2011 to 2023 to find limited employment impacts overall, with growing overall labor demand at
+
+firms offsetting relative declines in demand for exposed occupations. Chandar (2025b) uses data
+
+from the CPS to compare employment changes in more and less AI-exposed professions, finding
+
+little differential trend overall but noting the difficulty of measuring changes for young workers
+
+because of the limited effective sample size. Dominski and Lee (2025) similarly use CPS data with
+
+alternative exposure measures and find declines in employment in AI-exposed occupations, though
+
+data limitations in the CPS limit the capacity for statistical inference. Johnston and Makridis
+
+(2025) find employment increases in state-industry pairs more exposed to AI using data from the
+   8
+   See also Noy and Zhang (2023); Peng et al. (2023); Dell’Acqua et al. (2023).
+   9
+   See also Acemoglu et al. (2022); Bonney et al. (2024); Bick et al. (2024); Hartley et al. (2025); Frank et al. (2025);
+Chen et al. (2025).
+
+
+
+
+                                                           6
+

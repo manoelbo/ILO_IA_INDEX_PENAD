@@ -1,0 +1,55 @@
+Hence, E[(Te/P S )4 ] Pr(I = 0) ≤ K1 G Pr(I = 0) for some constant K1 > 0. Moreover, by
+Hoeffding’s inequality,                                       !
+                                                   −2G2 ε2G
+                                Pr(I = 0) ≤ 2 exp P 2           .
+                                                       g Ng,.
+                                                                P
+By Assumption S9, there exists c > 0 such that for all G, 1/G G   g=1 Ng,. < 2c. Then,
+                                                                       2
+
+
+                                          −2G2 ε2G Gε2
+                                          P 2 ≤ − G.
+                                            g Ng,.  c
+
+Let εG = (C ln(G)/G)1/2 , for some C > c. Then, by what precedes, G Pr(I = 0) → 0 and the
+second term of the right-hand side of (39) tends to zero.
+Now, let us move to the first term of the right-hand side of (39). We have
+
+              |E[TeI(E(P S ) − P S )/P S ]|
+                                                                                   
+            = E[I(Te − E(Te))(E(P S ) − P S )/P S ] + E(Te) E(P S )E(I/P S ) − E(I)
+                                                     2 1/2
+            ≤E(P S )V (Te)1/2 E[I 1/P S − 1/E(P S ) ]
+               + |E(Te)|E(P S )|E(I/P S ) − E(I)/E(P S )|.                                       (40)
+
+We now prove that both terms on the right-hand side tend to zero. First, by Taylor expansions
+of x 7→ 1/x around E(P S ), there exist (P1S , P2S ) in the interval between P S and E(P S ) such that
+                          1     1       P S − E(P S )
+                            =         −               ,                                          (41)
+                         PS   E(P S )       P1S2
+                          1     1       P S − E(P S ) (P S − E(P S ))2
+                            =         −                +               .                         (42)
+                         PS   E(P S )      E(P S )2         P2S3
+When I = 1, |P1S − E(P S )| < εG and |P2S − E(P S )| < εG . Recall also that limG E(P S ) > 0 and
+εG → 0. Then, in view of (41) and by Assumption S9,
+                                              2             V (P S )
+                         E[I 1/P S − 1/E(P S ) ] ≤                         → 0.
+                                                          (E(P S ) − εG )4
+
+Moreover, by definition of Te, GV (Te) ≤ GV (T S ), and the latter is bounded by Assumption S9.
+Therefore, the first term of the right-hand side of (40) tends to 0.
+Now, multiplying (42) by I and taking the expectation on both sides, we obtain:
+                                                                         √
+         √          S              S
+                                        √ E[I(P S − E(P S ))]              GV (P S )
+           G|E(I/P ) − E(I)/E(P )| ≤ G                               +
+                                                    E(P S )2           (E(P S ) − εG )3
+                                                               1/2      √
+                                            G Pr(I = 0)V (P S )            GV (P S )
+                                       ≤                             +
+                                                  E(P S )2              (E(P S ) − εG )3
+                                              → 0.
+
+                                                     30
+

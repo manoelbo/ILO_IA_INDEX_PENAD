@@ -1,0 +1,79 @@
+                   Headcount over Time by Age Group
+                         Software Developers
+ 1.8
+
+ 1.6
+
+ 1.4                                                                     Early Career 1 (22-25)
+                                                                         Early Career 2 (26-30)
+ 1.2                                                                     Developing (31-34)
+                                                                         Mid-Career 1 (35-40)
+                                                                         Mid-Career 2 (41-49)
+ 1.0                                                                     Senior (50+)
+
+ 0.8
+
+ 0.6
+       -01
+
+             -07
+
+                    -01
+
+                          -07
+
+                                -01
+
+                                           -07
+
+                                                 -01
+
+                                                        -07
+
+                                                              -01
+       21
+
+             21
+
+                   22
+
+                          22
+
+                                23
+
+                                      23
+
+                                                 24
+
+                                                       24
+
+                                                              25
+   20
+
+            20
+
+                  20
+
+                        20
+
+                               20
+
+                                     20
+
+                                             20
+
+                                                       20
+
+                                                            20
+
+
+
+
+                                    Date
+Figure A29: Employment changes for software developers by age, normalized to 1 in October 2022.
+Data come from the monthly CPS.
+
+
+
+
+                                                  58

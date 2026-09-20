@@ -1,0 +1,65 @@
+            P
+Let N1 =        i,g,t Di,g,t denote the number of treated units, let
+
+                                          1        X
+                                 ∆T R =                          [Yi,g,t (1) − Yi,g,t (0)]
+                                          N1
+                                               (i,g,t):Dg,t =1
+
+                                                                                   
+denote the average treatment effect across all treated units, and let δ T R = E ∆T R denote the
+expectation of that parameter, hereafter referred to as the ATT. For any (g, t) ∈ {1, ..., G} ×
+{1, ..., T }, let
+                                          Ng,t
+                                       1 X
+                             ∆g,t =            [Yi,g,t (1) − Yi,g,t (0)]
+                                     Ng,t i=1
+
+denote the ATE in cell (g, t). δ T R is equal to the expectation of a weighted average of the treated
+cells’ ∆g,t s:                                                   
+                                                    X Ng,t
+                                    δT R = E                ∆g,t  .                             (2)
+                                                g,t:D =1
+                                                         N 1
+                                                           g,t
+
+
+Under the common trends assumption, we show that βf e is also equal to the expectation of a
+weighted sum of the ∆g,t s, with potentially some negative weights.
+Let εg,t denote the residual of observations in cell (g, t) in the regression of Dg,t on group and
+period fixed effects:6
+                                    Dg,t = α + γg + λt + εg,t .
+One can show that if the regressors in Regression 1 are not collinear, the average value of εg,t
+                                               P
+across all treated (g, t) cells differs from 0: (g,t):Dg,t =1 (Ng,t /N1 )εg,t 6= 0. Then we let wg,t denote
+εg,t divided by that average:
+                                                        εg,t
+                                        wg,t = P               Ng,t
+                                                                       .
+                                                 (g,t):Dg,t =1 N1 εg,t
+
+
+Theorem 1 Suppose that Assumptions 1-5 hold. Then,7
+                                                         
+                                      X Ng,t
+                          βf e = E             wg,t ∆g,t  .
+                                             N1
+                                                  (g,t):Dg,t =1
+
+
+
+   6
+     εg,t arises from a unit-level regression, where the dependent and independent variables only vary at the (g, t)
+level. Therefore, all the units in the same (g, t) cell have the same value of εg,t .
+   7
+      In the proof, we show the following, stronger result:
+                                    h       i        X           Ng,t
+                                   E βbf e D =                        wg,t E [∆g,t |D] .
+                                                                 N1
+                                                 (g,t):Dg,t =1
+
+
+
+
+                                                           7
+

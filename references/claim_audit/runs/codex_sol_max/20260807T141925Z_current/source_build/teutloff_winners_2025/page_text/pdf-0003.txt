@@ -1,0 +1,66 @@
+O. Teutloff et al.                                                                  Journal of Economic Behavior and Organization 235 (2025) 106845
+
+to be the main job types affected by the launch of the ChatGPT (Hui et al., 2023; Qiao et al., 2023; Liu et al., 2023) and instead
+allows us to measure the impact across a broader range of substitutable and complementary skill clusters. Finally, we employ a
+difference-in-differences econometric model using the unaffected clusters as a control group to quantify changes in demand across
+substitutable and complementary skill clusters after the release of ChatGPT.
+    Our results show that while the demand for unaffected and complementary clusters increased after the introduction of ChatGPT,
+the number of job postings in the substitutable clusters decreased by 7%. The difference-in-differences analysis reveals that,
+compared to the unaffected clusters, substitutable clusters experienced a 25% decline, while complementary clusters as a whole
+showed no significant effects. When distinguishing projects by their duration, we find that the decrease in substitutable job postings
+was concentrated in short-term (1–3 weeks) jobs. In terms of worker experience, heterogeneity across substitutable clusters is limited.
+However, we find a decline in job postings for novice workers in complementary skill clusters.
+    At a cluster level, those related to writing for Real Estate and ‘About Us’ pages showed the most substantial decreases, at 52%
+and 59%, respectively. Translation jobs also saw significant impacts, with the ‘Western European Languages’ category experiencing
+a 23% decline. While complementary clusters did not show significant aggregate effects, demand changes were mixed within these
+clusters. Notably, the demand for jobs in the ‘AI-powered chatbots’ cluster nearly tripled, with a 179% increase, and the ‘Machine
+Learning’ cluster saw a significant rise, with demand increasing by 24%.
+    Our findings present a nuanced view of the impact of ChatGPT on labor demand. While we observe similar trends to those
+reported by Demirci et al. (2023), Hui et al. (2023), Liu et al. (2023), Qiao et al. (2023) regarding substitutable tasks, our analysis
+indicates that these decreases are primarily concentrated in short-term gigs. Moreover, although there is no aggregate decline in
+complementary skills, we find a reduced demand for novice workers in these clusters. This may appear to contradict the findings
+of Noy and Zhang (2023) and Brynjolfsson et al. (2023), who found that LLM tools boost the productivity of novice workers.
+However, this may result from the complex dynamics of the labor market, where increased productivity of novice workers within
+firms may reduce the need for novice freelancers. Thus, while LLMs usage enhance the efficiency of in-house novice workers, it could
+diminish external demand for similar freelance skills. This suggests a shift toward specialized expertise for freelancer demand rather
+than uniform growth across all complementary areas. Our results also show that while some complementary skill clusters experienced
+significant declines, others, particularly those related to programming and software development, saw substantial increases.
+    Overall, our analysis underscores the importance of considering the specific nature of tasks and the context of AI implementation
+when assessing its impact on labor markets. The heterogeneity in outcomes suggests that integrating AI into work processes can
+create both winners and losers, depending on how AI technologies are utilized and the specific skill sets involved.
+
+2. Data and methods
+
+2.1. Research design
+
+   To measure the impact of LLMs on labor demand at a granular skill level, we distinguish between skill clusters that are
+substitutable by, complementary to, or unaffected by LLMs. We then analyze how demand for these skills changes in an online
+labor platform around the time of the public release of ChatGPT on November 30, 2022.
+   Our analysis focuses on data from a leading online labor platform, where job postings list detailed skill requirements. We use the
+transformer model BERTopic (Grootendorst, 2022) to group job postings into clusters based on their skill requirements. To assess the
+robustness of our results, we combine hierarchical clustering with a manual inspection of all skill clusters, ensuring that job postings
+with similar skill requirements are clustered together. This procedure results in 116 skill clusters. The methodology of inferring skill
+clusters from the data is illustrated in Fig. 1.
+   Following LLM exposure definitions from previous literature (Qiao et al., 2023; Eloundou et al., 2023) and through prompt
+engineering techniques, we design prompts for labeling each skill cluster into substitutable, complementary, and unaffected with
+GPT-4o. We manually inspect each cluster label by examining the reasoning provided by GPT and the label coherence within
+hierarchical clusters. In the cases where human and GPT labels diverge, we give priority to human labels. This results in 12 skill
+clusters in the substitutable category, 59 in the complementary, and 45 in the unaffected category.
+   In the last step, similar to other studies assessing the causal impact of LLMs on the labor market (del Rio-Chanona et al., 2024;
+Demirci et al., 2023; Qiao et al., 2023; Hui et al., 2023), we use a difference-in-differences (DiD) model to estimate changes in
+demand of projects in the online labor market across treatment groups (substitution and complementarity) in comparison to the
+control group (unaffected).
+
+2.2. Data
+
+    We use data from one prominent global online freelancing platform, which wished to remain anonymous. Online freelancing
+platforms are digital marketplaces that connect buyers and sellers of remotely deliverable work. Prominent examples are Upwork,
+Fiverr, or Freelancer. Jobs on these platforms cover a wide range of professional domains, including writing, translation, software
+development, design, marketing, or legal services. Employers range from individuals to startups and Fortune 500 companies (Cor-
+poraal and Lehdonvirta, 2017). When posting a job, employers specify detailed skill requirements, including a mix of broad skills
+such as writing, graphic design or translation and specific skills such as Microsoft Word, Adobe Photoshop or Chinese English translation.
+On average, projects require a median of six skills. In addition, every job posting contains a title and a description specifying the
+task. For the purpose of identifying skill clusters, we only consider the skill tags, not the job title or the text of the job description.
+
+                                                                    3
+

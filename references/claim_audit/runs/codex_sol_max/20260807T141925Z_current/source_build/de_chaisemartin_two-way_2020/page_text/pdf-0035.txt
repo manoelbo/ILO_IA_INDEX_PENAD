@@ -1,0 +1,61 @@
+Then,
+
+     N1,0,t E (DID+,t |D)
+            X                                                     X
+    =                 Ng,t E (∆g,t |D) +                                        Ng,t E (Yg,t (0) − Yg,t−1 (0)|D)
+        g:Dg,t =1,Dg,t−1 =0                            g:Dg,t =1,Dg,t−1 =0
+            N1,0,t         X
+        −                                 Ng,t E (Yg,t (0) − Yg,t−1 (0)|D)
+            N0,0,t g:D
+                         g,t =Dg,t−1 =0
+                                                                                                                                       
+               X                                                            X                          N1,0,t         X
+    =                         Ng,t E (∆g,t |D) + ψ0,t                                   Ng,t −                                      Ng,t 
+        g:Dg,t =1,Dg,t−1 =0                                        g:Dg,t =1,Dg,t−1 =0
+                                                                                                       N0,0,t g:D
+                                                                                                                    g,t =Dg,t−1 =0
+               X
+    =                         Ng,t E (∆g,t |D) .                                                                                              (20)
+        g:Dg,t =1,Dg,t−1 =0
+
+
+The first equality follows by (18), the second by (19), and the third after some algebra. If there
+is no g such that Dg,t−1 = 0 and Dg,t = 1, (20) still holds, as DID+,t = 0 in this case.
+A similar reasoning yields
+                                                                            X
+                                N0,1,t E (DID−,t |D) =                                  Ng,t E (∆g,t |D)                                      (21)
+                                                                  g:Dg,t =0,Dg,t−1 =1
+
+
+Plugging (20) and (21) into (17) yields
+                                                                                                                                   
+                XT                      X                                                          X
+                              1 
+   E(DIDM ) =       E E                                                   Ng,t ∆g,t +                         Ng,t ∆g,t  D 
+                t=2
+                             NS g:D =1,D
+                                                     g,t         g,t−1 =0                 g:Dg,t =0,Dg,t−1 =1
+
+                  =δ S .
+
+
+Proof of Theorem 4
+
+First, as with DIDM , we have
+                                                                                                                           !!
+                                      T
+                                        X         N1,0,0,t                            N0,1,1,t                      
+                E       DIDpl
+                           M        =         E              E       DIDpl
+                                                                        +,t D       +              E       DIDpl
+                                                                                                              −,t D             .             (22)
+                                        t=3        NSpl                                   NSpl
+
+Let t be greater than 3, and let us for now focus on the case where there exists at least one g1
+such that Dg1 ,t−2 = Dg1 ,t−1 = 0 and Dg1 ,t = 1. Then Assumption 13 ensures that there is a least
+
+
+
+
+                                                                      35
+

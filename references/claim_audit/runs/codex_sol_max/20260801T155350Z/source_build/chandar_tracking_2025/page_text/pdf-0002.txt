@@ -1,0 +1,34 @@
+(CPS) data through Q1 2025. Using the GPT-4-based occupational exposure metrics from
+Eloundou et al. (2024), I examine realized employment and earnings trends to measure
+whether, and how, disruption from new AI technologies is appearing in the U.S. workforce.
+       The central finding is that the most AI-exposed set of occupations has not experienced a
+declining share of employment, though among this group there is considerable heterogeneity
+in labor market trends. Software occupations, which are estimated to have high exposure to
+generative AI, show employment gains as of the first quarter of 2025. In contrast, customer
+service representatives, who also have high measured exposure, have experienced relative
+employment declines. More broadly, within the most exposed quartile, occupations with a
+higher share of college-educated workers have experienced faster employment growth over
+the prior four years compared to occupations with a lower college share. The results suggest
+a nuanced view of how measured AI or automation exposure affect employment, with worker
+characteristics such as education potentially influencing displacement from new technologies.
+While the results do not identify a causal impact of AI on labor market outcomes, they clarify
+facts about the state of the US labor market and suggest avenues for further study on how
+AI impacts workers.1
+       Given growing concern over AI’s impact on early-career roles, I also examine trends for
+entry-level workers (Thompson, 2025; Raman, 2025; Allen, 2025). Employment for entry-
+level workers is volatile and cyclical, making it difficult to discern trends. With more time
+and larger surveys it may become apparent whether there are sustained changes in labor
+market outcomes for entry-level workers, but so far evidence from the CPS is inconclusive.
+       A further contribution of this paper is to highlight the divergence between employment
+and job postings. While Indeed job postings for software development show a decline from
+a peak in early 2022, CPS employment data indicate stable or even increasing employment
+through Q1 2025. The disconnect between job postings and employment also tracks with
+   1
+    Another way to interpret the results is that current AI exposure and automation measures may do a poor
+job of predicting the true labor market impacts of AI, at least in the relatively short time period considered
+here. This contrasts with findings in prior seminal work such as Autor et al. (2003) that showed that task
+exposure to computerization strongly predicted changes in relative labor demand.
+
+
+                                                      2
+

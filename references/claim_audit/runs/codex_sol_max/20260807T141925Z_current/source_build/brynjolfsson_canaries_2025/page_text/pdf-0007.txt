@@ -1,0 +1,62 @@
+US and UK. In contrast, the most recent version of Humlum and Vestergaard (2025) found minimal
+
+effects on entry-level earnings or hours worked in Denmark.11
+
+
+
+3     Data Description
+
+3.1    Payroll Data
+
+This study uses data from ADP, the largest payroll processing firm in America. The company
+
+provides payroll services for firms employing over 25 million workers in the US. We use this to
+
+track employment changes for workers in occupations measured as more or less exposed to artificial
+
+intelligence.
+
+    We make several restrictions for our main analysis sample. We include only workers with
+
+positive earnings, exclude part-time employees, and subset to people under age 70.12
+
+    The set of firms using payroll services changes over time as companies join or leave ADP’s
+
+platform. We maintain a consistent set of firms by keeping only companies that have employee
+
+earnings records for each month from January 2021 through September 2025.
+
+    ADP observes job titles for about 70% of workers in its system. We exclude workers without
+
+a recorded job title. There are over 7,000 standardized job titles, including “Search engineer
+
+optimization specialist,” “Enterprise content management manager,” and “Plant documentation
+
+control specialist.” The company’s internal research team maps each of these job titles to a 2010
+
+Standard Occupational Classification (SOC) code, additionally using information such as the job
+
+description, industry, location, and other relevant data. We use these estimated SOC codes to
+
+merge our data to occupational AI exposure measures.
+
+    After these restrictions we have records on 3.5 and 5 million workers each month for our main
+
+analysis sample, though we consider robustness to alternative analyses such as allowing for firms
+
+to enter and leave the sample.
+
+    While the ADP data include millions of workers in each month, the distribution of firms using
+  11
+     An important direction for future work is to reconcile differences among these recent studies, assessing the extent
+they arise from differences in labor market institutions, measurement of AI adoption, statistical methodology, or
+other factors.
+  12
+     While we observe the year of birth for each worker, for privacy reasons we do not observe the exact date of birth.
+We impute month of birth from the distribution of birth months in the United States using data from the Center for
+Disease Control and Prevention.
+
+
+
+
+                                                           7

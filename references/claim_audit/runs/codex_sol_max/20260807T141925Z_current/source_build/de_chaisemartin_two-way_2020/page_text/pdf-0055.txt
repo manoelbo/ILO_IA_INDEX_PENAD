@@ -1,0 +1,43 @@
+    distributional conflict is equal to 0. This is a sharp design.
+
+22. Moser and Voena (2012), Compulsory Licensing: Evidence from the Trading
+    with the Enemy Act. Table 2.
+    In the regression equation in the beginning of Section III, the dependent variable is the
+    number of patents by US inventors in patent class c at period t, and the explanatory
+    variables are patent class and time fixed effects, the interaction of period t being after
+    the trading with the enemy act and the number of licensed patents in class c, and some
+    control variables. This regression corresponds to Regression 1 with some controls. The
+    stable groups assumption is satisfied: there are patent classes where no patent was licensed.
+    This is a sharp design.
+
+23. Forman et al. (2012), The Internet and Local Wages: A Puzzle. Tables 2 and 4.
+    In regression Equation (1), the dependent variable is the difference between log wages in
+    2000 and 1995 in county i, and the explanatory variables are the proportion of businesses
+    using Internet in county i in 2000, and control variables. This regression corresponds
+    to Regression 2 with some controls. The stable groups assumption is satisfied: there are
+    counties with no Internet investment in 2000. This a fuzzy design: the treatment of interest
+    is whether a business uses Internet, which varies within (county,year) cells.
+
+24. Besley and Mueller (2012), Estimating the Peace Dividend: The Impact of
+    Violence on House Prices in Northern Ireland. Table 1, Columns 3 and 5-7.
+    In regression Equation (1), the dependent variable is the price of houses in region r at time
+    t, while the explanatory variables are region and time fixed effects, and the number of
+    people killed because of the civil war in region r at time t-1. This regression corresponds
+    to Regression 1. The stable groups assumption is presumably satisfied: between each pair
+    of consecutive years, it is likely that there are some regions where the number of people
+    killed because of the civil war does not change. This is a sharp design.
+
+25. Dafny et al. (2012), Paying a Premium on Your Premium? Consolidation in
+    the US Health Insurance Industry. Table 3.
+    In regression Equation (3), the dependent variable is the the concentration of the hospital
+    industry in market m and year t, and explanatory variables are time fixed effects, market
+    fixed effects, and the change in concentration in market m induced by a merger interacted
+    with an indicator for t being after the merger. This regression corresponds to Regression
+    1. The stable groups assumption is satisfied: there are many markets where the merger
+    did not change concentration. This is a sharp design.
+
+26. Hornbeck (2012), The Enduring Impact of the American Dust Bowl: Short-
+    and Long-Run Adjustments to Environmental Catastrophe. Table 2. In regression
+
+                                               19
+

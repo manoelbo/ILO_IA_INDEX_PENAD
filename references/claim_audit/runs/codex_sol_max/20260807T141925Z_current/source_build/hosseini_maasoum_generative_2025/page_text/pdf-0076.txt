@@ -1,0 +1,44 @@
+  Table A.2: Revelio Seniority and GenAI Usage Mode: Occupation-Level Regressions
+
+                                           No fixed effects           2-digit SOC FE
+          Dependent variable              β       SE        p         β       SE       p
+          Directive                     −1.00    0.74    0.18      −1.15     0.80 0.15
+          Learning                      −0.18    0.71    0.80      0.22      0.89 0.81
+          Validation                    0.83     0.26   0.002      0.82      0.29 0.005
+          Task iteration                2.55     0.71   <0.001     1.74      0.79 0.029
+          Displacement                  −1.25 0.77 0.11  −1.91 0.80 0.018
+          Augmentation                  3.20 0.92 <0.001 2.78 1.05 0.008
+          Displacement intensity        −3.26 1.02        0.002    −3.68 1.15 0.002
+          Notes: N = 387 occupations (with ≥ 3 AI-used tasks, non-missing seniority, and
+         ≥ 50 Revelio workers). The independent variable is the Revelio seniority z-score
+         (standardized average seniority from LinkedIn profiles, January 2023). Each row is
+         a separate regression. Dependent variables are occupation-level weighted averages
+         of GenAI collaboration mode shares, with weights proportional to task usage counts.
+         Displacement = directive + feedback loop. Augmentation = learning + validation +
+         task iteration. Displacement intensity = displacement/(displacement + augmenta-
+         tion) × 100, computed at the task level and then averaged to the occupation level.
+         Heteroskedasticity-robust standard errors.
+
+
+not merely in which tasks are exposed to AI, but in how AI is used: junior-type tasks are
+engaged through directive interactions that substitute for human execution, while senior-
+type tasks are engaged through iterative and learning-oriented interactions that comple-
+ment human expertise. This pattern—a qualitative difference in the mode of human–AI
+collaboration across the seniority spectrum—provides descriptive support for the aggre-
+gate employment patterns documented in the main analysis.
+   Several caveats apply. First, the AEI data classify conversations by the O*NET task
+they address, not by the seniority of the individual user. We observe how AI is used
+for tasks that are characteristic of junior or senior occupations, but we cannot determine
+whether a junior or senior worker initiated the interaction. The relevant variation is there-
+fore at the task level, not the worker level. Second, the data cover a single week in Novem-
+ber 2025 on a single AI platform, and usage patterns may evolve as the technology and
+its user base mature. Third, the collaboration mode classification is algorithmic and im-
+perfect; some interactions may be misclassified. Despite these limitations, the consistency
+of the patterns across occupation-level and task-level specifications and across a range of
+professional domains suggests that the qualitative pattern is stable across specifications.
+
+
+
+
+                                                A.31
+

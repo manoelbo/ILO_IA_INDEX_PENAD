@@ -1,0 +1,46 @@
+A       Proofs of results in the main text
+A.1       Proof of Proposition 1
+Proposition 1. Suppose that:
+
+    1. (The function m is continuous and increasing) m : r0, 8q Ñ R is a continuous, weakly in-
+        creasing function.
+
+    2. (The function m behaves like log for large values) mpyq{ logpyq Ñ 1 as y Ñ 8.
+
+    3. (Treatment affects the extensive margin) P pY p1q “ 0q ‰ P pY p0q “ 0q.
+
+    4. (Finite expectations) EPY pdq r| logpY pdqq| | Y pdq ą 0s ă 8 for d “ 0, 1.46
+
+Then, for every θ ˚ P p0, 8q, there exists an a ą 0 such that |θpaq| “ θ ˚ . In particular, θpaq is
+continuous with θpaq Ñ 0 as a Ñ 0 and |θpaq| Ñ 8 as a Ñ 8.
+
+Proof. Note that θp0q “ EP rmp0qs ´ EP rmp0qs “ 0. Additionally, Proposition 4 below implies that
+|θpaq| Ñ 8 as a Ñ 8. To establish the proof, it thus suffices to show that θpaq is continuous on
+r0, 8q. The desired result is then immediate from the intermediate value theorem.
+      To establish continuity, fix some a P r0, 8q and consider a sequence an Ñ a. Without loss of
+generality, assume an ă a ` 1 for all n. Let man pyq “ mpan yq. Since m is continuous, man pyq Ñ
+ma pyq pointwise. We are done if we can apply the dominated convergence theorem to show that
+therefore Erman pY qs Ñ Erma pY qs.
+      Since mpyq{ logpyq Ñ 1 as y Ñ 8, there exists y such that mpyq ă 2 logpyq for all y ě y. From
+the monotonicity of m, it follows that
+
+                                mp0q ď mpyq ď 1ry ď ysmpyq ` 1ry ą ys2 logpyq
+                                                ď η ` 2 ¨ 1ry ą ys logpyq,                                (A.1)
+
+where η “ |mpyq|, and hence
+
+                    mp0q ď man pyq ď η ` 2 ¨ 1ran y ą ys logpan yq
+                                       ď η ` 2 ¨ 1ry ą 0s ¨ p| logpa ` 1q| ` | logpyq|q “: mpyq.
+
+for all n. Hence, we have that |man pyq| ď |mp0q| ` mpyq for all n, and the bounding function
+is integrable for Y pdq for d “ 0, 1 by the fourth assumption of the proposition. It follows from
+the dominated convergence theorem that EP rman pY pdqqs Ñ EP rma pY pdqqs for d “ 0, 1, and thus
+θpan q Ñ θpaq, as we wished to show.
+ 46
+      This assumption simply ensures that EPY pdq r|mpaY pdqq| | Y ą 0s exists for all values of a ą 0.
+
+
+
+
+                                                            1
+

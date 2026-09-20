@@ -1,0 +1,48 @@
+12         ILO Working Paper 140
+
+
+
+
+     XX     2 Tasks and occupations in the 6-digit system in
+            Poland
+
+
+     Within Europe, Poland is quite representative of the larger group of Central and Eastern European
+     (CEE) countries, albeit with a significantly larger population (38 million) than most of its peers.
+     Globally, the CEE ranks between the high-income advanced economies and the emerging econ-
+     omies of the Global South. With respect to access to the internet, Poland ranks below UK and
+     Germany, but higher than Japan and France. Thus, for assessing the potential of task automa-
+     tion, it seems reasonable to assume that Poland is representative of the upper threshold of au-
+     tomation potential, due to high availability of digital equipment and widespread internet access.
+
+
+         XX Figure 1. Income- and population-based similarities (A) and access to the internet (B) across countries
+
+
+
+
+     The Ministry of Family, Labour and Social Policy (MOL) in Poland maintains a system of occu-
+     pational classifications, with task and job descriptions that are regularly updated.2 The system
+     is used by Statistics Poland (GUS) and other state institutions for labor market analysis. At the
+     most detailed, 6-digit level, this framework contains 2541 occupations and 29,753 correspond-
+     ing tasks (Table 1). Since the system is publicly available online, we initially designed a scraping
+     bot that crawled through individual occupational pages and downloaded job descriptions and
+     corresponding tasks into a structured data frame.3 The extracted content was subsequently
+     cross verified against a tabular occupational classification provided by the Ministry. The Polish
+     classification system is compatible with the hierarchical structure of ISCO-08, which means that
+     we could easily append an additional mapping of occupations from 1 to 4-digit level (Table 1).
+
+
+
+
+     2
+            The occupational classification database (KZiS) was first published in 2014 and has been regularly updated, with the latest validation
+            on 1 January 2025. The classification was introduced by the Regulation of the Minister of Labour and Social Policy on the classifica-
+            tion of occupations and specializations for labor market purposes and its scope of application, dated 7 August 2014 (Dz.U. z 2018 r.
+            poz. 227, z 2021 r. poz. 2285, z 2022 r. poz. 853, Dz.U. z 2024 r. poz. 1372). Additionally, the Ministry publishes a mapping to ISCO-08.
+            See: https://psz.praca.gov.pl/rynek-pracy/bazy-danych/klasyfikacja-zawodow-i-specjalnosci.
+     3
+            Web scraping was primarily conducted to demonstrate the potential of acquiring non-traditional data from publicly accessible sourc-
+            es, in contexts where such activity is not restricted by server settings or legal regulations. The process adhered to responsible data
+            collection practices, including appropriate frequency settings to avoid overloading servers.
+

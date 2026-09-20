@@ -1,0 +1,24 @@
+35     ILO Working Paper 140
+
+
+
+
+     XX   7 Prediction of synthetic task-level scores for all
+          ISCO-08 and 6-digit occupations
+
+
+     As the final step, we use the adjusted survey scores for 2,861 tasks to develop an AI assistant
+     capable of predicting synthetic scores for new tasks across various classification systems. This
+     combines the strengths of human expertise with generative AI’s ability to generate consistent,
+     large-scale responses based on precise instructions.
+
+
+     XX Text Box 3. The conceptual structure of the LLM prompt (Python code for GPT-4o)
+
+
+
+
+     To develop our predictive model, we evaluated two approaches: (i) fine-tuning a large lan-
+     guage model (LLM) with the 2,861-task dataset or (ii) designing an advanced prompting strate-
+     gy (prompt engineering). Fine-tuning, while promising for learning domain-specific patterns, is
+

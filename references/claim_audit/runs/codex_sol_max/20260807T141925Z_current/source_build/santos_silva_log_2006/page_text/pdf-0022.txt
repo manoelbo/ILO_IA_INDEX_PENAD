@@ -1,0 +1,37 @@
+  As for the performance of the Poisson PML estimator, the results are very encouraging.
+In fact, when no rounding error is present, its performance is reasonably good in all cases.
+Moreover, although some loss of eﬃciency is noticeable as one moves away from Case 2,
+in which it is an optimal estimator, the biases of the PPML are always small.19 Moreover,
+the results obtained with rounded data suggest that the Poisson based PML estimator
+is relatively robust to this form of measurement error of the dependent variable. Indeed,
+the bias introduced by the rounding-oﬀ errors in the dependent variable is relatively small
+and, in some cases, it even compensates the bias found in the first set of experiments.
+Therefore, because it is simple to implement and reliable under a wide variety of situations,
+the Poisson PML estimator has the essential characteristics needed to make it the new
+work-horse for the estimation of constant-elasticity models.
+  Obviously, the sign and magnitude of the bias of the estimators studied here depend on
+the particular specification considered. Therefore, the results of these experiments cannot
+serve as an indicator of what can be expected in other situations. However, it is clear
+that, apart from the Poisson PML method, all estimators will often be very misleading.
+  These experiments were also used to study the finite sample performance of the Gauss-
+Newton regression (GNR) test for the adequacy of the Poisson PML based on (13) and
+of the Park test advocated by Manning and Mullahy (2001), which, as explained above,
+is only valid to check for the adequacy of the estimator based on the log-linear model.20
+Given that the Poisson PML estimator is the only estimator with a reasonable behavior
+under all the cases considered, these tests were performed using residuals and estimates of
+µ (xi β) from the Poisson regression. Table 2 contains the rejection frequencies of the null
+hypothesis at the 5 percent nominal level for both tests in the four cases considered in the
+two sets of experiments. In this table the rejection frequencies under the null hypothesis
+are given in bold.
+  19
+       These results are in line with those reported by Manning and Mullahy (2001).
+  20
+       To illustrate the pitfalls of the procedure suggested by Manning and Mullahy (2001) we note that the
+means of the estimates of λ1 obtained using (11) in cases 1, 2 and 3 (without measurement error) were
+0.58955, 1.29821 and 1.98705, whereas the true values of λ1 in these cases are, respectively, 0, 1 and 2.
+
+
+
+
+                                                     21
+

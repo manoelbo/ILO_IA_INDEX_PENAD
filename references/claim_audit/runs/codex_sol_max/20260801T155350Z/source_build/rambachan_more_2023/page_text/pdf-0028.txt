@@ -1,0 +1,53 @@
+2582                            REVIEW OF ECONOMIC STUDIES
+
+M is small, which aligns with the finite-sample near-optimality results in Section 4. However,
+FLCIs can perform quite poorly for other classes of .
+    Overall, we therefore recommend to use the conditional-LF hybrid confidence sets for
+generic forms of , and optimal FLCIs for the special case of SD (M) (or other special
+cases where the consistency/finite-sample near-optimality of FLCIs is guaranteed). Although
+the conditional and hybrid approaches perform similarly in our simulations, we recommend
+the hybrid approach in general based on the guidance provided in ARP. We implement these
+recommendations in our applications in the next section.
+
+
+
+
+                                                                                                       Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+             6. PRACTICAL GUIDANCE AND EMPIRICAL ILLUSTRATIONS
+6.1.   Practical guidance
+We recommend that researchers use our methods to construct robust confidence intervals under
+restrictions on the possible violations of parallel trends  that are motivated by domain knowl-
+edge in their empirical setting. We also suggest that researchers report sensitivity analyses to
+illustrate the sensitivity of their causal conclusions to alternative assumptions on the possible
+violations of parallel trends.
+
+
+    6.1.1. Choice of . The choice of  should be motivated by economic knowledge about the
+types of possible confounding factors that could produce non-parallel trends. We now provide
+some guidance on how the choice of  can be motivated by domain knowledge, highlighting
+some cases where our leading examples,  R M ( M̄) and SD (M), would be sensible choices.
+    In some empirical settings, researchers may be concerned about differential economic shocks
+to the treated and control groups that generate violations of parallel trends. If the researcher
+believes that the magnitude of these differential shocks in the post-treatment period is not too
+different from the magnitude in the pre-treatment period, then it may be reasonable to assume
+δ ∈  R M ( M̄), which explicitly bounds the relative magnitudes of violations of parallel trends
+in the post-treatment based on observed violations in the pre-treatment period. In other settings,
+researchers may be worried about violations of parallel trends that arise due to differences in
+smoothly evolving secular trends that differentially affect the treated and comparison groups.
+In this case, it may be reasonable to assume δ ∈ SD (M), which explicitly bounds the extent
+to which the slope of the difference in trends can vary across consecutive periods. Economic
+knowledge may imply additional restrictions as well. For example, if the researcher knows of a
+confounding policy change that would have a positive effect on the outcome, then it is reasonable
+to further assume that post-treatment difference in trends must be positive (i.e. δt ≥ 0 for t > 0).
+    In our empirical applications below, we illustrate how domain knowledge about the types
+of possible violations of parallel trends can inform the choice of . We encourage applied
+researchers to use such domain knowledge to inform the restrictions they impose on the possible
+choices of parallel trends in their context.
+
+
+   6.1.2. Choice of inference procedure. Based on our theoretical results and Monte Carlo
+simulations, we recommend the ARP hybrid confidence sets for generic, polyhedral forms of .
+For the special case of SD (M)—or other choices of  for which the consistency and finite-
+sample-near-optimality of FLCIs are guaranteed—we recommend FLCIs. Our recommended
+choice of inference procedure is implemented in the HonestDiD R and Stata packages that
+

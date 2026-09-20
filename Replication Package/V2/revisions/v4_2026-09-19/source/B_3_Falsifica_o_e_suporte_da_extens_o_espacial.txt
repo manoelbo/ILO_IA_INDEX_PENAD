@@ -1,0 +1,27 @@
+### B.3 Falsificação e suporte da extensão espacial
+A extensão espacial descrita ao fim da subseção 4.5 executou falsificação e diagnóstico de suporte, e parou antes de estimar qualquer coeficiente de tratamento.
+**Tabela B.3: Placebo temporal de dezembro de 2021 na interação tripla**
+
+[TABLE]
+Desfecho | Coeficiente | EP | p
+Admissões | +0,0096 | 0,0056 | 0,085
+Desligamentos | +0,0077 | 0,0050 | 0,126
+Salário real de admissão | +0,0012 | 0,0025 | 0,641
+Saldo líquido (asinh) | −0,0139 | 0,0158 | 0,382
+[/TABLE]
+
+> *Notas: evento falso datado em dezembro de 2021 e estimado apenas dentro do pré-período verdadeiro, descartando-se todo o período posterior ao ChatGPT. Os quatro placebos passam o critério de p ≥ 0,05.*
+As tendências prévias da interação tripla, por sua vez, falham em três dos quatro desfechos: admissões com p conjunto de 0,0001, desligamentos com 0,033 e saldo líquido com 1,1 × 10⁻⁹. O salário real de admissão é o único que não falha, com p conjunto de 0,347. O critério de continuidade exigia apenas que **um** desfecho não falhasse, e foi por essa margem que o exercício prosseguiu ao diagnóstico de suporte. O critério foi satisfeito por margem estreita, assim como foi estreita a margem que depois interrompeu o exercício.
+O diagnóstico de suporte cobriu oito itens, todos calculados sem usar desfecho e sem estimar modelo. A variação identificadora residual é adequada para os três proxies, retendo entre 12,6% e 16,6% da variância bruta após a absorção dos efeitos fixos. A coexistência de ocupações expostas e não expostas dentro da mesma célula de município e mês alcança 99,93% antes e 99,95% depois do evento. Todas as células do desenho dois por dois são não vazias. A remoção iterativa de singletons descarta 137 de 4.343.581 linhas, ou 0,003%, e 99,21% das células sobreviventes têm observações antes e depois.
+O item que interrompeu o exercício foi a **estrutura efetiva de agrupamento**:
+**Tabela B.4: Clusters efetivos do regressor de interesse, por proxy**
+
+[TABLE]
+Proxy de intensidade digital | Municípios efetivos | UFs efetivas | Maior alavancagem estadual | Classificação
+Penetração de banda larga fixa | 445,5 | 11,7 | SP, 20,1% | limitado
+Admissões em atividades digitais | 532,5 | 9,2 | SP, 25,7% | insuficiente
+Uso de internet, PNAD TIC 2021 | 516,8 | 10,1 | SP, 23,0% | limitado
+[/TABLE]
+
+> *Notas: há 657 municípios e 27 Unidades da Federação nominais. A contagem efetiva pondera cada unidade por sua participação na massa do regressor de interesse residualizado, de modo que ela cai abaixo da contagem nominal quando poucas unidades concentram a variação identificadora. O piso declarado para suporte estadual limitado era de 10 UFs efetivas. O segundo proxy ficou em 9,19; o valor não foi arredondado, recalibrado nem substituído. A inferência principal, agrupada por município, tinha suporte adequado nos três casos.*
+**Três declarações de procedência acompanham este exercício e não devem ser omitidas.** A primeira: o diagnóstico de suporte que o interrompeu **não integrava o desenho original**; ele foi adotado depois que o critério de continuidade original já havia sido satisfeito, embora antes de qualquer número de suporte ser calculado, e por isso consta como emenda, e não como regra pré-registrada. A segunda: a emenda contém um conflito interno conhecido, porque previa tanto rebaixar um resultado frágil quanto interromper o exercício, e a regra conservadora foi mantida precisamente para não escolher a alternativa mais permissiva depois de saber qual delas prendia. A terceira: a família de 12 hipóteses permanece declarada com todas as vagas vazias, sem nenhum coeficiente, p-valor nominal ou p-valor ajustado.

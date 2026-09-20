@@ -1,0 +1,64 @@
+each C ATTe,` using an interacted two-way fixed effects regression, then estimate the weight Pr {Ei = e |
+
+Ei ∈ [−`,T − `]} using their sample analogs. In the final step, we average over the cohort-specific estimates
+
+associated with relative period `. This method has a similar flavor as the method proposed by Gibbons et
+
+al. (2019). They first use an interacted model to estimate the treatment effect for each fixed effect group;
+
+the resulting group-specific estimates are averaged to provide the ATE. Their method improves fixed effects
+
+regressions in a cross-sectional setting, and our method builds on theirs by improving two-way fixed effects
+
+regressions in a panel setting. We therefore follow their terminology in calling our alternative estimator an
+
+“interaction-weighted” estimator.
+
+
+4.1     Interaction-weighted estimator
+
+We describe the estimation procedure in three steps (with more detailed definitions stated in Definition 4 of
+
+Online Appendix B).
+
+      Step 1. We estimate C ATTe,` using a linear two-way fixed effects specification that interacts relative
+
+period indicators with cohort indicators, excluding indicators for cohorts from some set C:
+
+
+                                                                               `
+                                                 ÕÕ
+                              Yi,t = αi + λt +              δe,` (1{Ei = e} · Di,t ) + i,t .               (26)
+                                                 e<C `,−1
+
+
+The exact specification depends on the cohort shares for a given application. If there is a never-treated
+
+cohort, i.e. ∞ ∈ supp{Ei }, then we may set C = {∞} and estimate regression (26) on all observations. If
+
+there are no never-treated units, i.e. ∞ < supp{Ei }, then we may set C = {max{Ei }}, i.e. the latest-treated
+
+cohort and estimate regression (26) on observations from t = 0, . . ., max{Ei } − 1. Lastly, if there is a cohort
+
+that is always treated, i.e. 0 ∈ supp{Ei }, then we need to exclude this cohort from estimation.
+
+                                δe,` from regression (26) is a DID estimator for C ATTe,` with particular
+      The coefficient estimator b
+
+choices of pre-periods and control cohorts. As DID is likely a familiar estimator for applied researchers, we
+
+separate the more in-depth discussion of its definition, choices of pre-periods, and choices of control cohorts
+
+in Section 4.2.
+
+      Step 2. We estimate the weights Pr {Ei = e | Ei ∈ [−`,T − `]} by sample shares of each cohort in the
+
+relevant period(s) ` ∈ g.
+
+      Step 3. To form our IW estimator, we take a weighted average of estimates for C ATTe,` from Step 1
+
+
+
+
+                                                            22
+

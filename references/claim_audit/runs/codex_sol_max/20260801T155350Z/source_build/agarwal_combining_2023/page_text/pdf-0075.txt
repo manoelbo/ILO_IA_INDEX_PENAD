@@ -1,0 +1,65 @@
+                                                                                                                                                                                                                                          75
+
+This section presents distributions for two different accuracy measures for radiologists and
+the AI across different pathology groups. These figures allow for a comparison between the
+accuracy of the AI relative to the mean radiologist.
+
+                                                                                                  Figure C.10: AUROC
+
+
+                                             AI (Pct. 68)                                              AI (Pct. 58)                                                      AI (Pct. 69)                                      AI (Pct. 36)
+    5                                                           5                                                               4                                                          25
+    4                                                           4
+                                                                                                                                3                                                          20
+
+    3                                                           3                                                                                                                          15
+                                                                                                                                2
+    2                                                           2                                                                                                                          10
+                                                                                                                                1
+    1                                                           1                                                                                                                          5
+
+    0                                                           0                                                               0                                                          0
+                  .6         .7        .8             .9    1           .5        .6         .7        .8    .9       1                 .5    .6          .7        .8       .9     1           .7        .8          .9           1
+                             Abnormal                                              Airspace opacity                                                     Atelectasis                             Bacterial pneumonialobar pneum
+
+
+                                        AI (Pct. 50)                                                        AI (Pct. 54)                                                    AI (Pct. 47)                                   AI (Pct. 42)
+                                                                15                                                              15                                                         25
+    5
+
+    4                                                                                                                                                                                      20
+                                                                10                                                              10
+    3                                                                                                                                                                                      15
+
+    2                                                                                                                                                                                      10
+                                                                    5                                                               5
+    1                                                                                                                                                                                      5
+
+    0                                                               0                                                               0                                                      0
+            .5         .6         .7        .8         .9   1                .6         .7        .8        .9        1                  .6        .7          .8           .9      1           .7       .8           .9           1
+             Cardiomediastinal abnormality                                             Cardiomegaly                                                Consolidation                                              Edema
+
+
+                                   AI (Pct. 6)                                                                   AI (Pct. 51)
+    25
+                                                                25
+    20
+                                                                20
+
+    15                                                          15
+
+    10                                                          10
+
+        5                                                           5
+
+        0                                                           0
+             .7               .8                 .9         1            .6            .7         .8        .9        1
+                            Fracture (ribs)                                            Pleural effusion
+
+
+
+
+Note: This figure summarizes the distribution of radiologist AUROCs across different pathologies, as well as the AUROC of
+the AI algorithm for the corresponding pathology. Only the cases where contextual history information is available for the
+radiologist but not the AI prediction were considered.
+

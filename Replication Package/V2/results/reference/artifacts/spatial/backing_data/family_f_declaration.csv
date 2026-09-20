@@ -1,0 +1,13 @@
+family,family_size,outcome,proxy,coefficient,p_value,bh_adjusted_p_value,status
+F,12,ln_admissoes,fixed_broadband_penetration,,,,declared_not_estimated
+F,12,ln_admissoes,digital_intensive_admission_share,,,,declared_not_estimated
+F,12,ln_admissoes,pnad_internet_use_2021,,,,declared_not_estimated
+F,12,ln_desligamentos,fixed_broadband_penetration,,,,declared_not_estimated
+F,12,ln_desligamentos,digital_intensive_admission_share,,,,declared_not_estimated
+F,12,ln_desligamentos,pnad_internet_use_2021,,,,declared_not_estimated
+F,12,ln_salario_real_adm,fixed_broadband_penetration,,,,declared_not_estimated
+F,12,ln_salario_real_adm,digital_intensive_admission_share,,,,declared_not_estimated
+F,12,ln_salario_real_adm,pnad_internet_use_2021,,,,declared_not_estimated
+F,12,asinh_saldo,fixed_broadband_penetration,,,,declared_not_estimated
+F,12,asinh_saldo,digital_intensive_admission_share,,,,declared_not_estimated
+F,12,asinh_saldo,pnad_internet_use_2021,,,,declared_not_estimated

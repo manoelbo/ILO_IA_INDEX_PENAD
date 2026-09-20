@@ -10,7 +10,7 @@ import pandas as pd
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "hourly_wage.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "hourly_wage.py"
 
 
 def load_module():
@@ -48,7 +48,14 @@ def test_continuity_gate_rejects_structural_break_not_small_one_month_dip() -> N
 
 
 def test_generated_hourly_family_has_support_and_adjusted_p_values() -> None:
-    results = PACKAGE_ROOT / "results" / "mechanisms"
+    results = (
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "mechanisms"
+    )
     estimates = pd.read_csv(results / "hourly_wage_results.csv")
     coverage = pd.read_csv(results / "hourly_wage_coverage.csv")
     status = json.loads(

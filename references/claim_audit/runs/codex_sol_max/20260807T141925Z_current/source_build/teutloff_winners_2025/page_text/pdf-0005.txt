@@ -1,0 +1,67 @@
+O. Teutloff et al.                                                               Journal of Economic Behavior and Organization 235 (2025) 106845
+
+     Additionally, the employer can specify the experience level of workers they are looking for, choosing from three options: ‘‘I am
+willing to hire an inexperienced freelancer cheaply’’ (novice), ‘‘I prefer an intermediate level freelancer’’ (intermediate), or ‘‘I am
+willing to pay more for an experienced freelancer’’ (veteran). This information is presented to workers when they apply for jobs.
+However, it is important to note that the specified worker level is merely a statement of employer expectations. Novice workers can
+still apply for and potentially be hired for jobs aimed at higher levels.
+     The job posting metadata also includes other potential control variables, such as expected hours per week, and the desired
+worker’s home country. These variables were not useful as control variables due to a large share of missing values.
+     Finally, when creating a job posting, the employers can also declare their expected project budget. We use the employer declared
+budget as a proxy measure for employers’ willingness to pay for labor.
+
+2.3. From job postings to skill-clusters with BERTopic modeling
+
+    We use BERTopic to form and name clusters of job postings with similar skill requirements. This process is done in five steps,
+which we explain and justify below.
+    Embeddings. We give a text description to each job posting by appending the pre-text ’Expert in’ to its list of skills, which
+are lower-cased and unhyphenated. For instance, a job posting with skills ‘ghostwriting’, ‘writing’, ‘ebook’, ’creative writing’, and
+‘english’ becomes ’Expert in ghostwriting, writing, ebook, creative writing, english’. We then embed these text descriptions into a
+384-dimensional space using the sentence transformer ‘‘all-MiniLM-L6-v2’’, which is recommended for short texts.
+    We prefer this approach over skill co-occurrence since skills are not constant over time. For example, while ’news writing style’
+and ’news writing’ refer to the same or very similar skill, ’news writing style’ appears as a skill between 2021–2022 but not in
+2023, while ’news writing’ is a skill present in 2022–2023, but not before. Network co-occurrence algorithms, which are commonly
+used to model skill networks (Anderson, 2017; Lukac, 2021; Demirci et al., 2023; Stephany and Teutloff, 2024), may struggle to
+see these two skills as overlapping. Transformer models like BERTopic are able to capture the overlap due to semantic similarity.
+In addition, compared to bag-of-words embedding approaches such as GloVE or Word2Vec (Pennington et al., 2014; Mikolov et al.,
+2013), transformers have the advantage of not being restricted to a predefined dictionary of words.
+    Dimensionality reduction The next step is to reduce the dimensionality of the embeddings using Uniform Manifold Approxi-
+mation and Projection for Dimension Reduction (UMAP) (McInnes et al., 2018). This step is crucial because, in high-dimensional
+spaces, data points tend to become equidistant from each other, making it difficult for clustering algorithms to identify meaningful
+groupings (Aggarwal et al., 2001). Moreover, high-dimensional representations often contain noise or irrelevant features, which
+dimensionality reduction helps filter out. By focusing on the most important features, dimensionality reduction techniques enhance
+the quality of the clusters (Van Der Maaten et al., 2009).
+    Clustering We then cluster projects using Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN).
+We adjust the minimum cluster size for HDBSCAN to 1000, as the BERTopic documentation recommends trying different values
+and setting parameters larger than 500 for datasets exceeding one million entries (Grootendorst, 2024b). We further use an outlier
+reduction function to decrease the number of uncategorized topics (Grootendorst, 2024a; McInnes and Healy, 2017).
+    We use HDBSCAN instead of K-means because K-means assumes clusters to be spherical and of roughly equal size. HDBSCAN,
+however, utilizes density within the embeddings, accommodating clusters of varying shapes (Bhattacharjee and Mitra, 2021). This
+approach is generally preferred for complex data distributions, such as text embeddings, and is recommended by the BERTopic
+documentation (Grootendorst, 2022). HDBSCAN also provides a hierarchy of clusters, allowing us to check cluster coherence
+manually.
+    This step resulted in 286 clusters. We manually checked the common skills and several job descriptions in each cluster and
+concluded that, at least intuitively, the clustering seems to produce meaningful results. Since BERTopic is stochastic in nature, the
+results depend on the initial, random allocation of topics to clusters. To test the robustness of our clusters, we ran the algorithm
+multiple times and also tried K-means clustering instead of HDBSCAN. The robustness checks are detailed in Appendix E.
+    Vectorization The clustering procedures end in the previous step. However, BERTopic facilitates giving intuitive names to each
+cluster with two more steps. These two steps do not affect the categorization of clusters into substitutable, complementary, or
+unaffected (see next section) and consequently do not affect our difference-in-difference estimation. Nonetheless, the names help
+interpret our results. The vectorization step converts text in clusters into numerical vectors, which creates a document-term matrix
+where each entry represents the frequency of a token in a document.
+    cTF-IDF Finally, to label each cluster, the most representative words are chosen via continuous term frequency-inverse document
+frequency (cTF-IDF). This process balances out frequent terms and removes those that are too frequent, ensuring that the most
+informative terms for each cluster are highlighted. This helps in assigning meaningful labels to the skill clusters.
+    In Appendix A, we provide a comparison of our clusters to the categories used by the online freelance platforms and additional
+arguments for our choice of clustering methods and robustness checks.
+
+2.4. From skill clusters to AI exposure labels with GPT-4o
+
+   We apply the definitions from Eloundou et al. (2023) and Qiao et al. (2023) to group skill clusters into the following three
+categories of AI exposure:
+
+Substitutable: A non-expert person can use Large Language Models to complete these tasks with a similar level of quality without
+       the help of an expert.
+
+                                                                  5
+

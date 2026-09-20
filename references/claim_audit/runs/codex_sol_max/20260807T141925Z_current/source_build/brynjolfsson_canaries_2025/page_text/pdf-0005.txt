@@ -1,0 +1,62 @@
+        Why might AI adversely affect exposed entry-level workers more than other age groups? One
+
+possibility is that AI disproportionately substitutes for workers using codified knowledge, includ-
+
+ing both the “book-learning” that forms the core of formal education and the insights in digital
+
+company data that can be codified by AI. AI may be less capable of replacing tacit knowledge,
+
+the idiosyncratic tips and tricks that accumulate with experience but which are never digitized. 4
+
+As young workers supply relatively more codified knowledge than tacit knowledge, they may face
+
+greater task replacement from AI in exposed occupations, leading to greater employment realloca-
+
+tion (Acemoglu and Autor, 2011). Older workers with accumulated tacit knowledge may face less
+
+task replacement. These benefits of uncodified knowledge may accrue less to non-college workers
+
+in occupations with low returns to experience. In other words, AI may be automating the cod-
+
+ifiable, checkable tasks that historically justified entry-level headcount, while complementing the
+
+judgment-, client-, and process-intensive tasks performed by experienced workers.
+
+        Other explanations may contribute. AI may raise the leverage of experienced staff, increasing
+
+their effective span of control (Ide, 2025). Reduced hiring may also be the lowest-friction adjustment
+
+margin, compounded by inefficient incentives to train entry-level workers who may move firms
+
+(Becker, 1994; Garicano, 2025; Garicano and Rayo, 2025). Consequently firms may primarily
+
+shrink junior inflows rather than displace incumbents.
+
+        This combination of task substitution at the apprentice margin, complementarity at the expert
+
+margin, and quantity (not price) adjustment under wage ladders can explain why early-career
+
+employment falls while employment of older workers continues to grow. An important direction for
+
+research is to further model and test these predictions.
+
+
+
+2        Related Literature
+
+A growing body of research has sought to measure the employment effects of AI.5 This includes
+
+influential papers that established methodologies for estimating which occupations and tasks were
+
+susceptible to automation (Frey and Osborne, 2017; Brynjolfsson and Mitchell, 2017; Brynjolfsson
+
+et al., 2018; Felten et al., 2018, 2019; Webb, 2019; Felten et al., 2021). More recently, work such
+    4
+     Ironically, one of the practical skills more likely to be learned on the job than in university computer science
+classes may be how to use AI for software development.
+   5
+     There has also been extensive media discusssion of this topic including Thompson (2025); Raman (2025); Roose
+(2025); The Economist (2025); Frick (2025). See Online Appendix B for further references and discussion.
+
+
+                                                         5

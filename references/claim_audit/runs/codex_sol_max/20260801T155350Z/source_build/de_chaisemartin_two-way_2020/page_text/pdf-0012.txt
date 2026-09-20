@@ -1,0 +1,53 @@
+Assumption 7 requires that the weights attached to the fixed effects estimator be uncorrelated
+with the conditional ATEs in the treated (g, t) cells. This is often implausible. For instance,
+groups treated the most are also those with the lowest value of wg,t , as shown in Proposition 1.
+But those groups could also be those with the largest treatment effect. This would then induce
+a negative correlation between w and ∆. e The plausibility of Assumption 7 can be assessed, by
+looking at whether w is correlated with a predictor of the treatment effect in each (g, t) cell. In
+the two applications we revisit in Section 6, this test is rejected.
+
+
+3.3   Extension to the first-difference regression
+
+Instead of Regression 1, many articles have estimated the first-difference regression defined below:
+
+Regression 2 (First-difference regression)
+Let βbf d denote the coefficient of Dg,t − Dg,t−1 in an OLS regression of Yg,t − Yhg,t−1i on period fixed
+effects and Dg,t − Dg,t−1 , among observations for which t ≥ 2. Let βf d = E βbf d .
+
+When T = 2 and Ng,2 /Ng,1 does not vary across g, meaning that all groups experience the same
+growth of their number of units from period 1 to 2, one can show that βbf e = βbf d . βbf e differs
+from βbf d if T > 2 or Ng,2 /Ng,1 varies across g.
+We start by showing that a result similar to Theorem 1 also applies to βbf d . For any (g, t) ∈
+{1, ..., G} × {2, ..., T }, let εf d,g,t denote the residual of observations in group g and at period t in
+the regression of Dg,t − Dg,t−1 on period fixed effects, among observations for which t ≥ 2. For
+any g ∈ {1, ..., G}, let εf d,g,1 = εf d,g,T +1 = 0. One can show that if the regressors in Regression
+2 are not perfectly collinear,
+                                    X Ng,t                  Ng,t+1
+                                                                              
+                                                  εf d,g,t −        εf d,g,t+1 6= 0.
+                                            N1                Ng,t
+                            (g,t):Dg,t =1
+
+Then we define
+                                                 εf d,g,t − NNg,t+1  εf d,g,t+1
+                         wf d,g,t = P                      g,t                             .
+                                                     Ng,t                Ng,t+1
+                                      (g,t):Dg,t =1 N1     ε f d,g,t −    Ng,t
+                                                                                ε f d,g,t+1
+
+
+Theorem 2 Suppose that Assumptions 1-5 hold. Then,
+                                                             
+                                     X Ng,t
+                         βf d = E              wf d,g,t ∆g,t  .
+                                             N1
+                                                (g,t):Dg,t =1
+
+
+Theorem 2 shows that under Assumption 5, βf d is equal to a weighted sum of the ATEs in
+each treated (g, t) cell with potentially some strictly negative weights, just as βf e . We now
+characterize the (g, t) cells whose ATEs are weighted negatively by βf d . To do so, we focus on
+
+                                                         12
+

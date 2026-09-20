@@ -1,0 +1,56 @@
+Table A21: Effect of LLM exposure on firm-level job listings, non-linear exposure
+
+
+                               LLM exposure bin 2 x Post           −0.015∗∗∗
+                                                                    (0.004)
+
+                               LLM exposure bin 3 x Post           −0.025∗∗∗
+                                                                    (0.005)
+
+                               LLM exposure bin 4 x Post           −0.026∗∗∗
+                                                                    (0.005)
+
+                               Firm fixed-effects                     Yes
+                               Industry-by-period fixed effects       Yes
+                               Observations                        1,268,013
+                               Adj. R-squared                        0.522
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level job posting activity, using exposure quartiles. Firms are divided into four bins based
+on their pre-treatment LLM exposure scores, with bin 1 (lowest exposure quartile) serving as the
+reference category. Bins 2, 3, and 4 represent the second, third, and fourth quartiles of the exposure
+distribution, respectively. All other definitions are as in Table A1.
+
+
+
+
+Table A22: Effect of LLM exposure on occupation-level job listings, non-linear
+exposure
+
+
+                                      Job posts (log)      Salary (lvl)    Salary (log)   SD salary
+       LLM exposure bin 2 x Post          −0.006            −436.848           −0.004     −248.627
+                                          (0.048)           (413.685)          (0.008)    (406.298)
+
+       LLM exposure bin 3 x Post           0.033            −298.922           −0.003       3.184
+                                          (0.048)           (435.849)          (0.008)    (389.215)
+
+       LLM exposure bin 4 x Post          −0.091∗         −1,018.329∗∗         −0.019∗∗    −71.245
+                                          (0.047)          (424.148)            (0.008)   (392.062)
+
+       Occupation fixed-effects            Yes                 Yes               Yes         Yes
+       Year-by-month fixed effects         Yes                 Yes               Yes         Yes
+       Observations                       16,815              16,815            16,815     16,804
+       Adj. R-squared                     0.962               0.948             0.952       0.729
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, using exposure quartiles. Firms are divided into four bins based
+on their pre-treatment LLM exposure scores, with bin 1 (lowest exposure quartile) serving as the
+reference category. Bins 2, 3, and 4 represent the second, third, and fourth quartiles of the exposure
+distribution, respectively. All other definitions are as in Table 4.
+
+
+
+
+                                                     42
+

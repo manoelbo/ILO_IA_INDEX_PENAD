@@ -1,0 +1,62 @@
+2560                                   REVIEW OF ECONOMIC STUDIES
+
+coefficients from the regression
+                                                   
+                              Yit = λi + φt +                βs × 1[t = s] × Di + it .                              (2)
+                                                      s=0
+
+
+In this case, β̂ post collects the estimated coefficients corresponding with treated periods,
+(β̂ 1 , . . . , β̂ T̄ ), while β̂ pr e collects the estimated coefficients corresponding with periods before
+treatment (β̂ −T , . . . β̂ −1 ).
+
+
+
+
+                                                                                                                           Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                 ¯
+Example 2 (Staggered DiD). Event-study coefficients can also be obtained from more compli-
+cated DiD procedures. For example, in settings with staggered treatment timing, Callaway and
+Sant’Anna (2020) propose event-study estimates of the form
+                                      
+                               β̂ r =        
+                                         wg AT  T (g, g + r ),
+                                                  g
+
+
+where AT  T (g, t) is a DiD estimate that compares the evolution of the outcome for units first
+treated at period g to units first-treated after period t between time periods g − 1 and t, and
+the wg are weights that sum to one (e.g. proportional to sample size). In this case, β̂ post col-
+lects the values of β̂ r for r ≥ 0 (i.e. estimates where one of the groups is treated), and β̂ pr e
+collects the values of β̂ r for values of r < 0. Several other related procedures have been pro-
+posed for constructing event-study coefficients in contexts with staggered treatment timing; see
+de Chaisemartin and D’Haultfæuille (2021) and Roth et al. (2022) for reviews.
+Example 3 (Other related estimators). Other examples of estimators that can be used to produce
+event-studies coefficients of the form considered here include the GMM procedure proposed by
+Freyaldenhoven et al. (2019), instrumental variables event-studies (Hudson et al., 2017), as well
+estimators that flexibly control for differences in covariates between treated and comparison
+groups (e.g. Heckman et al., 1998; Abadie, 2005; Sant’Anna and Zhao, 2020).
+
+
+2.2.   Causal decomposition
+Under mild regularity conditions,√all of the estimators described above will be asymptotically
+normally distributed, satisfying n(β̂ n − β) → N (0, ∗ ) for some parameter vector β. We
+assume the parameter vector β satisfies the following causal decomposition.
+Assumption 1. The parameter vector β can be decomposed as
+                                             
+                              τ pr e     δ
+                       β=             + pr e      with τ pr e = 0.                                                  (3)
+                              τ post     δ post
+                                 
+                                           =:τ               =:δ
+
+    The first term, τ , represents the treatment effects of interest. We assume the treatment has
+no causal effect prior to its implementation, so τ pr e = 0. The second term, δ, represents the
+difference in trends between the treated and comparison groups that would have occurred absent
+treatment. The parallel trends assumption imposes that δ post = 0, and therefore β post = τ post
+under parallel trends.3
+
+
+      3. Although our focus is on generalized DiD settings, our results apply to any setting where the researcher has an
+asymptotically normally distributed estimator β̂ of a reduced form parameter β that satisfies (3). For example, β̂ could
+

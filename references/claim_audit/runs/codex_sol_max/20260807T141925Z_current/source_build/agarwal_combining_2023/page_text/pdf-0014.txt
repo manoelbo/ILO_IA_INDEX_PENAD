@@ -1,0 +1,44 @@
+                                                                                                          14
+
+and do rule out order effects on accuracy based on the first two designs.
+
+
+3.2.4   Participant Recruitment
+
+Participants for the first and third designs, which constitute the majority, were recruited
+through teleradiology companies. The teleradiology companies allow us to recruit several
+experts in a relatively liquid spot market, a practice that is now common for decision exper-
+iments with non-expert subjects (Hunt and Scheetz, 2019). Most healthcare providers in the
+US rely on these companies’ services, although many large hospitals have on-call radiologists
+(Rosenkrantz et al., 2019). We work with teleradiology companies that serve US hospitals
+and offer the services of both US-based and non-US-based radiologists. Our contracts with
+teleradiology companies specify a piece-rate, and the companies, in turn, compensate the
+participants with a piece-rate.13 In addition, we provided monetary incentives for accuracy
+to a subset of radiologists, as described in the next section.
+The second design required us to work with a partner who could guarantee subjects’ partici-
+pation over several months. We collaborated with VinMac healthcare system in Vietnam to
+recruit their staff radiologists to ensure continued participation. VinMac is in the process of
+developing its own in-house AI capabilities and was willing to assist with our experiment in
+exchange for recognition in a publication of the resulting dataset. The VinMac radiologists
+did not receive receive any payments to participate in the experiment but we find that their
+perfomance is very close to the performance of the tele-radiologists.
+In total, 180 radiologists participated in our experiment. Close to 17% of our participants
+are US-based, 38% have a degree from a US institution, 80% are affiliated with a large clinic,
+and 61% with an academic institution. As demonstrated in appendix C.3, the quality of
+the assessments made by the radiologists in our study is comparable to that of the staff
+radiologists from Stanford University Hospital, who originally diagnosed the patient case.
+
+
+3.2.5   Incentives
+
+We cross-randomize incentives for accuracy in the first and third designs but not the second
+because of the specific ways in which our partner’s radiologists are employed.14 Payments
+were determined following the binarized scoring rule in Hossain and Okui (2013), where truth
+  13
+    We worked with three companies with piece-rates ranging from $7.50 to $13.00.
+  14
+    There does not appear to be a consensus in the experimental literature on whether incentives are superior
+to non-incentivized responses when eliciting beliefs (see Danz, Vesterlund, and Wilson, 2020; Charness,
+Gneezy, and Rasocha, 2021). A comparison between the incentivized and non-incentivized participants
+allows us to answer this question in the context of this experiment.
+

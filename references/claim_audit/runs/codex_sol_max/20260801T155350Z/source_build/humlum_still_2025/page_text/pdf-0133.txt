@@ -1,0 +1,58 @@
+Labor Market Effects. Figure E.22 revisits the impact of employer encouragement
+
+on workplace employment outcomes (Figure 3), now using our leave-out Bayes shrinkage
+
+measure for employer encouragement. The figure shows that all our difference-in-differences
+
+estimates are robust to using coworker reports to measure employer encouragement.
+
+Figure E.22: Have Adopting Workplaces Fared Differently? (Coworker Encouraged DiD)
+
+
+                         log(Employment)
+
+
+          Empl. of Early Career Workers
+
+
+                              Job Creation
+
+
+                          Job Destruction
+
+
+         Adoption Prop. of Job Creation
+
+
+      Adoption Prop. of Job Destruction
+
+                                             -.15         -.1        -.05          0          .05        .1         .15
+
+                                                                            2023       2024
+
+
+Notes: This figure shows workplace employment outcomes for encouraged-use workplaces relative to those without
+encouragement, indexed to November 2022. It replicates our “Encouraged” estimates from Figure 3, now using coworker
+reports to measure employer encouragement (see Section E.5.1). Panel (a) reports log employment; Panel (b), early-career
+employment in full-time equivalents (divided by 100 for scale comparability); Panel (c), job creation and destruction rates
+(hires and separations as shares of total employment); and Panel (d), the adopter propensity of hires and separations.
+Estimates are based on the pooled specification in Equation (2), with 95% confidence intervals shown as whiskers. Sample:
+All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+F       Spillovers to Non-Adopters
+
+Our main difference-in-differences estimates identify the effects of AI chatbots only up
+
+to occupation-wide effects—the so-called “missing intercept” problem. For example, by
+
+comparing earnings relative to non-encouraged non-adopters in Section 3.1, any general
+
+equilibrium effects that also affect these workers will be differenced out. This appendix
+
+assesses the potential magnitude of such spillovers.
+
+                                                           98
+

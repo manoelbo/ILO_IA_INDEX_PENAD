@@ -1,0 +1,205 @@
+the fourth quintile of AI exposure, show a decline in employment for young workers much like the
+
+case of software and customer service, albeit with smaller magnitudes. Front-line production and
+
+operations supervisors, in quintile 3, show an increase in employment for young workers, though
+
+the growth in employment is smaller than the increase for workers over the age of 35.
+
+   In contrast, the trends for occupations that Eloundou et al. (2024) rated as less exposed do
+
+not fit the pattern of the more exposed occupations. Stock clerks and order fillers, in quintile 2,
+
+show no obvious difference by age. Strikingly, the series for health aides, comprising nursing aides,
+
+psychiatric aides, and home health aides, show a quite different trend from software or customer
+
+service: employment for young workers has been growing faster than for older workers.
+
+            a. Marketing and Sales Managers                  b. First-Line Production Supervisors
+     1.2                                              1.2
+     1.1                                              1.1
+     1.0                                              1.0
+     0.9                                              0.9
+     0.8                                              0.8
+           Oc 21
+           Ap 21
+           Oc 22
+           Ap 22
+           Oc 23
+           Ap 23
+           Oc 24
+           Ap 24
+                   5
+
+
+
+
+                                                            Oc 21
+                                                            Ap 21
+                                                            Oc 22
+                                                            Ap 22
+                                                            Oc 23
+                                                            Ap 23
+                                                            Oc 24
+                                                            Ap 24
+                                                                    5
+                02
+
+
+
+
+                                                                 02
+                0
+                0
+                0
+                0
+                0
+                0
+                0
+                0
+
+
+
+
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+
+
+
+
+                                                              r2
+                                                              t2
+                                                              r2
+                                                              t2
+                                                              r2
+                                                              t2
+                                                              r2
+                                                              t2
+                                                              r2
+           Ap
+
+
+
+
+                                                            Ap
+
+
+
+
+                            Date                                             Date
+                      c. Stock Clerks                                  d. Health Aides
+     1.2                                              1.2
+     1.1                                              1.1
+     1.0                                              1.0
+     0.9                                              0.9
+     0.8                                              0.8
+           Oc 21
+           Ap 21
+           Oc 22
+           Ap 22
+           Oc 23
+           Ap 23
+           Oc 24
+           Ap 24
+                   5
+
+
+
+
+                                                            Oc 21
+                                                            Ap 21
+                                                            Oc 22
+                                                            Ap 22
+                                                            Oc 23
+                                                            Ap 23
+                                                            Oc 24
+                                                            Ap 24
+                                                                    5
+                02
+
+
+
+
+                                                                 02
+                0
+                0
+                0
+                0
+                0
+                0
+                0
+                0
+
+
+
+
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+                                                                 0
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+
+
+
+
+                                                              r2
+                                                              t2
+                                                              r2
+                                                              t2
+                                                              r2
+                                                              t2
+                                                              r2
+                                                              t2
+                                                              r2
+           Ap
+
+
+
+
+                                                            Ap
+
+
+
+
+                            Date                                             Date
+                Early Career 1 (22-25)      Developing (31-34)             Mid-Career 2 (41-49)
+                Early Career 2 (26-30)      Mid-Career 1 (35-40)           Senior (50+)
+
+Figure 2: Employment changes for marketing and sales managers (exposure quintile 4), first-line
+production supervisors (exposure quintile 3), stock clerks and order fillers (exposure quintile 2),
+and health aides (exposure quintile 1), normalized to 1 in October 2022. Exposure quintiles are
+defined based on the Eloundou et al. (2024) GPT-4 β measure.
+
+
+
+
+                                                 11
+

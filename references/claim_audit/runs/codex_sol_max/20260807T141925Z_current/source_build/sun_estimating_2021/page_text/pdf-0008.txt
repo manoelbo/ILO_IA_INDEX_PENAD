@@ -1,0 +1,63 @@
+active literature studying inference under violations of the parallel trends assumption e.g. Rambachan and
+
+Roth (2020).
+
+    Our parallel trends assumption coincides with that of de Chaisemartin and D’Haultfœuille (2020). One
+
+could substitute this assumption with a different identifying assumption that baseline outcomes are mean
+                                      ∞ |E = e] is the same for all e ∈ supp
+independent of Ei i.e. at each t, E[Yi,t  i                                  (Ei ) and in particular is equal to
+    ∞ ]. This stronger assumption is plausible when the timing of treatment is indeed randomized, which
+E[Yi,t
+
+is the assumption used by Athey and Imbens (2018). By taking the “fully dynamic” specification as their
+
+DGP, Borusyak and Jaravel (2017) implicitly assume this version of a parallel trends assumption. Callaway
+
+and Sant’Anna (2020a) propose a weaker version that is conditional on covariates. Finally, for a particular
+
+estimand, Goodman-Bacon (2018) identifies a weaker version that only requires a weighted average of
+    ∞ −Y ∞ |E = e] (averaged across cohorts) to be zero.
+E[Yi,t  i,s i
+
+
+Assumption 2. (No anticipatory behavior prior to treatment.) There is no treatment effect in pre-treatment
+                 e
+periods i.e. E[Yi,e+`    ∞
+                      −Yi,e+` | Ei = e] = 0 for all e ∈ supp(Ei ) and all ` < 0.
+
+    Assumption 2 requires potential outcomes in any ` periods before treatment to be equal to the baseline
+
+outcome on average as in Malani and Reif (2015) and Botosaru and Gutierrez (2018). This is most plausible
+
+if the full treatment paths are not known to units. If they have private knowledge of the future treatment path
+
+they may change their behavior in anticipation and thus the potential outcome prior to treatment may not
+
+represent baseline outcomes. For example, Hendren (2017) shows that knowledge of future job loss leads
+
+to decreases in consumption. If the periods with anticipation behavior are known, then we may consider
+
+an alternative version of Assumption 2, which holds for pre-periods in a subset of pre-treatment periods.
+
+Depending on the application, it may still be plausible to assume no anticipation until K periods before the
+
+treatment.
+
+    The no anticipation assumption proposed by Athey and Imbens (2018) is a deterministic condition which
+                  e
+stipulates that Yi,e+` = Yi,e+`
+                           ∞    for all units i and e and ` < 0. By taking the “fully dynamic” specification as
+
+their DGP, Borusyak and Jaravel (2017) allow anticipation by including pre-trends indicators in the DGP.
+
+Callaway and Sant’Anna (2020a) and Goodman-Bacon (2018) implicitly assume no anticipation by using
+
+observed outcomes in time periods before the initial treatment as the untreated potential outcomes.
+
+Assumption 3. (Treatment effect homogeneity.) For each relative period `, C ATTe,` does not depend on
+
+cohort e and is equal to ATT` .
+
+                                                        8
+

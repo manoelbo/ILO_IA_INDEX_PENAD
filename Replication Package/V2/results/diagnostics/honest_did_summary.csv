@@ -1,3 +1,0 @@
-outcome,target,target_estimate,target_standard_error,original_ci_low,original_ci_high,largest_evaluated_M_excluding_zero,threshold_status,open_interval_count,first_open_interval_M,robustness_threshold_precedes_open_grid,grid_min,grid_max,grid_step,num_pre_periods,num_post_periods,method,Delta,plot_path
-asinh_saldo,average_post_event_time_0_to_23,-3.30789177430868,0.70676138661818,-4.6931186377439,-1.92266491087346,0.05,finite_within_grid,36,0.25,TRUE,0,2,0.05,22,24,C-LF,DeltaRM,honest_did_asinh_saldo.png
-ln_salario_real_adm,average_post_event_time_0_to_23,-0.0153632686656125,0.0121797753076718,-0.0392351896084394,0.00850865227721443,,not_robust_at_M_0,37,0.2,TRUE,0,2,0.05,22,24,C-LF,DeltaRM,honest_did_ln_salario_real_adm.png

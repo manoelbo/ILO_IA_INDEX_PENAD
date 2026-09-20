@@ -1,0 +1,83 @@
+59    ILO Working Paper 140
+
+
+
+
+     Exposure      4-digit code   Occupation Name                                              Mean   SD
+
+     Not Exposed   7522           Cabinet-makers and Related Workers                           0.16   0.06
+
+     Not Exposed   7541           Underwater Divers                                            0.16   0.09
+
+     Not Exposed   8152           Weaving and Knitting Machine Operators                       0.16   0.03
+
+     Not Exposed   8156           Shoemaking and Related Machine Operators                     0.16   0.02
+
+     Not Exposed   8157           Laundry Machine Operators                                    0.16   0.03
+
+                                  Textile, Fur and Leather Products Machine Operators Not
+     Not Exposed   8159           Elsewhere Classified                                         0.16   0.01
+
+     Not Exposed   2261           Dentists                                                     0.15   0.06
+
+                                  Personal Care Workers in Health Services Not Elsewhere
+     Not Exposed   5329           Classified                                                   0.15   0.03
+
+     Not Exposed   7413           Electrical Line Installers and Repairers                     0.15   0.08
+
+     Not Exposed   7514           Fruit, Vegetable and Related Preservers                      0.15   0.04
+
+     Not Exposed   7531           Tailors, Dressmakers, Furriers and Hatters                   0.15   0.05
+
+     Not Exposed   8151           Fibre Preparing, Spinning and Winding Machine Operators      0.15   0.02
+
+     Not Exposed   8153           Sewing Machine Operators                                     0.15   0.03
+
+     Not Exposed   8155           Fur and Leather Preparing Machine Operators                  0.15   0.02
+
+     Not Exposed   8160           Food and Related Products Machine Operators                  0.15   0.03
+
+     Not Exposed   2250           Veterinarians                                                0.14   0.05
+
+     Not Exposed   3240           Veterinary Technicians and Assistants                        0.14   0.02
+
+     Not Exposed   5164           Pet Groomers and Animal Care Workers                         0.14   0.06
+
+     Not Exposed   5321           Health Care Assistants                                       0.14   0.06
+
+     Not Exposed   5412           Police Officers                                              0.14   0.03
+
+     Not Exposed   5413           Prison Guards                                                0.14   0.04
+
+     Not Exposed   7111           House Builders                                               0.14   0.07
+
+     Not Exposed   7125           Glaziers                                                     0.14   0
+
+     Not Exposed   7312           Musical Instrument Makers and Tuners                         0.14   0.02
+
+     Not Exposed   7317           Handicraft Workers in Wood, Basketry and Related Materials   0.14   0.01
+
+     Not Exposed   7516           Tobacco Preparers and Tobacco Products Makers                0.14   0.06
+
+     Not Exposed   7549           Craft and Related Workers not Elsewhere Classified           0.14   0.01
+
+     Not Exposed   8172           Wood Processing Plant Operators                              0.14   0.05
+
+     Not Exposed   8350           Ships' Deck Crews and Related Workers                        0.14   0.02
+
+     Not Exposed   9111           Domestic Cleaners and Helpers                                0.14   0.08
+
+     Not Exposed   9121           Hand Launderers and Pressers                                 0.14   0.03
+
+     Not Exposed   9333           Freight Handlers                                             0.14   0.03
+
+     Not Exposed   2659           Creative and Performing Artists Not Elsewhere Classified     0.13   0.06
+
+     Not Exposed   6310           Subsistence Crop Farmers                                     0.13   0.05
+
+     Not Exposed   6320           Subsistence Livestock Farmers                                0.13   0.04
+
+     Not Exposed   7115           Carpenters and Joiners                                       0.13   0.02
+
+     Not Exposed   7121           Roofers                                                      0.13   0.08
+

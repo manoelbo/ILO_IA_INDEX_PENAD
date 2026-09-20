@@ -1,0 +1,42 @@
+weighted least squares. Assuming that in (12) the variance is also proportional to the
+                                               ³      ´
+mean, the appropriate weights are given by exp −xi β̃ and therefore the test can be
+performed by estimating
+                                       ±p        p                           p
+                        (yi − y̌i )2     y̌i = λ0 y̌i + λ0 (λ1 − 1) ln (y̌i ) y̌i + ξ ∗i                    (13)
+
+by OLS and testing the statistical significance of λ0 (λ1 − 1) using a Eicker-White robust
+covariance matrix estimator.15
+  In the next section, a small simulation is used to study the Gauss-Newton regression test
+for the hypothesis that V [yi |x] ∝ E [yi |x], as well as the Park-type test for the hypothesis
+that the constant-elasticity model can be consistently estimated in the log-linear form.
+
+
+
+4. A simulation study
+This section reports the results of a small simulation study designed to assess the per-
+formance of diﬀerent methods to estimate constant-elasticity models in the presence of
+heteroskedasticity and rounding errors. As a by-product, we also obtain some evidence
+on the finite sample performance of the specification tests presented above. These exper-
+iments are centered around the following multiplicative model:
+
+                  E [yi |x] = µ (xi β) = exp (β 0 + β 1 x1i + β 2 x2i ) ,            i = 1, . . . , 1000.   (14)
+
+Since, in practice, regression models often include a mixture of continuous and dummy
+variables, we replicate this feature in our experiments: x1i is drawn from a standard
+normal and x2 is a binary dummy variable that equals 1 with a probability of 0.4.16 The
+  15
+       Notice that to test V [yi |x] ∝ E [yi |x] against alternatives of the form V [yi |x] = λ0 exp (xi (β + λ))
+the appropriate auxiliary regression would be
+                                                    .p        p            p
+                                                2
+                                  (yi − y̌i )         y̌i = λ0 y̌i + λ0 λxi y̌i + ξ ∗i ,
+
+and the test could be performed by checking the joint significance of the elements of λ0 λ. If the model
+includes a constant, one of the regressores in the auxiliary regression is redundant and should be dropped.
+  16
+     For example, in gravity equations, continuous variables (which are all strictly positive) include income
+and geographical distance. In equation (14), x1 can be interpreted as (the logarithm of) one of these
+
+                                                               16
+

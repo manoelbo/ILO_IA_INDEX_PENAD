@@ -1,0 +1,47 @@
+                                                                                                            16
+
+ask five board certified radiologists from Mount Sinai to read each of the 324 cases using
+the interface described above with the available X-ray and clinical history. For each case
+                                                                
+i and expert radiologist r, we, therefore, obtain πr ωi = 1 sE
+                                                             i,r   for each pathology, which
+                                                                                                 
+we aggregate to generate ωi . Specifically, we classify ωi = 1 if r πr ωi = 1 sE
+                                                                            P
+                                                                                  i,r /5 > 0.5.
+This approach immediately addresses the selective labels problem because the availability of
+assessments is not selected on the likelihood of a pathology being present. Results in Wallsten
+and Diederich (2001) suggest that, under weak conditions that allow for measurement error in
+the reports and correlations across reports, the aggregate opinion of several experts is highly
+diagnostic as long as the experts are median unbiased. To assess robustness, we aggregate
+                
+πr ωi = 1 sE i,r   using both a log-odds average and a leave-one-out mean of the assessments
+of all the radiologists in our experiment in the clinical history treatment condition.
+
+
+3.3.2   Experimental Interface and Data Collected
+
+We developed the interface to present the patient cases and to collect radiologists’ predictions
+and decisions in collaboration with board certified radiologists at Stanford University Hospital
+and Mt. Sinai Hospital. In contrast to free-text reports, we designed it to generate structured
+and quantitative data on chest X-ray responses that resemble a typical radiological report.
+A guiding principle in the design was to mimic clinical practice and to present and obtain
+all clinically relevant information. We briefly describe this interface and provide images and
+further details in appendix B.
+On the landing page of each case, a high-resolution image of a patient’s X-ray is presented to
+the radiologist, with the functionality to zoom and adjust brightness and contrast. When the
+experiment calls to show the clinical history, the interface presents clinical notes, vitals, and
+laboratory results available at the time the X-ray was originally ordered. If the experiment
+provides AI assistance, participants are shown AI predictions for fourteen pathologies and a
+composite prediction for whether or not there are any relevant findings.
+The data entry interface collects a radiologist’s assessments of the probability that various
+thoracic pathologies are present for a given case. The probability that a pathology is present
+given the available information, i.e. pr (ω = 1 |s), is elicited using a continuous slider. We
+visually subdivide possible responses into five intervals with standard language labels used
+in written radiological reports to aid the participants.17 Our radiology collaborators grouped
+pathologies into eight exclusive parent categories based on their type. Each group has children
+  17
+    The specific labels are “Not present”,“Very Likely”, “Unlikely”, “Possible”, “Likely”, and “Highly Likely”.
+Several radiological publications have suggested such standardized language for radiological reports. See for
+instance Panicek and Hricak (2016).
+

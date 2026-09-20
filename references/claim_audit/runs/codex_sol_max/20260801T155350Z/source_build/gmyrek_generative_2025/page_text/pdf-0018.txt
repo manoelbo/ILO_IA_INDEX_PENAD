@@ -1,0 +1,18 @@
+15     ILO Working Paper 140
+
+
+
+
+     3.2. Selection of occupational tasks for human assessment
+     To improve the precision of our synthetic predictions, we design a human-based evaluation of
+     the potential for task automation. Since scoring of all 29,753 tasks would be too cumbersome
+     for a survey, we focus on a sub-sample of tasks that are representative of the tasks in each pro-
+     fessional group at 1-digit ISCO-08 level (Table 1). We employ the standard formula to calculate
+     sample size (see Appendix 2).
+
+     Table 2 presents task sample calculations for each 1-digit category. The minimum number of
+     scorings per question is set to 20, based on the general rule used by ILO Statistics for micro-da-
+     ta analysis, where observations with less than 16 respondents are flagged as unreliable. The
+     number of scorings is set to 35 per respondent, based on our pre-testing of the survey form for
+     potential fatigue effects.
+

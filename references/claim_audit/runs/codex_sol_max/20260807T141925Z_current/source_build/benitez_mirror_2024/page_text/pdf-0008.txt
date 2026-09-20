@@ -1,0 +1,44 @@
+regarding the specific skills and contexts required for AI integration. Additionally, the GENOE
+index considers the complex interplay of tasks within occupations and integrating the ethical and
+social contexts organically.
+   Another contribution of our paper is the novel use of large language models to generate syn-
+thetic assessments that aim to replicate and extend expert assessments. Many studies rely on
+expert surveys or interviews to build analytical tools like indexes, including in the labor automa-
+tion area (Frey and Osborne, 2017; Felten et al., 2021; Tolan et al., 2021). Synthetic AI surveys offer
+several advantages. They can efficiently process and synthesize vast amounts of information from
+diverse sources very rapidly, enabling a larger volume of questions to be addressed in a shorter
+time frame. Additionally, synthetic AI surveys can be easily scaled to include extensive sample
+sizes or repeated iterations, allowing greater granularity of the collected data.
+   While recent research has begun to explore the use of AI in workforce analysis, our methodol-
+ogy offers a novel approach in this evolving field. For example, Eloundou et al. (2024) combined
+human expert insights with AI-generated assessments to evaluate AI’s potential for enhancing
+task efficiency across occupations. Our work is a step forward in this approach by exclusively and
+systematically using ChatGPT to build the entire index through multiple iterations and varying
+model parameters.
+   To validate the accuracy of this methodology, we replicated the well-known exposure index of
+Felten et al. (2021), replacing mTurk surveys with synthetic AI surveys. Our approach successfully
+replicated Felten’s AI Occupational Exposure Index (AIOE) with a correlation of 0.99, suggesting
+our methodology is robust and reliable for these types of tasks and providing evidence of another
+area where AI-driven automation is highly feasible.
+   The remainder of this paper is organized as follows. After this introduction, Section 2 details
+our data sources and methodology used to build the GENOE index. Section 3 presents the GENOE
+index, including its key findings and implications. This section also includes several robustness
+checks to validate our results and replicates other human-like expert assessment using our novel
+synthetic survey methodology. Section 4 explores how the index can be used in practical appli-
+cations, analyzing occupational exposure in the U.S. and Mexico labor market. Finally, Section
+5 discusses some considerations and limitations of our research, while Section 6 concludes with
+implications and directions for future research.
+
+
+                                  2   DATA AND METHODOLOGY
+
+
+We draw data from the O*NET database, which contains detailed descriptions and attributes for
+1,016 occupations in the U.S. labor market under the O*NET-SOC 2019 classification. Occupa-
+tional characterizations are built and continuously updated from surveys and input from multiple
+sources, including job analysts, incumbent workers, and industry experts. O*NET attributes—
+such as abilities, skills, knowledge, and tasks—are divided into six major domains: Worker Char-
+acteristics, Worker Requirements, Experience Requirements, Occupational Requirements, Work-
+
+                                                   4
+

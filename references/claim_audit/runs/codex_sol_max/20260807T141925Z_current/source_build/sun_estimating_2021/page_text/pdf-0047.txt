@@ -1,0 +1,82 @@
+Step 1 Estimate the C ATTe,` using the interacted specification.
+                                                                             `
+                                               Õ Õ
+                            Yi,t = αi + λt +              δe,` (1{Ei = e} · Di,t ) + i,t                         (66)
+                                                  e,max{Ei } `,−1
+
+                                                    |
+                                     = αi + λt + Bi,t δ + i,t                                                    (67)
+
+      on observations from t = 0, . . ., max{Ei } − 1 and Ei , 0. We need to drop time period beyond max{Ei }
+
+      because DID estimators for C ATTe,` for e + ` ≥ max{Ei }do not exist as explained in the main text.
+
+      We need to exclude cohort 0 from estimation because DID estimators for C ATT0,` do not exist as ex-
+
+      plained in the main text. Note that among regressors we exclude interactions with 1{Ei = max{Ei }}
+                                        −1 . Here B
+      and we exclude interactions with Di,t        i,t is a column vector collecting the interactions
+
+                   ` . Similarly, δ is a column vector collecting the coefficients δ
+      1{Ei = e} · Di,t                                                                                  `
+                                                                                    e,` on 1{Ei = e} · Di,t .
+
+      The matrix notation is used later to derive the asymptotic variance of IW estimators.
+
+
+
+Step 2 Estimate the weights, which are cohort shares among cohorts that experience at least ` periods of
+
+      treatment relative to the initial treatment.
+
+                              1 {Ei = e} the number of units in cohort e. Denote by h` = {e : 1 − ` ≤ e ≤
+                         ÍN
+      Denote by Ne B i=1
+
+      max{Ei } − 1 − `} to be the set of cohorts that experience at least ` periods of treatment relative to the
+
+      initial treatment. Below vec (A) vectorizes matrix A by stacking its columns.
+
+              f ` to be a matrix with its (t, e)th entry equal to 1 {t − e = `} · Ne / e∈h ` Ne . Here 1 {t − e = `}
+                                                                                      Í
+      Define b
+
+      indicates when cohort e experiences exactly ` periods of treatment and Ne / e ∈h ` Ne is equal to the
+                                                                                         Í
+
+      sample share of units in cohort e among units that experience at least l periods of treatment. Denote
+
+      by f ` the probability limit of b
+                                      f ` , which is a matrix with its (t, e)th entry equal to 1 {t − e = `} · Pr {Ei =
+
+      t − l | Ei ∈ h` }. For example, with Ei ∈ {0, 1, 2, 3} for T = 3 and ` = 0, we have h0 = {1, 2} and thus
+                                                     © N1N+N
+                                                           1
+                                                                      0
+                                                  f =­
+                                                   0         2
+                                                                           ª
+                                                  b  ­                     ®                                      (68)
+                                                                      N2   ®
+                                                          0         N1 +N2 ¬
+                                                     «
+      and its probability limit is
+                                 © Pr {Ei = 1|1 ≤ Ei ≤ 2}             0
+                          f 0 = ­­                                                 ®.
+                                                                                   ª
+                                                                                                   (69)
+                                                          Pr {Ei = 2|1 ≤ Ei ≤ 2}
+                                                                                   ®
+                                             0
+                                 «                                                 ¬       √
+                                                               f ` is asymptotically normal N(vec(b
+      In proof below, we show that the weight matrix estimator b                                  f` ) −
+
+      vec(f ` )) →d N(0, Σ f ` ).
+
+                                                       δe,` (estimated in Step 1) using weights (estimated
+Step 3 Compute the IW estimator as the weighted sum of b
+
+
+                                                           47
+

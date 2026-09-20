@@ -1,0 +1,59 @@
+  • Fifth, these labor market adjustments are more visible in employment than in compensation.
+
+  • Sixth, we find that these patterns hold in occupations unaffected by remote work and across
+
+     various alternative sample constructions.
+
+
+   While our main estimates may be influenced by factors other than generative AI, our results
+
+are consistent with the hypothesis that generative AI has begun to significantly affect entry-level
+
+employment.
+
+   The adoption of new technologies typically leads to heterogeneous effects across workers, result-
+
+ing in an adjustment period as workers reallocate from displaced forms of work to new forms with
+
+growing labor demand (Autor et al., 2024). Such endogenous adjustment may already be happening
+
+with AI, with emerging evidence of shifts in college majors away from AI-exposed categories such
+
+as computer science (Horowitch, 2025). Past transitions such as the IT revolution ultimately led
+
+to robust growth in employment and real wages following physical and human capital adjustments,
+
+with some workers benefiting more than others (Bresnahan et al., 2002; Brynjolfsson et al., 2021).
+
+   Tracking employment trends on an ongoing basis will help determine if the adjustment to AI
+
+follows a similar pattern. Consequently, we will continue to monitor these outcomes to assess
+
+whether the trends documented in the paper accelerate in the future. Future work would benefit
+
+from better firm-level AI adoption data, which would provide sharper variation for estimating
+
+plausible causal effects of AI on employment.
+
+
+
+References
+
+Acemoglu, D. and D. Autor (2011): “Skills, Tasks and Technologies: Implications for Em-
+
+  ployment and Earnings*,” in Handbook of Labor Economics, ed. by D. Card and O. Ashenfelter,
+
+  Elsevier, vol. 4, 1043–1171. 1
+
+Acemoglu, D., D. Autor, J. Hazell, and P. Restrepo (2022): “Artificial Intelligence and
+
+  Jobs: Evidence from Online Vacancies,” Journal of Labor Economics, 40, S293–S340, publisher:
+
+  The University of Chicago Press. 9
+
+ADP Research (2025): “ADP National Employment Report,” . 3.1
+
+
+
+                                                 27
+

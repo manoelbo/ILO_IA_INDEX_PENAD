@@ -1,0 +1,58 @@
+    Both the Eloundou et al. (2024) measures and the Handa et al. (2025) measures estimate AI
+
+exposure by 2018 SOC code. We use a 2010 SOC code to 2018 SOC code crosswalk from the BLS
+
+to merge the exposure measures to the payroll data. Table A1 shows example occupations for each
+
+AI exposure measure.
+
+
+3.3    Other Data
+
+To compare employment changes for teleworkable versus non-teleworkable occupations, we use data
+
+from Dingel and Neiman (2020). We use the Personal Consumption Expenditure index from the
+
+BLS to compute real earnings, indexed to October 2017. We use monthly Current Population
+
+Survey (CPS) data as a comparison for our main findings.
+
+
+
+4     Results
+
+4.1    Fact 1: Employment for young workers has declined in AI-exposed occu-
+       pations
+
+Consider software engineers and customer service agents, two occupations that are frequently con-
+
+sidered to be highly exposed to generative AI tools. Media attention has raised the specter of
+
+widespread employment disruption for young software engineers in particular (Thompson, 2025;
+
+Raman, 2025; Allen, 2025; Horowitch, 2025).
+
+    Figure 1 shows employment changes by age group for these occupations, normalized to 1 in
+
+October 2022. Both occupations present a similar pattern: employment for the youngest workers
+
+declines considerably after 2022, while employment for other age groups continues to grow. By
+
+July, 2025, employment for software developers aged 22-25 declined by nearly 20% compared to
+
+its peak in late 2022. Figure A1 shows that a similar pattern holds for computer occupations and
+
+service clerks more generally.
+
+    Figure 2 shows four other professions as case studies, spanning varying levels of AI exposure
+
+according to the measures developed in Eloundou et al. (2024). Marketing and sales managers, in
+refinement process; Learning, meaning knowledge acquisition and understanding; Validation, meaning work verifica-
+tion and improvement; or “None,” with the model instructed to choose the None option “liberally.” Conversations
+classified as Directive or Feedback Loop are considered as Automative, while ones classified as Task Iteration, Learn-
+ing, or Validation are considered Augmentative. See Handa et al. (2025) for more details. Table A2 reproduces Table
+1 from Handa et al. (2025) and shows more details about the automation and augmentation measures.
+
+
+                                                          9
+

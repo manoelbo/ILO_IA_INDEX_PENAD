@@ -1,0 +1,31 @@
+            lesson plans more efficiently with AI while having no impact on time spent
+            with students in the classroom.
+
+            To operationalize this idea, we impose some structure on how we aggregate
+            task-level time savings within occupations but otherwise add up occupational
+            efficiency gains as in the main analysis. Specifically, we suppose that within
+            each occupation tasks are combined according to a Constant Elasticity of
+            Substitution (CES) aggregator, where each task is weighted by the estimated
+            time spent on each task as calculated in our earlier analysis of the productivity
+            effects implied by Claude usage.9
+
+            The key parameter is the elasticity of substitution across tasks, σ. When the
+            elasticity of substitution is less than one, tasks are complements and those
+            tasks that are not sped up by AI become bottlenecks for broader productivity
+            gains. Alternatively, when the elasticity of substitution is greater than
+            one, then workers can allocate toward the more productive tasks—thereby
+            amplifying the overall time savings at the occupational level. An elasticity of
+            substitution equal to one is a special case that replicates the main analysis
+            above.
+
+            Figure 4.6 reports the results of this exercise for different values of task
+            substitutability. As expected, when the elasticity of substitution is equal to
+            one the implied productivity effect is the same as in our baseline analysis: An
+            increase in labor productivity growth of ~1.8 percentage points per year over
+            the next decade implied by both Claude.ai and API samples.
+
+
+
+
+The Anthropic Economic Index Report                                                             49
+

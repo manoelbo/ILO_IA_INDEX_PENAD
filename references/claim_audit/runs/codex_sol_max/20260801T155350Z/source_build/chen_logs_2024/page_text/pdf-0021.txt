@@ -1,0 +1,49 @@
+captures the ATE in logs for those who would have a positive outcome regardless of their treatment
+status. The parameter θIntensive is scale-invariant but is not point-identified from the marginal
+distributions of the potential outcomes (thus avoiding the trilemma in Proposition 2), and therefore
+cannot be consistently estimated without further assumptions.29 However, Lee (2009) popularized
+a method for obtaining bounds on θIntensive under the monotonicity assumption that, for example,
+everyone with positive earnings without receiving a training would also have positive earnings when
+receiving the training.30 Bounds on θIntensive can be reported alongside measures of the extensive
+margin effect, such as the change in the probability of having a non-zero outcome, P pY p1q ą
+0q ´ P pY p0q ą 0q. One can also potentially tighten the bounds (or restore point-identification) by
+imposing additional assumptions on the joint distribution of the potential outcomes—we provide
+an example of this in our application to Carranza et al. (2022) below; see Zhang et al. (2008, 2009)
+for related approaches.31
+         We note that the parameter θIntensive is generally distinct from the “intensive margin” marginal
+effects implied by two-part models (2PMs), which were recommended for scenarios with zero-valued
+outcomes by Mullahy and Norton (2023), among others. In Appendix D, we consider the causal
+interpretation of the marginal effects of 2PMs, building on the discussion in Angrist (2001). Our
+decomposition shows that the marginal effects from 2PMs yield the sum of a causal parameter
+similar to θIntensive as well as a “selection term” comparing potential outcomes for individuals for
+whom treatment only has an intensive margin effect to those with an extensive margin effect. It
+thus will generally be difficult to ascribe a causal interpretation to the marginal effects of 2PMs
+without assumptions about this selection.
+
+
+5         Empirical applications
+In this section, we focus on three concrete empirical applications to illustrate how the alternative
+parameters described in Section 4 can be estimated in practice. To illustrate a range of possible
+applications, we consider a randomized controlled trial, a difference-in-differences design, and an
+instrumental variables design.
+
+5.1         An RCT setting: Carranza et al. (2022)
+Carranza et al. (2022) conduct a randomized controlled trial (RCT) in South Africa. Individuals
+randomized to the treatment group are provided with certified test results that they can show to
+    29
+         θIntensive also does not take the form EP rgpY p1q, Y p0qqs, although it can be written as
+                                          EP r1rY p1q ą 0, Y p0q ą 0s logpY p1q{Y p0qqs
+                                                                                        ,
+                                                 EP r1rY p1q ą 0, Y p0q ą 0ss
+where both the numerator and denominator take this form.
+   30
+      See, also, Zhang and Rubin (2003) for related results, including bounds without the monotonicity assumption.
+   31
+      We note that the Lee (2009) bounds will tend to be tight when the extensive margin effect is close to zero. As
+noted in Remark 2, this is precisely the setting where ATEs for log-like transformations are relatively insensitive to
+finite changes in scale.
+
+
+
+                                                                21
+

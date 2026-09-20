@@ -1,0 +1,31 @@
+                           Online Appendix for
+              “Log with zeros? Some problems and solutions”
+                          Jiafeng Chen                     Jonathan Roth
+                    Harvard Business School               Brown University
+                   jiafengchen@g.harvard.edu         jonathan_roth@brown.edu
+
+
+                                         November 17, 2023
+
+   Contents
+
+A Proofs of results in the main text                                                                    1
+  A.1 Proof of Proposition 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      1
+  A.2 Proof of Proposition 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      2
+
+B Extensions                                                                                            4
+  B.1 Sensitivity to finite changes in scale . . . . . . . . . . . . . . . . . . . . . . . . . . . .    4
+  B.2 Extension to continuous treatments . . . . . . . . . . . . . . . . . . . . . . . . . . . .        5
+  B.3 Extension to OLS estimands and standard errors . . . . . . . . . . . . . . . . . . . .            6
+
+C Connection to structural equations models                                                             9
+  C.1 Bellemare and Wichman (2020) and Thakral and Tô (2023) . . . . . . . . . . . . . .               10
+  C.2 Cohn et al. (2022) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     11
+  C.3 Tobit models . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     12
+
+D Connection to two-part models                                                                        13
+
+E Details on Lee bounds using IV in Berkouwer and Dean (2022)                                          14
+
+F Appendix Tables and Figures                                                                          15
+

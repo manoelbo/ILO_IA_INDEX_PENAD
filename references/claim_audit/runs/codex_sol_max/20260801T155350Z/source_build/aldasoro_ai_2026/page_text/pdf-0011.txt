@@ -1,0 +1,45 @@
+predictions, showing larger productivity gains in medium and large firms compared to
+micro and small enterprises.
+
+   Our contribution bridges these strands by: (i) providing the first causal evidence on
+the effects of AI adoption on firm productivity and employment effects in Europe, address-
+ing gaps noted by Aldasoro et al. 2024, (ii) developing a novel IV strategy that extends
+Rajan and Zingales (1998)’s financial dependence approach to technology diffusion, (iii)
+presenting evidence of capital-deepening, rather than labor-replacing, effects that can
+contribute to refining Aghion and Bunel (2024)’s growth theories, and (iv) discussing
+which investment strategies enable the productivity dividends of AI.
+
+
+
+3       Data
+
+We use data from the European Investment Bank Investment Survey (EIBIS), an annual
+survey initiated in 2016 encompassing approximately 12,000 non-financial corporations
+across the EU. This survey employs a stratified random sampling method, targeting
+firms in all 27 EU countries.2 Since 2019, EIBIS also covers a sample of 800 firms in the
+US, allowing for a comparison of investment dynamics between the EU and the US. The
+respondents to the interviews are senior managers or financial directors with responsibility
+for investment decisions and how investments are financed – for example, the owner, chief
+financial officer or chief executive officer. Brutscher et al. (2020) provide evidence that
+EIBIS is representative of the business population in the EU, as described by Eurostat’s
+Structural Business Statistics.
+
+    Since 2019, firms participating in EIBIS are asked about the use of big data analytics
+and AI. In the EIBIS questionnaire, big data analytics and AI are defined as technolo-
+gies that intelligently automate tasks and provide insights that augment human decision
+making, like machine learning, robotic process automation, natural language processing
+(NLP), algorithms, neural networks. Firms are asked the following question: “To what
+extent, if at all, are big data analytics and artificial intelligence used within your busi-
+
+    2
+     The EIBIS sample is stratified disproportionally by country, sector and firm size class, and propor-
+tionally by region within each country. The firms have at least five employees, with both full-time and
+part-time employees being counted as one employee, and employees working less than 12 hours per week
+being excluded. An enterprise is defined as a company trading as its own legal entity. As such, branches
+are excluded from the target population. However, the definition is broader than in a typical enterprise
+survey because some company subsidiaries are their own legal entities.
+
+
+
+                                                   5
+

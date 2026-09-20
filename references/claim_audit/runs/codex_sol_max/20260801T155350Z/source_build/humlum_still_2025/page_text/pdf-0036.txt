@@ -1,0 +1,41 @@
+                             Online Appendix
+Large Language Models, Small Labor Market Effects
+                    Anders Humlum              Emilie Vestergaard
+                  University of Chicago     University of Copenhagen
+
+
+
+A Theoretical Framework                                                                      3
+  A.1 Adoption and Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           3
+  A.2 Labor Market Outcomes . . . . . . . . . . . . . . . . . . . . . . . . . . .             8
+  A.3 Technical Derivations . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        22
+
+B Data Construction                                                                         28
+  B.1 Sampling Protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .          28
+  B.2 Survey Sample       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    29
+  B.3 Classification of New Job Tasks . . . . . . . . . . . . . . . . . . . . . . .          34
+
+C Institutional Setting                                                                     40
+  C.1 Wage Setting Systems in Denmark . . . . . . . . . . . . . . . . . . . . .              40
+
+D Descriptive Evidence on Adoption                                                           41
+  D.1 Employer Initiatives . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         42
+  D.2 Worker Adoption and Reported Effects . . . . . . . . . . . . . . . . . . .             46
+  D.3 Total Time Savings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         54
+  D.4 Comparison to the Literature . . . . . . . . . . . . . . . . . . . . . . . .           55
+
+E Robustness Analysis                                                                       58
+  E.1 Descriptive Evidence on Adoption . . . . . . . . . . . . . . . . . . . . . .           58
+  E.2 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      78
+  E.3 Perceived Impacts       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    86
+  E.4 Additional Controls       . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    90
+  E.5 Coworker Encouragement . . . . . . . . . . . . . . . . . . . . . . . . . .             93
+
+F Spillovers to Non-Adopters                                                                98
+
+G Labor Market Trends                                                                       100
+  G.1 Aggregate Employment . . . . . . . . . . . . . . . . . . . . . . . . . . . .          100
+  G.2 By Age Groups (Brynjolfsson, Chandar and Chen, 2025) . . . . . . . . .                100
+
+                                             1
+

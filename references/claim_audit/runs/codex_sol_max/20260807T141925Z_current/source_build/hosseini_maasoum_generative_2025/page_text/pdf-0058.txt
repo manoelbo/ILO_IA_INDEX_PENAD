@@ -1,0 +1,43 @@
+A.3     Heterogeneity by Educational Background
+
+This appendix examines whether the decline in junior employment varies by workers’
+educational background, as referenced in Section 5.2.3. We first describe the construction
+of the school-quality variable, then present the heterogeneity results.
+
+
+A.3.1    Construction of the School-Quality Variable
+
+To capture educational background, we construct a position-level measure of school qual-
+ity. For each position, we assign the institution where the worker most recently studied,
+provided that the education ended no later than one year after the job start. If no such
+record exists, we use the first recorded institution, provided it began before the job start
+date. Each institution is then assigned a GPT-4–based quality rating on a five-point scale,
+produced using OpenAI’s GPT-4o-mini model (see Supplemental Appendix A.11.2 for
+the full prompt). A score of 1 corresponds to Ivy League and other globally elite insti-
+tutions; 2 to highly respected international universities; 3 to strong national or regional
+schools; 4 to lower-tier but standard institutions; and 5 to minimally selective or non-
+accredited institutions.
+
+
+A.3.2    Results
+
+We re-estimate Equation 34 for junior employment separately within each of the five
+school-quality tiers. For clarity of presentation, we use a single post-treatment indica-
+tor for quarters after 2023Q1 instead of a full set of time dummies.
+    The results, shown in Figure A.12, reveal a U-shaped pattern. Juniors from tier-3 uni-
+versities experienced the steepest relative declines in employment, while those from tiers
+2 and 4 also saw significant reductions. Juniors from tier-1 and tier-5 universities expe-
+rienced the smallest decline.33 Figure A.13 reports the time-series version of these esti-
+mates, with a full set of time dummies in place of the single post-2023 indicator.
+    To help interpret this pattern, Figures A.14 and A.15 show average predicted salaries34
+  33 In the analysis, we exclude positions where the worker’s most recent educational entry is reported as a
+
+high school (approximately 5 percent of positions). Including these positions, based on high school quality,
+has virtually no effect on the results.
+  34 Actual position-level salaries are unavailable. However, Revelio Labs provides a predicted salary
+
+
+
+
+                                                   A.13
+

@@ -1,0 +1,42 @@
+B      Data Construction
+B.1      Sampling Protocol
+
+Our 2024 survey invited 115,000 workers across 11 occupations. Ideally, we would sample
+
+an equal number from each—i.e., 10,450 journalists, 10,450 software developers, etc.
+
+However, some occupations in Denmark employ fewer than 10,450 workers. To address
+
+this, we follow these steps:
+
+
+    1. If an occupation has fewer than 10,450 workers, we sample all available workers.
+
+    2. The remaining invitations are redistributed equally among the other occupations.
+
+    3. Workplaces are randomly selected for sampling, and if chosen, all relevant workers
+
+      (i.e., those in the target occupation) within the workplace are included.
+
+    4. Large workplaces can distort the sample balance. To mitigate this, we apply
+
+      individual-level sampling to the top 2.5% of workplaces (ranked by the number of
+
+      employees in the relevant occupation), randomly selecting employees using the same
+
+      sampling probability as in Step 3.
+
+    5. To precisely reach our target of 115,000 workers, we make final adjustments by
+
+      randomly including or excluding workers, independent of their workplace.
+
+
+The 2023 survey followed a similar protocol, with minor modifications; see Humlum and
+
+Vestergaard (2025) for details.
+
+
+
+
+                                            28
+

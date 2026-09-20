@@ -1,0 +1,3 @@
+# Keep the editorial revision's source snapshots, data, and verification evidence.
+!*.json
+!*.csv

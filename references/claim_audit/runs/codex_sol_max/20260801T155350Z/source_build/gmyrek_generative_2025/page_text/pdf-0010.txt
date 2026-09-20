@@ -1,0 +1,55 @@
+07        ILO Working Paper 140
+
+
+
+
+     Acronyms
+
+     AI                      Artificial Intelligence
+
+     API                     Application Programming Interface
+
+     ATMs                    Automatic Teller Machines
+
+     CAWI                    Computer-Assisted Web Interview
+
+     CEDLAS                  Center for Distributive, Labor and Social Studies
+
+     CEE                     Central and Eastern European
+
+     CEPS                    Centre for European Policy Studies
+
+     GBB                     Gmyrek, Berg and Bescond, 2023. ILO Working Paper 96
+
+     GPT-4                   Generative Pre-trained Transformer 4
+
+     GPT-4o                  Generative Pre-trained Transformer 4 Omni
+
+     GUS                     Główny Urząd Statystyczny (Central Statistical Office, Poland)
+
+     HIC                     High-Income Countries
+
+     ICT                     Information and Communication Technology
+
+     ILO                     International Labour Organization
+
+     IMF                     International Monetary Fund
+
+     ISCO-08                 International Standard Classification of Occupations (2008 version)
+
+     IT                      Information Technology
+
+     ITC-ILO                 International Training Centre of the ILO (Turin)
+
+     LFS                     Labour Force Survey (BAEL in Poland)
+
+     LICs                    Low-Income Countries
+
+     LLM                     Large Language Model
+
+     ML                      Machine Learning
+
+     MOL                     Ministry of Family, Labour and Social Policy in Poland
+
+     NASK-PIB                National Research Institute
+

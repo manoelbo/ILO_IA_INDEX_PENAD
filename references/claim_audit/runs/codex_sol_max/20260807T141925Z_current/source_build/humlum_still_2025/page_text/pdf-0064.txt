@@ -1,0 +1,30 @@
+      Adopters may still prefer encouraged firms if encouragement sufficiently reduces
+                                         κ
+      adoption costs (i.e., αc1 < αb1 − ϵ−1 ), but these benefits will not appear in earnings.
+
+
+Occupational mobility. If chatbots create greater benefits Bij for newcomers to
+an occupation, adoption will correlate with occupational switching (as documented in
+Section 3.3).26
+
+
+Worker-firm sorting. Following Equation (23), chatbots trigger reallocation of workers
+who benefit from adoption (low-i types) into encouraged firms (E = 1).
+
+
+Worker outcomes. Figure A.2 summarizes how chatbots affect sorting, adoption,
+and earnings. The gray line traces equilibrium patterns: workers with i < i∗ sort into
+encouraged firms and adopt, while those with i > i∗ sort into non-encouraged firms and
+do not adopt. The figure illustrates the case where encouragement increases adopter
+earnings; as shown above, encouragement can also reduce them, and if the amenity value
+of encouraged use is large enough (αc1 sufficiently low), some encouraged adopters may
+even earn less than non-encouraged non-adopters.
+  26
+     This prediction reflects an effect running from occupational choice to adoption. Causality may also
+run the other way, with chatbots prompting moves into new occupations; our framework abstracts from
+this margin.
+
+
+
+
+                                                  14

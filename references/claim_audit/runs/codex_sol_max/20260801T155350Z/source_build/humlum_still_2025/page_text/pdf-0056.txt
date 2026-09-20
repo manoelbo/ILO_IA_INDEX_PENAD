@@ -1,0 +1,53 @@
+   vs. non-encouraged non-adopters, before vs. after AI )
+                              h                                 i       h                              i
+        ∆YNE,A − NE,NA = E ∆log Yij       Aij = 1, Ej = 0 − E ∆log Yij                 Aij = 0, Ej = 0
+
+                        = γαc0 + (1 − γ)αb0 ,
+                                                                                                       (41)
+
+   where γ = 2ββ̂b ≥ 0 (see Equation (8)).23
+
+2. Differential skill–price effect in encouraged firms (Encouraged non-adopters vs.
+
+   non-encouraged non-adopters, before vs. after AI )
+                              h                                 i       h                              i
+        ∆YE,NA − NE,NA = E ∆log Yij       Aij = 0, Ej = 1 − E ∆log Yij                 Aij = 0, Ej = 0
+                              h                   i     h                        i
+                        = E dlog Wj       Ej = 1 − E dlog Wj                Ej = 0
+
+                        = −κ/(ϵ − 1).
+                                                                                                       (42)
+
+3. Combined effects for encouraged adopters (Encouraged adopters vs. non-encouraged
+
+   non-adopters, before vs. after AI )
+                          h                                 i       h                              i
+       ∆YE,A − NE,NA = E ∆log Yij       Aij = 1, Ej = 1 − E ∆log Yij                 Aij = 0, Ej = 0
+                                                                                                       (43)
+                     = −κ/(ϵ − 1) + γ(αc0 +αc1 ) + (1 − γ)(αb0 +αb1 ).
+
+   By contrast, when workers are perfectly mobile, Equation (35) implies that:
+
+
+        ∆YE,A − NE,NA = −κ/(ϵ − 1) + γ(αc0 +αc1 + κ/(ϵ − 1)) + (1 − γ)(αb0 +αb1 ).                     (44)
+
+
+Workplace-level difference-in-differences. Section 3.3 analyzes the difference-in-
+
+differences of employer encouragement on workplace wage bills and employment. Following
+
+Section A.2.4, these estimates identify:
+
+1. Workplace employment effect of employer encouragement. Following Equation
+
+   (37), the difference-in-differences estimate of employer encouragement on workplace
+  23
+    The frictionless sorting model (Equation (26)) predicts that all adopters sort into encouraged firms,
+while all non-adopters sort into non-encouraged ones, leaving no workers left to identify Equation (41).
+In practice, however, Section 3 finds little evidence of worker resorting in response to chatbot adoption.
+For this reason, Equation (41) derives the structural interpretation without worker mobility.
+
+
+
+                                                   21
+

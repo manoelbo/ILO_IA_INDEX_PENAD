@@ -1,0 +1,58 @@
+D.2         Worker Adoption and Reported Effects
+D.2.1        Regression Specification
+
+Next, we examine how workers’ adoption of and benefits from AI chatbots vary with the
+
+employer-led chatbot initiatives. Specifically, we compare workers in the same occupations
+
+with similar characteristics and estimate how their adoption behaviors and reported
+
+benefits vary with employer initiatives for AI chatbots:
+
+
+                               Yi = γ ′ Xi + β ′ EmployerInitiativesi + εi ,                   (69)
+
+
+where Yi is a chatbot-related outcome for worker i, such as use or reported benefits of AI
+
+chatbots for work; Xi is a vector of worker pre-determined characteristics, including age,
+
+gender, experience, and occupation fixed effects;29 and EmployerInitiativesi is a vector of
+
+employer-driven initiatives, including encouraging employees to use AI chatbots, investing
+
+in enterprise chatbot solutions, providing employee training— and combinations thereof.
+
+We estimate Equation (69) by OLS and cluster the standard errors by workplace-occupation
+
+level.
+
+       The specification in Equation (69) is motivated by the literature on “Productivity J-
+
+Curves,” which emphasizes that complementary organizational investments may be critical
+
+for realizing the gains from new technologies (Brynjolfsson and Hitt, 2000; Brynjolfsson,
+
+Rock and Syverson, 2021). Moreover, because early adoption of AI chatbots was largely
+
+worker-driven, this analysis sheds light on the extent to which employers can move the
+
+needle and influence outcomes by also investing in the technology. Appendix A.1 presents
+
+a Roy-style model of chatbot adoption to help interpret the estimates in Equation (69).
+
+We draw on this framework in the discussions that follow.
+
+       Although employer initiatives are not assigned through a randomized design, our
+
+rich data on firms and workers allow us to examine the robustness of our findings to
+
+several potential confounders. Appendix E.4 presents these robustness checks. First,
+
+we show that all results hold when controlling for firm characteristics (from Table D.1),
+  29
+       All worker characteristics are measured in 2022, before AI chatbots became available.
+
+
+                                                    46
+

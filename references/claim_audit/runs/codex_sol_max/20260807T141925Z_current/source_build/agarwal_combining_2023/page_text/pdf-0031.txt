@@ -1,0 +1,43 @@
+                                                                                                        31
+                                                       
+the Bayesian’s decision a∗Bayesian = a∗ sA , sE ; πr with AI assistance. This follows because,
+in the binary action setup, only one of the decisions can agree with the Bayesian decision. In
+                                                                                           
+all other cases, the human’s decision is weakly improved for the signal realization sA , sE .
+In other words, a human whose decision changes upon receiving the AI signal sA is better
+off with AI assistance only if the change agrees with the Bayesian decision. The human is
+unambiguously better off if this property holds for all signals.
+Our first result states that a human who deviates from the benchmark model because they
+only exhibits automation neglect is unambiguously better off with AI assistance.
+
+Proposition 1. Suppose that the human’s posterior is described by equation (5).
+(i) If the human only exhibits automation neglect (b < 1, d = 1), then for all pairs of signal
+                    
+realizations sA , sE , and any crel , the human attains weakly higher expected payoff V (s) with
+AI assistance.
+                                                                                                π (sA |ω=1,sE )
+(ii) In all other cases (b > 1 or d ̸= 1), for any crel , there exist log-likelihood ratios log π(sA |ω=0,sE )
+         π (ω=1|sE )
+and log π(ω=0|sE ) such that the human attains lower expected payoff V (s) with AI assistance.
+
+See appendix A for the proof.
+Figure 5a illustrates the case without own-information bias or neglect by setting d = 1 but
+allows for either automation bias or neglect by setting b ̸= 1. The two dashed lines represent
+cutoffs analogous to those in figure 4 for humans with automation bias and automation
+neglect. Although a human that only exhibits automation neglect under-responds to the AI
+information, their beliefs move towards a Bayesian decision-makers but does not overshoot
+it. Whenever her decision changes, it agrees with the Bayesian’s. In contrast, if the human
+exhibits automation bias, they errs for moderately informative AI signals with intermediate
+              π (sA |ω=1,sE )
+values of log π(sA |ω=0,sE ) because they over-reacts. At high enough values of this log-likelihood
+ratio, both the Bayesian and the human exhibiting automation bias would take the same
+action.
+In the case when there is either own-information bias or neglect (d ̸= 1), it is always possible
+for the payoff with AI to be lower than the payoff without AI assistance. In our model, this
+occurs because providing the AI signal generates a bias in how the expert uses their own
+information. Figure 5b illustrates the result (for d > 1 and b < 1). Relative to the analogous
+line in figure 5a, the intercept of the dashed line is not equal to log crel . The vertically striped
+triangle depicts combinations of the log-likelihood ratios above in which the biased expert
+achieves a higher payoff without AI. In these cases, the expert takes the correct action without
+AI assistance but incorrectly uses their own information with AI assistance, resulting in an
+

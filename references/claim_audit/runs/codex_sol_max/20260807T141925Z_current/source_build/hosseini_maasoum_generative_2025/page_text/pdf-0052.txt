@@ -1,0 +1,179 @@
+                         ambassador volunteer                                                                                                                                         learning acquisition
+                      counselor fellow social accountant client                                                                                                                                compliance
+                          management engineering operator                                                                                                            relations developer                                           security
+
+
+
+
+                                                                                                                                                                                                               operations
+              technology clerk
+                                    representative                                                                                                                         supervisor
+
+
+
+
+                                                                                                                                                                                             project
+                                                                                                                                                              analytics                                                      strategic scientist
+                resources medical                               design                                                                                                  specialist
+                           summer
+                                  analyst administrative                                                                                                         client        risk                                           regional national
+           specialist                                                                                                                                       talent
+
+
+
+
+                                                                                                                                                                        business
+                                          registered                                                                                                                                  data                                  product systems medical
+                     support                                              researcher                                                                 technology
+                                 coordinator health
+                                                                                                                                                                               service
+    school
+                    project                          clinical real                                                                          cloud            officer           account                                      executive customer
+                                                                                                                                                           software
+                                    manager                                                                                                                                                                                  sales strategy group
+                                                                                      estate                                                                                   nurse vice
+
+
+
+
+                                                                                                                                       information
+                     teacher
+                                                                                                                                                                                   director
+   product                                                                     human                                                                 associate                                                                                head general
+
+
+
+
+                                                               agent
+                        data care                                                     desk                                                                                                                                                    chief leader
+
+
+                                                                                                                                                           manager
+
+                                                                                                          worker
+
+
+
+
+                                                                                                                                                services
+     office
+
+                                associate
+                                                                                                                                                             global
+
+
+
+
+                                                                         operations
+                        store                                                                                                                                                                                                                       accounting
+
+
+
+
+                                                                                      developer
+                                                                                                  information
+   cashier                                                                                                                                                                                                                                          quality
+     retail             lead                                  food                                                                adjunct                                                                                                           architect
+
+
+                        assistant
+    media                                                                                                                         support                                                                                                                   recruiter
+
+
+
+
+                                                                                                                                                                                                                                                    board
+                                                               advisor
+    quality                                                                                                                                                                                                                                                 managing
+                                                                                                                                  enterprise
+   driver                                                                              field                                    attorney
+
+                                                                                                                                                                     senior
+   coach                                                                                                                                   assistant                                                                  clinical technical
+
+                                       engineer
+                                                                            graduate                                                                                                                                               human
+                        senior                                                                                                                                                                                        presidentfinancial
+                                intern
+    crew                                                                                                                        instructor principal
+                                                                              officer                                                                                                                                                    media
+      front
+                         nurse                                                                                                              fellow
+
+
+
+
+                                                                                                                 center
+                                                                                server                                                 supplyprogram                  engineer lead                                                 marketing success
+    therapist
+                student                    service software digital                                                                                                                                                                    research designer
+
+                                        sales supervisor                                                                                                     engineeringanalyst
+                                                                                                                                       planning
+     designer                                                                            patient                                                                                    consultant counsel
+           research                     customer business
+                                                     tutor                            legal                                                                  health finance development
+                                                                                                                                                           creative                     advisor digital
+                marketing
+
+                                                                                                  professional
+                                                                                                                                                     experience management
+
+
+
+
+                                                                                                                                                                                                                      professor
+                                                                                                                                                                                                                                  solutions community
+                                        technician
+
+
+
+
+                                                                                                                                                                                                            partner
+   pharmacy                                           financial
+           instructor program                                                                                                                                          resourcescare                                              corporate
+
+
+
+
+                                                                                                                                                                                             professional
+                                                undergraduate                                                                                                        communications                                               design
+                    executive          development security                                                                                                             commercial
+                  recruiter services consultant administrator                                                                                                            engagement
+
+                         production    account certified
+                                    technical     community
+
+
+
+                   (a) Juniors (Seniority 1–2)                                                                                                               (b) Seniors (Seniority 3+)
+
+                    Figure A.6: Most Common Job-Title Keywords by Seniority Group
+    Notes: Word clouds summarizing the most frequently occurring keywords in raw job titles, com-
+    puted separately for junior-classified positions (seniority 1–2) and senior-classified positions (se-
+    niority 3+), pooled across positions that started between 2020Q1 and 2025Q1. Larger font size
+    indicates higher frequency.
+
+
+keyword (assistant, intern, junior, coordinator, specialist, technician, entry), and the share of
+senior-classified positions whose raw title contains any senior-leaning keyword (manager,
+director, senior, lead, principal, consultant, supervisor, executive, head, chief ). Figure A.8 plots
+these two shares quarterly, separately for adopting and non-adopting firms. The four se-
+ries evolve in close parallel. Roughly a quarter of junior positions contain a junior-leaning
+keyword, and roughly two-thirds of senior positions contain a senior-leaning keyword,
+at both adopting and non-adopting firms throughout the sample. Pre-existing level gaps
+between adopters and non-adopters are stable around the ChatGPT launch.
+
+
+Event study. To formally test for differential trends, we estimate, separately for juniors
+and seniors, the specification
+
+                            Sharematch
+                                 f ,t  = α f + αt +                                                              ∑          β k · 1{t = k} · Adopter f + ε f ,t ,
+                                                                                         k̸=2022Q4
+
+
+
+
+                                                                                                                          A.7
+

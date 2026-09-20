@@ -1,0 +1,55 @@
+�𝐾𝐾 is small. The opposite conclusions follow from “reverse Roy” selection where units with the
+𝐷𝐷
+
+smallest effects select into treatment first, which describes the take up of housing vouchers (Chyn
+
+forthcoming) and charter school applications (Walters forthcoming).
+
+           An easy way to gauge whether VWATT and a sample-weighted ATT is to scatter the
+
+weights from (13) against each group’s sample share. These two may be close if there is little
+
+variation in treatment timing, if the untreated group is very large, or if some timing groups are very
+
+large. Conversely, weighting matters less if the 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 ’s are similar, which one can evaluate by
+
+aggregating each group’s 2x2 DD estimates from the decomposition theorem. 19 Finally, one could
+
+directly compare VWATT to point estimates of a particular parameter of interest. Several
+
+alternative estimators can deliver differently weighted averages of ATT’s (Abraham and Sun 2018,
+
+Callaway and Sant'Anna 2018, de Chaisemartin and D’HaultfŒuille 2018b).
+
+     ii.   Effects that vary over time but not across units
+Time-varying treatment effects (even if they are identical across units) generate cross-group
+
+heterogeneity in VWATT by averaging time-varying effects over different post-treatment
+
+windows, but more importantly they mean that Δ𝐴𝐴𝐴𝐴𝐴𝐴 ≠ 0. Equations (11b) and (11c) show that
+
+common trends in counterfactual outcomes leaves one set of timing terms biased (𝛽𝛽̂𝑘𝑘ℓ
+                                                                                   2𝑥𝑥2,ℓ
+                                                                                          ), while
+
+common trends between counterfactual and treated outcomes leaves the other set biased (𝛽𝛽̂𝑘𝑘ℓ
+                                                                                          2𝑥𝑥2,𝑘𝑘
+                                                                                                  ).
+
+           To illustrate this point, figure 3 plots a case where counterfactual outcomes are identical,
+
+but the treatment effect is a linear trend-break, 𝑌𝑌𝑖𝑖𝑖𝑖1 = 𝑌𝑌𝑖𝑖𝑖𝑖0 + 𝜙𝜙 ⋅ (𝑡𝑡 − 𝑡𝑡𝑖𝑖∗ + 1) (see Meer and West
+
+2013). 𝛽𝛽̂𝑘𝑘ℓ
+          2𝑥𝑥2,𝑘𝑘
+                  uses group ℓ as a control group during its pre-period and identifies the ATT during
+
+
+
+
+19
+   Relatedly, de Chaisemartin and D’HaultfŒuille (2018b) derive a statistic that gives the minimum variation in
+treatment effects that could lead to wrong-signed regression estimates when all treatment effects have the same sign.
+
+                                                         15
+

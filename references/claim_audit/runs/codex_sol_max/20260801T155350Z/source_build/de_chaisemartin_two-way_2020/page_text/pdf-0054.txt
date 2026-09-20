@@ -1,0 +1,43 @@
+    effects, region specific time effects, and the job tenure of individual j. The death rate of
+    establishments in industry i in period t and region r is used as an instrument for the job
+    tenure of individual j. This regression is the 2SLS version of Regression 2 with controls. The
+    stable groups assumption is presumably satisfied: between each pair of consecutive years, it
+    is likely that there are some industry × region pairs where the death rate of establishments
+    does not change. This a fuzzy design: the instrument of interest is whether a person’s
+    former employee closed down over the current year, which varies within (industry,year)
+    cells.
+
+19. Gentzkow et al. (2011), The Effect of Newspaper Entry and Exit on Electoral
+    Politics. Tables 2 and 3.
+    In regression Equation (2), the dependent variable is the change in voter turnout in county c
+    between elections year t and t-1, and the explanatory variables are state × year effects, and
+    the change in the number of newspapers in county c between t and t-1. This regression
+    corresponds to Regression 2 with controls. The stable groups assumption is satisfied:
+    between each pair of consecutive years, there are some counties where the number of
+    newspapers does not change. This is a sharp design.
+
+20. Bloom et al. (2012), Americans Do IT Better: US Multinationals and the
+    Productivity Miracle. Table 2, Columns 6-8.
+    In the regression in, say, Column 6 of Table 2, the dependent variable is the log of output
+    per worker in firm i in period t, while the explanatory variables are firms and time fixed
+    effects, the log of the amount of IT capital per employee ln(C/L), the interaction of ln(C/L)
+    and an indicator for whether the firm is owned by a US multinational, the interaction of
+    ln(C/L) and an indicator for whether the firm is owned by a non-US multinational, and
+    some controls. This regression is similar to Regression 1 with some controls, except that
+    it has three treatment variables. The stable groups assumption is presumably satisfied:
+    between each pair of consecutive years, it is likely that there are some firms where the
+    amount of IT capital per employee ln(C/L) does not change. This is a sharp design.
+
+21. Simcoe (2012), Standard Setting Committees: Consensus Governance for Shared
+    Technology Platforms. Table 4, Columns 1-3.
+    In regression Equation (5), the dependent variable is a measure of time to consensus for
+    project i submitted to committee j, while the explanatory variables are an indicator for
+    projects submitted to the standards track, a measure of distributional conflict, the inter-
+    action of the standards track and distributional conflict, and some controls variables. This
+    regression is similar to Regression 1 with some controls, except that it has a measure of
+    distributional conflict instead of committee fixed effects. The stable groups assumption is
+    presumably not satisfied: it is unlikely that there is any committee where the measure of
+
+
+                                              18
+

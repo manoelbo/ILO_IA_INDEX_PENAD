@@ -1,0 +1,46 @@
+      Paper                         Interprets Units as   Original Units                                          Quote About Percents / Notes
+                                    %
+      Azoulay et al (2019)          Yes                   Publications (yearly)                                   “In this case, coefficient estimates can be interpreted as elas-
+                                                                                                                  ticities, as an approximation.”
+      Beerli et al (2021)           Yes                   Patent applications (yearly)                            “The estimates thus reflect an approximate percentage in-
+                                                                                                                  crease.”
+      Berkouwer and Dean (2022)     Yes                   Weekly expenditure (dollars)                            “A 0.50 IHS reduction corresponds to a 39 percent reduction
+                                                                                                                  relative to the control group.”
+      Cabral et al (2022)           Yes                   Costs (dollar) per $10K risk-adjusted covered payroll   Refers to estimates as “the elasticities reported in panel A”
+      Carranza et al (2022)         Yes                   Hours worked (weekly)                                   “Weekly earnings increase by 34% (Table 1, column 3)”
+      Faber & Gauber (2019)         Yes                   Municipality GDP (1000s of Pesos)                       “A one standard deviation increase in tourism attractiveness
+                                                                                                                  increases local manufacturing GDP by about 40 percent.”
+      Hjort and Poulsen (2019)      Yes                   KB per second                                           “We find that cable arrival increases measured speed in
+                                                                                                                  connected locations, relative to unconnected locations, by
+                                                                                                                  around 35 percent”
+      Johnson (2020)                Yes                   Violations (monthly)                                    “[T]he regression coefficient estimates the ITT effect of a
+                                                                                                                  press release on the percent change in the number of viola-
+                                                                                                                  tions. The point estimate (-0.18) is identical to the baseline
+                                                                                                                  estimate in percent terms -0.40/2.29 = 17.5%).”
+      Mirenda et al (2022)          Yes                   Contract size (euros)                                   “The amount of public funds awarded raises by 3.4 percent.”
+16
+
+
+
+
+      Norris et al (2021)           Yes                   Criminal charges                                        “We measure both the extensive margin (using a binary in-
+                                                                                                                  dicator for the outcome ever occurring) and the intensive
+                                                                                                                  margin (taking the inverse hyperbolic sine, IHS, of the num-
+                                                                                                                  ber of times the outcome occurred, so the coefficient is in-
+                                                                                                                  terpreted as a percent change)”
+      Ager et al (2021)             No interpretation     Wealth (1870 dollars)
+      Arora et al (2021)            No interpretation     Publications (yearly)
+      Bastos et al (2018)           No interpretation     Sales (yearly, euros)
+      Fetzer et al (2021)           No interpretation     Incidents (quarterly)
+      Moretti (2021)                No interpretation     Patents (yearly)
+      Rogall (2021)                 No interpretation     Perpetrators
+      Cao and Chen (2022)           No                    Rebellions per million population in 1600               They compute exppβ̂q´1 and multiply by the baseline mean,
+                                                                                                                  then interpret this as the effect in levels
+
+
+                                 Appendix Table 1: Papers in the AER estimating effects for arcsinhpY q with selected quotes
+
+     Note: this table lists papers in the AER estimating treatment effects for arcsinhpY q. The second column classifies papers by whether they interpret the units of
+     the treatment effect as a percent/elasticity, with categories “yes”, “no”, or “no interpretation given.” The third column describes the units of the outcome before
+     applying the arcsinh transformation, and the final column provides selected quotes and notes about the interpretation of the estimates. See Section 2.3 for details.
+

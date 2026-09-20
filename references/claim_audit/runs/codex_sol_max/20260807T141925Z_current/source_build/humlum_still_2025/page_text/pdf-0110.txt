@@ -1,0 +1,48 @@
+      Table F.3: Relationship Between Self- and Coworker-Reported Encouragement
+
+                                                                              (1)
+                                                                          Encouraged
+                                Coworker IV (Leave Out, EBS)               0.877***
+                                                                            (0.016)
+
+                                Coworkers Share Female                        -0.016
+                                                                             (0.011)
+
+                                Coworkers Age                                 0.001
+                                                                             (0.001)
+
+                                Coworkers Potential Experience                -0.001
+                                                                             (0.001)
+                                Occupation FEs                                  ✓
+                                F-Stat (Partial)                            3116.352
+                                Observations                                  16974
+
+Notes: This table reports the relationship between workers’ self-reported employer encouragement and those reported by
+their coworkers, estimated using the specification in Equation (49). Standard errors (in parentheses) are clustered at the
+workplace level. F-Stat (Partial) reports the F-statistic on the partial effect of Coworker Encouragement (EBS). Sample:
+The table is based on all completed responses from workplaces with at least two respondents from the 2024 survey linked to
+registry data.
+
+
+
+
+    In Section F.6.2, we estimate how employer encouragement affects the impact of AI
+chatbots, contrasting the effects of workers’ self-reported encouragement with those of their
+coworkers’. To ensure the effects are measured on comparable scales, and not attenuated
+by measurement error, we present 2SLS estimates for the impact of coworker-reported
+employer encouragement:
+
+
+                          Encouragedi = π ′ Xj,−i + α × Encouragedj,−i + ε1i                                        (49)
+
+                                        Yi = γ ′ Xj,−i + β × Encouraged
+                                                               \ i + ε2i ,                                          (50)
+
+
+where Xj,−i denotes the leave-one-out mean of the characteristics X of worker i’s coworkers.
+Table F.3 reports estimates of Equation (49).
+
+
+
+
+                                                           60

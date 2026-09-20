@@ -1,0 +1,7 @@
+# Heterogeneity by education
+
+| Grupo | Admissões (log) | Desligamentos (log) | Salário real de admissão (log) | Saldo líquido (asinh) |
+| --- | --- | --- | --- | --- |
+| Fundamental ou menos | -0,0160 (0,0320) | -0,0264 (0,0310) | 0,0127 (0,0216) | 0,2618 (0,1789) |
+| Médio | -0,0244 (0,0252) | -0,0124 (0,0292) | -0,0230 (0,0170) | -0,4628 (0,3226) |
+| Superior | -0,0725*** (0,0254) | -0,0568** (0,0257) | -0,0226* (0,0121) | -1,1578*** (0,3132) |

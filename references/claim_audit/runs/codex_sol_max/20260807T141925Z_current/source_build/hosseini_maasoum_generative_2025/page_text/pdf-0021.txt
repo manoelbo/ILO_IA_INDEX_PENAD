@@ -1,0 +1,283 @@
+4.2.2                                           GenAI-Adopting Firms
+
+We define a firm as a GenAI adopter if it has posted at least one GenAI integrator vacancy.
+By this criterion, 10,433 firms qualify as adopters. While they make up only 3.71 percent
+of the 281,111 firms in our sample, adopters are disproportionately large (see descriptive
+statistics below) and account for 16 percent of the employment (positions) in our dataset.
+                      Figure 2 plots the timing of GenAI adoption, defined as the posting date of each firm’s
+first GenAI integrator vacancy. Prior to 2023, adoption was minimal and stable, with
+roughly 30 new adopters per month. Beginning in early 2023—shortly after the launch
+of ChatGPT—the number of new adopters rose sharply, peaking at 456 in August 2023.
+Adoption then stabilized at around 400 firms per month through the end of 2024 before
+accelerating again in early 2025, reaching 574 new firms in March. By the end of the
+sample period, the cumulative number of adopters had surpassed 10,000.
+
+                                          600
+  Number of Firms with First AI Posting
+
+
+
+
+                                                                                             Number of Firms with First AI Posting
+
+                                                                                                                                     10000   ChatGPT launch
+                                                   ChatGPT launch
+
+
+                                                                                                                                      8000
+                                          400
+                                                                                                                                      6000
+
+
+                                                                                                                                      4000
+                                          200
+
+                                                                                                                                      2000
+
+
+                                            0                                                                                            0
+                                           20 m3
+
+                                           20 m6
+
+
+
+
+                                                  3
+
+
+
+
+                                                                                                                                        23 9
+
+
+                                                                                                                                       20 m3
+
+
+
+                                                                                                                                        24 9
+                                            21 9
+                                           20 12
+
+                                           20 m3
+
+                                           20 m6
+
+                                            22 9
+                                           20 12
+
+
+
+
+                                            23 9
+                                           20 12
+
+                                           20 m3
+
+                                           20 m6
+
+                                            24 9
+                                           20 12
+
+
+
+
+                                                                                                                                        21 9
+                                                                                                                                       20 12
+
+                                                                                                                                       20 m3
+
+                                                                                                                                       20 m6
+
+                                                                                                                                        22 9
+                                                                                                                                       20 12
+
+                                                                                                                                       20 m3
+
+                                                                                                                                       20 m6
+
+
+
+                                                                                                                                       20 12
+
+
+
+                                                                                                                                       20 m6
+
+
+
+
+                                                                                                                                               3
+                                                                                                                                       20 12
+                                          20 1m
+
+
+
+
+                                                                                                                                             m
+                                          20 m
+
+
+
+
+                                          20 m
+
+
+
+
+                                                                                                                                      20 1m
+
+
+
+
+                                                                                                                                      20 2m
+                                          20 4m
+
+
+
+                                                m
+
+
+
+
+                                                                                                                                      20 3m
+
+
+
+
+                                                                                                                                      20 4m
+                                                                                                                                            m
+                                               m
+
+
+
+
+                                               m
+
+
+
+
+                                                                                                                                           m
+
+
+
+
+                                                                                                                                           m
+                                               m
+
+
+
+
+                                               m
+
+
+
+
+                                                                                                                                           m
+                                              24
+
+
+
+
+                                                                                                                                          23
+
+                                                                                                                                          23
+
+
+
+
+                                                                                                                                          24
+                                              22
+
+                                              22
+
+                                              22
+
+
+
+                                              23
+
+                                              23
+
+                                              23
+
+
+
+                                              24
+
+
+
+
+                                              25
+
+
+
+
+                                                                                                                                          22
+
+                                                                                                                                          22
+
+
+
+
+                                                                                                                                          24
+
+
+
+
+                                                                                                                                          25
+                                              2
+
+
+
+
+                                              2
+
+
+
+
+                                                                                                                                          2
+
+
+
+
+                                                                                                                                          2
+
+
+
+
+                                                                                                                                          2
+
+
+
+
+                                                                                                                                          2
+                                           20
+
+
+
+
+                                                                                                                                       20
+
+
+
+
+                                                                    Date                                                                                      Date
+
+                                                             (a) Flow                                                                            (b) Cumulative
+
+                                                                    Figure 2: Number of Adopters Over Time
+                                          Notes: Panel (a) shows the monthly number of firms posting their first GenAI integrator vacancy,
+                                          while Panel (b) reports the cumulative total, covering September 2021 to March 2025.
+
+                      Table A.5, reported in Supplemental Appendix A.15, presents descriptive statistics
+for the full sample, adopters, and non-adopters. Adopters are substantially larger, more
+senior-heavy, and recruit more heavily from highly exposed occupations than non-adopters;
+they are also concentrated in professional services and information and in technology-
+intensive states, while non-adopters are more widely dispersed across sectors. Supple-
+mental Appendix A.16 provides further detail on the sectoral and geographic distribution
+
+
+
+                                                                                        21
+

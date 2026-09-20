@@ -1,0 +1,56 @@
+    Figure 11. Comparison of 2x2 DD Components and Decomposition Weights with and
+                          without Region-by-Year Fixed Effects
+                                                                                              A. 2x2 DD's
+
+                                     50                                               OLS = -3.08
+              2x2 DDs, Region-by-Year FE
+
+
+
+
+                                                            Region-by-
+                                                            Year FE = -1.16
+                         0
+
+
+
+
+                                                                                                                 2x2 DD's in both estimators
+                                                                                                                 2x2 DD's that drop out
+                                                                                                                 with region-by-year FE
+                                     -50
+
+
+
+
+                                                            -40                 -20                 0                   20                     40
+                                                                                             2x2 DDs, Year FE
+                                                                                             B. 2x2 Weights
+
+                                                                          2x2 DD's in both estimators
+                                                       .1
+              Decomposition weights w/ Region-by-Year FE
+
+
+
+
+                                                                          2x2 DD's that drop out
+                                                                          with region-by-year FE
+                 .02       .04      .06
+                                     0        .08
+
+
+
+
+                                                             0            .02             .04           .06            .08             .1
+                                                                                      Decomposition weights w/ Year FE
+
+Notes: Panel A plots the two-group DD’s from a model with region-by-year fixed effects (y-axis) against those from
+a model without them (x-axis). The size of each point is proportional to its weight in the sparser model with only year
+fixed effects. 2x2 DD’s that drop out of the region-by-year FE model are shown in triangles and appear at “0” on the
+y-axis, although they do not enter the decomposition as zeros. Panel B plots the decomposition weights from the two
+models. Some 2x2 comparisons drop out in the model with region-by-year effects (when no region has states from
+both timing groups) and the figures plot these components using triangles.
+
+                                                                                                   41
+

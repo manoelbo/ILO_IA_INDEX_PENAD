@@ -1,0 +1,54 @@
+Difference-in-differences (DD) is both the most common and the oldest quasi-experimental
+
+research design, dating back to Snow’s (1855) analysis of a London cholera outbreak. 1 A DD
+
+estimate is the difference between the change in outcomes before and after a treatment (difference
+                                                                                            𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃      𝑃𝑃𝑃𝑃𝑃𝑃     𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃
+one) in a treatment versus control group (difference two): �𝑦𝑦 𝑇𝑇𝑇𝑇𝑇𝑇𝐴𝐴𝑇𝑇 − 𝑦𝑦 𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 � − �𝑦𝑦𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶 −
+
+    𝑃𝑃𝑃𝑃𝑃𝑃
+𝑦𝑦𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶 �. That simple quantity also equals the estimated coefficient on the interaction of a
+
+treatment group dummy and a post-treatment period dummy in the following regression:
+
+                    𝑦𝑦𝑖𝑖𝑖𝑖 = 𝛾𝛾 + 𝛾𝛾𝑖𝑖 𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑖𝑖 + 𝛾𝛾𝑡𝑡 𝑃𝑃𝑃𝑃𝑃𝑃𝑇𝑇𝑡𝑡 + 𝛽𝛽 2𝑥𝑥2 𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑖𝑖 × 𝑃𝑃𝑃𝑃𝑃𝑃𝑇𝑇𝑡𝑡 + 𝑢𝑢𝑖𝑖𝑖𝑖              (1)
+
+The elegance of DD makes it clear which comparisons generate the estimate, what leads to bias,
+
+and how to test the design. The expression in terms of sample means connects the regression to
+
+potential outcomes and shows that, under a common trends assumption, a two-group/two-period
+
+(2x2) DD identifies the average treatment effect on the treated. All econometrics textbooks and
+
+survey articles describe this structure, 2 and recent methodological extensions build on it. 3
+
+             Most DD applications diverge from this 2x2 set up though because treatments usually occur
+
+at different times. 4 The processes that generate treatment variables naturally lead to variation in
+
+timing. Local governments change policy. Jurisdictions hand down legal rulings. Natural disasters
+
+strike across seasons. Firms lay off workers. In this case researchers estimate a regression with
+
+dummies for cross-sectional units (𝛼𝛼𝑖𝑖 ) and time periods (𝛼𝛼𝑡𝑡 ), and a treatment dummy (𝐷𝐷𝑖𝑖𝑖𝑖 ):
+
+                                           𝑦𝑦𝑖𝑖𝑖𝑖 = 𝛼𝛼𝑖𝑖 + 𝛼𝛼𝑡𝑡 + 𝛽𝛽 𝐷𝐷𝐷𝐷 𝐷𝐷𝑖𝑖𝑖𝑖 + 𝑒𝑒𝑖𝑖𝑖𝑖                                   (2)
+
+
+
+
+1
+  A search from 2012 forward of nber.org, for example, yields 430 results for “difference-in-differences", 360 for
+“randomization” AND “experiment” AND “trial”, and 277 for “regression discontinuity” OR “regression kink”.
+2
+  This includes, but is not limited to, Angrist and Krueger (1999), Angrist and Pischke (2009), Heckman, Lalonde,
+and Smith (1999), Meyer (1995), Cameron and Trivedi (2005), Wooldridge (2010).
+3
+  Inverse propensity score reweighting: Abadie (2005), synthetic control: Abadie, Diamond, and Hainmueller (2010),
+changes-in-changes: Athey and Imbens (2006), quantile treatment effects: Callaway, Li, and Oka (forthcoming).
+4
+  Half of the 93 DD papers published in 2014/2015 in 5 general interest or field journals had variation in timing.
+
+                                                                    1
+

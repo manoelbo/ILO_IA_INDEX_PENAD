@@ -1,0 +1,44 @@
+in Professional, Scientific, and Technical. The correlation between productivity gains and AI
+usage by industry (0.65) is smaller than for the time-savings and industry (0.93). This is
+primarily due to variation in labor shares across industries. For example, Information Services
+has high genAI use and time savings, but a low labor share (0.39).
+
+   To what extent are these predicted productivity gains evident in economic data? Figure
+9c compares changes in effective labor supply in the RPS with annualized labor productivity
+growth (i.e., the percent change in real value added per worker) from 2022 – 2024. To adjust for
+trends in TFP growth prior to the Covid-19 pandemic, we detrend annualized labor productivity
+by subtracting the annualized growth predicted by the trend over the period 2015-2019 from the
+actual growth rate. We find a positive correlation of 0.39. The power of this analysis is limited
+by three factors. First, our predicted changes in effective labor supply are modest relative to
+observed changes in labor productivity, which can be affected by many factors other than genAI.
+Second, the change in labor productivity over this period may partly reflect recovery from the
+Covid-19 pandemic: in particular, both Retail and Transportation were disproportionately
+negatively impacted by demand shifts during the pandemic and exhibit very high productivity
+growth from 2022-2024 relative to trend. Third, our sample size includes only 15 industries
+with sufficient sample size.
+
+    Figure 9d compares changes in predicted productivity gains in the model with annualized
+labor productivity growth. In this comparison the correlation declines to effectively zero. Me-
+chanically, the correlation declines because some industries with high effective labor gains and
+high observed productivity gains have a small labor share, which dampens the predicted pro-
+ductivity gain in the model. One potential explanation for the decrease in the correlation is
+that industry adoption of genAI may be correlated with worker adoption. If industries with
+large increases in effective labor supply also experienced productivity gains due to firm-level
+adoption, then our model, which only captures changes in individual workers’ effective labor
+supply, would under-predict total productivity gains in those industries.
+
+
+5.4   Aggregate Productivity Gains and a Comparison of Micro and Macro Esti-
+      mates
+
+We can apply this same procedure to estimate aggregate productivity gains due to genAI. In
+particular, we estimate that on the aggregate level genAI currently increases the aggregate
+effective labor supply by 2.1%. Using an AI-exposure-adjusted labor share of 0.57, following
+Acemoglu (2024), we estimate a potential productivity gain of 1.2%.
+
+    To compare our estimate of the aggregate productivity gain from genAI with experimental
+estimates from the literature, we reformulate the model to express time savings as a linear
+
+
+                                               24
+

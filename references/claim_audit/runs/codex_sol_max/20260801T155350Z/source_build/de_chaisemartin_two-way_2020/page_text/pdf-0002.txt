@@ -1,0 +1,44 @@
+1       Introduction
+
+A popular method to estimate the effect of a treatment on an outcome is to compare over time
+groups experiencing different evolutions of their exposure to treatment. In practice, this idea is
+implemented by estimating regressions that control for group and time fixed effects. Hereafter,
+we refer to those as two-way fixed effects (FE) regressions. We conducted a survey, and found
+that 20% of all empirical articles published by the American Economic Review (AER) between
+2010 and 2012 have used a two-way FE regression to estimate the effect of a treatment on an
+outcome. When the treatment effect is constant across groups and over time, such regressions
+estimate that effect under the standard “common trends” assumption. However, it is often
+implausible that the treatment effect is constant. For instance, the minimum wage’s effect on
+employment may vary across US counties, and may change over time. This paper examines the
+properties of two-way FE regressions when the constant effect assumption is violated.
+We start by assuming that all observations in the same (g, t) cell have the same treatment and
+that the treatment is binary, as is for instance the case when the treatment is a county-level law.
+We consider the regression of Yi,g,t , the outcome of unit i in group g at period t on group fixed
+effects, period fixed effects, and Dg,t , the treatment in group g at period t. Let βbf e denote the
+coefficient of Dg,t , and let βf e denote its expectation. Under the common trends assumption, we
+show that βf e is equal to a weighted sum of the treatment effect in each treated (g, t) cell:
+                                                                  
+                                                   X
+                                     βf e = E           Wg,t ∆g,t  .                           (1)
+                                                      (g,t):Dg,t =1
+
+∆g,t is the average treatment effect (ATE) in group g and period t and the weights Wg,t s sum
+to one but may be negative. Negative weights arise because βbf e is a weighted sum of several
+difference-in-differences (DID), which compare the evolution of the outcome between consecutive
+time periods across pairs of groups. However, the “control group” in some of those comparisons
+may be treated at both periods. Then, its treatment effect at the second period gets differenced
+out by the DID, hence the negative weights.
+The negative weights are an issue when the ATEs are heterogeneous across groups or periods.
+Then, one could have that βf e is negative while all the ATEs are positive. For instance, 1.5 ×
+1 − 0.5 × 4, a weighted sum of 1 and 4, is strictly negative. Using the data set of Gentzkow
+et al. (2011), we find that 40% of the weights attached to βf e are negative, so βf e is not robust
+to heterogeneous effects.1
+Researchers may want to know how serious that issue is in the application they consider. We
+show that conditional on all treatments, the absolute value of the expectation of βbf e divided by
+    1
+     Gentzkow et al. (2011) do not estimate βf e , but βf d , the treatment coefficient in the first-difference regression
+defined below. 46% of the weights attached to βf d are strictly negative.
+
+
+                                                            2
+

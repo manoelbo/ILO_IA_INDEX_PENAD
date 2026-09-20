@@ -1,0 +1,33 @@
+Difference-in-Differences with Variation in Treatment Timing
+Andrew Goodman-Bacon
+NBER Working Paper No. 25018
+September 2018
+JEL No. C1,C23
+
+                                           ABSTRACT
+
+The canonical difference-in-differences (DD) model contains two time periods, “pre” and “post”,
+and two groups, “treatment” and “control”. Most DD applications, however, exploit variation
+across groups of units that receive treatment at different times. This paper derives an expression
+for this general DD estimator, and shows that it is a weighted average of all possible two-group/
+two-period DD estimators in the data. This result provides detailed guidance about how to use
+regression DD in practice. I define the DD estimand and show how it averages treatment effect
+heterogeneity and that it is biased when effects change over time. I propose a new balance test
+derived from a unified definition of common trends. I show how to decompose the difference
+between two specifications, and I apply it to models that drop untreated units, weight,
+disaggregate time fixed effects, control for unit-specific time trends, or exploit a third difference.
+
+
+Andrew Goodman-Bacon
+Department of Economics
+Vanderbilt University
+2301 Vanderbilt Place
+Nashville, TN 37235-1819
+and NBER
+andrew.j.goodman-bacon@vanderbilt.edu
+
+
+
+
+A data appendix is available at http://www.nber.org/data-appendix/w25018
+

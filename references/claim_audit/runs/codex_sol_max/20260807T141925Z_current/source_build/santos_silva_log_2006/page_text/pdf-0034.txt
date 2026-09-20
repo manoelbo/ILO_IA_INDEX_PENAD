@@ -1,0 +1,32 @@
+References
+Anderson, J. (1979). “A Theoretical Foundation for the Gravity Equation,” American
+    Economic Review, 69, 106-116.
+Anderson, J. and E. van Wincoop (2003). “Gravity with Gravitas: A Solution to the
+    Border Puzzle,” American Economic Review, 93, 170-192.
+Bergstrand, J. (1985). “The Gravity Equation in International Trade: Some Microeco-
+    nomic Foundations and Empirical Evidence,” Review of Economics and Statistics,
+    69, 474-481.
+Boisso, D. and M. Ferrantino (1997). “Economic and Cultural Distance in International
+    Trade: Empirical Puzzles,”, Journal of Economic Integration, 12, 456-84.
+Cameron, A.C. and P.K. Trivedi (1998). Regression Analysis of Count Data, Cambridge,
+    MA: Cambridge University Press.
+Davidson, R. and J.G. MacKinnon (1993). Estimation and Inference in Econometrics.
+    Oxford: Oxford University Press.
+Davis, D. (1995). “Intra-industry Trade: A Hecksher-Ohlin-Ricardo Approach,” Journal
+    of International Economics, 39, 201-226.
+Deardoﬀ, A. (1998). “Determinants of Bilateral Trade: Does Gravity Work in a Neoclas-
+    sical World?” in Jeﬀrey Frankel (ed.), The Regionalization of the World Economy.
+    Chicago, IL: University of Chicago Press.
+Delgado, M. (1992). “Semiparametric Generalized Least Squares Estimation in the Mul-
+    tivariate Nonlinear Regression Model,” Econometric Theory, 8, 203-222.
+Delgado, M. and T.J. Kniesner (1997). “Semiparametric Versus Parametric Count-
+    data Models: Econometric Considerations and Estimates of a Hedonic-Equilibrium
+    Model of Workers Absentism,” Review of Economics and Statistics, 79, 41-49.
+Eaton, J. and S. Kortum (2001). “Technology, Geography and Trade,” NBER Working
+    Paper No. 6253.
+Eaton, J. and A. Tamura (1994). “Bilateralism and Regionalism in Japanese and US
+    Trade and Direct Foreign Investment Patterns,” Journal of the Japanese and Inter-
+    national Economics, 8, 478-510.
+
+                                         33
+

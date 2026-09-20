@@ -1,0 +1,37 @@
+tal based on comparative advantage. When automation enables capital to perform
+tasks previously done by labor more cheaply, it creates a displacement effect that
+reduces labor demand. Conversely, the creation of new tasks where labor main-
+tains comparative advantage generates a reinstatement effect that increases labor
+demand (Acemoglu and Restrepo, 2019; Restrepo, 2024). For LLMs, which can auto-
+mate cognitive tasks previously considered non-routine, the framework predicts that
+displacement will dominate in the short run, particularly for entry-level positions
+involving routine information processing and basic analysis. Senior roles requiring
+tacit knowledge, judgment, and complex interpersonal coordination should prove
+less vulnerable. This is consistent with our findings.
+    Our findings contribute to the emerging international evidence on labor market
+impacts of AI (del Rio-Chanona et al., 2025). In the United States, Brynjolfsson,
+Chandar and Chen (2025); Lichtinger and Hosseini Maasoum (2025); Dominski and
+Lee (2025) document employment declines in exposed industries concentrated in
+early-career positions. However, Chandar (2025) finds no employment effects using
+CPS data, and Humlum and Vestergaard (2025) report null results from Danish
+administrative data. These disparities may reflect several factors: differences in
+labor market institutions between countries, variation in the timing of LLM adop-
+tion across regions, and methodological choices regarding exposure measurement
+and outcome variables. Our UK evidence suggests that effects manifest differently
+across adjustment margins, with hiring responding more quickly and strongly than
+employment stocks.
+    Methodologically, our paper builds on recent work that also uses Revelio Labs
+data to construct firm-level AI exposure measures. Eisfeldt et al. (2023) show that
+higher-exposure US firms experience excess stock returns following the release of
+ChatGPT, while Hampole et al. (2025) develop task-level exposure measures varying
+across firms and occupations to study US labor demand between 2010 and 2023. We
+extend their work in three directions: we shift focus to the UK labor market, examine
+realized employment and job posting outcomes (as opposed to Eisfeldt et al. (2023)’s
+focus on financial data), and exploit data through mid-2025 to capture labor market
+adjustment to generative AI adoption (as opposed to Hampole et al. (2025)’s focus
+on earlier waves of AI).
+    In the UK context, we extend Henseke et al. (2025), who develop a Generative
+AI Susceptibility Index and provide suggestive evidence that wage premia decline
+
+                                         4
+

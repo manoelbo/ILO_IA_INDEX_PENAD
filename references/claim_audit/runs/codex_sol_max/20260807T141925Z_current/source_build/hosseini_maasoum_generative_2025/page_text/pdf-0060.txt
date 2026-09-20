@@ -1,0 +1,47 @@
+and GenAI exposure levels of junior positions across school-quality tiers. As expected,
+there is a monotonic positive relationship between juniors’ salaries and the prestige rank
+of their alma mater. GenAI exposure also increases monotonically with school quality.
+This pattern may partly account for the attenuation in the decline from tier 3 to tier 5, but
+it does not help explain the increase in the magnitude of the effect from tier 1 to tier 3.
+
+                                                        85,896
+
+
+                                               80,000
+                                                                 71,430
+                 Predicted Mean Salary (USD)
+
+
+
+
+                                                                            64,042
+                                                                                     59,885
+                                               60,000
+                                                                                              52,251
+
+
+
+
+                                               40,000
+
+
+
+
+                                               20,000
+
+
+
+
+                                                   0
+                                                        Tier 1   Tier 2     Tier 3   Tier 4   Tier 5
+
+
+              Figure A.14: Predicted Salary by School Quality (Juniors, 2022)
+    Notes: Bars report average predicted salaries (in USD) for juniors employed in 2022 by university
+    prestige category.
+
+
+
+
+                                                                          A.15
+

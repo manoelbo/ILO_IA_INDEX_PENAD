@@ -1,0 +1,23 @@
+              report that GDP is strongly correlated with the AUI (see Figures 3.3 and 3.4).
+              At the country level, a 1% increase in GDP per capita is associated with a 0.7%
+              increase in Claude usage per capita. Human education (how many years of
+              education it takes to understand the human written prompts in a conversation)
+              correlates positively and significantly with the Anthropic AI Usage Index both
+              at the country and at the US state level.
+
+
+
+
+Figure 3.3: Relationship between the Anthropic AI Usage Index and five core economic primitives and GDP per capita at the
+country level.
+Each plot shows the bivariate relationship between the natural logarithm of the Anthropic AI Usage Index and a core economic
+primitive as well as log GDP per capita. Labels show the ISO-3166-1 country codes. We only include countries with at least 200
+observations in our sample for this figure because of the uncertainty of the measure for low-usage countries in our random sample.
+The underlying data includes Claude.ai Free, Pro and Max usage. See chapter 2 for detailed definitions of human only time, human
+education, AI autonomy, work use case and task success.
+
+
+
+
+The Anthropic Economic Index Report                                                                                                  31
+

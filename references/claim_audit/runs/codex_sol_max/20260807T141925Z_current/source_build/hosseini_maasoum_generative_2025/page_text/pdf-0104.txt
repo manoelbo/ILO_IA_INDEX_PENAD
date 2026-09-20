@@ -1,0 +1,129 @@
+primarily on the remote-able margin, it cannot explain a junior decline that is also present—at comparable
+magnitude—among low-remote-suitability positions. This indicates that our main results are not driven by
+the post-pandemic reallocation of remote work.
+
+
+                                                        .05
+                   Log Size (Triple-DiD Coefficients)
+
+
+
+                                                          0
+
+
+
+                                                        -.05
+
+
+
+                                                         -.1
+                                                               q1
+
+
+
+                                                                         q1
+
+
+
+                                                                                     q1
+
+
+
+                                                                                                     q1
+
+
+
+                                                                                                                  q1
+
+
+
+                                                                                                                            q1
+
+
+
+                                                                                                                                      q1
+
+
+
+                                                                                                                                                q1
+                                                          18
+
+
+
+                                                                     19
+
+
+
+                                                                                   20
+
+
+
+                                                                                                    21
+
+
+
+                                                                                                              22
+
+
+
+                                                                                                                        23
+
+
+
+                                                                                                                                  24
+
+
+
+                                                                                                                                            25
+                                                        20
+
+
+
+                                                                    20
+
+
+
+                                                                                20
+
+
+
+                                                                                               20
+
+
+
+                                                                                                             20
+
+
+
+                                                                                                                       20
+
+
+
+                                                                                                                                 20
+
+
+
+                                                                                                                                           20
+                                                                                                          Quarter
+
+                                                                     High remote-suitability jobs
+                                                                     Low remote-suitability jobs
+
+
+
+
+Figure A.26: Seniority Triple-Difference, Separately Within High- and Low-Remote-
+Suitability Positions
+     Notes: Each series plots the junior-relative-to-senior triple-difference coefficients (Equation 11),
+     estimated separately using employment in high- and low-remote-suitability positions. Remote
+     suitability is measured by the Revelio Labs remote_suitability score; high (low) jobs are those
+     in the top (bottom) quartile of the score distribution. The dark solid line corresponds to high-
+     remote-suitability positions and the light dashed line to low-remote-suitability positions; shaded
+     bands are 95% confidence intervals based on standard errors clustered at the firm level. Coeffi-
+     cients are normalized to zero in 2022Q4. The vertical line marks the launch of ChatGPT (2022Q4).
+
+
+
+
+                                                                                                    A.59
+

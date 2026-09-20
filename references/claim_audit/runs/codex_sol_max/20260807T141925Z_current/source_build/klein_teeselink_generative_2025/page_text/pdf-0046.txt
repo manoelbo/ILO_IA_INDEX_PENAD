@@ -1,0 +1,37 @@
+                Figure A1: Employment Shares: ONS vs. Revelio Labs
+                                                            Comparison of ONS and Revelio employment shares
+                                                     0.12
+
+
+
+
+                    Fraction of Revelio employment   0.09
+
+
+
+
+                                                     0.06
+
+
+
+
+                                                     0.03
+
+
+
+
+                                                     0.00
+
+                                                                                 0.05                        0.10
+                                                                                    Fraction of ONS employment
+
+Notes: This figure plots industry-level employment shares from Revelio Labs against corresponding
+shares from ONS data. Each point represents one of 16 broad ONS industry categories. The dashed
+line indicates perfect correspondence (45-degree line). Points close to this line indicate that an
+industry’s share of total employment is similar in both datasets.
+
+
+
+
+                                                                                           46
+

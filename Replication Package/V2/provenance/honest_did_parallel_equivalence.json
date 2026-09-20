@@ -1,0 +1,41 @@
+{
+  "artifact": "HonestDiD serial/parallel deterministic-equivalence receipt",
+  "checked_at": "2026-08-02",
+  "comparison_contract": {
+    "csv_contract": "Exact columns and values after sorting by stable keys",
+    "numeric_tolerance": 0.0,
+    "png_contract": "Equal dimensions and 64x64 grayscale RMS <= 5.0",
+    "stable_keys": {
+      "sensitivity": [
+        "outcome",
+        "Delta",
+        "M"
+      ],
+      "summary": [
+        "outcome",
+        "Delta"
+      ]
+    }
+  },
+  "inputs": {
+    "event_coefficients_sha256": "7389085a7a6210cd4cc659a1ebdf41579b4558d6a077819dc2e350c23a0d563e",
+    "event_vcov_long_sha256": "d53d463ceba7c8c40a996eedbe93c8c4e94901a15d554ccb7400aca6ed8d499a"
+  },
+  "results": {
+    "comparison_figure_count": 4,
+    "comparison_figure_max_rms": 0.0,
+    "parallel_workers": 4,
+    "sensitivity_csv_byte_identical": true,
+    "sensitivity_rows": 106,
+    "sensitivity_sha256": "e756006990bf877ef85c19bbc703cb13d58160886c8e08638244bb444e8815f0",
+    "serial_workers": 1,
+    "summary_csv_byte_identical": true,
+    "summary_rows": 4,
+    "summary_sha256": "580208c1ae31b34a7849f337e524429828448f8f257cd4b55af1e49fb38bca3a"
+  },
+  "scripts": {
+    "R/honest_did.R": "b3a3e955de0944930fc65beed38b9271a32aa64609b34e0d82501e177122a5e3",
+    "R/honest_did_sd.R": "1bc0f1824dc54257af9a2b88c84d1b10e8da09860975ab9ba3d834f33a0cacfe"
+  },
+  "status": "pass"
+}

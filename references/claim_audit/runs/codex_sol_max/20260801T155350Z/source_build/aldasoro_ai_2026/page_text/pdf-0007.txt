@@ -1,0 +1,42 @@
+1    Introduction
+
+Artificial intelligence (AI) is poised to transform the global economy by simultaneously
+affecting aggregate demand and productivity on the supply side. Yet robust evidence
+on its firm-level effects outside the United States (US) remains scarce. While optimistic
+projections predict that AI could drive productivity booms (Baily, Brynjolfsson, and
+Korinek, 2023), others caution that adoption barriers and productivity constraints from
+unbalanced growth may significantly limit the gains from AI adoption (Acemoglu, 2024;
+Filippucci, Gal, and Schief, 2024). Europe’s position is both central and paradoxical: it
+boasts world-leading researchers and strong industrial capacity but suffers from a persis-
+tent and growing gap in the development of new AI technologies compared to the US and
+China (EIB, 2025). Understanding how AI affects European firms is therefore essential
+for policymakers seeking to harness its benefits while managing the associated risks.
+
+    This paper provides the first causal evidence on how AI adoption affects productivity
+and employment in European firms, leveraging a unique survey on EU and US non-
+financial firms matched to administrative financial data. We address two core questions.
+First, we explore the firm characteristics that predict AI adoption in Europe, which is
+key to characterize the selection process into using AI tools. We then investigate how AI
+adoption influences firm productivity and employment. The first question thus provides
+the empirical groundwork for a credible identification of the second.
+
+    The analysis reveals four key insights. First, AI adoption increases labor productivity
+by 4% on average after addressing endogeneity. Second, the gains stem from capital
+deepening rather than job displacement. Third, benefits are concentrated in medium
+and large firms – posing risks of widening inequality in the benefits from AI adoption.
+Fourth, the productivity gains are larger if firms carry out complementary investments
+in software and data or employee training. Our findings cast some doubts on claims
+of dramatic AI-driven job destruction, while underscoring pressing concerns about its
+uneven economic impact.
+
+    We leverage data of the European Investment Bank Investment Survey (EIBIS), an
+annual survey covering approximately 12,000 non-financial firms across the EU and 800
+US non-financial firms, matched with ORBIS data on corporate financial statements. Our
+final sample used in the analysis is a pooled cross-section that runs from 2019 to 2024.
+The survey’s stratified design ensures representative coverage across firm size, sector and
+
+
+
+
+                                            1
+

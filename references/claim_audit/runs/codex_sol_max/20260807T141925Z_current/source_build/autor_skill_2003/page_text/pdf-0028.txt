@@ -1,0 +1,48 @@
+1306              QUARTERLY JOURNAL OF ECONOMICS
+
+
+correspond as closely to the intended construct as our primary
+measures.
+     As visible in the table, the qualitative trends in the composite
+relationships are comparable to those using our preferred mea-
+sures in Table III. In particular, industry computerization is
+associated with sharp declines in routine cognitive and manual
+labor inputs and growth in nonroutine analytic and interactive
+labor inputs. Moreover, these relationships typically become
+stronger in successive decades. Contrary to expectations, how-
+ever, the composite measure for routine cognitive input is only
+signicant in the most recent decade and the composite measure
+for nonroutine interactive input is statistically signicant in the
+1960s. Thus, while our results are generally robust to variable
+choice, this exercise underscores that variable choice does matter.
+A data source specically designed to measure changes in work-
+place input of routine and nonroutine cognitive tasks over a long
+time horizon would clearly provide a more complete test of the
+model. Given the absence of such a data source for the United
+States, we view the evidence provided by the DOT as uniquely
+informative.21
+
+IV.C. Employing Contemporaneous Measures of Computer
+      and Capital Investment
+     A limitation of the CPS computer measure used so far is that
+it is only available for the 1980s and 1990s. To provide more
+comprehensive measures of computer and capital investment
+available for the entire 1959 –1998 period, we draw on the Na-
+tional Income and Product Accounts (NIPA), which provides de-
+tailed data on capital stocks across 42 major industries excluding
+government [U. S. Department of Commerce 2002a, 2002b]. As a
+measure of industry computerization, we calculated the log of real
+investment in computer hardware, software and peripherals per
+full-time equivalent employee (FTE) over the course of each de-
+cade. To distinguish the relationship between task change and
+computerization from overall capital-skill complementarity
+[Griliches 1969], we construct two variables to control for capital
+
+     21. Spitz [2003] studies the predictions of our task model using German data
+from 1979–1999, which contains far more detailed and precise information on
+workplace tasks than is available from the DOT. Consistent with the predictions
+of the model, Spitz reports that computer capital substitutes for repetitive manual
+and repetitive cognitive skills and complements analytical and interactive skills.
+See also Bartel, Ichniowski, and Shaw [2000] and Ichniowski and Shaw [2003] for
+quantitative and case study evidence.
+

@@ -1,0 +1,47 @@
+                        Table 3: Effects of AI adoption on employment
+
+                                   (1)                  (2)              (3)                 (4)
+                              Empl. (log)        Empl. (log)         Empl. (log)        Empl. (log)
+                              No controls       With controls        No controls       With controls
+
+ AI adoption (actual)           0.125***           0.079***
+                                 (0.006)            (0.006)
+ AI adoption (US-based)                                               0.053***             -0.012
+                                                                       (0.010)            (0.010)
+ Investment (lag)                                    -0.003                                -0.003
+                                                    (0.003)                               (0.003)
+ Profitability (lag)                               0.153***                              0.167***
+                                                    (0.019)                               (0.022)
+ Financial leverage (lag)                           0.034**                              0.045***
+                                                    (0.014)                               (0.015)
+ Total assets (log, lag)                           0.178***                              0.189***
+                                                    (0.003)                               (0.003)
+
+ Size FE                           Yes                  Yes              Yes                Yes
+ Age FE                            Yes                  Yes              Yes                Yes
+ Country-sector-wave FE            Yes                  Yes              Yes                Yes
+ Observations                     55020              36259              45340              30446
+ R-squared                        0.915              0.926              0.912              0.924
+ Adjusted R-squared               0.912              0.922              0.908              0.920
+
+
+Note: The dependent variable is the log of number of employees and is derived from EIBIS. AI adoption
+(actual) is the EIBIS-reported AI implementation status. AI adoption (US-matched) is the AI imple-
+mentation status derived from similar firms in the US. Investment is expressed as the annual change in
+total fixed assets. Profitability is the ratio of EBIT to total assets. Financial leverage is the ratio of
+loans and long-term debt to total assets. All control variables come from ORBIS and are lagged by 1
+year. Standard errors clustered at the country-sector-wave level are reported in parentheses. *, **, ***
+correspond to 0.1, 0.05 and 0.01 significance levels, respectively.
+
+
+
+    We next examine whether the improvement in labor productivity stems from a reduc-
+tion in employment. The results indicate that this is not the case. Table 3 reports the
+results, following a structure similar to Table 2, but with the logarithm of employment
+as the dependent variable. When using the actual series of AI adoption, the estimates
+suggest a positive effect on employment of 8% without controls (column (2)). In con-
+
+
+
+                                                   17
+

@@ -1,0 +1,55 @@
+65      ILO Working Paper 140
+
+
+
+
+      a. 1–9 people (please enter the exact number; input restricted to values 1–9
+
+      b. 10–19
+
+      c. 20–49
+
+      d. 50–249
+
+      e. 250 or more
+
+      f. I don’t know, but fewer than 10 people
+
+      g. I don’t know, but more than 9 people
+
+     10. What is the capital ownership of the company where you work?
+      (Please mark one [1] answer with an X)
+
+      a. Polish (fully Polish company, no foreign capital)
+
+      b. Mixed (company has both Polish and foreign capital)
+
+      c. Foreign (fully foreign company, no Polish capital)
+
+      d. Hard to say
+
+     11. Have you heard of Generative Artificial Intelligence (GenAI, e.g., ChatGPT)?
+      (Please mark one [1] answer with an X)
+
+      a. Yes
+
+      b. No
+
+      c. Hard to say
+
+     12. How would you rate your knowledge of Generative Artificial Intelligence (GenAI, e.g.,
+         ChatGPT)?
+      (Please mark one [1] answer with an X)
+
+      a. Very low
+
+      b. Low
+
+      c. Average
+
+      d. High
+
+      e. Very high
+
+      Display Text/Info:
+

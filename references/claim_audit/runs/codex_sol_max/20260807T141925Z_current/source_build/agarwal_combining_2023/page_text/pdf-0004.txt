@@ -1,0 +1,37 @@
+                                                                                               4
+
+where similar developments will follow. Moreover, radiology is a highly-paid medical spe-
+cialty, which means that the potential benefits from productivity enhancements through AI
+are large. Radiology is also ideal from a research perspective. Unlike other physicians, radi-
+ologists do not have direct contact with patients, allowing us to run a decision experiment
+that resembles their normal workflow through a remote interface that we developed. To aid
+quantitative analysis, instead of obtaining a free-text report, we collect radiologist’s assessed
+probability that a given chest pathology is present and a binary clinical recommendation of
+whether to treat or follow up for that pathology. For our experiment, we hired 180 radiolo-
+gists through teleradiology companies that serve US hospitals and offer the services of both
+US-based and non-US-based radiologists.
+Analyzing the quality of our participants’ assessments requires establishing, for each patient
+case, a standard or ground truth. An important challenge in our setting is that definitive
+diagnostic tests do not exist for most thoracic pathologies and, even when they do exist,
+are selectively performed depending on a radiologist’s recommendation. We therefore follow
+the machine learning literature (Sheng et al., 2008) and construct a diagnostic standard by
+aggregating the assessments of five board-certified radiologists at Mt. Sinai Hospital with at
+least ten years of experience and chest radiology as a sub-specialty. We assess the robustness
+of all our results by constructing a (leave-one-out) ground truth using the assessments of our
+experimental participants and by varying the aggregation method.
+There are two important challenges in designing the experiment, which we address using
+a combination of experimental designs. First, while teleradiology firms allow us to recruit
+radiologists for our experiment we need to compensate them at the market rate, making data
+collection expensive. An across-participant design would therefore be cost-prohibitive except
+for extremely large effect sizes. In the first design, we, therefore, randomize each participant
+into an order in which they are exposed to the four informational environments but do not
+encounter cases repeatedly. Thus, this design allows for within-participant comparisons in
+addition to an initial pure across-participant comparison. The second challenge is that, to
+estimate a model of belief updating, we need to observe radiologists’ assessments of a given
+case both with and without AI assistance. Moreover, the assessment without AI assistance is
+required to estimate the Bayesian benchmark, which we can compare to the assessment that
+incorporates AI assistance. Our second design addresses this issue by asking each participant
+to diagnose each patient case once in each of the four information environments in random
+order while ensuring at least a two-week wash-out period between two encounters of a given
+case. This wash-out period is intended to eliminate the memory of prior information and
+

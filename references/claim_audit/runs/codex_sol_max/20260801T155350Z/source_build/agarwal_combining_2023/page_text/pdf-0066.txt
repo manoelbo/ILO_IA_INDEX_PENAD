@@ -1,0 +1,20 @@
+                                                                                             66
+
+varies across available information for every patient. Some examples of varying clinical history
+information are:
+
+  1. 68 years of age, Female, chest pain
+
+  2. Unknown age, Unknown, Trauma
+
+  3. 55 years of age, Male, Order History: Relevant PMH gastroparesis. Presents with vom-
+     iting, retching chest discomfort for a duration of today. Concern for PTX, perforated
+     viscus, pneumomediastinum.
+
+  4. 74 years of age, Female, s/p unwitnessed fall, r/o rib fx, pna or effusion
+
+  5. Trauma
+
+  6. 56 years of age, Male, S/P ICD/ Pacemaker insertion / Complete X-ray without lifting
+     arms above shoulders..
+

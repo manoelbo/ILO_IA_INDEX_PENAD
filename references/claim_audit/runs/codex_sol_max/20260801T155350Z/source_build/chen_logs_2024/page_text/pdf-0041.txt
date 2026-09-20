@@ -1,0 +1,54 @@
+B       Extensions
+B.1       Sensitivity to finite changes in scale
+The following result formalizes the discussion in Remark 2 about how the ATE for mpY q changes
+with finite changes in the scale of Y .
+Proposition 4. Suppose that:
+
+    1. m : r0, 8q Ñ R is a weakly increasing function.
+
+    2. mpyq{ logpyq Ñ 1 as y Ñ 8.
+
+    3. EPY pdq r| log Y pdq| | Y pdq ą 0s ă 8 for d “ 0, 1.
+
+Then, as a Ñ 8,
+
+           EP rmpa ¨ Y p1qq ´ mpa ¨ Y p0qqs “ pP pY p1q ą 0q ´ P pY p0q ą 0qq ¨ logpaq ` oplogpaqq.
+
+Proof. Fix a sequence an Ñ 8, and without loss of generality, assume an ą e. We will show that
+
+                      1
+                           EP rmpan Y p1qq ´ mpan Y p0qqs Ñ P pY p1q “ 0q ´ P pY p0q “ 0q.            (B.1)
+                    log an
+
+Define fn pyq “ mpan yq{ logpan q. Note that fn pyq Ñ 1ry ą 0s pointwise, since fn p0q “ mp0q{ logpan q Ñ
+0, while for y ą 0,
+
+                                          mpan yq     mpan yq logpan q ` logpyq
+                               fn pyq “            “                            Ñ 1,
+                                          logpan q   logpan yq    logpan q
+where we use the fact that mpyq{ logpyq Ñ 1 as y Ñ 8 by assumption. We apply the dominated
+convergence theorem to show that EP rfn pY pdqqs Ñ P pY pdq ą 0q.
+      We showed in the proof to Proposition 1 that
+
+                                          |mpyq| ď κ ` 2 ¨ 1ry ą 0s ¨ | logpyq|
+
+where κ is a constant not depending on y.49 It follows that fn is similarly dominated:
+
+                                          |mpan yq|
+                             |fn pyq| “             ď κ ` 2 ¨ 1ry ą 0s ¨ p1 ` | logpyq|q.
+                                           logpan q
+
+Further, since EP r| logpY pdqq| | Y pdq ą 0s is finite by assumption, the upper bound is integrable for
+y “ Y pdq for d “ 0, 1. It follows from the dominated convergence theorem that
+                                           „               
+                                               mpan Y pdqq
+                  EP rfn pY pdqqs “ EP                       Ñ EP r1rY pdq ą 0ss “ P pY pdq ą 0q.
+                                                logpan q
+ 49
+      In particular, (A.1) implies the inequality for κ “ η ` |mp0q|.
+
+
+
+
+                                                            4
+

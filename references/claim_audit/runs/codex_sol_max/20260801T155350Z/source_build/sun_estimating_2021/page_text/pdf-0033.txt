@@ -1,0 +1,33 @@
+Roth, Jonathan, “Pre-test with Caution: Event-study Estimates After Testing for Parallel Trends,” Working
+
+  Paper, Harvard University July 2019.
+
+Sant’Anna, Pedro H.C. and Jun Zhao, “Doubly robust difference-in-differences estimators,” Journal of
+
+  Econometrics, 2020, 219 (1), 101 – 122.
+
+Sianesi, Barbara, “An Evaluation of the Swedish System of Active Labor Market Programs in the 1990s,”
+
+  The Review of Economics and Statistics, 2004, 86 (1), 133–155.
+
+Słoczyński, Tymon, “Interpreting OLS Estimands When Treatment Effects Are Heterogeneous: Smaller
+
+  Groups Get Larger Weights,” The Review of Economics and Statistics, forthcoming.
+
+Sun, Liyang, “EVENTSTUDYWEIGHTS: Stata module to estimate the implied weights on the cohort-
+
+  specific average treatment effects on the treated (CATTs) (event study specifications),” Statistical Soft-
+
+  ware Components, Boston College Department of Economics September 2020.
+
+Tewari, Ishani, “The Distributive Impacts of Financial Development: Evidence from Mortgage Markets
+
+  during US Bank Branch Deregulation,” American Economic Journal: Applied Economics, October 2014,
+
+  6 (4), 175–96.
+
+
+
+
+                                                    33
+

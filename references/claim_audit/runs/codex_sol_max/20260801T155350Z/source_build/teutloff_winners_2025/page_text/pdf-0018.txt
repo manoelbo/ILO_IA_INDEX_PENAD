@@ -1,0 +1,79 @@
+O. Teutloff et al.                                                                               Journal of Economic Behavior and Organization 235 (2025) 106845
+
+Appendix. Online appendix: supplementary analyses
+
+    Supplementary material related to this article can be found online at https://doi.org/10.1016/j.jebo.2024.106845.
+
+Data availability
+
+    The authors do not have permission to share data.
+
+
+References
+
+Acemoglu, D., Autor, D., 2011. Skills, tasks and technologies: Implications for employment and earnings. In: Handbook of Labor Economics, vol. 4, Elsevier, pp.
+    1043–1171.
+Acemoglu, D., Restrepo, P., 2018. The race between man and machine: Implications of technology for growth, factor shares, and employment. Am. Econ. Rev.
+    108 (6), 1488–1542.
+Adams-Prassl, A., Balgova, M., Qian, M., 2020. Flexible work arrangements in low wage jobs: Evidence from job vacancy data.
+Aggarwal, C.C., Hinneburg, A., Keim, D.A., 2001. On the surprising behavior of distance metrics in high dimensional space. In: Database Theory—ICDT 2001:
+    8th International Conference London, UK, January 4–6, 2001 Proceedings 8. Springer, pp. 420–434.
+Albanesi, S., da Silva, A.D., Jimeno, J.F., Lamo, A., Wabitsch, A., 2023. New Technologies and Jobs in Europe. Technical Report, National Bureau of Economic
+    Research.
+Anderson, K.A., 2017. Skill networks and measures of complex human capital. Proc. Natl. Acad. Sci. 114 (48), 12720–12724.
+Arntz, M., Gregory, T., Zierahn, U., 2016. The Risk of Automation for Jobs in OECD Countries: A Comparative Analysis. oecd.
+Arthur, W.B., 2010. The Nature of Technology: What it is and How It Evolves. Penguin UK.
+Ash, E., Hansen, S., 2023. Text algorithms in economics. Annu. Rev. Econ. (ISSN: 1941-1391) 15 (1), 659–688. http://dx.doi.org/10.1146/annurev-economics-
+    082222-074352.
+Autor, D., 2024. Applying AI to Rebuild Middle Class Jobs. Technical Report, National Bureau of Economic Research.
+Autor, D., Chin, C., Salomons, A., Seegmiller, B., 2024. New frontiers: The origins and content of new work, 1940–2018. Q. J. Econ. qjae008.
+Autor, D., Salomons, A., 2018. Is Automation Labor-Displacing? Productivity Growth, Employment, and the Labor Share. Technical Report, National Bureau of
+    Economic Research.
+Balland, P.-A., Broekel, T., Diodato, D., Giuliani, E., Hausmann, R., O’Clery, N., Rigby, D., 2022. The new paradigm of economic complexity. Res. Policy 51 (3),
+    104450.
+Barnichon, R., 2010. Building a composite help-wanted index. Econom. Lett. 109 (3), 175–178.
+Bhattacharjee, P., Mitra, P., 2021. A survey of density based clustering algorithms. Front. Comput. Sci. 15, 1–27.
+Braesemann, F., Stephany, F., Teutloff, O., Kässi, O., Graham, M., Lehdonvirta, V., 2022. The global polarisation of remote work. Plos one 17 (10), e0274630.
+Brown, T.B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A.,
+    Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D.M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B.,
+    Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., Amodei, D., 2020. Language models are few-shot learners. CoRR, abs/2005.14165. URL:
+    https://arxiv.org/abs/2005.14165.
+Brynjolfsson, E., Li, D., Raymond, L.R., 2023. Generative AI at Work. Technical Report, National Bureau of Economic Research.
+Brynjolfsson, E., McAfee, A., 2014. The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies. WW Norton & Company.
+Brynjolfsson, E., Mitchell, T., 2017. What can machine learning do? Workforce implications. Science 358 (6370), 1530–1534.
+Corporaal, G.F., Lehdonvirta, V., 2017. Platform Sourcing: How Fortune 500 Firms are Adopting Online Freelancing Platforms. University of Oxford.
+Davis, S.J., Faberman, R.J., Haltiwanger, J.C., 2013. The establishment-level behavior of vacancies and hiring. Q. J. Econ. 128 (2), 581–622.
+del Rio-Chanona, R.M., Hermida-Carrillo, A., Sepahpour-Fard, M., Sun, L., Topinkova, R., Nedelkoska, L., 2023. Mental health concerns precede quits: shifts in
+    the work discourse during the Covid-19 pandemic and great resignation. EPJ Data Sci. 12 (1), 49.
+del Rio-Chanona, R.M., Laurentsyeva, N., Wachs, J., 2024. Large language models reduce public knowledge sharing on online Q&A platforms. PNAS nexus 3 (9),
+    pgae400.
+del Rio-Chanona, R.M., Mealy, P., Beguerisse-Díaz, M., Lafond, F., Farmer, J.D., 2021. Occupational mobility and automation: a data-driven network model. J.
+    R. Soc. Interface 18 (174), 20200898.
+Demirci, O., Hannane, J., Zhu, X., 2023. Who is AI replacing? The impact of ChatGPT on online freelancing platforms. The Impact of ChatGPT on Online
+    Freelancing Platforms (October 15, 2023).
+Dube, A., Jacobs, J., Naidu, S., Suri, S., 2020. Monopsony in online labor markets. Am. Econ. Rev. Insights 2 (1), 33–46.
+Duch-Brown, N., Gomez-Herrera, E., Mueller-Langer, F., Tolan, S., 2022. Market power and artificial intelligence work on online labour markets. Res. Policy 51
+    (3), 104446.
+Eloundou, T., Manning, S., Mishkin, P., Rock, D., 2023. Gpts are gpts: An early look at the labor market impact potential of large language models. arXiv preprint
+    arXiv:2303.10130.
+Farinha, T., et al., 2020. Impacts From Automation Diffuse Locally Âe‘‘A Novel Approach To Estimate Jobs Risk In Us Cities. Technical Report, Utrecht University,
+    Department of Human Geography and Spatial Planning . . . .
+Frey, C.B., Osborne, M.A., 2017. The future of employment: How susceptible are jobs to computerisation? Technol. Forecast. Soc. Change 114, 254–280.
+Gerling, C., Teubner, T., Braesemann, F., 2024. Who uses generative AI, how, and why? A cluster analysis on motives, perceptions, and use patterns of ChatGPT.
+    Electronic Markets (In revision).
+Grootendorst, M., 2022. BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794.
+Grootendorst, M.P., 2024a. Outlier reduction - BERTopic — maartengr.github.io. https://maartengr.github.io/BERTopic/getting_started/outlier_reduction/outlier_
+    reduction.html. (Accessed 20 May 2024).
+Grootendorst, M.P., 2024b. Parameter tuning - bertopic — maartengr.github.io. https://maartengr.github.io/BERTopic/getting_started/parameter%20tuning/
+    parametertuning.html#top_n_words. (Accessed 20 May 2024).
+Hansen, S., Lambert, P.J., Bloom, N., Davis, S., Sadun, R., Taska, B., 2023. Remote Work across Jobs, Companies, and Space. National Bureau of Economic
+    Research, http://dx.doi.org/10.3386/w31007.
+Hoberg, G., Phillips, G., 2016. Text-based network industries and endogenous product differentiation. J. Polit. Econ. (ISSN: 1537-534X) 124 (5), 1423–1465.
+    http://dx.doi.org/10.1086/688176.
+Horton, J.J., 2021. The Ruble Collapse in an Online Marketplace: Some Lessons for Market Designers. Technical Report, National Bureau of Economic Research.
+Horton, J.J., Tambe, P., 2015. Labor economists get their microscope: Big data and labor market analysis. Big data 3 (3), 130–137.
+Hosseinioun, M., Neffke, F., Youn, H., et al., 2023. Nested skills in labor ecosystems: A hidden dimension of human capital. arXiv preprint arXiv:2303.15629.
+
+
+                                                                               18
+

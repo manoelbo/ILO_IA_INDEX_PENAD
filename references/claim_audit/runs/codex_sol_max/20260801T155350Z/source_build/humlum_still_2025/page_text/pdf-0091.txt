@@ -1,0 +1,63 @@
+consistent with our 2023 survey round, in which women were significantly more likely to
+
+cite lack of training as a barrier to using ChatGPT (Humlum and Vestergaard, 2025).
+
+       More broadly, the role of employer initiatives in AI chatbot adoption echoes a large
+
+literature on the diffusion of general-purpose technologies, which highlights the need for
+
+complementary investments and coinvention (Bresnahan and Greenstein, 1996; David,
+
+1990; Feigenbaum and Gross, 2024). The fact that initiatives can be counterproductive in
+
+isolation, yet complementary in combination, aligns with the concept of “Productivity
+
+J-curves,” where firm-based complementary investments are needed to unlock the potential
+
+of new technologies (Brynjolfsson, Rock and Syverson, 2021; David, 1990).
+
+       The reported time savings in Section D.3 may seem small compared to the substantial
+
+productivity gains—often exceeding 15%—documented by RCTs in our study occupa-
+
+tions.39,40,41,42 How can we reconcile workers’ modest reported time savings with the
+
+substantial effects observed in RCTs?
+
+       First, as Figure D.6 shows, our reported time savings are highest precisely in the
+
+occupations covered by RCTs, such as customer and IT support (Brynjolfsson, Li and
+
+Raymond, 2025), marketing and human resources (Noy and Zhang, 2023), and software
+
+development (Peng et al., 2023). In contrast, reported savings are about half as large
+  39
+      Noy and Zhang (2023) report time savings of 37% from ChatGPT in text writing tasks representative
+of marketing and HR professionals. Brynjolfsson, Li and Raymond (2025) estimate productivity effects of
+15% from a GPT-based chat assistant among customer and IT support agents, with more pronounced
+effects for less experienced workers. Cui et al. (2024) estimate a 26% productivity gain from GitHub
+Copilot among software developers, while Peng et al. (2023) report a 58% increase.
+   40
+      Our estimated productivity gains are closer to those of Acemoglu (2025), though for different reasons.
+While Acemoglu (2025) combines the experimental productivity estimates with a calibrated adoption
+curve, we measure both adoption and (self-reported) time savings directly. Bick, Blandin and Deming
+(2025) provide a thoughtful comparison between their survey-based estimates of productivity gains and
+the predictions of Acemoglu (2025).
+   41
+      Our time savings estimates align more closely with those of Bick, Blandin and Deming (2025), who,
+in a nationally representative U.S. survey, find an average reported time savings of 5.4% among users.
+However, their study does not split the time savings by occupation or employer policies, limiting direct
+comparability to our estimates.
+   42
+      Edelman, Ngwe and Peng (2023) shows that self-reported time savings from AI chatbots—particularly
+Microsoft Copilot—may overstate actual productivity gains. This further reinforces the point that workers’
+productivity improvements from AI chatbots are modest, as our self-reported time savings estimates would
+then represent an upper bound on realized benefits. That said, overstated gains may not be the full story:
+Section 4.1 shows that workers’ self-reported earnings effects closely align with our difference-in-differences
+estimates based on administrative data, reflecting that workers recognize that AI chatbots have not
+materially improved their earnings.
+
+
+
+                                                     56
+

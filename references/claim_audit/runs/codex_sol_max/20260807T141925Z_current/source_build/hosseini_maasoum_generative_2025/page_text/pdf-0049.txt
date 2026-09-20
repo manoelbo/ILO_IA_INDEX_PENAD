@@ -1,0 +1,22 @@
+series shows a discernible break around the launch of ChatGPT (vertical dashed line at
+2023Q1), indicating that the compositional structure of the LinkedIn sample is essentially
+unchanged across the pre- and post-GenAI periods.
+
+
+
+
+      Figure A.4: Stability of Industry and Occupation Representation Over Time
+
+   Figure A.5 repeats the exercise for the age dimension. The top panel plots the quarterly
+cross-sectional correlation between LinkedIn junior sector shares and the corresponding
+QWI under-30 sector shares; the bottom panel does the same for senior versus 30+ shares.
+The junior correlation is stable around 0.44 throughout the sample, and the senior correla-
+tion is stable around 0.60, with neither series showing a break around the GenAI launch.
+The relative representation of junior and senior workers across sectors in the LinkedIn
+data therefore evolves in line with the official QWI age structure, supporting the use of
+LinkedIn-based seniority composition to identify changes in junior and senior employ-
+
+
+
+                                           A.4
+

@@ -1,11 +1,14 @@
 [project]
 name = "dissertation-replication-v2"
-version = "0.1.0"
-description = "Replication package for the dissertation empirical refresh."
+version = "2.0.0"
+description = "Replication package for the dissertation's computational findings."
 requires-python = "==3.10.*"
 dependencies = [
+    "basedosdados==2.0.2",
     "duckdb==1.5.5",
     "geopandas==1.1.0",
+    "google-cloud-bigquery==3.40.0",
+    "google-cloud-bigquery-storage==2.36.0",
     "matplotlib==3.10.8",
     "numpy==2.2.6",
     "openpyxl==3.1.5",
@@ -19,6 +22,8 @@ dependencies = [
     "xlrd==2.0.2",
     "py7zr==1.1.3",
     "requests==2.34.2",
+    "seaborn==0.13.2",
+    "urllib3==2.7.0",
 ]
 
 [dependency-groups]
@@ -28,3 +33,6 @@ dev = [
 
 [tool.uv]
 package = false
+
+[tool.pytest.ini_options]
+addopts = ["-p", "no:cacheprovider"]

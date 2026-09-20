@@ -1,0 +1,87 @@
+it follows that by the law of iterated expectations,
+                                                                                                
+                           pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )        E [Gg |X] (1 − Dt+δ ) (1 − Gg )
+                      E                                       =E
+                                    1 − pg,t+δ (X)                  E [(1 − Dt+δ ) (1 − Gg ) |X]
+                                                              = E [Gg ] .                                               (A.6)
+
+Next, by exploiting (A.5) and applying the law of iterated expectations, we have that
+                                                                        
+                       pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )
+                   E                                     (Yt − Yg−δ−1 )
+                                 1 − pg,t+δ (X)
+                                                                          
+                           E [Gg |X] (1 − Dt+δ ) (1 − Gg )
+                    =E                                      (Yt − Yg−δ−1 )
+                            E [(1 − Dt+δ ) (1 − Gg ) |X]
+                                                                                                      
+                                    E [Gg |X]
+                    =E                                  E [ (1 − Dt+δ ) (1 − Gg ) · (Yt − Yg−δ−1 )| X]
+                           E [(1 − Dt+δ ) (1 − Gg ) |X]
+                     = E [E [Gg |X] · E [ (Yt − Yg−δ−1 )| X, Dt+δ = 0, Gg = 0]]
+                     = E [Gg · E [ (Yt − Yg−δ−1 )| X, Dt+δ = 0, Gg = 0]] .
+
+                                                                                               ny
+Thus, combined this with (A.6), we establish (A.4), implying that AT T (g, t) = AT Tipw           (g, t; δ).
+   Finally, notice that
+
+                                               pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )
+                                                                                                                 
+
+            ny
+                              Gg                       1 − pg,t+δ (X)                                    ny
+                                                                                                                   
+       AT Tdr                 E [Gg ] −  pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )   Yt − Yg−δ−1 − mg,t,δ (X) 
+               (g, t; δ) = E                                                                                     
+                                            E
+                                                          1 − pg,t+δ (X)
+                                                                                                              
+                               ny                  1               E [Gg |X] (1 − Dt+δ ) (1 − Gg )       ny
+                         = AT Tipw (g, t; δ) −          E Gg −                                        mg,t,δ (X)
+                                                E [Gg ]              E [(1 − Dt+δ ) (1 − Gg ) |X]
+                                             1
+                                                  E (E [Gg |X] − E [Gg |X]) · mnev
+                                                                                          
+                         = AT T (g, t) −                                         g,t,δ (X)
+                                          E [Gg ]
+                        = AT T (g, t) .
+
+                                                                                        nev
+where the second equality follows from (A.5) and (A.6), and the third equality from AT Tipw (g, t; δ) = AT T (g, t)
+and the law of iterated expectations.
+
+    Proof of Theorem 2: From Theorem 1 it follows that AT T (g, t)’s are point-identified for all groups g and
+time periods t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and t ≥ g − δ. For each (g, t) pair, the asymptotic linear
+                 √ [ nev
+representation of n(AT  T dr (g, t; δ) − AT T (g, t)) follows from Theorem A.1(a) of Sant’Anna and Zhao (2020),
+whereas
+                     √        dr,nev                    d
+                       n(AT
+                         [  T t≥(g−δ) − AT Tt≥(g−δ) ) − → N (0, E[Ψdr,nev       dr,nev      0
+                                                                   t≥(g−δ) (W )Ψt≥(g−δ) (W ) ])
+
+follows from the Lindeberg–Lévy central limit theorem.
+
+Proof of Theorem 3: Note that, by the conditional multiplier central limit theorem, see Lemma 2.9.5 in van der
+Vaart and Wellner (1996), as n → ∞,
+                                                n
+                                            1 X                        d
+                                           √       Vi · Ψdr,nev
+                                                         t≥(g−δ) (Wi ) → N (0, Σ),                                      (A.7)
+                                             n i=1                     ∗
+
+
+where Σ = E[Ψdr,nev       dr,nev      0
+             t≥(g−δ) (W )Ψt≥(g−δ) (W ) ]. Thus, to conclude the proof that
+
+                                     √
+                                                                     
+                                                ∗,dr,nev       dr,nev   d
+                                         n AT
+                                            [ T t≥(g−δ) − AT
+                                                          [  T t≥(g−δ) → N (0, Σ),
+                                                                            ∗
+
+
+                                                             36
+

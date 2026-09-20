@@ -1,0 +1,55 @@
+(with collective bargaining)—we observe no systematic differences in employment impacts.
+
+Moreover, while Appendix G.2 documents aggregate declines in early-career jobs in several
+
+of our exposed occupations, including software development, customer support, legal
+
+professions, and marketing, these declines are not driven by firms adopting Generative AI
+
+chatbots.
+
+
+Discussion. In summary, workplaces that have adopted AI chatbots have not fared
+
+differently in terms of their employment, early-career jobs, job churn, and worker mix.
+
+These limited impacts contrast with the widespread creation of new job tasks revealed by
+
+our survey (Section 1.4). These patterns are consistent with the productivity J-curves
+
+often observed in the early phases of a new technology (Brynjolfsson, Li and Raymond,
+
+2025; McElheran et al., 2025): while organizations have started to reorganize internally
+
+in response to AI chatbots, devoting substantial resources to integration, training, and
+
+oversight, these developments have not yet manifested in measurable changes in recorded
+
+hours or earnings.
+
+
+4     Supplementary Evidence
+4.1    Perceived Impacts
+
+To complement the difference-in-differences analysis of labor market impacts, we simply
+
+asked respondents directly: “Have AI chatbots affected your labor earnings?” If so, we
+
+followed up with, “By how much?” If AI chatbots were meaningfully changing labor
+
+market conditions in exposed occupations, we might expect “front-line workers” in those
+
+occupations to notice and report such changes.
+
+    Appendix E.3 reports workers’ perceived earnings impacts from AI chatbots. Tellingly,
+
+virtually all respondents—97.7% of adopters and 99.5% of non-adopters—state that AI
+
+chatbots have had no impact on their labor earnings. While individuals may struggle to
+
+assess such counterfactuals precisely, these responses indicate three implications.
+
+    First, even workers themselves report small average earnings impacts, ranging from
+
+                                            21
+

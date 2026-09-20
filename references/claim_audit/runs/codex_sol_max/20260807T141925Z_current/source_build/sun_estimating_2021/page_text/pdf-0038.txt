@@ -1,0 +1,42 @@
+                             Table 2: Summary Statistics of the HRS Sample
+
+                                                               N     Mean    Std. Dev
+                     Panel A. Demographics
+                     Age at admission                        656        56        2.29
+                     Male                                    656     0.456       0.498
+                     Year of admission                       656     2,007        2.11
+
+                     Panel B. Race/ethnicity
+                     Hispanic                                656     0.122       0.327
+                     Black                                   656     0.151       0.358
+                     White                                   656     0.742       0.438
+                     Other race                              656     0.107       0.309
+
+                     Panel C. Insurance status
+                     Medicaid                                656      0.05       0.219
+                     Private                                 656     0.715       0.452
+                     Medicare                                656     0.072       0.259
+
+                     Panel D. Pre-hospitalization outcome
+                     Out-of-pocket medical spending
+                     Wave 7 (Ei ≥ 1)                         656     3,302       9,024
+                     Wave 8 (Ei ≥ 2)                         404     2,355       8,132
+                     Wave 9 (Ei ≥ 3)                         228     2,056       3,532
+                     Wave 10 (Ei = 4)                         65     2,044       4,379
+
+                     Earnings
+                     Wave 7 (Ei ≥ 1)                          656 43,810       67,950
+                     Wave 8 (Ei ≥ 2)                          404 38,944       58,601
+                     Wave 9 (Ei ≥ 3)                          228 36,274       56,768
+                     Wave 10 (Ei = 4)                          65 29,037       46,289
+Notes: This table presents summary statistics on our primary analysis sample, taken from the biennial
+Health and Retirement Survey (HRS). We include the sample of individuals ages 50-59 in waves 7-11
+(approximately spanning 2004-2012) who appear in two sequential survey waves and report a recent hospital
+admission in the second survey. For panel D, the sample corresponding to wave t is conditional on not having
+hospitalization by wave t.
+
+
+
+
+                                                    38
+

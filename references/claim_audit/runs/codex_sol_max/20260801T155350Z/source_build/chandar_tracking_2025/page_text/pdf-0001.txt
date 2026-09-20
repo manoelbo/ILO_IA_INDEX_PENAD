@@ -1,0 +1,45 @@
+        Tracking Employment Changes in AI-Exposed Jobs
+
+                                         Bharat Chandar∗
+
+                                          August 1, 2025
+
+
+
+                                               Abstract
+
+            This paper examines labor market trends for occupations exposed to Generative AI
+
+         using US Current Population Survey (CPS) data from the post-ChatGPT era (Q4 2022
+
+         - Q1 2025). Contrary to displacement fears, occupations most exposed to AI on average
+
+         show no substantial difference in employment or earnings growth compared to the
+
+         least exposed. However, this aggregate trend masks heterogeneity across occupations.
+
+         Within the most exposed quartile, occupations with a higher share of college-educated
+
+         workers, such as software development, have experienced robust employment growth,
+
+         while those with a lower share, like customer service, have seen declines. The analysis
+
+         also reveals a divergence between job posting data and realized employment, urging
+
+         caution when inferring labor market trends from postings alone.
+
+
+
+1       Introduction
+
+The period following the public release of ChatGPT in November 2022 has seen burgeoning
+research attempting to capture the labor market and productivity effects of generative AI,
+spurred by fear of potential widespread job displacement. This paper provides a timely
+empirical analysis of this evolving landscape by leveraging U.S. Current Population Survey
+    ∗
+    Stanford University; chandarb@stanford.edu. I thank Erik Bynjolfsson, Basil Halperin, Philip Tram-
+mell, Luca Vendraminelli, Ruyu Chen, and Tom Mitchell for helpful comments.
+
+
+                                                   1
+

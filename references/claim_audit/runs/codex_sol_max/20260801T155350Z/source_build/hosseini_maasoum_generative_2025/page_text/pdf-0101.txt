@@ -1,0 +1,48 @@
+A.23      Monetary-policy sensitivity: data and impulse responses
+
+Shock series. We use the high-frequency identified monetary-policy surprises of Jarocinski and Karadi
+(2020), who decompose FOMC announcement-window co-movements of federal funds futures and the
+S&P 500 into a “pure” monetary-policy component and a central-bank information component. We use the
+monthly pure-policy median series (MP_median) and aggregate to the quarterly frequency as the in-quarter
+sum. The resulting series is positive on net tightenings and negative on net easings and is, by construction,
+orthogonal to information shocks. For the main-text regression we use shocks at t ∈ 2015Q1–2021Q3 so that
+the forward one-quarter outcome window closes no later than 2021Q4; for the local projections we restrict
+each horizon h to t + h ≤ 2021Q4.
+
+
+Sample. The LinkedIn/Revelio Labor firm-quarter panel covers 284,384 firms observed 2015Q1–2024Q4.
+Firm-level adoption (“Adopteri ”) is defined as in Section 4.2.2. The main-text outcomes are the forward
+one-quarter log-change in total headcount (log Li,t+1 − log Li,t ) and in junior headcount (seniority levels
+1–2; log L1,2          1,2
+          i,t+1 − log Li,t ), enforced by a strict one-calendar-quarter gap and winsorised per outcome at the
+
+0.5/99.5% level. The local-projection outcomes below use the cumulative log-change log Li,t+h − log Li,t−1
+at each horizon h.
+
+
+Local-projection impulse responses. To verify that the null result in Table 3 is not horizon-specific,
+we estimate the lag-augmented Jordà local projection (Jordà, 2005; Montiel Olea and Plagborg-Møller, 2021)
+
+                                                                         12
+             log Li,t+h − log Li,t−1 = αih + γth + β h Adopteri × εm     ∑                       h
+                                                                            θh,ℓ ∆ log Li,t−ℓ + ηi,t
+                                                                     
+                                                                   t   +                             ,   (35)
+                                                                           ℓ=1
+
+for horizons h = 0, . . . , 8 quarters. The specification includes 12 quarterly lags of log-employment growth
+as controls, following Montiel Olea and Plagborg-Møller (2021), and firm and year-quarter fixed effects;
+standard errors are Cameron–Gelbach–Miller two-way cluster-robust at the firm and year-quarter level. We
+also report the pooled impulse response from the analogous specification without the adopter interaction
+and with firm fixed effects only (time fixed effects would absorb εm
+                                                                   t ).
+
+    Figure A.25 plots the pooled (top row) and adopter-interaction (bottom row) impulse responses with
+95% confidence bands. The interaction β h is statistically indistinguishable from zero at every horizon for
+both total and junior employment, consistent with the one-quarter sensitivity estimate in the main text.
+
+
+
+
+                                                      A.56
+

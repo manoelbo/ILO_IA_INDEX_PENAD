@@ -1,0 +1,9 @@
+how it shifts with GenAI adoption. The two designs share the use of the O*NET task taxonomy as a stan-
+dardized vocabulary and the reliance on an LLM to bridge the gap between free-form text and structured
+task codes.
+
+
+
+
+                                                A.44
+

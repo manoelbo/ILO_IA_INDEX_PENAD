@@ -1,0 +1,41 @@
+where capital K is fixed and the constants are absorbed into Ωt below to simplify notation.
+The MPL implied by (22) is
+
+                     ∂Yt     h                     i1/(σ−1)
+                                     (σ−1)/σ
+                         = At Γ1/σ
+                               t   n t       + Ω t          Γ1/σ
+                                                             t   n−
+                                                                  t
+                                                                    1/σ
+                                                                        .              (23)
+                     ∂nt
+
+   The firm now maximizes (16) with At f (nt ) replaced by Yt . The optimality conditions
+take exactly the same form as in the baseline:
+                                             
+     ∂Y1    w ,
+             1          n1 ≥ n0 ,     ∂Y0     w + c ,
+                                              0   h              no firing expected,
+         =                                =                                            (24)
+     ∂n1   w − ϕ,      n1 < n0 ,     ∂n0   w + c + βϕ,         firing anticipated.
+                1                                  0   h
+
+
+   Implications. Current automation lowers Γ0 and hence the MPL of labor, reducing n0 .
+Anticipated future automation (higher I1 and lower Γ1 ) makes separations more likely at
+t = 1. When the firm expects to be in the firing regime tomorrow, the period-0 condition
+(24) features the same firing wedge βϕ, which depresses current hiring. Larger firing
+costs ϕ strengthen this effect. Consequently, in equilibrium n0C < n0E (where E denotes the
+no-firing regime), ∂n0 /∂I0 < 0, and ∂n0 /∂(E0 I1 ) < 0.
+
+   In both formulations, the key force is the intertemporal link created by convex adjust-
+ment on the downside: the possibility of paying ϕ tomorrow raises the effective marginal
+cost of hiring by βϕ today. Expectations of labor-saving progress therefore reduce current
+employment even before automation is realized.
+
+
+
+
+                                            A.21
+

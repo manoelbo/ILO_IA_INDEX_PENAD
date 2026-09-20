@@ -1,0 +1,66 @@
+as Eloundou et al. (2024); Felten et al. (2023); Gmyrek et al. (2023); Handa et al. (2025), and
+
+Tomlinson et al. (2025) adapted this approach for Generative AI, forming the basis for exposure
+
+metrics used in this analysis. While these studies identify potential disruption, our paper connects
+
+these exposure measures to actual employment changes.
+
+       Our work broadens insights from studies that find significant effects in more specific settings,
+
+such as on online freelance platforms (Hui et al., 2023; Demirci et al., 2025) or within individual
+
+firms (Brynjolfsson et al., 2025; Dillon et al., 2025).6 We measure labor market changes across
+
+occupations spanning the US economy.
+
+       In this sense our work complements a small but growing list of papers using economy-wide data
+
+to measure AI’s impact. Recent findings have been varied. Jiang et al. (2025) find AI exposure
+
+correlates with longer work hours in the U.S.7 Hampole et al. (2025) use job postings and LinkedIn
+
+profiles from Revelio labs from 2011 to 2023 to find limited employment impacts overall, with
+
+growing labor demand at firms offsetting relative declines in demand for exposed occupations.
+
+Chandar (2025b) uses data from the CPS to compare employment changes in more and less AI-
+
+exposed professions, finding little differential trend overall but noting difficulty with measuring
+
+changes for young workers given limited effective sample size.8 Johnston and Makridis (2025)
+
+find employment increases in state-industry pairs more exposed to AI using Quarterly Census of
+
+Employment and Wages (QCEW) data.9 These prior papers use data lacking either sufficient
+
+granularity or immediacy to reliably study employment changes by AI exposure and age (O’Brien,
+
+2025).10 In contrast, this paper uses large-scale, close to real-time data to take a step towards
+
+resolving the ongoing debate on the employment effects of AI on young workers.
+
+       After we first publicly shared our results, work by Hosseini and Lichtinger (2025) and Klein Teeselink
+
+(2025) similarly found declines in AI-exposed entry-level employment using LinkedIn data from the
+   6
+      See also Noy and Zhang (2023); Peng et al. (2023); Dell’Acqua et al. (2023).
+   7
+      See also Acemoglu et al. (2022); Bonney et al. (2024); Bick et al. (2024); Hartley et al. (2025); Frank et al. (2025);
+Chen et al. (2025).
+    8
+      See Dominski and Lee (2025); Gimbel et al. (2025); Eckhardt and Goldschlag (2025), which also use CPS data.
+    9
+      Johnston and Makridis (2025) measure state-industry exposure by taking an average of Eloundou et al. (2024)’s
+occupational exposure weighted by state-industry employment. Industry-level labor market changes may be distinct
+from the occupation-level changes studied in this paper if firms make capital investments or become more productive
+in ways that increases overall labor demand (Hampole et al., 2025).
+   10
+      As a comparison, the CPS surveyed between 44,000 and 51,000 employed individuals in total across all age groups
+in each month since 2021. Between 10,000 and 12,000 of these observations were in the outgoing rotation group and
+included earnings records. The data in our main analysis sample includes between 250,000 and 350,000 employed
+individuals in each month just between the ages of 22 and 25, all with earnings records.
+
+
+
+                                                             6

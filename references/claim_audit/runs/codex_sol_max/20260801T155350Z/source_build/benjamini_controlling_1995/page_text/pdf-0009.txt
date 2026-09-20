@@ -1,0 +1,52 @@
+296                          BENJAMINI AND HOCHBERG                           [No.1,
+                       4.   SOME POWER COMPARISONS
+   We compare the power of our FDR controlling procedure with some other
+Bonferroni-type procedures which control the FWER. Under the overall null
+hypothesis the proposed method controls the FWER at level q*. We take the FWER
+controlling methods and the FDR controlling method to control the FWER weakly
+at the same level, using q* = a, and compare the power of the methods from the
+two different approaches under different configurations. It is clear from the
+comment in Section 2.1, property (b), that a method which controls the FDR is
+generally more powerful than its counterpart which controls the FWER (in the
+
+
+
+
+                                                                                        Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+strong sense). The magnitude of the difference remains to be investigated.
+
+                                 4.1. The Setting
+   We studied this question by using a large simulation study, where the family of
+hypotheses is the expectations of m independent normally distributed random
+variables being equal to O. Each individual hypothesis is tested by a z-test, and the
+test statistics are independent. We use q* = a = 0.05. The configurations of the
+hypotheses involve m = 4, 8, 16, 32 and 64 hypotheses, and the number of truly
+null hypotheses being 3m/4, ml2, m/4 and O. The non-zero expectations were
+divided into four groups and placed at L/4, LI2, 3L/4 and L in the following three
+ways:
+  (a) linearly decreasing (D) number of hypotheses away from 0 in each group;
+  (b) equal (E) number of hypotheses in each group;
+  (c) linearly increasing (I) number of hypotheses away from 0 in each group.
+These expectations were fixed (per configuration) throughout the experiment.
+   The variance of all variables was set to 1, and L was chosen at two levels- 5 and
+to-thereby varying the signal-to-noise ratio.
+   Each simulation involved 20000 repetitions. The estimated standard errors of the
+power are about 0.0008-0.0016. As the same normal deviates were used in a single
+repetition across all configurations with the same number of hypotheses, and the
+alternatives in different configurations were monotonically related, a positive
+correlation was induced. This correlation reduces the variance of a comparison
+between two methods or two configurations to below twice the variance of a single
+method.
+
+                                  4.2. Results
+  Fig. 1 presents the estimates of the average power (the proportion of the false
+hypotheses which are correctly rejected) for three methods. The two FWER
+controlling methods, the Bonferroni (dotted curves) and Hochberg's (1988) method
+(broken curves), are compared with the new FDR controlling procedure (full
+curves). The following observations can be made from the results displayed.
+  (a) The power of all the methods decreases when the number of hypotheses
+      tested increases - this is the cost of multiplicity control.
+  (b) The power is smallest for the D-configuration, where the non-null hypoth-
+      eses are closer to the null, and is largest for I (which is obvious but
+      mentioned for completeness).
+

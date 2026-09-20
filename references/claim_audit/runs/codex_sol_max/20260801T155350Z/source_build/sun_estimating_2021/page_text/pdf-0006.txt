@@ -1,0 +1,64 @@
+represent the observed outcome for unit i as
+
+                                                            Õ
+                                  Yi,t = Yi,tEi = Yi,t
+                                                    ∞
+                                                       +                      ∞
+                                                                    (Yi,te −Yi,t ) · 1 {Ei = e} .            (2)
+                                                           0≤e ≤T
+
+
+      For any treatment that is not absorbing, if we replace the treatment status Di,t with an indicator for
+
+ever having received the treatment, the new treatment is absorbing by construction. Oftentimes the effect
+
+of having ever received the treatment is of interest, as it captures the path of treatment effects even though
+
+the treatment itself may be transient. For example, Deryugina (2017) is interested in the fiscal cost for a
+
+county that has been hit by a hurricane. While a hurricane itself may be transient, the impact of having
+
+had a hurricane may not be transient, hence why Deryugina (2017) codes the year of the first hurricane
+
+experienced in a county as Ei .
+
+      In the next section, we use the notation developed above to define the treatment effect of an event study
+
+design.
+
+
+2.1     Defining treatment effect of an event study design
+
+In an event study design, we define the unit-level treatment effect as the difference between the observed
+                                                                      ∞ . Recall that Y ∞ denotes the potential
+outcome relative to the never-treated counterfactual outcome: Yi,t −Yi,t               i,t
+                                                                                         ∞ is a reasonable
+outcome if unit i never receives the treatment. This particular counterfactual outcome Yi,t
+
+“baseline outcome”, though other counterfactual outcomes may be of interest as well. For example, Athey
+
+and Imbens (2018) also consider the treatment effect relative to the always-treated counterfactual outcome:
+        0 . Sianesi (2004) defines the unit-level treatment effect to be relative to the not-yet-treated counter-
+Yi,t −Yi,t
+
+factual outcome: Yi,t −Yi,te for e > t.
+
+      When dynamic treatment effects are of interest, empirical researchers commonly report the coefficient
+
+         µ` associated with indicators for being ` periods relative to the treatment in regression (1) as an
+estimate b
+
+estimate for the average lagged effect. To assess the causal interpretation of µ` , we need “building blocks”
+
+for its decomposition, which are the average of unit-level treatment effects at a given relative period across
+
+units first treated at time Ei = e, i.e. units in the same cohort e. We call this average the cohort-specific
+
+average treatment effects on the treated, formally defined below. Later in Section 3 we use them as building
+
+blocks for the interpretation of the relative period coefficients µ` from two-way fixed effects regressions.
+
+Definition 1. The cohort-specific average treatment effect on the treated (CATT) ` periods from initial
+
+                                                                6
+

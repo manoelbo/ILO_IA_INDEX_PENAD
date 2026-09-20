@@ -1,0 +1,54 @@
+that the non-zero values of Y are very large. Then for an individual for whom treatment changes the
+outcome from zero to non-zero, the treatment effect will be very large, since mpY p1qq " mpY p0qq “
+mp0q. Extensive margin treatment effects thus have a large impact on the ATE when the values
+of Y are made large. By contrast, changing the units of Y does not change the importance of
+treatment effects along the intensive margin by much, since for Y p1q ą 0 and Y p0q ą 0, we have
+that mpY p1qq ´ mpY p0qq « logpY p1q{Y p0qq, which does not depend on the units of the outcome.
+       To see the roles of the extensive and intensive margins more formally, for simplicity consider
+the case where P pY p1q “ 0, Y p0q ą 0q “ 0, so that, for example, everyone who has positive income
+without receiving a training also has positive income when receiving the training.8 Then, by the
+law of iterated expectations, we can write
+
+ErmpaY p1qq ´ mpaY p0qqs “ P pY p1q ą 0, Y p0q ą 0q E P rmpaY p1qq ´ mpaY p0qq | Y p1q ą 0, Y p0q ą 0s
+                                                    loooooooooooooooooooooooooooooooomoooooooooooooooooooooooooooooooon
+                                                                                    Intensive margin
+
+                               ` P pY p1q ą 0, Y p0q “ 0q E P rmpaY p1qq ´ mp0q | Y p1q ą 0, Y p0q “ 0s .
+                                                          loooooooooooooooooooooooooooomoooooooooooooooooooooooooooon
+                                                                                Extensive margin
+
+
+When a is large, mpayq « logpayq for non-zero values of y, and thus the intensive margin effect in
+the previous display is approximately equal to EP rlogpY p1qq ´ logpY p0qq | Y p1q ą 0, Y p0q ą 0s, the
+treatment effect in logs for individuals with positive outcomes under both treatment and control.
+This, of course, does not depend on the scaling of the outcome. However, the extensive margin
+effect grows with a, since mpaY p1qq « logpaq ` logpY p1qq is increasing in a while mp0q does not
+depend on a. Thus, as a grows large, the ATE for mpaY q places more and more weight on the
+extensive margin effect of the treatment relative to the intensive margin. We can therefore make
+|θpaq| arbitrarily large by sending a Ñ 8. By contrast, if a « 0, then mpaY pdqq « 0 with very high
+probability, and thus the ATE for mpaY q is approximately equal to 0.
+       It is worth emphasizing that the arbitrary scale-dependence described in Proposition 1 exists
+whenever the treatment affects the probability that the outcome is zero, regardless of whether the
+extensive margin is of direct economic interest or not.9 In some settings, the presence of zeros
+may correspond to a discrete economic choice (e.g. not participating in the labor market), and
+thus may be of direct interest. In other settings—for example, if the outcome is a yearly count
+of publications which is sometimes zero for idiosyncratic reasons—the extensive margin may be a
+“nuisance” rather than a direct economic object of interest.10 The result in Proposition 1 highlights
+that regardless of the source of the zeros, an ATE for a log-like transformation is not interpretable
+   8
+      A similar argument goes through without this restriction, but then there are two extensive margins, one for
+individuals with Y p1q ą 0 “ Y p0q, and the other for those with Y p0q ą Y p1q “ 0.
+    9
+      Without an extensive margin, ATEs for transformations mp¨q defined at zero still exhibit scale-dependence,
+though perhaps not arbitrarily so. See Section 3.1 below for further discussion.
+   10
+      One setting where nuisance zeros may arise is when the observed outcome Y is actually a mis-measured version
+of the true economic object of interest. For example, publications Y may be a noisy measure of true researcher
+productivity Y ˚ ą 0. One possible remedy in this setting is to model the measurement error to recover the treatment
+effect on Y ˚ rather than on Y . In a similar vein, Gandhi et al. (2023) models the measurement error in product
+shares in demand estimation, which are sometimes zero in finite samples.
+
+
+
+                                                          7
+

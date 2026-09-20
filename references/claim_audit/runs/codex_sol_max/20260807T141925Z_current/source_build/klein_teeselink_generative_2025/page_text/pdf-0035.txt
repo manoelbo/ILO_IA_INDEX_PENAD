@@ -1,0 +1,54 @@
+Table A3: Effect of LLM exposure on firm-level job outcomes, London vs. Non-
+London firms
+
+                                   Employees       Low seniority        High seniority   Low seniority (%)    Av. comp.
+       Panel A: HQ in London
+       LLM exposure x Post          −0.001               −0.002            −0.004             −0.001           214.807
+                                    (0.004)              (0.004)           (0.004)            (0.001)         (132.316)
+
+       Firm fixed effects             Yes                 Yes                Yes               Yes               Yes
+       Industry-by-period FE          Yes                 Yes                Yes               Yes               Yes
+       Observations                 377,175             377,129            376,920           377,129           377,175
+       Adj. R-squared                0.982               0.981              0.981             0.978             0.975
+
+       Panel B: HQ outside London
+       LLM exposure x Post         −0.004∗∗             −0.005∗∗           −0.002            −0.001∗∗           71.962
+                                    (0.002)              (0.002)           (0.003)           (0.0003)          (64.222)
+
+       Firm fixed effects             Yes                 Yes                Yes               Yes               Yes
+       Industry-by-period FE          Yes                 Yes                Yes               Yes               Yes
+       Observations                 890,838             890,826            889,411           890,826           890,838
+       Adj. R-squared                0.983               0.983              0.981             0.979             0.979
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level employment outcomes, separately for firms headquartered in London, and those head-
+quartered elsewhere. Panel A presents results for London-based firms, Panel B for firms based
+outside London. All other definitions are as in Table 3.
+
+
+
+A2.2           Firm-Level Job Postings
+
+       Table A4: Effect of LLM exposure on firm-level job listings, heterogeneity
+
+                                    High compensation firms         Low compensation firms     HQ in London      HQ outside London
+LLM exposure x Post                       −0.013∗∗∗                        −0.007∗∗∗             −0.016∗∗∗           −0.008∗∗∗
+                                           (0.003)                          (0.002)               (0.003)             (0.002)
+
+Firm fixed-effects                              Yes                            Yes                   Yes                    Yes
+Industry-by-period fixed effects                Yes                            Yes                   Yes                    Yes
+Observations                                  577,489                        690,524               377,175                890,838
+Adjusted R2                                    0.486                          0.554                 0.517                  0.525
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level job posting activity across different firm characteristics. Columns 1-2 split firms by
+median pre-treatment average compensation level. Columns 3-4 split firms by headquarter location
+(London versus outside London). All other definitions are as in Table A1.
+
+
+
+
+                                                                   35
+

@@ -1,0 +1,71 @@
+     RAMBACHAN AND ROTH               A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                             2589
+
+BORUSYAK, K. and JARAVEL, X. (2016), “Revisiting Event Study Designs” (SSRN Scholarly Paper ID 2826228,
+  Rochester, NY: Social Science Research Network).
+BUGNI, F. A., CANAY, I. A. and SHI, X. (2017), “Inference for Subvectors and Other Functions of Partially Identified
+  Parameters in Moment Inequality Models”, Quantitative Economics, 8, 1–38.
+CALLAWAY, B. and SANT’ANNA, P. H. C. (2021), “Difference-in-Differences with Multiple Time Periods”, Journal
+  of Econometrics, 225, 200–230.
+CANAY, I. and SHAIKH, A. (2017), “Practical and Theoretical Advances in Inference for Partially Identified Models” in
+  Honoré, B., Pakes, A., Piazzesi, M. and Samuelson, L. (eds) Advances in Economics and Econometrics (Cambridge:
+  Cambridge University Press) 271–306.
+CHEN, X., CHRISTENSEN, T. M. and TAMER, E. (2018), “Monte Carlo Confidence Sets for Identified Sets”,
+
+
+
+
+                                                                                                                        Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+  Econometrica, 86, 1965–2018.
+CHERNOZHUKOV, V., NEWEY, W. K. and SANTOS, A. (2015), “Constrained Conditional Moment Restriction
+  Models” arXiv:1509.06311 [math, stat].
+CHETTY, R., FRIEDMAN, J. N. and ROCKOFF, J. E. (2014), “Measuring the Impacts of Teachers II: Teacher Value-
+  Added and Student Outcomes in Adulthood”, American Economic Review, 104, 2633–2679.
+CHO, J. and RUSSELL, T. M. (2019), “Simple Inference on Functionals of Set-Identified Parameters Defined by Linear
+  Moments” arXiv:1810.03180 [econ.EM].
+COX, G. and SHI, X. (2023), “Simple Adaptive Size-Exact Testing for Full-Vector and Subvector Inference in Moment
+  Inequality Models”, The Review of Economic Studies, 90, 201–228.
+DE CHAISEMARTIN, C. and D’HAULTFÆUILLE, X. (2020), “Two-Way Fixed Effects Estimators with Heteroge-
+  neous Treatment Effects”, American Economic Review, 110, 2964–2996.
+DE CHAISEMARTIN, C. and D’HAULTFÆUILLE, X. (2021), “Two-Way Fixed Effects and Differences-in-
+  Differences with Heterogeneous Treatment Effects: A Survey” (SSRN Scholarly Paper ID 3980758, Rochester, NY:
+  Social Science Research Network).
+DETTE, H. and SCHUMANN, M. (2020), “Difference-in-Differences Estimation Under Non-Parallel Trends” (Working
+  Paper).
+DOBKIN, C., FINKELSTEIN, A., KLUENDER, R. and NOTOWIDIGDO, M. J. (2018), “The Economic Consequences
+  of Hospital Admissions”, American Economic Review, 108, 308–352.
+DONOHO, D. L. (1994), “Statistical Estimation and Optimal Recovery”, The Annals of Statistics, 22, 238–270.
+FLYNN, Z. (2019), “Inference Based on Continuous Linear Inequalities via Semi-Infinite Programming” (SSRN
+  Scholarly Paper ID 3390788, Rochester, NY: Social Science Research Network).
+FRANDSEN, B. R. (2016), “The Effects of Collective Bargaining Rights on Public Employee Compensation: Evidence
+  from Teachers, Firefighters, and Police”, ILR Review, 69, 84–112.
+FREYALDENHOVEN, S., HANSEN, C. and SHAPIRO, J. (2019), “Pre-event Trends in the Panel Event-study Design”,
+  American Economic Review, 109, 3307–3338.
+GAFAROV, B. (2019), “Inference in high-dimensional set-identified affine models” arXiv:1904.00111 [econ.EM].
+GOODMAN-BACON, A. (2018), “Public Insurance and Mortality: Evidence from Medicaid Implementation”, Journal
+  of Political Economy, 126, 216–262.
+GOODMAN-BACON, A. (2021), “Difference-in-Differences with Variation in Treatment Timing”, Journal of Econo-
+  metrics, 225, 254–277.
+GREENSTONE, M. and HANNA, R. (2014), “Environmental Regulations, Air and Water Pollution, and Infant Mortality
+  in India”, American Economic Review, 104, 3038–3072.
+HANSEN, C. B. (2007), “Asymptotic Properties of a Robust Variance Matrix Estimator for Panel Data When T is
+  Large”, Journal of Econometrics, 141, 597–620.
+HANSEN, B. E. and LEE, S. (2019), “Asymptotic Theory for Clustered Samples”, Journal of Econometrics,
+  210, 268–290.
+HECKMAN, J., ICHIMURA, H., SMITH, J. and TODD, P. (1998), “Characterizing Selection Bias Using Experimental
+  Data”, Econometrica, 66, 1017–1098.
+HIRANO, K. and PORTER, J. R. (2012), “Impossibility Results for Nondifferentiable Functionals”, Econometrica,
+  80, 1769–1790.
+HO, K. and ROSEN, A. (2017), “Partial Identification in Applied Research: Benefits and Challenges” in Honoré, B.,
+  Pakes, A., Piazzesi, M. and Samuelson, L. (eds) Advances in Economics and Econometrics (Cambridge: Cambridge
+  University Press) 307–359.
+HOROWITZ, J. L. and MANSKI, C. F. (1995), “Identification and Robustness with Contaminated and Corrupted Data”,
+  Econometrica, 63, 281–302.
+HUDSON, S., HULL, P. and LIEBERSOHN, J. (2017), “Interpreting Instrumented Difference-in-Differences” (Working
+  Paper).
+KADANE, J. B. (1971), “Comparison of k-Class Estimators When the Disturbances Are Small”, Econometrica,
+  39, 723–737.
+KAHN-LANG, A. and LANG, K. (2020), “The Promise and Pitfalls of Differences-in-Differences: Reflections on 16
+  and Pregnant and Other Applications”, Journal of Business and Economic Statistics, 38, 613–620.
+KAIDO, H. and SANTOS, A. (2014), “Asymptotically Efficient Estimation of Models Defined by Convex Moment
+  Inequalities”, Econometrica, 82, 387–413.
+

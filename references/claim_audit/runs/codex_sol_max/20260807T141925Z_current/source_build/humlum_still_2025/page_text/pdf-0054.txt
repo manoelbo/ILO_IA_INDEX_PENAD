@@ -1,0 +1,42 @@
+through the parameters αc and αb :
+
+
+                                      α = α0 + α1 E.                                    (6)
+
+
+While we focus on a binary initiative for analytical simplicity, our propositions extend
+naturally to combinations of initiatives—such as use policies, enterprise chatbots, and
+training.
+   Workers adopt AI chatbots if their perceived benefits exceed the associated costs
+(Bi ≥ Ci ):
+
+                                               h                     i
+                    Aij = 1 [Bij ≥ Cij ] = 1 α̂0 + α̂1 Ej + β̂ × i ≥ 0 ,                (7)
+
+
+where x̂ = xb − xc denotes net benefits.
+
+A.1.2       Model Predictions
+
+Figure A.1 illustrates how employer initiatives shift adoption rates and average reported
+benefits; formal derivations follow below.
+
+
+Adoption rates. Table 1, Columns 1–2 show how chatbot adoption rates vary with
+employer initiatives. The optimal adoption rate is:
+
+                                                         α̂
+                              i∗ (E) = P [Bij ≥ Cij ] = − ,                             (8)
+                                                         β̂
+
+where 0 < α̂ < −β̂, corresponding to the empirically relevant case in which adoption rates
+lie between 0 and 1.
+   Equation (8) implies that initiatives raising net benefits (α̂) increase adoption, with
+stronger effects when β̂ is numerically small—i.e., when workers are relatively homogeneous
+in their net benefits from AI chatbots.
+   In this light, the fact that employer-encouraged use in Table 1 is associated with a
+doubling of adoption rates suggests that encouragement is powerful relative to the degree
+of individual heterogeneity in net benefits.
+
+
+                                               4

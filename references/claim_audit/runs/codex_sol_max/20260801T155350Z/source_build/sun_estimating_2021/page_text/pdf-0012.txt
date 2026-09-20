@@ -1,0 +1,67 @@
+for all ` and all t. We can represent the relative period bin indicator as
+
+
+                                                                                           `
+                                                      Õ                            Õ
+                                   1{t − Ei ∈ g} =           1{t − Ei = `} =              Di,t .               (5)
+                                                      ` ∈g                         ` ∈g
+
+
+    Static specification. For a “static” specification G contains a single element equal to g = [0,T]. The
+
+indicator 1{t − Ei ∈ g} is equivalent to an indicator for whether unit i has received its initial treatment by t:
+
+1{Ei ≤ t}. The “static” specification thus takes the following form
+
+
+                                                                           `
+                                                                   Õ
+                                         Yi,t = αi + λt + µg              Di,t + υi,t                          (6)
+                                                                   ` ≥0
+
+
+and the corresponding set of excluded relative periods is g excl = [−T, −1].
+
+    Dynamic specification. “Dynamic” specifications encompass any specifications of G where G contains
+
+more than one element, thus treatment effects are allowed to vary over time non-parametrically. In its most
+
+flexible form, a “fully dynamic” specification takes the following form
+
+                                                     −2                   L
+                                                                 `                  `
+                                                     Õ                    Õ
+                                  Yi,t = αi + λt +           µ` Di,t +          µ` Di,t + υi,t                 (7)
+                                                     `=−K                 l=0
+
+
+and the corresponding set of excluded relative periods is g excl = {−T, . . ., −K − 1, −1, L + 1, . . .,T }.
+
+    Excluding some relative periods from the “fully dynamic” specification is necessary to avoid multi-
+                                                           ` , or with the unit and time fixed effects. For
+collinearity, either among the relative period indicators Di,t
+
+example, when there are no never-treated units i.e. ∞ < supp(Ei ) but with a panel balanced in calendar
+
+time, we need to exclude at least two relative period indicators in G. These collinearities are discussed by
+
+Borusyak and Jaravel (2017): one multi-collinearity comes from the relative period indicators summing to
+                  Í            ` = 1, and the other multi-collinearity comes from the linear relationship
+one for every unit ` ∈[−T,T ] Di,t
+
+between two-way fixed effects and the relative period indicators, namely t − Ei = `.
+
+    Excluding relative periods close to the initial treatment is common in practice. Normalizing relative to
+
+the period prior to treatment is the most common - six out of the eight papers we survey do so, as reflected
+                                          −1 . The remaining two papers exclude D0 .
+in the above specification where we drop Di,t                                    i,t
+
+    Excluding distant relative periods is however less common (only one of the eight papers we survey
+
+does so). Instead researchers “bin” or “trim” distant relative periods. For “binning”, researchers bin distant
+
+
+
+                                                              12
+

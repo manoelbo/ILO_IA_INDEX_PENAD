@@ -1,0 +1,39 @@
+              of schooling (a college degree) attain a 12x speedup. This implies that
+              productivity gains are more pronounced for use cases requiring higher human
+              capital, consistent with evidence that white collar workers are far more likely
+              to adopt AI (e.g., Bick et al 2025).
+
+              Throughout the range of task complexity, the speedup is higher for API users.
+              This could reflect the nature of the API data, which is restricted to single-turn
+              interactions, and that API tasks have been specifically selected for automation.
+
+
+
+
+Figure 4.1: Speed up (panel a) and Success rate (panel b) vs. Human years of schooling.
+The panel on the left shows a binned scatterplot of the bivariate relationship between speedup and human years of schooling, all
+measured at the O*NET task level and split by platform. The dashed lines show the fit from a linear regression. The panel on the right
+shows the same relationship with the success rate in the y-axis.
+
+
+
+              The results also capture a tradeoff, however. More complex tasks have a lower
+              task success rate, as shown in the panel on the right. On Claude.ai, for example,
+              tasks requiring less than a high school education (e.g., answering basic
+              questions about products) attain a 70% success rate, but this drops to 66% for
+              college-level conversations like developing analysis plans. Still, accounting
+              for the difference in success rates—by either excluding low-success tasks
+              or discounting speedups by success probability—does not eliminate the
+              education gradient: complex tasks still show greater net productivity gains.
+
+
+              One way to examine the implications of the education gradient is to look at the
+              share of automation across the education levels required to understand the
+              inputs. If high-education tasks show relatively more automation, it could signal
+              more exposure for white collar workers. Here, though, the message is unclear:
+
+
+
+
+The Anthropic Economic Index Report                                                                                                      39
+

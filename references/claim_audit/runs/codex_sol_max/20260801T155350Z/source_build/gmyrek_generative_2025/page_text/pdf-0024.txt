@@ -1,0 +1,35 @@
+21     ILO Working Paper 140
+
+
+
+
+     XX Figure 4. Distribution of occupational groups in the survey, compared to LFS in Poland (employed individu-
+        als) and to the desired sample (Table 2)
+
+
+
+
+     Figure 4 illustrates the broader distribution of the survey sample across ISCO-08 1-digit groups, com-
+     pared to both the employed population in the LFS and the desired sample (Table 2). Professionals
+     (2) are clearly the most underrepresented group, while groups 1, 8 and 9 are overrepresented
+     in survey responses, compared to the actual employment numbers. Notably, however, the de-
+     sired sample calculated in Table 2, based on the share of tasks in each 1-digit category, achieves
+     a closer alignment to the LFS structure for certain occupational groups.
+
+
+     XX Figure 5. Occupation and sex distribution among survey participants compared to LFS in Poland (employed
+        individuals)
+
+
+
+
+     In terms of sex-related representation within occupations, largest imbalances occur within oc-
+     cupational groups of public authorities, senior officials and managers (1), clerical workers and
+     elementary occupations (9), which are represented by women in the survey to a visibly higher
+     extent than in the labour market (Figure 5). Men are underrepresented, compared to the LFS,
+     among professionals (1) and craft workers (7). For other occupational groups, the survey pattern
+     is fairly consistent with national labour market trends.
+
+     Such discrepancies are important to note but do not affect our strategy, as the primary goal of
+     sampling was to ensure representativeness of tasks at the level of occupational 1-digit groups,
+

@@ -1,0 +1,29 @@
+             Task Horizons in Real-World Usage
+
+
+
+
+Figure 4.3: Task success vs. human-only time.
+The plot shows a binned scatterplot of the bivariate relationship between task success (%) and the time the task would require a
+human to complete alone, all measured at the O*NET task level and split by platform. The dashed lines show the fit from a linear
+regression.
+
+
+
+              Recent work on AI “task horizons” (Kwa et al., 2025) finds that AI success rates
+              decline with task duration: longer tasks are harder for models to complete.
+              With each successive model generation, however, this decline has become
+              shallower as models succeed on increasingly long tasks. METR operationalizes
+              task horizon primarily as the maximum duration at which a model achieves
+              at least 50% success, and growth in this metric has become a key indicator of
+              AI progress.
+
+
+              Figure 4.3 shows a similar measure using our primitives. The plot shows task-
+              level success rates against the human time required, all at the O*NET task
+              level. In the API data, success rates drop from around 60% for sub-hour tasks
+              to roughly 45% for tasks estimated to take humans 5+ hours. The fitted line
+
+
+The Anthropic Economic Index Report                                                                                                41
+

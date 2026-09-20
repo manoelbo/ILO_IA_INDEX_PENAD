@@ -1,0 +1,62 @@
+The stable treatment effect assumption requires that the ATE of every group treated in t − 1
+does not change from t − 1 to t. By iteration, the ATE of a group treated for instance from
+period t0 to T is unrestricted before t0 but should be constant from t0 to T . Assumption S2 rules
+out the possibility that the treatment effect changes over time. Therefore, it may be implausible
+and should be carefully discussed.
+We now show that under the common trend and stable treatment effects assumptions, βf e and
+                                                              P
+βf d may identify weighted averages of ATEs. Let NS = (g,t):Dg,t 6=Dg,t−1 Ng,t and, for all g and
+t ≥ 2,
+                                                         P       N 0
+                                        (Dg,t − Dg,t−1 ) t0 ≥t Ng,t    εg,t0
+                         S                                        g,t
+                       wg,t = P           h                       P                  i,
+                                            Ng,t                           Ng,t0
+                                (g,,t):t≥2 NS    (Dg,t − Dg,t−1 )   t ≥t Ng,t g,t
+                                                                      0          ε 0
+
+
+                                           (Dg,t − Dg,t−1 )εf d,g,t
+                         wfSd,g,t = P            Ng,t
+                                                                               .
+                                      (g,,t):t≥2 NS (Dg,t − Dg,t−1 )εf d,g,t
+
+
+
+Theorem S2 Suppose that Assumptions 1-5 and S2 hold. Then,
+                                                                  
+                                        X              Ng,t S
+                     βf e =E                              w ∆g,t  ,
+                                                       NS g,t
+                              (g,t):Dg,t 6=Dg,t−1 ,t≥2
+                                                                      
+                                        X              Ng,t S
+                     βf d =E                              w      ∆g,t  .
+                                                       NS f d,g,t
+                                          (g,t):Dg,t 6=Dg,t−1 ,t≥2
+
+
+Moreover, wfSd,g,t ≥ 0 for all g and t ≥ 2. If Assumption 6 holds and Ng,t /Ng,t−1 does not vary
+across g for all t ≥ 2, wg,t
+                         S
+                             ≥ 0 for all g and t ≥ 2.
+
+Theorem S2 shows that in sharp designs, under the common trends and stable treatment effect
+assumptions, βf e and βf d identify weighted sums of ATEs of switching cells. The weights differ
+from those in Theorems 1 and 2. Now the weights attached to βf e are all positive in staggered
+adoption designs, while the weights attached to βf d are all positive in all sharp designs. Therefore,
+in staggered adoption (resp. sharp) designs, βf e (resp. βf d ) relies on the assumption that the
+treatment effect is stable over time, but it does not require that treatment effects be homogeneous
+between groups.
+
+
+3.2     Non-binary, ordered treatment
+
+We now consider the case where the treatment takes a finite number of ordered values, Di,g,t ∈
+{0, 1, ..., d}, and show that Theorem 1 can easily be extended to this case.5 We need to define
+  5
+      Theorem 2 can also be extended to the case of a non-binary treatment.
+
+
+                                                          6
+

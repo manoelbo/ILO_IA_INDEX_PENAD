@@ -1,0 +1,45 @@
+20         ILO Working Paper 140
+
+
+
+
+     removal would not introduce significant bias into the results. As the next step, we excluded 1,167
+     observations where participants responded with 'Don't know' to the ranking of task automation
+     potential. This ensures the analysis focuses only on responses where participants felt equipped
+     to provide meaningful input.
+
+     A detailed examination of “don’t know” answers showed that they occur twice as frequently in
+     manual or technical fields – particularly among Technicians and Associate Professionals (Group
+     3), Craft and Related Trades Workers (Group 7), Plant and Machine Operators and Assemblers
+     (Group 8), and Elementary Occupations (Group 9) – than in other occupational groups.7 Since the
+     differences in stated exposure and frequency of use of GenAI do not seem to justify this pattern
+     (see section 4.5.2), it suggests that participants may have felt less equipped to assess the automa-
+     tion potential of tasks requiring specialized technical expertise or manual skills. This is illustrated
+     though the three tasks with the largest number of “don’t know” responses (7 each): (i) operating
+     devices (centrifuges and filters) used for separating fermented milk mass into yeast slurry, (ii) record-
+     ing delivered goods and collected coins (tokens), and (iii) organizing and cleaning the workstation.
+
+     Following this exclusion, we retained a substantial sample of 1,535 respondents, contributing a
+     total of 52,558 data points. These data points correspond exclusively to cases where participants
+     provided valid responses to the primary survey question regarding the potential for task auto-
+     mation. Importantly, this filtering process did not reduce the total number of tasks assessed,
+     which remains at the representative sample size of 2,861, as calculated in Table 2.
+
+
+         XX Figure 3. Age and sex distribution in the survey compared to Labour Force Survey (LFS) data in Poland (em-
+            ployed individuals)
+
+
+
+
+     The survey sample is well-balanced in terms of gender, with 51% female and 49% male respond-
+     ents. The actual gender distribution among the employed population aged 18+ in Poland is
+     more skewed toward men, with 53.9% of employed individuals being male and 46% female. As
+     shown in Figure 3, this results in the survey overrepresenting female opinions in the younger
+     age brackets (18–29 and 30–39).
+
+
+
+     7
+           On average, some 10% of answers in these technical groups were « don’t know » compared to 5% in other groups.
+

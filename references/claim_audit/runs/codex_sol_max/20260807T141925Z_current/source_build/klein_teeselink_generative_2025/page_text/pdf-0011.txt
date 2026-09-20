@@ -1,0 +1,39 @@
+3    Methodology
+We use a difference-in-differences design with continuous treatment intensity to esti-
+mate the effect of LLM exposure on UK labor market outcomes. Our identification
+strategy exploits variation in occupational and firm-level exposure to LLM capabili-
+ties, as measured by Eloundou et al. (2024), combined with the timing of ChatGPT’s
+public release in November 2022. We conduct three types of analyses: firm-level em-
+ployment stocks using LinkedIn profile data, firm-level hiring decisions based on job
+posting data, and occupation-level hiring patterns using job posting data.
+    For our firm-level employment stock analysis, we estimate the following specifi-
+cation:
+                         X30
+                   Yit =      βτ · Exposurei × 1[t=τ ] + γi + δjt + ϵit           (3)
+                        τ =−15
+
+where Yit represents outcomes for firm i in month t, including log total employment,
+log employment by seniority level (junior vs. senior), the fraction of low-seniority
+positions, and average compensation. Exposurei is the firm’s pre-treatment LLM
+exposure score, calculated as the employment-weighted average of occupational ex-
+posure scores using the workforce composition on 30 October. We standardize the
+exposure coefficients across all analyses to make the coefficients more easily inter-
+pretable. The term 1[t=τ ] denotes indicators for event time τ relative to November
+2022, with October 2022 (τ = −1) as the reference period. We include firm fixed
+effects γi to control for time-invariant firm characteristics, and industry-by-period
+fixed effects δjt to account for sector-specific shocks that might correlate with tech-
+nology adoption patterns. Standard errors are clustered at the firm level.
+    This event study design allows us to test for parallel pre-treatment trends, as
+well as to examine the evolution of treatment effects over time, showing when and
+how labor market impacts start to emerge, and whether they persist, intensify, or
+attenuate over time. We use 15 months of pre-treatment data and 30 months of
+post-treatment data. To summarize the overall treatment effect, we also report
+average post-treatment effects from a static specification:
+
+                     Yit = β · Exposurei × Postt + γi + δjt + ϵit                  (4)
+
+where Postt is an indicator for periods after November 2022.
+
+
+                                          11
+

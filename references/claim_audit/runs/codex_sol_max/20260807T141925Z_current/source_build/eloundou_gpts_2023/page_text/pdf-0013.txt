@@ -1,0 +1,16 @@
+                                           WORKING PAPER
+
+
+
+
+Figure 4: The binscatter plots depict the exposure to language models (LLMs) in various occupations, as
+assessed by both human evaluators and GPT-4. These plots compare the exposure to LLM and partial
+LLM-powered software (𝛽) at the occupation level against the log of total employment within an occupation
+and log of the median annual wage for occupations. While some discrepancies exist, both human and GPT-4
+assessments indicate that higher wage occupations tend to be more exposed to LLMs. Additionally, numerous
+lower wage occupations demonstrate high exposure based on our rubric. Core tasks receive twice the weight of
+supplemental tasks within occupations when calculating average exposure scores. Employment and wage data
+are sourced from the BLS-OES survey conducted in May 2021. In aggregating tasks to the occupation-level,
+we assign half the weight to O*NET supplemental tasks as we do for core tasks. All weights within an
+occupation sum to one.
+

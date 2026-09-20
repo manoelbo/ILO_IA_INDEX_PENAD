@@ -95,3 +95,28 @@ def test_every_current_reference_artifact_has_a_contract() -> None:
     assert summary["artifacts"] >= 80
     assert summary["all_sources_declared"]
     assert summary["all_category_domains_declared"]
+
+
+def test_complementary_backing_data_names_real_producers() -> None:
+    module = load_module()
+
+    assert module.source_id_for(
+        "rais/backing_data/rais_cross_replication_status.json"
+    ) == "code.rais.r12_cross_replication"
+    assert module.source_id_for(
+        "pnadc/backing_data/pnadc_pretrend_cross_status.json"
+    ) == "code.pnadc.pnadc_pretrend_cross_replication"
+    assert module.source_id_for(
+        "spatial/backing_data/spatial_r_model_comparison.csv"
+    ) == "code.spatial.spatial_r_replication"
+
+
+def test_group_outcome_forest_has_public_render_contracts() -> None:
+    module = load_module()
+
+    assert module.source_id_for(
+        "caged/figures/figure_5_2_6_group_outcome_forest.png"
+    ) == "code.render.phase8b_figures"
+    assert module.source_id_for(
+        "caged/backing_data/figure_5_2_6_group_outcome_forest.csv"
+    ) == "code.render.phase8b_tables"

@@ -1,0 +1,41 @@
+tistically distinguishable from zero, and all point estimates are small and—if anything—
+slightly negative, the wrong sign for the reallocation prediction. The senior–junior differ-
+ential β̃ AS in columns (5)–(6) is similarly close to zero (−0.84 and −0.47, p > 0.86). To
+rule out the possibility that the null is masked by mechanical correlation between SenInt j
+and Exp j , we residualize SenInt j on Exp j at the task level—isolating senior-intensity or-
+thogonal to AI-displaceability—and re-estimate the most demanding firm-by-occupation
+specification. The coefficients are again indistinguishable from zero.
+    The two tests use only weakly correlated regressors (corr(Exp j , SenInt j ) = +0.16) and
+examine opposite directions of task movement. The results support the displacement
+channel, which reduces demand for junior labor in the framework, but we find no sup-
+port for the reallocation channel, which would raise demand for juniors. Together, these
+findings support the prediction that GenAI adoption reduces demand for junior labor,
+consistent with the firm-level employment results we document in Sections 5.2–5.5.
+
+
+5.1.2   Evidence from the Anthropic Economic Index
+
+We complement the tests above with external evidence on the framework’s maintained
+assumption that the bulk of automated tasks lie in the junior range (α < x̂).25 We use the
+Anthropic Economic Index (Appel et al., 2026), which classifies real-world interactions
+with a frontier large language model by the O*NET task they address and the collaboration
+mode of the interaction. Following the AEI’s methodology, we treat directive interactions
+and feedback loops as displacement-type usage, and learning, task iteration, and validation
+as augmentation-type usage. We merge these AEI measures with occupation-level seniority
+constructed from the Revelio data, yielding a sample of 387 occupations with sufficient
+AEI coverage.
+    We find that displacement intensity—the share of classified interactions accounted for
+by displacement-type modes—exceeds 50% for junior-type occupations but falls to 40%
+for senior-type occupations, a gap driven by rising task iteration and validation with
+seniority. The pattern is robust to controlling for broad occupation groups: with two-
+  25 This concerns the mode of GenAI engagement across tasks, not the size of the within-task productivity
+
+gain: the model assumes δ J ≥ δS (juniors gain at least as much productivity conditional on task survival),
+but implies that a larger share of senior-type tasks will involve augmentation-type interaction because fewer
+of those tasks are amenable to outright automation.
+
+
+
+
+                                                     28
+

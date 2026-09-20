@@ -1,0 +1,53 @@
+A.6     Conceptual Framework: Formal Details
+
+This appendix provides the formal derivations and proofs for the conceptual framework
+in Section 3.
+
+
+A.6.1   Threshold Shift
+
+After GenAI adoption with augmentation (δ J , δS ), the post-AI allocation threshold x̂ ′ is
+determined by the condition γ̃ J ( x̂ ′ )/w J = γ̃S ( x̂ ′ )/wS , or equivalently
+
+                             γS ( x̂ ′ )   1 + δ J wS   1 + δ J γS ( x̂ )
+                                     ′
+                                         =        ·   =        ·          .                                          (25)
+                             γ J ( x̂ )    1 + δS w J   1 + δS γ J ( x̂ )
+
+When δ J = δS , the right-hand side equals γS ( x̂ )/γ J ( x̂ ), so x̂ ′ = x̂ exactly. For small
+differential augmentation, a first-order Taylor expansion of ln(γS ( x )/γ J ( x )) around x̂
+(holding wages fixed) yields
+                                                             
+                                                      1+ δ
+                                                 ln 1+δSJ
+                                 x̂ ′ − x̂ ≈                                  ≥ 0.                                 (26)
+                                              d      γS ( x )
+                                             dx ln   γ (x) J       x = x̂
+
+The numerator is increasing in δ J − δS ; the denominator—the steepness of comparative
+advantage at the boundary—is positive and finite by Assumption 1. By the implicit func-
+tion theorem applied to (25), x̂ ′ is a continuous function of (δ J , δS ).
+
+
+A.6.2   Senior Employment Decomposition
+
+By symmetric reasoning, the change in senior labor demand under α < x̂ is
+                                       Z x̂′                         Z 1h                                    i
+                                                ∗pre                             ∗post           ∗pre
+         ∆L∗S =       0          + −           lS ( x ) dx     +                lS       ( x ) − lS     ( x ) dx .   (27)
+                                                                         x̂ ′
+                                   | x̂
+                     |{z}
+                  displacement                 {z          }         |                        {z               }
+                                       reallocation (≤0)                             productivity (≶0)
+
+
+Seniors face no displacement (no senior tasks are automated). The reallocation effect is
+weakly negative—seniors lose tasks near the boundary to newly-productive juniors. The
+productivity effect operates in the same direction as for juniors (see Appendix A.6.4), but
+
+
+
+
+                                                    A.22
+

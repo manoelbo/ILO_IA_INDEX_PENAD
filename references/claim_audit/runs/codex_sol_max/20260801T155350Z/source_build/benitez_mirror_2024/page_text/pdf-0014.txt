@@ -1,0 +1,56 @@
+                            Table 3: Less Exposed Occupations According to GENOE
+
+                                                                  1-year horizon    5-year horizon      10-year horizon
+
+
+ Athletes and Sports Competitors                                  0.05              0.09                0.11
+ Oral and Maxillofacial Surgeons                                  0.04              0.11                0.16
+ Midwives                                                         0.05              0.11                0.16
+ Firefighters                                                     0.06              0.11                0.16
+ Kindergarten Teachers, Except Special Education                  0.07              0.12                0.15
+ Special Education Teachers, Secondary School                     0.09              0.11                0.18
+ Dancers                                                          0.09              0.12                0.18
+ Clergy                                                           0.10              0.12                0.17
+ Nurse Midwives                                                   0.07              0.13                0.19
+ Elementary School Teachers, Except Special Education             0.08              0.13                0.18
+ Special Education Teachers, Middle School                        0.09              0.14                0.18
+ First-Line Supervisors of Police and Detectives                  0.09              0.14                0.18
+ First-Line Supervisors of Firefighting and Prevention            0.09              0.13                0.19
+ Workers
+ Massage Therapists                                               0.09              0.13                0.18
+ Special Education Teachers, Preschool                            0.09              0.14                0.19
+ Dentists, General                                                0.08              0.14                0.21
+ Pediatricians, General                                           0.09              0.15                0.20
+ Helpers–Roofers                                                  0.09              0.16                0.20
+ Commercial Divers                                                0.09              0.17                0.19
+ Clinical Nurse Specialists & Advanced Practice Psy-              0.09              0.16                0.20
+ chiatric Nurses & Acute Care Nurses & Critical Care
+ Nurses & Registered Nurses
+ Child, Family, and School Social Workers                         0.10              0.16                0.19
+ Education Administrators, Kindergarten through Sec-              0.10              0.16                0.19
+ ondary
+ Nursing Instructors and Teachers, Postsecondary                  0.09              0.17                0.20
+ Roofers                                                          0.10              0.17                0.20
+ Middle School Teachers, Except Special and Ca-                   0.10              0.16                0.21
+ reer/Technical Education
+ Judges, Magistrate Judges, and Magistrates                       0.08              0.17                0.21
+ Preschool Teachers, Except Special Education                     0.10              0.17                0.20
+ Structural Iron and Steel Workers                                0.09              0.17                0.21
+ Hairdressers, Hairstylists, and Cosmetologists                   0.09              0.17                0.22
+ Music Therapists & Art Therapists                                0.11              0.17                0.20
+
+Source: Authors’ calculations using data from O*NET and surveys conducted with GPT-4 through OpenAI’s API. Note: This table
+shows the occupations less exposed to AI, along with the GENOE estimates for the next one, five, and 10 years. Occupations were
+ranked based on the average exposure value across the three horizons.
+
+
+         Occupations in the 25th percentile, with relatively low AI exposure, include medical scien-
+     tists, stonemasons, and occupational therapy aides, suggesting that roles requiring specialized
+     knowledge or physical dexterity remain relatively insulated from AI replacement in the near term.
+     The 75th percentile encompasses occupations with moderately high exposure, such as purchas-
+     ing agents and tutors, indicating that even some knowledge-based professions face significant AI
+     impact. Interestingly, farmworkers and criminal investigators represent the median level of AI
+
+
+                                                             10
+

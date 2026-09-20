@@ -1,0 +1,42 @@
+                1M sample and assume that efficiency gains for any task in our sample, even
+                those with just 15 observations out of one million, the implied aggregate labor
+                productivity growth over the next decade would be roughly 5% percentage
+                points per year—a mechanical increase based on a the much larger set of
+                tasks included.
+
+            7
+                As before, this result is based on applying Hulten’s Theorem to task-level
+                productivity shocks and assuming that the corresponding one-time increase
+                in total factor productivity materializes over the course of a decade alongside
+                capital deepening effects.
+
+            8
+                As a reminder, for aggregating to implied labor productivity we calculate task-
+                level efficiency gains as the log difference between human time without AI
+                and with AI. There are certainly other ways to adjust based on task reliability.
+                If tasks in our sample are composed of sub-tasks with heterogeneous AI
+                applicability, and workers optimally deploy AI only on sub-tasks where it is
+                effective, then scaling the efficiency gain by the success rate captures the
+                extensive margin of AI adoption within a task.
+
+            9
+                We use a CES (constant elasticity of substitution) production function to
+                aggregate task-level time savings to economy-wide productivity impacts.
+                The elasticity parameter σ governs how easily workers can substitute
+                between tasks. When σ=1, we apply Hulten’s theorem directly: the aggregate
+                productivity gain equals the wage-share-weighted sum of log speedups
+                across tasks. For σ≠1, we use a two-level aggregation: first, within each
+                occupation, we compute an occupation-level speedup as a CES aggregate
+                of task speedups weighted by time fractions, using ρ=(σ-1)/σ. Then we
+                apply Hulten’s theorem to these occupation-level speedups. When σ<1
+                (complements), productivity gains are bottlenecked by tasks with the
+                smallest speedups. When σ>1 (substitutes), workers can specialize in tasks
+                where AI provides the largest speedups, amplifying aggregate gains. For
+                tasks without observed AI speedup data, we assume no productivity change.
+                We thank Pascual Restrepo for suggesting this particular exercise.
+
+
+
+
+The Anthropic Economic Index Report                                                                53
+

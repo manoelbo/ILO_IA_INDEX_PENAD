@@ -1,0 +1,76 @@
+    Taking (A.9), (A.10), and (A.11) together, we then establish (A.8). Thus, by (A.7), we have
+
+                                 √
+                                                                 
+                                            ∗,dr,nev       dr,nev    d
+                                   n AT T t≥(g−δ) − AT T t≥(g−δ) → N (0, Σ).
+                                       [              [
+                                                                                              ∗
+
+
+
+
+    Finally, by the continuous mapping theorem, see e.g. Theorem 10.8 in Kosorok (2008), for any continuous
+functional Γ(·)
+                                 √
+                                                               
+                                          ∗,dr,nev       dr,nev     d
+                             Γ     n AT T t≥(g−δ) − AT T t≥(g−δ)
+                                      [             [               → Γ (N (0, Σ)) ,
+                                                                                              ∗
+
+concluding our proof. 
+
+
+Appendix B: Additional Results for Repeated Cross Sections
+In this section we extend our identification results to the case where one has access to repeated cross sections data
+instead of panel data. Here we assume that for each unit in the pooled sample, we observe (Y, G2 , . . . , GT , C, T, X)
+where T ∈ {1, . . . , T } denotes the time period when that unit is observed. Let Tt = 1 if an observation is observed
+at time t, and zero otherwise.
+    We assume that random samples are available for each time period.
+
+Assumption B.1. Conditional of T = t, the data are independent and identically distributed from the distribution
+of (Yt , G2 , . . . , GT , C, X) , for all t = 1, . . . , T ., with (G2 , . . . , GT , C, X) being invariant to T .
+
+    Assumption B.1 implies that our sample consists of random draws from the mixture distribution
+                                                                T
+                                                                X
+                          FM (y, g2 , . . . , gT , c, t, x) =         λt · FY,G2 ,...,GT ,C,X|T (y, g2 , . . . , gT , c, x|t),
+                                                                t=1
+
+where λt = P (Tt = 1). It also rules-out compositional changes across time. This assumption is related to the
+sampling assumption imposed by Abadie (2005) and Sant’Anna and Zhao (2020) in the two periods, two groups
+DiD setup. Notice that, once one conditions on the time period, then expectations under the mixture distribution
+correspond to population expectations. Also, because X, Gg , and C are observed for all units, by the stationarity
+condition one can use draws from the mixture distribution to estimate the generalized propensity score. With some
+abuse of notation, we then use pg,s (X) as a short notation for EM [Gg |X, Gg + (1 − Ds ) (1 − Gg ) = 1], where EM [·]
+denotes expectations with respect to FM (·). Also, we use pg (X) = pg,T (X) = EM [Gg |X, Gg + C = 1].
+    Before formalizing all the results, we need to introduce some additional notation. Let mrc,nev
+                                                                                            c,t    (x) ≡ EM [Y |X =
+                   rc,treat                                          rc,ny
+x, C = 1, T = t], mg,t      (x) ≡ EM [Y |X = x, Gg = 1, T = t] and ms,t (x) ≡ EM [Y |X = x, Ds = 0, Gg = 0, T =
+t]. Consider the weights
+
+                  wtreat (a, b) = Tb · Ga / EM [Tb · Ga ] ,
+                                                                       
+                    comp           Tb · pa (X) C           Tb · pa (X) C
+                 wnev    (a, b) =                    EM                    ,
+                                    1 − pa (X)              1 − pa (X)
+                                                                                                               
+                 comp              Tb · pa,s (X) (1 − Db ) (1 − Ga )           Tb · pa,s (X) (1 − Db ) (1 − Ga )
+                wny    (a, b, s) =                                      EM                                         .
+                                              1 − pa,s (X)                                1 − pa,s (X)
+
+Finally, consider the outcome regression (OR) estimands,
+                                                                                                       
+                                  Gg                                    
+           nev
+    AT Tor,rc  (g, t; δ) = EM               mrc,treat
+                                             g,t      (X) − mrc,treat
+                                                             g,g−δ−1  (X) −  mrc,nev
+                                                                              c,t    (X) − mrc,nev
+                                                                                            c,g−δ−1 (X)     ,
+                                EM [Gg ]
+
+                                                                           40
+

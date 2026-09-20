@@ -1,0 +1,47 @@
+                  Figure 1: Effect of LLM exposure on firm-level jobs
+
+
+
+
+                                       0.005
+                                       0.000
+                         Coefficient
+
+                                       −0.005
+                                       −0.010
+
+
+
+
+                                                −10   0              10          20   30
+
+                                                          Periods to treatment
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on the total number of
+employees in UK firms (log). Coefficients are estimated from Equation (3). All regressions include
+firm fixed effects and industry-by-period fixed effects. Standard errors are clustered at the firm
+level. Vertical line indicates November 2022, when ChatGPT was publicly released. Shaded areas
+denote 95% confidence intervals.
+
+
+
+show up in aggregate employment statistics. High and low LLM exposure exhibit
+similar employment trajectories prior to November 2022, which provides support
+for the validity of the parallel trends assumption. When averaged over the entire
+post-treatment period (Table 3), a one standard deviation increase in LLM expo-
+sure is associated with a 0.3 percent reduction in total employment, although the
+aggregate effect is only marginally significant due to the delayed onset of impacts.
+    We next examine how these aggregate effects vary across different types of work-
+ers. Figure 2 decomposes the effects between high- and low-seniority employees.
+Panel A shows junior positions decline immediately and statistically significantly,
+while Panel B demonstrates that senior positions initially remain stable before de-
+clining gradually, with the decrease only becoming significant after 20 months. Panel
+C shows that the timing difference in the emergence of effects leads to a temporary
+shift toward senior employees, although the compositional change attenuates over
+time, with the seniority distribution gradually reverting toward pre-treatment levels
+by the end of our observation period. All three panels show parallel pre-trends.
+
+
+                                                              14
+

@@ -1,0 +1,39 @@
+in exposed occupations. While their analysis covers 25 broad occupation groups,
+we exploit variation across a much wider variety of job types, as well as a firm-level
+analysis that examines within-firm dynamics that would be invisible in occupational
+aggregates. In addition, our individual-level posting data enables examination of a
+wider set of outcome variables such as salary distributions and seniority-specific
+employment, as well as heterogeneity in treatment effects by pre-treatment com-
+pensation or location.
+    Taken together, our findings raise important policy questions. The dispropor-
+tionate elimination of entry-level positions disrupts the conventional model of skill
+development, where employees master progressively complex tasks through hands-on
+experience with routine work. Without junior roles that serve as training grounds,
+firms may struggle to develop future senior talent internally, creating a hollowed-out
+labor market where entry becomes increasingly difficult (Ide, 2025). This dynamic
+could exacerbate inequality as those with pre-existing experience benefit from re-
+duced competition while new entrants face shrinking opportunities. Policy responses
+must address both immediate displacement and longer-term skill development path-
+ways.
+
+
+2         Data
+Our primary data comes from Revelio Labs, which aggregates and processes publicly
+available employment information from professional networking platforms, company
+websites, and job boards using machine learning algorithms to create proprietary
+longitudinal labor market databases. Revelio Labs transforms semi-structured pub-
+lic profile information into a structured panel dataset through systematic parsing,
+standardization, and cleaning procedures. Their data have been validated against
+official statistics and used in recent academic research on labor market dynamics
+(Fadhel et al., 2021; Eisfeldt et al., 2023; Hampole et al., 2025). In Appendix A4,
+we separately validate that Revelio Labs employment and job posting data closely
+track Office for National Statistics aggregates both over time and across industries.
+We use two separate Revelio Labs datasets: work profiles and job postings.2
+    2
+        The data used in this paper were downloaded on 12 August 2025.
+
+
+
+
+                                                 5
+

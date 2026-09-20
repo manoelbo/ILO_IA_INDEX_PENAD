@@ -1,0 +1,50 @@
+                                                                                        47
+
+References
+
+Jason Abaluck, Leila Agha, Chris Kabrhel, Ali Raja, and Arjun Venkatesh. The determinants
+  of productivity in medical testing: Intensity and allocation of care. Am. Econ. Rev., 106
+  (12):3730–3764, December 2016.
+
+Daron Acemoglu and Simon Johnson. Power and progress: Our Thousand-Year struggle over
+ technology and prosperity. Public Affairs, New York, 2023.
+
+Ajay Agrawal, Joshua Gans, and Avi Goldfarb. Prediction Machines: The Simple Economics
+  of Artificial Intelligence. Harvard Business Press, April 2018.
+
+Ajay Agrawal, Joshua S Gans, and Avi Goldfarb. Artificial intelligence: The ambiguous labor
+  market impact of automating prediction. J. Econ. Perspect., 33(2):31–50, May 2019.
+
+Jong Seok Ahn, Shadi Ebrahimian, Shaunagh McDermott, Sanghyup Lee, Laura Naccarato,
+  John F Di Capua, Markus Y Wu, Eric W Zhang, Victorine Muse, Benjamin Miller, Farid
+  Sabzalipour, Bernardo C Bizzo, Keith J Dreyer, Parisa Kaviani, Subba R Digumarthy,
+  and Mannudeep K Kalra. Association of artificial Intelligence–Aided chest radiograph
+  interpretation with reader performance and efficiency. JAMA Netw Open, 5(8):e2229289–
+  e2229289, August 2022.
+
+Eugenio Alberdi, Lorenzo Strigini, Andrey A Povyakalo, and Peter Ayton. Why are people’s
+  decisions sometimes worse with computer support? In Lecture Notes in Computer Sci-
+  ence, Lecture notes in computer science, pages 18–31. Springer Berlin Heidelberg, Berlin,
+  Heidelberg, 2009.
+
+Donald W K Andrews and Biao Lu. Consistent model and moment selection procedures for
+ GMM estimation with application to dynamic panel data models. J. Econom., 101(1):
+ 123–164, March 2001.
+
+Victoria Angelova, Will Dobbie, and Crystal Yang. Algorithmic recommendations and human
+  discretion, 2022.
+
+Gagan Bansal, Besmira Nushi, Ece Kamar, Eric Horvitz, and Daniel S Weld. Is the most
+ accurate AI the best teammate? optimizing AI for teamwork. AAAI, 35(13):11405–11414,
+ May 2021.
+
+Nicholas Barberis, Andrei Shleifer, and Robert Vishny. A model of investor sentiment. J.
+  financ. econ., 49(3):307–343, September 1998.
+
+Dan Benjamin, Aaron Bodoh-Creed, and Matthew Rabin. Base-Rate neglect: Foundations
+ and implications, 2019.
+
+Daniel J Benjamin. Chapter 2 - errors in probabilistic reasoning and judgment biases. In
+ Handbook of Behavioral Economics: Applications and Foundations 1, volume 2, pages 69–
+ 186. January 2019.
+

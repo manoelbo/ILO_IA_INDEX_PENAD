@@ -1,0 +1,2076 @@
+        Generative AI and Labor Market Outcomes:
+           Evidence from the United Kingdom
+                                      Bouke Klein Teeselink∗1,2,3
+                       1
+                           Department of Political Economy, King’s College London
+                                           2
+                                             AI Objectives Institute
+                                 3
+                                   King’s Institute for Artificial Intelligence
+
+
+
+                                          December 21, 2025
+
+
+
+                                               Abstract
+            This paper examines the effects of LLMs on UK labor market outcomes.
+         We use a difference-in-differences design that compares outcomes across firms
+         and occupations from 2021 to 2025 based on their differential exposure to LLM
+         capabilities. Our results show that highly exposed firms reduce employment,
+         with effects concentrated in junior positions. These firms sharply curtail new
+         hiring, with technical and creative roles experiencing the steepest declines.
+         At the occupation level, roles more exposed to LLMs also show substantial
+         reductions in job listings. The observed effects concentrate almost entirely in
+         high-wage segments. Hence, our findings suggest that LLMs may compress
+         wage inequality.
+
+       Keywords: Generative AI; Large Language Models; Automation; Labor demand;
+United Kingdom.
+       JEL: O33; J23; J31
+
+
+
+   ∗
+    Contact: bouke.klein teeselink@kcl.ac.uk. I would like to thank Philip Tomei, Barbara Pi-
+otrowska, Bharat Chandar, and seminar participants of the Economics of TAI group for insightful
+comments. I particularly want to thank Jacob Schaal for exceptional research assistance.
+
+
+                                                    1
+1       Introduction
+The release of ChatGPT in November 2022 marked the beginning of large-scale
+diffusion of large language models (LLMs) around the world. Within months, mil-
+lions of workers gained access to tools capable of drafting documents, writing code,
+analyzing data, and performing countless other cognitive tasks that previously re-
+quired human expertise. This rapid integration into workplace workflows has gen-
+erated widespread anxiety about the future of work, technological unemployment,
+and economic disruption, with some early evidence showing large productivity gains
+(Brynjolfsson, Li and Raymond, 2025; Noy and Zhang, 2023).
+    This uncertainty reflects a potential shift in the nature of this technological
+innovation. Unlike previous technologies that predominantly displaced routine tasks
+in lower- and middle-skilled occupations (Autor, 2015; Autor et al., 2003), LLMs
+possess capabilities that extend across the entire skill distribution, with the potential
+to affect highly skilled professional and analytical roles as well (Eloundou et al.,
+2024). Estimates suggest that around 80% of the U.S. workforce could see at least
+10% of their tasks affected, with exposure rising in higher-income occupations on
+average (Eloundou et al., 2024). As such, the introduction of generative AI raises
+important questions about whether LLMs will erode job security, depress white-
+collar wages, and increase or decrease inequality.
+    To examine these questions, we use detailed UK labor market data from Reve-
+lio Labs, covering millions of firms and job postings between 2021 and 2025. Our
+identification strategy exploits the sudden and arguably exogenous introduction of
+ChatGPT in November 2022. The impact of this shock varied across firms and
+industries depending on their occupational mix and the extent to which core ac-
+tivities are susceptible to LLM automation. We measure this heterogeneity using
+the occupational level LLM exposure scores developed by Eloundou et al. (2024),
+who evaluate 19,265 detailed work activities from the O*NET database using both
+human annotators and GPT-4 to determine whether LLM assistance could reduce
+task completion time by at least 50% while maintaining quality. These exposure
+scores allow us to quantify the share of tasks within each occupation, or the share
+of jobs within each firm that can be performed by LLMs.1
+    1
+    Their measure strongly correlates with other LLM exposure measures (see e.g. Tomlinson et al.,
+2025; Hampole et al., 2025).
+
+
+                                                2
+    Building on these exposure measures, we estimate a series of difference-in-differences
+models around the introduction of ChatGPT that exploit firm- and occupation-level
+variation in LLM exposure to estimate the causal effects of the ChatGPT shock
+on employment, wages, pay dispersion, job seniority, workplace arrangements, and
+overall hiring dynamics.
+    Our results show a clear impact of LLM introduction on UK labor markets, with
+effects emerging gradually across multiple dimensions of employment. At the firm
+level, a one standard deviation increase in LLM exposure is associated with a 0.3 per-
+cent reduction in total employment. The impact is concentrated among junior po-
+sitions, with low-seniority employment declining by 0.4 percent while high-seniority
+positions show smaller and partly insignificant reductions. This compositional shift
+reduces the fraction of low-seniority workers, which mechanically raises average com-
+pensation in exposed companies as the workforce skews toward higher-paid senior
+employees.
+    These patterns also show up in hiring intentions. In an analysis of firm-level
+job posting data, we find that a one standard deviation increase in LLM exposure
+reduces the likelihood that firms post job vacancies in a given month by 1.0 per-
+centage point. The reduction in job postings among exposed firms is strongest for
+technical and creative roles such as software engineers and designers. At the occu-
+pation level, we observe even more pronounced effects on hiring. A one standard
+deviation increase in an occupation’s LLM exposure is associated with a 3.9 percent
+decline in job postings, accompanied by substantial reductions in posted salaries.
+    Importantly, these effects are not uniformly distributed across the labor mar-
+ket. Our heterogeneity analysis shows that LLM disruption is concentrated almost
+entirely in higher-wage segments. High-compensation firms experience employment
+reductions of 0.7 percent per standard deviation increase in exposure, compared with
+near-zero effects for low-compensation firms. Similarly, high-salary occupations ex-
+perience 5.7 percent declines in job postings per standard deviation, while low-salary
+roles show no significant change. These results point in the opposite direction from
+historical automation experiences, in which routine middle-skill occupations bore
+the brunt of technological displacement (Autor, 2024).
+    To interpret these results, we draw on the task-based framework (Autor et al.,
+2003; Acemoglu and Restrepo, 2018, 2019, 2020; Autor and Thompson, 2025). This
+framework models production as discrete tasks allocated between labor and capi-
+
+                                           3
+tal based on comparative advantage. When automation enables capital to perform
+tasks previously done by labor more cheaply, it creates a displacement effect that
+reduces labor demand. Conversely, the creation of new tasks where labor main-
+tains comparative advantage generates a reinstatement effect that increases labor
+demand (Acemoglu and Restrepo, 2019; Restrepo, 2024). For LLMs, which can auto-
+mate cognitive tasks previously considered non-routine, the framework predicts that
+displacement will dominate in the short run, particularly for entry-level positions
+involving routine information processing and basic analysis. Senior roles requiring
+tacit knowledge, judgment, and complex interpersonal coordination should prove
+less vulnerable. This is consistent with our findings.
+    Our findings contribute to the emerging international evidence on labor market
+impacts of AI (del Rio-Chanona et al., 2025). In the United States, Brynjolfsson,
+Chandar and Chen (2025); Lichtinger and Hosseini Maasoum (2025); Dominski and
+Lee (2025) document employment declines in exposed industries concentrated in
+early-career positions. However, Chandar (2025) finds no employment effects using
+CPS data, and Humlum and Vestergaard (2025) report null results from Danish
+administrative data. These disparities may reflect several factors: differences in
+labor market institutions between countries, variation in the timing of LLM adop-
+tion across regions, and methodological choices regarding exposure measurement
+and outcome variables. Our UK evidence suggests that effects manifest differently
+across adjustment margins, with hiring responding more quickly and strongly than
+employment stocks.
+    Methodologically, our paper builds on recent work that also uses Revelio Labs
+data to construct firm-level AI exposure measures. Eisfeldt et al. (2023) show that
+higher-exposure US firms experience excess stock returns following the release of
+ChatGPT, while Hampole et al. (2025) develop task-level exposure measures varying
+across firms and occupations to study US labor demand between 2010 and 2023. We
+extend their work in three directions: we shift focus to the UK labor market, examine
+realized employment and job posting outcomes (as opposed to Eisfeldt et al. (2023)’s
+focus on financial data), and exploit data through mid-2025 to capture labor market
+adjustment to generative AI adoption (as opposed to Hampole et al. (2025)’s focus
+on earlier waves of AI).
+    In the UK context, we extend Henseke et al. (2025), who develop a Generative
+AI Susceptibility Index and provide suggestive evidence that wage premia decline
+
+                                         4
+in exposed occupations. While their analysis covers 25 broad occupation groups,
+we exploit variation across a much wider variety of job types, as well as a firm-level
+analysis that examines within-firm dynamics that would be invisible in occupational
+aggregates. In addition, our individual-level posting data enables examination of a
+wider set of outcome variables such as salary distributions and seniority-specific
+employment, as well as heterogeneity in treatment effects by pre-treatment com-
+pensation or location.
+    Taken together, our findings raise important policy questions. The dispropor-
+tionate elimination of entry-level positions disrupts the conventional model of skill
+development, where employees master progressively complex tasks through hands-on
+experience with routine work. Without junior roles that serve as training grounds,
+firms may struggle to develop future senior talent internally, creating a hollowed-out
+labor market where entry becomes increasingly difficult (Ide, 2025). This dynamic
+could exacerbate inequality as those with pre-existing experience benefit from re-
+duced competition while new entrants face shrinking opportunities. Policy responses
+must address both immediate displacement and longer-term skill development path-
+ways.
+
+
+2         Data
+Our primary data comes from Revelio Labs, which aggregates and processes publicly
+available employment information from professional networking platforms, company
+websites, and job boards using machine learning algorithms to create proprietary
+longitudinal labor market databases. Revelio Labs transforms semi-structured pub-
+lic profile information into a structured panel dataset through systematic parsing,
+standardization, and cleaning procedures. Their data have been validated against
+official statistics and used in recent academic research on labor market dynamics
+(Fadhel et al., 2021; Eisfeldt et al., 2023; Hampole et al., 2025). In Appendix A4,
+we separately validate that Revelio Labs employment and job posting data closely
+track Office for National Statistics aggregates both over time and across industries.
+We use two separate Revelio Labs datasets: work profiles and job postings.2
+    2
+        The data used in this paper were downloaded on 12 August 2025.
+
+
+
+
+                                                 5
+2.1      Job Profile Data
+The first dataset consists of all publicly available professional LinkedIn profiles be-
+tween January 2021 through June 2025. The dataset includes approximately 75
+million employment spells from 23 million unique individuals across 2.5 million UK-
+based firms. Each observation includes the worker’s job title, employer, start and
+end dates (if available), seniority level,3 and compensation.4 The data provide
+near-real-time employment stocks, which enable us to track within-firm workforce
+composition changes over time.
+    From the panel of individual LinkedIn profiles, we construct a monthly firm-level
+panel from January 2021 through June 2025. For each firm-month, we calculate
+total employment as the count of unique individuals with active employment spells
+at a certain company in that month, and log-transform this variable. This is our
+main employment stock measure. We then separate total employment into junior
+and senior employment stocks based on Revelio seniority classifications of jobs. We
+also calculate average compensation as the log of the mean of reported salaries plus
+bonuses in a firm. We only focus on firms that remained in business throughout the
+sample period.
+    To calculate firm-level exposure scores, we use the assessment framework devel-
+oped by Eloundou et al. (2024). They evaluate 19,265 detailed work activities and
+tasks from the O*NET 27.2 database to determine whether LLM assistance could
+reduce task completion time by at least 50% while maintaining quality. We focus
+on their ‘E1’ measure, which captures exposure to current LLMs, rather than LLMs
+combined with additional software. We do so because it is the most appropriate
+metric for identifying short-term labor market effects that do not require additional
+software development or complex organizational changes. To obtain our firm-level
+   3
+      Revelio Labs determines seniority using an ensemble model that combines three components:
+(i) current job characteristics including title, company, and industry; (ii) employment history
+including tenure and previous position seniority; and (iii) individual age. These three scores are
+averaged to create a continuous seniority metric, which is then mapped to seven ordinal levels
+based on keyword benchmarks (e.g., “junior,” “senior,” “director”). The levels range from Entry
+Level (e.g., interns, trainees) through Junior, Associate, Manager, and Director levels, to Executive
+and Senior Executive levels (e.g., C-suite positions).
+    4
+      Revelio Labs estimates compensation using a predictive model trained on publicly available
+visa application data, self-reported salaries, and job posting information. The model incorporates
+position-specific variables (job title, seniority level, company, location), individual-specific factors
+(tenure at company), and temporal controls (year of observation) to generate salary predictions
+for positions where compensation data are not directly observed.
+
+
+                                                   6
+measures, we first obtain occupation-level measures by calculating the share of tasks
+within an occupation that meet the 50% time-saving threshold. We weight this by
+task importance, assigning 0.5 to supplementary tasks and 1.0 to core tasks.5
+   Formally, for occupation o:
+
+                                  X
+                           αo =          wt · 1[LLM reduces time by ≥50%]                   (1)
+                                  t∈To
+
+    where To denotes occupation o’s task set, wt represents task importance weights
+(1.0 for core tasks, 0.5 for supplemental), and 1[·] is an indicator function for sub-
+stantial LLM impact. αo gives us an occupation-level exposure score that we can
+assign to each employee.
+    We then calculate each firm’s average exposure score by taking the average ex-
+posure score of all employees who report working for that firm on 30 October 2022,
+immediately before the introduction of ChatGPT.6
+    Formally:
+
+                                                X Lio,Oct2022
+                              Exposurei =                          · αo                     (2)
+                                                  o
+                                                      Li,Oct2022
+
+    where Lio,Oct2022 denotes firm i’s employment in occupation o as of October 2022.
+    We restrict our sample of firms to those with at least 100 employees imme-
+diately before ChatGPT’s introduction to address two methodological concerns.
+First, larger firms reduce noise from idiosyncratic employment changes and ensure
+adequate LinkedIn coverage for constructing reliable firm-level exposure scores from
+individual employee profiles. Second, this threshold minimizes attrition bias from
+firms exiting the sample while maintaining a sufficiently large set of employers that
+account for a large part of UK employment. Appendix A3.3 in the Appendix exam-
+ines the sensitivity of our results to different firm-size thresholds.
+    Our final firm-level sample includes 26,979 firms with 1,268,013 firm-month ob-
+   5
+     Our robustness checks cover alternative weights based on O*NET task-importance classifica-
+tions.
+   6
+     We measure firm-level exposure using the pre-treatment workforce composition to avoid endo-
+geneity concerns. If we calculated exposure using post-ChatGPT employment, our measure would
+be contaminated by the treatment effect itself, as firms might have already adjusted their occu-
+pational mix in response to LLM capabilities. By fixing exposure at the pre-treatment date, we
+ensure that our exposure measure captures firms’ initial vulnerability to LLM disruption rather
+than their endogenous response to it.
+
+
+                                                  7
+                    Table 1: Summary Statistics Firm Employment
+
+                                      Low exposure                High exposure
+                                   Before         After        Before         After
+           Total jobs                456           507           639           708
+           Low seniority (%)        0.705         0.703         0.667         0.662
+           High seniority (%)       0.295         0.297         0.333         0.338
+           Compensation          £ 94,325.66   £ 94,079.89   £100,230.08   £100,184.41
+           LLM exposure score       0.096         0.096         0.172         0.172
+
+Notes: This table reports summary statistics on firm-level employment outcomes by exposure to
+large language models (LLMs). Firms are classified into high- and low-exposure groups based
+on whether their average exposure score lies above or below the median across all firms. Total
+jobs gives the mean number of active positions in the firm. Low seniority and High seniority
+denote the share of employees in junior and senior roles, respectively, as defined by seniority of
+1-3 (junior) or 4-7 (senior). Compensation gives the mean annual salary plus bonuses, and LLM
+exposure score is the average predicted LLM-exposure of jobs in a firm based on Eloundou et al.
+(2024). Before refers to the pre-treatment period (prior to November 2022), while After refers to
+the post-treatment period (November 2022 onward).
+
+
+
+servations. These firms employ 16 million workers in our data as of October 2022,
+representing approximately 49% of UK employment (Office for National Statistics,
+2022).
+    Table 1 presents firm-level employment summary statistics. Firm-level employ-
+ment stocks increased for both exposure groups following ChatGPT’s introduction,
+rising 11.2 percent for low-exposure firms (from 456 to 507 employees) and 10.8
+percent for high-exposure firms (from 639 to 708 employees). However, this increase
+could reflect an increase in the number of people joining LinkedIn during the sam-
+ple period. The workforce composition reveals important differences: high-exposure
+firms maintain a more senior-skewed workforce, with 33.3 percent of positions at
+high-seniority levels compared to 29.5 percent in low-exposure firms. Following
+ChatGPT’s release, this seniority gap widened slightly, as the share of high-seniority
+positions increased by 0.5 percentage points in high-exposure firms versus 0.2 per-
+centage points in low-exposure firms. These patterns suggest that high-exposure
+firms are gradually shifting their workforce composition toward more senior roles,
+potentially reflecting the displacement of entry-level positions. Consistent with their
+more senior workforce composition, high-exposure firms offer higher average com-
+pensation.
+
+
+
+
+                                                8
+2.2    Job Listing Data
+The second Revelio Labs dataset contains almost the entire universe of online job
+postings in the UK over the same period, 63,497,648 in total. The data are collected
+from vacancies from major job boards, company career pages, and recruitment plat-
+forms. Each posting includes the job title, employer, posting and removal dates,
+salary information, and full job ads. This job listing data captures labor demand
+flows and allows us to observe how hiring intentions and job characteristics evolve.
+We use this dataset for two purposes: to examine how hiring intentions evolve across
+exposed and less-exposed firms and across exposed and less-exposed occupations.
+    To construct our firm-level hiring intentions data, we use the same sample of
+firms with at least 100 employees in October 2022 used in our total employment
+analysis, but focus on flows (job listings) instead of employment stocks. We create
+a monthly panel at the firm level, tracking job posting activity from January 2021
+through June 2025. Given that approximately 50% of firms do not post job listings
+in any given month, we construct a binary outcome variable indicating whether a
+firm posted any job listings in a given month, rather than using posting counts.
+This measure captures the extensive margin of hiring activity. We again match each
+firm to its pre-treatment LLM exposure score calculated from the October 2022
+workforce composition, as described above. We also break postings down by job
+roles (50 in total) to study which types of roles exposed firms hire more or less of.
+    This firm-level posting dataset allows us to test whether firms with higher LLM
+exposure adjust their hiring intensity differently than less-exposed firms following
+ChatGPT’s introduction, providing insights into how anticipated productivity gains
+or workforce restructuring needs translate into recruitment behavior. In addition, by
+examining the occupational composition of job postings within firms, we can identify
+whether highly exposed firms disproportionately reduce hiring for specific types of
+roles (for example, those with high LLM exposure scores) relative to less exposed
+firms, allowing us to test for within-firm occupational reallocation in response to
+LLM adoption.
+    To construct our occupation-level hiring intentions data, we first match each va-
+cancy to O*NET SOC occupation codes using a job-role-SOC crosswalk provided by
+Revelio Labs. This crosswalk maps each unique role (1,500 in total) to 384 broader
+categories that directly correspond to the occupations listed in Eloundou et al.
+
+
+                                         9
+             Table 2: Summary Statistics Occupation-Level Job Postings
+
+                                        Low exposure               High exposure
+                                      Before        After        Before        After
+              Job postings            4,056        3,358         3,343        2,745
+              Salary                £44,828.34   £49,359.93    £46,177.33   £50,262.62
+              Salary (SD)           £13,940.86   £15,238.06    £13,469.71   £14,136.39
+              LLM exposure score      0.045        0.045         0.263        0.263
+
+Notes: This table reports occupation-level summary statistics on job postings by exposure to
+large language models (LLMs). Occupations are classified into high- and low-exposure groups
+based on whether their exposure score lies above or below the median score. Job postings gives the
+mean number of vacancies posted. Salary reports the mean advertised annual compensation, while
+Salary (SD) gives the corresponding standard deviation across postings. LLM exposure score is
+the average predicted LLM-exposure of tasks in the occupation, based on Eloundou et al. (2024).
+Before refers to the pre-treatment period (prior to November 2022), while After refers to the post-
+treatment period (November 2022 onward).
+
+
+
+(2024). We then aggregate vacancies to the occupation-month level. Our monthly
+occupation-level variables capture multiple dimensions of labor demand. Posting
+volume is measured as the total new vacancies posted, which we log-transform.
+Posted salary represents the mean advertised salary for positions (level or log).7 We
+additionally calculate salary dispersion as the standard deviation of posted salaries
+within occupation-month cells to capture within-occupation inequality effects.
+    Table 2 presents summary statistics for occupation-level job postings. We sep-
+arate the data by high vs. low exposure occupations, and show the data for the
+periods before and after the release of ChatGPT in November 2022. Job posting
+volumes declined across both exposure groups following the introduction of Chat-
+GPT, with high-exposure occupations experiencing a sharper decline of 17.9 percent
+(from 3,343 to 2,745 monthly postings) compared to 17.2 percent for low-exposure
+occupations (from 4,056 to 3,358). Second, average posted salaries increased for both
+groups, rising from £44,828 to £49,360 (10.1 percent) in low-exposure occupations
+and from £46,177 to £50,263 (8.8 percent) in high-exposure occupations, with salary
+dispersion increasing similarly across both groups. Finally, high-exposure occupa-
+tions have LLM exposure scores approximately 6 times higher than low-exposure
+occupations.
+   7
+     When salary is not explicitly listed, it is inferred from a predictive model based on job charac-
+teristics, company, and location, trained on visa applications, self-reported data, and job postings,
+with salaries inferred for companies lacking direct data.
+
+
+                                                 10
+3    Methodology
+We use a difference-in-differences design with continuous treatment intensity to esti-
+mate the effect of LLM exposure on UK labor market outcomes. Our identification
+strategy exploits variation in occupational and firm-level exposure to LLM capabili-
+ties, as measured by Eloundou et al. (2024), combined with the timing of ChatGPT’s
+public release in November 2022. We conduct three types of analyses: firm-level em-
+ployment stocks using LinkedIn profile data, firm-level hiring decisions based on job
+posting data, and occupation-level hiring patterns using job posting data.
+    For our firm-level employment stock analysis, we estimate the following specifi-
+cation:
+                         X30
+                   Yit =      βτ · Exposurei × 1[t=τ ] + γi + δjt + ϵit           (3)
+                        τ =−15
+
+where Yit represents outcomes for firm i in month t, including log total employment,
+log employment by seniority level (junior vs. senior), the fraction of low-seniority
+positions, and average compensation. Exposurei is the firm’s pre-treatment LLM
+exposure score, calculated as the employment-weighted average of occupational ex-
+posure scores using the workforce composition on 30 October. We standardize the
+exposure coefficients across all analyses to make the coefficients more easily inter-
+pretable. The term 1[t=τ ] denotes indicators for event time τ relative to November
+2022, with October 2022 (τ = −1) as the reference period. We include firm fixed
+effects γi to control for time-invariant firm characteristics, and industry-by-period
+fixed effects δjt to account for sector-specific shocks that might correlate with tech-
+nology adoption patterns. Standard errors are clustered at the firm level.
+    This event study design allows us to test for parallel pre-treatment trends, as
+well as to examine the evolution of treatment effects over time, showing when and
+how labor market impacts start to emerge, and whether they persist, intensify, or
+attenuate over time. We use 15 months of pre-treatment data and 30 months of
+post-treatment data. To summarize the overall treatment effect, we also report
+average post-treatment effects from a static specification:
+
+                     Yit = β · Exposurei × Postt + γi + δjt + ϵit                  (4)
+
+where Postt is an indicator for periods after November 2022.
+
+
+                                          11
+    To examine how firms adjust their hiring strategies in response to LLM exposure,
+we combine our firm-level exposure measures with job posting data. To do so, we
+estimate Equation (3) with an indicator for whether firm i posted any job listings
+in month t as the outcome variable. This binary outcome captures the extensive
+margin of total hiring activity. We then re-estimate Equation (4) separately for each
+of 50 job categories.
+    For our occupation-level analysis of job posting dynamics, we estimate an anal-
+ogous event study specification:
+
+                           30
+                           X
+                  Yot =            βτ · Exposureo × 1[t=τ ] + γo + δt + ϵot        (5)
+                          τ =−15
+
+    where Yot denotes outcomes for occupation o in month t, including log job posting
+volumes, posted salaries, and salary dispersion within occupations. Exposureo is
+the occupation’s LLM exposure score from Eloundou et al. (2024). We include
+occupation fixed effects γo and year-by-month fixed effects δt with standard errors
+clustered at the occupation level. We also estimate an analogous static specification
+of Equation (4) at the occupation level.
+    Our identification strategy relies on the parallel trends assumption: absent Chat-
+GPT’s introduction, labor market outcomes would have evolved similarly across
+firms and occupations with different LLM exposure levels, conditional on our fixed
+effects structure. Several features of our design help with the interpretation of our
+estimates as causal. First, our exposure measures are predetermined using data from
+before November 2022, eliminating concerns about reverse causality where employ-
+ment changes might influence measured exposure. Second, the sudden and largely
+unanticipated public release of ChatGPT provides a clear temporal shock to LLM
+availability. Third, our event study analyses test and confirm parallel pre-treatment
+trends across analyses.
+    Furthermore, we perform a large set of robustness checks to test the validity of
+our findings across different specifications and modeling choices. We re-estimate our
+analyses using different fixed effects. We examine the validity of our finding of de-
+creased junior hiring through a highly restrictive within-firm triple-difference model
+using a firm-by-month-by-seniority panel that includes firm-by-period fixed effects
+absorbing all time-varying firm-level shocks. We test the sensitivity of our results to
+
+
+                                               12
+sample construction by varying minimum firm size thresholds. We consider alterna-
+tive task-level weights to construct our exposure measures. We estimate weighted
+regressions that give greater weight to larger firms and occupations to ensure our
+results reflect typical worker experiences. Finally, we relax the assumption of lin-
+ear treatment effects by categorizing firms and occupations into exposure quartiles.
+These analyses consistently support our main findings.
+    These robustness checks notwithstanding, we acknowledge the possibility that
+other factors differentially affected exposed and less exposed firms or occupations
+around the time of ChatGPT’s introduction. For instance, if firms anticipating AI
+disruption had already begun adjusting their workforce composition before Novem-
+ber 2022, or if other technological or economic shocks coincidentally affected high-
+exposure entities differently, our estimates could be biased. Additionally, our ex-
+posure measures capture potential susceptibility to LLM disruption but may not
+perfectly predict actual adoption patterns, which likely vary with firm-specific fac-
+tors such as technological capabilities, management quality, and financial resources.
+
+
+4     Results
+This section presents our main empirical findings on the effects of LLM exposure on
+UK labor market outcomes. We organize the analysis in three parts. First, we exam-
+ine how employment stocks, workforce composition, and compensation evolve within
+firms with different levels of LLM exposure. Second, we investigate occupation-level
+hiring patterns through job posting data. Third, we explore within-firm recruitment
+strategies by combining firm-level exposure measures with their occupation-specific
+hiring patterns. Throughout, we present both event study specifications and static
+difference-in-differences estimates.
+
+
+4.1    Firm-Level Employment Effects
+Figure 1 presents the event study plots for the effect of LLM exposure on the to-
+tal number of employees in UK firms. We find that highly exposed firms start
+experiencing a statistically significant decline in total employment beginning ap-
+proximately 18 months after the introduction of ChatGPT, suggesting that exposed
+firms reduce headcount in response to this new technology, but that it takes time to
+
+                                         13
+                  Figure 1: Effect of LLM exposure on firm-level jobs
+
+
+
+
+                                       0.005
+                                       0.000
+                         Coefficient
+
+                                       −0.005
+                                       −0.010
+
+
+
+
+                                                −10   0              10          20   30
+
+                                                          Periods to treatment
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on the total number of
+employees in UK firms (log). Coefficients are estimated from Equation (3). All regressions include
+firm fixed effects and industry-by-period fixed effects. Standard errors are clustered at the firm
+level. Vertical line indicates November 2022, when ChatGPT was publicly released. Shaded areas
+denote 95% confidence intervals.
+
+
+
+show up in aggregate employment statistics. High and low LLM exposure exhibit
+similar employment trajectories prior to November 2022, which provides support
+for the validity of the parallel trends assumption. When averaged over the entire
+post-treatment period (Table 3), a one standard deviation increase in LLM expo-
+sure is associated with a 0.3 percent reduction in total employment, although the
+aggregate effect is only marginally significant due to the delayed onset of impacts.
+    We next examine how these aggregate effects vary across different types of work-
+ers. Figure 2 decomposes the effects between high- and low-seniority employees.
+Panel A shows junior positions decline immediately and statistically significantly,
+while Panel B demonstrates that senior positions initially remain stable before de-
+clining gradually, with the decrease only becoming significant after 20 months. Panel
+C shows that the timing difference in the emergence of effects leads to a temporary
+shift toward senior employees, although the compositional change attenuates over
+time, with the seniority distribution gradually reverting toward pre-treatment levels
+by the end of our observation period. All three panels show parallel pre-trends.
+
+
+                                                              14
+               Table 3: Effect of LLM exposure on firm-level job outcomes
+
+                           Employees   Low seniority    High seniority   Frac. low seniority   Av. comp.
+   LLM exposure x Post     −0.003∗      −0.004∗∗             −0.002          −0.001∗∗          106.313∗
+                           (0.002)       (0.002)             (0.002)         (0.0003)          (59.029)
+
+   Firm fixed effects         Yes           Yes                Yes              Yes               Yes
+   Industry-by-period FE      Yes           Yes                Yes              Yes               Yes
+   Observations            1,268,013     1,267,955          1,266,331        1,267,955         1,268,013
+   Adj. R-squared            0.983         0.983              0.981            0.979             0.978
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level employment outcomes, averaged over the post-treatment period. Employees is the total
+number of jobs in the firm. Low seniority and High seniority denote the number of positions in
+seniority levels 1–3 and 4–7, respectively. Low seniority (%) is the share of jobs that are low-
+seniority. Av. comp. is the mean annual salary plus bonuses. All regressions include firm fixed
+effects and industry-by-period fixed effects. Standard errors are clustered at the firm level and
+reported in parentheses. Significance is denoted by ∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+
+
+
+    The regression results in Table 3 show, averaged over the entire post-treatment
+period, a significant 0.4 percent reduction in junior employees per standard deviation
+increase in exposure, and a statistically insignificant reduction in senior employees.
+The fraction of junior employees goes down by 0.1 percentage points per standard
+deviation of LLM exposure (p = 0.028).
+    The observed compositional shift towards more senior roles has direct implica-
+tions for compensation patterns. Figure 3 shows that average compensation rises
+modestly in highly exposed firms following the introduction of ChatGPT, with a one
+standard deviation increase in exposure associated with a £106 increase in average
+compensation, although the overall estimate is only marginally significant.
+
+
+4.2      Job Posting Dynamics
+4.2.1     Firm-Level Postings
+
+While employment stocks adjust slowly, job postings provide a real-time window
+into firms’ evolving labor demand. We therefore examine how firms’ hiring inten-
+tions respond to LLM exposure by analyzing whether exposed firms post fewer
+vacancies overall and whether they adjust the composition of roles they seek to fill.
+This posting data captures the extensive margin of recruitment activity and reveals
+forward-looking decisions that precede the employment stock changes documented
+above. By tracking the same firms across both datasets, we can directly observe
+
+
+                                                       15
+                            Figure 2: Effect of LLM exposure on firm-level seniority of jobs
+
+                   0.005
+                                (a) Low seniority jobs                                                                          (b) High seniority jobs
+
+
+
+
+                                                                                                                  0.005
+                   0.000
+
+
+
+
+                                                                                                                  0.000
+     Coefficient
+
+
+
+
+                                                                                                   Coefficient
+
+                                                                                                                  −0.005
+                   −0.005
+
+
+
+
+                                                                                                                  −0.010
+                   −0.010
+
+
+
+
+                              −10     0                         10            20      30                                   −10        0               10          20   30
+
+                                          Periods to treatment                                                                             Periods to treatment
+
+
+
+
+                                                                           (c) Fraction of low seniority jobs
+                                                                 0.0005
+                                                                 0.0000
+                                                  Coefficient
+
+                                                                 −0.0005
+                                                                 −0.0010
+                                                                 −0.0015
+
+
+
+
+                                                                              −10     0                          10        20         30
+
+                                                                                           Periods to treatment
+
+
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on the seniority
+composition of jobs within UK firms. Panel A shows effects on the total number of low-seniority
+positions (seniority levels 1–3), panel B on the total number of high-seniority positions (levels 4–7),
+and panel C on the fraction of jobs that are low-seniority. Coefficients are estimated from Equa-
+tion (3). All regressions include firm fixed effects and industry-by-period fixed effects. Standard
+errors are clustered at the firm level. The vertical line marks November 2022, when ChatGPT was
+publicly released. Shaded areas denote 95% confidence intervals.
+
+
+
+how hiring intentions translate into gradual changes in employment.
+
+
+                                                                                               16
+                         Figure 3: Effect of LLM exposure on firm-level compensation
+                                     (a) Level                                                              (b) Log
+
+                        300
+
+
+
+
+                                                                                         0.002
+                        200
+
+
+
+
+                                                                                         0.001
+          Coefficient
+
+
+
+
+                                                                           Coefficient
+                        100
+
+
+
+
+                                                                                         0.000
+                        0
+                        −100
+
+
+
+
+                                                                                         −0.001
+                               −10   0              10          20   30                           −10   0              10          20   30
+
+                                         Periods to treatment                                               Periods to treatment
+
+
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on average compensa-
+tion within UK firms. Compensation is defined as annual base salary plus bonuses. Panel A shows
+compensation in levels, Panel B in logs. Coefficients are estimated from Equation (3) and are
+shown relative to October 2022, the final pre-treatment month. All regressions include firm fixed
+effects and industry-by-period fixed effects. Standard errors are clustered at the firm level. The
+vertical line marks November 2022, when ChatGPT was publicly released. Shaded areas denote
+95% confidence intervals.
+
+
+
+    Figure 4 presents event study estimates for the probability that exposed vs.
+less exposed firms post any job vacancy in a given month. The results show a
+change in hiring patterns following November 2022. Prior to this date, firms with
+different exposure levels did not have statistically significantly different trends in
+job postings.8 Following the release of ChatGPT, however, we observe that a one
+standard deviation increase in LLM exposure reduces firms’ likelihood of posting new
+jobs by 1.0 percentage point (p < 0.001, see Table A1). This effect emerges gradually
+and becomes statistically significant after approximately 10 months, mirroring the
+timeline of employment stock adjustments.
+    Next, we decompose the aggregate hiring reduction by estimating occupation-
+specific effects across job categories. We estimate Equation (4) separately for 50
+distinct occupational categories, with the outcome variable indicating whether a
+   8
+     Although all pre-trend estimates are statistically insignificant, the point estimates exhibit a
+slight downward drift. If this reflects a differential pre-trend rather than sampling variation, the
+post-treatment estimates may overstate the true effect.
+
+
+
+                                                                          17
+               Figure 4: Effect of LLM exposure on firm-level job listings
+
+
+
+
+                                        0.015
+                                        0.010
+                                        0.005
+                                        0.000
+                          Coefficient
+
+                                        −0.005
+                                        −0.010
+                                        −0.015
+
+
+
+
+                                                 −10   0              10          20   30
+
+                                                           Periods to treatment
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on the probability that
+a UK firm posts any job vacancy in a given month. Coefficients are estimated from Equation (3)
+with firm fixed effects and industry-by-period fixed effects. Standard errors are clustered at the firm
+level. The dependent variable is an indicator equal to one if the firm posted at least one vacancy in
+month t. The vertical line marks November 2022, when ChatGPT was publicly released. Shaded
+areas denote 95% confidence intervals.
+
+
+
+firm posts any vacancy for that specific role in a given month. We continue to
+compare exposed vs. less exposed firms in the same time period.
+    Figure 5 presents these occupation-specific treatment effects, ordered by mag-
+nitude. The results reveal substantial heterogeneity in hiring adjustments across
+roles. Technical positions experience the sharpest declines: a one standard devia-
+tion increase in firm-level LLM exposure reduces the likelihood of posting software
+engineer positions by 1.1 percentage points (p < 0.001), QA tester positions by 1.0
+percentage points (p < 0.001), and data analyst positions by 0.8 percentage points
+(p < 0.001). We find similar declines for other technical roles such as IT specialists,
+IT project managers, and infrastructure engineers. Creative and design roles also see
+significant reductions, with job postings for designer positions decreasing by 0.6 per-
+centage points (p < 0.001) and for producers by 0.5 percentage points (p < 0.001).
+In contrast, sales representative positions show a statistically significant increase of
+0.3 percentage points (p < 0.001). This pattern suggests that exposed firms are scal-
+ing back recruitment for technical and analytical roles where LLMs can augment or
+
+                                                               18
+    Figure 5: Effect of LLM exposure on firm-level hiring across job categories
+                                                                    Effect of AI Exposure on Probability of Hiring by Role
+                                         Sales Representative
+                                             Customer Service
+                                               Sales Associate
+                                                     Retail Sales
+                                                    Receptionist
+                                                  Merchandiser
+                                                     Coordinator
+                                            Quality Assurance
+                                                         Cashier
+                                              Financial Advisor
+                                                            Legal
+                                           Solutions Specialist
+                                         Investment Specialist
+                                 Clinical Research Associate
+                                                 Crew Member
+                                          Operations Manager
+                                                        Scientist
+                                              Claims Specialist
+                                                       Geologist
+                                            Technical Architect
+                                      Sustainability Specialist
+                                  Communications Specialist
+                                                      Technician
+                                                        Logistics
+                         Role
+
+
+                                         Distribution Specialist
+                                               Billing Specialist
+                                          Business Operations
+                                                     Accountant
+                                          Production Operator
+                                                    Medical Rep
+                                             Machine Operator
+                                    Operations Administrator
+                                               Project Manager
+                                       Development Manager
+                                             Product Manager
+                                                Client Services
+                                Human Resources Specialist
+                                                       Marketing
+                                       Infrastructure Engineer
+                                             Delivery Manager
+                                         Mechanical Engineer
+                                                       Recruiter
+                                                       Producer
+                                           IT Project Manager
+                                          Application Engineer
+                                                    IT Specialist
+                                                        Designer
+                                                    Data Analyst
+                                                       QA Tester
+                                            Software Engineer
+                                                                              −0.010             −0.005              0.000
+                                                                                         Coefficient (with 95% CI)
+
+
+Notes: This figure reports coefficient estimates and 95% confidence intervals for the effect of LLM
+exposure on firms’ hiring at the extensive margin across 50 job roles. For each role, we estimate
+Equation (4) with firm fixed effects and industry-by-period fixed effects. Standard errors are
+clustered at the firm level. The dependent variable equals one if a firm posts at least one vacancy
+for that job role in month t.
+
+
+
+replace human capabilities, while maintaining or slightly increasing hiring for roles
+requiring direct customer interaction and relationship building that remain beyond
+current LLM capabilities.
+    Importantly, to emphasize that these estimates capture differential responses
+between exposed and less exposed firms, not absolute changes in hiring patterns.
+Hence, a coefficient of zero does not imply that hiring for a particular role remained
+unchanged. Rather, it indicates that exposed and less exposed firms adjusted their
+demand for that role similarly. For instance, if all firms reduced hiring of software
+engineers, regardless of their own exposure levels, our estimates would show no dif-
+ferential effect. The significant negative coefficient for e.g. data analysts therefore
+reveals that exposed firms reduced analyst hiring beyond any economy-wide reduc-
+tion, suggesting that firm-level exposure amplifies the substitution effects already
+occurring across the labor market. We next turn to our occupation-level analysis to
+examine how hiring intentions of exposed jobs change in the aggregate.
+
+
+
+
+                                                                                       19
+          Table 4: Effect of LLM exposure on occupation-level job postings
+
+                                        Job postings (log)      Salary      Salary (log)   Salary (SD)
+          LLM exposure x Post               −0.039∗∗          −495.483∗∗∗   −0.011∗∗∗        −56.802
+                                             (0.018)           (135.270)     (0.003)        (108.358)
+
+          Occupation fixed-effects            Yes                Yes           Yes             Yes
+          Year-by-month fixed effects         Yes                Yes           Yes             Yes
+          Observations                       16,815             16,815        16,815         16,804
+          Adjusted R2                        0.962              0.948         0.953           0.729
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level outcomes. Job postings (log) is the log number of new vacancies in occupation
+o in month t. Salary is the mean advertised annual compensation, Salary (log) is its logarithm,
+and Salary (SD) is the within-occupation standard deviation of posted salaries. Exposure is the
+occupation-level LLM exposure score from Eloundou et al. (2024). Post equals one for Novem-
+ber 2022 onward. Standard errors are clustered at the occupation level. Significance is denoted by
+∗
+  p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+
+
+
+4.2.2    Occupation-Level Postings
+
+This analysis examines occupation-level job posting data to understand how ag-
+gregate labor demand evolves for specific roles. This analysis exploits variation in
+LLM exposure across 384 occupations, from minimally affected roles such as cooks
+(exposure score: 0) to highly exposed positions like proofreaders and copy markers
+(exposure score: 0.86). We examine three outcomes: posting volumes to measure
+aggregate demand, advertised salaries to assess compensation responses, and within-
+occupation salary dispersion to measure wage polarization.
+    Figure 6 presents event study estimates for job posting volumes. Prior to Novem-
+ber 2022, high- and low-exposure occupations follow parallel trajectories, validating
+our identification strategy. Following ChatGPT’s release, however, exposed occupa-
+tions experience a sustained reduction in hiring demand, with effects first becoming
+statistically significant after 7 months and intensifying thereafter. After 20 months,
+we see a slight resurgence, and job postings converge back to their original levels.
+When averaged across the post-treatment period (Table 4), a one standard devia-
+tion increase in LLM exposure is associated with a 3.9% reduction in posting volume
+(p = 0.029). This is an economically meaningful change.
+    Turning to compensation, we observe immediate and persistent wage pressure for
+exposed occupations. Figure 7 indicates that posted salaries begin declining shortly
+after ChatGPT’s introduction. A one standard deviation increase in LLM exposure
+is associated with a £495 decline in posted salaries and a 1.1% reduction in log
+
+
+                                                         20
+                  Figure 6: Effect of LLM exposure on job-level hiring
+
+
+
+
+                                       0.10
+                                       0.05
+                         Coefficient
+
+                                       0.00
+                                       −0.05
+                                       −0.10
+                                       −0.15
+
+
+
+
+                                               −10   0              10          20   30
+
+                                                         Periods to treatment
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on occupation-
+level hiring (log vacancies per occupation–month). Coefficients are estimated from Equation (5)
+with occupation fixed effects and year-by-month fixed effects; standard errors are clustered at the
+occupation level. The dependent variable is the log of the number of new vacancies posted in
+occupation o in month t. Exposure is the occupation-level score from Eloundou et al. (2024). The
+vertical line marks November 2022, when ChatGPT was publicly released. Shaded areas denote
+95% confidence intervals.
+
+
+
+salaries (both p < 0.001). Panel C shows that within-occupation salary dispersion
+remains unchanged, suggesting uniform wage pressure across the distribution rather
+than polarization between high- and low-earners within occupations.
+    These occupation-level salary declines provide a sharp contrast with the slight
+increase in firm-level compensation documented earlier. At the firm level, elimi-
+nating junior positions mechanically raises average compensation by shifting work-
+force composition toward senior roles. At the occupation level, however, we observe
+market-wide wage depression for exposed roles as increased labor supply (from dis-
+placed workers) meets reduced demand. As such, our results highlight the impor-
+tance of considering both within-firm and within-occupation changes.
+
+
+
+
+                                                             21
+                    Figure 7: Effect of LLM exposure on occupation-level job-posting salary
+                                   (a) Level                                                                              (b) Log
+
+
+
+
+                                                                                                       0.01
+                     0
+
+
+
+
+                                                                                                       0.00
+                     −500
+
+
+
+
+                                                                                                       −0.01
+      Coefficient
+
+
+
+
+                                                                                        Coefficient
+                     −1000
+
+
+
+
+                                                                                                       −0.02
+                     −1500
+
+
+
+
+                                                                                                       −0.03
+                     −2000
+
+
+
+
+                             −10   0                         10      20    30                                  −10   0               10          20   30
+
+                                       Periods to treatment                                                               Periods to treatment
+
+
+
+
+                                                                           (c) St. Dev.
+                                                              1500
+                                                              1000
+                                               Coefficient
+
+                                                              500
+                                                              0
+                                                              −500
+
+
+
+
+                                                                     −10    0                         10       20    30
+
+                                                                                Periods to treatment
+
+
+
+
+Notes: This figure plots event study estimates of the effect of occupation-level LLM exposure on
+salaries in job listings. The dependent variables are posted salary per job listing (Panel A), log
+salary (Panel B), and the standard deviation of the posted salary (Panel C). All other definitions
+are as in Figure 6.
+
+
+
+4.3                     Heterogeneous Treatment Effects
+Our main results show the average treatment effects across all firms and occupations,
+but the impact of LLM exposure is likely to vary with organizational and labor mar-
+
+
+                                                                                    22
+ket characteristics. We examine heterogeneity along two dimensions: compensation
+levels (splitting firms and occupations by median pre-treatment salary) and geo-
+graphic concentration (comparing London-based versus non-London entities). These
+dimensions are highly policy-relevant, as compensation-level heterogeneity provides
+a first indication as to whether LLMs may compress or widen wage inequality, while
+geographic variation tests whether disruption concentrates in London’s knowledge
+economy or extends throughout the UK labor market.
+
+4.3.1   Heterogeneity by Compensation Level
+
+Table A2 examines how firm-level employment effects vary by average compen-
+sation, with high-compensation jobs serving as a proxy for more highly educated
+white collar work, and low-compensation jobs for relatively low-educated blue collar
+work. We split firms at the median pre-treatment compensation level. Panel A
+shows that high-compensation firms experience substantially larger employment re-
+ductions than their lower-paying counterparts. A one standard deviation increase in
+LLM exposure reduces total employment at high-compensation firms by 0.7 percent
+(p = 0.009), driven primarily by a 0.8 percent reduction in low-seniority positions
+(p = 0.005). In contrast, Panel B indicates that low-compensation firms show no
+significant employment effects, with point estimates near zero for both total em-
+ployment and low-seniority positions.
+    This pattern extends to hiring intentions. Table A4 shows that a one standard
+deviation increase in LLM exposure reduces the probability of posting vacancies
+by 1.3 percentage points at high-compensation firms (p < 0.001), compared to a
+0.7 percentage point reduction at low-compensation firms (p = 0.001). While both
+groups curtail hiring, the effect is approximately twice as large at high-compensation
+firms.
+    The occupation-level analysis in Table A5 provides further evidence that the
+employment effects are concentrated among the highly paid. In high-salary occupa-
+tions, a one standard deviation increase in LLM exposure is associated with a 5.7
+percent reduction in job postings (p = 0.009) and £782 salary declines (p < 0.001)
+, while low-salary occupations show no significant changes in posting volumes and
+minimal salary effects.
+    These results suggest that LLM disruption is almost entirely driven by changes
+
+
+                                         23
+in higher-wage segments of the labor market, contradicting historical automation
+patterns that predominantly affected routine middle-skill occupations. The concen-
+tration of employment losses and wage pressures in high-compensation firms and
+high-salary occupations implies that LLMs may have an equalizing effect on the
+income distribution, at least in the short run. This pattern aligns partially with the
+optimistic scenario outlined by Autor (2024) who argues that AI could help rebuild
+middle-class jobs by enabling workers with foundational expertise to perform higher-
+stakes decision-making tasks previously reserved for elite professionals. However, our
+findings suggest a more pessimistic mechanism: rather than elevating middle-skill
+workers to perform expert tasks, LLMs appear to be eroding demand for the expert
+tasks themselves. While this may compress wage inequality by reducing returns to
+education and expertise, it appears to achieve this through a leveling-down rather
+than the leveling-up process envisioned by Autor (2024).
+
+4.3.2   Geographic Heterogeneity
+
+Geographic concentration provides another lens for understanding differential treat-
+ment effects. Table A3 compares firms headquartered in London versus elsewhere
+in the UK. Surprisingly, London-based firms show minimal employment responses
+despite their concentration in LLM-exposed industries like finance and professional
+services. Total employment effects are statistically insignificant (0.1 percent per
+standard deviation), with similar null results for both seniority levels. In contrast,
+there is some evidence that firms headquartered outside London experience stronger
+employment declines from LLM exposure: a one standard deviation increase in LLM
+exposure reduces total employment by 0.4 percent (p = 0.042), with low-seniority
+positions declining by 0.5 percent (p = 0.020). That said, the firm-level hiring
+response shows the opposite pattern: a one standard deviation increase in LLM ex-
+posure reduces job postings by 1.6 percentage points for London-based firms versus
+0.8 percentage points for firms outside London, despite their more modest employ-
+ment stock adjustments.
+    At the occupation level, both London and non-London job markets experience
+significant disruption. A one standard deviation increase in LLM exposure is associ-
+ated with a 3.4 percent reduction in job postings in London (p = 0.047) with salary
+declines of £563 (p < 0.001), while positions outside London experience posting
+
+
+                                         24
+reductions of 4.0 percent (p = 0.030) and salary declines of £476 (p < 0.001).
+
+
+4.4     Robustness Checks
+We conduct several robustness tests to assess the sensitivity of our results to alterna-
+tive specifications and sample restrictions. First, we examine whether our findings
+depend on the fixed effects structure. Tables A7 and A8 present firm-level results
+using year-by-month fixed effects instead of industry-by-year-by-month fixed effects,
+while Table A9 replicates our occupation-level analysis using job category-by-period
+fixed effects. Despite these alternative specifications, all main conclusions persist:
+low-seniority employment declines at exposed firms, hiring decreases are, if anything
+larger, and occupation-level job postings and salaries fall significantly with exposure.
+    Second, we go one step further to address potential endogeneity concerns, and
+implement an extremely restrictive within-firm specification. To do so, we con-
+struct a firm-by-month-by-seniority panel that measures the number of people at
+low, medium, and high seniority levels working in a given firm in a given month.9 We
+then estimate a triple-difference model that interacts our post-ChatGPT dummy,
+firm-level LLM exposure, and seniority indicators, using the mid-seniority group
+as our reference group. This specification includes firm-by-period fixed effects,
+which absorb all time-varying firm-level shocks such as changes in profits, financing
+costs, industry conditions, management, or any other factor affecting the entire firm
+that might be correlated with both LLM exposure and employment decisions. We
+additionally include firm-by-seniority fixed effects (controlling for stable workforce
+composition preferences) and seniority-by-period fixed effects (capturing aggregate
+seniority-level trends). The results in Table A10 show strong evidence that em-
+ployment declines concentrate in low-seniority positions: relative to mid-seniority
+workers, low-seniority employment at high-exposure firms contracts by an additional
+0.7 percent (p < 0.001), while high-seniority positions show no significant differen-
+tial effect. This result confirms the finding that LLM adoption disproportionately
+affects junior positions (see also Brynjolfsson, Chandar and Chen, 2025; Lichtinger
+and Hosseini Maasoum, 2025).
+   9
+    Out of 7 seniority classifications in the Revelio Labs data, we classify the lowest two categories
+as junior (59% of jobs), the next two categories as mid (26%) and the highest three categories as
+senior (15%).
+
+
+
+                                                 25
+    Third, we test whether our results depend on the minimum firm size threshold
+used in the sample construction of the firm-level data. Our main analysis restricts to
+firms with at least 100 employees to ensure consistent LinkedIn coverage and reliable
+estimation of exposure scores. Tables A11 to A13 relax this restriction to include all
+firms with at least 10 or 50 employees, expanding the sample to more than 11 million
+and 2.5 million firm-month observations. The qualitative patterns persist: the stock
+of low-seniority employment declines, average compensation increases, and exposed
+firms list significantly fewer jobs in both specifications, although the magnitudes are
+slightly different.
+    Fourth, we verify that our results are not sensitive to the task importance scheme
+used in our main specification. Recall that we follow Eloundou et al. (2024) by
+assigning weights of 1.0 to core tasks and 0.5 to supplemental tasks when calculating
+occupation-level exposure scores. Appendix A3.4 replicates our analyses using the
+continuous task importance scores provided in the O*NET database. The results
+are quantitatively and qualitatively similar to our main results, suggesting that our
+findings do not depend on which particular task weighting scheme we use.
+    Fifth, we estimate weighted regressions, weighing our observations in the firm-
+level regressions by pre-treatment employment, and in the occupation-level regres-
+sions by pre-treatment job posting volume. This approach gives greater weight to
+occupations representing larger shares of employment to make our estimates more
+representative for the experiences of the typical worker. Appendix A3.5 presents
+the results. The findings are largely in line with our main results. For firm-level
+employment stocks, the weighted specification shows similar overall employment ef-
+fects, with a slightly larger decline in low-seniority employment (0.6 percent per
+standard deviation versus 0.4 percent unweighted). For firm-level job postings, the
+weighted coefficient remains negative but becomes statistically insignificant, suggest-
+ing smaller firms drive the hiring freeze response. For occupation-level outcomes,
+weighted estimates remain nearly identical: job postings decline by 3.8 percent
+(versus 3.9 percent unweighted) and posted salaries fall by £474 (versus £495 in
+the main specification). The overall consistency between weighted and unweighted
+specifications indicates our main conclusions are not driven by extreme outcomes at
+small entities, with the possible exception of our firm-level job listing result. Finally,
+we relax the assumption of linear treatment effects by categorizing occupations and
+firms into exposure quartiles. Tables A20 to A22 present results where the bottom
+
+                                           26
+quartile serves as the reference category. For firm-level job postings, effects are
+significant across all higher quartiles, though the third and fourth quartiles show
+similar magnitudes, which is consistent with a threshold effect. For firm-level em-
+ployment stocks, the evidence is weaker and non-monotonic, with only scattered
+significant effects across bins. The occupation-level analysis reveals clearer non-
+linearities: while the second and third quartiles show minimal effects, the highest
+exposure quartile experiences significantly larger impacts, suggesting that most of
+the occupation-level results we observe are driven by the 25 percent most exposed
+occupations.
+
+
+5    Conclusion
+This paper provides evidence that large language models are reshaping UK la-
+bor markets. Using a difference-in-differences design that exploits variation in
+occupational- and firm-level LLM exposure, we conduct three analyses that show
+how labor markets change in response to the introduction of generative AI. First,
+we examine firm-level employment stocks to understand how workforce size and
+composition evolve within organizations. Second, we analyze firm-level hiring pat-
+terns to capture forward-looking recruitment decisions that precede employment
+adjustments. Third, we investigate occupation-level posting dynamics to identify
+economy-wide demand shifts.
+    Our firm-level employment analysis documents a 0.3 percent reduction in total
+employment per standard deviation increase in LLM exposure, though this effect
+only becomes statistically significant approximately 18 months after ChatGPT’s
+introduction. This reduction is predominantly concentrated in junior positions,
+which decline by 0.4 percent per standard deviation, while senior positions show a
+smaller, statistically insignificant 0.2 percent reduction. The resulting compositional
+shift reduces the fraction of junior workers by 0.1 percentage point per standard
+deviation, mechanically increasing average compensation by £106 as firms retain
+proportionally more higher-paid senior staff, though this compensation effect is only
+marginally significant.
+    While employment stocks adjust gradually, job posting data provide real-time
+evidence of firms’ evolving labor demand. Firm-level posting activity drops following
+
+
+                                          27
+ChatGPT’s release, with a one standard deviation increase in LLM exposure reduc-
+ing the probability of posting any vacancy by 1.0 percentage point. This reduction
+emerges gradually and becomes significant after approximately 10 months, mirroring
+the timeline of employment stock adjustments. When we examine the composition
+of roles driving this reduction, we find that technical positions and creative roles
+experience the sharpest declines. Sales representative positions, by contrast, show
+a statistically significant increase, suggesting that customer-facing roles requiring
+direct interpersonal interaction remain robust to LLM-based automation.
+     In addition to within-firm dynamics, our occupation-level analysis reveals how
+labor demand shifts for entire job categories regardless of firm exposure. A one stan-
+dard deviation increase in LLM exposure is associated with a 3.9 percent reduction in
+posting volumes, accompanied by £495 (1.1 percent) salary declines. The apparent
+inconsistency of declining posted salaries for exposed occupations alongside increas-
+ing firm-level compensation shows how aggregation could mask opposing forces.
+While LLM exposure drives down market wages for specific occupations, within-
+firm rebalancing toward more senior positions pushes average firm-level wages in
+the opposite direction.
+     Our heterogeneity analysis reveals that the observed labor market disruptions
+are almost entirely driven by high-remuneration segments of the labor market. This
+concentration of effects in higher-wage segments contradicts historical automation
+patterns that predominantly displaced routine middle-skill work, and suggests that
+LLMs might lead to a compression of the wage distribution.
+     Our findings carry important implications for understanding technological dis-
+placement and designing policy responses. The concentration of job losses among
+entry-level positions disrupts traditional skill development pathways where workers
+master progressively complex tasks through hands-on experience. Without junior
+roles serving as training grounds, firms may struggle to develop senior talent in-
+ternally while new entrants face shrinking opportunities to gain experience (Ide,
+2025). The freeze in hiring followed by employment stock changes suggests that
+forward-looking indicators like job postings may provide early warning signals for
+policymakers. The sharp reductions in technical and analytical roles alongside re-
+silience in sales positions indicates that human interaction and relationship-building
+skills remain valuable complements to LLM capabilities, suggesting that retrain-
+ing programs should emphasize these interpersonal competencies. Policy responses
+
+                                         28
+should consider addressing both immediate displacement and longer-term structural
+changes through, for example, education reform and alternative skill development
+pathways.
+    Several important limitations qualify our findings. First, our identification strat-
+egy cannot rule out other shocks that differentially affected high- versus low-exposure
+firms or occupations, such as sector-specific demand shifts, regulatory changes, or
+complementary technological developments that correlate with LLM susceptibility,
+although our robustness checks provide evidence against most of these channels.
+Second, the LinkedIn-based employment data likely overrepresents professional and
+technical workers who maintain online profiles while underrepresenting manual, ser-
+vice, and informal sector employment, potentially inflating our estimates if LLM
+impacts concentrate among digitally-active occupations. Third, our exposure mea-
+sures from Eloundou et al. (2024) capture potential vulnerability to LLM disruption
+rather than actual adoption, which depends on unobserved factors including finan-
+cial resources, management quality, technological infrastructure, and organizational
+culture. Firms with high exposure scores may resist adoption while nominally less-
+exposed firms might implement LLMs aggressively, attenuating our reduced-form
+estimates. Finally, our framework cannot observe the creation of entirely new occu-
+pational categories enabled by LLM technology such as prompt engineers, AI safety
+specialists, or human-AI collaboration designers, which historical evidence suggests
+constitutes a primary channel through which technological change generates em-
+ployment (Restrepo, 2024).
+    These limitations highlight the preliminary nature of our findings and provide po-
+tential avenues for future research. Most fundamentally, our 30-month observation
+window may capture only short-term labor market disruption rather than long-term
+equilibrium outcomes. Previous general-purpose technologies required decades for
+complementary innovations, business process reengineering, and workforce retrain-
+ing to fully work their way through the labor market. The initial displacement we
+document might reverse as organizations develop new LLM-augmented tasks where
+humans maintain comparative advantage, or intensify as models become more ca-
+pable and adoption barriers fall. In fact, we already see some evidence that the
+decrease in hiring in highly exposed occupations attenuates towards the end of the
+sample period. Future research should extend the analysis period to distinguish be-
+tween temporary adjustment and permanent structural change. Additionally, future
+
+                                          29
+research could examine heterogeneity in adoption patterns and employment effects
+across firm characteristics, investigate whether LLM exposure affects job quality
+and working conditions, and examine a wider set of countries.
+
+
+
+
+                                       30
+References
+Acemoglu, D. and Restrepo, P. (2018), ‘The race between man and machine: Im-
+  plications of technology for growth, factor shares, and employment’, American
+  Economic Review 108(6), 1488–1542.
+
+Acemoglu, D. and Restrepo, P. (2019), ‘Automation and new tasks: How technology
+  displaces and reinstates labor’, Journal of Economic Perspectives 33(2), 3–30.
+
+Acemoglu, D. and Restrepo, P. (2020), ‘Robots and jobs: Evidence from US labor
+  markets’, Journal of Political Economy 128(6), 2188–2244.
+
+Autor, D. (2024), Applying AI to rebuild middle class jobs, Technical report, Na-
+ tional Bureau of Economic Research.
+
+Autor, D. H. (2015), ‘Why are there still so many jobs? the history and future of
+ workplace automation’, Journal of Economic Perspectives 29(3), 3–30.
+
+Autor, D. H., Levy, F. and Murnane, R. J. (2003), ‘The skill content of recent tech-
+ nological change: An empirical exploration’, The Quarterly Journal of Economics
+ 118(4), 1279–1333.
+
+Autor, D. and Thompson, N. (2025), ‘Expertise’, Journal of the European Economic
+ Association p. jvaf023.
+
+Brynjolfsson, E., Chandar, B. and Chen, R. (2025), ‘Canaries in the coal mine?
+  six facts about the recent employment effects of artificial intelligence’. Working
+  paper.
+
+Brynjolfsson, E., Li, D. and Raymond, L. (2025), ‘Generative AI at work’, The
+  Quarterly Journal of Economics 140(2), 889–942.
+
+Chandar, B. (2025), ‘Tracking employment changes in ai-exposed jobs’. Working
+ paper, SSRN.
+
+del Rio-Chanona, R. M., Ernst, E., Merola, R., Samaan, D. and Teutloff, O.
+  (2025), ‘AI and jobs: A review of theory, estimates, and evidence’, arXiv preprint
+  arXiv:2509.15265 .
+
+
+                                        31
+Dominski, J. and Lee, Y. S. (2025), ‘Advancing ai capabilities and evolving labor
+ outcomes’. Working paper, arXiv:2507.08244.
+
+Eisfeldt, A. L., Schubert, G. and Zhang, M. B. (2023), Generative AI and firm
+  values, Technical report, National Bureau of Economic Research.
+
+Eloundou, T., Manning, S., Mishkin, P. and Rock, D. (2024), ‘GPTs are GPTs:
+  Labor market impact potential of LLMs’, Science 384(6702), 1306–1308.
+
+Fadhel, A., Panella, K., Rouen, E. and Serafeim, G. (2021), ‘Accounting for em-
+  ployment impact at scale’, Harvard Business School Accounting & Management
+  Unit Working Paper (22-018).
+
+Hampole, M., Papanikolaou, D., Schmidt, L. D. and Seegmiller, B. (2025), Artificial
+  intelligence and the labor market, Technical report, National Bureau of Economic
+  Research.
+
+Henseke, G., Davies, R., Felstead, A., Gallie, D., Green, F. and Zhou, Y. (2025),
+  ‘How exposed are UK jobs to generative AI? Developing and applying a novel
+  task-based index’, arXiv preprint arXiv:2507.22748 .
+
+Humlum, A. and Vestergaard, E. (2025), Large language models, small labor market
+ effects, Technical report, National Bureau of Economic Research.
+
+Ide, E. (2025), ‘Automation, ai, and the intergenerational transmission of knowl-
+  edge’, arXiv preprint arXiv:2507.16078 .
+
+Lichtinger, G. and Hosseini Maasoum, S. M. (2025), ‘Generative AI as seniority-
+  biased technological change: Evidence from US résumé and job posting data’,
+  Available at SSRN .
+
+Noy, S. and Zhang, W. (2023), ‘Experimental evidence on the productivity effects
+  of generative artificial intelligence’, Science 381(6654), 187–192.
+
+Office for National Statistics (2022), ‘Employment in the uk: September 2022’.
+  Accessed: 17-09-2025.
+
+Restrepo, P. (2024), ‘Automation: Theory, evidence, and outlook’, Annual Review
+  of Economics 16(Volume 16, 2024), 1–25.
+
+                                        32
+Tomlinson, K., Jaffe, S., Wang, W., Counts, S. and Suri, S. (2025), ‘Working with
+  AI: Measuring the occupational implications of generative AI’, arXiv preprint
+  arXiv:2507.07935 .
+
+
+
+
+                                       33
+A1        Additional Tables
+
+               Table A1: Effect of LLM exposure on firm-level job listings
+
+                                                                        Job postings
+                                 LLM exposure x Post                     −0.010∗∗∗
+                                                                          (0.002)
+
+                                 Firm fixed-effects                         Yes
+                                 Industry-by-period fixed effects           Yes
+                                 Observations                            1,268,013
+                                 Adjusted R2                               0.522
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity. The dependent variable is an indicator equal to one if firm i posted at
+least one job vacancy in month t. LLM exposure is the firm’s standardized pre-treatment exposure
+score, calculated as the employment-weighted average of occupational LLM exposure scores from
+Eloundou et al. (2024) using the workforce composition on 30 October 2022. All regressions include
+firm fixed effects and industry-by-period fixed effects. All other definitions are as in Table 3.
+
+
+
+
+A2        Heterogeneous Treatment Effects
+A2.1        Firm-Level Employment Stocks
+
+Table A2: Effect of LLM exposure on firm-level job outcomes, high vs. low com-
+pensation firms
+
+                             Employees     Low seniority      High seniority         Low seniority (%)   Av. comp.
+     Panel A: High compensation firms
+     LLM exposure x Post     −0.007∗∗∗       −0.008∗∗∗              −0.005∗              −0.001∗         195.240∗
+                              (0.003)         (0.003)               (0.003)              (0.0004)        (101.538)
+
+     Firm fixed effects         Yes             Yes                   Yes                  Yes              Yes
+     Industry-by-period FE      Yes             Yes                   Yes                  Yes              Yes
+     Observations             634,030         633,977               634,018              633,977          634,030
+     Adj. R-squared            0.975           0.973                 0.974                0.963            0.956
+
+     Panel B: Low compensation firms
+     LLM exposure x Post      0.0001           −0.001               −0.00002             −0.0004           69.929
+                              (0.003)          (0.003)               (0.003)             (0.0003)         (46.938)
+
+     Firm fixed effects         Yes             Yes                   Yes                  Yes              Yes
+     Industry-by-period FE      Yes             Yes                   Yes                  Yes              Yes
+     Observations             633,983         633,978               632,313              633,978          633,983
+     Adj. R-squared            0.988           0.988                 0.985                0.956            0.946
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, separately for high- and low-compensation firms. Firms are split at
+the median pre-treatment average compensation level (October 2022). Panel A presents results for
+firms above the median compensation, Panel B for firms below the median. All other definitions
+are as in Table 3.
+
+
+
+                                                         34
+Table A3: Effect of LLM exposure on firm-level job outcomes, London vs. Non-
+London firms
+
+                                   Employees       Low seniority        High seniority   Low seniority (%)    Av. comp.
+       Panel A: HQ in London
+       LLM exposure x Post          −0.001               −0.002            −0.004             −0.001           214.807
+                                    (0.004)              (0.004)           (0.004)            (0.001)         (132.316)
+
+       Firm fixed effects             Yes                 Yes                Yes               Yes               Yes
+       Industry-by-period FE          Yes                 Yes                Yes               Yes               Yes
+       Observations                 377,175             377,129            376,920           377,129           377,175
+       Adj. R-squared                0.982               0.981              0.981             0.978             0.975
+
+       Panel B: HQ outside London
+       LLM exposure x Post         −0.004∗∗             −0.005∗∗           −0.002            −0.001∗∗           71.962
+                                    (0.002)              (0.002)           (0.003)           (0.0003)          (64.222)
+
+       Firm fixed effects             Yes                 Yes                Yes               Yes               Yes
+       Industry-by-period FE          Yes                 Yes                Yes               Yes               Yes
+       Observations                 890,838             890,826            889,411           890,826           890,838
+       Adj. R-squared                0.983               0.983              0.981             0.979             0.979
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level employment outcomes, separately for firms headquartered in London, and those head-
+quartered elsewhere. Panel A presents results for London-based firms, Panel B for firms based
+outside London. All other definitions are as in Table 3.
+
+
+
+A2.2           Firm-Level Job Postings
+
+       Table A4: Effect of LLM exposure on firm-level job listings, heterogeneity
+
+                                    High compensation firms         Low compensation firms     HQ in London      HQ outside London
+LLM exposure x Post                       −0.013∗∗∗                        −0.007∗∗∗             −0.016∗∗∗           −0.008∗∗∗
+                                           (0.003)                          (0.002)               (0.003)             (0.002)
+
+Firm fixed-effects                              Yes                            Yes                   Yes                    Yes
+Industry-by-period fixed effects                Yes                            Yes                   Yes                    Yes
+Observations                                  577,489                        690,524               377,175                890,838
+Adjusted R2                                    0.486                          0.554                 0.517                  0.525
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level job posting activity across different firm characteristics. Columns 1-2 split firms by
+median pre-treatment average compensation level. Columns 3-4 split firms by headquarter location
+(London versus outside London). All other definitions are as in Table A1.
+
+
+
+
+                                                                   35
+Table A6: Effect of LLM exposure on occupation-level job outcomes, London vs.
+non-London
+
+                                        Job postings (log)           Salary     Salary (log)   Salary (SD)
+          Panel A: Job in London
+          LLM exposure x Post               −0.034∗∗              −562.818∗∗∗    −0.010∗∗∗        74.609
+                                             (0.017)               (139.355)      (0.002)       (132.525)
+
+          Occupation fixed-effects             Yes                    Yes           Yes            Yes
+          Year-by-month fixed effects          Yes                    Yes           Yes            Yes
+          Observations                        16,734                 16,734        16,734        16,625
+          Adjusted R2                         0.954                  0.922         0.926          0.605
+
+          Panel B: Job outside London
+          LLM exposure x Post               −0.040∗∗              −475.947∗∗∗    −0.011∗∗∗      −119.267
+                                             (0.018)               (141.444)      (0.003)       (111.131)
+
+          Occupation fixed-effects             Yes                    Yes           Yes            Yes
+          Year-by-month fixed effects          Yes                    Yes           Yes            Yes
+          Observations                        16,812                 16,812        16,812        16,799
+          Adjusted R2                         0.961                  0.938         0.945          0.683
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, separately for London-based jobs and jobs based outside London.
+Panel A presents results for job openings in London, Panel B for job openings outside London. All
+other definitions are as in Table 4.
+
+
+
+A2.3       Occupation-Level Job Listings
+
+Table A5: Effect of LLM exposure on occupation-level job outcomes, high vs. low
+salary occupations
+
+                                        Job postings (log)          Salary      Salary (log)   Salary (SD)
+         Panel A: High salary occupations
+         LLM exposure x Post               −0.057∗∗∗              −782.371∗∗∗   −0.013∗∗∗      −354.844∗∗∗
+                                            (0.022)                (184.426)     (0.003)        (131.069)
+
+         Occupation fixed-effects              Yes                    Yes           Yes            Yes
+         Year-by-month fixed effects           Yes                    Yes           Yes            Yes
+         Observations                         8,413                  8,413         8,413          8,412
+         Adjusted R2                          0.964                  0.903         0.901          0.726
+
+         Panel B: Low salary occupations
+         LLM exposure x Post                 −0.020                −112.614       −0.004         240.391
+                                             (0.031)               (179.137)      (0.004)       (170.804)
+
+         Occupation fixed-effects              Yes                    Yes           Yes            Yes
+         Year-by-month fixed effects           Yes                    Yes           Yes            Yes
+         Observations                         8,402                  8,402         8,402          8,392
+         Adjusted R2                          0.961                  0.817         0.860          0.436
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, separately for high- and low-salary occupations. Occupations are
+split at the median pre-treatment average posted salary (October 2022). Panel A presents results
+for occupations above the median salary, Panel B for occupations below the median. All other
+definitions are as in Table 4.
+
+
+
+
+                                                             36
+A3         Robustness Checks
+A3.1         Alternative Fixed Effects
+
+ Table A7: Effect of LLM exposure on firm-level job outcomes, time fixed effects
+
+                                   Employees         Low seniority    High seniority     Low seniority (%)       Av. comp.
+   LLM exposure x Post              −0.00002           −0.004∗∗            0.002            −0.002∗∗∗           117.995∗∗∗
+                                     (0.001)            (0.001)           (0.002)            (0.0002)            (45.546)
+
+   Firm fixed effects                  Yes                Yes              Yes                  Yes                    Yes
+   Year-by-month fixed effects         Yes                Yes              Yes                  Yes                    Yes
+   Observations                     1,268,013          1,267,955        1,266,331            1,267,955              1,268,013
+   Adj. R-squared                     0.983              0.982            0.981                0.979                  0.978
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, using year-by-month fixed effects instead of industry-by-period fixed
+effects. All other definitions are as in Table 3.
+
+
+
+
+   Table A8: Effect of LLM exposure on firm-level job listings, time fixed effects
+
+                                                                       Job postings
+                                            LLM exposure x Post        −0.018∗∗∗
+                                                                        (0.002)
+
+                                            Firm fixed-effects             Yes
+                                            Time fixed effects             Yes
+                                            Observations                1,268,013
+                                            Adjusted R2                   0.519
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity, using year-by-month fixed effects instead of industry-by-period fixed
+effects. All other definitions are as in Table A1.
+
+
+
+
+Table A9: Effect of LLM exposure on occupation-level job postings, job-role by time
+fixed effects
+
+                                                Job postings (log)      Salary         Salary (log)      Salary (SD)
+          LLM exposure x Post                      −0.049∗∗∗          −556.171∗∗∗      −0.011∗∗∗          −105.062
+                                                    (0.018)            (141.990)        (0.003)           (110.474)
+
+          Occupation fixed-effects                     Yes               Yes              Yes                Yes
+          Jobrole-by-period fixed effects              Yes               Yes              Yes                Yes
+          Observations                               16,815             16,815           16,815            16,804
+          Adjusted R2                                 0.963             0.951            0.955              0.736
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, using job-category (1 out of 7) by year-by-month fixed effects
+instead of just year-by-month fixed effects. All other definitions are as in Table 4.
+
+
+
+
+                                                                 37
+A3.2        Within-Firm Analysis of Seniority
+
+Table A10: Effect of LLM exposure on firm-level job outcomes, within firm effects
+
+                               LLM exposure x Post x High seniority            −0.002
+                                                                               (0.002)
+
+                               LLM exposure x Post x Low seniority           −0.007∗∗∗
+                                                                              (0.001)
+
+                               Firm-by-period FE                                 Yes
+                               Firm-seniority FE                                 Yes
+                               Seniority-by-period FE                            Yes
+                               Observations                                   3,792,846
+                               Adjusted R2                                      0.992
+
+Notes: This table reports triple-difference estimates of the effect of LLM exposure on employment
+by seniority level within firms. The dependent variable is log employment at the firm-seniority-
+month level. We interact the post-ChatGPT indicator and firm-level LLM exposure with seniority
+indicators, using mid-seniority positions as the reference category. Low seniority corresponds to
+levels 1–2, mid seniority to levels 3–4, and high seniority to levels 5–7. All regressions include
+firm-by-period fixed effects, firm-by-seniority fixed effects, and seniority-by-period fixed effects.
+All other definitions are as in Table 3.
+
+
+
+A3.3        Firm Selection
+
+Table A11: Effect of LLM exposure on firm-level job outcomes, min. 10 employees
+
+                             Employees     Low seniority        High seniority      Low seniority (%)   Av. comp.
+     LLM exposure x Post      0.0004        −0.002∗∗∗             0.002∗∗∗                −0.001∗∗∗     160.109∗∗∗
+                              (0.001)        (0.001)               (0.001)                 (0.0002)      (52.656)
+
+     Firm fixed effects          Yes            Yes                  Yes                     Yes           Yes
+     Industry-by-period FE       Yes           Yes                   Yes                     Yes           Yes
+     Observations            11,476,930     11,307,751           10,759,217               11,307,751    11,476,930
+     Adj. R-squared             0.973         0.967                 0.968                   0.941         0.944
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes. We use all firms with at least 10 listed employees in October 2022,
+instead of 100 employees as in our main analysis. All other definitions are as in Table 3.
+
+
+
+
+                                                           38
+Table A12: Effect of LLM exposure on firm-level job outcomes, min 50 employees
+
+                                     Employees      Low seniority        High seniority        Low seniority (%)         Av. comp.
+      LLM exposure x Post            −0.003∗∗        −0.004∗∗∗              −0.002                 −0.0004∗∗             136.552∗∗
+                                      (0.001)         (0.001)               (0.002)                 (0.0002)              (53.014)
+
+      Firm fixed effects                Yes              Yes                  Yes                     Yes                   Yes
+      Industry-by-period FE             Yes              Yes                  Yes                     Yes                   Yes
+      Observations                   2,541,572        2,541,147            2,530,632               2,541,147             2,541,572
+      Adj. R-squared                    0.98            0.978                0.977                   0.969                 0.966
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes. We use all firms with at least 50 listed employees in October 2022,
+instead of 100 employees as in our main analysis. All other definitions are as in Table 3.
+
+
+
+
+Table A13: Effect of LLM exposure on firm-level job listings, different minimum
+firm size thresholds
+
+                                                                 min. 10 employees           min. 50 employees
+                         LLM exposure x Post                          −0.004∗∗∗                 −0.008∗∗∗
+                                                                       (0.0003)                  (0.001)
+
+                         Firm fixed-effects                               Yes                       Yes
+                         Industry-by-period fixed effects                 Yes                       Yes
+                         Observations                                 11,476,930                 2,541,572
+                         Adjusted R2                                     0.487                     0.504
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity. We use all firms with at least 10 (column 1) or 50 (column 2) listed
+employees in October 2022, instead of 100 employees as in our main analysis. All other definitions
+are as in Table A1.
+
+
+
+A3.4          Alternative Task-Importance Weights
+
+    Table A14: Effect of LLM exposure on firm-level job outcomes, onet weights
+
+                                        Employees      Low seniority         High seniority        Frac. low seniority       Av. comp.
+  LLM exposure x Post                    −0.002             −0.004∗                −0.001              −0.001∗∗∗              98.318∗
+                                         (0.002)            (0.002)                (0.002)              (0.0003)              (56.416)
+
+  Firm fixed effects                       Yes                 Yes                Yes                     Yes                   Yes
+  Industry-by-period fixed effects         Yes                 Yes                Yes                     Yes                   Yes
+  Observations                          1,268,013           1,267,955          1,266,331               1,267,955             1,268,013
+  Adj. R-squared                          0.983               0.983              0.981                   0.979                 0.978
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, using ONET importance weights for tasks instead of the weights used
+by Eloundou et al. (2024). All other definitions are as in Table 3.
+
+
+
+
+                                                                  39
+     Table A15: Effect of LLM exposure on firm-level job listings, onet weights
+
+                                          LLM exposure x Post                     −0.010∗∗∗
+                                                                                   (0.002)
+
+                                          Firm fixed-effects                         Yes
+                                          Industry-by-period fixed effects           Yes
+                                          Observations                            1,268,013
+                                          Adjusted R2                               0.522
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level job postings, using ONET importance weights for tasks instead of the weights used by
+Eloundou et al. (2024). All other definitions are as in Table A1.
+
+
+
+
+Table A16: Effect of LLM exposure on occupation-level job outcomes, onet weights
+
+                                              Job postings (log)             Salary           Salary (log)      Salary (SD)
+            LLM exposure x Post                    −0.040∗∗            −352.827∗∗∗            −0.007∗∗∗           −31.785
+                                                    (0.018)             (128.078)              (0.002)           (102.706)
+
+            Occupation fixed-effects                 Yes                      Yes                Yes                   Yes
+            Year-by-month fixed effects              Yes                      Yes                Yes                   Yes
+            Observations                            16,815                   16,815             16,815               16,804
+            Adjusted R2                             0.962                    0.948              0.952                 0.729
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job postings, using ONET importance weights for tasks instead of the weights
+used by Eloundou et al. (2024). All other definitions are as in Table 4.
+
+
+
+A3.5          Weighted Regressions
+
+Table A17: Effect of LLM exposure on firm-level job outcomes, weighted regressions
+
+                                     Employees         Low seniority         High seniority        Frac. low seniority        Av. comp.
+ LLM exposure x Post                  −0.003            −0.006∗∗∗               −0.0001                  −0.002∗∗∗            220.367∗∗∗
+                                      (0.002)            (0.002)                (0.003)                   (0.0004)             (54.378)
+
+ Firm fixed effects                     Yes                 Yes                   Yes                       Yes                  Yes
+ Industry-by-period fixed effects       Yes                 Yes                   Yes                       Yes                  Yes
+ Observations                        1,268,013           1,267,955             1,266,331                 1,267,955            1,268,013
+ Adj. R-squared                        0.998               0.998                 0.998                     0.991                0.991
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, weighting observations by pre-treatment employment (October 2022).
+All other definitions are as in Table 3.
+
+
+
+
+                                                                 40
+Table A18: Effect of LLM exposure on firm-level job listings, weighted regressions
+
+                                           LLM exposure x Post                     −0.006
+                                                                                   (0.008)
+
+                                           Firm fixed-effects                        Yes
+                                           Industry-by-period fixed effects          Yes
+                                           Observations                           1,268,013
+                                           Adjusted R2                              0.425
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity, weighting observations by the volume of pre-treatment job listings. All
+other definitions are as in Table A1.
+
+
+
+Table A19: Effect of LLM exposure on occupation-level job outcomes, weighted
+regressions
+
+                                               Job postings (log)         Salary             Salary (log)     Salary (SD)
+             LLM exposure x Post                   −0.038∗∗∗            −473.659∗∗           −0.011∗∗∗         −144.807
+                                                    (0.014)              (188.293)            (0.003)          (169.704)
+
+             Occupation fixed-effects                 Yes                  Yes                   Yes                Yes
+             Year-by-month fixed effects              Yes                  Yes                   Yes                Yes
+             Observations                            16,815               16,815               16,815              16,804
+             Adjusted R2                             0.952                0.979                 0.984              0.871
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job posting, weighting observations by the volume of pre-treatment job listings.
+All other definitions are as in Table 4.
+
+
+
+A3.6          Non-Linear Exposure
+
+Table A20: Effect of LLM exposure on firm-level job outcomes, non-linear exposure
+
+                                      Employees         Low seniority         High seniority       Low seniority (%)        Av. comp.
+  LLM exposure bin 2 x Post             0.003               0.002                 0.004                  −0.001               50.364
+                                       (0.004)             (0.004)               (0.004)                 (0.001)            (119.736)
+
+  LLM exposure bin 3 x Post            −0.003              −0.007∗                0.003                 −0.002∗∗∗           263.580∗
+                                       (0.004)             (0.004)               (0.005)                 (0.001)            (134.525)
+
+  LLM exposure bin 4 x Post            0.0004              −0.005                 0.006                 −0.003∗∗∗           283.476∗
+                                       (0.005)             (0.005)               (0.005)                 (0.001)            (157.186)
+
+  Firm fixed-effects                     Yes                 Yes                   Yes                     Yes                 Yes
+  Industry-by-period fixed effects       Yes                 Yes                   Yes                     Yes                 Yes
+  Observations                        1,268,013           1,267,955             1,266,331               1,267,955           1,268,013
+  Adj. R-squared                        0.983               0.983                 0.981                   0.979               0.978
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level employment outcomes using exposure quartiles. Firms are divided into four bins based
+on their pre-treatment LLM exposure scores, with bin 1 (lowest exposure quartile) serving as the
+reference category. Bins 2, 3, and 4 represent the second, third, and fourth quartiles of the exposure
+distribution, respectively. All other definitions are as in Table 3.
+
+
+
+                                                                 41
+Table A21: Effect of LLM exposure on firm-level job listings, non-linear exposure
+
+
+                               LLM exposure bin 2 x Post           −0.015∗∗∗
+                                                                    (0.004)
+
+                               LLM exposure bin 3 x Post           −0.025∗∗∗
+                                                                    (0.005)
+
+                               LLM exposure bin 4 x Post           −0.026∗∗∗
+                                                                    (0.005)
+
+                               Firm fixed-effects                     Yes
+                               Industry-by-period fixed effects       Yes
+                               Observations                        1,268,013
+                               Adj. R-squared                        0.522
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level job posting activity, using exposure quartiles. Firms are divided into four bins based
+on their pre-treatment LLM exposure scores, with bin 1 (lowest exposure quartile) serving as the
+reference category. Bins 2, 3, and 4 represent the second, third, and fourth quartiles of the exposure
+distribution, respectively. All other definitions are as in Table A1.
+
+
+
+
+Table A22: Effect of LLM exposure on occupation-level job listings, non-linear
+exposure
+
+
+                                      Job posts (log)      Salary (lvl)    Salary (log)   SD salary
+       LLM exposure bin 2 x Post          −0.006            −436.848           −0.004     −248.627
+                                          (0.048)           (413.685)          (0.008)    (406.298)
+
+       LLM exposure bin 3 x Post           0.033            −298.922           −0.003       3.184
+                                          (0.048)           (435.849)          (0.008)    (389.215)
+
+       LLM exposure bin 4 x Post          −0.091∗         −1,018.329∗∗         −0.019∗∗    −71.245
+                                          (0.047)          (424.148)            (0.008)   (392.062)
+
+       Occupation fixed-effects            Yes                 Yes               Yes         Yes
+       Year-by-month fixed effects         Yes                 Yes               Yes         Yes
+       Observations                       16,815              16,815            16,815     16,804
+       Adj. R-squared                     0.962               0.948             0.952       0.729
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, using exposure quartiles. Firms are divided into four bins based
+on their pre-treatment LLM exposure scores, with bin 1 (lowest exposure quartile) serving as the
+reference category. Bins 2, 3, and 4 represent the second, third, and fourth quartiles of the exposure
+distribution, respectively. All other definitions are as in Table 4.
+
+
+
+
+                                                     42
+A4      Representativeness of Revelio Labs Data
+A potential concern with using Revelio Labs data is that the coverage of LinkedIn
+profiles may not be representative of the broader UK labor market. To investigate
+this concern, we compare Revelio Labs employment and job posting data against
+official statistics from the Office for National Statistics (ONS). We conduct two sets
+of analyses: an aggregate time-series comparison examining whether employment
+and vacancy trends in Revelio Labs data track official statistics over time, and
+a cross-sectional industry-level comparison examining whether employment shares
+across industries are similar in both data sources.
+    For the aggregate time-series analysis, we standardize both Revelio Labs and
+ONS monthly time series by subtracting the mean and dividing by the standard
+deviation, creating z-scores that allow direct comparison of trends. We then regress
+the standardized ONS employment and vacancy series on their Revelio Labs coun-
+terparts. Table A24 presents the results. Column 1 shows that standardized Revelio
+Labs employment is a strong predictor of standardized ONS employment. Column
+2 shows that standardized Revelio Labs job postings similarly track ONS vacancies.
+The correlations indicate that aggregate employment and hiring dynamics in Revelio
+Labs data closely mirror official statistics over time.
+    For the cross-sectional industry-level analysis, we map Revelio Labs’ RICS in-
+dustry classifications to ONS Standard Industrial Classification (SIC) categories.
+We aggregate employment across 50 Revelio Labs industry categories into 16 broad
+ONS industry groups, then calculate each industry’s share of total employment in
+both datasets. Table A26 presents regression results from regressing Revelio Labs
+employment shares on ONS employment shares. The coefficient is is again very high,
+with 0.706. Figure A1 visualizes this relationship: points cluster tightly around the
+45-degree line, confirming that industries with larger employment shares in ONS
+data also have correspondingly larger shares in Revelio Labs data. Taken together,
+these validation exercises suggest that Revelio Labs data provide a representative
+picture of UK labor market dynamics.
+
+
+
+
+                                         43
+    Table A23: Comparison of ONS and Revelio Labs Employment over Time
+
+
+              Table A24: Comparison of ONS and Revelio employment
+
+                                                    Dependent variable:
+                                              Employment           Vacancies
+                                                   (1)                (2)
+                      Revelio employment        0.456∗∗∗
+                                                 (0.121)
+
+                      Revelio job listings                         0.422∗∗∗
+                                                                    (0.123)
+
+                      Constant                    0.000              0.184
+                                                 (0.120)            (0.122)
+
+                      Observations                  56                 47
+                      R2                          0.208              0.207
+                      Adjusted R2                 0.193              0.190
+                      Residual Std. Error    0.898 (df = 54)    0.833 (df = 45)
+                      Note:                       ∗ p<0.1; ∗∗ p<0.05; ∗∗∗ p<0.01
+
+
+
+
+Notes: This table reports OLS estimates from regressing standardized ONS statistics on stan-
+dardized Revelio Labs data. Column 1 uses monthly employment totals; column 2 uses monthly
+vacancy/job posting counts. All variables are standardized by subtracting the mean and dividing
+by the standard deviation.
+
+
+
+
+                                                 44
+Table A25: Comparison of ONS and Revelio Labs Employment Shares across In-
+dustries
+
+
+          Table A26: Comparison of ONS and Revelio employment shares
+
+                                                   Dependent variable:
+                                                   Revelio employment
+                         ONS employment                  0.706∗∗∗
+                                                          (0.161)
+
+                         ONS job listings                  0.018
+                                                          (0.012)
+
+                         Observations                        16
+                         R2                                0.578
+                         Adjusted R2                       0.548
+                         Residual Std. Error          0.023 (df = 14)
+                         Note:                 ∗ p<0.1; ∗∗ p<0.05; ∗∗∗ p<0.01
+
+
+
+
+Notes: This table reports OLS estimates from regressing Revelio Labs industry employment shares
+on ONS industry employment shares. Employment shares are calculated as each industry’s fraction
+of total employment. Industries are defined using 16 broad ONS Standard Industrial Classification
+(SIC) categories.
+
+
+
+
+                                                45
+                Figure A1: Employment Shares: ONS vs. Revelio Labs
+                                                            Comparison of ONS and Revelio employment shares
+                                                     0.12
+
+
+
+
+                    Fraction of Revelio employment   0.09
+
+
+
+
+                                                     0.06
+
+
+
+
+                                                     0.03
+
+
+
+
+                                                     0.00
+
+                                                                                 0.05                        0.10
+                                                                                    Fraction of ONS employment
+
+Notes: This figure plots industry-level employment shares from Revelio Labs against corresponding
+shares from ONS data. Each point represents one of 16 broad ONS industry categories. The dashed
+line indicates perfect correspondence (45-degree line). Points close to this line indicate that an
+industry’s share of total employment is similar in both datasets.
+
+
+
+
+                                                                                           46
+

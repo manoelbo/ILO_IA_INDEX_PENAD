@@ -1,0 +1,58 @@
+       RAMBACHAN AND ROTH            A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                            2559
+
+the outcome of the treated group. Leavitt (2020) proposes an empirical Bayes approach cali-
+brated to pre-treatment differences in trends, and Bilinski and Hatfield (2020) and Dette and
+Schumann (2020) propose non-inferiority approaches based on pre-tests for the magnitude of
+the pre-treatment violations of parallel trends.
+    Our methods address several concerns related to current empirical practice in DiD and event-
+study designs. First, pre-trends tests may be underpowered against meaningful violations of
+parallel trends, potentially leading to severe undercoverage of conventional confidence inter-
+vals (Freyaldenhoven et al., 2019; Bilinski and Hatfield, 2020; Kahn-Lang and Lang, 2020;
+
+
+
+
+                                                                                                                      Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+Roth, 2022). Second, statistical distortions from pre-trends tests may further undermine the per-
+formance of conventional inference procedures (Roth, 2022). Third, parametric approaches to
+controlling for pre-existing trends may be sensitive to functional form assumptions (Wolfers,
+2006; Lee and Solon, 2011). We address these issues by providing tools for inference that
+do not rely on an exact parallel trends assumption, incorporate statistical uncertainty about
+the estimated event-study coefficients, and make clear the mapping between the researcher’s
+assumptions about the potential differences in trends and the strength of their causal conclusions.
+    Our work complements a growing literature on the causal interpretation of event-study
+coefficients in two-way fixed effects models in the presence of staggered treatment timing
+and heterogeneous treatment effects (Borusyak and Jaravel, 2016; Callaway and Sant’Anna,
+2020; de Chaisemartin and D’Haultfæuille, 2020; Sun and Abraham, 2020; Athey and Imbens,
+2021; Goodman-Bacon, 2021). A key finding is that regression coefficients from conventional
+approaches may not produce convex weighted averages of treatment effects even if parallel
+trends holds. Several alternative estimators have been proposed that consistently estimate inter-
+pretable causal estimands under a suitable parallel trends assumption. Our methodology can be
+used in conjunction with these alternative estimators to assess their sensitivity to violations of
+the corresponding parallel trends assumption; see Section 2.1 for additional details.
+    More broadly, our work contributes to a larger econometric literature that uses partial
+identification to provide empirical researchers with tractable tools to conduct inference under
+assumptions that may be more credible in empirical practice; see, for example, Manski (2003,
+2007, 2013), Tamer (2010), Ho and Rosen (2017), and Molinari (2020) for reviews.
+
+
+                                            2. MODEL SET-UP
+2.1.    Event-study coefficients
+We suppose that the researcher has estimated a vector of “event-study coefficients” β̂ n ∈ RT¯ +T̄ ,
+which can be partitioned into vectors of coefficients corresponding with the pre-treatment
+                                                   
+and post-treatment periods, β̂ n = (β̂ n, pr e , β̂ n, post ), where β̂ n, pr e ∈ RT¯ and β̂ n, post ∈ RT̄ . Event-
+study estimates of this form arise from non-staggered DiD as well as a variety of related
+estimators, as we illustrate with several examples
+Example 1 (Non-staggered DiD). Consider the canonical DiD setting in which we have a bal-
+anced panel of units from period t = −T, . . . , T̄ , and units with Di = 1 receive a treatment
+                                         ¯ D = 0 never receive the treatment. It is common to
+beginning in period t = 1, while units with i
+report DiD estimates of the form
+
+                                     β̂ s = (Ȳs1 − Ȳs0 ) − (Ȳ01 − Ȳ00 ),
+
+where Ȳsd is the sample mean of the outcome for units with Di = d in period t = s. Intuitively,
+β̂ s compares the change in the mean outcome between period 0 and period s for the treated
+and comparison units. In this setting, the estimates β̂ s are numerically equivalent to the OLS
+

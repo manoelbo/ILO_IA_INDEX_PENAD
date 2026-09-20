@@ -1,0 +1,68 @@
+                                                                                                                          30
+
+Figure 4: Comparing decisions with and without AI assistance – Bayesian with correct beliefs
+
+                                                           A |ω=1,s )  E
+                                                    log π(s
+                                                        π(sA |ω=0,sE )
+                                                                                  a∗No AI ̸= a∗Bayesian
+                                                    a∗Bayesian = 1
+                                                     a∗No AI = 0
+
+
+                                                                                 a∗Bayesian = 1
+                                                                                  a∗No AI = 1
+                                                                       log(crel )
+                                                                                                          E
+                                                                                            log π(ω=1|s  )
+                                                                                                π(ω=0|sE )
+
+
+                                   a∗Bayesian = 0
+                                    a∗No AI = 0
+                                                                       a∗Bayesian = 0
+
+                                                               No AI
+
+
+
+
+                                                                                           B
+                                                                                            ay
+                                                                        a∗No AI = 1
+
+
+
+
+                                                                                              es
+                                                                                                ia
+                                                                                                  n
+Note: The figure shows the decision criterion of a Bayesian with and without AI assistance and where their decisions agree and
+disagree. Shaded regions show the regions in which AI improves or worsens decision making.
+
+
+
+5.2     Implications for Human-AI Collaboration
+
+We now show that the types of deviations described above have implications for when AI
+assistance unambiguously improves human performance. The results will also illustrate the
+utility of the simple functional forms in equations (5) and (6). This subsection drops the i
+and r indices for simplicity of notation.
+It is useful to start by considering the decisions with and without AI assistance for a Bayesian
+decision maker. Figure 4 illustrates the realizations of sA for which the optimal decision with
+AI assistance differs from the the decision without AI assistance for a fixed crel . The horizontal
+                                                π (ω=1|sE )      π (sA |ω=1,sE )
+and vertical axes respectively represent log π(ω=0|sE ) and log π(sA |ω=0,sE ) . As shown by the
+                                                                                          π (ω=1|sE )
+vertical dashed line, the decision-maker would take the action 1 if and only if log π(ω=0|sE )
+exceeds log crel . The solid line represents the analogous boundary for a Bayesian who has
+access to AI assistance. Observe that the decisions a Bayesian makes as a function of the
+signals sA and sE cannot be improved without additional information. Thus, a Bayesian with
+correct beliefs and access to both signals improves upon the no AI action in the vertically
+shaded region.
+Now consider humans that may deviate from this benchmark model. A human who takes
+                                                        
+a given action without AI assistance a∗No AI = a∗ sE ; pr , but a different action with AI
+                                                                                                             
+assistance (so that a∗No AI ̸= a∗AI ) makes a worse decision if a∗AI = a∗ sA , sE ; pr disagrees with
+

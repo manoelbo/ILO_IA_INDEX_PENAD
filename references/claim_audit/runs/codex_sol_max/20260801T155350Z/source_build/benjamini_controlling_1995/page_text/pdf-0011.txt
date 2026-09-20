@@ -1,0 +1,55 @@
+298                          BENJAMINI AND HOCHBERG                            [No.1,
+  (f) The advantage in some situations is extremely large. For example, testing
+      32 hypotheses, equally spread in four clusters from 1.25 to 5 so that none
+      is true, the power of the Bonferroni method is 0.42. The procedure suggested
+      increases the power to 0.65; testing as few as four hypotheses, half of which
+      are true, the values are 0.62 and 0.70 respectively.
+  (g) It is known that Hochberg's method offers a more powerful alternative to
+      the traditional Bonferroni method. Nevertheless, it is important to note that
+      the gain in power due to the control of the FDR rather than the FWER is
+      much larger than the gain of the FWER controlling method over the Bonfer-
+      roni method.
+
+
+
+
+                                                                                         Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+   Casting these results into a different form, it may be seen that in some configura-
+tions up to half the non-null hypotheses which were not rejected by the Bonferroni
+procedure are now rejected by the FDR controlling method, when at least half of
+the tested hypotheses are non-null. Even when only 250/0 of the hypotheses are non-
+null, the gain in power is such that about a quarter of the equally spaced hypotheses
+which were not rejected before are now rejected.
+   Fig. 1 allows us also to answer a question raised by a referee, about how
+E(V/mo) is controlled by the FDR controlling method. This error rate is 0 when
+mo = 0 and otherwise can be approximated by the average level aave at which the
+individual hypotheses are tested. Obviously aave is always less than q*, but for m.,
+away from m more can be said: let Rave be the average number of rejections and
+lave be the average power (displayed in Fig. 1). It follows that ma ave ~ Raveq* ==
+(moaave + ml/ave)q*, so
+
+                                  .. *       ml
+                          aave ~ Javeq m, + mo(1 _ q*) .
+
+Therefore E(V/mo) looks as in Fig. 1 but is smaller by a factor of q* or even less.
+For m = mo the error is much closer to q*/mo than to q*: 0.0132, 0.0063, 0.0033,
+0.0017 and 0.0009 for the four, eight, 16, 32 and 64 hypotheses tested respectively.
+
+
+                                 5.   CONCLUSION
+   The approach to multiple significance testing in this paper is philosophically
+different from the classical approaches. The classical approach requires the control
+of the FWER in the strong sense, a conservative type I error rate control against
+any configuration of the hypotheses tested. The new approach calls for the control
+of the FDR instead, and thereby also the control of the FWER in the weak sense.
+In many applications this is the desirable control against errors originating from
+multiplicity.
+   Within the framework suggested, other procedures may be developed, including
+procedures which utilize the structure of specific problems such as pairwise com-
+parisons in analysis of variance. A different direction, which we have already
+pursued, is to develop an adaptive method which incorporates the ideas of Hochberg
+and Benjamini (1990). In this paper, however, we have only focused on presenting
+and motivating the new approach that calls for controlling the FDR, and we have
+demonstrated that it can be developed into a simple and powerful procedure. Thus
+the cost paid for the control of multiplicity need not be large. This might contribute
+

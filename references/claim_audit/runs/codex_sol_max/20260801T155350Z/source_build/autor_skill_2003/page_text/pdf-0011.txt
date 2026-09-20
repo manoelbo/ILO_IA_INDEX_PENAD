@@ -1,0 +1,48 @@
+             SKILL CONTENT OF TECHNICAL CHANGE               1289
+
+where u in this expression is the ratio of routine to nonroutine
+task input in production:
+
+(5)                   u ; ~C 1 g~h*!!/h~h*!.
+
+     These equations provide equilibrium conditions for the mod-
+el’s ve endogenous variables (w R ,w N ,u,C,h). We use them to
+analyze how a decline in the price of computer capital affects task
+input, wages, and labor supply, beginning with the wage paid to
+routine task input.
+     It is immediate from (2) that a decline in the price of com-
+puter capital reduces w R one-for-one, ](ln w R )/](ln r) 5 1, and
+hence demand for routine task input rises:
+
+                          ] ln u   1
+(6)                              52 .
+                          ] ln r   b
+
+     From the perspective of producers, the rise in routine task
+demand could be met by either an increase in C or an increase in
+L R (or both). Only the rst of these will occur, however. Because
+routine and nonroutine tasks are productive complements (spe-
+cically q-complements), the relative wage paid to nonroutine
+tasks rises as r declines:
+
+             ] ln~wN /wR !    1          ] ln h* 1
+(7)                        52      and           5 .
+                ] ln r        b           ] ln r  b
+
+Consequently, marginal workers will reallocate their labor input
+from routine to nonroutine tasks. Increased demand for routine
+tasks must be met entirely by an inux of computer capital.
+     Hence, an exogenous decline in the price of computer capital
+raises the marginal productivity of nonroutine tasks, causing
+workers to reallocate labor supply from routine to nonroutine
+task input. Although routine labor input declines, an inow of
+computer capital more than compensates, yielding a net increase
+in the intensity of routine task input in production.
+
+
+I.B. Industry Level Implications
+     Does this model have testable microeconomic implications?
+Because the causal force in the model is the price of computer
+capital, in one sense we have only a single macroeconomic time
+series available. However, additional leverage may be gained by
+

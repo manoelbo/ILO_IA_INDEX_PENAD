@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "ingest" / "download.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "ingest" / "download.py"
 
 
 def load_download_module():

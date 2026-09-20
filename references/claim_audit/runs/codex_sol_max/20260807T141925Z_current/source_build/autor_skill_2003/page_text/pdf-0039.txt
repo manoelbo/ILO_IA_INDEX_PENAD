@@ -1,0 +1,46 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                          1317
+
+The intuition for this calculation is that industries and occupa-
+tions that are high in nonroutine cognitive task input, and low in
+routine manual and routine cognitive task input, employ college
+graduates relatively intensively. Consequently, secular increase
+in nonroutine cognitive task input and declines in nonroutine
+cognitive and manual task input over 1970 –1998 will cause equa-
+tion (18) to predict corresponding growth in the college graduate
+share of aggregate employment.
+     Table VII summarizes the changes in job task input due to
+cross-occupation (extensive margin) and within-occupation (inten-
+sive margin) shifts documented by our earlier analyses. Panel A
+presents observed economywide shifts in task input during the pe-
+riod 1970 to 1998. Panel B presents analogous numbers where in
+place of observed task changes, we tabulate changes in task input
+predicted by computerization. Specically, we use estimates of equa-
+tions (14)–(16), corresponding to the models in Tables IV–VI, to
+calculate the predicted mean change in each task measure due to
+contemporaneous industry or occupation computerization. A limita-
+tion of this approach is that it treats computerization as an exoge-
+nous determinant of industry and occupation task change. Since, as
+stressed above, we view computer adoption and task change as
+simultaneously determined, we view this exercise as primarily
+illustrative.
+     We implement these calculations in panels C and D. Panel C
+uses equation (18) to estimate the extent to which rising input of
+nonroutine tasks and declining input of routine tasks raised the
+college share of aggregate employment over 1970 –1998. As seen
+in columns 1– 4, observed cross-occupation (extensive margin)
+task changes raised college employment by 2.1 percentage points
+per decade between 1970 and 1998. Three-quarters of this con-
+tribution (1.5 percentage points) is due to shifts favoring nonrou-
+tine cognitive tasks. The remainder is explained by shifts against
+routine cognitive and manual tasks.
+     Columns 5–7 perform analogous calculations for 1980 to 1998.
+Here we add within-occupation (intensive) margin task change for
+1977 to 1991. In net, shifts favoring nonroutine over routine tasks
+contributed 2.5 percentage points growth per decade to college-
+equivalent employment over these eighteen years.27
+
+     27. Observed intensive margin shifts did not contribute to this demand
+growth, however, due to the offsetting effects of routine cognitive and nonroutine
+analytic tasks. This stands in contrast to within-occupation task changes pre-
+dicted by computerization, where intensive margin shifts are economically large.
+

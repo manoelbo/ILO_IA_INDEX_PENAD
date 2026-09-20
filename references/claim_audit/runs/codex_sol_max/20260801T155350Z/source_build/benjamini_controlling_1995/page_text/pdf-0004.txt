@@ -1,0 +1,53 @@
+1995]                     CONTROLLING FALSE DISCOVERY RATE                        291
+                                           TABLE 1
+                Number of errors committed when testing m null hypotheses
+
+                                            Declared         Declared     Total
+                                          non-significant   significant
+
+
+               True null hypotheses             U               V          mo
+               Non-true null hypotheses         T               S         m-mo
+
+                                              m-R               R          m
+
+
+
+
+                                                                                        Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+situation in a traditional form. The specific m hypotheses are assumed to be known
+in advance. R is an observable random variable; U, V, Sand T are unobservable
+random variables. If each individual null hypothesis is tested separately at level a,
+then R = R(a) is increasing in a. We use the equivalent lower case letters for their
+realized values.
+   In terms of these random variables, the peER is E(V 1m) and the FWER is
+P(V ~ 1). Testing individually each hypothesis at level a guarantees thatE(V 1m) ~ a.
+Testing individually each hypothesis at level aim guarantees that P(V ~ 1) ~ a.
+
+
+                    2.1. Definition of False Discovery Rate
+   The proportion of errors committed by falsely rejecting null hypotheses can be
+viewed through the random variable Q = VI(V + S)- the proportion of the rejected
+null hypotheses which are erroneously rejected. Naturally, we define Q = 0 when
+V + S = 0, as no error of false rejection can be committed. Q is an unobserved
+(unknown) random variable, as we do not know v or s, and thus q = vl(v + s),
+even after experimentation and data analysis. We define the FDR Qe to be the
+expectation of Q,
+
+                        Qe = E(Q) = E{V/(V + S)} = E(V/R).
+
+  Two properties of this error rate are easily shown, yet are very important.
+  (a) If all null hypotheses are true, the FDR is equivalent to the FWER: in this
+      case s = 0 and v = r, so if v = 0 then Q = 0, and if v > 0 then Q = 1,
+      leading to P(V ~ 1) = E(Q) = Qe' Therefore control of the FDR implies
+      control of the FWER in the weak sense.
+  (b) When mo < m, the FDR is smaller than or equal to the FWER: in this
+      case, if v > 0 then vir ~ 1, leading to X(V ~ I) ~ Q. Taking expectations on
+      both sides we obtain P(V ~ 1) ~ Qe, and the two can be quite different. As
+      a result, any procedure that controls the FWER also controls the FOR.
+      However, if a procedure controls the FDR only, it can be less stringent, and
+      a gain in power may be expected. In particular, the larger the number of
+      the non-true null hypotheses is, the larger S tends to be, and so is the
+      difference between the error rates. As a result, the potential for increase in
+      power is larger when more of the hypotheses are non-true.
+

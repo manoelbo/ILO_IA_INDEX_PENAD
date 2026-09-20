@@ -1,0 +1,42 @@
+are unlikely to explain the specific effect identified by our empirical design.
+
+
+5.4.1   Interest Rates
+
+A natural concern is that other contemporaneous shocks may have disproportionately af-
+fected labor demand for junior workers in GenAI-adopting firms relative to non-adopters.
+The first such concern is that GenAI adopters may be more sensitive to monetary policy
+cycles and thus may have reacted more strongly to the 2022–2023 interest rate hikes. How-
+ever, several pieces of evidence suggest that this mechanism does not drive our findings.
+First, if monetary policy shocks had played a role, we would expect to see effects in the
+pre-trend coefficients of Figure 7, yet none are observed. Second, even if interest rate
+changes disproportionately affected industries where adopters are concentrated or had
+stronger impacts on junior roles, these dynamics should be absorbed by the industry-by-
+seniority-by-time fixed effects in the triple-difference estimates in Section 5.2.
+   Third, we directly test for this channel following Ottonello and Winberry (2020). We
+use the high-frequency identified monetary-policy surprises of Jarocinski and Karadi
+(2020), aggregated to the quarterly level as the in-quarter sum of monthly surprises, and
+estimate the differential-sensitivity regression
+
+                  log Li,t+1 − log Li,t = αi + γt + β Adopteri × εm
+                                                                    
+                                                                  t + ηi,t ,              (14)
+
+on the pre-2022 firm-quarter panel (t ∈ 2015Q1–2021Q3), to see if our adopter firms were
+disproportionately responsive to previous monetary policy shocks. The outcome is the
+forward one-quarter log change in total or junior employment, αi and γt are firm and
+year-quarter fixed effects. Under the monetary-policy confounder story, β < 0: adopters
+should contract more than non-adopters in the quarter following a tightening shock.
+   Table 3 reports the estimates. For total employment, the interaction is small and of the
+opposite sign to what the confounder story would predict ( β̂ = 0.046, s.e. 0.020): adopters
+expand slightly more, not less, than non-adopters in the quarter following a tightening.
+For junior employment, the interaction is small and statistically insignificant ( β̂ = 0.018,
+s.e. 0.025). Either way, there is no evidence that adopters contract differentially after iden-
+tified monetary-policy shocks. Appendix A.23 reports lag-augmented local-projection
+impulse responses (Jordà, 2005; Montiel Olea and Plagborg-Møller, 2021) across horizons
+
+
+
+
+                                              37
+

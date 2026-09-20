@@ -1,0 +1,59 @@
+                                                                                                                              92
+
+                                                  Table C.13: Average Treatment Effects
+
+                                         Deviation       Deviation from          Effort Measures
+                                         from AI         Ground Truth          Active Time   Clicks
+  Treatment                                 (1)                 (2)                 (3)            (4)
+  AI × CH                                 −0.027              −0.035               11.15         −0.49
+                                          (0.022)             (0.029)             (28.70)        (6.58)
+  AI                                      −0.028              0.029               −14.56          1.45
+                                          (0.017)             (0.022              (17.94)        (4.42)
+  CH                                      −0.009              −0.010               14.46          0.79
+                                          (0.016)             (0.019)             (21.96)        (4.78)
+  Control Mean                             0.228               0.229              195.90         45.28
+                                          (0.010)             (0.015)             (14.05)        (2.93)
+  Pathology FE                             Yes                 Yes                   -             -
+  Observations                             3690                3690                1845          1845
+
+Note: Main specifications similar to table 2 with the exception that observations are from the first treatment received in designs
+1 and 2 only.
+
+
+
+Previous Exposure to AI (Design 2)
+
+
+                          Figure C.28: Conditional treatment effect given AI prediction
+
+                                            .02
+                  from AI in Session 2
+
+
+
+
+                                             0
+                   ATE on Deviation
+
+
+
+
+                                           -.02
+
+
+                                           -.04                                                  AI in Second Session
+                                                                                                 No AI in Second Session
+                                                                                                 AI in First Session
+                                                                                                 No AI in First Session
+                                           -.06
+                                                      Lagged Effect     Contemporaneous Effect
+                                                         of AI                 of AI
+
+
+
+Note: This graph shows the treatment effects of the deviation from AI in the second session because of receiving AI signal in the
+first session conditional on receiving AI signal in the second session (Lagged Effect). On the other hand, the contemporaneous
+effects show the deviation from AI in the second session given the participants receive AI in the second session, conditional on
+receiving AI signal in the second session. These graphs are valid only for design 2 as participants see the same image but in a
+different information environment.
+

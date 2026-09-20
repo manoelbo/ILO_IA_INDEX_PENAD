@@ -1,0 +1,41 @@
+{
+  "artifact": "Spatial full/reproduce and independent-R equivalence receipt",
+  "checked_at": "2026-08-02",
+  "comparison": {
+    "excluded_files": [
+      "run_manifest.json"
+    ],
+    "file_count_full": 18,
+    "file_count_reproduce": 18,
+    "non_manifest_bytes_full": 126568,
+    "non_manifest_bytes_reproduce": 126568,
+    "non_manifest_files_byte_identical": true,
+    "status": "pass"
+  },
+  "family_f_contract": {
+    "coefficients_created": 0,
+    "declared_slots": 12,
+    "declaration_sha256": "3701d7a73c2bf3edc19cd4dca48a3e4869eff716c09f2720840c373cef7d9911",
+    "p_values_created": 0,
+    "support_stop_replicated_in_r": true,
+    "treatment_coefficient_estimated": false
+  },
+  "independent_r_replication": {
+    "coefficient_rows": 184,
+    "contracts": 16,
+    "failed_coefficient_rows": 0,
+    "failed_pretrend_models": 0,
+    "failed_support_proxies": 0,
+    "maximum_coefficient_absolute_difference": 4.1511238890734603e-13,
+    "maximum_standard_error_absolute_difference": 3.583848912080967e-10,
+    "numeric_tolerance": 1e-06,
+    "r_version": "4.4.1",
+    "status": "pass",
+    "status_sha256": "df7bc2394e8e965765cb46edbe7fab6267ae61e4fdcf25e9385f29d3069afe2f"
+  },
+  "run_manifests": {
+    "full_sha256": "a3cbb794b3a1972483ccf2f5c35b431397b120adf3f919fd319639be931410c5",
+    "reproduce_sha256": "85643974f28221a8d17565f4c541c102366fd1ef263620cc48e54e2e71f40c60"
+  },
+  "status": "pass"
+}

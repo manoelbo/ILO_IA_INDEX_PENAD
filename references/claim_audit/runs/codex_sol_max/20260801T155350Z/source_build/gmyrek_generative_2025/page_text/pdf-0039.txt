@@ -1,0 +1,63 @@
+36        ILO Working Paper 140
+
+
+
+
+     resource-intensive and limited by our relatively small dataset.15 In contrast, by using a sufficiently
+     large set of example tasks within the prompt, we can provide the model with explicit “demon-
+     strations” of scoring of similar tasks in our main dataset. To ensure a balanced approach, we
+     provide each prompt with a sample of tasks with the highest 50 and lowest 50 scores, alongside
+     the scores of 30 tasks with greatest semantic similarity to the tasks that the model is request-
+     ed to score. To create the semantic context, we construct a rapid-search vector database with
+     all 2,861 adjusted scores. The database is queried at the start of each API call and extracts tasks
+     with semantic similarity to the task that is being scored. Once the 30 most similar tasks have
+     been retrieved, a set of complete instructions is passed to the model’s API, as per the general
+     prompt strategy illustrated in Box 3.
+
+     We first validate the predictive model using a sample of tasks from the survey that were adjust-
+     ed as per sections 5-7, but not included in the semantic context provided to the model.16 Once
+     the prompt adjustments deliver satisfactory performance, we use the same system to predict
+     automation scores for 3,265 tasks in ISCO-08 (as in Gmyrek et al., 2023).17 This approach bridg-
+     es expert-validated human assessments with the scalability of LLM-based predictions, enabling
+     consistent and extensible scoring for tasks across classification systems.
+
+     For a further refinement of our scoring system, we filter 364 tasks where the scoring in 2025
+     changed by more than 25% of the absolute value of 2023 score. We review these tasks manually,
+     using an expert consensus-building method. First, we conduct a mini survey among co-authors,
+     in which each respondent is asked to arbitrate between the diverging scores. For 64 ISCO-08
+     tasks, where we still observe a divergence of expert opinions, we conduct a detailed group dis-
+     cussion, in order to reach consensus and agree on a justification.
+
+     Following the final manual verification process, we establish a second knowledge repository, also
+     stored in a vector database. The main LLM prompt is then updated to incorporate this additional
+     reference by conducting two sequential semantic context retrievals for each prediction, further
+     improving the model’s precision in predicting scores for new tasks. Using this approach, we gen-
+     erate predictions for all 29,753 tasks in the Polish classification system (Table 1).
+
+     To compare these 6-digit predictions with 4-digit ISCO-08 classifications, we calculate (i) the mean
+     of all task scores aggregated at the 4-digit level and (ii) occupational means at the 6-digit level,
+     subsequently deriving the 4-digit mean from these 6-digit components. In both cases, the corre-
+     lation between predictions based on ISCO-08 tasks and Polish 6-digit tasks is 0.92, demonstrating
+     exceptional stability of predictions. In other words, while one might question the exact scores
+     assigned to tasks in our knowledge repository – a challenge not unique to our study – once the
+     repository and prompting techniques are in place, the model consistently produces stable pre-
+     dictions based on reference tasks and their scores, and irrespective of the occupational classifica-
+     tion system. This approach offers promising possibilities for replication across other occupation-
+     al classifications, which we intend to explore further. For the remainder of this paper, we focus
+     primarily on revising ISCO-08 scores, leaving a detailed analysis of Poland’s 6-digit occupations
+     for a separate study (Gmyrek et al., forthcoming, 2025).
+
+
+     15
+          See OpenAI fine-tuning guidelines and developer forum https://platform.openai.com/docs/guides/fine-tuning.
+     16
+          These tasks were split into an 80-20 proportion, with 80% used for training and 20% reserved for validation. Performance was meas-
+          ured using Root Mean Square Error (RMSE) and Mean Absolute Error (MAE), with the adjusted scores showing better agreement (MAE
+          = 0.0494, RMSE = 0.0724) compared to the predicted scores (MAE = 0.0684, RMSE = 0.0963). Correlation analysis further supported
+          this, with adjusted scores exhibiting higher Pearson (0.895) and Spearman (0.884) correlations than predicted scores (Pearson: 0.796,
+          Spearman: 0.776). This is understandable, as the adjusted scores were based on two points of reference (survey score and expert
+          score), making them more stable and easier to predict. In contrast, for the predicted scores, the test involves a repeated prediction
+          process, which amplifies the original error.
+     17
+          There are 3,123 distinct tasks in ISCO-08 and 3,265 tasks in total, as some occupations share the same task.
+

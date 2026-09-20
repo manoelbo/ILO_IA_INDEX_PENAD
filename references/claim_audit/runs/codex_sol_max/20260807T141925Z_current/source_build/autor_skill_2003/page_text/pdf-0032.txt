@@ -1,0 +1,45 @@
+1310          QUARTERLY JOURNAL OF ECONOMICS
+
+
+this occur? One possibility is that as industries purchase com-
+puter capital, they hire better educated workers who specialize in
+these tasks. Alternatively, industries may change the task as-
+signments of workers with given educational attainments, reduc-
+ing their allocation to routine tasks and raising it to nonroutine
+tasks. We explore the relative importance of these two channels
+by estimating a variant of equation (13) for within-industry task
+upgrading by education group. Specically, we estimate the
+model,
+(15)                DT ijkt 5 a i 1 f iDC j 1 e ijkt,
+where the dependent variable is the within-industry change in
+the mean of each DOT task, measured in centiles of the 1960
+distribution, among workers of the same educational attainment.
+In this equation, i indexes each of four education groups— high
+school dropouts, high school graduates, some-college completers,
+and college graduates—and subscripts j, k, and t refer to indus-
+tries, tasks and time periods as above. We estimate this model
+using industry task data for 1980 –1998 to exploit the (almost)
+contemporaneous industry computer use data for 1984 –1997.
+     To establish a baseline for comparison, we initially estimate
+equation (15) for aggregate within-industry task changes over
+1980 –1998 (i.e., incorporating both between- and within-educa-
+tion group task shifts). Consistent with earlier ndings, these
+estimates in panel A of Table V show striking correlations be-
+tween industry computerization, rising labor input of routine
+cognitive and manual tasks, and declining labor input of nonrou-
+tine interactive and analytic tasks.
+     Panels B through E of Table V present analogous models
+estimated separately for the four education groups. Here, mea-
+sured changes in task input stem solely from within-education
+group shifts in occupational distributions within industries.
+These estimates reveal that industry-level computerization is
+strongly predictive of shifts toward nonroutine and against rou-
+tine tasks within essentially all education groups. For the two
+groups at the middle of the education distribution— high school
+graduates and those with some college— changing employment
+patterns within rapidly computerizing sectors entirely account
+for observed task shifts. More precisely, holding computer adop-
+tion xed, our estimates would not predict any signicant within-
+industry task change for either education group.
+     For the education groups at the bottom and top of the distri-
+

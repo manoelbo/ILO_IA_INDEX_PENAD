@@ -1,0 +1,16 @@
+{
+  "baseline_collection": {
+    "additional_v1_contract_tests": 13,
+    "registered_tests": 349,
+    "source": "provenance/baseline_2026-08-02.json"
+  },
+  "captured_at": "2026-08-03T03:51:43-03:00",
+  "collection_command": ".venv/bin/python -m pytest --collect-only -q",
+  "collection_output_sha256": "bfcbd998d31a3b1cd09db7c97c943e0ce5d0d3783c96f4968820cbe1bd5255bd",
+  "current_collection": 447,
+  "format_version": 1,
+  "gate": "Development material may be archived only after the expanded public test inventory is collected and exceeds the frozen baseline without removing any frozen V1 file.",
+  "test_source_file_records": 252,
+  "test_source_tree_sha256": "12f695c3f55168f3fbb374bc092546756a0606a0d42d7f92fb666b103d9a9b45",
+  "status": "pass"
+}

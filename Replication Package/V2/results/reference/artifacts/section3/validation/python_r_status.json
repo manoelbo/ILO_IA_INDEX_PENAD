@@ -1,0 +1,7 @@
+{
+  "aggregate_rows": 497,
+  "failed_rows": 0,
+  "maximum_absolute_difference": 1.1510792319313623e-12,
+  "numeric_tolerance": 1e-06,
+  "status": "pass"
+}

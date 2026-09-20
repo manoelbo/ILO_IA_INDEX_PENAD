@@ -1,0 +1,56 @@
+                                                                                               WORKING PAPER
+
+
+
+
+                                           GPTs are GPTs: An Early Look at the Labor Market Impact Potential
+                                                             of Large Language Models
+
+                                                            Tyna Eloundou1 , Sam Manning1,2 , Pamela Mishkin∗1 , and Daniel Rock3
+arXiv:2303.10130v5 [econ.GN] 21 Aug 2023
+
+
+
+
+                                                                                                     1 OpenAI
+                                                                                                 2 OpenResearch
+                                                                                         3 University of Pennsylvania
+
+
+
+                                                                                                August 22, 2023
+
+
+                                                                                                    Abstract
+                                                       We investigate the potential implications of large language models (LLMs), such as Generative Pre-
+                                                   trained Transformers (GPTs), on the U.S. labor market, focusing on the increased capabilities arising from
+                                                   LLM-powered software compared to LLMs on their own. Using a new rubric, we assess occupations based
+                                                   on their alignment with LLM capabilities, integrating both human expertise and GPT-4 classifications.
+                                                   Our findings reveal that around 80% of the U.S. workforce could have at least 10% of their work tasks
+                                                   affected by the introduction of LLMs, while approximately 19% of workers may see at least 50% of their
+                                                   tasks impacted. We do not make predictions about the development or adoption timeline of such LLMs.
+                                                   The projected effects span all wage levels, with higher-income jobs potentially facing greater exposure to
+                                                   LLM capabilities and LLM-powered software. Significantly, these impacts are not restricted to industries
+                                                   with higher recent productivity growth. Our analysis suggests that, with access to an LLM, about 15%
+                                                   of all worker tasks in the US could be completed significantly faster at the same level of quality. When
+                                                   incorporating software and tooling built on top of LLMs, this share increases to between 47 and 56%
+                                                   of all tasks. This finding implies that LLM-powered software will have a substantial effect on scaling
+                                                   the economic impacts of the underlying models. We conclude that LLMs such as GPTs exhibit traits of
+                                                   general-purpose technologies, indicating that they could have considerable economic, social, and policy
+                                                   implications.
+
+
+                                           1     Introduction
+                                           As shown in Figure 1, recent years, months, and weeks have seen remarkable progress in the field of generative
+                                           AI and large language models (LLMs). While the public often associates LLMs with various iterations of the
+                                           Generative Pre-trained Transformer (GPT), LLMs can be trained using a range of architectures, and are not
+                                           limited to transformer-based models (Devlin et al., 2019). LLMs can process and produce various forms of
+                                           sequential data, including assembly language, protein sequences and chess games, extending beyond natural
+                                           language applications alone. In this paper, we use LLMs and GPTs somewhat interchangeably, and specify in
+                                           our rubric that these should be considered similar to the GPT-family of models available via ChatGPT or
+                                           the OpenAI Playground (which at the time of labeling included models in the GPT-3.5 family but not in the
+                                           GPT-4 family). We examine LLMs with text- and code-generating abilities, use the term "generative AI" to
+                                           additionally include modalities such as images or audio, and use "LLM-powered software" to cover tools built
+                                           on top of LLMs or that combine LLMs with other generative AI models.
+                                               ∗ Corresponding author (pamela@openai.com). Authors contributed equally and are listed alphabetically.
+

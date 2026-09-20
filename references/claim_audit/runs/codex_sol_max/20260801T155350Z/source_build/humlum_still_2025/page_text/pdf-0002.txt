@@ -1,0 +1,38 @@
+ Large Language Models, Small Labor Market Effects∗
+                         Anders Humlum†                 Emilie Vestergaard‡
+
+                                        September 22, 2025
+
+
+
+                                              Abstract
+
+       We examine the early labor market impacts of AI chatbots by linking large-scale,
+       representative adoption surveys to administrative labor records in Denmark. Using
+       difference-in-differences, we estimate precise null effects on earnings and recorded
+       hours at both the worker and workplace levels, ruling out effects larger than 2% two
+       years after. These null results hold for intensive users, early adopters, workplaces
+       with substantial investments, workers reporting large gains, flexible-pay occupations,
+       and early-career jobs. Adoption is linked to occupational switching and task
+       restructuring, but without net changes in hours or earnings. Our findings challenge
+       narratives of imminent disruption from Generative AI.
+
+
+
+
+   ∗
+     We thank David Autor, Marianne Bertrand, Jacob Conway, Matthew Notowidigdo, Lindsey Raymond,
+Chad Syverson, and seminar participants at the 2025 NBER SI: Digital Economics and Artificial
+Intelligence, the 2025 SED Meeting: Automation, the Becker Friedman Institute, Chicago Booth, the
+Chicago Fed, ETUI, INSEAD, Microsoft Research, and MIT Sloan FutureTech for helpful comments and
+suggestions. This project received financial support from the Center for Applied Artificial Intelligence
+and the Polsky Center for Entrepreneurship and Innovation. Caspar Ringhof provided excellent research
+assistance.
+   †
+     University of Chicago, Booth School of Business, and NBER, anders.humlum@chicagobooth.edu
+   ‡
+     University of Copenhagen, Department of Economics, emilievestergaard@econ.ku.dk
+
+
+                                                   1
+

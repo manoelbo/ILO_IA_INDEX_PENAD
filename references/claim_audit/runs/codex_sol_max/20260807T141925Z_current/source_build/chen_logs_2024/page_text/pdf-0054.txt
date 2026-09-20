@@ -1,0 +1,40 @@
+         Appendix Figure 1: t-statistics for effect on arcsinhpY q, versus extensive margin t-statistic
+
+
+
+
+                                                       Original units                                 45 Deg Line
+                                    5
+    t−stat for ATE using arcsinh
+
+
+
+
+                                                        Units x 100
+
+
+
+                                    0
+
+
+
+
+                                   −5
+
+
+
+
+                                        −5                       0                            5
+                                               t−stat for Extensive Margin
+
+Note: this table shows the t-statistic for the extensive margin effect on the x-axis, and the t-statistic for the treatment
+effect using arcsinhpY q on the y-axis. The circle shows the t-statistic using the original units, whereas the arrow shows
+the change if we first multiply the units by 100 before applying the arcsinh transformation. We omit two papers
+where there is no extensive margin. The plot shows that the t-statistics are close to the 45 degree line when the
+extensive margin is not close to zero, and tend to become closer when the units are made larger.
+
+
+
+
+                                                            17
+

@@ -1,0 +1,57 @@
+The average productivity gain among encouraged adopters is given by:
+
+
+  E[Bij (α) | i ≤ i∗ , Ej = 1] = (1 − γ)(αb0 + αb1 ) + γ(αc0 + αc1 − (log W1 − log W0 )) (34)
+
+                            = (1 − γ)(αb0 + αb1 ) + γ(αc0 + αc1 + κ/(ϵ − 1))              (35)
+
+
+where γ = 2ββ̂b ≥ 0. Equation (34) generalizes Equation (8) to account for worker sorting
+
+across firms.
+
+   Combining Equations (33) and (35), the effect of employer encouragement on workplace
+
+employment is:
+
+                           ϵ
+        log N1 − log N0 =     κ − (1 − γ)(αb0 + αb1 ) − γ(αc0 + αc1 + κ/(ϵ − 1))          (36)
+                          ϵ−1
+                          ϵ−γ
+                        =     κ − (1 − γ)(αb0 + αb1 ) − γ(αc0 + αc1 )                     (37)
+                          ϵ−1
+
+   In particular, if encouragement is relatively costless (κ is low), product demand is elastic
+
+(ϵ is high), workers are relatively homogeneous in their individual chatbot productivity (γ
+
+is low), and chatbots offer large productivity gains (αb is high) but are costly to adopt
+
+(αc is high), then employer encouragement will tend to reduce workplace employment.
+
+
+Workplace wage bills. Encouraged firms increase their wage bills by:
+
+
+                 log(W1 H1 ) − log(W0 H0 ) = (1 − ϵ)(log W1 − log W0 ) = κ.               (38)
+
+
+The prediction that employer encouragement unambiguously raises wage bills is a con-
+
+sequence of modeling AI chatbots solely as tools that augment worker productivity
+
+(see Equation (13)). As discussed in Section A.2.1, this result breaks for more general
+
+production technologies.
+
+A.2.5    Empirical Identification
+
+This section demonstrates that the causal effects of AI chatbots on worker and workplace
+
+outcomes can be identified using a series of difference-in-differences estimators. We further
+
+use the model to structurally interpret these estimates.
+
+
+                                             19
+

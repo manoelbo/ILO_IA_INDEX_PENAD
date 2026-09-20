@@ -1,0 +1,31 @@
+23     ILO Working Paper 140
+
+
+
+
+     XX Figure 7. Expectations of impact on the work area
+
+
+
+
+     We further examine these trends by asking respondents a more personal question, related to
+     their perceived likelihood of GenAI replacing their current job in the next five years. For most pro-
+     fessions, responses are clustered at the lower end of the risk spectrum, suggesting limited con-
+     cern about replacement by GenAI in the mid-term (Figure 8). However, among clerical support
+     workers, the density of responses representing moderate to high levels of concern is noticeably
+     higher, with women reporting slightly higher risks compared to men, while the converse is ob-
+     served among plant and machine operators and assemblers.
+
+
+     XX Figure 8. Expectations of impact on individuals’ current job – distribution of individual scores
+
+
+
+
+     3.5.3. Scoring of task automation potential
+     The survey asked respondents to evaluate the extent to which GenAI could automate the execu-
+     tion of various tasks (see Text Box 1). As shown in Figure 9, responses reveal gendered scoring
+     that aligns with occupational segregation. For example, the scores provided by clerical support
+     workers are predominantly from women, reflecting the high representation of women in this oc-
+     cupational group. However, men within this occupation tend to assign higher scores, potentially
+

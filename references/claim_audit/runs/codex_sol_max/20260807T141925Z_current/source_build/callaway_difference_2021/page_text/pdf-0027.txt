@@ -1,0 +1,45 @@
+   By far the most common approach to trying to understand the effect of the minimum wage on em-
+ployment is to exploit variation in the timing of minimum wage increases across states. Our identification
+strategy follows this approach. In particular, we consider a time period from 2001-2007 where the federal
+minimum wage was flat at $5.15 per hour. We focus on county level teen employment in states whose
+minimum wage was equal to the federal minimum wage at the beginning of the period. Some of these
+states increased their minimum wage over this period – these become treated groups. In particular, we
+define groups by the time period when a state first increased its minimum wage. Others did not increase
+their minimum wage – these are the untreated group. This setup allows us to have more data than local
+case study approaches. On the other hand, it also allows us to have cleaner identification (state-level
+minimum wage policy changes) than in studies with more periods; the latter setup is more complicated
+than ours particularly because of the variation in the federal minimum wage over time. It also allows
+us to check for internal consistency of identifying assumptions – namely whether or not the identifying
+assumptions hold in periods before particular states raised their minimum wages.
+   We use county level data on teen employment and other county characteristics. County level teen
+employment comes from the Quarterly Workforce Indicators (QWI), as in Dube et al. (2016); see Dube
+et al. (2016) for a detailed discussion of this dataset. Other pre-treatment county characteristics come from
+the 2000 County Data Book. These include county population in 2000, the fraction of the population that
+is white, educational characteristics from 1990, median income in 1997, and the fraction of the population
+below the poverty level in 1997. After dropping ten states due to their minimum wage being higher than
+the federal minimum wage in 2000, seven other states for lack of data on teen employment, and four
+other states in the Northern census region, our final sample includes county-level data from 29 states.
+We provide additional details on constructing the data in the Supplementary Appendix.
+   Summary statistics for county characteristics are provided in Table 2. There are some notable dif-
+ferences in county characteristics between counties in states that increased their minimum wage and in
+states that did not increase their minimum wage. Treated counties are much less likely to be in the South.
+They also have much higher population (on average 94,000 compared to 53,000 for untreated counties).
+The proportion of white residents is higher in treated counties (on average, 89% compared to 83% for
+untreated counties). There are smaller differences in the fraction with high school degrees and the poverty
+rate though the differences are both statistically significant. Treated counties have a somewhat higher
+fraction of high school graduates and a somewhat lower poverty rate.
+
+
+5.1   Results
+In the following we discuss different sets of results using different identification strategies. In particular,
+we consider the cases in which one would assume that the parallel trends assumption would hold un-
+conditionally, and when it holds only after controlling on observed characteristics X. In the main text,
+we consider the case where never-treated counties are the comparison group and where we do not allow
+for any anticipation effects (i.e., δ = 0). We provide results using the not-yet-treated counties as the
+comparison group and allowing for one year anticipation in the Supplementary Appendix; results from
+those cases are quite similar to the ones presented here.
+   The first set of results comes from using the unconditional parallel trends assumption to estimate the
+
+
+                                                      27
+

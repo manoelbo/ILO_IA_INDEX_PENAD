@@ -1,0 +1,113 @@
+{
+  "format_version": 1,
+  "execution": {
+    "billing_project_provided": true,
+    "dag_nodes_completed": 54,
+    "mode": "full",
+    "output_location": "temporary external validation directory; not distributed",
+    "raw_cache": {
+      "bytes": 16613664717,
+      "declared_files": 381,
+      "manifest_sha256": "e8cd6006ff4221e4578412237e31f106c9f07383d7c9d862c57fdca0582f0d42",
+      "missing_files": 0,
+      "present_files": 381,
+      "status": "pass"
+    },
+    "r_environment": {
+      "locked_packages": 73,
+      "r_version": "4.4.1",
+      "status": "pass"
+    },
+    "target": "all"
+  },
+  "release_gate_incident": {
+    "affected_artifact": "caged/reconciliation/painel_cbo_cnae_support.json",
+    "data_fields_exact": true,
+    "initial_cli_exit_code": 1,
+    "initial_failure": "The final byte comparison rejected one JSON whose only difference was object-key order.",
+    "initial_reference_sha256": "380c450c31f3d12feeb6aa064dd6450344f4c9bf463a1f7fd5f6b189be493e52",
+    "initial_reproduced_sha256": "e3eb9b2cfe0804da2cfdd5c3e4d20c533ba2954793043cda986988ce7d01647c",
+    "reference_updated": false,
+    "resolution": "The full-mode producer now serializes the exact signed field order. A red regression test was added before the fix, and finalization was resumed from the completed 54-node output.",
+    "resolved_sha256": "380c450c31f3d12feeb6aa064dd6450344f4c9bf463a1f7fd5f6b189be493e52",
+    "resumed_finalization_exit_code": 0,
+    "scientific_values_changed": false,
+    "status": "resolved"
+  },
+  "reconciliation": {
+    "numeric_claim_failures": 0,
+    "numeric_claims": 92,
+    "reference_artifacts_compared": 264,
+    "reference_failures": 0,
+    "status": "pass"
+  },
+  "cross_mode_equivalence": {
+    "byte_differences": [
+      "pnadc/run_manifest.json",
+      "rais/run_manifest.json",
+      "run_manifest.json",
+      "section3/run_manifest.json",
+      "spatial/run_manifest.json"
+    ],
+    "full_files": 275,
+    "non_manifest_files_byte_identical": true,
+    "non_manifest_files_compared": 270,
+    "reproduce_files": 275,
+    "same_file_set": true
+  },
+  "independent_r_replication": {
+    "caged": {
+      "coefficient_rows": 16852,
+      "contracts": 646,
+      "diagnostic_models": 296,
+      "failed_rows_or_models": 0,
+      "maximum_coefficient_absolute_difference": 7.541345325989823e-11,
+      "maximum_standard_error_absolute_difference": 5.022547106998954e-07,
+      "status": "pass"
+    },
+    "pnadc": {
+      "models": 6,
+      "pretrend_models": 12,
+      "same_n_and_clusters": true,
+      "maximum_coefficient_absolute_difference": 2.0122792321330962e-16,
+      "maximum_standard_error_absolute_difference": 1.252350839697769e-08,
+      "status": "pass"
+    },
+    "rais": {
+      "models": 3,
+      "pretrend_models": 3,
+      "same_n_and_clusters": true,
+      "maximum_coefficient_absolute_difference": 5.967448757360216e-16,
+      "maximum_standard_error_absolute_difference": 1.2127599272049316e-11,
+      "status": "pass"
+    },
+    "section3": {
+      "aggregate_rows": 497,
+      "failed_rows": 0,
+      "maximum_absolute_difference": 1.1510792319313623e-12,
+      "status": "pass"
+    },
+    "spatial": {
+      "coefficient_rows": 184,
+      "contracts": 16,
+      "failed_rows_or_models": 0,
+      "family_f_support_stop_replicated": true,
+      "maximum_coefficient_absolute_difference": 4.1511238890734603e-13,
+      "maximum_standard_error_absolute_difference": 3.583848912080967e-10,
+      "status": "pass"
+    }
+  },
+  "scientific_gates": {
+    "family_f_coefficients_created": 0,
+    "family_f_declared_slots": 12,
+    "family_f_p_values_created": 0,
+    "spatial_a7_executed": false,
+    "spatial_support_decision": "stop_front_at_A6_no_family_F_estimation"
+  },
+  "run_manifest": {
+    "artifacts": 274,
+    "sha256": "0f5fcceb3e6c4468b084b65c656568b18639854672a8e9ff60cda490c65fa017",
+    "status": "complete"
+  },
+  "status": "pass_with_resumed_final_gate"
+}

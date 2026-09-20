@@ -1,0 +1,38 @@
+sion of remote work, and supply-side shocks to junior labor. We find little support for
+any of these explanations. The absence of pre-trends and the inclusion of industry-by-
+seniority-by-time fixed effects suggest that post-COVID sectoral dynamics do not drive
+our results. Re-estimating our triple-difference specification separately using employ-
+ment in high- and low-remote-suitability positions yields similar declines in junior em-
+ployment, suggesting that the results are not driven by shifts in remote work. Finally,
+job postings decline sharply at adopting firms after 2023, indicating that the reduction in
+junior employment reflects weaker labor demand rather than constraints on labor sup-
+ply. Taken together, this evidence suggests that, although these factors are important for
+broader labor-market trends, they are unlikely to explain the specific effect identified by
+our empirical design.
+   We next examine the mechanisms underlying the decline in junior employment. Using
+our linked employer-employee data, we decompose workforce dynamics into inflows
+(hires), outflows (separations), and internal promotions. We find that the decline in junior
+employment at adopting firms is driven primarily by a substantial reduction in hiring.
+Separation rates for juniors in adopting firms also decreased relative to non-adopters,
+but the reduction in hiring was considerably larger, leading to a net decline in junior
+positions. Promotion rates rose by a small but statistically significant amount, though the
+magnitude is economically small relative to the hiring channel.
+   Taken together, these results indicate that GenAI adoption is associated with reduced
+junior employment. However, the relatively early and pronounced declines—starting
+to emerge soon after the release of ChatGPT—may seem surprising, as automation im-
+pacts typically materialize more slowly. This suggests that the decline may not reflect
+immediate task automation but rather forward-looking adjustments by firms: the rapid
+diffusion of GenAI may have shifted firms’ expectations, leading them to scale back hir-
+ing for roles they predict will be automated in the near future, consistent with broader
+evidence on asymmetric employment adjustment (Ilut et al., 2018). We formalize this
+mechanism in a simple dynamic model in which expectations of future automation—
+combined with labor-adjustment costs—lead firms to reduce hiring today (Supplemental
+Appendix A.5). Several patterns are consistent with this interpretation: GenAI adoption
+accelerated sharply in early 2023; mentions of “AI” in firms’ earnings calls began rising
+in 2022Q4; prominent U.S. companies publicly adjusted hiring practices in early 2023,
+
+
+
+
+                                             7
+

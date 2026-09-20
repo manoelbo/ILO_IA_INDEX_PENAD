@@ -1,0 +1,51 @@
+    from the Business Trends and Outlook Survey. Tech. rep. National Bureau of Economic
+    Research.
+Bresnahan, T. F. and M. Trajtenberg (1995). “General purpose technologies ‘Engines of growth’ ?”
+    In: Journal of econometrics 65.1, pp. 83–108.
+Brynjolfsson, E. and L. Hitt (1996). “Paradox lost? Firm-level evidence on the returns to
+    information systems spending”. In: Management science 42.4, pp. 541–558.
+Brynjolfsson, E. and L. M. Hitt (2000). “Beyond computation: Information technology, orga-
+    nizational transformation and business performance”. In: Journal of Economic perspectives
+    14.4, pp. 23–48.
+Brynjolfsson, E., D. Li, and L. R. Raymond (2023). Generative AI at work. Working Paper.
+    National Bureau of Economic Research.
+Brynjolfsson, E., D. Rock, and C. Syverson (2021). “The Productivity J-Curve: How Intangibles
+    Complement General Purpose Technologies”. In: American Economic Journal: Macroeco-
+    nomics 13.1, pp. 333–372.
+Chui, M., E. Hazan, R. Roberts, A. Singla, and K. Smaje (2023). The economic potential of
+    generative AI. McKinsey & Company.
+Cui, Z. K., M. Demirer, S. Jaffe, L. Musolff, S. Peng, and T. Salz (2024). “The Effects of
+    Generative AI on High Skilled Work: Evidence from Three Field Experiments with Software
+    Developers”. In: Available at SSRN 4945566.
+David, P. A. (1990). “The dynamo and the computer: an historical perspective on the modern
+    productivity paradox”. In: The American economic review 80.2, pp. 355–361.
+Dell’Acqua, F., E. McFowland, E. R. Mollick, H. Lifshitz-Assaf, K. Kellogg, S. Rajendran,
+    L. Krayer, F. Candelon, and K. R. Lakhani (2023). “Navigating the jagged technological
+    frontier: Field experimental evidence of the effects of AI on knowledge worker productivity
+    and quality”. In: Harvard Business School Technology & Operations Mgt. Unit Working
+    Paper 24-013.
+Deming, D. and L. B. Kahn (2018). “Skill requirements across firms and labor markets: Evidence
+    from job postings for professionals”. In: Journal of Labor Economics 36.S1, S337–S369.
+Deming, W. E. and F. F. Stephan (1940). “On a Least Squares Adjustment of a Sampled Fre-
+    quency Table When the Expected Marginal Totals are Known”. In: The Annals of Mathe-
+    matical Statistics 11.4, pp. 427–444.
+Demirci, O., J. Hannane, and X. Zhu (2025). “Who is AI replacing? The impact of generative
+    AI on online freelancing platforms”. In: Management Science.
+Dillon, E. W., S. Jaffe, N. Immorlica, and C. T. Stanton (2025). Shifting Work Patterns with
+    Generative AI. arXiv: 2504.11436 [econ.GN].
+Doshi, A. R. and A. Moore (2025). “Toward a Human-AI Task Tensor: A Taxonomy for Orga-
+    nizing Work in the Age of Generative AI”. In: arXiv preprint arXiv:2503.15490.
+Eisfeldt, A. L., G. Schubert, B. Taska, and M. B. Zhang (Mar. 2024). Generative AI and Firm
+    Values. Working Paper. SSRN.
+Eloundou, T., S. Manning, P. Mishkin, and D. Rock (2024). “GPTs are GPTs: Labor market
+    impact potential of LLMs”. In: Science 384.6702, pp. 1306–1308.
+Ethiraj, S. K., A. Gambardella, and C. E. Helfat (2019). “Articles on datasets”. In: Strategic
+    Management Journal 40.5, pp. 713–714.
+Felten, E., M. Raj, and R. Seamans (2021). “Occupational, industry, and geographic exposure
+    to artificial intelligence: A novel dataset and its potential uses”. In: Strategic Management
+    Journal 42.12, pp. 2195–2217.
+
+
+
+                                              27
+

@@ -1,0 +1,38 @@
+tions and zero for low-exposure occupations; γit are firm-by-time fixed effects; and ξ p(i)ct
+are industry-by-exposure-by-time fixed effects. Equation 12 has the same structure as the
+seniority-based triple-difference in Equation 11, but here the third dimension is occupa-
+tional exposure (high vs. low) rather than seniority. The coefficients βsj trace, separately
+for juniors and seniors, how employment in high-exposure occupations evolves relative
+to low-exposure occupations within the same firm and quarter, comparing adopters to
+non-adopters.
+   Figure 6 plots the estimated βsj coefficients for juniors and seniors, with both series
+normalized to zero in 2022Q4, the last pre-ChatGPT quarter. Two patterns stand out.
+First, throughout the pre-ChatGPT period, high-exposure occupations expand faster than
+low-exposure occupations at adopters relative to non-adopters for both seniority groups,
+consistent with adopters tilting their workforce toward exposed occupations over time.
+The two profiles track each other closely through 2022, with the senior coefficients rising
+somewhat faster than the junior coefficients. Second, beginning in 2023Q1, the two series
+diverge sharply. The junior series declines steadily, reaching a roughly 7 log point decline
+in high-exposure versus low-exposure junior employment at adopters by 2025Q1, relative
+to the 2022Q4 baseline. In contrast, the senior series continues to rise after 2022Q4, with
+no visible break around the ChatGPT launch.
+   Taken together, these results provide two insights. First, the post-2022 contraction
+in junior employment at adopters is concentrated in high-exposure occupations rather
+than reflecting a broad-based decline across all junior roles. Second, the design helps
+rule out a purely compositional explanation—namely, that high-exposure occupations
+declined economy-wide after 2023 and adopters simply employed a larger share of such
+roles. By comparing high- and low-exposure occupations within the same firm-by-quarter,
+and by running the same specification for seniors as a placebo-like comparison, we find
+that high-exposure occupations contract relative to low-exposure occupations only for ju-
+niors and only at adopters after the ChatGPT launch. The senior profile continues along
+its pre-existing upward trend, consistent with the interpretation that GenAI adoption
+is seniority-biased: it shifts demand away from junior workers in the very occupations
+where the technology is most applicable, while leaving senior employment in those same
+occupations essentially unaffected.
+   Supplemental Appendix A.3 reports a complementary heterogeneity exercise that re-
+
+
+
+
+                                             33
+

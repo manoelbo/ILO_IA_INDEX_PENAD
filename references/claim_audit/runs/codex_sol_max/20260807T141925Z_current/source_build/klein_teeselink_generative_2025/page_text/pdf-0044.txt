@@ -1,0 +1,36 @@
+    Table A23: Comparison of ONS and Revelio Labs Employment over Time
+
+
+              Table A24: Comparison of ONS and Revelio employment
+
+                                                    Dependent variable:
+                                              Employment           Vacancies
+                                                   (1)                (2)
+                      Revelio employment        0.456∗∗∗
+                                                 (0.121)
+
+                      Revelio job listings                         0.422∗∗∗
+                                                                    (0.123)
+
+                      Constant                    0.000              0.184
+                                                 (0.120)            (0.122)
+
+                      Observations                  56                 47
+                      R2                          0.208              0.207
+                      Adjusted R2                 0.193              0.190
+                      Residual Std. Error    0.898 (df = 54)    0.833 (df = 45)
+                      Note:                       ∗ p<0.1; ∗∗ p<0.05; ∗∗∗ p<0.01
+
+
+
+
+Notes: This table reports OLS estimates from regressing standardized ONS statistics on stan-
+dardized Revelio Labs data. Column 1 uses monthly employment totals; column 2 uses monthly
+vacancy/job posting counts. All variables are standardized by subtracting the mean and dividing
+by the standard deviation.
+
+
+
+
+                                                 44
+

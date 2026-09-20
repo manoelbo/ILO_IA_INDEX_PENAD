@@ -1,0 +1,75 @@
+    We apply the familiar omitted variable bias (OVB) formula to arrive at our decomposition. In an event
+
+study where individuals receive the treatment at different times, the panel can never be balanced in both
+
+calendar time and time relative to the initial treatment. As a result, the relative time indicators are still
+
+correlated even after controlling for unit and time fixed effects in a two-way fixed effects regression. We use
+
+the saturated regression and the OVB formula to illustrate how this correlation leads to contamination. We
+
+defer its formal derivation to Appendix B.
+
+    Under the parallel trends assumption only, the saturated regression is
+
+
+
+                                Õ                                                      Õ
+                       Yi,t =             ∞
+                                      E[Yi,0 | Ei = e] · 1{Ei = e} +                            ∞
+                                                                                            E[Yi,s    ∞
+                                                                                                   −Yi,0 ] · 1{t = s}
+                                e                                                       s
+                                                                                                 
+                                                                                  `0
+                                       Õ          Õ
+                                +                           C ATTe,`0 · Di,t · 1 {Ei = e}
+                                    ` 0 ∈g i ncl e ∈I` 0
+                                                                        0               
+                                                                         `
+                                       Õ          Õ
+                                +                           C ATTe,`0 · Di,t · 1 {Ei = e} + i,t                        (19)
+                                    ` 0 ∈g e x cl e ∈I` 0
+
+
+where the regressors are cohort fixed effects, time fixed effects, and cohort-specific relative time indicators.
+
+Furthermore, let g incl collect the relative time included in (7). The coefficient associated with the cohort-
+                                  ` ·1
+specific relative time indicator Di,t  {Ei = e} is the cohort-specific average treatment effects C ATTe,` . To
+
+decompose the coefficient µ` from (7) in terms of this saturated regression (19), the OVB formula multiplies
+                                                                                                            ` ,
+the coefficients in the saturated regression (19), C ATTe,`0 , with the regression coefficients from (12), ωe,` 0
+
+
+which leads to the following decomposition for µ` as a linear combination of C ATTe,`0 :
+
+
+                                                                            `
+                                                                   Õ
+                                                            µ` =           ωe,` 0 C ATTe,` 0 .                          (20)
+                                                                   e,` 0
+
+       `
+Since ωe,` 0 is equal to a regression coefficient from (12), we can write it as
+
+
+
+
+                                                         `
+                                                        ωe,` 0 = (σe, · ) ∆e+` 0 A` .
+                                                                         |        −1
+                                                                                                                        (21)
+
+
+Below we briefly comment on each of the three elements in the above expression to highlight how they
+
+depend on the distribution of the cohorts. We defer their detailed definitions and derivations to Appendix
+
+A.1.
+
+
+
+                                                                             18
+

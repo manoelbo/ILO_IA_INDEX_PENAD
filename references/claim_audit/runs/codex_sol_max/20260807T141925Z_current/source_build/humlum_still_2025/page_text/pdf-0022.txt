@@ -1,0 +1,31 @@
+adopters, leaving any level effect on non-adopters unidentified—the “missing intercept.”
+For example, when we compare earnings relative to non-encouraged non-adopters in
+Section 3.2, any general equilibrium effects that also affect these workers are differenced
+out. Indeed, Section 2.3 showed that AI chatbots have created new job tasks even for
+non-adopters. The key question for our analysis below is whether such spillovers also
+surface in earnings or recorded hours. For instance, adopting firms might expand by
+poaching workers from non-adopting competitors, biasing our workplace employment
+estimates upward. Alternatively, if firms adjust labor demand in anticipation of AI
+chatbots—rather than based on their actual adoption—the estimates would be biased
+toward zero. We assess the potential magnitude of these spillover effects from several
+complementary angles.
+   First, we assess potential spillovers at different levels of aggregation by estimating
+difference-in-differences models at the worker, workplace, and occupation levels. For
+instance, the fact that encouraged workplaces do not experience differential changes in
+labor demand in Section 3.4 suggests that spillovers in employment outcomes within
+workplaces are limited. Consistent with this interpretation, Figure F.3 shows that non-
+adopters in encouraged workplaces have fared similarly to their counterparts in non-
+encouraged workplaces following the introduction of AI chatbots. Extending this approach,
+Appendix D.1 shifts the analysis to the occupation level, showing that our exposed study
+occupations have also evolved similarly to the rest of the economy, maintaining a stable
+20% share of aggregate hours and earnings before and after the arrival of AI chatbots.
+   Second, Appendix A.2.6 uses a market equilibrium model to show that our difference-
+in-differences estimates are informative about the magnitude of the “missing intercept.” In
+particular, under reasonable labor demand elasticities, null effects at both the workplace
+and worker levels imply that the occupation-wide equilibrium effect is also negligible. The
+key intuition is that adopters generate spillovers to non-adopters only when their own
+market outcomes change. Thus, the absence of adoption effects at both levels implies that
+spillovers to non-adopters are likewise limited.
+
+
+                                            20

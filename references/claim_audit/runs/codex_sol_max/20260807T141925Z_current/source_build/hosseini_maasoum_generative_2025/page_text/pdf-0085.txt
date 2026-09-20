@@ -1,0 +1,45 @@
+erative AI of Large Language Model, are not about integrating GenAI into workflows. For example, the first
+example highlights the value of an LLM-based classifier that goes beyond simple keyword search. Al-
+though the posting is from a GenAI company, it describes a customer support role unrelated to integrating
+AI into workflows. The model correctly classifies it as a non-integrator position. See Appendix A.13 for
+additional examples.
+
+   Role: Customer Service Representative (HireQuotient)
+
+
+   Summary: HireQuotient is a pioneering company in the Software Development industry, transforming
+   recruitment processes through Generative AI and Skill Intelligence. The position is a Mid-Level customer
+   service representative.... focused on ensuring high-quality support and satisfaction for customers ...
+
+
+   Responsibilities:
+
+         • Manage customer inquiries, complaints, and feedback through various channels, ensuring a high level
+           of satisfaction.
+
+         • Provide proactive support through live chat, email, and phone.
+
+         • Remain informed about product updates and company policies to deliver accurate information.
+
+   ...
+
+
+   Role: Senior Security Engineer (Offensive Security, BytePlus)
+
+
+   Summary: The team builds infrastructures, platforms, and technologies to protect users, products, and sys-
+   tems. You will contribute to key security initiatives, developing scalable and secure-by-design solutions.
+   Responsibilities:
+         • Responsible for risk discovery and penetration testing of cloud products and infrastructure.
+         • Conduct risk analysis and threat modeling; provide systematic solutions to business lines.
+         • Research cutting-edge technologies including cloud-native, microservices, zero trust, big data, and
+           large language models.
+         • Support the development of secure business technologies and architectures.
+
+   ...
+
+
+
+
+                                                        A.40
+

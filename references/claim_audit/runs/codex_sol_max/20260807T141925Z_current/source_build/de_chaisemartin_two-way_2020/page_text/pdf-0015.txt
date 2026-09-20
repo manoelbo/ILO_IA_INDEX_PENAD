@@ -1,0 +1,48 @@
+t − 1 and t would have experienced if they had remained treated. In staggered adoption designs,
+Assumption 9 and 10 are not necessary for identification, because no group leaves the treatment.
+Together, Assumptions 5 and 10 imply that the ATE follows the same evolution over time in
+every group: E (∆g,t ) = ηt + θg .13 This still allows for heterogeneous treatment effects across
+groups and over time.14
+
+Assumption 11 (Existence of “stable” groups) For all t ∈ {2, ..., T }:
+
+   1. If there is at least one g ∈ {1, ..., G} such that Dg,t−1 = 0 and Dg,t = 1, then there exists
+      at least one g 0 6= g, g 0 ∈ {1, ..., G} such that Dg0 ,t−1 = Dg0 ,t = 0.
+
+   2. If there is at least one g ∈ {1, ..., G} such that Dg,t−1 = 1, Dg,t = 0, then there exists at
+      least one g 0 6= g, g 0 ∈ {1, ..., G} such that Dg0 ,t−1 = Dg0 ,t = 1.
+
+The first point of the stable groups assumption requires that between each pair of consecutive
+time periods, if there is a “joiner” (i.e., a group switching from being untreated to treated), then
+there should be another group that is untreated at both dates. The second point requires that
+between each pair of consecutive time periods, if there is a “leaver” (i.e., a group switching from
+being treated to untreated), then there should be another group that is treated at both dates.
+Notice that under Assumption 11, groups’ treatments are not independent, so Assumption 3
+cannot hold. Accordingly, we replace Assumption 3 by Assumption 12 below. Assumption 12
+requires that conditional on its own treatments, a group’s outcomes be mean independent of the
+other groups’ treatments. It is weaker than Assumption 3. Assumption 11 is necessary to show
+that our estimator is unbiased, but it is not necessary to show that it is consistent. Accordingly,
+in Section ?? of the Web Appendix, we show that our estimator is consistent under Assumption
+3. For every g ∈ {1, ..., G}, let Dg = (D1,g , ..., DT,g ).
+
+Assumption 12 (Mean independence between a group’s outcome and other groups treatments)
+For all g and t, E(Yg,t (0)|D) = E(Yg,t (0)|Dg ) and E(Yg,t (1)|D) = E(Yg,t (1)|Dg ).
+
+We can now define our estimator. For all t ∈ {2, ..., T } and for all (d, d0 ) ∈ {0, 1}2 , let
+                                                             X
+                                         Nd,d0 ,t =                          Ng,t                                 (3)
+                                                      g:Dg,t =d,Dg,t−1 =d0
+
+  13
+      It should be possible to weaken Assumptions 9-10, in particular to account for dynamic effects where ∆g,t
+may depend on (Dg,1 , ..., Dg,t−1 ). This would however introduce complications that are beyond the scope of this
+paper.
+  14
+     Imposing Assumptions 9 and 10 does not change the decompositions obtained in Theorems 1 and 2. Yg,t (1) is
+observed for all the treated (g, t) cells entering these decompositions, so those assumptions do not bring identifying
+information for those cells.
+
+
+
+                                                           15
+

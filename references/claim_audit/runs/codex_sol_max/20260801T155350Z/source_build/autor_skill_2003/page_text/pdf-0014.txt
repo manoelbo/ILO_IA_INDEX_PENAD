@@ -1,0 +1,47 @@
+1292             QUARTERLY JOURNAL OF ECONOMICS
+
+
+updated four times in the ensuing 60 years [1949, 1965, 1977, and
+1991], its structure was little altered. Based upon rst-hand
+observations of workplaces, Department of Labor examiners—
+using guidelines supplied by the Handbook for Analyzing Jobs
+[U. S. Department of Labor 1972]— evaluate more than 12,000
+highly detailed occupations along 44 objective and subjective
+dimensions, including training times, physical demands and re-
+quired worker aptitudes, temperaments, and interests.11
+     Our DOT data are based on an aggregation of these detailed
+occupations into three-digit Census Occupation Codes (COC), of
+which there are approximately 450. We append DOT occupation
+characteristics to the Census Integrated Public Micro Samples
+[IPUMS, Ruggles and Sobeck 1997] one percent extracts for 1960,
+1970, 1980, and 1990, and to CPS Merged Outgoing Rotation
+Group (MORG) les for 1980, 1990, and 1998. We use all obser-
+vations for noninstitutionalized, employed workers, ages 18 to 64.
+For the industry analysis, these individual worker observations
+are aggregated to the level of 140 consistent Census industries
+spanning all sectors of the economy in each year of the sample. All
+analyses are performed using full-time equivalent hours (FTEs)
+of labor supply as weights. The latter is the product of the indi-
+vidual Census or CPS sampling weight, times hours of work in
+the sample reference week and, for Census samples, weeks of
+work in the previous year.
+     We exploit two sources of variation for measuring changing
+job task requirements. The rst consists of changes over time in
+the occupational distribution of employment, holding constant
+task content within occupations at the DOT 1977 level. We refer
+to cross-occupation employment changes as “extensive” margin
+shifts, which we can measure consistently over the period 1960 to
+1998. This variation does not, however, account for changes in
+task content within occupations [Levy and Murnane 1996], which
+we label the “intensive” margin. To measure intensive margin
+shifts, we analyze changes in task content measures within oc-
+cupations over the period 1977 to 1991, using occupations
+matched between the Fourth Edition and Revised Fourth Edition
+of the DOT.
+     Although the DOT contains the best time-series on job task
+
+
+    11. The Department of Labor’s recent successor to the DOT, O*NET, provides
+potentially more up-to-date information but is not suitable for time-series
+analysis.
+

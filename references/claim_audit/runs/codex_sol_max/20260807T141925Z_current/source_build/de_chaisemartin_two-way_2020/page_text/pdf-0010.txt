@@ -1,0 +1,56 @@
+This result is a special case of Proposition 1: in staggered adoption designs, D.,t is increasing in
+t, so Proposition 1 implies that wg,t is decreasing in t.10 Proposition 1 also implies that in that
+design, groups that adopt the treatment earlier are more likely to receive some negative weights.
+Finally, in staggered adoption designs, Athey and Imbens (2018) derive a decomposition of βf e
+that resembles to, but differs from, that in Theorem 1. They derive their decomposition under
+the assumption that the dates at which each group starts receiving the treatment are randomly
+assigned, while we derive ours under a common trends assumption.
+
+
+3.2    Robustness to heterogeneous treatment effects
+
+Theorem 1 shows that in sharp designs with many groups and periods, βbf e may be a misleading
+measure of the treatment effect under the standard common trends assumption, if the treatment
+effect is heterogeneous across groups and time periods. In the corollary below, we propose two
+robustness measures that can be used to assess how serious that concern is.
+Those robustness measures are defined conditional on D, the vector stacking together the treat-
+                                                                                            e g,t = E (∆g,t |D)
+ments of all the (g, t) cells. Specifically, for all (g, t) ∈ {1, ..., G}×{1, ..., T }, let ∆
+                                                                                     
+denote the ATE in cell (g, t) conditional               11     e TR
+                                              on D, let ∆ = E ∆ D denote the ATT con-
+                                                                            TR
+                                     
+ditional on D, and let βef e = E βbf e D . The first measure we consider is the minimal value
+of the standard deviation of the ∆e g,t s under which one could have that βef e is of a different sign
+than ∆e T R . Therefore, this summary measure applies to βef e and ∆ e T R , rather than βf e and δ T R ,
+the unconditional expectations of βbf e and ∆T R on which we have focused so far. However, one
+can show that when G, the number of groups, goes to infinity, βef e − βf e and ∆      e T R − δ T R both
+converge to 0. So if the number of groups is large, βef e and ∆
+                                                              e T R should not differ much from βf e
+and δ T R , and our robustness measure “almost” applies to βf e and δ T R .
+Let
+                                                                              1/2
+                                               X     Ng,t e              2
+                                e =
+                              σ(∆)                        ∆g,t − ∆e TR               ,
+                                                     N1
+                                       (g,t):Dg,t =1
+                                                                    1/2
+                                           X Ng,t
+                              σ(w) =                    (wg,t − 1)2  .
+                                                     N1
+                                           (g,t):Dg,t =1
+
+  10
+    Borusyak and Jaravel (2017) assume that the treatment effect of cell (g, t) only depends on the number of
+periods since group g has started receiving the treatment, whereas Proposition 1 does not rely on that assumption.
+  11 e
+     ∆g,t may differ from E(∆g,t ). To see this, let us consider a simple example where T = 2. Then, under
+Assumption 3, one has ∆  e g,t = E (∆g,t |Dg,1 , Dg,2 ). One may for instance have E (∆g,1 |Dg,1 = 0, Dg,2 = 0) <
+E (∆g,1 |Dg,1 = 1, Dg,2 = 1), if a group is more likely to be treated if her treatment effect is initially high.
+
+
+
+                                                           10
+

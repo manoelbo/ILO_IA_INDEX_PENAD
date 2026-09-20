@@ -1,0 +1,59 @@
+4     Results
+
+4.1   Fact 1: Employment for young workers has declined in AI-exposed occu-
+      pations
+
+Consider software engineers and customer service agents, two occupations frequently considered to
+
+be highly exposed to generative AI tools. Media attention has raised the specter of widespread
+
+employment disruption for young software engineers (Thompson, 2025; Raman, 2025; Allen, 2025;
+
+Horowitch, 2025).
+
+    Figure 1 shows employment changes by age group for these occupations, normalized to 1 in
+
+October 2022. While the types of work and workers in each of these occupations differs in many
+
+ways, both occupations present a similar pattern: employment for the youngest workers declines
+
+considerably after 2022, while employment for other age groups continues to grow. By September
+
+2025, employment for software developers aged 22-25 declined nearly 20% compared to its peak
+
+in late 2022. Figure A1 shows that a similar pattern holds for computer occupations and service
+
+clerks more generally.
+
+    Figure A2 shows four other professions as case studies, spanning varying levels of AI exposure
+
+according to Eloundou et al. (2024). Marketing and sales managers, in the fourth quintile of
+
+AI exposure, show a decline in employment for young workers much like the case of software and
+
+customer service, albeit with smaller magnitudes. Front-line production and operations supervisors,
+
+in quintile 3, show an increase in employment for young workers, though the growth in employment
+
+is smaller than the increase for workers over age 35.
+
+    In contrast, the trends for occupations that Eloundou et al. (2024) rated as less exposed do
+
+not fit the pattern of the more exposed occupations. Stock clerks and order fillers, in quintile 2,
+
+show no obvious difference by age. Strikingly, the series for health aides, comprising nursing aides,
+
+psychiatric aides, and home health aides, show a quite different trend from software or customer
+
+service: employment for young workers has been growing faster than for older workers.
+
+    Figure 2 shows these patterns hold more generally across professions. The top left plot shows a
+
+divergence in employment outcomes for more and less exposed occupations for workers aged 22-25,
+
+with more exposed occupations experiencing declining employment. For older age groups, we find
+
+
+
+
+                                                 9

@@ -1,0 +1,22 @@
+                                                         Table C.2: Covariate Balance in Design 2
+
+                                                                                   Session 1       Session 2       Session 3       Session 4
+                           sA                                                         0.381           0.625           0.381          0.447
+                           Airspace Opacity                                           0.243           0.368           0.141          0.483
+                           Cardiomediastinal Abnormality                              0.164           0.834           0.088          0.716
+                           Support Device Hardware                                    0.760           0.770           0.714          0.794
+                           Abnormal                                                   0.265           0.624           0.722          0.330
+                           Weight                                                     0.461           0.597           0.878          0.735
+                           Temp                                                       0.107           0.245           0.437          0.654
+                           Pulse                                                      0.242           0.578           0.764          0.772
+                           Age                                                        0.559           0.220           0.082          0.898
+                           Number Labs                                                0.075           0.348           0.581          0.768
+                           Number Flagged Labs                                        0.297           0.189           0.935          0.738
+                           Female                                                     0.067           0.052           0.225          0.075
+Note: Balance test p-values that the covariate means are equal across the four treatments within each session (column). Missing clinical history variables are mean-imputed.
+
+
+
+
+                                                                                                                                                                               72
+

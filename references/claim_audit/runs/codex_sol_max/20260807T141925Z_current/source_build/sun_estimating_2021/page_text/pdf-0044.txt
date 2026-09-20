@@ -1,0 +1,87 @@
+e 0), then we have no units take on values Ei = ∞ (or Ei = e 0). The range of the summation is therefore still
+                                                               ` ·1
+sensible. Note that we replace 1{t − e = `} · 1 {Ei = e} with Di,t  {Ei = e} because
+                       `
+                      Di,t · 1 {Ei = e} = 1{t − Ei = `} · 1 {Ei = e} = 1{t − e = `} · 1 {Ei = e} .                                              (50)
+
+    Using the above expression, the coefficient µg can be written as
+                        T
+                                        ! −1 T T ∞
+                                                         Ü i,t D` · 1 {Ei = e}] f (e, e + `)
+                       Õ                    ÕÕÕ
+                    |               |
+               µg =eg     E[DÜ i,t D ]
+                                    i,t               E[D       i,t                                                                             (51)
+                             t=0              t=0 `=−T e=0
+                        T ÕÕ     ∞      T
+                                                        ! −1
+                                                             Ü i,t D` · 1 {Ei = e}] f (e, e + `)
+                       Õ               Õ
+                                     |              |
+                     =              eg       Ü i,t D ] E[D
+                                           E[D      i,t             i,t                                                                         (52)
+                       t=0 l ∈g e=0    t=0
+                                      |                             {z                              }
+                                                                      g
+                                                                   =ω e, `
+
+                                ∞
+                           T Õ ÕÕ                     T
+                                                                             ! −1
+                                                                                      Ü i,t D` · 1 {Ei = e}] f (e, e + `)
+                           Õ                          Õ
+                                                  |            Ü i,t D| ]
+                       +                         eg          E[D      i,t           E[D      i,t                                                (53)
+                           t=0 g0 ,g ` ∈g0 e=0         t=0
+                                                 |                             {z                              }
+                                                                                 g
+                                                                              =ω e, `
+
+                           T   ∞                      T
+                                                                           ! −1
+                                                                                    Ü i,t D` · 1 {Ei = e}] f (e, e + `).
+                           Õ Õ Õ                      Õ
+                                                  |           Ü i,t D| ]
+                       +                         eg         E[D      i,t          E[D      i,t                                                  (54)
+                           t=0 ` ∈g e x cl e=0        t=0
+                                                 |                            {z                               }
+                                                                                g
+                                                                             =ω e, `
+                            g                                                          g
+The superscript g in ωe,` indexes µg . The subscript ` in ωe,` indexes f (e, e + `). The expression above
+                                                        g
+the braces makes it clear that the weight ωe,` is equal to the population regression coefficient on 1{t − Ei ∈
+                    ` ·1
+g} from regressing Di,t  {Ei = e} on all the bin indicators i.e. {1{t − Ei ∈ g}}g ∈ G and two-way fixed
+
+effects included in (4). This proves Proposition 1. We next show several properties of these weights in the
+
+expression of µg :
+
+                                                                                                                      g
+   1. For relative times of µg ’s own bin i.e. ` ∈ g, the weights sum to one                                       e ωe,` = 1.
+                                                                                                    Í          Í
+                                                                                                        ` ∈g
+
+
+   2. For relative times belonging to some other bin i.e. ` ∈ g 0 and g 0 , g, the weights sum to zero
+             Í g
+        ` ∈g0 e ωe,` = 0 for each bin g .
+      Í                                0
+
+
+                                                                                                                                                g
+   3. For relative times not contained in G i.e. ` ∈ g excl , the weights sum to negative one                                                e ωe,` =
+                                                                                                                         Í               Í
+                                                                                                                           ` ∈g e x cl
+
+      −1.
+
+                                                                                           g
+   4. If there are never-treated units i.e. ∞ ∈ supp(Ei ), we have ω∞,` = 0 for all g and `.
+
+
+
+
+                                                                     44
+

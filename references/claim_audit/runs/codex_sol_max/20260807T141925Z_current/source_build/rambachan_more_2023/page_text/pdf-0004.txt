@@ -1,0 +1,58 @@
+2558                                   REVIEW OF ECONOMIC STUDIES
+
+pre-treatment violation of parallel trends. As a sensitivity analysis, the researcher might also
+report confidence sets that allow the maximum post-treatment violation of parallel trends to be
+up to M̄ times larger than the maximum pre-treatment violation for different values of M̄. The
+proposed sensitivity analysis thus follows the “top-down” approach described by Tamer (2010),
+in which the researcher reports what can be learned under a sequence of progressively weaker
+assumptions. Performing such sensitivity analyses makes clear what must be assumed about the
+possible differences in trends in order to draw specific causal conclusions, in line with the par-
+tial identification paradigm initiated by Charles Manski and co-authors in a variety of contexts
+
+
+
+
+                                                                                                                            Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+(Manski, 1989, 1990, 2003, 2008). We provide the HonestDiD R and Stata packages to imple-
+ment our methods.1 We illustrate our recommended approach with applications to two recently
+published papers, in which we show how the choice of the restrictions  can be tailored to the
+economic context.
+
+
+1.1.   Related literature
+The approach in this paper builds on the foundational partial identification analysis for DiD in
+Manski and Pepper (2018). Manski and Pepper consider identification under researcher-specified
+bounds on the magnitude of δ post (what they call “bounded DiD variation”), and calibrate these
+bounds using the maximal pre-treatment violation of parallel trends in their empirical applica-
+tion on the effects of right-to-carry gun laws.2 One of our leading classes of restrictions,  R M ,
+formalizes this calibration approach by bounding the magnitude of post-treatment violations of
+parallel trends by M̄ times the maximal pre-treatment violation. Our framework also allows for
+many other intuitive restrictions—such as bounds on how far δ can deviate from linearity—and
+it can be applied to a variety of DiD estimators, including recent proposals for settings with
+staggered treatment timing. Most importantly, while Manski and Pepper (2018) provide a frame-
+work for identification, we provide inference methods to construct uniformly valid confidence
+sets for the treatment effect of interest. This allows applied researchers to account for statisti-
+cal uncertainty in their analyses, which can be important since event-study coefficients are often
+imprecisely estimated in practice.
+    Several other recent papers consider various relaxations of the parallel trends assumption.
+Keele et al. (2019) develop techniques for testing the sensitivity of DiD designs to violations of
+the parallel trends assumption, but they do not incorporate information from the observed pre-
+trends in their sensitivity analysis. Empirical researchers commonly adjust for the extrapolation
+of a linear trend from the pre-treatment periods when there are concerns about violations of the
+parallel trends assumption, which is valid if the difference in trends is exactly linear (e.g.Bhuller
+et al., 2013; Dobkin et al., 2018; Goodman-Bacon, 2018, 2021). Our methods nest this approach
+as a special case, but allow for valid inference under less restrictive assumptions about the class
+of possible differences in trends (such as when δ is only approximately linear). Freyaldenhoven
+et al. (2019) propose a method that allows for violations of the parallel trends assumption but
+requires an additional covariate that is affected by the same confounding factors as the outcome
+but not by the treatment of interest. Ye et al. (2020) consider partial identification of treatment
+effects when there exist two control groups whose outcomes have a bracketing relationship with
+
+
+
+        1. The latest version of the R and Stata packages are respectively available at
+https://github.com/asheshrambachan/HonestDiD and https://github.com/mcaceresb/stata-honestdid/.
+        2. Manski and Pepper (2018) also consider “bounded time” and “bounded state” restrictions that bound how
+much the mean of Y (0) can differ either across treatment groups or within-groups over time. Such restrictions could also
+be incorporated into our framework by augmenting the vector β̂ to include group-specific sample averages.
+

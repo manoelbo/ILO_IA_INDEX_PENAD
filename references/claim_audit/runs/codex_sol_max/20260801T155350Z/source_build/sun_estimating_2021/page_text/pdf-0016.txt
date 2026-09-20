@@ -1,0 +1,54 @@
+cohort-specific treatment effects prior to treatment are all zero: C ATTe,` = 0 for all ` < 0. Therefore, any
+
+linear combination of these C ATTe,` is also zero. However, µg is a function of post-treatment C ATTe,`0 ≥0 as
+
+well, even when g only contains elements with ` < 0. We revisit this implication in greater depth in Section
+
+3.7. Callaway and Sant’Anna (2020a) provides alternative tests for pretrends that do not suffer from this
+
+drawback.
+
+
+3.4.1    Sources of treatment effect heterogeneity
+
+Since treatment effects heterogeneity violates Assumption 3 and can alter how we interpret µg , it is im-
+
+portant to think through when different cohorts likely experience different paths of treatment effect. Such
+
+heterogeneity could arise for many reasons. For example, cohorts may differ in their covariates, which af-
+
+fect how they respond to treatment. We will explore a concrete example in our application: if treatment
+
+effects differ with age, and there is variation in age across units first treated at different times, we will have
+
+heterogeneous effects (see Section 5 for details). After controlling for covariates, cohorts may still vary
+
+in their responses to the treatment if units select their initial treatment timing based on treatment effects.
+
+This source of heterogeneity is still compatible with our parallel trends assumption, which only rules out
+
+selection in the initial treatment timing based on the evolution of the baseline outcome. In addition to these
+
+two sources of heterogeneity, treatment effects may vary across cohorts due to calendar time-varying effects
+
+(e.g. macroeconomic conditions could govern the effects on labor market outcomes across cohorts).
+
+
+3.5     Interpreting the coefficients under parallel trends and treatment effect homogeneity
+
+Proposition 4. If Assumption 1 (parallel trends) holds and Assumption 3 (treatment effect homogeneity)
+
+holds, then C ATTe,` = ATT` is constant across e for a given `, and the population regression coefficient µg
+
+is equal to a linear combination of ATT` ∈g , as well as ATT`0<g from other relative periods:
+
+                                 Õ                  Õ Õ                              Õ
+                                         g                           g                             g
+                          µg =          ω` ATT` +                   ω`0 ATT`0 +                   ω`0 ATT`0   (16)
+                                 ` ∈g               g0 ,g ` 0 ∈g0                 ` 0 ∈g e x cl
+
+
+
+
+                                                               16
+

@@ -1,0 +1,45 @@
+D is unemployment. Although the ATE in logs may approximate θAvg% when the proportional effect
+of the treatment is approximately constant, our results imply that it is not possible to point-identify
+θAvg% when allowing for arbitrarily heterogeneous proportional effects.
+
+
+4    Empirical approaches with zero-valued outcomes
+Our theoretical results above imply that when there are zero-valued outcomes, the researcher should
+not take a log-like transformation of the outcome and interpret the resulting ATE as an average
+percentage effect: Unlike a percentage, such an ATE depends on the units of the outcome. In this
+section, we highlight some other parameters that are well-defined and easily interpreted when there
+are zero-valued outcomes; in Section 5 below, we show how these parameters can be estimated in
+three empirical applications. Of course, any alternative parameter must necessarily drop one of the
+requirements in the trilemma in Proposition 2, but the choice of which to drop may depend on the
+researcher’s motivation.
+    To inform our discussion of alternative parameters, it is therefore useful to first enumerate several
+reasons why empirical researchers may target treatment effects for a log-transformed outcome rather
+than the ATE in levels:
+
+    (i) The researcher is interested in reporting a treatment effect parameter with easily-interpretable
+units, such as “percentage changes.”
+
+    (ii) The researcher believes that there are decreasing returns to the outcome, and thus wants
+to place more weight on treatment effects for individuals with low initial outcomes. For instance,
+the researcher may perceive it to be more meaningful to raise income from Y p0q “ $10,000 to
+Y p1q “ $20,000 than from Y p0q “ $100,000 to Y p1q “ $110,000, yet both of these treatment effects
+contribute equally to the ATE in levels.
+
+    (iii) The researcher is interested in both the intensive and extensive margin effects of the treat-
+ment, and is using the ATE for a log-like transformation as an approximation to the proportional
+effect along the intensive margin.
+
+    These three motivations suggest different ways of breaking out of the trilemma in Proposition 2.
+If the goal is to achieve a percentage interpretation, then one can consider scale-invariant pa-
+rameters outside of the class EP rgpY p1q, Y p0qqs. For instance, researchers can consider the ATE
+in levels expressed as a percentage of the control mean, or the ATE for a normalized parameter
+Ỹ that already has a percentage interpretation. Alternatively, if the goal is to capture concave
+social preferences over the outcome, then it is natural to specify how much we value the inten-
+sive margin relative to the extensive margin—thus abandoning scale-invariance. Finally, if the
+goal is to separately understand the intensive margin effect, the researcher can abandon point-
+identification (from the marginal distributions) and directly target the partially identified param-
+eter E rlogpY p1qq ´ logpY p0qq | Y p0q ą 0, Y p1q ą 0s, the effect in logs for individuals with positive
+
+
+                                                   15
+

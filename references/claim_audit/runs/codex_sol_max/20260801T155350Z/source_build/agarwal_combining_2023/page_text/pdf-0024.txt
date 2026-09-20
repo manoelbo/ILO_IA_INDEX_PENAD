@@ -1,0 +1,26 @@
+                                                                                            24
+
+qualitatively similar. The middle panel of table 2 shows the average treatment effects on
+performance.
+Our results indicate that while access to contextual information improves performance on
+average, AI assistance does not. We find that access to clinical history reduces the deviation
+from the ground truth by 4.8% (p < 0.05) of the control mean if we pool designs and by 6.7%
+in design 1 (p < 0.05). In contrast, the effects for AI are close to zero and not statistically
+significant. In light of the findings in the previous two sections — that the AI is more
+accurate than most radiologists and that radiologists move their assessments toward the
+AI—it is puzzling that the AI information does not improve accuracy.
+This contradiction occurs because the average treatment effects mask significant hetero-
+geneity in treatment effects. Our within-participant designs–designs 2 and 3–allow us to
+estimate conditional treatment effects given radiologists’ predictions without AI assistance.
+Specifically, we partition cases based on the expert’s signal into five equally spaced bins of
+              
+πr ωi = 1|sE ir . Figure 2 shows the conditional treatment effects of providing AI assistance
+on diagnostic performance. Panel (a) shows the deviation from the ground truth and panel
+(b) shows the probability of incorrect decision. We find that providing AI assistance in cases
+when the radiologist is uncertain improves performance on both metrics, whereas AI assis-
+tance is harmful when the radiologist is close to certain that the pathology is not present
+for a given case. Given an average reported probability of 25% or less, the vast majority
+of cases fall in the first bin yielding a small average treatment effect that masks important
+heterogeneity. The result that AI assistance can decrease performance rejects a model in
+which radiologists are Bayesians with correct beliefs.
+

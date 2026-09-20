@@ -1,0 +1,5 @@
+# National average results
+
+| Amostra | Admissões (log) | Desligamentos (log) | Salário real de admissão (log) |
+| --- | --- | --- | --- |
+| Nacional | -0,0309 (0,0263) | -0,0417 (0,0254) | -0,0207 (0,0140) |

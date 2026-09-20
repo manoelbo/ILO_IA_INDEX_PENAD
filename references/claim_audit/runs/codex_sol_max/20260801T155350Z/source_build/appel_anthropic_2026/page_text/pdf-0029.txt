@@ -1,0 +1,35 @@
+               Claude is mostly used for work, but use cases diversify
+               with adoption
+
+               Our data, relying on a privacy-preserving1 analysis of 1 million Claude.ai
+               conversations,2 reveals striking geographic differences in how Claude is
+               adopted. Claude is predominantly used for work, across the globe and across
+               the United States. However, there is geographic variation in use cases. At the
+               global level, the Balkans and Brazil have the highest relative share of work use
+               (see Figure 3.1), and Indonesia stands out with the highest share of coursework.
+               At the US state level, New York stands out as the state using Claude relatively
+               the most for work.
+
+
+
+
+Figure 3.1: Share of work use of Claude.ai globally.
+The share of conversations for a given country that are classified as work, as opposed to personal or coursework. The different tiers
+reflect a country’s position within the global distribution of the Anthropic AI Usage Index as defined in chapter 1.3, 4, 5 We only include
+countries with at least 200 observations in our sample for this figure because of the uncertainty of the measure for low-usage
+countries in our random sample. The underlying data includes Claude.ai Free, Pro and Max usage.
+
+
+
+               Use case differences are related to a country’s per capita income, which, in
+               turn, is related to per capita AI adoption. We observe that work use cases and
+               personal use cases of Claude are more common in higher income countries,
+               while coursework use cases are more common in lower income countries
+               (see Figure 3.2). Interestingly, these findings converge with recent work by
+               Microsoft showing that AI use for school is associated with lower per capita
+               income, whereas AI use for leisure is associated with higher per capita income.
+
+
+
+The Anthropic Economic Index Report                                                                                                           29
+

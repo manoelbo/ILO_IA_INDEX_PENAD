@@ -1,0 +1,21 @@
+The Anthropic Economic
+Index report:
+Economic Primitives
+Published                                            Authors
+January 15, 2026                                     Ruth Appel,* Maxim Massenkoff,* Peter McCrory*
+                                                     Miles McCain, Ryan Heller, Tyler Neylon, Alex Tamkin
+
+
+
+
+Acknowledgements
+Xabi Azagirre, Tim Belonax, Keir Bradwell, Andy Braden, Dexter Callender III, Sylvie Carr, Miriam Chaum, Ronan Davy,
+Evan Frondorf, Deep Ganguli, Kunal Handa, Andrew Ho, Rebecca Jacobs, Owen Kaye-Kauderer, Bianca Lindner,
+Kelly Loftus, James Ma, Jennifer Martinez, Jared Mueller, Kelsey Nanan, Kim O’Rourke, Dianne Penn, Sarah Pollack,
+Ankur Rathi, Zoe Richards, Alexandra Sanderford, David Saunders, Michael Sellitto, Thariq Shihipar, Michael Stern,
+Kim Withee, Mengyi Xu, Tony Zeng, Xiuruo Zhang, Shuyi Zheng, Emily Pastewka, Angeli Jain, Sarah Heck, Jared Kaplan,
+Jack Clark, Dario Amodei
+
+
+*Lead authors. Contributed equally to this report.
+

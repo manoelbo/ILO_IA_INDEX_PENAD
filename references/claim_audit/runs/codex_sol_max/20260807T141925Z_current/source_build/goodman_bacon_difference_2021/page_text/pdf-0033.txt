@@ -1,0 +1,45 @@
+   Figure 1. Difference-in-Differences with Variation in Treatment Timing: Three Groups
+       40
+       30
+  Units of y
+
+
+
+
+                                k
+                              y it
+     20
+
+
+
+
+                                                                              l
+                                                                             y it                                         U
+                                                                                                                         y it
+       10
+
+
+
+
+                                     PRE(k)                                            MID(k,l)                         POST(l)
+       0
+
+
+
+
+                                                         t*k              Time                                    t*l
+Notes: The figure plots outcomes in three groups: a control group, 𝑈𝑈, which is never treated; an early treatment group,
+                                                          34
+𝐸𝐸, which receives a binary treatment at 𝑡𝑡∗𝑘𝑘 =               𝑇𝑇; and a late treatment group, ℓ, which receives the binary treatment
+                                                         100
+               85
+at 𝑡𝑡∗ℓ =            𝑇𝑇. The x-axis notes the three sub-periods: the pre-period for group 𝑘𝑘, [1, 𝑡𝑡𝑘𝑘∗ − 1], denoted by 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘); the
+               100
+middle period when group 𝑘𝑘 is treated and group ℓ is not, [𝑡𝑡𝑘𝑘∗ , 𝑡𝑡ℓ∗ − 1], denoted by 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ); and the post-period for
+group ℓ, [𝑡𝑡ℓ∗ , 𝑇𝑇], denoted by 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ). I set the treatment effect to 10 in group 𝑘𝑘 and 15 in group ℓ.
+
+
+
+
+                                                                       31
+

@@ -1,0 +1,58 @@
+leads to only modest increases in daily use, to 9% and 8%, respectively.
+
+    The bottom rows show adoption rates when employer initiatives are combined. Adop-
+
+tion peaks when all three—encouragement, enterprise chatbots, and training—are in place:
+
+93% of workers in such settings report having used AI chatbots at work, and 28% use
+
+them daily.
+
+    Employer initiatives not only boost adoption—they also influence who adopts the tools.
+
+Figure D.4 examines how the gender gap in AI chatbot adoption varies with employer
+
+initiatives, controlling for workers’ occupation, age, experience, earnings, and wealth.
+
+    The No Initiative estimate shows that a substantial gender gap has emerged in chatbot
+
+adoption: without encouraged use, enterprise chatbots, or training, women are about 13
+
+percentage points less likely than comparable men in the same occupation to have used
+
+AI chatbots.31
+
+    Notably, employer initiatives can significantly reduce this gap, with training proving
+
+especially effective. For instance, providing training alone narrows the gap to 7 percentage
+
+points, and combining training with other initiatives reduces it further, to just 2–3
+
+percentage points.
+
+    Table E.3 analyzes how employer initiatives affect other demographic gaps in adoption,
+
+and Appendix Figure E.5 shows gender gaps in daily usage. Employer initiatives also
+
+help close gaps by age, experience, and earnings. Training, in particular, is consistently
+
+effective in narrowing gaps in daily use as well. By contrast, encourage-use policies alone
+
+widen the gender gap in daily usage—from 3 to 10 percentage points. However, when
+
+encouragement is paired with training, the gap reverses: women become more likely than
+
+men to use AI chatbots daily, with a gender gap of –2 percentage points.
+   31
+      Figure E.4 shows that the gender gap in chatbot adoption persists even in workplaces where the tools
+are prohibited. Although employer bans are associated with a reduction in overall adoption to roughly
+one-third of the baseline rate, about 80% of the baseline gender gap remains. This pattern mirrors
+findings by Carvajal, Franco and Isaksson (2024), who document a similar gender gap in ChatGPT use
+among Norwegian bachelor’s students and show, using a vignette experiment, that the gap largely reflects
+male students continuing to use the tools even when explicitly banned.
+
+
+
+
+                                                   48
+

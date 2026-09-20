@@ -1,0 +1,37 @@
+{
+  "any_specification_passes": false,
+  "families": [
+    "coverage",
+    "ladder",
+    "national",
+    "power",
+    "sample",
+    "sector"
+  ],
+  "gate": "8A",
+  "non_psd_covariance_rows": 3,
+  "recommends_principal_specification": false,
+  "rows": 51,
+  "sources_present": [
+    "pretrend_diagnostics.csv",
+    "pretrend_power_check.csv",
+    "pretrend_sample_2022.csv",
+    "pretrend_ladder_variants.csv",
+    "pretrend_level2.csv",
+    "pretrend_wage_balanced_coverage.csv"
+  ],
+  "specifications": [
+    "00_frozen_exact_model",
+    "04_include_minimal_as_control",
+    "05_continuous_exposure",
+    "balanced_frozen_window",
+    "extended_full_sample",
+    "level_2",
+    "level_2_two_way",
+    "sample_2022_01",
+    "wage_complete_coverage"
+  ],
+  "status_counts": {
+    "fail": 51
+  }
+}

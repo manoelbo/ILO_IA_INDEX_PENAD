@@ -1,0 +1,52 @@
+involving pre-1964 reform states (38.4 percent) than non-reform states (24 percent). Figure 6 also
+
+highlights the role of a few influential 2x2 terms—comparisons between the 1973 states and non-
+
+reform or pre-1964 reform states account for 18 percent of the estimate, and the ten highest-weight
+
+2x2 DD’s account for over half.
+
+         The bias resulting from time-varying effects is also apparent in figure 6. The average of
+
+these post-treatment event-study estimates in figure 5 is -4.92, while the DD estimate is just 60
+
+percent as large. The difference stems from the comparisons of later- to earlier-treated groups. The
+
+average treated/untreated estimates are negative (-5.33 and -7.04) as are the comparisons of earlier-
+
+to later-treated states (although less so: -0.19). 31 The comparisons of later- to earlier-treated states,
+
+however, are positive on average (3.51) and account for the bias in the overall DD estimate. Using
+
+the decomposition theorem to take these terms out of the weighted average yields an effect of -
+
+5.44—close to the average of the event-study coefficients. The DD decomposition theorem shows
+
+that one way to summarize effects in the presence of time-varying heterogeneity is simply to
+
+subtract the components of the DD estimate that are biased using the weights in equation (7).
+
+B. Testing the design
+Figures 7 and 8 test for covariate balance in the unilateral divorce analysis. Figure 6 plots the
+
+reweighted balance test weights, 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 , from equation (17), the corresponding weights from a
+
+timing-only design, and each group’s sample share. Larger groups have larger weight, but because
+
+they have relatively low treatment variance, the earliest timing groups are downweighted relative
+
+to their sample shares. 32 In fact, the 1969 states effectively act as controls because 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 < 0.
+
+
+
+
+31
+   This point also applies to units that are already treated at the beginning of the panel, like the pre-1964 reform states
+in the unilateral divorce analysis. Since their 𝐷𝐷  �𝑘𝑘 = 1 they can only act as an already-treated control group. If the
+effects for pre-1964 reform states were constant they would not cause bias.
+32
+   Adding 5 × 𝑦𝑦𝑦𝑦𝑦𝑦𝑦𝑦 to the suicide rate for the 1970 states (𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 = 0.0039) changes the DD estimate from -3.08
+to -2.75, but adding it to the 1973 group (𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 = 0.18) yields a very biased DD estimate of 12.28.
+
+                                                            21
+

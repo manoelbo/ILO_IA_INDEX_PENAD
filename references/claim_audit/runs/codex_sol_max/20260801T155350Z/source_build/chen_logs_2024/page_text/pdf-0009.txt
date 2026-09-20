@@ -1,0 +1,45 @@
+a? Proposition 4 in the appendix shows that the change in the ATE from multiplying the outcome
+by a large factor a is approximately logpaq times the treatment effect on the extensive margin,11
+
+             EP rmpaY p1qq ´ mpaY p0qqs “ pP pY p1q ą 0q ´ P pY p0q ą 0qq ¨ logpaq ` oplogpaqq.                          (2)
+
+Thus, the ATE for mpY q will tend to be more sensitive to finite changes in scale the larger is the
+extensive margin treatment effect. This implies that sensitivity analyses that assess how treatment
+effect estimates for mpY q change under finite changes in the units of Y —or equivalently, under finite
+changes of c in logpc ` Y q—are roughly equivalent to measuring the size of the extensive margin.
+Remark 3 (Extension to continuous treatments). We focus on ATEs for binary treatments for expo-
+sitional simplicity, although similar results apply with continuous treatments. In Appendix B.2, we
+show that when d is a continuous treatment, any treatment effect contrast that averages mpaY pdqq
+                                                         ş
+across possible values of d (i.e. a parameter of the form ωpdqErmpaY pdqs) is arbitrarily sensitive
+to scaling when there is an extensive margin effect.
+Remark 4 (Extension to OLS estimands). It is worth noting that the results in this section show
+that population ATEs for mpY q are sensitive to the units of Y . These results are about estimands,
+and thus any consistent estimator of the ATE for mpY q will be sensitive to scaling (at least asymp-
+totically). Thus, our results apply to ordinary least squares (OLS) estimators when they have
+a causal interpretation, but also to non-linear estimators such as inverse-probability weighting or
+doubly-robust methods. Nevertheless, given the prominence of OLS in applied work, and the fact
+that OLS is sometimes used for non-causal estimands, in Appendix B.3 we provide a result specif-
+ically on the scale-sensitivity of the population regression coefficient for a random variable of the
+form mpY q on an arbitrary random variable X. Our result shows that the coefficients on X will
+be arbitrarily sensitive to the scaling of Y when the coefficients of a regression of 1rY ą 0s on X
+are non-zero. Thus, the OLS estimand using a logarithm-like function on the left-hand side will be
+sensitive to scaling even when it does not have a causal interpretation.
+Remark 5 (Statistical significance). Equation (2) shows that P pY p1q ą 0q ´ P pY p0q ą 0q is the
+dominant term in θpaq for large a, which suggests that the t-statistic for an estimator of θpaq will
+generally converge to that for the analogous estimator of the extensive margin effect, P pY p1q ą
+0q ´ P pY p0q ą 0q. Proposition 7 in the appendix formalizes this intuition when the treatment
+effects are estimated via OLS: As a is made large, the t-statistic for θ̂paq converges to that for the
+extensive margin estimate. In our empirical analysis of papers in the American Economic Review
+below, we find that indeed the t-statistics for estimates of the ATE using arcsinhpY q are typically
+close to those for the extensive margin effect.
+Remark 6 (When most values are large). Researchers often have the intuition that if most of the
+values of the outcome are large, then ATEs for transformations like logp1 ` Y q or arcsinhpY q will
+approximate elasticities, since mpY q « logpY q for most values of Y . Indeed, in an influential paper,
+Bellemare and Wichman (2020) recommend that researchers using the arcsinhpY q transformation
+ 11
+      We say f paq “ opgpaqq if limaÑ8 |f paq{gpaq| “ 0. That is, as a Ñ 8, |f paq| grows strictly slower than |gpaq|.
+
+
+                                                             9
+

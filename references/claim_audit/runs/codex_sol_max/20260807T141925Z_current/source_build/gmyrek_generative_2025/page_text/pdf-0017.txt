@@ -1,0 +1,47 @@
+14         ILO Working Paper 140
+
+
+
+
+     XX    3 Assessment of tasks’ automation potential
+
+
+
+     3.1. Initial Algorithmic predictions
+     As the first step, we conducted a purely algorithmic assessment of potential exposure to automa-
+     tion for each task in the Polish 6-digit system, relying on three advanced LLMs available on the
+     market at the end of 2024: GPT-4, GPT-4o and Gemini Flash 1.5. The method relies on the approach
+     previously used by GBB (2023), with a sequential API call devised to assign a score ranging from
+     0 to 1 for each individual task, where 0 means the task cannot be automated and 1 means the
+     task could be fully automated with GenAI technology (the task can be conducted without partic-
+     ipation of a human operator).4 The LLM is provided with information on the occupation to which
+     the task pertains in ISCO-08 and requested to produce a justification for each predicted score.
+
+
+         XX Figure 2. Distribution of synthetic automation scores from 3 LLMs, by ISCO-08 1-digit
+
+
+
+
+     The overall distribution of these synthetic automation scores is generally consistent with scores
+     based on ISCO-08 documentation (GBB, 2023; Gmyrek, Winkler and Garganta, 2024) and O*NET
+     (Elondou, 2023; Felten, 2023): the highest exposure to GenAI is typically observed among groups
+     with the largest share of tasks of cognitive nature and it declines with tasks of physical nature,
+     which are more prominent among occupational groups 4-9 (Figure 2). The largest density of
+     high automation scores is observed among clerical workers and is stable across the three LLMs.
+     In other groups, we observe some important differences in the LLMs’ predictions. In particular,
+     Gemini Flash 1.5 seems to provide a bimodal scoring, with most scores falling either below 0.25
+     or above 0.6. The other two models provide a wider range of scores, but still with important di-
+     vergences, which makes it difficult to judge which model one should follow.5 Therefore, we do
+     not examine these distributions in greater detail but proceed directly to improvements that could
+     enhance coherence and stability of our predictions, regardless of the LLM applied.
+
+
+
+     4
+           In GBB (2023), the scores and justifications were assessed for consistency and stability of predictions over time, with the written justi-
+           fications reviewed by humans. Tasks with scores above 0.8 (high possibility of automation) were transformed into embeddings, with
+           a semantic clustering algorithm applied to identify the major groups of such tasks, which are subsequently reviewed by humans.
+     5
+           A comparison to GBB (2023) scores suggests the closest alignment with GPT-4o synthetic scoring of the Polish tasks’ database.
+

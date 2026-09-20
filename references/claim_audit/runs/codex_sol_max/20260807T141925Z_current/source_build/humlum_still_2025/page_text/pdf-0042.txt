@@ -1,0 +1,31 @@
+                         Figure 2: Chatbot Adoption by Employer Initiatives
+
+                                       No Initiative
+
+                                   Encourage Use
+
+                                Enterprise Chatbot
+
+                                           Training
+
+              Encourage Use + Enterprise Chatbot
+
+                         Encourage Use + Training
+
+                      Enterprise Chatbot + Training
+
+                                          All Three
+                                                       0         .2        .4         .6          .8          1
+
+                                                                      Daily Use      Ever Used
+
+Notes: This figure illustrates how workers’ use of AI chatbots vary with their employer initiatives. The estimates are based
+on predicted values from Equation (1), varying EmployerInitiatives while holding workers’ characteristics X at their mean
+values. Whiskers represent 95% confidence bands of the predicted values. Some confidence intervals are too narrow to be
+distinguished from the point estimates at this scale. Table 1, Columns (1)-(2) report the full set of regression estimates.
+Sample: All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                            40

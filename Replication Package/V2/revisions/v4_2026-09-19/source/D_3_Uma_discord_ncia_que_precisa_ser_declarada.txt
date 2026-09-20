@@ -1,0 +1,2 @@
+### D.3 Uma discordância que precisa ser declarada
+As duas medições de estoque formal desta subseção têm sinais opostos e magnitudes quase simétricas: −0,0429 na RAIS, com p nominal de 0,006, e +0,0420 no braço de estoque da PNAD Contínua, com p nominal de 0,386. A simetria numérica é coincidência, mas a divergência de sinal não pode ser omitida.

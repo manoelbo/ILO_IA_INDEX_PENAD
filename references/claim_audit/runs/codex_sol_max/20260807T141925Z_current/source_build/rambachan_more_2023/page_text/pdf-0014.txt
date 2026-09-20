@@ -1,0 +1,62 @@
+2568                                       REVIEW OF ECONOMIC STUDIES
+
+   3.2.1. Conditional confidence sets. Suppose we wish to test (13) for some fixed θ̄ . The
+conditional testing approach considers tests based on the profiled test statistic
+
+                                         η̂ := min η s.t. Ỹn (θ̄ ) − X̃ τ̃ ≤ σ̃n · η,                                    (14)
+                                                η,τ̃
+
+                 
+where σ̃n =       diag( ˜ n ). This linear program selects the value of the nuisance parameters
+τ̃ ∈ RT̄ −1 that minimizes the maximum studentized moment. Duality results from linear pro-
+
+
+
+
+                                                                                                                                   Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+gramming (e.g. Schrijver (1986), Section 7.4) imply that the value η̂ obtained from the primal
+program (14) equals the optimal value of the dual program16
+
+                             η̂ = max γ  Ỹn (θ̄ ) s.t. γ  X̃ = 0, γ  σ̃n = 1,        γ ≥ 0.                           (15)
+                                     γ
+
+
+If a vector γ∗ is optimal in the dual problem above, then it is a vector of Lagrange multipliers for
+the primal problem. Standard results in linear programming imply that the optimum is always
+obtained at one of the finite set of vertices, V ( n ) (also known as the set of basic feasible
+solutions). We denote by V̂n ⊂ V ( n ) the set of optimal vertices of the dual program.17
+    To construct critical values, ARP use the fact that the distribution of η̂ has a truncated normal
+distribution conditional on the event that γ∗ is optimal in the dual problem. Specifically,
+
+                                    η̂ | {γ∗ ∈ V̂n , Sn = s} ∼ ξ | ξ ∈ [v lo , v up ],
+
+where ξ ∼ N (γ∗ μ̃(θ̄ ), γ∗ ˜ n γ∗ ), μ̃(θ̄ ) = E[Ỹn (θ̄ )], Sn = (I − ( ˜ n γ∗ /γ∗ ˜ n γ∗ )γ∗ )Ỹn (θ̄ ), and
+v lo , v up are known functions of ˜ n , s, γ∗ (see Lemma 1 in ARP).18 Intuitively, the distribution
+of η̂ depends on the vector μ̃(θ̄ ), and so to eliminate the dependence on the components of μ̃(θ̄ )
+other than γ  μ̃(θ̄ ), we condition on Sn , which is a sufficient statistic for the components of μ̃(θ̄ )
+that are orthogonal to γ∗ μ̃(θ̄ ).
+      ARP show that all quantiles of the conditional distribution of η̂ in the previous display are
+increasing in γ∗ μ̃(θ̄ ). Moreover, the null hypothesis (13) implies γ∗ μ̃(θ̄ ) ≤ 0. To see why this
+is the case, note that the definition of the dual problem (15) implies that γ∗ ≥ 0 and γ∗ X̃ = 0,
+whereas the null hypothesis implies that there exists τ̃ such that μ̃(θ̄ ) − X̃ τ̃ ≤ 0. It follows
+that γ∗ μ̃(θ̄ ) = γ∗ (μ̃(θ̄ ) − X̃ τ̃ ) ≤ 0 under the null. The ARP conditional test therefore uses
+the critical value max{0, cC,α }, where cC,α is the 1 − α quantile of the truncated normal dis-
+tribution ξ | ξ ∈ [v lo , v up ] under the worst-case assumption that γ∗ μ̃(θ̄ ) = 0.19 We denote by
+
+
+        16. Technically, the duality results require that η̂ be finite. However, one can show that η̂ is finite with probability
+1, unless the span of X̃ contains a vector with all negative entries, in which case the identified set for θ is the real line.
+We therefore trivially define our test never to reject if η̂ = −∞.
+        17. In general, there may not be a unique solution to the dual program. ARP show that in the context of the finite
+sample normal, conditional on any one vertex of the dual program’s feasible set being optimal, every other vertex is
+optimal with either probability 0 or 1. In the finite sample normal model, it thus suffices to condition on the event that
+a vector γ∗ ∈ V̂ . Our conditions for asymptotic validity of the conditional test below, however, ensure that the optimal
+vertex will be unique w.p.a. 1.
+        18. The cut-offs v lo and v up are the maximum and minimum of the set {x : x = maxγ ∈Fn γ  (s +
+( n γ∗ /γ∗ ˜ n γ∗ )x)} when γ∗ ˜ n γ∗  = 0, where Fn is the feasible set of the dual program (15). When γ∗ ˜ n γ∗ = 0, we
+  ˜
+define v lo = −∞ and v up = ∞, so the conditional test rejects if and only if η̂ > 0.
+        19. As noted in ARP, the truncation at 0 is not necessary for the conditional test to control size in the finite
+sample normal model, but it simplifies asymptotic arguments. It also prevents the test from rejecting when all moments
+are satisfied in sample.
+

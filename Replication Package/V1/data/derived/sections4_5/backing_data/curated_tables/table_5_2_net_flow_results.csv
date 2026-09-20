@@ -1,0 +1,4 @@
+Resultado,Coeficiente,Efeito aprox.,p-valor,N,CBOs,Pretrend,Leitura
+Saldo líquido (asinh),"-0,6597* (0,3773)","-0,6597","0,081",18.307,341,fail,Sugestivo; pretrend falha
+Saldo líquido / admissões pré,"0,0119 (0,0193)","0,0119","0,537",18.299,340,fail,Sugestivo; pretrend falha
+Saldo líquido / fluxo total,"0,0042 (0,0088)","0,0042","0,629",18.307,341,not_available,Sugestivo; sem pretrend formal

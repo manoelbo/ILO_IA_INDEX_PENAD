@@ -1,0 +1,63 @@
+70% of workers have a college degree according to the 2017 American Community Survey (ACS).25
+
+In Figure A13 we show trends for occupations in which fewer than 30% of workers have a college
+
+degree.
+
+       Occupations with a high share of college graduates have declining employment overall, with
+
+muted differences between more-exposed and less-exposed occupations compared to our main re-
+
+sults. In contrast, occupations with a low share of college graduates have rising overall employment,
+
+with the least AI-exposed occupations growing and the most exposed occupations declining in em-
+
+ployment. Further, for lower college share occupations, the dispersion in employment outcomes is
+
+visible in higher age groups as well, with workers up to age 40 showing separation in employment
+
+trends by AI exposure. These findings suggest that deteriorating education outcomes cannot fully
+
+explain our main results. They also suggest that for non-college workers, experience may serve as
+
+less of a buffer to labor market disruption than for college workers.
+
+
+Other Robustness Checks Figures A14 and A15 show results separately for men and women.
+
+The results are similar, suggesting that diverging prospects for men and women are not driving
+
+our findings. Figure A16 shows that results are similar when we do not take a balanced sample of
+
+firms. Figure A17 shows similar results when including part-time and temporary workers.26
+
+
+Comparison to CPS Data A useful benchmark for our findings is to compare them to estimates
+
+from the monthly Current Population Survey (CPS). The CPS surveys about 60,000 households
+
+nationwide each month to collect data on employment and other labor force characteristics. These
+
+data are released a few weeks after the reference month, giving close to real-time estimates of
+
+employment statistics. A number of prior analyses have used the CPS to assess how AI is impact-
+
+ing entry-level work (Chandar, 2025b; Dominski and Lee, 2025; Lim et al., 2025; Eckhardt and
+
+Goldschlag, 2025). We compare some of our main findings in the ADP data to estimates from the
+
+CPS.
+
+       Figures A18 through A20 show employment changes by age for software developers, customer
+  25
+     Not a single occupation in the first quintile of GPT-4 β based exposure measure has a college share above 35%,
+so that quintile is excluded from the results in Figure A12.
+  26
+     Another possibility is that employment trends are driven by Covid-19 Pandemic-era stimulus checks that distorted
+labor supply. However, these stimulus payments were conditioned on income requirements, and more AI-exposed occu-
+pations on average have higher incomes (Kochhar, 2023), suggesting the observed declines in AI-exposed occupations
+are unlikely to be driven by this channel.
+
+
+                                                         25
+

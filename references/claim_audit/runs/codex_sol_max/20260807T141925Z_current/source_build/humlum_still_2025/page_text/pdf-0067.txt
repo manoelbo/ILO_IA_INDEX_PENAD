@@ -1,0 +1,51 @@
+1. Productivity effect among non-encouraged adopters (Non-encouraged adopters
+   vs. non-encouraged non-adopters)
+
+
+                                ∆YNE,A − NE,NA = γαc0 + (1 − γ)αb0 ,                                 (35)
+
+
+   where γ = 2ββ̂b ≥ 0.27
+
+2. Skill-price effect in encouraged firms (Encouraged non-adopters vs. non-encouraged
+   non-adopters)
+
+                                    ∆YE,NA − NE,NA = −κ/(ϵ − 1).                                     (36)
+
+
+3. Combined effects for encouraged adopters (Encouraged adopters vs. non-encouraged
+   non-adopters)
+
+
+                 ∆YE,A − NE,NA = −κ/(ϵ − 1) + γ(αc0 +αc1 ) + (1 − γ)(αb0 +αb1 ).                     (37)
+
+
+   With perfect worker mobility, Equation (31) implies an additional γκ/(ϵ − 1) term.
+
+
+Workplace-level difference-in-differences. Section 3.4 estimates the effect of en-
+couragement on workplace outcomes:
+
+1. Employment effect:
+
+                                  ϵ−γ
+                     ∆N
+                      E − NE =        κ − (1 − γ)(αb0 + αb1 ) − γ(αc0 + αc1 ).                       (38)
+                                  ϵ−1
+
+2. Wage bill effect:
+
+                                              ∆W H
+                                               E − NE = κ.                                           (39)
+
+A.2.6     Missing Intercept
+
+The estimators in Equations (35)–(37) identify earnings effects up to the skill price effect in
+non-encouraged firms, dlog W0 —the familiar missing intercept problem, since within-sector
+  27
+    The frictionless sorting model predicts all adopters sort into encouraged firms, leaving no workers to
+identify Equation (35). In practice, Section 3 finds little worker resorting, so Equation (35) derives the
+structural interpretation without mobility.
+
+
+                                                   17

@@ -1,0 +1,56 @@
+46     ILO Working Paper 140
+
+
+
+
+     XX   Conclusion
+
+     In this paper, we have presented the methodology used to develop a new global index of occu-
+     pational exposure to GenAI, as well as new estimates of the global effects on employment. We
+     build on the approach developed by the ILO in 2023, but with several notable refinements. First,
+     by beginning our analysis with the Polish 6-digit occupational structure, we expand by ten-fold
+     the amount of detailed task information available for the analysis of task automation. In addi-
+     tion, using a representative sample from the 29,753 tasks in the Polish occupational classification
+     system and a survey of 1,640 people in Poland, we captured the opinions of each 1-digit ISCO-08
+     group on the potential for task automation in the job categories in which they are currently em-
+     ployed (52,558 data points). We then compared this input with an expert survey and conducted
+     subsequent rounds of revisions among a smaller international expert group for the tasks with
+     the highest degree of disagreement. Based on this process, we built a repository of knowledge
+     with adjusted task scores that goes beyond Poland’s national specificities and reflects a broader
+     consensus on the task automation potential of current GenAI tools.
+
+     We subsequently used this repository to develop an AI assistant that could predict scores for
+     these tasks based on this additional information as well as the technical documentation of ISCO-
+     08. These scores update the original set of scores produced by the ILO in 2023 (Gmyrek et al.,
+     2023). The use of a verified “knowledge base” presents an important methodological improve-
+     ment, which greatly enhances stability of our predictions across independent LLMs (see Section
+     6), and which can be used to produce similar score predictions for other occupational classifi-
+     cation systems that contain job-specific tasks. In addition, we make all task-level scores publicly
+     available, which also makes it possible for researchers to organize the occupational exposure in
+     different ways than our proposed framework of exposure gradients.
+
+     The new global index presented in this paper is generic, due to the nature of ISCO-08 and the
+     structure of tasks associated with occupations in this framework. Its definite strength – similar
+     to ISCO-08 – is that it provides a common global denominator and a direct link to national labour
+     forces surveys held in the ILO harmonized micro data repository, which relies on the same clas-
+     sification of occupational structures. Even though all countries do not use ISCO-08, mappings
+     of the national systems to this common international standard are available. This eliminates the
+     need for crosswalks from other national systems (e.g. O*NET), which involves tenuous assump-
+     tions about the similarity of detailed occupations in the technologically advanced context of the
+     USA to other countries, especially non-HICs. The simple and comparable character of our ISCO-
+     08 based index enables direct production of global, regional and income-based employment es-
+     timates, based on the same statistical modelling techniques that are used by the ILO for other
+     global figures (see Section 11).
+
+     Our 2025 scores are presented in a revised occupational classification system, adopting a frame-
+     work of four progressively increasing exposure gradients, that better highlights the importance
+     of potential AI exposure and task variability for determining possible outcomes. We produced a
+     new set of global estimates of GenAI exposure based on this revised classification.
+
+     The new index maintains many of the headline findings of the 2023 methodology. Clerical oc-
+     cupations continue to have the highest exposure levels, albeit with some important downward
+     revisions to individual tasks scores. Such occupations include data entry clerks, typists, account-
+     ing, bookkeeping clerks and administrative secretaries. Additionally, some occupations – such
+     as financial analysts, and web and multimedia developers (gradient 4), as well as bank tellers,
+     translators, applications programmers, investment advisers (gradient 3) – have increased their
+

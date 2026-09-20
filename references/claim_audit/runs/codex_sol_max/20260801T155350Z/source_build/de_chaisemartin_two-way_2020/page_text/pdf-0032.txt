@@ -1,0 +1,81 @@
+Finally, using again (11), we obtain
+                                   X N(i)                     2
+                                                                        
+                                                             S
+                           βef e =             e (i) = λ
+                                          w(i) ∆               s
+                                                                    + Ts .
+                                   i≥s
+                                       N1                  1 −  P s
+
+Thus,
+                                                           βef e
+                                               λ=                       .
+                                                    Ts + Ss2 /(1 − Ps )
+Then, using what precedes,
+                                         X N(i)              2       X N(i)           2
+                              σ 2f e =               λw(i)        +              e TR
+                                                                                 ∆
+                                         i≥s
+                                               N1                     i<s
+                                                                            N1
+                                                                           2
+                                                           λSs
+                                   =λ2 Ts + (1 − Ps )
+                                                          1 − Ps
+                                                      
+                                                  Ss2
+                                   =λ2 Ts +
+                                                1 − Ps
+                                            βef e
+                                               2
+                                   =                     .
+                                     Ts + Ss2 /(1 − Ps )
+The result follows, once noted that Equations (11) and (12) imply that s = min{i ∈ {1, ..., n} :
+w(i) < −S(i) /(1 − P(i) )}.
+Finally, consider the case βef e < 0. By letting ∆e 0 = −∆
+                                                    (i)
+                                                            e (i) and βe0 = −βef e , we have
+                                                                         fe
+
+                                  n               n
+                                                                ! 2        n
+                                 X   N(i) e 0 2  X    N(i) e 0           X    N(i)
+        σf e =       min                  ∆(i) −           ∆(i)     s.t.                e 0 = βe0 .
+                                                                                   w(i) ∆ (i)   fe
+               e 0 ≤0,...,∆
+               ∆ (1)
+                          e 0 ≤0
+                            (n)  i=1
+                                     N 1         i=1
+                                                        N1                i=1
+                                                                              N 1
+
+
+This is the same program as before, with βef0 e instead of βef e . Therefore, by the same reasoning
+as before, we obtain
+                                      (βef0 e )2               βef2e
+                        σ 2f e =                     =                     .
+                                 Ts + Ss2 /(1 − Ps )   Ts + Ss2 /(1 − Ps )
+
+Proof of Corollary 2
+
+We have
+                                                                                
+                                                    X     Ng,t
+                                βf e = E                           e g,t 
+                                                               wg,t ∆
+                                                          N1
+                                           (g,t):Dg,t =1
+                                                                            
+                                                  X Ng,t
+                                     = E                      wg,t  ∆  e T R
+                                                            N1
+                                              (g,t):Dg,t =1
+                                                
+                                     =E ∆  e TR
+
+                                     = δT R.
+
+                                                          32
+

@@ -1,0 +1,38 @@
+                                                                                                                            40
+
+
+
+
+                                                       Figure 7: Model Deviation from Ground Truth
+
+                                           0.9
+                                                        Human Only (Data)
+                                           0.8          Human + AI (Data)
+                                                        AI
+                                           0.7          Estimated Model (True Joint Distribution)
+             Deviation from ground truth
+
+
+
+
+                                                        Estimated Model (Conditionally Independent)
+                                           0.6
+
+                                           0.5
+
+                                           0.4
+
+                                           0.3
+
+                                           0.2
+
+                                           0.1
+
+                                           0.0
+                                                 (0.0, 0.2]      (0.2, 0.4]       (0.4, 0.6]      (0.6, 0.8]   (0.8, 1.0]
+                                                                              AI prediction bin
+
+Note: This figure shows the performance of the different modalities that we consider for the optimal collaborative system. Cases
+are either decided by only the radiologist, only the AI, or the radiologist with access to the AI. The performance measures for
+Human Only and Human + AI are constructed from our treatment effect analysis.
+

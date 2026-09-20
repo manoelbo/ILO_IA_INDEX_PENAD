@@ -1,0 +1,55 @@
+A.1.3    Discussion
+
+The preceding section examines the implications of workers self-selecting into chatbot
+
+adoption based on their individual benefits. Beyond this margin of selection, at least two
+
+additional forms of selection may be at play.
+
+   First, firms that choose to encourage chatbots may be the ones with the greatest
+
+benefits from the tools—even absent any encouragement initiatives—introducing potential
+
+reverse causality between employer encouragement and reported benefits. In the framework
+
+above, this corresponds to E being positively related to αb0 . Second, employers may target
+
+their encouragement toward employees who are expected to benefit the most individually.
+
+This would resemble a “rotation” of the cost and benefit schedules in Figure A.1, rather
+
+than simple vertical shifts.
+
+   Section E addresses both of these additional selection margins empirically. First,
+
+Section E.4 examines whether employers select into encouragement based on their un-
+
+derlying benefits from chatbot use. We show that the effects of encouragement remain
+
+robust when controlling for a range of firm- and worker-level characteristics, including firm
+
+age, size, and productivity, as well as workers’ detailed task mixes and other attributes.
+
+These robustness checks show that the association between employer encouragement and
+
+reported benefits is not driven by observable confounders.
+
+   Second, Section E.5 implements a “coworker encouragement” design, using the average
+
+encouragement reported by a worker’s colleagues to measure workplace-wide encourage-
+
+ment rates. Because coworker encouragement rates capture only workplace-level variation,
+
+this approach helps address potential bias arising from employers targeting encourage-
+
+ment toward individual employees with the highest idiosyncratic benefits. As shown in
+
+Table E.14 and Figure E.21, the findings remain largely robust when using coworker
+
+encouragement as the source of variation.
+
+
+
+
+                                             7
+

@@ -1,0 +1,63 @@
+of whether the usage of AI in an occupation is primarily a substitute or complement for labor.
+
+Table A1 shows example occupations that are in the highest and lowest exposure category for each
+
+measure.
+
+       Panel A of Figure 3 shows employment changes by overall prevalence of related Claude queries
+
+for 22-25 year-olds.16 The patterns match the findings using the Eloundou et al. (2024) measures
+
+closely. Panel B likewise shows that the occupations with the highest estimated automation shares
+
+have experienced declining employment for the youngest workers.
+
+       In contrast, Panel C indicates that the occupations with the highest estimated augmentation
+
+shares have not experienced a similar pattern. Employment changes for young workers are not
+
+ordered by augmentation exposure, as the fifth quintile has among the fastest employment growth.
+
+The findings are consistent with automative uses of AI substituting for labor while augmentative
+
+uses do not.17
+
+
+4.4      Fact 4: Employment declines for young, AI-exposed workers remain after
+         conditioning on firm-time shocks
+
+While our results so far are consistent with the hypothesis that generative AI is causing a decline
+
+in entry-level employment, there are plausible alternative explanations. One class of explanations
+
+is that our patterns are explained by industry- or firm-level shocks correlated with sorting patterns
+
+by age and measured AI exposure. For example, one possibility is that young workers with high
+
+measured AI exposure are disproportionately likely to sort to firms heavily susceptible to interest
+
+rate increases.
+
+       We test for a class of such confounders by controlling for a rich set of fixed effects. For each
+
+age group, we estimate the Poisson regression
+
+
+                   log(E[yf,q,t ]) =                   γq′ ,j 1{t = j}1{q ′ = q} + αf,q + βf,t + ϵf,q,t       (4.1)
+                                       X X
+
+                                       q ′ ̸=1 j̸=−1
+
+  16
+    See Figures A6 through A8 for other age groups.
+  17
+    Occupations in the first two augmentation quintiles have very low Claude usage (0.01% and 0.09% of conversations
+for the average occupation, respectively), with a high share of conversations classified as neither automative nor
+augmentative. In contrast, occupations in the third through fifth quintiles average 0.47%, 0.39%, and 0.33% of
+Claude conversations. For the automation measure, overall Claude usage increases on average with the automation
+share, with the lowest exposure group averaging 0.05% of conversations and the highest group averaging 0.73%.
+Figures A9 and A10 show that automation and augmentation results are similar when dropping occupations with
+low overall Claude usage.
+
+
+                                                               11

@@ -1,0 +1,44 @@
+                                                                                                                               79
+
+ C.4           Robustness
+
+ In this section, we show the robustness of the results from Section 4.2.
+
+
+ C.4.1         By Design
+
+ Design 1
+
+ This section presents summaries of radiologist accuracy and treatment effect estimates using
+ data from design 1. We do not present treatment effects conditional on radiologist prediction
+ as same cases are not read in the design.
+
+                         Figure C.12: Comparing AI performance to Radiologists
+               (a) RMSE Radiologists and AI                                             (b) AUROC Radiologists and AI
+                       AI (Pct. 32)                                                                        AI (Pct. 68)
+                                                                               8
+          10
+                                                                               6
+Density
+
+
+
+
+                                                                     Density
+
+
+
+
+                                                                               4
+          5
+
+                                                                               2
+
+
+          0                                                                    0
+               .2          .3             .4              .5                       .5       .6      .7           .8       .9    1
+                                RMSE                                                                     AUROC
+
+
+ Note: Main specifications similar to figure 1 with the exception that observations are from design 1 only.
+

@@ -1,0 +1,43 @@
+AI adoption, productivity and employment:
+      Evidence from European firms
+
+         Iñaki Aldasoro            Leonardo Gambacorta                  Rozalia Pal
+                 BIS                        BIS & CEPR                         EIB
+
+         Debora Revoltella              Christoph Weiss              Marcin Wolski
+                   EIB                           EIB                         EIB
+
+
+                                     December 8, 2025
+
+
+                                            Abstract
+
+
+      This paper provides new evidence on how the adoption of artificial intelligence (AI)
+      affects productivity and employment in Europe. Using matched EIBIS-ORBIS data
+      on more than 12,000 non-financial firms in the European Union (EU) and United
+      States (US), we instrument the adoption of AI by EU firms by assigning the adop-
+      tion rates of US peers to isolate exogenous technological exposure. Our results
+      show that AI adoption increases the level of labor productivity by 4%. Productiv-
+      ity gains are due to capital deepening, as we find no adverse effects on firm-level
+      employment. This suggests that AI increases worker output rather than replac-
+      ing labor in the short run, though longer-term effects remain uncertain. However,
+      productivity benefits of AI adoption are unevenly distributed and concentrate in
+      medium and large firms. Moreover, AI-adopting firms are more innovative and their
+      workers earn higher wages. Our analysis also highlights the critical role of comple-
+      mentary investments in software and data or workforce training to fully unlock the
+      productivity gains of AI adoption.
+
+
+
+JEL Codes: D22, J24, L25, O33, O47
+Keywords: Artificial intelligence, firm productivity, Europe, digital transformation.
+
+
+
+
+    We thank Jon Frost, Matteo Gatti and seminar participants at the European Investment Bank for
+helpful comments and suggestions. The views expressed in this paper are those of the authors and do
+not reflect those of the Bank for International Settlements or the European Investment Bank.
+

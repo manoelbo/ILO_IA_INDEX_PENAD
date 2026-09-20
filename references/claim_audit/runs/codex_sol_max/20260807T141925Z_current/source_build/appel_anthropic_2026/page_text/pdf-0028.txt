@@ -1,0 +1,42 @@
+            CHAPTER 3
+
+            How Claude is used varies
+            by geography
+
+            Overview
+
+            In this chapter, we analyze geographic variation in Claude usage patterns
+            using a privacy-preserving¹ analysis of 1 million Claude.ai conversations.² We
+            make five observations:
+
+            Claude is mostly used for work, but use cases diversify with adoption: Work
+            and personal use cases are more common in higher-income countries, while
+            coursework use cases are more common in lower-income countries. This
+            echoes findings from our prior report and aligns with recent work by Microsoft.
+
+            GDP and human education predict adoption globally and within the US: A 1%
+            increase in GDP per capita is associated with a 0.7% increase in Claude usage
+            per capita at the country level. Human education—Claude’s estimate of years
+            of formal education needed to understand the human prompt—correlates
+            positively with the Anthropic AI Usage Index at both levels.
+
+            Other primitives predict adoption differently at global vs. US levels: At the
+            country level, higher usage correlates with shorter tasks and less AI autonomy.
+            At the US state level, these relationships are not statistically significant, though
+            work use correlates positively with adoption.
+
+            Relationships between primitives depend on context: Task success is
+            negatively associated with human education across countries, but positively
+            within US states. However, when controlling for other primitives, the US
+            relationship becomes insignificant.
+
+            How humans prompt is how Claude responds: The education levels of human
+            prompts and AI responses are nearly perfectly correlated (r > 0.92 at both
+            levels). Higher per capita usage countries also show more augmentation—
+            using Claude as a collaborator rather than delegating decisions entirely.
+
+
+
+
+The Anthropic Economic Index Report                                                                28
+

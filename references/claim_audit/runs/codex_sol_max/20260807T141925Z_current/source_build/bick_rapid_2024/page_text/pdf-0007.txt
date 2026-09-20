@@ -1,0 +1,45 @@
+2.2     Measurement of Generative AI Use
+
+When designing our survey, a key goal was to enable comparisons to the historical adoption
+of other technologies. To facilitate these comparisons, we use existing technology adoption
+questions from the CPS Computer and Internet Use supplement (CIU) as a template for our
+own questions regarding genAI. In the CIU, the leading question about computer adoption at
+work for employed respondents was:
+
+        Do you [directly] use a computer for your job? (No/Yes)
+
+A second question asks about computer use at home:
+
+        Do you [directly] use a computer at home? (No/Yes)
+
+These questions were asked in 1984, 1989, 1993, 1997, 2001, and 2003, with the word “directly”
+being omitted in the last two years.4
+
+      The RPS genAI module begins with a definition of genAI:
+
+        Generative AI is a type of artificial intelligence that creates text, images, audio, or video
+        in response to prompts. Some examples of Generative AI include ChatGPT, Gemini, and
+        Midjourney.
+
+We included examples of popular genAI products because we thought some respondents may be
+more familiar with those product names than with the broader concept of genAI. After defining
+genAI, the module asks respondents whether they had heard of the concept prior to the survey.
+Overall, 88.4% reported having heard of genAI; the remaining 11.6% who answered “No” skip
+the remainder of the module. Respondents who answer “Yes” continue with the survey.
+
+      For employed respondents, the next question asks about genAI use at work:
+
+        Do you use Generative AI for your job? (No/Yes)
+
+This question is designed to mirror the analogous computer use question from the CIU, discussed
+above. We opted for the version asked from 2001 onwards that omitted the word “directly.”
+
+      Another question later in the survey asks about genAI usage outside work:
+
+        Do you use Generative AI [outside your job]? (No/Yes)
+  4
+      Starting in 2001, the CIU also asked about internet usage.
+
+
+                                                        5
+

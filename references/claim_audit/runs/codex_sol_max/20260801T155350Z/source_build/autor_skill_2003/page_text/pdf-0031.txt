@@ -1,0 +1,46 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                        1309
+
+     A notable pattern in Table IV is that the coefcients on the
+capital investment and capital intensity variables are economi-
+cally small and in most cases insignicant. This indicates that
+aggregate capital deepening—apart from computer investment—
+explains little of the observed change in task input.22 We have
+also explored a large number of variations of these models includ-
+ing estimating separate models for manufacturing and nonmanu-
+facturing industries and for male and female task input; subdi-
+viding capital investment into equipment and structures invest-
+ment; subdividing computer investment into hardware and
+software investment; and controlling for industries’ log output,
+capital-output ratios, and import and export penetration. These
+tests conrm the overall robustness of our results.
+
+
+   V. TASK CHANGE WITHIN EDUCATION GROUPS AND OCCUPATIONS
+     The analyses above establish that industries undergoing
+rapid computerization reduced labor input of routine cognitive
+and manual tasks and increased labor input of nonroutine inter-
+active and analytic tasks. Since better educated workers are
+likely to hold a comparative advantage in nonroutine versus
+routine tasks, one interpretation of these results is that they
+conrm the established pattern of increasing relative educational
+intensity in computerizing industries over the past several de-
+cades. While we do not disagree with this interpretation, our task
+framework makes a broader claim, namely that changes in the
+demand for workplace tasks, stemming from technological
+change, are an underlying cause—not merely a reection— of
+relative demand shifts favoring educated labor. To test this
+broader implication, we exploit the unique features of the DOT to
+analyze two novel margins of task change: changes within edu-
+cation groups and changes within occupations.
+
+V.A. Within-Industry Task Shifts by Education Group:
+     1980 –1998
+    We showed in Tables III and IV that increased industry
+computerization predicts increased nonroutine cognitive activity
+and reduced routine cognitive and manual activities. Why does
+
+
+     22. This pattern echoes the ndings of Berman, Bound, and Griliches [1994],
+Autor, Katz, and Krueger [1998], and Bresnahan, Brynjolfsson, and Hitt [2002]
+for skill upgrading.
+

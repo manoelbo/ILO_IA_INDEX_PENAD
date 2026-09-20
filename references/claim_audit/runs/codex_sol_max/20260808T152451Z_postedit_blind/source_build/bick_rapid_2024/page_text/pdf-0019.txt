@@ -1,0 +1,54 @@
+                    Table 1: Predictors of Generative AI Use at Work Last Week
+
+
+                                                                     (1)         (2)            (3)
+                   Constant                                     0.266∗∗∗       0.213∗∗∗       0.066
+                                                               (0.018)        (0.052)        (0.042)
+                                                                      ∗∗∗            ∗∗∗            ∗
+                   Female                               −0.070               −0.048     −0.018
+                                                         (0.014)              (0.015)    (0.011)
+                   Age: 18-29                           −0.016               −0.014     −0.028∗
+                                                         (0.022)              (0.021)    (0.016)
+                   Age: 40-49                           −0.015               −0.028       0.009
+                                                         (0.021)              (0.021)    (0.016)
+                   Age: 50-64                           −0.152∗∗∗            −0.157∗∗∗ −0.059∗∗∗
+                                                         (0.019)              (0.019)    (0.014)
+                   Education: Bachelor’s Degree           0.189∗∗∗             0.123∗∗∗   0.032∗∗
+                                                         (0.017)              (0.018)    (0.014)
+                   Education: Graduate Degree             0.243∗∗∗             0.157∗∗∗   0.034∗
+                                                         (0.022)              (0.024)    (0.018)
+                   Predicted Exposure (Eloundou et al.)    –                   0.206∗∗∗   0.092∗
+                                                                              (0.065)    (0.051)
+                   Employer Encourages AI Use                    –              –         0.652∗∗∗
+                                                                                         (0.016)
+                   Occupation Controls                                        Y          Y
+                   R2 -adj                                     0.07            0.12           0.50
+                   N                                        6883            6883           6883
+
+Notes: Dependent variable is an indicator for whether the respondent used genAI at work in the previous week.
+Standard errors are in parentheses. ∗ , ∗∗ , ∗∗∗ indicate significance a the 10, 5, and 1 percent levels, respectively.
+Data source is the August and November 2024 waves of the RPS, ages 18-64. The sample for this table is
+employed individuals. We exclude workers in “agriculture / forestry / fishing” due to a very low sample size.
+
+
+
+adding an indicator for employer encouragement dramatically raises the share of variation
+explained to 50%. The coefficient on employer encouragement indicates that, holding other
+variables constant, a worker is 65 percentage points more likely to use genAI for work if their
+employer encourages them to do so. Controlling for employer encouragement also reduces
+the magnitude of coefficients on demographic and occupation controls relative to the previous
+specification. We caution that the estimated effect of employer encouragement is not necessarily
+causal as it may be highly correlated with a worker’s roles and responsibilities (though this is
+partially addressed through occupation controls).
+
+    The findings in this section support two conclusions. First, job tasks and responsibilities
+appear to be a primary determinant of genAI adoption patterns. Second, workplace barriers
+and encouragement also play an important role in a worker’s adoption decision. Hence, when
+job tasks are amenable to genAI adoption, firms can play an active role by promoting usage,
+offering training, and removing organizational barriers to adoption.
+
+
+
+
+                                                          17
+

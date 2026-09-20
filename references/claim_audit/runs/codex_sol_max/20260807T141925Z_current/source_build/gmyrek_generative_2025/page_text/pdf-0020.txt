@@ -1,0 +1,63 @@
+17       ILO Working Paper 140
+
+
+
+
+     3.3. Survey design and recruitment
+     We conducted the human survey using the Computer-Assisted Web Interview (CAWI) method,
+     drawing on a large online research platform in Poland, used for both commercial and scientific
+     studies. This also means that some demographic characteristics are already pre-filtered at sur-
+     vey deployment stage, whereas others are captured through a set of core questions at the start
+     of the survey (Table 3). Specifically, we capture respondents’ gender, age group, size and place
+     of residence, region of residence, highest level of education and their current profession. The
+     professional classification is further facilitated by providing respondents with a short description
+     of ISCO-08 1-digit classifications, alongside examples of occupations that fit into each category.
+
+     In addition to demographic information, subsequent core questions are designed to capture
+     respondents' knowledge and experience with GenAI. These questions help contextualize how
+     familiarity and interaction with GenAI may influence assessments of task automation potential.
+     Specifically, respondents are asked how long they have worked in their current profession (Q4),
+     as more experienced workers may have a deeper understanding of their tasks and offer more
+     cautious or realistic assessments. Additionally, they are queried on their familiarity with AI (Q5),
+     with more knowledgeable respondents potentially providing more informed evaluations. We also
+     capture how often respondents use AI tools in their job (Q6), which provides insight into their
+     practical engagement with AI and its integration into their daily tasks.
+
+     Finally, in core questions 7-8, we ask how respondents view the broader impact of AI on jobs in
+     their field, helping us understand their perspectives on automation over the next five years. The
+     final question in this section probes respondents’ views on the likelihood that their own job could
+     be partially or fully replaced by AI, which helps assess whether job security concerns might influ-
+     ence their task evaluations. Table 3 below provides a summary of the core questions.
+
+
+     XX Table 3. Core survey questions
+
+
+                 Question                                     Answer Options
+
+     1           What is your gender?                         Male / Female / Other / Prefer not to say
+
+     2           What is your age?                            Age ranges (e.g., 18-24, 25-34, 35-44, etc.)
+
+     3           What is your highest level of education?     1. High school or equivalent; 2. Bachelor's degree; 3. Master's
+                                                              degree; 4. PhD or higher; 5. Other
+
+     4           How many years have you worked in            1. Less than 1 year; 2. 1-5 years; 3. 6-10 years; 4. 11-15 years; 5.
+                 your current profession?                     More than 15 years
+
+     5           Have you heard of Generative Artificial      1. Yes; 2. No; 3. Hard to say
+                 Intelligence (GenAI, e.g. ChatGPT)?
+
+     5a          How would you rate your level of             1. Very low; 2. Low; 3. Average; 4. High 5. Very high
+                 knowledge about Generative Artificial
+                 Intelligence (GenAI, e.g. ChatGPT)?
+
+     6           How often do you use Generative              1. Never; 2. Rarely (a few times a year); 3. Occasionally (a few
+                 Artificial Intelligence tools (GenAI, e.g.   times a month); 4. Frequently (a few times a week); 5. Daily
+                 ChatGPT)?
+
+     7           How do you think Generative Artificial       1. No impact at all; 2. Slight impact; 3. Moderate impact; 4.
+                 Intelligence (GenAI, e.g. ChatGPT) will      Strong impact; 5. Transformational impact
+                 impact jobs in your field in the next 5
+                 years?
+

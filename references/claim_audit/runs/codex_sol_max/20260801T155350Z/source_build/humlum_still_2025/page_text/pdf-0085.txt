@@ -1,0 +1,60 @@
+D.2.3       User-Reported Benefits
+
+Table D.2 shows how users’ reported benefits vary with their employer initiatives.
+
+       Encouraged-use policies not only increase worker adoption of chatbots; they are also
+
+consistently linked to greater reported benefits, including larger time savings, higher
+
+quality, greater creativity, and improved job satisfaction. By contrast, enterprise chatbots
+
+and employer training, when introduced in isolation, are associated with lower reported
+
+productivity gains—suggesting these measures are often aimed more at preventing misuse
+
+than at enhancing the productivity of off-the-shelf tools. Finally, the largest reported
+
+benefits generally arise when employers adopt the full package: encouragement, enterprise
+
+chatbots, and training.
+
+       The Roy adoption model in Appendix A.1 offers two explanations for why enterprise
+
+chatbots and training, when used in isolation, may be associated with lower reported
+
+benefits. First, these initiatives might reduce the time saved for all users. For instance,
+
+if employers implement training or invest in proprietary chatbots primarily to impose
+
+guardrails or prevent misuse, such constraints may also limit workers’ ability to fully
+
+exploit the tools’ productivity potential. Second, the lower average benefit may reflect
+
+compositional effects: training and enterprise chatbots may expand adoption to workers
+
+who inherently gain less from the technology. By contrast, the fact that encouraged-
+
+use policies increase both adoption and average reported benefits suggests that the
+
+common productivity gains are large enough to offset any negative selection from broader
+
+adoption.32,33
+  32
+     Disentangling the individual-level causal effects from the selection effects would require additional
+assumptions (e.g., on the functional form of the adoption model à la Heckman (1979)) or alternative
+sources of variation (e.g., an instrument that shifts adoption costs without affecting perceived benefits).
+We do not attempt to separate these effects, as we view the bundled impact of employer initiatives as
+informative in itself, highlighting the average benefits of AI chatbots that may arise under these different
+initiatives.
+  33
+     A less rosy interpretation of the benefits associated with encouraged-use policies in isolation is that
+these workplaces have adopted a “move fast and break things” approach to chatbots, prioritizing rapid
+deployment even at the risk of errors. In contrast, workplaces that offer training or enterprise chatbots
+may pursue a slower but potentially more sustainable path. If women are more sensitive to such risks,
+this interpretation may also help explain why encouraged-use policies alone widen the gender gap in daily
+use (see Table E.3).
+
+
+
+                                                    50
+

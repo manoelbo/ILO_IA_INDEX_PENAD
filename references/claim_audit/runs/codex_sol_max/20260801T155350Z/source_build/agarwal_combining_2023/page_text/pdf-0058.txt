@@ -1,0 +1,38 @@
+                                                                                                                                                58
+
+
+
+
+                                                                      Figure B.2: Design 2
+
+
+
+             60 reads per session
+
+
+                 Session 1                2 week              Session 2        2 week           Session 3         2 week           Session 4
+                                          washout                              washout                            washout
+      XO        AI    AI+CH         CH              XO        AI AI+CH CH                XO     AI AI+CH     CH             XO     AI AI+CH    CH
+
+
+
+
+              Session 1                  2 week              Session 2         2 week           Session 3         2 week           Session 4
+                                         washout                               washout                            washout
+     AI     AI+CH XO                CH              AI     AI+CH XO       CH             AI   AI+CH     XO   CH             AI   AI+CH XO      CH
+
+
+                       Each case randomly assigned to new condition
+  15 reads per set
+read in batches of 5
+
+
+
+
+Note: In this design, radiologists diagnose sixty patient cases each under the four information environments. Radiologists
+read every case under every information environment across four sessions, separated by a washout period. Each case is only
+encountered once per session and to ensure that radiologists do not recall their/AI predictions from previous reads of the same
+cases, we ensure a minimum two-week washout period between two subsequent sessions. Within every experimental session they
+therefore read fifteen under each information environment. The randomization occurs at the track-level where every track has
+a different sequence of the information environments. (Example tracks shown here.)
+

@@ -1,0 +1,52 @@
+1995]                        CONTROLLING FALSE DISCOVERY RATE                                        299
+considerably to the proliferation of a greater awareness of multiple-comparison
+problems, and of cases where something is done about it.
+
+                                    ACKNOWLEDGEMENTS
+   We would like to express our thanks to J. P. Shaffer and J. W. Tukey, whose
+comments and questions about an earlier draft helped us to crystallize the approach
+presented here. We thank Yetty Varon for her participation in the programming
+of the simulation study and Yechezkel Kling for pointing out a need to tighten the
+original proof of theorem 1.
+
+
+
+
+                                                                                                             Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+                             APPENDIX A: PROOF OF LEMMA
+  The proof of the lemma is by induction on m. As the case m = 1 is immediate, we proceed
+by assuming that the lemma is true for any m' :s;; m, and showing it to hold for m + 1.
+  If mo = 0, all null hypotheses are false, Q is identically 0 and
+                                                               mo
+                         E(QIP I = p" ... , Pm = Pm) = O:S;; - - q * .
+                                                                    m+1
+   If mO > 0, denote by Pi, i = 1, 2, ... , mo, the p-values corresponding to the true null
+hypotheses, and the largest of these by p(mo)' These are U(O, 1) independent random vari-
+ables. For ease of notation assume that the ml p-values that the false null hypotheses take
+are ordered PI :s;; P2 :S;; ••• :s;; Pm,. Finally, define jo to be the largest 0 :s;; j :s;; ml satisfying
+                                                  mo+j
+                                           Pj:S;; m + 1 q*,                                            (4)
+
+and denote the right-hand side of inequality (4) at jo by p".
+  Conditioning on p(mo) = P,
+                                            rp '
+E(QIPmo+ 1 =p""" Pm = Pm) = Jo E(QIP(mo) =P, P mo+ 1 =p"""
+
+                                           Pm = Pm,)!P(mo)(P) dp
+                                              l
+                                        + r E(QIP(mo) =P, P mo+ 1 =PI,···,
+                                           Jp'
+                                           Pm = Pm)!P(mo)(P)dp                                         (5)
+with !P{mo)(p) = mop(mo-I).
+   In the first partp :s;; p". Thus all mo + jo hypotheses are rejected, and Q ;: mo/(mo + jo).
+Evaluating the integral first, and then using inequality (4), we obtain
+
+                mo . (p,,)mo:s;; mo. mo + h q*(p,,)mo-I = ~q*(p,,)mo-I.                                (6)
+              mo + Jo           mo + Jo m + 1             m + 1
+In the second part of equation (5), consider separately each Ph < Pj:S;; P[mo) = P < Pj+I'
+along with Ph :s;; P" < p(mo) = P < Pjo+ I' It is important to note that, because of the
+way by which jo and P" are defined, no hypothesis can be rejected as a result of the
+values of P, Pj+l, Pj+2' ... , Pm,. Therefore, when all hypotheses-true and false-are
+considered together, and their p-values thus ordered, a hypothesis H(i) can be rejected
+only if there exists k, i :s;; k s; mo + j - 1, for whichp(k) :s;; {k/(m +I)}q*, or equivalently
+

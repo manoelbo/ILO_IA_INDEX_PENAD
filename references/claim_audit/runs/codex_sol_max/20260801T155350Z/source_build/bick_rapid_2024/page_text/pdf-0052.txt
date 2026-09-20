@@ -1,0 +1,13 @@
+Recall that for each worker in the RPS data we do not have a single estimate for li ; instead, we
+have a lower and upper bound, li and li , respectively. Evaluating (D.10) using the midpoint
+of these bounds, li ≡ (li + li )/2, yields a wage-weighted share of total work hours spent using
+genAI of 7.0%, which implies a productivity parameter value of γ = 0.30. This implies that
+each hour spent using genAI increases the worker’s productivity for that hour by 30%. This
+is similar in magnitude to the average value of 27% from several randomized experiments of
+genAI usage (Cui et al., 2024; Dell’Acqua et al., 2023; Noy and Zhang, 2023; Peng et al., 2023).
+
+
+
+
+                                               20
+

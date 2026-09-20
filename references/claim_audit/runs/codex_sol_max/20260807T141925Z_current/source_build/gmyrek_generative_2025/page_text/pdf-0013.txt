@@ -1,0 +1,46 @@
+10       ILO Working Paper 140
+
+
+
+
+     employed in each ISCO-08 1-digit group and from expert opinions. As the final step, we provide
+     updated global, regional and income-based estimates of employment that has the potential to
+     be transformed by Gen AI technology.
+
+     Our study specifically targets GenAI tools, isolating the effects of this recent family of AI from
+     broader AI applications, such as the use of Machine Learning (ML) algorithms or image recog-
+     nition in industrial production. There are several considerations that justify such selective focus.
+     First, we respond to the growing need for a research tool that could provide a better picture of
+     GenAI’s potential impact on national labour markets, given the growing societal angst concern-
+     ing this technology and the recent reports about increasing levels of adoption of GenAI at work
+     (Bick et al., 2024; Faverio and Tyson, 2022; Grampp et al., 2023; Maison & Partners and ThinkTank,
+     2024; Pew Research Center, 2023; Rutgers, 2024). Second, while several indicators of occupation-
+     al exposure to broader AI technologies are available to researchers (Nurski and Vansteenkiste,
+     2024), very few tools allow for a more detailed focus on GenAI (Nurski and Ruer, 2024). A new,
+     more precise exposure index enables a closer alignment of the academic work on digital econ-
+     omy and labour with the significant interest in the GenAI technology in the media and in the
+     public debate.1 Third, the methodological blueprint provided by our research can be quite flexi-
+     bly expanded to other types of AI in the future or focused more narrowly on specific subsets of
+     digital technologies and sectors of their application.
+
+     This paper is the first in a series of upcoming publications based on ILO and NASK cooperation
+     that strive to improve the methodology for assessing employment effects of AI, but also to doc-
+     ument in detail the methods used, including the survey, expert verification process and the con-
+     struction of the AI model used for predictions. Subsequent papers will present an assessment of
+     the potential impact of GenAI on the Polish labour market, based on more detailed occupation
+     and task-level data and using a mix of quantitative and qualitative methods. All publications will
+     include the methodological blueprints and technical details of both the quantitative and quali-
+     tative components, including survey questionnaires and interview guidelines. By making these
+     tools openly accessible, we hope to contribute to the development of an improved method for
+     assessing potential impact of GenAI on jobs and to stimulate more detailed national-level stud-
+     ies, including in lower- and middle-income countries.
+
+
+
+
+     1
+         For example, Felten et al. (2023) provided an updated version of their original exposure index from 2021, adjusting for the abilities of
+         GenAI tools. As shown in their paper, the adjustment does not result in a major shift in occupations exposure and still makes it im-
+         possible to assess the abilities of this new technology in a selective manner. See Gmyrek et al. (2024) for a more detailed comparison
+         of these scores.
+

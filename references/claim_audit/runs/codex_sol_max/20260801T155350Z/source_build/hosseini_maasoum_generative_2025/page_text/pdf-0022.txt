@@ -1,0 +1,43 @@
+of adopters versus non-adopters.
+
+
+4.2.3   Validation: GenAI Mentions in Worker Position Descriptions
+
+As external validation of the adoption measure, we examine whether workers at adopt-
+ing firms are more likely to report AI-related activities in their own LinkedIn position
+descriptions—an outcome that reflects actual on-the-job use rather than aspirational hir-
+ing language.24 Using a list of GenAI keywords (the full list is reported in Supplemental
+Appendix A.8) applied to 18.3 million position descriptions (2021–2025), we compute for
+each quarter the share of descriptions mentioning GenAI keywords, separately for adopt-
+ing and non-adopting firms.
+    Figure 3 plots these shares, normalized to zero in 2021 Q1. Prior to the launch of Chat-
+GPT in late 2022, both series fluctuate near zero with no visible divergence. Beginning
+in early 2023, the adopter series rises sharply—reaching approximately 3.5 percentage
+points above baseline by late 2024—while the non-adopter series increases only mod-
+estly (roughly 0.7 percentage points). A difference-in-differences regression with firm
+and month fixed effects formalizes this pattern and yields an estimate of 1.35 percentage
+points (s.e. = 0.05, p < 0.001), and the coefficient remains essentially unchanged (1.40
+percentage points) when additionally controlling for description length (full regression
+results are reported in Supplemental Appendix A.8). Relative to the pre-ChatGPT aver-
+age of 3.1% at adopters, this represents a roughly 43 percent increase. This worker-side
+evidence supports the interpretation that our firm-level adoption classification captures
+genuine changes in workplace technology use.
+
+
+4.3     Data Validation
+
+We subject our data and key variables to a series of validation exercises, reported in full
+in the Supplemental Appendix.
+  24 Position descriptions on LinkedIn are considerably less reliable than job posting texts: only about 42%
+
+of U.S. positions in our 2021–2025 window have any raw description text at all, and those that exist are often
+short or formulaic. For this reason, we rely on the richer and more complete raw posting data to construct
+the firm-level adoption measure throughout the paper. The position-description analysis presented here
+serves as a complementary validation exercise; in Supplemental Appendix A.4 we additionally use these
+descriptions to construct an augmented adoption measure and show that our main results are robust.
+
+
+
+
+                                                     22
+

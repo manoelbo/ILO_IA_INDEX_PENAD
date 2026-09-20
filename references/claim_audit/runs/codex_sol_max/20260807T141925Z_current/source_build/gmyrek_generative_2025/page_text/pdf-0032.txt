@@ -1,0 +1,24 @@
+29     ILO Working Paper 140
+
+
+
+
+     Each of the selected 608 tasks was then presented to a panel of experts. For each task, the ex-
+     perts were shown (i) the occupation and cluster information, (ii) the average survey score (res-
+     caled to 0–1), and (iii) the full task description. If they agreed with the survey score, they left it
+     unchanged; otherwise, they entered a revised expert score (0–1).
+
+     In many cases, the differences between the survey and expert scores are non-trivial. They also
+     vary significantly across occupational groups, revealing distinct patterns based on the nature
+     of pertaining tasks (Figure 13). In occupations dominated by manual and physical tasks, such
+     as Craft and Related Trades Workers, Plant and Machine Operators, and Farmers, Gardeners,
+     Foresters, and Fishers, experts consistently assigned lower scores compared to the survey re-
+     spondents, reflecting the practical limitations of automating tasks that require physical manipu-
+     lation or manual dexterity. In contrast, occupations involving more cognitive or knowledge-inten-
+     sive tasks, such as Clerical Support Workers and Professionals, show a much more mixed picture.
+     While some tasks in these groups received lower scores, many others were revised upwards by
+     the expert group, reflecting the greater adaptability of generative AI for structured, data-driven,
+     or communication-focused tasks. For example, Clerical Support Workers display a combination
+     of increases and decreases, suggesting nuanced task-specific assessments where automation
+     potential depends heavily on the nature of individual tasks.
+

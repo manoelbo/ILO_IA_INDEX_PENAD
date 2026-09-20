@@ -1,0 +1,134 @@
+Figure 2. The Four Simple (2x2) Difference-in-Differences Estimates from the Three Group
+                                          Case
+                    A. Early Group vs. Untreated Group                                       B. Late Group vs. Untreated Group
+
+
+
+
+                                                                                  40
+          40
+
+
+
+
+                                                                                      30
+             30
+
+
+
+
+                                                                           Units of y
+  Units of y
+
+
+
+
+                             k
+                        y it
+
+
+
+
+                                                                              20
+     20
+
+
+
+
+                                                                                                                     l
+                                                                    U
+                                                                                                                y it                   U
+                                                                   y it                                                              y it
+
+
+
+
+                                                                                  10
+          10
+
+
+
+
+                           PRE(k)                       POST(k)                                 PRE(l)                                     POST(l)
+
+
+
+
+                                                                                  0
+          0
+
+
+
+
+                                      t*k    Time                                                              Time                  t*l
+                  C. Early Group vs. Late Group, before t*l                                D. Late Group vs. Early Group, after t*k
+
+
+                                                                                 40
+        40
+
+
+
+
+                                                                                                                          k
+                                                                                                                         y it
+
+                                                                                      30
+             30
+
+
+
+
+                                                                           Units of y
+  Units of y
+
+
+
+
+                       k
+                      y it
+                                                                              20
+     20
+
+
+
+
+                                                                                                                 l
+                                                  l
+                                                 y it                                                           y it
+                                                                                 10
+        10
+
+
+
+
+                        PRE(k)                          MID(k,l)                                                         MID(k,l)          POST(l)
+                                                                                 0
+        0
+
+
+
+
+                                      t*k    Time                  t*l                                   t*k   Time                  t*l
+Notes: The figure plots the groups and time periods that generate the four simple 2x2 difference-in-difference
+estimates in the case with an early treatment group, a late treatment group, and an untreated group from Figure 1. Each
+                                                                                                                                    𝐷𝐷𝐷𝐷
+                                                                                                        � 𝑘𝑘𝑘𝑘 ); panel B
+panel plots the data structure for one 2x2 DD. Panel A compares early treated units to untreated units (𝛽𝛽
+                                                                   𝐷𝐷𝐷𝐷
+                                                � ℓ𝑈𝑈 ); panel C compares early treated units to late treated units during
+compares late treated units to untreated units (𝛽𝛽
+                                            𝐷𝐷𝐷𝐷,𝑘𝑘
+                             � 𝑘𝑘ℓ ); panel D compares late treated units to early treated units during the early group’s
+the late group’s pre-period (𝛽𝛽
+                             𝐷𝐷𝐷𝐷,ℓ
+             � 𝑘𝑘ℓ ). The treatment times mean that 𝐷𝐷
+post-period (𝛽𝛽                                     �𝑘𝑘 = 0.67 and 𝐷𝐷 �ℓ = 0.16, so with equal group sizes, the
+decomposition weights on the 2x2 estimate from each panel are 0.365 for panel A, 0.222 for panel B, 0.278 for panel
+C, and 0.135 for panel D.
+
+
+
+
+                                                                          32
+

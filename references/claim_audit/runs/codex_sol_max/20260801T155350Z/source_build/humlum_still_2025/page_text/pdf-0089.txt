@@ -1,0 +1,53 @@
+strong association between training and the emergence of non-productive tasks helps
+
+contextualize the finding in Section D.2.3 that training—when implemented in isolation—is
+
+linked to consistently lower productivity gains from AI chatbots.
+
+
+D.3        Total Time Savings
+
+What is the economic significance of the reported benefits of using AI chatbots? In Figure
+
+D.6, we combine workers’ frequency of use (from Figure D.3) with their reported time
+
+savings per day of usage (from Table D.2) to estimate time savings as a percent of total
+
+work hours.
+
+       While time savings capture only one dimension of chatbot benefits—arguably the least
+
+transformative—their clear measurability in minutes per day makes them easy to quantify
+
+and compare. Moreover, because prior RCTs have also used time savings as a key metric
+
+for productivity gains, our estimates can be benchmarked against those studies. Finally,
+
+time savings remain the most commonly reported benefit among workers in our survey.36
+
+       Figure D.6 shows estimated time savings by workers’ occupations and whether their
+
+employer encourages chatbot use. We focus on the encouraged-use policy, as Sections D.2.2
+
+and D.2.3 identify it as the primary driver of increased adoption and reported benefits.
+
+The occupational breakdown facilitates comparison with prior studies focused on specific
+
+job roles.
+
+       Average time savings from AI chatbots vary from 6.8% among marketing professionals
+
+whose employers encourage their use to 0.6% among teachers in schools that do not
+
+encourage their use. Across our 11 occupations and employer policies, the average time
+
+savings amount to 2.8% of the total work hours of users.
+  36
+   Section 3.1 examines how various AI chatbot benefits—including time savings, enhanced creativity,
+improved quality, and other work-related dimensions—affect workers’ earnings and hours.
+
+
+
+
+                                                54
+

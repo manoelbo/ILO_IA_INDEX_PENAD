@@ -1,0 +1,40 @@
+Discussion. Beyond its primary purpose of clarifying the mechanisms through which
+GenAI adoption may differentially affect demand for junior and senior workers, the
+framework also helps reconcile two strands of evidence that appear to point in opposite
+directions: experimental studies consistently find that GenAI raises productivity most
+for less-experienced workers, while labor-market evidence, including ours, links GenAI
+adoption and exposure to declines in junior employment. The framework reconciles these
+findings by highlighting three margins that are largely outside the scope of experimen-
+tal settings. First, experiments typically hold task assignment fixed, whereas junior and
+senior workers perform different tasks in practice, often with different exposure levels
+to GenAI. Second, experiments measure productivity gains on tasks that remain human-
+performed, but do not capture task displacement, whereby some tasks are fully auto-
+mated and removed from human labor. Third, higher productivity need not translate into
+higher labor demand. In the fixed-output benchmark of the framework, when tasks are
+sufficiently complementary, productivity gains can reduce the number of junior workers
+required to perform a given set of tasks. More generally, the same force remains relevant
+whenever output expansion is not large enough to offset the labor-saving effect of higher
+productivity.
+    The remainder of the paper takes the framework to the data. Section 5.1 brings direct
+evidence on the displacement and reallocation channels—the productivity channel and
+the assumption δ J ≥ δS are already well supported by the experimental literature. Then,
+Sections 5.2–5.5 focus on the framework’s central implication: how junior and senior em-
+ployment within a firm change following GenAI adoption.
+
+
+
+4       Data and Descriptive Patterns
+
+4.1     Data Source and Sample
+
+4.1.1    Primary Data Sources
+
+Our primary data source is a detailed LinkedIn-based résumé dataset provided by Reve-
+lio Labs through WRDS. This dataset contains matched employer-employee information
+derived from individuals’ online profiles. For each worker, we observe all listed employ-
+
+
+
+
+                                           17
+

@@ -1,0 +1,46 @@
+          Canaries in the Coal Mine? Six Facts about the Recent
+
+                   Employment Effects of Artificial Intelligence
+
+                   Erik Brynjolfsson∗            Bharat Chandar†              Ruyu Chen‡§¶
+
+                                              August 26, 2025
+
+
+
+                                                   Abstract
+
+          This paper examines changes in the labor market for occupations exposed to generative
+       artificial intelligence using high-frequency administrative data from the largest payroll software
+       provider in the United States. We present six facts that characterize these shifts. We find that
+       since the widespread adoption of generative AI, early-career workers (ages 22-25) in the most
+       AI-exposed occupations have experienced a 13 percent relative decline in employment even after
+       controlling for firm-level shocks. In contrast, employment for workers in less exposed fields and
+       more experienced workers in the same occupations has remained stable or continued to grow.
+       We also find that adjustments occur primarily through employment rather than compensation.
+       Furthermore, employment declines are concentrated in occupations where AI is more likely to
+       automate, rather than augment, human labor. Our results are robust to alternative explanations,
+       such as excluding technology-related firms and excluding occupations amenable to remote work.
+       These six facts provide early, large-scale evidence consistent with the hypothesis that the AI
+       revolution is beginning to have a significant and disproportionate impact on entry-level workers
+       in the American labor market.
+   ∗
+     Stanford University and NBER; erikb@stanford.edu
+   †
+     Stanford University; chandarb@stanford.edu
+   ‡
+     Stanford University; ruyuchen@stanford.edu
+   §
+     Thanks to Nick Bloom, Joshua Gans, David Autor, Daniel Rock, Fei-Fei Li, Frank Li, Christina Langer, Sarah
+Bana, Cody Cook, Chris Forman, Andrew Wang, Brad Ross, Omeed Maghzian, Basil Halperin, Jiaxin Pei, Phil
+Trammell, Eric Bergman and participants at the Stanford Digital Economy Lab workshop for helpful feedback. We
+are grateful to ADP for access to the data and the Stanford Digital Economy Lab for financial support. All errors
+are our own.
+   ¶
+     Latest version: https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/
+
+
+
+
+                                                       1
+

@@ -1,0 +1,49 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                          1305
+
+cally large and in most cases statistically signicant. For exam-
+ple, the computerization measure explains the entirety of the
+within-industry decline in routine task input during the 1990s,
+and more than explains this decline in the 1980s and 1970s.
+     A notable pattern for all four task measures is that the
+relationship between computerization and industry task change
+tends to become larger in absolute magnitude with each passing
+decade. This suggests a secularly rising relationship between
+computerization and task change. The nal column of Table III
+tests for this rise by estimating equation (13) for the 1960s, a
+decade during which computerization is unlikely to have strongly
+inuenced task demands. Reassuringly, there are no signicant
+relationships between computerization and task change in this
+decade. And in one case, the coefcient is of the opposite sign as
+in later decades. Hence, these estimates suggest that the rela-
+tionship between industry task shifts and computer adoption
+either commenced or substantially accelerated during the com-
+puter era, and not before.19
+
+IV.B. Using Composite DOT Variables
+     Though we view the selected task measures as the most
+appropriate available from the DOT, we are sensitive to the
+concern that the choice of variables could be viewed as arbitrary.
+One way to test their appropriateness is to use alternative com-
+posite variables. We used principal components analyses (PCA) to
+pool variation from each selected DOT task measure with several
+other plausible alternatives and estimated equation (13) using
+these composites.20 The details of our compositing exercise are
+provided in the Data Appendix, and the results of the composite
+estimation are found in Appendix 2. A limitation of this exercise
+is that the variables used in the composites do not in our view
+
+     19. We also estimated the models in Table III separately by gender and for
+manufacturing and nonmanufacturing sectors. The pattern of results is similar in
+all cases. For both genders, computer investment is a signicant predictor of
+reductions in routine labor input of cognitive and manual tasks and increases in
+nonroutine analytic input. For females the relationship between computerization
+and nonroutine interactive tasks is positive but insignicant. The magnitude of
+the relationship between computerization and nonroutine tasks is somewhat
+larger in manufacturing than nonmanufacturing, and the reverse is true for
+routine tasks. Further details are available from the authors.
+     20. The PCA extracts eigenvectors that maximize common variation among
+selected measures, each of which is standardized with mean zero and variance
+one, subject to the constraint that the sum of squared weights in the eigenvector
+equals one. It can be shown that if measurement error in the selected variables is
+classical (i.e., white noise), the PCA extracts maximal nonerror variation.
+

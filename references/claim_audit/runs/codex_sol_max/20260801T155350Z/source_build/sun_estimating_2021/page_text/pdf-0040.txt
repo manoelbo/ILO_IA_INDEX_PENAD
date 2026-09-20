@@ -1,0 +1,66 @@
+    Online Appendix
+
+
+
+A     Notation glossary and properties of double-demeaning
+
+In this section, we provide relevant notations for proofs in Section B. Section A.1 introduces detailed ex-
+
+pression for the weight.
+
+    We observe a balanced panel of N i.i.d. observations {{Yi,t , Di,t }Tt=0 }i=1
+                                                                              N where Y ∈ R is a real valued
+                                                                                       i,t
+
+outcome variable and Di,t ∈ {0, 1} is a binary absorbing treatment status variable: Di,t = 0 if i is not treated
+
+in period t and Di,t = 1 if i is treated in period t.
+
+    Since the treatment is absorbing, we can aggregate the treatment path {Di,t }Tt=0 to a single discrete
+
+random variable Ei = min{t : Di,t = 1}, which is the period of the initial treatment. Additionally, we define
+ ` B 1{t − E = `} to be an indicator for being ` time periods relative to unit i’s initial treatment.
+Di,t        i
+
+    We focus on the following two-way fixed effects regression
+
+                                                          Õ
+                                       Yi,t = αi + λt +         µg 1{t − Ei ∈ g} + υi,t
+                                                          g∈G
+
+where g are disjoint sets of relative times, αi and λt are unit and time fixed effects.
+
+Definition 3. For fixed T, consider a random vector {Xi,t }Tt=0 ∈ RT +1 , jointly distributed according to P. At
+
+each t, let XÜi,t denote the following random variable:
+                                                               T                T
+                                                          1 Õ              1 Õ
+                              XÜi,t = Xi,t − E[Xi,t ] −           Xi,s +           E[Xi,s ]                (32)
+                                                        T + 1 s=0        T + 1 s=0
+The expectation E[Xi,t ] is taken cross-sectionally with respect to P at time t = 0, . . .,T.
+
+Remark 1. Conventionally XÜi,t is referred to as the double-demeaned version of Xi,t , as it removes the
+
+contemporaneous expectation E[Xi,t ] as well as the simple average across time for unit i, T 1+1 Ts=0 Xi,t . It
+                                                                                                Í
+
+adds back a simple average across time of the expectations so that XÜi,t has the zero-mean and zero-sum
+
+properties as detailed in Lemma 1.
+
+Lemma 1. (Properties of double-demeaning.) For any XÜi,t and ZÜi,t , double-demeaned versions of Xi,t and
+
+Zi,t respectively, we have the following properties:
+
+    • zero-mean and zero-sum: E[ XÜi,t ] = 0 and Tt=0 XÜi,t = 0;
+                                                Í
+
+
+                       t=0 E[ Xi,t Zi,t ] =    t=0 E[Xi,t Zi,t ] =
+    • idempotent:
+                    ÍT         Ü   Ü          ÍT          Ü          ÍT       Ü
+                                                                      t=0 E[ Xi,t Zi,t ];
+
+
+                                                                40
+

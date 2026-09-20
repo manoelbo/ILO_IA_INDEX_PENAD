@@ -1,0 +1,48 @@
+                                Survey Questionnaire – Danish Version
+
+6.c Purposes of Prior Use [if 5=’Ja, kun til arbejde or ’Ja, til arbejde og fritid’ for any option]
+Har du benyttet en AI chatbot til at udføre følgende arbejdsopgaver?
+    • [Arbejdsopgave 1-6]
+    • Ingen af ovennævnte
+
+7. Time use on AI chatbots [if 5=’Ja, kun til arbejde or ’Ja, til arbejde og fritid’ for any option]
+Tænk tilbage på de dage, hvor du har brugt AI chatbots til dit arbejde. Hvor meget tid brugte du med AI
+chatbots i gennemsnit?
+     • Mindre end 15 minutter per dag
+     • Mellem 15 minutter og en time per dag
+     • Mere end en time per dag
+
+8. Paid subscription [if 5=’Ja, kun til arbejde or ’Ja, til arbejde og fritid’ for ’ChatGPT’]
+Har du et aktivt Plus-abonnement på ChatGPT?
+    • Ja
+    • Nej
+
+                                         Block 3: Employer Initiatives
+9. Employer policies
+Hvad er din arbejdsgivers politik ift. brugen af AI chatbots?
+    • Tilladt og tilskyndet
+    • Tilladt men ikke tilskyndet
+    • Ikke tilladt
+    • Ingen politik
+    • Ved ikke
+
+10. Enterprise AI chatbot
+Har din arbejdsplads sin egen AI chatbot?
+    • Ja, et specialdesignet produkt
+    • Ja, et standardprodukt
+    • Nej
+    • Ved ikke
+
+11.a Training courses
+Har du deltaget i kurser om brugen af AI chatbots?
+    • Ja
+    • Nej
+
+11.b Training courses [if 11.a = ’Ja’]
+Var dit kursus i AI chatbots arrangeret af din arbejdsgiver?
+    • Ja
+    • Nej
+
+
+                                                       120
+

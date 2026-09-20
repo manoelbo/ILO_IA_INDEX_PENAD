@@ -1,0 +1,22 @@
+Title:           -90pt Combining Human Expertise with Artificial Intelligence: Experimental Evidence from Radiology 
+Subject:         
+Keywords:        
+Author:          Nikhil Agarwal, Alex Moehring, Pranav Rajpurkar, Tobias Salz
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.24
+CreationDate:    Fri Jun 30 14:14:47 2023 -03
+ModDate:         Fri Jun 30 14:14:47 2023 -03
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           116
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       6009920 bytes
+Optimized:       no
+PDF version:     1.5

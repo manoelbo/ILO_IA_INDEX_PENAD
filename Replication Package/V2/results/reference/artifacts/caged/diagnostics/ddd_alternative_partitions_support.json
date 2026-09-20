@@ -1,0 +1,22 @@
+{
+  "adequate_support_groups": 6,
+  "all_formulas_have_complete_ddd_terms": true,
+  "bh_adjusted_p_lt_005": 4,
+  "estimated_models": 30,
+  "failed_models": 0,
+  "family_id": "B",
+  "family_size_in_adjustment": 30,
+  "limited_support_groups": 0,
+  "multiplicity_method": "Benjamini-Hochberg",
+  "negative_count_cells": 0,
+  "negra_reconciliation_basis": "complete main-sample CBO-month grid",
+  "negra_reconciliation_cells": 22049,
+  "negra_reconciliation_exact": true,
+  "negra_sparse_valid_universe_cells": 39197,
+  "nominal_p_lt_005": 6,
+  "panel_bytes": 12104137,
+  "panel_rows": 264588,
+  "panel_sha256": "d82dbf0b7d2d36a5ee340ccfdcb2e4e69d03654292bec146f676c25a910a5009",
+  "planned_family_size": 30,
+  "thin_support_groups": 0
+}

@@ -1,0 +1,47 @@
+References
+
+Abraham, S. and Sun, L. (2018), Estimating dynamic treatment effects in event studies with
+ heterogeneous treatment effects. Working Paper.
+
+Ashenfelter, O. (1978), ‘Estimating the effect of training programs on earnings’, The Review of
+  Economics and Statistics pp. 47–57.
+
+Athey, S. and Imbens, G. W. (2018), Design-based analysis in difference-in-differences settings
+  with staggered adoption, Technical report, National Bureau of Economic Research.
+
+Athey, S. and Stern, S. (2002), ‘The impact of information technology on emergency health care
+  outcomes’, The RAND Journal of Economics 33(3), 399–432.
+
+Autor, D. H. (2003), ‘Outsourcing at will: The contribution of unjust dismissal doctrine to the
+ growth of employment outsourcing’, Journal of labor economics 21(1), 1–42.
+
+Borusyak, K. and Jaravel, X. (2017), Revisiting event study designs. Working Paper.
+
+Callaway, B. and Sant’Anna, P. H. (2018), Difference-in-differences with multiple time periods
+  and an application on the minimum wage and employment. arXiv e-print 1803.09015.
+
+Card, D. (1996), ‘The effect of unions on the structure of wages: A longitudinal analysis’,
+  Econometrica: Journal of the Econometric Society pp. 957–979.
+
+de Chaisemartin, C. (2011), Fuzzy differences in differences. Working Paper 2011-10, Center for
+  Research in Economics and Statistics.
+
+de Chaisemartin, C. and D’Haultfoeuille, X. (2015), Fuzzy differences-in-differences. ArXiv
+  e-prints, eprint 1510.01757v2.
+
+de Chaisemartin, C. and D’Haultfœuille, X. (2018), ‘Fuzzy differences-in-differences’, The Review
+  of Economic Studies 85(2), 999–1028.
+
+de Chaisemartin, C., D’Haultfœuille, X. and Guyonvarch, Y. (2019), ‘Fuzzy differences-in-
+  differences with Stata’, Stata Journal 19(2), 435–458.
+
+Duflo, E. (2001), ‘Schooling and labor market consequences of school construction in indonesia:
+ Evidence from an unusual policy experiment’, American Economic Review 91(4), 795–813.
+
+Frank, M. and Wolfe, P. (1956), ‘An algorithm for quadratic programming’, Naval research
+  logistics quarterly 3(1-2), 95–110.
+
+
+
+                                               26
+

@@ -1,0 +1,52 @@
+𝑔𝑔𝑠𝑠𝑠𝑠 is the mean of 𝐺𝐺𝑖𝑖 by 𝑠𝑠 and 𝑡𝑡. Unlike (19), estimates from (20) do net out changes across 𝐺𝐺𝑖𝑖
+
+within state/year cells. This changes the weights, though, because the introduction of variation
+
+across the third difference within a cell leads to the typical OLS result that cells with more variation
+
+get more weight. In this case, “more variation” in sample membership within a cell means
+
+approximately equal numbers of units with 𝐺𝐺𝑖𝑖 = 1 and 𝐺𝐺𝑖𝑖 = 0. 38
+
+     Recasting this version of a DDD model as a DD on differences by 𝐺𝐺𝑖𝑖 implies that the DD
+
+decomposition theorem holds, albeit with a slight change to the calculation of the weights. All the
+
+results and diagnostic tools derived above apply to specifications like (20) by defining the outcome
+      𝐺𝐺=1      𝐺𝐺=0
+as 𝑦𝑦�𝑠𝑠𝑠𝑠 − 𝑦𝑦�𝑠𝑠𝑠𝑠 and using the proper weights.
+
+ iv.     Unit-specific linear time trends
+Researchers control for unit-specific linear time trends to allow “treatment and control states to
+
+follow different trends” (Angrist and Pischke 2009, p 238), and view it as “an important check on
+
+the causal interpretation of any set of regression DD estimates” (Angrist and Pischke 2015, p. 199).
+
+Appendix B derives a closed-form solution for the detrended estimator and shows that a version
+
+of the DD decomposition theorem applies to it. The specific way that unit-specific trends change
+
+each 2x2 component fit with previous intuition. They essentially subtract the cross-group
+
+difference in averages of 𝑦𝑦 before and after the middle of the panel, 𝑡𝑡̅, but these differences are
+
+weighted by absolute distance to 𝑡𝑡̅: |𝑡𝑡 − 𝑡𝑡̅|. This is, as Lee and Solon (2011) point out, akin to a
+
+regression discontinuity design in that the estimator relies less on variation at the beginning or end
+
+of the panel because this variation is absorbed by the trends. Unfortunately, trends tend to absorb
+
+time-varying treatment effects that are necessarily larger at the end of the panel, and in these cases
+
+
+
+
+                                                              𝐺𝐺=1          𝐺𝐺=0
+ Collapsing the data to the within-cell mean differences 𝑦𝑦�𝑠𝑠𝑠𝑠
+38
+                                                                      − 𝑦𝑦�𝑠𝑠𝑠𝑠  and running OLS on the aggregated data (or
+WLS using cell populations) would eliminate the 𝑔𝑔𝑠𝑠𝑠𝑠 (1 − 𝑔𝑔𝑠𝑠𝑠𝑠 ) from the decomposition weights.
+
+                                                           26
+

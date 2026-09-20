@@ -1,0 +1,43 @@
+  Like before, the other estimation methods lead to some puzzling results. For example,
+OLS on ln(1 + Tij ) now yields a significantly negative eﬀect of contiguity and under NLS,
+the coeﬃcient on common-colonial ties becomes significantly negative.
+  Finally, we performed the same set of specification tests used before. The p-values
+of the heteroskedasticity-robust RESET test at the bottom of table 6 suggest that with
+the Anderson-van Wincoop (2003) specification of the gravity equation, only the models
+estimated by the PPLM method are adequate. The p-values of the tests to check whether
+the particular pattern of heteroskedasticity assumed by the models is appropriate are
+reported in Table 6. As in the traditional gravity equation, the log-linear specification
+is unequivocally rejected. On the other hand, these results indicate that the estimated
+                      √
+coeﬃcient on ln (y̌i ) y̌i is insignificantly diﬀerent from zero at the usual 5 percent level.
+This implies that the Poisson PML assumption, V [yi |x] = λ0 E [yi |x] cannot be rejected
+at this significance level.
+
+
+               Table 5: The Anderson-van Wincoop Gravity Equation.
+ Estimator               OLS          OLS          Tobit        NLS    PPML              PPML
+ Dependent Variable     ln (Tij ) ln (1 + Tij ) ln (a + Tij )   Tij    Tij > 0             Tij
+ Log distance          −1.347∗∗ −1.332∗∗         −1.272∗∗ −0.582∗∗ −0.770∗∗             −0.750∗∗
+                        (0.031)     (0.036)       (0.029)     (0.088)  (0.042)          (0.041)
+ Contiguity              0.174      −0.399∗       −0.253      0.458∗∗  0.352∗∗           0.370∗∗
+ dummy                  (0.130)     (0.189)       (0.135)     (0.121)  (0.090)          (0.091)
+ Common-language        0.406∗∗     0.550∗∗       0.485∗∗     0.926∗∗  0.418∗∗           0.383∗∗
+ dummy                  (0.068)     (0.066)       (0.057)     (0.116)  (0.094)          (0.093)
+ Colonial-tie           0.666∗∗     0.693∗∗       0.650∗∗     −0.736∗∗  0.038             0.079
+ dummy                  (0.070)     (0.067)       (0.059)     (0.178)  (0.134)          (0.134)
+ Free-trade agreement   0.310∗∗       0.174       0.137∗∗     1.017∗∗  0.374∗∗           0.376∗∗
+ dummy                  (0.098)     (0.138)       (0.098)     (0.170)  (0.076)          (0.077)
+ Fixed Eﬀects             Yes          Yes           Yes        Yes      Yes               Yes
+ Observations            9613        18360         18360       18360    9613              18360
+ RESET test p-values     0.000        0.000         0.000      0.000    0.564             0.112
+
+
+                           Table 6: Results of the tests for
+                        type of heteroskedasticity (p-values).
+                     Test (Null hypothesis)    Trade > 0 Full sample
+                    GNR (V [yi |x] ∝ µ (xi β))   0.100      0.070
+                    Park (OLS is valid)          0.000      0.000
+
+
+                                             30
+

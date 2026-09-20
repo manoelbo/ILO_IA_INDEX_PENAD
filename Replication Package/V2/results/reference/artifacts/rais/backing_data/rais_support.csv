@@ -1,0 +1,17 @@
+outcome,ano,treated_cbo,control_cbo,total_cbo,support_status
+estoque_3112,2019,75,265,340,adequate
+estoque_3112,2020,75,265,340,adequate
+estoque_3112,2021,75,265,340,adequate
+estoque_3112,2022,75,265,340,adequate
+estoque_3112,2023,75,265,340,adequate
+estoque_3112,2024,75,266,341,adequate
+ln_taxa_rotatividade,2021,75,265,340,adequate
+ln_taxa_rotatividade,2022,75,265,340,adequate
+ln_taxa_rotatividade,2023,75,265,340,adequate
+ln_taxa_rotatividade,2024,75,265,340,adequate
+ln_tempo_emprego_medio,2019,75,265,340,adequate
+ln_tempo_emprego_medio,2020,75,265,340,adequate
+ln_tempo_emprego_medio,2021,75,265,340,adequate
+ln_tempo_emprego_medio,2022,75,265,340,adequate
+ln_tempo_emprego_medio,2023,75,265,340,adequate
+ln_tempo_emprego_medio,2024,75,266,341,adequate

@@ -1,0 +1,45 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dcterms="http://purl.org/dc/terms/">
+    <bib:Report rdf:about="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>SSRN</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klein Teeselink</foaf:surname>
+                        <foaf:givenName>Bouke</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_60"/>
+        <dc:title>Generative AI and labor market outcomes: Evidence from the United Kingdom</dc:title>
+        <dcterms:abstract>This paper examines the effects of LLMs on UK labor market outcomes. We use a difference-in-differences design that compares outcomes across firms and occupations from 2021 to 2025 based on their differential exposure to LLM capabilities. Our results show that highly exposed firms reduce employment, with effects concentrated in junior positions. These firms sharply curtail new hiring, with technical and creative roles experiencing the steepest declines. At the occupation level, roles more exposed to LLMs also show substantial reductions in job listings. The observed effects concentrate almost entirely in high-wage segments. Hence, our findings suggest that LLMs may compress wage inequality.</dcterms:abstract>
+        <dc:date>2025-09-22</dc:date>
+        <dc:identifier>DOI 10.2139/ssrn.5516798</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>46</bib:pages>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/60/Klein Teeselink - 2025 - Generative AI and labor market outcomes Evidence from the United Kingdom.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>

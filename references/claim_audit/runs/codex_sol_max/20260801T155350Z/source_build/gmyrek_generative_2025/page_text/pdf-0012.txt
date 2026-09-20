@@ -1,0 +1,56 @@
+09     ILO Working Paper 140
+
+
+
+
+     XX   Introduction
+
+     In August 2023, the ILO published the first global employment estimates of potential occupa-
+     tional exposure to generative artificial intelligence (GenAI) (Gmyrek et al., 2023). This research
+     was prompted by concerns – that have featured prominently in the media – of the potential for
+     the technology to replace large shares of knowledge work.
+
+     Since the release of the 2023 estimates, there have been further technological advances in GenAI,
+     including the introduction of Large Language Models (LLMs) with expanded capabilities in image
+     recognition and audio and video production. Moreover, many new GenAI applications have been
+     developed as a result of the possibility of linking GenAI models with Application Programming
+     Interface (API) tools. Indeed, GenAI has been likened to a general-purpose technology, meaning
+     that it may continue generating new applications and innovations across various sectors, driving
+     long-term economic and societal transformations.
+
+     Despite this rapidly developing landscape, it is important for policy makers to develop deeper
+     understanding of how technological advances might impact existing jobs. To address this need,
+     the Research department of the ILO has partnered with NASK, the National Research Institute
+     of the Ministry of Digital Affairs in Poland, to develop a more precise assessment of potential ef-
+     fects of GenAI on employment across countries.
+
+     This study builds on the method developed by the ILO (Gmyrek, Berg and Bescond, 2023 - GBB
+     hereafter), which used task descriptions from the 4-digit International Standard Classification
+     of Occupations (ISCO-08) and the GPT-4 model to estimate task-level and occupational scores of
+     exposure to GenAI technology and then derives global employment estimates based on official
+     ILO labour force data. But the study includes several key refinements.
+
+     The first step in our analysis is based on Poland’s national 6-digit classification of occupations
+     that includes nearly 30,000 tasks. This expands tenfold the number of tasks given in the ISCO-
+     08 structure and enables a fine-grained assessment of tasks’ automation potential, based on
+     a more up-to-date set of occupations and tasks than those captured in the ISCO-08 system. As
+     Poland’s 6-digit classification is aligned with the 4-digit ISCO-08, the occupational scores can be
+     compiled at the 4-digit level allowing a straightforward comparison and updating of the 2023
+     estimates of the ILO (GBB). In addition, the study improves the methodological framework of
+     GBB, by drawing on the combined strengths of human and AI abilities, with an additional layer
+     of expert verification.
+
+     Specifically, we surveyed 1,640 people currently employed in Poland in each ISCO-08 1-digit
+     group to rank the automation potential of a representative sample of tasks that pertain to their
+     occupational group. As the second step, we asked a mix of national and international experts
+     to conduct a detailed review of a large sample of tasks previously assessed in the survey to val-
+     idate or adjust the level of automation scores through an iterative process. Since we maintain
+     the hierarchical link to ISCO-08 and focus on technological feasibility rather than specific coun-
+     try context, by combining opinions of local and international experts, we create a system that
+     enables more precise predictions of the potential of automation of individual occupational tasks
+     with GenAI technology, including at the international level. To achieve that, we input the human
+     scores into an AI model, to generate scores reflecting human judgement for nearly 30,000 in-
+     dividual tasks pertaining to 2,500 occupations at 6-digit level in Poland. We then use the same
+     AI predictor to re-generate scores for the tasks in ISCO-08, previously provided by GBB (2023),
+     thereby adjusting the 2023 index of the ILO, which now benefits from both the input of people
+

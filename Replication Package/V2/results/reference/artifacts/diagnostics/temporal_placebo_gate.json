@@ -1,9 +1,0 @@
-{
-  "decision_rule": "pass only if all five national temporal-placebo p-values are at least 0.05",
-  "may_proceed_to_group_placebo": true,
-  "may_proceed_to_phase_6": true,
-  "outcome_count": 5,
-  "significance_level": 0.05,
-  "significant_outcomes": [],
-  "status": "pass"
-}

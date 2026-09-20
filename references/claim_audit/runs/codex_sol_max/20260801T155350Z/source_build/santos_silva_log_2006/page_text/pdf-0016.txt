@@ -1,0 +1,36 @@
+consistent estimate of E [yi |x] is available, then λ1 can be consistently estimated using
+an appropriate auxiliary regression. Specifically, following Park (1966), Manning and
+Mullahy (2001) suggest that λ1 can be estimated using the auxiliary model
+
+                          ln (yi − y̌i )2 = ln (λ0 ) + λ1 ln (y̌i ) + υ i ,            (11)
+
+where y̌i denotes the estimated value of E [yi |x]. Unfortunately, as the discussion in the
+previous sections should have made clear, this approach based on the log-linearization
+of (10) is valid only under very restrictive conditions on the conditional distribution of
+yi . However, it is easy to see that this procedure is valid when the constant-elasticity
+model can be consistently estimated in the log-linear form. Therefore, using (11) a test
+for H0 : λ1 = 2 based on a non-robust covariance estimator provides a check for the
+adequacy of the estimator based on the log-linear model.
+  A more robust alternative, which is mentioned by Manning and Mullahy (2001) in a
+footnote, is to estimate λ1 from
+
+                                  (yi − y̌i )2 = λ0 (y̌i )λ1 + ξ i ,                   (12)
+
+using an appropriate PML estimator. The approach based on (12) is asymptotically
+valid and inference about λ1 can be based on the usual Eicker-White robust covariance
+matrix estimator. For example, the hypothesis that V [yi |x] is proportional to E [yi |x] is
+accepted if the appropriate confidence interval for λ1 contains 1. However, if the purpose
+is to test the adequacy of a particular value of λ1 , a slightly simpler method based on the
+Gauss-Newton regression (see Davidson and MacKinnon, 1993) is available.
+                                                                                ³ ´
+  Specifically, to check the adequacy of the PPML for which λ1 = 1 and y̌i = exp xi β̃ ,
+(12) can be expanded in a Taylor series around λ1 = 1, leading to
+
+                       (yi − y̌i )2 = λ0 y̌i + λ0 (λ1 − 1) ln (y̌i ) y̌i + ξ i .
+
+Now, the hypothesis that V [yi |x] ∝ E [yi |x] can be tested against (10) simply by checking
+the significance of the parameter λ0 (λ1 − 1). Because the error term ξ i is unlikely to be
+homoskedastic, the estimation of the Gauss-Newton regression should be performed using
+
+                                                 15
+

@@ -1,0 +1,50 @@
+ (b) The function g is scale-invariant.
+
+  (c) θg is point-identified over P` .18
+
+Any parameter defined with zero-valued outcomes must therefore abandon one of properties (a)–(c).
+       As a special case, Proposition 2 implies that the ATE for any increasing function mpY q defined
+at zero cannot be scale-invariant. This is because the ATE for mpY q takes the form in (a) with
+gpy1 , y0 q “ mpy1 q ´ mpy0 q, and is also point-identified (part (c)). It follows that property (b)
+must be violated, i.e. there is some c, y0 , y1 ą 0 such that mpcy1 q ´ mpcy0 q ‰ mpy1 q ´ mpy0 q.
+Proposition 2 thus formalizes the sense in which it is not possible to “fix” the issues with ATEs for
+log-like transformations described above by taking alternative transformations of the outcome (e.g.
+?
+  Y ).
+
+3.1      Implications for settings without an extensive margin
+The trilemma in Proposition 2 applies for transformations of the outcome defined at zero. To
+prove Proposition 2, however, we establish an even stronger result: the only parameter satisfying
+properties (a) and (b) that is point-identified over distributions for which Y is strictly positively-
+valued is the ATE in logs.19 This result, which is formalized in Proposition 3 in the Appendix, has
+some useful implications for settings in which the outcome is strictly positive.
+       First, it implies that the ATE for any transformation of the outcome other than logpY q will
+depend on the units of the outcome for at least some DGP where the outcome is strictly positive.
+The scale-dependence of log-like transformations such as logp1 ` Y q or arcsinhpY q is thus not
+entirely limited to settings with an extensive margin.20 We note, however, that while the ATE for
+such transformations may depend on the units of the outcome even without zero-valued outcomes,
+the dependence need not be arbitrarily bad in the sense of Proposition 1. Indeed, (2) shows that if
+there is no extensive margin, the ATE for a log-like transformation will be approximately insensitive
+to scaling once the values of Y are made large. This is intuitive, since if Y is strictly positively-
+valued, the ATE for a log-like transformation will be approximately equal to the ATE in logs when
+the values of Y are made large.
+   Second, Proposition 3 implies that even when Y p1q and Y p0q are strictly-positively valued, the
+average proportional effect θAvg% “ ErpY p1q´Y p0qq{Y p0qs is not point-identified. This parameter is
+empirically relevant: For instance, Andrews and Miller (2013) show that in the Baily (1978)–Chetty
+(2006) model with heterogeneous consumption responses to unemployment, the optimal level of
+unemployment insurance depends on a parameter of the form θAvg% , where Y is consumption and
+  18
+     A minor technical complication arises from the fact that EP rgpY p1q, Y p0qs could be infinite for some P . For the
+purposes of our result, it suffices to trivially define θg to be identified in this case. Alternatively, the same result
+holds if part (c) is modified to impose only that θg is point-identified over all distributions in P` with finite support,
+thus avoiding issues related to undefined expectations.
+  19
+     More precisely, the only such treatment effect is the ATE in logs or an affine tranformations thereof.
+  20
+     There is thus no conflict between our results and those in Thakral and Tô (2023), who note that semi-elasticities
+for OLS regressions using log-like transformations may depend on the units of the outcome even when Y is strictly
+positively-valued.
+
+
+                                                           14
+

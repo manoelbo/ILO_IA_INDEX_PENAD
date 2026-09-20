@@ -1,0 +1,192 @@
+                                                                        Employment Share Trends by Experience Level
+                                                                                 Computer Occupations
+                                                  1.15
+                                                                                                                                              Experienced
+                                                                                                                                              Entry Level
+                                                  1.10
+        Normalized Employment Share
+
+
+
+
+                                                  1.05
+
+
+                                                  1.00
+
+
+                                                  0.95
+
+
+                                                  0.90
+
+
+                                                  0.85
+                                                          -01
+
+
+                                                                     -07
+
+
+                                                                                -01
+
+
+                                                                                           -07
+
+
+                                                                                                       -01
+
+
+                                                                                                                  -07
+
+
+                                                                                                                             -01
+
+
+                                                                                                                                        -07
+
+
+                                                                                                                                                    -01
+                                                         21
+
+
+                                                                   21
+
+
+                                                                              22
+
+
+                                                                                        22
+
+
+                                                                                                   23
+
+
+                                                                                                              23
+
+
+                                                                                                                         24
+
+
+                                                                                                                                    24
+
+
+                                                                                                                                                  25
+                                                     20
+
+
+                                                                   20
+
+
+                                                                             20
+
+
+                                                                                        20
+
+
+                                                                                                  20
+
+
+                                                                                                             20
+
+
+                                                                                                                         20
+
+
+                                                                                                                                    20
+
+
+                                                                                                                                                 20
+                                                                                                  Quarter
+                                                                     Real Average Weekly Earnings by Experience Level
+                                                                                  Computer Occupations
+                                                  1.15
+                                                                                                                                              Experienced
+                                                                                                                                              Entry Level
+        Normalized Real Average Weekly Earnings
+
+
+
+
+                                                  1.10
+
+
+                                                  1.05
+
+
+                                                  1.00
+
+
+                                                  0.95
+
+
+                                                  0.90
+
+
+                                                  0.85
+                                                          Q1
+                                                                Q2
+                                                                     Q3
+                                                                           Q4
+                                                                                Q1
+                                                                                      Q2
+                                                                                           Q3
+                                                                                                 Q4
+                                                                                                       Q1
+                                                                                                             Q2
+                                                                                                                  Q3
+                                                                                                                        Q4
+                                                                                                                             Q1
+                                                                                                                                   Q2
+                                                                                                                                        Q3
+                                                                                                                                              Q4
+                                                                                                                                                    Q1
+                                                         21
+                                                              21
+                                                                   21
+                                                                         21
+                                                                              22
+                                                                                   22
+                                                                                        22
+                                                                                             22
+                                                                                                   23
+                                                                                                         23
+                                                                                                              23
+                                                                                                                    23
+                                                                                                                         24
+                                                                                                                               24
+                                                                                                                                    24
+                                                                                                                                          24
+                                                                                                                                                  25
+                                                         20
+                                                              20
+                                                                   20
+                                                                        20
+                                                                             20
+                                                                                   20
+                                                                                        20
+                                                                                             20
+                                                                                                  20
+                                                                                                        20
+                                                                                                              20
+                                                                                                                   20
+                                                                                                                         20
+                                                                                                                              20
+                                                                                                                                    20
+                                                                                                                                         20
+                                                                                                                                                 20
+
+
+
+
+                                                                                                  Quarter
+
+Figure A5: Employment share and real earnings trends for entry level versus experienced
+workers, restricted to the most computer occupations corresponding to Census occupation
+codes 1005 through 1108. Entry level workers are defined as workers aged 26 or younger.
+
+
+
+
+                                                                                                  23
+

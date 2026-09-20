@@ -1,0 +1,39 @@
+25     ILO Working Paper 140
+
+
+
+
+     XX Figure 10. Scoring as a function of familiarity with GenAI and the scored task – distribution of individual
+        scores
+
+
+
+
+     One way to address this variation in scoring would be to apply corrective weights to responses,
+     giving greater influence to respondent profiles likely to have more relevant expertise. For exam-
+     ple, one could assign more weight to respondents reporting greater familiarity with GenAI or
+     frequent usage or prioritize scores from individuals who perform similar tasks in their daily work.
+     However, in our sample, this would introduce significant limitations. For 91.5% of the tasks, re-
+     spondents did not report performing a similar task in their work – even when the task belonged
+     to the same 1-digit occupational group as their current job. This is not surprising. For instance,
+     within the “Professionals” group alone, the representative sample consisted of 368 tasks drawn
+     from a pool of 8,715 tasks (Table 2), making exact task matching unlikely.
+
+     Moreover, adjusting for beliefs or usage would require strong theoretical assumptions about
+     what constitutes “credible” scoring. For example, a respondent who believes their profession will
+     be completely transformed by GenAI in the next five years may be highly informed, or may be
+     expressing anxiety, speculation, or dystopian fears. Without richer data to distinguish between
+     these interpretations, applying corrective weights risks introducing new biases.
+
+     Given the relatively small size of these specific subgroups in our dataset, we refrain from imple-
+     menting such adjustments in the current analysis to avoid overfitting or compromising credibil-
+     ity. Instead, we flag this as an important area for future survey design, particularly in capturing
+     respondent expertise and task familiarity more systematically.
+
+     For the present study, we treat the survey as a starting point, designed to capture a broad spec-
+     trum of perspectives reflecting varying degrees of familiarity with both tasks and GenAI. In
+     many cases, a respondent’s understanding of the task itself may be more influential than their
+     understanding of the technology, especially for concrete physical tasks (e.g. trimming flowers,
+     assembling mechanical parts). Accordingly, we rely on mean scores across all respondents to re-
+     flect the collective judgment of a diverse sample grounded in workplace experience. To enhance
+

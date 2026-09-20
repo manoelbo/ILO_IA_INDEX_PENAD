@@ -1,0 +1,47 @@
+This result implies that in general, βf e 6= δ T R , so βbf e is a biased estimator of the ATT. To
+illustrate this, we consider a simple example of a staggered adoption design with two groups and
+three periods, and where the treatments are non-stochastic: group 1 is untreated at periods 1
+and 2 and treated at period 3, while group 2 is untreated at period 1 and treated both at periods
+2 and 3.8 We also assume that Ng,t /Ng,t−1 does not vary across g: all groups experience the
+same growth of their number of observations from t − 1 to t, a requirement that is for instance
+satisfied when the data is a balanced panel. Then, one can show that
+
+                                        εg,t = Dg,t − Dg,. − D.,t + D.,. ,
+
+thus implying that
+
+                                      ε1,3 = 1 − 1/3 − 1 + 1/2 = 1/6,
+                                      ε2,2 = 1 − 2/3 − 1/2 + 1/2 = 1/3,
+                                      ε2,3 = 1 − 2/3 − 1 + 1/2 = −1/6.
+
+The residual is negative in group 2 and period 3, because the regression predicts a treatment
+probability larger than one in that cell, a classic extrapolation problem with linear regressions.
+Then, under the common trends assumption, it follows from Theorem 1 and the fact that the
+treatments are non-stochastic that
+
+                                βf e = 1/2E [∆1,3 ] + E [∆2,2 ] − 1/2E [∆2,3 ] .
+
+βf e is equal to a weighted sum of the ATEs in group 1 at period 3, group 2 at period 2, and group
+2 at period 3, the three treated (g, t) cells. However, the weight assigned to each ATE differs
+from 1/3, the proportion that each cell accounts for in the population of treated observations.
+Therefore, βf e is not equal to δ T R . Perhaps more worryingly, not all the weights are positive: the
+weight assigned to the ATE in group 2 period 3 is strictly negative. Consequently, βf e may be a
+very misleading measure of the treatment effect. Assume for instance that E [∆1,3 ] = E [∆2,2 ] = 1
+and E [∆2,3 ] = 4. At the period when they start receiving the treatment, both groups experience
+a modest positive ATE. But this effect builds over time and in period 3, one period after it has
+started receiving the treatment, group 2 now experiences a large ATE. Then,
+
+                                    βf e = 1/2 × 1 + 1 − 1/2 × 4 = −1/2.
+
+βf e is strictly negative, while E [∆1,3 ], E [∆2,2 ], and E [∆2,3 ] are all positive. More generally, the
+negative weights are an issue if the E [∆g,t ]s are heterogeneous, across groups or over time.9 If
+E [∆1,3 ] = E [∆2,2 ] = E [∆2,3 ] = 1, then βf e = 1 = δ T R .
+   8
+     A similar example appears in Borusyak and Jaravel (2017).
+   9
+    On the other hand, βf e does not rule out heterogeneous treatment effects within (g, t) cells, as it is identified
+by variations across (g, t) cells, and does not leverage any within-cell variation.
+
+
+                                                          8
+

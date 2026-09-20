@@ -1,0 +1,34 @@
+linking large-scale, representative data on AI chatbot adoption and work reorganization
+to administrative labor market records.
+       A contemporaneous set of studies uses exposure measures—technical assessments of
+which job tasks are feasible to assist with AI chatbots—to examine whether exposed
+occupations have fared differently after the release of ChatGPT. Brynjolfsson, Chandar
+and Chen (2025) document a sharp decline in employment of early-career workers in
+AI-exposed occupations in the United States since 2022, suggesting that generative AI
+may already be displacing entry-level jobs. Our key contribution is to split these trends
+by whether firms have actually adopted generative AI, revealing that the declines are not
+driven by firms adopting AI chatbots.
+       A small but growing number of studies field worker-level surveys on the adoption
+of generative AI (Bick, Blandin and Deming, 2025; Hartley et al., 2025; Humlum and
+Vestergaard, 2025). While our adoption patterns and self-reported time savings align with
+these studies, we link these survey measures to administrative labor market outcomes,
+including earnings and hours at the worker and workplace levels, allowing us to move the
+analysis beyond self-reported effects.3
+       While several experiments document sizable productivity gains from chatbot use on
+specific tasks (Brynjolfsson, Li and Raymond, 2025; Dillon et al., 2025; Noy and Zhang,
+2023), it remains unclear how these gains translate into workers’ labor market outcomes,
+as high-quality microdata are rarely available. While AI chatbot use has not measurably
+affected workers’ earnings and hours, we find a clear association between adoption and
+occupational mobility. This aligns with experimental evidence that chatbots provide
+greater benefits to workers with less prior expertise. Moreover, adopters who switch move
+into occupations with higher wage premia and where using AI chatbots is more relevant,
+suggesting that chatbots help workers access otherwise scarce expertise (Autor, 2024;
+Autor and Thompson, 2025).
+   3
+    AI labs have recently released descriptive statistics from their internal usage data (Chatterji et al.,
+2025; Handa et al., 2025; Tomlinson et al., 2025). Our survey data complement these by capturing the full
+range of chatbot products, measuring complementary workplace investments, linking to administrative
+records, and sampling both users and non-users from a well-defined population frame.
+
+
+                                                    5

@@ -1,0 +1,46 @@
+                                               1   INTRODUCTION
+
+
+The concern that more autonomous instruments and machines would render work obsolete has
+recurred throughout history. From Aristotle speculating on the obsolescence of human labor if
+instruments could work on their own to Keynes’ famous prediction of technological unemploy-
+ment,2 this concern arises whenever new technologies emerge and has particularly grown with re-
+cent advances in artificial intelligence (AI). Growing progress in natural language processing and
+generative models like OpenAI’s GPT have significantly improved machines’ abilities to mimic
+many human cognitive capabilities, such as understanding and generating human-like text, mak-
+ing predictions, and performing image and video recognition (Dwivedi et al., 2023). Furthermore,
+the convergence of AI with robotics signals the emergence of highly autonomous systems capable
+of executing more complex physical tasks, potentially reshaping the landscape of both cognitive
+and manual labor.
+    This paper aims to identify which occupations are most exposed to the replacement due to AI
+adoption, developing a new Generated Index of Occupational Exposure (GENOE). Our approach
+uses a novel methodological approach that we call “synthetic AI surveys.” This methodology
+leverages the extensive knowledge and advanced analytical capabilities of large language mod-
+els (LLMs) to conduct expert-like assessments, provide estimations, and offer insights on a wide
+range of areas. We specifically applied this approach to estimate the exposure of various tasks
+and occupations to recent and anticipated advancements in AI-related technologies. The GENOE
+index measures the likelihood of job replacement by AI at the occupational level, based on the
+tasks typically performed in each role. We defined three time horizons for replacement: one year,
+five years, and 10 years. This accounts for short-term scenarios based on current AI capabilities as
+well as medium-term and long-term scenarios anticipating future technological advancements.
+    Our findings reveal that the average occupational exposure to AI is 0.28 within one year, in-
+creasing to 0.38 and 0.44 over the five- and 10-year horizons, respectively.3 An exposure score of
+0.28 suggests that, on average, occupations have a 28% likelihood of potentially being impacted
+by AI within the next year. To contextualize these results, we calibrated the GENOE index with
+labor market data from the United States and Mexico. Results show that 43 million and 16 million
+jobs are exposed to AI in the United States and Mexico, respectively, over the one-year horizon, in-
+creasing to 60 million and 22 million over five years, and 70 million and 26 million over ten years.
+Extrapolating these findings to Latin America and the Caribbean, we estimate that approximately
+84 million jobs are exposed to AI within one year, rising to 114 million in 5 years, and 132 million
+in 10 years. Assuming this average exposure is applicable to worldwide labor markets, it implies
+that approximately 980 million, 1.33 billion, and 1.54 billion jobs are exposed to AI over the one-,
+five-, and 10-year horizons, respectively. It is crucial to note that this does not directly translate
+   2 See Aristotle (350 B.C.E./1998), Politics and Keynes (1930).
+   3 GENOE estimates are available online for use by academics, policymakers, and businesses to inform future re-
+
+search and strategic decision-making GENOE. Data can be found in this online repository.
+
+
+
+                                                           1
+

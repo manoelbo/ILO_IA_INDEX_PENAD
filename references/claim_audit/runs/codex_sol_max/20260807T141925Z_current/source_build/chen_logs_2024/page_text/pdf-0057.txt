@@ -1,0 +1,56 @@
+Bellemare, Marc F. and Casey J. Wichman, “Elasticities and the Inverse Hyperbolic Sine
+ Transformation,” Oxford Bulletin of Economics and Statistics, 2020, 82 (1), 50–61. _eprint:
+ https://onlinelibrary.wiley.com/doi/pdf/10.1111/obes.12325.
+
+Bellégo, Christophe, David Benatia, and Louis Pape, “Dealing with Logs and Zeros in
+ Regression Models,” March 2022. arXiv:2203.11820 [econ, stat].
+
+Belotti, Federico, Partha Deb, Willard G. Manning, and Edward C. Norton, “Twopm:
+ Two-Part Models,” The Stata Journal, April 2015, 15 (1), 3–20. Publisher: SAGE Publications.
+
+Berkouwer, Susanna B and Joshua T Dean, “Credit, attention, and externalities in the adop-
+ tion of energy efficient technologies by low-income households,” American Economic Review, 2022,
+ 112 (10), 3291–3330.
+
+Burbidge, John B., Lonnie Magee, and A. Leslie Robb, “Alternative Transformations to
+ Handle Extreme Values of the Dependent Variable,” Journal of the American Statistical Associ-
+ ation, 1988, 83 (401), 123–127. Publisher: [American Statistical Association, Taylor & Francis,
+ Ltd.].
+
+Cabral, Marika, Can Cui, and Michael Dworsky, “The Demand for Insurance and Rationale
+ for a Mandate: Evidence from Workers’ Compensation Insurance,” American Economic Review,
+ 2022, 112 (5), 1621–68.
+
+Cao, Yiming and Shuo Chen, “Rebel on the Canal: Disrupted Trade Access and Social Conflict
+ in China, 1650–1911,” American Economic Review, 2022, 112 (5), 1555–90.
+
+Card, David, Jochen Kluve, and Andrea Weber, “Active Labour Market Policy Evaluations:
+ A Meta-Analysis,” The Economic Journal, November 2010, 120 (548), F452–F477.
+
+Carranza, Eliana, Robert Garlick, Kate Orkin, and Neil Rankin, “Job Search and Hiring
+ with Limited Information about Workseekers’ Skills,” American Economic Review, 2022, 112 (11),
+ 3547–83.
+
+Chetty, Raj, “A General Formula for the Optimal Level of Social Insurance,” Journal of Public
+ Economics, November 2006, 90, 1879–1901.
+
+  , Nathaniel Hendren, Patrick Kline, and Emmanuel Saez, “Where is the land of opportu-
+  nity? The geography of intergenerational mobility in the United States,” The Quarterly Journal
+  of Economics, 2014, 129 (4), 1553–1623. Publisher: Oxford University Press.
+
+Cohn, Jonathan B., Zack Liu, and Malcolm I. Wardlaw, “Count (and count-like) data in
+ finance,” Journal of Financial Economics, November 2022, 146 (2), 529–551.
+
+de Brauw, Alan and Sylvan Herskowitz, “Income Variability, Evolving Diets, and Elasticity Es-
+  timation of Demand for Processed Foods in Nigeria,” American Journal of Agricultural Economics,
+  2021, 103 (4), 1294–1313. _eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/ajae.12139.
+
+Delius, Antonia and Olivier Sterck, “Cash Transfers and Micro-Enterprise Performance: Theory
+ and Quasi-Experimental Evidence from Kenya,” SSRN Electronic Journal, 2020.
+
+Faber, Benjamin and Cecile Gaubert, “Tourism and economic development: Evidence from
+  Mexico’s coastline,” American Economic Review, 2019, 109 (6), 2245–93.
+
+
+                                               20
+

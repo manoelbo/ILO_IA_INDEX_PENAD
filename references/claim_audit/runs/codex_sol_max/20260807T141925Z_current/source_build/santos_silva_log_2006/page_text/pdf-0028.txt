@@ -1,0 +1,50 @@
+                       Table 3: The Traditional Gravity Equation
+ Estimator                 OLS         OLS          Tobit         NLS      PPML         PPML
+ Dependent Variable      ln (Tij ) ln (1 + Tij ) ln (a + Tij )    Tij     Tij > 0         Tij
+ Log exporter’s GDP      0.938∗∗     1.128∗∗       1.058∗∗      0.738∗∗    0.721∗∗      0.733∗∗
+                         (0.012)     (0.011)       (0.012)     (0.038)    (0.027)       (0.027)
+ Log importer’s GDP      0.798∗∗     0.866∗∗       0.847∗∗      0.862∗∗    0.732∗∗      0.741∗∗
+                         (0.012)     (0.012)       (0.011)     (0.041)    (0.028)       (0.027)
+                               ∗∗          ∗∗            ∗∗           ∗∗
+ Log exporter’s GDP      0.207       0.277         0.227        0.396      0.154∗∗      0.157∗∗
+ per capita              (0.017)     (0.018)       (0.015)     (0.116)    (0.053)       (0.053)
+ Log importer’s GDP      0.106∗∗     0.217∗∗       0.178∗∗     −0.033      0.133∗∗      0.135∗∗
+ per capita              (0.018)     (0.018)       (0.015)     (0.062)    (0.044)       (0.045)
+                                 ∗∗          ∗∗            ∗∗          ∗∗
+ Log distance           −1.166      −1.151        −1.160       −0.924     −0.776∗∗     −0.784∗∗
+                         (0.034)     (0.040)       (0.034)     (0.072)    (0.055)       (0.055)
+ Contiguity dummy         0.314∗     −0.241        −0.225      −0.081       0.202        0.193
+                         (0.127)     (0.201)       (0.152)     (0.100)    (0.105)       (0.104)
+ Common-language         0.678∗∗     0.742∗∗       0.759∗∗      0.689∗∗    0.752∗∗      0.746∗∗
+ dummy                   (0.067)     (0.067)       (0.060)     (0.085)    (0.134)       (0.135)
+ Colonial-tie dummy      0.397∗∗     0.392∗∗       0.416∗∗       0.036      0.019        0.024
+                         (0.070)     (0.070)       (0.063)     (0.125)    (0.150)       (0.150)
+ Landlocked-exporter     −0.062       0.106∗       −0.038      −1.367∗∗ −0.873∗∗       −0.864∗∗
+ dummy                   (0.062)     (0.054)       (0.052)     (0.202)    (0.157)       (0.157)
+ Landlocked-importer    −0.665∗∗ −0.278∗∗         −0.479∗∗ −0.471∗∗ −0.704∗∗           −0.697∗∗
+ dummy                   (0.060)     (0.055)       (0.051)     (0.184)    (0.141)       (0.141)
+                               ∗∗          ∗∗            ∗∗           ∗∗
+ Exporter’s remoteness   0.467       0.526         0.563        1.188      0.647∗∗      0.660∗∗
+                         (0.079)     (0.087)       (0.068)     (0.182)    (0.135)       (0.134)
+ Importer’s remoteness −0.205∗       −0.109        −0.032       1.010∗∗    0.549∗∗      0.561∗∗
+                         (0.085)     (0.091)       (0.073)     (0.154)    (0.120)       (0.118)
+                               ∗∗          ∗∗            ∗∗           ∗∗
+ Free-trade agreement    0.491       1.289         0.729        0.443      0.179∗       0.181∗
+ dummy                   (0.097)     (0.124)       (0.103)     (0.109)    (0.090)       (0.088)
+ Openness               −0.170∗∗     0.739∗∗       0.310∗∗      0.928∗∗   −0.139       −0.107
+                         (0.053)     (0.050)       (0.045)     (0.191)    (0.133)       (0.131)
+ Observations              9613       18360         18360        18360      9613         18360
+ RESET test p-values      0.000        0.000         0.204       0.000      0.941        0.331
+
+
+
+It is noteworthy that all methods, except the PPML, lead to puzzling asymmetries in the
+elasticities with respect to importer and exporter characteristics (especially remoteness
+and access to water).
+  To check the adequacy of the estimated models, we performed a heteroskedasticity-
+robust RESET test (Ramsey, 1969). This is essentially a test for the correct specification
+of the conditional expectation, which is performed by checking the significance of an addi-
+tional regressor constructed as (x0 b)2 , where b denotes the vector of estimated parameters.
+
+                                             27
+

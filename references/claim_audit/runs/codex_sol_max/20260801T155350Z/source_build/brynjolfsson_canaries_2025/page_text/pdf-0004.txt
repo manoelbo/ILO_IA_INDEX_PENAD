@@ -1,0 +1,63 @@
+firm regardless of AI exposure. For workers aged 22-25, we find a 12 log-point decline in relative
+
+employment for the most AI-exposed quintiles compared to the least exposed quintile, a large and
+
+statistically significant effect. Estimates for other age groups are much smaller in magnitude and
+
+not statistically significant. These findings imply that the employment trends we observe are not
+
+driven by differential shocks to firms that employ a disproportionate share of AI-exposed young
+
+workers.
+
+      Fifth, the labor market adjustments are visible in employment more than compensation. In
+
+contrast to our findings for employment, we find little difference in annual salary trends by age
+
+or exposure quintile, suggesting possible wage stickiness. If so, AI may have larger effects on
+
+employment than on wages, at least initially.
+
+      Sixth, the above facts are largely consistent across various alternative sample constructions. We
+
+find that our results are not driven solely by computer occupations or by occupations susceptible to
+
+remote work and outsourcing. We also find that the AI exposure taxonomy did not meaningfully
+
+predict employment outcomes for young workers further back in time, before the widespread use
+
+of LLMs, including during the unemployment spike driven by the COVID-19 pandemic. The
+
+patterns we observe in the data appear most acutely starting in late 2022, around the time of rapid
+
+proliferation of generative AI tools.4 They also hold for both occupations with a high share of college
+
+graduates and ones with a low college share, suggesting deteriorating education outcomes during
+
+COVID-19 do not drive our results. For non-college workers, we find evidence that experience
+
+may serve as less of a buffer to labor market disruption, as low college share occupations exhibit
+
+divergent employment outcomes by AI exposure up to age 40.
+
+      While we caution that the facts we document may in part be influenced by factors other than
+
+generative AI, our results are consistent with the hypothesis that generative AI has begun to affect
+
+entry-level employment. We intend to continue to track the data on an ongoing basis to assess
+
+whether these trends change in the future.
+
+      Why might AI adversely affect exposed entry-level workers more than other age groups? One
+
+possibility is that, by nature of the model training process, AI replaces codified knowledge, the
+
+“book-learning” that forms the core of formal education. AI may be less capable of replacing
+  4
+      OpenAI introduced ChatGPT in November 2022.
+
+
+
+
+                                                    4
+

@@ -1,0 +1,50 @@
+E.18 showing averages by occupation, employer encouragement, and adoption status.
+
+Nearly all respondents—97.7% of adopters and 99.5% of non-adopters—report no impact
+
+on their earnings. Consistent with this, Figure E.19 shows that workers themselves
+
+estimate only 3–7% of their time savings translate into higher earnings.
+
+
+Table E.11: Decomposition of Perceived Earnings Effects of AI Chatbots Among Adopters
+                                                                      Share of Impacts           Conditional Average Impacts (in %)
+                                                Average       Decreased Unchanged Increased      Decreased Unchanged Increased
+                                              Impact (in %)   Earnings    Earnings    Earnings   Earnings     Earnings   Earnings
+  Occupation                 Policy                 (1)          (2)         (3)         (4)         (5)        (6)          (7)
+  Journalists                Non-Encouraged       -.118                     .994                                 0
+  Journalists                Encouraged           -.159                     .983                                 0
+  Software Developers        Non-Encouraged       .092          .008        .974        .015      -12.187        0          12.5
+  Software Developers        Encouraged           .428                       .96        .037                     0         11.944
+  Legal Professionals        Non-Encouraged       .031                      .978                                 0
+  Legal Professionals        Encouraged           .057                      .987        .009                     0          10.5
+  Accountants and Auditors   Non-Encouraged          0          .004        .915        .004       -13.75        0          13.75
+  Accountants and Auditors   Encouraged            .126                     .973        .015                     0           10
+  Customer Service Rep.      Non-Encouraged        -.11         .013        .913                   -9.167        0
+  Customer Service Rep.      Encouraged           .303                      .942        .041                     0          7.25
+  Marketing Professionals    Non-Encouraged       .112                      .956        .023                     0          7.25
+  Marketing Professionals    Encouraged             .37         .006        .955        .038        -16.5        0         12.422
+  Financial Advisors         Non-Encouraged       .022                      .964                                 0
+  Financial Advisors         Encouraged           .214                      .979        .019                     0         11.667
+  HR Professionals           Non-Encouraged          0                      .964                                 0
+  HR Professionals           Encouraged            .071                     .986                                 0
+  Office Clerks              Non-Encouraged       .015          .002        .901        .003       -7.143        0          8.462
+  Office Clerks              Encouraged           .113                      .978        .014                     0         10.403
+  Teachers                   Non-Encouraged       -.007         .001        .975        .001       -9.167        0            4
+  Teachers                   Encouraged            .041                     .992        .007                     0         7.188
+  IT Support                 Non-Encouraged        .039         .006        .981                      -4         0
+  IT Support                 Encouraged            .172                     .974         .02                     0         11.25
+
+Notes: This table decomposes the average perceived earnings impact (in percent) of AI chatbots among adopters (Column
+1) into contributions from workers reporting decreased earnings (Columns 2 and 5), unchanged earnings (Columns 3 and
+6), and increased earnings (Columns 4 and 7). Responses are categorized by workers’ occupations and whether their
+employers encourage AI chatbot use. Empty cells represent fewer than five individuals and are blanked out in accordance
+with confidentiality rules. We code reported earnings impacts as follows: “No change” as 0%, “0–5% change” as 2.5%,
+“5–15% change” as 10%, and “Over 15% change” as 20%. Our conclusions are robust to alternative codings. Sample: All
+completed responses from the 2024 survey round linked to registry data.
+
+
+
+
+                                                                87
+

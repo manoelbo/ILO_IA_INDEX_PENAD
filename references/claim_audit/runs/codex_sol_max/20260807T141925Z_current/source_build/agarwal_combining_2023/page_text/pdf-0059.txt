@@ -1,0 +1,52 @@
+                                                                                                                            59
+
+                                                           Figure B.3: Design 3
+
+                                 Initial randomization into tracks
+
+                                                                                 Same sets
+
+                                             XO                        CH           AI       AI + CH
+                                            Set 1                     Set 2        Set 1      Set 2
+
+
+                                              CH                       XO        AI + CH       AI
+                                             Set 1                    Set 2       Set 1       Set 2
+                                                                     Same sets
+
+
+
+Note: In this design, radiologists diagnose fifty cases, first without and then with AI assistance. Clinical history is randomly
+provided in either the first or second half of images forming the basis of the randomization. The cases diagnosed with and
+without clinical history are different.
+
+
+
+B.2      Instructions
+
+Below you will find the instructions received by the subjects when receiving the interface-
+based treatment. Comments on the instructions are provided in italics and were not seen by
+subjects.
+
+
+Instructions
+
+You are about to participate in a study on medical decision making. You may pause the
+study at any time. To resume, revisit the link you were given and your progress will have
+been saved.
+We will present you with adult patients with potential thoracic pathologies. These patients
+will be presented under the following four scenarios:
+
+    1. Only a chest X-ray is shown.
+
+    2. An X-ray is accompanied with additional information about the clinical history.
+
+    3. An X-ray is shown along with Artificial Intelligence (AI) support. This AI tool is
+       described in further detail below.
+
+    4. An X-ray is shown along with both additional information on clinical history and the
+       AI support.
+
+The patients are randomly assigned to each of these scenarios. That is, availability of clinical
+history and/or AI support is unrelated to the patient.
+

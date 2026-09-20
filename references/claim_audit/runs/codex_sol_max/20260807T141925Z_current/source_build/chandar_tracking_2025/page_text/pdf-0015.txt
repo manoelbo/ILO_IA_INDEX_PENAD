@@ -1,0 +1,35 @@
+6      Conclusion
+
+This paper uses the CPS to provide an empirical snapshot of the US labor market in the
+initial years since the generative AI revolution. Overall, occupations highly exposed to AI
+have not experienced employment declines. However, within this group, employment in
+occupations like software development continues to grow, while it has fallen in like customer
+service. These trends are correlated with occupational education levels.
+     These results for employment and earnings contrast with trends in job posting data.
+This divergence serves as a methodological caution for using job postings as a proxy for
+these other labor market indicators.
+     Further research that provides real-time tracking of employment in AI-exposed occupa-
+tions using large-scale administrative or survey data would be invaluable for assessing how
+these new technologies are shaping the labor market.
+
+
+
+References
+
+Abel, J. R. and R. Deitz (2017): “Underemployment in the Early Careers of College
+    Graduates following the Great Recession,” in Education, Skills, and Technical Change:
+    Implications for Future US GDP Growth, University of Chicago Press, 149–181. 4
+
+Acemoglu, D., D. Autor, J. Hazell, and P. Restrepo (2022): “Artificial Intelligence
+    and Jobs: Evidence from Online Vacancies,” Journal of Labor Economics, 40, S293–S340,
+    publisher: The University of Chicago Press. 2, 4
+
+Allen, Mike, J. V. (2025): “Behind the Curtain: Top AI CEO foresees white-collar
+    bloodbath,” . 1, 4.3
+
+Autor, D. H., F. Levy, and R. J. Murnane (2003): “The Skill Content of Recent
+    Technological Change: An Empirical Exploration*,” The Quarterly Journal of Economics,
+    118, 1279–1333. 1
+
+                                             15
+

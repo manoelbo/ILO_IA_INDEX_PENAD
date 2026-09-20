@@ -1,0 +1,53 @@
+Assumption S8 (Existence of “stable” groups) For all t ∈ {2, ..., T }, for all (d, d0 ) ∈ D2 , d 6= d0 ,
+if there is at least one g ∈ {1, ..., G} such that Dg,t−1 = d and Dg,t = d0 , then there exists at least
+one g 0 6= g, g 0 ∈ {1, ..., G} such that Dg0 ,t−1 = Dg0 ,t = d.
+
+When the treatment takes a large number of values, Assumption S8 may be violated. A solution,
+then, is to consider a modified treatment variable D    e g,t = h(Dg,t ) that groups together several
+values of Dg,t , to ensure that Assumption S8 holds for D     e g,t . For instance, if the treatment can
+be equal to 0, 1, 2, or 3, and there is a group whose treatment switches from 2 to 3 between
+periods 1 and 2, but no group whose treatment remains equal to 2 between those two dates, one
+may define De g,t = min(Dg,t , 2) if there is a group whose treatment is equal to 3 at periods 1 and
+2. Then, Theorem S5 below still holds, after replacing Dg,t by D         e g,t in the DIDd,d0 ,t estimators
+defined below, and if Assumption S7 is replaced by the requirement that E(Yg,t (d) − Yg,t−1 (d))
+only depends on t and h(d).
+In order to define DIDM in this context, let us introduce, for all (d, d0 , t) ∈ D2 × {2, ..., T },
+                                                          X                 Ng,t
+         DIDd,d0 ,t = [1{d < d } − 1{d < d}]
+                              0       0
+                                                                                     [Yg,t − Yg,t−1 ]
+                                                            0
+                                                                            Nd,d0 ,t
+                                               (g,t):Dg,t =d ,Dg,t−1 =d,t≥2
+                                                              X                                       
+                                                                             Ng,t
+                                               −                                     [Yg,t − Yg,t−1 ] ,
+                                                                            Nd,d,t
+                                                        (g,t):Dg,t =Dg,t−1 =d,t≥2
+
+
+where Nd,d0 ,t is defined as in (3) for any (d, d0 ) ∈ D2 . Then
+                                          T
+                                          X         X              Nd,d0 ,t
+                               DIDM =                                       DIDd,d0 ,t .
+                                          t=2 (d,d0 )∈D2 ,d6=d   0
+                                                                   ND,S
+
+If the treatment is binary, the DIDM estimator defined above is equal to that defined in Section
+4 of the paper.
+
+Theorem S5 Suppose that Di,g,t ∈ D and Assumptions 1-2 and S5-S8 hold. Then E [DIDM ] =
+δ SCR .
+
+Theorem S5 generalizes Theorem 3 to non-binary treatments. We can also extend Theorem 4
+in the same way to construct placebo tests of Assumption S7.
+Finally, Theorem 3 can also be extended to the case with covariates. Under versions of As-
+sumptions 10 and 11 written conditional on X, a conditional version of the DIDM estimator is
+consistent for δ S under the common support condition Supp(Xd,g,t ) = Supp(X). We refer to
+de Chaisemartin and D’Haultfœuille (2018) for further details.
+
+
+
+
+                                                      11
+

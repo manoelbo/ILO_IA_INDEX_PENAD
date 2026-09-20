@@ -1,0 +1,59 @@
+3%, and our pooled difference-in-differences estimates rule out effects larger than 2%.11
+
+Second, these effects show no differential trends after the introduction of AI chatbots,
+
+indicating that the minimal impacts are not merely a very short-term phenomenon. Lastly,
+
+despite evidence in Section 1.4 that employer encouragement boosts work-related benefits
+
+of AI chatbots, we find no differential changes in earnings for workers whose employers
+
+encourage their chatbot use.
+
+
+Heterogeneity by Strength of Treatment. Figure 4, Panel (a) examines the earnings
+
+impacts of chatbot use by the strength of the adoption treatment.
+
+       The top three rows consider the effects of additional investments in employer-provided
+
+chatbots and training. These estimates offer insights into the impacts of AI chatbots
+
+when firms pursue a more comprehensive strategy. Yet even when the “full package” of
+
+encouraged use, enterprise chatbots, and training substantially increases reported benefits
+
+(Section 1.4), we find no detectable impact on adopter earnings.
+
+       The next two rows focus on more intensive users—those who engage with AI chatbots
+
+daily or who adopted early (within the first year after ChatGPT’s launch). These workers
+
+have not experienced earnings gains either.
+
+       The remaining rows examine workers who report greater benefits from AI chatbot usage:
+
+time savings exceeding one hour per day, higher-quality output, enhanced creativity, and
+
+engagement with new AI-related tasks. While these self-reported benefits are substantial,
+
+the estimates show none of them is associated with better labor market outcomes in our
+
+administrative data.
+
+       Taken together, Figure 4.(a) suggests that the null earnings effects are not simply
+
+the result of weak treatments—at either the firm or worker level. Workers in firms that
+
+adopt a more active, multifaceted approach to AI chatbots do not see differential earnings
+
+impacts. Nor do those who use the tools more frequently, adopted them earlier, or report
+  11
+    The dynamic difference-in-differences in Figure 2.(b) reveal that adopters are on slightly stronger
+labor market trends. However, because these trends entirely predate AI chatbots, the pooled difference-
+in-differences in Figure 5.(a) (which control for pre-trends; see Equation (2)) are precise zeros, with
+confidence bands ruling out effects larger than 2%.
+
+
+                                                 15
+

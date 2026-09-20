@@ -7,7 +7,7 @@ from pathlib import Path
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = (
-    PACKAGE_ROOT / "code" / "models" / "specification_ladder.py"
+    PACKAGE_ROOT / "code" / "caged" / "models" / "specification_ladder.py"
 )
 
 

@@ -1,0 +1,42 @@
+                                                                                                           5
+
+anchoring effects.4 Most of our treatment effect analysis pools data from the different designs
+whereas our model estimates of belief updating only uses data where a radiologist reads the
+same case both with and without AI assistance.
+We find that AI assistance does not improve humans’ diagnostic quality on average even
+though the AI predictions are more accurate than almost two-thirds of the participants in
+our experiment. Moreover, the zero average effect cannot be explained by the participants
+ignoring these predictions – we observe that radiologists’ reported probabilities move sig-
+nificantly towards the AI’s predictions with AI assistance. Instead, the zero effect of AI
+assistance is driven by heterogeneous treatment effects – diagnostic quality increases when
+the AI is confident (e.g. the predicted probability is close to zero or one) but decreases
+when the AI is uncertain. In parallel, AI assistance improves diagnostic quality for patient
+cases in which our participants are uncertain, but decreases quality for patient cases in which
+our participants are certain. In contrast, providing clinical history does improve diagnostic
+quality suggesting that humans have additional valuable information that has not yet been
+incorporated into AI predictions.
+An upshot of the results is that information available only to radiologists is useful, but
+human experts do not correctly combine their information with AI predictions. Specifically,
+the result that AI assistance can reduce predictive performance cannot be rationalized if our
+participants are Bayesians with correct beliefs because the AI assistance provides weakly
+more information to the decision-maker.
+Motivated by these results, we analyze two types of deviations from the benchmark model
+with correct updating to link errors in probabilistic judgement and optimal deployment of
+AI assistance.5 The first type of deviation occurs when agents do not put correct weights on
+their own information and AI information. We describe this deviation using the approach
+introduced in Grether (1980; 1992) (see Benjamin, 2019, for a review) to define biases in
+belief updating. We say that an agent exhibits own-information bias if they over-weights
+their baseline information when provided with AI assistance and own-information neglect if
+they under-weights it. Analogously, an agent exhibits automation bias if they over-weights
+the AI information relative to their own and automation neglect if they under-weights it.
+The second type of deviation occurs if agents utilize an incorrect joint distribution of their
+   4
+     To ensure that our results do not rely on the wash-out being successful, a third design obtains an
+assessment with AI assistance only after assessments without AI assistance have been obtained. However,
+this third treatment is subject to order effects. We find no evidence of order effects on diagnostic quality
+although there is evidence that familiarity with the interface increases the speed with which participants go
+through patient cases.
+   5
+     We will remain agnostic about whether the deviations we consider are due to non-Bayesian updating or
+can be explained by Bayesian updating with incorrect prior beliefs.
+

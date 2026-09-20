@@ -1,0 +1,44 @@
+    one’s class, which varies within (school,grade,year) cells.
+
+30. Chaney et al. (2012), The Collateral Channel: How Real Estate Shocks Affect
+    Corporate Investment. Table 5.
+    In regression Equation (1), the dependent variable is the value of investment in firm i and
+    year t divided by the lagged book value of properties, plants, and equipments (PPE), and
+    the explanatory variables are firm and time fixed effects and the market value of firm i
+    in year t divided by its lagged PPE, and some controls. This regression corresponds to
+    Regression 1, with some controls. The stable groups assumption is presumably satisfied:
+    it is likely that between each pair of consecutive years, there are firms whose market value
+    divided by their lagged PPE does not change. This is a sharp design.
+
+31. Aaronson et al. (2012), The Spending and Debt Response to Minimum Wage
+    Hikes. Tables 1, 2, and 5.
+    In regression Equation (1), the outcome variable is, say, income of household i at period t,
+    and the explanatory variables are household and time fixed effects, and the minimum wage
+    in the state where household i lives in period t. This regression corresponds to Regression
+    1. The stable groups assumption is satisfied: between each pair of consecutive periods,
+    there are states where the minimum wage does not change. This is a sharp design.
+
+32. Brambilla et al. (2012), Exports, Export Destinations, and Skills. Table 5.
+    In the regression in, say, the first column of Table 2, the dependent variable is a measure
+    of skills in the labor force employed by firm i in industry j at period t, and the explanatory
+    variables are firm and industry × period fixed effects, the ratio of exports to sales in firm
+    i at period t, and some controls. This regression corresponds to Regression 1, with some
+    controls. The stable groups assumption is presumably satisfied: it is likely that between
+    each pair of consecutive periods, there are firms whose ratio of exports to sales does not
+    change. This is a sharp design.
+
+33. Faye and Niehaus (2012), Political Aid Cycles. Table 3, Columns 4 and 5, and
+    Tables 4 and 5.
+    In regression Equation (2), the dependent variable is the amount of donations received by
+    receiver r from donor d in year t, and the explanatory variables are donor × receiver fixed
+    effects, an indicator for whether there is an election in country r in year t, a measure of
+    alignment between the ruling political parties in countries r and d at t, and the interaction
+    of the election indicator and the measure of alignment. This regression corresponds to
+    Regression 1. The stable groups assumption is presumably not satisfied: it is unlikely that
+    there are donor-receiver pairs that are perfectly unaligned. This is a sharp design.
+
+
+
+
+                                              21
+

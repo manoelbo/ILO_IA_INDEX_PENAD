@@ -1,0 +1,59 @@
+                                               V.     REFERENCES
+Abadie, Alberto. 2005. "Semiparametric Difference-in-Differences Estimators." The Review of Economic Studies
+         72 (1):1-19.
+Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case
+         Studies: Estimating the Effect of California’s Tobacco Control Program." Journal of the American
+         Statistical Association 105 (490):493-505. doi: 10.1198/jasa.2009.ap08746.
+Abraham, Sarah, and Liyang Sun. 2018. "Estimating Dynamic Treatment Effects in Event Studies with
+         Heterogeneous Treatment Effects." Working Paper.
+Allcott, Hunt. 2015. "Site Selection Bias in Program Evaluation." The Quarterly Journal of Economics 130
+         (3):1117-1165. doi: 10.1093/qje/qjv015.
+Almond, Douglas, Hilary W. Hoynes, and Diane Whitmore Schanzenbach. 2011. "Inside the War On Poverty: The
+         Impact of Food Stamps on Birth Outcomes." The Review of Economics and Statistics 93 (2):387-403. doi:
+         10.2307/23015943.
+Angrist, Joshua D. 1988. "Grouped Data Estimation and Testing in Simple Labor Supply Models." Princeton
+         University Working Paper.
+Angrist, Joshua D. 1991. "Grouped-data estimation and testing in simple labor-supply models." Journal of
+         Econometrics 47 (2):243-266. doi: https://doi.org/10.1016/0304-4076(91)90101-I.
+Angrist, Joshua D., and Alan B. Krueger. 1999. "Chapter 23 - Empirical Strategies in Labor Economics." In
+         Handbook of Labor Economics, edited by Orley C. Ashenfelter and David Card, 1277-1366. Elsevier.
+Angrist, Joshua David, and Jörn-Steffen Pischke. 2009. Mostly harmless econometrics : an empiricist's companion.
+         Princeton: Princeton University Press.
+Angrist, Joshua David, and Jörn-Steffen Pischke. 2015. Mastering 'metrics : the path from cause to effect. Princeton
+         ; Oxford: Princeton University Press.
+Athey, Susan, and Guido W. Imbens. 2006. "Identification and Inference in Nonlinear Difference-in-Differences
+         Models." Econometrica 74 (2):431-497.
+Athey, Susan, and Guido W. Imbens. 2018. "Design-based Analysis in Difference-in-Differences Settings with
+         Staggered Adoption." Working Paper.
+Bailey, Martha J., and Andrew Goodman-Bacon. 2015. "The War on Poverty's Experiment in Public Medicine:
+         Community Health Centers and the Mortality of Older Americans." American Economic Review 105
+         (3):1067-1104.
+Bertrand, Marianne, Esther Duflo, and Sendhil Mullainathan. 2004. "How Much Should We Trust Differences-In-
+         Differences Estimates?" The Quarterly Journal of Economics 119 (1):249-275.
+Besley, Timothy, and Anne Case. 2002. "Unnatural Experiments? Estimating the Incidence of Endogenous
+         Policies." The Economic Journal 110 (467):672-694. doi: 10.1111/1468-0297.00578.
+Bhuller, Manudeep, Tarjei Havnes, Edwin Leuven, and Magne Mogstad. 2013. "Broadband Internet: An
+         Information Superhighway to Sex Crime?" The Review of Economic Studies 80 (4 (285)):1237-1266.
+Bitler, Marianne P., Jonah B. Gelbach, and Hilary W. Hoynes. 2003. "Some Evidence on Race, Welfare Reform,
+         and Household Income." The American Economic Review 93 (2):293-298. doi: 10.2307/3132242.
+Blinder, Alan S. 1973. "Wage Discrimination: Reduced Form and Structural Estimates." The Journal of Human
+         Resources 8 (4):436-455. doi: 10.2307/144855.
+Borusyak, Kirill, and Xavier Jaravel. 2017. "Revisiting Event Study Designs." Harvard University Working Paper.
+Callaway, Brantly, Tong Li, and Tatsushi Oka. forthcoming. "Quantile Treatment Effects in Difference in
+         Differences Models under Dependence Restrictions and with only Two Time Periods." Journal of
+         Econometrics.
+Callaway, Brantly, and Pedro Sant'Anna. 2018. "Difference-in-Differences With Multiple Time Periods and an
+         Application on the Minimum Wage and Employment." Working Paper.
+Cameron, Adrian Colin, and P. K. Trivedi. 2005. Microeconometrics : methods and applications. Cambridge ; New
+         York: Cambridge University Press.
+Chernozhukov, Victor, Iván Fernández‐Val, Jinyong Hahn, and Whitney Newey. 2013. "Average and Quantile
+         Effects in Nonseparable Panel Models." Econometrica 81 (2):535-580. doi: 10.3982/ECTA8405.
+Chyn, Eric. forthcoming. "Moved to Opportunity: The Long-Run Effect of Public Housing Demolition on Labor
+         Market Outcomes of Children." American Economic Review.
+de Chaisemartin, C., and X. D’HaultfŒuille. 2018a. "Fuzzy Differences-in-Differences." The Review of Economic
+         Studies 85 (2):999-1028. doi: 10.1093/restud/rdx049.
+
+
+
+                                                        44
+

@@ -1,0 +1,44 @@
+             SKILL CONTENT OF TECHNICAL CHANGE               1327
+
+occupation to each observation in our Census and CPS samples
+for 1960 –1998. Using labor supply in FTEs as weights, we calcu-
+lated means of each DOT measure for each occupation-industry-
+education-year cell. These means provide the primary outcome
+measures for our analysis. To attain compatibility between
+changing Census Industry Codes for 1960 –1998, we use a cross-
+walk developed by Autor, Katz, and Krueger [1998] providing 140
+consistent CIC industries spanning all sectors of the economy.
+This crosswalk includes all CIC industries and attains consis-
+tency by aggregating where necessary to the lowest common level
+of consistent industry denition among 1970, 1980, and 1990 CIC
+standards.
+A.4. Composite Task Indicators from the DOT
+     To verify that our results are robust to plausible alternative
+selections of DOT variables, we formed composite indicators of
+our intended constructs using Principal Components Analysis.
+We chose a short list of alternative DOT variables that appeared
+relevant to each of our conceptual categories. These choices are
+Nonroutine Analytic Tasks: GED-MATH, GED-REASON, NUM-
+BER, MVC; Nonroutine Interactive Tasks: DCP, GED-LAN-
+GUAGE, DEPL, VARCH; Routine Cognitive Tasks: STS, COL-
+ORDIS, REPCON, VOCPREP; Routine Manual Tasks: FING-
+DEX, MOTOR, FORM, MANUAL. Denitions and representative
+examples of these variables are found in U. S. Department of
+Labor [1972]. Using 1980 employment as weights, we performed
+principal components analysis for each set of variables to identify
+the linear combinations that maximized common variation sub-
+ject to the constraint that the sum of squared vector weights is
+equal to one. In each case, we used the rst principal component.
+
+A.5. Calculating DOT Quantiles
+     To convert DOT measures into percentiles of the 1960 task
+distribution, we used DOT 1977 task measures paired to the 1960
+Census to form an employment-weighted empirical cumulative
+distribution function of task input for each task measure across
+1120 industry-education-gender cells: 140 industries, two gender,
+and four education levels (high school dropout, high school grad-
+uate, some college, and college graduate). We applied a small
+amount of interpolation to remove at spots in the distribution.
+We inverted this empirical distribution and applied it to all DOT
+task measures in subsequent years by industry-education-gender
+

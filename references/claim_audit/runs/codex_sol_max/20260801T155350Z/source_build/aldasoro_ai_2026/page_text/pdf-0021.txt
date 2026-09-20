@@ -1,0 +1,43 @@
+predicted values of AI adoption, which must be reflected in the standard errors of the OLS
+estimator. In our setting, AI adoption is constructed through a nonparametric matching
+procedure, which complicates the derivation of a closed-form or plug-in correction for
+standard errors. To address this issue of inference, for the main regressions with US-
+matched adoption rates, we report bootstrap standard errors, which is a valid procedure
+in this context. Specifically, we generate 500 bootstrap replications by resampling US
+firms with replacement within each size and sector stratum, while keeping the EU sample
+fixed. For each bootstrap replica, the matching is re-performed for every EU firm, and
+the same OLS specification as presented in Equation (1) is re-estimated. Standard errors
+are then computed from the bootstrap replications.9 In other specifications, we report
+standard errors clustered at the country-sector-wave level.
+
+
+
+5       Results
+
+Table 2 presents our main results. The first two columns use labor productivity (LP)
+as the dependent variable and the actual AI adoption rates of EU firms as the key
+explanatory variable of interest, without and with controls respectively. The results from
+column (1) suggest that, conditional on size, age and country-sector-wave fixed effects,
+adoption by EU firms raises labor productivity by about 16%, a very large number even
+when considering it is a one-off increase estimated from a pooled cross-section of firms
+over a period of five years. When controlling for time-varying firm-specific characteristics
+such as investment, profitability, leverage and size, the effect of adoption is significantly
+reduced in size but remains statistically significant. The estimates from column (2)
+suggest that more profitable and larger firms tend to have higher labor productivity,
+whereas more leveraged firms exhibit lower productivity.
+
+    The third and fourth columns present our key results, when using predicted AI adop-
+tion through the matching procedure using US firms described in Section 4. The estimates
+in column (3) do not include firm controls and suggest that the effect of instrumented
+AI adoption on labor productivity remains high, as in column (1). When controlling for
+firm characteristics, the effect of AI adoption on firm-level labor productivity is reduced
+but remains statistically significant. The estimate shows that AI adoption leads to an
+
+    9
+    Table 2 reports statistical significance based on the normal approximation, although the results
+remain robust when using empirical p-values.
+
+
+
+                                                15
+

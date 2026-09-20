@@ -1,0 +1,10 @@
+documented in the paper accelerate in the future. Future work would benefit from better firm-level
+
+AI adoption data, which would provide sharper variation for estimating plausible causal effects of
+
+AI on employment.
+
+
+
+
+                                               17

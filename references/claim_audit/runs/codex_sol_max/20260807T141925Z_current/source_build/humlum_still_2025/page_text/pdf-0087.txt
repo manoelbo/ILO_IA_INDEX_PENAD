@@ -1,0 +1,93 @@
+          Figure D.2: Employment Trends by Occupation and Age Groups (Continued)
+
+                            (i) Office Clerks                                                                                         (j) Teachers
+   1.25                                                                                                 1.25
+
+
+   1.15                                                                                                 1.15
+
+
+   1.05                                                                                                 1.05
+
+
+    .95                                                                                                  .95
+
+
+    .85                                                                                                  .85
+
+
+    .75                                                                                                  .75
+     2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1       2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                   date                                                                                                 date
+
+              Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)                   Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+              Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)                         Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+
+
+                       (k) HR Professionals                                                                               (l) Financial Advisors
+   1.25                                                                                                 1.25
+
+
+   1.15
+                                                                                                        1.15
+
+   1.05
+                                                                                                        1.05
+
+    .95
+                                                                                                         .95
+    .85
+
+                                                                                                         .85
+    .75
+
+                                                                                                         .75
+     2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1       2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                   date                                                                                                 date
+
+              Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)                   Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+              Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)                         Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+
+
+                           (m) Accountants
+   1.25
+
+
+   1.15
+
+
+   1.05
+
+
+    .95
+
+
+    .85
+
+
+    .75
+     2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                   date
+
+              Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+              Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+
+
+Notes: Figure D.2 shows the employment trends for each of the occupations and age groups, indexing these to October 2022.
+Panels (a) and (b) show aggregate trends inside and outside our 11 study occupations, with the remaining panels showing
+trends for each study occupation separately. We follow Brynjolfsson, Chandar and Chen (2025) in defining the age groups:
+early career 1 (ages 22–25), early career 2 (26–30), developing (31–34), mid-career 1 (35–40), mid-career 2 (41–49), and
+senior (50+). We interpolate occupational codes within job-spells (worker-workplace pairs) to minimize measurement error
+resulting from the reclassification of occupational codes (Groes, Kircher and Manovskii, 2015; Humlum, 2021). Sample: All
+registry data.
+
+
+
+
+                                                                                                   37

@@ -1,0 +1,67 @@
+   Figure 6: Difference-in-Differences Estimates: Heterogeneity by Adoption Intensity
+
+         (a) Worker Earnings (Adopter DiD)                                                                     (b) Occupational Mobility (Adopter DiD)
+                                 Non-Encouraged                                                                                           Non-Encouraged
+                                      Encouraged                                                                                               Encouraged
+                            Encouraged + Training                                                                                    Encouraged + Training
+                  Encouraged + Enterprise Chatbot                                                                          Encouraged + Enterprise Chatbot
+        Encouraged + Enterprise Chatbot + Training                                                               Encouraged + Enterprise Chatbot + Training
+                                         Daily Use                                                                                                Daily Use
+                                    Early Adopters                                                                                           Early Adopters
+                              Large Time Savings                                                                                       Large Time Savings
+                                 Increased Quality                                                                                        Increased Quality
+                               Increased Creativity                                                                                     Increased Creativity
+                              Increased Workload                                                                                       Increased Workload
+                                          AI Tasks                                                                                                 AI Tasks
+                                                      -.05         0             .05           .1        .15                                                   -.05    0             .05           .1    .15
+
+                                                                          2023         2024                                                                                   2023         2024
+
+
+
+
+ (c) Workplace Employment (Encouraged DiD)                                                                     (d) Early-Career Share (Encouraged DiD)
+                                      Encouraged                                                                                               Encouraged
+
+
+
+
+                            Encouraged + Training                                                                                    Encouraged + Training
+
+
+
+
+                  Encouraged + Enterprise Chatbot                                                                          Encouraged + Enterprise Chatbot
+
+
+
+
+        Encouraged + Enterprise Chatbot + Training                                                               Encouraged + Enterprise Chatbot + Training
+
+
+                                                      -.15   -.1       -.05      0       .05        .1   .15                                                   -.05   -.025          0            .025   .05
+
+                                                                          2023         2024                                                                                   2023         2024
+
+
+Notes: This figure shows how our difference-in-differences estimates vary with the intensity of adoption. Estimates are based
+on the pooled specification in Equation (3), with 95% confidence intervals shown as whiskers. Panels (a) and (b) focus on log
+earnings and occupational mobility for different adopters relative to non-encouraged non-adopters (Figure 5). Occupational
+mobility is defined as full-time-equivalent (FTE) employment in workers’ latest (December 2024) occupations. Encouraged
++ Training restricts the treatment group to encouraged adopters who received employer-provided training; Encouraged
++ Enterprise Chatbot, to those whose employer deployed an enterprise chatbot; and Encouraged + Enterprise Chatbot
++ Training, to those with both. Daily Use refers to users reporting daily chatbot use at work. Early Adopters adopted
+ChatGPT by the time of our 2023 survey. Large Time Savings indicates time savings of more than 60 minutes per day of
+usage. Increased Quality / Creativity refers to users reporting improved output quality or creativity. Increased Workload
+refers to users reporting more workloads due to AI chatbots. AI Task refers to workers who report new AI-related job tasks.
+Panels (c) and (d) show workplace outcomes (log employment and early-career share) for workers who report encouraged
+usage policies relative to those without encouragement (Figure 8). Early-career workers are defined as workers aged 22-25;
+see Appendix D.2 for details. Encouraged + Training restricts the treatment group to encouraged workers who received
+employer-provided training; Encouraged + Enterprise Chatbot, to those whose employer deployed an enterprise chatbot;
+and Encouraged + Enterprise Chatbot + Training, to those with both. Sample: All completed 2024 survey responses linked
+to registry data.
+
+
+
+
+                                                                                                         44

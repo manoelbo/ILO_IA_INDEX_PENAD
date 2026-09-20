@@ -1,0 +1,64 @@
+       RAMBACHAN AND ROTH               A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                2571
+
+are not perfectly positively correlated with each other. Assumption 5 is used to guarantee that
+degeneracy in the asymptotic distribution of γ  Ỹn arises only from known degeneracies in A. We
+note, however, that Assumption 5 does not rule out settings where the solutions to the bounds
+of the identified set given in equation (5) and (6) are non-unique or degenerate (i.e. where the
+extreme points for θ occur at “flat faces” of the identified set). If A is full-rank, for example,
+then Assumption 5(A) holds trivially with T = I , and thus the mean of the moments μ̃(θ̄ ) is
+completely unrestricted.20
+    The assumptions stated above are sufficient for the conditions in Proposition 2 in ARP, which
+
+
+
+
+                                                                                                                             Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+establishes uniform size control for the conditional and hybrid tests.
+Proposition 3.1. Suppose Assumptions 2–5 hold. Then the conditional and LF-hybrid tests
+uniformly control size. That is, for any α < 0.5,
+                                                                   
+                                                               1
+                      lim sup sup E P ψαC β̂ n , A, d, θ P , ˆ n        ≤ α.
+                        n→∞ P∈P                                n
+                                                                      
+                                                                   1
+                      lim sup sup E P ψκ,αC-L F
+                                                 β̂ n , A, d, θ P , ˆ n    ≤ α.
+                        n→∞ P∈P                                    n
+
+3.4.    Uniform asymptotic consistency
+We next provide conditions under which the conditional and hybrid tests are uniformly asymp-
+totically consistent, in the sense that power against fixed alternatives outside the identified set
+converges uniformly to 1. To establish uniform consistency of the conditional and hybrid tests,
+we strengthen Assumptions 2 and 3 as follows.
+Assumption 6. Let Wn = ((β̂ n − β P ) , (vec( ˆ n ) − vec( P )) ) , where vec( ) is the vector of
+the elements of the matrix . We assume
+                                            √                         
+                     lim sup sup E P f ( nWn ) − E f (ξ P+ )  = 0,
+                          n→∞ P∈P f ∈B L
+                                              1
+
+                                                         
+where ξ P+ ∼ N (0, V P ), V P =               P   V P,β
+                                           V P, β V P,     .
+
+Assumption 7. For all P ∈ P, P ∈ S and the matrix V P defined in Assumption 6 lies in a
+                                           †
+compact set V. Additionally, ( P − V P,β V P, V P, β ) has eigenvalues bounded below by λ̃ > 0,
+where † denotes the Moore–Penrose inverse.
+    Assumption 6 strengthens Assumption 2 to require that β̂ n and ˆ n have a joint normal
+asymptotic distribution. Although somewhat more restrictive, event-study estimates are often
+estimated via OLS, and standard covariance estimators for OLS, including cluster-robust vari-
+ance estimators, produce asymptotically normal estimates as the number of clusters grows large
+(Hansen, 2007; Stock and Watson, 2008; Hansen and Lee, 2019). We do not impose that the
+asymptotic distributions of β̂ n and ˆ n are independent, as would occur in linear models if
+the linear model is correctly specified. Assumption 7 strengthens Assumption 3 to require that
+the asymptotic distribution of β̂ n is not perfectly asymptotically colinear with ˆ n .
+
+
+       20. Some values of A satisfying Assumption 5 may imply that certain pairs of moments cannot simultaneously
+be binding. For example, the restriction that |δ1 | ≤ 1 can be represented as δ1 ≤ 1 and −δ1 ≤ 1, which satisfies Assump-
+tion 5(A), but clearly both moments cannot simultaneously bind. Nevertheless Assumption 5(A) is compatible with “flat
+faces” even when A is not full rank. For example, if  corresponds with the restrictions |δ1 | ≤ 1 and |δ2 | ≤ 1, then the
+extreme points for θ = τ2 occur at flat faces of the identified set for (τ1 , τ2 ).
+

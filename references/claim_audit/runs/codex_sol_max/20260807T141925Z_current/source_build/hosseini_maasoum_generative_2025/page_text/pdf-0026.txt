@@ -1,0 +1,46 @@
+   Table 1: Task-Level DHS Demand by GenAI Exposure and Seniority (Automation)
+
+                                   Juniors only               Seniors only                    Pooled
+                                 (1)           (2)           (3)          (4)           (5)              (6)
+Exp j × Adopti                −3.923∗       −4.140∗        +2.408      +1.890       −4.152∗∗           −3.667
+                              (2.065)       (2.347)        (3.203)     (3.128)       (1.842)           (2.394)
+Exp j × Adopti × Seniors                                                            +6.868∗∗       +5.826∗
+                                                                                     (3.490)       (3.237)
+Task FE                          ✓             ✓             ✓            ✓             ✓                ✓
+Firm FE                          ✓             ✓             ✓            ✓             ✓                ✓
+Occ FE                                         ✓                          ✓                              ✓
+Occ × Firm FE                                  ✓                          ✓                              ✓
+N                              208,984      208,984        402,363     402,363       611,347           611,347
+Firms                            923          923            969         969           997               997
+Notes: Unit of observation is (task × firm × 6-digit SOC occupation × seniority group). The dependent
+variable is 100× the Davis et al. (1998) (DHS) growth rate in the task’s share of the cell’s posting bundles,
+comparing post-ChatGPT (2023Q1 through early April 2025) to pre-ChatGPT (2021Q3–2022Q4). Exp j is
+the standardized Eloundou et al. (2024) GPT-4 exposure of task j; Adopti is the firm-level GenAI-adopter
+indicator (Section 4.2); Seniors equals one for seniors. Observations are weighted by the harmonic mean of
+pre- and post-period cell sizes (the DHS weight). Standard errors in parentheses are clustered at the firm
+level. ∗ , ∗∗ , ∗∗∗ denote significance at 10%, 5%, and 1%.
+
+
+    For juniors, a one SD increase in a task’s exposure is associated with a roughly four
+percentage-point larger DHS contraction in junior bundles at adopters relative to non-
+adopters, marginally significant in both specifications (columns 1–2). Scaling to the gap
+between the least- and most-exposed tasks (about four SDs) yields a 15–17 percentage-
+point differential. The coefficient for seniors (columns 3–4) is positive and insignificant:
+within the same firm-occupation cells, exposed tasks leave junior bundles but not senior
+ones. The pooled triple-difference makes the contrast precise: β A = −4.15 (p = 0.024)
+and β AS = +6.87 (p = 0.049) under firm fixed effects; the saturated specification delivers
+β AS = +5.83 (p = 0.072). The contraction is therefore a within-occupation removal of
+GenAI-exposed tasks from junior bundles, not a compositional shift across occupations.
+
+
+Test 2: Reallocation. In the framework, the reallocation channel works in the opposite
+direction: because GenAI augments juniors more than seniors (δ J ≥ δS ), the post-AI al-
+location threshold satisfies x̂ ′ ≥ x̂, so tasks previously performed by seniors near the
+comparative-advantage boundary can now be absorbed by juniors. A direct test of this
+channel asks whether tasks that were ex-ante senior-intensive become more prevalent in
+
+
+
+
+                                                      26
+

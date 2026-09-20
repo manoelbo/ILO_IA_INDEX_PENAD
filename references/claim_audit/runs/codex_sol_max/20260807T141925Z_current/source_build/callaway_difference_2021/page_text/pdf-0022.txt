@@ -1,0 +1,99 @@
+                                                                       h                        i
+                                                                                      ∗,nev  2
+Assumption 8. For each g ∈ G and t = {2, . . . , T − δ}, assume that E hnev g,t W ; κ g,t  , δ    < ∞
+     h                     i
+                                        ∗                             ∗,nev
+and E supκ∈Γ∗ ḣnev
+                g,t (W ; κ) < ∞, where Γ is a small neighborhood of κg,t .
+
+   Assumptions 7-8 are standard in the literature, see e.g. Abadie (2005), Wooldridge (2007), Bonhomme
+and Sauder (2011), Graham et al. (2012), and Sant’Anna and Zhao (2020). Assumption 7 requires that the
+                                                                                                   √
+first-step estimators are based on smooth parametric models and that the estimated parameters admit n-
+asymptotically linear representations, whereas Assumption 8 imposes some weak integrability conditions.
+Under mild moment conditions, these requirements are fulfilled when one adopts linear/nonlinear outcome
+regressions or logit/probit models, for example, and estimates the unknown parameters by (nonlinear)
+least squares, quasi-maximum likelihood, or other alternative estimation methods, see e.g. Chapter 5 in
+van der Vaart (1998), Wooldridge (2007), Graham et al. (2012) and Sant’Anna and Zhao (2020). In
+other words, Assumptions 7-8 allow for flexible parametric specifications of the nuisance functions and
+accommodate different estimation methods.                                                                 
+   In what follows, we write wgtreat = wgtreat (W ), wgcomp (πg ) = wgcomp,nev (W ; πg ), and mnev    nev
+                                                                                               g,t,δ βg,t,δ =
+                                                                          0
+mnev     X; β nev    to minimize notation. For a generic κnev = π 0 , β nev 0 , define
+ g,t,δ       g,t,δ                                        g,t      g g,t,δ
+
+        dr,nev                 treat,nev                   comp,nev                        est,nev
+       ψg,t,δ  (Wi ; κnev
+                      g,t ) = ψg,t,δ
+                                                nev
+                                         (Wi ; βg,t,δ ) − ψg,t,δ                nev
+                                                                    (Wi ; πg , βg,t,δ ) − ψg,t,δ               nev
+                                                                                                   (Wi ; πg , βg,t,δ ),     (4.4)
+
+with
+
+                treat,nev       nev
+                                      ) = wgtreat · Yt − Yg−δ−1 − mnev        nev
+                                                                                   
+             ψg,t,δ       (W ; βg,t,δ                                 g,t,δ βg,t,δ
+
+                                              − wgtreat · E wgtreat · Yt − Yg−δ−1 − mnev          nev
+                                                                                                       
+                                                                                           g,t,δ βg,t,δ     ,
+          comp,nev              nev
+                                      ) = wgcomp (πg ) · Yt − Yg−δ−1 − mnev         nev
+                                                                                         
+         ψg,t,δ      (W ; πg , βg,t,δ                                       g,t,δ βg,t,δ
+
+                                              − wgcomp (πg ) · E wgcomp (πg ) · Yt − Yg−δ−1 − mnev            nev
+                                                                                                                   
+                                                                                                       g,t,δ βg,t,δ     ,
+
+and
+                                                                   0
+                     est,nev
+                    ψg,t                nev
+                             (W ; πg , βg,t,δ      or,nev
+                                              ) = lg,t     nev
+                                                          βg,t,δ           dr,nev,1
+                                                                        · Mg,t,δ    + lgps,nev (πg )0 · Mg,t,δ
+                                                                                                         dr,nev,2
+                                                                                                                  ,
+       or,nev
+where lg,t    (·) is the asymptotic linear representation of the estimator for the outcome evolution of the
+comparison groups as described in Assumption 7(iv), lgps,nev (·) is defined analogously for the generalized
+propensity score, and
+
+             dr,nev,1
+                                 wgtreat − wgcomp (πg ) · ṁnev    nev
+                                                                       
+            Mg,t,δ    =E                                    g,t,δ βg,t,δ    ,
+             dr,nev,2
+                      = E αgps,nev (πg ) · Yt − Yg−δ−1 − mnev        nev
+                                                                                      
+            Mg,t,δ                                            g,t,δ βg,t,δ    · ṗg (πg )
+                           − E αgps,nev (πg ) · wgcomp (πg ) · Yt − Yg−δ−1 − mnev            nev
+                                                                                                              
+                                                                                      g,t,δ βg,t,δ    · ṗg (πg ) ,
+                                        .
+with ṁnev
+       g,t,δ   β nev
+                 g,t,δ   = ∂mnev X; β nev
+                             g,t,δ   g,t,δ
+                                                nev , ṗ (π ) = ∂p (X; π )/ ∂π , and
+                                              ∂βg,t,δ   g  g      g     g     g
+
+                                                                           ,                  
+                                                            C                   pg (X; πg ) C
+                                 αgps,nev (πg ) =                           E                    .
+                                                    (1 − pg (X; πg ))2         1 − pg (X; πg )
+
+                                               dr,nev                                                          nev
+   Finally, let AT Tt≥(g−δ) and AT
+                                [  T t≥(g−δ) denote the vector of AT T (g, t) and AT
+                                                                                  [  T dr (g, t; δ), respec-
+
+
+                                                                22
+

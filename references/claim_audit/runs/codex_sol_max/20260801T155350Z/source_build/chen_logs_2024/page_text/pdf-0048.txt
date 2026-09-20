@@ -1,0 +1,47 @@
+incompatible with P pY p1q “ 0q ą 0 if β1 ą 0. By similar logic, the model is also incompatible
+with P pY p0q “ 0q ą 0 if β1 ă 0. In settings where there is point-mass at zero, the model that
+Bellemare and Wichman (2020) show gives β1 an interpretation as a semi-elasticity will therefore
+typically be rejected by the data. It is also worth noting that even if there are no zeros in the data,
+the model in (C.2) will generally be sensitive to units, in the sense that if (C.2) holds for Y measured
+in dollars, it will generally not hold when Y is measured in cents. The validity of the interpretation
+of β1 as an elasticity thus depends on having chosen the “correct” scaling of the outcome such that
+(C.2) holds.
+       Similar issues apply if we consider alternative transformations on the left-hand side of (C.1).
+For example, Thakral and Tô (2023) consider versions of (C.1) that replaces arcsinhpY q with the
+power function Y k . They then consider the implied “semi-elasticities” of the form ηpy0 q “ β1 {pky0k q.
+The parameter ηpy0 q has the interpretation as a structural semi-elasticity when d has a contant
+effect on Y k . Specifically, if D is continuous and the structural equation
+
+                                            Y pd, U qk “ β0 ` dβ1 ` U,                                         (C.3)
+                        `B           ˘
+holds, then ηpy0 q “      Bd Y pd, U q   {Y pd, U q evaluated at Y pd, U q “ y0 , so ηpy0 q corresponds to the
+semi-elasticity of Y pd, U q with respect to d. However, as with (C.2), (C.3) is generally incompatible
+with settings in which P pY pd, U q “ 0q for multiple values of d. For example, if β1 ą 0, then
+Y p0, U q ě 0 implies that Y p1, U q ą 0. Equation (C.3), which gives a causal interpretation to ηpβ0 q
+as a semi-elasticity, will thus generally be incompatible with settings in which some units have Y “ 0
+under multiple treatment statuses.
+
+C.2       Cohn et al. (2022)
+Cohn et al. (2022) consider structural equations of the form
+
+                                               Y “ exppα ` DβqU.                                               (C.4)
+
+When ErU | Ds “ 1, they show that Poisson regression is consistent for β, whereas regressions of
+logp1 ` Y q or logpY q on D may be inconsistent for β.52 Although Cohn et al. (2022) do not consider
+a potential outcomes interpretation of β, we can give β a causal interpreation if we impose that the
+potential outcomes take the form
+
+                                          Y pd, U q “ exppα ` dβqU pdq,                                        (C.5)
+
+where ErU pdqs “ 1. Under (C.5), it follows that exppβq “ ErY p1qs{ErY p0qs, i.e. the parameter
+  52
+    We thank Kirill Borusyak for an insightful discussion on this topic. Relatedly, in an influential paper,
+Santos Silva and Tenreyro (2006) consider the structural equations model Yi “ exppXi1 βqUi where ErUi | Xi s “ 1,
+and show that Poisson regression consistently estimates β while a regression using log on the left-hand side does not,
+although they do not provide any formal results on log-like transformations.
+
+
+
+
+                                                         11
+

@@ -1,0 +1,36 @@
+31      ILO Working Paper 140
+
+
+
+
+     XX Figure 14. Comparison of Adjusted Scores: GPT-4o vs Gemini by Occupational Group
+
+
+
+
+     For the final adjustment, we averaged the scores of the two arbitrating models and manually
+     reviewed the justifications, without observing any significant inconsistencies. Table 4 illustrates
+     the result of the adjustment process through examples of tasks where expert scores were sig-
+     nificantly higher or lower than the survey averages, with the final adjusted score and GPT-4o
+     justification. For tasks such as “operating injection molding machines” or “performing mechanical
+     processing of silicon”, experts highlighted the limitations of generative AI in handling physical and
+     manual components, leading to significantly reduced adjusted scores compared to the survey.
+     Conversely, for tasks like “maintaining documentation of classes with children” or “performing finan-
+     cial estimates for household budgets”, the experts recognized the structured and analytical nature
+     of these tasks, which generative AI can assist with to a substantial degree.
+
+
+     XX Table 4. Sample of adjustments and justifications between the survey and expert scores (examples of larg-
+        est upward and downward revisions)
+
+
+      Task                                               Justification
+
+      Applying various weld-        0.43   0.05   0.05   The task involves hands-on physical work requiring skill and
+      ing methods and using                              precision, such as welding using various machines, which is
+      different types of weld-                           not currently automatable by generative AI technologies like
+      ing machines and equip-                            ChatGPT. These technologies excel in tasks involving data pro-
+      ment, in accordance with                           cessing, language understanding, and information genera-
+      training or qualifications.                        tion but do not possess capabilities for physical task execution,
+                                                         hence aligning closer with the revised score.
+

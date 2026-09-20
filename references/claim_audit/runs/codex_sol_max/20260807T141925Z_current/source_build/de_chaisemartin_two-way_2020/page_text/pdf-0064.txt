@@ -1,0 +1,57 @@
+Proof of Theorem S6
+
+1. Asymptotic normality
+
+Let us define P S = NS /G and
+                                 1 X
+                         TS =        Ng,t 1{Dg,t 6= Dg,t−1 } [Yg,t (1) − Yg,t (0)] .
+                                 G
+                                    (g,t):t≥2
+                                                       √                            
+We prove the result in two steps. First, we prove that G DIDM − E(T S )/E(P S ) is asymp-
+totically normal. Second, we show that the difference between E(T S )/E(P S ) and δ S is asymp-
+totically negligible.
+               √                       
+Convergence of G DIDM − E(T S )/E(P S )
+ By Assumption S9,
+                            4
+                       sup Ng,t E[1{Dg,t = d, Dg,t−1 = d0 } (Yg,t − Yg,t−1 )4 ] < +∞.
+                        g,t
+
+Thus, Lyapunov’s condition for the central limit theorem holds, and because Σ = limg G × V (U )
+exists,
+                                √                  d
+                                  G (U − E[U ]) −→ N (0, Σ) ,
+By Assumption S9, Pd,d ∞
+                         0 ,t = limG→∞ E(Pd,d0 ,t ) exists. Then for d ∈ {0, 1}, define Td = {t :
+P1−d,d,t > 0} and the event D = {NS > 0} ∩ D0 ∩ D1 , with
+ ∞
+
+
+                               Dd = {t ∈ Td ⇐⇒ min(Nd,d,t , N1−d,d,t ) > 0} .
+
+By the law of large numbers and Assumption S10, NS > 0 with probability approaching one.
+Next, fix d ∈ {0, 1}. If t ∈ Td , then, by the law of large numbers, N1−d,d,t > 0 with probability
+approaching one. Moreover, for such a t, there exists g such that Pr(Dg,t = 1−d, Dg,t−1 = d) > 0
+and thus, by Assumption S10, Pd,d,t ∞
+                                        > 0. Then, by the law of large numbers again, Nd,d,t > 0
+with probability approaching one. Conversely, if min(Nd,d,t , N1−d,d,t ) > 0, then there exists g
+such that Pr(Dg,t = 1 − d, Dg,t−1 = d) > 0. Hence, by Assumption S10 again, P1−d,d,t
+                                                                                  ∞
+                                                                                        > 0. This
+shows that Dd , and thus D, holds with probability approaching one.
+Now, by definition of DIDM , under D we have DIDM = f (U ), with
+                                                     P1       d
+                                                                P
+                                                      d=0 (−1)   t∈Td q1−d,d,t − (p1−d,d,t /pd,d,t )qd,d,t
+       f (p0,0,1 , q0,0,1 , ..., p1,1,T , q1,1,T ) =              PT                                       ,   (36)
+                                                                    t=1 p 1,0,t + p 0,1,t
+
+for all (pd,d0 ,t )(d,d0 ,t) such that all denominators are strictly positive. By Assumption S9 again,
+E[U ] converges to U ∞ . Furthermore, f is continuously differentiable in a neighborhood of U ∞ .
+Thus, by the uniform delta method (see, e.g. van der Vaart, 2000, Theorem 3.8),
+                       √                                      √
+                            G (DIDM − f (E[U ])) = Jf (U ∞ ) × G (U − E[U ]) + oP (1).            (37)
+
+                                                         28
+

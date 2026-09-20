@@ -1,0 +1,57 @@
+where we add adopter-specific time trends to ensure our pooled difference-in-differences
+
+estimates are not driven by spurious trends in outcomes. The parameters of interest, βy ,
+
+measure how labor market outcomes for adopters changed in year y after the introduction
+
+of AI chatbots, compared to the period before their arrival. We estimate Equation (2) by
+
+OLS and cluster the standard errors by workplace-occupation level.
+
+
+3        Results
+3.1       Worker Earnings
+
+Figure 2, Panels (a) and (b) examine earnings of chatbot adopters, distinguishing between
+
+those with and without employer encouragement. Each group is compared to non-
+
+encouraged non-adopters—workers who are most insulated from AI chatbots, either
+
+through their own non-use or that of their coworkers.
+
+       Panel (a) begins by presenting differences in means, controlling for workers’ pre-
+
+determined characteristics—occupation, gender, age, and experience. Adopters appear to
+
+earn substantial premia of about 9% for those with employer-encouraged usage and 4%
+
+for those without. However, leveraging the panel dimension of our administrative data
+
+reveals that these earnings differentials entirely predate the arrival of AI chatbots. When
+
+indexing differences to November 2022, the difference-in-differences estimates in Panel (b)
+
+show no differential changes for adopters following the introduction of AI chatbots. The
+
+estimates remain flat even among adopters whose employers explicitly encourage chatbot
+
+use. Appendix E.2.1 shows that these null results hold separately for workers’ hourly
+
+wages, intensive-margin hours, and extensive-margin employment.10
+
+       Figure 2, Panel (b) provides three key insights. First, two years after their launch, AI
+
+chatbots have had minimal earnings impact on workers who use them. The confidence
+
+intervals of our dynamic difference-in-differences estimates rule out changes larger than
+  10
+   The results for adopter earnings echo the pattern documented by Krueger (1993) and critiqued by
+DiNardo and Pischke (1997): although chatbot use is correlated with sizable cross-sectional earnings
+premia, these differentials vanish once accounting for positive selection.
+
+
+
+
+                                                14
+

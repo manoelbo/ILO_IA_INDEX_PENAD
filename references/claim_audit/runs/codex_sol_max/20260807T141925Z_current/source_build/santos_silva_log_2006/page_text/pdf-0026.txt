@@ -1,0 +1,36 @@
+OLS, instead, generates a substantial eﬀect: It predicts that trade between two contiguous
+countries is 37 percent larger than trade between countries that do not share a border.25
+  We control for remoteness to account for the hypothesis that larger distances to all
+other countries might increase bilateral trade between two countries.26 Poisson regressions
+support this hypothesis, whereas OLS estimates suggest that only exporter’s remoteness
+increases bilateral flows between two given countries. Access to water appears to be
+important for trade flows, according to Poisson regressions; the negative coeﬃcients on
+the land-locked dummies can be interpreted as an indication that ocean transportation is
+significantly cheaper. In contrast, OLS results suggest that whether or not the exporter
+is landlocked does not influence trade flows, whereas a landlocked importer experiences
+lower trade. (These asymmetries in the eﬀects of remoteness and access to water for
+importers and exporters are hard to interpret.) We also explore the role of colonial
+heritage, obtaining, as before, significant discrepancies: Poisson indicates that colonial ties
+play no role in determining trade flows, once a dummy variable for common language is
+introduced. OLS regressions, instead, generate a sizeable eﬀect (countries with a common
+colonial past trade almost 45 percent more than other pairs). Language is statistically
+and economically significant under both estimation procedures.
+  Strikingly, in the traditional gravity equation, preferential-trade agreements play a much
+smaller – although still substantial – role according to Poisson regressions. OLS esti-
+mates suggest that preferential-trade agreements rise expected bilateral trade by 63 per-
+cent, whereas Poisson estimates indicate an average enhancement eﬀect below 20 percent.
+  Preferential-trade agreements might also cause trade diversion; if this is the case, the co-
+eﬃcient on the trade-agreement dummy will not reflect the net eﬀect of trade agreements.
+To account for the possibility of diversion, we include an additional dummy, “openness,”
+similar to that used by Frankel (1997). This dummy takes the value 1 whenever one (or
+  25
+     The formula to compute this eﬀect is (ebi − 1) × 100%, where bi is the estimated coeﬃcient.
+  26
+     To illustrate the role of remoteness, consider two pairs of countries, (i, j) and (k, l), and assume that
+the distance between the countries in each pair is the same Dij = Dkl , however, i and j are closer to
+other countries. In this case, the most remote countries, k and l, will tend to trade more between each
+other because they do not have alternative trading partners. See Deardoﬀ (1998).
+
+
+                                                     25
+

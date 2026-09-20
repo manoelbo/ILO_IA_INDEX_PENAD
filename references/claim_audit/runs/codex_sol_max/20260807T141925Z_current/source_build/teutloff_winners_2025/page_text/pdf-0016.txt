@@ -1,0 +1,66 @@
+O. Teutloff et al.                                                                Journal of Economic Behavior and Organization 235 (2025) 106845
+
+    In summary, we have demonstrated that the launch of ChatGPT led to a decrease in labor demand without reducing average
+employer budgets. Furthermore, the number of applicants per job posting increased after the launch, and this increase can be
+almost completely explained by the reduction in the number of job postings. Taken together, these findings suggest that the launch
+of ChatGPT led to a reduction in labor demand, with the same number of applicants competing for a smaller pool of substitutable
+jobs.
+    While our data does not capture wage changes, it is possible that increased competition may have reduced equilibrium wages. If
+this is the case, our demand estimates should be interpreted as a lower bound on the true effect. However, Liu et al. (2023), using a
+similar dataset and research design, did not find evidence of reduced project values, suggesting that the impact on workers’ wages
+may be limited.
+    One limitation of the previous analysis is that we lack information about the identity or characteristics of the applicants, which
+may have changed over time. If the launch of ChatGPT led to a less qualified applicant pool, this could have also contributed to a
+reduction in labor demand. This shift in applicant quality — along with the possibility of ChatGPT directly replacing certain types
+of work — could be one reason for the observed decrease in labor demand following the launch of ChatGPT. However, we think
+this is unlikely for two reasons. First, we do not find an increase in supply, meaning that if there was an influx of less qualified
+applicants, more qualified workers must have left the platform. We have no reason to suspect this would have happened given that
+the average budget per job remained constant. Moreover, the platform in question allows employers to closely monitor workers’
+performance and even withhold payment if the deliverable is deemed insufficient in quality. This level of oversight reduces the
+likelihood that employers would decrease labor demand purely due to uncertainty about worker quality.
+
+4. Discussion
+
+    To understand how AI is transforming labor markets, it is crucial to understand its impact on demand across diverse skill sets,
+distinguishing between jobs that AI can substitute and those it can complement. In this paper, we analyze job posting data from
+online labor markets, which are highly flexible and quick to react to external changes. We use transformer-based topic modeling
+to cluster over 3 million job postings into 116 fine-grained skill clusters. Additionally, we employ prompt engineering to label
+these clusters as substitutable by, complementary to, or unaffected by AI. Finally, we employ a difference in differences analysis to
+study the impact of ChatGPT’s release on demand across 71 skill clusters which we have categorized as either substitutable by or
+complementary to AI.
+    Following the introduction of ChatGPT, we find a reduction in demand of approximately 24% for skills deemed substitutable
+by LLMs compared to unaffected skill clusters, illustrating the potential of LLMs to automate certain tasks historically performed
+by humans. Conversely, the overall demand for skills complementary to LLMs did not change significantly. However, some
+complementary skill clusters, such as those related to chatbot development and machine learning, showed substantial increases
+in demand, while others experienced slight decreases. Regarding wages and geography, substitutable skills are associated with
+higher wages and are typically performed by freelancers in high-wage countries. In contrast, complementary skills exhibit a broader
+wage spectrum and are often performed by freelancers from middle-income countries. The impact varies by project duration and
+worker experience levels, with demand decreasing mainly in short-term projects within the substitutable category. Moreover, while
+complementary skill clusters did not see a reduction in demand as a whole, novice workers within complementary skill clusters
+experienced a significant contraction.
+    Our results provide a nuanced perspective on the labor market effects of generative AI technologies like ChatGPT and other LLMs.
+Unlike previous literature, which focused primarily on a limited subset of skill clusters in the online freelancing market (Hui et al.,
+2023; Demirci et al., 2023; Qiao et al., 2023; Liu et al., 2023), our analysis reveals both job destruction in the substitution category
+and job creation in certain complementary skill clusters. Within the writing and translation sectors, our study uncovers significant
+heterogeneity: for instance, demand for ‘‘about us’’ page writing has decreased more than for multilingual and technical writing,
+while translation demand is most affected for Western European languages. Although the decline in demand for substitutable work
+is concerning, it is predominantly concentrated in short-term gigs rather than long-term projects. Additionally, we highlight the role
+of new technologies in driving job creation, exemplified by the increased demand for AI-powered chatbots. The advancements in
+LLMs have significantly improved chatbot quality, significantly expanding their possible use cases and consequently driving higher
+demand for chatbot development.
+    The decrease in demand for novice workers within complementary skill clusters may seem to contradict experimental evidence
+suggesting that AI tools benefit inexperienced workers the most (Noy and Zhang, 2023; Brynjolfsson et al., 2023). However, while
+these experimental studies are conducted in controlled environments where workers are directly given the AI tools, in the real labor
+market, it is typically companies or clients who outsource work to freelancers. Thus, novice workers within firms may benefit from
+AI tools, reducing the need to hire external freelancers. This underscores the fact that the impact of technologies on workers depends
+on how tools are implemented and who is provided access to them.
+    This paper’s analysis has limitations. First, online labor platforms evolve over time, introducing new features and disabling
+others, which introduces a degree of noise into our data collection. As outlined in Section 2.3, skill names change over time
+(e.g., Photoshop to Adobe Photoshop), and as discussed in Section 2.2, we have occasional gaps in our data due to software errors and
+platform interface changes. However, using transformer-based hierarchical topic modeling, we create a stable time series of skill
+clusters. Our results remained consistent when controlling for or excluding the few problematic periods, indicating that the missing
+data adds only random noise rather than systematic bias. Another limitation is our reliance on GPT-4 for labeling skill clusters
+exposure to automation. This is a highly challenging task, even for expert human labelers, as it requires specialized knowledge
+
+                                                                  16
+

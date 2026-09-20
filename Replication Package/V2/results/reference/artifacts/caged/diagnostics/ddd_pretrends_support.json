@@ -1,0 +1,36 @@
+{
+  "contrasts": 100,
+  "ddd_estimated": 100,
+  "ddd_failed": 0,
+  "ddd_fixed_effects": [
+    "cbo_4d^subgroup",
+    "periodo^subgroup",
+    "periodo^treatment"
+  ],
+  "ddd_pass_or_warning": 7,
+  "ddd_pretrend_status_counts": {
+    "fail": 93,
+    "pass": 2,
+    "warning": 5
+  },
+  "family_id": "A",
+  "family_size": 100,
+  "group_fixed_effects": [
+    "cbo_4d",
+    "periodo"
+  ],
+  "group_pass_or_warning": 5,
+  "group_pretrend_estimated": 100,
+  "group_pretrend_status_counts": {
+    "fail": 90,
+    "not_interpretable_rank_deficient": 5,
+    "pass": 2,
+    "warning": 3
+  },
+  "multiplicity_adjusted": false,
+  "national_outcome_count": 5,
+  "national_outcomes_failing_pretrend": 5,
+  "per_group_did_is_diagnostic_only": true,
+  "principal_specification_changed": false,
+  "task": "T8A.4"
+}

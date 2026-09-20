@@ -1,0 +1,37 @@
+    Third, we test whether our results depend on the minimum firm size threshold
+used in the sample construction of the firm-level data. Our main analysis restricts to
+firms with at least 100 employees to ensure consistent LinkedIn coverage and reliable
+estimation of exposure scores. Tables A11 to A13 relax this restriction to include all
+firms with at least 10 or 50 employees, expanding the sample to more than 11 million
+and 2.5 million firm-month observations. The qualitative patterns persist: the stock
+of low-seniority employment declines, average compensation increases, and exposed
+firms list significantly fewer jobs in both specifications, although the magnitudes are
+slightly different.
+    Fourth, we verify that our results are not sensitive to the task importance scheme
+used in our main specification. Recall that we follow Eloundou et al. (2024) by
+assigning weights of 1.0 to core tasks and 0.5 to supplemental tasks when calculating
+occupation-level exposure scores. Appendix A3.4 replicates our analyses using the
+continuous task importance scores provided in the O*NET database. The results
+are quantitatively and qualitatively similar to our main results, suggesting that our
+findings do not depend on which particular task weighting scheme we use.
+    Fifth, we estimate weighted regressions, weighing our observations in the firm-
+level regressions by pre-treatment employment, and in the occupation-level regres-
+sions by pre-treatment job posting volume. This approach gives greater weight to
+occupations representing larger shares of employment to make our estimates more
+representative for the experiences of the typical worker. Appendix A3.5 presents
+the results. The findings are largely in line with our main results. For firm-level
+employment stocks, the weighted specification shows similar overall employment ef-
+fects, with a slightly larger decline in low-seniority employment (0.6 percent per
+standard deviation versus 0.4 percent unweighted). For firm-level job postings, the
+weighted coefficient remains negative but becomes statistically insignificant, suggest-
+ing smaller firms drive the hiring freeze response. For occupation-level outcomes,
+weighted estimates remain nearly identical: job postings decline by 3.8 percent
+(versus 3.9 percent unweighted) and posted salaries fall by £474 (versus £495 in
+the main specification). The overall consistency between weighted and unweighted
+specifications indicates our main conclusions are not driven by extreme outcomes at
+small entities, with the possible exception of our firm-level job listing result. Finally,
+we relax the assumption of linear treatment effects by categorizing occupations and
+firms into exposure quartiles. Tables A20 to A22 present results where the bottom
+
+                                           26
+

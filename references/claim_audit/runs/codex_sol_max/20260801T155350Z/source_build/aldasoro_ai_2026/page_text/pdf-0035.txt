@@ -1,0 +1,31 @@
+B      Additional results
+
+           Table B.1: Explanatory power of matching variables for AI adoption
+
+                                                       (1)                                (2)
+                                                   AI Adoption                        AI Adoption
+                                                       EU                                 US
+ Investment/employee (log)                            0.017***                          0.014***
+                                                       (0.001)                           (0.004)
+ Business monitoring system                           0.111***                          0.124***
+                                                       (0.004)                           (0.014)
+ Equity/bond issuance                                 0.092***                            0.059
+                                                       (0.018)                           (0.048)
+ Innovator                                            0.058***                          0.050***
+                                                       (0.004)                           (0.013)
+ Size FE                                                Yes                                Yes
+ Age FE                                                 Yes                                Yes
+ Country-sector-wave FE                                 Yes                                Yes
+ Observations                                          45785                              2966
+ R-squared                                             0.200                              0.124
+ Adjusted R-squared                                    0.168                              0.102
+
+Note: The dependent variable is AI adoption and is derived from EIBIS. Standard errors clustered at
+the country-sector-wave level are reported in parentheses. *, **, *** correspond to 0.1, 0.05 and 0.01
+significance levels, respectively.
+
+
+
+
+                                                 29
+

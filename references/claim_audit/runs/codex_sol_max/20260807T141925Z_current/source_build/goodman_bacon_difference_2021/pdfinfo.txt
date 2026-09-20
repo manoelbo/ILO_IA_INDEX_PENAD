@@ -1,0 +1,22 @@
+Title:           
+Subject:         
+Keywords:        
+Author:          Goodman-bacon, Andrew Jacob
+Creator:         Acrobat PDFMaker 18 for Word
+Producer:        Adobe PDF Library 15.0
+CreationDate:    Thu Sep  6 12:14:20 2018 -03
+ModDate:         Thu Sep  6 12:16:26 2018 -03
+Custom Metadata: yes
+Metadata Stream: yes
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            AcroForm
+JavaScript:      no
+Pages:           48
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       502707 bytes
+Optimized:       yes
+PDF version:     1.6

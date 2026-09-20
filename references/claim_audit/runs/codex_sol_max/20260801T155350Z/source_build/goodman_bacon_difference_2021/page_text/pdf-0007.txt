@@ -1,0 +1,52 @@
+post-treatment effect, which is closer to -5. My proposed balance test detects significantly higher
+
+per-capita income and male/female sex ratios in reform states, in contrast to joint tests of covariate
+
+balance across timing groups, which cannot reject the null of balance. Finally, my results show
+
+that much of the sensitivity across specifications comes from changes in weights, or a small
+
+number of 2x2 DD’s, and need not indicate bias.
+
+                 I.    THE DIFFERENCE-IN-DIFFERENCES DECOMPOSITION THEOREM
+When units experience treatment at different times, one cannot estimate equation (1) because the
+
+post-period dummy is not defined for control observations. Nearly all work that exploits variation
+
+in treatment timing uses the two-way fixed effects model in equation (2) (Cameron and Trivedi
+
+2005 pg. 738). Researchers clearly recognize that differences in when units received treatment
+
+contribute to identification, but have not been able to describe how these comparisons are made. 9
+
+         The simplest way to illustrate how treatment timing works is to consider a balanced panel
+
+dataset with 𝑇𝑇 periods (𝑡𝑡) and 𝑁𝑁 cross-sectional units (𝑖𝑖) that belong to either an untreated group,
+
+𝑈𝑈; an early treatment group, 𝑘𝑘, which receives a binary treatment at 𝑡𝑡𝑘𝑘∗ ; and a late treatment group,
+
+ℓ, which receives the binary treatment at 𝑡𝑡ℓ∗ > 𝑡𝑡𝑘𝑘∗ . Figure 1 plots this structure.
+
+         Throughout the paper I use “group” or “timing group” to refer to collections of units either
+
+treated at the same time or not treated. I refer to units that do not receive treatment as “untreated”
+
+rather than “control” units because, while they obviously act as controls, treated units do, too. 𝑘𝑘
+
+will denote an earlier treated group and ℓ will denote a later treated group. Each group’s sample
+
+                                                         �𝑘𝑘 . I use 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑎𝑎) to denote the sample mean
+share is 𝑛𝑛𝑘𝑘 and the share of time it spends treated is 𝐷𝐷            𝑏𝑏
+
+                                                                                𝑃𝑃𝑃𝑃𝑃𝑃(𝑎𝑎)
+of 𝑦𝑦𝑖𝑖𝑖𝑖 for units in group 𝑏𝑏 during group 𝑎𝑎’s post period, [𝑡𝑡𝑎𝑎∗ , 𝑇𝑇]. (𝑦𝑦𝑏𝑏           is defined similarly.)
+
+
+
+
+9
+ Angrist and Pischke (2015), for example, lay out the canonical DD model in terms of means, but discuss regression
+DD with timing in general terms only, noting that there is “more than one…experiment” in this setting.
+
+                                                          5
+

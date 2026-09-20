@@ -1,0 +1,50 @@
+                                            REFERENCES
+
+
+Acemoglu, D. and Autor, D. (2011) Skills, tasks and technologies: Implications for employment
+    and earnings, in Handbook of Labor Economics, vol. 4, pp. 1043–1171.
+
+Acemoglu, D., Autor, D., Hazell, J. and Restrepo, P. (2022) Artificial intelligence and jobs: Evidence
+    from online vacancies, Journal of Labor Economics, 40, S293–S340.
+
+Acemoglu, D. and Restrepo, P. (2022) Tasks, automation, and the rise in us wage inequality, Econo-
+    metrica, 90, 1973–2016.
+
+Aristotle (350 B.C.E./1998) Politics, Hackett Publishing. (Original work published around 350
+    B.C.E.).
+
+Autor, D. (2013) The “task approach” to labor markets: an overview, Journal for Labour Market
+    Research, 46, 185–199.
+
+Autor, D. H. (2019) Work of the past, work of the future, in AEA Papers and Proceedings, American
+    Economic Association, vol. 109, pp. 1–32.
+
+Autor, D. H. and Dorn, D. (2013) The growth of low-skill service jobs and the polarization of the
+    us labor market, American Economic Review, 103, 1553–1597.
+
+Autor, D. H., Katz, L. F. and Kearney, M. S. (2006) The polarization of the us labor market, American
+    Economic Review, 96, 189–194.
+
+Autor, D. H., Levy, F. and Murnane, R. J. (2003) The skill content of recent technological change:
+    An empirical exploration, The Quarterly Journal of Economics, 118, 1279–1333.
+
+Brynjolfsson, E., Mitchell, T. and Rock, D. (2018) What can machines learn and what does it mean
+    for occupations and the economy?, in AEA papers and proceedings, American Economic Asso-
+    ciation, vol. 108, pp. 43–47.
+
+Dwivedi, Y. K., Kshetri, N., Hughes, L., Slade, E. L., Jeyaraj, A., Kar, A. K., Baabdullah, A. M.,
+    Koohang, A., Raghavan, V., Ahuja, M. et al. (2023) Opinion paper:“so what if chatgpt wrote
+    it?” multidisciplinary perspectives on opportunities, challenges and implications of gener-
+    ative conversational ai for research, practice and policy, International Journal of Information
+    Management, 71, 102642.
+
+Eloundou, T., Manning, S., Mishkin, P. and Rock, D. (2024) Gpts are gpts: Labor market impact
+    potential of llms, Science, 384, 1306–1308.
+
+Felten, E., Raj, M. and Seamans, R. (2021) Occupational, industry, and geographic exposure to
+    artificial intelligence: A novel dataset and its potential uses, Strategic Management Journal, 42,
+    2195–2217.
+
+
+                                                  27
+

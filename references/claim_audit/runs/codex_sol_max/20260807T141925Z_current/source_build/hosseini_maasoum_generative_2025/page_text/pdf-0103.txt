@@ -1,0 +1,42 @@
+A.24      Remote Work as a Confounder
+
+This appendix provides details on the remote-work robustness exercise discussed in Section 5.4. The con-
+cern, raised by Lambert and Schindler (2026), is that the post-ChatGPT decline in junior hiring at GenAI
+adopters may instead reflect the post-pandemic normalization of remote work. Remote-friendly occupa-
+tions expanded sharply during the pandemic and contracted as firms scaled back remote arrangements. In
+addition, work-from-home arrangements may reduce demand for junior workers by increasing supervi-
+sion costs and weakening opportunities for on-the-job learning. Because occupations that are amenable to
+remote work overlap substantially with those exposed to GenAI, a reallocation away from remote-able jobs
+could, in principle, masquerade as a GenAI effect.
+
+
+Data. We measure the remote suitability of each position using the remote_suitability score in the
+Revelio Labs individual-positions data, a continuous index of how amenable a position’s occupation is to
+remote work. We download this score for the positions of our sample firms and merge it onto the same posi-
+tion panel used to construct our employment measures, so that the resulting counts line up one-for-one with
+the seniority head counts used throughout the paper. Mirroring our treatment of the Eloundou et al. (2024)
+GenAI-exposure measure, we classify individual positions into high- and low-remote-suitability groups
+using the top and bottom quartiles of the position-level score distribution; the middle two quartiles are
+excluded from the split. For each firm-month we then count the number of junior and senior workers in
+high- and low-remote-suitability positions, and aggregate to the firm-quarter level.
+
+
+Specification. Within each remote-suitability group separately, we estimate the seniority triple-difference
+of Equation 11, comparing log employment of junior versus senior workers across adopting and non-
+adopting firms over time. Concretely, we run the specification once restricted to high-remote-suitability po-
+sitions (junior versus senior head counts in high-remote jobs) and once restricted to low-remote-suitability
+positions, in each case absorbing firm-by-quarter, industry-by-quarter-by-seniority, and industry-by-seniority
+fixed effects, with standard errors clustered at the firm level. Coefficients are normalized to zero in 2022Q4,
+the quarter before ChatGPT’s wide diffusion.
+
+
+Result. Figure A.26 plots the triple-difference coefficients for the two groups. The key comparison is the
+low-remote-suitability series: these are jobs that cannot be performed from home, so a remote-work cor-
+rection should leave them unaffected. Instead, the seniority-biased junior decline at adopters appears after
+ChatGPT in both groups and is of broadly similar magnitude. Because a remote-work correction operates
+
+
+
+
+                                                     A.58
+

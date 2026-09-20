@@ -1,0 +1,49 @@
+Hence, we see that βj pan q “ γj logpan q ` oplogpan qq. It follows that |βj pan q| Ñ 8 when γj ‰ 0.
+    To complete the proof, we show continuity of βj paq. Fix a P r0, 8q, and consider a sequence
+an Ñ a. Assume without loss of generality that an ă a ` 1 for all n. Let fn px, yq “ ν 1 x ¨ mpan yq.
+From the continuity of m, we have that fn px, yq Ñ ν 1 x ¨ mpayq pointwise. We showed in the proof
+to Proposition 1 that there exists some κ (not depending on n) such that
+
+                                    |mpan yq| ď κ ` 21ry ą 0s ¨ | logpyq|.
+
+Hence,
+                                |fn px, yq| ď |ν 1 x ¨ pκ ` 21ry ą 0s| logpyq|q|.
+
+Moreover, the bounding function is integrable over the distribution of pX, Y q by part 2 of the
+proposition. Applying the dominated convergence theorem again, we obtain that
+
+
+                         βj pan q “ EQ rfn pX, Y qs Ñ EQ rν 1 X ¨ mpaY qs “ βj paq,
+
+as needed.
+
+Proof of Proposition 7. Consider an Ñ 8. Applying Proposition 6 to the empirical distribution,
+we have that β̂pan q{ logpan q “ γ̂ ` op1q. It follows that
+
+                1                 mpan Yi q β̂pan q1 Xi
+                      ǫ̂i pan q “          ´            “ 1rYi ą 0s ´ γ̂ 1 Xi ` op1q “ ûi ` op1q.
+             logpan q             logpan q   logpan q
+
+Since Ω̂n pan q is a continuous function of the ǫ̂i pan q2 , we obtain that logpan q´2 Ω̂β pan q Ñ Ω̂γ , and
+thus that logpan q´1 σ̂βj pan q “ σ̂γj ` op1q. It follows that
+
+                                         β̂j pan q{ logpan q    γ̂j ` op1q    γ̂j
+                         t̂βj pan q “                        “             Ñ      “ t̂γj ,
+                                        σ̂βj pan q{ logpan q   σ̂γj ` op1q   σ̂γj
+as needed.
+
+
+C     Connection to structural equations models
+Previous work has considered a variety of estimators for settings with zero-valued outcomes begin-
+ning with structural equations models rather than the potential outcomes model that we consider.
+These papers have reached different results, with some concluding that regressions with arcsinhpY q
+have the interpretation of an elasticity, and others showing that they are inconsistent and advocat-
+ing for other methods (e.g. Poisson regression) instead. In this section, we interpret the results in
+those papers from the perspective of the potential outcomes model, and show that these diverging
+conclusions stem from different implicit assumptions about the potential outcomes, as well as a
+focus on different causal parameters.
+    Before discussing specific papers, we first note that, broadly speaking, structural equation models
+
+
+                                                          9
+

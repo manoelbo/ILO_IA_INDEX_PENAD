@@ -1,0 +1,38 @@
+Nonetheless, coworker reports are tightly correlated within workplaces, and Appendix F.6
+shows that our findings are robust to using coworker reports to measure employer initiatives,
+supporting their interpretation as workplace-wide policies.
+
+
+2.2       Worker Adoption and Reported Benefits
+
+Figure 2 shows how AI chatbot adoption varies with employer initiatives for a typical
+worker. The top estimate (No Initiative) highlights the bottom-up nature of chatbot
+diffusion: even among workers whose employers neither encourage chatbot use, provide
+an enterprise chatbot, nor offer training, about 41% have used AI chatbots at work at
+least once, and 7% use them daily.
+       Despite this high baseline, employer initiatives are associated with substantially higher
+adoption. Implemented individually, Encouraged use, Enterprise chatbots, and Training
+each raise extensive-margin take-up rates to 76%, 57%, and 69%, respectively. Encouraged-
+use policies are associated with especially high intensive usage, with daily use reaching
+18%.
+       Table 1 shows that encouraged-use policies are not only associated with higher chatbot
+usage (Column 1-2), they are also consistently associated with users reporting greater
+time savings, improved quality, and enhanced creativity (Columns 3-6).8
+       Finally, as the bottom row of Figure 2 shows, adoption peaks when all three—
+encouragement, enterprise chatbots, and training—are in place: 93% of workers in such
+settings report having used AI chatbots at work, and 28% use them daily.
+
+
+Discussion. The finding that adoption and reported benefits are greatest when AI
+chatbots are combined with employer initiatives aligns with a large literature on comple-
+mentarities between new technologies and organizational investments, including people
+management practices (Bloom, Sadun and Reenen, 2012; Brynjolfsson and Hitt, 2000).
+   8
+    By contrast, training and enterprise tools—when implemented without encouragement—are associated
+with smaller reported gains. This pattern is consistent with these initiatives being aimed at mitigating
+misuse rather than enhancing productivity. Supporting this interpretation, Section 2.3 shows that AI
+Ethics & Compliance tasks are especially prevalent among workers who have received employer-provided
+training.
+
+
+                                                  13

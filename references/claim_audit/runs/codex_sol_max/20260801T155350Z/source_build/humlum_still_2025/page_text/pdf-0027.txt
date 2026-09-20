@@ -1,0 +1,52 @@
+Botero, Juan C, Simeon Djankov, Rafael La Porta, Florencio Lopez-de Silanes, and
+ Andrei Shleifer. 2004. “The Regulation of Labor.” The Quarterly Journal of Economics,
+ 119(4): 1339–1382.
+Bresnahan, Timothy F., and Shane Greenstein. 1996. “Technical Progress and Co-
+ invention in Computing and in the Uses of Computers.” Brookings Papers on Economic
+ Activity: Microeconomics, 1996: 1–83.
+Brynjolfsson, Erik, and Lorin M Hitt. 2000. “Beyond Computation: Information Technology,
+  Organizational Transformation and Business Performance.” Journal of Economic perspectives,
+ 14(4): 23–48.
+Brynjolfsson, Erik, Bharat Chandar, and Ruyu Chen. 2025. “Canaries in the Coal Mine?
+  Six Facts about the Recent Employment Effects of Artificial Intelligence.” Working paper.
+  Latest version available at https://digitaleconomy. stanford . . . .
+Brynjolfsson, Erik, Danielle Li, and Lindsey R. Raymond. 2025. “Generative AI at
+ Work.” The Quarterly Journal of Economics.
+Brynjolfsson, Erik, Daniel Rock, and Chad Syverson. 2021. “The Productivity J-Curve:
+  How Intangibles Complement General Purpose Technologies.” American Economic Journal:
+ Macroeconomics, 13(1): 333–372.
+Card, David, Ana Rute Cardoso, Joerg Heining, and Patrick Kline. 2018. “Firms
+ and Labor Market Inequality: Evidence and Some Theory.” Journal of Labor Economics,
+ 36(S1): S13–S70.
+Carvajal, Daniel, Catalina Franco, and Siri Isaksson. 2024. “Will Artificial Intelligence
+ Get in the Way of Achieving Gender Equality?” NHH Dept. of Economics Discussion Paper,
+ , (03).
+Chatterji, Aaron, Thomas Cunningham, David J Deming, Zoe Hitzig, Christopher
+ Ong, Carl Yan Shan, and Kevin Wadman. 2025. “How People Use ChatGPT.” National
+ Bureau of Economic Research Working Paper 34255.
+Cui, Zheyuan Kevin, Mert Demirer, Sonia Jaffe, Leon Musolff, Sida Peng, and
+ Tobias Salz. 2024. “The Effects of Generative AI on High Skilled Work: Evidence from
+ Three Field Experiments with Software Developers.” Available at SSRN 4945566.
+Dahl, Christian M, Daniel Le Maire, and Jakob R Munch. 2013. “Wage Dispersion and
+ Decentralization of Wage Bargaining.” Journal of Labor Economics, 31(3): 501–533.
+David, Paul A. 1990. “The Dynamo and the Computer: An Historical Perspective on the
+ Modern Productivity Paradox.” The American Economic Review, 80(2): 355–361.
+Dell’Acqua, Fabrizio, Edward McFowland, Ethan R Mollick, Hila Lifshitz-Assaf,
+ Katherine Kellogg, Saran Rajendran, Lisa Krayer, François Candelon, and
+ Karim R Lakhani. 2023. “Navigating the Jagged Technological Frontier: Field Exper-
+ imental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality.”
+ Harvard Business School Technology & Operations Mgt. Unit Working Paper, , (24-013).
+Dillon, Eleanor W, Sonia Jaffe, Nicole Immorlica, and Christopher T Stanton. 2025.
+ “Shifting work patterns with generative ai.” National Bureau of Economic Research.
+DiNardo, John E, and Jörn-Steffen Pischke. 1997. “The returns to computer use revisited:
+  Have pencils changed the wage structure too?” The Quarterly journal of economics, 112(1): 291–
+  303.
+Dutz, Deniz, Ingrid Huitfeldt, Santiago Lacouture, Magne Mogstad, Alexander
+ Torgovitsky, and Winnie Van Dijk. 2025. “Selection in Surveys: Using Randomized
+ Incentives to Detect and Account for Nonresponse Bias.” Working Paper.
+
+
+
+
+                                              25
+

@@ -1,0 +1,43 @@
+gains are large (αb high), and adoption costs are high (αc high).
+
+
+Workplace wage bills. Encouraged firms increase wage bills by:
+
+
+                               log(W1 H1 ) − log(W0 H0 ) = κ.                            (33)
+
+
+That encouragement unambiguously raises wage bills is a consequence of modeling chat-
+bots solely as tools augmenting worker productivity (Equation (14)); as discussed in
+Section A.2.1, this need not hold under more general production technologies.
+
+A.2.5    Empirical Identification
+
+This section shows that causal effects of chatbots on worker and workplace outcomes can
+be identified using difference-in-differences, and provides structural interpretations of the
+estimands.
+   The derivations above assumed that differences across workers and firms arise solely
+from chatbot use and encouragement. More realistically, workers differ in baseline
+productivity (Hij (Aij ) = Hi0 exp(Bij Aij )) and firms in baseline demand (Yj = Yj0 Pj−ϵ ).
+For example, Figure 5(a) shows that adopters already earned more before chatbots became
+available.
+   Causal effects are still identified if baseline heterogeneity is time-invariant and log-
+additive, so that it differences out:
+
+
+              ∆Hij = Bij (Apost
+                           ij   − Apre
+                                   ij ),      ∆Yj = −ϵ(log Pjpost − log Pjpre ),         (34)
+
+
+where ∆X = log X post − log X pre . If baseline heterogeneity varies over time, identification
+requires that adoption and encouragement decisions are uncorrelated with anticipated
+shocks to Hi0 and Yj0 —consistent with the policy rules in Equations (17) and (20).
+
+
+Worker-level difference-in-differences. Equation (25) motivates three estimators
+used in Section F.2:
+
+
+
+                                             16

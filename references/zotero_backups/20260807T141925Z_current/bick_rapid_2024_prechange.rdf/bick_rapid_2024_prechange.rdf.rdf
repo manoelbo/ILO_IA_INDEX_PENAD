@@ -1,0 +1,61 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Report rdf:about="https://doi.org/10.20955/wp.2024.027">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Federal Reserve Bank of St. Louis</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bick</foaf:surname>
+                        <foaf:givenName>Alexander</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Blandin</foaf:surname>
+                        <foaf:givenName>Adam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Deming</foaf:surname>
+                        <foaf:givenName>David J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:title>The rapid adoption of generative AI</dc:title>
+        <dcterms:abstract>Generative artificial intelligence (AI) is a potentially important new technology, but its impact on the economy depends on the speed and intensity of adoption. This paper reports results from a series of nationally representative U.S. surveys of generative AI use at work and at home. As of late 2024, 45% of the U.S. population age 18-64 uses generative AI. Among employed respondents, 27% used generative AI for work at least once in the previous week: 10% used it every workday, and 17% on some but not all workdays. Relative to each technology’s first mass-market product launch, work adoption of generative AI has been as fast as the personal computer (PC), and overall adoption has been faster than either PCs or the internet. Between 1 and 7% of all work hours are currently assisted by generative AI, and respondents report time savings equivalent to 1.4% of total work hours. Potential productivity gains vary widely by industry, and firm climate and policies play an important role in adoption patterns.</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <dc:identifier>DOI 10.20955/wp.2024.027</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.20955/wp.2024.027</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-07-25 14:36:36</dcterms:dateSubmitted>
+        <z:language>English</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <prism:number>2024-027</prism:number>
+        <z:type>Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/12/Bick et al. - 2024 - The rapid adoption of generative AI.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>

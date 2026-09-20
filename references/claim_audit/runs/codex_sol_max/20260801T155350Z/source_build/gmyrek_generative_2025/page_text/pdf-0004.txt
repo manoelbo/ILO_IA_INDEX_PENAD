@@ -1,0 +1,52 @@
+01     ILO Working Paper 140
+
+
+
+
+     Abstract
+
+     This study updates the ILO’s 2023 Global Index of Occupational Exposure to Generative AI (GenAI),
+     incorporating recent advances in the technology and increasing user familiarity with GenAI tools.
+     Using a representative sample from the 29,753 tasks in the Polish occupational classification sys-
+     tem and a survey of 1,640 people employed in each 1-digit ISCO-08 groups, we collect 52,558 data
+     points regarding perceive potential of automation for 2,861 tasks. We then compare this input
+     with a survey and several rounds of Delphi-style discussions among a smaller group of interna-
+     tional experts. Based on this process, we create a repository of knowledge about task automa-
+     tion that goes beyond national specificities and use it to develop an AI assistant able to predict
+     scores for tasks in the technical documentation of ISCO-08.
+
+     Our 2025 scores are presented in a revised framework of four progressively increasing exposure
+     gradients, with a new set of global estimates of employment shares exposed to GenAI. Clerical
+     occupations continue to have the highest exposure levels. Additionally, some strongly digitized
+     occupations have increased exposure, highlighting the expanding abilities of GenAI regarding
+     specialized tasks in professional and technical roles.
+
+     Globally, one in four workers are in an occupation with some GenAI exposure. 3.3% of global
+     employment falls into the highest exposure category, albeit with significant differences between
+     female (4.7%) and male employment (2.4%). These differences increase with countries’ income
+     (9.6% female vs 3.5% male in Gradient 4 in HICs), and so does the overall exposure (11% of total
+     employment in LICs vs 34% in HICs). As most occupations consist of tasks that require human
+     input, transformation of jobs is the most likely impact of GenAI. Linking our refined index with
+     national micro data enables precise projections of such transformations, offering a foundation
+     for social dialogue and targeted policy responses to manage the transition.
+
+
+
+
+     About the authors
+
+     Paweł Gmyrek is a Senior Researcher in the Research Department of the ILO.
+
+     Janine Berg is a Senior Economist in the Research Department of the ILO.
+
+     Karol Kamiński is a Senior Researcher in the Analysis and Research Department of the NASK-PIB.
+
+     Filip Konopczyński is the Director of the Analysis and Research Department of the NASK-PIB.
+
+     Agnieszka Ładna is a Manager in the Analysis and Research Department of the NASK-PIB.
+
+     Konrad Rosłaniec is a Researcher in the Analysis and Research Department of the NASK-PIB.
+
+     Marek Troszyński is an Expert in the Analysis and Research Department of the NASK-PIB and
+     Assistant Professor at the Civitas University, Warsaw.
+

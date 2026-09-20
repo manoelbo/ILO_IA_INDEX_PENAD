@@ -1,0 +1,28 @@
+facing tools they use (e.g., Midjourney, GitHub Copilot) and to describe their work in
+adjacent ML/DL or workflow terms, while job postings emphasize technical infrastruc-
+ture (vector databases, frameworks, APIs).
+   Table A.3 reports the difference-in-differences estimates. The dependent variable is
+an indicator for whether the position description contains at least one GenAI keyword.
+Column (1) reports the basic OLS estimate; column (2) adds firm and month fixed effects,
+yielding a DiD coefficient of 1.35 percentage points (s.e. = 0.05, p < 0.001); and column (3)
+additionally controls for description length.
+
+    Table A.3: Difference-in-Differences: GenAI Keywords in Position Descriptions
+
+                Dependent Variable:                         has_ai
+                                             OLS            FE         FE + Length
+                Model:                       (1)            (2)            (3)
+                Adopter × Post            0.0176∗∗∗     0.0135∗∗∗        0.0140∗∗∗
+                                           (0.0015)      (0.0005)         (0.0005)
+                Fixed effects
+                Firm                                       Yes              Yes
+                Month                                      Yes              Yes
+                Observations             18,345,320    18,345,320       18,345,320
+                R2                         0.010         0.117            0.121
+                Notes: Standard errors clustered by firm in parentheses. ∗∗∗ p < 0.01.
+
+
+
+
+                                                A.33
+

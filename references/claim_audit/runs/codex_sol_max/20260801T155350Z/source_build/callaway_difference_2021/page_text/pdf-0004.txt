@@ -1,0 +1,45 @@
+average treatment effect estimators. Thus, our proposed confidence bands are arguably more suitable for
+visualizing the overall estimation uncertainty than more traditional pointwise confidence intervals.
+   We illustrate the practical relevance of our proposal by analyzing the effect of the minimum wage on
+teen employment. Here, we follow much empirical work on the effects of the minimum wage and exploit
+having access to panel data and variation in treatment timing across states (e.g., Card and Krueger
+(1994); Neumark and Wascher (2000, 2008); Dube et al. (2010), among many others) in order to estimate
+the effect of the minimum wage on employment. Interestingly, in our setup, using our approach leads
+to qualitatively different results than results from the TWFE estimator. This suggests that, at least
+in certain applications, using methods that are robust to treatment effect heterogeneity can lead to
+meaningful differences relative to more standard TWFE regressions.
+
+   Recent Related Literature: This paper is related to the recent and emerging literature on het-
+erogeneous treatment effects in DiD and/or event studies with variation in treatment timing; see, e.g.,
+de Chaisemartin and D’Haultfœuille (2020), Goodman-Bacon (2019), Imai et al. (2018), Borusyak and
+Jaravel (2017), Athey and Imbens (2018) and Sun and Abraham (2020). All these papers present, among
+other things, some negative results about the interpretation of parameters associated with standard
+TWFE linear regression specifications; see also Laporte and Windmeijer (2005), Wooldridge (2005a),
+Chernozhukov et al. (2013), and Gibbons et al. (2018) for earlier related results based on (one-way) fixed-
+effect estimators. Our proposed procedure completely bypasses the pitfalls highlighted in these papers as
+we clearly separate the identification, aggregation and estimation/inference steps of the analysis.
+   These aforementioned papers also propose alternative DiD estimators that do not suffer from the
+pitfalls associated with TWFE. Among these, perhaps the closest to our proposal are those of de Chaise-
+martin and D’Haultfœuille (2020), and Sun and Abraham (2020), though several major differences are
+worth stressing.
+   de Chaisemartin and D’Haultfœuille (2020) is focused on recovering an instantaneous treatment effect
+measure, while we pay particular attention to treatment effect dynamics. In fact, our framework allows one
+to form families of different aggregate parameters in a unified manner. Second, while we pay particular
+attention to the role played by pre-treatment covariates, de Chaisemartin and D’Haultfœuille (2020)
+mainly focus on unconditional DiD designs. On the other hand, the setup in de Chaisemartin and
+D’Haultfœuille (2020) is more general than ours as we consider staggered adoption designs and they
+allow for more general treatment selection. Nonetheless, we note that the unconditional versions of our
+parallel trends assumptions are weaker than the one in de Chaisemartin and D’Haultfœuille (2020), even
+if one were to specialize their setup to staggered adoption designs.
+   Sun and Abraham (2020) proposes a parameter, cohort-specific average treatment effects, that trans-
+lates our group-time average treatment effects from calendar time into event time. Sun and Abraham
+(2020) proposes regression-based estimators of these parameters that have similar properties to our esti-
+mators in the specific case of staggered treatment adoption under an unconditional version of the parallel
+trends assumption. However, our approach is more general in several respects. First, we allow for parallel
+trends assumptions to hold after conditioning on covariates, and it is not clear how to adapt the regression
+based estimators in Sun and Abraham (2020) to this case. Second, we consider a wide variety of possible
+aggregations of group-time average treatment effects where Sun and Abraham (2020) focuses particularly
+
+
+                                                     4
+

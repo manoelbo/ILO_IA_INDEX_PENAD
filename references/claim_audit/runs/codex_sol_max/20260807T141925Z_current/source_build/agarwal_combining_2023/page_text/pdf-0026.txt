@@ -1,0 +1,59 @@
+                                                                                                                                                                                                    26
+
+                                                             Figure 3: Conditional treatment effect given AI prediction
+                                             (a) Deviation from Ground Truth                                                                    (b) Incorrect Decision
+                                      .15
+ ATE on deviation from ground truth
+
+
+
+
+                                                                                                                                      .1
+
+
+
+
+                                                                                                        ATE on incorrect decision
+                                        .1
+
+                                                                                                                                    .05
+                                      .05
+
+
+                                        0                                                                                             0
+
+
+                                      -.05
+                                                                                                                                    -.05
+                                               [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]                                      [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                                 AI prediction bins                                                                          AI prediction bins
+
+
+Note: Panel (a) shows the conditional average treatment effect of providing AI information on the absolute value of difference
+between the radiologist probability and the ground truth. Panel (b) shows analogous treatment effects on incorrect diagnosis,
+where a correct diagnosis is defined as the treatment recommendation matching the ground truth. Both these treatment effects
+are conditional on the ranges of AI prediction. Standard errors are two-way clustered at the radiologist and patient-case level.
+The error bars depict 95% confidence intervals. Robustness to experimental design is in appendix C.4.1 and C.4.2.
+
+
+
+
+4.2.3                                        Treatment Effects on Time Per Case and Proxies of Effort
+
+Finally, we turn our attention to the effects of AI assistance on time taken and the number
+of unique interaction (clicks) as a proxy for effort. One hypothesis is that AI assistance could
+economize on costly human effort without sacrificing overall performance by enabling quicker
+assessments. At the polar opposite, it is possible that humans take more time because they
+are provided with more information to process. Which of these effects dominate determines
+the effect on labor costs when humans use AI assistance, and therefore the optimality of
+delegating cases versus a collaborative setup.
+Our results indicate that radiologists are slower when provided with AI assistance. The last
+panel of table 2 shows the treatment effects on time spent per case and clicks. These outcomes
+are measured at the case level. In the X-Ray Only treatment, radiologists spend about 2.6
+minutes per case. Both AI and CH increase the time spend per case by a statistically
+significant amount of approximately 4%. The interaction effct γAI×CH is not significant
+for either of the two outcome variables. These effects suggest that decisions where both
+radiologists and the AI are involved come at a non trivial increase in time spent per case.
+This result further undercuts the potential benefits in performance from including humans
+assisted with AI predictions “in the loop.”
+

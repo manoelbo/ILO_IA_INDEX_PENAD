@@ -1,0 +1,21 @@
+{
+  "age_groups": 6,
+  "baseline_period": 202211,
+  "cases": 6,
+  "codes_with_wage_bounds": 76,
+  "coverage_rows": 36,
+  "diagnostic_rows": 72,
+  "dictionary_path": "data/derived/occupation_cases/occupation_case_dictionary.csv",
+  "dictionary_sha256": "b8d0310606c37ed32decf4cb46a9088632f9c1409c837d869a2c33d4ac8aa4b2",
+  "has_counterfactual": false,
+  "is_descriptive": true,
+  "months": 65,
+  "national_phase_8a_diagnostic": "fail_51_of_51",
+  "panel_key_unique": true,
+  "panel_rows": 2340,
+  "panel_sha256": "8fa583bcf046ed1d37b02631163a0ad41c5037e84863f9ca3141ec54932a3291",
+  "primary_cbo6_codes": 76,
+  "terminal_end": 202605,
+  "terminal_start": 202506,
+  "wage_bound_cells": 456
+}

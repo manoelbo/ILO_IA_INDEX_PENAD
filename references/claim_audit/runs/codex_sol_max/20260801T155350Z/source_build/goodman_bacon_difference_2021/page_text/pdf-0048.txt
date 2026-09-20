@@ -1,0 +1,37 @@
+Oaxaca, Ronald. 1973. "Male-Female Wage Differentials in Urban Labor Markets." International Economic Review
+         14 (3):693-709. doi: 10.2307/2525981.
+Oster, Emily. 2016. "Unobservable Selection and Coefficient Stability: Theory and Evidence." Journal of Business
+         & Economic Statistics:1-18. doi: 10.1080/07350015.2016.1227711.
+Pei, Zhuan, Jörn-Steffen Pischke, and Hannes Schwandt. 2017. "Poorly Measured Confounders are More Useful on
+         the Left Than on the Right." National Bureau of Economic Research Working Paper Series No. 23232.
+         doi: 10.3386/w23232.
+Perron, Pierre. 2006. "Dealing with Structural Breaks." Working Paper.
+Rubin, Donald B. 1974. "Estimating causal effects of treatments in randomized and nonrandomized studies."
+         Journal of Educational Psychology 66 (5):688-701. doi: 10.1037/h0037350.
+Shore-Sheppard, Lara D. . 2009. "Stemming the Tide? The Effect of Expanding Medicaid Eligibility On Health
+         Insurance Coverage." The B.E. Journal of Economic Analysis & Policy 8 (2).
+Snow, John. 1855. On the Mode of Communication of Cholera. Edited by John Churchill. Second ed. London.
+Solon, Gary, Steven J. Haider, and Jeffrey M. Wooldridge. 2015. "What Are We Weighting For?" Journal of
+         Human Resources 50 (2):301-316.
+Stevenson, Betsey, and Justin Wolfers. 2006. "Bargaining in the Shadow of the Law: Divorce Laws and Family
+         Distress." The Quarterly Journal of Economics 121 (1):267-288.
+Strezhnev, Anton. 2018. "Semiparametric Weighting Estimators for Multi-Period Difference-in-Differences
+         Designs." Working Paper.
+Surveillance, Epidemiology, and End Results (SEER). 2013. Surveillance, Epidemiology, and End Results (SEER)
+         Program Populations (1969-2011). edited by DCCPS National Cancer Institute, Surveillance Research
+         Program, Surveillance Systems Branch.
+Walters, Christopher R. forthcoming. "The Demand for Effective Charter Schools." Journal of Political Economy.
+Wolfers, Justin. 2006. "Did Unilateral Divorce Laws Raise Divorce Rates? A Reconciliation and New Results."
+         American Economic Review 96 (5):1802-1820.
+Wooldridge, Jeffrey M. 2001. "Asymptotic Properties of Weighted M-Estimators for Standard Stratified Samples."
+         Econometric Theory 17 (2):451-470.
+Wooldridge, Jeffrey M. 2005. "Fixed-Effects and Related Estimators for Correlated Random-Coefficient and
+         Treatment-Effect Panel Data Models." The Review of Economics and Statistics 87 (2):385-390.
+Wooldridge, Jeffrey M. 2010. Econometric analysis of cross section and panel data. 2nd ed. Cambridge, Mass.:
+         MIT Press.
+
+
+
+
+                                                      46
+

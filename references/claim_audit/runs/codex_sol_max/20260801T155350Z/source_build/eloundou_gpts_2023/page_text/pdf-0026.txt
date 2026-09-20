@@ -1,0 +1,49 @@
+                                             WORKING PAPER
+
+
+    Activity: Negotiate purchases or contracts. Label (E0/E1/E2/E3): E2 Explanation: You could have each
+party transcribe their point of view and then feed this to an LLM to resolve any disputes (E3). That said,
+many people would need to buy into using new technological tools to accomplish this (system).
+    Occupation: Allergists and Immunologists Task: Prescribe medication such as antihistamines, antibiotics,
+and nasal, oral, topical, or inhaled glucocorticosteroids. Label (E0/E1/E2/E3): E2 Explanation: The model
+can provide guesses for different diagnoses and write prescriptions and case notes. However, it still requires a
+human in the loop using their judgment and knowledge to make the final decision.
+    —
+
+
+B    O*NET Basic Skills Definitions
+Basic Skills
+Developed capacities that facilitate learning or the more rapid acquisition of knowledge.
+
+Content
+Background structures needed to work with and acquire more specific skills in a variety of different domains.
+
+    • Reading Comprehension — Understanding written sentences and paragraphs in work-related docu-
+      ments.
+
+    • Active Listening — Giving full attention to what other people are saying, taking time to understand
+      the points being made, asking questions as appropriate, and not interrupting at inappropriate times.
+
+    • Writing — Communicating effectively in writing as appropriate for the needs of the audience.
+
+    • Speaking — Talking to others to convey information effectively.
+
+    • Mathematics — Using mathematics to solve problems.
+
+    • Science — Using scientific rules and methods to solve problems.
+
+Process
+Procedures that contribute to the more rapid acquisition of knowledge and skill across a variety of domains
+
+    • Critical Thinking — Using logic and reasoning to identify the strengths and weaknesses of alternative
+      solutions, conclusions or approaches to problems.
+
+    • Active Learning — Understanding the implications of new information for both current and future
+      problem-solving and decision-making.
+
+    • Learning Strategies — Selecting and using training/instructional methods and procedures appropriate
+      for the situation when learning or teaching new things.
+
+    • Monitoring — Monitoring/Assessing performance of yourself, other individuals, or organizations to
+      make improvements or take corrective action.
+

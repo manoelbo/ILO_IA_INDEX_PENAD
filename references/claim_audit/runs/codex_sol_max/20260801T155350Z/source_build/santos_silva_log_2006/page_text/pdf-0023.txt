@@ -1,0 +1,39 @@
+  Since both tests have adequate behavior under the null and reveal reasonable power
+against a wide range of alternatives, the results suggest that these tests are important
+tools to assess the adequacy of the standard OLS estimator of the log-linear model and
+of the proposed Poisson PML estimator.
+
+                        Table 2: Rejection frequencies at the
+                        5% level for the two specification tests
+                            Without Measurement Error
+                     Test Case 1       Case 2    Case 3      Case 4
+                     GNR 0.91980 0.05430 0.58110 0.49100
+                     Park 1.00000 1.00000 0.06680 0.40810
+                              With Measurement Error
+                     Test Case 1       Case 2    Case 3      Case 4
+                     GNR 0.91740 0.14980 0.57170 0.47580
+                     Park 1.00000 1.00000 1.00000 1.00000
+
+
+5. The gravity equation
+In this section, we use the PPML estimator to quantitatively assess the determinants of
+bilateral trade flows, uncovering significant diﬀerences in the roles of various measures of
+size and distance from those predicted by the logarithmic tradition. We perform the com-
+parison of the two techniques using both the traditional and the Anderson-van Wincoop
+(2003) specifications of the gravity equation.
+  For the sake of completeness, we also compare the PPML estimates with those ob-
+tained from alternative ways researchers have used to deal with zero-values for trade. In
+particular, we present the results obtained with the Tobit estimator used in Eaton and
+Tamura (1994), OLS estimator applied to ln(1 + Tij ), and a standard non-linear least
+squares estimator. The results obtained with these estimators are presented, as before,
+for both the traditional and the Anderson-van Wincoop specifications.
+
+
+5.1 The data
+
+The analysis covers a cross section of 136 countries in 1990. Hence, our data set consists
+of 18, 360 observations of bilateral import flows (136 × 135 country pairs). The list of
+countries is reported in Table A1 in the Appendix. Information on bilateral trade comes
+
+                                            22
+

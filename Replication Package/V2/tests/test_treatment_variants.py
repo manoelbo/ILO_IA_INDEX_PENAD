@@ -9,7 +9,7 @@ import pytest
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "panel" / "treatment_variants.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "panel" / "treatment_variants.py"
 
 
 def load_variants_module():

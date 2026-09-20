@@ -1,0 +1,37 @@
+    Panel (c) considers incumbent workers—those employed at the workplace before
+the arrival of AI chatbots—whose labor market outcomes we can track regardless of
+whether they remain with or separate from their original firm.22 These workers have
+not experienced differential changes in hours. Figure F.9 shows that they have also not
+experienced differential occupational mobility. Hence, while Section 3.3 shows that workers’
+use of AI chatbots has helped them move into new occupations, employers’ adoption of
+AI chatbots has not displaced workers out of their original occupations.
+    Panel (d) examines overall rates of job creation and destruction, showing that job
+churn at workplaces that encourage AI chatbots has remained stable, with confidence
+bands ruling out effects on monthly job churn rates greater than 0.5% of employment.
+
+
+Heterogeneity by Intensity of Adoption. Figure 6, Panels (c) and (d) examine the
+effects of additional initiatives in enterprise chatbots and training. Although Section 2.2
+shows that uptake and reported benefits are highest when the full suite of initiatives is
+implemented, we find no detectable impacts on overall employment or early-career jobs at
+these workplaces. Similarly, Appendix F.4 shows that incumbent workers and job churn
+have not changed differentially at workplaces with these investments.
+
+
+Occupational Heterogeneity. Figure 7, Panels (c) and (d) report the estimated
+effects of AI chatbots on workplace employment and early-career jobs across the 11
+occupations in our sample. Confidence bands are again wide for these occupation-specific
+estimates and should therefore be interpreted with caution. Nonetheless, we find no
+statistically significant effects in any occupation, and point estimates are generally near
+zero.23 Even between our most contrasting groups—software developers and marketers
+(with flexible labor rules) versus teachers (with collective bargaining)—we observe no
+systematic differences in employment impacts. Moreover, while Appendix D.2 documents
+aggregate declines in early-career jobs in several of our exposed occupations, including
+  22
+     This analysis of incumbent workers resembles the research designs of Autor et al. (2014); Walker
+(2013).
+  23
+     Appendix F.4 similarly shows null results for job churn and worker sorting.
+
+
+                                                 31

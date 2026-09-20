@@ -1,0 +1,46 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                         1287
+
+task inputs, routine and nonroutine, that are used to produce
+output Q, which sells at price one. Because our discussion
+stresses that computers neither strongly substitute nor strongly
+complement nonroutine manual tasks, we consider this model to
+pertain primarily to routine cognitive and routine manual tasks,
+and nonroutine analytic and nonroutine interactive tasks.
+    We assume for tractability an aggregate, constant returns to
+scale Cobb-Douglas production function of the form,
+(1)                  Q 5 ~L R 1 C! 12bL bN, b [ ~0,1!,
+where L R and L N are routine and nonroutine labor inputs and C
+is computer capital, all measured in efciency units. Computer
+capital is supplied perfectly elastically at market price r per
+efciency unit, where r is falling exogenously with time due to
+technical advances. The declining price of computer capital is the
+causal force in our model.8
+     We assume that computer capital and labor are perfect sub-
+stitutes in carrying out routine tasks. Cobb-Douglas technology
+further implies that the elasticity of substitution between routine
+and nonroutine tasks is one, and hence computer capital and
+nonroutine task inputs are relative complements. While the as-
+sumption of perfect substitutability between computer capital
+and routine task input places assumptions A1 and A2 in bold
+relief, the only substantive requirement for our model is that
+computer capital is more substitutable for routine than nonrou-
+tine tasks. Observe that routine and nonroutine tasks are q-
+complements; the marginal productivity of nonroutine tasks rises
+with the quantity of routine task input, consistent with assump-
+tion A3.9
+     We assume a large number of income-maximizing workers,
+each of whom inelastically supplies one unit of labor. Workers
+have heterogeneous productivity endowments in both routine and
+nonroutine tasks, with E i 5 [r i ,n i ] and 1 $ r i , n i . 0 @ i. A given
+worker can choose to supply r i efciency units of routine task
+input, n i efciency units of nonroutine task input, or any convex
+
+     8. Borghans and ter Weel [2002] offer a related model exploring how the
+declining price of computer capital affects the diffusion of computers and the
+distribution of wages. A key difference is that the tasks performed by computers
+and workers are inseparable in the Borghans-ter Weel model. Accordingly, com-
+puterization alters wage levels but does not directly change the allocation of
+human labor input across task types. This latter point is the focus of our model
+and empirical analysis.
+     9. Specically, ] 2 Q/]L N ](L R 1 C) 5 b(1 2 b) L bN2 1 /(L R 1 C) b . 0.
+

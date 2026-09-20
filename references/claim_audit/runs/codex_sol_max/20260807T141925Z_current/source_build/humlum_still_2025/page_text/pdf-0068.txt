@@ -1,0 +1,53 @@
+difference-in-differences cannot capture sector-wide general equilibrium effects.
+   We use the model to characterize this residual. The key insight is that adopters
+generate spillovers to non-adopters only when their own market outcomes change; null
+effects on adopters’ market outcomes thus imply limited spillovers.
+   To formalize, assume nested CES demand with elasticity η across and ϵ within sectors:
+
+
+                                           Yj = Pj−ϵ P ϵ−η ,                          (40)
+
+                       1
+where P = ( Pj1−ϵ dj) 1−ϵ is the sectoral price index. Combining with Equations (11), (14),
+            R
+
+
+(16), and (40):
+
+                                        1          η−ϵ
+                           d log W0 = − d log Y0 +     d log Y ,                      (41)
+                                      | ϵ {z   }    ϵη
+                                                               |       {z     }
+                                        Residual demand        Sector competition
+
+
+where the first term reflects firms moving down residual demand curves and the second
+reflects competing firms stealing sectoral demand.
+   The change in non-encouraged output reflects both productivity and employment:
+
+
+                           d log Y0 =      E[Ai0 Bi0 ]         + E [d log N0 ],       (42)
+                                           |    {z     }           |    {z     }
+                                        Adopter productivity       Employment
+
+
+where these terms are identified by:
+
+
+                                E[Ai0 Bi0 ] = A0 × ∆YNE,A−NE,NA ,                     (43)
+
+                              E [d log N0 ] = −E × ∆N
+                                                    E−NE ,                            (44)
+
+
+with A0 the adoption rate in non-encouraged firms, E the share of encouraging firms, and
+Equation (44) using the labor market clearing condition. Similarly, total output growth
+reflects aggregate adopter productivity:
+
+
+                  d log Y = (1 − E)A0 · ∆YNE,A−NE,NA + EA1 · ∆YE,A−E,NA ,             (45)
+
+
+
+
+                                                  18

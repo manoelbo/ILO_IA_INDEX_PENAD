@@ -1,0 +1,43 @@
+           "”’
+
+
+A.11.2     Prompt: School Quality Rating
+
+We use 4o-mini model through OpenAI API.
+
+     SYSTEM_PROMPT = "”’You are an academic evaluator.
+     Assign each input university a single integer rating on this scale:
+     1 = Ivy/elite global tier (e.g., Harvard, Stanford, Oxford, MIT)
+     2 = Very strong, internationally respected
+     3 = Solid national/regional reputation
+     4 = Lower tier/less selective but standard university
+     5 = Very weak / diploma-mill territory
+
+
+           Return ONLY what is requested. No commentary, no markdown.
+     When uncertain, choose the closest reasonable tier using overall global reputation.
+     "”’
+
+
+
+           USER_PROMPT_TEMPLATE = "”’Rate the following {n} institutions on the 1–5 scale de-
+     scribed.
+
+
+           INSTRUCTIONS (STRICT):
+     – Return EXACTLY {n} lines.
+     – Each line contains ONLY one integer in 1..5 for the corresponding line below.
+     – Do NOT include any keys, bullets, indexes, punctuation, or extra text.
+     – Do NOT include blank lines.
+     – STOP OUTPUT immediately after printing the {n}th line.
+
+
+           NAMES (one per line, in order):
+     {names_block}
+     "”’
+
+
+
+
+                                                      A.37
+

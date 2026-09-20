@@ -1,0 +1,73 @@
+     RAMBACHAN AND ROTH                A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                              2573
+
+Proposition 3.3. Suppose Assumptions 2–4 hold. Let θ Pub = sup S(β P , ). Then for any                          > 0,
+x > 0, and α < 0.5,
+                                                                        
+                                                    1  1                    
+             lim sup E P ψαC β̂ n , A, d, θ Pub + √ x, ˆ n    − ρα∗ (P, x) = 0,
+            n→∞ P∈P                                   n n
+
+where                                                                                                    
+                                                                                            1
+              ρα∗ (P, x) = lim          sup                Pβ̂ n ∼N (β P , 1        θ ub
+                                                                                         + √   x    ∈ C
+
+
+
+
+                                                                                                                          Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                                               P)     P                 α,n
+                             n→∞
+                                 Cα,n ∈Iα (, n1   P   )
+                                                                          n                  n
+
+is the optimal local asymptotic power of a size-α test in the finite sample normal model. An
+analogous result holds for the lower bound under the class of distributions where LICQ holds in
+direction −l.
+    Since the LF-hybrid test rejects whenever the conditional test with size (α − κ)/(1 − κ)
+rejects, it is immediate that the local asymptotic power of the LF-hybrid test is at least as good
+as the power of the optimal size-((α − κ)/(1 − κ)) test.
+Corollary 3.1. Under the conditions of Proposition 3.3,
+                                                                               
+                                                  1   1
+   lim inf inf E P ψκ,αC-L F
+                              β̂ n , A, d, θ P + √ x,
+                                             ub         ˆ n
+                                                                  ∗
+                                                               − ρ(α−κ)/(1−κ) (P, x) ≥ 0.
+    n→∞ P∈P                                        n n
+   We emphasize that Proposition 3.3 and Corollary 3.1 are new, and exploit structure in our
+context not contained in the more general setting considered in ARP.
+
+    3.5.2. Discussion and examples. As discussed in Kaido et al. (2021), LICQ and related
+constraint qualifications have been used frequently in the partial identification literature. Intu-
+itively, LICQ ensures that the bounds of the identified set are differentiable with respect to the
+means of the moments (μ̃(θ̄ )), and thus avoids challenges related to estimation and inference for
+non-differentiable parameters (Hirano and Porter, 2012). Uniform LICQ conditions have been
+invoked recently by Gafarov (2019) and Cho and Russell (2019), and a related Slater constraint
+qualification is used in Kaido and Santos (2014). One important distinction between our results
+and previous results using LICQ is that we do not require LICQ for our size control results
+(Proposition 3.1). Thus, our tests control size even when LICQ fails (and so the bounds may
+be non-differentiable), but Proposition 3.3 shows that this does not come at the cost of power
+asymptotically when indeed LICQ holds.22
+    Figure 1 provides geometric intuition for when LICQ will and will not hold in the case where
+T̄ = 2 and the target parameter is the average of the post-treatment effects, θ = 12 (τ1 + τ2 ). In
+                               ∗
+panel (a), there is a unique τ post (coloured in red) at which two linearly independent moments
+                                                                                         ∗
+bind, so LICQ is satisfied. LICQ is likewise satisfied in panel (b), where the optimal τ post is not
+                                                                                     ∗
+unique (a so-called “flat-face” problem). This is because at the indicated values τ post (coloured
+in red), there is either one or two linearly independent binding moments. A failure of LICQ is
+                                                                             ∗
+shown in panel (c). In this example, there are three binding moments at τ post  (coloured in red),
+so the binding constraints cannot be linearly independent in R . Such a situation may arise when
+                                                                2
+
+there are both smoothness restrictions and sign or shape restrictions that are simultaneously
+binding at the boundary of the identified set.
+
+
+      22. We view this result as loosely parallel to results in the weak identification literature showing that certain
+procedures control size under weak identification but are efficient under strong identification (e.g. Moreira, 2003).
+

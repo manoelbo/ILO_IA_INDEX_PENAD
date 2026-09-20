@@ -1,0 +1,34 @@
+                                                              Table C.3: Ground Truth Quality
+
+                                                   Prevalence    Share Rejecting 0.5 Average Number of Rads
+                                                Sinai Experiment Sinai  Experiment   Sinai    Experiment
+                   Top-Level with AI 0.147                    0.125          0.696            0.775             5.00                 14.04
+                   Pooled with AI    0.043                    0.031          0.892            0.932             5.00                 14.04
+                   Abnormal          0.194                    0.525          0.583            0.568             5.00                 14.04
+                   All Pathologies   0.013                    0.010          0.953            0.977             5.00                 14.04
+                                                                                                                                              PR     πr (ωi =1|sE
+                                                                                                                                                                i,r )
+Note: For each of the pre-registered pathology groups, this table shows the average prevalence, the share of cases where we can reject that    r=1          R
+                                                                                                                                                                        = 0.5 at the
+5% level, and the average number of reads per case for both the Mount Sinai ground truth labels and the experiment leave-one-out ground truth.
+
+
+
+
+                                                               Table C.4: Ground Truth Effort
+
+                                              Active Time   Clicks                        Agreement with Original
+                                              Mean    SD  Mean SD
+                                         1     77.24      42.78      34.30     17.93                      0.868
+                                         2     76.44      54.71      32.30     18.24                      0.851
+                                         3     25.55      30.34      10.84     12.29                      0.876
+                                         4     79.94      80.22      21.79     20.59                      0.866
+                                         5    112.96      82.96      26.14     20.12                      0.863
+Note: For each of the five Mount Sinai radiologists we compute the average and standard deviation of time spent per case and the number of clicks per case. In addition,
+we compute the average agreement with the original read as labeled by the CheXbert algorithm.
+
+
+
+
+                                                                                                                                                                                       74
+

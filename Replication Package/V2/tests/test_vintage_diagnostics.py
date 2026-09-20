@@ -7,7 +7,7 @@ import pandas as pd
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "ingest" / "diagnose_vintage.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "ingest" / "diagnose_vintage.py"
 
 
 def load_diagnostics_module():

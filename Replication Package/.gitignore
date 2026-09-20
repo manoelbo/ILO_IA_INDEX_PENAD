@@ -1,0 +1,10 @@
+V1/results/reproduced/
+V1/work/
+V2/data/raw/
+V2/results/*
+!V2/results/reference/
+!V2/results/reference/**
+V2/work/
+_raw/
+_bundle/
+_archive/

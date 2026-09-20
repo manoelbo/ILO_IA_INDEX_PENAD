@@ -1,0 +1,56 @@
+A         Theoretical Framework
+
+In this section, we introduce a theoretical framework to guide our empirical analysis.
+
+       In Section A.1, we first introduce a simple partial-equilibrium model of chatbot
+
+adoption to interpret the descriptive patterns in Section 1.4. We posit a Roy (1951) style
+
+selection model of chatbot adoption, in which employer initiatives may shift both the costs
+
+and benefits of adoption. We use the model to analyze how these shifts affect workers’
+
+adoption decisions and the work-related benefits they report from using the tools.
+
+       In Section A.2, we embed the adoption model within a labor market equilibrium model,
+
+in which differentiated firms adopt chatbot initiatives and hire workers to maximize profits.
+
+We use this model to guide and interpret the empirical analysis of labor market outcomes
+
+in Section 3.
+
+
+A.1        Adoption and Work
+A.1.1       Setup
+
+Worker i derives benefits Bi from using AI chatbots:
+
+
+                                         Bi = αb + βb × i,                                        (3)
+
+
+where individuals i ∼ U([0, 1]) are drawn uniformly from the unit interval and ordered
+
+by their individual benefits, such that βb ≤ 0. While we assume linear functional forms
+
+for analytical simplicity, our predictions also hold under more general monotonicity
+
+assumptions.
+
+       The worker also incurs a cost Ci of adopting chatbots:
+
+
+                                         Ci = αc + βc × i,                                        (4)
+
+
+where βc ≥ 0 if workers who benefit more from AI also face lower adoption costs.20
+  20
+    A common finding from RCTs is that AI chatbots tend to yield greater benefits for less experienced
+(and thus typically younger) workers (Brynjolfsson, Li and Raymond, 2025; Dell’Acqua et al., 2023; Noy
+and Zhang, 2023). If these workers also find it easier to adopt new tools, then βc ≥ 0.
+
+
+
+                                                  3
+

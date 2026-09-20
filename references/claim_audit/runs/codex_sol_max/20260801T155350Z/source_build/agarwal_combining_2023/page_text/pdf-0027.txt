@@ -1,0 +1,40 @@
+                                                                                                            27
+
+4.3    Discussion
+
+We find that AI assistance does not improve the performance of our participants on average,
+even though the AI predictions are more accurate than the majority of radiologists, and
+that radiologists respond to this assistance. However, the average treatment effects mask
+important heterogeneity – AI assistance improves performance for a large set of cases, but
+also decreases performance in many instances. These results point to biases in the use of AI
+predictions which we will further investigate in section 5.
+We also find that humans have access to valuable contextual information, suggesting that
+full automation has its drawbacks. But, the biases above – especially in conjunction with
+our finding that radiologists take longer when given AI assistance – undercut this potential
+information advantage in a setup that involves AI assistance. Thus, the problem of how best
+to deploy AI assistance may be non-trivial and the optimal solution may involve selective
+automation and/or AI assistance. Section 6 analyzes this problem.
+Appendix C.4 shows that the results are qualitatively robust to a variety of alternative
+analyses. The results are similar when we split the analysis by experimental design and when
+we only focus on the initial across-comparison (using design 1 and 2), although the latter leads
+to estimates that are imprecise. Alternative ground-truth measures – including a leave-one-
+out ground truth based on the assessments of our experimental participants and a continuous
+ground truth, which simply averages the assessments of the ground-truth labelers–also yield
+similar conclusions. The qualitative patterns of the treatment effects are unchanged if we
+calibrate each radiologists’ assessments to the ground-truth before conducting the analysis.
+Finally, incentives for accuracy, which are cross-randomized in designs 1 and 3, do not have
+significant effects either.
+
+
+5     Automation/Own-Information Bias/Neglect
+
+An upshot of the results in section 4 is that our participants deviate from the baseline of a
+Bayesian with correct beliefs about the joint distribution of their own information and the
+AI signal. In this section, we model and estimate systematic deviations from this benchmark
+– which we will refer to as Bayesian25 for short – and determine the implications of these
+deviations on utilizing human expertise and AI predictions.
+  25
+     The omission of the qualifier “with correct beliefs” slightly abuses terminology because a possible expla-
+nation of the deviations we have documented is that our participants are Bayesians but update their beliefs
+using an incorrect model for the joint distribution of sA , sE and ω. We will entertain this possibility below.
+

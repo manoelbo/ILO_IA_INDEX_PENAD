@@ -1,0 +1,32 @@
+### 5.2.4 Resultados por nível de escolaridade
+A Tabela 5.2.4 traz as estimativas por nível de escolaridade. Os contrastes DDD e os diagnósticos estão no apêndice.
+**Tabela 5.2.4: Heterogeneidade por nível de escolaridade**
+
+[TABLE]
+Grupo | Resultado | DiD no grupo | EP | p BH | Pretrend | Suporte
+Fundamental ou menos | Admissões (PPML, nível) | 0,0018 | 0,0531 | 0,974 | fail | adequate
+Fundamental ou menos | Desligamentos (PPML, nível) | 0,0141 | 0,0469 | 0,800 | fail | adequate
+Fundamental ou menos | Salário real de admissão (log) | −0,0080 | 0,0144 | 0,661 | fail | adequate
+Fundamental ou menos | Saldo líquido (asinh) | 0,3330 | 0,1668 | 0,112 | fail | adequate
+Médio | Admissões (PPML, nível) | −0,0438 | 0,0314 | 0,261 | fail | adequate
+Médio | Desligamentos (PPML, nível) | −0,0455 | 0,0307 | 0,244 | fail | adequate
+Médio | Salário real de admissão (log) | −0,0427\*\*\* | 0,0122 | 0,003 | fail | adequate
+Médio | Saldo líquido (asinh) | −0,2973 | 0,3251 | 0,470 | fail | adequate
+Superior | Admissões (PPML, nível) | −0,1075\*\* | 0,0371 | 0,017 | fail | adequate
+Superior | Desligamentos (PPML, nível) | −0,0939\*\* | 0,0363 | 0,035 | fail | adequate
+Superior | Salário real de admissão (log) | −0,0352\*\*\* | 0,0093 | 0,001 | fail | adequate
+Superior | Saldo líquido (asinh) | −1,1562\*\*\* | 0,3173 | 0,002 | fail | adequate
+[/TABLE]
+
+> *Notas: cada linha traz o DiD estimado dentro da amostra do próprio grupo, com erro-padrão clusterizado por CBO de quatro dígitos. Família C, de 130 testes; estrelas calculadas exclusivamente sobre o p ajustado de Benjamini-Hochberg: \\* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Estas células não medem heterogeneidade; o teste entre grupos é o DDD do Apêndice A. Fonte: `results/models/group_did_results.csv`.\*
+Os diferenciais negativos de fluxo são mais pronunciados entre trabalhadores com ensino superior. Dentro desse grupo, as estimativas são de −0,1075 nas admissões (p ajustado de 0,017) e −0,0939 nos desligamentos (p ajustado de 0,035), enquanto os níveis médio e fundamental não apresentam estimativas de fluxo abaixo de 5% após o ajuste. No salário, os diferenciais são negativos nos níveis médio e superior, mas não no fundamental.
+No contraste DDD, a direção se mantém e a magnitude é grande, **mas a significância fica no limite depois do ajuste de multiplicidade**. O contraste do ensino superior nas admissões é de −0,1108, com p nominal de 0,0145 e **p ajustado de 0,055**: fora do limiar de 5%, ainda que por pouco. Nos desligamentos ocorre o mesmo, com −0,1064 e p ajustado de 0,055. Dois contrastes do grupo sobrevivem ao ajuste: o fluxo bruto, com −0,1083 e p ajustado de 0,048, e o saldo líquido, com −0,8421 e p ajustado de 0,015. O sentido oposto também aparece: o contraste do ensino fundamental é positivo, com +0,1231 nas admissões, também no limite, e saldo de +0,9560 com p ajustado de 0,043.
+Os contrastes de fluxo do ensino superior apontam na direção negativa, mas, nas duas margens mais diretas, admissões e desligamentos, não cruzam o limiar ajustado. Apenas as medidas agregadas de fluxo bruto e saldo ficam abaixo de 5%. No salário, o DDD do ensino superior é de +0,0076, com p ajustado de 0,707, sem diferença detectável entre níveis. As falhas de pré-tendências impedem interpretação causal desses padrões.
+As Figuras 5.2.4.1 e 5.2.4.2 trazem os event studies e as trajetórias de admissões e salário real de admissão por escolaridade.
+**Figura 5.2.4.1: Admissões — event study e trajetórias por escolaridade**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/60273f1e-707d-4f3a-a4b6-a57229a20808/figure_5_2_4_1_education_admissions.png]
+**Figura 5.2.4.2: Salário real de admissão — event study e trajetórias por escolaridade**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/4fc552e5-f436-4e79-b799-ee9749a4e119/figure_5_2_4_2_education_wage.png]
+Nas admissões, as trajetórias do ensino superior mantêm as ocupações expostas abaixo das não expostas ao longo do pós-evento, e a separação entre níveis educacionais é visível. Nos salários, as trajetórias dos três níveis permanecem próximas. As figuras são descritivas e não corrigem as falhas de pré-tendências.
+A direção das estimativas dialoga com a Subseção 3.5.4, que mostrou aumento expressivo da exposição à IA com a escolaridade, mas exposição e ajuste não são equivalentes. Também é compatível com [Klein Teeselink (2025)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798), que encontra efeitos concentrados em firmas e ocupações de alta remuneração no Reino Unido. A comparação não é direta, pois remuneração não equivale a escolaridade. [Brynjolfsson, Chandar e Chen (2025)](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/) mostram ainda que ocupações com menor proporção de graduados também podem ser afetadas, enquanto [Hosseini Maasoum e Lichtinger (2026)](https://doi.org/10.2139/ssrn.5425555) identificam diferenças importantes dentro do próprio ensino superior.
+Em resumo: os contrastes educacionais ficam próximos do limiar nas margens principais. Entre trabalhadores com ensino superior, admissões e desligamentos têm p ajustado de 0,055, e apenas fluxo bruto e saldo ficam abaixo de 5%. Não há diferença salarial detectável por escolaridade nem base para afirmar contração líquida do emprego ou efeito causado pela IA.

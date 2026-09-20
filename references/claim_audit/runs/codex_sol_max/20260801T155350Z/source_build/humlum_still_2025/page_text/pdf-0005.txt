@@ -1,0 +1,58 @@
+wage bills, job creation or destruction, or composition of hires or separations, including
+
+early-career workers. These null results hold across occupations and persist even where
+
+encouragement is paired with enterprise chatbot solutions and training. While internal
+
+reorganization is underway, with workers reporting new AI-related tasks—especially in
+
+workplaces with chatbot initiatives—these changes have not translated into measurable
+
+differences in earnings or hours.
+
+   Overall, our findings challenge narratives of imminent labor market disruption from
+
+Generative AI. While we capture early impacts, two pieces of evidence suggest the
+
+limited labor market effects may persist in the foreseeable future. First, our dynamic
+
+difference-in-differences estimates remain flat throughout the two-year study period.
+
+Second, even among “AI front-runners”—workplaces that have adopted the full suite of
+
+proactive chatbot initiatives and workers who adopted early, use the tools daily, or report
+
+substantial benefits—the results remain null.
+
+
+Contributions to the Literature. The key contribution of this paper is to link
+
+large-scale, representative data on AI chatbot adoption to labor market outcomes in
+
+administrative records. This linkage brings critical nuance to existing evidence on how
+
+Generative AI relates to labor market outcomes.
+
+   First, a contemporaneous set of studies uses exposure measures—technical assessments
+
+of which job tasks are feasible to assist with AI chatbots—to examine whether exposed
+
+occupations have fared differently after the release of ChatGPT.Brynjolfsson, Chandar and
+
+Chen (2025) document a sharp decline in employment of early-career workers in AI-exposed
+
+occupations in the United States since 2022, suggesting that Generative AI may already
+
+be disrupting labor markets. Our key contribution is to split these employment trends by
+
+whether firms have actually adopted Generative AI. While we replicate the U.S. pattern of
+
+declining early-career jobs in exposed occupations in Denmark, our difference-in-differences
+
+analysis reveals that the declines are not driven by firms adopting AI chatbots.
+
+   Second, a small but growing number of studies field worker-level surveys on the
+
+
+                                             3
+

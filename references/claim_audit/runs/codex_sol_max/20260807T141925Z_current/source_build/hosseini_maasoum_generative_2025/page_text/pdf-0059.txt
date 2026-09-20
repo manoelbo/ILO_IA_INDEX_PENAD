@@ -1,0 +1,168 @@
+                                                   -.02
+
+
+
+            Junior Employment (DiD Coefficients)
+                                                   -.04
+
+
+
+
+                                                   -.06
+
+
+
+
+                                                   -.08
+
+
+
+
+                                                    -.1
+                                                          1                                                           2                             3                                  4                       5
+                                                                                                                                           University Prestige
+
+
+
+                                                                                             Figure A.12: Heterogeneity by School Quality
+  Notes: Each bar reports the estimated coefficient from re-estimating Equation 34 for junior employ-
+  ment separately within each of the five school-quality tiers. The specification replaces time dummies
+  with a single post-treatment indicator for quarters after 2023Q1. Estimation begins in 2018 to exclude
+  early-sample trends. Standard errors are clustered at the firm level.
+
+
+                                                                                            .1
+                                                              Log Size (DiD Coefficients)
+
+
+
+
+                                                                                             0
+
+
+
+
+                                                                                            -.1
+
+
+
+
+                                                                                            -.2
+                                                                                                  q1
+
+
+                                                                                                            q1
+
+
+                                                                                                                      q1
+
+
+                                                                                                                                q1
+
+
+                                                                                                                                          q1
+
+
+                                                                                                                                                    q1
+
+
+                                                                                                                                                              q1
+
+
+                                                                                                                                                                        q1
+
+
+                                                                                                                                                                                  q1
+
+
+                                                                                                                                                                                            q1
+
+
+                                                                                                                                                                                                      q1
+                                                                                             15
+
+
+                                                                                                        16
+
+
+                                                                                                                  17
+
+
+                                                                                                                            18
+
+
+                                                                                                                                      19
+
+
+                                                                                                                                                20
+
+
+                                                                                                                                                          21
+
+
+                                                                                                                                                                    22
+
+
+                                                                                                                                                                              23
+
+
+                                                                                                                                                                                        24
+
+
+                                                                                                                                                                                                  25
+                                                                                            20
+
+
+                                                                                                       20
+
+
+                                                                                                                 20
+
+
+                                                                                                                           20
+
+
+                                                                                                                                     20
+
+
+                                                                                                                                               20
+
+
+                                                                                                                                                         20
+
+
+                                                                                                                                                                   20
+
+
+                                                                                                                                                                             20
+
+
+                                                                                                                                                                                       20
+
+
+                                                                                                                                                                                                 20
+
+
+
+
+                                                                                                                                                Quarter
+
+                                                                                                             Tier-1              Tier-2              Tier-3
+                                                                                                             Tier-4              Tier-5
+
+
+
+
+           Figure A.13: DiD by Educational Background—Time Series (Juniors)
+    Notes: This figure plots β j from Equation 34, estimated separately for each of the five school-
+    quality tiers. Standard errors are clustered at the firm level.
+
+
+
+variable imputed using position-specific information.                                                                                                         For more details, see:                       https://www.data-
+dictionary.reveliolabs.com/methodology.html#salary.
+
+
+
+                                                                                                                                           A.14
+

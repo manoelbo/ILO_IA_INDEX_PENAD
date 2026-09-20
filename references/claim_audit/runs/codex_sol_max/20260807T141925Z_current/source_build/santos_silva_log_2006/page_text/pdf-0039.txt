@@ -1,0 +1,52 @@
+           Table A2: Common Oﬃcial and Second Languages.
+English           French             Spanish      Dutch
+Australia         Belgium-Luxembourg Argentina    Belgium-Lux
+Bahamas           Benin              Belize       Netherlands
+Barbados          Burkina Faso       Bolivia      Suriname
+Belize            Burundi            Chile
+Brunei            Cameroon           Colombia     German
+Cameroon          Canada             Costa Rica   Austria
+Canada            Central Afr Rep    Dominican Rp Germany
+Fiji              Chad               Ecuador      Switzerland
+Gambia            Comoros            El Salvador
+Ghana             Congo Dem Rep      Eq Guinea    Greek
+Guyana            Congo Rep          Guatemala    Cyprus
+Hong kong         Cote D’Ivoire      Honduras     Greece
+India             Djibouti           Mexico
+Indonesia         Eq Guinea          Nicaragua    Hungarian
+Ireland           France             Panama       Hungary
+Israel            Gabon              Paraguay     Romania
+Jamaica           Guinea             Peru
+Jordan            Haiti              Spain        Italian
+Kenya             Lebanon            Uruguay      Italy
+Kiribati          Madagascar         Venezuela    Switzerland
+Malawi            Mali
+Malaysia          Mauritania         Arabic       Lingala
+Maldives          Mauritius          Algeria      Congo Dem Rep
+Malta             Morocco            Bahrain      Congo Rep
+Mauritius         New Caledonia      Chad
+New Zealand       Niger              Comoros      Russian
+Nigeria           Rwanda             Djibouti     Mongolia
+Oman              Senegal            Egypt        Russian Federation
+Pakistan          Seychelles         Israel
+Panama            Switzerland        Jordan       Swahili
+Papua N Guinea Togo                  Lebanon      Kenya
+Philippines       Tunisia            Mauritania   Tanzania
+Rwanda                               Morocco
+Seychelles        Malay              Oman         Chinese
+Sierra Leone      Brunei             Saudi Arabia China
+Singapore         Indonesia          Sudan        Hong kong
+South Africa      Malaysia           Syria        Malaysia
+Sri Lanka         Singapore          Tanzania     Singapore
+St Helena                            Tunisia
+St Kitts Nev      Portuguese         Untd Arab Em
+Suriname          Angola             Yemen
+Tanzania          Brazil
+Trinidad Tbg      Guinea-Bissau      Turkish
+Uganda            Mozambique         Cyprus
+UK                Portugal           Turkey
+USA
+Zambia
+Zimbabwe
+                                 38
+

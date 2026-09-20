@@ -1,0 +1,70 @@
+53    ILO Working Paper 140
+
+
+
+
+     Exposure    4-digit code   Occupation Name                                        Mean   SD
+
+     Minimal
+     Exposure    2163           Product and Garment Designers                          0.35   0.09
+
+     Minimal
+     Exposure    2320           Vocational Education Teachers                          0.35   0.12
+
+     Minimal
+     Exposure    2354           Other Music Teachers                                   0.35   0.09
+
+     Minimal
+     Exposure    2355           Other Arts Teachers                                    0.35   0.1
+
+     Minimal
+     Exposure    3118           Draughtspersons                                        0.35   0.11
+
+     Minimal
+     Exposure    3122           Manufacturing Supervisors                              0.35   0.13
+
+     Minimal
+     Exposure    3334           Real Estate Agents and Property Managers               0.35   0.09
+
+     Minimal
+     Exposure    3521           Broadcasting and Audio-visual Technicians              0.35   0.11
+
+     Minimal
+     Exposure    1323           Construction Managers                                  0.34   0.06
+
+     Minimal
+     Exposure    1343           Aged Care Service Managers                             0.34   0.09
+
+     Minimal
+     Exposure    2353           Other Language Teachers                                0.34   0.11
+
+     Minimal
+     Exposure    3155           Air Traffic Safety Electronics Technicians             0.34   0.1
+
+     Minimal
+     Exposure    2262           Pharmacists                                            0.33   0.09
+
+     Minimal
+     Exposure    2359           Teaching Professionals Not Elsewhere Classified        0.33   0.1
+
+     Minimal
+     Exposure    3412           Social Work Associate Professionals                    0.33   0.13
+
+     Minimal
+     Exposure    1431           Sports, Recreation and Cultural Centre Managers        0.32   0.1
+
+     Minimal
+     Exposure    2230           Traditional and Complementary Medicine Professionals   0.32   0.11
+
+     Minimal
+     Exposure    3351           Customs and Border Inspectors                          0.32   0.14
+
+     Minimal
+     Exposure    5113           Travel Guides                                          0.32   0.11
+
+     Minimal
+     Exposure    8219           Assemblers Not Elsewhere Classified                    0.32   0.17
+
+     Minimal
+     Exposure    2655           Actors                                                 0.31   0.15
+

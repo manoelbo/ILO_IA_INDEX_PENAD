@@ -1,0 +1,46 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                       1297
+
+     Finally, the share of the labor force employed in occupations
+intensive in nonroutine manual tasks showed a secular decline
+across all decades. This decline was most rapid in the 1960s, and
+slowed considerably in subsequent decades.
+     Panel A of Table II provides the corresponding means of task
+input by decade, both in aggregate and by gender. For both males
+and females, there are pronounced shifts against routine cogni-
+tive, routine manual, and nonroutine manual task inputs, and
+pronounced shifts favoring nonroutine analytic and interactive
+inputs. These shifts, however, are numerically larger for females.
+Given the rapid entry of women into the labor force in recent
+decades, it appears plausible that demand shifts for workplace
+tasks would impact the stock of job tasks more rapidly for females
+than males [Goldin 1990; Weinberg 2000; Blau, Ferber, and Wink-
+ler 2002, Chapter 4]. To assess the importance of these gender
+differences, we estimated all of our main results separately for
+males and females. Because we found quite similar results for
+both genders, we focus below on the pooled gender samples.
+     To complete the picture provided by the decadal means,
+Figure II depicts smoothed changes in the density of the two
+routine and two nonroutine cognitive task measures between
+1960 and subsequent decades. Three series are plotted for each
+task measure. Two depict extensive margin task shifts at approxi-
+mately twenty-year intervals. These are measured using the 1977
+DOT task measures paired to the 1960, 1980, and 1998 employ-
+ment data. The third series adds intensive margin task shifts by
+pairing the 1991 DOT task measures with the 1998 employment
+data. By construction, task input is uniformly distributed across
+all percentiles in 1960. Hence, the height of each line in the gure
+represents the difference in the share of overall employment in
+1980 or 1998 at each centile of 1960 task input.15 To conserve
+space, we do not provide a plot of the nonroutine manual mea-
+sure, since it is not the subject of subsequent analysis.
+     As shown in panels A and B of the gure, the distribution of
+nonroutine analytic and nonroutine interactive task input shifted
+markedly rightward after 1960. In particular, there was substan-
+tial growth in the share of employment requiring nonroutine task
+input above the 1960 median and a corresponding decline below
+
+
+   15. We apply an Epanechnikov kernel with bandwidth h 5 0.90sn 2 1 /5 ,
+where n is the number of observations and s is the standard deviation. For our
+samples, this yields bandwidths between 5 and 7 centiles.
+

@@ -1,0 +1,47 @@
+        Table 1: Simulation results under diﬀerent forms of heteroskedasticity
+                 Results without rounding error           Results with rounding error
+                       β1                 β2                   β1                β2
+  Estimator:      Bias     S.E.     Bias       S.E.       Bias      S.E.    Bias    S.E.
+  Case 1:                                      V [yi |x] = 1
+  PPML          −0.00004 0.016 0.00009 0.027 0.01886 0.017 0.02032 0.029
+  NLS           −0.00006 0.008 −0.00003 0.017 0.00195 0.008 0.00274 0.018
+  GPML           0.01276 0.068 0.00754 0.082 0.10946 0.096 0.09338 0.108
+  OLS            0.39008 0.039 0.35568 0.054               –         –       –       –
+  ET-Tobit      −0.47855 0.030 −0.47786 0.032 −0.49981 0.030 −0.49968 0.032
+  OLS (y > 0.5) −0.16402 0.027 −0.15487 0.038 −0.22121 0.026 −0.21339 0.036
+  OLS (y + 1) −0.40237 0.014 −0.37683 0.022 −0.37752 0.015 −0.34997 0.024
+  Case 2:                                  V [yi |x] = µ (xi β)
+  PPML          −0.00011 0.019 0.00009 0.039 0.02190 0.020 0.02334 0.041
+  NLS            0.00046 0.033 0.00066 0.057 0.00262 0.033 0.00360 0.057
+  GPML           0.00376 0.043 0.00211 0.062 0.13243 0.073 0.11331 0.087
+  OLS            0.21076 0.030 0.19960 0.049               –         –       –       –
+  ET-Tobit      −0.42394 0.028 −0.42316 0.033 −0.45518 0.028 −0.45513 0.033
+  OLS (y > 0.5) −0.17868 0.026 −0.17220 0.043 −0.24405 0.026 −0.23889 0.040
+  OLS (y + 1) −0.42371 0.015 −0.39931 0.025 −0.39401 0.016 −0.36806 0.028
+  Case 3:                                  V [yi |x] = µ (xi β)2
+  PPML          −0.00526 0.091 −0.00228 0.130 0.02332 0.091 0.02812 0.133
+  NLS            0.23539 3.066 0.07323 1.521 0.23959 3.082 0.07852 1.521
+  GPML          −0.00047 0.041 −0.00029 0.083 0.17134 0.068 0.14442 0.104
+  OLS            0.00015 0.032 −0.00003 0.064              –         –       –       –
+  ET-Tobit      −0.31908 0.044 −0.32161 0.058 −0.36480 0.043 −0.36789 0.056
+  OLS (y > 0.5) −0.34480 0.039 −0.34614 0.064 −0.41006 0.037 −0.41200 0.060
+  OLS (y + 1) −0.51804 0.021 −0.50000 0.038 −0.48564 0.022 −0.46597 0.040
+  Case 4:                       V [yi |x] = µ (xi β) + exp (x2i ) µ (xi β)2
+  PPML          −0.00696 0.103 −0.00647 0.144 0.02027 0.104 0.01856 0.146
+  NLS            0.35139 7.516 0.08801 1.827 0.35672 7.521 0.09239 1.829
+  GPML           0.00322 0.057 −0.00137 0.083 0.12831 0.085 0.10245 0.129
+  OLS            0.13270 0.039 −0.12542 0.075              –         –       –       –
+  ET-Tobit      −0.29908 0.049 −0.42731 0.063 −0.34351 0.047 −0.46225 0.060
+  OLS (y > 0.5) −0.41391 0.042 −0.41391 0.070 −0.45188 0.040 −0.46173 0.066
+  OLS (y + 1) −0.51440 0.021 −0.58087 0.041 −0.48627 0.022 −0.56039 0.044
+
+
+  In the first set of experiments, the results of the gamma PML estimator are very good.
+Indeed, when no measurement error is present, the biases and standard errors of the
+GPML estimator are always among the lowest. However, this estimator is very sensitive
+to the form of measurement error considered in the second set of experiments, consistently
+leading to sizable biases. These results, like those of the NLS, clearly illustrate the danger
+of using a PML estimator that gives extra weight to the noisier observations.
+
+                                             20
+

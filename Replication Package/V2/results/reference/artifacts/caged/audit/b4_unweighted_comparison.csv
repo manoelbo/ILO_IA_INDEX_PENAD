@@ -1,0 +1,4 @@
+outcome,estimator,coefficient,standard_error,p_value,n_obs,n_clusters,weighting,base_outcome
+ln1p_admissoes,ols,-0.01073062688212278,0.028455521400663097,0.7063332498612485,22049,341,occupation_month_equal,admissoes
+ln1p_desligamentos,ols,-0.02921040674418424,0.028033683978310575,0.29816345340769534,22049,341,occupation_month_equal,desligamentos
+ln1p_n_movimentacoes,ols,-0.021221392144329717,0.02683585755618978,0.42962074372536474,22049,341,occupation_month_equal,n_movimentacoes

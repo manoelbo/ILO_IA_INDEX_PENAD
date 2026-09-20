@@ -1,0 +1,39 @@
+            crosses the horizontal 50% success line at 3.5 hours, suggesting that API calls
+            attain a 50% success rate for tasks that are 3.5 hours. The analogous time
+            estimate in METR’s software engineering benchmark is 2 hours for Sonnet 4.5
+            and about 5 hours for Opus 4.5. (The data in this report predates the release of
+            Opus 4.5.)
+
+            Claude.ai data tells a different story. Success rates decline far slower as a
+            function of task length. Extrapolating using the linear fit, Claude.ai would
+            hit a 50% success rate at about 19 hours. This may reflect how multi-turn
+            conversation effectively breaks complex tasks into smaller steps, with each
+            turn providing a feedback loop that allows users to correct course.
+
+            It’s worth noting that a fundamental difference from the METR setting is
+            selection. METR constructs a benchmark where a fixed set of tasks is assigned
+            to models. In our data, users choose which tasks to bring to Claude. This means
+            observed success rates reflect not just model capability but also user judgment
+            about what will work, the cost of setting up the problem for Claude, and the
+            expected time savings if the task succeeds.
+
+            If users avoid tasks they expect to fail, for example, observed success rates
+            will overstate true capability on the full distribution of potential tasks. This
+            selection likely operates on both platforms, but in different ways: API
+            customers select for tasks amenable to automation, while Claude.ai users
+            select for tasks that could benefit from iteration. Also due to this selection
+            effect, there’s no guarantee that more performant models would show
+            improvement in this plot, because users may respond to new models by
+            providing more challenging presentations of otherwise similar O*NET tasks.
+
+            Controlled benchmarks like METR’s measure the frontier of autonomous
+            capability. Our real-world data can measure the effective task horizon,
+            reflecting a mix of model capabilities and user behavior, and expanding
+            beyond coding tasks. Both approaches find that AI can be effective for tasks
+            requiring hours of human work.
+
+
+
+
+The Anthropic Economic Index Report                                                            42
+

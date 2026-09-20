@@ -1,0 +1,35 @@
+marked over the one-year horizon.
+   For the Task-by-Task Index, the average exposure increases substantially to 0.56, compared to
+0.38 in the baseline. This highlights the fact that exposure to individual tasks does not linearly
+translate into the same exposure to job replacement. In other words, some occupations have high
+task-exposure but are embedded in occupation-specific contexts that mitigate overall exposure.
+Additionally, as previously mentioned, the disaggregated approach does not account for how the
+interrelation of tasks may result in different levels of exposure to replacement. However, it is
+worth noting that this index, despite having higher values, exhibits a high correlation with the
+baseline index (0.89).
+   The specific LLM Index estimations suggest that although a significant source of exposure
+emerges from the enhanced capabilities of language model technologies (with an index value of
+0.20), it accounts for only 54% of the general AI index. Thus, the model considers broader potential
+applications of AI in the baseline scenario. The overall correlation with the GENOE is modest, at
+about 0.47. It is also noteworthy that the LLM Index is more correlated with some of the existing
+indexes of AI exposure, such as Felten et al. (2021)’s AIOE and Pizzinelli et al. (2023)’s C-AIOE.
+This may reflect the fact that these indexes also capture the specific impacts of language model
+technologies and their applications.
+   Exposure to non-AI technologies is also considerable, with an average index value of about
+0.34. Interestingly, most occupations exposed to AI are also exposed to other types of technologies,
+as suggested by the high correlation of the Non-AI Index with the baseline (0.95). Additionally,
+this index is most correlated with the Frey and Osborne (2017) measure of exposure, probably
+because that index relates more closely to the broader exposure to computerization, including
+non-AI innovations.
+   The final ”Only AI” Index allows us to determine which occupations will experience a higher
+increase in exposure to technology specifically due to AI. The average value of this index is low,
+at 0.04, but it reaches up to 0.39 for the highest values. Occupations with the highest values
+include clerical workers and data-intensive and writing-intensive roles such as translators, credit
+analysts, insurance underwriters, customer service representatives, paralegals, loan officers, and
+proofreaders.
+
+
+
+
+                                                16
+

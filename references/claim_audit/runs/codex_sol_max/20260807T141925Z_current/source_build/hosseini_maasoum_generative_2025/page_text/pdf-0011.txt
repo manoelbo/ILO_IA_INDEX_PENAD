@@ -1,0 +1,35 @@
+ing employment. Simon (2025) documents that entry-level job postings have declined
+more than 35 percent since January 2023, with the steepest drops in highly exposed roles:
+a 10-point increase in exposure predicts an 11 percent decline in entry-level demand,
+while senior roles in those same occupations increase by 7 percent. Dominski and Lee
+(2025) link occupational exposure scores to CPS data and, using a first-difference de-
+sign, show that higher GenAI exposure is associated with reduced employment. More
+recently, Lodefalk et al. (2026) use Swedish job-posting and register data in an employer-
+level difference-in-differences design and find a widening age gradient in hiring: since
+the release of ChatGPT, employment of workers aged 22–25 in high-exposure occupa-
+tions has fallen by about 5.5 percent relative to less-exposed occupations within the same
+employers, while workers over 50 have seen a slight increase. Crane and Soto (2026) fo-
+cus on computer-programming occupations—among the most AI-exposed—and, using a
+within- versus between-industry decomposition of CPS data, find that coder employment
+growth is roughly 3 percentage points lower post-ChatGPT than pre-ChatGPT, even after
+controlling for industry-level shocks.10 By contrast, Chandar (2025) and Financial Times
+(2025) do not find systematic differences in employment patterns between more- and less-
+exposed occupations in CPS data. Eckhardt and Goldschlag (2025) compare unemploy-
+ment patterns using five exposure measures, finding statistically significant differences
+for only two, with even those effects relatively small.
+   Our contribution to this literature is to move beyond occupation-level exposure in-
+dices and provide broad-based evidence using a more direct measure of firm-level adop-
+tion, identified through postings for explicit “GenAI integrator” roles. Moreover, unlike
+exposure-based measures, our adoption measure varies over time, allowing us to exploit
+variation in adoption timing with an event-study design.
+  10 Motivated by this body of evidence, Friebel et al. (2026) model the dynamic implications of reduced
+
+junior hiring for the short- and long-run structure of firms’ workforce. Relatedly, Ide (2025) develop an
+overlapping-generations model in which AI-driven entry-level automation weakens the intergenerational
+transmission of tacit knowledge from experts to novices, potentially reducing long-run growth.
+
+
+
+
+                                                   11
+

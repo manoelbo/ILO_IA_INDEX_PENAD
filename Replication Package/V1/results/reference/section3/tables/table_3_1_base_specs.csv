@@ -1,0 +1,18 @@
+Item,Value
+Source,"PNADc 2025 Q3 (IBGE) + ILO WP140 (Gmyrek et al., 2025)"
+Universe,Employed workers ages 18-65 with a valid occupation code
+Sample observations,207.901
+Population represented (millions),97.8
+Population with exposure score (millions),97.0
+Sample weight,V1028
+PNAD source aliases selected,15
+ILO ISCO-08 occupations,427
+COD occupations with match,422 of 428
+Score coverage (% population),99.2
+4-digit match (% rows),97.9
+3-digit match (% rows),1.3
+No score (% rows),0.8
+Federal units,27
+Original sector categories in input,17
+Corrected CNAE sector categories,19
+Reference minimum wage,BRL 1.518

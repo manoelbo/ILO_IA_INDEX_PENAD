@@ -1,0 +1,50 @@
+is equal to 0.0003.18 σbf e = 7 × 10−4 , meaning that βf e may be of a different sign than the ATEs
+of all the treated (g, t) cells if the standard deviation of those ATEs is equal to 0.0007. We also
+estimate the weights attached to βbf d . 5,472 are strictly positive, and 4,605 are strictly negative.
+The negative weights sum to -1.43. σ     bf d = 4 × 10−4 , and σ
+                                                               bf d = 6 × 10−4 .
+Therefore, βf e and βf d can only receive a causal interpretation if the weights attached to them
+are uncorrelated with the intensity of the treatment effect in each county×election-year cell
+(Assumptions 7 and 8, respectively). This is not warranted. First, as βbf e and βbf d significantly
+differ, Assumptions 7 and 8 cannot jointly hold. Moreover, the weights attached to βbf e and
+βbf d are correlated with variables that are likely to be themselves associated with the intensity
+of the treatment effect in each cell. For instance, the correlation between the weights attached
+to βbf d and t, the year variable, is equal to −0.06 (t-stat=-3.28). The effect of newspapers
+may be different in the last than in the first years of the panel. For instance, new means of
+communication, like the radio, appear in the end of the period under consideration, and may
+diminish the effect of newspapers.19 This would lead to a violation of Assumption 8.
+The stable groups assumption holds: between each pair of consecutive elections, there are coun-
+ties where the number of newspapers does not change. We use the fuzzydid Stata package,
+downloadable with its help file from the SSC repository, to estimate a modified version of our
+DIDM estimator, that accounts for the fact that the number of newspapers is not binary (see
+section ?? of our Web Appendix, where we define this modified estimator). We include state-
+year fixed effects as controls in our estimation. We find that DIDM = 0.0043, with a standard
+error of 0.0015. DIDM is 66% larger than βbf d , and the two estimators are significantly different
+at the 10% level (t-stat=1.69). DIDM is also of a different sign than βbf e .
+Our DIDM estimator only relies on a common trends assumption. To assess its plausibility, we
+compute DIDpl  M , the placebo estimator introduced in Section 4.
+                                                                    20
+                                                                       As shown in Table 3 below,
+our placebo estimator is small and not significantly different from 0, meaning that counties
+where the number of newspapers increased or decreased between t − 1 and t did not experience
+significantly different trends in turnout from t − 2 to t − 1 than counties where that number was
+stable. Our placebo estimator is estimated on a subset of the data: for each pair of consecutive
+time periods t − 1 and t, we only keep counties where the number of newspapers did not change
+between t − 2 and t − 1. Still, almost 80% of the county × election-year observations are used in
+the computation of the placebo estimator. Moreover, when reestimated on this subsample, the
+DIDM estimator is very close to the DIDM estimator in the full sample.
+  18
+     The number of newspapers is not binary, so strictly speaking, in this application the parameter of interest is
+the average causal response parameter introduced in Section ?? of our Web Appendix, rather than the ATT.
+  19
+     In fact, Gentzkow et al. (2011) analyze the 1868 to 1928 period separately from later periods, because the
+growth of the radio may have changed newspapers’ effects.
+  20
+     Again, we need to slightly modify DIDpl
+                                          M to account for the fact that the number of newspapers is not binary.
+
+
+
+
+                                                        22
+

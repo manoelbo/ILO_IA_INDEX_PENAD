@@ -1,0 +1,13 @@
+{
+  "causal_effect_claim_authorized": false,
+  "component": "rais",
+  "cross_language_max_coefficient_difference": 5.967448757360216e-16,
+  "cross_language_max_standard_error_difference": 1.2127599272049316e-11,
+  "cross_language_pretrend_models": 3,
+  "cross_language_status": "pass",
+  "family": "D",
+  "family_size": 3,
+  "interpretation": "complementary_measurement_evidence",
+  "pretrend_failures": 2,
+  "status": "pass_with_noncausal_limit"
+}

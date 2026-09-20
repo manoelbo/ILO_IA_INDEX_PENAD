@@ -1,0 +1,34 @@
+                                                     WORKING PAPER
+
+
+
+
+Figure 1: Taken directly from GPT-4 Technical Report (OpenAI, 2023b). To get a sense of how quickly
+model capabilities are progressing – consider the jump in exam performance between GPT-3.5 and GPT-4
+(OpenAI, 2023b).
+
+
+    Our study is motivated less by the progress of these models alone though, and more by the breadth,
+scale, and capabilities we’ve seen in the complementary technologies developed around them. The role of
+complementary technologies remains to be seen, but maximizing the impact of LLMs appears contingent
+on integrating them with larger systems (Bresnahan, 2019; Agrawal et al., 2021). While the focus of our
+discussion is primarily on the generative capabilities of LLMs, it is important to note that these models can
+also be utilized for various tasks beyond text generation. For example, embeddings from LLMs can be used
+for custom search applications, and LLMs can perform tasks such as summarization and classification where
+the context may be largely contained in the prompt.
+    To complement predictions of technology’s impacts on work and provide a framework for understanding
+the evolving landscape of language models and their associated technologies, we propose a new rubric
+for assessing LLM capabilities and their potential effects on jobs. This rubric (A.1) measures the overall
+exposure of tasks to LLMs, following the spirit of prior work on quantifying exposure to machine learning
+(Brynjolfsson et al., 2018; Felten et al., 2018; Webb, 2020). We define exposure as a proxy for potential
+economic impact without distinguishing between labor-augmenting or labor-displacing effects. We employ
+human annotators and GPT-4 itself as a classifier to apply this rubric to occupational data in the U.S. economy,
+primarily sourced from the O*NET database.1 2
+    To construct our primary exposure dataset, we collected both human annotations and GPT-4 classifications,
+using a prompt tuned for agreement with a sample of labels from the authors. We observe similar agreement
+    1This is distinct from recent social science research that makes use of LLMs to simulate human behavior (Horton, 2023; Sorensen
+et al., 2022)
+    2While our exposure rubric does not necessarily tie the concept of language models to any particular model, we were strongly
+motivated by our observed capabilities of GPT-4 and the suite of capabilities we saw in development with OpenAI’s launch partners
+(OpenAI, 2023b).
+

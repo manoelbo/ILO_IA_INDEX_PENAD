@@ -1,0 +1,49 @@
+                   Table A.1: AI Usage Patterns by Revelio Seniority Tercile
+
+                                                      Low       Medium               High
+                                                  (Junior-type)                  (Senior-type)
+         Number of occupations                         151             202             206
+         Avg. Revelio seniority                        1.36            2.03            3.11
+         Avg. experience (years, O*NET)                1.39            2.34            3.57
+         Collaboration mode shares (%)
+           Directive                                   24.4            23.9            26.1
+           Feedback loop                                3.4             2.2             3.0
+           Learning                                    13.0            16.7            15.5
+           Validation                                   1.1             2.6             3.7
+           Task iteration                              12.5            17.9            22.8
+           Displacement intensity (%)                  52.0            42.0            40.4
+           Augmentation intensity (%)                  48.0            58.0            59.6
+         Notes: Each observation is an occupation. Occupations are divided into terciles based
+        on the average seniority level of workers observed in Revelio Labs/LinkedIn data as of
+        January 2023, restricted to occupations with ≥50 observed workers. Collaboration mode
+        shares are weighted averages across an occupation’s tasks, with weights proportional to
+        AEI task usage counts. Displacement and augmentation intensities are computed at the task
+        level as displacement/(displacement + augmentation) and augmentation/(displacement +
+        augmentation), respectively, then averaged across tasks within each occupation and across
+        occupations within each tercile. Displacement-type interactions include directive and feed-
+        back loop modes; augmentation-type interactions include learning, validation, and task
+        iteration modes. The five collaboration mode shares do not sum to 100% because a sub-
+        stantial fraction of task-matched conversations are not confidently assigned to any mode
+        by the AEI classification algorithm; displacement and augmentation intensities are com-
+        puted using only the classified subset and sum to 100% by construction. Values above 50%
+        for displacement intensity indicate that GenAI usage for a given task tilts toward automa-
+        tion rather than augmentation. The AEI data cover Claude interactions during November
+        13–20, 2025.
+
+
+complement to expert judgment in senior-intensive occupations.
+
+
+A.7.4   Discussion
+
+The AEI analysis provides descriptive evidence consistent with the core mechanism of
+the conceptual framework. The framework assumes that GenAI is more likely to au-
+tomate the routine, codifiable tasks that constitute the bulk of junior work, while the
+complex, judgment-intensive tasks that characterize senior work are more likely to in-
+volve augmentation-type GenAI usage. The data show that this asymmetry manifests
+
+
+
+
+                                                  A.30
+

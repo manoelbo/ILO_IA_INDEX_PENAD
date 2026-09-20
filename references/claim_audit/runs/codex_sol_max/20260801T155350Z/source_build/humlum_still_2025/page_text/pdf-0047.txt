@@ -1,0 +1,57 @@
+where I(j) denotes the set of workers employed at firm j.
+
+   The production function in Equation (13) models AI chatbots as tools that affect output
+
+only when actively deployed by workers. While we view this as a realistic representation
+
+of current chatbot technology—which depends on direct human prompting—Section
+
+A.2.1 examines the implications of a more general technology where chatbots may affect
+
+production beyond individual use.
+
+   Product markets are characterized by monopolistic competition, where atomistic and
+
+horizontally differentiated firms hire labor and produce output to maximize profits. Firms
+
+face the product demand curves:
+
+
+                                         Yj = Pj−ϵ ,                                    (14)
+
+
+where ϵ is the elasticity of demand across firms within the sector.
+
+
+Labor demand. Labor markets are perfectly competitive, so workers are paid according
+
+to the marginal revenue product of labor:
+
+                                     ∂Pj Yj              −1
+                              Wj =          = (1 − 1/ϵ)Yj ϵ .                           (15)
+                                      ∂Hj
+
+Since firms’ production and demand curves are symmetric, and workers derive the same
+
+net benefit α̂1 from employer encouragement across employers, two skill prices Wj exist in
+
+equilibrium: one at encouraged employers W1 and one at non-encouraged employers W0 .
+
+Let j ∈ {0, 1} indicate whether a firm encourages chatbot use.
+
+   Equilibrium skill prices adjust to equate the supply and demand for human capital
+
+across encouraged and non-encouraged employers. These supply and demand forces reflect
+
+workers’ sorting and adoption decisions, as well as firms’ encouragement and hiring policies.
+
+We characterize equilibrium skill prices in Section A.2.3.
+
+
+Employer encouragement. Employers derive log utility from flow profits and encour-
+
+age AI chatbots if the utility from the resulting profit gain exceeds their encouragement
+
+
+                                             12
+

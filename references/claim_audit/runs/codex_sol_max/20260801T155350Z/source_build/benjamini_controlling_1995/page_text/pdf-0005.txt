@@ -1,0 +1,55 @@
+292                           BENJAMINI AND HOCHBERG                            [No.1,
+                                   2.2. Examples
+   The following examples show the relevance of FOR control in some typical situa-
+tions. In addition they indicate the desirability of a large number of rejections (dis-
+coveries). Both aspects are addressed by the procedure given later in Section 3.
+   One type of multiple-comparison problem involves an overall decision (conclu-
+sion, recommendation, etc.) which is based on multiple inferences. An example of
+this type of problems is the 'multiple end points problem', which was used earlier
+to show that FWER control is not always needed. In this example the overall
+decision problem is whether to recommend a new treatment over a standard
+treatment. Discoveries here are rejections of null hypotheses claiming that treatment
+
+
+
+
+                                                                                          Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+is no better than standard on specified end points. These conclusions about different
+aspects of the benefit of the new treatment are of interest per se, but the set of
+discoveries will be used to reach an overall decision regarding the new treatment.
+We wish therefore to make as many discoveries as possible (which will enhance a
+decision in favour of the new treatment), subject to control of the FDR. Control
+of the probability of any error is unnecessarily stringent, as a small proportion of
+errors will not change the overall validity of the conclusion.
+   Another type of problems involves multiple separate decisions without an overall
+decision being required. An example of this type is the multiple-subgroups problem,
+where two treatments are compared in multiple subgroups, and separate recommen-
+dations on the preferred treatments must be made for all subgroups. As usual
+we wish to discover as many as possible significant differences, thereby reaching
+operational decisions, but would be willing to admit a prespecified proportion of
+misses, i.e. willing to use an FOR controlling procedure.
+   The third type involves screening problems, where multiple potential effects are
+screened to weed out the null effects. One example is screening of various chemicals
+for potential drug development. Another example is testing multiple factors in
+an experimental (2 k say) design. In such examples we want to obtain as many as
+possible discoveries (candidates for drug developments, factors that affect the
+quality of a product) but again wish to control the FOR, because too large a fraction
+of false leads would burden the second phase of the confirmatory analysis.
+
+                            2.3. Alternative Formulations
+   We have suggested to capture the error rate vaguely described as 'the proportion
+of false discoveries' using the FOR. At this point it might be illuminating to discuss
+alternative formulations of this concept, and thus to motivate our choice of FOR
+further.
+   Undoubtedly, controlling the random variable Q at each realization is most desir-
+able. This is impossible, for if m., = m and even if a single hypothesis is rejected
+vir = 1 and Q cannot then be controlled. Controlling (VIR IR > 0) has the same
+problem - it is identically 1 in the above configuration. Therefore E(V IR IR > 0)
+cannot be controlled. The FOR, instead, is P(R > 0) E(V IR IR > 0), and, as will
+be shown later, this is possible to control.
+   Second, consider the formulation that Soric (1989) gave to 'the proportion of
+false discoveries among the discoveries' as Q' = E(V)lr. This quotient is neither
+the random variable Q nor its expectation but is a mixture of expectations and
+realizations. It is not even the conditional expectation of Q, namely E(Q IR = r)
+ = E(V IR = r)lr, which has again the problem of control for m., = m.
+

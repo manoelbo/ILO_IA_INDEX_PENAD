@@ -1,0 +1,41 @@
+    The use of stratified PSM helps us to address selection bias by ensuring that matched
+firms are similar in terms of observable characteristics that jointly influence both AI
+adoption and productivity. Moreover, by using US firms as a benchmark, we exploit
+variation in AI adoption that is plausibly exogenous to EU-specific institutional or policy
+environments. This strategy enhances the credibility of our identification and allows us to
+interpret the estimated effects as causal under the assumption of conditional independence
+(Rosenbaum and Rubin, 1983; Dehejia and Wahba, 2002).5
+
+                  Figure 6: Balancing properties before and after matching
+
+
+
+
+Note: The bars present the standardized percentage biases before and after matching for the selected
+variables, with the numbers highlighting the absolute bias reduction after matching (positive values mean
+that EU firms score higher). For each EU firm, the matched sample includes the five nearest-neighbour
+US firms based on propensity scores calculated using the specified matching variables. Source: EIBIS
+2019-2024.
+
+
+
+    Overall, our matching procedure is effective, as evidenced by the substantial reduction
+in covariate imbalances between EU and US firms. Prior to matching, US firms exhibit
+a significantly higher investment intensity – by approximately 8.2 percent – compared
+to their EU counterparts. After matching, this difference narrows to just 0.8 percent,
+representing a 90% reduction in the initial gap (Figure 6). Similar improvements are
+observed across all other matching variables, indicating that the matched US firms closely
+
+   5
+     We use the k-nearest neighbour approach to find the best possible match between US and EU
+firms. We choose k = 5 to balance the trade-off between having enough variation for a reasonable match
+while reducing potential overlap across matches. Lower values of k risk putting too much weight on any
+given US company. In turn, since our sample of US firms is considerably smaller than that of EU firms,
+expanding the set of nearest neighbours used for matching risks a high degree of overlap in the matching
+for any given pair of EU firms. Nonetheless, our main results remain robust to matching procedures with
+k = 3 and k = 7.
+
+
+
+                                                   13
+

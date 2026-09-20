@@ -1,0 +1,46 @@
+            the importance of model design and training. While Claude is able to respond
+            in a highly sophisticated manner, it tends to do so only when users input
+            sophisticated prompts.
+
+            How models are trained, fine-tuned and instructed affects how they respond to
+            users. For example, one AI model could have a system prompt that instructs it
+            to always use simple language that a middle school student could understand,
+            whereas another AI model may only respond in complex language that
+            would require a PhD education to understand. For Claude, we observe a more
+            dynamic pattern where how the user prompts Claude relates to how Claude
+            responds.
+
+
+
+
+            Higher income and higher usage are related to more
+            augmentation
+
+            Higher per capita usage countries, which tend to be higher per capita income
+            countries, show lower automation, and less decision-making autonomy
+            delegated to Claude. That is, higher income countries use AI more as an
+            assistant and collaborator rather than letting it work independently. This
+            relationship is not significant at the US state level, perhaps because income
+            variation and use case diversity are more limited within the United States
+            than globally. This mirrors a finding from our 3rd Economic Index report
+            where countries with higher Anthropic AI Usage Index tend to use Claude in
+            a more collaborative manner (augmentation), rather than letting it operate
+            independently (automation).
+
+
+
+
+            Conclusion
+
+            The striking geographic variation in our data shows that Claude is used in
+            different ways around the world. GDP predicts the Anthropic AI Usage Index at
+            both the country and US state level, and human education—the sophistication
+            of user prompts—correlates with adoption at both levels as well.
+
+            Other relationships depend on context. At the country level, higher usage
+            correlates with shorter tasks and less AI autonomy; within the US, these
+
+
+
+The Anthropic Economic Index Report                                                         35
+

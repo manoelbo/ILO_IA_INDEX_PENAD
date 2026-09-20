@@ -1,0 +1,35 @@
+measure AI’s impact. Recent findings have been varied. Humlum and Vestergaard (2025) use
+Danish administrative data to find minimal effects on earnings or hours worked, while Jiang
+et al. (2025) find AI exposure is correlated with longer work hours in the U.S.4 This paper
+adds additional color to this growing set of findings. In line with Humlum and Vestergaard
+(2025), I find little evidence of an aggregate decline in employment for exposed occupations.
+However, in contrast to their work, I find heterogeneity in employment trends across exposed
+occupations, with these differences correlated with features such as education. The diver-
+gent paths of software developers and customer service representatives, for example, suggest
+nuance in predictions of labor market changes for exposed workers.5
+    Finally, this work highlights an important methodological issue: the divergence between
+job postings and employment data. Recent studies have used job postings to measure shifts
+in labor demand from AI (e.g., Acemoglu et al. (2022); Hampole et al. (2025)). This paper
+shows that for key occupations, these two data sources tell different stories. The decline in
+software developer job postings since 2022, for instance, contrasts sharply with their stable-
+to-growing employment in the CPS. This finding serves as an important empirical caution
+in interpreting job posting trends as reflective of employment or earnings. The CPS data
+used here provides a transparent and timely alternative for tracking realized outcomes as
+they unfold for a representative sample of the U.S. population.
+   4
+     See also Acemoglu et al. (2022); Bonney et al. (2024); Bick et al. (2024); Hartley et al. (2024); Frank
+et al. (2025); Chen et al. (2025); Hampole et al. (2025). The Federal Reserve Bank of New York tracks
+employment by college major using the American Community Survey (ACS), as documented in Abel and
+Deitz (2017). While the ACS has rich sociodemographic and economic information, it is released annually
+and with a time lag. As of Q2 2025 the latest ACS data is from 2023, in the initial year of LLM adoption.
+   5
+     Another closely related paper is Deming et al. (2025), which combines data from the decennial Census,
+American Community Survey, and CPS to track labor market changes over 120 years. This paper comple-
+ments their work by directly associating employment changes with measures of AI exposure and by tracking
+labor market trends specifically over the post-ChatGPT time period.
+
+
+
+
+                                                     4
+

@@ -1,0 +1,42 @@
+net changes in total headcount.9
+   These studies highlight that pre-2023 adoption of AI technology often entailed internal
+reallocation rather than aggregate job loss. In contrast, our paper provides U.S. evidence
+on the implications of firm-level adoption during the first years of widespread Generative
+AI diffusion (2023–2025). By focusing not only on overall labor demand but on within-
+firm seniority composition, we provide evidence that GenAI-adopting firms reduce junior
+employment while leaving senior employment unaffected.
+
+
+The Effects of Generative AI on the Labor Market:                Finally, a rapidly growing empiri-
+cal literature examines the labor-market effects of GenAI. Experimental studies generally
+find that GenAI complements less-experienced workers by boosting their productivity.
+For example, Noy and Zhang (2023) show that access to ChatGPT substantially reduces
+completion time and improves output quality, with especially large benefits for lower-
+ability workers. Brynjolfsson et al. (2025b) similarly find that GenAI assistance in cus-
+tomer support raised productivity by roughly 14 percent on average, with the largest
+gains for novices. Dell’Acqua et al. (2023) report comparable improvements in consulting
+workflows. Moreover, Cui et al. (2025) find especially high productivity gains and adop-
+tion rates for less experienced software developers. Related field-experimental evidence
+in Dell’Acqua et al. (2025) shows that adding a GenAI copilot reshapes teamwork and the
+division of expertise, shifting routine cognitive work to the tool and reorienting human
+effort toward higher-level tasks. These findings are consistent with the view that GenAI
+can act as a “leveler,” narrowing productivity gaps between less and more experienced
+workers (Autor, 2024).
+   A second wave of studies uses large-scale labor-market data to track employment dy-
+namics across occupations by GenAI exposure. Closest to our work, Brynjolfsson et al.
+(2025a) show that since the late-2022 debut of GenAI, employment of young entry-level
+workers (ages 22-25) in the most AI-exposed occupations fell by about 13 percent rel-
+ative to trend, while more experienced workers in those occupations saw stable or ris-
+   9 Two related studies examine the effects of Generative AI adoption. Humlum and Vestergaard (2025) pro-
+
+vide evidence from Denmark, linking large-scale worker surveys on GenAI adoption to matched employer-
+employee data. Despite rapid adoption, they do not find effects of adoption on earnings and hours, sug-
+gesting that labor-market impacts in Denmark remain minimal. Chen and Stratton (2025) analyze firm-level
+adoption of GitHub Copilot and Cursor using detailed engineering workflow data, documenting effects on
+productivity, task allocation, and organizational collaboration.
+
+
+
+
+                                                   10
+

@@ -1,0 +1,45 @@
+       RAMBACHAN AND ROTH               A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                2585
+
+
+
+
+                                                                                                                             Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                       F IGURE 5
+                                 Sensitivity analysis for Benzarti and Carloni (2019b).
+
+
+
+shocks by the max in the pre-treatment period, we will thus typically obtain wider confidence
+sets for parameters involving later periods.
+    Finally, in Supplementary Material, Appendix C, we compare the confidence sets reported
+in Figure 5 to the sample analogue to the identified set, S(β̂, ), which we show is a Hausdorff
+consistent estimator of the identified set in this example. We find that the reported confidence
+sets are between 40 and 80% longer than the estimated identified set, suggesting that both sam-
+pling uncertainty and the length of the identified set play an important role in the width of the
+confidence sets.
+
+
+6.3.    The effect of duty-to-bargain laws on long-run student outcomes
+Lovenheim and Willen (2019a, henceforth LW) study the impact of state-level public sector
+duty-to-bargain (DTB) laws, which mandated that school districts bargain in good faith with
+teachers’ unions. LW examine the impacts of these laws on the adult labour market outcomes of
+people who were students around the time that these laws were passed, comparing individuals
+across different states and different birth cohorts to exploit the differential timing of the passage
+of DTB laws across states. The authors estimate the following OLS regression specification
+separately for men and women, using data from the American Community Survey (ACS),
+
+                                        
+                                        21
+                                                            
+                              Ysct =            Dscr βr + X sct γ + λct + φs + sct .                                (20)
+                                       r =−11
+
+
+Ysct is an average outcome for the cohort of students born in state s in cohort c in ACS calendar
+year t. Dscr is an indicator for whether state s passed a DTB law r years before cohort c turned
+age 18.35 The event-study coefficients {β̂ r } estimate the dynamic treatment effects (or placebo
+
+
+        35. Dsc,−11 is set to 1 if state s passed a law 11 years or more after cohort c turned 18. Likewise, Dsc,21 is set
+to 1 if state s passed a law 21 or more years before cohort c turned 18.
+

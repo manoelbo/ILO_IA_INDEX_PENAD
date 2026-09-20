@@ -1,0 +1,60 @@
+2566                               REVIEW OF ECONOMIC STUDIES
+                                                                   
+                       lim inf inf    inf   P P θ ∈ Cn (β̂ n , ˆ n ) ≥ 1 − α.                        (11)
+                        n→∞ P∈P θ∈S(δ P +τ P ,)
+
+
+
+for a large class of distributions P such that δ P ∈  for all P ∈ P.
+    We will focus on constructing confidence sets for the case where  is a polyhedron. For the
+case where  is the finite union of polyhedra, a valid confidence set can be constructed by taking
+the union of the confidence sets for each of its components.
+
+
+
+
+                                                                                                             Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+Lemma 2.2. Suppose that for each k = 1, . . . , K , the confidence
+                                                           K          set Cn,k (β̂ n , n ) satisfies
+(10) with  = k . Then the confidence set Cn (β̂ n , n ) = k=1 Cn,k (β̂ n , n ) satisfies (10) with
+     K
+ = k=1    k .
+   In the next two sections, we introduce two approaches to obtain confidence sets satisfying
+(10), with different desirable properties depending on the form of . The first approach, based
+on moment inequalities, accommodates a wide range of restrictions  and has some desirable
+asymptotic power guarantees. The second approach, based on FLCIs, can potentially offer finite-
+sample power improvements for certain special classes of  of interest, such as SD (M).
+
+
+                       3. INFERENCE USING MOMENT INEQUALITIES
+In this section, we introduce a general approach for inference that has good asymptotic properties
+over a large class of possible restrictions . We show that inference on the partially identified
+parameter θ = l  τ post in this setting is equivalent to testing a system of moment inequalities
+with a potentially large number of nuisance parameters that enter the moments linearly. We
+consider an implementation based on the conditional approach developed in ARP, which allows
+us to obtain computationally tractable confidence sets with desirable power properties for many
+parameter configurations.
+
+
+
+3.1.   Representation as a moment inequality problem with linear nuisance parameters
+Consider the problem of conducting inference on θ = l  τ post when  takes the polyhedral
+form  = {δ : Aδ ≤ d}. We will develop tests that control size under the null hypothesis
+H0 : θ = θ̄, δ ∈  when the normal approximation (9) holds exactly with known variance matrix
+  n . In Section 3.3, we will provide conditions under which size control in the finite sample nor-
+mal model translates to uniform asymptotic size control over a large class of data-generating
+processes.
+     As a first step, we show that testing H0 is equivalent to testing a system of moment inequali-
+ties with linear nuisance parameters in the normal model. Observe that if β̂ n ∼ N (β, n ) for β
+satisfying (3), then Eβ̂ n ∼N (β, n ) [β̂ n − τ ] = δ. It follows that δ ∈  = {δ : Aδ ≤ d} if and only if
+Eβ̂ n ∼N (β, n ) [Aβ̂ n − Aτ ] ≤ d. Defining Yn = Aβ̂ n − d and L post = [0, I ] to be the matrix such
+that τ = L post τ post , it is immediate that the null hypothesis H0 is equivalent to the composite
+null
+
+
+         H0 : ∃τ post ∈ RT̄ s.t. l  τ post = θ̄   and   Eβ̂ n ∼N (β, n ) Yn − AL post τ post ≤ 0.   (12)
+
+
+Testing the null hypothesis H0 is therefore equivalent to testing that the moment inequalities
+Eβ̂ n ∼N (β, n ) [Yn − AL post τ post ] ≤ 0 hold for some value of τ post satisfying l  τ post = θ .
+

@@ -1,0 +1,19 @@
+{
+  "A": {
+    "tests": 100,
+    "nominal": 34,
+    "BH": 21
+  },
+  "B": {
+    "tests": 30,
+    "nominal": 6,
+    "BH": 4
+  },
+  "C": {
+    "tests": 130,
+    "nominal": 54,
+    "BH": 40
+  },
+  "A_wage_tests": 20,
+  "A_wage_BH": 2
+}

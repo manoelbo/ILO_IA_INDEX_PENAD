@@ -1,0 +1,195 @@
+                       a. Software Developers                    b. Marketing and Sales Managers
+       1.2                                                1.2
+       1.1                                                1.1
+       1.0                                                1.0
+       0.9                                                0.9
+       0.8                                                0.8
+             Oc 21
+             Ap 21
+             Oc 22
+             Ap 22
+             Oc 23
+             Ap 23
+             Oc 24
+             Ap 24
+                     5
+
+
+
+
+                                                                Oc 21
+                                                                Ap 21
+                                                                Oc 22
+                                                                Ap 22
+                                                                Oc 23
+                                                                Ap 23
+                                                                Oc 24
+                                                                Ap 24
+                                                                        5
+                  02
+
+
+
+
+                                                                     02
+                  0
+                  0
+                  0
+                  0
+                  0
+                  0
+                  0
+                  0
+
+
+
+
+                                                                     0
+                                                                     0
+                                                                     0
+                                                                     0
+                                                                     0
+                                                                     0
+                                                                     0
+                                                                     0
+               r2
+               t2
+               r2
+               t2
+               r2
+               t2
+               r2
+               t2
+               r2
+
+
+
+
+                                                                  r2
+                                                                  t2
+                                                                  r2
+                                                                  t2
+                                                                  r2
+                                                                  t2
+                                                                  r2
+                                                                  t2
+                                                                  r2
+             Ap
+
+
+
+
+                                                                Ap
+
+                                Date                                           Date
+              c. First-Line Production Supervisors                        d. Health Aides
+       1.2                                                1.2
+       1.1                                                1.1
+       1.0                                                1.0
+       0.9                                                0.9
+       0.8                                                0.8
+                  1
+                  Ap 21
+                  Oc 22
+                  Ap 22
+                  Oc 23
+                  Ap 23
+                  Oc 24
+                  Ap 24
+                          5
+
+
+
+
+                                                                     1
+                                                                     Ap 21
+                                                                     Oc 22
+                                                                     Ap 22
+                                                                     Oc 23
+                                                                     Ap 23
+                                                                     Oc 24
+                                                                     Ap 24
+                                                                             5
+              02
+
+
+
+
+                       02
+
+
+
+
+                                                                 02
+
+
+
+
+                                                                          02
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+
+
+
+
+                                                                          0
+                                                                          0
+                                                                          0
+                                                                          0
+                                                                          0
+                                                                          0
+                                                                          0
+             r2
+                    t2
+                    r2
+                    t2
+                    r2
+                    t2
+                    r2
+                    t2
+                    r2
+
+
+
+
+                                                                r2
+                                                                       t2
+                                                                       r2
+                                                                       t2
+                                                                       r2
+                                                                       t2
+                                                                       r2
+                                                                       t2
+                                                                       r2
+                  Oc
+
+
+
+
+                                                                     Oc
+             Ap
+
+
+
+
+                                                                Ap
+
+
+
+
+                                Date                                           Date
+                   Early Career 1 (22-25)       Developing (31-34)            Mid-Career 2 (41-49)
+                   Early Career 2 (26-30)       Mid-Career 1 (35-40)          Senior (50+)
+
+Figure A11: Changes in annual base compensation by age and occupation. Annual base compen-
+sation is deflated to 2017 dollars using the PCE deflator.
+
+
+
+
+                                                     40

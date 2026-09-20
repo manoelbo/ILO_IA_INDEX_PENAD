@@ -1,0 +1,73 @@
+2572                                      REVIEW OF ECONOMIC STUDIES
+
+    Under the imposed assumptions, we obtain uniform consistency of the conditional and hybrid
+tests.
+Proposition 3.2. Suppose Assumptions 4–7 hold. Then for any x > 0 and α < 0.5,
+                                                                          
+                                                                      1
+                            lim inf E P ψα β̂ n , A, d, θ P + x,
+                                         C                  ub          ˆ n    =1
+                           n→∞ P∈P                                    n
+                                                                             
+                                                                          1
+                            lim inf E P ψκ,α
+                                         C-L F
+                                                 β̂ n , A, d, θ Pub + x, ˆ n      = 1,
+
+
+
+
+                                                                                                                           Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                           n→∞ P∈P                                        n
+
+where θ Pub = sup S(β P , ) is the upper bound of the identified set. The analogous result holds
+replacing θ Pub + x with θ Plb − x for θ Plb = inf S(β P , ).
+
+
+3.5.   Optimal local asymptotic power
+We next provide conditions under which the conditional test has optimal local asymptotic
+power. We first state the conditions and our formal results, and then provide several examples
+highlighting when the assumptions will and will not hold.
+
+   3.5.1. Main results. We begin by defining LICQ. Recall that the upper bound of the
+identified set is given by
+                                                                                    
+                                              
+                    θ (β, ) = l β post − min l δ post , s.t. Aδ ≤ d, δ pr e = β pr e .
+                     ub
+                                                    δ
+
+
+Since δ post = β post − τ post , we can re-write the upper bound as a maximization over τ post ,
+
+                          θ ub (β, ) = max l  τ post , s.t. − A(·, post) τ post ≤ d − Aβ,                       (16)
+                                           τ post
+
+                                                                                       ∗
+where A(·, post) contains the columns of A corresponding with δ post . Let τ post         denote a solution to
+                                                         ∗
+the optimization for θ (β, ) in (16), and let B denote the indices of the binding constraints,
+                           ub
+                         ∗                                                ∗
+so that −A(B ∗ , post) τ post = d B ∗ − A(B ∗ ,·) β and −A(−B ∗ , post) τ post < d−B ∗ − A(−B ∗ ,·) β.
+                                                                                                  ∗
+Definition 2 (LICQ). We say that LICQ holds in direction l if there exists a solution τ post           to
+(16) such that the gradient of the binding constraints with respect to τ post , −A(B ∗ , post) , has full
+row rank.21 We define LICQ in the direction −l analogously for the optimization that replaces
+max with min in (16).
+    For > 0, we define P to be the set of distributions P ∈ P such that LICQ holds in the
+                                                                                           ∗
+direction l and the non-binding constraints are slack by at least , i.e. −A(−B ∗ , post) τ post <d−
+Aβ P − .
+    Our next result states that for P ∈ P , the local power of the conditional test converges to
+the power envelope for tests that control size in the finite sample normal model. To state this
+result formally, we define Iα (, n ) to be the collection of confidence sets that control size in
+the finite sample normal model, i.e. confidence sets satisfying (10).
+
+
+
+                                                                                                                    ∗ .
+      21. The definition of LICQ in Kaido et al. (2021) would require that this condition holds for all solutions τ post
+                                                                                         ∗ .
+For our results, however, it is sufficient for the condition to hold for some solution τ post
+

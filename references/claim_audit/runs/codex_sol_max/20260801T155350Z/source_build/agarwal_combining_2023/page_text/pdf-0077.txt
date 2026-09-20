@@ -1,0 +1,40 @@
+                                                                                                                        77
+
+C.3      Comparison of Radiologists to Original Reads
+
+The reports from the radiologists who originally read the patient cases included in our sample
+were classified as positive/negative/uncertain for each pathology using AI predictions gener-
+ated by the CheXbert algorithm described in Smit et al. (2020). We compare the accuracy of
+the original reads relative to the ground truth with the radiologists in our sample under the
+treatment arm with clinical history and no AI assistance. We do this for each pathology by
+converting the probability reports elicited during the experiment to positive/negative assess-
+ments, where positive is defined as having a probability greater than 50%. We convert the
+CheXbert labels to positive/negative assessments by including the uncertain cases as posi-
+tive.33 We then calculate the accuracy of the experiment reads and the CheXbert labels for
+groups of pathologies focused on in this study and test the null hypothesis that the accuracy
+of the radiologists is the same. The results of this analysis are in Table C.5, and those for
+when treating uncertain cases negative are in Table C.6.
+
+                  Table C.5: Comparing Experiment Assessments to Original Reads
+
+                                               Top-Level           Pooled
+                                                                                    Abnormal
+                                                with AI            with AI
+                                                   (1)                (2)                 (3)
+                       Experiment                -0.004             -0.005              -0.086
+                                                (0.016)            (0.006)             (0.025)
+                       Constant                  0.194              0.090                0.466
+                                                (0.016)            (0.006)             (0.028)
+                       Observations               9718              53449               4859
+                       R-Squared                  0.000             0.000               0.002
+Note: Regression of indicator equal to one if binarized assessment is equal to ground truth from both the original reads and
+experiment reads onto a constant and an indicator equal to one if the radiologist was in the experiment. Standard errors are
+clustered at the patient-case level.
+
+
+
+
+  33
+    For all pathologies but bacterial pneumonia and atelectasis, fewer than 5% of patients have uncertain
+cases. For abnormal and all of the top-level pathologies with AI, there are no cases with uncertain labels.
+

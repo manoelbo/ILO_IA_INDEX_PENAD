@@ -1,0 +1,18 @@
+{
+  "coefficient_rows": 65,
+  "complete_case_input": 21511,
+  "dimension": "age_canaries",
+  "estimator": "ols",
+  "event_window": "-23_to_41",
+  "group_id": "age_22_25",
+  "is_causal_effect": false,
+  "minimum_clusters": 340,
+  "model_id": "group_event__canaries__age_22_25__ln_salario_real_adm",
+  "n_obs": 21511,
+  "note": "\u00danico contraste da disserta\u00e7\u00e3o cujo teste conjunto de tend\u00eancias paralelas n\u00e3o \u00e9 rejeitado; \u00e9 1 entre 100 contrastes de diagn\u00f3stico, sem ajuste de multiplicidade sobre a fam\u00edlia de pretrends.",
+  "outcome": "ln_salario_real_adm",
+  "pre_coefficient_mean": 0.006381992263558142,
+  "pre_window": "-23_to_-2",
+  "reference_event_time": -1,
+  "reference_period": "2022-11"
+}

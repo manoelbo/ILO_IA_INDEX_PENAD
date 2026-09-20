@@ -1,0 +1,7 @@
+# Heterogeneity by pre-treatment occupational income
+
+| Faixa de renda | Admissões (log) | Desligamentos (log) | Salário real de admissão (log) | Saldo líquido (asinh) |
+| --- | --- | --- | --- | --- |
+| Até 2 salários mínimos | 0,0167 (0,0304) | -0,0196 (0,0328) | -0,0174 (0,0184) | 0,0962 (0,3781) |
+| Mais de 2 até 5 salários mínimos | -0,1381** (0,0537) | -0,1895*** (0,0466) | -0,0250 (0,0231) | -1,0279 (0,8018) |
+| Mais de 5 salários mínimos | -0,0229 (0,1463) | 0,1957 (0,1360) | -0,0046 (0,0376) | -3,9568 (2,1677) |

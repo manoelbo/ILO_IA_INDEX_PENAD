@@ -1,0 +1,35 @@
+A4      Representativeness of Revelio Labs Data
+A potential concern with using Revelio Labs data is that the coverage of LinkedIn
+profiles may not be representative of the broader UK labor market. To investigate
+this concern, we compare Revelio Labs employment and job posting data against
+official statistics from the Office for National Statistics (ONS). We conduct two sets
+of analyses: an aggregate time-series comparison examining whether employment
+and vacancy trends in Revelio Labs data track official statistics over time, and
+a cross-sectional industry-level comparison examining whether employment shares
+across industries are similar in both data sources.
+    For the aggregate time-series analysis, we standardize both Revelio Labs and
+ONS monthly time series by subtracting the mean and dividing by the standard
+deviation, creating z-scores that allow direct comparison of trends. We then regress
+the standardized ONS employment and vacancy series on their Revelio Labs coun-
+terparts. Table A24 presents the results. Column 1 shows that standardized Revelio
+Labs employment is a strong predictor of standardized ONS employment. Column
+2 shows that standardized Revelio Labs job postings similarly track ONS vacancies.
+The correlations indicate that aggregate employment and hiring dynamics in Revelio
+Labs data closely mirror official statistics over time.
+    For the cross-sectional industry-level analysis, we map Revelio Labs’ RICS in-
+dustry classifications to ONS Standard Industrial Classification (SIC) categories.
+We aggregate employment across 50 Revelio Labs industry categories into 16 broad
+ONS industry groups, then calculate each industry’s share of total employment in
+both datasets. Table A26 presents regression results from regressing Revelio Labs
+employment shares on ONS employment shares. The coefficient is is again very high,
+with 0.706. Figure A1 visualizes this relationship: points cluster tightly around the
+45-degree line, confirming that industries with larger employment shares in ONS
+data also have correspondingly larger shares in Revelio Labs data. Taken together,
+these validation exercises suggest that Revelio Labs data provide a representative
+picture of UK labor market dynamics.
+
+
+
+
+                                         43
+

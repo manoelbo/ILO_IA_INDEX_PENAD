@@ -1,0 +1,22 @@
+Title:           AI adoption, productivity and employment: Evidence from European firms
+Subject:         Economics: 330
+Keywords:        Artificial intelligence, firm productivity, Europe, digital transformation, D22, J24, L25, O33, O47
+Author:          Aldasoro, Iñaki; Gambacorta, Leonardo; Pal, Rozalia; Revoltella, Debora; Weiss, Christoph; Wolski, Marcin
+Creator:         Apache FOP Version 2.8
+Producer:        Apache FOP Version 2.8
+CreationDate:    Sun Jul 19 12:35:59 2026 -03
+ModDate:         Mon Jan 12 12:06:41 2026 -03
+Custom Metadata: yes
+Metadata Stream: yes
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           41
+Encrypted:       no
+Page size:       595.275 x 841.889 pts (A4)
+Page rot:        0
+File size:       985239 bytes
+Optimized:       no
+PDF version:     1.6

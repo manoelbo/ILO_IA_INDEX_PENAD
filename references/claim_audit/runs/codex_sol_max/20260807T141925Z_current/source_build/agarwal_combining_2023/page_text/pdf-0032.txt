@@ -1,0 +1,157 @@
+                                                                                                                                                      32
+
+                                          Figure 5: Comparison with Bayesian decisions
+           (a) Automation bias/neglect                                                    (b) Own-information bias/neglect
+                       A             E
+                                                                                                         A |ω=1,sE )
+                log π(s |ω=1,s )
+                    π(s |ω=0,sE )
+                                                                                                 log π(s
+                                                                                                     π(sA |ω=0,sE )            No AI > AI
+                       A
+                                                                                                                               AI > AI
+                                             No AI > Automation Bias
+                                             Automation Bias > No AI
+                                             Automation Neglect > No AI
+
+
+
+
+                                   log(crel )                                                                     log(crel )
+                                       Au                                         E)                                                     π(ω=1|sE )
+                                          tom
+                                              ati                      log π(ω=1|s
+                                                                           π(ω=0|sE )
+                                                                                                                                     log π(ω=0|s E)
+                                                  on
+                                     Au
+
+
+
+
+                                                     B     ias
+                                                                 : b
+                                        to
+
+
+
+
+                                                                       >
+                                         ma
+
+
+
+
+                                                                           1, d
+                                                                                  =
+                                           tio
+
+
+
+
+                                                                                      1
+
+
+
+
+                                                                                                                   AI
+                                             nN
+
+
+
+
+                                                                                                                    :b
+                                                 egl
+
+
+
+
+                                                                                                                                 B
+                                                                                                                     <
+
+
+
+
+                                                                                                                                  ay
+                                                  ect
+
+
+
+
+                                                                                                                                    es
+                                                                                                                        1, d
+                                                                       B
+
+
+
+
+                                                                                                          No AI
+                                                                       ay
+
+
+
+
+                                                                                                                                      ia
+                                                   : b
+
+
+
+
+                                                                                                                                       n
+                                                                         es
+
+
+
+
+                                                                                                                          >
+                                                                           ia
+                                                       <
+
+
+
+
+                                                                             n
+
+
+
+
+                                                                                                                           1
+                                                        1, d
+                           No AI
+
+
+
+
+                                                           =
+                                                           1
+
+
+
+
+Note: This figure shows the where the decisions of an expert as a function of the signals disagree with the Bayesian in cases
+with and without AI assistance. Panel (a) shows automation bias and neglect (absent own-information bias and neglect). Panel
+(b) shows a decision maker who exhibits both automation neglect and own-information bias.
+
+
+
+error. Hence, in the presence of own-information bias or neglect, AI assistance can result in
+worse decision for some signals.
+We next consider a decision-maker with a different type of bias, namely, one in which the
+decision-maker exhibits signal dependence neglect. Perhaps not surprisingly, our next result
+shows that this type of bias on its own can result in worse decisions with AI assistance:
+
+Proposition 2. Suppose that the human exhibits signal dependence neglect so that the pos-
+terior belief is described by equation (6). For any value of b > 0, d > 0, and crel > 0, the
+                                      π (sA |ω=1,sE )        π (sA |ω=1)
+there exist log-likelihood ratios log π(sA |ω=0,sE ) and log π(sA |ω=0) such that the human attains
+lower expected payoff V (s) with AI assistance.
+
+Compared to the models of only automation/own-information bias/neglect, signal depen-
+dence neglect adds another dimension of potential mistakes to those illustrated in the figures
+above. The result bears resemblance to those in Enke and Zimmermann (2019), which showed
+that in a multivariate normal model with positively correlated signals, correlation neglect re-
+sults in over-reaction to signals and verified this hypothesis in lab experiments. Proposition
+2 differs in that it allows for general signal distributions and for signal dependence neglect to
+co-exist with automation and own-information bias/neglect. This extension is essential for a
+naturalistic environment like ours because the experimenter does not have full control over
+

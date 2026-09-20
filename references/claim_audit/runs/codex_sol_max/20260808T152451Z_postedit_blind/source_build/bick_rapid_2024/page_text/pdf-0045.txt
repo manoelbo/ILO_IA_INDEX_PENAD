@@ -1,0 +1,54 @@
+                                   Figure B.2: Intensity of genAI Use For Work
+                                                  (a) August 2024
+
+                              Overall               25.1                                    53.0                              21.9
+
+
+
+
+    Used in Last Month, Not Last Week 5.4                           42.5                                       52.1
+
+
+       Used At Least 1 Day Last Week          15.2                                   61.1                                   23.7
+
+
+           Used Every Day Last Week                           43.3                                    45.1                          11.6
+
+                                         0          10        20       30     40      50     60     70      80                 90          100
+                                                                   Share Using AI For X Minutes per Day (%)
+                                                    60+ Minutes / Day          15-59 Minutes / Day             0-14 Minutes / Day
+
+
+                    (b) November 2024 (More Detailed Breakdown)
+
+                         Overall       8.3               28.6                                 42.8                            20.3
+
+
+
+
+        Used One Day Last Week               19.7                             47.1                                     31.8
+
+
+    Used Multiple Days Last Week                  28.8                                       53.6                              15.8
+
+
+      Used Every Day Last Week               22.9                             42.8                                26.9               7.5
+
+                                   0         10          20      30      40      50     60      70     80                      90          100
+                                                              Share Using AI For X Minutes per Day (%)
+                                         4+ Hour / Day              1-3 Hour / Day          15-59 Min. / Day          0-14 Min. / Day
+
+Notes: The figure shows the distribution of daily time spent actively using genAI for work, among genAI users.
+In August, usage time is broken down into 0-14 minutes per day (light blue), 15-59 minutes per day (medium
+blue), and 60 or more minutes per day (dark blue). In November, usage time is broken down into 0-14 minutes
+per day (lightest blue), 15-59 minutes per day (light blue), 1-4 hours per day (medium blue), and 4 or more
+hours per day (dark blue). The “Overall” bar reflects the distribution among all genAI users. Data source
+is the August and November 2024 waves of the RPS, ages 18-64 (the June 2024 Pilot did not ask about time
+spent using genAI). The sample is employed respondents who use genAI for work The sample for this figure is
+employed individuals with a valid occupation (August, N = 983; November, N = 1000).
+
+
+
+
+                                                                                13
+

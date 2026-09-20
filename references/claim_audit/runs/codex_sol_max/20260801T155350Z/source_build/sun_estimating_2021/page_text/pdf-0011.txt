@@ -1,0 +1,59 @@
+there may or may not be never-treated units. Below in Section 3.1 we illustrate how the choice of G coincides
+
+with a large number of specifications encountered in practice such as the “fully dynamic” specification. We
+
+next decompose µg in terms of C ATTe,` when various combinations of the three identifying assumptions fail.
+
+For Propositions 1-3, we state the results in terms of the general specification (4). To specialize these results
+
+to the “fully dynamic” specification (7), we note the corresponding decomposition would replace bins with
+
+g = {`} for each relative period ` included in the specification and g excl would contain all excluded relative
+
+periods. The decomposition remains unchanged though the summation over ` ∈ g simplifies since each g is
+
+a singleton. For Proposition 4, the decomposition further simplifies for the “fully dynamic” specification as
+
+discussed below.
+
+      Researchers may assume that µg can be interpreted as a convex average of C ATTe,` for periods ` ∈ g
+
+from its corresponding set g; they may further assume the underlying weights have policy-relevant interpre-
+
+tation, e.g. weights depending on proportions of cohorts. For example, Bailey and Goodman-Bacon (2015)
+
+interpret them as “intention-to-treat effects” of the treatment in a given relative year. However, our results
+
+show that µg may not represent the parameter of interest without strong assumptions such as treatment ef-
+
+fect homogeneity. Section 3.6 provides intuition for these negative results, and demonstrate the weights
+
+are actually non-linear functions of proportions of cohorts. Section 3.7 illustrates how treatment effects
+
+heterogeneity invalidates the pretrends test for a simple three-period setting.
+
+
+3.1     Common specifications
+
+Common specifications can be broadly categorized as either “static” or “dynamic”. Static specifications
+
+estimate a single treatment effect that is time invariant. In contrast, dynamic specifications allow for non-
+
+parametric changes in the treatment effects over time. Within dynamic specifications, researchers also need
+
+to address issues of multi-collinearity, and may bin or trim distant relative periods. All of these choices can
+
+be written as instances of (4) with the correct specification of G, meaning that our results are applicable for
+
+a wide range of specifications employed in the empirical literature.
+                                                                ` B 1{t − E = `} to be an indicator for unit i
+      To clarify how to specify G in regression (4), we define Di,t        i
+
+                                                                                                        ` =0
+being ` periods away from initial treatment at calendar time t. For never-treated units Ei = ∞, we set Di,t
+
+
+
+
+                                                       11
+

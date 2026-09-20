@@ -1,0 +1,43 @@
+interpretation of regression DD differs from the canonical model stem from the fact that these
+
+simple components are weighted together based both on sample sizes and the variance of their
+
+treatment dummy. This defines the DD estimand, the variance-weighted average treatment effect
+
+on the treated (VWATT), and generalizes the identifying assumption on counterfactual outcomes
+
+to variance-weighted common trends (VWCT). Moreover, I show that because already-treated
+
+units act as controls in some 2x2 DD’s, the two-way fixed effects model requires an additional
+
+identifying assumption of time-invariant treatment effects.
+
+       The DD decomposition theorem also leads to several new tools for practitioners. Graphing
+
+the 2x2 DD’s against their weight displays all the identifying variation in any DD application, and
+
+summing weights across types of comparisons quantifies “how much” of a given estimate comes
+
+from different sources of variation. I use the DD decomposition theorem to propose a reweighted
+
+balance test that reflects this identifying variation, is easy to implement, has higher power than
+
+tests of joint balance across groups, and shows how large and in what direction any imbalance
+
+occurs. I suggest several simple methods to learn why estimates differ across alternative
+
+specifications. The weighted average representation leads to a Oaxaca-Blinder-Kitagawa-style
+
+decomposition that quantifies how much of the difference in estimates comes from changes in the
+
+2x2 DD’s, the weights, or both. Plots of the components or the weights across specifications show
+
+clearly where differences come from and can help researchers understand why their estimates
+
+changes and whether or not it is a problem.
+
+
+
+
+                                                30
+

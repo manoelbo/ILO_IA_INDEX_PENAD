@@ -1,0 +1,56 @@
+Fan, Yanqin, Emmanuel Guerre, and Dongming Zhu, “Partial identification of functionals
+  of the joint distribution of “potential outcomes”,” Journal of Econometrics, March 2017, 197 (1),
+  42–59.
+
+Fetzer, Thiemo, Pedro CL Souza, Oliver Vanden Eynde, and Austin L Wright, “Security
+  transitions,” American Economic Review, 2021, 111 (7), 2275–2308.
+
+Gandhi, Amit, Zhentong Lu, and Xiaoxia Shi, “Estimating demand for differentiated products
+ with zeroes in market share data,” Quantitative Economics, 2023, 14 (2), 381–418. _eprint:
+ https://onlinelibrary.wiley.com/doi/pdf/10.3982/QE1593.
+
+Gourieroux, Christian, Alain Monfort, and Alain Trognon, “Pseudo maximum likelihood
+ methods: Applications to Poisson models,” Econometrica: Journal of the Econometric Society,
+ 1984, pp. 701–720.
+
+Heckman, James J., “Sample Selection Bias as a Specification Error,” Econometrica, 1979, 47
+ (1), 153–161. Publisher: [Wiley, Econometric Society].
+
+Hjort, Jonas and Jonas Poulsen, “The arrival of fast internet and employment in Africa,”
+ American Economic Review, 2019, 109 (3), 1032–79.
+
+Imbens, Guido W and Joshua D Angrist, “Identification and estimation of local average
+  treatment effects,” Econometrica, 1994, pp. 467–475.
+
+Johnson, Matthew S, “Regulation by shaming: Deterrence effects of publicizing violations of
+  workplace safety and health laws,” American Economic Review, 2020, 110 (6), 1866–1904.
+
+Kahn-Lang, Ariella and Kevin Lang, “The Promise and Pitfalls of Differences-in-Differences:
+ Reflections on 16 and Pregnant and Other Applications,” Journal of Business & Economic Statis-
+ tics, 2020, 38 (3), 613–620.
+
+Lee, David S., “Training, Wages, and Sample Selection: Estimating Sharp Bounds on Treatment
+  Effects,” The Review of Economic Studies, July 2009, 76 (3), 1071–1102.
+
+MacKinnon, James G. and Lonnie Magee, “Transforming the Dependent Variable in Regres-
+ sion Models,” International Economic Review, 1990, 31 (2), 315–339. Publisher: [Economics
+ Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research,
+ Osaka University].
+
+Mirenda, Litterio, Sauro Mocetti, and Lucia Rizzica, “The economic effects of mafia: firm
+ level evidence,” American Economic Review, 2022, 112 (8), 2748–73.
+
+Moretti, Enrico, “The effect of high-tech clusters on the productivity of top inventors,” American
+ Economic Review, 2021, 111 (10), 3328–75.
+
+Mullahy, John, “Estimation of Limited Dependent Variable Models with Dummy Endogenous Re-
+ gressors: Simple Strategies for Empirical Practice: Comment,” Journal of Business & Economic
+ Statistics, 2001, 19 (1), 23–25. Publisher: American Statistical Association, Taylor & Francis,
+ Ltd.
+
+   and Edward Norton, “Why Transform Y? The Pitfalls of Transformed Regressions with a
+  Mass at Zero,” Oxford Bulletin of Economics and Statistics, 2023, Forthcoming.
+
+
+                                                21
+

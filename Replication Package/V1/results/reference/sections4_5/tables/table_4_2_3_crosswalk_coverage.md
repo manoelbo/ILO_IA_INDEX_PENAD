@@ -1,0 +1,8 @@
+# Crosswalk and panel coverage
+
+| Categoria | CBOs | % do total | Observações CBO-mês | % das observações |
+| --- | --- | --- | --- | --- |
+| Exposed | 75 | 11,9% | 4.050 | 17,4% |
+| Not Exposed | 266 | 42,3% | 14.257 | 61,1% |
+| Minimal Exposure | 95 | 15,1% | 5.012 | 21,5% |
+| No score | 193 | 30,7% | 0 | 0,0% |

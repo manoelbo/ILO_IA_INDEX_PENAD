@@ -1,0 +1,49 @@
+more middle-income positions, unlike in the United States and the developed world, where these
+roles are typically at the lower end of the income distribution. In Mexico, these positions are often
+formal jobs, more vulnerable to AI-driven automation, as also shown in the table. Conversely,
+informal jobs, which are typically lower on the income spectrum, show less exposure to AI. Lower
+exposure of informal jobs is likely due to their less intensive use of technology and computer-
+based tasks, as these roles tend to be more manual and less reliant on digital processes.
+
+        Table 6: Occupational Exposure in Mexico’s Labor Market According to GENOE
+
+                                           1-year horizon           5-year horizon           10-year horizon
+
+
+  All workers                              0.288                    0.410                    0.481
+
+  Sex
+  Men                                      0.279                    0.402                    0.472
+  Women                                    0.303                    0.423                    0.494
+
+  Type of worker
+  Formal                                   0.306                    0.422                    0.487
+  Informal                                 0.274                    0.401                    0.476
+
+  Education level
+  No High-School                           0.292                    0.423                    0.497
+  High-School                              0.208                    0.295                    0.352
+  Technical                                0.298                    0.417                    0.482
+  Bachelor’s                               0.284                    0.385                    0.447
+  Master’s                                 0.213                    0.296                    0.349
+  Doctorate                                0.182                    0.253                    0.302
+
+  Quintiles of monthly earnings
+  1st                                      0.278                    0.409                    0.484
+  2nd                                      0.301                    0.432                    0.508
+  3rd                                      0.300                    0.426                    0.497
+  4th                                      0.285                    0.402                    0.470
+  5th                                      0.257                    0.358                    0.421
+
+  Jobs exposed (in millions)               15.679                   22.307                   26.141
+
+Source: Authors’ calculations using data from the 2023 Encuesta Nacional de Ocupación y Empleo (ENOE), O*NET,
+and surveys conducted with GPT-4 through OpenAI’s API. Note: This table shows the average GENOE score for each
+time horizon by gender, type of worker, educational level, and quintiles of weekly earnings. The total jobs exposed are
+calculated as the average exposure multiplied by the total Mexican employment in 2023.
+
+
+
+
+                                                          23
+

@@ -1,0 +1,113 @@
+it suffices to show that, for all g and t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and t ≥ g − δ,
+                                      n
+                                  1 X        h
+                                                dr,nev                  dr,nev         ∗,nev
+                                                                                              i
+                                 √       Vi · ψbg,t,δ        bnev
+                                                       (Wi ; κg,t ) − ψg,t,δ   (W i ; κg,t   )  = op∗ (1) ,                                   (A.8)
+                                   n i=1
+                                 0
+where κ∗,nev
+       g,t   =   π ∗0
+                   g  , β ∗,nev 0
+                         g,t,δ       is the vector of pseudo-true finite-dimensional parameters.
+   Towards this end, recall that
+               dr,nev                btreat,nev (Wi ; βbnev ) − ψbcomp,nev (Wi ; π                  est,nev
+             ψbg,t,δ        bnev
+                      (Wi ; κg,t ) = ψg,t,δ             g,t,δ     g,t,δ
+                                                                                        nev
+                                                                                 bg , βbg,t,δ ) − ψbg,t,δ         bg , βbg,t,δ
+                                                                                                            (Wi ; π      nev
+                                                                                                                               )
+
+where
+                                                                                                 
+                   treat,nev         nev
+                ψbg,t,δ      (W ; βbg,t,δ  )=w  bgtreat · Yt − Yg−δ−1 − mnev       g,t,δ
+                                                                                           bnev
+                                                                                           β g,t,δ
+                                                                      h                                                i
+                                                    −w  bgtreat · En w   bgtreat · Yt − Yg−δ−1 − mnev               bnev
+                                                                                                           g,t,δ βg,t,δ      ,
+                                                                                                           
+             comp,nev                nev
+           ψbg,t,δ      (W ; πbg , βbg,t,δ )=w  bgcomp,nev (b πg ) · Yt − Yg−δ−1 − mnev                bnev
+                                                                                               g,t,δ βg,t,δ
+                                                                              h                                                   i
+                                                    −w  bgcomp (b πg ) · En wgcomp (b    πg ) · Yt − Yg−δ−1 − mnev            bnev
+                                                                                                                       g,t,δ βg,t,δ     ,
+                                                                0
+                est,nev              nev        or,nev bnev            cdr,nev,1 + lgps,nev (b        0 cdr,nev,2
+             ψbg,t      (W ; πbg , βbg,t,δ ) = lg,t       βg,t,δ · M      g,t,δ                   πg ) · M  g,t,δ    ,
+
+with
+                                                                                      pbg (X; π bg ) C
+                                               Gg                                    1  −  p g (X;  π
+                                                                                                    bg )
+                                   bgtreat =                   bgcomp,nev (b
+                                                                                            b
+                                   w                  ,        w           πg ) =                         ,
+                                             En [Gg ]                                    pbg (X; π
+                                                                                                 bg ) C
+                                                                                  En
+                                                                                        1 − pbg (X; π bg )
+and
+                                   h                                                  i
+             cdr,nev,1 = En        bgtreat − w bgcomp,nev (b  πg ) · ṁnev      bnev
+                                                                  
+             M g,t,δ               w                                   g,t,δ   β g,t,δ    ,
+                                h                                                                    i
+              cdr,nev,2 = En α
+              M                   bgps,nev (bπg ) · Yt − Yg−δ−1 − mnev             bnev      · ṗg (b
+                g,t,δ                                                      g,t,δ βg,t,δ             πg )
+                                        h                                                                                           i
+                                − En α    bgps,nev (b       bgcomp,nev (b
+                                                     πg ) · w           πg ) · Yt − Yg−δ−1 − mnev        g,t,δ
+                                                                                                                 bnev
+                                                                                                                 β g,t,δ    · ṗg (b
+                                                                                                                                   π g )  ,
+                                                    ,                           
+                                       C                        pg (X; π
+                                                                       bg ) C
+           bgps,nev (b
+           α          πg ) =                      2     E n                        .
+                             (1 − pg (X; π  bg ))              1 − pg (X; πbg )
+
+
+      We first show that
+                                  n
+                              1 X        
+                                            treat,nev         nev        treat,nev        ∗,nev
+                                                                                                 
+                             √       Vi · ψbg,t,δ     (Wi ; βbg,t,δ ) − ψg,t,δ     (Wi ; βg,t,δ ) = op∗ (1) .                                 (A.9)
+                               n i=1
+
+Using the mean-value theorem, we write
+                                       n
+                                1 X           treat,nev         nev
+                               √       Vi · ψbg,t,δ     (Wi ; βbg,t,δ )
+                                 n i=1
+                                           n
+                                  1 X           treat
+                                                                               
+                                                                                       ∗,nev
+                                                                                             
+                                =√       Vi · w
+                                              bg,i    · Yi,t − Yi,g−δ−1 − mnev
+                                                                           g,t,δ Wi ; βg,t,δ
+                                   n i=1
+                                                             n
+                                   √  nev       ∗,nev
+                                                       0 1 X
+                                                                       treat
+                                                                             · ṁnev          nev
+                                                                                                    
+                               −    n βbg,t,δ − βg,t,δ          Vi · w
+                                                                     bg,i        g,t,δ Wi ; β̄g,t,δ
+                                                          n i=1
+
+
+
+
+                                                                         37
+

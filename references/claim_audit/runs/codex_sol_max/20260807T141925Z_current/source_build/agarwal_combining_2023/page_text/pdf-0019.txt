@@ -1,0 +1,42 @@
+                                                                                                                             19
+
+                                            Table 1: Summary Statistics
+
+                                                                   All Designs           Design 1
+                                                                   Mean SD              Mean SD
+                                                                    (1)          (2)      (3)         (4)
+
+                      Reported Probability                         0.233     0.290      0.214      0.287
+                      Decision                                     0.322     0.467      0.277      0.448
+                      Deviation from Ground Truth                  0.223     0.281      0.218      0.290
+                      Deviation from AI                            0.191     0.169      0.201      0.171
+                      Correct Decision                             0.695     0.460      0.736      0.441
+                      Active time                                   2.82         2.63    3.03         3.17
+                      Observations                                     36, 280              13, 440
+                      Radiologists                                         180                  112
+
+
+Note: This table presents summary statistics of the experimental data. Columns (1) and (2) present the mean and standard
+deviation for all designs while Columns (3) and (4) present the same for design 1 only. Decision is an indicator for whether
+treatment/follow-up is recommended, correct decision is an indicator for whether the decision matches the ground truth, deviation
+from ground truth is the absolute difference between the reported probability and the ground truth, deviation from AI is the
+absolute difference between the expert’s reported probability and the AI’s reported probability, active time is measured in
+minutes.
+
+
+
+In a comparison study with three radiologists, Irvin et al. (2019) show that the CheXpert
+model yields a better classifier than two out of three radiologists on five pathologies and
+all three on a subset of three pathologies. Our results may differ from that because we
+use a different pool of radiologists, a different sample of cases, and reads with contextual
+information (clinical history) to construct the ground truth. The latter two differences raise
+the bar for the AI because they reflect differences in the data-generating process.
+To benchmark the quality of AI predictions in our sample and the radiologists in our exper-
+iment, we compare our participant pool with the AI input using two performance measures.
+The first measure is derived from the receiver operating characteristic (ROC) curve, which
+measures the trade-off between the false positive and the true positive rate of a classifier as
+the cutoff for classifying a case as positive or negative is varied. It uses only ordinal informa-
+tion about the AI. A classifier that is not better than random has an AUROC value of 0.5
+whereas a perfectly predictive classifier has a value of one. The second measure is the root
+mean squared error (RMSE), that utilizes cardinal information about the AI prediction. A
+

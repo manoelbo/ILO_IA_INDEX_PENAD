@@ -1,0 +1,79 @@
+                                            Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+                                                           Contents lists available at ScienceDirect
+
+
+                                  Journal of Economic Behavior and Organization
+                                                   journal homepage: www.elsevier.com/locate/jebo
+
+
+
+
+Winners and losers of generative AI: Early Evidence of Shifts in
+Freelancer Demand
+Ole Teutloff a,b , Johanna Einsiedler a , Otto Kässi c,d , Fabian Braesemann b,d,e ,
+Pamela Mishkin f ,1 , R. Maria del Rio-Chanona g,h,i ,∗
+a Copenhagen Center for Social Data Science, University of Copenhagen, Copenhagen, Denmark
+b DWG Datenwissenschaftliche Gesellschaft Berlin, Berlin, Germany
+c Etla Economic Research Helsinki, Helsinki, Finland
+d
+   Oxford Internet Institute, University of Oxford, Oxford, United Kingdom
+e
+  Einstein Center Digital Future, Berlin, Germany
+f
+  Independent, San Francisco, United States
+g
+  Computer Science Department, University College London, London, United Kingdom
+h
+   Bennett Institute for Public Policy, University of Cambridge, Cambridge, United Kingdom
+i Complexity Science Hub Vienna, Vienna, Austria
+
+
+
+
+ARTICLE                 INFO                             ABSTRACT
+
+JEL classification:                                      We examine how ChatGPT has changed the demand for freelancers in jobs where generative AI
+C 21                                                     tools can act as substitutes or complements to human labor. Using BERTopic we partition job
+C 55                                                     postings from a leading online freelancing platform into 116 fine-grained skill clusters and with
+J 21
+                                                         GPT-4o we classify them as substitutable, complementary or unaffected by LLMs. Our analysis
+J 23
+                                                         reveals that labor demand increased after the launch of ChatGPT, but only in skill clusters
+J 24
+O 33
+                                                         that were complementary to or unaffected by the AI tool. In contrast, demand for substitutable
+                                                         skills, such as writing and translation, decreased by 20–50% relative to the counterfactual trend,
+Keywords:
+                                                         with the sharpest decline observed for short-term (1-3 week) jobs. Within complementary skill
+Generative AI technologies
+Large language models                                    clusters, the results are mixed: demand for machine learning programming grew by 24%, and
+Automation and employment                                demand for AI-powered chatbot development nearly tripled, while demand for novice workers
+Labor market implications of AI                          declined in general. This result suggests a shift toward more specialized expertise for freelancers
+Technological transition                                 rather than uniform growth across all complementary areas.
+Online labor markets
+
+
+
+
+1. Introduction
+
+    The impact of Large Language Models (LLMs) on labor markets remains an open question, with early evidence suggesting a wide
+range of outcomes. On one hand, LLMs have been shown to reduce demand for certain tasks like writing and translation, where they
+can substitute human labor (Demirci et al., 2023; Qiao et al., 2023; Hui et al., 2023; Liu et al., 2023). On the other hand, laboratory
+experiments have shown that LLMs can be used as complementary tools that enhance productivity, particularly for less experienced
+workers (Brynjolfsson and McAfee, 2014; Noy and Zhang, 2023). These mixed results align with the view of Autor (2024), that the
+effects of new technology on work depend heavily on how it is deployed by firms, governments, and other stakeholders. To better
+
+
+    ∗ Corresponding author at: Computer Science Department, University College London, London, United Kingdom.
+        E-mail address: m.delriochanona@ucl.ac.uk (R.M. del Rio-Chanona).
+    1   This paper reflects the author’s individual research and recommendations and was not written in her official capacity at OpenAI, United States.
+
+https://doi.org/10.1016/j.jebo.2024.106845
+Received 15 February 2024; Received in revised form 25 October 2024; Accepted 25 November 2024
+Available online 29 January 2025
+0167-2681/© 2024 The Authors.            Published              by   Elsevier    B.V.   This   is   an   open   access   article   under   the   CC   BY   license
+(http://creativecommons.org/licenses/by/4.0/).
+

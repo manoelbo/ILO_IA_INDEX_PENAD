@@ -1,0 +1,57 @@
+E.1.7       Total Time Savings
+
+Table E.9 decomposes the user-reported total time savings from AI chatbots (Figure D.6)
+
+into each of its components: frequency of use, time savings per day of usage, and the
+
+covariance between the two.
+
+     Table E.10 provides a similar decomposition for workers’ time use with chatbots.
+
+
+              Table E.9: What Drives Adopters’ Time Savings from AI Chatbots?
+                                                  Time Savings    Time Saved Per Day Used  Days Used
+                                                  / Work Hours      / Daily Work Hours    / Work Days Covariance
+  Occupation                                           (1)                   (2)              (3)         (4)
+  Marketing Professionals      Encouraged             .068                  .109             .515        .012
+  Marketing Professionals      Non-Encouraged         .046                  .087             .388        .012
+  Software Developers          Encouraged             .065                  .093             .567        .012
+  Software Developers          Non-Encouraged         .039                  .074             .378        .011
+  HR Professionals             Encouraged             .042                  .081             .405        .009
+  HR Professionals             Non-Encouraged         .026                  .074             .237        .009
+  IT Support                   Encouraged             .041                  .075             .407        .011
+  IT Support                   Non-Encouraged         .028                   .06             .283        .011
+  Customer Service Rep.        Encouraged             .039                  .066             .439        .010
+  Customer Service Rep.        Non-Encouraged         .020                  .050             .240        .008
+  Legal Professionals          Encouraged             .033                  .074             .336        .008
+  Legal Professionals          Non-Encouraged         .018                  .065             .166        .007
+  Office Clerks                Encouraged             .029                  .065             .309        .009
+  Office Clerks                Non-Encouraged         .015                  .047             .177        .007
+  Journalists                  Encouraged             .028                  .050             .374        .010
+  Journalists                  Non-Encouraged         .021                  .048             .221        .011
+  Financial Advisors           Encouraged             .022                  .053             .288        .007
+  Financial Advisors           Non-Encouraged         .015                  .040             .179        .008
+  Accountants and Auditors     Encouraged             .022                  .055             .282        .006
+  Accountants and Auditors     Non-Encouraged         .009                  .041             .143        .003
+  Teachers                     Encouraged             .010                  .049             .140        .003
+  Teachers                     Non-Encouraged         .006                  .044             .088        .002
+  All                          Encouraged             .036                  .070             .369        .010
+  All                          Non-Encouraged         .022                  .057             .227        .009
+Notes: This table presents workers’ time savings from AI chatbots, categorized by workers’ occupations and employer policies.
+The table focuses on workers who have ever used AI chatbots for work. Column (1) reports the average time savings as a
+percentage of total work hours. The remaining columns decompose these time savings into three components: time savings
+per day of use (Column (2)), the share of workdays with AI chatbot usage (Column (3)), and the covariance between Columns
+(2) and (3) (Column (4)). These components satisfy the relationship: Column (1) = Column (2) × Column (3) + Column (4),
+which follows from the identity: E[XY ] = E[X]E[Y ] + Cov(X, Y ). Occupations are sorted by their average time savings
+(Column (1)) among encouraged users. We code daily time savings (Column (2)) as follows: 0–15 minutes/day as 7.5
+minutes, 15–60 minutes as 37.5 minutes, and 60+ minutes as 90 minutes. We code frequency of use (Column (3)) as follows:
+daily use is divided by 1; weekly use by 5 (corresponding to 5 workdays per week); monthly use by 21 23 (corresponding to
+4 13 weeks per month); and use a few times by 65 (corresponding to 4 uses over 12 months). We set daily work hours to 8, as
+nearly all sampled workers are full-time employees. Sample: The table is based on all completed responses from the 2024
+survey that can be linked to the registry data.
+
+
+
+
+                                                            76
+

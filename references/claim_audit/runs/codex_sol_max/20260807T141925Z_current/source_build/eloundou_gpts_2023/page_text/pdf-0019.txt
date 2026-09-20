@@ -1,0 +1,52 @@
+                                              WORKING PAPER
+
+
+5     Validation of Measures
+5.1     Comparison to Earlier Efforts
+This paper aims to build on a number of previous empirical studies examining the occupational exposure to
+advances in AI and/or automation. Previous studies have used a variety of methods, including:
+
+      • Using occupational taxonomies like O*NET to characterize which occupations have routine vs.
+        non-routine and manual vs. cognitive task content (Autor et al., 2003; Acemoglu and Autor, 2011a).
+
+      • Mapping text descriptions of tasks to descriptions of technological advances in patents. (Kogan et al.,
+        2021; Webb, 2020)
+
+      • Linking capabilities of AI systems to occupational abilities and aggregating exposure estimates to the
+        occupations where those abilities are required. (Felten et al., 2018, 2023)
+
+      • Mapping the results of AI task benchmark evaluations (ImageNet, Robocup, etc.) to 59 worker tasks
+        through a set of 14 cognitive abilities drawn from the cognitive science literature. (Tolan et al., 2021)
+
+      • Expert labeling of automation potential for a set of O*NET occupations where experts had high
+        confidence, combined with a probabilistic classifier to estimate automation potential for the remainder
+        of O*NET occupations. (Frey and Osborne, 2017)
+
+      • Developing a rubric for evaluating the "suitability for machine learning" (SML) of activities that
+        workers are completing in the economy (Brynjolfsson and Mitchell, 2017; Brynjolfsson et al., 2018,
+        2023).
+
+    We provide a set of summary statistics on many of these prior efforts in Table 8.
+    This paper’s methodology primarily builds upon the SML approach by developing a rubric to evaluate the
+overlap between LLM capabilities and worker tasks as reported in the O*NET database. Table 9 presents the
+results of OLS regressions of our new LLM exposure measurements on occupation-level exposure measures
+from (Felten et al., 2018) ("AI Occupational Exposure Score" in the table), (Frey and Osborne, 2017) (Frey
+& Osborne Automation), scores from all three technologies in (Webb, 2020), normalized routine manual
+and cognitive scores from (Acemoglu and Autor, 2011a), and (Brynjolfsson et al., 2018, 2023) (SML). We
+also use annualized occupational salaries from the most recent BLS Occupational Employment Survey as a
+control. There are four separate output variables representing new scores in this paper that are predicted by
+earlier efforts.
+    GPT-4 Exposure Rating 1 corresponds to our overall exposure rubric as evaluated by GPT-4, where full
+exposure potential is coded as 1, no exposure potential is coded as 0, and partial exposure (E2 in our labeling
+scheme) is coded as 0.5. GPT-4 Exposure Rating 2 is scored similarly for overall exposure, but with a slightly
+different prompt. The results are very similar across the two prompts. Human Exposure Rating represents the
+same rubric as in GPT-4 Exposure Rating 1 but is scored by humans, as discussed in an earlier section of the
+paper. These results correspond to the 𝛽 set of statistics presented above, with supplemental tasks having half
+the weight of core tasks within an occupation. These weights sum to one (core/supplemental distinctions are
+determined by O*NET).
+    The results across each type of measurement are consistent. We find generally positive and statistically
+significant correlations between our LLM exposure measures and previous measurements targeting software
+and AI. Encouragingly, the SML exposure scores by occupation show significant and positive associations
+with the exposure scores we develop in this paper, demonstrating a level of cohesion between the two studies
+with similar approaches. The Webb software and AI patent-based measures, SML, and normalized (demeaned
+

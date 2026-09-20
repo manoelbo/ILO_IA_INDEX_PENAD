@@ -1,0 +1,40 @@
+            4
+                With our bottom-up analysis of 1P API traffic we see Claude used to “Generate
+                personalized B2B cold sales emails” (0.47%), “Analyze emails and draft
+                replies for business correspondence” (0.28%), “Build and maintain invoice
+                processing systems” (0.24%), “Classify and categorize emails into predefined
+                labels” (0.23%), and “Manage calendar scheduling, meeting coordination,
+                and appointment booking” (0.16%).
+
+            5
+                At a high level, we distinguish between automation and augmentation modes
+                of using Claude. Automation encompasses interaction patterns focused
+                on task completion: Directive: Users give Claude a task and it completes
+                it with minimal back-and-forth; Feedback Loops: Users automate tasks
+                and provide feedback to Claude as needed; Augmentation focuses on
+                collaborative interaction patterns: Learning: Users ask Claude for information
+                or explanations about various topics; Task Iteration: Users iterate on tasks
+                collaboratively with Claude; Validation: Users ask Claude for feedback on
+                their work.
+
+            6
+                These interaction modes are not mutually exhaustive. In some instances,
+                Claude determines that a sampled conversation does not match any of the
+                five interaction modes.
+
+            7
+                In this report we use Sonnet 4.5 for classification whereas in our previous
+                Economic Index report we used Sonnet 4. We previously found that different
+                models can generate different classification outcomes, though these effects
+                tend to be modest.
+
+            8
+                We include a constant term in the regression since it should be equal to zero
+                under the null hypothesis. Across all our specifications, the constant term is
+                estimated to be close to and statistically indistinguishable from zero.
+
+
+
+
+The Anthropic Economic Index Report                                                              18
+

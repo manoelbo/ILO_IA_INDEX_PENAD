@@ -1,0 +1,54 @@
+290                             BENJAMINI AND HOCHBERG                          [No.1,
+  (a) Much of the methodology of FWER controlling MCPs concerns compari-
+      sons of multiple treatments and families whose test statistics are multivariate
+      normal (or t). In practice, many of the problems encountered are not of the
+      multiple-treatments type, and test statistics are not multivariate normal. In
+      fact, families are often combined with statistics of different types.
+  (b) Classical procedures that control the FWER in the strong sense, at levels
+      conventional in single-comparison problems, tend to have substantially less
+      power than the per comparison procedure of the same levels.
+  (c) Often the control of the FWER is not quite needed. The control of the
+      FWER is important when a conclusion from the various individual infer-
+
+
+
+
+                                                                                          Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+      ences is likely to be erroneous when at least one of them is. This may be
+      the case, for example, when several new treatments are competing against
+      a standard, and a single treatment is chosen from the set of treatments which
+      are declared significantly better than the standard. However, a treatment
+      group and a control group are often compared by testing various aspects
+      of the effect (different end points in clinical trials terminology). The overall
+      conclusion that the treatment is superior need not be erroneous even if some
+      of the null hypotheses are falsely rejected.
+   The first difficulty has been partially addressed by the recent line of research
+advancing Bonferroni-type procedures, which use the observed individual p-values,
+while remaining faithful to FWER control: Simes (1986), Hommel (1988), Hochberg
+(1988) and Rom (1990). The other two difficulties still present a serious problem.
+This is probably why a per comparison error rate (PCER) approach, which amounts
+to ignoring the multiplicity problem altogether, is still recommended by some (e.g.
+Saville (1990».
+   In this work we suggest a new point of view on the problem of multiplicity. In
+many multiplicity problems the number of erroneous rejections should be taken into
+account and not only the question whether any error was made. Yet, at the same
+time, the seriousness of the loss incurred by erroneous rejections is inversely related
+to the number of hypotheses rejected. From this point of view, a desirable error
+rate to control may be the expected proportion of errors among the rejected
+hypotheses, which we term the false discovery rate (FDR). This criterion integrates
+Spjetvoll's (1972) concern about the number of errors committed in multiple-
+comparison problems, with Soric's (1989) concern about the probability of a false
+rejection given a rejection. We use the term FDR after Soric (1989), who identified
+a rejected hypothesis with a 'statistical discovery'.
+   After some preliminaries, we present in Section 2.1 a formal definition of the
+FDR. Two immediate but important consequences of controlling this error rate are
+given: it implies weak control of FWER and it admits more powerful procedures.
+In Section 2.2 we present some examples where the control of the FDR is desirable.
+In Section 3 we present a simple Bonferroni-type FDR controlling procedure and
+the rest of the section is devoted to a discussion and demonstration of its properties.
+Section 4 presents a simulation study of the power of the procedure.
+
+                           2.   FALSE DISCOVERY RATE
+  Consider the problem of testing simultaneously m (null) hypotheses, of which
+m., are true. R is the number of hypotheses rejected. Table 1 summarizes the
+

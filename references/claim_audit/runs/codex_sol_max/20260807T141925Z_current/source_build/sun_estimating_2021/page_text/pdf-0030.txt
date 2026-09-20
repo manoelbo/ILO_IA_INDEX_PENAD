@@ -1,0 +1,51 @@
+weighted” (IW) estimators for estimating dynamic treatment effects. The IW estimators are formed by first
+
+estimating C ATTe,` with a regression saturated in cohort and relative period indicators, and then averaging
+
+estimates of C ATTe,` across e at a given `. These C ATTe,` are identified under parallel trends and no
+
+anticipation assumptions. These estimators are easy to implement and robust to heterogenous treatment
+
+effects across cohorts; the IW estimator associated with relative period ` is guaranteed to estimate a convex
+
+average of C ATTe,` using weights that are sample share of each cohort e.
+
+   Finally, we illustrate the empirical relevance of our results by estimating the dynamic effect of hospi-
+
+talization on the out-of-pocket medical spending and labor earnings using a setup similar to Dobkin et al.
+
+(2018). We find non-convex and non-zero weights for two-way fixed effects regression in this example,
+
+and show that the resulting estimates indeed sometimes fall outside the convex hull of the underlying CATT
+
+estimates due to contamination by treatment effects from other relative periods. IW estimates, on the other
+
+hand, are weighted averages of the underlying CATT estimates with weights representative of cohort share.
+
+   More broadly, our paper suggests that researchers can do more in this context to assess the validity of
+
+underlying assumptions and how violations may impact their estimates. We demonstrate the sensitivity of
+
+two-way fixed effects regressions to underlying assumptions and provide researchers with tools to assess
+
+and address these issues. Specifically, for average treatment effects estimated using two-way fixed effects
+
+regressions we recommend that empirical researchers directly estimate the underlying weights on cohort-
+
+specific average treatment effects using our proposed auxiliary regressions. This exercise allows empirical
+
+researchers to assess the degree of potential contamination under any assumed structure of treatment effects
+
+heterogeneity. We also recommend empirical researchers consider estimation methods more robust to treat-
+
+ment effects heterogeneity such as the IW estimator we propose. Developing additional tools for applied
+
+researchers to identify and estimate interpretable parameters of interest is a promising avenue for future
+
+research.
+
+
+
+
+                                                     30
+

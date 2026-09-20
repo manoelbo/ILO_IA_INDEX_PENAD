@@ -1,0 +1,57 @@
+Figure 2: Computer and Generative AI Adoption 2-3 Years After First Mass-Market Product
+
+                                                           45.5
+                           Overall
+                                               19.7
+
+                                                    32.1
+                          At Work
+                                                 25.1
+
+                                                      37.7
+                         At Home
+                                         5.5
+                                     0         10      20      30        40       50
+                                               GenAI / PC Adoption Rate (%)
+                                             AI (2024)    Computer (1984)
+Notes: The figure displays usage rates for computers (PCs) and genAI in 1984 and 2024, respectively. The
+IBM PC was released in 1981, which we refer to as the first mass-market computer, implying that 1984 is three
+years after the first mass-market computer. ChatGPT was released in November 2022, which we refer to as the
+first mass-market genAI product, implying the fall of 2024 is two years after the first mass-market product for
+that technology. The data source for genAI is the August and November 2024 wave of the RPS (blue bars).
+The data source for computers is the 1984 Computer and Internet Use Supplement of the CPS (red bars). The
+sample for the Overall and At Home bars in the RPS and CPS is all individuals ages 18-64(RPS, N = 9726;
+CPS, N = 61, 708 . The sample for the For Work bars is employed individuals ages 18-64 (RPS, N = 6935;
+CPS, N = 89, 271).
+
+
+
+measured using very similar questions for both technologies.) The first mass-market computer
+was the IBM PC, which was released in August 1981. The first mass-market genAI product
+was ChatGPT, which was released in November 2022.8 For the PC, we measure adoption in
+the CPS CIU for the first time in 1984, i.e. three years after the first mass-market computer.
+The RPS provides adoption estimates for 2024, two years after the first mass-market genAI
+product.
+
+    The top pair of bars in Figure 2 refers to overall adoption for the two technologies two
+to three years after the introduction of the first mass-market product. The bar for the RPS
+repeats the 45% overall adoption rate for genAI reported in Figure 1a. Overall PC adoption is
+roughly 20% in 1984, implying that genAI has been adopted at a faster pace than the PC. As
+another more recent comparison, in 1995 the internet was opened to commercial traffic after
+the decommissioning of NSFNet (Leiner et al., 2009).9 Two years later, 21% of US adults
+reported access to the internet according to the International Telecommunication Union, which
+compiles subscriber data from national regulatory bodies and service providers (Pena-Lopez
+et al., 2009). This is a similar pace of overall adoption to PCs, and substantially slower than
+the adoption of genAI.
+   8
+     Three notable computer products had already been released in 1977 (the Apple II, the Commodore PET,
+and the TRS-80). Choosing earlier introduction dates would imply slower adoption rates for a given technology.
+The 1981 IBM PC was the first computer to sell over one million units (Abbate, 1999). We chose these dates
+based in part on ChatGPT’s answers to questions about the year of the first mass market product for each
+technology. The exact prompts and answers are available upon request.
+   9
+     1995 was also the year of Netscape’s initial public offering and the year that AOL 3.0 was released.
+
+
+                                                           9
+

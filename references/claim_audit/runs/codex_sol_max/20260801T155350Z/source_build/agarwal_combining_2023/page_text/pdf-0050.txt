@@ -1,0 +1,49 @@
+                                                                                           50
+
+Jonathan Gruber, Benjamin R Handel, Samuel H Kina, and Jonathan T Kolstad. Managing
+  intelligence: Skilled experts and decision support in markets for complex products. 2021.
+
+H Benjamin Harvey and Vrushab Gowda. How the FDA regulates AI. Acad. Radiol., 27(1):
+  58–61, January 2020.
+
+Roxanne Heston and Remco Zwetsloot. Mapping u.s. multinationals’ global AI R&D activity,
+  2020.
+
+Ahmed Hosny, Chintan Parmar, John Quackenbush, Lawrence H Schwartz, and Hugo J W L
+ Aerts. Artificial intelligence in radiology. Nat. Rev. Cancer, 18(8):500–510, August 2018.
+
+Tanjim Hossain and Ryo Okui. The binarized scoring rule. Rev. Econ. Stud., 80(3):984–1001,
+  February 2013.
+
+Nicholas C Hunt and Andrea M Scheetz. Using MTurk to distribute a survey or experiment:
+  Methodological considerations. Journal of Information Systems, 33(1):43–65, March 2019.
+
+Kosuke Imai, Zhichao Jiang, James Greiner, Ryan Halen, and Sooahn Shin. Experimental
+ evaluation of Algorithm-Assisted human Decision-Making: Application to pretrial public
+ safety assessment. December 2020.
+
+Jeremy Irvin, Pranav Rajpurkar, Michael Ko, Yifan Yu, Silviana Ciurea-Ilcus, Chris Chute,
+  Henrik Marklund, Behzad Haghgoo, Robyn Ball, Katie Shpanskaya, Jayne Seekins,
+  David A Mong, Safwan S Halabi, Jesse K Sandberg, Ricky Jones, David B Larson, Curtis P
+  Langlotz, Bhavik N Patel, Matthew P Lungren, and Andrew Y Ng. CheXpert: A large
+  chest radiograph dataset with uncertainty labels and expert comparison. In Proceedings of
+  the AAAI Conference on Artificial Intelligence, volume 33, pages 590–597, July 2019.
+
+Alistair E W Johnson, Tom J Pollard, Lu Shen, Li-Wei H Lehman, Mengling Feng, Moham-
+  mad Ghassemi, Benjamin Moody, Peter Szolovits, Leo Anthony Celi, and Roger G Mark.
+  MIMIC-III, a freely accessible critical care database. Sci Data, 3:160035, May 2016.
+
+Daniel Kahneman and Amos Tversky. On the psychology of prediction. Psychol. Rev., 80
+ (4):237–251, July 1973.
+
+Emir Kamenica and Matthew Gentzkow. Bayesian persuasion. Am. Econ. Rev., 101(6):
+ 2590–2615, October 2011.
+
+Hyo Eun Kim, Hak Hee Kim, Boo Kyung Han, Ki Hwan Kim, Kyunghwa Han, Hyeonseob
+  Nam, Eun Hye Lee, and Eun Kyung Kim. Changes in cancer detection and False-Positive
+  recall in mammography using artificial intelligence: a retrospective, multireader study. The
+  Lancet Digital Health, 2(3):e138–e148, March 2020.
+
+Jon Kleinberg, Jens Ludwig, Sendhil Mullainathan, and Ziad Obermeyer. Prediction policy
+  problems. Am. Econ. Rev., 105(5):491–495, May 2015.
+

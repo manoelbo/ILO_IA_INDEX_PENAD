@@ -1,0 +1,53 @@
+{
+  "artifact": "DDD signed-group aggregation refactor equivalence receipt",
+  "date": "2026-08-02",
+  "status": "pass",
+  "comparison_tolerance": 1e-06,
+  "reason": "Replace a sixfold microdata expansion with one bounded query per required dimension without changing the frozen estimands or estimates.",
+  "resource_gate": {
+    "previous_failure": "DuckDB exhausted an 11 GiB temporary-directory limit while expanding every movement row across six dimensions.",
+    "replacement": "Each published dimension is aggregated independently; Family B additionally reads race_color only to validate Negra = Black + Pardo.",
+    "family_a_scratch_bytes": 0,
+    "family_b_scratch_bytes": 0,
+    "family_b_maximum_resident_set_bytes": 1437728768
+  },
+  "family_a": {
+    "panel_rows": 815813,
+    "support_rows": 20,
+    "result_rows": 100,
+    "baseline_panel_sha256": "b8bf00bb27dea79403075b8bf567f42b817a923335c1062980076cc341849b6c",
+    "candidate_panel_sha256": "503df0711abf5e5bbdb548715896e2c698d05f03e3138d27e4ba76cd149f3855",
+    "baseline_results_sha256": "720a4ce43345866570f595fc13685569ffcb1ad33433313b2e5c5f3e51efaa85",
+    "candidate_results_sha256": "f5ab2a3b68a9542f24dfda6323134313118eedb8c87f048a3d2fe08a3c0b6f3c",
+    "max_abs_coefficient_difference": 0.0,
+    "max_abs_standard_error_difference": 1.0061396160665481e-16,
+    "max_abs_panel_salary_sum_difference": 8.940696716308594e-08,
+    "sample_status_support_and_non_numeric_fields_equal": true,
+    "nan_masks_equal": true,
+    "intentional_schema_additions": {
+      "panel": [
+        "family_id"
+      ],
+      "support_and_results": [
+        "family_id",
+        "family_size",
+        "multiplicity_method"
+      ]
+    }
+  },
+  "family_b": {
+    "panel_rows": 264588,
+    "support_rows": 6,
+    "result_rows": 30,
+    "panel_byte_identical": true,
+    "support_byte_identical": true,
+    "results_byte_identical": true,
+    "panel_sha256": "d82dbf0b7d2d36a5ee340ccfdcb2e4e69d03654292bec146f676c25a910a5009",
+    "support_sha256": "95a7c12ea26804ad9a9377864e2b9ec1f7d6c65ade5e6433c7a48542fd185faf",
+    "results_sha256": "3b9986370572f8c620001410d739151f60745c3e71cc707e70e8ff3767a22325",
+    "negra_sparse_valid_universe_cells": 39197,
+    "negra_main_sample_cells": 22049,
+    "negra_reconciliation_exact": true
+  },
+  "release_rule": "This receipt does not mutate the signed reference. Reference freeze remains gated on the complete five-component DAG, numeric-claim reconciliation, independent R validation, and publication coverage."
+}

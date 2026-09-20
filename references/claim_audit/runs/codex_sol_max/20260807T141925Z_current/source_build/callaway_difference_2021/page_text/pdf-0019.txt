@@ -1,0 +1,55 @@
+all event times or θc (t) across all time periods, i.e.,
+                                          T −2                                     T
+                             O        1 X                                      1 X
+                            θes =         θes (e)                    θcO =         θc (t)             (3.12)
+                                    T −1                                     T −1
+                                          e=0                                     t=2
+
+                                                                                                  O
+In our view, the appeal of these aggregations is likely to be somewhat more limited than that of θsel
+                                                          O is complicated by the issue of the changing
+in most applications. For example, the interpretation of θes
+composition of groups across different values of e discussed above (similar arguments apply to θcO as well).
+As before, one can circumvent the issue of the changing composition of groups by balancing the sample
+with respect to event time. A (local) single summary parameter is given by
+
+                                                                e0
+                                         O,bal 0          1 X bal
+                                        θes   (e ) =          θes (e, e0 )                            (3.13)
+                                                       e0 + 1
+                                                                e=0
+
+This is the average effect of participating in the treatment over the first e0 periods of exposure to the
+treatment. This is also a reasonable alternative overall treatment effect parameter, but it should also be
+noted that it is local to groups that participated in the treatment for at least e0 periods.
+    As a final comment, in general, none of the overall effect parameters considered in this section are
+equal to each other except in the special case where AT T (g, t) is the same for all groups and all time
+periods. In that case, all of the aggregated parameters, including β from the TWFE regression, are equal
+to each other.
+
+
+4    Estimation and Inference
+So far we have focused on the identification and aggregation stages of the analysis. In this section,
+we show how one can build on these results to form estimators for and conduct inference about the
+group-time average treatment effects and their summary measures described in Section 3. Given that the
+AT T (g, t)’s are the main building blocks of our analysis, we start with them.
+    First, it is important to notice that our identification results in Theorem 1 are constructive and
+suggest a simple and intuitive two-step estimation strategy to estimate the AT T (g, t)’s. In the first step,
+one estimates the nuisance functions for each group g and time period t — pg (x) and/or mnev
+                                                                                         g,t,δ (X) if
+one relies on Assumption 4, and pg,t+δ (x) and/or mny
+                                                   g,t,δ (X) if one relies on Assumption 5. In the second
+step, one plugs the fitted values of these estimated nuisance functions into the sample analogue of the
+considered AT T (g, t) estimand to obtain estimates of the group-time average treatment effect.
+    A natural question that then arises is which type of approach one should use in practice: the out-
+come regression, inverse probability weighting, or the doubly-robust one. Although these three differ-
+ent approaches are equivalent from the identification perspective, this is not the case from the esti-
+mation/inference perspective. The OR approach requires researchers to correctly model the outcome
+evolution of the comparison group to estimate the group-time average treatment effects. This approach
+is explicitly connected with the conditional parallel trends assumption required in DiD analysis as this
+condition is usually expressed in terms of conditional expectations. The IPW approach, on the other
+hand, avoids explicitly modeling the outcome evolution of the comparison group and therefore does not
+
+
+                                                           19
+

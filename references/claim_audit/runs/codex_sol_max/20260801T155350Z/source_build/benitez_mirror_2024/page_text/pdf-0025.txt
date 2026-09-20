@@ -1,0 +1,30 @@
+Figure 4: Distribution of Employment in the United States and Mexico by Occupational Expo-
+sure
+
+
+
+
+Source: Authors’ calculations using data from the Current Population Survey (CPS), Encuesta Nacional de Ocupación y
+Empleo (ENOE), O*NET, and surveys conducted with GPT-4 through OpenAI’s API. Note: This figure shows the share
+of total jobs in each range of occupational exposure according to the GENOE index for each time horizon and country.
+
+
+    Table 5 presents the average exposure of the U.S. labor market to AI displacement, broken
+down by various socioeconomic factors. The average exposure is 0.28 for the one-year horizon,
+indicating that approximately 42.6 million jobs, or roughly one-quarter of total employment, are at
+risk of being displaced by AI adoption. Over longer time horizons, the average exposure increases
+to 0.39 (59.8 million jobs) and 0.46 (70.2 million jobs) for the five-year and 10-year projections,
+respectively.
+    Notably, women face higher exposure levels across all three time horizons, primarily because
+many work in office, administrative, and support occupations, which are among the most vul-
+nerable to AI. Additionally, workers with lower levels of education, such as those who have not
+completed high school or only have a high school diploma, and individuals in the lowest earnings
+quintile, exhibit higher exposure scores compared to other groups. These findings suggest that AI
+adoption could exacerbate income inequality, echoing patterns observed in previous technologi-
+cal advancements (Autor et al., 2006; Autor and Dorn, 2013; Autor, 2019; Acemoglu and Restrepo,
+2022).
+
+
+
+                                                        21
+

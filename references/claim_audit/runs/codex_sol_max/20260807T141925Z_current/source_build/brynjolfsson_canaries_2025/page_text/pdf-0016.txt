@@ -1,0 +1,56 @@
+occupation cells. Future work should study employment trends in other large-scale data sources
+
+such as the American Community Survey (ACS) or data from Revelio Labs as in Hosseini and
+
+Lichtinger (2025) and Klein Teeselink (2025).
+
+
+
+5     Conclusion
+
+We document six facts about the recent labor market effects of artificial intelligence.
+
+
+    • We find substantial employment declines for early-career workers in occupations most exposed
+
+      to AI, such as software development and customer support.
+
+    • While economy-wide employment continues to grow, employment growth for young workers
+
+      has been stagnant.
+
+    • Entry-level employment has declined in applications of AI that automate work, with muted
+
+      effects for those that augment it.
+
+    • After conditioning on firm-time effects, young workers experienced a 16% relative employment
+
+      decline in the most exposed occupations.
+
+    • Labor market adjustments are more visible in employment than in compensation.
+
+    • These patterns hold across various alternative analyses.
+
+
+    While our main estimates may be influenced by factors other than generative AI, our results
+
+are consistent with the hypothesis that generative AI has begun to affect entry-level employment
+
+significantly.
+
+    The adoption of new technologies typically leads to heterogeneous effects across workers, result-
+
+ing in adjustment periods as workers reallocate from displaced forms of work to new forms with
+
+growing labor demand (Autor et al., 2024). Past transitions such as the IT revolution ultimately led
+
+to robust growth in employment and real wages following physical and human capital adjustments,
+
+with some workers benefiting more than others (Bresnahan et al., 2002; Brynjolfsson et al., 2021).
+
+    Tracking employment trends on an ongoing basis will help determine if the adjustment to AI
+
+follows a similar pattern. We will continue monitoring these outcomes to assess whether the trends
+
+
+                                                 16

@@ -1,0 +1,105 @@
+{
+  "a1_resolved": true,
+  "a7_executed": false,
+  "destination": "appendix_or_section_6_4_agenda_never_section_5",
+  "family_f_coefficients_present": 0,
+  "family_f_declared_slots": 12,
+  "family_f_instantiated": false,
+  "family_f_p_values_present": 0,
+  "gate": {
+    "decision": "stop_front_at_A6_no_family_F_estimation",
+    "failed_criteria": [
+      "cluster_support"
+    ],
+    "gate": "A6-support",
+    "opens": false
+  },
+  "gate_metrics": {
+    "all_cells_nonempty": true,
+    "balance_status": "adequate",
+    "cell_statuses": [
+      "adequate",
+      "adequate",
+      "adequate"
+    ],
+    "cluster_statuses": [
+      "limited",
+      "thin",
+      "limited"
+    ],
+    "coexistence_status": "adequate",
+    "family_coefficients_present": 0,
+    "family_p_values_present": 0,
+    "family_slots": 12,
+    "pnad_distinct_status": "adequate",
+    "pnad_frozen": true,
+    "residual_statuses": [
+      "adequate",
+      "adequate",
+      "adequate"
+    ]
+  },
+  "gate_provenance": {
+    "classification": "post_a_g1_protocol_amendment_declared_before_a6_observation",
+    "declaration_before_observation_preserved": true,
+    "frozen_plan_a6_kill_switch": false,
+    "preregistered": false
+  },
+  "outcome_model_estimated": false,
+  "pnad_vintage": {
+    "bytes": 8953,
+    "expected_sha256": "845e9a5a28a3e4f2343f035f67a9a7daa7de01ac037dfb0679ba3565b24e390a",
+    "federative_units": 27,
+    "observed_sha256": "845e9a5a28a3e4f2343f035f67a9a7daa7de01ac037dfb0679ba3565b24e390a",
+    "path": "data/vintage/pnad_continua_tic_2021_sidra_table_7334.json",
+    "reference": "fourth_quarter_2021",
+    "sha256_verified": true,
+    "sidra_table": 7334,
+    "sidra_variable": 10659,
+    "strictly_pre_event": true
+  },
+  "proxy2_definition": {
+    "denominator": "sum(peso) for all valid admissions",
+    "digital_cnae_divisions": [
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63"
+    ],
+    "employment_stock_claim": false,
+    "numerator": "sum(peso) for valid admissions in CNAE divisions 58-63",
+    "period_end": 202211,
+    "period_start": 202101
+  },
+  "proxy_cuts": {
+    "proxy1": {
+      "high_municipalities": 328,
+      "low_municipalities": 329,
+      "threshold": 0.1955158110206168
+    },
+    "proxy2": {
+      "high_municipalities": 328,
+      "high_share": 0.4992389649923896,
+      "low_municipalities": 329,
+      "low_share": 0.5007610350076104,
+      "municipalities": 657,
+      "threshold": 0.011757789535567314,
+      "ties_assigned_low": 1
+    },
+    "proxy3": {
+      "high_municipalities": 287,
+      "high_share": 0.4368340943683409,
+      "low_municipalities": 370,
+      "low_share": 0.563165905631659,
+      "municipalities": 657,
+      "threshold": 86.3,
+      "ties_assigned_low": 43
+    }
+  },
+  "real_treatment_coefficient_estimated": false,
+  "stage": "A6",
+  "status": "not_executed_support_failed",
+  "stopped_before_a7": true
+}

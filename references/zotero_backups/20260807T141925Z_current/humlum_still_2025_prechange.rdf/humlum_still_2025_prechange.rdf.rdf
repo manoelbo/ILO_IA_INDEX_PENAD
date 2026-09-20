@@ -1,0 +1,60 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Report rdf:about="https://www.nber.org/papers/w33777">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cambridge, MA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>National Bureau of Economic Research</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Humlum</foaf:surname>
+                        <foaf:givenName>Anders</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vestergaard</foaf:surname>
+                        <foaf:givenName>Emilie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_56"/>
+        <dc:title>Still waters, rapid currents: Early labor market transformation under generative AI</dc:title>
+        <dcterms:abstract>We examine the early labor market impacts of AI chatbots by linking large-scale, representative adoption surveys to administrative labor records in Denmark. Using difference-in-differences, we estimate precise null effects on earnings and recorded hours at both the worker and workplace levels, ruling out effects larger than 2% two years after. These null results hold for intensive users, early adopters, workplaces with substantial investments, workers reporting large gains, flexible-pay occupations, and early-career jobs. Adoption is linked to occupational switching and task restructuring, but without net changes in hours or earnings. Our findings challenge narratives of imminent disruption from Generative AI.</dcterms:abstract>
+        <dc:date>2025-05</dc:date>
+        <dc:identifier>DOI 10.3386/w33777</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.nber.org/papers/w33777</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <prism:number>33777</prism:number>
+        <z:type>NBER Working Paper</z:type>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_56">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/56/Humlum e Vestergaard - 2025 - Still waters, rapid currents Early labor market transformation under generative AI.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>

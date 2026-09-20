@@ -1,0 +1,30 @@
+       This volatility in CPS microdata reflects small sample sizes and the fact that the CPS is not
+
+stratified to target employment statistics for these demographic-occupation subgroups.30 The sam-
+
+ple size and sampling procedure of the CPS may therefore make it challenging to assess employment
+
+changes by age and AI exposure with a high degree of confidence over the time horizon considered
+
+in this paper (Chandar, 2025b; O’Brien, 2025).
+
+       Other large-scale data sources such as the American Community Survey (ACS) may offer a more
+
+reliable comparison to the ADP data, though the ACS is released with a significant lag compared
+
+to the data from ADP. We encourage comparison of our findings to results from other data sources
+
+such as the ACS upon their release.31
+
+
+
+
+  30
+     The CPS includes between 26 and 53 young software developers aged between 22 and 25 per month over our
+sample period. It includes between 49 and 95 young customer service representatives, and between 2 and 14 young
+home health aides.
+  31
+     The 2024 ACS 1-Year Public Use Microdata Sample is scheduled to be released on October 16, 2025.
+
+
+                                                      65

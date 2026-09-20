@@ -1,0 +1,54 @@
+1995]                   CONTROLLING FALSE DISCOVERY RATE                         293
+  Third, consider E(V)/E(R). When all hypotheses are true it is identically 1, and
+again impossible to control. A remedy may be given by either adding 1 to the
+denominator, a somewhat artificial solution, or by changing the denominator to
+E(R IR > 0). Modifying both numerator and denominator in the same way will
+again run into problems of control when m., = m.
+
+          3.   FALSE DISCOVERY RATE CONTROLLING PROCEDURE
+                                 3.1. The Procedure
+   Consider testing H" Hz,          , H m based on the corresponding p-values P"
+
+
+
+
+                                                                                        Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+P z, ... , Pm· Let p(l) ~ p(z) ~       ~ p(m) be the orderedp-values, and denote by
+R U) the null hypothesis corresponding to P U ) . Define the following Bonferroni-
+type multiple-testing procedure:
+
+        let k be the largest i for which P U) ~   .i q *;
+                                                  m
+                then reject all H U ) i = 1, 2, ... , k.                          (1)
+  Theorem 1. For independent test statistics and for any configuration of false
+null hypotheses, the above procedure controls the FDR at q*.
+   Proof. The theorem follows from the following lemma, whose proof is given
+in Appendix A.
+   Lemma. For any 0 ~ mo ~ m independent p-values corresponding to true null
+hypotheses, and for any values that the m, = m - mo p-values corresponding to
+the false null hypotheses can take, the multiple-testing procedure defined by
+procedure (1) above satisfies the inequality
+
+                     E(QIPmo  +' = PI' ... , Pm = Pm,) ~ mm q *.
+                                                            O
+                                                                                  (2)
+
+Now, suppose that m, = m - mo of the hypotheses are false. Whatever the joint
+distribution of P{', ... , P;:" which corresponds to these false hypotheses is,
+integrating inequality (2) above we obtain
+
+                                 E(Q) ~ mO q* ~ q*,
+                                          m
+and the FDR is controlled.
+   Remark. Note that the independence of the test statistics corresponding to the
+false null hypotheses is not needed for the proof of the theorem.
+   This procedure was mentioned by Simes (1986) as an exploratory extension to
+his procedure for rejection of the intersection hypothesis that all null hypotheses
+are true if, for some i, P U ) ~ ia/m, Whereas Simes (1986) showed that his proce-
+dure controls the FWER under the intersection null hypothesis, Hommel (1988)
+showed that the extended procedure for inference on individual hypotheses does not
+control the FWER in the strong sense: for some configuration of the false null
+hypotheses, the probability of an erroneous rejection is greater than a.
+   Hochberg (1988) has suggested a different way to utilize Simes's procedure so that
+it does control the FWER in the strong sense, by offering the following procedure:
+

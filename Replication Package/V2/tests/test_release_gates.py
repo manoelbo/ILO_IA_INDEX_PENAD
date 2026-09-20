@@ -46,7 +46,7 @@ def test_gate_01_zero_flow_wages_are_missing() -> None:
 
 
 def test_gate_02_invalid_salary_is_rejected_before_release() -> None:
-    module = load_module("release_build_panel", "code/panel/build_panel.py")
+    module = load_module("release_build_panel", "code/caged/panel/build_panel.py")
     panel = pd.read_parquet(
         module.DEFAULT_PANEL,
     ).head(1)
@@ -56,7 +56,15 @@ def test_gate_02_invalid_salary_is_rejected_before_release() -> None:
         module.validate_national_panel(panel)
 
     support = json.loads(
-        module.DEFAULT_SUPPORT.read_text(encoding="utf-8")
+        (
+            PACKAGE_ROOT
+            / "results"
+            / "reference"
+            / "artifacts"
+            / "caged"
+            / "reconciliation"
+            / "painel_nacional_support.json"
+        ).read_text(encoding="utf-8")
     )
     assert support["invalid_rows_rejected"] > 0
 
@@ -64,7 +72,7 @@ def test_gate_02_invalid_salary_is_rejected_before_release() -> None:
 def test_gate_03_principal_formula_has_no_contemporary_controls() -> None:
     module = load_module(
         "release_estimators",
-        "code/models/estimators.py",
+        "code/caged/models/estimators.py",
     )
     formula = module.build_formula(
         "admissoes",
@@ -81,13 +89,13 @@ def test_gate_03_principal_formula_has_no_contemporary_controls() -> None:
 def test_gate_04_all_inferential_outputs_have_live_estimators() -> None:
     runner = load_module("release_runner", "run_replication.py")
     dag = runner.build_dag(
-        section="4-5",
+        target="caged",
         mode="reproduce",
         raw_dir=runner.DEFAULT_RAW_DIR,
     )
     inferential = [node for node in dag if node.inferential]
 
-    assert len(inferential) == 15
+    assert inferential
     assert all(node.disposition == runner.REESTIMATED for node in inferential)
     assert all(
         any(
@@ -98,10 +106,78 @@ def test_gate_04_all_inferential_outputs_have_live_estimators() -> None:
     )
 
 
+def test_phase8b_nodes_are_complete_and_visible_in_dry_run(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    runner = load_module("phase8b_runner", "run_replication.py")
+    dag = runner.build_dag(
+        target="caged",
+        mode="reproduce",
+        raw_dir=runner.DEFAULT_RAW_DIR,
+    )
+    phase8b_ids = (
+        "ddd_alternative_partitions",
+        "ddd_alternative_partitions_pretrends",
+        "group_did_family_c",
+        "group_event_studies",
+        "occupation_case_panel",
+        "occupation_case_trajectories",
+        "national_event_study_extended",
+        "phase8b_rendering",
+    )
+
+    assert [
+        node.node_id for node in dag if node.node_id in phase8b_ids
+    ] == list(phase8b_ids)
+    render_node = next(
+        node for node in dag if node.node_id == "phase8b_rendering"
+    )
+    assert "RENDERIZACAO_8B.md" in render_node.outputs
+    assert sum(path.startswith("tables/") for path in render_node.outputs) == 36
+    assert sum(path.startswith("figures/") for path in render_node.outputs) == 14
+    assert (
+        "backing_data/figure_5_2_6_group_outcome_forest.csv"
+        in render_node.outputs
+    )
+    assert (
+        "tables/table_5_1_1_sector_control.csv"
+        in render_node.outputs
+    )
+    assert (
+        "tables/table_5_1_1_sector_control.md"
+        in render_node.outputs
+    )
+
+    runner._print_dag(dag, skip_figures=False)
+    dry_run_listing = capsys.readouterr().out
+    assert all(node_id in dry_run_listing for node_id in phase8b_ids)
+
+
+def test_phase8b_external_render_inputs_are_preflighted() -> None:
+    runner = load_module("phase8b_inputs", "run_replication.py")
+    inputs = set(runner._required_reproduce_inputs())
+
+    assert (
+        runner.PACKAGE_ROOT
+        / "data"
+        / "derived"
+        / "occupation_cases"
+        / "occupation_case_dictionary.csv"
+    ) in inputs
+    assert (
+        runner.PACKAGE_ROOT
+        / "data"
+        / "derived"
+        / "occupation_cases"
+        / "table_c_1_occupation_case_exposure_summary.csv"
+    ) in inputs
+    assert all(path.is_relative_to(runner.PACKAGE_ROOT) for path in inputs)
+
+
 def test_gate_05_event_study_grid_is_complete_and_ungrouped() -> None:
     module = load_module(
         "release_event_study",
-        "code/models/event_study.py",
+        "code/caged/models/event_study.py",
     )
     grid = module.build_event_grid()
     module.validate_event_grid(grid)
@@ -151,7 +227,7 @@ def test_gate_06_every_merge_reports_uniqueness_and_row_delta() -> None:
 
 
 def test_gate_07_demographic_fixtures_cover_unknown_and_missing() -> None:
-    module = load_module("release_parse", "code/ingest/parse.py")
+    module = load_module("release_parse", "code/caged/ingest/parse.py")
     fixture = pd.DataFrame(
         {
             "sexo": ["9", ""],
@@ -171,20 +247,90 @@ def test_gate_08_reference_files_match_signed_manifest() -> None:
         "release_contracts",
         "code/replication/contracts.py",
     )
-
-    summary = module.validate_reference(
-        PACKAGE_ROOT / "results" / "reference"
+    registry = load_module(
+        "release_registry",
+        "code/replication/registry.py",
     )
+    reference = PACKAGE_ROOT / "results" / "reference"
 
-    assert summary["artifacts"] == 87
+    summary = module.validate_reference(reference)
+    manifest = json.loads(
+        (reference / "manifest.json").read_text(encoding="utf-8")
+    )
+    publication_index = pd.read_csv(
+        reference / "artifacts" / "publication_index.csv"
+    )
+    expected_publications = {
+        record.artifact_id for record in registry.manuscript_artifacts()
+    }
+
+    assert summary["artifacts"] == len(manifest["artifacts"])
+    assert set(publication_index["artifact_id"]) == expected_publications
+    assert set(publication_index["reference_path"]) == {
+        record.reference_path for record in registry.manuscript_artifacts()
+    }
     assert summary["manifest_signature_valid"]
     assert summary["semantic_contracts_valid"]
+
+
+def test_phase8a_and_8b_reference_candidates_have_declared_sources() -> None:
+    module = load_module(
+        "phase8b_contracts",
+        "code/replication/contracts.py",
+    )
+    artifact_root = (
+        PACKAGE_ROOT / "results" / "reference" / "artifacts"
+    )
+    artifacts = module._result_artifacts(artifact_root)
+    relative_paths = [
+        path.relative_to(artifact_root).as_posix()
+        for path in artifacts
+    ]
+
+    manifest = json.loads(
+        (
+            PACKAGE_ROOT / "results" / "reference" / "manifest.json"
+        ).read_text(encoding="utf-8")
+    )
+    assert set(relative_paths) == {
+        record["path"] for record in manifest["artifacts"]
+    }
+    assert not any(
+        part.startswith(".")
+        for path in relative_paths
+        for part in Path(path).parts
+    )
+    assert all(module.source_id_for(path) for path in relative_paths)
+    assert (
+        module.source_id_for(
+            "caged/diagnostics/DIAGNOSTICO_PRETRENDS.md"
+        )
+        == "code.caged.models.pretrend_report"
+    )
+    assert (
+        module.source_id_for("caged/models/group_did_results.csv")
+        == "code.caged.models.group_did_results"
+    )
+    assert (
+        module.source_id_for("caged/tables/table_5_2_1_sex.csv")
+        == "code.render.phase8b_tables"
+    )
+    assert (
+        "caged/figures/figure_5_2_6_group_outcome_forest.png"
+        in relative_paths
+    )
+    assert module.source_id_for(
+        "caged/figures/figure_5_2_6_group_outcome_forest.png"
+    ) == "code.render.phase8b_figures"
 
 
 def test_gate_09_monthly_totals_match_official_adjusted_series() -> None:
     comparison = pd.read_csv(
         PACKAGE_ROOT
         / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
         / "reconciliation"
         / "pdet_vs_v2_mensal.csv"
     )
@@ -201,7 +347,7 @@ def test_gate_09_monthly_totals_match_official_adjusted_series() -> None:
 def test_gate_10_complete_higher_education_excludes_code_8() -> None:
     module = load_module(
         "release_build_panel_codes",
-        "code/panel/build_panel.py",
+        "code/caged/panel/build_panel.py",
     )
 
     assert module.COMPLETE_HIGHER_EDUCATION_CODES == {

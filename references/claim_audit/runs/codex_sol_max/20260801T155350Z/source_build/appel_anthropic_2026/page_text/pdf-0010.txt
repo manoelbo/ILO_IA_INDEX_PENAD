@@ -1,0 +1,16 @@
+             tasks (“task iteration”) rather than asking Claude to explain concepts
+             (“learning”). See Figure 1.5 for common words associated with the three most
+             common interaction modes across O*NET tasks and bottom-up descriptions of
+             requests made of Claude.
+
+
+
+
+Figure 1.3: Collaboration mode share over time by platform, Claude.ai and 1P API
+Collaboration mode frequencies across Anthropic Economic Index reports.
+
+
+
+
+The Anthropic Economic Index Report                                                         10
+

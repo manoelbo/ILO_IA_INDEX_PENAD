@@ -1,0 +1,35 @@
+workers, with no notable overall trend in employment shares over the sample period. The
+bottom panel likewise shows no evident trend in real earnings.
+    These patterns for entry level workers overall might mask trends in occupations more ex-
+posed to AI. Figure A4 shows the employment share trends for entry level versus experienced
+workers in the quartile of occupations most exposed to AI according to the GPT-4-based
+β measure from Eloundou et al. (2024). Figure A5 similarly shows the employment trends
+for entry level versus experienced workers in computer occupations. Both plots are noisy,
+primarily because restricting to workers under the age of 26 reduces the sample size. With
+more time and larger surveys it may become apparent whether trends are sustained.
+
+
+
+5     Relationship between Job Postings and Employment
+
+The general purpose nature of artificial intelligence has raised concerns of widespread em-
+ployment declines, with some speculation that these trends are already visible within certain
+industries such as software development. One piece of evidence taken to suggest employment
+declines already are in job posting trends from sources such as Indeed. As shown in Figure
+5, the number of job postings for software developers has fallen since a peak in early 2022.
+    Three aspects of the data suggest caution in interpreting the job posting trends to signal
+labor market disruption for software developers caused by AI.
+
+    1. The number of job postings has fallen for a range of other occupations as well, including
+       in professions such as nursing with low estimated AI exposure. This suggests that the
+       decline is not specific to software developers.
+
+    2. While the decline is steeper for software developers than other professions, the peak
+       in early 2022 is also considerably higher. This could indicate macroeconomic trends in
+       the tech sector that led to a boom and bust in job postings unrelated to AI.
+
+    3. The decline in job postings is not matched by a decline in employment in the software
+       development occupation in the CPS, as shown in Figure 2. If anything there is some
+
+                                               12
+

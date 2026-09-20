@@ -1,0 +1,43 @@
+Sorting. Workers also choose which firms to sort into. Since all adopters receive the
+same net benefit α̂1 from encouragement, workers effectively choose between sorting into
+encouraged firms and adopting, or sorting into non-encouraged firms and not adopting:
+
+                               h                                      i
+                    Ej(i) = 1 α̂0 + α̂1 + β̂ × i + log W1 − log W0 ≥ 0 ,               (22)
+
+
+implying the cutoff:
+
+                                               1
+            Ej(i) = 1 [i ≤ i∗ ] ,   with i∗ = − (α̂0 + α̂1 + log W1 − log W0 ).        (23)
+                                               β̂
+
+A.2.3    Equilibrium
+
+An equilibrium consists of encouragement policies {Ej }, skill prices {Wj }, worker-firm
+allocations {Ij }, and adoption decisions {Aij }, such that firms and workers optimize
+(Equations (16), (17), (21), and (23)) and markets clear (Equations (14) and (15)).
+Without chatbots, all firms are symmetric and each employs an equal share of baseline
+human capital.
+
+
+Sorting. When chatbots are available, the equilibrium features full segregation: assuming
+α̂1 ≥ 0, all adopters sort into encouraged firms and all non-adopters into non-encouraged
+firms, or both. We focus on the empirically relevant case where some but not all firms
+encourage and some but not all workers adopt.
+
+
+Skill prices. From Equation (19), equilibrium skill price differentials satisfy:
+
+                                                         κ
+                                    log W1 − log W0 =       ,                          (24)
+                                                        1−ϵ
+
+where κ is the encouragement cost of the marginal firm. The cost of encouragement is thus
+priced into skill differentials: workers are not rewarded for these firm-level investments.
+   For analytical simplicity, we focus on the case where all employers face the same
+encouragement cost, κj = κ for all j. All firms are then marginal, and the share of
+encouraged employers adjusts to match the relative supply of adopting workers’ human
+
+
+                                              12

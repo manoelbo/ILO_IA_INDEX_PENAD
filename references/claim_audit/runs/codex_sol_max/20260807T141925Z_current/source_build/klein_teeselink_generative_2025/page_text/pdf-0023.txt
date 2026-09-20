@@ -1,0 +1,38 @@
+ket characteristics. We examine heterogeneity along two dimensions: compensation
+levels (splitting firms and occupations by median pre-treatment salary) and geo-
+graphic concentration (comparing London-based versus non-London entities). These
+dimensions are highly policy-relevant, as compensation-level heterogeneity provides
+a first indication as to whether LLMs may compress or widen wage inequality, while
+geographic variation tests whether disruption concentrates in London’s knowledge
+economy or extends throughout the UK labor market.
+
+4.3.1   Heterogeneity by Compensation Level
+
+Table A2 examines how firm-level employment effects vary by average compen-
+sation, with high-compensation jobs serving as a proxy for more highly educated
+white collar work, and low-compensation jobs for relatively low-educated blue collar
+work. We split firms at the median pre-treatment compensation level. Panel A
+shows that high-compensation firms experience substantially larger employment re-
+ductions than their lower-paying counterparts. A one standard deviation increase in
+LLM exposure reduces total employment at high-compensation firms by 0.7 percent
+(p = 0.009), driven primarily by a 0.8 percent reduction in low-seniority positions
+(p = 0.005). In contrast, Panel B indicates that low-compensation firms show no
+significant employment effects, with point estimates near zero for both total em-
+ployment and low-seniority positions.
+    This pattern extends to hiring intentions. Table A4 shows that a one standard
+deviation increase in LLM exposure reduces the probability of posting vacancies
+by 1.3 percentage points at high-compensation firms (p < 0.001), compared to a
+0.7 percentage point reduction at low-compensation firms (p = 0.001). While both
+groups curtail hiring, the effect is approximately twice as large at high-compensation
+firms.
+    The occupation-level analysis in Table A5 provides further evidence that the
+employment effects are concentrated among the highly paid. In high-salary occupa-
+tions, a one standard deviation increase in LLM exposure is associated with a 5.7
+percent reduction in job postings (p = 0.009) and £782 salary declines (p < 0.001)
+, while low-salary occupations show no significant changes in posting volumes and
+minimal salary effects.
+    These results suggest that LLM disruption is almost entirely driven by changes
+
+
+                                         23
+

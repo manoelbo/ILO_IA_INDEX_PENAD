@@ -1,0 +1,34 @@
+34     ILO Working Paper 140
+
+
+
+
+     XX   6 Adjustment of all survey scores
+
+
+     After adjusting the 608 tasks for which we had both survey scores and expert evaluations, we
+     proceeded to predict adjustments for the remaining 2,253 tasks (2,861 minus 608) scored in the
+     initial survey. Each of these tasks is linked to a reference cluster and semantically similar tasks
+     that were reviewed and adjusted in the earlier steps (see Sections 5 and 6). To ensure consist-
+     ency, the AI models were provided with the context of already adjusted scores from semantical-
+     ly similar tasks within the same occupational group and scoring bracket. Following the meth-
+     odology outlined in Section 6, we utilized two independent AI models to generate predictions,
+     achieving a correlation coefficient of 0.95 across all data points. The final predicted scores were
+     determined as the mean of the two model outputs.
+
+
+     XX Figure 15. Survey scores, expert evaluation and final adjustments for 2,861 tasks in the main survey
+
+
+
+
+     Figure 15 shows all 2,861 tasks scored in the main survey, arranged on the horizontal axis in as-
+     cending order of their initial survey scores. Each panel represents a different occupational group.
+     Red points indicate the mean scores derived from survey responses, while purple diamonds
+     represent expert evaluations for tasks where such scores were available. Orange squares show
+     the final adjusted scores, based on the AI-driven reconciliation of survey and expert evaluations
+     for tasks with both inputs, and green triangles represent AI-based predictions for tasks without
+     expert scores, using reference scores from the corresponding cluster as context. The blue lines
+     illustrate the overall trend among the final scores (a mix of adjusted and predicted scores), with
+     a notable lowering of scores for more manual tasks.
+

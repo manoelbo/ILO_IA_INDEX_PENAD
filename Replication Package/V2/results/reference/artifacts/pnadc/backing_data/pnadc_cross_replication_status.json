@@ -1,0 +1,19 @@
+{
+  "cod3_panel_sha256": "80f0a77563c5f8447dd6a690b2cd226e525c8e9302c705992622040bb8959bee",
+  "comparison_sha256": "12fac648fc2612486df6d500eaaf9b057f548850359e0ba1685a4a4ddda87fdc",
+  "contains_cod4_cells": false,
+  "cross_replication_input_sha256": "5f74cf3f29f5ea460eb5bba16917772daf484c13c23567fb51679beabf87bae9",
+  "family_e_reestimated_or_adjusted": false,
+  "individual_panel_sha256": "966b1824f31d0a6971b6fcf16ae967b7dc8879cd0220baa45f0c0de777605b5c",
+  "maximum_coefficient_absolute_difference": 2.0122792321330962e-16,
+  "maximum_standard_error_absolute_difference": 1.252350839697769e-08,
+  "models": 6,
+  "python_results_sha256": "b6c49a74a2eb01d27bc8924bf74db9baed26d7a942a7f5333a00f7ca9cf1f585",
+  "r_engine": "fixest",
+  "r_fixest_models": 6,
+  "r_results_sha256": "ebd8ddd41d9796000a92510135b97842a8c0c50e97d194d76bf2f14a588d3916",
+  "same_n_and_clusters": true,
+  "six_decimal_agreement": true,
+  "status": "pass",
+  "task": "P12_cross_replication"
+}

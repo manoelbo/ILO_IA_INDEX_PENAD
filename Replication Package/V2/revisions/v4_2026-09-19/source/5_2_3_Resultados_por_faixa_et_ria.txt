@@ -1,0 +1,48 @@
+### 5.2.3 Resultados por faixa etária
+A Tabela 5.2.3 traz as estimativas por faixa etária, nas faixas da PNAD/IBGE. Os contrastes DDD e os painéis da classificação etária adotada por [Brynjolfsson, Chandar e Chen (2025)](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/) são apresentados no Apêndice A.
+**Tabela 5.2.3: Heterogeneidade por faixa etária — faixas PNAD/IBGE**
+
+[TABLE]
+Faixa etária | Resultado | DiD no grupo | EP | p BH | Pretrend | Suporte
+18–24 | Admissões (PPML, nível) | −0,0380 | 0,0360 | 0,399 | fail | adequate
+18–24 | Desligamentos (PPML, nível) | −0,0170 | 0,0443 | 0,753 | fail | adequate
+18–24 | Salário real de admissão (log) | −0,0512\*\*\* | 0,0111 | \< 0,001 | warning | adequate
+18–24 | Saldo líquido (asinh) | −0,0344 | 0,1930 | 0,872 | fail | adequate
+25–34 | Admissões (PPML, nível) | −0,0693\* | 0,0314 | 0,079 | fail | adequate
+25–34 | Desligamentos (PPML, nível) | −0,0608\* | 0,0258 | 0,059 | fail | adequate
+25–34 | Salário real de admissão (log) | −0,0460\*\*\* | 0,0110 | \< 0,001 | fail | adequate
+25–34 | Saldo líquido (asinh) | −0,5069 | 0,3529 | 0,250 | fail | adequate
+35–44 | Admissões (PPML, nível) | −0,0454 | 0,0343 | 0,286 | fail | adequate
+35–44 | Desligamentos (PPML, nível) | −0,0398 | 0,0270 | 0,244 | fail | adequate
+35–44 | Salário real de admissão (log) | −0,0549\*\*\* | 0,0129 | \< 0,001 | fail | adequate
+35–44 | Saldo líquido (asinh) | −0,5498 | 0,3050 | 0,162 | fail | adequate
+45–54 | Admissões (PPML, nível) | −0,0125 | 0,0469 | 0,822 | fail | adequate
+45–54 | Desligamentos (PPML, nível) | −0,0221 | 0,0325 | 0,593 | fail | adequate
+45–54 | Salário real de admissão (log) | −0,0417\*\*\* | 0,0114 | 0,002 | warning | adequate
+45–54 | Saldo líquido (asinh) | −0,2274 | 0,2270 | 0,425 | fail | adequate
+55–65 | Admissões (PPML, nível) | −0,0399 | 0,0678 | 0,646 | fail | adequate
+55–65 | Desligamentos (PPML, nível) | −0,0860\* | 0,0394 | 0,082 | fail | adequate
+55–65 | Salário real de admissão (log) | −0,0448\*\*\* | 0,0129 | 0,003 | fail | adequate
+55–65 | Saldo líquido (asinh) | 0,3794\*\* | 0,1345 | 0,020 | fail | adequate
+[/TABLE]
+
+> *Notas: cada linha traz o DiD estimado dentro da amostra da própria faixa, com erro-padrão clusterizado por CBO de quatro dígitos. Família C, de 130 testes; estrelas calculadas exclusivamente sobre o p ajustado de Benjamini-Hochberg: \\* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Estas células não medem heterogeneidade; o teste entre faixas é o DDD do Apêndice A. A amostra é restrita a trabalhadores de 18 a 65 anos. Fonte: `results/models/group_did_results.csv`.\*
+Dentro de cada faixa, os coeficientes de admissão são negativos e majoritariamente imprecisos, e o salário de entrada cai de forma significativa em **todas** as cinco faixas, entre 4,2% e 5,5%. A queda salarial não é um fenômeno de jovens: ela atravessa a distribuição etária inteira.
+Nas faixas etárias do artigo de referência, o DDD das admissões entre trabalhadores de 22 a 25 anos é de −0,0189, com p ajustado de 0,652. Portanto, não aparece uma queda adicional dos mais jovens em relação ao restante da amostra. O contraste que permanece abaixo de 5% após o ajuste é o da faixa de 41 a 49 anos, e tem sinal positivo: +0,0841 nas admissões, +0,0699 nos desligamentos e +0,0776 no fluxo bruto.
+Em termos simples, o DDD positivo da faixa de 41 a 49 anos indica que a diferença entre ocupações expostas e não expostas foi menos negativa, ou mais positiva, nesse grupo do que em seu complemento. Os contrastes intermediários mudam gradualmente de sinal, mas nenhum permanece abaixo de 5% após o ajuste. Como as pré-tendências falham, o conjunto deve ser lido apenas como um padrão relativo entre faixas etárias, sem atribuição de mecanismo.
+No salário, nenhum contraste etário sobrevive ao ajuste: o DDD da faixa de 22 a 25 anos é de −0,0004, com p ajustado de 0,974. O diferencial salarial é generalizado e não etário.
+As Figuras 5.2.3.1 e 5.2.3.2 trazem os event studies e as trajetórias de admissões e salário real de admissão em todas as faixas da PNAD/IBGE.
+**Figura 5.2.3.1: Heterogeneidade por idade — admissões**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/83d038a4-ea95-4dca-9499-6e98ef3e4670/figure_5_2_3_1_age_admissions.png]
+<empty-block/>
+**Figura 5.2.3.2: Heterogeneidade por idade — Salário real de admissão**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/f2ed0e44-a833-4aa6-a352-2a2b6a05f7f0/figure_5_2_3_2_age_wage.png]
+<empty-block/>
+<br>As figuras evidenciam comportamentos distintos entre as faixas, mas não estabelecem hierarquia etária causal.
+Há uma exceção diagnóstica que merece ser mostrada. No DiD estimado **dentro** da coorte de 22 a 25 anos, o salário real de admissão apresenta diferencial de −0,0517, com p nominal de 1×10⁻⁶ e p ajustado de 4×10⁻⁵, e o teste conjunto de tendências prévias não é rejeitado, com p = 0,585. 
+Essa é uma das duas únicas células, entre os cem contrastes estimados dentro dos grupos, cujo teste conjunto de tendências prévias não é rejeitado; a outra é o salário na categoria indígena, reportada no Apêndice A. Somados os três casos classificados como alerta, cinco dos cem contrastes escapam da classificação de falha, e outros cinco têm diagnóstico indefinido por deficiência de rank. Como não houve ajuste de multiplicidade para essa família de diagnósticos, um punhado de exceções é exatamente o que se espera por acaso quando cem testes são realizados. Por isso, trato o resultado como uma exceção que merece ser mostrada, não como uma validação do desenho. A Figura 5.2.3.3 mostra esse contraste isoladamente: os coeficientes pré-tratamento oscilam em torno de +0,0064, sem tendência e sem nenhum lead individualmente significativo a 5%, e a trajetória posterior se estabelece de forma persistente abaixo dessa média. A distância entre a linha tracejada e o pós-evento é de −0,0507, praticamente idêntica ao DiD de −0,0517 estimado dentro do grupo.
+**Figura 5.2.3.3: Coorte de 22 a 25 anos — salário real de admissão**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/d38fc5a1-b553-4453-bdb4-cd486a06860c/2cd4f183-47b1-4136-8fed-c2e403155a78.png]
+<br>Nas admissões, as estimativas brasileiras não reproduzem o padrão concentrado entre 22 e 25 anos reportado por [Brynjolfsson, Chandar e Chen (2025)](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/), de queda de 15 pontos log no emprego relativo dos trabalhadores de 22 a 25 anos nos quintis mais expostos à IA, em comparação com o quintil menos exposto. A comparação pede cuidado. Os autores analisam estoque de emprego em firmas e comparam quintis de exposição, enquanto esta dissertação observa fluxos mensais por ocupação e usa uma classificação binária mais ampla. Aqui, o contraste ajustado aparece na faixa de 41 a 49 anos e tem sinal positivo. O estoque ocupacional anual do Apêndice D não permite aproximar a comparação porque não é desagregado por idade. [Hosseini Maasoum e Lichtinger (2026)](https://doi.org/10.2139/ssrn.5425555) também encontram redução do emprego júnior sobretudo pela desaceleração das contratações, enquanto, nesta análise, o contraste etário mais preciso aparece nos desligamentos.
+<br>Em resumo: a maior exposição dos jovens documentada na Seção 3.5.3 não coincide com uma retração diferencial de suas admissões. Os contrastes etários que sobrevivem ao ajuste de multiplicidade são positivos e se concentram na faixa de 41 a 49 anos. Eles registram uma diferença relativa entre faixas, não proteção dos trabalhadores de meia-idade nem punição dos jovens. Como as tendências prévias falham, a leitura permanece exploratória. 
+Na margem salarial, a queda é generalizada e atinge todas as faixas com magnitude semelhante, sem heterogeneidade etária detectável. Nessa margem e nessa coorte está a única célula cujo teste conjunto de tendências prévias não é rejeitado: dentro do grupo de 22 a 25 anos, o diferencial do salário de entrada é preciso. Como se trata de uma exceção entre cem diagnósticos, o resultado é reportado sem ser tratado como validação causal.

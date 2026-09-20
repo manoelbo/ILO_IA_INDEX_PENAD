@@ -1,0 +1,51 @@
+                                                 WORKING PAPER
+
+
+4.3     Skill Importance
+In this section, we explore the relationship between the importance of a skill for an occupation (as annotated
+in the O*NET dataset) and our exposure measures. First, we use the Basic Skills provided by O*NET (skill
+definitions can be found in Appendix B) and normalize the measure of skill importance for each occupation
+to improve the comprehensibility of the results. Next, we conduct a regression analysis on our exposure
+measures (𝛼, 𝛽, 𝜁) to examine the strength of associations between skill importance and exposure.
+    Our findings indicate that the importance of science and critical thinking skills are strongly negatively
+associated with exposure, suggesting that occupations requiring these skills are less likely to be impacted
+by current LLMs. Conversely, programming and writing skills show a strong positive association with
+exposure, implying that occupations involving these skills are more susceptible to being influenced by LLMs
+(see Table 5 for detailed results).
+
+4.4     Barriers to Entry
+Next, we examine barriers to entry to better understand if there is differentiation in exposure due to types of
+jobs. One such proxy is an O*NET occupation-level descriptor called the "Job Zone." A Job Zone groups
+occupations that are similar in (a) the level of education needed to get a job in the occupation, (b) the amount
+of related experience required to do the work, and (c) the extent of on-the-job training needed to do the work.
+In the O*NET database, there are 5 Job Zones, with Job Zone 1 requiring the least amount of preparation (3
+months) and Job Zone 5 requiring the most extensive amount of preparation, 4 or more years. We observe that
+median income increases monotonically across Job Zones as the level of preparation needed also increases,
+with the median worker in Job Zone 1 earning $30, 230 and the median worker in Job Zone 5 earning $80, 980.
+    All of our measures (𝛼, 𝛽, and 𝜁) show an identical pattern, that is, exposure increases from Job Zone 1 to
+Job Zone 4, and either remains similar or decreases at Job Zone 5. Similar to Figure 3, in Figure 5, we plot
+the percentage of workers at every threshold of exposure. We find that, on average, the percentage of workers
+in occupations with greater than 50% 𝛽 exposure in Job Zones 1 through 5 have 𝛽 at 0.00% (Job Zone 1),
+6.11% (Job Zone 2), 10.57% (Job Zone 3), 34.5% (Job Zone 4), and 26.45% (Job Zone 5), respectively.8
+
+4.4.1    Typical Education Needed for Entry
+Since inclusion in a Job Zone accounts for both the education required—which itself is a proxy for skill
+acquisition—and the preparation required, we seek data to disentangle these variables. We use two variables
+from the Bureau of Labor Statistics’ Occupational data: "Typical Education Needed for Entry" and "On-the-job
+Training Required to Attain Competency" in an occupation. By examining these factors, we aim to uncover
+trends with potential implications for the workforce. There are 3,504,000 workers for whom we lack data on
+education and on-the-job training requirements, and they are therefore excluded from the summary tables.
+    Our analysis suggests that individuals holding Bachelor’s, Master’s, and professional degrees are more
+exposed to LLMs and LLM-powered software than those without formal educational credentials (see Table 7).
+Interestingly, we also find that individuals with some college education but no degree exhibit a high level of
+exposure to LLMs and LLM-powered software. Upon examining the table displaying barriers to entry, we
+observe that the jobs with the least exposure require the most training, potentially offering a lower payoff (in
+terms of median income) once competency is achieved. Conversely, jobs with no on-the-job training required
+or only internship/residency required appear to yield higher income but are more exposed to LLMs.
+
+
+
+
+   8For this set of results, all tasks have equal weight within an occupation. Results do not change meaningfully with the
+core/supplemental weighting scheme.
+

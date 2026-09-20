@@ -1,0 +1,33 @@
+estimator based on the Poisson distribution is optimal in this situation. Case 3 is the
+special case in which OLS estimation of the log-linear model is consistent for the slope
+parameters of (14). Moreover, in this case the log-linear model not only corrects the
+heteroskedasticity in the data, but, because η i is log-normal, it is also the maximum
+likelihood estimator. The GPML is the optimal PML estimator in this case, but it should
+be outperformed by the true maximum likelihood estimator. Finally, Case 4 is the only
+one in which the conditional variance does not depend exclusively on the mean. The
+variance is a quadratic function of the mean, as in Case 3, but it is not proportional to
+the square of the mean.
+  We carried out two sets of experiments. The first set was aimed at studying the per-
+formance of the estimators of the multiplicative and the log-linear models under diﬀerent
+patterns of heteroskedasticity. In order to study the eﬀect of the truncation on the per-
+formance of the OLS, and given that this data generating mechanism does not produce
+observations with yi = 0, the log-linear model was also estimated using only the obser-
+vations for which yi > 0.5, OLS (y > 0.5). This reduces the sample size by about 25%
+to 35%, depending on the pattern of heteroskedasticity. The estimation of the thresh-
+old Tobit was also performed using this dependent variable. Notice that, although the
+dependent variable has to cross a threshold to be observable, the truncation mechanism
+used here is not equal to the one assumed by Eaton and Tamura (1994). Therefore, in
+all these experiments the ET-Tobit will be slightly misspecified and the results presented
+here should be viewed as a check of its robustness to this problem.
+  The second set of experiments studied the estimators’ performance in the presence of
+rounding errors in the dependent variable. For that purpose, a new random variable was
+generated rounding to the nearest integer the values of yi obtained in the first set of sim-
+ulations. This procedure mimics the rounding errors in oﬃcial statistics and generates
+a large number of zeros, a typical feature of trade data. Because the model considered
+here generates a large proportion of observations close to zero, rounding down is much
+more frequent than rounding up. As the probability of rounding up or down depends on
+the covariates, this procedure will necessarily bias the estimates, as discussed before. The
+
+
+                                            18
+

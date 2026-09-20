@@ -1,0 +1,58 @@
+J. R. Statist. Soc. B (1995)
+57, No. I, pp, 289-300
+
+
+
+       Controlling the False Discovery Rate: a Practical and Powerful
+                        Approach to Multiple Testing
+                          By YOAV BENJAMINIt and YOSEF HOCHBERG
+                                         Tel A viv University, Israel
+
+                               [Received January 1993. Revised March 1994]
+
+
+
+
+                                                                                                                Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+                                                SUMMARY
+      The common approach to the multiplicity problem calls for controlling the familywise
+      error rate (FWER). This approach, though, has faults, and we point out a few. A different
+      approach to problems of multiple significance testing is presented. It calls for controlling
+      the expected proportion of falsely rejected hypotheses-the false discovery rate. This error
+      rate is equivalent to the FWER when all hypotheses are true but is smaller otherwise. There-
+      fore, in problems where the control of the false discovery rate rather than that of the
+      FWER is desired, there is potential for a gain in power. A simple sequential Bonferroni-
+      type procedure is proved to control the false discovery rate for independent test statistics,
+      and a simulation study shows that the gain in power is substantial. The use of the new
+      procedure and the appropriateness of the criterion are illustrated with examples.
+Keywords: BONFERRONI-TYPE PROCEDURES; FAMILYWISE ERROR RATE; MULTIPLE·
+          COMPARISON PROCEDURES; p-VALUES
+
+
+                                        1.   INTRODUCTION
+When pursuing multiple inferences, researchers tend to select the (statistically) signif-
+icant ones for emphasis, discussion and support of conclusions. An unguarded use
+of single-inference procedures results in a greatly increased false positive (signif-
+icance) rate. To control this multiplicity (selection) effect, classical multiple-
+comparison procedures (MCPs) aim to control the probability of committing any
+type I error in families of comparisons under simultaneous consideration. The
+control of this familywise error rate (FWER) is usually required in a strong sense,
+i.e, under all configurations of the true and false hypotheses tested (see for example
+Hochberg and Tamhane (1987».
+   Even though MCPs have been in use since the early 1950s, and in spite of the
+advocacy for their use (e.g. being mandatory for some journals, as well as in some
+institutions such as the Food and Drug Administration of the USA), researchers
+have not yet widely adopted these procedures. In medical research, for example,
+Godfrey (1985), Pocock et al. (1987) and Smith et al. (1987) examined samples of
+reports of comparative studies from major medical journals. They found that
+researchers overlook various kinds of multiplicity, and as a result reporting tends
+to exaggerate treatment differences (Pocock et al., 1987).
+   Some of the difficulties with classical MCPs which cause their underutilization
+in applied research are as follows.
+
+  tAddress for correspondence: Department of Statistics, School of Mathematical Sciences, Sackler Faculty for
+Exact Sciences, Tel Aviv University, Tel Aviv 69978, Israel.
+E-mail: benja@math.tav.ac.il
+
+© 1995 Royal Statistical Society                                                     0035-9246/95/57289
+

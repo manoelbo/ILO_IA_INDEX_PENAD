@@ -1,0 +1,49 @@
+  Figure A.2: The Impact of AI Chatbots on Worker Sorting, Adoption, and Earnings
+
+                         d log Y
+
+
+
+
+                                                                                                       i
+                                                ∗            ∗        ∗
+                                                i (0)       i        i (1)
+
+
+             Encouraged             Encouraged           Encouraged           Non-Encouraged               Optimal
+              Adopters             Non-Adopters           Adopters             Non-Adopters                Sorting
+
+Notes: This figure illustrates how AI chatbots affect workers’ sorting, adoption, and earnings across the distribution of
+AI advantage. The x-axis ranks workers by chatbot advantage i; the y-axis shows earnings impacts. Blue and red lines
+represent earnings effects for each worker-firm type combination. The gray line highlights equilibrium sorting and adoption
+patterns.
+
+
+
+
+Workplace employment. The effect of encouragement on headcount employment
+(N ) depends on whether increased human capital demand is offset by adoption-driven
+productivity gains. The increase in human capital demand is:
+
+                                                                      ϵ
+                                           log H1 − log H0 =             κ,                                          (30)
+                                                                     ϵ−1
+
+and the average productivity gain among encouraged adopters is:
+
+
+            E[Bij | i ≤ i∗ , Ej = 1] = (1 − γ)(αb0 + αb1 ) + γ(αc0 + αc1 + κ/(ϵ − 1)),                               (31)
+
+
+where γ = 2ββ̂b ≥ 0, generalizing Equation (9) to account for worker sorting. Combining
+                                            1
+these, the employment effect is:
+
+                                            ϵ−γ
+                  log N1 − log N0 =             κ − (1 − γ)(αb0 + αb1 ) − γ(αc0 + αc1 ).                             (32)
+                                            ϵ−1
+
+Encouragement tends to reduce employment when encouragement is cheap (κ low), demand
+is elastic (ϵ high), workers are homogeneous in chatbot productivity (γ low), productivity
+
+                                                           15

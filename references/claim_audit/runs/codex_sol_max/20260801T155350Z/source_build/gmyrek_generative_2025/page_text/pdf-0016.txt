@@ -1,0 +1,53 @@
+XX Table 1. Composition of occupational tasks in the Polish classification system and in ISCO-08                                                                                                                                                       13
+
+                                                                ISCO-08 occupational classification                                                                                   Polish 6-digit occupational classification
+
+                                             Count of                                                                                                                                     Share in          Count of 6-dig-          Share in 6-dig-
+ ISCO-08 1-digit     Group Name                         Share in 2-digits     Count of 3-digits       Share in 3-digits   Count of 4-digits   Share in 4-digits   Count of 6-digits
+                                             2-digits                                                                                                                                      6-digits              it tasks                  it tasks
+
+ 1                 Managers              4              10.0%                11                   8.7%                    30                  7.1%                173                 6.8%                2565                     8.6%
+
+ 2                 Professionals         6              15.0%                27                   21.4%                   92                  21.7%               721                 28.4%               8715                     29.3%
+
+                   Technicians and
+ 3                 associate profes-     5              12.5%                19                   15.1%                   80                  18.9%               507                 20.0%               5956                     20.0%
+                   sionals
+
+                   Clerical support
+ 4                                       4              10.0%                8                    6.3%                    27                  6.4%                71                  2.8%                768                      2.6%
+                   workers
+
+                   Service and sales
+ 5                                       4              10.0%                13                   10.3%                   40                  9.5%                149                 5.9%                1730                     5.8%
+                   workers
+                                                                                                                                                                                                                                                       ILO Working Paper 140
+
+
+
+
+                   Skilled agricultur-
+ 6                 al, forestry and      3              7.5%                 9                    7.1%                    17                  4.0%                53                  2.1%                684                      2.3%
+                   fishery workers
+
+                   Craft and related
+ 7                                       5              12.5%                14                   11.1%                   65                  15.4%               407                 16.0%               4554                     15.3%
+                   trades workers
+
+                   Plant and ma-
+ 8                 chine operators,      3              7.5%                 14                   11.1%                   40                  9.5%                348                 13.7%               3769                     12.7%
+                   and assemblers
+
+                   Elementary occu-
+ 9                                       6              15.0%                11                   8.7%                    32                  7.6%                112                 4.4%                1012                     3.4%
+                   pations
+
+                   Total                 40             100%                 126                  100%                    423                 100%                2541                100%                29753                    100%
+
+
+
+Note: Table 1 illustrates the hierarchical relationship between ISCO-08 and the Polish 6-digit classification of occupations. The “Count of x-digits” columns show the number of
+occupations at each level, with 423 occupations at the 4-digit ISCO-08 level. The “Count of 6-digits” column represents the number of occupations in the Polish system mapped
+to ISCO-08’s 4-digit level. Armed Forces Occupations have been excluded due to the lack of specific tasks. Shares indicate the percentage of each group at the corresponding
+level. The table only includes occupations for which detailed tasks are available in the Polish classification; those without tasks have been excluded.
+

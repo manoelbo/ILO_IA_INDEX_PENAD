@@ -1,0 +1,53 @@
+A.27                           Event Study for Seniors
+
+This appendix reports the staggered event-study specification of Equation 13, estimated on log senior em-
+ployment rather than log junior employment, as a placebo-like comparison for the junior event-study re-
+sults in Figure 7. Sample, timing, fixed effects, and inference are identical to the junior specification; only
+the outcome variable changes.
+
+
+                             .08
+
+                             .04
+  ATT (Normalized at -1)
+
+
+
+
+                              0
+
+                            -.04
+
+                            -.08
+
+                            -.12
+
+                            -.16
+
+                             -.2
+                                   -8       -6        -4         -2            0            2    4          6            8
+                                                                      Event Time (Quarters)
+
+
+
+
+                                                    Figure A.29: Event Study—Seniors
+                           Notes: The graph presents the estimated coefficients β j from Equation 13 applied to senior
+                           employment, using the method of Callaway and Sant’Anna (2021) for staggered adoption.
+                           Firms with zero recorded senior employment in 2021Q1—eight quarters before the diffusion
+                           of GenAI—are excluded. Standard errors are clustered at the firm level.
+
+
+                Unlike the junior results, senior employment shows no post-adoption decline. The pre-trend coeffi-
+cients slope modestly upward—rising from roughly −0.10 eight quarters before adoption to near zero just
+before the event—reflecting the secular growth of senior employment at adopting firms documented else-
+where in the paper. After adoption, the coefficients remain slightly above zero and do not decline. There is
+thus no break in senior employment at the event time, in sharp contrast to the clear post-adoption drop for
+juniors in Figure 7. This mirrors the seniority-biased pattern documented in the DiD and triple-difference
+specifications: the post-2022 contraction is confined to junior employment, while senior employment at
+
+
+
+
+                                                                        A.62
+

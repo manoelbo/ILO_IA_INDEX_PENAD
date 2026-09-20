@@ -1,0 +1,44 @@
+            using Claude to automate routine back-office workflows such as email
+            management, document processing, customer relationship management,
+            and scheduling.4
+
+
+
+
+            Augmentation is again dominant on Claude.ai
+
+            How AI will affect the economy depends not just on the tasks Claude is used
+            for but the way that users access and engage underlying model capabilities.
+            Since our first report, we have classified conversations into one of five
+            interaction types, which we group into two broader categories: automation and
+            augmentation.5
+
+            Figure 1.3 plots how automated versus augmented use has evolved over
+            time since we first started collecting this data one year ago. In January 2025,
+            augmented use of Claude was dominant: 56% of conversations were classified
+            as augmentation compared to 41% automated.6 In August 2025, more
+            conversations were classified as automated as compared to augmented.
+
+            This was a notable development since it suggested that rapid improvements
+            in model capabilities and platform functionality coincided with users
+            increasingly delegating tasks entirely to Claude. This was evident in the
+           “directive” collaboration mode, which is further grouped as automation.
+            Directive conversations are those in which users give Claude a task and it
+            completes it with minimal back-and-forth. From January 2025 to August 2025
+            the share of such directive conversations rose from 27% to 39%.7
+
+            Three months later, the share of directive conversations had fallen 7pp to 32%
+            in November 2025 as augmentation once again became more prevalent on
+            Claude.ai than automation. Nevertheless, the automation share was still
+            elevated as compared to nearly one year ago when we first began tracking this
+            measure, suggesting that the underlying trend is still toward greater automation
+            even as the August spike overstated how quickly it was materializing.
+
+            While we see some evidence of a shift toward soft skill usage on Claude.ai
+            with design, management, and education now higher, the shift back toward
+            augmented use was broad-based in November (Figure 1.4). The rise in
+            augmented use was driven mainly by users iterating with Claude to complete
+
+
+The Anthropic Economic Index Report                                                            9
+

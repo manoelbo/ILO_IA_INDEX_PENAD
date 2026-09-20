@@ -1,0 +1,18 @@
+{
+  "adequate_support_groups": 18,
+  "all_formulas_have_complete_ddd_terms": true,
+  "bh_adjusted_p_lt_005": 21,
+  "estimated_models": 100,
+  "failed_models": 0,
+  "family_id": "A",
+  "family_size_in_adjustment": 100,
+  "limited_support_groups": 1,
+  "multiplicity_method": "Benjamini-Hochberg",
+  "negative_count_cells": 0,
+  "nominal_p_lt_005": 34,
+  "panel_bytes": 36669893,
+  "panel_rows": 815813,
+  "panel_sha256": "503df0711abf5e5bbdb548715896e2c698d05f03e3138d27e4ba76cd149f3855",
+  "planned_family_size": 100,
+  "thin_support_groups": 1
+}

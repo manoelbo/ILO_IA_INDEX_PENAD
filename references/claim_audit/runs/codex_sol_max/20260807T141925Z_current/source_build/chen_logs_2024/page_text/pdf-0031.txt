@@ -1,0 +1,40 @@
+bounds for the average treatment effect in logs for instrument-compliers who would have positive
+charcoal spending regardless of treatment status.44
+         The bounds on θIntensive for instrument-compliers are r´0.565, ´0.538s (with SEs for the lower
+and upper bounds of 0.072 and 0.075).45 This implies that for the instrument-compliers who would
+spend on charcoal regardless of treatment status, spending decreases by 54 to 56 log points. We
+note that the Lee bounds are fairly tight in this case, as tends to be the case when the extensive
+margin is small. It is also worth noting that in this example, the estimated treatment effects using
+arcsinhpYi q—both in terms of weekly spending in dollars and in terms of annual spending in Kenyan
+shillings—fall outside of the Lee bounds, although they are fairly close to the upper bound when
+using weekly spending in dollars.
+
+
+6         Conclusion
+It is common in empirical work to estimate ATEs for transformations such as logp1`Y q or arcsinhpY q
+which are well-defined at zero and behave like logpY q for large values of Y . We show that the ATEs
+for such transformations should not be interpreted as percentages, since they depend arbitrarily on
+the units of the outcome when there is an extensive margin. Further, we show that any parameter
+that is an average of individual-level treatment effects of the form EP rgpY p1q, Y p0qqs must be scale-
+dependent if it is point-identified and well-defined at zero. We discuss several alternative approaches,
+including estimating scale-invariant normalized parameters (e.g. via Poisson regression), explicitly
+calibrating the value placed on the intensive versus extensive margins, and separately estimating
+effects for the intensive and extensive margins (e.g. using Lee bounds). We illustrate how these
+approaches can be applied in practice in three empirical applications.
+
+
+
+
+    44
+     The validity of the Lee (2009)-type bounds requires the “monotonicity” assumption that all instrument-compliers
+who would have some charcoal consumption when not buying an efficient stove would also have some charcoal con-
+sumption when buying an efficient stove, which seems reasonable. Note that this is a distinct assumption from the in-
+strument monotonicity assumption needed for a LATE interpretation for instrumental variables (Imbens and Angrist,
+1994), which in this context states that anyone who would buy a stove at a higher price would also buy at a lower
+price.
+  45
+     We obtain these estimates using the procedure in Abadie (2002), as described in detail in Appendix E.
+
+
+                                                         31
+

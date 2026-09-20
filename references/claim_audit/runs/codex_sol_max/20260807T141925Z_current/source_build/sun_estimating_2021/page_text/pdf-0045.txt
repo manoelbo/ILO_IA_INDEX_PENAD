@@ -1,0 +1,116 @@
+                           g
+                       e ωe,` = 1, note that the sum of weights is equal to
+                 Í      Í
+To see that 1)   ` ∈g
+             T ÕÕ               T ÕÕ            T
+                                                                ! −1
+                                                                     Ü i,t D` · 1 {Ei = e}]
+            Õ                  Õ               Õ
+                          g                 |               |
+                        ωe,` =            eg         Ü i,t D ] E[D
+                                                   E[D      i,t             i,t                                                       (55)
+            t=0 ` ∈g e         t=0 ` ∈g e      t=0
+                                                       T
+                                                                             ! −1 T
+                                                                                                            `
+                                                       Õ                         Õ                  Õ               Õ
+                                              |                Ü i,t D| ]
+                                            =eg              E[D      i,t
+                                                                                           Ü i,t
+                                                                                         E[D               Di,t ·       1 {Ei = e}]   (56)
+                                                       t=0                         t=0              ` ∈g            e
+                                                       T
+                                                                             ! −1 T
+                                                       Õ                         Õ
+                                                 |                       |
+                                            =eg                Ü i,t D ]
+                                                             E[D      i,t
+                                                                                           Ü i,t 1{t − Ei ∈ g}].
+                                                                                         E[D                                          (57)
+                                                       t=0                         t=0
+It is thus the population regression coefficient on 1{t − Ei ∈ g} from regressing 1{t − Ei ∈ g} on Di,t and the
+
+unit and time fixed effects, which is just one. Similarly, for each g 0 , g, the sum of weights is the population
+
+regression coefficient on 1{t − Ei ∈ g 0 } from regressing 1{t − Ei ∈ g} on Di,t and the unit and time fixed
+
+effects, which is zero. To see that the weights from all excluded relative time add up to negative one across
+
+cohorts, note that the sum of these weights is equal to
+                                               T
+                                                               ! −1 T
+                                                                        Ü i,t D` ]
+                   Õ Õ                Õ Õ                          Õ
+                             g     |                       |
+                           ωe,` =eg              E[DÜ i,t D ]
+                                                           i,t        E[D      i,t                                                    (58)
+                 ` ∈g e x cl e           ` ∈g e x cl    t=0                         t=0
+
+                                          T
+                                                                   ! −1 T
+                                                                       Õ h               i
+                                                                                     `
+                                          Õ                                       Õ
+                                    |              Ü i,t D| ]
+                                  =eg            E[D      i,t
+                                                                            Ü i,t
+                                                                          E D       Di,t                                              (59)
+                                           t=0                           t=0              ` ∈g e x cl
+                                          T
+                                                                   ! −1 T
+                                                                                                              ` 
+                                          Õ                            Õ                        ÕÕ
+                                     |                         |
+                                  =eg              Ü i,t D ]
+                                                 E[D      i,t
+                                                                                 Ü i,t 1 −
+                                                                               E[D                           Di,t ]                   (60)
+                                           t=0                           t=0                    g ∈ G ` ∈g
+                                              T
+                                                                      ! −1 T
+                                                                                                            `
+                                              Õ                           Õ                  ÕÕ
+                                       |                 Ü i,t D| ]
+                                  = − eg               E[D      i,t
+                                                                                     Ü i,t
+                                                                                   E[D                     Di,t ]                     (61)
+                                               t=0                           t=0             g ∈ G ` ∈g
+                                               T
+                                                                             ! −1 T
+                                             Õ Õ                                 Õ
+                                       |                       Ü i,t D| ]
+                                  = − eg                     E[D      i,t
+                                                                                           Ü i,t 1{t − Ei ∈ g}] = −1
+                                                                                         E[D                                          (62)
+                                            g ∈ G t=0                              t=0
+                                                    ` +Í             `               `
+                                                         g ∈ G ` ∈g Di,t = −T ≤` ≤T Di,t = 1. The fourth equal-
+                                         Í                    Í           Í
+where the third equality follows from ` ∈g e x cl Di,t
+                  Í
+ity follows from t E[D  Ü i,t ] = 0 due to the zero mean property of double-demeaning proved in Lemma 1.
+
+The last line simplifies to negative one because each term in the summation
+                                    T
+                                                     ! −1 T
+                                   Õ                     Õ
+                                                 |
+                                          Ü i,t D ]           Ü i,t 1{t − Ei ∈ g}]
+                                       E[D       i,t        E[D                                                                       (63)
+                                    t=0                            t=0
+equals the population regression coefficient on Di,t from regressing 1{t − Ei ∈ g} on Di,t and the unit and
+
+time fixed effects, which is a column vector with one in the entry corresponding to 1{t − Ei ∈ g}. Summing
+
+over g, the above expression is equal to a column vector of ones.
+                                                                                                                    g
+    Finally, we note that the weight for the never-treated cohort is always zero ω∞,` = 0. This is because
+ ` = 0 for all ` when E = ∞.
+Di,t                                                                                                                                    
+                       i
+
+
+
+
+                                                                   45
+

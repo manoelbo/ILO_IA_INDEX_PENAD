@@ -1,0 +1,58 @@
+where C
+      b (g, t) is as defined in Algorithm 1.
+
+Remark 10. In DiD applications, it is common to use “cluster-robust” inference procedures; see, e.g.,
+Wooldridge (2003) and Bertrand et al. (2004). However, we note that the choice of whether to cluster
+or not is usually not obvious, and depends on the kind of uncertainty one is trying to reflect; see, e.g.,
+Abadie et al. (2017) for a discussion in a cross-sectional setup.15 In the case that one wishes to account
+for clustering to reflect “cluster-based” sampling uncertainty, we note that this can be done in a straight-
+forward manner using a small modification of the multiplier bootstrap described above, provided that the
+number of cluster is “large.” More precisely, instead of drawing observation-specific V ’s, one simply needs
+to draw cluster-specific V ’s; see, e.g., Sherman and Le Cessie (2007), Kline and Santos (2012), Cheng
+et al. (2013), and MacKinnon and Webb (2018, 2020). If the number of clusters is “small,” however,
+the application of the aforementioned bootstrap procedure is not warranted.16
+
+Remark 11. In Algorithm 1 we have required an estimator for the main diagonal of Σ. However, we
+note that if one takes Σ
+                       b (g, t) = 1 for all (g, t), the result in Corollary 1 continues to hold. However, the
+resulting “constant width” simultaneous confidence band may be of larger length; see, e.g., Montiel Olea
+and Plagborg-Møller (2018) and Freyberger and Rai (2018).
+
+Remark 12. The above results focus on making inference about AT T (g, t)’s in (effective) post-treatment
+periods t ≥ g − δ. Although the limited anticipation condition in Assumption 3 implies that AT T (g, t) = 0
+for all t < g − δ regardless of the group g, it is common practice to also estimate these pre-treatment
+parameters and use them to assess the credibility of the underlying identifying assumptions. Note that
+our DiD estimands (2.2) - (2.7) can be easily adjusted to include these by simply replacing the “long
+differences” (Yt − Yg−δ−1 ) with the “short differences” (Yt − Yt−1 ) for all t < g − δ. All our results
+                                           dr,nev
+continues to hold when one augments AT [ T t≥(g−δ) to also include these estimates for the AT T (g, t)’s in
+the pre-treatment periods t < g − δ.
+
+4.2    Asymptotic Theory for Summary Parameters
+Assume, for simplicity, that Assumption 3 holds with δ = 0. In this section, we discuss how one can
+estimate and make inference about the summary measures of the casual effects discussed in Section 3.
+More concisely, we consider parameters of the form of θ as defined in (3.1), which covers all of the
+aggregated parameters discussed in Section 3.
+    Given the discussion in Section 4.1, a natural way to estimate θ is to use the plug-in type estimators
+                                                T
+                                               XX                      nev
+                                        θ̂ =             w
+                                                         b (g, t) AT
+                                                                  [  T dr (g, t; 0) ,
+                                               g∈G t=2
+
+
+
+
+   15
+      The formal results in Abadie et al. (2017) focus on the cross section case and rely on additional functional form
+restrictions that we do not impose in this paper. Fully extending the results of Abadie et al. (2017) to the semiparametric
+panel data case is beyond the scope of our paper.
+   16
+      In such cases, provided that one is comfortable imposing additional functional form assumptions, one could use alter-
+native procedures such as Conley and Taber (2011) and Ferman and Pinto (2019). Extending these proposals to our setup
+is beyond the scope of this paper though.
+
+
+                                                              25
+

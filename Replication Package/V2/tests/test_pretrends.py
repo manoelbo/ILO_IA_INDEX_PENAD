@@ -8,7 +8,7 @@ import numpy as np
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "pretrends.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "pretrends.py"
 
 
 def load_module():

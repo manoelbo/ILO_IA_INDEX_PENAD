@@ -1,0 +1,42 @@
+            Concluding Remarks
+
+            This fourth Anthropic Economic Index report introduces economic
+            primitives—foundational characteristics of AI use—that show how Claude is
+            used by both consumers and firms. We use Claude to estimate the extent to
+            which usage varies along these dimensions; these measures are directionally
+            accurate and, taken together, provide important signals even if individual
+            classifications are imperfect.
+
+            Our findings carry significant implications for how AI will reshape economies
+            and labor markets. Notably, Claude tends to be used more, and appears to
+            provide greater productivity boosts, on tasks that require higher education. If
+            these tasks shrink for US workers, the net effect could be to deskill jobs. But
+            these impacts depend crucially on complementarity across tasks, and whether
+            increased productivity at a certain task may increase the demand for it.
+
+            At the global level, the strong relationship between per capita income and
+            usage patterns—with higher-income nations using Claude collaboratively
+            while lower-income countries focus on coursework and specific applications—
+            suggests that AI’s impact will be mediated by existing institutional structures
+            rather than unfolding uniformly. Geographic diffusion patterns reinforce
+            this picture. Within the US, per capita usage has converged slightly; globally,
+            diffusion is slower. Combined with income-driven differences in how AI is
+            used, this raises questions about whether AI will narrow or widen international
+            economic gaps.
+
+            Equally important to the patterns documented here are potential changes
+            across this and subsequent reports. As AI capabilities advance, Claude’s
+            success rate may increase, usage patterns may show greater autonomy, users
+            may tackle new and more complex tasks, and tasks that prove automatable
+            may graduate from interactive chat to API deployment. We will track these
+            dynamics over time, providing a longitudinal view of AI’s role in the economy.
+
+            Building on prior releases, this edition significantly expands both the scope
+            and transparency of usage data we share, including task-level classifications
+            along new dimensions and regional breakdowns globally for the first time.
+            We publish this data to enable researchers, journalists, and the public to
+            investigate novel questions about AI’s economic impacts that can form the
+            empirical foundation for policy responses.
+
+The Anthropic Economic Index Report                                                           54
+

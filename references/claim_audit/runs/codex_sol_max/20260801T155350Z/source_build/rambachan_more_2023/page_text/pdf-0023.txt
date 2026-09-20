@@ -1,0 +1,65 @@
+       RAMBACHAN AND ROTH                  A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                        2577
+
+possible confidence set that satisfies the coverage requirement (10) is at most 28% shorter than
+the length of the optimal FLCI when the conditions of the proposition hold.
+
+
+4.3.    (In)Consistency of FLCIs
+As discussed above, these finite-sample guarantees do not apply for several types of restric-
+tions  of importance, including those that construct bounds using the maximum pre-treatment
+
+
+
+
+                                                                                                                                        Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+violation or incorporate sign and shape restrictions. We now show that the FLCIs can perform
+poorly under such restrictions. We first provide two illustrative examples, and then state a formal
+inconsistency result.
+
+   4.3.1. Example:  S D P B (M) and  S D I (M). Suppose θ = τ1 . It can be shown that the
+worst-case bias of an affine estimator over  S D P B (M) or  S D I (M) is the same as the worst-
+case bias for that estimator over SD (M).26 Since the construction of the optimal FLCI depends
+only on the worst-case bias and variance of the affine estimator, it follows that the optimal FLCI
+constructed using  S D P B (M) or  S D I (M) is the same as the one constructed using SD (M).
+Therefore, the optimal FLCI does not adapt to additional sign or monotonicity restrictions.
+
+     4.3.2. Example:  R M ( M̄). Suppose θ = τ1 . If  =  R M ( M̄) and M̄ > 0, then all affine
+estimators for τ1 have infinite worst-case bias, since δ ∈  R M ( M̄) can have |δ1 | arbitrarily large
+if |δ−1 | is also sufficiently large. Thus, the only valid FLCI is the entire real line.
+     We next provide a formal result on the (in)consistency of the FLCIs. Specifically, we will
+show that even as the sampling variation n converges to 0, the optimal FLCI will include fixed
+points outside of the identified set with positive probability unless certain special conditions are
+met.27 Recall from Lemma 2.1 that the identified set S(β, ) is an interval when  is convex,
+with length equal to θ ub (β, ) − θ lb (β, ) = bmax (β pr e , ) − bmin (β pr e , ). Since the length
+of the identified set only depends on β pr e and , denote it by L I D(β pr e , ). Our next result
+shows that Cα,n F LC I
+                       (β̂ n , n ) is consistent if and only if L I D(β pr e , ) is its maximum possible
+value, provided that the identified set is not the entire real line (in which case any procedure is
+trivially consistent).
+Assumption 9 (Identified set maximal length and finite). Suppose δ ∈  is such
+that       L I D(δ pr e , ) = supδ̃ pr e ∈ pr e L I D(δ̃ pr e , ) < ∞,    where  pr e = {δ pr e ∈ RT :
+                             
+∃δ post s.t. (δ pr e , δ post ) ∈ } is the set of possible values for δ pr e .
+Proposition 4.2. Suppose  is convex and α < 0.5. Fix δ ∈  and τ with τ pr e = 0, and suppose
+S(δ + τ, ) = R. Then (δ, ) satisfy Assumption 9 if and only if Cα,n
+                                                                   F LC I
+                                                                          (β̂ n , n ) is consistent,
+                        ∗
+meaning that for n =      /n,
+                                                                         
+            lim Pβ̂ n ∼N (δ+τ, n ) θ out ∈ Cα,n
+                                            F LC I
+                                                   (β̂ n ,           n)       = 0 for all θ out ∈ S(δ + τ, ).
+           n→∞
+
+
+
+
+        26. Suppose the vector δ̄ maximizes the bias for an affine estimator (a, v) over SD (M). The vector that adds
+a constant slope to δ̄, say δ̃ c = δ̄ + c · (−T, . . . , T̄ ) , also lies in SD (M), and for c sufficiently large, δ̃ c will lie in
+ S D P B (M). Moreover, the worse-case bias  ¯ will be the same for δ and δ̃ , since if (a, v) has finite worst-case bias it
+                                                                                    c
+must subtract out a weighted average of the pre-treatment slopes.
+        27. For ease of exposition, we present a result using “small- ” asymptotics in the normal model, as in e.g.
+Kadane (1971) and Moreira and Ridder (2019).
+

@@ -1,0 +1,49 @@
+    Our summary parameters aggregated by group and by calendar time are also consistent with the idea
+that increasing the minimum wage had a negative effect on county level teen employment relative to what
+would have happened in the absence of the minimum wage increase.
+    The second set of results comes from using the conditional parallel trends assumption; that is, we
+assume only that counties with the same characteristics would follow the same trend in teen employment
+in the absence of treatment. The county characteristics that we use are region of the country, county
+population, county median income, the fraction of the population that is white, the fraction of the
+population with a high school education, and the county’s poverty rate. We use the doubly robust
+estimation procedure discussed above. Thus, estimation requires a first step estimation of the generalized
+propensity score and outcome regression discussed above. For each generalized propensity score, we
+estimate a logit model that includes each county characteristic along with quadratic terms for population
+and median income.18 For the outcome regressions, we use the same specification for the covariates.
+    Before presenting these results, we note that our doubly robust estimation procedure is not compu-
+tationally demanding. Our estimates of group-time average treatment effects in this section (across all
+groups and time periods and including our multiplier bootstrap with 1000 iterations) run in 3.0 seconds on
+a laptop with a 2.80-GHz Intel i5 processor with 8GB of RAM and without using any parallel processing.
+    For comparison’s sake, we first estimate the coefficient on a post-treatment dummy variable in a model
+with unit fixed effects and region-year fixed effects. This is very similar to one of the sorts of models
+that Dube et al. (2010) finds to eliminate the correlation between the minimum wage and employment.
+Like Dube et al. (2010), using this specification, we find that the estimated coefficient is small and not
+statistically different from 0. However, one must have in mind that the approach we proposed in this
+article is different from the two-way fixed effects regression. In particular, we explicitly identify group-
+time average treatment effects for different groups and different times, allowing for arbitrary treatment
+effect heterogeneity as long as the conditional parallel trends assumption is satisfied. Thus, our causal
+parameters have a clear interpretation. As pointed out by Wooldridge (2005a), Chernozhukov et al.
+(2013), de Chaisemartin and D’Haultfœuille (2020), Borusyak and Jaravel (2017), Goodman-Bacon (2019)
+and Sloczyński (2018), the same may not be true for two-way fixed effects regressions in the presence of
+treatment effect heterogeneity.19
+    The results using our approach are available in Panel (b) in Figure 1 and Panel (b) in Table 3.
+Interestingly, we find quite different results using our approach than are suggested by the two-way fixed
+effects regression approach. In particular, we continue to find evidence that increasing the minimum wage
+tended to reduce teen employment. The estimated group-time average treatment effects range from 0.9%
+lower teen employment (not statistically different from 0) in 2006 for the group of states first treated
+in 2006 to 7.1% lower teen employment in 2007 for states first treated in 2004. Now, 3 of 7 group-time
+average treatment effects are statistically significant. The average effect of increasing the minimum wage
+
+   18
+      Using the propensity score specification tests proposed by Sant’Anna and Song (2019), we fail to reject the null hy-
+pothesis that these models are correctly specified at the usual significance levels.
+   19
+      Our approach is also different from that of Dube et al. (2010) in several other ways that are worth mentioning. We focus
+on teen employment; Dube et al. (2010) considers employment in the restaurant industry. Their most similar specification to
+the one mentioned above includes census division-time fixed effects rather than region-time fixed effects though the results
+are similar. Finally, our period of analysis is different from theirs; in particular, there are no federal minimum wage changes
+over the periods we analyze.
+
+
+                                                              31
+

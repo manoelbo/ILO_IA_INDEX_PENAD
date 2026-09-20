@@ -1,0 +1,31 @@
+              identify laws and court decisions relevant to pending cases” is predicted to
+              require 17.7 years because it resembles tasks typically performed by lawyers
+              and paralegals.
+
+              The data shows that Claude tends to cover tasks that require higher levels
+              of education. The mean predicted education for tasks in the economy is 13.2
+              years. For tasks that we see in our data, the mean prediction is about a year
+              higher, 14.4 years (corresponding to an Associate’s degree). This aligns with
+              the occupation-level results from earlier reports, showing more Claude usage
+              among white collar occupations.
+
+
+
+
+Figure 4.5: Education level of all tasks vs. Claude-covered tasks
+This shows two histograms. The blue bars give the distribution of the predicted task-level education required for all tasks in the O*NET
+database, weighted by employment. The orange bars show the same, restricting to tasks that appear in Claude.ai data.
+
+
+
+              We next calculate how removing AI-covered tasks shifts the average education
+              level of what remains. Overall, the net first-order impact is to deskill jobs, since
+              AI removes tasks that require relatively higher levels of education. One job
+              that experiences such deskilling is technical writers, which loses tasks like
+             “Analyze developments in specific field to determine need for revisions” (18.7
+              years) and “Review published materials and recommend revisions or changes
+              in scope, format” (16.4 years), leaving tasks like “Draw sketches to illustrate
+              specified materials” (13.6 years) and “Observe production, developmental, and
+
+The Anthropic Economic Index Report                                                                                                  46
+

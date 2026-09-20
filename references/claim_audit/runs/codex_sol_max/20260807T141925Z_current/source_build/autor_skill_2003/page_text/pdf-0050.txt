@@ -1,0 +1,46 @@
+1328           QUARTERLY JOURNAL OF ECONOMICS
+
+
+and year. These centile values are the unit of measure for all later
+analyses. A limitation of this methodology is that DOT values
+after 1960 may potentially lie outside the support of the 1960
+distribution, leading to truncation. In practice, this issue affects
+at most 4 percent of the distribution of each task in any year. An
+earlier version of this paper [Autor, Levy, and Murnane, 2001]
+employed raw DOT scores rather than the percentile measures
+used here. Results were qualitatively identical.
+
+A.6. Calculating within-Occupation Changes in DOT Task
+Measures: 1977–1991
+     To measure within-occupation changes in task content, we
+employed the 1991 Revised Fourth Edition of the Dictionary of
+Occupational Titles, available in electronic form from the Na-
+tional Academy of Sciences [1981]. Based on a study of select
+industries to determine which jobs had undergone the most sig-
+nicant occupational changes since the 1977 publication of the
+DOT fourth edition, DOT analysts introduced, revised, and elimi-
+nated occupational denitions for occupations that were observed
+to have most substantively changed between 1977 and 1991. A
+total of 2452 occupations were reviewed, updated, or were added;
+646 nominal titles were revised; 136 titles were combined; and 75
+were deleted. To provide a conservative measure of total task
+change, we assume that any occupation that was not revised in
+the 1991 DOT experienced no task change.
+     We used documentation from the North Carolina Employ-
+ment Security Commission [1992a, 1992b] to construct a cross-
+walk between the 1991 DOT and 1997 DOT occupation codes.
+With this crosswalk, we applied DOT 1991 task variables to our
+1971 CPS le, yielding a match rate of 99.9 percent. Of these
+matched occupations, 73 percent (weighted by employment) had
+been updated between 1977 and 1991 by DOT examiners. We
+then calculated DOT means by 1970 and 1980 COC occupations
+and gender using a procedure identical to that described in A.3, to
+obtain 1991 DOT task means for the 1977 occupations. The with-
+in-occupation variation that we exploit over 1977–1991 stems
+exclusively from reevaluation of occupational content by DOT
+examiners, rather than from changes in the relative size of DOT
+suboccupations within CIC occupations.
+     We assigned the 1977 DOT and 1991 DOT task measures to
+470 consistent COC occupations in the 1984 and 1998 CPS sam-
+ples (corresponding to the years of our CPS computer measure).
+

@@ -1,0 +1,49 @@
+                                                WORKING PAPER
+
+
+                                       Min    25th Perc.   Median   75th Perc    Max     Mean    Std. Dev.   Count
+   GPT-4 Exposure Rating 1            0.00       0.13        0.34      0.50       1.00    0.33      0.22      750
+   GPT-4 Exposure Rating 2            0.00       0.09        0.24      0.40       0.98    0.26      0.20      750
+   Human Exposure Rating               0.00      0.09        0.29      0.47       0.84    0.29      0.21      750
+   Software (Webb)                     1.00     25.00      50.00      75.00     100.00   50.69     30.05      750
+   Robot (Webb)                       1.00      22.00      52.00      69.00     100.00   48.61     28.61      750
+   AI (Webb)                          1.00      28.00      55.00      82.00     100.00   54.53     29.65      750
+   Suitability for Machine Learning    2.60      2.84        2.95      3.12       3.55    2.99      0.18      750
+   Normalized Routine Cognitive       -3.05     -0.46        0.10      0.63       3.42    0.07      0.86      750
+   Normalized Routine Manual          -1.81     -0.81       -0.11      0.73       2.96    0.05      1.01      750
+   AI Occupational Exposure Score      1.42      3.09        3.56      4.04       6.54    3.56      0.70      750
+   Frey & Osborne Automation           0.00      0.07        0.59      0.88       0.99    0.50      0.38      681
+   Log Avg. Salary                    10.13     10.67      11.00      11.34      12.65   11.02      0.45      749
+
+Table 8: Summary statistics for a suite of prior efforts to measure occupational exposure to AI and automation.
+We have also included summary statistics for measurements newly presented in this work. We include all
+measures from (Webb, 2020), normalized routine cognitive and manual scores from (Acemoglu and Autor,
+2011a) (means may deviate slightly from 0 due to imperfect matching of occupational groups), Suitability for
+Machine Learning from (Brynjolfsson and Mitchell, 2017; Brynjolfsson et al., 2018, 2023), AI Occupational
+Exposure from (Felten et al., 2018), and Automation exposure from (Frey and Osborne, 2017). We include as
+many occupations as we can match, but since O*NET taxonomies have changed as these measures have been
+developed, some of the roles may be missing from the most recent version of O*NET 6-digit occupations.
+
+
+and divided by standard deviation) routine cognitive scores all exhibit positive associations with some of our
+measures.
+     Software, SML, and routine cognitive scores all show positive and statistically significant associations
+with LLM exposure scores at a 1% level. Coefficients on AI scores from (Webb, 2020) are also positive and
+statistically significant at a 5% level, but our secondary prompt on overall exposure to LLMs in columns 3
+and 4 does not exhibit a statistically significant relationship. For the most part, the AI Occupational Exposure
+Score is not correlated with our exposure measures. Webb’s Robot exposure scores, routine manual task
+content, and the overall Automation metric from (Frey and Osborne, 2017) are all negatively correlated with
+our primary GPT-4 and human-assessed overall exposure ratings, conditional on the other measurements.
+This negative correlation reflects the limited exposure of physical tasks to LLMs. Manual work is not exposed
+to LLMs or even LLMs with additional systems integration for the time being.
+     Low correlations with (Felten et al., 2018) and (Frey and Osborne, 2017) could potentially be explained
+by differences in approaches. Linking AI capabilities to worker abilities or scoring exposure directly based on
+the occupation’s characteristics, rather than aggregating up to the occupation from DWA or task-level scoring
+(as in the SML paper and our own), offer a slightly different perspective on the content of occupations.
+     In all regressions, the 𝑅 2 ranges between 60.7% (column 3) and 72.8% (column 5). This suggests that
+our measure, which explicitly focuses on LLM capabilities, has between 28 and 40% unexplained variance
+compared to other measurements. Particularly in the case of AI-related exposure scores, we anticipate that a
+combination of other measurements would have a strong correlation with our scores. However, earlier efforts
+had limited information about the future progress of LLMs or LLM-powered software. We expect that our
+understanding of future machine learning technologies is similarly imperfectly captured by our rubric today.
+

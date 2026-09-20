@@ -1,0 +1,41 @@
+    RAMBACHAN AND ROTH           A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                   2587
+
+
+
+
+                                                                                                        Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                  F IGURE 7
+                           Sensitivity analysis for θ = τ15 using  = SD (M).
+
+
+
+
+intervals for β̂ 15 from specification (20). In red, we plot FLCIs when  = SD (M) for different
+values of M; recall that M = 0 corresponds with allowing only for linear violations of parallel
+trends, and larger values of M allow for larger deviations from linearity. In the analysis for men
+(left panel), the FLCIs are similar to those from OLS when allowing for violations of parallel
+trends that are approximately linear (M ≈ 0), but become wider as we allow for more non-
+linearity; the breakdown value for a significant effect is M ≈ 0.01. For women (right panel), the
+original OLS estimates are negative and the confidence interval rules out 0. When we allow for
+linear violations of parallel trends (M = 0), however, the picture changes substantially owing
+to the pre-existing downward trend that is visible in Figure 6. Indeed, for M < 0.01 the robust
+confidence set contains only positive values. Intuitively, this is because the point estimate for
+t = 15 lies above a linear extrapolation of the negative pre-trend. Thus, if we were to impose
+the same smoothness restrictions for men as for women, we would either have to reconcile
+significant effects of opposite signs by gender (if M < 0.01) or we would not be able to rule out
+null effects for both genders (M ≥ 0.01).
+    How can we interpret the magnitudes of M in this example? We consider a calibration exer-
+cise based on the magnitudes of possible possible confounds: if violations of parallel trends
+were driven by confounding changes in education quality, what would a given value of M imply
+about the evolution of those confounds? Chetty et al. (2014) estimate that a 1 standard deviation
+increase in teacher value-added (VA) corresponds with a 0.4 percentage point increase in adult
+employment. Hence, a value of M = 0.01 would correspond with allowing the slope of the dif-
+ferential trend to change by the equivalent of a one-fourtieth of a standard deviation of teacher
+VA across consecutive periods. Since the robust confidence sets for both men and women begin
+to include zero around this value of M, the strength with which we can rule out a null effect
+depends on our assessment of the economic plausibility of such non-linearities.
+    Finally, in Supplementary Material, Appendix C, we again compare the reported confidence
+sets to the estimated identified set S(β̂, ). Our results suggest that sampling uncertainty is large
+relative to the length of the identified set when M is close to zero, but becomes less important as
+M increases.
+

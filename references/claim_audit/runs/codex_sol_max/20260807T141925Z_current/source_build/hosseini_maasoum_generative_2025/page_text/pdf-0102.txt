@@ -1,0 +1,57 @@
+   Lag-augmented LP-IRFs (MOPM 2021; L=12 qtrly lags of log L): LinkedIn employment · JK(2020) MP_pure shock · 2015Q1 2021Q4 (pre-2022)
+                                               (A) Pooled: ^h on MP shock · Total headcount (log)                                                      (A) Pooled: ^h on MP shock · Junior headcount (log)
+                                        0.4
+                                        0.3                                                                                                      0.4
+            Log-growth of employment
+
+
+
+
+                                                                                                                     Log-growth of employment
+                                        0.2
+                                                                                                                                                 0.2
+                                        0.1
+                                        0.0                                                                                                      0.0
+                                        0.1
+                                                                                  95% CI (two-way cluster)
+                                                                                                                                                 0.2                                       95% CI (two-way cluster)
+                                        0.2                                       Point estimate                                                                                           Point estimate
+
+                                        (B) Interaction: ^h on Treated × MP shock · Total headcount (log) (B) Interaction: ^h on Treated × MP shock · Junior headcount (log)
+                                       0.10                                      95% CI (two-way cluster) 0.10                                     95% CI (two-way cluster)
+                                                                                  Point estimate                                                                                           Point estimate
+                                       0.05                                                                                                     0.05
+    Log-growth of employment
+
+
+
+
+                                                                                                             Log-growth of employment
+
+
+
+
+                                       0.00                                                                                                     0.00
+
+                                       0.05                                                                                                     0.05
+
+                                       0.10                                                                                                     0.10
+
+                                       0.15                                                                                                     0.15
+                                              0     1     2      3      4       5     6        7       8                                               0     1     2      3      4       5     6        7       8
+                                                         Horizon h (quarters after shock)                                                                         Horizon h (quarters after shock)
+
+Figure A.25: Impulse responses of LinkedIn employment to Jarocinski and Karadi (2020)
+pure monetary-policy shocks, lag-augmented Jordà local projection, pre-2022 sample.
+Top row: pooled response β h from log Li,t+h − log Li,t−1 = αih + β h εm
+                                                                       t + lag controls + η,
+firm fixed effects only. Bottom row: adopter-interaction response β h from equation (35),
+firm and year-quarter fixed effects. Shaded bands are 95% confidence intervals using
+Cameron–Gelbach–Miller two-way cluster-robust standard errors at the firm and year-
+quarter level.
+
+
+
+
+                                                                                                         A.57
+

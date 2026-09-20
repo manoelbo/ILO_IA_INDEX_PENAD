@@ -1,0 +1,6 @@
+# Heterogeneity by race or color
+
+| Grupo | Admissões (log) | Desligamentos (log) | Salário real de admissão (log) | Saldo líquido (asinh) |
+| --- | --- | --- | --- | --- |
+| Branca | -0,0486*(0,0280) | -0,0254 (0,0247) | -0,0096 (0,0142) | -0,3389 (0,3078) |
+| Negra (preta e parda) | -0,0167 (0,0250) | -0,0510*(0,0283) | -0,0234 (0,0142) | -0,2858 (0,2685) |

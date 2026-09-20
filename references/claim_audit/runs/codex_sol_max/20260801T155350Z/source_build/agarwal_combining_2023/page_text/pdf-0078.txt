@@ -1,0 +1,21 @@
+                                                                                                                        78
+
+
+
+
+        Table C.6: Comparing Experiment to Original Reads: Uncertain as Not Present
+
+                                               Top-Level           Pooled
+                                                                                    Abnormal
+                                                with AI            with AI
+                                                   (1)               (2)                  (3)
+                       Experiment                -0.004             0.020               -0.086
+                                                (0.016)            (0.005)             (0.025)
+                       Constant                  0.194              0.065                0.466
+                                                (0.016)            (0.005)             (0.028)
+                       Observations               9718              53449               4859
+                       R-Squared                  0.000             0.000               0.002
+Note: Regression of indicator equal to one if binarized assessment is equal to ground truth from both the original reads and
+experiment reads onto a constant and an indicator equal to one if the radiologist was in the experiment. Standard errors are
+clustered at the patient-case level.
+

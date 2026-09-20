@@ -1,0 +1,47 @@
+27         ILO Working Paper 140
+
+
+
+
+     XX    4 Expert validation survey
+
+
+     The expert group includes international specialists at the ILO and its partner organizations, NASK
+     and the Polish Ministry of Family, Labour and Social Policy.9 The primary criterion for expert se-
+     lection is their understanding of labour markets, including the complexity of occupations and
+     tasks, and their real-life applications. While the experts are expected to have familiarity with the
+     current family of generative AI technologies and their applications, expertise in AI design or de-
+     velopment is not a requirement. This approach ensures that the focus remains on the feasibility
+     and practical implications of automation within existing technological constraints, as technolo-
+     gy experts tend to overstate technological capacities and risks when evaluating broader appli-
+     cations, particularly in workplace settings (Karger et al., 2023). This tendency is evident in earlier
+     automation studies, which often assigned high displacement potential to routine tasks or en-
+     tire occupations, such as garment production. As de Mattos et al. (2020) illustrate, these tech-
+     nological predictions frequently failed to account for the challenges of automating tasks requir-
+     ing high dexterity or handling complex materials, such as stitching pliable fabrics. Accordingly,
+     the assessment of automation potential in our study prioritizes expertise of task execution and
+     workplace realities over purely technological expertise.
+
+     Since the experts cannot review all 2,861 tasks used in the survey, we focus on a representative
+     sub-sample, selected in such a way to subsequently permit adjustments to entire task clusters.
+     The overall scheme of this score adjustment procedure is presented in Figure 11.
+
+
+         XX Figure 11. Schema of the scoring stages
+
+
+
+
+     First, we cluster the tasks into four fixed intervals, based on the distribution of the mean scores
+     from the survey.10 We then use hierarchical clustering to group similar tasks within those clusters
+     based on their semantic content. First, we assign embeddings to each task description using the
+     text-embedding-ada-002 model from OpenAI. Next, for each subgroup – defined by the combina-
+     tion of an occupational group at ISCO-08 1-digit level and a particular survey score cluster – we
+
+
+
+     9
+           A full list of contributors is provided in the acknowledgements section.
+     10
+           μϵ[0,0.1]υ(0.1,0.3]υ(0.3,0.5]υ(0.5,1]
+

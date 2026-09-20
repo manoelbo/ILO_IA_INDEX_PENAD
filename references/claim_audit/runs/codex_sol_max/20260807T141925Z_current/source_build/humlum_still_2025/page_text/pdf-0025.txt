@@ -1,0 +1,36 @@
+3.2       Worker Earnings
+
+Figure 5, Panels (a) and (b) examine earnings of chatbot adopters, distinguishing between
+those with and without employer encouragement (i.e., encouraged-use policies). Each
+group is compared to non-encouraged non-adopters—workers insulated from AI chatbots
+through both personal non-use and the absence of employer encouragement.
+       Panel (a) begins by presenting differences in means, controlling for workers’ survey
+occupation and pre-determined characteristics. Adopters appear to earn substantial
+premia of about 9% for those with employer-encouraged usage and 4% for those without.
+However, leveraging the panel dimension of our administrative data reveals that these
+earnings differentials entirely predate the arrival of AI chatbots. Indexing to November
+2022, the difference-in-differences estimates in Panel (b) show no differential changes for
+either group of adopters following the introduction of AI chatbots. Appendix F.2 shows
+that these null results hold separately for workers’ hourly wages, intensive-margin hours,
+and extensive-margin employment. Moreover, Figure F.4 shows that the null results on
+worker earnings hold if we rely only on the variation in chatbot use that stems from
+employer policies—variation that is arguably more plausibly unrelated to individuals’
+earnings trajectories.
+       Figure 5, Panel (b) provides three key insights. First, two years after their launch, AI
+chatbots have had minimal earnings impact on workers who use them. The confidence
+intervals of our dynamic difference-in-differences estimates rule out changes larger than 3%,
+and our pooled difference-in-differences estimates rule out effects larger than 2%.14 These
+effects are also small relative to the substantial variation in earnings changes observed
+for similar workers over time: the standard deviation of residual earnings changes is
+about 30 percentage points in December 2024. Second, these effects show no differential
+trends after the introduction of AI chatbots, indicating that the minimal impacts are not
+  14
+     The dynamic difference-in-differences in Figure 5, Panel (b) reveal that adopters are on slightly
+stronger labor market trends. However, because these trends entirely predate AI chatbots, the pooled
+difference-in-differences in Figure 7, Panel (a) (which control for pre-trends; see Equation (3)) are precise
+zeros, with confidence bands ruling out effects larger than 2%.
+
+
+
+
+                                                     23

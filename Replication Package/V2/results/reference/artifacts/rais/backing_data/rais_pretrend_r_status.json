@@ -1,0 +1,8 @@
+{
+  "failed_models": 0,
+  "input_rows": 5442,
+  "maximum_absolute_difference": 8.682507157686814e-09,
+  "models": 3,
+  "numeric_tolerance": 1e-06,
+  "status": "pass"
+}

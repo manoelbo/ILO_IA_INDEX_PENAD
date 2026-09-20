@@ -1,0 +1,53 @@
+    Last but not least, we shed more light on firm-specific enablers that spur productivity
+gains from AI adoption. Table 6 reports the size of marginal benefits from AI adoption,
+conditional on the level of complementary investments in different tangible and intangi-
+ble assets. Investment in buildings and infrastructure seem to multiply the benefits of
+AI adoption (column (1)). However, those gains are small in magnitude compared to
+firms that invest in software and data (column (4)) or training (column (5)). An extra
+percentage point spent on software and data increases the effect of AI adoption on labor
+productivity by around 2.4%, and an extra percentage point spent on training by 5.9%.
+
+Table 6: Effects of AI adoption on productivity with complementary investment in tan-
+gible and intangible assets
+
+                              (1)           (2)             (3)          (4)         (5)          (6)
+                           LP (log)      LP (log)         LP (log)    LP (log)     LP (log)     LP (log)
+                           Buildings     Machinery         R&D        Software     Training      Org.
+ AI adoption x Inv. share 0.007***          0.000            -0.005     0.024**     0.059**       0.012
+                            (0.003)        (0.002)          (0.005)     (0.010)     (0.025)      (0.012)
+ Inv. share                  0.000       0.003***            0.001    0.010***      0.019**       0.005
+                            (0.001)        (0.001)          (0.002)     (0.004)     (0.008)      (0.004)
+ AI adoption (US-based)      0.032         0.045*          0.066***      0.030       0.035       0.050**
+                            (0.025)        (0.026)          (0.025)     (0.025)     (0.025)      (0.024)
+ Investment (lag)           0.011**        0.010*           0.012**     0.011**    0.011**      0.012**
+                            (0.006)        (0.006)          (0.006)     (0.006)     (0.006)      (0.006)
+ Profitability (lag)       0.629***       0.612***        0.634***     0.627***    0.632***     0.635***
+                            (0.043)        (0.042)          (0.043)     (0.043)     (0.042)      (0.043)
+ Financial leverage (lag) -0.149***      -0.159***        -0.146***   -0.149***   -0.147***    -0.147***
+                            (0.027)        (0.027)          (0.027)     (0.027)     (0.027)      (0.027)
+ Total assets (log, lag)   0.391***      0.397***          0.390***    0.395***    0.395***     0.391***
+                            (0.007)        (0.007)          (0.007)     (0.007)     (0.007)      (0.007)
+ Size FE                      Yes           Yes             Yes         Yes          Yes          Yes
+ Age FE                       Yes           Yes             Yes         Yes          Yes          Yes
+ Country-sector-wave FE       Yes           Yes             Yes         Yes          Yes          Yes
+ Observations                27593         27593           27593       27593        27593        27593
+ R-squared                   0.566         0.567           0.566       0.567        0.567        0.566
+ Adjusted R-squared          0.540         0.541           0.540       0.541        0.541        0.540
+
+
+Note: The dependent variable is labor productivity, calculated as the log of turnover per employee, and
+is derived from EIBIS. AI adoption is the AI implementation status derived from similar firms in the
+US. Investment shares are EIBIS-reported investment in (1) Land, business buildings and infrastructure,
+(2) Machinery and equipment, (3) Research and development (including the acquisition of intellectual
+property), (4) Software, data, IT networks and website activities, (5) Training of employees and (6)
+Organisation and business process improvements, scaled by total assets. Investment is expressed as the
+annual change in total fixed assets. Profitability is the ratio of EBIT to total assets. Financial leverage
+is the ratio of loans and long-term debt to total assets. All control variables come from ORBIS and are
+lagged by 1 year. Standard errors clustered at the country-sector-wave level are reported in parentheses.
+*, **, *** correspond to 0.1, 0.05 and 0.01 significance levels, respectively.
+
+
+
+
+                                                     22
+

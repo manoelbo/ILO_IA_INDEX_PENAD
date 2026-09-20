@@ -1,0 +1,1221 @@
+---
+title: "Guia de leitura do código em R"
+subtitle: "Companion da dissertação e do Replication Package V2"
+author: ""
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    number_sections: true
+    code_folding: show
+    self_contained: true
+    df_print: paged
+params:
+  v2_root: "../V2"
+  bundle_root: "../_bundle/v2"
+  run_light_models: true
+---
+
+```{r setup, include=FALSE}
+required_packages <- c(
+  "data.table", "fixest", "ggplot2", "jsonlite", "kableExtra",
+  "knitr", "scales"
+)
+missing_packages <- required_packages[
+  !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
+]
+if (length(missing_packages) > 0L) {
+  stop(
+    "Missing R packages: ", paste(missing_packages, collapse = ", "),
+    ". Install the V2 R dependencies before rendering this guide."
+  )
+}
+
+suppressPackageStartupMessages({
+  library(data.table)
+  library(fixest)
+  library(ggplot2)
+  library(jsonlite)
+  library(kableExtra)
+  library(knitr)
+  library(scales)
+})
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 10,
+  fig.height = 5.8,
+  dpi = 144,
+  out.width = "100%"
+)
+setFixest_notes(FALSE)
+setFixest_nthreads(1L)
+options(scipen = 999, datatable.print.nrows = 12L)
+
+v2_root <- normalizePath(params$v2_root, mustWork = TRUE)
+bundle_root <- normalizePath(params$bundle_root, mustWork = TRUE)
+reference_root <- file.path(v2_root, "results", "reference", "artifacts")
+
+required_paths <- c(
+  reference_root,
+  file.path(bundle_root, "derived", "cross_replication_input.csv"),
+  file.path(bundle_root, "derived", "rais", "vintage", "rais_cross_replication_input.csv"),
+  file.path(bundle_root, "derived", "pnadc", "pnadc_cross_replication_input.csv")
+)
+missing_paths <- required_paths[!file.exists(required_paths)]
+if (length(missing_paths) > 0L) {
+  stop(
+    "This companion needs the V2 signed reference and the analytical bundle. Missing: \n- ",
+    paste(missing_paths, collapse = "\n- ")
+  )
+}
+
+`%||%` <- function(left, right) if (is.null(left)) right else left
+
+status_box <- function(type, text) {
+  headings <- c(
+    executed = "Executado neste documento",
+    frozen = "Carregado da referência assinada do V2",
+    displayed = "Código exibido apenas para leitura",
+    gate = "Gate científico"
+  )
+  if (!type %in% names(headings)) stop("Unknown status type: ", type)
+  cat(
+    sprintf(
+      '<div class="status-box status-%s"><strong>%s.</strong> %s</div>\n',
+      type, headings[[type]], text
+    )
+  )
+}
+
+reference_path <- function(relative_path) {
+  file.path(reference_root, relative_path)
+}
+
+display_csv <- function(relative_path, caption = NULL, max_rows = 30L, digits = 4L) {
+  path <- reference_path(relative_path)
+  if (!file.exists(path)) {
+    cat(sprintf("<p><em>Missing reference artifact: %s</em></p>\n", relative_path))
+    return(invisible(NULL))
+  }
+  data <- fread(path, encoding = "UTF-8")
+  if (!is.null(max_rows) && nrow(data) > max_rows) {
+    data <- data[seq_len(max_rows)]
+    caption <- paste0(caption %||% basename(path), " (first ", max_rows, " rows)")
+  }
+  output <- kableExtra::kbl(
+    as.data.frame(data),
+    format = "html",
+    caption = caption %||% basename(path),
+    digits = digits,
+    escape = TRUE
+  ) |>
+    kableExtra::kable_styling(
+      full_width = FALSE,
+      bootstrap_options = c("striped", "hover", "condensed", "responsive")
+    )
+  print(output)
+  cat("\n\n")
+  invisible(data)
+}
+
+display_code <- function(path, language = "r", first = 1L, last = Inf) {
+  if (!file.exists(path)) stop("Code file not found: ", path)
+  lines <- readLines(path, warn = FALSE, encoding = "UTF-8")
+  last <- min(length(lines), last)
+  selected <- lines[seq.int(first, last)]
+  cat(sprintf("```%s\n", language))
+  cat(paste(selected, collapse = "\n"))
+  cat("\n```\n")
+}
+
+show_reference_image <- function(relative_path, caption) {
+  path <- reference_path(relative_path)
+  cat(sprintf("\n\n#### %s\n\n", caption))
+  if (!file.exists(path)) {
+    cat(sprintf("<p><em>Missing reference artifact: %s</em></p>\n", relative_path))
+  } else {
+    cat(sprintf("![%s](%s){width=100%%}\n", caption, path))
+  }
+  cat("\n")
+}
+
+compact_summary <- function(data, columns) {
+  available <- intersect(columns, names(data))
+  data.table(
+    variable = available,
+    missing = vapply(available, function(column) sum(is.na(data[[column]])), integer(1L)),
+    unique_values = vapply(available, function(column) uniqueN(data[[column]]), integer(1L)),
+    class = vapply(available, function(column) class(data[[column]])[[1L]], character(1L))
+  )
+}
+
+publication_index <- fread(reference_path("publication_index.csv"), encoding = "UTF-8")
+
+# The current manuscript adds two Appendix A descriptive tables that use V2
+# backing data. They intentionally remain outside the signed 53-artifact
+# registry, because this companion must not mutate the released V2 reference.
+manuscript_additions <- data.table(
+  artifact_id = c("table_a_2_1", "table_a_2_2"),
+  caption = c(
+    "Table A.2.1: Educational composition shift",
+    "Table A.2.2: Wage price/composition decomposition"
+  ),
+  component = c("caged", "caged"),
+  producer = c("caged audit backing data", "caged audit backing data"),
+  input_contract = c("caged_panel_202101_202605", "caged_panel_202101_202605"),
+  reference_path = c(
+    "caged/audit/a1_education_composition_shift.csv",
+    "caged/audit/a2_wage_price_composition_split.csv"
+  ),
+  command = c("Backed by V2 CAGED audit", "Backed by V2 CAGED audit"),
+  bytes = c(NA_real_, NA_real_),
+  sha256 = c(NA_character_, NA_character_)
+)
+manuscript_catalog <- rbindlist(
+  list(publication_index, manuscript_additions),
+  use.names = TRUE,
+  fill = TRUE
+)
+
+appendix_label <- c(
+  table_a_1 = "Table A.1",
+  table_a_2_1 = "Table A.2.1",
+  table_a_2_2 = "Table A.2.2",
+  table_a_2 = "Table A.3",
+  table_a_3 = "Table A.4",
+  table_a_4 = "Table A.5",
+  table_a_5 = "Table A.6",
+  table_a_6 = "Table A.7"
+)
+manuscript_catalog[, manuscript_label := fifelse(
+  artifact_id %in% names(appendix_label),
+  appendix_label[artifact_id],
+  caption
+)]
+
+if (nrow(publication_index) != 53L) {
+  stop("The signed V2 publication index was expected to contain 53 artifacts.")
+}
+if (nrow(manuscript_catalog) != 55L) {
+  stop("The manuscript crosswalk must contain 55 computational artifacts.")
+}
+
+caged_light_results <- NULL
+rais_light_results <- NULL
+pnadc_light_results <- NULL
+caged_comparison <- NULL
+rais_comparison <- NULL
+pnadc_comparison <- NULL
+```
+
+<style>
+body { font-size: 16px; line-height: 1.55; }
+.status-box { padding: 0.85em 1em; margin: 1em 0 1.3em; border-left: 5px solid; border-radius: 3px; }
+.status-executed { background: #edf7ed; border-color: #2e7d32; }
+.status-frozen { background: #edf4fb; border-color: #1565c0; }
+.status-displayed { background: #fff8e1; border-color: #ef6c00; }
+.status-gate { background: #fcebea; border-color: #c62828; }
+.small-note { color: #555; font-size: 0.93em; }
+.equation-note { background: #f7f7f7; border-radius: 4px; padding: 0.8em 1em; }
+</style>
+
+# Como ler este documento
+
+Este é um guia de leitura, não um novo pipeline de replicação. Ele foi feito para ser aberto ao lado da [Dissertação de Mestrado V3 no Notion](https://app.notion.com/p/Disserta-o-de-Mestrado-V3-33dcc8ca461082bda8880151f42ba19b?source=copy_link) e do Replication Package V2.
+
+O objetivo é tornar visíveis, em uma única navegação:
+
+- quais dados entram em cada parte da dissertação;
+- como os painéis são construídos;
+- quais equações são estimadas em R;
+- quais partes são executadas aqui, quais são carregadas da referência assinada e quais seriam pesadas demais para este guia;
+- como as tabelas, os gráficos, os testes de pré-tendência e os limites de interpretação se conectam.
+
+O documento **não altera** `V2/results/reference/`. As tabelas e figuras congeladas são lidas dessa referência; os poucos modelos executados usam apenas as entradas analíticas compactas já presentes no bundle V2.
+
+```{r document-contract, echo=FALSE, results='asis'}
+status_box(
+  "frozen",
+  paste0(
+    "O guia lê ", nrow(publication_index),
+    " artefatos assinados do V2 e os mapeia para as 55 tabelas e figuras computacionais da versão atual da dissertação."
+  )
+)
+```
+
+## Convenções de leitura
+
+Ao longo do documento, cada bloco importante traz uma etiqueta:
+
+- **Executed in this document**: uma versão leve é de fato reestimada em R a partir de uma entrada analítica compacta.
+- **Loaded from the signed V2 reference**: o artefato é o resultado congelado do V2, apenas exibido para leitura.
+- **Code displayed for reading only**: é o código canônico ou uma tradução didática; não é reexecutado aqui porque depende de fontes brutas, painéis grandes ou de toda a DAG.
+- **Scientific gate**: uma restrição substantiva que deve acompanhar a leitura do resultado, mesmo quando a tabela ou o gráfico está disponível.
+
+## Mapa de cobertura da dissertação
+
+O V2 assinado contém 53 artefatos publicados. A versão atual da dissertação também mostra duas tabelas descritivas adicionais no Apêndice A, ambas já sustentadas por backing data do V2. Por isso, o mapa abaixo tem 55 linhas, sem modificar a referência assinada.
+
+```{r manuscript-crosswalk, echo=FALSE, results='asis'}
+crosswalk <- copy(manuscript_catalog)[
+  , .(manuscript_label, artifact_id, component, producer, reference_path, command)
+]
+setorder(crosswalk, component, manuscript_label)
+kableExtra::kbl(
+  as.data.frame(crosswalk),
+  format = "html",
+  caption = "Crosswalk between the current manuscript and the V2 code/reference artifacts",
+  escape = TRUE
+) |>
+  kableExtra::kable_styling(
+    full_width = FALSE,
+    bootstrap_options = c("striped", "hover", "condensed", "responsive")
+  ) |>
+  print()
+```
+
+```{r paths-used, echo=FALSE, results='asis'}
+paths_used <- data.table(
+  object = c("V2 source", "Signed reference", "Analytical bundle"),
+  location = c(
+    params$v2_root,
+    file.path(params$v2_root, "results", "reference", "artifacts"),
+    params$bundle_root
+  )
+)
+kableExtra::kbl(as.data.frame(paths_used), format = "html", escape = TRUE) |>
+  kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed")) |>
+  print()
+```
+
+# Medida de exposição e análise descritiva (Seções 2 e 3)
+
+## O que a seção constrói
+
+A Seção 3 combina a PNAD Contínua 2025T3 com a classificação de exposição ocupacional à IA. A unidade observada é a pessoa ocupada; os resultados usam pesos da pesquisa para recuperar agregados populacionais. A classificação é feita na ocupação disponível, mantendo explicitamente a cobertura de pareamentos de quatro e três dígitos e os casos não classificados.
+
+```{r section3-data-build-status, echo=FALSE, results='asis'}
+status_box(
+  "displayed",
+  "O arquivo analítico completo da Seção 3 está em Parquet e não é lido aqui de propósito. O script de agregação em R e os agregados congelados abaixo mostram exatamente o que é calculado sem duplicar o bundle analítico em memória."
+)
+```
+
+## A agregação independente em R
+
+O V2 usa o script abaixo para recalcular os agregados da Seção 3 em R. O script lê uma base analítica, define os grupos de exposição e produz identificadores estáveis `scope::key::metric`, que depois são comparados com os valores calculados no pipeline principal.
+
+```{r show-section3-r-code, echo=FALSE, results='asis'}
+display_code(file.path(v2_root, "R", "section3_replication.R"), language = "r")
+```
+
+## Diagnóstico da base e reconciliação entre linguagens
+
+A tabela de diagnóstico abaixo não é um resultado substantivo da dissertação. Ela documenta a construção da base: quantas observações entram, quantas permanecem depois dos filtros, qual população os pesos representam e quantas ocupações foram pareadas em quatro ou três dígitos. Assim, ela permite conferir se a amostra e a cobertura da classificação ocupacional correspondem ao desenho descrito na Seção 3.
+
+```{r section3-diagnostics, echo=FALSE, results='asis'}
+status_box(
+  "frozen",
+  "São diagnósticos congelados e agregados independentes em R. Eles não são regenerados neste guia."
+)
+```
+
+```{r section3-build-diagnostics, echo=FALSE, results='asis'}
+display_csv(
+  "section3/backing_data/data_build_diagnostics.csv",
+  "Diagnóstico da construção da base analítica da Seção 3",
+  max_rows = 50L
+)
+```
+
+```{r section3-r-aggregates, echo=FALSE, results='asis'}
+display_csv(
+  "section3/validation/r_aggregates.csv",
+  "Independent R aggregates for Section 3",
+  max_rows = 30L,
+  digits = 6L
+)
+```
+
+```{r section3-language-comparison, echo=FALSE, results='asis'}
+section3_comparison <- fread(reference_path("section3/validation/python_r_aggregate_comparison.csv"))
+section3_comparison[, comparison_pass := as.logical(comparison_pass)]
+section3_check <- section3_comparison[, .(
+  aggregate_rows = .N,
+  passed = sum(comparison_pass),
+  maximum_absolute_difference = max(absolute_difference, na.rm = TRUE)
+)]
+kableExtra::kbl(
+  as.data.frame(section3_check),
+  format = "html",
+  caption = "Section 3 Python/R aggregate reconciliation"
+) |>
+  kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed")) |>
+  print()
+```
+
+## Tabelas e gráficos da Seção 3
+
+```{r section3-tables, echo=FALSE, results='asis'}
+status_box("frozen", "As quatro tabelas publicadas da Seção 3 são renderizadas a partir da referência assinada do V2.")
+for (artifact in c(
+  "section3/tables/table_3_1_base_specs.csv",
+  "section3/tables/table_3_2_gradients.csv",
+  "section3/tables/table_3_3_high_exposure_occupations.csv",
+  "section3/tables/table_3_4_sector_exposure.csv"
+)) {
+  display_csv(artifact, gsub("_", " ", tools::file_path_sans_ext(basename(artifact))), max_rows = 50L)
+}
+```
+
+```{r section3-figures, echo=FALSE, results='asis'}
+section3_figures <- data.table(
+  path = c(
+    "section3/figures/figure_3_1_histogram_kde.png",
+    "section3/figures/figure_3_2_gradient_population.png",
+    "section3/figures/figure_3_3_score_by_occupation_group.png",
+    "section3/figures/figure_3_4_state_high_exposure.png",
+    "section3/figures/figure_3_5_sex.png",
+    "section3/figures/figure_3_6_race.png",
+    "section3/figures/figure_3_7_age.png",
+    "section3/figures/figure_3_8_education.png",
+    "section3/figures/figure_3_9_income.png",
+    "section3/figures/figure_3_10_formality.png"
+  ),
+  caption = c(
+    "Figure 3.1 — Distribution of AI exposure in Brazil",
+    "Figure 3.2 — Employed population by AI exposure gradient",
+    "Figure 3.3 — Occupational composition by AI exposure score",
+    "Figure 3.4 — High AI exposure by state",
+    "Figure 3.5 — AI exposure by sex",
+    "Figure 3.6 — AI exposure by race or color",
+    "Figure 3.7 — AI exposure by age group",
+    "Figure 3.8 — AI exposure by education",
+    "Figure 3.9 — AI exposure by income group",
+    "Figure 3.10 — AI exposure by formality status"
+  )
+)
+status_box("frozen", "As dez figuras da Seção 3 abaixo são as imagens de referência assinadas.")
+for (row in seq_len(nrow(section3_figures))) {
+  show_reference_image(section3_figures$path[[row]], section3_figures$caption[[row]])
+}
+```
+
+# Estratégia empírica e painel CAGED (Seção 4)
+
+## De registros administrativos ao painel ocupação-mês
+
+O CAGED não entra diretamente em uma regressão. Primeiro, os arquivos da safra são reconciliados por competência: movimentos regulares (`MOV`) e declarações fora do prazo (`FOR`) entram com peso positivo; exclusões (`EXC`) entram com peso negativo. Depois, os registros são agregados para ocupação CBO de quatro dígitos por mês e recebem a classificação de exposição, deflação pelo IPCA e controles de composição.
+
+```{r caged-build-status, echo=FALSE, results='asis'}
+status_box(
+  "displayed",
+  "A reconstrução bruta do CAGED usa 195 arquivos oficiais e deliberadamente não é executada de novo aqui. A fonte canônica em Python é mostrada porque é o código de produção da construção dos dados; o código R abaixo trabalha a partir da entrada analítica compacta de ocupação-mês."
+)
+```
+
+### Regra de sinais na reconstrução
+
+```{r caged-movements-source, echo=FALSE, results='asis'}
+display_code(
+  file.path(v2_root, "code", "caged", "ingest", "build_movements.py"),
+  language = "python", first = 72L, last = 289L
+)
+```
+
+Em linguagem R, a mesma lógica de auditoria pode ser lida assim. Este bloco é um espelho didático — a implementação canônica acima é a que registra hashes, schemas e partições.
+
+```r
+# Pedagogical translation; not the canonical raw-data builder.
+movements <- rbindlist(list(mov, late_filings, exclusions), use.names = TRUE, fill = TRUE)
+movements[, weight := fifelse(origin == "EXC", -1, 1)]
+movements[, signed_admissions := weight * (movement_type == "admission")]
+movements[, signed_separations := weight * (movement_type == "separation")]
+
+panel_cbo_month <- movements[, .(
+  admissoes = sum(signed_admissions),
+  desligamentos = sum(signed_separations),
+  n_movimentacoes = .N
+), by = .(cbo_4d, periodo)]
+```
+
+### Construção do painel e variáveis analíticas
+
+```{r caged-panel-source, echo=FALSE, results='asis'}
+display_code(
+  file.path(v2_root, "code", "caged", "panel", "build_panel.py"),
+  language = "python", first = 540L, last = 670L
+)
+display_code(
+  file.path(v2_root, "code", "caged", "panel", "build_panel.py"),
+  language = "python", first = 1168L, last = 1332L
+)
+```
+
+## Escopo, tratamento e variáveis de resultado
+
+```{r caged-panel-tables, echo=FALSE, results='asis'}
+status_box("frozen", "Estas tabelas documentam o escopo exato do painel, a classificação de tratamento, a cobertura e as definições dos desfechos usados pelo V2.")
+for (artifact in c(
+  "caged/tables/table_4_2_1_panel_scope.csv",
+  "caged/tables/table_4_2_2_treatment_classification.csv",
+  "caged/tables/table_4_2_3_panel_coverage.csv",
+  "caged/tables/table_4_3_1_outcomes.csv"
+)) {
+  display_csv(artifact, gsub("_", " ", tools::file_path_sans_ext(basename(artifact))), max_rows = 50L)
+}
+```
+
+## Entrada analítica compacta usada neste guia
+
+O arquivo abaixo é a versão compacta, sem coeficientes do Python, usada para a réplica independente em R dos modelos nacionais. Ele é suficiente para mostrar a construção de uma amostra de ocupação-mês, a estrutura dos efeitos fixos e os cinco modelos estáticos principais, sem carregar o painel setorial ou os painéis de heterogeneidade.
+
+```{r caged-light-input, eval=TRUE, results='asis'}
+caged_input <- fread(file.path(bundle_root, "derived", "cross_replication_input.csv"))
+caged_input[, `:=`(
+  cbo_4d = factor(cbo_4d),
+  periodo = factor(periodo)
+)]
+
+kableExtra::kbl(
+  as.data.frame(compact_summary(
+    caged_input,
+    c("cbo_4d", "periodo", "post", "treatment", "post_treat", "admissoes", "desligamentos", "ln_salario_real_adm", "asinh_saldo")
+  )),
+  format = "html",
+  caption = "Structure of the compact CAGED analytical input"
+) |>
+  kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed")) |>
+  print()
+
+caged_input[, .(
+  occupation_month_cells = .N,
+  occupations = uniqueN(cbo_4d),
+  months = uniqueN(periodo),
+  treated_occupations = uniqueN(cbo_4d[treatment == 1L]),
+  control_occupations = uniqueN(cbo_4d[treatment == 0L]),
+  post_months = uniqueN(periodo[post == 1L])
+)]
+```
+
+## Diferenças-em-diferenças: equação e implementação em R
+
+Para uma ocupação $o$ no mês $t$, a especificação nacional estática é:
+
+$$
+g\{Y_{ot}\} = \beta (Post_t \times Treated_o) + \alpha_o + \lambda_t + \varepsilon_{ot}.
+$$
+
+Para fluxos contados, $g(\cdot)$ é o log-link de uma PPML; para `ln_salario_real_adm` e `asinh_saldo`, o modelo é OLS. Os efeitos fixos são de ocupação e mês; os erros-padrão são agrupados por ocupação.
+
+```{r caged-did-status, echo=FALSE, results='asis'}
+status_box(
+  "executed",
+  "As cinco especificações nacionais estáticas a seguir são reestimadas a partir da entrada CAGED compacta e sem coeficientes. Isso é um apoio de leitura, não um substituto para a DAG completa do V2."
+)
+```
+
+```{r caged-static-models, eval=params$run_light_models}
+fit_caged_static <- function(data, outcome, estimator) {
+  formula <- as.formula(
+    paste(outcome, "~ post_treat | cbo_4d + periodo")
+  )
+  fit <- if (identical(estimator, "ppml")) {
+    fepois(
+      formula,
+      data = data,
+      vcov = ~cbo_4d,
+      fixef.rm = "perfect_fit",
+      warn = TRUE
+    )
+  } else {
+    feols(
+      formula,
+      data = data,
+      vcov = ~cbo_4d,
+      fixef.rm = "perfect_fit",
+      warn = TRUE
+    )
+  }
+  data.table(
+    outcome = outcome,
+    estimator = estimator,
+    coefficient = unname(coef(fit)[["post_treat"]]),
+    standard_error = unname(se(fit)[["post_treat"]]),
+    n_obs = as.integer(nobs(fit)),
+    n_clusters = uniqueN(data$cbo_4d)
+  )
+}
+
+caged_specs <- data.table(
+  outcome = c(
+    "admissoes", "desligamentos", "n_movimentacoes",
+    "ln_salario_real_adm", "asinh_saldo"
+  ),
+  estimator = c("ppml", "ppml", "ppml", "ols", "ols")
+)
+caged_light_results <- rbindlist(
+  Map(fit_caged_static, list(caged_input), caged_specs$outcome, caged_specs$estimator)
+)
+caged_light_results
+```
+
+```{r caged-static-reconciliation, echo=FALSE, results='asis'}
+if (!is.null(caged_light_results)) {
+  caged_reference <- fread(reference_path("caged/models/specification_ladder.csv"))[step_id == "01_no_controls"]
+  caged_comparison <- merge(
+    caged_light_results,
+    caged_reference[, .(outcome, reference_coefficient = coefficient, reference_standard_error = standard_error)],
+    by = "outcome",
+    all.x = TRUE
+  )
+  caged_comparison[, `:=`(
+    coefficient_difference = coefficient - reference_coefficient,
+    standard_error_difference = standard_error - reference_standard_error,
+    comparison_pass = abs(coefficient - reference_coefficient) <= 1e-6 &
+      abs(standard_error - reference_standard_error) <= 1e-6
+  )]
+  kableExtra::kbl(
+    as.data.frame(caged_comparison),
+    format = "html",
+    caption = "Light R re-estimation compared with the signed no-controls specification",
+    digits = 10L
+  ) |>
+    kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) |>
+    print()
+}
+```
+
+## A implementação independente completa em R
+
+O V2 também contém uma réplica independente muito mais ampla. Ela recebe contratos de modelo e entradas analíticas sem coeficientes do Python, estima em `fixest` e compara identificadores de modelo, termos, coeficientes, erros-padrão, tamanho de amostra, clusters e referência temporal. Abaixo está o começo desse script; o guia não o executa porque envolve 646 contratos e os painéis analíticos completos.
+
+```{r caged-complete-r-code, echo=FALSE, results='asis'}
+status_box(
+  "displayed",
+  "A réplica independente completa em R é mostrada para inspeção. Ela não é executada a partir deste guia."
+)
+display_code(
+  file.path(v2_root, "R", "complete_replication.R"),
+  language = "r", first = 1L, last = 225L
+)
+```
+
+## Resultados nacionais e estudo de eventos (Seção 5.1)
+
+A versão dinâmica substitui o único indicador pós por interações entre tempo relativo e tratamento, com o período imediatamente anterior ao marco como referência:
+
+$$
+g\{Y_{ot}\} = \sum_{k \neq -1} \beta_k\,1\{event\_time_t = k\}\times Treated_o + \alpha_o + \lambda_t + \varepsilon_{ot}.
+$$
+
+Em `fixest`, a ideia é expressa por `i(event_time, treatment, ref = -1)`. Os coeficientes anteriores ao evento não são apenas decoração do gráfico: eles alimentam os testes conjuntos de pré-tendência, as verificações de matriz de covariância e o status de interpretação do resultado.
+
+```{r national-results-status, echo=FALSE, results='asis'}
+status_box(
+  "frozen",
+  "A tabela estática nacional, a figura de estudo de eventos e a tabela com controles setoriais são resultados assinados do V2."
+)
+```
+
+```{r national-results-table, echo=FALSE, results='asis'}
+display_csv(
+  "caged/tables/table_5_1_national_results.csv",
+  "Table 5.1 — National average results",
+  max_rows = 20L,
+  digits = 6L
+)
+```
+
+```{r national-event-figure, echo=FALSE, results='asis'}
+show_reference_image(
+  "caged/figures/figure_5_1_national_event_studies.png",
+  "Figure 5.1 — National event studies and trajectories"
+)
+```
+
+```{r sector-control-table, echo=FALSE, results='asis'}
+display_csv(
+  "caged/tables/table_5_1_1_sector_control.csv",
+  "Table 5.1.1 — Sector-control co-principal specifications",
+  max_rows = 50L,
+  digits = 6L
+)
+```
+
+```{r national-pretrends, echo=FALSE, results='asis'}
+status_box(
+  "gate",
+  "O documento deve ser lido junto ao status de pré-tendência. Uma pré-tendência conjunta falha, uma matriz de covariância não PSD ou suporte insuficiente suprime a interpretação causal; isso não é corrigido por um coeficiente estático significativo."
+)
+display_csv(
+  "caged/diagnostics/pretrend_master_table.csv",
+  "National and supporting pretrend diagnostics",
+  max_rows = 50L,
+  digits = 6L
+)
+```
+
+## Heterogeneidades e diferenças-em-diferenças-em-diferenças (Seção 5.2)
+
+Para uma característica de grupo $G_o$, o contraste de heterogeneidade usa todas as interações necessárias:
+
+$$
+g\{Y_{ot}\} = \delta (Post_t \times Treated_o \times G_o)
++ \beta (Post_t \times Treated_o)
++ \gamma (Post_t \times G_o)
++ \eta (Treated_o \times G_o)
++ \alpha_o + \lambda_t + \varepsilon_{ot}.
+$$
+
+Não basta comparar dois coeficientes em subamostras para chamar o resultado de DDD: o termo triplo acima é o objeto estimado. As famílias A--C têm regras de multiplicidade e testes de pré-tendência próprios, preservados nos artefatos abaixo.
+
+```{r ddd-status, echo=FALSE, results='asis'}
+status_box(
+  "displayed",
+  "A família DDD completa usa o grande painel de heterogeneidade e é exibida, em vez de reexecutada, neste companion. Os modelos nacionais estáticos acima são deliberadamente os únicos modelos CAGED executados aqui."
+)
+```
+
+```r
+# Structural form used in the DDD contracts (illustrative R syntax)
+feols(
+  outcome ~ post_treat_group + post_treat + post_group + treat_group |
+    cbo_4d + periodo,
+  data = heterogeneity_panel,
+  vcov = ~cbo_4d
+)
+
+# Dynamic group trajectories use the same event-time reference convention.
+feols(
+  outcome ~ i(event_time, treatment, group, ref = -1) |
+    cbo_4d + periodo,
+  data = heterogeneity_panel,
+  vcov = ~cbo_4d
+)
+```
+
+### Sexo
+
+```{r sex-results, echo=FALSE, results='asis'}
+display_csv("caged/tables/table_5_2_1_sex.csv", "Table 5.2.1 — Results by sex", max_rows = 50L, digits = 6L)
+show_reference_image("caged/figures/figure_5_2_1_1_sex_admissions.png", "Figure 5.2.1.1 — Admissions by sex")
+show_reference_image("caged/figures/figure_5_2_1_2_sex_wage.png", "Figure 5.2.1.2 — Real admission wage by sex")
+```
+
+### Raça ou cor
+
+```{r race-results, echo=FALSE, results='asis'}
+display_csv("caged/tables/table_5_2_2_race.csv", "Table 5.2.2 — Results by race or color", max_rows = 50L, digits = 6L)
+show_reference_image("caged/figures/figure_5_2_2_1_race_admissions.png", "Figure 5.2.2.1 — Admissions by race or color")
+show_reference_image("caged/figures/figure_5_2_2_2_race_wage.png", "Figure 5.2.2.2 — Real admission wage by race or color")
+```
+
+### Idade
+
+```{r age-results, echo=FALSE, results='asis'}
+display_csv("caged/tables/table_5_2_3_age.csv", "Table 5.2.3 — Results by age group", max_rows = 50L, digits = 6L)
+show_reference_image("caged/figures/figure_5_2_3_1_age_admissions.png", "Figure 5.2.3.1 — Admissions by age group")
+show_reference_image("caged/figures/figure_5_2_3_2_age_wage.png", "Figure 5.2.3.2 — Real admission wage by age group")
+show_reference_image("caged/figures/figure_5_2_3_3_canaries_22_25_wage.png", "Figure 5.2.3.3 — Real admission wage for ages 22 to 25")
+```
+
+### Educação
+
+```{r education-results, echo=FALSE, results='asis'}
+display_csv("caged/tables/table_5_2_4_education.csv", "Table 5.2.4 — Results by education", max_rows = 50L, digits = 6L)
+show_reference_image("caged/figures/figure_5_2_4_1_education_admissions.png", "Figure 5.2.4.1 — Admissions by education")
+show_reference_image("caged/figures/figure_5_2_4_2_education_wage.png", "Figure 5.2.4.2 — Real admission wage by education")
+```
+
+### Renda ocupacional pré-tratamento
+
+```{r income-results, echo=FALSE, results='asis'}
+display_csv("caged/tables/table_5_2_5_income.csv", "Table 5.2.5 — Results by pre-treatment occupational wage", max_rows = 50L, digits = 6L)
+show_reference_image("caged/figures/figure_5_2_5_1_income_admissions.png", "Figure 5.2.5.1 — Admissions by pre-treatment income")
+show_reference_image("caged/figures/figure_5_2_5_2_income_wage.png", "Figure 5.2.5.2 — Real admission wage by pre-treatment income")
+```
+
+### Síntese por desfecho
+
+```{r group-forest, echo=FALSE, results='asis'}
+show_reference_image(
+  "caged/figures/figure_5_2_6_group_outcome_forest.png",
+  "Figure 5.2.6 — Within-group DiD estimates by outcome"
+)
+```
+
+## Apêndice A: diagnósticos e contrastes DDD
+
+```{r appendix-a-status, echo=FALSE, results='asis'}
+status_box(
+  "frozen",
+  "O Apêndice A é renderizado a partir das tabelas de referência assinadas e de duas tabelas descritivas da versão atual da dissertação, apoiadas por dados de auditoria do V2. Os rótulos atuais A.2.1 e A.2.2 são intencionalmente distintos dos identificadores legados dos artefatos V2."
+)
+```
+
+```{r appendix-a-tables, echo=FALSE, results='asis'}
+appendix_a_tables <- data.table(
+  path = c(
+    "caged/tables/table_a_1_national_diagnostics.csv",
+    "caged/audit/a1_education_composition_shift.csv",
+    "caged/audit/a2_wage_price_composition_split.csv",
+    "caged/tables/table_a_2_sex.csv",
+    "caged/tables/table_a_3_race.csv",
+    "caged/tables/table_a_4_age.csv",
+    "caged/tables/table_a_5_education.csv",
+    "caged/tables/table_a_6_income.csv"
+  ),
+  caption = c(
+    "Table A.1 — National-result diagnostics",
+    "Table A.2.1 — Educational composition shift",
+    "Table A.2.2 — Wage price/composition decomposition",
+    "Table A.3 — DDD contrasts by sex",
+    "Table A.4 — DDD contrasts by race or color",
+    "Table A.5 — DDD contrasts by age",
+    "Table A.6 — DDD contrasts by education",
+    "Table A.7 — DDD contrasts by pre-treatment occupational wage"
+  )
+)
+for (row in seq_len(nrow(appendix_a_tables))) {
+  display_csv(
+    appendix_a_tables$path[[row]],
+    appendix_a_tables$caption[[row]],
+    max_rows = 60L,
+    digits = 6L
+  )
+}
+```
+
+## Apêndice C: casos ocupacionais
+
+```{r appendix-c-status, echo=FALSE, results='asis'}
+status_box(
+  "frozen",
+  "As tabelas e figuras dos casos ocupacionais são carregadas da referência assinada do V2."
+)
+display_csv(
+  "caged/tables/table_c_1_occupation_cases.csv",
+  "Table C.1 — Occupational case selection and exposure composition",
+  max_rows = 50L,
+  digits = 6L
+)
+show_reference_image(
+  "caged/figures/figure_c_1_occupation_cases_admissions_by_age.png",
+  "Figure C.1 — Monthly admissions by occupational case and age"
+)
+show_reference_image(
+  "caged/figures/figure_c_2_occupation_cases_wage_by_age.png",
+  "Figure C.2 — Monthly real admission wage by occupational case and age"
+)
+```
+
+# Evidência complementar: RAIS e PNAD Contínua (Seção 5.4 e Apêndice B/D)
+
+As extensões com RAIS e PNAD Contínua são evidência complementar. Elas usam outras unidades de observação e outros desfechos, preservam as famílias de multiplicidade D e E e não convertem mudança de composição em transição individual de trabalhadores.
+
+## RAIS: estoque formal, rotatividade e tempo de emprego
+
+A RAIS fornece um recorte anual de vínculos formais. A entrada compacta tem uma linha por ocupação e ano para cada contrato de modelo. Abaixo, os três modelos são efetivamente reestimados em R; o script fonte completo é mostrado primeiro para tornar claro que a forma funcional, efeitos fixos e agrupamento são os mesmos do V2.
+
+```{r rais-source-code, echo=FALSE, results='asis'}
+status_box(
+  "executed",
+  "Os três modelos estáticos da RAIS são reestimados a partir de sua entrada compacta e sem coeficientes."
+)
+display_code(
+  file.path(v2_root, "code", "rais", "r12_cross_replication.R"),
+  language = "r"
+)
+```
+
+```{r rais-light-input-and-models, eval=params$run_light_models}
+rais_input <- fread(
+  file.path(bundle_root, "derived", "rais", "vintage", "rais_cross_replication_input.csv"),
+  colClasses = list(character = c("model_id", "outcome", "cbo_4d"))
+)
+
+fit_rais_static <- function(data, model_key) {
+  model_data <- copy(data[model_id == model_key])
+  estimator <- unique(model_data$estimator)
+  outcome <- unique(model_data$outcome)
+  model_data[, `:=`(cbo_4d = factor(cbo_4d), ano = factor(ano))]
+  fit <- if (identical(estimator, "ppml")) {
+    fepois(
+      y ~ post_treat | cbo_4d + ano,
+      data = model_data,
+      vcov = ~cbo_4d,
+      fixef.rm = "perfect_fit",
+      warn = TRUE
+    )
+  } else {
+    feols(
+      y ~ post_treat | cbo_4d + ano,
+      data = model_data,
+      vcov = ~cbo_4d,
+      fixef.rm = "perfect_fit",
+      warn = TRUE
+    )
+  }
+  data.table(
+    model_id = model_key,
+    outcome = outcome,
+    estimator = estimator,
+    coefficient = unname(coef(fit)[["post_treat"]]),
+    standard_error = unname(se(fit)[["post_treat"]]),
+    n_obs = as.integer(nobs(fit)),
+    n_clusters = uniqueN(model_data$cbo_4d)
+  )
+}
+
+rais_light_results <- rbindlist(
+  lapply(
+    unique(rais_input$model_id),
+    function(model_key) fit_rais_static(rais_input, model_key)
+  )
+)
+rais_light_results
+```
+
+```{r rais-reconciliation, echo=FALSE, results='asis'}
+if (!is.null(rais_light_results)) {
+  rais_reference <- fread(reference_path("rais/backing_data/rais_cross_replication_comparison.csv"))
+  rais_comparison <- merge(
+    rais_light_results,
+    rais_reference[, .(
+      outcome,
+      reference_coefficient = r_coefficient,
+      reference_standard_error = r_standard_error,
+      reference_n_obs = r_n_obs,
+      reference_n_clusters = r_n_clusters
+    )],
+    by = "outcome",
+    all.x = TRUE
+  )
+  rais_comparison[, `:=`(
+    coefficient_difference = coefficient - reference_coefficient,
+    standard_error_difference = standard_error - reference_standard_error,
+    comparison_pass = abs(coefficient - reference_coefficient) <= 1e-6 &
+      abs(standard_error - reference_standard_error) <= 1e-6
+  )]
+  kableExtra::kbl(
+    as.data.frame(rais_comparison),
+    format = "html",
+    caption = "RAIS light R re-estimation compared with the frozen independent-R result",
+    digits = 10L
+  ) |>
+    kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) |>
+    print()
+}
+```
+
+```{r rais-results-and-gates, echo=FALSE, results='asis'}
+status_box(
+  "gate",
+  "A Família D usa um único ajuste Benjamini--Hochberg sobre seus três desfechos registrados. O status de pré-tendência continua sendo parte do resultado; um status falho impede linguagem causal."
+)
+display_csv("rais/tables/table_d_1_rais.csv", "Table D.1 — Formal stock, turnover, and job tenure (Family D)", max_rows = 30L, digits = 6L)
+display_csv("rais/tables/table_b_1_rais_pretrends.csv", "Table B.1 — Exact-model pretrends for RAIS", max_rows = 30L, digits = 6L)
+```
+
+## PNAD Contínua: informalidade, conta própria, estoques e renda
+
+A PNAD Contínua combina dois braços de análise. O braço A usa resultados de composição ponderados no nível individual, agregados de maneira suficiente para a réplica independente; o braço B estima estoques ocupacionais COD3. O documento executa os seis contratos compactos, mas não lê o painel individual de cerca de dez milhões de linhas.
+
+```{r pnadc-source-code, echo=FALSE, results='asis'}
+status_box(
+  "executed",
+  "Os seis contratos PNADc abaixo são reestimados a partir de uma entrada compacta e sem coeficientes. COD4 está ausente de propósito: o desenho complementar da PNADc é definido em COD3."
+)
+display_code(
+  file.path(v2_root, "code", "pnadc", "pnadc_cross_replication.R"),
+  language = "r"
+)
+```
+
+```{r pnadc-light-input-and-models, eval=params$run_light_models}
+pnadc_input <- fread(
+  file.path(bundle_root, "derived", "pnadc", "pnadc_cross_replication_input.csv")
+)
+if (any(grepl("cod4", names(pnadc_input), ignore.case = TRUE))) {
+  stop("COD4 must not appear in the PNADc companion input.")
+}
+
+fit_pnadc_static <- function(data, model_key) {
+  model_data <- copy(data[model_id == model_key])
+  arm <- unique(model_data$arm)
+  outcome <- unique(model_data$outcome)
+  original_n <- unique(model_data$original_n)
+  if (length(arm) != 1L || length(outcome) != 1L || length(original_n) != 1L) {
+    stop("Inconsistent compact PNADc contract: ", model_key)
+  }
+  if (arm == "A") {
+    fit <- feols(
+      outcome_value ~ post_treat | cod3 + trimestre_num,
+      data = model_data,
+      weights = ~regression_weight,
+      cluster = ~cod3,
+      ssc = ssc(K.adj = TRUE, K.fixef = "nonnested", G.adj = TRUE, G.df = "min", t.df = "min"),
+      warn = TRUE
+    )
+    df_k <- as.integer(degrees_freedom(fit, type = "k"))
+    collapsed_n <- nobs(fit)
+    collapsed_adjustment <- (collapsed_n - 1) / (collapsed_n - df_k)
+    original_adjustment <- (original_n - 1) / (original_n - df_k)
+    standard_error <- unname(se(fit)[["post_treat"]]) *
+      sqrt(original_adjustment / collapsed_adjustment)
+    estimator <- "ols"
+  } else if (arm == "B") {
+    fit <- fepois(
+      outcome_value ~ post_treat | cod3 + trimestre_num,
+      data = model_data,
+      cluster = ~cod3,
+      ssc = ssc(K.adj = TRUE, K.fixef = "nonnested", G.adj = TRUE, G.df = "min", t.df = "min"),
+      warn = TRUE
+    )
+    df_k <- as.integer(degrees_freedom(fit, type = "k"))
+    collapsed_n <- nobs(fit)
+    standard_error <- unname(se(fit)[["post_treat"]])
+    estimator <- "ppml"
+  } else {
+    stop("Unknown PNADc arm: ", arm)
+  }
+  data.table(
+    model_id = model_key,
+    outcome = outcome,
+    arm = arm,
+    estimator = estimator,
+    coefficient = unname(coef(fit)[["post_treat"]]),
+    standard_error = standard_error,
+    n_obs = as.integer(original_n),
+    n_clusters = uniqueN(model_data$cod3),
+    computational_rows = as.integer(collapsed_n),
+    df_k = df_k
+  )
+}
+
+pnadc_light_results <- rbindlist(
+  lapply(
+    unique(pnadc_input$model_id),
+    function(model_key) fit_pnadc_static(pnadc_input, model_key)
+  )
+)
+pnadc_light_results
+```
+
+```{r pnadc-reconciliation, echo=FALSE, results='asis'}
+if (!is.null(pnadc_light_results)) {
+  pnadc_reference <- fread(reference_path("pnadc/backing_data/pnadc_cross_replication_comparison.csv"))
+  pnadc_comparison <- merge(
+    pnadc_light_results,
+    pnadc_reference[, .(
+      model_id,
+      reference_coefficient = r_coefficient,
+      reference_standard_error = r_standard_error,
+      reference_n_obs = r_n_obs,
+      reference_n_clusters = r_n_clusters
+    )],
+    by = "model_id",
+    all.x = TRUE
+  )
+  pnadc_comparison[, `:=`(
+    coefficient_difference = coefficient - reference_coefficient,
+    standard_error_difference = standard_error - reference_standard_error,
+    comparison_pass = abs(coefficient - reference_coefficient) <= 1e-6 &
+      abs(standard_error - reference_standard_error) <= 1e-6
+  )]
+  kableExtra::kbl(
+    as.data.frame(pnadc_comparison),
+    format = "html",
+    caption = "PNADc light R re-estimation compared with the frozen independent-R result",
+    digits = 10L
+  ) |>
+    kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) |>
+    print()
+}
+```
+
+```{r pnadc-results-and-gates, echo=FALSE, results='asis'}
+status_box(
+  "gate",
+  "A Família E aplica Benjamini--Hochberg uma vez sobre todos os seis desfechos registrados. Suas estimativas são diferenciais explícitos de composição/estoque, não transições individuais de emprego, e o status de pré-tendência suprime a interpretação causal quando falha."
+)
+display_csv("pnadc/tables/table_d_2_pnadc.csv", "Table D.2 — Occupational composition and stock (Family E)", max_rows = 30L, digits = 6L)
+display_csv("pnadc/tables/table_b_2_pnadc_pretrends.csv", "Table B.2 — Exact-model pretrends for PNADc", max_rows = 30L, digits = 6L)
+```
+
+# Extensão espacial: placebo, pré-tendências e suporte (Seção 4.5 e Apêndice B)
+
+A extensão espacial não produz um efeito DDD substantivo. Ela é um diagnóstico de suporte: testa um placebo temporal, avalia pré-tendências e mede a concentração efetiva de clusters para proxies de intensidade digital. A família F tem doze posições declaradas, mas nenhum coeficiente, p-valor ou ajuste BH é permitido enquanto o gate de suporte não é aprovado.
+
+```{r spatial-status, echo=FALSE, results='asis'}
+status_box(
+  "gate",
+  "A extensão espacial para no gate de suporte. Este guia exibe sua implementação em R e diagnósticos congelados, mas não estima uma DDD de tratamento, porque tal estimativa é proibida pelo contrato do V2."
+)
+```
+
+```{r spatial-source-code, echo=FALSE, results='asis'}
+display_code(
+  file.path(v2_root, "code", "spatial", "spatial_replication.R"),
+  language = "r"
+)
+```
+
+```{r spatial-tables, echo=FALSE, results='asis'}
+status_box("frozen", "As duas tabelas espaciais publicadas são diagnósticos de suporte, não estimativas de efeito de tratamento.")
+display_csv("spatial/tables/table_b_3_spatial_placebo.csv", "Table B.3 — December 2021 temporal placebo", max_rows = 30L, digits = 6L)
+display_csv("spatial/tables/table_b_4_spatial_support.csv", "Table B.4 — Effective clusters by digital-intensity proxy", max_rows = 30L, digits = 6L)
+display_csv("spatial/backing_data/family_f_declaration.csv", "Family F declaration: registered positions without estimates", max_rows = 30L, digits = 6L)
+```
+
+# Roteiro de conferência e limites de interpretação
+
+## Um caminho curto para a leitura conjunta com a dissertação
+
+1. Comece pela Seção 3 deste guia e pelas Tabelas/Figuras 3.1--3.10 na dissertação. Veja a definição de cobertura e depois os agregados independentes em R.
+2. Passe à Seção 4 para entender a cadeia `MOV + FOR - EXC`, a unidade ocupação-mês, o tratamento e os desfechos antes de olhar qualquer coeficiente.
+3. Leia a equação DiD e os cinco modelos nacionais leves executados em R. Em seguida, compare o quadro de reconciliação com a tabela congelada.
+4. Na Seção 5, leia o estudo de eventos e o status de pré-tendência antes de interpretar a tabela estática. Faça o mesmo para cada heterogeneidade DDD.
+5. Use RAIS e PNADc como evidência complementar, mantendo a distinção entre composição, estoque e transição individual.
+6. Termine no módulo espacial: ele é deliberadamente uma extensão de suporte e não gera um efeito de tratamento.
+
+## Onde cada leitura encontra o código-fonte
+
+```{r code-navigation, echo=FALSE, results='asis'}
+source_map <- data.table(
+  topic = c(
+    "Section 3 aggregates in R",
+    "Independent CAGED contracts in R",
+    "CAGED raw movements",
+    "CAGED occupation-month panel",
+    "RAIS independent R replication",
+    "PNADc independent R replication",
+    "Spatial support diagnostics in R"
+  ),
+  source_file = c(
+    "R/section3_replication.R",
+    "R/complete_replication.R",
+    "code/caged/ingest/build_movements.py",
+    "code/caged/panel/build_panel.py",
+    "code/rais/r12_cross_replication.R",
+    "code/pnadc/pnadc_cross_replication.R",
+    "code/spatial/spatial_replication.R"
+  ),
+  purpose = c(
+    "Weighted descriptive aggregates and cross-language identifiers",
+    "Contract-driven fixed-effects, PPML/OLS, event studies, and validation",
+    "Official-vintage MOV/FOR/EXC reconstruction with signed weights",
+    "CBO4-by-month panel, treatment, deflation, and support contracts",
+    "Family D static models",
+    "Family E COD3 composition and stock models",
+    "Placebo, pretrend, and effective-cluster diagnostics"
+  )
+)
+kableExtra::kbl(
+  as.data.frame(source_map),
+  format = "html",
+  caption = "Source-code navigation map",
+  escape = TRUE
+) |>
+  kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) |>
+  print()
+```
+
+## Checklist editorial e de integridade
+
+```{r integrity-checks, echo=FALSE, results='asis'}
+reference_exists <- manuscript_catalog[, file.exists(file.path(reference_root, reference_path))]
+light_comparison_tables <- Filter(
+  Negate(is.null),
+  list(caged = caged_comparison, rais = rais_comparison, pnadc = pnadc_comparison)
+)
+light_validation <- if (length(light_comparison_tables) == 0L) {
+  data.table(
+    component = "not run",
+    models_compared = 0L,
+    models_within_1e6 = 0L,
+    status = "Set run_light_models = TRUE to execute the compact checks."
+  )
+} else {
+  rbindlist(
+    lapply(light_comparison_tables, function(data) {
+      data.table(
+        models_compared = nrow(data),
+        models_within_1e6 = sum(data$comparison_pass),
+        status = if (all(data$comparison_pass)) "pass" else "inspect differences"
+      )
+    }),
+    idcol = "component"
+  )
+}
+coverage_summary <- data.table(
+  manuscript_computational_artifacts = nrow(manuscript_catalog),
+  signed_v2_artifacts = nrow(publication_index),
+  current_manuscript_backing_data = nrow(manuscript_additions),
+  available_reference_paths = sum(reference_exists),
+  missing_reference_paths = sum(!reference_exists),
+  reference_is_read_only = "Yes: this document only reads V2/results/reference"
+)
+if (coverage_summary$missing_reference_paths != 0L) {
+  stop("The manuscript crosswalk contains a missing reference artifact.")
+}
+status_box(
+  "frozen",
+  "O mapa de cobertura resolve todo artefato computacional da versão atual da dissertação para uma referência V2 existente ou um arquivo de backing data. Renderizar este guia escreve apenas seu HTML."
+)
+kableExtra::kbl(
+  as.data.frame(coverage_summary),
+  format = "html",
+  caption = "Companion integrity checks"
+) |>
+  kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed")) |>
+  print()
+kableExtra::kbl(
+  as.data.frame(light_validation),
+  format = "html",
+  caption = "Compact R re-estimation checks (tolerance 1e-6)"
+) |>
+  kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed")) |>
+  print()
+```
+
+Os seguintes limites permanecem explícitos neste guia e na dissertação:
+
+- Pré-tendências que falham não são transformadas em evidência causal por meio de uma estimativa estática favorável.
+- Uma covariância de leads não PSD, suporte insuficiente ou poucos clusters permanece um gate científico, não um detalhe de apresentação.
+- RAIS e PNADc descrevem evidência complementar; composição ocupacional não é transição individual.
+- A extensão espacial termina antes de qualquer coeficiente de tratamento ou p-valor da Família F.
+- Tabelas e gráficos carregados são referências congeladas; as reestimações leves servem para tornar o código legível e verificável em R, não para substituir a execução completa do V2.
+
+## Como renderizar novamente
+
+Por padrão, o documento usa os caminhos relativos de um checkout que contém `Replication Package/V2` e `Replication Package/_bundle/v2` lado a lado. Para renderizar com os cinco modelos CAGED, os três RAIS e os seis PNADc:
+
+```r
+setwd("Replication Package/R Companion")
+rmarkdown::render("dissertation_code_companion.Rmd")
+```
+
+Para uma leitura ainda mais rápida, sem rodar os modelos leves, passe `run_light_models = FALSE`. Os resultados congelados, as figuras e o código continuarão disponíveis.
+
+```r
+rmarkdown::render(
+  "dissertation_code_companion.Rmd",
+  params = list(run_light_models = FALSE)
+)
+```
+
+## Ambiente R desta renderização
+
+```{r session-information, echo=FALSE}
+sessionInfo()
+```

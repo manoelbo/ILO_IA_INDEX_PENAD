@@ -1,0 +1,4 @@
+outcome,python_estimator,python_coefficient,python_standard_error,python_n_obs,python_n_clusters,r_estimator,r_coefficient,r_standard_error,r_n_obs,r_n_clusters,same_estimator,coefficient_absolute_difference,standard_error_absolute_difference,same_n,same_clusters,coefficient_six_decimals,standard_error_six_decimals
+estoque_3112,ppml,-0.0429245820227773,0.0155740676764456,2040,340,ppml,-0.0429245820227767,0.015574067664318,2040,340,True,5.967448757360216e-16,1.2127599272049316e-11,True,True,True,True
+ln_taxa_rotatividade,ols,-0.017838973055256,0.0261963706149642,1359,340,ols,-0.017838973055256,0.0261963706149658,1359,340,True,0.0,1.5994150448506161e-15,True,True,True,True
+ln_tempo_emprego_medio,ols,-0.0263555606240621,0.0185331824499114,2040,340,ols,-0.0263555606240622,0.0185331824499114,2040,340,True,1.0061396160665481e-16,0.0,True,True,True,True

@@ -1,0 +1,3 @@
+treatment_group,months,movement_rows,late_rows,excluded_rows,mean_late_share_pct,min_late_share_pct,max_late_share_pct,source
+control,65,101046438,2602699,200904,2.817376702054291,0.0,11.96260373321454,results/reconciliation/completude_por_tratamento.csv
+treated,65,53055976,1201944,111356,2.4327347746085195,0.0,10.87152400657731,results/reconciliation/completude_por_tratamento.csv

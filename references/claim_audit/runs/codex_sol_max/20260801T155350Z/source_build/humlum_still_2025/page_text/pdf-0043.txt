@@ -1,0 +1,58 @@
+A.2        Labor Market Outcomes
+
+This section provides a theoretical analysis of how AI chatbots affect labor markets,
+
+followed by a discussion of how these effects can be identified empirically.
+
+       Modeling the labor market impacts of AI chatbots raises several key questions: How
+
+do chatbots enter the production process? What explains why some firms and workers
+
+adopt them while others do not? Are labor markets competitive, or do firms exercise
+
+monopsony power? How do firms compete in product markets? Before committing to a
+
+formal framework, Section A.2.1 considers the theoretical implications of each of these
+
+issues.
+
+       Section A.2.2 then introduces a fully-fleshed model of chatbot adoption and labor
+
+market outcomes. We embed the Roy adoption model from Section A.1 into a simple
+
+equilibrium framework in which heterogeneous firms adopt chatbot initiatives and hire
+
+workers to maximize profits, while workers sort across firms and adopt chatbots to
+
+maximize utility. Section A.2.4 uses the model to derive predictions for how AI chatbots
+
+affect labor market outcomes. Finally, Section A.2.5 applies the model to interpret our
+
+difference-in-differences estimates from Section 3.
+
+       For clarity of exposition, we focus on encouraged use as the employer initiative,
+
+reflecting its central role in the empirical analyses in Section 3.
+
+A.2.1       Modeling Choices
+
+Chatbot technology. A first key question is how chatbots enter the production process:
+
+Are they “co-pilots,” contributing to output only when prompted by humans, or closer to
+
+“co-workers,” operating autonomously without human involvement?21 More broadly, do AI
+
+chatbots complement or substitute for labor?
+
+       Acemoglu and Restrepo (2018b, 2019) provide a theoretical framework for how new
+
+technologies affect labor productivity through three channels: a negative task displacement
+
+effect, where chatbots automate tasks previously performed by humans (e.g., automated
+  21
+    Ide and Talamas (2025) embed AI in a model of the knowledge economy, showing that whether AI
+functions as a co-pilot or co-worker has crucial implications for its impact on labor demand and inequality.
+
+
+                                                     8
+

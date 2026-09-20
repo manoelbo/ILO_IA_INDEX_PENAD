@@ -1,0 +1,37 @@
+ChatGPT’s release, with a one standard deviation increase in LLM exposure reduc-
+ing the probability of posting any vacancy by 1.0 percentage point. This reduction
+emerges gradually and becomes significant after approximately 10 months, mirroring
+the timeline of employment stock adjustments. When we examine the composition
+of roles driving this reduction, we find that technical positions and creative roles
+experience the sharpest declines. Sales representative positions, by contrast, show
+a statistically significant increase, suggesting that customer-facing roles requiring
+direct interpersonal interaction remain robust to LLM-based automation.
+     In addition to within-firm dynamics, our occupation-level analysis reveals how
+labor demand shifts for entire job categories regardless of firm exposure. A one stan-
+dard deviation increase in LLM exposure is associated with a 3.9 percent reduction in
+posting volumes, accompanied by £495 (1.1 percent) salary declines. The apparent
+inconsistency of declining posted salaries for exposed occupations alongside increas-
+ing firm-level compensation shows how aggregation could mask opposing forces.
+While LLM exposure drives down market wages for specific occupations, within-
+firm rebalancing toward more senior positions pushes average firm-level wages in
+the opposite direction.
+     Our heterogeneity analysis reveals that the observed labor market disruptions
+are almost entirely driven by high-remuneration segments of the labor market. This
+concentration of effects in higher-wage segments contradicts historical automation
+patterns that predominantly displaced routine middle-skill work, and suggests that
+LLMs might lead to a compression of the wage distribution.
+     Our findings carry important implications for understanding technological dis-
+placement and designing policy responses. The concentration of job losses among
+entry-level positions disrupts traditional skill development pathways where workers
+master progressively complex tasks through hands-on experience. Without junior
+roles serving as training grounds, firms may struggle to develop senior talent in-
+ternally while new entrants face shrinking opportunities to gain experience (Ide,
+2025). The freeze in hiring followed by employment stock changes suggests that
+forward-looking indicators like job postings may provide early warning signals for
+policymakers. The sharp reductions in technical and analytical roles alongside re-
+silience in sales positions indicates that human interaction and relationship-building
+skills remain valuable complements to LLM capabilities, suggesting that retrain-
+ing programs should emphasize these interpersonal competencies. Policy responses
+
+                                         28
+

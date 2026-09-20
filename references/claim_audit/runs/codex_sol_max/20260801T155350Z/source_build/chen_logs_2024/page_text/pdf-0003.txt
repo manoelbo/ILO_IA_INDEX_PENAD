@@ -1,0 +1,46 @@
+worked to yearly hours worked. When the treatment has an extensive margin effect, the ATE for
+mpY q can thus be made large in magnitude by re-scaling Y by a large factor a. By contrast, if
+we re-scale Y by a small factor a « 0, such that the resulting outcomes are close to zero, then
+mpY q « mp0q, and so the ATE for mpY q will be small. By varying the units of the outcome, we
+can thus obtain any magnitude for the ATE for mpY q.
+   Our theoretical results also imply that if we re-scale the units of the outcome by a finite factor
+a ą 0, the ATE for a log-like transformation mpY q will change by approximately logpaq times
+the effect of the treatment on the extensive margin. This result implies that sensitivity analyses
+that explore how the estimated ATE for mpY q changes with finite changes in the units of Y —or
+equivalently, how the ATE for logpc ` Y q changes with the constant c—are essentially indirectly
+measuring the size of the treatment effect on the extensive margin.
+   We illustrate the practical importance of these results by systematically replicating recent
+papers published in the American Economic Review that estimate treatment effects for arcsinh-
+transformed outcomes. In line with our theoretical results, we find that treatment effect estimates
+using arcsinhpY q are sensitive to changes in the units of the outcome, particularly when the exten-
+sive margin effect is large. In half of the papers that we replicated, multiplying the original outcome
+by a factor of 100 (e.g. converting from dollars to cents) changes the estimated treatment effect
+by more than 100% of the original estimate. We obtain similar results using logp1 ` Y q instead of
+arcsinhpY q.
+   What, then, are alternative options in settings with zero-valued outcomes? Our second main
+result delineates the possibilities. We show that when there are zero-valued outcomes, there is no
+treatment effect parameter that satisfies all three of the following properties:
+
+ (a) The parameter is an average of individual-level treatment effects, i.e. takes the form θg “
+      EP rgpY p1q, Y p0qqs, where g is increasing in Y p1q.
+
+ (b) The parameter is invariant to re-scaling of the units of the outcome (i.e. gpy1 , y0 q “ gpay1 , ay0 q).
+
+ (c) The parameter is point-identified from the marginal distributions of the potential outcomes.
+
+This “trilemma” implies that any target parameter that is well-defined with zero-valued outcomes
+must necessarily jettison at least one of the three properties above. Of course, the choice of target
+parameter should depend on the economic question of interest. Which of the three properties the
+researcher prefers to forgo will thus generally depend on their context-specific motivation for using
+a log-like transformation in the first place.
+   To that end, Section 4 highlights a menu of parameters that may be attractive depending on the
+researcher’s core motivation. We first consider the case where the researcher is interested in obtaining
+a causal parameter with an intuitive “percentage” interpretation. In this case, it may be natural to
+consider a parameter outside of the class of individual-level averages of the form EP rgpY p1q, Y p0qqs.
+                                    p1q´Y p0qs
+One prominent option is θATE% “ ErYErY p0qs    , the ATE in levels as a percentage of the baseline
+mean, which in many cases can be estimated via Poisson regression (Santos Silva and Tenreyro,
+
+
+                                                     3
+

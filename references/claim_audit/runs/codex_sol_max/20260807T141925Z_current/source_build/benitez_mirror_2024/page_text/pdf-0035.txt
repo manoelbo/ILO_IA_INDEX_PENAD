@@ -1,0 +1,15 @@
+                     Figure A.1: GENOE Distribution at the Occupational Level
+
+
+
+
+Source: Authors’ calculations using data from O*NET and surveys conducted with GPT-4o through OpenAI’s API.
+Note: This figure plots the GENOE point estimate, averaged over 100 iterations, and the 95% confidence interval for
+each of the 759 occupations, ordered from lower to higher exposure. Each panel represents a different time horizon,
+and the bottom-right panel combines all horizons, ordered by the one-year horizon.
+
+
+
+
+                                                        31
+

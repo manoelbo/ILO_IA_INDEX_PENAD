@@ -1,0 +1,38 @@
+                                                                                             12
+
+3.2     Experimental Designs
+
+Our experiment varies the information available to diagnose patient cases—participants may
+or may not receive AI assistance and access to the clinical history. The X-ray is shown under
+all information conditions. We expose our participants to all four possible information con-
+ditions: X-ray only, henceforth XO; clinical history without AI, henceforth CH ; AI without
+clinical history, henceforth AI ; and both clinical history and AI, henceforth AI+CH.
+There are two objectives of our experiment. The first is to compute the treatment effects of
+AI and CH on diagnostic quality and radiologist time. The second is to analyze systematic
+deviations from the Bayesian benchmark.
+Both these objectives are complicated by the likely heterogeneity in radiologist skills. For
+estimating treatment effects, radiologist heterogeneity implies that a design that randomizes
+treatments only across radiologists will require a large participant pool except for extremely
+large effect sizes. Our participants are highly paid experts, making this approach expensive.
+And, as explained in section 2, across-radiologist variation in information treatments is not
+tailored for the second objective. We would ideally know how a given radiologist changes her
+assessment for the same case under a different information condition.
+Our approach to address these challenges is to use a combination of three different experi-
+mental designs, each with certain advantages and disadvantages. Appendix B.1 illustrates
+the three design variations.
+
+
+3.2.1   Design 1 (Figure B.1)
+
+In the first design, participants are assigned to a random sequence of the four information
+treatments. Each information condition is assigned fifteen cases at random without repe-
+tition. Participants read all 15 cases in one information environment before moving to the
+next one.
+This design builds in both across- and within-participant variation in information treatments.
+The within-participant variation has greater power because it controls for participant het-
+erogeneity at the potential cost of order effects. The concern of order effects is both testable
+and mitigated by the randomization of treatment sequence across subjects.
+This first design is well-suited to estimate treatment effects of our information environments.
+However, as mentioned earlier, it is not ideal for estimating an empirical analog to equation
+(5) because no case is encountered twice.
+

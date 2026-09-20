@@ -1,0 +1,46 @@
+1322          QUARTERLY JOURNAL OF ECONOMICS
+
+
+                        VII. CONCLUSION
+
+     What is it that computers do— or what is it that people do
+with computers—that appears to increase demand for educated
+workers? This paper formalizes and tests an intuitive answer to
+this question that has been informally articulated by scholars in
+a number of disciplines over several decades. Computer technol-
+ogy substitutes for workers in performing routine tasks that can
+be readily described with programmed rules, while complement-
+ing workers in executing nonroutine tasks demanding exibility,
+creativity, generalized problem-solving capabilities, and complex
+communications. As the price of computer capital fell precipi-
+tously in recent decades, these two mechanisms—substitution
+and complementarity— have raised relative demand for workers
+who hold a comparative advantage in nonroutine tasks, typically
+college-educated workers.
+     Our task framework emphasizes that the causal force by
+which advancing computer technology affects skill demand is the
+declining price of computer capital—an economywide phenome-
+non. We developed a simple model to explore how this price
+decline alters task demand within industries and occupations.
+This model predicts that industries that were intensive in labor
+input of routine tasks in the precomputer era would make rela-
+tively larger investments in computer capital. Simultaneously,
+they would reduce labor input of routine tasks, for which com-
+puter capital substitutes, and increase demand for nonroutine
+task input, which computer capital complements.
+     Employing consistent, representative, time series observa-
+tions on the task composition of jobs from the Dictionary of
+Occupational Titles, we afrm these predictions across several
+margins of task change and estimate that they may have contrib-
+uted substantially to demand shifts favoring educated labor over
+the past three decades. We also considered several alternative
+explanations for our ndings, most signicantly the rising human
+capital and labor force attachment of women. We nd that the
+documented task shifts, and their associations with the adoption
+of computer technology, are as evident within gender, education,
+and occupation groups as between them. The pervasiveness of
+these shifts suggests to us that changes in job task content—
+spurred by technological change—may plausibly be viewed as an
+underlying factor contributing to recent demand shifts favoring
+educated labor.
+

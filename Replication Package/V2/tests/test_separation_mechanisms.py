@@ -12,7 +12,7 @@ import pytest
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = (
-    PACKAGE_ROOT / "code" / "models" / "separation_mechanisms.py"
+    PACKAGE_ROOT / "code" / "caged" / "models" / "separation_mechanisms.py"
 )
 
 
@@ -99,7 +99,14 @@ def test_bh_adjustment_uses_frozen_six_outcome_family() -> None:
 
 
 def test_generated_mechanism_family_is_complete_and_reconciled() -> None:
-    results = PACKAGE_ROOT / "results" / "mechanisms"
+    results = (
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "mechanisms"
+    )
     reconciliation = pd.read_csv(
         results / "separation_family_reconciliation.csv"
     )

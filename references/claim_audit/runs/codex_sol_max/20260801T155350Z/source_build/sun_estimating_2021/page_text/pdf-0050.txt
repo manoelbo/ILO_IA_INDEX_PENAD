@@ -1,0 +1,109 @@
+     Since s < e and c > e + `, we have
+
+                   E[Yi,e+` −Yi,s | Ei = e] − E[Yi,e+` −Yi,s | Ei ∈ C]                                                       (79)
+                                              Õ
+                  =E[Yi,e+`
+                       e       e
+                            −Yi,s | Ei = e] −     Pr {Ei = c | Ei ∈ C} E[Yi,e+`
+                                                                           c       c
+                                                                                −Yi,s | Ei = c]                              (80)
+                                                c ∈C
+                                                Õ
+                  =E[Yi,e+`
+                       e       ∞
+                            −Yi,s | Ei = e] −          Pr {Ei = c | Ei ∈ C} E[Yi,e+`
+                                                                                ∞       ∞
+                                                                                     −Yi,s | Ei = c]                         (81)
+                                                c ∈C
+
+                  =E[Yi,e+`
+                       e       ∞
+                            −Yi,e+` | Ei = e] + E[Yi,e+`
+                                                    ∞       ∞
+                                                         −Yi,s | Ei = e]                                                     (82)
+                     Õ
+                   −     Pr {Ei = c | Ei ∈ C} E[Yi,e+`
+                                                   ∞        ∞
+                                                         −Yi,s | Ei = c]                                                     (83)
+                      c ∈C
+
+                  =E[Yi,e+`
+                       e       ∞
+                            −Yi,e+` |Ei = e] + E[Yi,e+`
+                                                   ∞       ∞
+                                                        −Yi,s         ∞
+                                                              ] − E[Yi,e+`    ∞
+                                                                           −Yi,s ]                                           (84)
+
+                  =E[Yi,e+`
+                       e       ∞
+                            −Yi,e+` |Ei = e]                                                                                 (85)
+
+where the second equality follows from Assumption 2 and the fourth equality follows from Assumption
+
+1.                                                                                                                              
+
+
+Proof of Proposition 6
+
+Proof. We first show the consistency and asymptotic normality of the weight estimators. The weight estima-
+                                            Pr {Ei =e }
+     f ` are consistent since Í N`e Ne → p Pr           =      Ei = e | Ei ∈ h` by the Law of Large Numbers
+                                                             
+tors b                                               `    Pr
+                               e∈h            { Ei ∈h }
+and Slutsky’s theorem. Note that Í N`e Ne is also the regression coefficient estimator from the following
+                                       e∈h
+
+cross-sectional regression
+
+                                        1 {Ei = e} = β1 Ei ∈ h` + ηi (e)
+                                                       
+                                                                                                                             (86)
+
+with population regression coefficient equal to β = Pr Ei = e | Ei ∈ h` . Then by OLS asymptotics which
+                                                      
+
+holds as Ei are iid by assumption and ηi (e) is bounded, we have
+                                                                                          2
+                                                                          E[1 Ei ∈ h` ηi2 (e)]
+                                                                                              !
+                  √
+                                                           
+                            Ne                            `
+                                    − Pr Ei = e | Ei ∈ h                                         .
+                                          
+                    N Í                                       →d N 0,                       2
+                                                                                                      (87)
+                          e ∈h ` Ne                                          E[1 Ei ∈ h` ]2
+                                                                                 
+                       2
+Note that 1 Ei ∈ h` = 1 Ei ∈ h` so the asymptotic
+                             
+                                                            variance is equal to
+                               E[ηi (e) | Ei ∈ h ]Pr Ei ∈ h`
+                                   2            `
+                                                                  E[ηi2 (e) | Ei ∈ h` ]
+                                                     
+                                                                =                       .             (88)
+                                                      2
+                                                                      Pr Ei ∈ h`
+                                                                          
+                                        Pr Ei ∈ h`
+                                            
+                                                                         N 0
+    Similarly, for a pair of cohorts with e , e 0, Í N`e Ne and Í e` Ne are asymptotically correlated with
+                                                        e∈h            e∈h
+                                                                   
+covariance E[ηi (e) ηi (e 0) | Ei ∈ h` ]/Pr Ei ∈ h` . Thus, vec b  f ` has asymptotic distribution
+                                             
+                                     √                                  
+                                        N vec b f ` − vec f ` →d N 0, Σ f ` .                         (89)
+                                                         E[ηi2 (e)|Ei ∈h ` ]                                         (e)ηi (e0 )|Ei ∈h ` ]
+Here Σ f ` is a matrix with diagonal entries equal to     Pr { Ei ∈h ` }
+                                                                             , and off-diagonal entries equal to E[ηiPr                    .
+                                                                                                                        { Ei ∈h ` }
+     By consistency of the weight estimators and Proposition 5, we prove the consistency of the IW estimator,
+
+                                                            50
+

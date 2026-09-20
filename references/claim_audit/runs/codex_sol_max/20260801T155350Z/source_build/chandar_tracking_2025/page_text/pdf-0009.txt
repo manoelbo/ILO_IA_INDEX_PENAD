@@ -1,0 +1,35 @@
+increase in employment in software development occupations since the release of ChatGPT.
+      There are a variety of occupation codes that relate to computer programming, corre-
+sponding to codes 1005 through 1108. While software developers represent the largest share
+of employment in this group, one possibility is that employment gains for software developers
+come from reclassification of workers away from other coding occupations to software devel-
+opment.7 Figure 2 shows the employment and earnings trends for all computer occupations
+aggregated together. The results again suggest little evidence of a decline in employment or
+real earnings.
+      The other series in Figure 2 show employment and earnings trends for customer service
+representatives, another occupation in the top quartile of AI exposure. Brynjolfsson et al.
+(2025) find that access to AI assistance increases worker productivity, as measured by issues
+resolved per hour, by 15% on average for customer service representatives, with substan-
+tial heterogeneity across workers. Figure 2 suggests that employment in customer service
+representatives has declined since the release of ChatGPT.
+      These findings raise the question of which occupational characteristics may influence the
+employment effects of AI given some level of measured exposure. Figure 3 shows employment
+trends for the most exposed quartile of occupations split by whether the college share in the
+occupation is above or below the median. The results suggest employment share increases in
+more educated exposed occupations and employment share declines in less educated exposed
+occupations in the periods before and after the release of ChatGPT.
+
+
+4.3       Labor Market Trends for Entry-Level Workers
+
+In recent months there has been a growing concern that AI is beginning to displace entry-
+level workers (Thompson, 2025; Raman, 2025; Allen, 2025). The top panel of Figure 4 shows
+the employment share trends for entry level versus experienced workers. The analysis shows
+that entry level workers have cyclical and volatile employment compared to more experienced
+  7
+      See Van Dam (2025) for a discussion of trends across different computer occupations.
+
+
+
+                                                      9
+

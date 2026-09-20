@@ -1,0 +1,46 @@
+1326          QUARTERLY JOURNAL OF ECONOMICS
+
+
+nicantly coarser than DOT occupation categories, the 411 1970
+census occupation codes represented in the 1971 CPS were as-
+signed a total of 3886 unique 1977 DOT occupations. We used the
+CPS sampling weights to calculate means of each DOT task
+measure by occupation. Because the gender distribution of DOT
+occupations differs substantially within COC occupation cells, we
+performed this exercise separately by gender. In cases where a
+COC cell contained exclusively males or females, we assigned the
+cell mean to both genders. This provided a set of 822 DOT occu-
+pation means by 1970 COC and gender.
+     To generate DOT means for 1960 occupations, we developed
+a crosswalk from the 1970 to 1960 COC occupational classica-
+tion schemes using information in Priebe and Greene [1972]. Our
+crosswalk (available on request) provides a set of 211 consistent
+1960 –1970 occupations representing the lowest common level of
+aggregation needed to obtain a consistent series. We applied the
+1970 COC means to our 1970 Census sample by occupation and
+gender and calculated weighted gender-occupation means across
+the 211 consistent 1960 –1970 occupational categories.
+     It was not possible to develop a bridging crosswalk between
+1970 and 1980 COC occupations due to the substantial differ-
+ences between these classications. Instead, we employed a Cen-
+sus sample prepared for the Committee on Occupational Classi-
+cation and Analysis chaired by Donald Treiman and provided to
+us by Michael Handel. This le contains 122,141 observations
+from the 1980 Census that are individually dual coded with both
+1970 and 1980 COC occupation codes based on occupational and
+other demographic information supplied by Census respondents.
+To calculate DOT means by 1980 occupation, we merged the 1970
+COC-DOT means (above) to the Treiman le by gender and 1970
+COC occupation, achieving a 97 percent match rate. We appended
+to the Treiman le consistent occupation codes for the years 1980
+to 1998 developed by Autor, Katz, and Krueger [1998], and cal-
+culated weighted means of each DOT measure within occupation-
+gender categories. This yielded DOT means by gender for each of
+485 DOT occupations.
+
+A.3. Computing DOT Task Means by Consistent
+1960 –1998 Industry
+    To compute DOT task means overall, by industry, and by
+industry-education cell for 1960 –1998, we assigned the consis-
+tent DOT occupational task means for 1960 –1998 by gender and
+

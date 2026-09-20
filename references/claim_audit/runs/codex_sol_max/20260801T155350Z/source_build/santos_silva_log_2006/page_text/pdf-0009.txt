@@ -1,0 +1,37 @@
+  In our empirical analysis we provide estimates for both the traditional and the Anderson-
+van Wincoop gravity equations using alternative estimation methods. We show that, in
+practice, heteroskedasticity is quantitatively and qualitatively important in the gravity
+equation, even when controlling for fixed eﬀects. Hence, we recommend to estimate the
+augmented gravity equation in levels, using the proposed PML estimator, which also
+adequately deals with the zero observations.
+
+
+
+3. Constant-Elasticity Models
+Despite their immense popularity, there are still important econometric flaws in empirical
+studies involving gravity equations. These flaws are not exclusive of this literature, and
+extend to many areas where constant-elasticity models are used. This section examines
+how the deterministic multiplicative models suggested by economic theory can be used in
+empirical studies.
+  In their non-stochastic form, the relationship between the multiplicative constant-
+elasticity model and its log-linear additive formulation is trivial. The problem, of course,
+is that economic relations do not hold with the accuracy of the physical laws. All that
+can be expected is that they hold on average. Indeed, here we interpret economic models
+like the gravity equation as the expected value of the variable of interest, y ≥ 0, for
+a given value of the explanatory variables, x (see Goldberger, 1991, p. 5). That is, if
+economic theory suggests that y and x are linked by a constant-elasticity model of the
+form yi = exp (xi β), the function exp (xi β) is interpreted as the conditional expectation
+of yi given x, denoted E [yi |x].5 For example, using the notation in the previous sec-
+   5
+       Notice that if exp (xi β) is interpreted as describing the conditional median of yi (or other conditional
+quantile) rather than the conditional expectation, estimates of the elasticities of interest can be obtained
+estimating the log-linear model using the appropriate quantile regression estimator (Koenker and Bassett,
+1978). However, interpreting exp (xi β) as a conditional median is problematic when yi has a large mass
+of zero observations, like in trade data. Indeed, in this case the conditional median of yi will be a
+discontinuous function of the regressors, which is generally not compatible with the standard economic
+theory.
+
+
+
+                                                        8
+

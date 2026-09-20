@@ -1,0 +1,64 @@
+                                                                                                                      28
+
+5.1   A Model of Deviations from Bayesian Updating
+
+The framework in section 2 shows that a key question is whether the odds-ratios
+                                                                                     
+                               pr ωi = 1|sA    E
+                                          i , sir                 πr ωi = 1|sA    E
+                                                                             i , sir
+                                                            and
+                               pr (ωi = 0|sA    E
+                                           i , sir )              πr (ωi = 0|sA    E
+                                                                              i , sir )
+
+
+differ from each other. Recall that Bayes’ rule implies that
+                                                                                                 
+                     πr ωi = 1|sA    E
+                                i , sir              πr s A           E
+                                                          i |ωi = 1, sir              πr ωi = 1|sE
+                                                                                                 ir
+                ln                            = ln                             + ln                       .           (4)
+                     πr (ωi = 0|sA    E
+                                 i , sir )           πr (sA           E
+                                                          i |ωi = 0, sir )            πr (ωi = 0|sE
+                                                                                                  ir )
+
+
+We now consider a set of models of belief updating to describe systematic deviations from
+this benchmark. In our model, the human correctly interprets their own signal when AI
+assistance is not available but errs when both sA      E
+                                                i and sir are observed. As we will show below,
+AI assistance nonetheless unambigiously improves performance for a subset of parameters
+within this family.
+The first class of biases that we consider, arises when the two terms on the right-hand side of
+equation (4) are incorrectly weighted. Following Grether (1980; 1992), we parametrize this
+type of error using the following parsimonious functional form:
+                                                                                                         
+                pr ωi = 1|sA    E
+                           i , sir                   πr s A           E
+                                                          i |ωi = 1, sir                    πr ωi = 1|sE
+                                                                                                       ir
+          log                             = br log                             + dr log                           ,   (5)
+                pr (ωi = 0|sA    E
+                            i , sir )                πr (sA           E
+                                                          i |ωi = 0, sir )                  πr (ωi = 0|sE
+                                                                                                        ir )
+
+
+where br , dr ≥ 0. The Bayesian (with correct beliefs) is a special case with br = dr = 1. While
+this linear form is restrictive, it has been useful for documenting several empirical regularities
+showing deviations from Bayesian updating like base-rate neglect and under inference (see
+Benjamin, 2019, for a review).
+We will say that the human exhibits automation bias if br > dr , and automation neglect if
+br < dr . As a motivation for this nomenclature, observe that when br > dr , the human
+over-weights the AI signal relative to their own. In the specific case when dr = 1, the agent
+overshoots when updating the posterior odds relative to a Bayesian. Analogously, if br < dr ,
+then the human under-weights the AI signal relative to their own. We say that the human
+exhibits own-information neglect if dr < 1 and own-information bias if dr > 1, where the
+cutoff value of one is based on the Bayesian benchmark. Own-information biases are similar
+to base-rate biases, but apply to beliefs given the expert’s signals instead of unconditional
+population rates (see Griffin and Tversky, 1992; Kahneman and Tversky, 1973).
+A second class of deviations we consider will allow for models in which decision-makers do
+

@@ -1,0 +1,429 @@
+A.16       Sectoral and Geographical Patterns by GenAI Adoption
+Sectoral Distribution of Adopters: We provide here more detailed evidence on the sectoral distri-
+bution of GenAI adopting firms. Figure A.19a documents the share of firms in each major sector that have
+adopted AI, while Figure A.19b shows the distribution of adopters only, i.e., the fraction of adopting firms
+that belong to each sector. These figures highlight that adoption is not concentrated in a single industry,
+but rather spread across information, professional services, finance, manufacturing, and other sectors. As
+expected, adoption is somewhat higher in knowledge- and technology-intensive industries, but traditional
+sectors such as manufacturing and wholesale/retail are also represented.
+
+
+                                    15
+                                                                                                                      30      27.9
+                                         12.3
+          Share of Adopting Firms
+
+
+
+
+                                                                                                                                       24.0
+
+
+
+
+                                                                                                      % of Adopters
+                                    10
+                                                                                                                      20
+                                                                                                                                              15.2
+                                                6.4                                                                                                  14.4
+
+                                                      4.7
+                                     5                      4.1                                                       10                                    8.7
+
+                                                                  2.2
+                                                                        1.7   1.7                                                                                 3.9   3.7
+                                                                                    0.7                                                                                       2.3
+
+                                     0                                                                                 0
+                                                         al
+
+
+
+
+                                                                                                                                                                       al
+                                                          s
+
+
+
+
+                                                                                                                               es
+                                                          r
+
+
+
+
+                                                                                                                                      n
+
+                                                                                                                                                                      er
+
+
+
+
+                                                                                                                                                                        n
+                                                         n
+
+
+
+
+                                                        on
+
+
+                                                          l
+
+
+
+
+                                                                                                                                                                        l
+                                                          e
+
+
+
+
+                                                                                                                                                                        e
+                                                        ng
+
+
+
+
+                                                                                                                                                                        g
+                                                        ai
+
+
+
+
+                                                                                                                                                                      ai
+                                                       ce
+
+
+
+
+                                                      he
+                                                      nc
+
+
+
+
+                                                                                                                                                                    nc
+                                                                                                                                                                    in
+                                                       io
+
+
+
+
+                                                                                                                                      io
+
+
+
+
+                                                                                                                                                                     io
+                                                      ci
+
+
+
+
+                                                                                                                                                                    ci
+                                                                                                                             ic
+
+
+
+
+                                                                                                                                                                  th
+                                                    et
+
+
+
+
+                                                                                                                                                                  et
+                                                     ti
+                                                     ri
+                                                    vi
+
+
+
+
+                                                                                                                                                                   t
+                                                   at
+
+
+
+
+                                                                                                                                    at
+
+
+
+
+                                                                                                                                                                   r
+                                                     t
+                                                   ra
+
+
+
+
+                                                                                                                                                                 ra
+                                                  So
+
+
+
+
+                                                                                                                                                                So
+                                                                                                                           rv
+
+
+
+
+                                                                                                                                                                ca
+                                                  ca
+                                                  tu
+
+
+
+
+                                                                                                                                                                tu
+                                                  O
+
+
+
+
+                                                                                                                                                                O
+                                                 /R
+
+
+
+
+                                                                                                                                                               /R
+                                                 er
+                                               rm
+
+
+
+
+                                                                                                                                rm
+                                                su
+
+
+
+
+                                                                                                                                                              su
+                                                                                                                      Se
+
+
+
+
+                                                                                                                                                            du
+                                              du
+                                               ac
+
+
+
+
+                                                                                                                                                             ac
+                                               &
+
+
+
+
+                                                                                                                                                             &
+                                             lS
+
+
+
+
+                                              le
+
+
+
+
+                                                                                                                                                            le
+                                             In
+
+
+
+
+                                                                                                                                                           In
+                                             fo
+
+
+
+
+                                                                                                                              fo
+                                            uf
+
+
+
+
+                                                                                                                                                          uf
+                                             E
+
+
+
+
+                                                                                                                                                           E
+                                                                                                               al
+                                           sa
+
+
+
+
+                                                                                                                                                         sa
+                                            e
+
+
+
+
+                                                                                                                                                          e
+                                          na
+                                          In
+
+
+
+
+                                                                                                                             In
+                                          ar
+
+
+
+
+                                                                                                                                                        ar
+                                         an
+
+
+
+
+                                                                                                                                                       an
+                                          &
+
+
+
+
+                                                                                                                                                       &
+                                                                                                             on
+                                         le
+
+
+
+
+                                                                                                                                                       le
+                                        io
+
+
+
+
+                                       C
+
+
+
+
+                                                                                                                                                     C
+                                      ho
+
+
+
+
+                                                                                                                                                    ho
+                                      M
+
+
+
+
+                                                                                                                                                    M
+                                                                                                          i
+
+
+
+
+                                                                                                                                                    ce
+                                      ce
+                                     ss
+
+
+
+
+                                                                                                       ss
+                                     h
+
+
+
+
+                                                                                                                                                   h
+                                  W
+
+
+
+
+                                                                                                                                                W
+                                 an
+
+
+
+
+                                                                                                                                               an
+                                  fe
+
+
+
+
+                                                                                                    fe
+                                  lt
+
+
+
+
+                                                                                                                                                lt
+                               ro
+
+
+
+
+                                                                                                  ro
+                              ea
+
+
+
+
+                                                                                                                                            ea
+                               in
+
+
+
+
+                                                                                                                                             in
+                             P
+
+
+
+
+                                                                                                 P
+                             F
+
+
+
+
+                                                                                                                                           F
+                             H
+
+
+
+
+                                                                                                                                           H
+                     (a) The Share of Adopters in                                                  (b) The Distribution of Adopters
+                              Each Sector                                                                   Across Sectors
+
+                                                      Figure A.19: Sectoral Distribution of Adopters
+     Notes: Panel (a) reports the share of adoption within each sector, while Panel (b) reports the
+     distribution of adopting firms across sector. Sectors are: Manufacturing (3), Wholesale/Retail
+     (4), Information (51), Finance and Insurance (52), Professional Services (54), Education (61), and
+     Health Care and Social Assistance (62).
+
+
+
+Geography of Adopters: Figure A.20 shows more details on the distribution of adopters across U.S.
+states. As expected, adoption is highly concentrated in California, which alone accounts for about 26% of
+all adopters. The top five adopter states are California, New York, Texas, Massachusetts, and Virginia, all of
+which are technology-intensive regions. This pattern highlights that AI adoption is not exclusively a Silicon
+Valley phenomenon but instead spans several large, tech-heavy states.
+
+
+
+
+                                                                                          A.47
+

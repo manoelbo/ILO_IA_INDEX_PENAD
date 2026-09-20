@@ -1,0 +1,45 @@
+1288             QUARTERLY JOURNAL OF ECONOMICS
+
+
+combination of the two. Hence, L i 5 [l i r i , (1 2 l i )n i ], where 0 #
+l i # 1. These assumptions imply that workers will choose tasks
+according to comparative advantage as in Roy [1951]. We adopt
+the Roy framework because it implies that relative task supply
+will respond elastically to relative wage levels. If, instead, work-
+ers were bound to given tasks, the implications of our model for
+task productivity would be unchanged, but technical progress,
+reected by a decline in r, would not generate re-sorting of work-
+ers across jobs.
+     Two main conditions govern market equilibrium in this
+model. First, given the perfect substitutability of routine tasks
+and computer capital, the wage per efciency unit of routine task
+input is pinned down by the price of computer capital: 10
+(2)                              w R 5 r.
+Second, worker self-selection among occupations—routine versus
+nonroutine— clears the labor market.
+    Dene the relative efciency of individual i at nonroutine
+versus routine tasks as h i 5 ni/ r1 . Our assumptions above imply
+that h i [ (0,`). At the labor market equilibrium, the marginal
+worker with relative efciency units h* is indifferent between
+performing routine and nonroutine tasks when
+(3)                            h* 5 w R/w N.
+Individual i supplies routine labor (l i 5 1) if h i , h*, and
+supplies nonroutine labor otherwise (l i 5 0).
+     To quantify labor supply, write the functions g(h), h(h),
+which sum population endowments in efciency units of routine
+and nonroutine tasks, respectively, at each value of h. Hence,
+g(h) 5 ¥ i r i z I[h i , h] and h(h) 5 ¥ i n i z I[h i $ h], where I[ z ]
+is the indicator function. We further assume that h i has nonzero
+support at all h i [ (0,`), so that that h(h) is continuously
+upward sloping in h, and g(h) is continuously downward sloping.
+     Assuming that the economy operates on the demand curve,
+productive efciency requires
+                ]Q                                    ]Q
+(4)      wR 5        5 ~1 2 b!u 2b     and     wN 5       5 bu12b ,
+                ]L R                                  ]LN
+
+
+    10. We implicitly assume that the shadow price of nonroutine tasks absent
+computer capital exceeds r and hence equation (2) holds with equality. In the
+precomputer era it is likely that w R , r.
+

@@ -1,0 +1,56 @@
+O. Teutloff et al.                                                                                    Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+
+
+                     Fig. 2. (a) Distribution of the number of skill tags per job posting. (b) Overall distribution of the skill tags in the data set.
+
+
+
+
+    To estimate the effect at the skill cluster level we use the following regression model
+
+         log(𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡 ) = 𝛽0 + 𝛽1 Treated𝑖 + 𝛾After𝑡 + 𝛿𝑖 (Treated𝑖 × After𝑡 ) + 𝜖𝑖𝑡 ,                                                                       (2)
+
+where Treated𝑖 = 1 whenever the cluster is in the substitutable or complementary categories and 𝛿𝑖 corresponds to the effect on
+skill cluster 𝑖.
+    The log transformation on the outcome variables of Eqs. (1) and (2) allows us to interpret the estimated 𝛿’s as the percentage
+changes in postings caused by the launch of ChatGPT. To account for possible correlation within skill clusters, we cluster our standard
+errors at the skill-cluster level.
+    For the difference-in-differences model to capture the causal effect of the ChatGPT launch on labor demand, we need to make
+the standard parallel trends assumption, i. e. that in the absence of treatment, the difference between the two treatment groups and
+the control group would have remained unchanged. In our setting, this implies that we need to assume that the ChatGPT launch
+would not have had an effect on the demand for labor in the unaffected cluster. While this is ultimately untestable, we demonstrate
+that the control group and the two treatment groups evolved almost in parallel before the launch of ChatGPT.
+    There are some additional threats to our identification strategy that we cannot address. The platform in question may have made
+marketing decisions or pricing changes after the launch of ChatGPT. If these activities were concentrated on skill clusters labeled
+as substitutable or complementary, the difference-in-differences design might partly capture these non-ChatGPT effects. However,
+web analytics data from , indicates that monthly traffic on the platform has remained approximately constant around the ChatGPT
+launch date. Moreover, there were wide concerns about a labor shortage — i.e. a large number of unfilled vacancies — in the U.S. in
+months around the launch of ChatGPT. This could have led to an increased demand for platform labor. Given that all three groups
+showed similar trends before the ChatGPT launch, it is unclear why this business cycle effect would be stronger for skill clusters in
+the unaffected and complementary categories, though.
+
+3. Results
+
+3.1. Descriptive results
+
+3.1.1. Skill requirements of job postings
+    Before examining the impact of LLMs on online labor markets, we present a descriptive analysis of our dataset. As illustrated
+in Fig. 2(a), most job postings list between three to eight skills, with a median of five skills per job posting. The ubiquity of skills
+across job postings is highly heterogeneous, as depicted in Fig. 2(b). Popular skills such as JavaScript, graphic design, and content
+writing appear in nearly a million job postings, highlighting their fundamental role in the gig economy. Conversely, specialized
+skills like English-Dutch translation, PowerPoint expertise, and deep neural network development are featured in approximately a
+thousand job postings, reflecting their niche demand. Additionally, highly specialized skills such as Montessori education or specific
+sign languages are mentioned only a handful of times, indicating a very limited but specific demand.
+
+3.1.2. Embedding space and AI exposure labels
+    Our clustering and labeling methodology results in 116 skill clusters, of which 12 clusters are labeled as ‘substitutable’ (i. e.,
+those types of jobs can be conducted by a non-expert with the help of LLMs), 59 as ‘complementary’ (i. e., those jobs in which the
+use of LLMs increases productivity substantially, but which still require expert knowledge) and 45 as ‘unaffected’ (i. e., those job
+types where LLMs do not help freelancers or where they lead only to a non-substantial productivity increase). Appendix C showcases
+examples of skill clusters, their representative skills, their assigned category, and the reasoning provided by GPT for the category
+assignment.
+
+                                                                                    7
+

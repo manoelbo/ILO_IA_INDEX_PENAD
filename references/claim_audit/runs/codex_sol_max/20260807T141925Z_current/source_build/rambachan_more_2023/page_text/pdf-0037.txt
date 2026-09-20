@@ -1,0 +1,13 @@
+    RAMBACHAN AND ROTH              A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                           2591
+
+WOLFERS, J. (2006), “Did Unilateral Divorce Laws Raise Divorce Rates? A Reconciliation and New Results”,
+  American Economic Review, 96, 1802–1820.
+YE, T., KEELE, L., HASEGAWA, R. and SMALL, D. S. (2020), “A Negative Correlation Strategy for Bracket-
+  ing in Difference-in-Differences with Application to the Effect of Voter Identification Laws on Voter Turnout”
+  arXiv:2006.02423 [stat.ME].
+
+
+
+
+                                                                                                                   Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+

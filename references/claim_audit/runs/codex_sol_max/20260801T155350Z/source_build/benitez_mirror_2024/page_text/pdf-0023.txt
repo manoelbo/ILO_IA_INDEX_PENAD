@@ -1,0 +1,29 @@
+provided by the synthetic surveys with GPT-4o.
+    A potential concern might be that GPT-4o could generate similar responses to mTurk workers
+because it searches the web or because its training data includes information from the AIOE and
+the mTurk surveys. However, GPT-4o does not perform real-time web searches unless explicitly
+instructed to do so, and in our study, we did not prompt GPT-4o to search the web. Regarding
+the second concern of the training data, as shown in follow-up surveys from the GENOE, the rea-
+soning of the model is more holistic, based on its understanding of AI advancements and specific
+labor and workplace tasks (in this case, abilities), and does not rely on specific unique sources.
+Therefore, while it is possible that the training data could include some pre-existing information
+on Felten et al. (2021)’s work, among millions of other sources, the responses are synthesized from
+a broader knowledge base and not directly copied from any particular source.
+    Therefore, the high correlation observed suggests that the model’s responses are consistent
+with human judgment for this specific task. This consistency supports the robustness and reliabil-
+ity of using artificial intelligence tools to emulate human analytical capabilities in these types of
+assessments.
+
+         Figure 3: Correlation of Original AIOE and AIOE Built with Synthetic Surveys
+
+
+
+
+Source: Authors’ formulation based on data from O*NET and Felten et al. (2021) Note: Each dot represents an occupation
+at the SOC 10-digit code.
+
+
+
+
+                                                         19
+

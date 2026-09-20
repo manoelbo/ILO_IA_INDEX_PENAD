@@ -1,0 +1,42 @@
+exposure, highlighting the broad reach of AI across both blue-collar and white-collar sectors.
+   Interestingly, our research reveals considerable heterogeneity in exposure within specific sec-
+tors, such as the healthcare industry. Pediatricians, neurologists, and general internal medicine
+physicians show low susceptibility to AI replacement, likely due to the high degree of human
+interaction, non-routine tasks, and complex decision-making required in these roles. In contrast,
+specialties like radiology, pharmacy, and dermatology face a higher potential for AI integration,
+which aligns with AI’s growing capabilities in image analysis, data processing, and pattern recog-
+nition.
+   These findings underscore the importance of a granular, occupation-specific approach when
+assessing AI’s potential impact on the workforce. They suggest that AI might reshape rather than
+wholly replace professions, with human expertise remaining crucial for complex cases and inte-
+grating specialized knowledge with broader contexts. This understanding is essential for effective
+workforce planning, educational curriculum development, and policy formulation, highlighting
+the need for targeted approaches to reskilling and upskilling initiatives that focus on cultivating
+distinctly human capabilities while leveraging AI’s strengths.
+   Our analysis demonstrates high consistency and reliability in the GENOE estimates. As shown
+in Figure A.1 from the Appendix, the confidence intervals for the GENOE across the 100 iterations
+are remarkably narrow, indicating a high level of precision in the LLM’s assessment of occupa-
+tional exposure. Additionally, there is ordinal alignment across time horizons, with estimates for
+higher horizons being equal to or greater than those for lower horizons in almost all occupations.
+This pattern suggests a cumulative effect of AI exposure over time, with occupations generally
+becoming more susceptible to AI replacement as technology advances.
+   Importantly, our results show robustness to variations in the model’s temperature setting. As
+observed in Table A.2 in the Appendix, the GENOE index remains unchanged whether it is cal-
+culated using iterations assigned higher temperatures or lower temperatures. This consistency
+across different levels of model creativity reinforces the reliability of our findings.
+   To address concerns about the ”black box” nature of ChatGPT’s assessments, we conducted
+follow-up surveys asking the model to explain its reasoning for each occupation’s assessment in
+the five-year horizon. These responses allowed us to uncover patterns, ideas, and core topics
+influencing the models’ decisions.
+   We identified at least five main patterns in LLM’s rationale:
+   Technological Capabilities and Limitations. Many responses highlight what AI can currently achieve.
+For example, in the assessment of ”File Clerks,” it notes AI’s current proficiency in data entry and
+document management, leading to a high likelihood of replacement (0.9). On the other hand, fu-
+ture advancements are often considered, especially regarding the merging of robotics and AI, a
+topic mentioned in the surveys 236 times—not only to see the potential, but also to cast doubts
+about the feasibility of AI replacement. For instance, in the case of ”Barbers,” ChatGPT notes
+that while advances in AI and robotics have made strides in automating various tasks, the signif-
+
+
+                                                  11
+

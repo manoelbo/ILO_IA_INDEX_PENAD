@@ -1,0 +1,48 @@
+Proportional treatment effects.           One natural approach here is to target the average propor-
+tional treatment effect on the treated,
+
+                         ErYit p1q | Di “ 1, Postt “ 1s ´ ErYit p0q | Di “ 1, Postt “ 1s
+               θATT% “                                                                   .
+                                         ErYit p0q | Di “ 1, Postt “ 1s
+
+This is the percentage change in the average outcome for the treated group in the post-treatment
+period.
+   Identification of θATT% requires us to infer the counterfactual post-treatment mean outcome
+for the treated group, ErYit p0q | Di “ 1, Postt “ 1s. Of course, one approach to obtain such
+identification would be to assume parallel trends in levels. However, given that the treated and
+control groups have different pre-treatment means (see the bottom panel of Table 6), it may be
+unreasonable to expect that time-varying factors (e.g. the macroeconomy) have equal level effects on
+the outcome. An alternative identifying assumption is to impose that, in the absence of treatment,
+the percentage changes in the mean would have been the same for the treated and control group. As
+in Wooldridge (2023), this can be formalized using a “ratio” version of the parallel trends assumption,
+
+                   ErYit p0q | Di “ 1, Postt “ 1s   ErYit p0q | Di “ 0, Postt “ 1s
+                                                  “                                .               (7)
+                   ErYit p0q | Di “ 1, Postt “ 0s   ErYit p0q | Di “ 0, Postt “ 0s
+
+Intuitively, (7) states that if the treatment had not occurred, the average percentage change in the
+mean outcome for the treated group would have been the same as the average percentage change
+in the mean outcome for the control group. Under (7), we can thus estimate the counterfactual
+percentage change in the mean outcome for the treated group using the observed percentage change
+for the control group.
+   Table 6 shows that the sample mean of the outcome for the treated group decreased by 75%
+between the pre-treatment and post-treatment periods (from 4,742 to 1,172 (MZN)). Under the
+ratio parallel trends assumption (7), this suggests that the mean outcome for the treated group
+would also have decreased by 75% in the absence of treatment, thus implying an estimate of 2, 602
+for the counterfactual mean outcome for the treated group. The actual post-treatment mean for the
+treated group is 465, which is 82% below this implied counterfactual. This implies that the tariff
+reduction reduced the average bribe in the post-treatment period by 82%, i.e. θ̂ATT% “ ´0.82.
+Conveniently, this estimate can also be obtained using Poisson QMLE to estimate
+
+                         Yit “ exppβ0 ` Di ˆ Postt β1 ` Di β2 ` Postt β3 qǫit                      (8)
+
+and then computing θ̂ATT% “ exppβ̂1 q ´ 1 “ ´0.82, as shown in column (1) of Table 6.
+   We can also re-incorporate the covariates Xit by estimating
+
+                    Yit “ exppβ0 ` Di ˆ Postt β1 ` Di β2 ` Postt β3 ` β41 Xit qǫit ,               (9)
+
+which yields an estimate of θATT% of ´0.72, as shown in the second column of Table 6. As formalized
+
+
+                                                   26
+

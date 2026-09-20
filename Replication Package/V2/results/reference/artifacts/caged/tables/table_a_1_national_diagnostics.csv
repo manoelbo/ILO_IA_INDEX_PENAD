@@ -1,0 +1,7 @@
+panel,outcome_id,outcome,coefficient,standard_error,p_value,pretrend_status,pretrend_p_value,n_obs,n_clusters,interpretation
+B.1,admissoes,"Admissões (PPML, nível)",-0.0537723981585714,0.0385602106882426,0.1640757055204185,fail,2.1241502209470884e-52,22049,341,principal national estimate; all available pretrends fail
+B.1,desligamentos,"Desligamentos (PPML, nível)",-0.042014072599854,0.0347015248522746,0.2268409951592573,fail,2.1283599866577845e-18,22049,341,principal national estimate; all available pretrends fail
+B.1,n_movimentacoes,"Fluxo bruto (PPML, nível)",-0.0480931611194387,0.0353367232298032,0.1744161382010118,fail,4.347510641247265e-43,22049,341,principal national estimate; all available pretrends fail
+B.1,ln_salario_real_adm,Salário real de admissão (log),-0.0507404538197659,0.0103323620988367,1.411223007563578e-06,fail,0.0001580097966667,22012,341,principal national estimate; all available pretrends fail
+B.1,asinh_saldo,Saldo líquido (asinh),-0.5512668862460224,0.3783166056230572,0.1459958387457991,fail,1.4831703467492206e-06,22049,341,principal national estimate; all available pretrends fail
+B.2,stock_proxy_index,Proxy cumulativo de fluxo líquido,1.4292138611246914,1.3092870970831727,0.2757854792115886,not_available,,22100,340,cumulative flow proxy; not employment stock

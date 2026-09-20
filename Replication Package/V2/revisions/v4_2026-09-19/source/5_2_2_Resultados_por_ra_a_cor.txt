@@ -1,0 +1,31 @@
+### 5.2.2 Resultados por raça/cor
+A Tabela 5.2.2 traz as estimativas por raça/cor, comparando trabalhadores brancos e negros, categoria que agrega pretos e pardos. Os contrastes DDD e a desagregação nas seis categorias do IBGE estão no Apêndice A.
+**Tabela 5.2.2: Heterogeneidade por raça/cor — Branca e Negra**
+
+[TABLE]
+Grupo | Resultado | DiD no grupo | EP | p BH | Pretrend | Suporte
+Branca | Admissões (PPML, nível) | −0,0241 | 0,0350 | 0,592 | fail | adequate
+Branca | Desligamentos (PPML, nível) | −0,0182 | 0,0250 | 0,579 | fail | adequate
+Branca | Salário real de admissão (log) | −0,0544\*\*\* | 0,0114 | \< 0,001 | fail | adequate
+Branca | Saldo líquido (asinh) | −0,2246 | 0,3002 | 0,569 | fail | adequate
+Negra (preta e parda) | Admissões (PPML, nível) | −0,0621 | 0,0446 | 0,261 | fail | adequate
+Negra (preta e parda) | Desligamentos (PPML, nível) | −0,0584 | 0,0396 | 0,244 | fail | adequate
+Negra (preta e parda) | Salário real de admissão (log) | −0,0513\*\*\* | 0,0103 | \< 0,001 | fail | adequate
+Negra (preta e parda) | Saldo líquido (asinh) | −0,3264 | 0,2625 | 0,308 | fail | adequate
+[/TABLE]
+
+> *Notas: cada linha traz o DiD estimado dentro da amostra do próprio grupo, com erro-padrão clusterizado por CBO de quatro dígitos. Família C, de 130 testes; estrelas calculadas exclusivamente sobre o p ajustado de Benjamini-Hochberg: \\* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Estas células não medem heterogeneidade; o teste entre grupos é o DDD do Apêndice A. O saldo em transformação asinh não deve ser interpretado como percentual. Fonte: `results/models/group_did_results.csv`.\*
+Dentro de cada grupo, os coeficientes de fluxo são negativos e imprecisos nos dois casos, e o salário cai de forma significativa em ambos: 5,3% entre brancos e 5,0% entre negros. Essa semelhança é o eco do diferencial nacional.
+Os contrastes DDD mais precisos aparecem em raça/cor. Para trabalhadores negros, são **−0,1144 nas admissões**, **−0,0990 nos desligamentos** e **−0,1068 no fluxo bruto**, os três com p ajustado de 0,015. Em termos aproximados, os diferenciais são de 10,8% nas admissões e 9,4% nos desligamentos. No salário, o DDD é de −0,0121, com p ajustado de 0,399. Assim, o padrão salarial aparece nos dois grupos, sem diferença racial detectável. Como as pré-tendências falham, os contrastes de fluxo permanecem exploratórios.
+Duas qualificações são obrigatórias aqui. A primeira é que **os contrastes do agregado negro são conduzidos principalmente pela categoria parda**. Na desagregação em seis categorias, o contraste de pardos é de −0,0817 nas admissões (p ajustado de 0,042) e −0,0886 nos desligamentos (p ajustado de 0,018), enquanto o de pretos não se distingue de zero em nenhum desfecho: −0,0088 nas admissões (p ajustado de 0,907) e +0,0445 nos desligamentos (p ajustado de 0,341). Agregar as duas categorias produz um contraste maior, mas não autoriza interpretação causal sobre nenhuma delas.
+A segunda: **o agregado é mais forte que qualquer um de seus componentes**. Parece contradição, mas não é, porque os complementos são diferentes. O contraste da categoria *Negra* compara pretos e pardos com brancos, amarelos, indígenas e não identificados; o de *parda*, isoladamente, compara pardos com um complemento que **inclui os pretos**. Como as estimativas de pretos e pardos apontam na mesma direção, separá-los reduz o contraste de cada um.
+A categoria amarela precisa de uma distinção clara entre os dois estimadores. O DiD dentro do grupo é de −0,3479 nas admissões e −0,2722 nos desligamentos. Já o DDD, que compara esse grupo com seu complemento, é de −0,2770 e −0,2179, respectivamente. Nos quatro casos, o p ajustado fica abaixo de 0,001 e o suporte ocupacional é adequado, mas as pré-tendências falham. 
+As Figuras 5.2.2.1 e 5.2.2.2 trazem os event studies e as trajetórias normalizadas de admissões e salário real de admissão.
+**Figura 5.2.2.1 Admissões — event study e trajetórias por raça/cor**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/43569aa6-4fda-4f26-8bec-dda7e914784d/figure_5_2_2_1_race_admissions.png]
+**Figura 5.2.2.2: Salário real de admissão — event study e trajetórias por raça/cor**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/a085e669-69fb-46ff-b89d-b5c38af8715b/figure_5_2_2_2_race_wage.png]
+<empty-block/>
+Nas admissões, a trajetória dos trabalhadores negros em ocupações expostas se afasta da observada entre brancos no período posterior, contrapartida visual do contraste DDD. No salário, as duas trajetórias caem e permanecem próximas. As figuras são descritivas e não superam as falhas de pré-tendências.
+Esse padrão qualifica a Subseção 3.5.2. Os trabalhadores brancos estão mais presentes em ocupações altamente expostas, enquanto os contrastes de fluxo mais negativos aparecem entre trabalhadores negros. Exposição e heterogeneidade estimada, portanto, apontam em direções diferentes, mas o desenho não permite chamar essa diferença de ajuste causado pelo ChatGPT. A comparação internacional permanece limitada, pois os principais estudos empíricos lidos para essa dissertação não apresentam estimativas causais desagregadas por raça ([Brynjolfsson; Chandar; Chen, 2025](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/); [Hosseini Maasoum; Lichtinger, 2026](https://doi.org/10.2139/ssrn.5425555); [Klein Teeselink, 2025](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5516798)).
+Em resumo: raça/cor é a dimensão com os contrastes ajustados mais precisos nos três desfechos de fluxo, mas não no salário. Como admissões e desligamentos apresentam diferenciais negativos, o padrão é compatível com menor movimentação relativa; sem observar o estoque e com pré-tendências falhas, não é possível distinguir rotatividade, perda líquida de vínculos ou outros mecanismos. Na desagregação, os contrastes negativos aparecem sobretudo entre pardos, não de forma homogênea em toda a população negra.

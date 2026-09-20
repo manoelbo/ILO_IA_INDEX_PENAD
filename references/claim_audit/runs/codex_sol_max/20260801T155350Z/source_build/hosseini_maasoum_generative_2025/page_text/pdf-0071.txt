@@ -1,0 +1,42 @@
+A.7      AI Usage Patterns Across the Seniority Spectrum
+
+This appendix provides external descriptive evidence on how GenAI is used for tasks
+at different levels of the occupational seniority hierarchy, using data on GenAI usage
+patterns that are independent of the firm-level employment data in the main analysis.
+The analysis draws on the Anthropic Economic Index (AEI), a public dataset that classi-
+fies real-world interactions with a large language model by the occupational tasks they
+serve and the nature of human–AI collaboration. We merge these GenAI usage measures
+with occupation-level seniority indicators from Revelio Labs/LinkedIn to document sys-
+tematic differences in the mode of GenAI engagement across junior-type and senior-type
+tasks. The goal is not to establish causal effects but to provide theory-motivated de-
+scriptive evidence that complements the conceptual framework in Section 3: the frame-
+work predicts that junior-type tasks are disproportionately exposed to automation, while
+senior-type tasks—conditional on remaining human-performed—are more likely to in-
+volve augmentation-type GenAI usage. Note that while the main analysis studies within-
+firm junior versus senior employment, Appendix A.3 uses occupation-level seniority as a
+proxy for the type of tasks typically performed by more junior or more senior workers—it
+captures cross-occupation variation in task complexity, not the within-firm hierarchy it-
+self. The data allow us to examine whether observed GenAI usage patterns are consistent
+with the framework’s prediction.
+
+
+A.7.1    Data Sources
+
+Anthropic Economic Index (AEI).        The AEI dataset (Appel et al., 2026) is constructed
+from a large sample of anonymized conversations with Claude, Anthropic’s large lan-
+guage model, during the week of November 13–20, 2025. Each conversation is algorith-
+mically matched to the O*NET task it most closely corresponds to and classified into one
+of five collaboration modes that characterize how the user interacts with the AI:
+
+
+   • Directive: the user instructs the GenAI to produce an output with minimal back-
+        and-forth. The GenAI executes a well-specified request—analogous to delegating a
+        task to a subordinate.
+
+   • Learning: the user seeks to acquire knowledge or understanding from the AI, using
+
+
+
+
+                                            A.26
+

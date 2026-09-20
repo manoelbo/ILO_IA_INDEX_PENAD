@@ -1,0 +1,73 @@
+2590                                  REVIEW OF ECONOMIC STUDIES
+
+KAIDO, H., SANTOS, A., MOLINARI, F. and STOYE, J. (2019), “Confidence Intervals for Projections of Partially
+  Identified Parameters”, Econometrica, 87, 1397–1432.
+KAIDO, H., SANTOS, A., MOLINARI, F. and STOYE, J. (2022), “Constraint Qualifications In Partial Identification”,
+  Econometric Theory, 38, 1–24.
+KEELE, L. J., SMALL, D. S., HSU, J. Y. and FOGARTY, C. B. (2019), “Patterns of Effects and Sensitivity Analysis
+  for Differences-in-Differences” arXiv:1901.01869 [stat.AP].
+KIM, W., KWON, K., KWON, S. and LEE, S. (2018), “The Identification Power of Smoothness Assumptions in Models
+  with Counterfactual Outcomes”, Quantitative Economics, 9, 617–642.
+KLINE, P. and SANTOS, A. (2013), “Sensitivity to Missing Data Assumptions: Theory and an Evaluation of the U.S.
+  Wage Structure”, Quantitative Economics, 4, 231–267.
+
+
+
+
+                                                                                                                         Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+KOLESÁR, M. and ROTHE, C. (2018), “Inference in Regression Discontinuity Designs with a Discrete Running
+  Variable”, American Economic Review, 108, 2277–2304.
+LEAVITT, T. (2020), “Beyond Parallel Trends: Improvements on Estimation and Inference in the Difference-in-
+  Differences Design” (Working Paper).
+LEE, J. Y. and SOLON, G. (2011), “The Fragility of Estimated Effects of Unilateral Divorce Laws on Divorce Rates”,
+  The B.E. Journal of Economic Analysis & Policy, 11, 1–9.
+LOVENHEIM, M. F. and WILLEN, A. (2019a), “The Long-Run Effects of Teacher Collective Bargaining”, American
+  Economic Journal: Economic Policy, 11, 292–324.
+LOVENHEIM, M. F. and WILLEN, A. (2019b), “Replication Data For: The Long-Run Effects of Teacher Collec-
+  tive Bargaining” (Technical Report, American Economic Association [publisher], Inter-university Consortium for
+  Political and Social Research [distributor]). https://doi.org/10.3886/E116525V1.
+LOW, M. G. (1995), “Bias-Variance Tradeoffs in Functional Estimation Problems”, The Annals of Statistics, 23,
+  824–835.
+MANSKI, C. F. (1989), “Anatomy of the Selection Problem”, The Journal of Human Resources, 24, 343–360.
+MANSKI, C. F. (1990), “Nonparametric Bounds on Treatment Effects”, The American Economic Review, 80, 319–323.
+MANSKI, C. F. (1997), “Monotone Treatment Response”, Econometrica, 65, 1311–1334.
+MANSKI, C. F. (2003), Partial Identification of Probability Distributions (New York, NY: Springer).
+MANSKI, C. F. (2007), Identification for Prediction and Decision (Cambridge, MA: Harvard University Press).
+MANSKI, C. F. (2008), Identification for Prediction and Decision (illustrated ed., Cambridge, Mass: Harvard University
+  Press).
+MANSKI, C. F. (2013), Public Policy in an Uncertain World: Analysis and Decisions (Cambridge, MA: Harvard
+  University Press).
+MANSKI, C. F. and PEPPER, J. V. (2013), “Deterrence and the Death Penalty: Partial Identification Analysis Using
+  Repeated Cross Sections”, Journal of Quantitative Criminology, 29, 123–141.
+MANSKI, C. F. and PEPPER, J. V. (2018), “How Do Right-to-Carry Laws Affect Crime Rates? Coping with Ambiguity
+  Using Bounded-Variation Assumptions”, Review of Economics and Statistics, 100, 232–244.
+MASTEN, M. A. and POIRIER, A. (2020), “Inference on Breakdown Frontiers”, Quantitative Economics, 11, 41–111.
+MOLINARI, F. (2020), “Microeconometrics with Partial Identification”, in Durlauf, S. N., Hansen, L. P., Heckman, J.
+  J. and Matzkin, R. L. (eds) Handbook of Econometrics, Vol. 7 of Handbook of Econometrics, Volume 7A, Chapter 5
+  (Amsterdam: Elsevier) 355–486.
+MOREIRA, M. J. (2003), “A Conditional Likelihood Ratio Test for Structural Models”, Econometrica, 71, 1027–1048.
+MOREIRA, M. J. and RIDDER, G. (2019), “Efficiency Loss of Asymptotically Efficient Tests in an Instrumental
+  Variables Regression” (SSRN Scholarly Paper ID 3348716, Rochester, NY: Social Science Research Network).
+MÜLLER, U. K. (2011), “Efficient Tests Under a Weak Convergence Assumption”, Econometrica, 79, 395–435.
+NOACK, C. and ROTHE, C. (2020), “Bias-Aware Inference in Fuzzy Regression Discontinuity Designs”
+  arXiv:1906.04631 [econ.EM].
+RAMBACHAN, A. and ROTH, J. (2021), “An Honest Approach to Parallel Trends” (Working paper, p. 126).
+ROMANO, J. P. and SHAIKH, A. M. (2008), “Inference for Identifiable Parameters in Partially Identified Econometric
+  Models”, Journal of Statistical Planning and Inference, 138, 2786–2807.
+ROMANO, J. P., SHAIKH, A. M. and WOLF, M. (2014), “A Practical Two-Step Method for Testing Moment
+  Inequalities”, Econometrica, 82, 1979–2002.
+ROTH, J. (2022), “Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends”, American Economic
+  Review: Insights, 4, 305–322.
+ROTH, J., SANT’ANNA, P. H. C., BILINSKI, A. and POE, J. (2022), “What’s Trending in Difference-in-Differences?
+  A Synthesis of the Recent Econometrics Literature” arXiv:2201.01194 [econ, stat].
+SANT’ANNA, P. H. C. and ZHAO, J. B. (2020), “Doubly Robust Difference-in-Differences Estimators”, Journal of
+  Econometrics, 219, 101–122.
+SCHRIJVER, A. (1986), Theory of Linear and Integer Programming (Chicester: Wiley-Interscience).
+STOCK, J. and WATSON, M. (2008), “Heteroskedasticity-Robust Standard Errors for Fixed Effects Panel Data
+  Regression”, Econometrica, 76, 155–174.
+SUN, L. and ABRAHAM, S. (2021), “Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous
+  Treatment Effects”, Journal of Econometrics, 225, 175–199.
+TAMER, E. (2010), “Partial Identification in Econometrics”, Annual Review of Economics, 2, 167–195.
+VAN DER VAART, A. W. and WELLNER, J. A. (1996), Weak Convergence and Empirical Processes: With Applications
+  to Statistics (New York, NY: Springer).
+

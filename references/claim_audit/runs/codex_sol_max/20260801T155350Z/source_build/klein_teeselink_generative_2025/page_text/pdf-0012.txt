@@ -1,0 +1,40 @@
+    To examine how firms adjust their hiring strategies in response to LLM exposure,
+we combine our firm-level exposure measures with job posting data. To do so, we
+estimate Equation (3) with an indicator for whether firm i posted any job listings
+in month t as the outcome variable. This binary outcome captures the extensive
+margin of total hiring activity. We then re-estimate Equation (4) separately for each
+of 50 job categories.
+    For our occupation-level analysis of job posting dynamics, we estimate an anal-
+ogous event study specification:
+
+                           30
+                           X
+                  Yot =            βτ · Exposureo × 1[t=τ ] + γo + δt + ϵot        (5)
+                          τ =−15
+
+    where Yot denotes outcomes for occupation o in month t, including log job posting
+volumes, posted salaries, and salary dispersion within occupations. Exposureo is
+the occupation’s LLM exposure score from Eloundou et al. (2024). We include
+occupation fixed effects γo and year-by-month fixed effects δt with standard errors
+clustered at the occupation level. We also estimate an analogous static specification
+of Equation (4) at the occupation level.
+    Our identification strategy relies on the parallel trends assumption: absent Chat-
+GPT’s introduction, labor market outcomes would have evolved similarly across
+firms and occupations with different LLM exposure levels, conditional on our fixed
+effects structure. Several features of our design help with the interpretation of our
+estimates as causal. First, our exposure measures are predetermined using data from
+before November 2022, eliminating concerns about reverse causality where employ-
+ment changes might influence measured exposure. Second, the sudden and largely
+unanticipated public release of ChatGPT provides a clear temporal shock to LLM
+availability. Third, our event study analyses test and confirm parallel pre-treatment
+trends across analyses.
+    Furthermore, we perform a large set of robustness checks to test the validity of
+our findings across different specifications and modeling choices. We re-estimate our
+analyses using different fixed effects. We examine the validity of our finding of de-
+creased junior hiring through a highly restrictive within-firm triple-difference model
+using a firm-by-month-by-seniority panel that includes firm-by-period fixed effects
+absorbing all time-varying firm-level shocks. We test the sensitivity of our results to
+
+
+                                               12
+

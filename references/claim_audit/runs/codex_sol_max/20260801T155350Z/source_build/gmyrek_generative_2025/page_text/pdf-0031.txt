@@ -1,0 +1,44 @@
+28        ILO Working Paper 140
+
+
+
+
+     perform Ward’s hierarchical clustering.11 We generate a dendrogram for each subgroup, plot-
+     ting the tasks along the horizontal axis and the linkage distances (or “heights”) along the verti-
+     cal axis. Clusters are then formed by “cutting” the dendrogram at a chosen linkage height, such
+     that every branch below this cut line becomes its own cluster (Figure 12).
+
+     In our approach, we select the height threshold manually for each subgroup through visual in-
+     spection of the dendrogram. This allows us to flexibly accommodate heterogeneity among sub-
+     group’s tasks, so as to ensure that each final cluster contains tasks that are genuinely similar in
+     content. Once the distance threshold is determined, all tasks in the subgroup are assigned to a
+     unique cluster. The process is repeated for each occupation–score-cluster combination. Although
+     our visual inspection introduces an element of subjective judgment, it ensures that spurious or
+     extremely fine-grained splits are avoided, helping to maintain coherent groupings of tasks for
+     the subsequent expert review.
+
+
+      XX Figure 12. Example of a dendogram used for the review of tasks’ semantic clustering
+
+
+
+
+     Once each task had been assigned to a cluster, based on its 1-digit occupational group, scoring
+     bracket from the survey and the semantic similarity of tasks, we generate the final sample of
+     tasks for expert review. To ensure coverage across all clusters while limiting the total burden on
+     experts, we applied a scaling factor (set to 20%) to determine the approximate fraction of tasks
+     to sample from each group.12 We then enforced a minimum of one task per cluster (to avoid ex-
+     cluding smaller clusters entirely) and a maximum of five tasks per cluster to keep the workload
+     manageable. Through this procedure, we achieve a balanced, yet compact, sample that captures
+     semantic diversity while preventing over-sampling from any single cluster. We retain the cluster
+     assignment for each task, so that the expert review can be subsequently looped back into ad-
+     justments of the scores in the cluster that the sampled task originated from.
+
+
+
+     11
+          Ward’s method seeks to minimize the variance within each cluster, making it particularly suitable for tasks with varied textual con-
+          tent.
+     12
+          Specifically, the formula took the size of each cluster relative to the group total, multiplied by the scaling factor.
+

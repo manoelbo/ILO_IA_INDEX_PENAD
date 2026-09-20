@@ -1,0 +1,15 @@
+{
+  "age_groups": 6,
+  "analysis_type": "descriptive_normalized_trajectories",
+  "baseline_period": 202211,
+  "cases": 6,
+  "has_counterfactual": false,
+  "outcomes": 2,
+  "task": "T8B.7",
+  "terminal_complete_rows": 72,
+  "terminal_end": 202605,
+  "terminal_months": 12,
+  "terminal_rows": 72,
+  "terminal_start": 202506,
+  "trajectory_rows": 4680
+}

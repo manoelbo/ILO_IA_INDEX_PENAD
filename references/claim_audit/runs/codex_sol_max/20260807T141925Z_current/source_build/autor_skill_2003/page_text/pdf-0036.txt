@@ -1,0 +1,36 @@
+                                                                                                                                                                                   1314
+
+                                                               TABLE VI
+                             COMPUTERIZATION AND CHANGES IN JOB TASK CONTENT WITHIN OCCUPATIONS 1977–1991
+                         DEPENDENT VARIABLE: 10 3 ANNUAL WITHIN-OCCUPATION CHANGE IN QUANTILE OF TASK MEASURE,
+                                           MEASURED IN PERCENTILES OF 1984 TASK DISTRIBUTION
+
+                                  A. D Nonroutine                   B. D Nonroutine
+                                      analytic                         interactive                    C. D Routine cognitive                   D. D Routine manual
+
+                                (1)        (2)        (3)         (1)        (2)        (3)          (1)           (2)           (3)          (1)         (2)           (3)
+
+D Computer use        2.94    3.57    4.02  5.70   5.86    7.08                                  218.18        216.56        218.48          1.74        0.83          0.37
+1984–1997            (1.84) (1.92) (2.06) (1.88) (1.97) (2.11)                                    (3.29)        (3.41)        (3.65)        (2.89)      (3.01)        (3.23)
+D College grad emp.         24.79 24.83          24.47 24.58                                                    22.59         22.76                    216.07        216.03
+1984–1997                    (5.54) (5.54)        (5.68) (5.67)                                                 (9.86)        (9.85)                    (8.70)        (8.71)
+D HS grad emp.                2.83    3.09       20.19     0.52                                                 16.97         15.86                    210.42        210.70
+1984–1997                    (3.78) (3.81)        (3.88) (3.90)                                                 (6.73)        (6.77)                    (5.94)        (5.99)
+D Female emp.                       22.37                26.47                                                                10.14                                    2.47
+1984–1997                            (3.94)               (4.03)                                                              (6.99)                                  (6.19)
+Intercept           20.92 20.91 20.95 20.46 20.42 20.52                                              0.56          0.14        0.30          0.42          0.70        0.74
+                     (0.40) (0.41) (0.41) (0.41) (0.42) (0.42)                                      (0.71)        (0.72)      (0.73)        (0.63)        (0.64)      (0.64)
+R2                    0.01    0.01    0.01  0.02   0.02    0.03                                      0.06          0.08        0.08          0.00          0.01        0.01
+                                                                                                                                                                                   QUARTERLY JOURNAL OF ECONOMICS
+
+
+
+
+Weighted mean D             20.39                  0.58                                                          22.76                                     0.74
+
+    n is 470 consistent three-digit Census Occupation Code (COC) occupations. Standard errors are in parentheses. Each column presents a separate OLS regression of ten times
+the annual change in the occupational task measure (measured in centiles of the 1984 distribution) between the 1977 and 1991 DOT revisions. Computer use, college graduate, high
+school graduate, and female employment shares are measured as ten times the annual change in the relevant measure from the 1984 and 1997 CPS. Weighted means are 0.183, 0.017,
+20.015, and 0.017, respectively. Omitted education categories are some college and high school dropout. Estimates are weighted by the average occupational share of U. S.
+employment in 1984 and 1997. See Table I and Appendix 1 for denitions and examples of task variables.
+

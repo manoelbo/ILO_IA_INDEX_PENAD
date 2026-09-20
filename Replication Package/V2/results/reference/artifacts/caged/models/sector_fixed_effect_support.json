@@ -1,0 +1,17 @@
+{
+  "admissions": 129108728,
+  "all_models_converged": true,
+  "cbo_clusters": 341,
+  "division_panel_bytes": 52188706,
+  "division_panel_cells": 1332307,
+  "division_panel_sha256": "072ab8423033f8784a7d833577dd867d102d514cf124bc51716df521b2416182",
+  "duplicate_cells": 0,
+  "level_3_minimum_required": 20,
+  "level_3_substantive_interpretation_allowed": true,
+  "level_3_treated_cbo_support": 55,
+  "model_count": 15,
+  "official_divisions": 87,
+  "official_sections": 21,
+  "separations": 119215038,
+  "two_way_division_clusters": 87
+}

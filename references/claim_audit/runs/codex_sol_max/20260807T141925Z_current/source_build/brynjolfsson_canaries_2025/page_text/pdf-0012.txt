@@ -1,0 +1,58 @@
+f indexes firms, q indexes Eloundou et al. (2024) exposure quintiles, and t indexes months, with
+
+t = −1 corresponding to October 2022. The outcome variable yf,q,t is employment in f, q, t.
+
+Equation 4.1 is a Poisson event study regression controlling for firm-quintile effects, αf,q , and firm-
+
+time effects, βf,t . The firm-time effects absorb aggregate firm shocks that impact each exposure
+
+quintile equally. The firm-quintile effects adjust for baseline differences in hiring across quintiles
+
+within the firm. The coefficients of interest, γq,t , measure differential changes in employment growth
+
+across quintiles after accounting for firm-time effects and firm-quintile effects.18
+
+    We run this regression separately for each age group. For each regression, we restrict to firms
+
+that hire at least 10 workers within the age group in every period of the sample. Further,
+                                                                                                               P
+                                                                                                                 t yf,q,t
+
+must equal at least 100 for each q, meaning that the firm must at least employ on average about 2
+
+workers from each exposure quintile across months in the sample.19 Standard errors are clustered
+
+by firm.
+
+    Results are in Figure 4, which plots the γq,t coefficients for each age group. For workers aged
+
+22-25, estimates for higher quintiles are large and statistically significant, with a 15 log point de-
+
+cline in relative employment comparable in magnitude to the estimates in the raw data in Figure 2.
+
+Estimates for other age groups are generally much smaller in magnitude and not statistically sig-
+
+nificant. These findings imply that the employment trends we observe are not driven by differential
+
+shocks to firms that employ a disproportionate share of AI-exposed young workers.
+
+    One alternative confounder that would not be controlled for with firm-time effects is that even
+
+conditional on the firm workers with high AI exposure were excessively hired after the COVID-
+
+19 pandemic, leading to a subsequent contraction in their hiring. To assess such alternatives we
+
+consider various other robustness checks in Section 4.6, such as removing computer occupations
+
+and conditioning on whether the occupation is amenable to work from home.
+  18
+     Because of zero counts in the outcome variable, we estimate a Poisson regression instead of an OLS regression in
+logs following guidance from Chen and Roth (2024).
+  19
+     Results are not sensitive to these restrictions, though there must be at least one non-zero value in each firm-month
+and each firm-quintile for observations to not get dropped in the Poisson regression.
+
+
+
+
+                                                           12

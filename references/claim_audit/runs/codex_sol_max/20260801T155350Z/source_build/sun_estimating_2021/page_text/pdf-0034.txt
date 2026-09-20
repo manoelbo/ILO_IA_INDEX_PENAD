@@ -1,0 +1,22 @@
+          Figure 1: Weight on C ATTe,`0 for ` 0 , −2 in the Coefficient µ−2 from Regression (23)
+                                             (a) Weight on C ATTe,0
+
+
+
+
+                                     (b) Weight on C ATTe,`0 for ` 0 ∈ {−1, 1}
+
+
+
+
+Notes: Panel (a) plots the weight on C ATTe,0 and panel (b) plots the weight on C ATTe,`0 for ` 0 ∈ {−1, 1}
+under a given distribution of cohorts indexed by the x-axis. Specifically, we construct a panel balanced in
+calendar time with T = 2 and cohorts Ei ∈ {1, 2, ∞}. We vary the share of never-treated units Pr {Ei = ∞}
+between [0, 0.99] and divide the rest of the units evenly into cohorts treated at time 1 and 2. The x-axis
+indexes 1 − Pr {Ei = ∞}.
+
+
+
+
+                                                       34
+

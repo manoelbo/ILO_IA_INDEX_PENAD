@@ -1,0 +1,65 @@
+                 Primitives highlight how use cases differ
+
+                 To illustrate how the primitives distinguish between different types of AI
+                 use, we examine two contrasting request clusters: software development
+                 (“Help debug, develop, and optimize software across multiple programming
+                 domains”) and personal life management (“Assist with personal life
+                 management and everyday tasks”). Figure 2.2 shows the primitive profile for
+                 each cluster alongside global averages.
+
+                                                    Descriptive statistics of economic primitives
+
+                    Global average                      Develop, debug and optimize software                      Personal life management
+                         N = 999,875                                        N = 147,984                                       N = 26,460
+
+
+  Human time                                3.1 h    Human time                                3.3 h   Human time                                1.8 h
+
+  Human and AI time                     15.4 min     Human and AI time                     15.8 min    Human and AI time                      14.7 min
+
+
+  Multitasking                               9%      Multitasking                               8%     Multitasking                              10%
+
+  Human could do alone                      88%      Human could do alone                      82%     Human could do alone                      96%
+
+
+  Human education                      12.2 years    Human education                      13.8 years   Human education                       9.1 years
+
+
+  AI education                         12.2 years    AI education                         13.8 years   AI education                          9.4 years
+
+
+  Work use                                  46%      Work use                                  64%     Work use                                  17%
+
+  AI autonomy                                3.4     AI autonomy                                3.5    AI autonomy                                 3.5
+
+  Task success                              67%      Task success                              61%     Task success                              78%
+
+
+
+
+Figure 2.2: Descriptive statistics of economic primitives overall, and for two example request clusters.
+For this figure, we focus on descriptive statistics for the primitives across the whole Claude.ai sample as well as two request clusters
+at the lowest level of granularity. N indicates the overall count of conversations or the count of conversations belonging to the request
+clusters.
+
+
+
+                 Task complexity. Claude estimates that software development requests
+                 would take a competent professional approximately 3.3 hours to complete
+                 without AI—close to the global average of 3.1 hours. Personal life management
+                 tasks are estimated to be simpler, averaging 1.8 hours. Estimated human-AI
+                 collaboration time is similar across both (~15 minutes), showing this primitive
+                 varies less than other primitives for these two tasks.
+
+
+                 Human and AI skills. Software development requests draw on more
+                 specialized knowledge: both human prompts and AI responses are estimated
+                 to require approximately 13.8 years of education to understand, compared
+                 to 9.1–9.4 years for personal life management requests. Claude estimates
+                 that users would be able to complete personal life management requests by
+                 themselves 96% of the time, versus 82% for software development requests—
+                 indicating that Claude provides more essential support for technical work.
+
+The Anthropic Economic Index Report                                                                                                                      25
+

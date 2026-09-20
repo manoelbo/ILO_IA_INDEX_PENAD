@@ -1,0 +1,42 @@
+                                                                ď ErlogpFY´1p1q pU qq | U P r1 ´ θAT , 1ss,   (E.1)
+
+where θAT “ P pY p1q ą 0, Y p0q ą 0q, θN T “ P pY p1q “ 0, Y p0q “ 0q, and θC “ P pY p1q ą
+0, Y p0q “ 0q. We estimate the bounds in (E.1) by plugging in the estimated CDFs for instrument-
+compliers described above, as well as the values of θAT , θN T , θC implied by the estimated CDFs. We
+approximate the expectation over U by taking the average over 100,000 uniform draws.58 Finally,
+to compute the bounds on the treatment effect, we must estimate ErY p0q | Y p0q ą 0s. To do this,
+we use the fact that
+
+                            ErY p0q | Y p0q ą 0s “ ErFY´1p0q pU q | U P rθN T ` θC , 1ss.
+
+As before, we then estimate the right-hand-side in the previous display by plugging-in the estimated
+CDF for instrument-compliers, and simulating over 100,000 uniform draws. The Lee bounds for
+θIntensive are then obtained by subtracting the estimate of ErY p0q | Y p0q ą 0s from the estimates
+of the lower and upper bounds in (E.1). We estimate standard errors for the bounds using 1,000
+draws from a non-parametric clustered bootstrap.59
+
+
+F        Appendix Tables and Figures
+       – Appendix Table 1 contains information on the AER papers discussed.
+
+       – Appendix Figure 1 shows how t-statistics change in the replication exercise.
+
+       – Appendix Table 2 shows the analogue of Table 1 for logp1 ` Y q.
+
+
+
+
+  58
+       We note that in finite samples, the estimated CDF F̂Y pdq pyq may be non-monotonic. Nevertheless, the inverse
+F̂Y´1
+    pdq puq :“ infty | F̂Y pdq pyq ě uu remains well defined.
+   59
+    One complication that arises is that for some draws from the bootstrap distribution, the sign of the extensive
+margin can be the opposite of that in the original data. In our bootstrap procedure, we construct Lee-type bounds
+assuming monotonicity in whichever direction matches the bootstrapped data. The resulting bootstrap estimates of
+the bounds appear to be approximately normally distributed, but we think a formal theoretical evaluation of the
+bootstrap in this setting is an interesting topic for future work.
+
+
+                                                                15
+

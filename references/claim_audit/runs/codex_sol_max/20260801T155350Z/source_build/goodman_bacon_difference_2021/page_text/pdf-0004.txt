@@ -1,0 +1,53 @@
+         In contrast to our substantial understanding of the canonical 2x2 DD model, we know
+
+relatively little about the two-way fixed effects DD model when treatment timing varies. We do
+
+not know precisely how it compares mean outcomes across groups. 5 We typically rely on general
+
+descriptions of the identifying assumption like “interventions must be as good as random,
+
+conditional on time and group fixed effects” (Bertrand, Duflo, and Mullainathan 2004, p. 250),
+
+and consequently lack well-defined strategies to test the validity of the DD design with timing. We
+
+have limited understanding of the treatment effect parameter that regression DD identifies. Finally,
+
+we often cannot evaluate when alternative specifications will work or why they change estimates. 6
+
+         This paper shows that the two-way fixed effects DD estimator in (2) is a weighted average
+
+of all possible 2x2 DD estimators that compare timing groups to each other. Some use units treated
+
+at a particular time as the treatment group and untreated units as the control group. Some compare
+
+units treated at two different times, using the later group as a control before its treatment begins
+
+and then the earlier group as a control after its treatment begins. As in any least squares estimator,
+
+the weights on the 2x2 DD’s are proportional to group sizes and the variance of the treatment
+
+dummy within each pair. Treatment variance is highest for groups treated in the middle of the
+
+panel and lowest for groups treated at the extremes. This result clarifies the theoretical
+
+interpretation and identifying assumptions of the general DD model and creates simple new tools
+
+for describing the design and analyzing problems that arise in practice.
+
+         By decomposing the DD estimator into its sources of variation (the 2x2 DD’s) and
+
+providing an explicit interpretation of the weights in terms of treatment variances, my results
+
+
+5
+  Imai, Kim, and Wang (2018) note “It is well known that the standard DiD estimator is numerically equivalent to the
+linear two-way fixed effects regression estimator if there are two time periods and the treatment is administered to
+some units only in the second time period. Unfortunately, this equivalence result does not generalize to the multi-
+period DiD design…Nevertheless, researchers often motivate the use of the two-way fixed effects estimator by
+referring to the DiD design (e.g., Angrist and Pischke, 2009).”
+6
+  This often leads to sharp disagreements. See Neumark, Salas, and Wascher (2014) on unit-specific linear trends, Lee
+and Solon (2011) on weighting and outcome transformations, and Shore-Sheppard (2009) on age time fixed effects.
+
+                                                         2
+

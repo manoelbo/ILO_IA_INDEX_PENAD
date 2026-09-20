@@ -1,0 +1,33 @@
+such counterfactuals precisely, these responses are informative in three ways.
+    First, the fact that virtually all non-adopters report no earnings impact suggests that
+occupation-wide spillovers are minimal. Despite broad adoption and changes in work
+content, AI chatbots do not appear to have shifted equilibrium wages or hours—reinforcing
+the conclusion from our identification analysis in Section 3.1 that the “missing intercept”
+remains small.
+    Second, even adopters report small average earnings impacts, ranging from 0% to 0.5%
+depending on occupation and employer chatbot initiatives. These estimates are an order
+of magnitude smaller than the time savings reported in Section 2.2 and fall within the
+confidence intervals of the difference-in-differences estimates for earnings in Section 3.2.
+    Third, the limited average earnings impacts primarily reflect the overwhelming share
+of workers reporting no change—rather than large positive and negative effects offsetting
+each other. This supports the conclusion that AI chatbots have not had significant
+heterogeneous impacts on workers’ earnings.
+    Taken together, these self-reported perceptions from workers in the most exposed
+occupations reinforce our finding that AI chatbots have so far had limited impacts on
+earnings in the labor market.
+
+
+4     Conclusion
+
+This paper studies how labor markets adjust at the onset of major technological change,
+providing large-scale evidence on the early impacts of AI chatbots—the most widely
+adopted generative AI tool to date. By linking extensive surveys on AI chatbot adoption
+and work organization in 11 exposed occupations to administrative labor market records
+in Denmark, we document both what moves and what does not.
+    What moves is the structure of work. Most employers in exposed occupations have
+implemented chatbot initiatives, workers report substantial productivity benefits, and new
+AI-related tasks have emerged broadly—especially in workplaces that encourage and invest
+in the tools. These patterns are consistent with task-based theories of technology adoption
+
+
+                                             33

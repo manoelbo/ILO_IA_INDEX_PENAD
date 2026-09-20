@@ -1,0 +1,64 @@
+7    Proofs
+
+Theorem S1 relies on the following lemma.
+
+Lemma S1 If Assumptions 1 and 3-5 hold, for all (g, g 0 , t, t0 ) ∈ {1, ..., G}2 × {1, ..., T }2 ,
+
+          E(Yg,t |D) − E(Yg,t0 |D) − (E(Yg0 ,t |D) − E(Yg0 ,t0 |D))
+                                                                                      
+         =Dg,t E ∆Tg,tR D − Dg,t0 E ∆Tg,tR0 D − Dg0 ,t E ∆Tg0R,t D − Dg0 ,t0 E ∆Tg0R,t0 D .
+
+Proof of Lemma S1
+
+For all (g, t) ∈ {1, ..., G} × {1, ..., T },
+                                       Ng,t
+                                                                                                !
+                                   1 X
+                 E(Yg,t |D) =E              (Yi,g,t (0) + Di,g,t (Yi,g,t (1) − Yi,g,t (0))) D
+                                 Ng,t i=1
+                                                                   
+                            =E (Yg,t (0)|D) + Dg,t E ∆Tg,tR D .
+
+The end of the proof is the same as that of Lemma 1.
+
+
+Proof of Theorem S1
+
+The proof of that result is very similar to the proof of Theorem 1.
+          P                      !
+             g,t Ng,t εg,t Yg,t
+βf e = E P
+             g,t Ng,t εg,t Dg,t
+          P                              !
+             g,t Ng,t εg,t E(Yg,t |D)
+     =E       P
+                  g,t Ng,t εg,t Dg,t
+          P                                                                       !
+             g,t Ng,t εg,t (E(Yg,t |D) − E(Yg,1 |D) − E(Y1,t |D) + E(Y1,1 |D))
+     =E                                    P
+                                            g,t Ng,t εg,t Dg,t
+          P                              TR
+                                                                TR
+                                                                              TR
+                                                                                     TR
+                                                                                          !
+             g,t Ng,t εg,t Dg,t E ∆g,t D − Dg,1 E ∆g,1 D − D1,t E ∆1,t D + D1,1 E ∆1,1 D
+     =E                                                   P
+                                                            g,t Ng,t εg,t Dg,t
+          P                                   !
+                                       TR
+             g,t Ng,t εg,t Dg,t E ∆g,t D
+     =E            P
+                      g,t Ng,t εg,t Dg,t
+          P                           !
+                                   TR
+             g,t Ng,t εg,t Dg,t ∆g,t
+     =E     P                            .
+                 g,t Ng,t εg,t Dg,t
+
+The second equality follows from the law of iterated expectations. The third and fifth equalities
+follow from Equations (5) and (6). The fourth equality follows from Lemma S1. The last equality
+follows from the law of iterated expectations.
+
+                                                      22
+

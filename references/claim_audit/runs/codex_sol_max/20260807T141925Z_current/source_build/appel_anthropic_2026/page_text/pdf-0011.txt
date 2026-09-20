@@ -1,0 +1,18 @@
+Figure 1.4: Directive, Task Iteration, and Learning collaboration shares by Standard Occupation Classification (SOC) major group
+For each SOC major group we calculate the share of conversations on Claude.ai associated with Directive, Task Iteration, and Learning
+from among O*NET tasks that have at least 100 observations in our sample. We weight observations by number of records to construct
+a representative sample.
+
+
+
+
+ Figure 1.5: Prominent words from among O*NET task titles and bottom-up request groupings by key collaboration type
+ Word clouds constructed from among the top quartile of O*NET tasks and bottom-up request groups, ordered by the share of
+ records classified as Directive, Task Iteration, and Learning from among tasks/requests with at least 1,000 observations. Directive
+ interactions emphasize production (‘create,’ ‘develop,’ ‘draft’); Task Iteration centers on refinement and iteration (‘edit,’ ‘rewrite,’
+‘revise’); Learning focuses on explanation and knowledge transfer (‘help,’ ‘explain,’ ‘provide’). Patterns are consistent across both
+ classification methods. This analysis is not based on the words used in the underlying transcripts but rather groupings constructed
+ using privacy-preserving methods.
+
+The Anthropic Economic Index Report                                                                                                         11
+

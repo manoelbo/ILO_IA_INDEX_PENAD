@@ -1,0 +1,29 @@
+                                                                                                                         103
+
+C.5      Automation Bias Appendix
+
+C.5.1     Conditional Independence
+
+Table C.18 presents evidence that human and AI signals are not conditionally independent.
+To test the hypothesis of conditional independence, we regress the human report in the
+treatment arm without AI assistance on the ground truth, the AI score, and the interaction
+between ground truth and the AI score. If the signals were conditionally independent, we
+would observe the AI score to offer no predictive power on the human report after conditioning
+on the ground truth. As shown in Table C.18 we can reject this null hypothesis.
+
+                          Table C.18: Test of Conditionally Independent Signals
+
+                                               Top Level with AI             Pooled with AI         Abnormal
+          Ground Truth                               0.318                        0.265               -0.049
+                                                    (0.042)                     (0.033)              (0.078)
+          AI Score                                   0.536                        0.620                0.815
+                                                    (0.046)                     (0.035)              (0.052)
+          Ground Truth × AI                          -0.244                      -0.217                0.205
+                                                    (0.082)                     (0.066)              (0.090)
+          Constant                                   0.089                        0.044               -0.058
+                                                    (0.011)                     (0.003)              (0.039)
+          Observations                                  11420                      57100               5710
+          R-Squared                                     0.260                      0.301               0.316
+Note: Estimates of a regression of the human report in the treatment without AI assistance on the ground truth interacted with
+the AI score. Standard errors are two-way clustered at the radiologist and patient case level.
+

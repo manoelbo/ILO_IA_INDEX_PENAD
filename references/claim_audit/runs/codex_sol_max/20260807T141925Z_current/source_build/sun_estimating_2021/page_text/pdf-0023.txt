@@ -1,0 +1,69 @@
+with weight estimates from step 2. More formally, the IW estimator is
+
+                                       1 ÕÕb c
+                               νg =
+                               b                 δe,` Pr {Ei = e | Ei ∈ [−`,T − `]}                         (27)
+                                      |g| ` ∈g e
+
+
+      δe,` is returned from step 1 and Pr
+where b                                c {Ei = e | Ei ∈ [−`,T − `]} is the estimated weight returned from
+
+step 2. We normalize the weights further by the size of g. If g is a singleton, then its size is |g| = 1.
+
+      Validity of the IW estimator. Under the parallel trends and no anticipation assumptions the coefficient
+
+          δe,` from regression (26) is a consistent estimator for C ATTe,` . The sample shares of each cohort
+estimator b
+
+are also consistent estimators for the population shares. Thus, the IW estimator is consistent for a weighted
+
+average of C ATTe,` with weights equal to the share of each cohort in the relevant period(s).
+
+      With a few standard assumptions (which we present as Assumption 4 in Online Appendix B) on regres-
+
+sion (26), we can show that each IW estimator is asymptotically normal and derive its asymptotic variance.
+
+The large sample approximation allows us to estimate the variance of IW estimators directly without relying
+
+on bootstrapping as in Callaway and Sant’Anna (2020a). However, we only construct pointwise confi-
+
+                                              νg . The bootstrap-based inference by Callaway and Sant’Anna
+dence interval valid for a given IW estimator b
+
+                                                                                           νg .
+(2020a) constructs simultaneous confidence intervals that are valid for the entire path of b
+
+
+4.2     Difference-in-differences estimator for C ATTe,`
+
+                                                       i=1 1{Ei = e} > 0. Assume there exists some pre-period
+                                                     ÍN
+Definition 2. Assume cohort e is non-empty i.e.
+
+s < e and some set of control cohorts C ⊆ {c : e + ` < c ≤ T } that are non-empty i.e. i=1 1{Ei ∈ C} > 0.
+                                                                                      ÍN
+
+                                                   ÍN
+Using the notion E N to abbreviate the symbol N1 i=1    , the DID estimator with pre-period s and control
+
+cohorts C estimates C ATTe,` as
+
+                            E N [ Yi,e+` −Yi,s · 1 {Ei = e}] E N [ Yi,e+` −Yi,s · 1 {Ei ∈ C}]
+                                                                               
+                    δ̂e,` =                                 −                                 .             (28)
+                                     E N [1 {Ei = e}]                 E N [1 {Ei ∈ C}]
+
+      The assumption of non-empty cohort e, existence of pre-period and non-empty control cohorts makes
+
+the DID estimator well-defined. For example, DID estimators for cohort 0 are not well-defined because a
+
+pre-period does not exist for this cohort, which is why we exclude them from estimating regression (26) in
+
+Step 1.
+
+      Using the above definition, in regression (26) from Step 1 of our proposed method, the coefficient
+
+
+                                                        23
+

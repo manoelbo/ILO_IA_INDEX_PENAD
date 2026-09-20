@@ -1,0 +1,39 @@
+The weights are negatively correlated with workers’ years of schooling (correlation =−0.12, t-stat
+=−1.88). The union premium may be lower for more educated workers (see Freeman and Medoff,
+1984), as they may be less substitutable than less educated ones. Then, βbf e may overestimate
+δ T R , the average union premium across all unionized worker × year observations. We also find
+that βbf d = 0.060 (s.e.= 0.032) and that βbf e and βbf d significantly differ (t-stat=1.91),23 thus
+casting further doubt on Assumptions 7 and 8.
+The stable groups assumption holds: between each pair of consecutive years, there are workers
+whose union membership status does not change. We therefore compute our DIDM estimator.
+Table 4 shows that it is equal to 0.041 (s.e.= 0.034). DIDM is significantly different from βbf e
+(t-stat=2.60) and βbf d (t-stat=2.36).24 As discussed in Section 4, we can also estimate separately
+the union premium for workers joining and leaving a union, something that was previously done
+by Freeman (1984). The joiners’ effect estimate is equal to 0.059 (s.e.= 0.053), the leavers’ effect
+is equal to 0.021 (s.e.= 0.044), and the two estimates do not significantly differ (t-stat= 0.55).
+DIDM relies on a common trends assumption. To assess its plausibility, we compute DIDpl             M,
+                                                           pl
+the placebo estimator introduced in Section 4. DIDM compares the wage growth of workers
+changing and not changing their union status one period before that change. We also compute
+DIDpl,2           pl,3
+     M and DIDM , two other placebo estimators performing the same comparison two and three
+periods before the change. As shown in Table 4 below, DIDpl      M is large, positive, and significant
+                                          pl,2        pl,3
+(t-stat=2.49). On the other hand DIDM and DIDM are smaller and insignificant. Workers that
+become unionized start experiencing a differential positive pre-trend one year before becoming
+unionized. This differential pre-trend mostly comes from union joiners: for them, the placebo
+estimator is equal to 0.119 (s.e.= 0.051), while for union leavers the placebo is smaller (0.061)
+and insignificant (s.e.= 0.057). Therefore, the placebos suggest that even the already small and
+insignificant DIDM estimator may overestimate the union premium, due to a positive pre-trend.
+In fact, the estimate of leavers’ effect, for which there is no evidence of a pre-trend, is very close
+to 0. Overall, our results indicate that there may not be a significant union wage premium.
+ 23
+      The standard error of βbf e − βbf d is computed with a worker-level clustered bootstrap.
+ 24
+      The standard errors of βbf e − DIDM and βbf d − DIDM are computed with a worker-level clustered bootstrap.
+
+
+
+
+                                                       24
+

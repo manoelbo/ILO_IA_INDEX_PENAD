@@ -1,0 +1,62 @@
+time indicators included in (1). Examining the weights allows researchers to gauge how large the amount
+
+of treatment effects heterogeneity needs to be for µ` to be contaminated by treatment effects from other
+
+relative periods. Our publicly-available Stata package eventstudyweights automates the estimation of these
+
+weights using the panel dataset underlying any given specification of (1).
+
+    The second goal of this paper is to propose an alternative regression-based method that is more ro-
+
+bust to treatment effects heterogeneity than regression (1). For dynamic treatment effects, researchers are
+
+usually interested in estimating some average of treatment effects from ` periods relative to the treatment.
+
+Our alternative method estimates the shares of cohort as weights. These weights are more interpretable
+
+than the weights underlying regression (1) in the presence of treatment effects heterogeneity, and the re-
+
+sulting weighted average of treatment effects extends beyond a convex combination of treatment effects
+
+(Słoczyński, forthcoming). As discussed in Section 4.2, using the procedures of Callaway and Sant’Anna
+
+(2020a), our alternative method can also accommodate covariates.
+
+    We illustrate both our decomposition results and our alternative method via an empirical application,
+
+estimating the dynamic effects of a hospitalization. We follow Dobkin et al. (2018) in using the publicly-
+
+available dataset, Health and Retirement Study (HRS), to first estimate two-way fixed effects regressions.
+
+We then illustrate our alternative estimation method with this example. Among the outcomes studied by
+
+Dobkin et al. (2018), we focus on out-of-pocket medical spending and labor earnings. Our alternative
+
+method yields similar big-picture findings as the original paper that uses two-way fixed effects regressions:
+
+the earnings decline due to hospitalization is substantial compared to the transitory out-of-pocket spending
+
+increase. However, the two-way fixed effects estimates sometimes fall outside the convex hull of the un-
+
+derlying effects. In contrast, estimates using our alternative method, by construction, are guaranteed to be
+
+easy-to-interpret because they are weighted averages of the underlying effects, with weights corresponding
+
+to cohort shares.
+
+    The rest of the paper is organized as follows. In the next subsection, we review the theoretical literature.
+
+Section 2 formally introduces the event study design and discusses our definition in relation to the applied
+
+literature. Section 3 derives the estimands of two-way fixed effects regression, and introduces sufficient
+
+assumptions for them to be causally interpretable. Section 4 develops our alternative estimator. Section 5
+
+illustrates our results using an empirical example and Section 6 concludes. All proofs are contained in the
+
+Online Appendix.
+
+
+
+                                                       3
+

@@ -1,0 +1,35 @@
+for productivity gains that are not driven by employer initiatives (Acemoglu and Pischke,
+1998; Becker, 1964). From this perspective, it is surprising that individual-specific
+benefits from AI chatbots—such as those among non-encouraged or high-use, high-benefit
+adopters—do not translate into higher earnings. On the other hand, if employers do
+not endorse or invest in the tools, they may be reluctant to reward their use. From
+this perspective, it is surprising that adopters supported by employer initiatives have
+also not experienced earnings gains. One possibility is that workers value chatbot access
+as a nonpecuniary amenity, accepting unchanged wages in exchange for easier or more
+engaging work (Mas, 2025). The null effects also persist across occupations with very
+different wage-setting institutions—from centralized collective bargaining for teachers to
+decentralized individual negotiation for software developers and marketers—suggesting
+that wage rigidity alone cannot explain the pattern. Indeed, the standard deviation of
+residual earnings changes in Equation (2) is about 30 percentage points in December 2024.
+       Another possibility is that workers overestimate the benefits they derive from these
+tools (Becker et al., 2025; Edelman, Ngwe and Peng, 2023).16 A key contribution of our
+study is to link these self-reports to third-party administrative data, allowing us to move
+beyond purely self-reported effects. That said, inflated self-reports are unlikely to be
+the full explanation: Section 3.5 shows that even workers themselves recognize that AI
+chatbots have not materially affected their earnings.
+
+
+3.3       Occupational Mobility
+
+Figure 5, Panel (c) shows that adopters have experienced greater occupational mobility
+since the arrival of AI chatbots. We measure occupational mobility by tracking hours
+worked in each worker’s most recent occupation as of December 2024. If adopters are more
+likely to switch into new occupations, their hours in that new occupation will rise relative
+to non-adopters, who are more likely to remain in their original occupation. Because the
+figure reports difference-in-differences estimates indexed to November 2022, the estimates
+  16
+   Consistent with experimental evidence from Becker et al. (2025), Appendix E.4 shows that workers
+who report greater time savings from chatbots are also more likely to report taking on new tasks.
+
+
+                                                26

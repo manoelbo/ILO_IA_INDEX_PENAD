@@ -1,0 +1,50 @@
+XX Table 2. Survey sample selection                                                                                                                                                                            16
+
+ISCO-08 1-digit   Description (1-digit)     Number of   % of all   Unadjusted Sample Size   Adjusted sam-   Sample Proportion   Nr of scorings   Total task scor-   Tasks per survey re-   Nr of Respondents
+category                                    tasks       tasks      (infinite Population)    ple size                            per task         ings               spondent
+
+1                 Managers                  2'565       8.6%       384                      334             11.7%               20               6682               35                     191
+
+2                 Professionals             8'715       28.6%      384                      368             12.9%               20               7357               35                     210
+
+3                 Technicians And           5'956       21.1%      384                      361             12.6%               20               7216               35                     206
+                  Associate Professionals
+
+4                 Clerical Support          768         2.6%       384                      256             9.0%                20               5124               35                     146
+                  Workers
+
+5                 Service And Sales         1'730       5.4%       384                      314             11.0%               20               6288               35                     180
+                  Workers
+
+6                 Skilled Agricultural,     684         2.3%       384                      246             8.6%                20               4923               35                     141
+                  Forestry, And Fishery
+                                                                                                                                                                                                               ILO Working Paper 140
+
+
+
+
+                  Workers
+
+7                 Craft And Related         4'554       15.5%      384                      354             12.4%               20               7084               35                     202
+                  Trades Workers
+
+8                 Plant And Machine         3'769       12.6%      384                      349             12.2%               20               6972               35                     199
+                  Operators, And
+                  Assemblers
+
+9                 Elementary                1'012       3.3%       384                      279             9.7%                20               5571               35                     159
+                  Occupations
+
+0                 Armed Forces
+                  Occupations
+
+                  TOTAL                     29'753      100.0%                              2'861           100%                                 57'218                                    1'635
+
+
+
+
+Within these initial parameters, each respondent is assigned a random set of tasks from the larger sample of tasks for each broad
+occupational group. The randomization of the tasks’ sample selection maintains a general pattern of the distribution of scores sim-
+ilar to the scores initially generated with the LLMs (Section 4.1). However, the respondents are not made aware of these prior dis-
+tributions, instead they receive a wide range of tasks with respect to their automation potential.
+

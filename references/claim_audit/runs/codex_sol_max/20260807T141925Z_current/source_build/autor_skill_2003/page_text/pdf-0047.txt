@@ -1,0 +1,45 @@
+             SKILL CONTENT OF TECHNICAL CHANGE               1325
+
+18 – 64 from the Census PUMS one percent samples for 1960,
+1970, 1980, and 1990 [Ruggles and Sobek, 1997] and the Merged
+Outgoing Rotation Groups of the Current Population Survey for
+the years 1980, 1990, and 1998. All individual and industry level
+analyses are performed using as weights full-time equivalent
+hours of labor supply, which is the product of the individual
+Census or CPS sampling weight times hours of work in the
+sample reference week divided by 35 and, for Census samples,
+weeks of work in the previous year. Because hours are not re-
+ported for the self-employed in the CPS prior to 1994, we assigned
+self-employed workers in all CPS samples the average labor
+hours in their industry-education-year cell. In cases where indus-
+try hours supplied by education category were unavailable (due to
+an empty industry-education-year cell), we assigned weekly
+hours as the mean of workers’ education-year cells.
+     To attain comparable educational categories across the re-
+denition of Census Bureau’s education variable introduced in
+1990 in the Census and in 1992 in the CPS, we use the method
+proposed by Jaeger [1997]. In data coded with the pre-1992 edu-
+cation question (Census PUMS 1960, 1970, and 1980, and CPS
+MORG les 1980 and 1990), we dened high school dropouts as
+those with fewer than twelve years of completed schooling; high
+school graduates as those having twelve years of completed
+schooling; some college attendees as those with any schooling
+beyond twelve years (completed or not) and fewer than sixteen
+completed years; and college plus graduates as those with sixteen
+or more years of completed schooling. In data coded with the
+revised education question (1990 Census PUMS and 1998 CPS
+MORG le), we dene high school dropouts as those with fewer
+than twelve years of completed schooling, high school graduates
+as those with either twelve completed years of schooling or a high
+school diploma or G.E.D.; some college as those with some college
+or holding an Associate’s Degree; and college plus as those with a
+B.A. or higher.
+
+A.2. Computing DOT Task Means for Census Occupation
+Categories (COCs)
+    To compute DOT Task Means for 1970 CIC Occupations, we
+used the April 1971 CPS Monthly File issued by the National
+Academy of Sciences [1981] in which experts assigned individual
+DOT occupation codes and associated DOT measures to each of
+60,441 workers. Because Census occupation categories are sig-
+

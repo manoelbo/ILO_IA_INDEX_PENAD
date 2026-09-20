@@ -1,6 +1,0 @@
-outcome,outcome_label,input_cells,complete_case_cells,n_obs,cells_dropped,minimum_clusters
-ln_salario_real_adm,Log real monthly admission wage,22049,22012,22012,37,341
-ln_salario_hora_real_adm,Log real hourly admission wage,22049,22012,22012,37,341
-ln_horas_semanais_adm,Log weekly contracted admission hours,22049,22012,22012,37,341
-pct_parcial_adm,Partial-work admission share,22049,22012,22012,37,341
-pct_intermitente_adm,Intermittent-work admission share,22049,22012,22012,37,341

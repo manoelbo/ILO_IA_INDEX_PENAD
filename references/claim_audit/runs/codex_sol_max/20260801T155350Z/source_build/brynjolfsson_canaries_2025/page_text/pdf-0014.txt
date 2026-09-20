@@ -1,0 +1,79 @@
+                                Growth Decomposition by Age Band
+                   12.5
+                   10.0
+                    7.5
+      Growth (%)
+
+
+                    5.0
+                    2.5
+                    0.0
+                                                                         AI Exposure
+                    2.5                                                   Quintiles 1-3 Only
+                                                                          Quintiles 4-5 Only
+                    5.0                                                   All Quintiles
+                          -25
+
+
+                                -30
+
+
+                                             -34
+
+
+                                                           -40
+
+
+                                                                        -49
+
+
+
+                                                                                      +
+                                                                                    50
+                          22
+
+
+                                26
+
+
+                                           31
+
+
+                                                         35
+
+
+                                                                      41
+                                                 Age Band
+Figure 5: Growth in employment between October 2022 and July 2025 by age and GPT-4 β-based
+AI exposure group.
+
+
+   While these findings suggest divergent employment outcomes by AI exposure for young workers,
+
+we caution the trends observed in these first two facts could be driven by other changes in the US
+
+economy. Our subsequent facts evaluate the robustness of the results to alternative analyses.
+
+
+4.3        Fact 3: Entry-level employment has declined in applications of AI that
+           automate work, with muted changes for augmentation
+
+AI exposure can either complement or substitute for labor. These may have very different impli-
+
+cations for the labor market (Brynjolfsson, 2022).
+
+   To assess how employment patterns differ based on the complementarity or substitutability of
+
+AI with labor, we use data on generative AI usage from the Anthropic Economic Index (Handa
+
+et al., 2025). The Index provides an estimate of the share of queries that pertain to each occupation.
+
+In addition, for each task it reports estimates of the share of queries pertaining to that task that
+
+are “automative,” “augmentative,” or none of the above. We use this information as an estimate of
+
+
+
+
+                                                 14
+

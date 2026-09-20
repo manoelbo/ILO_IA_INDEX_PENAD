@@ -1,0 +1,33 @@
+                             Figure 3: Estimated Weights ω −2 Underlying µ
+                                                         be,`              −2
+
+
+
+
+              .4
+              .2
+            Weight
+              0
+              -.2
+              -.4
+
+
+
+
+                     -4      -3          -2        -1         0           1          2          3
+                                                   Relative Wave
+
+                             Weights on 1st Cohort CATT              Weights on 2nd Cohort CATT
+                             Weights on 3rd Cohort CATT              Weights on 4th Cohort CATT
+
+
+Notes: The FE estimator for the pretrend of hospitalization b    µ−2 estimates a linear combination of cohort-
+specific effects C ATTe,` ’s from all cohorts e and relative waves ` as specified in equation (30). This figure
+plots the estimated weight ω   −2 associated with each C ATT
+                             be,`                             e,` in this linear combination.
+
+
+
+
+                                                      36
+

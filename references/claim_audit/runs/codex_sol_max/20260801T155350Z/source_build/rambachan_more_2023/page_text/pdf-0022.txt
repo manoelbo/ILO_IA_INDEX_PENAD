@@ -1,0 +1,59 @@
+2576                                    REVIEW OF ECONOMIC STUDIES
+
+Let cv α (t) denote the 1 − α quantile of the folded normal distribution |N (t, 1) |.25 For fixed a
+and v, the smallest value of χ satisfying the coverage requirement (10) is thus
+
+                                     χn (a, v; α) = σv,n · cv α (b̄(a, v)/σv,n ),                                 (18)
+                    √
+where σv,n := v  n v. The optimal (i.e. minimum-length) FLCI is constructed by choosing
+the values of a and v to minimize (18). When  is convex, this minimization can be solved
+as a nested optimization problem, where both the inner and outer minimizations are convex
+
+
+
+
+                                                                                                                         Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+(Low, 1995; Armstrong and Kolesár, 2018, 2020a). We denote the 1 − α level, optimal FLCI by
+Cα,n
+  F LC I
+         (β̂ n , n ) := (an + v n β̂ n ) ± χn , where χn := infa,v χn (a, v; α) and an , v n are the optimal
+values in the minimization.
+
+    4.1.1. Example: SD (M). Suppose θ = τ1 . For SD (M), the affine estimator used by the
+optimal FLCI takes the form a + v  β̂ n = β̂n,1 − 0s=−T +1 ws (β̂n,s − β̂n,s−1 ), where the weights
+ws sum to one (but may be negative). This estimator adjusts ¯   the event-study coefficient for t = 1
+by an estimate of the differential trend between t = 0 and t = 1 formed by taking a weighted
+average of the differential trends in periods prior to treatment. The worst-case bias will be smaller
+if more weight is placed on pre-treatment periods closer to the treatment date, but it may reduce
+variance to place more weight on earlier pre-periods. The weights ws are optimally chosen to
+balance this trade-off.
+
+
+4.2.     Finite-sample near optimality
+In particular cases of interest, such as when  = SD (M), the optimal FLCIs introduced above
+have near-optimal expected length in the finite-sample normal model. The following result,
+which is an immediate consequence of results in Armstrong and Kolesár (2018, 2020a), bounds
+the ratio of the expected length of the shortest possible confidence interval that controls size
+relative to the length of the optimal FLCI.
+Assumption 8. Assume (i)  is convex and centrosymmetric (i.e. δ̃ ∈  implies −δ̃ ∈ ), and
+ii) δ ∈  is such that (δ̃ − δ) ∈  for all δ̃ ∈ .
+Proposition 4.1. Suppose δ and  satisfy Assumption 8. Let Iα (, n ) denote the class of
+confidence sets that satisfy the coverage criterion (10) at the 1 − α level. Then, for any τ with
+τ pr e = 0 and n positive definite,
+
+       infCα,n ∈Iα (, n ) Eβ̂ n ∼N (δ+τ, n ) λ(Cα,n )       z 1−α (1 − α) − z̃ α (z̃ α ) + φ(z 1−α ) − φ(z̃ α )
+                                                         ≥                                                        ,
+                            2χn                                                    z 1−α/2
+
+where λ(·) denotes the length (Lebesgue measure) of a set and z̃ α = z 1−α − z 1−α/2 .
+   Part (i) of Assumption 8 is satisfied for SD (M) but not for our other ongoing examples. For
+example,  S D P B (M) is convex but not centrosymmetric, and  R M ( M̄) is neither convex nor
+centrosymmetric. Part ii) of Assumption 8 is satisfied whenever parallel trends holds in both the
+pre-treatment and post-treatment periods (δ = 0) and whenever δ is a linear trend for the case of
+SD (M).
+   FLCIs thus offer attractive guarantees for the case of SD (M). When α = 0.05, the lower
+bound in Proposition 4.1 evaluates to 0.72, meaning that the expected length of the shortest
+
+
+        25. If t = ∞, we define cv α = ∞.
+

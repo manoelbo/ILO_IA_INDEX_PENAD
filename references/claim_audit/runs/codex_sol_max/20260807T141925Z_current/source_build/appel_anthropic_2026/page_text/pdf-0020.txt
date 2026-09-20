@@ -1,0 +1,10 @@
+Table 2.1: Economic primitives added in this report.
+The table shows the new economic primitives added in this report, beyond collaboration patterns (automation/augmentation) from
+prior reports. The first column shows the primitive category, the second column the name of the primitive, and the third column the
+operationalization of the primitives as the prompts provided to Claude which we use a classifier to map conversations to primitives.
+See online appendix at https://huggingface.co/datasets/Anthropic/EconomicIndex for full prompt texts.
+
+
+
+The Anthropic Economic Index Report                                                                                                    20
+

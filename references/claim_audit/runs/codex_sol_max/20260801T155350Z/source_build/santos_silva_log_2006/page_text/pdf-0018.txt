@@ -1,0 +1,38 @@
+   two covariates are independent and a new set of observations of all variables is generated
+   in each replication using β 0 = 0, β 1 = β 2 = 1. Data on y are generated as
+
+                                              yi = µ (xi β) η i ,                                      (15)
+
+   where η i is a log-normal random variable with mean 1 and variance σ 2i . As noted before,
+   the slope parameters in (14) can be estimated using the log-linear form of the model only
+   when σ 2i is constant. That is, when V [yi |x] is proportional to µ (xi β)2 .
+     In these experiments we analyzed PML estimators of the multiplicative model and
+   diﬀerent estimators of the log-linearized model. The consistent PML estimators studied
+   were: NLS, gamma pseudo-maximum likelihood (GPML) and the PPML. Besides these
+   estimators, we also considered the standard OLS estimator of the log-linear model, OLS;
+   the OLS estimator for the model were the dependent variable is yi + 1, OLS (y + 1); a
+   truncated OLS estimators to be discussed below; and the threshold Tobit of Eaton and
+   Tamura (1994), ET-Tobit.17
+     To assess the performance of the estimators under diﬀerent patterns of heteroskedas-
+   ticity, we considered the four following specifications of σ 2i :
+
+Case 1: σ2i = µ (xi β)−2 ; V [yi |x] = 1;
+
+Case 2: σ 2i = µ (xi β)−1 ; V [yi |x] = µ (xi β);
+
+Case 3: σ2i = 1; V [yi |x] = µ (xi β)2 ;
+
+Case 4: σ2i = exp (x2i ) + µ (xi β)−1 ; V [yi |x] = µ (xi β) + exp (x2i ) µ (xi β)2 .
+
+     In Case 1 the variance of εi is constant, implying that the NLS estimator is optimal.
+   Although, as argued before, this case is unrealistic for models of bilateral trade, it is
+   included in the simulations for completeness. In Case 2, the conditional variance of
+   yi equals its conditional mean, as in the Poisson distribution. The pseudo-likelihood
+   variables. Examples of binary variables include dummies for free-trade agreements, common language,
+   colonial ties, contiguity and access to land.
+     17
+        We also studied the performance of other variants of the Tobit model, finding very poor results.
+
+
+                                                      17
+

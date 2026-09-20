@@ -1,0 +1,32 @@
+Figure 4. Weighted Common Trends: The Treatment/Control Weights as a Function of the
+                       Share of Time Spent Under Treatment
+
+
+
+                                            Treatment-Control
+      Weight for Each Treatment Group
+
+
+
+
+                                                 Weight
+                           0
+
+
+
+
+                                                  Treatment-Control Weight,
+                                                        Timing Only
+
+
+
+                                        0                .2              .4             .6       .8   1
+                                                                     Treatment Time/Total Time
+Notes: The figure plots the weights that determine each timing group’s importance in the weighted common trends
+expression in equations (16) and (17).
+
+
+
+
+                                                                              34
+

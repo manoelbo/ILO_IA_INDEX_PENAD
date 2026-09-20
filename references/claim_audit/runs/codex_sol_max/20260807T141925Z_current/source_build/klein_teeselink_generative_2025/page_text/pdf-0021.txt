@@ -1,0 +1,48 @@
+                  Figure 6: Effect of LLM exposure on job-level hiring
+
+
+
+
+                                       0.10
+                                       0.05
+                         Coefficient
+
+                                       0.00
+                                       −0.05
+                                       −0.10
+                                       −0.15
+
+
+
+
+                                               −10   0              10          20   30
+
+                                                         Periods to treatment
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on occupation-
+level hiring (log vacancies per occupation–month). Coefficients are estimated from Equation (5)
+with occupation fixed effects and year-by-month fixed effects; standard errors are clustered at the
+occupation level. The dependent variable is the log of the number of new vacancies posted in
+occupation o in month t. Exposure is the occupation-level score from Eloundou et al. (2024). The
+vertical line marks November 2022, when ChatGPT was publicly released. Shaded areas denote
+95% confidence intervals.
+
+
+
+salaries (both p < 0.001). Panel C shows that within-occupation salary dispersion
+remains unchanged, suggesting uniform wage pressure across the distribution rather
+than polarization between high- and low-earners within occupations.
+    These occupation-level salary declines provide a sharp contrast with the slight
+increase in firm-level compensation documented earlier. At the firm level, elimi-
+nating junior positions mechanically raises average compensation by shifting work-
+force composition toward senior roles. At the occupation level, however, we observe
+market-wide wage depression for exposed roles as increased labor supply (from dis-
+placed workers) meets reduced demand. As such, our results highlight the impor-
+tance of considering both within-firm and within-occupation changes.
+
+
+
+
+                                                             21
+

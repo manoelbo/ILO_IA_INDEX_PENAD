@@ -1,0 +1,69 @@
+relative periods ` 0 < g, with the same weights stated in Proposition 1:
+
+                     ÕÕ                               Õ         ÕÕ                                  Õ Õ
+                                 g                                            g                                        g
+             µg =               ωe,` C ATTe,` +                              ωe,`0 C ATTe,`0 +                       ωe,`0 C ATTe,`0 .      (13)
+                     ` ∈g e                       g0 ,g,g0 ∈ G ` 0 ∈g0 e                         ` 0 ∈g e x cl   e
+
+
+      Under Assumption 1, the terms in Proposition 1 reduce to a linear combination of the causally inter-
+
+pretable building blocks C ATTe,` as follows:
+
+
+                                ∞
+                    E[Yi,e+` −Yi,0             ∞
+                                   |Ei ] − E[Yi,e+`    ∞
+                                                    −Yi,0 ] = C ATTe,` + E[Yi,t
+                                                                             ∞     ∞
+                                                                                −Yi,0             ∞
+                                                                                      |Ei ] − E[Yi,t    ∞
+                                                                                                     −Yi,0 ]                                (14)
+                                                                         |              {z               }
+                                                                                                          =0
+
+
+for t = e + `. However, two issues for interpretability remain. First, the coefficient µg can be written as an
+
+average of not only C ATTe,` from own periods ` ∈ g, but also C ATTe,`0 from other periods. Second, the
+
+weights are still non-linear functions of the distribution of cohorts, same as those in (12), and they are not
+
+restricted to lie in [0, 1].
+
+      The properties of these weights as described following Proposition 1 imply that contamination from
+
+other periods wanes once we impose restrictions on treatment effects. In the next two subsections we
+
+illustrate how that can happen.
+
+
+3.4     Interpreting the coefficients under parallel trends and no anticipation assumptions
+
+Proposition 3. If Assumption 1 (parallel trends) holds and Assumption 2 (no anticipatory behavior in all
+
+periods before the initial treatment) holds, the population regression coefficient µg is a linear combination
+
+of post-treatment C ATTe,`0 for all ` 0 ≥ 0, with the same weights stated in Proposition 1:
+
+            Õ       Õ                           Õ            Õ        Õ                                 Õ            Õ
+                            g                                                  g                                            g
+ µg =                      ωe,` C ATTe,` +                                   ωe,`0 C ATTe,`0 +                             ωe,`0 C ATTe,`0 . (15)
+         ` 0 ∈g,` 0 >0 e                     g0 ,g,g0 ∈ G ` 0 ∈g0,` 0 >0 e                       ` 0 ∈g e x cl ,` 0 >0 e
+
+
+      Once we restrict pre-treatment C ATTe,` ≤0 to be zero under the no anticipatory behavior assumption,
+
+the expression for µg simplifies as terms involving C ATTe,` ≤0 drop out. However, the second term in the
+
+expression for µg remains unless we further impose treatment effect homogeneity for its summands to cancel
+
+out each other. Thus, µg may be non-zero for pre-treatment periods even if parallel trends holds.
+
+      This result immediately implies a shortcoming of using pre-treatment coefficients (i.e. µg where g con-
+
+tains only leads to the treatment ` < 0) to test for pretrends. Under the no anticipatory behavior assumption,
+
+
+                                                                        15
+

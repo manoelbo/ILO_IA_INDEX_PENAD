@@ -1,7 +1,0 @@
-family,family_label,codes,signed_total_main_sample,share_of_named_main_pct,positive_cells,input_cells,months_with_positive_flow,treated_cbo_with_positive_flow,control_cbo_with_positive_flow,all_sample_named_total_reference
-contract_end,Contract termination,43 + 45,12139016,16.280785685888787,21114,22049,65,75,265,118723283
-dismissal_with_cause,Dismissal with cause or reciprocal fault,32 + 33,1545886,2.0733343345799917,17351,22049,65,74,265,118723283
-dismissal_without_cause,Dismissal without cause,31,34961446,46.890111158497014,21952,22049,65,75,266,118723283
-mutual_agreement,Mutual agreement,90,747994,1.0032056970952752,17960,22049,65,75,263,118723283
-resignation,Resignation,40,25093945,33.65586968156896,21884,22049,65,75,265,118723283
-unknown_separation,Unknown separation type,98,72095,0.09669344236997068,6769,22049,65,69,230,118723283

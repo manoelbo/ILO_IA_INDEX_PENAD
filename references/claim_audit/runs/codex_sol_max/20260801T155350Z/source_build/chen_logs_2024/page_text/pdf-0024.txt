@@ -1,0 +1,47 @@
+would have positive hours worked regardless of treatment (Y p1q ą 0, Y p0q ą 0).35 The Lee bounds
+approach requires the monotonicity assumption that anyone who would work positive hours with-
+out the treatment would also work positive hours when treated (i.e., P pY p1q “ 0, Y p0q ą 0q “ 0).
+This seems reasonable if workers only share the information provided by the treatment when it
+helps their job prospects. It could be violated, however, if workers mistakenly share their test score
+results when in fact employers view them negatively.
+       Column 1 of Table 5 reports bounds of r´0.20, 0.28s for the effect of the treatment on log hours
+worked by the always-takers, while Column 2 shows bounds of r´6.67, 2.77s for weekly hours (in
+levels). Unfortunately, in this setting the Lee bounds are fairly wide, including both a zero intensive-
+margin effect as well as fairly large intensive-margin effects (up to 28 log points). Thus, without
+further assumptions, the data is not particularly informative about the size of the intensive margin.
+       We can, however, say more if we are willing to impose some assumptions about how the always-
+takers, who would work regardless of treatment status (Y p1q ą 0, Y p0q ą 0), compare to the
+compliers (Y p1q ą 0, Y p0q “ 0), who only work positive hours when receiving the treatment. We
+might reasonably expect that the compliers are negatively selected relative to the always-takers and
+thus would work fewer hours when receiving treatment. We can formalize this by imposing that
+ErY p1q | Compliers “ p1 ´ cqErY p1q | Always-takers, i.e. that average hours worked for compliers
+under treatment is 100c% lower than for always takers. Columns 3 through 5 of Table 5 report
+estimates of the average effect on the always-takers, assuming c “ 0, 0.25, and 0.5, respectively.36
+If we assume that always-takers and compliers work an equal number of hours under treatment
+(c “ 0), then our point estimates suggest that there is actually a negative intensive-margin effect
+for the always-takers (´1.02 weekly hours). Under the assumption that compliers work 25% fewer
+hours (c “ 0.75), the estimated effect for always-takers is near zero (´0.07 weekly hours), consistent
+with no important intensive margin. Finally, if we assume compliers work half as many hours as
+the always-takers (c “ 0.5), then our estimates suggest a positive intensive margin effect (0.95
+weekly hours). Our assessment of the importance of the intensive margin thus depends on how
+negatively-selected we think compliers are relative to always-takers.
+
+5.2      A DiD setting: Sequeira (2016)
+Sequeira (2016) studies a decrease in tariffs on trade between Mozambique and South Africa which
+occurred in 2008. She is interested in whether the reduction in tariffs reduced bribes paid to customs
+officers (among other outcomes). To study this question, she utilizes a difference-in-differences design
+comparing the change in bribes paid for products that were affected by the tariff change to that for
+a comparison group of products that did not experience a change in tariffs.
+  35
+    We again exclude units receiving the “placebo treatment.”
+  36
+    Under the assumptions in Lee (2009), ErY p1q | Y p1q ą 0s “ θErY p1q | Always-takers`p1´θqErY p1q | Compliers,
+where θ “ P pY p0q ą 0q{P pY p1q ą 0q. Plugging in ErY p1q | Compliers “ p1 ´ cqErY p1q | Always-takers, it follows
+that ErY p1q | Always-takers “ 1{pθ ` p1 ´ cqp1 ´ θqqErY p1q | Y p1q ą 0s. Further, ErY p0q | Always-takers “ ErY p0q |
+Y p0q ą 0s. Our estimation plugs in sample analogs to these expressions to estimate ErY p1q ´ Y p0q | Always-takers.
+
+
+
+
+                                                          24
+

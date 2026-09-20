@@ -1,0 +1,61 @@
+service representatives, and home health aides by age using data from the CPS. Though there are
+
+millions of workers employed in these professions across the US, the estimates are highly volatile,
+
+with common fluctuations of 20% or greater in estimated employment month-to-month. Figure A21
+
+shows estimated employment changes by age and exposure quintile using the CPS, also suggesting
+
+a high degree of volatility in the estimates.
+
+    This volatility in CPS microdata reflects small sample sizes and the fact that the CPS is not
+
+stratified to target employment statistics for these demographic-occupation subgroups.27 The sam-
+
+ple size and sampling procedure of the CPS may therefore make it challenging to assess employment
+
+changes by age and AI exposure with a high degree of confidence over the time horizon considered
+
+in this paper (Chandar, 2025b; O’Brien, 2025).
+
+    Other large-scale data sources such as the American Community Survey (ACS) may offer a more
+
+reliable comparison to the ADP data, though the ACS is released with a significant lag compared
+
+to the data from ADP. We encourage comparison of our findings to results from other data sources
+
+such as the ACS upon their release.28
+
+
+
+5     Conclusion
+
+We document six facts about the recent labor market effects of artificial intelligence.
+
+
+    • First, we find substantial declines in employment for early-career workers in occupations most
+
+      exposed to AI, such as software development and customer support.
+
+    • Second, we show that economy-wide employment continues to grow, but employment growth
+
+      for young workers has been stagnant.
+
+    • Third, entry-level employment has declined in applications of AI that automate work, with
+
+      muted effects for those that augment it.
+
+    • Fourth, these employment declines remain after conditioning on firm-time effects, with a 13%
+
+      relative employment decline for young workers in the most exposed occupations.
+  27
+     The CPS includes between 26 and 53 young software developers aged between 22 and 25 per month over our
+sample period. It includes between 49 and 95 young customer service representatives, and between 2 and 14 young
+home health aides.
+  28
+     The 2024 ACS 1-Year Public Use Microdata Sample is scheduled to be released on October 16, 2025.
+
+
+
+                                                      26
+

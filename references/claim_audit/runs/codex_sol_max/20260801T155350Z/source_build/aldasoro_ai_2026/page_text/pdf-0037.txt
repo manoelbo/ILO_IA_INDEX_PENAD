@@ -1,0 +1,36 @@
+Table B.3: Effects of AI adoption on labor productivity (turnover and value added ap-
+proach)
+
+                                                   (1)                                    (2)
+                                          LP Turnover (log)                   LP Value Added (log)
+                                            With controls                        With controls
+ AI adoption (US-based)                        0.041***                                 0.034*
+                                                (0.015)                                 (0.018)
+ Investment (lag)                                0.009*                                  0.009
+                                                (0.006)                                 (0.006)
+ Profitability (lag)                           0.618***                                1.374***
+                                                (0.041)                                 (0.066)
+ Financial leverage (lag)                      -0.151***                              -0.182***
+                                                (0.026)                                 (0.041)
+ Total assets (log, lag)                       0.386***                                0.375***
+                                                (0.006)                                 (0.006)
+ Size FE                                          Yes                                    Yes
+ Age FE                                           Yes                                    Yes
+ Country-sector-wave FE                           Yes                                    Yes
+ Observations                                    30228                                  23575
+ R-squared                                       0.551                                  0.861
+ Adjusted R-squared                              0.526                                  0.852
+
+Note: The dependent variable is labor productivity, calculated as the log of turnover per employee
+or log of value added per employee, and is derived from EIBIS. AI adoption (US-matched) is the AI
+implementation status derived from similar firms in the US. Investment is expressed as the annual
+change in total fixed assets. Profitability is the ratio of EBIT to total assets. Financial leverage is the
+ratio of loans and long-term debt to total assets. All control variables come from ORBIS and are lagged
+by 1 year. Standard errors clustered at the country-sector-wave level are reported in parentheses. *, **,
+*** correspond to 0.1, 0.05 and 0.01 significance levels, respectively.
+
+
+
+
+                                                    31
+

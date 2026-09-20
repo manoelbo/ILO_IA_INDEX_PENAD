@@ -1,0 +1,50 @@
+         Equation (17) also shows exactly how to weight together averages of 𝑥𝑥𝑖𝑖𝑖𝑖 and perform a
+
+single 𝑡𝑡-test that directly captures the identifying assumption. Generate a dummy for the effective
+
+treatment group, 𝐵𝐵𝑘𝑘 = 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 > 0, then regress timing-group means, 𝑥𝑥𝑘𝑘 , on 𝐵𝐵𝑘𝑘 weighting by
+
+�𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 �. The coefficient on 𝐵𝐵𝑘𝑘 equals covariate differences weighted by the actual identifying
+
+variation, and its t-statistic tests the null of reweighted balance in (17). One can also use this
+
+strategy to test for pre-treatment trends in confounders (or the outcome) by regressing 𝑥𝑥̅𝑘𝑘𝑘𝑘 on 𝐵𝐵𝑘𝑘 ,
+
+year dummies, and their interaction, or the interaction of 𝐵𝐵𝑘𝑘 with a linear trend using dates before
+
+any treatment starts. 26
+
+         The reweighted balance test has advantages over other strategies for testing balance in this
+
+setting. Regressing 𝑥𝑥𝑖𝑖𝑖𝑖 on a constant and dummies for timing groups allows a test of the null of
+
+joint balance across groups (𝐻𝐻0 : 𝑥𝑥𝑘𝑘 − 𝑥𝑥𝑈𝑈 = 0, ∀𝑘𝑘 ∈ 𝐾𝐾). With many timing groups, however, this
+
+F-test will have low power, it does not reflect the importance of each group (𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 ), and does
+
+not show the sign or magnitude of any imbalance. 27 The reweighted test, on the other hand, has
+
+higher power and describes the sign and magnitude of imbalance. It is also better than a test for
+
+linear relationships between 𝑥𝑥𝑖𝑖𝑖𝑖 and 𝑡𝑡𝑘𝑘∗ or tests for balance between “early” and “late” treated units
+
+(Almond, Hoynes, and Schanzenbach 2011, Bailey and Goodman-Bacon 2015). Because the
+
+effective control group can include both the earliest and latest treated units, failing to find a linear
+
+relationship between 𝑥𝑥𝑘𝑘 and 𝑡𝑡𝑘𝑘∗ can miss the relevant imbalance between the most important
+
+“middle” units and the end points.
+
+
+
+
+26
+   Plotting confounders or pre-trends across groups, however, is important to ensure that a failure to reject does not
+reflect offsetting trends or covariate means across timing groups.
+27
+   Note that using an event-study specification to evaluate pre-trends does not test for joint equality of pre-trends
+either. It tests for common trends using the (heretofore unarticulated) estimator itself.
+
+                                                         19
+

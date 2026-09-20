@@ -1,0 +1,45 @@
+                            Survey Questionnaire – English Translation
+
+                                             Block 2: Adoption
+4. Awareness of AI chatbots
+AI chatbots use artificial intelligence to read and write text. We will now ask about your experiences
+with AI chatbots.
+Had you heard of the following chatbots before this survey?
+Mark all tools you had heard of before this survey.
+    • ChatGPT (developed by OpenAI)
+    • Claude (developed by Anthropic)
+    • Copilot (developed by Microsoft)
+    • Gemini (developed by Google)
+    • Perplexity (developed by Perplexity AI)
+    • Other AI chatbots
+    • Had not heard of AI chatbots before this survey
+
+5. Prior Use of AI Chatbots [if 4 = ’Yes’]
+Have you used the following AI chatbots?
+[ChatGPT / Claude / Copilot / Gemini / Perplexity / Other AI chatbots]
+    • Yes, only for work
+    • Yes, only for leisure
+    • Yes, for work and leisure
+
+6.a Purposes of Prior Use [if 5=’Yes, only for leisure’ or ’Yes, for work and leisure’]
+How often have you used the following AI chatbots for leisure?
+[ChatGPT / Claude / Copilot / Gemini / Perplexity / Other AI chatbots]
+    • Never
+    • A few times
+    • Monthly
+    • Weekly
+    • Daily
+
+6.b Purposes of Prior Use [if 5=’Yes, only for work or ’Yes, for work and leisure’]
+How often have you used the following AI chatbots for work?
+[ChatGPT / Claude / Copilot / Gemini / Perplexity / Other AI chatbots]
+    • Never
+    • A few times
+    • Monthly
+    • Weekly
+    • Daily
+
+
+
+
+                                                      73

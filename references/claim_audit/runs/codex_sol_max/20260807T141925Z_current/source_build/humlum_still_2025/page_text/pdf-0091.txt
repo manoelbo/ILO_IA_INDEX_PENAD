@@ -1,0 +1,52 @@
+       What is the economic significance of these reported benefits? In Column (6), we
+combine workers’ frequency of use with their reported time savings per day of usage to
+estimate time savings as a percent of total work hours.29 On average, adopters in our
+sample report savings of about 3% of their work hours. These estimates align with the
+nationally representative U.S. survey evidence in Bick, Blandin and Deming (2025).
+       What do workers do with these savings? Columns (7)–(10) show that the large majority
+(85%) of chatbot users reallocate saved time to other job tasks. By contrast, fewer than
+10% report taking additional breaks or leisure, while about 30% spend more time on the
+same tasks from which they initially saved time. This pattern underscores the importance
+of task-based reorganization for understanding the effects of AI chatbots on work (Autor
+and Thompson, 2025; Freund and Mann, 2025).
+
+
+         Table E.3: Reported Benefits from AI Chatbots (Ever Used), by Occupation
+
+                                             Reported Benefits                              Allocation of Time Savings
+                    Any Time     60+                           Job          Total Time    Same    Diff.
+                     Savings    min/day Quality Creativity Satisfaction     Savings (%)   Tasks   Tasks   Breaks Leisure
+ Occupation             (1)        (2)    (3)      (4)          (5)             (6)         (7)     (8)     (9)   (10)
+ Journalists           .67       .107    .394     .467         .126             2.5        .291    .846    .049   .072
+ Software Dev.        .838        .266   .528     .446         .305             5.6        .368    .837    .079   .082
+ Legal Prof.          .783        .178   .544      .45         .204             2.6        .306    .846    .082   .056
+ Accountants          .709        .086   .524     .418         .156             1.6        .289    .821    .067   .029
+ Customer Service     .723        .117   .572     .413         .142             3.0        .371    .776    .092   .078
+ Marketing            .898        .334   .698     .625         .289             6.1        .337    .858    .087   .079
+ Financial Adv.       .769        .084    .55     .488         .173             1.9        .304    .869    .033   .019
+ HR Prof.             .844        .185   .638     .623         .253             3.5        .219    .899    .094   .068
+ Office Clerks        .689        .134   .563     .489         .185             2.2        .288    .861     .05   .046
+ Teachers             .637        .081   .321     .458         .132             0.7        .152    .845    .095   .043
+ IT Support            .76        .182   .526     .423         .239             3.5        .313    .862    .063   .069
+ All                  .756        .159   .532     .482           .2             3.0        .294    .847    .072   .058
+
+
+Notes: This table presents the share of adopters who report various benefits from using AI chatbots for work, broken down
+by occupation. Columns (1)–(6) focus on workers who have ever used AI chatbots for work. Columns (7)–(10) further
+restrict to adopters who reported any time savings—that is, those coded as 1 in Column (1). Sample: All completed
+responses from the 2024 survey round.
+
+
+
+
+  29
+   We code daily time savings as follows: 0–15 minutes/day as 7.5 minutes, 15–60 minutes as 37.5
+minutes, and 60+ minutes as 90 minutes. We code frequency of use as follows: daily use is divided by 1;
+weekly use by 5 (corresponding to five workdays per week); monthly use by 21 23 (corresponding to 4 13
+weeks per month); and use a few times by 65 (corresponding to four uses over 12 months). We set daily
+work hours to 8, as nearly all sampled workers are full-time employees.
+
+
+
+
+                                                          41

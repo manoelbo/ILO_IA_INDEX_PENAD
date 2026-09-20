@@ -1,0 +1,55 @@
+Proof of Proposition S1
+
+Assuming that Ng,2 /Ng,1 does not vary across g ensures that there exists a strictly positive real
+number φ such that Ng,2 /Ng,1 = φ. Then,
+
+           εg,2 =Dg,2 − Dg,. − D.,2 + D.,.
+                                                                                
+                          Ng,1        Ng,2                  N.,1         N.,2
+                =Dg,2 −        Dg,1 +       Dg,2 − D.,2 +        D.,1 +       D.,2
+                          Ng,.        Ng,.                  N             N
+                                                                                       
+                             1             φ                     1              φ
+                =Dg,2 −         Dg,1 +        Dg,2 − D.,2 +           D.,1 +         D.,2
+                          1+φ          1+φ                    1+φ             1+φ
+                   1
+                =      (Dg,2 − Dg,1 − D.,2 + D.,1 ) ,                                                (25)
+                  1+φ
+
+where the first and third equalities follow from the fact Ng,2 /Ng,1 does not vary across g.
+Then, the definition of wg,2
+                         TR
+                             , Equation (25) and Assumption 1 imply that
+
+                                   TR             (Dg,2 − D.,2 )
+                                  wg,2 = PG      Ng,2
+                                             g=1 N1 (Dg,2 − D.,2 )Dg,2
+                                                (Dg,2 − D.,2 )
+                                       = PG      Ng,2
+                                                                      .
+                                                                  2
+                                             g=1 N1 (Dg,2 − D.,2 )
+
+
+Proof of Theorem S2
+
+The proof relies on the lemma below, which we start by proving, before proving the theorem.
+
+Lemma S2 If Assumptions 1-5 and S2 hold,
+
+                      E (Yg,t |D) − E (Yg,t−1 |D) − (E (Yg0 ,t |D) − E (Yg0 ,t−1 |D))
+                    =(Dg,t − Dg,t−1 )E (∆g,t |D) − (Dg0 ,t − Dg0 ,t−1 )E (∆g0 ,t |D) .
+
+Proof of Lemma S2
+
+By Lemma 1 and Assumption S2,
+
+          E (Yg,t |D) − E (Yg,t−1 |D) − (E (Yg0 ,t |D) − E (Yg0 ,t−1 |D))
+        =Dg,t E (∆g,t |D) − Dg,t−1 E (∆g,t−1 |D) − Dg0 ,t E (∆g0 ,t |D) + Dg0 ,t−1 E (∆g0 ,t−1 |D)
+        =(Dg,t − Dg,t−1 )E (∆g,t |D) − (Dg0 ,t − Dg0 ,t−1 )E (∆g0 ,t |D) .
+
+
+
+
+                                                    23
+

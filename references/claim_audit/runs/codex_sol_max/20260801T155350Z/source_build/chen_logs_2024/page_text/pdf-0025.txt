@@ -1,0 +1,49 @@
+                                        (1)           (2)            (3)           (4)            (5)
+               Lower bound            ´0.195        ´6.665
+                                      p0.064q       p1.366q
+               Upper bound             0.283         2.771
+                                      p0.114q       p2.067q
+               Point estimate                                      ´1.025        ´0.069           0.954
+                                                                    p1.182q      p1.349q         p1.588q
+               units               Log(Hours)        Hours         Hours         Hours          Hours
+               c                                                    0             0.25           0.5
+
+Table 5: Bounds and point estimates for the intensive margin treatment effect in Carranza et al.
+(2022)
+
+Note: This table shows bounds and point estimates of the intensive margin treatment effect in Carranza et al. (2022),
+i.e. the treatment effect on hours worked for “always-takers” who would work positive hours regardless of treatment
+status. The first first two columns of the table show Lee (2009) bounds for the effect of treatment on the always-takers
+when the outcome is logpHoursq and weekly hours, respectively. Columns 3 through 5 show point estimates for the
+effect on weekly hours worked for always-takers under the assumption that average hours worked by “compliers”
+(who work only when treated) are 100c% lower than for the always-takers. Standard errors are calculated via a
+non-parametric bootstrap using 1,000 draws, clustered at the assessment date level.
+
+
+Original specification and sensitivity to units. Sequeira (2016) has repeated cross-sectional
+data with information on the bribe amount Yit paid on shipment i in year t. She estimates the
+regression specification
+
+
+                       logp1 ` Yit q “ β0 ` Di ˆ Postt β1 ` Di β2 ` Postt β3 ` Xit1 β4 ` ǫit ,                      (6)
+
+where Di is an indicator for whether shipment i is for a product type affected by the tariff change
+in 2008, Postt is an indicator for whether year t is after the tariff change, and Xit is a vector of
+covariates related to shipment i in period t. Sequeira (2016) estimates (6) with Yit measured in
+2007 Mozambican Metical (MZN) and obtains β̂1,pMZNq “ ´3.7 (SE “ 1.1). However, estimating
+the same specification with Yit measured in thousands of U.S. dollars instead yields an estimate
+of β̂1,p$1000q “ ´0.11 (SE “ 0.070).37 These results reinforce the conclusion from Section 2 that
+treatment effects for mpyq “ logp1 ` yq should not be interpreted as approximating a percentage
+effect.
+    In what follows, we discuss a variety of alternative approaches that may be reasonable in this
+context. We note that in a non-experimental setting like this, different approaches may rely on
+different identifying assumptions. We therefore explicitly discuss the identifying assumptions needed
+by each of the methods we discuss.
+  37
+       We use the conversion rate of 1 USD “ 24.48 MZN as of January 1, 2007, as provided by fxtop.com.
+
+
+
+
+                                                            25
+

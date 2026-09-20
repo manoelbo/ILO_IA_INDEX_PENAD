@@ -1,0 +1,49 @@
+(Acemoglu et al., 2022; Fossen and Sorgner, 2021).7 In our replication, we replaced the original
+human expert surveys with synthetic surveys conducted using GPT-4o via OpenAI’s API.
+    The AIOE measures the degree of overlap between advancements in AI and workplace abil-
+ities. They define 10 key AI applications from the Electronic Frontier Foundation, which have
+seen considerable development since 2010: abstract strategy games, real-time video games, im-
+age recognition, visual question answering, image generation, reading comprehension, language
+modeling, translation, and speech recognition. They then link these AI applications to the 52 la-
+bor abilities recorded in O*NET by conducting 2,000 surveys with gig workers from Amazon’s
+Mechanical Turk (MTurk).8 Each participant was asked whether they believe each application is
+related to each ability, with a yes or no answer. These responses were processed as binary variables
+and averaged across all respondents to construct a matrix of relatedness, with a score between 0
+and 1 for each application and each ability. The ability-level exposure was calculated as the sum
+of the scores of all applications for Ability j (A j ). Finally, they calculated the occupation-level
+(AIOEk ) for every occupation k as follows:
+
+                                                    ř52
+                                                       j=1 A j ˆ L jk ˆ I jk
+                                        AIOEk =         ř52                                                      (1)
+                                                          j=1 L jk ˆ I jk
+
+    Using the replication files for the AIOE made available online by the authors, we re-estimated
+the AIOEk by replacing the matrix built with mTurk surveys with a vector resulting from surveys
+conducted with GPT-4o through OpenAI’s API. Instead of defining the 10 AI applications, we
+asked the language model the following: ”Based on recent advancements in AI, please answer
+’Yes’ or ’No’ depending on whether you believe that AI is related to or could be used for the
+following ability: [ability name] [ability description].” This was done for the 52 abilities defined in
+O*NET and repeated 100 times, with the temperature setting randomized. Although this approach
+differs from the original methodology by not specifying 10 applications, we made this change to
+minimize conditioning the model. This method likely results in a more conservative estimate of
+the index by reducing potential similarities between the original and replicated indexes.
+    Since we do not have specific AI applications, we calculated the A j as 10 times the average
+score from the 100 iterations. This adjustment was made solely for comparability purposes and
+does not affect the index calculation. We then ran the same equation (1) and computed the new
+index.
+    The results from the estimation, and the comparison with the original index, can be observed
+in Figure 3. The correlation between both indexes is 0.99, indicating a very high degree of repli-
+cability and very small variations between the answers from the mTurk workers and the answers
+   7 The AIOE was initially introduced in Felten et al. (2018) and subsequently modified and updated in Felten et al.
+
+(2021).
+    8 Amazon Mechanical Turk (MTurk) is an online crowdsourcing platform that allows businesses to outsource a
+
+wide range of tasks to a global, distributed workforce. These tasks can vary from data validation and research to
+content moderation and survey participation.
+
+
+
+                                                        18
+

@@ -1,0 +1,50 @@
+    II.     THEORY: WHAT PARAMETER DOES DD IDENTIFY AND UNDER WHAT ASSUMPTIONS?
+Theorem 1 relates the regression DD coefficient to sample averages, which makes it simple to
+
+analyze its statistical properties by writing 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 in terms of potential outcomes (Holland 1986,
+
+Rubin 1974). The outcome is 𝑦𝑦𝑖𝑖𝑖𝑖 = 𝐷𝐷𝑖𝑖𝑖𝑖 𝑌𝑌𝑖𝑖𝑖𝑖1 + (1 − 𝐷𝐷𝑖𝑖𝑖𝑖 )𝑌𝑌𝑖𝑖𝑖𝑖0 , where 𝑌𝑌𝑖𝑖𝑖𝑖1 is unit 𝑖𝑖’s treated outcome at
+
+time 𝑡𝑡, and 𝑌𝑌𝑖𝑖𝑖𝑖0 is the corresponding untreated outcome. Following Callaway and Sant'Anna (2018,
+
+p 7) define the ATT for timing group 𝑘𝑘 at time 𝜏𝜏 (the “group-time average treatment effect”):
+
+𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 (𝜏𝜏) ≡ 𝐸𝐸[𝑌𝑌𝑖𝑖𝑖𝑖1 − 𝑌𝑌𝑖𝑖𝑖𝑖0 �𝑘𝑘, 𝑡𝑡 = 𝜏𝜏]. Because regression DD averages outcomes in pre- and post-
+
+periods, I define the average of the 𝐴𝐴𝑇𝑇𝑇𝑇𝑘𝑘 (𝜏𝜏) in a date range, 𝑊𝑊:
+
+                                      𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 (𝑊𝑊) ≡ 𝐸𝐸[𝑌𝑌𝑖𝑖𝑖𝑖1 − 𝑌𝑌𝑖𝑖𝑖𝑖0 �𝑘𝑘, 𝑡𝑡 ∈ 𝑊𝑊]                        (9)
+
+In practice, 𝑊𝑊 will represent post-treatment windows that appear in the 2x2 components. Finally,
+
+define the difference over time in average potential outcomes (treated or untreated) as:
+
+                                Δ𝑌𝑌𝑘𝑘ℎ (𝑊𝑊1 , 𝑊𝑊0 ) ≡ 𝐸𝐸�𝑌𝑌𝑖𝑖𝑖𝑖ℎ �𝑘𝑘, 𝑊𝑊1� − 𝐸𝐸�𝑌𝑌𝑖𝑖𝑖𝑖ℎ �𝑘𝑘, 𝑊𝑊0 �,   ℎ = 0,1   (10)
+
+Applying this notation to the 2x2 DD’s in equations (3)-(5), adding and subtracting post-period
+
+counterfactual outcomes for the treatment group yields the familiar result that (the probability limit
+
+of) each 2x2 DD equals an ATT plus bias from differential trends:
+
+   2𝑥𝑥2
+ 𝛽𝛽𝑘𝑘𝑘𝑘    = 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 (𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)) + Δ𝑌𝑌𝑘𝑘0 (𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)) − Δ𝑌𝑌𝑈𝑈0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)� (11𝑎𝑎)
+
+   2𝑥𝑥2,𝑘𝑘
+ 𝛽𝛽𝑘𝑘ℓ     = 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� + Δ𝑌𝑌𝑘𝑘0 (𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)) − Δ𝑌𝑌ℓ0 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)� (11𝑏𝑏)
+
+   2𝑥𝑥2,ℓ
+ 𝛽𝛽𝑘𝑘ℓ    = 𝐴𝐴𝐴𝐴𝑇𝑇ℓ (𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)) + Δ𝑌𝑌ℓ0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑇𝑇(ℓ), 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� − Δ𝑌𝑌𝑘𝑘0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ), 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)�
+
+                    − �𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)� − 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)��                                       (11𝑐𝑐)
+
+Note that the definition of common trends in (11a) and (11b) involves only counterfactual
+
+outcomes, but in (11c) identification of 𝐴𝐴𝐴𝐴𝑇𝑇ℓ (𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)) involves counterfactual outcomes and
+
+changes in treatment effects in the already-treated “control group”.
+
+
+
+                                                               10
+

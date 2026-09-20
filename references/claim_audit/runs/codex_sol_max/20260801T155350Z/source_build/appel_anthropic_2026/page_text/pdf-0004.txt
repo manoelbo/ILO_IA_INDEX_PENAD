@@ -1,0 +1,40 @@
+            •   Claude is used for higher-skill tasks than those in the broader economy
+                The tasks we observe in Claude usage tend to require more education than
+                those in the broader economy. If we assume that AI-assisted tasks diminish
+                as a share of worker responsibilities, removing them would leave behind less-
+                skilled work. But this simple task displacement would not affect white-collar
+                workers uniformly—for some occupations it removes the most skill-intensive
+                tasks, for others the least.
+
+
+                Without the tasks that we observe Claude performing, travel agents would
+                experience deskilling as complex planning work gives way to routine ticket
+                purchasing and payment collection. Property managers, by contrast, would
+                experience upskilling as bookkeeping tasks give way to contract negotiations
+                and stakeholder management.
+
+
+
+
+            A new window for understanding AI’s impact on
+            the economy
+
+            These results provide a new window into how AI is currently impacting the
+            economy. Knowing the success rate of tasks gives a more accurate picture of
+            which tasks might be automated, how impacted certain jobs might be, and how
+            labor productivity will change. Measuring differential performance by user
+            education sheds light on inequality effects.
+
+            Indeed, the close relationship between education levels in inputs and outputs
+            signals that countries with higher educational attainment may be better
+            positioned to benefit from AI, independent of adoption rates alone.
+
+            This data release aims to enable researchers and the public to better
+            understand the economic implications of AI and investigate the ways in which
+            this transformative technology is already having an effect.
+
+
+
+
+The Anthropic Economic Index Report                                                             4
+

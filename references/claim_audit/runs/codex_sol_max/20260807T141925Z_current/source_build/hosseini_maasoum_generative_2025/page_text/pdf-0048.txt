@@ -1,0 +1,30 @@
+Occupation representation.     Figure A.3 performs the same comparison at the 2-digit
+SOC level using the OEWS benchmark. The compositional tilt is sharper at the occupation
+level: Management, Business and Finance, Computer and Mathematical, and Arts/Me-
+dia occupations are over-represented, while Office and Administrative, Transportation,
+Food Service, Production, and lower-wage service occupations are under-represented.
+The 2024 cross-sectional correlation is 0.37, reflecting the well documented over-sampling
+of higher-skill occupations within sectors. Crucially, because these compositional gaps are
+stable over time (see below), they are absorbed by the firm and sector fixed effects in our
+main specifications and do not contaminate the differential estimates of interest.
+
+
+
+
+    Figure A.3: 2-Digit Occupation Shares in Revelio and Official Employment Data
+
+
+
+Stability over time.   Because our identification rests on the differential evolution of em-
+ployment around the diffusion of GenAI, the relevant question is not whether LinkedIn
+matches the official distribution in levels, but whether its compositional structure is sta-
+ble across the treatment window. Figure A.4 plots the quarterly cross-sectional correlation
+between LinkedIn and the official benchmarks from 2021Q1 through 2025Q1, separately
+for industries (top panel) and occupations (bottom panel). The industry correlation stays
+in a tight 0.77–0.82 band; the occupation correlation stays in a 0.37–0.41 band. Neither
+
+
+
+
+                                            A.3
+

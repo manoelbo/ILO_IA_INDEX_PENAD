@@ -1,0 +1,44 @@
+    These results are consistent with the notion that existing task-based exposure predictions
+may not perfectly identify which occupations would benefit from genAI. For example, while
+managers have similar predicted exposure than administrative occupations, many more admin-
+istrative workers report that genAI is not useful for their job. Collectively, our takeaway is that
+existing task-based exposure measures are informative but incomplete: while they do capture
+broad patterns in genAI adoption, more work is needed to accurately identify which jobs would
+benefit from genAI.
+
+   Another potential reason that task-based exposure predictions may not perfectly predict
+adoption is that some jobs may face various barriers to adoption. In our question about why
+workers did not adopt genAI, a second set of explanations relates to adoption barriers: “My
+employer does not allow me to use genAI; I am unsure whether my employer allows me to use
+genAI; I feel pressure from coworkers to not use genAI; I have privacy or security concerns;
+I am unsure how to use genAI for my job.” We define the share of an occupation who does
+not use genAI because of adoption barriers as the share of all workers in that occupation who
+ranked at least one of these options in their top two reasons for not using genAI.
+
+    Figure 6d plots genAI adoption against the share who reported that they faced adption
+barriers. This correlation (-0.30) is lower than in the previous figure, indicating that variation
+in adoption barriers only accounts for a small share of the overall variation in adoption. At the
+same time, two occupations stand out in terms of a high share of workers facing adoption bar-
+riers: legal / social services and office / administrative workers. Workers in these occupations
+may be especially likely to deal with sensitive information that makes employers reluctant to
+allow genAI use, or leads workers to self-regulate in the absence of formal policies. These find-
+ings suggest that managers can play a role in genAI adoption by setting clear usage guidelines
+and helping employees navigate privacy and security issues.
+
+   In addition to minimizing barriers to genAI adoption, we also find evidence that firms and
+managers can increase genAI adoption through active encouragement. The RPS asked workers
+“Does your employer encourage you to use Generative AI for your job?”. Employer encourage-
+ment is highly correlated with adoption: 86% of respondents whose employer encourages genAI
+use report adopting it, compared to just 13% among those whose employer does not.
+
+    We conclude this section by jointly analyzing the role of demographics, occupation, and
+employer encouragement. Table 1 presents results from a linear regression of an indicator
+for genAI use last week on these variables. Demographic controls (sex, age, and education)
+alone account for 8% of the variation in adoption. Adding controls for occupation group
+and predicted exposure by occupation (Eloundou et al., 2024) increases this share to 12%.
+Occupation controls decrease the magnitude of most demographic coefficients, and in particular
+reduce the coefficients on Bachelor’s Degree and Graduate Degree by roughly one third. Finally,
+
+
+                                                16
+

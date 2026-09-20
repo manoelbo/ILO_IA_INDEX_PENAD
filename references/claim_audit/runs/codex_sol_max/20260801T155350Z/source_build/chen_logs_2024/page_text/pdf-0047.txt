@@ -1,0 +1,47 @@
+can be viewed as constraining the joint distribution of potential outcomes. Observe that, for any
+pair of potential outcomes pY p1q, Y p0qq, we can represent them as pY p1, U q, Y p0, U qq for some
+function Y pd, uq and individual-level unobservable (or “structural error”) U . The potential outcomes
+framework we work with in this paper does not impose any functional form assumptions on Y pd, uq.
+Structural equation models, on the other hand, tend to specify explicit functional forms for Y pd, uq.
+In what follows, we consider the implicit restrictions placed on the potential outcomes as well as
+the target estimand in work related work that starts with a structural equations model.
+
+C.1       Bellemare and Wichman (2020) and Thakral and Tô (2023)
+Bellemare and Wichman (2020) consider OLS regressions of the form51
+
+                                        arcsinhpY q “ β0 ` Dβ1 ` U.                                        (C.1)
+
+Note that when D is binary and randomly assigned, D KK pY p1q, Y p0qq, then from the perspec-
+tive of the potential outcomes model, the population coefficient β1 is the ATE for arcsinhpY q.
+Bellemare and Wichman (2020) instead consider the interpretation of β1 when (C.1) is treated as
+structural, i.e. if there are constant treatment effects of D on arcsinhpY q. From the perspective of the
+potential outcomes model, this amounts to imposing that the potential outcomes Y pdq :“ Y pd, U q
+take the form
+                                     arcsinhpY pd, U qq “ β0 ` dβ1 ` U,                                    (C.2)
+
+where the individual-level random variable U takes the same value for all values of d. Under (C.2),
+we have that
+                                β1 “ arcsinhpY p1, U qq ´ arcsinhpY p0, U qq.
+
+Since arcsinhpyq « logp2yq for y large, it follows that β1 « logpY p1, U q{Y p0, U qq when Y p1, U q
+and Y p0, U q are large. Thus, Bellemare and Wichman (2020) argue that β1 approximates the semi-
+elasticity of the outcome with respect to d when the outcome is large. They likewise provide similar
+results for the elasticity of Y pd, U q with respect to treatment when treatment is continuous. Their
+results thus imply that the ATE for arcsinhpY q has a sensible interpretation as a (semi-)elasticity
+when the structural equation for the potential outcomes given in (C.2) holds.
+       It is worth emphasizing, however, that (C.2) will generally be incompatible with the data when
+both Y p1q and Y p0q have point-mass at zero, and β1 ‰ 0. Specifically, note that (C.2) implies that
+for all values of U ,
+                                arcsinhpY p1, U qq ´ arcsinhpY p0, U qq “ β1 .
+
+If β1 ą 0, for example, this implies that arcsinhpY p1, U qq ą arcsinhpY p0, U qq, and hence Y p1, U q ą
+Y p0, U q, since the arcsinhpyq function is strictly increasing for y ě 0. However, since Y p0, U q ě 0
+by assumption, this implies that Y p1, U q ą 0 with probability 1. Thus, the model in (C.2) is
+  51
+    They also consider specifications with additional covariates on the right-hand side, although we abstract away
+from this for expositional simplicity.
+
+
+
+                                                       10
+

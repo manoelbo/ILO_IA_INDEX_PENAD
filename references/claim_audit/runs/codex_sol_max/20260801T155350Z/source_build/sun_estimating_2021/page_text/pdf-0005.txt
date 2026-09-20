@@ -1,0 +1,60 @@
+following differences. First, in the setting where there is no never-treated group, our method uses the last co-
+
+hort to be treated as a control group, whereas Callaway and Sant’Anna (2020a) use the set of not-yet-treated
+
+cohorts. Our method and theirs thus rely on different, but non-nested parallel trends assumptions. Second,
+
+our estimation method can be cast as a regression specification and thus may be more familiar to applied
+
+researchers. However, a third difference is that the procedure of Callaway and Sant’Anna (2020a) allows for
+
+conditioning on time-varying covariates. de Chaisemartin and D’Haultfœuille (2020) and Goodman-Bacon
+
+(2018) respectively propose alternative estimators and diagnostic tools for estimation of causal effects in
+
+staggered settings, but do not consider the estimation of the dynamic path of treatment effects as we do.
+
+
+
+2    Event studies design
+
+In this section we first formalize the “event studies design”. As discussed in Section 2.3, based on how this
+
+term is deployed in the empirical literature, an event study design is a staggered adoption design where units
+
+are treated at different times, and there may or may not be never treated units. It also nests a difference-in-
+
+differences design, where units are either first treated at time t0 or never treated.
+
+    Specifically, we consider a setting with a random sample of N units observed over T + 1 time periods,
+
+where T is fixed. For each i ∈ {0, . . ., N } and t ∈ {0, ...,T }, we observe the outcome Yi,t and treatment status
+
+Di,t ∈ {0, 1}: Di,t = 1 if i is treated in period t and Di,t = 0 if i is not treated in period t. Throughout we
+
+assume that the observations {Yi,t , Di,t }Tt=0 are independent and identically distributed (i.i.d.).
+
+    In the general case of event studies we focus on an absorbing treatment such that the treatment status
+
+over time is a non-decreasing sequence of zeros and then ones, i.e. Di,s ≤ Di,t for s < t. We can thus uniquely
+
+characterize a treatment path by the time period of the initial treatment, denoted with Ei = min t : Di,t = 1 .
+                                                                                                  
+
+If unit i is never treated i.e. Di,t = 0 for all t, we set Ei = ∞. Based on when they first receive the treatment,
+
+we can also uniquely categorize units into disjoint cohorts e for e ∈ {0, . . .,T, ∞}, where units in cohort e are
+
+first treated at the same time {i : Ei = e}.
+
+    We define Yi,te to be the potential outcome in period t when unit i is first treated in time period e. We
+         ∞ to be the potential outcome if unit i never receives the treatment, which we call the “baseline
+define Yi,t
+
+outcome”. Since the timing of the initial treatment uniquely characterizes one’s treatment path, we can
+
+
+
+
+                                                         5
+

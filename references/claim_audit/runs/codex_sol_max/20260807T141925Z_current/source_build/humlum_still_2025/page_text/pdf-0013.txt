@@ -1,0 +1,39 @@
+(2026) find similar adoption patterns for generative AI across the US, UK, Germany, and
+Australia.5 While firm size is unrelated to encouraged-use policies—perhaps due to the
+low fixed costs of off-the-shelf chatbot solutions—larger firms are more likely to purchase
+enterprise versions.
+    Overall, however, chatbot initiatives are largely unrelated to observable firm characteris-
+tics, which account for just 1.3% of the within-occupation variation in encouragement—far
+less than the 10.6% explained by our 11 occupation categories alone. In other words,
+many otherwise comparable firms have adopted markedly different strategies toward AI
+chatbots, even for similar workers within the same occupation.
+
+2.1.1    Employer Initiatives and Worker Adoption
+
+We next examine how workers’ adoption of and benefits from AI chatbots vary with the
+employer-led chatbot initiatives. Specifically, we compare workers in the same occupations
+with similar characteristics and estimate how their adoption behaviors and reported
+benefits vary with employer initiatives for AI chatbots:
+
+
+                            Yi = γ ′ Xi + β ′ EmployerInitiativesi + εi ,                         (1)
+
+
+where Yi is a chatbot-related outcome for worker i, such as use of or reported benefits
+from AI chatbots; Xi includes survey occupation fixed effects and worker pre-determined
+characteristics, including age, gender, and potential experience;6 and EmployerInitiativesi
+is a vector of employer-driven initiatives, including encouraging employees to use AI
+chatbots, investing in enterprise chatbot solutions, providing employee training—and
+combinations thereof. We estimate Equation (1) by OLS and cluster the standard errors
+at the workplace-occupation level.
+    The specification in Equation (1) is motivated by a large literature on complementarities
+between new technologies and organizational investments (Bloom, Sadun and Reenen, 2012;
+   5
+     Younger and more productive firms are commonly found to adopt new technologies faster; see, e.g.,
+Acemoglu et al. (2022), who document adoption patterns for a range of advanced technologies in 2019,
+including AI and robotics.
+   6
+     All worker characteristics are measured in 2022, before AI chatbots became available.
+
+
+                                                 11

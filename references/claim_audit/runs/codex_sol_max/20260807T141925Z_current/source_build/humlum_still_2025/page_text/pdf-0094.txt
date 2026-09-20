@@ -1,0 +1,48 @@
+E.5       Perceived Impacts
+
+Table E.4 reports workers’ average perceived earnings impacts from AI chatbots, broken
+down by occupation, employer encouragement, and adoption status. Columns (1) and
+(3) report average impacts, while Columns (2) and (4) report the share of workers who
+perceive no change in earnings from AI chatbots.
+
+
+                      Table E.4: Perceived Earnings Impacts of AI Chatbots
+
+                                                                 Adopters                     Non-Adopters
+                                                          Average           No           Average           No
+                                                        Impact (%)      Impact (%)     Impact (%)      Impact (%)
+  Occupation                       Usage Policy              (1)            (2)             (3)            (4)
+  Journalists                      Non-Encouraged            -.2            99               0            100
+  Journalists                      Encouraged              -.171           98.1              0            100
+  Software Developers              Non-Encouraged           .152           97.2           -.078           98.8
+  Software Developers              Encouraged               .466           95.8           -.085           99.2
+  Legal Professionals              Non-Encouraged            .09           99.2            .003           99.9
+  Legal Professionals              Encouraged                .07           98.7            -.04           98.4
+  Accountants and Auditors         Non-Encouraged           .084           98.1           -.044           99.7
+  Accountants and Auditors         Encouraged               .158           97.6              0            100
+  Customer Service Rep.            Non-Encouraged           .015            97            -.189           98.5
+  Customer Service Rep.            Encouraged               .378           94.8              0            100
+  Marketing Professionals          Non-Encouraged           .115           96.5            .099           97.4
+  Marketing Professionals          Encouraged               .386           95.5              0            100
+  Financial Advisors               Non-Encouraged           .112           98.9            -.01           99.6
+  Financial Advisors               Encouraged               .269           97.4              0            100
+  HR Professionals                 Non-Encouraged          .093            98.1           -.143           99.3
+  HR Professionals                 Encouraged                .08           98.7              0            100
+  Office Clerks                    Non-Encouraged           .048           98.9           -.001           99.8
+  Office Clerks                    Encouraged               .168           98.1           -.074           99.4
+  Teachers                         Non-Encouraged          -.009           99.8           -.005           99.8
+  Teachers                         Encouraged              .047            99.1              0            100
+  IT Support                       Non-Encouraged            .03            99             .053           98.9
+  IT Support                       Encouraged              .195            97.2              0            100
+  All                              Non-Encouraged           .048           98.3           -.029           99.2
+  All                              Encouraged               .186           97.4           -.018           99.7
+ Notes: Columns (1) and (3) report the average perceived impact of AI chatbots on earnings, broken down by workers’
+ occupation, employer encouragement, and adoption status (ever versus never used AI chatbots). Columns (2) and (4) show
+ the share of workers who report no impact on earnings from AI chatbots. We code reported earnings impacts as follows:
+“No change” as 0%, “0–5% change” as 2.5%, “5–15% change” as 10%, and “Over 15% change” as 20%. Our conclusions are
+ robust to alternative codings. Sample: All completed responses from the 2024 survey round linked to registry data.
+
+
+
+
+                                                         44

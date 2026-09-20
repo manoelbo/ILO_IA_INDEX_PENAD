@@ -1,0 +1,47 @@
+Assumption 3 (Limited Treatment Anticipation). There is a known δ ≥ 0 such that
+
+      E[Yt (g)|X, Gg = 1] = E[Yt (0)|X, Gg = 1] a.s. for all g ∈ G, t ∈ {1, . . . , T } such that t < g − δ.
+
+   Assumption 3 restricts anticipation of the treatment for all “eventually treated” groups. When δ = 0,
+it imposes a “no-anticipation” assumption, see, e.g., Abbring and van den Berg (2003) and Sianesi (2004).
+This is likely to be the case when the treatment path is not a priori known and/or when units are not
+the ones who “choose” treatment status. However, Assumption 3 also allows for anticipation behavior, as
+long as we have a good understanding about the anticipation horizon δ. For instance, if units anticipate
+treatment by one period, Assumption 3 would hold with δ = 1; see, e.g., Laporte and Windmeijer (2005)
+and Malani and Reif (2015) for the importance of accounting for potential anticipation behavior. Note
+that, under Assumption 3, AT T (g, t) = 0 for all pre-treatment periods such that t < g − δ.
+   Next, we consider two alternative assumptions that impose restrictions on the evolution of untreated
+potential outcomes.
+
+Assumption 4 (Conditional Parallel Trends based on a “Never-Treated” Group). Let δ be as defined in
+Assumption 3. For each g ∈ G and t ∈ {2, . . . , T } such that t ≥ g − δ,
+
+                      E[Yt (0) − Yt−1 (0)|X, Gg = 1] = E[Yt (0) − Yt−1 (0)|X, C = 1] a.s..
+
+Assumption 5 (Conditional Parallel Trends based on “Not-Yet-Treated” Groups). Let δ be as defined
+in Assumption 3. For each g ∈ G and each (s, t) ∈ {2, . . . , T } × {2, . . . , T } such that t ≥ g − δ and
+t + δ ≤ s < ḡ,
+
+                  E[Yt (0) − Yt−1 (0)|X, Gg = 1] = E[Yt (0) − Yt−1 (0)|X, Ds = 0, Gg = 0] a.s..
+
+   Assumptions 4 and 5 are two different conditional parallel trends assumptions that generalize the
+two-period parallel trends assumption to the case where there are multiple time periods and multiple
+treatment groups; see, e.g., Heckman et al. (1997, 1998), Abadie (2005) and Sant’Anna and Zhao (2020).
+Both assumptions hold after conditioning on covariates X. This can be important in many applications in
+economics particularly in cases where there are covariate specific trends in outcomes over time and when
+the distribution of covariates is different across groups. For example, Heckman et al. (1997) motivates
+conditional parallel trends assumptions in the context of evaluating a job training program. For evaluating
+job training programs, the distribution of observed covariates such as age, employment history, and years
+of education is often quite different between individuals who participate in job training and those that do
+not. When the path of labor market outcomes (in the absence of participating in job training) depends
+on these covariates, a conditional parallel trends becomes more plausible than an unconditional parallel
+trends assumption. In fact, ignoring the presence of covariate-specific trends can result in important
+biases when evaluating causal effects of policy interventions using unconditional DiD methods.
+   Assumptions 4 and 5 differ from each other depending on the comparison group one is willing to use
+in a given application. More specifically, Assumption 4 states that, conditional on covariates, the average
+outcomes for the group first treated in period g and for the “never-treated” group would have followed
+parallel paths in the absence of treatment. Assumption 5 imposes conditional parallel trends between
+
+
+                                                        8
+

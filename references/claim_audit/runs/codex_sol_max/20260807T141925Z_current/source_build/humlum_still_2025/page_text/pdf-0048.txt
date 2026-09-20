@@ -1,0 +1,67 @@
+           Figure 8: Have Adopting Workplaces Fared Differently? (Encouraged DiD)
+
+               (a) Log Total Employment                                            (b) Employment Share of Early-Career Workers
+    .15                                                                                .05
+
+
+                                                                                       .04
+
+      .1
+                                                                                       .03
+
+
+                                                                                       .02
+    .05
+                                                                                       .01
+
+
+                                                                                         0
+      0
+
+                                                                                       -.01
+
+
+    -.05                                                                               -.02
+      2021m1   2021m7   2022m1   2022m7   2023m1   2023m7   2024m1   2024m7              2021m1   2021m7   2022m1    2022m7        2023m1     2023m7     2024m1   2024m7
+
+
+
+
+      (c) Log Hours of Incumbent Workers                                                                      (d) Job Churn
+    .05                                                                                .05
+
+
+    .04                                                                                .04
+
+                                                                                       .03
+    .03
+
+                                                                                       .02
+    .02
+                                                                                       .01
+    .01
+                                                                                         0
+      0
+                                                                                       -.01
+
+    -.01
+                                                                                       -.02
+                                                                                         2021m1   2021m7   2022m1    2022m7        2023m1     2023m7     2024m1   2024m7
+    -.02
+      2021m1   2021m7   2022m1   2022m7   2023m1   2023m7   2024m1   2024m7                                         Job Creation            Job Destruction
+
+
+Notes: This figure shows workplace outcomes for workers in encouraged-use workplaces relative to those without encour-
+agement, indexed to November 2022. Panel (a) reports log employment; Panel (b), the employment share of early-career
+workers (aged 22-25); Panel (c), log hours of incumbent workers (those employed at the workplace throughout the pre-period,
+2021M1–2022M11); and Panel (d), job creation and destruction rates (measured as the share of hires and separations,
+respectively, in total employment). Estimates are based on the dynamic difference-in-differences specification in Equation (2),
+with shaded areas representing 95% confidence intervals. In December 2024, the standard deviations of the residuals are
+0.56 for employment changes (Panel a), 0.04 for Early-Career workers (Panel b), 0.08 for incumbent worker hours (Panel c),
+and 0.026 for job creation and 0.01 for job destruction (Panel d). Sample: All completed 2024 survey responses linked to
+registry data.
+
+
+
+
+                                                                              46

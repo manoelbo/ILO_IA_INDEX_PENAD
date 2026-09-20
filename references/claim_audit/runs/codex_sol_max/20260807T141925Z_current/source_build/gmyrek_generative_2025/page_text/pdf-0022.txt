@@ -1,0 +1,56 @@
+19     ILO Working Paper 140
+
+
+
+
+     The advantage of this approach is that the tasks are assessed by those familiar with the work
+     from their own professional context. On the downside, this survey design means that the sample
+     may not represent the entire working population, and interpretability of opinions on the automa-
+     tion potential is limited to comparisons within each 1-digit group. We also expect an imbalance
+     of understanding and experience with tasks and GenAI across different occupational groups, as
+     managers or professionals are likely to know more about AI than elementary workers, where-
+     as the latter are likely to understand better the nature of elementary workers’ tasks, but might
+     have less familiarity with GenAI tools.
+
+     We mitigate these negative effects in several ways. First, to equilibrate the level of understand-
+     ing among participants, a prompt about current abilities of GenAI is shown in the introduction
+     of the second part of the survey (see Text Box 2 and full survey questionnaire in the Appendix).
+     Second, we run a survey among the ILO, NASK and MOL experts on a smaller sample of tasks,
+     drawn from across all ISCO-08 groups, and compare these results to the results of main survey
+     respondents (Section 5). In cases of drastic discrepancies, we consult with the expert group and
+     manually establish what seems to be the most reasonable score.
+
+
+     XX Text Box 2. Introductory prompt for survey respondents
+
+
+        We have a short piece of information for you about Generative Artificial Intelligence (GenAI).
+        In our study, we want to distinguish GenAI from artificial intelligence (AI).
+
+        AI allows you to make decisions based on data (e.g. what product to offer you next in
+        an online store, recognize car license plates at the entrance to the parking lot and raise
+        the barrier)
+
+        GenAI can generate new content, e.g. images, text, speech. The most popular tool is
+        ChatGPT, which can answer questions, write emails, prepare an application to the office,
+        create reports, summarize a specified text (e.g. an article, book).
+
+        What can GenAI do?
+
+        ●● Write a text, "pretending" to be a specific person, e.g. an official, poet, financial analyst;
+        ●● Prepare translations between languages, e.g. from Polish to English;
+        ●● Convert written text into human speech ("read" text in a given language);
+        ●● Program - change specified tasks into computer language code, e.g. Python, HTML;
+        ●● Generate an image, e.g. a photo, based on a given description, or recognize and de-
+           scribe an image (e.g. what is in the photo).
+
+
+     3.5. Survey of Task Automation Potential
+
+     3.5.1. Sample properties
+     The main survey sample consists of 57,400 observations and 1,640 unique respondents. Among
+     these, 105 participants responded with 'Don't know' to most questions, providing less than 50%
+     of the required task rankings. Due to limited engagement, these participants were removed from
+     the analysis as they were deemed insufficiently credible. The excluded group includes a variety
+     of demographic and occupational profiles, which were carefully reviewed to ensure that their
+

@@ -1,0 +1,42 @@
+force Characteristics, and Occupation-Specific Information.
+   Using O*NET’s task module, which contains 18,156 specific tasks, we describe each occupation
+as a vector of tasks typically performed by that role. We focus on tasks rather than skills or abilities,
+following the extensive “task approach” literature (Autor et al., 2003, 2006; Acemoglu and Autor,
+2011; Autor, 2013). This framework suggests that technological advancements displace or reinstate
+specific tasks within occupations rather than entire jobs or skills, as neither skills nor entire jobs
+directly translate into output (Autor, 2013).
+   To measure occupational exposure to AI, we employed a novel methodology using large lan-
+guage models (LLMs), specifically the GPT-4o API from OpenAI. Our approach, which we term
+“synthetic AI surveys,” involves asking these advanced models to estimate the likelihood of AI
+and its developments replacing each occupation based on its characteristic tasks.
+   Our synthetic AI survey methodology offers several key advantages in assessing occupational
+exposure to AI. First, the scalability of AI models allows for rapid processing of vast amounts of
+information, enabling a comprehensive analysis of all occupations in the database. This scalabil-
+ity ensures that no occupation is overlooked, providing a complete picture of potential AI impact
+across the labor market. Second, the use of a standardized AI model guarantees consistency in
+evaluation criteria across all occupations, eliminating potential human biases and ensuring com-
+parability of results. Third, large language models like GPT-4o are trained on recent data, po-
+tentially incorporating the latest understanding of AI capabilities and trends, which keeps our
+analysis current and forward-looking. Lastly, these advanced models offer a more holistic view of
+tasks, occupations and technological innovations, capable of capturing interactions between tasks
+and considering broader contextual factors in their assessments.
+   Key features of our survey methodology include the following:
+   Independent Sessions: Each survey was conducted in a new session for every occupation, pre-
+venting carryover effects from previous responses. This ensures that each occupation is evaluated
+independently, based solely on its own characteristics.
+   Multiple Iterations: The process was repeated 100 times to test the accuracy and consistency of
+the estimates. This multiple-iteration approach allows us to account for potential variability in the
+AI model’s responses and provides a measure of confidence in our results.
+   Varied Creativity: The temperature parameter, which controls the randomness and creativity
+in the model’s output, was randomly set between 0 and 2 for each iteration. This introduces
+controlled variability in the model’s responses, potentially capturing a wider range of perspectives
+on each occupation’s AI exposure.
+   Time Horizons: We considered three exposure horizons: one year, five years, and 10 years. This
+allows us to capture both immediate and longer-term potential impacts of AI on occupations,
+recognizing that AI capabilities and their integration into various fields may evolve over time.
+   The GENOE index for each horizon was calculated as the average value across the 100 sur-
+
+
+
+                                                   5
+

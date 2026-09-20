@@ -1,0 +1,146 @@
+                                                                                   ChatGPT launch
+
+
+
+
+                                      0
+           Log Average Employment
+
+
+
+
+                                    -.05
+
+
+
+
+                                     -.1
+                                           q1
+
+
+
+
+                                                     q1
+
+
+
+
+                                                               q1
+
+
+
+
+                                                                         q1
+
+
+
+
+                                                                                        q1
+
+
+
+
+                                                                                                         q1
+
+
+
+
+                                                                                                                   q1
+
+
+
+
+                                                                                                                             q1
+                                      18
+
+
+
+
+                                                 19
+
+
+
+
+                                                           20
+
+
+
+
+                                                                     21
+
+
+
+
+                                                                                    22
+
+
+
+
+                                                                                                     23
+
+
+
+
+                                                                                                               24
+
+
+
+
+                                                                                                                         25
+                                    20
+
+
+
+
+                                                20
+
+
+
+
+                                                          20
+
+
+
+
+                                                                    20
+
+
+
+
+                                                                                  20
+
+
+
+
+                                                                                                    20
+
+
+
+
+                                                                                                              20
+
+
+
+
+                                                                                                                        20
+                                                                              Quarter
+
+
+
+       Figure A.16: Triple-Difference Estimates—Augmented Adoption Measure
+   Notes: This figure reproduces Figure 5, replacing the postings-based adoption indicator Adopti
+                                          aug
+   with the augmented indicator Adopti , which additionally treats a firm as an adopter if any of its
+   worker position descriptions in the 2021–2025 window is classified as an integrator role by Llama-
+   3.3-70B-Instruct. Specification, fixed effects, and inference follow Equation 11. Standard errors are
+   clustered at the firm level.
+
+
+about 42% of U.S. position spells in the 2021–2025 window carry a free-text description at
+all, and those that do are often short or formulaic.
+
+
+
+
+                                                                         A.18
+

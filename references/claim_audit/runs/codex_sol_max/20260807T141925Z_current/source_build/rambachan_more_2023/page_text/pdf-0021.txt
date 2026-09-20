@@ -1,0 +1,61 @@
+       RAMBACHAN AND ROTH            A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                           2575
+
+for example, that when  =  R M ( M̄), the power of the conditional test converges to the
+power envelope when there is a unique (non-zero) pre-treatment maximum violation, i.e. when
+maxs<0 |δs+1 − δs | > 0 and has a unique solution.24 Likewise, the conditional test has optimal
+local asymptotic power for  S D R M ( M̄) when there is a unique maximum non-linearity in the
+pre-treatment period. Intuitively, this is because the upper bound of the identified set is deter-
+mined by a single k ∗ satisfying LICQ, so the conditional test for this k ∗ has optimal local
+asymptotic power, whereas our consistency results imply that the tests for the remaining k that
+do not determine the identified set bound reject with probability approaching 1. See Corollary
+
+
+
+
+                                                                                                                    Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+4.1 in the working paper version of this paper for a formal derivation (Rambachan and Roth,
+2021).
+    Proposition 3.3 shows that under LICQ the local asymptotic power of the conditional test
+converges to the power envelope for tests controlling size in the finite-sample normal model.
+In the working paper version of this paper, we showed that the power envelope from the
+finite-sample normal model corresponds with the power-envelope among tests that control size
+asymptotically and have certain invariance properties using results in Müller (2011) (Proposition
+E.4 in Rambachan and Roth, 2021).
+
+
+            4. INFERENCE USING FIXED LENGTH CONFIDENCE INTERVALS
+We next consider FLCIs based on affine estimators. While the conditional and hybrid confidence
+sets offer attractive asymptotic power guarantees under asymptotics in which sampling variation
+grows small relative to the length of the identified set, FLCIs offer finite-sample power guar-
+antees (in the normal model) for certain classes  of interest. In certain special cases, FLCIs
+may thus outperform the ARP tests when sampling variation is large relative to the length of
+the identified set. For brevity of exposition, we focus on the properties of FLCIs in the case
+where the finite-sample normal approximation (9) holds exactly with n known; Armstrong and
+Kolesár (2020b) provide uniform asymptotic results for FLCIs under conditions similar to those
+in Section 3.3.
+
+
+4.1.    Constructing FLCIs
+Following Donoho (1994) and Armstrong and Kolesár (2018, 2020a), we consider FLCIs based
+on an affine estimator for θ , denoted by Cα,n (a, v, χ ) := (a + v  β̂ n ) ± χ , where a and χ are
+scalars and v ∈ RT¯ +T̄ . We minimize the half-length of the confidence interval, χ , subject to the
+constraint that Cα,n (a, v, χ ) satisfies the coverage requirement (10) in the finite-sample normal
+model.                                                                              
+       Observe that if β̂ n ∼ N (β, n ) , then a + v  β̂ n ∼ N a + v  β, v  n v , and hence |a +
+                             
+v  β̂ n − θ | ∼ |N b, v  n v |, where b = a + v  β − θ is the affine estimator’s bias for θ .
+Observe further that θ ∈ Cα,n (a, v, χ ) if and only if |a + v  β̂ n − θ | ≤ χ . For fixed values
+                                                                                                  a and
+                                                                                                      
+v, the smallest value of χ that satisfies (10) is therefore the 1 − α quantile of the |N b̄, v  n v |
+distribution, where b̄ is the affine estimator’s worst-case bias
+                                                                                           
+                      b̄(a, v) :=        sup          a + v  δ + L post τ post − l  τ post  .           (17)
+                                    δ∈,τ post ∈RT̄
+
+
+
+
+     24. For this convergence to hold uniformly, the non-binding moments must be slack by , so we would need that
+maxs<0 |δs+1 − δs | is at least greater than the second largest difference.
+

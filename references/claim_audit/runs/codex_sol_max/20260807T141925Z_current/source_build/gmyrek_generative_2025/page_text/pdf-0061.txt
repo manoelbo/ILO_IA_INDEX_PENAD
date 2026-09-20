@@ -1,0 +1,85 @@
+58    ILO Working Paper 140
+
+
+
+
+     Exposure      4-digit code   Occupation Name                                                 Mean   SD
+
+     Not Exposed   5142           Beauticians and Related Workers                                 0.18   0.19
+
+     Not Exposed   5411           Fire Fighters                                                   0.18   0.1
+
+     Not Exposed   6111           Field Crop and Vegetable Growers                                0.18   0.12
+
+     Not Exposed   6113           Gardeners, Horticultural and Nursery Growers                    0.18   0.11
+
+     Not Exposed   6223           Deep-sea Fishery Workers                                        0.18   0.07
+
+     Not Exposed   7126           Plumbers and Pipe Fitters                                       0.18   0.1
+
+     Not Exposed   7223           Metal Working Machine Tool Setters and Operators                0.18   0.05
+
+     Not Exposed   7231           Motor Vehicle Mechanics and Repairers                           0.18   0.04
+
+     Not Exposed   7313           Jewellery and Precious Metal Workers                            0.18   0.05
+
+     Not Exposed   7314           Potters and Related Workers                                     0.18   0.07
+
+     Not Exposed   7316           Sign Writers, Decorative Painters, Engravers and Etchers        0.18   0.08
+
+     Not Exposed   7534           Upholsterers and Related Workers                                0.18   0.09
+
+     Not Exposed   8141           Rubber Products Machine Operators                               0.18   0.05
+
+     Not Exposed   8143           Paper Products Machine Operators                                0.18   0.02
+
+     Not Exposed   8331           Bus and Tram Drivers                                            0.18   0.06
+
+     Not Exposed   8343           Crane, hoist and related plant operators                        0.18   0.03
+
+     Not Exposed   9411           Fast Food Preparers                                             0.18   0.05
+
+     Not Exposed   9510           Street and Related Service Workers                              0.18   0.09
+
+     Not Exposed   9612           Refuse Sorters                                                  0.18   0.11
+
+     Not Exposed   2636           Religious Professionals                                         0.17   0.12
+
+     Not Exposed   3255           Physiotherapy Technicians and Assistants                        0.17   0.07
+
+     Not Exposed   5141           Hairdressers                                                    0.17   0.18
+
+     Not Exposed   5163           Undertakers and Embalmers                                       0.17   0.17
+
+     Not Exposed   6112           Tree and Shrub Crop Growers                                     0.17   0.11
+
+     Not Exposed   6114           Mixed Crop Growers                                              0.17   0.12
+
+     Not Exposed   6121           Livestock and Dairy Producers                                   0.17   0.1
+
+     Not Exposed   6222           Inland and Coastal Waters Fishery Workers                       0.17   0.1
+
+     Not Exposed   7221           Blacksmiths, Hammersmiths and Forging Press Workers             0.17   0.05
+
+     Not Exposed   7224           Metal Polishers, Wheel Grinders and Tool Sharpeners             0.17   0.05
+
+     Not Exposed   7233           Agricultural and Industrial Machinery Mechanics and Repairers   0.17   0.04
+
+     Not Exposed   7412           Electrical Mechanics and Fitters                                0.17   0.05
+
+     Not Exposed   7512           Bakers, Pastry-cooks and Confectionery Makers                   0.17   0.08
+
+     Not Exposed   7532           Garment and Related Patternmakers and Cutters                   0.17   0.04
+
+     Not Exposed   7536           Shoemakers and Related Workers                                  0.17   0.06
+
+     Not Exposed   8111           Miners and Quarriers                                            0.17   0.11
+
+     Not Exposed   8142           Plastic Products Machine Operators                              0.17   0.05
+
+     Not Exposed   8181           Glass and Ceramics Plant Operators                              0.17   0.06
+
+     Not Exposed   8312           Railway Brake, Signal and Switch Operators                      0.17   0.04
+
+     Not Exposed   3251           Dental Assistants and Therapists                                0.16   0.1
+

@@ -1,0 +1,49 @@
+Proposition S1 If Assumptions 1 and S1 hold and Ng,2 /Ng,1 does not vary across g, then3
+                                       TR             Dg,2 − D.,2
+                                      wg,2 = PG       Ng,2
+                                                                            .
+                                                           (D     − D    )2
+                                                  g=1 N1      g,2    .,2
+
+Proposition S1 shows that in the heterogeneous adoption design, βf e assigns negative weights
+to the period-two ATT of groups with a mean treatment lower than the mean treatment in the
+full population. The reason why negative weights arise is intuitive. With two periods, the FE
+regression is equivalent to a regression of the first difference of the outcome on the period-two
+treatment in each group. This regression compares the evolution of the outcome in more- and
+less-treated groups. Doing so, it subtracts the treatment effect of the less-treated groups, hence
+the negative weights. Negative weights are a concern if the ATTs of the less- and more-treated
+groups systematically differ. This could be the case if treatment is determined by a Roy selection
+model. Then, the groups with the highest proportion of treated units could also be those where
+the ATT is the highest. On the other hand, if the proportion of treated units is randomly
+assigned to each group, negative weights are not a concern.4
+The DIDM estimator can also be generalized to fuzzy designs, see point 2 of Theorem S1 in the
+Web Appendix of de Chaisemartin and D’Haultfœuille (2018) for further details.
+
+
+2.2     Application to Enikolopov et al. (2011)
+
+Enikolopov et al. (2011) study the effect of NTV, an independent TV channel introduced in
+1996 in Russia, on the share of the electorate voting for opposition parties. NTV’s coverage
+rate was heterogeneous across subregions: while a large fraction of the population received NTV
+in urbanized subregions, a smaller fraction received it in more rural subregions. The authors
+estimate the FE regression: they regress the share of votes for opposition parties in the 1995
+and 1999 elections in Russian subregions on subregion fixed effects, an indicator for the 1999
+election, and on the share of the population having access to NTV in each subregion at the
+time of the election. In 1995, the share of the population having access to NTV was equal
+to 0 in all subregions, while in 1999 it was strictly greater than 0 everywhere. Therefore,
+the authors’ research design corresponds exactly to the heterogenous adoption design discussed
+above. Enikolopov et al. (2011) find that βbf e = 6.65 (s.e.= 1.40). According to this regression,
+increasing the share of the population having access to NTV from 0 to 100% increases the share
+of votes for the opposition parties by 6.65 percentage points. Because there are only two time
+periods in the data and the regression is not weighted by subregions’ populations, βbf e = βbf d .
+We use the twowayfeweights Stata package, downloadable with its help file from the SSC
+repository, to compute the weights attached to βbf e . In 1995, all the weights are equal to zero
+  3
+      Under Assumption S1, Dg,1 = 0, so wg,1 TR
+                                                does not enter in the decomposition in Theorem 1.
+  4
+      Corollaries 1 and 2 extend directly to fuzzy settings.
+
+
+                                                        4
+

@@ -1,0 +1,38 @@
+Hotz, V. J. and Xiao, M. (2011), ‘The impact of regulations on the supply and quality of care
+  in child care markets’, American Economic Review 101(5), 1775–1805.
+
+Hudson, S., Hull, P. and Liebersohn, C. (2015), Interpreting instrumented difference-in-
+ differences, Technical report, Working Paper (available upon request).
+
+Imbens, G. W. and Angrist, J. D. (1994), ‘Identification and estimation of local average treatment
+  effects’, Econometrica 62(2), 467–475.
+
+Imberman, S. A., Kugler, A. D. and Sacerdote, B. I. (2012), ‘Katrina’s children: Evidence on the
+  structure of peer effects from hurricane evacuees’, American Economic Review 102(5), 2048–
+  2082.
+
+Liu, R. Y. and Singh, K. (1995), ‘Using iid bootstrap inference for general non-iid models’,
+  Journal of statistical planning and inference 43(1-2), 67–75.
+
+Mian, A. and Sufi, A. (2011), ‘House prices, home equity-based borrowing, and the us household
+ leverage crisis’, American Economic Review 101(5), 2132–2156.
+
+Moser, P. and Voena, A. (2012), ‘Compulsory licensing: Evidence from the trading with the
+ enemy act’, American Economic Review 102(1), 396–427.
+
+Simcoe, T. (2012), ‘Standard setting committees: Consensus governance for shared technology
+  platforms’, American Economic Review 102(1), 305–336.
+
+van der Vaart, A. (2000), Asymptotics Statistics, Cambridge University Press.
+
+Wang, S.-Y. (2011), ‘State misallocation and housing prices: Theory and evidence from china’,
+ American Economic Review 101(5), 2081–2107.
+
+Zhang, X. M. and Zhu, F. (2011), ‘Group size and incentives to contribute: A natural experiment
+  at chinese wikipedia’, American Economic Review 101(4), 1601–1605.
+
+
+
+
+                                               35
+

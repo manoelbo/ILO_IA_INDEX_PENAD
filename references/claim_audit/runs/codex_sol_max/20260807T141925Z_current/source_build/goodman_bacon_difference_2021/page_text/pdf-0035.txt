@@ -1,0 +1,41 @@
+ Figure 3. Difference-in-Differences Estimates with Variation in Timing Are Biased When
+              150           Treatment Effects Vary Over Time
+
+                      k event times: [-(t*k-1), -1]                 k event times: [0, (t*l-t*k)-1]           k event times: [(t*l-t*k), T-t*k]
+
+                    l event times: [-(t*l-1), -(t*l-t*k)-1]           l event times: [-(t*l-t*k), -1]            l event times: [0, T-t*l]
+              100
+
+
+
+
+                                                                                                                               φ(t*l-t*k+1)
+ Units of y
+              50
+
+
+
+
+                                                                                       φ(t*l-t*k+1)/2
+              0
+
+
+
+
+                                                              t*k                Time                   t*l
+Notes: The figure plots a stylized example of a timing-only DD set up with a treatment effect that is a trend-break
+rather than a level shift (see Meer and West 2013). Following section II.A.ii, the trend-break effect equals 𝜙𝜙 ⋅ (𝑡𝑡 −
+𝑡𝑡 ∗ + 1). The top of the figure notes which event-times lie in the 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘), 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), and 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) periods for each
+unit. The figure also notes the average difference between groups in each of these periods. In the 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ) period,
+                             𝜙𝜙
+outcomes differ by                (𝑡𝑡∗ℓ − 𝑡𝑡∗𝑘𝑘 + 1) on average. In the 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) period, however, outcomes had already been growing
+                             2
+in the early group for 𝑡𝑡∗ℓ − 𝑡𝑡∗𝑘𝑘 periods, and so they differ by 𝜙𝜙(𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ + 1) on average. The 2x2 DD that compares
+the later group to the earlier group is biased and, in the linear trend-break case, weakly negative despite a positive and
+growing treatment effect.
+
+
+
+
+                                                                              33
+

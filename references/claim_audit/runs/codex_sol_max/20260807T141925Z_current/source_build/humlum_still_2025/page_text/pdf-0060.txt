@@ -1,0 +1,48 @@
+across firms. Formalizing these interactions jointly allows us to derive predictions for
+equilibrium outcomes in Section A.2.4 and to provide structural interpretations of the
+difference-in-differences estimands in Section A.2.5.
+
+
+Productivity and earnings. Worker i’s earnings at firm j are the product of a
+firm-specific skill price Wj and the worker’s efficiency units of human capital Hij :
+
+
+                                  Yij (Aij ) = Wj Hij (Aij ),                           (10)
+
+
+where human capital may be augmented through chatbot use, Aij ∈ {0, 1}:
+
+
+                                 Hij (Aij ) = exp(Bij Aij ),                            (11)
+
+
+and Bij captures the productivity benefit of AI chatbots. As in Section A.1, productivity
+benefits and adoption costs depend on worker type and firm encouragement:
+
+
+                               Bij = αb0 + αb1 Ej + βb × i                              (12)
+
+                                Cij = αc0 + αc1 Ej + βc × i.                            (13)
+
+
+Firm production and demand. Firms produce using efficiency units of labor:
+                                              Z
+                                 Yj = Hj =              Hij di,                         (14)
+                                               i∈I(j)
+
+
+where I(j) denotes firm j’s workforce. This formulation models chatbots as tools that
+augment worker output; Section A.2.1 discusses implications of more general technologies.
+   Product markets feature monopolistic competition among atomistic, horizontally
+differentiated firms facing demand curves:
+
+
+                                         Yj = Pj−ϵ ,                                    (15)
+
+
+where ϵ is the within-sector elasticity of demand.
+
+
+
+
+                                              10

@@ -1,0 +1,59 @@
+                                                        WORKING PAPER
+
+
+
+        Basic Skill                 𝛼                               𝛽                                      𝜁
+                                    (std err)                           (std err)                          (std err)
+                                       All skill importance scores are normalized to be between 0 and 1.
+        Constant                    0.082***                       -0.112***                               0.300***
+                                    (0.011)                           (0.011)                              (0.057)
+        Active Listening            0.128**                         0.214***                               0.449***
+                                    (0.047)                           (0.043)                              (0.027)
+        Mathematics                 -0.127***                       0.161***                               0.787***
+                                    (0.026)                           (0.021)                              (0.049)
+        Reading Comprehension       0.153***                        0.470***                               -0.346***
+                                    (0.041)                           (0.037)                              (0.017)
+        Science                     -0.114***                      -0.230***                               -0.346***
+                                    (0.014)                           (0.012)                              (0.017)
+        Speaking                    -0.028                          0.133***                               0.294***
+                                    (0.039)                           (0.033)                              (0.042)
+        Writing                     0.368***                        0.467***                               0.566***
+                                    (0.042)                           (0.037)                              (0.047)
+        Active Learning             -0.157***                        -0.065**                              0.028
+                                    (0.027)                            (0.024)                             (0.032)
+        Critical Thinking           -0.264***                      -0.196***                               -0.129**
+                                    (0.036)                           (0.033)                              (0.042)
+        Learning Strategies         -0.072*                        -0.209***                               -0.346***
+                                    (0.028)                           (0.025)                              (0.034)
+        Monitoring                  -0.067**                       -0.149***                               -0.232***
+                                    (0.023)                            0.020)                              (0.026)
+        Programming                 0.637***                        0.623***                               0.609***
+                                    (0.030)                           (0.022)                              (0.024)
+
+Table 5: Regression of occupation-level, human-annotated exposure to GPTs on skill importance for each
+skill in the O*NET Basic skills category, plus the programming skill. Descriptions of the skills may be found
+in Appendix B. Task ratings within each occupation for exposure have equal weight.
+
+
+ Job Preparation       Education                Example Occupations                 Median    Tot Emp      H      M     H      M      H      M
+ Zone Required         Required                                                     Income    (000s)       𝛼      𝛼     𝛽      𝛽      𝜁      𝜁
+ 1    None or little   High school              Food preparation workers,           $30,230   13,100    0.03    0.04   0.06   0.06   0.09   0.08
+      (0-3 months)     diploma or GED           dishwashers, floor sanders
+                       (otional)
+ 2    Some (3-12       High school              Orderlies, customer                 $38,215   73,962    0.07    0.12   0.16   0.20   0.24   0.27
+      months)          diploma                  service representatives,
+                                                tellers
+ 3    Medium (1-2      Vocational school,       Electricians, barbers,              $54,815   37,881    0.11    0.14   0.26   0.32   0.41   0.51
+      years)           on-the-job training,     medical assistants
+                       or associate’s
+                       degree
+ 4    Considerable     Bachelor’s degree        Database administrators,            $77,345   56,833    0.23    0.18   0.47   0.51   0.71   0.85
+      (2-4 years)                               graphic designers, cost
+                                                estimators
+ 5    Extensive (4+    Master’s degree or       Pharmacists, lawyers,               $81,980   21,221    0.23    0.13   0.43   0.45   0.63   0.76
+      years)           higher                   astronomers
+
+Table 6: Mean exposure to GPTs by job zone. For each job zone, we also present the median of median
+annual income for each constituting occupation in USD, and the total number of workers in all occupations
+for that job zone, in the thousands. Task weights are equal for all tasks.
+

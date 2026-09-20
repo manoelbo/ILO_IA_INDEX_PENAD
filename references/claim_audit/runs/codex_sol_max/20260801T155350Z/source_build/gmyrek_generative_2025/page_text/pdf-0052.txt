@@ -1,0 +1,84 @@
+49    ILO Working Paper 140
+
+
+
+
+     Exposure     4-digit code   Occupation Name                                                 Mean   SD
+
+     Gradient 3   2631           Economists                                                      0.55   0.08
+
+     Gradient 3   2641           Authors and Related Writers                                     0.55   0.09
+
+     Gradient 3   3342           Legal Secretaries                                               0.55   0.13
+
+     Gradient 3   4227           Survey and Market Research Interviewers                         0.55   0.16
+
+     Gradient 3   2112           Meteorologists                                                  0.54   0.13
+
+     Gradient 3   2642           Journalists                                                     0.54   0.1
+
+     Gradient 3   3343           Administrative and Executive Secretaries                        0.54   0.14
+
+     Gradient 3   4223           Telephone Switchboard Operators                                 0.54   0.15
+
+     Gradient 3   2512           Software Developers                                             0.53   0.07
+
+     Gradient 3   3321           Insurance Representatives                                       0.53   0.12
+
+     Gradient 3   3344           Medical Secretaries                                             0.53   0.11
+
+     Gradient 3   3514           Web Technicians                                                 0.53   0.12
+
+     Gradient 3   2523           Computer Network Professionals                                  0.52   0.06
+
+     Gradient 3   3252           Medical Records and Health Information Technicians              0.52   0.1
+
+     Gradient 3   2411           Accountants                                                     0.51   0.08
+
+     Gradient 3   2434           Information and Communications Technology Sales Professionals   0.51   0.09
+
+     Gradient 3   4224           Hotel Receptionists                                             0.51   0.07
+
+     Gradient 3   4413           Coding, Proofreading and Related Clerks                         0.51   0.2
+
+     Gradient 3   2433           Technical and Medical Sales Professionals (excluding ICT)       0.5    0.1
+
+     Gradient 3   4323           Transport Clerks                                                0.5    0.1
+
+     Gradient 2   2166           Graphic and Multimedia Designers                                0.49   0.09
+
+     Gradient 2   2511           Systems Analysts                                                0.49   0.05
+
+     Gradient 2   2529           Database and Network Professionals Not Elsewhere Classified     0.49   0.06
+
+     Gradient 2   3313           Accounting Associate Professionals                              0.49   0.13
+
+     Gradient 2   3322           Commercial Sales Representatives                                0.49   0.08
+
+     Gradient 2   3352           Government Tax and Excise Officials                             0.49   0.12
+
+     Gradient 2   2153           Telecommunications Engineers                                    0.48   0.12
+
+     Gradient 2   2632           Sociologists, Anthropologists and Related Professionals         0.48   0.12
+
+     Gradient 2   3332           Conference and Event Planners                                   0.48   0.14
+
+     Gradient 2   4213           Pawnbrokers and Money-lenders                                   0.48   0.06
+
+     Gradient 2   1346           Financial and Insurance Services Branch managers                0.47   0.12
+
+     Gradient 2   2356           Information Technology Trainers                                 0.47   0.1
+
+     Gradient 2   2621           Archivists and Curators                                         0.47   0.11
+
+     Gradient 2   2633           Philosophers, Historians and Political Scientists               0.47   0.06
+
+     Gradient 2   2656           Announcers on Radio, Television and Other Media                 0.47   0.12
+
+                                 Information and Communications Technology User Support
+     Gradient 2   3512           Technicians                                                     0.47   0.19
+
+     Gradient 2   2421           Management and Organization Analysts                            0.46   0.1
+
+     Gradient 2   4411           Library Clerks                                                  0.46   0.18
+

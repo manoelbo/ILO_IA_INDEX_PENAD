@@ -1,0 +1,26 @@
+                                                                                              21
+
+the two groups, which is consistent with the hypothesis that radiologists participating in
+the study were of similar skill and exerted similar effort as the radiologists completing the
+original reads.
+
+
+4.2   How do Radiologists Respond to AI and Contextual Information?
+
+We now describe the effects of our information treatments estimated using the following
+specification:
+
+          Yirt = γhi + γCH · dCH (t) + γAI · dAI (t) + γAI×CH · dCH (t) · dAI (t) + εirt ,
+
+where Yrit is an outcome variable of interest for radiologist r diagnosing patient case-pathology
+i and treatment t, and γhi are pathology fixed effects since there are multiple pathologies hi
+for each case in this pooled analysis. Treatments t vary by whether or not clinical history is
+provided dCH (t) ∈ {0, 1} and whether or not AI information is provided dAI (t) ∈ {0, 1}. We
+report two-way clustered standard errors at the radiologist and patient-case level. The spec-
+ification omits radiologist-specific fixed effects because the treatments are balanced within
+radiologists. Cases are also balanced across treatments (see appendix C.1), which suggests
+that case randomization was successful. We will also compute conditional treatment effects
+                                                                             
+given ranges of the AI signal sAi that are grouped based on π ωi = 1| si .
+                                                                            A
+

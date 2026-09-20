@@ -1,0 +1,22 @@
+Title:           
+Subject:         
+Keywords:        
+Author:          
+Creator:         LaTeX with hyperref package
+Producer:        pdfTeX-1.40.17
+CreationDate:    Thu Mar  5 22:43:03 2020 -03
+ModDate:         Thu Mar  5 22:43:03 2020 -03
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           71
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       987638 bytes
+Optimized:       no
+PDF version:     1.5

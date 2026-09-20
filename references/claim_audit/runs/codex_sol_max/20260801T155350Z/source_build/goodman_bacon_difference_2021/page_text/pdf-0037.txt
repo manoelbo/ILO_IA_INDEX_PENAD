@@ -1,0 +1,27 @@
+  Figure 5. Event-Study and Difference-in-Differences Estimates of the Effect of No-Fault
+         Divorce on Female Suicide: Replication of Stevenson and Wolfers (2006)
+                 5
+      Suicides per 1m women
+                         0
+
+
+
+
+                                   DD Coefficient = -3.08 (s.e. = 1.27)
+               -5-10
+                 -15
+
+
+
+
+                              -8              -4         -1          3            7        11      15
+                                                          Years Relative to Divorce Reform
+Notes: The figure plots event-study estimates from the two-way fixed effects model on page 276 and plotted in figure
+1 of Stevenson and Wolfers (2006), along with the DD coefficient. The specification does not include other controls
+and does not weight by population. Standard errors are robust to heteroskedasticity.
+
+
+
+
+                                                                          35
+

@@ -1,0 +1,58 @@
+      Telles e Lim (1998) analisaram esses dados oriundos da pesquisa do Datafolha,
+buscando averiguar se o método de identificação racial afetaria as conclusões obtidas
+sobre as desigualdades entre os brancos e os não-brancos, grupo restrito ao conjunto
+de pretos ou pardos. Os autores também concluem que a heteroatribuição seria prefe-
+rível, pois, com dados de cor obtidos dessa forma, o modelo estatístico empregado
+explicaria melhor as diferenças de rendimentos entre os grupos raciais. Todavia, ao
+contrário do especulado por Valle Silva (1999a), para Telles e Lim o quadro das desi-
+gualdades raciais teria se tornado ainda mais acirrado: “Então, acreditamos que estu-
+dos anteriores subestimaram as desigualdades raciais por terem se baseado somente
+em estatísticas oficiais, nas quais a raça é baseada em auto-classificação, ou em uma
+mistura desconhecida de auto-classificação ou classificação pelo entrevistador” (1998,
+p. 473). Contudo, independentemente das suspeitas de poderem ser um pouco maio-
+res ou um pouco menores, as desigualdades raciais no Brasil são inequivocamente
+intensas, sejam os grupos definidos por auto-atribuição ou por hetero atribuição.
+      Finalmente, um terceiro levantamento que permite estudar os dois métodos de
+identificação da pertença racial é a Pesquisa Nacional de Demografia e Saúde (PNDS)
+de 1996. Nessa pesquisa, na qual as categorias raciais do IBGE foram empregadas tanto
+por entrevistadores quanto por entrevistados, o grau de concordância entre as respostas
+foi ainda mais elevado, 89%, como se pode ver na tabela 3. E, novamente, a distribuição
+de cor heteroatribuída é mais branca que a definida pelas respostas dos entrevistados.
+
+       TABELA 3
+       Cor heteroatribuída versus cor auto-atribuída – Brasil – 1996
+       (Em %)
+
+                                                               Cor auto-atribuída
+ Cor heteroatribuída
+                           Branca          Parda            Preta           Amarela   Indígena   Total
+Branca                       39,1            4,9               0,0              0,1      0,0      44,1
+Parda                         3,5           46,2               0,9              0,1      0,0      50,6
+Preta                         0,0            1,8               3,1              0,0       ...      4,9
+Amarela                       0,0            0,0                ...             0,3       ...      0,3
+Indígena                      ...            0,0               ...              ...      0,0       0,0
+Total                       42,7            52,9              4,0              0,4       0,0     100,0
+       Fonte: Bemfam, Pesquisa Nacional de Demografia e Saúde, 1996, em microdados.
+       Elaboração: Disoc/Ipea.
+
+
+
+
+     O fato de em todos os levantamentos haver um elevado grau de concordância não
+deve ser encarado como algo surpreendente: entrevistadores e entrevistados comparti-
+lham, em algum grau, as mesmas percepções sobre raça. A experiência internacional
+mostra resultados semelhantes, ainda que relacionada a classificações de raça bem dife-
+rentes. Smith (1997), por exemplo, ao analisar o mesmo problema no contexto da Pes-
+quisa Social Geral (GSS) estadunidense, detectou níveis de concordância ainda
+maiores: de no mínimo 94% entre a classificação do entrevistado e a do entrevistador.
+     Considerando-se, nas tabelas 1 a 3, as discrepâncias para cada categoria singular de
+cor, um quadro deveras interessante emerge. Invariavelmente, a cor que apresenta o
+maior grau de concordância é a branca: 94% em 1986, 87% em 1995, e 92% em
+1996. Considerando-se morenos e mulatos somados como equivalentes a pardos no le-
+vantamento de 1986, tem -se que o grau de concordância para a cor parda é menor:
+
+
+
+
+16                                    texto para discussão | 996 | nov. 2003                        ipea
+

@@ -1,0 +1,27 @@
+              highest-value applications continue to generate outsized economic value even
+              as models have become more capable at a wider range of tasks. As with Claude.
+              ai the most common task among API customers was modifying software to
+              correct errors, which accounted for one in ten records.
+
+
+
+
+Figure 1.1: Usage shares among top 10 tasks over time by platform, Claude.ai and 1P API
+Share of conversations assigned to the ten most prevalent O*NET tasks, by platform and report version.
+
+
+
+              Indeed, computer and mathematical tasks—like modifying software to correct
+              errors—continue to dominate Claude usage overall, representing a third of
+              conversations on Claude.ai and nearly half of 1P API traffic. Such dominance
+              has subsided on Claude.ai: the share of conversations on Claude.ai assigned to
+              such (mostly) coding-related tasks is down from a peak of 40% in March 2025
+              to 34% in November 2025. At the same time, the share of transcripts assigned
+              to computer and mathematical tasks among 1P API traffic edged higher from
+             44% in August to 46% in November 2025 (Figure 1.2).
+
+
+
+
+The Anthropic Economic Index Report                                                                      7
+

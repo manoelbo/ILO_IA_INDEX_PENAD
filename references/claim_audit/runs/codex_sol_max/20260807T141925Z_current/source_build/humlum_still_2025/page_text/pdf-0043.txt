@@ -1,0 +1,57 @@
+             Figure 3: New Workloads From AI Chatbots by Employer Initiatives
+
+                                                             (a) Adopters
+                                             No Initiative
+
+                                         Encourage Use
+
+                                      Enterprise Chatbot
+
+                                                 Training
+
+                      Encourage Use + Enterprise Chatbot
+
+                               Encourage Use + Training
+
+                            Enterprise Chatbot + Training
+
+                                                All Three
+                                                             0            .05          .1     .15         .2   .25
+
+                                                                                New Tasks    Same Tasks
+
+
+
+                                                      (b) Non-Adopters
+                                             No Initiative
+
+                                         Encourage Use
+
+                                      Enterprise Chatbot
+
+                                                 Training
+
+                      Encourage Use + Enterprise Chatbot
+
+                               Encourage Use + Training
+
+                            Enterprise Chatbot + Training
+
+                                                All Three
+                                                                 0         .05          .1     .15        .2   .25
+
+                                                                                New Tasks    Same Tasks
+
+
+
+Notes: This figure illustrates how new workloads created by AI chatbots vary with employer initiatives. Panel (a) presents
+results for adopters (i.e., workers who have ever used AI chatbots for work), while Panel (b) focuses on non-adopters.
+Estimates are predicted values from Equation (1), varying EmployerInitiatives while holding workers’ characteristics X at
+their mean values. Whiskers represent 95% confidence bands of the predicted values. Some confidence intervals are too
+narrow to be distinguished from the point estimates at this scale. Table 1, Columns (7)-(10) report the full set of regression
+estimates. Sample: All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                                     41

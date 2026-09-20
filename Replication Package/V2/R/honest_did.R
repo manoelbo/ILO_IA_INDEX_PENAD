@@ -16,14 +16,22 @@ if (!file.exists(script_path_raw)) {
 script_path <- normalizePath(script_path_raw, mustWork = TRUE)
 package_root <- dirname(dirname(script_path))
 diagnostics_dir <- file.path(package_root, "results", "diagnostics")
-coefficients_path <- file.path(
-  diagnostics_dir,
-  "honest_did_event_coefficients.csv"
+arguments <- commandArgs(trailingOnly = TRUE)
+
+argument_value <- function(flag) {
+  position <- match(flag, arguments)
+  if (is.na(position) || position == length(arguments)) {
+    stop("Missing required argument: ", flag)
+  }
+  arguments[[position + 1L]]
+}
+
+input_dir <- normalizePath(
+  argument_value("--input-dir"),
+  mustWork = TRUE
 )
-vcov_path <- file.path(
-  diagnostics_dir,
-  "honest_did_event_vcov_long.csv"
-)
+coefficients_path <- file.path(input_dir, "honest_did_event_coefficients.csv")
+vcov_path <- file.path(input_dir, "honest_did_event_vcov_long.csv")
 results_path <- file.path(
   diagnostics_dir,
   "honest_did_sensitivity.csv"
@@ -50,6 +58,31 @@ mbar_grid <- seq(0, 2, by = 0.05)
 l_vec <- rep(1 / num_post_periods, num_post_periods)
 all_results <- list()
 all_summaries <- list()
+
+replication_worker_count <- function(task_count) {
+  requested <- suppressWarnings(
+    as.integer(Sys.getenv("REPLICATION_R_WORKERS", unset = "4"))
+  )
+  if (is.na(requested) || requested < 1L) {
+    stop("REPLICATION_R_WORKERS must be a positive integer.")
+  }
+  detected <- suppressWarnings(parallel::detectCores(logical = FALSE))
+  if (is.na(detected) || detected < 1L) detected <- 1L
+  if (.Platform$OS.type == "windows") return(1L)
+  max(1L, min(requested, detected, task_count))
+}
+
+deterministic_map <- function(indices, function_to_run) {
+  workers <- replication_worker_count(length(indices))
+  if (workers == 1L) return(lapply(indices, function_to_run))
+  parallel::mclapply(
+    indices,
+    function_to_run,
+    mc.cores = workers,
+    mc.preschedule = FALSE,
+    mc.set.seed = FALSE
+  )
+}
 
 plot_sensitivity <- function(result, outcome, original_lb, original_ub) {
   plot_path <- file.path(
@@ -144,9 +177,10 @@ for (outcome_name in expected_outcomes) {
     l_vec = l_vec,
     alpha = 0.05
   )
-  sensitivity_rows <- vector("list", length(mbar_grid))
-  for (mbar_index in seq_along(mbar_grid)) {
-    sensitivity_rows[[mbar_index]] <- as.data.table(
+  sensitivity_rows <- deterministic_map(
+    seq_along(mbar_grid),
+    function(mbar_index) {
+      result <- as.data.table(
       createSensitivityResults_relativeMagnitudes(
         betahat = betahat,
         sigma = sigma,
@@ -161,9 +195,11 @@ for (outcome_name in expected_outcomes) {
         parallel = FALSE,
         seed = 20260726
       )
-    )
-    gc(verbose = FALSE)
-  }
+      )
+      gc(verbose = FALSE)
+      result
+    }
+  )
   sensitivity <- rbindlist(sensitivity_rows, use.names = TRUE)
   setnames(sensitivity, "Mbar", "M")
   sensitivity[, outcome := outcome_name]

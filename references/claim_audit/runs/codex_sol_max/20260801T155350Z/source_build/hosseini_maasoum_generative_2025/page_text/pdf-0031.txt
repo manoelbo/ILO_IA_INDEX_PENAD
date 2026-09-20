@@ -1,0 +1,167 @@
+comparing adopters to non-adopters. Firm-by-time fixed effects γit absorb any shocks or
+trajectories specific to a given firm in a given period. The industry-by-seniority-by-time
+fixed effects ξ p(i)st control for broad sectoral trends that differentially affect juniors and
+seniors over time, ensuring that our results are not driven by sector-wide shifts in junior
+versus senior employment.
+   Figure 5 presents the estimated coefficients β j from Equation 11. Estimation begins in
+2018Q1 due to computational constraints. The coefficients remain essentially flat through
+2022Q4, aside from a brief dip in early 2021.26 Beginning in 2023Q1, the coefficients drop
+sharply, reaching roughly a 9 percent decrease after six quarters. This break—coinciding
+with the rapid diffusion of GenAI—provides suggestive evidence that adoption is associ-
+ated with increasingly seniority-biased patterns, reducing junior employment relative to
+senior employment within firms.27
+
+                                                                               ChatGPT launch
+                                   .05
+
+
+                                     0
+          Log Average Employment
+
+
+
+
+                                   -.05
+
+
+                                    -.1
+
+
+                                   -.15
+
+
+                                    -.2
+                                       q1
+
+
+
+
+                                                  q1
+
+
+
+
+                                                           q1
+
+
+
+
+                                                                    q1
+
+
+
+
+                                                                                  q1
+
+
+
+
+                                                                                                   q1
+
+
+
+
+                                                                                                           q1
+
+
+
+
+                                                                                                                   q1
+                                     18
+
+
+
+
+                                                19
+
+
+
+
+                                                         20
+
+
+
+
+                                                                  21
+
+
+
+
+                                                                                22
+
+
+
+
+                                                                                                 23
+
+
+
+
+                                                                                                         24
+
+
+
+
+                                                                                                                 25
+                                   20
+
+
+
+
+                                              20
+
+
+
+
+                                                        20
+
+
+
+
+                                                                 20
+
+
+
+
+                                                                              20
+
+
+
+
+                                                                                                20
+
+
+
+
+                                                                                                        20
+
+
+
+
+                                                                                                                20
+
+
+
+
+                                                                          Quarter
+
+
+
+                                          Figure 5: Triple-Difference Estimates: Juniors vs. Seniors
+  Notes: The figure presents the estimated triple-difference coefficients β j from Equation 11, capturing
+  how junior employment evolves relative to senior employment within the same firm and period,
+  comparing adopters to non-adopters. Standard errors are clustered at the firm level.
+
+   The β j coefficients can be interpreted as reflecting the differential impact of GenAI
+  26 The patterns shown in Panels 4a and 4b indicate that this temporary decline likely reflects a brief accel-
+
+eration in senior employment among adopting firms in 2021, rather than a decrease in junior employment.
+  27 In Supplemental Appendix A.18, we present triple-difference estimates excluding the industry-by-
+
+seniority-by-time fixed effects. The results are very similar to those in Figure 5.
+
+
+
+
+                                                                         31
+

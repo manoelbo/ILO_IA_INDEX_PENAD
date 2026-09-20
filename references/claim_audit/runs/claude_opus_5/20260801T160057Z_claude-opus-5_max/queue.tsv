@@ -1,0 +1,228 @@
+row_id	claim_id	citation_key	occurrence_id	section	claim_type	status	batch
+R0001	CLM-001	bick_rapid_2024	CIT-001	Introdução	DIRECT	DONE	CALIBRATION
+R0002	CLM-002	bick_rapid_2024	CIT-001	Introdução	DIRECT	DONE	CALIBRATION
+R0003	CLM-003	bick_rapid_2024	CIT-001	Introdução	DIRECT	DONE	CALIBRATION
+R0004	CLM-004	bick_rapid_2024	CIT-001	Introdução	AUTHOR_INFERENCE	DONE	CALIBRATION
+R0005	CLM-005	eloundou_gpts_2023	CIT-002	Introdução	DIRECT	DONE	MAIN
+R0006	CLM-006	eloundou_gpts_2023	CIT-002	Introdução	DIRECT	DONE	MAIN
+R0007	CLM-007	brynjolfsson_canaries_2025	CIT-003	Introdução	DIRECT	DONE	MAIN
+R0008	CLM-007	hosseini_maasoum_generative_2025	CIT-004	Introdução	DIRECT	DONE	MAIN
+R0009	CLM-007	klein_teeselink_generative_2025	CIT-005	Introdução	DIRECT	PENDING	MAIN
+R0010	CLM-008	brynjolfsson_canaries_2025	CIT-003	Introdução	DIRECT	PENDING	MAIN
+R0011	CLM-008	hosseini_maasoum_generative_2025	CIT-004	Introdução	DIRECT	PENDING	MAIN
+R0012	CLM-008	klein_teeselink_generative_2025	CIT-005	Introdução	DIRECT	PENDING	MAIN
+R0013	CLM-009	brynjolfsson_canaries_2025	CIT-003	Introdução	DIRECT	PENDING	MAIN
+R0014	CLM-009	hosseini_maasoum_generative_2025	CIT-004	Introdução	DIRECT	PENDING	MAIN
+R0015	CLM-009	klein_teeselink_generative_2025	CIT-005	Introdução	DIRECT	PENDING	MAIN
+R0016	CLM-010	brynjolfsson_canaries_2025	CIT-003	Introdução	DIRECT	PENDING	MAIN
+R0017	CLM-010	hosseini_maasoum_generative_2025	CIT-004	Introdução	DIRECT	PENDING	MAIN
+R0018	CLM-010	klein_teeselink_generative_2025	CIT-005	Introdução	DIRECT	PENDING	MAIN
+R0019	CLM-011	brynjolfsson_canaries_2025	CIT-003	Introdução	DIRECT	PENDING	MAIN
+R0020	CLM-011	hosseini_maasoum_generative_2025	CIT-004	Introdução	DIRECT	PENDING	MAIN
+R0021	CLM-011	klein_teeselink_generative_2025	CIT-005	Introdução	DIRECT	PENDING	MAIN
+R0022	CLM-012	brynjolfsson_canaries_2025	CIT-003	Introdução	AUTHOR_INFERENCE	PENDING	MAIN
+R0023	CLM-012	hosseini_maasoum_generative_2025	CIT-004	Introdução	AUTHOR_INFERENCE	PENDING	MAIN
+R0024	CLM-012	klein_teeselink_generative_2025	CIT-005	Introdução	AUTHOR_INFERENCE	PENDING	MAIN
+R0025	CLM-013	gmyrek_generative_2025	CIT-006	Introdução	DIRECT	PENDING	MAIN
+R0026	CLM-014	gmyrek_generative_2025	CIT-006	Introdução	DIRECT	PENDING	MAIN
+R0027	CLM-015	gmyrek_generative_2025	CIT-006	Introdução	DIRECT	PENDING	MAIN
+R0028	CLM-016	gmyrek_generative_2025	CIT-006	Introdução	DIRECT	PENDING	MAIN
+R0029	CLM-017	gmyrek_generative_2025	CIT-006	Introdução	AUTHOR_INFERENCE	PENDING	MAIN
+R0030	CLM-018	brynjolfsson_canaries_2025	CIT-007	Introdução	DIRECT	PENDING	MAIN
+R0031	CLM-019	brynjolfsson_canaries_2025	CIT-007	Introdução	DIRECT	PENDING	MAIN
+R0032	CLM-020	autor_skill_2003	CIT-008	2.2 Fundamentos conceituais: tarefas, automação e complementaridade	DIRECT	PENDING	MAIN
+R0033	CLM-021	autor_skill_2003	CIT-008	2.2 Fundamentos conceituais: tarefas, automação e complementaridade	DIRECT	PENDING	MAIN
+R0034	CLM-022	autor_skill_2003	CIT-008	2.2 Fundamentos conceituais: tarefas, automação e complementaridade	AUTHOR_INFERENCE	PENDING	MAIN
+R0035	CLM-023	agarwal_combining_2023	CIT-009	2.2 Fundamentos conceituais: tarefas, automação e complementaridade	DIRECT	PENDING	MAIN
+R0036	CLM-024	agarwal_combining_2023	CIT-009	2.2 Fundamentos conceituais: tarefas, automação e complementaridade	AUTHOR_INFERENCE	PENDING	MAIN
+R0037	CLM-025	agarwal_combining_2023	CIT-009	2.2 Fundamentos conceituais: tarefas, automação e complementaridade	AUTHOR_INFERENCE	PENDING	MAIN
+R0038	CLM-026	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0039	CLM-027	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0040	CLM-028	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0041	CLM-029	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0042	CLM-030	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0043	CLM-031	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0044	CLM-032	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0045	CLM-033	eloundou_gpts_2023	CIT-010	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0046	CLM-034	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0047	CLM-035	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0048	CLM-036	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0049	CLM-037	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0050	CLM-038	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0051	CLM-039	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0052	CLM-040	benitez_mirror_2024	CIT-011	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0053	CLM-041	appel_anthropic_2026	CIT-012	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0054	CLM-042	appel_anthropic_2026	CIT-012	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0055	CLM-043	appel_anthropic_2026	CIT-012	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0056	CLM-044	appel_anthropic_2026	CIT-012	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0057	CLM-045	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0058	CLM-046	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0059	CLM-047	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0060	CLM-048	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0061	CLM-049	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0062	CLM-050	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0063	CLM-051	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0064	CLM-052	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0065	CLM-053	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0066	CLM-054	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0067	CLM-055	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0068	CLM-056	gmyrek_generative_2025	CIT-013	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0069	CLM-057	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0070	CLM-058	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0071	CLM-059	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0072	CLM-060	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0073	CLM-061	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0074	CLM-062	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0075	CLM-063	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0076	CLM-064	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0077	CLM-065	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0078	CLM-066	eloundou_gpts_2023	CIT-014	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0079	CLM-067	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0080	CLM-068	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0081	CLM-069	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0082	CLM-070	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0083	CLM-071	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0084	CLM-072	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0085	CLM-073	benitez_mirror_2024	CIT-015	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0086	CLM-074	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0087	CLM-075	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0088	CLM-076	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0089	CLM-077	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0090	CLM-078	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0091	CLM-079	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0092	CLM-080	appel_anthropic_2026	CIT-016	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0093	CLM-081	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0094	CLM-082	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0095	CLM-083	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0096	CLM-084	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0097	CLM-085	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0098	CLM-086	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0099	CLM-087	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0100	CLM-088	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	DIRECT	PENDING	MAIN
+R0101	CLM-089	gmyrek_generative_2025	CIT-017	2.3 Índices de exposição à IA na literatura	AUTHOR_INFERENCE	PENDING	MAIN
+R0102	CLM-090	gmyrek_generative_2025	CIT-018	2.4 Escolha do índice da OIT e adaptação às bases brasileiras	DIRECT	PENDING	MAIN
+R0103	CLM-091	gmyrek_generative_2025	CIT-018	2.4 Escolha do índice da OIT e adaptação às bases brasileiras	AUTHOR_INFERENCE	PENDING	MAIN
+R0104	CLM-092	gmyrek_generative_2025	CIT-018	2.4 Escolha do índice da OIT e adaptação às bases brasileiras	AUTHOR_INFERENCE	PENDING	MAIN
+R0105	CLM-093	gmyrek_generative_2025	CIT-019	3.1 Base analítica e amostra	DIRECT	PENDING	MAIN
+R0106	CLM-094	gmyrek_generative_2025	CIT-020	3.1 Base analítica e amostra	DIRECT	PENDING	MAIN
+R0107	CLM-095	brasil_decreto_12342_2024	CIT-021	3.1 Base analítica e amostra	DIRECT	PENDING	MAIN
+R0108	CLM-096	osorio_o_2003	CIT-022	3.5.2 Análise por raça	DIRECT	PENDING	MAIN
+R0109	CLM-097	brynjolfsson_canaries_2025	CIT-023	3.5.3 Análise por faixa etária	DIRECT	PENDING	MAIN
+R0110	CLM-098	brynjolfsson_canaries_2025	CIT-024	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0111	CLM-099	brynjolfsson_canaries_2025	CIT-024	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0112	CLM-100	brynjolfsson_canaries_2025	CIT-024	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0113	CLM-101	brynjolfsson_canaries_2025	CIT-024	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0114	CLM-102	brynjolfsson_canaries_2025	CIT-024	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0115	CLM-103	brynjolfsson_canaries_2025	CIT-024	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0116	CLM-104	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0117	CLM-105	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0118	CLM-106	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0119	CLM-107	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0120	CLM-108	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0121	CLM-109	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0122	CLM-110	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0123	CLM-111	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0124	CLM-112	brynjolfsson_canaries_2025	CIT-025	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0125	CLM-113	brynjolfsson_canaries_2025	CIT-026	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0126	CLM-114	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0127	CLM-114	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0128	CLM-114	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0129	CLM-114	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0130	CLM-115	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0131	CLM-115	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0132	CLM-115	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0133	CLM-115	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0134	CLM-116	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0135	CLM-116	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0136	CLM-116	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0137	CLM-116	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0138	CLM-117	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0139	CLM-117	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0140	CLM-117	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0141	CLM-117	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0142	CLM-118	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0143	CLM-118	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0144	CLM-118	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0145	CLM-118	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0146	CLM-119	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0147	CLM-119	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0148	CLM-119	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0149	CLM-119	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0150	CLM-120	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0151	CLM-120	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0152	CLM-120	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0153	CLM-120	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0154	CLM-121	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0155	CLM-121	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0156	CLM-121	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0157	CLM-121	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0158	CLM-122	goodman_bacon_difference_2021	CIT-027	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0159	CLM-122	callaway_difference_2021	CIT-028	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0160	CLM-122	sun_estimating_2021	CIT-029	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0161	CLM-122	de_chaisemartin_two-way_2020	CIT-030	4.1 Abordagem de diferenças em diferenças	AUTHOR_INFERENCE	PENDING	MAIN
+R0162	CLM-123	humlum_still_2025	CIT-031	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0163	CLM-124	humlum_still_2025	CIT-031	4.1 Abordagem de diferenças em diferenças	DIRECT	PENDING	MAIN
+R0164	CLM-125	klein_teeselink_generative_2025	CIT-032	4.2 Construção do painel ocupação-mês com CAGED e crosswalk CBO → OIT	DIRECT	PENDING	MAIN
+R0165	CLM-126	klein_teeselink_generative_2025	CIT-032	4.2 Construção do painel ocupação-mês com CAGED e crosswalk CBO → OIT	DIRECT	PENDING	MAIN
+R0166	CLM-127	klein_teeselink_generative_2025	CIT-032	4.2 Construção do painel ocupação-mês com CAGED e crosswalk CBO → OIT	DIRECT	PENDING	MAIN
+R0167	CLM-128	santos_silva_log_2006	CIT-033	4.3 Especificação econométrica e outcomes	DIRECT	PENDING	MAIN
+R0168	CLM-129	chen_logs_2024	CIT-034	4.3 Especificação econométrica e outcomes	DIRECT	PENDING	MAIN
+R0169	CLM-130	brynjolfsson_canaries_2025	CIT-035	4.3 Especificação econométrica e outcomes	DIRECT	PENDING	MAIN
+R0170	CLM-131	brynjolfsson_canaries_2025	CIT-035	4.3 Especificação econométrica e outcomes	DIRECT	PENDING	MAIN
+R0171	CLM-132	brynjolfsson_canaries_2025	CIT-036	4.4 Heterogeneidade e mecanismos	DIRECT	PENDING	MAIN
+R0172	CLM-133	brynjolfsson_canaries_2025	CIT-036	4.4 Heterogeneidade e mecanismos	AUTHOR_INFERENCE	PENDING	MAIN
+R0173	CLM-134	brynjolfsson_canaries_2025	CIT-036	4.4 Heterogeneidade e mecanismos	AUTHOR_INFERENCE	PENDING	MAIN
+R0174	CLM-135	brynjolfsson_canaries_2025	CIT-036	4.4 Heterogeneidade e mecanismos	AUTHOR_INFERENCE	PENDING	MAIN
+R0175	CLM-136	brynjolfsson_canaries_2025	CIT-036	4.4 Heterogeneidade e mecanismos	AUTHOR_INFERENCE	PENDING	MAIN
+R0176	CLM-137	benjamini_controlling_1995	CIT-037	4.4 Heterogeneidade e mecanismos	DIRECT	PENDING	MAIN
+R0177	CLM-138	benjamini_controlling_1995	CIT-037	4.4 Heterogeneidade e mecanismos	DIRECT	PENDING	MAIN
+R0178	CLM-139	teutloff_winners_2025	CIT-038	4.5 Validações e falsificações	DIRECT	PENDING	MAIN
+R0179	CLM-140	teutloff_winners_2025	CIT-038	4.5 Validações e falsificações	DIRECT	PENDING	MAIN
+R0180	CLM-141	teutloff_winners_2025	CIT-038	4.5 Validações e falsificações	DIRECT	PENDING	MAIN
+R0181	CLM-142	rambachan_more_2023	CIT-039	4.5 Validações e falsificações	DIRECT	PENDING	MAIN
+R0182	CLM-143	rambachan_more_2023	CIT-039	4.5 Validações e falsificações	DIRECT	PENDING	MAIN
+R0183	CLM-144	rambachan_more_2023	CIT-039	4.5 Validações e falsificações	DIRECT	PENDING	MAIN
+R0184	CLM-145	brynjolfsson_canaries_2025	CIT-040	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0185	CLM-146	brynjolfsson_canaries_2025	CIT-040	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0186	CLM-147	brynjolfsson_canaries_2025	CIT-040	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0187	CLM-148	brynjolfsson_canaries_2025	CIT-040	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0188	CLM-149	humlum_still_2025	CIT-041	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0189	CLM-150	humlum_still_2025	CIT-041	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0190	CLM-151	humlum_still_2025	CIT-041	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0191	CLM-152	chandar_tracking_2025	CIT-042	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0192	CLM-153	aldasoro_ai_2026	CIT-043	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0193	CLM-154	aldasoro_ai_2026	CIT-043	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0194	CLM-155	aldasoro_ai_2026	CIT-043	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0195	CLM-156	hosseini_maasoum_generative_2025	CIT-044	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0196	CLM-157	hosseini_maasoum_generative_2025	CIT-044	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0197	CLM-158	klein_teeselink_generative_2025	CIT-045	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0198	CLM-159	klein_teeselink_generative_2025	CIT-045	5.1 Resultados médios nacionais	DIRECT	PENDING	MAIN
+R0199	CLM-160	klein_teeselink_generative_2025	CIT-045	5.1 Resultados médios nacionais	AUTHOR_INFERENCE	PENDING	MAIN
+R0200	CLM-161	klein_teeselink_generative_2025	CIT-045	5.1 Resultados médios nacionais	AUTHOR_INFERENCE	PENDING	MAIN
+R0201	CLM-162	klein_teeselink_generative_2025	CIT-045	5.1 Resultados médios nacionais	AUTHOR_INFERENCE	PENDING	MAIN
+R0202	CLM-163	brynjolfsson_canaries_2025	CIT-046	5.2.1 Efeitos por Sexo	DIRECT	PENDING	MAIN
+R0203	CLM-164	gmyrek_generative_2025	CIT-047	5.2.1 Efeitos por Sexo	DIRECT	PENDING	MAIN
+R0204	CLM-165	gmyrek_generative_2025	CIT-047	5.2.1 Efeitos por Sexo	AUTHOR_INFERENCE	PENDING	MAIN
+R0205	CLM-166	brynjolfsson_canaries_2025	CIT-048	5.2.2 Efeitos por raça/cor	DIRECT	PENDING	MAIN
+R0206	CLM-166	hosseini_maasoum_generative_2025	CIT-049	5.2.2 Efeitos por raça/cor	DIRECT	PENDING	MAIN
+R0207	CLM-166	klein_teeselink_generative_2025	CIT-050	5.2.2 Efeitos por raça/cor	DIRECT	PENDING	MAIN
+R0208	CLM-167	brynjolfsson_canaries_2025	CIT-051	5.2.3 Efeitos por faixa etária	DIRECT	PENDING	MAIN
+R0209	CLM-168	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	DIRECT	PENDING	MAIN
+R0210	CLM-169	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	DIRECT	PENDING	MAIN
+R0211	CLM-170	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	AUTHOR_INFERENCE	PENDING	MAIN
+R0212	CLM-171	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	AUTHOR_INFERENCE	PENDING	MAIN
+R0213	CLM-172	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	AUTHOR_INFERENCE	PENDING	MAIN
+R0214	CLM-173	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	AUTHOR_INFERENCE	PENDING	MAIN
+R0215	CLM-174	brynjolfsson_canaries_2025	CIT-052	5.2.3 Efeitos por faixa etária	AUTHOR_INFERENCE	PENDING	MAIN
+R0216	CLM-175	klein_teeselink_generative_2025	CIT-053	5.2.4 Efeitos por nível de escolaridade	DIRECT	PENDING	MAIN
+R0217	CLM-176	klein_teeselink_generative_2025	CIT-053	5.2.4 Efeitos por nível de escolaridade	AUTHOR_INFERENCE	PENDING	MAIN
+R0218	CLM-177	brynjolfsson_canaries_2025	CIT-054	5.2.4 Efeitos por nível de escolaridade	DIRECT	PENDING	MAIN
+R0219	CLM-178	hosseini_maasoum_generative_2025	CIT-055	5.2.4 Efeitos por nível de escolaridade	DIRECT	PENDING	MAIN
+R0220	CLM-179	klein_teeselink_generative_2025	CIT-056	5.2.5 Efeitos por faixa salarial ocupacional	DIRECT	PENDING	MAIN
+R0221	CLM-180	klein_teeselink_generative_2025	CIT-056	5.2.5 Efeitos por faixa salarial ocupacional	DIRECT	PENDING	MAIN
+R0222	CLM-181	klein_teeselink_generative_2025	CIT-056	5.2.5 Efeitos por faixa salarial ocupacional	AUTHOR_INFERENCE	PENDING	MAIN
+R0223	CLM-182	brynjolfsson_canaries_2025	CIT-057	5.2.5 Efeitos por faixa salarial ocupacional	DIRECT	PENDING	MAIN
+R0224	CLM-183	brynjolfsson_canaries_2025	CIT-058	5.3 Casos ocupacionais e trajetórias por idade	DIRECT	PENDING	MAIN
+R0225	CLM-184	brynjolfsson_canaries_2025	CIT-058	5.3 Casos ocupacionais e trajetórias por idade	AUTHOR_INFERENCE	PENDING	MAIN
+R0226	CLM-185	brynjolfsson_canaries_2025	CIT-058	5.3 Casos ocupacionais e trajetórias por idade	AUTHOR_INFERENCE	PENDING	MAIN
+R0227	CLM-186	brynjolfsson_canaries_2025	CIT-058	5.3 Casos ocupacionais e trajetórias por idade	AUTHOR_INFERENCE	PENDING	MAIN

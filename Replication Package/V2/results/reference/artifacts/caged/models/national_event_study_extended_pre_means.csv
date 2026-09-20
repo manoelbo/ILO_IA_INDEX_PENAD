@@ -1,0 +1,5 @@
+model_id,outcome,estimator,event_window,reference_event_time,reference_period,is_causal_effect,pre_window,pre_coefficient_count,pre_coefficient_mean
+national_extended__admissoes,admissoes,ppml,-23_to_41,-1,2022-11,False,-23_to_-2,22,-0.08103560861138503
+national_extended__desligamentos,desligamentos,ppml,-23_to_41,-1,2022-11,False,-23_to_-2,22,0.0657974065988171
+national_extended__ln_salario_real_adm,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,False,-23_to_-2,22,0.037109344492444594
+national_extended__asinh_saldo,asinh_saldo,ols,-23_to_41,-1,2022-11,False,-23_to_-2,22,-2.8348270494226773

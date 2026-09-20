@@ -1,0 +1,8 @@
+# Panel scope
+
+| Indicador | Valor |
+| --- | --- |
+| Observações CBO-mês | 23.319 |
+| CBOs únicos | 436 |
+| Meses | 54 |
+| Janela | 2021-01 a 2025-06 |

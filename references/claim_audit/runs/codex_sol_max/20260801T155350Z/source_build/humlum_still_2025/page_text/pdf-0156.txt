@@ -1,0 +1,43 @@
+                              Survey Questionnaire – Danish Version
+
+                                      Block 4: Effects of AI chatbots
+12. Benefits from AI chatbots
+Har du oplevet nogle af disse fordele ved brugen af AI chatbots i dit arbejde?
+Markér gerne flere
+    • Sparet tid i arbejdet
+    • Forbedret kvalitet af arbejdet
+    • Øget kreativitet
+    • Højere arbejdsglæde
+    • Har ikke oplevet fordele
+    • Ved ikke
+
+13. Time savings from AI chatbots [if 12=’Sparet tid i arbejdet’]
+Tænk tilbage på de dage, hvor du har brugt AI chatbots til dit arbejde. Hvor meget tid sparede AI
+chatbots dig i gennemsnit?
+    • Mindre end 15 minutter per dag
+    • Mellem 15 minutter og en time per dag
+    • Mere end en time per dag
+
+14.a Earnings impact of AI chatbots
+Har AI chatbots påvirket hvor meget du tjener i dag?
+    • Jeg tjener mere i dag som følge af AI chatbots
+    • AI chatbots har ikke påvirket min indtjening
+    • Jeg tjener mindre i dag som følge af AI chatbots
+
+14.b Earnings impact of AI chatbots [if 14.a=’ Jeg tjener mere i dag som følge af AI chatbots’]
+Hvor meget har AI chatbots øget din indtjening?
+    • Under 5 procent
+    • Mellem 5 og 15 procent
+    • Over 15 procent
+
+14.c Earnings impact of AI chatbots [if 14.a=’ Jeg tjener mindre i dag som følge af AI chatbots’]
+Hvor meget har AI chatbots reduceret din indtjening?
+    • Under 5 procent
+    • Mellem 5 og 15 procent
+    • Over 15 procent
+
+
+
+
+                                                   121
+

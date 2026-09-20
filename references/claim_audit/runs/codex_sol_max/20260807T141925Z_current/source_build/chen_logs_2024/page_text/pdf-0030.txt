@@ -1,0 +1,49 @@
+       However, if we change the units of the outcome to annual charcoal spending in Kenyan shillings,
+the original currency in which charcoal spending was measured, the same specification yields an es-
+timate of ´0.44. Relative to our previous applications, the change in the treatment effect estimates
+is fairly small for these choices of units, due to a small estimated extensive margin of 0.01 (see
+Table 1).42 Nevertheless, the fact that the treatment effects using an arcsinh-transformed outcome
+depend on the units should give us pause in interpreting them as percentages. Indeed, a percentage
+effect is not well-defined for someone who has non-zero spending under treatment and zero spend-
+ing under the control, so an average individual-level percentage effect does not make sense if the
+treatment can affect whether one has any charcoal spending.
+       Berkouwer and Dean (2022) first discuss the LATE in levels, and then immediately afterwards
+state that the treatment effect for the arcsinh-transformed outcome “corresponds to a 39 percent
+decrease in charcoal consumption” (p. 3306). The main goal of taking the arcsinh transformation
+here thus appears to be to obtain a treatment effect with a percentage interpretation. We therefore
+next implement two approaches with an (approximate) percentage interpretation in this context.
+
+Proportional LATE.             One natural approach in this context is to estimate the proportional change
+in the average outcome for instrument-compliers, i.e. to estimate θATE% among the population of
+instrument-compliers. Put otherwise, we can express the LATE in levels as a percentage of the
+control mean for instrument-compliers. An estimate of the LATE in levels is naturally obtained
+using TSLS specification (11) with Yi as the outcome, which yields an estimate of ´2.46. As
+described in Abadie (2002), we can likewise obtain an estimate of the control instrument-complier
+mean by using TSLS with ´pDi ´ 1q ¨ Yi as the outcome, which yields an estimate of 5.86. Putting
+these together, we obtain an estimate of θATE% for instrument-compliers of ´2.46{5.86 “ ´0.42
+(SE = 0.046), which suggests that average charcoal spending is 42% lower for instrument-compliers
+under treatment than under control.43 If pollution is proportional to charcoal spending, then this
+parameter is economically relevant as it corresponds to the percentage reduction in pollution for
+instrument-compliers from gaining access to the efficient stove.
+
+Lee bounds. Berkouwer and Dean (2022) benchmark their treatment effect estimates relative to
+engineering estimates of the efficiency gains of using an efficient stove relative to a non-efficient
+one. For this benchmarking exercise, it seems sensible to focus on the intensive-margin effect of the
+treatment—i.e., the treatment effect for instrument-compliers who would use a non-efficient stove if
+offered a high price and an efficient one if offered a low price. To do so, we can form Lee (2009)-type
+  42
+     We note, however, that the t-statistic for the effect on arcsinhpYi q is rather sensitive here, changing from approx-
+imately 7 to 3 depending on the units.
+  43
+     The standard error was calculated via a non-parametric bootstrap with 1,000 draws, clustered at the respondent
+level. We note that with a binary instrument, an estimate of θIntensive for instrument-compliers can be obtained
+using Poisson IV regression (e.g. the ivpoisson command in Stata); see Angrist (2001). However, we are not aware
+of a LATE interpretation of Poisson IV regression with a multi-valued instrument, and thus do not pursue it here.
+Whether Poisson IV regression has such an interpretation with a continuous IV strikes us an interesting topic for
+future work.
+
+
+
+
+                                                           30
+

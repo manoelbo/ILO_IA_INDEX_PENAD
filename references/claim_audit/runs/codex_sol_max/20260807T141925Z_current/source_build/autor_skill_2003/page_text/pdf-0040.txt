@@ -1,0 +1,65 @@
+1318                   QUARTERLY JOURNAL OF ECONOMICS
+
+                                     TABLE VII
+                SHIFTS IN COLLEGE-EQUIVALENT LABOR DEMAND IMPLIED
+                         BY CHANGES IN JOB TASKS, 1970 –1998
+
+
+                1. 1970– 2. 1980– 3. 1990– 4. 1970– 5. 1980– 6. 1980–        7. 1980–
+                  1980      1990      1998      1998      1998      1998       1998
+                extensive extensive extensive extensive extensive intensive extensive 1
+                 margin    margin    margin    margin    margin    margin    intensive
+
+                A. 10 3 observed annual changes in DOT task measures (percentile changes
+                                    relative to 1960 task distribution)
+
+Nonroutine          3.02         2.97        3.12         3.04        3.05       20.39           2.67
+  analytic
+Nonroutine          4.68         5.31        4.48         4.84        4.85         0.58          5.43
+  interactive
+Routine           20.14        23.48       24.88        23.03       24.26        22.76         27.02
+  cognitive
+Routine             1.63       21.47       23.88        21.44       22.81          0.74        22.07
+  manual
+
+
+                           B. 10 3 predicted annual changes in DOT task measures
+                            (percentile changes relative to 1960 task distribution)
+
+                      NIPA computer input measure                     CPS computer use measure
+
+
+Nonroutine          0.84         1.35        2.30         1.55        2.56         0.54          3.10
+  analytic
+Nonroutine          1.47         2.36        4.01         2.70        3.16         1.04          4.20
+  interactive
+Routine           21.05        21.68       22.86        21.92       23.14        23.32         26.46
+  cognitive
+Routine           21.15        21.86       23.15        22.12       22.84          0.32        22.52
+  manual
+
+
+                C. 10 3 predicted annual changes in college-equivalent share of employment
+                         in percentage points, due to observed task shifts (panel A)
+
+
+Nonroutine          1.53         1.40        1.63         1.51        1.53       20.36           0.83
+  tasks
+Routine           20.20          0.66        1.17         0.50        0.97         0.27          0.87
+  tasks
+All tasks           1.33         2.06        2.80         2.01        2.49       20.09           2.40
+
+     Panel A: Observed extensive margin task shifts are dened as the change in economywide input of each
+task (in percentiles of the 1960 task distribution) estimated using DOT 1977 occupational task measures
+applied to Census and CPS samples for 1970 to 1998 and summarized in Table II. Intensive margin shifts are
+measured as change in mean of DOT occupational task input (measured in centiles of the 1977 task
+distribution) between 1977 and 1991 DOT revisions, using the 1980 and 1998 occupational distributions of
+employment from the CPS MORG samples. See Table I and Appendix 1 for denitions and examples of task
+variables.
+     Panel B: Predicted task changes are calculated as the weighted mean of the NIPA computer investment
+measure or CPS computer use measure (as noted) multiplied by the coefcient from a regression of changes
+in industry or occupation task input on the relevant computer measure. NIPA coefcient estimates corre-
+spond to specication (1) of Table IV. CPS extensive margin computer task estimates correspond to Panel A
+of Table V. CPS intensive margin computer task estimates correspond to specication (1) of Table VI. (A
+negligible interaction term is ignored.)
+

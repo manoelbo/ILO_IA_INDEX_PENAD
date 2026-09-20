@@ -1,0 +1,61 @@
+0.56 years for juniors and 0.28 years for seniors at 2022Q4—remains roughly constant
+throughout the sample, with no visible break around the ChatGPT launch. The upward
+trend in each series reflects the gradual aging of the observed workforce: average LME
+rises by approximately 2.8 years in all four series over the five-year window.
+
+                                                         Juniors                                                     Seniors
+                                   12
+                                                                                        15
+   Labor Mkt. Experience (Years)
+
+
+
+
+                                   11
+                                                                                        14
+
+
+
+
+                                   10
+                                                                                        13
+
+
+
+
+                                    9
+
+                                                                                        12
+
+                                        2020   2021   2022     2023   2024       2025        2020         2021    2022     2023   2024   2025
+
+                                                                             Adopter                Non-Adopter
+
+
+
+Figure A.10: Average Labor Market Experience by Seniority and GenAI Adoption Status
+       Notes: This figure plots average Labor Market Experience (LME), defined as years since the
+       worker’s first observed position, for juniors (left panel) and seniors (right panel) at GenAI-
+       adopting (solid) and non-adopting (dashed) firms over time. Averages are worker-weighted within
+       each firm-quarter cell and then aggregated across firms by adoption status. The vertical dashed line
+       marks the launch of ChatGPT in November 2022. Sample: quarters 2020Q1–2025Q1.
+
+
+   To isolate differential dynamics from the common time trend, we estimate, separately
+for juniors and seniors, the specification
+
+                                                LME f ,t = α f + αt +        ∑      β k · 1{t = k } · Adopter f + ε f ,t ,
+                                                                        k̸=2022Q4
+
+
+   where f indexes firms and t indexes quarters. The regression is weighted by the num-
+ber of workers in each firm-quarter cell, and standard errors are clustered at the firm
+level. Each coefficient β k captures the adopter–non-adopter difference in average LME at
+quarter k, relative to the baseline quarter 2022Q4.
+   Figure A.11 reports the results. For juniors, the coefficients are tightly centered around
+zero throughout the sample, with no discernible break at the ChatGPT launch. For se-
+
+
+
+                                                                                  A.11
+

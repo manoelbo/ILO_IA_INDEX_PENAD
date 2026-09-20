@@ -1,0 +1,63 @@
+in non-encouraged firms reflects two terms:
+
+                                       1                          η−ϵ
+                    d log W0 =       − d log Y0           +           d log Y             ,   (48)
+                                     | ϵ {z   }                   |
+                                                                   η
+                                                                         {z        }
+                                 Residual demand effect       Sector competition effect
+
+
+where the residual demand effect reflects that expanding firms move down their residual
+
+demand curves, and the sector competition effect reflects that competing firms expand by
+
+stealing sectoral demand.
+
+   The change in output of non-encouraged firms, d log Y0 , reflects both productivity and
+
+employment responses:
+
+
+                        d log Y0 =      E[Ai0 Bi0 ]         + E [d log N0 ] ,                 (49)
+                                        |    {z    }             |     {z      }
+                                     Adopter productivity      Employment effect
+
+
+where the adopter productivity and productivity effects are identified by:
+
+
+                               E[Ai0 Bi0 ] = A0 × ∆YNE,A−NE,NA                                (50)
+
+                             E [d log N0 ] = −E × ∆N
+                                                   E−NE ,                                     (51)
+
+
+where A0 is the adoption rate in non-encouraged firms and E is the share of firms
+
+that encourage AI chatbots. Equation (51) utilizes the labor market clearing condition
+
+E × d log N1 + (1 − E)d log N0 = 0.
+
+   Similarly, total output growth, d log Y , reflects aggregate adopter productivity:
+
+
+             d log Y = (1 − E) × A0 × ∆YNE,A−NE,NA + E × A1 × ∆YE,A−E,NA ,                    (52)
+
+
+noting that total employment effects cancel in aggregate (due to labor market clearing).
+
+   Putting these together, the skill-price effect in non-encouraged firms is:
+
+                          1h                                i
+          E[d log W0 ] = −   A0 · ∆YNE,A−NE,NA − E × ∆NE−NE                                   (53)
+                          η
+                          η−ϵh                                              i
+                        +        (1 − E)A0 · ∆YNE,A−NE,NA + EA1 · ∆YE,A−E,NA ,                (54)
+                            η
+
+where all terms are identified by our existing difference-in-differences estimates, up to
+
+
+                                                  23
+

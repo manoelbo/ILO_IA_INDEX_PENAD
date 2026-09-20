@@ -1,0 +1,57 @@
+patterns: workers with i < i∗ sort into encouraged firms and adopt chatbots, while those
+
+with i > i∗ sort into non-encouraged firms and do not adopt.
+
+    Figure A.3 illustrates the case where employer encouragement increases adopter earn-
+
+ings. However, as shown above, encouragement can also reduce adopter earnings—reversing
+
+the solid lines—depending on model parameters. In fact, if employer-encouraged chatbot
+
+use provides enough amenity value (i.e., if αc1 is low), some encouraged adopters may
+
+even experience earnings losses relative to non-encouraged non-adopters, with the solid
+
+blue line crossing the dashed red one.
+
+  Figure A.3: The Impact of AI Chatbots on Worker Sorting, Adoption, and Earnings
+
+                         d log Y
+
+
+
+
+                                                                                                        i
+                                                ∗            ∗         ∗
+                                                i (0)       i         i (1)
+
+
+             Encouraged             Encouraged            Encouraged           Non-Encouraged               Optimal
+              Adopters             Non-Adopters            Adopters             Non-Adopters                Sorting
+
+Notes: This figure illustrates how AI chatbots affect workers’ sorting, adoption, and earnings across the distribution of AI
+advantage. The x-axis ranks workers by their chatbot advantage i; the y-axis shows the resulting impact on earnings. The
+blue and red lines represent earnings effects for each combination of worker and firm types. The gray line highlights the
+optimal sorting and adoption patterns.
+
+
+
+
+Workplace employment. The effect of employer encouragement on workplace employ-
+
+ment (measured in headcounts, N ) depends on whether the increased demand for human
+
+capital is offset by the productivity gains from adoption.
+
+    The increase in human capital demand is given by:
+
+                                                                       ϵ
+                                            log H1 − log H0 =             κ.                                          (33)
+                                                                      ϵ−1
+
+                                                            18
+
+
+
+                                            1
+

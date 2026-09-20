@@ -1,0 +1,62 @@
+1        Introduction
+
+The proliferation of generative artificial intelligence (AI) has sparked a global debate about its
+
+potential impact on the labor market. This discourse spans utopian predictions of enhanced pro-
+
+ductivity, dystopian fears of widespread job displacement, and skeptical views that AI will have
+
+minimal effects on employment or productivity. Historically, technologies have affected different
+
+tasks, occupations, and industries in different ways, replacing work in some, augmenting others,
+
+and transforming still others. These heterogeneous effects suggest that there may be “canaries in
+
+the coal mine” which are harbingers of more widespread effects of AI.
+
+        Recent discussion coincides with rapid improvements in AI capabilities and adoption. From
+
+2023 to 2024, AI systems improved from solving 4.4% of coding problems to 71.7% on SWE-Bench,
+
+a widely used benchmark for software engineering (Maslej et al., 2025). AI has also improved in
+
+areas like language understanding, subject knowledge, and reasoning. A recent paper found that
+
+current systems could match or outperform up to 47 percent of industry professionals on a pre-
+
+defined benchmark of economically valuable tasks (Patwardhan et al., 2025). At the same time,
+
+AI systems are increasingly widely adopted. Hartley et al. (2025) find that LLM adoption at work
+
+among U.S. survey respondents above age 18 reached 46% by June/July 2025.1
+
+        Given the better capabilities and widespread adoption, a central concern, amplified in recent
+
+headlines, is whether AI is beginning to supplant human labor, particularly for younger, entry-level
+
+workers in highly exposed professions like software engineering and customer service.2 For instance,
+
+in May of 2025, Dario Amodei, co-founder and CEO of Anthropic predicted that AI could wipe
+
+out roughly 50 percent of all entry-level white-collar jobs within five years (Morris, 2025).
+
+        Despite the intensity of this debate, empirical evidence has struggled to keep pace with techno-
+
+logical advancement, leaving many fundamental questions unanswered. This paper confronts this
+
+empirical gap by leveraging a large-scale, high-frequency administrative dataset from ADP, the
+
+largest payroll software provider in the United States. Our sample consists of monthly, individual-
+
+level payroll records through September 2025, encompassing millions of workers across tens of
+
+thousands of firms. This rich panel structure allows us to track employment dynamics with a high
+    1
+     Similarly, Bick et al. (2024) found that in late 2024, nearly 40% of the U.S. population age 18-64 reported using
+generative AI, with 23% using it for work weekly and 9% daily.
+   2
+     Improved productivity of workers in an occupation could lead to either reduced or increased employment, de-
+pending on, among other things, how elastic demand is for the output of those workers.
+
+
+                                                          2

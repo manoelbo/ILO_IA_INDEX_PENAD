@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "sector_models.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "sector_models.py"
 
 
 def load_sector_module():
@@ -52,3 +52,49 @@ def test_level_three_is_always_labeled_support_diagnostic() -> None:
     }["level_3"]
 
     assert level_three["role"] == "support_diagnostic"
+
+
+def test_division_panel_build_uses_deterministic_duckdb(
+    monkeypatch,
+    tmp_path: Path,
+) -> None:
+    module = load_sector_module()
+    destination = tmp_path / "division_panel.parquet"
+    statements: list[str] = []
+
+    class Result:
+        def fetchone(self):
+            return (1, 0, 1, 1, 1, 1)
+
+    class Connection:
+        def execute(self, query: str):
+            normalized = " ".join(query.split())
+            statements.append(normalized)
+            if normalized.startswith("COPY"):
+                temporary = destination.with_suffix(
+                    f"{destination.suffix}.tmp"
+                )
+                temporary.write_bytes(b"deterministic-parquet")
+            return Result()
+
+        def close(self) -> None:
+            return None
+
+    monkeypatch.setattr(module.duckdb, "connect", lambda: Connection())
+
+    metrics = module.build_division_panel(
+        tmp_path / "subclass_panel.parquet",
+        destination,
+    )
+
+    assert statements[0] == "SET threads = 1"
+    copy_statement = next(
+        statement
+        for statement in statements
+        if statement.startswith("COPY")
+    )
+    assert (
+        "ORDER BY cbo_4d, secao, divisao, periodo_num"
+        in copy_statement
+    )
+    assert metrics["division_panel_cells"] == 1

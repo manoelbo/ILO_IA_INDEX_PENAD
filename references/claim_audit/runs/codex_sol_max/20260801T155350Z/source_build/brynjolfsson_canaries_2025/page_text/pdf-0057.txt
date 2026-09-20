@@ -1,0 +1,30 @@
+ Automative Behaviors                                Augmentative Behaviors
+ AI directly executes tasks with minimal human       AI enhances human capabilities through collab-
+ involvement                                         oration
+ Directive: Complete task delegation with min-       Task Iteration: Collaborative refinement pro-
+ imal interaction                                    cess
+ Illustrative Example: “Format this technical        Illustrative Example: “Let’s draft a marketing
+ documentation in Markdown”                          strategy for our new product. ... Good start,
+                                                     but can we add some concrete metrics?”
+ Feedback Loop: Task completion guided by            Learning: Knowledge acquisition and under-
+ environmental feedback                              standing
+ Illustrative Example: “Here’s my Python script      Illustrative Example: “Can you explain how
+ for data analysis – it’s giving an IndexError.      neural networks work?”
+ Can you help fix it? ... Now I’m getting a dif-
+ ferent error...”
+                                                     Validation: Work verification and improve-
+                                                     ment
+                                                     Illustrative Example: “I’ve written this SQL
+                                                     query to find duplicate customer records. Can
+                                                     you check if my logic is correct and suggest any
+                                                     improvements?”
+
+Table A2: Table 1 from Handa et al. (2025). Handa et al. (2025) classify conversations from Claude,
+the LLM, into five distinct patterns across two broad categories based on how people integrate AI
+into their workflow.
+
+
+
+
+                                                57
+

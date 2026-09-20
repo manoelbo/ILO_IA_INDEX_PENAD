@@ -1,0 +1,51 @@
+                                                           Logs with zeros? Some problems and solutions∗
+                                                                                     Jiafeng Chen
+arXiv:2212.06080v7 [econ.EM] 15 Nov 2023
+
+
+
+
+                                                                               Harvard Business School
+                                                                      Department of Economics, Harvard University
+                                                                                    Jonathan Roth
+                                                                       Department of Economics, Brown University
+
+                                                                                       November 15, 2023
+
+
+
+                                                                                             Abstract
+
+                                                     When studying an outcome Y that is weakly-positive but can equal zero (e.g. earnings),
+                                                 researchers frequently estimate an average treatment effect (ATE) for a “log-like” transformation
+                                                 that behaves like logpY q for large Y but is defined at zero (e.g. logp1`Y q, arcsinhpY q). We argue
+                                                 that ATEs for log-like transformations should not be interpreted as approximating percentage
+                                                 effects, since unlike a percentage, they depend on the units of the outcome. In fact, we show
+                                                 that if the treatment affects the extensive margin, one can obtain a treatment effect of any
+                                                 magnitude simply by re-scaling the units of Y before taking the log-like transformation. This
+                                                 arbitrary unit-dependence arises because an individual-level percentage effect is not well-defined
+                                                 for individuals whose outcome changes from zero to non-zero when receiving treatment, and the
+                                                 units of the outcome implicitly determine how much weight the ATE for a log-like transformation
+                                                 places on the extensive margin. We further establish a trilemma: when the outcome can equal
+                                                 zero, there is no treatment effect parameter that is an average of individual-level treatment
+                                                 effects, unit-invariant, and point-identified. We discuss several alternative approaches that may
+                                                 be sensible in settings with an intensive and extensive margin, including (i) expressing the ATE
+                                                 in levels as a percentage (e.g. using Poisson regression), (ii) explicitly calibrating the value
+                                                 placed on the intensive and extensive margins, and (iii) estimating separate effects for the two
+                                                 margins (e.g. using Lee bounds). We illustrate these approaches in three empirical applications.
+
+
+
+
+                                             ∗
+                                               An earlier draft of this paper was titled “Log-like? Identified ATEs defined with zero-valued outcomes are
+                                           (arbitrarily) scale-dependent.” We thank Isaiah Andrews, Kirill Borusyak, Jonathan Cohn, Amy Finkelstein, Edward
+                                           Glaeser, Nick Hagerty, Peter Hull, Jetson Leder-Luis, Erzo Luttmer, Giovanni Mellace, John Mullahy, Edward
+                                           Norton, David Ritzwoller, Brad Ross, Pedro Sant’Anna, Jesse Shapiro, Neil Thakral, Casey Wichman, and seminar
+                                           participants at BU, Georgetown, Harvard/MIT, Southern Denmark University, Vanderbilt, Stanford, UC-Irvine,
+                                           UCLA, UCSD, and the SEA annual conference for helpful comments and suggestions. Bruno Lagomarsino provided
+                                           superb research assistance.
+
+
+                                                                                                  1
+

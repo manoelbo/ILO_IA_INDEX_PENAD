@@ -1,0 +1,37 @@
+           4   OCCUPATIONAL EXPOSURE IN THE U.S. AND MEXICO LABOR MARKETS
+
+
+A key strength of the GENOE index is its capacity for a detailed analysis of occupational exposure
+to AI-driven automation across different labor markets. In this section, we use the index to exam-
+ine two distinct contexts: the United States, the world’s largest developed economy, and Mexico,
+one of the largest emerging market economies.
+   We retrieved data from the U.S. Bureau of Labor Statistics’ Current Population Survey (CPS)
+and Mexico’s INEGI Encuesta Nacional de Ocupación y Empleo (ENOE), focusing on surveys
+from January to December 2023. We mapped the GENOE estimates from the SOC 10 classification
+to each survey using the respective employment classifications provided by each survey, with
+crosswalks from the U.S. Bureau of Labor Statistics and the International Labour Organization
+(ILO). Our analysis concentrated on workers between 15 and 65 years old.
+   Figure 4 displays the distribution of jobs in the United States and Mexico according to the
+GENOE index across different time horizons. For the one-year horizon, 81% of jobs in the United
+States fall into the lower exposure categories (0 to 0.4), compared to 83% in Mexico. In the middle
+exposure category (0.4 to 0.6), Mexico has a slightly higher concentration of jobs (13%) compared
+to the United States (10%). In the high exposure categories (0.6 to 1), there is a low concentration
+of jobs in both countries, with 9% in the United States and only 5% in Mexico, and virtually no
+jobs at the highest risk level (0.8 to 1) in both countries.
+   As the time horizon extends, a shift towards higher exposure becomes evident for both coun-
+tries. Looking at the five-year horizon, the share of jobs in the low exposure categories decreases
+to 59% in the United States and 54% in Mexico. The middle exposure category increases to 21%
+in the United States and 29% in Mexico. The high exposure categories remain relatively low, with
+20% in the United States and 17% in Mexico, indicating a strong increase in vulnerability over this
+time frame.
+   The long-term outlook shows a significant increase in potential AI impact. In the 10-year hori-
+zon, the low exposure categories comprise 51% of jobs in the United States and 43% in Mexico,
+while the high exposure categories increase to 33% and 30% in respectively. This showcases a sig-
+nificant increase in potential AI impact over the long term, though the highest risk level (0.8 to 1)
+remains low at 6% in the United States and 1% in Mexico.
+
+
+
+
+                                                   20
+

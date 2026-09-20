@@ -1,0 +1,38 @@
+            deliberation within our economic research team. Our main selection criteria
+            were expected economic relevance, complementarity of dimensions, and
+            whether Claude could classify conversations along that dimension with
+            directional accuracy.
+
+            We propose that multiple simple primitives, even if somewhat noisy and not
+            perfectly accurate by themselves, can together provide important signals on
+            how AI is being used. We therefore mainly tested for directional accuracy.
+
+            For classifying task duration with and without AI, we used minimally
+            modified versions of our prior productivity work. For net new classifiers,1
+            implemented via our privacy-preserving tooling, our validation process was
+            as follows. We designed multiple potential measures to capture concepts such
+            as task complexity. For Claude.ai, we evaluated the classifier performance
+            compared to a human researcher on a small set of transcripts in which users
+            gave feedback to Claude.ai and for which we thus have permission to look
+            at underlying transcripts. For first-party API (1P API) data, we validate the
+            classifiers using a mix of internal and synthetic data. Neither data sources are
+            fully representative of Claude.ai or 1P API traffic, but they allow us to check
+            that the classifiers are working on data that resembles real usage data, while
+            ensuring privacy.
+
+            Based on initial performance, we revised the classifiers that needed tweaking
+            or discarded classifiers that did not perform well. Interestingly, we find that in
+            some instances (e.g., to measure task success), a simple classifier performed
+            better than a nuanced, complex classifier when compared to human ratings.
+            We then compared performance of classifier versions with vs. without chain
+            of thought prompting, and decided to keep chain of thought prompting only
+            for three facets (human time estimate, human with AI time estimate, and AI
+            autonomy) where we found that it substantially improved performance. We
+            selected a final set of nine new classifiers for the five primitives, all of which are
+            directionally accurate even if they may deviate somewhat from human ratings.
+
+
+
+
+The Anthropic Economic Index Report                                                                  22
+

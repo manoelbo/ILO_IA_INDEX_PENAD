@@ -1,0 +1,259 @@
+                                    10                                                          ChatGPT launch                                               10                                      ChatGPT launch
+ (% Change Relative to Dec. 2022)
+
+
+
+
+                                                                                                                          (% Change Relative to Dec. 2022)
+                                     5                                                                                                                        5
+      Average Employment
+
+
+
+
+                                                                                                                               Average Employment
+                                     0                                                                                                                        0
+
+                                     -5                                                                                                                       -5
+
+                                    -10                                                                                                                      -10
+
+                                    -15                                                                                                                      -15
+
+                                    -20                                                                                                                      -20
+
+                                    -25                                                                                                                      -25
+                                          1
+
+
+                                                    1
+
+
+                                                              1
+
+
+                                                                        1
+
+
+                                                                                  1
+
+
+                                                                                            1
+
+
+                                                                                                      1
+
+
+                                                                                                                 1
+
+
+
+
+                                                                                                                                                                   1
+
+
+                                                                                                                                                                             1
+
+
+                                                                                                                                                                                       1
+
+
+                                                                                                                                                                                                 1
+
+
+                                                                                                                                                                                                             1
+
+
+                                                                                                                                                                                                                       1
+
+
+                                                                                                                                                                                                                                 1
+
+
+                                                                                                                                                                                                                                            1
+                                         m
+
+
+                                                   m
+
+
+                                                             m
+
+
+                                                                       m
+
+
+                                                                                 m
+
+
+                                                                                           m
+
+
+                                                                                                     m
+
+
+                                                                                                                m
+
+
+
+
+                                                                                                                                                                  m
+
+
+                                                                                                                                                                            m
+
+
+                                                                                                                                                                                      m
+
+
+                                                                                                                                                                                                m
+
+
+                                                                                                                                                                                                           m
+
+
+                                                                                                                                                                                                                      m
+
+
+                                                                                                                                                                                                                                m
+
+
+                                                                                                                                                                                                                                           m
+                                     18
+
+
+                                               19
+
+
+                                                         20
+
+
+                                                                   21
+
+
+                                                                             22
+
+
+                                                                                       23
+
+
+                                                                                                 24
+
+
+                                                                                                            25
+
+
+
+
+                                                                                                                                                              18
+
+
+                                                                                                                                                                        19
+
+
+                                                                                                                                                                                  20
+
+
+                                                                                                                                                                                            21
+
+
+                                                                                                                                                                                                        22
+
+
+                                                                                                                                                                                                                  23
+
+
+                                                                                                                                                                                                                            24
+
+
+                                                                                                                                                                                                                                       25
+                                    20
+
+
+                                              20
+
+
+                                                        20
+
+
+                                                                  20
+
+
+                                                                            20
+
+
+                                                                                      20
+
+
+                                                                                                20
+
+
+                                                                                                           20
+
+
+
+
+                                                                                                                                                             20
+
+
+                                                                                                                                                                       20
+
+
+                                                                                                                                                                                 20
+
+
+                                                                                                                                                                                           20
+
+
+                                                                                                                                                                                                      20
+
+
+                                                                                                                                                                                                                 20
+
+
+                                                                                                                                                                                                                           20
+
+
+                                                                                                                                                                                                                                      20
+                                                                            Date                                                                                                                       Date
+
+                                                    Juniors: Non Adopters              Juniors: Adopters                                                                     Seniors: Non Adopters                Seniors: Adopters
+
+
+
+
+                                     (a) Average Employment—Juniors                                                                                           (b) Average Employment—Seniors
+
+                                              Figure 4: Average Junior and Senior Employment by Adoption Status
+              Notes: Panels (a) and (b) show the average number of junior and senior workers, respectively, in
+              adopting versus non-adopting firms (as percentage change relative to December 2022, immediately
+              following the launch of ChatGPT). The adoption measure used in this analysis is time-invariant; hence,
+              the figures simply compare adopters and non-adopters. For results using a time-varying adoption
+              measure, see Section 5.3.
+
+
+
+
+                                                                                           2025Q1
+        log(Employmentist ) = α +                                                              ∑           β j 1{t = j} × Adopti × Juniors
+                                                                                       j=2018Q1
+                                                                                      2025Q1                                                                                     2025Q1
+                                                                             +         ∑             π j 1{t = j} × Adopti +                                                          ∑         ρ j 1{t = j} × Juniors
+                                                                                     j=2018Q1                                                                                    j=2018Q1
+
+                                                                             + κ (Adopti × Juniors ) + γit + ξ p(i)st + ε ist .                                                                                                            (11)
+
+
+                          Here, log(Employmentist ) denotes the log employment of workers in seniority group
+s ∈ {junior, senior} at firm i in period t. The indicator 1{t = j} equals one in period j and
+zero otherwise. Adopti is a firm-level dummy equal to one for firms that adopt GenAI,
+and Juniors is an indicator equal to one for juniors and zero for seniors. p(i ) denotes the
+sector (NAICS 2 digit) of the firm i.
+                          The coefficients β j trace a triple-differences event-time profile: they capture how ju-
+nior employment evolves relative to senior employment within the same firm and period,
+
+
+
+
+                                                                                                                     30
+

@@ -1,0 +1,52 @@
+                                                                         (1)            (2)
+                        Post ˆ Treatment                               ´1.722        ´1.272
+                                                                       p0.632q        p0.606q
+                        Prop. Effect                                   ´0.821        ´0.720
+                                                                       p0.113q        p0.170q
+                        Covariates                                        N             Y
+                        Treated Group Means (Pre, Post):               10527           465
+                        Treated Group Means (Pre, Post):               4742            1172
+
+                               Table 6: Poisson regression estimates of θATT%
+
+Note: this table shows Poisson regression estimates of (8) and (9) in columns (1) and (2), respectively. The first row of
+the table shows the estimate β̂1 . The second row shows exppβ̂1 q ´ 1, which is the implied estimate of the proportional
+treatment effect θATT% . The coefficients on control variables are omitted for brevity. Standard errors are clustered
+at the four-digit product code as in the original paper. The mean bribe amounts (in MZN) by treatment group and
+time period are displayed in the bottom panel. The pre-period refers to the year 2007, whereas the post-treatment
+period is an average over the years 2008, 2011, and 2012 (the three post-treatment years for which data is available).
+
+
+in Wooldridge (2023), this estimate will be a consistent estimate of θATT% if (7) holds conditional
+on Xit , and the conditional expectation of Yit takes the functional form implied by (9) (assuming
+ǫit has mean 1 conditional on the covariates). The approach with covariates thus suggests that the
+tariff change reduced the average bribe for treated products by 72% in the post-treatment period.
+    Sequeira (2016)’s data only contains information on one year prior to treatment (2007), and so
+in this context it is not possible to evaluate the plausibility of (7) using periods prior to the policy
+change of interest. If multiple pre-treatment periods were available, however, one could estimate a
+Poisson QMLE event-study of the form
+                                ˜                                                             ¸
+                                                    ÿ
+                     Yit “ exp λt ` Di β2 `               Di ˆ rRelativeTimet “ rs βrES           ǫit ,            (10)
+                                                   r‰´1
+
+where RelativeTimet “ t ´ 2008 is the time relative to the treatment date. The event-study
+coefficients βrES for r ă 0 are analogous to “pre-trends” coefficients in typical difference-in-differences
+event-studies, and are informative about whether the pre-treatment analogue to (7) holds.38
+
+Log effects with calibrated extensive margin value.                      The analysis above presented estimates
+of θATT% , the proportional change in the average bribe caused by the treatment. It is well-known
+that averages can be heavily influenced by observations in the tail, especially when the outcome has
+   38
+      More precisely, the exponentiated coefficients exppβ̂r q ´ 1 correspond to the implied “placebo” proportional
+treatment effects for periods before treatment. We recommend plotting the exponentiated coefficients in event-
+studies, although we note that exppβq ´ 1 « β for β « 0. As with typical tests for pre-trends, one should be
+cautious that a failure to reject the null that the pre-treatment coefficients equal zero does not necessarily imply that
+the identifying assumption is satisfied (Kahn-Lang and Lang, 2020; Roth, 2022). One can (partially) address these
+issues by applying sensitivity analysis tools for event-studies (e.g. Rambachan and Roth, 2023) to estimates of (10)
+to further gauge the robustness of the findings to violations of the identifying assumptions. We also refer the reader
+to Wooldridge (2023) for extensions of the Poisson regression approach to settings with staggered treatment timing.
+
+
+                                                           27
+

@@ -1,0 +1,15 @@
+    Figure E.19: How Do Workers’ Earnings Impacts Relate to Their Time Savings?
+
+
+
+
+Notes: This figure presents a binned scatterplot of workers’ perceived earnings impacts from AI chatbots against their
+estimated time savings from these tools, absorbing occupation fixed effects. The sample is divided based on whether
+employers encourage AI chatbot use. The regression line represents the line of best fit for each group, controlling for
+occupation fixed effects. Sample: All completed responses from the 2024 survey.
+
+
+
+
+                                                         89
+

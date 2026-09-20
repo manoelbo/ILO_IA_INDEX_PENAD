@@ -1,0 +1,40 @@
+A.4    Robustness of Adoption Measure: Postings and Worker Position
+       Descriptions
+
+The baseline adoption indicator Adopti in the main text is identified from explicit “GenAI
+integrator” job postings (Section 4.2). This appendix re-estimates the headline triple-
+                                                                              aug
+difference of Section 5.2.2 using an augmented adoption indicator, Adopti           , that flags
+firm i as an adopter if it either (a) appears as an adopter under the baseline postings-
+based definition, or (b) has at least one worker whose own LinkedIn position description
+is classified as an integrator role. The augmented measure helps address two residual con-
+cerns about the baseline definition. First, a fraction of GenAI integrator postings may be
+“ghost” or signaling postings that never translate into on-the-job integration work. Sec-
+ond, “silent adopters”—firms that integrate GenAI through internal reskilling or in-house
+tooling rather than through external hiring—can be missed by a postings-only definition.
+   The position-description component is constructed in close parallel to the postings-
+based measure (see Section 4.2 for the full pipeline): we first filter the 2021–2025 worker
+position spells to those whose free-text description contains at least one GenAI-related
+keyword, and we then ask an LLM (Llama-3.3-70B-Instruct, run with temperature = 0
+and a fixed seed) to keep only those whose description indicates that the worker inte-
+grates GenAI into a product, workflow, or pipeline. A firm is flagged by component (b)
+above if it has at least one such position.
+   Across the 281, 898 firms in the analysis sample, the postings-based definition flags
+10,433 adopters (3.71%). Adding the position-description component flags an additional
+34,387 firms not reached by the postings data, for a union of 38,441 augmented adopters
+(13.64%). The augmented measure thus significantly expands the treated group relative
+to the baseline. Figure A.16 reports the triple-difference event-study profile from Equa-
+                                         aug
+tion 11, replacing Adopti with Adopti          . The pattern is qualitatively unchanged: The
+magnitude is very similar to the baseline estimate of about −0.09 in Figure 5. Even when
+the treated group is expanded to include firms whose adoption is visible only through
+workers’ own descriptions of what they do, the seniority-biased contraction in junior em-
+ployment after the launch of ChatGPT remains intact.
+   It is worth noting that the position-description data are considerably less complete and
+less informative than the job-posting texts on which the baseline measure is built. Only
+
+
+
+
+                                               A.17
+

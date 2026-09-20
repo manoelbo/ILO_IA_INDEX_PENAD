@@ -1,0 +1,59 @@
+   The analytical derivations above, for simplicity, assumed that differences across workers
+
+and firms arise solely from chatbot use and employer encouragement. A more realistic set-
+
+ting allows for baseline heterogeneity in worker productivity (Hij (Aij ) = Hi0 exp(Bij Aij ))
+
+and firm-level product demand (Yj = Yj0 Pj−ϵ ). For example, Figure 2.(a) shows that
+
+workers who adopted AI chatbots were already earning more before chatbots became
+
+available, and that employers who adopted enterprise solutions were already larger prior
+
+to adoption.
+
+   Even with such heterogeneity, the causal effects of chatbot adoption can still be
+
+identified using difference-in-differences. The key assumption is that baseline heterogeneity
+
+is time-invariant and enters the outcome equations in a log-additive way, such that it
+
+cancels out when examining log changes over time. For example:
+
+
+         ∆Hij = log(Hi0 exp(Bij Apost                     pre           post
+                                 ij )) − log(Hi0 exp(Bij Aij )) = Bij (Aij   − Apre
+                                                                                ij )     (39)
+
+          ∆Yj = −ϵ(log(Yj0 Pjpost ) − log(Yj0 Pjpre )) = −ϵ(log Pjpost − log Pjpre ),    (40)
+
+
+where ∆X = log X post − log X pre denotes log changes over time (after vs. before the
+
+arrival of AI chatbots).
+
+   More generally, if baseline heterogeneity varies over time, the identifying assumption
+
+is that workers (firms) do not adopt (encourage) chatbots in response to anticipated
+
+shocks to their baseline human capital Hi0 (or product demand Yj0 ). This assumption
+
+is consistent with the policy rules for adoption and encouragement (Equations (16) and
+
+(22)), which do not depend on baseline human capital or product demand.
+
+
+Worker-level adoption–encouragement difference-in-differences. The earnings
+
+equation in (28) motivates the three difference-in-differences estimators used in Section
+
+E.2.1.
+
+
+1. Productivity effect among non-encouraged adopters (Non-encouraged adopters
+
+
+
+
+                                                 20
+

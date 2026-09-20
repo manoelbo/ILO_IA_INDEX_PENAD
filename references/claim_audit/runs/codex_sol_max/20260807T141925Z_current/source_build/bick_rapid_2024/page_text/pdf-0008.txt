@@ -1,0 +1,46 @@
+Non-employed respondents are not shown the term in brackets. While the CIU asks about
+computer use “at home”, we use slightly different language to account for respondents who use
+genAI on mobile devices outside of their home.
+
+   The survey asks several follow-up questions of genAI users regarding which products they
+used, how intensively they used it, and how much time they saved, always distinguishing
+between work and non-work use.
+
+   An important caveat regarding our measurement approach is that it will only capture genAI
+use that respondents are aware of. For example, while typing prompts into ChatGPT is an
+obvious case of using genAI, automatic AI-assisted writing suggestions are a more subtle case
+that respondents may not consider. Because our estimates may not detect some passive or
+embedded uses of the technology, we interpret our estimates a lower bound on the extent of
+genAI adoption.
+
+
+3       How Prevalent is Generative AI Use?
+
+Figure 1a displays the share of August and November 2024 RPS respondents who report using
+genAI. The samples for the “Overall” and “Outside of Work” bars are all respondents, while
+the sample for the “For Work” bar is employed respondents. The overall estimates reflect the
+share who use genAI either for work or outside of work.
+
+    The first bar shows that 45.5% of respondents report using genAI either at work or at
+home: 10.4% used it every day, 26.7% used it some but not all days, and 8.3% did not use
+it in the last week. The second bar shows that 32.1% of workers used genAI at work: 10.5%
+used it every work day and 16.7% on some but not all workdays, bringing total weekly usage
+to 27.2%. Outside of work, usage is higher overall (37.7%) but less intensive, with only 5.6%
+of all respondents using it every day last week.
+
+
+3.1     How Do Our Results Compare to Other Estimates?
+
+The RPS is administered by Qualtrics. To provide a second source of data, in December 2024 we
+fielded our genAI module through the Survey of Working Arrangements and Attitudes (SWAA)
+by Barrero et al. (2021).5 The SWAA uses a different survey provider (IncQuery) but targets
+a similar sample intended to be representative of the U.S. population ages 20-64. Figure 1b
+displays analogous results from the SWAA. 46.5% of SWAA respondents reported using genAI
+overall, versus 45.5% of RPS respondents. We find similar estimates for work (33.3% SWAA,
+    5
+    See Appendix C for more details on the SWAA, how we construct weights to maximize comparability
+between the SWAA and RPS, and some validation exercises.
+
+
+                                                6
+

@@ -1,0 +1,49 @@
+A.11     API Prompts
+
+A.11.1   Prompt: Identify Job Postings for GenAI Integrators or Users
+
+We use llama-3.1-8b-instant model through Groq API.
+
+     SYSTEM_PROMPT = "”’You are a classifier for job postings. Output ONLY compact JSON.
+
+
+         role_type:
+     – integrator: builds/operates LLM systems (RAG, embeddings/vector DB, agents, LangChain/LlamaIn-
+     dex, fine-tune/adapters, serving/inference, eval/guardrails, API integration).
+     – user: mainly uses LLM tools (ChatGPT, Gemini, Copilot, etc.) without building systems.
+     – both: both apply.
+     – none: neither.
+
+
+         Exclusions: not integrator if only foundation-model research, generic AI/ML, or developer roles at
+     AI labs (e.g., OpenAI, DeepMind), or labeling/annotation.
+
+
+         department (choose one):
+     – Technology
+     – Operations
+     – Marketing
+     – HR
+
+
+         Rules:
+     – If both integrator + user → role_type="both"
+     – Acronyms like "RAG" = LLM context
+     – Prefer 1 when signals appear
+     – JSON only; no prose
+
+
+         Output format:
+     {
+     "integrator":         0|1,
+     "user":      0|1,
+     "role_type":        "integrator"|"user"|"both"|"none",
+     "department":         "Technology"|"Operations"|"Marketing"|"HR",
+     "confidence":         0.0-1.0
+     }
+
+
+
+
+                                                      A.36
+

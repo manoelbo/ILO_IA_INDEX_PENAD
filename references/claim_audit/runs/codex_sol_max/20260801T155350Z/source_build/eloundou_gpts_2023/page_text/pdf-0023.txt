@@ -1,0 +1,50 @@
+                                             WORKING PAPER
+
+
+6.2   Implications for US Public Policy
+The introduction of automation technologies, including LLMs, has previously been linked to heightened
+economic disparity and labor disruption, which may give rise to adverse downstream effects (Acemoglu and
+Restrepo, 2022a; Acemoglu, 2002; Moll et al., 2021; Klinova and Korinek, 2021; Weidinger et al., 2021,
+2022). Our results examining worker exposure in the United States underscore the need for societal and policy
+preparedness to the potential economic disruption posed by LLMs and the complementary technologies
+that they spawn. While it is outside the scope of this paper to recommend specific policy prescriptions to
+smooth the transition to an economy with increasingly widespread LLM adoption, prior work such as (Autor
+et al., 2022b) has articulated several important directions for US policy related to education, worker training,
+reforms to safety net programs, and more.
+
+6.3   Limitations and Future Work
+In addition to those discussed above, we highlight some particular limitations of this work that warrant further
+investigation. Primarily, our focus on the United States restricts the generalizability of our findings to other
+nations where the adoption and impact of generative models may differ due to factors such as industrial
+organization, technological infrastructure, regulatory frameworks, linguistic diversity, and cultural contexts.
+We hope to address this limitation by extending the study’s scope and by sharing our methods so other
+researchers can build on them.
+    Subsequent research efforts should consider two additional studies: one exploring LLM adoption patterns
+across various sectors and occupations, and another scrutinizing the actual capabilities and limitations of
+state-of-the-art models in relation to worker activities beyond the scope of our exposure scores. For example,
+despite recent advances in multimodal capabilities with GPT-4, we did not consider vision capabilities in
+the 𝛼 ratings on direct LLMs-exposure (OpenAI, 2023b). Future work should consider the impact of such
+capability advances as they unfold. Furthermore, we acknowledge that there may be discrepancies between
+theoretical and practical performance, particularly in complex, open-ended, and domain-specific tasks.
+
+
+7     Conclusion
+In conclusion, this study offers an examination of the potential impact of LLMs on various occupations and
+industries within the U.S. economy. By applying a new rubric for understanding LLM capabilities and their
+potential effects on jobs, we have observed that most occupations exhibit some degree of exposure to LLMs,
+with higher-wage occupations generally presenting more tasks with high exposure. Our analysis indicates that
+approximately 19% of jobs have at least 50% of their tasks exposed to LLMs when considering both current
+model capabilities and anticipated LLM-powered software.
+    Our research aims to highlight the general-purpose potential of LLMs and their possible implications for
+US workers. Previous literature demonstrates the impressive improvements of LLMs to date (see 2.1). Our
+findings confirm the hypothesis that these technologies can have pervasive impacts across a wide swath of
+occupations in the US, and that additional advancements supported by LLMs, mainly through software and
+digital tools, can have significant effects on a range of economic activities. However, while the technical
+capacity for LLMs to make human labor more efficient appears evident, it is important to recognize that social,
+economic, regulatory, and other factors will influence actual labor productivity outcomes. As capabilities
+continue to evolve, the impact of LLMs on the economy will likely persist and increase, posing challenges for
+policymakers in predicting and regulating their trajectory.
+    Further research is necessary to explore the broader implications of LLM advancements, including
+their potential to augment or displace human labor, their impact on job quality, impacts on inequality, skill
+development, and numerous other outcomes. By seeking to understand the capabilities and potential effects
+

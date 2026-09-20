@@ -1,0 +1,62 @@
+1.1     Related Literature
+
+This paper makes two main contributions within an active literature on the causal interpretations of two-
+
+way fixed effects models in settings with staggered treatment adoption (Athey and Imbens, 2018; Borusyak
+
+and Jaravel, 2017; Callaway and Sant’Anna, 2020a; de Chaisemartin and D’Haultfœuille, 2020; Goodman-
+
+Bacon, 2018). Our paper is also related to the traditional literature analyzing non-separable panel and treat-
+
+ment effects models e.g. Heckman et al., 1998, 1997; Blundell et al., 2004; Abadie, 2005; Chernozhukov et
+
+al., 2013.
+
+      The first main contribution of our paper is to interpret estimates from two-way fixed effects specifications
+
+when researchers include “dynamic” indicators for time relative to treatment and when treatment effects are
+
+heterogeneous across adoption cohorts. We derive our results for a general class of two-way fixed effects
+
+specifications where “dynamic” indicators can be flexibly specified as single relative periods ` or sets of
+
+relative periods g (thus also capturing any “static” specification where all post-treatment indicators are
+
+collected in a single set). This class of specifications encompasses all specifications addressed by Athey
+
+and Imbens (2018), Borusyak and Jaravel (2017), Callaway and Sant’Anna (2020a), de Chaisemartin and
+
+D’Haultfœuille (2020) and Goodman-Bacon (2018).
+
+      As a building block for the causal interpretation of estimates, we define C ATTe,` , the cohort average
+
+treatment effects on the treated as the cohort-specific average difference in outcomes relative to never being
+
+treated. Our choice of a “building block” is governed by the counterfactual and the type of heterogeneity
+
+of interest. This object coincides with the “group-time average treatment effect” studied by Callaway and
+
+Sant’Anna (2020a) and is more granular than the building block used by Goodman-Bacon (2018) that is an
+
+average of C ATTe,` over some relative period range. Athey and Imbens (2018) consider an alternate coun-
+
+terfactual to never being treated: being treated at a different time. Borusyak and Jaravel (2017) implicitly
+
+assume away heterogeneity across cohorts within a relative period, so their building block reduces to ATT` .
+
+de Chaisemartin and D’Haultfœuille (2020) allow for heterogeneous treatment paths within a cohort over
+
+time across “groups”, thus their building block is at the group level. We defer a discussion of assumptions
+
+underlying the causal interpretation of these building blocks to Section 2.
+
+      The second main contribution of our paper is to propose a simple regression-based alternative estimation
+
+strategy that produces a more sensible estimand than conventional two-way fixed effects models under het-
+
+erogeneous treatment effects. Our procedure is most similar to Callaway and Sant’Anna (2020a), but has the
+
+
+
+                                                         4
+

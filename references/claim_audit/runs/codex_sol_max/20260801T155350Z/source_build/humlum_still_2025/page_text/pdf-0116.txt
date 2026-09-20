@@ -1,0 +1,36 @@
+E.2.3      Workplace Employment
+
+Figure E.14, Panel (a) shows that workplaces that encourage chatbot usage have seen no
+
+differential change in wage bill after the arrival of AI chatbots. While our main analysis
+
+focuses on employment within workers’ respective occupations, Panel (b) shows that
+
+overall workplace employment remains flat as well.
+
+       Figure E.15 shows that job churn and worker sorting have not changed differentially
+
+at workplaces with additional investments in enterprise chatbots and training. Figure
+
+E.16 shows that the null results for job churn and worker sorting hold in each of our 11
+
+occupations.
+
+       Figure E.17 examines the impact of workplace adoption on incumbent workers—those
+
+employed before the introduction of AI chatbots—whose labor market outcomes we can
+
+track regardless of whether they remain with or separate from their initial firm.45 Once
+
+again, we find no evidence that workers initially employed at high-adoption workplaces
+
+have been affected differently.
+  45
+    This analysis of incumbent workers resembles the research designs of Autor et al. (2014); Walker
+(2013).
+
+
+
+
+                                                81
+

@@ -1,0 +1,47 @@
+                                   .3                                                                               ChatGPT launch
+     Log Size (DiD Coefficients)
+
+
+
+
+                                   .2
+
+
+
+                                   .1
+
+
+
+                                    0
+
+
+
+                                   -.1
+                                           1          1             1           1               1          1          1          1       q1         1          1
+                                      1  5q        16q          17q        18q              19q        20
+                                                                                                          q
+                                                                                                                  21
+                                                                                                                     q
+                                                                                                                             22
+                                                                                                                                q
+                                                                                                                                       23        24q       25
+                                                                                                                                                              q
+                                   20           20           20         20               20         20         20         20         20       20        20
+                                                                                                     Quarter
+
+                                                       Juniors                 Seniors
+
+
+
+
+                                              Figure A.21: Difference-in-Differences Estimates by Seniority
+Notes: The figure presents the estimated DiD coefficients β j from Equation 34, estimated separately
+for juniors and seniors. The adoption measure used in this analysis is time-invariant; hence, the figure
+compares adopters and non-adopters. For results using a time-varying adoption measure, see Section
+5.3. Standard errors are clustered at the firm level.
+
+
+
+
+                                                                                                    A.50
+

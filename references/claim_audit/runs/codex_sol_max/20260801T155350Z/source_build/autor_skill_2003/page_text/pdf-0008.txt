@@ -1,0 +1,53 @@
+1286              QUARTERLY JOURNAL OF ECONOMICS
+
+                                 TABLE I
+   PREDICTIONS OF TASK MODEL FOR THE IMPACT OF COMPUTERIZATION ON FOUR
+                      CATEGORIES OF WORKPLACE TASKS
+
+                            Routine tasks                  Nonroutine tasks
+
+                                   Analytic and interactive tasks
+
+Examples            Record-keeping                  Forming/testing hypotheses
+                    Calculation                     Medical diagnosis
+                    Repetitive customer service     Legal writing
+                     (e.g., bank teller)             Persuading/selling
+                                                     Managing others
+
+Computer impact  Substantial substitution           Strong complementarities
+
+                                            Manual tasks
+
+Examples            Picking or sorting              Janitorial services
+                    Repetitive assembly             Truck driving
+
+Computer impact  Substantial substitution           Limited opportunities for
+                                                      substitution or
+                                                      complementarity
+
+
+
+
+I.A. The Demand for Routine and Nonroutine Tasks
+    The informal task framework above implies three postulates
+about how computer capital interacts with human labor input.
+    A1. Computer capital is more substitutable for human labor
+         in carrying out routine tasks than nonroutine tasks.
+    A2. Routine and nonroutine tasks are themselves imperfect
+         substitutes.
+    A3. Greater intensity of routine inputs increases the mar-
+         ginal productivity of nonroutine inputs.
+    To develop the formal implications of these assumptions, we
+write a simple, general equilibrium production model with two
+
+
+change impacts job task demands. First, innovations in the organization of pro-
+duction reinforce the task-level shifts that we describe above. See Adler [1986],
+Zuboff [1988], Levy and Murnane [1996], Acemoglu [1999], Bresnahan [1999],
+Bartel, Ichniowski, and Shaw [2000], Brynjolfsson and Hitt [2000], Lindbeck and
+Snower [2000], Mobius [2000], Thesmar and Thoenig [2000], Caroli and Van
+Reenen [2001], Fernandez [2001], Autor, Levy, and Murnane [2002], and Bresna-
+han, Brynjolfsson, and Hitt [2002] for examples. Second, distinct from our focus on
+process innovations, Xiang [2002] presents evidence that product innovations over
+the past 25 years have also raised skill demands.
+

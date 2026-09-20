@@ -1,0 +1,4 @@
+proxy,fixed_effects,panel_rows_input,panel_rows_after_singletons,raw_standard_deviation,residual_standard_deviation,r_squared_fixed_effects,retained_variance_share,demeaning_iterations,demeaning_tolerance,maximum_abs_fe_group_mean,classification,outcome_model_estimated,treatment_coefficient_estimated
+fixed_broadband_penetration,cbo_municipio + cbo_periodo + uf_periodo,4343581,4343444,0.31948647128989144,0.11333388744667607,0.8741611832072729,0.12583881679272707,34,1e-12,3.034260342982265e-13,adequate,False,False
+digital_intensive_admission_share,cbo_municipio + cbo_periodo + uf_periodo,4343581,4343444,0.3041353922219865,0.12387793912512961,0.8340970839861206,0.1659029160138794,35,1e-12,2.5356678562404864e-13,adequate,False,False
+pnad_internet_use_2021,cbo_municipio + cbo_periodo + uf_periodo,4343581,4343444,0.2939423726102879,0.10645364203929668,0.8688414345479409,0.13115856545205906,37,1e-12,3.350764110621185e-13,adequate,False,False

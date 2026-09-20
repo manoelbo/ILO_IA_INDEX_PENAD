@@ -1,0 +1,61 @@
+      Unlike Dobkin et al. (2018), we restrict our analysis to a subsample of these individuals who appear
+
+throughout waves 7-11 (roughly 2004-2012). Our sample of analysis therefore includes HRS respondents
+
+with index hospitalization during waves 8-11. The purpose of this sample restriction is to maintain a bal-
+
+anced panel with a reasonable sample size.
+
+      Here i indexes an individual, and t indexes survey wave (T = 4) and is normalized to zero for wave 7,
+
+the first wave in our sample. Among the outcomes Yi,t studied by Dobkin et al. (2018), we focus on two:
+
+out-of-pocket medical spending and labor earnings. They are derived from self-reports, adjusted to 2005
+
+dollars and censored at the 99.95th percentile.
+
+      Summary statistics. Table 2 presents basic summary statistics for our analysis sample before hospital-
+
+ization. We have a slightly lower fraction of white in our sample, but otherwise have a similar sample to
+
+Dobkin et al. (2018).
+
+      In Panel D, we compare means of the cross-sectional distributions of outcomes for individuals who have
+
+not been hospitalized by each wave. The size of the sample conditional on not having been hospitalized
+
+strictly decreases with each subsequent wave. There are apparent time trends in our outcomes of interest
+
+prior to hospitalization as we observe distributional changes across waves. Out-of-pocket medical spendings
+
+fluctuate and earnings decrease with each wave on average as more individuals are retired in each subsequent
+
+wave.
+
+
+5.2     Setting
+
+We illustrate how variations in the timing of hospitalization fit the event studies design proposed in Section 2.
+
+We define treatment Di,t to be ever having been hospitalized. In our terminology, we categorize individuals
+
+into cohorts based on Ei , which is defined as the survey wave of their initial hospitalization. Since we
+
+restrict the sample to individuals who were ever hospitalized in waves 8-11, there are four cohorts Ei ∈
+
+{1, 2, 3, 4}. Although hospitalization itself may not be an absorbing state, we are trying to model the impact
+
+of having had any hospitalization. Thus, the cohort-specific average treatment effects C ATTe,` trace out
+
+the path of treatment effects for cohort e following a negative health shock (even though the shock itself
+
+may be transient), as opposed to never having been hospitalized. Next we discuss whether each of the three
+
+identifying assumptions proposed is likely to hold in the context of unexpected hospitalizations.
+
+      Parallel trends (Assumption 1). Hospitalization is likely to be earlier among sicker individuals with
+
+high out-of-pocket medical spending and low labor earnings. Thus, it is not plausible that the baseline
+
+                                                       26
+

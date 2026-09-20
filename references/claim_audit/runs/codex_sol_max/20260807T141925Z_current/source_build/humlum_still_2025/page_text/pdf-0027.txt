@@ -1,0 +1,35 @@
+Occupational Heterogeneity. The overall zero effects could mask important hetero-
+geneity across occupations. For instance, since teachers are covered by collective bargaining
+with centralized wage setting, it may be less surprising that individual productivity gains
+do not translate into higher earnings. By contrast, occupations such as marketing and
+software development feature decentralized wage setting, allowing more flexibility to
+adjust pay based on individual productivity.15 Appendix C.1 provides an overview of the
+wage-setting systems in Denmark, showing rich variation across our study occupations.
+Occupational heterogeneity may also arise from whether chatbots are used primarily for
+core versus peripheral tasks within an occupation (Autor and Thompson, 2025).
+   Figure 7, Panel (a) shows the estimated effects of AI chatbots on worker earnings
+across the 11 occupations in our sample. Confidence bands are wider for these occupation-
+specific estimates and should therefore be interpreted with caution. Nonetheless, we find
+no statistically significant effects in any occupation, and point estimates are generally near
+zero. Even for our most contrasting groups—software developers and marketers, with
+more flexible wages and larger reported time savings, versus teachers, with centralized
+wage-setting and smaller reported savings—we find no systematic differences in earnings
+impacts.
+
+
+Discussion. Our administrative data show that users of AI chatbots have not experi-
+enced differential changes in earnings or hours following the arrival of these tools. Even
+among workers who use chatbots daily and report substantial benefits, we find no net
+changes—not even a break in trends. These patterns echo those documented for computer
+use in the 1980s by Krueger (1993) and critiqued by DiNardo and Pischke (1997): although
+chatbot use is correlated with sizable cross-sectional earnings premia, these differentials
+vanish once accounting for positive selection.
+   Are the null wage effects of chatbot use theoretically surprising? Competitive labor
+markets (e.g., our framework in Appendix A.2) imply that workers should be compensated
+  15
+     Furthermore, marketing professionals and software developers are exactly the occupations with the
+highest reported use and productivity gains from the tools (Appendix E.3).
+
+
+
+                                                 25

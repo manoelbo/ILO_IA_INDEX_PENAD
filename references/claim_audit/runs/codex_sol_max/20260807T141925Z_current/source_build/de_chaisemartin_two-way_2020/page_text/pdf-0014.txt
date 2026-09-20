@@ -1,0 +1,49 @@
+definition. Estimators of σ f e and σ f d (or σ f e and σ f d ) can then be used to determine which of
+βbf e or βbf d is more robust to heterogeneous treatment effects.
+Finally, and similarly to the result shown in Corollary 2 for βf e , βf d is equal to δ T R under
+common trends and the following assumption:
+                                              h                                                  i
+Assumption 8 (wf d uncorrelated with ∆)  e E P                 Ng,t
+                                                                    (w f d,g,t − 1)(∆g,t − ∆TR
+                                                                                               )   = 0.
+                                                 (g,t):Dg,t =1 N1
+
+Note that under the common trends assumption, one can jointly test Assumption 8 and As-
+sumption 7, the assumption that the weights attached to βf e are uncorrelated with the ∆g,t s: if
+βbf e and βbf d are significantly different, at least one of these two assumptions must fail. In the
+second application we revisit in Section 6, βbf e and βbf d are significantly different.
+
+
+4    An alternative estimator
+
+In this section, we show that it is possible to estimate a well-defined causal effect even if treatment
+effects are heterogeneous across groups or over time. Let
+                                                                                 
+                                   1          X
+                       δS = E                           [Yi,g,t (1) − Yi,g,t (0)] ,
+                                  NS
+                                     (i,g,t):t≥2,Dg,t 6=Dg,t−1
+             P
+with NS = (g,t):t≥2,Dg,t 6=Dg,t−1 Ng,t . δ S is the ATE of all switching cells. In staggered adoption
+designs, δ S is the average of the treatment effect at the time when a group starts receiving the
+treatment, across all groups that become treated at some point.
+We now show that δ S can be unbiasedly estimated by a weighted average of DID estimators.
+This result holds under the following supplementary assumptions.
+
+Assumption 9 (Strong exogeneity for Y (1)) For all (g, t) ∈ {1, ..., G} × {2, ..., T },
+E(Yg,t (1) − Yg,t−1 (1)|Dg,1 , ..., Dg,T ) = E(Yg,t (1) − Yg,t−1 (1)).
+
+Assumption 9 is the equivalent of Assumption 4, for the potential outcome with treatment. It
+requires that the shocks affecting a group’s Yg,t (1) be mean independent of that group’s treatment
+sequence.
+
+Assumption 10 (Common trends for Y (1)) For t ≥ 2, E(Yg,t (1) − Yg,t−1 (1)) does not vary
+across g.
+
+Again, Assumption 10 is the equivalent of Assumption 5, for the potential outcome with treat-
+ment. It requires that between each pair of consecutive periods, the expectation of the outcome
+with treatment follow the same evolution over time in every group. Assumptions 9 and 10 en-
+sure that one can reconstruct the potential outcome that groups leaving the treament between
+
+                                                      14
+

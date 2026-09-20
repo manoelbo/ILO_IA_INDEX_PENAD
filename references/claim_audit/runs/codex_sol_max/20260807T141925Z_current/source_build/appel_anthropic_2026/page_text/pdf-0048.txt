@@ -1,0 +1,43 @@
+            Revisiting the aggregate productivity implications of
+            Claude usage
+
+            In earlier work, we estimated that widespread adoption of AI could increase
+            US labor productivity growth by 1.8 percentage points annually over the next
+            decade. Here we revisit that analysis, incorporating the task success primitive
+            introduced in this report and a richer treatment of task complementarity.
+
+            Based on the speedups associated with tasks with at least 200 observations
+            in our sample of 1M Claude.ai conversations,6 we replicate our previous
+            finding that current-generation AI models and current usage patterns imply a
+            productivity effect of 1.8 percentage points per year over the next decade.7
+
+            With the inclusion of 1P API data, we can assess whether implied labor
+            productivity effects differ based on enterprise Claude deployment patterns.
+            Two countervailing forces are at play: API usage is more concentrated in a
+            narrower set of tasks and occupations (particularly coding-related work),
+            which would tend to reduce implied effects; but task-level speedups are higher
+            on average among API tasks, as implied by Figure 4.1. These forces largely
+            offset: the API sample likewise implies a 1.8 percentage point increase in labor
+            productivity over the next decade.
+
+            A salient critique of this analysis is that it fails to account for model reliability.
+            If workers must validate AI output, the productivity benefits will be smaller
+            than raw speedups suggest. To assess how quantitatively important this
+            channel might be, we incorporate the task success primitive introduced in this
+            report, multiplying task-level time savings by task-specific success rates before
+            aggregating.8
+
+            This adjustment has a meaningful effect: implied productivity growth falls from
+            1.8 to 1.2 percentage points per year for the next decade based on Claude.ai
+            usage, and to 1.0 percentage points for API traffic. Yet, even after accounting for
+            reliability, the implied impact remains economically significant—a sustained
+            increase of 1.0 percentage point per year for the next ten years would return US
+            productivity growth to rates that prevailed in the late 1990s and early 2000s.
+
+            A second critique concerns task complementarity. If some tasks are essential
+            and cannot easily be substituted, then overall productivity effects will be
+            constrained regardless of speedups on other tasks. Teachers may prepare
+
+
+The Anthropic Economic Index Report                                                                  48
+

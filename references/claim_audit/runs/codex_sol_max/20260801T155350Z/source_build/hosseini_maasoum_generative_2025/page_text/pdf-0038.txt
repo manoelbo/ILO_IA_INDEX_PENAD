@@ -1,0 +1,46 @@
+    Table 3: Sensitivity of adopter employment to identified monetary-policy shocks
+
+                                                            log Li,t+1 − log Li,t
+                                                Total employment        Junior employment
+                Adopteri × εm
+                            t                         0.046∗∗                   0.018
+                                                      (0.020)                  (0.025)
+                Firm FE, Year-quarter FE                Yes                      Yes
+                Firms                                 275,809                  272,549
+                Observations                         5,919,703                5,692,315
+                Quarters                                 23                      23
+  Notes. Shock quarters t ∈ 2015Q1–2021Q3 (sample stops before 2022 so the forward one-quarter out-
+  come window closes no later than 2021Q4). The shock εm           t is the in-quarter sum of monthly pure
+  monetary-policy surprises from Jarocinski and Karadi (2020). Each column is one regression of the for-
+  ward one-quarter log change in total (column 1) or juniors (column 2) employment on Adopteri × εm       t ,
+  with firm and year-quarter fixed effects. Outcomes are winsorised at 0.5/99.5%. Standard errors in
+  parentheses are Cameron–Gelbach–Miller two-way cluster-robust at the firm and year-quarter level;
+  t-statistics use min( Gfirm , Gquarter ) − 1 degrees of freedom. ∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+
+
+h = 0, . . . , 8 quarters, which deliver the same null at every horizon. This finding is also
+consistent with evidence in the literature showing that larger firms, which are more likely
+to adopt GenAI, tend to be less sensitive to monetary-policy shocks (see Chodorow-Reich,
+2014; Gertler and Gilchrist, 1994).
+
+
+5.4.2   Post-COVID Dynamics, Remote Work, and Labor Supply Shocks
+
+Beyond monetary policy, three interrelated concerns arise from the unusual labor-market
+dynamics of the post-pandemic period, which overlaps with the diffusion of GenAI.
+
+
+Post-COVID dynamics. A potential confounder is the post-COVID hiring boom in the
+technology sector (U.S. Bureau of Labor Statistics, 2025). If this boom was followed by a
+correction, it could disproportionately affect GenAI adopters, who are more heavily rep-
+resented in the Information sector (Section 4.2). However, these dynamics are also likely
+to be absorbed by the industry-by-seniority-by-time fixed effects. Moreover, if boom-bust
+dynamics were driving our results, we would expect to observe a significant relative in-
+crease in junior employment among adopters (relative to non-adopters) prior to GenAI
+adoption, which we do not (see Figures 4 and 7).
+
+
+
+
+                                                      38
+

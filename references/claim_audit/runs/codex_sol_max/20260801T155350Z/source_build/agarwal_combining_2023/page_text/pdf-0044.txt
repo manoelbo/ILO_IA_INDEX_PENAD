@@ -1,0 +1,59 @@
+                                                                                                                                                          44
+
+                                      Figure 10: Cardiomediastinal Abnormality Modality Shares
+
+
+                  1.0                                                                           1.0
+
+
+                  0.8                                                                           0.8
+ Share of Cases
+
+
+
+
+                                                                               Share of Cases
+                  0.6                                                                           0.6
+
+
+                  0.4                                                                           0.4
+
+
+                  0.2       AI                                                                  0.2     AI
+                            Human                                                                       Human
+                            Bayesian Human + AI                                                         Human + AI
+                  0.0 1                                                                         0.0 1
+                     10               102                  103           104                       10            102                  103           104
+                               Social Cost of False Negative (Dollars)                                    Social Cost of False Negative (Dollars)
+
+
+                                        (a) Bayes                                                                (b) Humans
+Note: The graphs show the share of cases decided by each modality (humans, AI, humans+AI) conditional on the cost of a false
+negative in dollars, denoted m in the text, for cardiomediastinal abnormality Panel (a) focuses on a Bayesian decision maker.
+Panel (b) focuses on a human decision-maker with decisions and time-taken as in our experiment.
+
+
+
+
+6.3                       Caveats
+
+There are several caveats to the analysis here. The first is that any collaborative system may
+change radiologists’ expectations about the difficulty of cases and adjust strategically to those
+changing expectations. For example, if radiologists are only handed the most difficult cases,
+they may exert more effort. We leave such strategic adjustments to a collaborative system
+for future work. We also have not considered alternative mechanisms to elicit radiologists’
+signals that may be less prone to errors. For instance, one may want to ask the radiologist to
+submit their assessment before seeing the AI’s assessment and then combine both assessments
+optimally ex-post. Finally, the solutions presented here treat pathologies as separable. This
+case is relevant if there is a single pathology of interest.
+
+
+7                       Conclusion
+
+AI is predicted to profoundly reshape the nature of work (see Felten et al., 2023). Humans
+are likely to use AI as decision aids for many tasks not only in the long run but also in
+the medium run for tasks that will ultimately be fully automated. A central question is
+therefore how humans use AI tools and how tasks should be assigned. To understand the
+benefits and pitfalls of human-machine collaboration, we conduct an experiment in which
+radiologists are provided with AI assistance. Besides serving as an iconic example of a
+

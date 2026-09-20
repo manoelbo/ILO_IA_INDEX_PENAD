@@ -1,0 +1,33 @@
+1. Introduction
+Economists have long been aware that Jensen’s inequality implies that E(ln y) 6= ln E(y),
+that is, the expected value of the logarithm of a random variable is diﬀerent from the
+logarithm of its expected value. This basic fact, however, has been neglected in many
+econometric applications. Indeed, one important implication of Jensen’s inequality is that
+the standard practice of interpreting the parameters of log-linearized models estimated
+by ordinary least squares (OLS) as elasticities can be highly misleading in the presence
+of heteroskedasticity.
+  Although many authors have addressed the problem of obtaining consistent estimates
+of the conditional mean of the dependent variable when the model is estimated in the
+log-linear form (see, for example, Goldberger, 1968; Manning and Mullahy, 2001), we
+were unable to find any reference in the literature to the potential bias of the elasticities
+estimated using the log-linear model.
+  In this paper we use the gravity equation for trade as a particular illustration of how
+the bias arises and propose an appropriate estimator. We argue that the gravity equation,
+and, more generally, constant-elasticity models, should be estimated in their multiplica-
+tive form and propose a simple pseudo-maximum likelihood (PML) estimation technique.
+Besides being consistent in the presence of heteroskedasticity, this method also provides
+a natural way to deal with zero values of the dependent variable.
+  Using Monte Carlo simulations, we compare the performance of our estimator with
+that of OLS (in the log-linear specification). The results are striking. In the presence
+of heteroskedasticity, estimates obtained using log-linearized models are severely biased,
+distorting the interpretation of the model. These biases might be critical for the com-
+parative assessment of competing economic theories, as well as for the evaluation of the
+eﬀects of diﬀerent policies. In contrast, our method is robust to the diﬀerent patterns of
+heteroskedasticity considered in the simulations.
+  We next use the proposed method to provide new estimates of the gravity equation in
+cross sectional data. Using standard tests, we show that heteroskedasticity is indeed a
+
+
+
+                                             2
+

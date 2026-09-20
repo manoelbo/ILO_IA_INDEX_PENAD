@@ -1,0 +1,59 @@
+de Chaisemartin, C.;, and X. D’HaultfŒuille. 2018b. "Two-way fixed effects estimators with heterogeneous
+         treatment effects." Working Paper.
+Deaton, Angus. 1997. The Analysis of Household Surveys : a Microeconometric Approach to Development Policy.
+         Baltimore, MD: Johns Hopkins University Press.
+Deshpande, Manasi, and Yue Li. 2017. "Who Is Screened Out? Application Costs and the Targeting of Disability
+         Programs." National Bureau of Economic Research Working Paper Series No. 23472. doi:
+         10.3386/w23472.
+Fadlon, Itzik, and Torben Heien Nielsen. 2015. "Family Labor Supply Responses to Severe Health Shocks."
+         National Bureau of Economic Research Working Paper Series No. 21352. doi: 10.3386/w21352.
+Freyaldenhoven, Simon, Christian Hansen, and Jesse M. Shapiro. 2018. "Pre-event Trends in the Panel Event-study
+         Design." National Bureau of Economic Research Working Paper Series No. 24565. doi: 10.3386/w24565.
+Frisch, Ragnar, and Frederick V. Waugh. 1933. "Partial Time Regressions as Compared with Individual Trends."
+         Econometrica 1 (4):387-401. doi: 10.2307/1907330.
+Gibbons, Charles, E., Juan Carlos Suárez Serrato, and Michael Urbancic, B. 2018. Broken or Fixed Effects? In
+         Journal of Econometric Methods.
+Goodman-Bacon, Andrew. 2018. "The Long-Run Effects of Childhood Insurance Coverage: Medicaid
+         Implementation, Adult Health, and Labor Market Outcomes." Working Paper.
+Goodman, Joshua. 2017. "The Labor of Division: Returns to Compulsory High School Math Coursework."
+         National Bureau of Economic Research Working Paper Series No. 23063. doi: 10.3386/w23063.
+Grosz, Michael, Douglas L. Miller, and Na'ama Shenhav. 2018. "All In the Family: Assessing the External Validity
+         of Family Fixed Effects Estimates and the Long Term Impact of Head Start." Working Paper.
+Haines, Michael R., and ICPSR. 2010. Historical, Demographic, Economic, and Social Data: The United States,
+         1790-2002. ICPSR [distributor].
+Heckman, James J., Robert J. Lalonde, and Jeffrey A. Smith. 1999. "Chapter 31 - The Economics and Econometrics
+         of Active Labor Market Programs." In Handbook of Labor Economics, edited by Orley C. Ashenfelter and
+         David Card, 1865-2097. Elsevier.
+Holland, Paul W. 1986. "Statistics and Causal Inference." Journal of the American Statistical Association 81
+         (396):945-960. doi: 10.2307/2289064.
+Imai, Kosuke, In Song Kim, and Erik Wang. 2018. "Matching Methods for Causal Inference with Time-Series
+         Cross-Section Data." Working Paper.
+Imbens, Guido W., and Joshua D. Angrist. 1994. "Identification and Estimation of Local Average Treatment
+         Effects." Econometrica 62 (2):467-475. doi: 10.2307/2951620.
+Jacobson, Louis S., Robert J. LaLonde, and Daniel G. Sullivan. 1993. "Earnings Losses of Displaced Workers." The
+         American Economic Review 83 (4):685-709. doi: 10.2307/2117574.
+Joseph Hotz, V., Guido W. Imbens, and Julie H. Mortimer. 2005. "Predicting the efficacy of future training
+         programs using past experiences at other locations." Journal of Econometrics 125 (1):241-270. doi:
+         https://doi.org/10.1016/j.jeconom.2004.04.009.
+Kitagawa, Evelyn M. 1955. "Components of a Difference Between Two Rates." Journal of the American Statistical
+         Association 50 (272):1168-1194. doi: 10.2307/2281213.
+Kovak, Brian, Lindsay Oldenski, and Nicholas Sly. 2018. "The Labor Market Effects of Offshoring by U.S.
+         Multinational Firms: Evidence from Changes in Global Tax Policies." Working Paper.
+Krolikowski, Pawel. 2017. "Choosing a Control Group for Displaced Workers." ILR Review:0019793917743707.
+         doi: 10.1177/0019793917743707.
+Lee, David S., and Thomas Lemieux. 2010. "Regression Discontinuity Designs in Economics." Journal of
+         Economic Literature 48 (2):281-355.
+Lee, Jin Young, and Gary Solon. 2011. "The Fragility of Estimated Effects of Unilateral Divorce Laws on Divorce
+         Rates." National Bureau of Economic Research Working Paper Series No. 16773.
+Malkova, Olga. 2017. "Can Maternity Benefits Have Long-Term Effects on Childbearing? Evidence From Soviet
+         Russia." The Review of Economics and Statistics. doi: 10.1162/REST_a_00713.
+Meer, Jonathan, and Jeremy West. 2013. "Effects of the Minimum Wage on Employment Dynamics." National
+         Bureau of Economic Research Working Paper Series No. 19262. doi: 10.3386/w19262.
+Meyer, Bruce D. 1995. "Natural and Quasi-Experiments in Economics." Journal of Business & Economic Statistics
+         13 (2):151-161. doi: 10.2307/1392369.
+Neumark, David, J. M. Ian Salas, and William Wascher. 2014. "Revisiting the Minimum Wage—Employment
+         Debate: Throwing Out the Baby with the Bathwater?" ILR Review 67 (3_suppl):608-648. doi:
+         10.1177/00197939140670S307.
+
+                                                      45
+

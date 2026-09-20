@@ -1,0 +1,43 @@
+Our paper is related to the DID literature. Our main result generalizes Theorem 1 in de Chaise-
+martin and D’Haultfœuille (2018). When the data has two groups and two periods, the Wald-
+DID estimand considered therein is equal to βf e and βf d . Our results on βf e and βf d are
+thus extensions of that theorem to the case with multiple periods and groups.3 Moreover, our
+DIDM estimator is related to the Wald-TC estimator with many groups and periods proposed in
+de Chaisemartin and D’Haultfœuille (2018), and to the multi-period DID estimator proposed by
+Imai and Kim (2018). In Section 4, we explain the differences between those three estimators.
+More recently, Borusyak and Jaravel (2017), Abraham and Sun (2018), Athey and Imbens (2018),
+Callaway and Sant’Anna (2018), and Goodman-Bacon (2018) study the special case of staggered
+adoption designs, where the treatment of a group is weakly increasing over time. Those papers
+derive some important results specific to that design that we do not consider here. Still, some
+of the results in those papers are related to ours, and we describe precisely those connections
+later in the paper. The most important dimension on which our paper differs from those is
+that our results apply to any two-way fixed effects regressions, not only to those with staggered
+adoption. In our survey of the AER papers estimating two-way fixed effects regressions, less
+than 10% have a staggered adoption design. This suggests that while staggered adoptions are
+an important research design, they may account for a relatively small minority of the applications
+where two-way fixed effects regressions have been used.
+The paper is organized as follows. Section 2 introduces the set-up. Section 3 presents our
+decomposition results. Section 4 introduces our alternative estimator. Section 5 briefly describes
+some of the extensions covered in our Web Appendix. Section 6 presents our survey of the articles
+published in the AER, and our two empirical applications.
+
+
+2       Set up
+
+One considers observations that can be divided into G groups and T periods. For every (g, t) ∈
+{1, ..., G} × {1, ..., T }, let Ng,t denote the number of observations in group g at period t, and let
+       P
+N = g,t Ng,t be the total number of observations. The data may be an individual-level panel
+or repeated cross-section data set where groups are, say, individuals’ county of birth. The data
+could also be a cross-section where cohort of birth plays the role of time. For instance, Duflo
+(2001) compares the schooling of different cohorts in Indonesia, some of which were exposed to
+a school construction program. It is also possible that for all (g, t), Ng,t = 1, e.g. a group is one
+individual or firm. All of the above are special cases of the data structure we consider.
+One is interested in measuring the effect of a treatment on some outcome. Throughout the paper
+    3
+   In fact, a preliminary version of our main result appeared in a working paper version of de Chaisemartin and
+D’Haultfœuille (2018) (see Theorems S1 and S2 in de Chaisemartin and D’Haultfoeuille, 2015).
+
+
+                                                      4
+

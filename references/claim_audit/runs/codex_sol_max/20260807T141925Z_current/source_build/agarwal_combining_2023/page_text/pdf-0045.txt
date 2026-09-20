@@ -1,0 +1,38 @@
+                                                                                              45
+
+highly-skilled profession that is being transformed by AI, radiology also represents a large
+class of professionals whose main job is a high-stakes classification task. Since we can simulate
+radiologists’ normal workflow, this is an ideal setting for conducting such an experiment.
+While the potential benefits of deploying AI assistance are large in our setting, biases in
+humans’ use of AI assistance eliminate these potential gains. Even though the AI tool in our
+experiment performs better than two thirds of radiologists, optimally combining their predic-
+tions could substantially improve performance. Yet, we find that giving radiologists access
+to AI predictions does not, on average, lead to higher performance. This average treatment
+effect, however, masks systematic heterogeneity: providing AI does improve radiologists’ pre-
+dictions and decisions for cases where the AI is certain, but not when uncertain. This latter
+result – that prediction quality can be reduced for some range of AI signals – rejects Bayesian
+updating with correct beliefs. We also describe systematic errors in belief updating – namely
+radiologists exhibit automation neglect (e.g. radiologists weight the AI prediction relative
+to their own) and treat the AI prediction and their own signals as independent even though
+they are not. Moreover, radiologists take significantly more time to make a decision when
+AI information is provided.
+Together, these results have important implications for how to design the collaboration be-
+tween humans and machines. Increased time costs and sub-optimal use of AI information
+both work against having radiologists make decisions with AI assistance. In fact, an optimal
+delegation policy that utilizes heterogeneity in treatment effects given the AI prediction sug-
+gests that cases should either be decided by the AI alone or by the radiologist alone. Only a
+small share of cases are optimally delegated to radiologists with access to AI. In other words,
+we find that radiologists should work next to as opposed to with AI. To the extent that expert
+decision makers generally under-respond to information other than their own (Conlon et al.,
+2022) and incorporating additional information is cognitively costly, these insights may hold
+in other settings where experts’ main job is a classification task.
+There are several important considerations that are outside the scope of this work. One
+question motivated by the unrealized potential gains of AI assistance we find is whether
+the benefits from AI-specific training for radiologists and/or experience with AI are large.
+Answering these questions requires different experimental designs or longer-run studies. An-
+other open question is whether the heterogeneity in the value of AI assistance is correlated
+with a human’s baseline skill or other characteristics, and whether such correlation can be
+predicted to target assistance. A consideration in the organization of human-AI collaboration
+that we abstract away from is that the form of collaboration may influence experts’ incen-
+tives, to which humans may respond strategically. Finally, the use of AI in practice will be
+

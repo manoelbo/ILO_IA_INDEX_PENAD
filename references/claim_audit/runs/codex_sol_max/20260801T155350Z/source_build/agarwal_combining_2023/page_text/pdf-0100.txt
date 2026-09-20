@@ -1,0 +1,65 @@
+                                                                                                                                                                                                                                100
+
+       Abnormal
+
+
+                                                                             Figure C.35: Comparing AI performance to Radiologists
+                                                          (a) RMSE Radiologists and AI                                                                                   (b) AUROC Radiologists and AI
+                                                                                                         AI (Pct. 90)                                                                                   AI (Pct. 75)
+
+                                           4                                                                                                                   8
+
+
+                                           3                                                                                                                   6
+Density
+
+
+
+
+                                                                                                                             Density
+                                           2                                                                                                                   4
+
+
+                                           1                                                                                                                   2
+
+
+                                           0                                                                                                                   0
+                                                    .2                     .4                   .6                      .8                                               .6              .7          .8                .9             1
+                                                                                  RMSE                                                                                                           AUROC
+
+
+       Note: Main specifications similar to figure 1 with the exception that only the abnormal pathology is considered.
+
+
+
+
+                                                                   Figure C.36: Conditional treatment effect given radiologist prediction
+                                                         (a) Deviation from Ground Truth                                                                                           (b) Incorrect Decision
+ATE of AI on deviation from ground truth
+
+
+
+
+                                               .2
+                                                                                                                                                                    .1
+                                                                                                                             ATE of AI on incorrect decision
+
+
+
+
+                                               .1                                                                                                                  .05
+
+
+                                                                                                                                                                    0
+                                               0
+
+                                                                                                                                                               -.05
+
+                                           -.1
+                                                                                                                                                                   -.1
+                                                         [0,0.2)      [0.2,0.4)    [0.4,0.6)     [0.6,0.8)    [0.8,1]                                                    [0,0.2)      [0.2,0.4)    [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                                    Radiologist probability bins without AI                                                                         Radiologist probability bins without AI
+
+
+       Note: Main specifications similar to figure 3 with the exception that only the abnormal pathology is considered.
+

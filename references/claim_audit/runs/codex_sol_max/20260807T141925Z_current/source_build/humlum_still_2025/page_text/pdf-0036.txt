@@ -1,0 +1,31 @@
+(Acemoglu and Restrepo, 2018a) and with evidence that complementary organizational
+investments are critical to realizing the productivity gains from new technologies (Bloom,
+Sadun and Reenen, 2012; Brynjolfsson and Hitt, 2000). Occupational mobility is the one
+margin where these rapid currents break through to administrative labor market outcomes:
+workers who use AI chatbots are more likely to have transitioned into new occupations,
+particularly into roles where workers have greater discretion over their toolsets. These
+workers move into better-paid occupations where using AI chatbots is more relevant. This
+supports the view that generative AI may help workers access otherwise scarce expertise,
+with broader implications for inequality in the labor market (Autor, 2024; Autor and
+Thompson, 2025).
+   What does not move is the surface—recorded hours and earnings. Using difference-in-
+differences, we estimate precise null effects at both the worker and workplace levels, ruling
+out effects larger than 2% two years after ChatGPT’s launch. These null results hold
+across occupations, across intensities of adoption, and even among workers who report
+substantial daily time savings. While aggregate early-career employment has declined in
+several exposed occupations, firms’ adoption of AI chatbots does not drive these declines.
+   We conjecture that these two patterns may be mutually reinforcing: when earnings
+and recorded hours remain stable, workers and workplaces absorb technological change
+through task reallocation and other unrecorded adjustments, reducing pressure on pay or
+hours. If so, the absence of measurable labor market effects is not evidence that nothing
+is happening—but rather that transformation is occurring on margins that conventional
+economic statistics do not capture. This pattern echoes the productivity J-curves observed
+at the onset of prior general-purpose technologies (Brynjolfsson, Rock and Syverson,
+2021; David, 1990; Solow, 1987), and our data reveal what lies within the trough: the
+reorganization of work that absorbs technological change before it surfaces in hours or
+earnings. Understanding this process requires the kind of linked data infrastructure we
+develop here, capturing both the reorganization of work within firms and its translation
+into administrative labor market outcomes.
+
+
+                                             34

@@ -1,0 +1,28 @@
+                                                                                                  104
+
+C.5.2   Estimating Bayesian Update Terms
+
+Here, we describe the method we use to estimate the Bayesian benchmark π(ωi = 1|sE                A
+                                                                                            ir , si ).
+This procedure is done separately for each pathology. We train a random forest classifier
+that predicts the ground truth based on features including the vector of a radiologist’s re-
+ported probabilities in the non-AI treatment and the vector of AI predictions. Additional
+features include radiologist identifiers to allow for heterogeneity in radiologists’ assessments,
+an indicator equal to one if the case was read with clinical history, and summaries of the
+patient clinical history. We estimate this quantity for various parameterizations of sE  ir and si
+                                                                                                    A
+
+described in Section 5. These are used in the model testing exercise to understand if radiol-
+ogists account for the joint distribution of signals when forming their posterior beliefs. The
+hyperparameters of the model are tuned using grouped cross-validation where observations
+were grouped by patient id to avoid overfitting with five folds. We impose monotonicity
+constraints on the model to impose that π(ωi = 1|sE             A
+                                                          ir , si ) is monotonically increasing in
+all probability inputs. When the model includes clinical history, we provide a summarized
+patient’s clinical record with their sex, weight, temperature, pulse, age, and the number of
+available and flagged labs. We mean impute these variables when the radiologist does not
+have access to the clinical history and include an indicator equal to one if the radiologist had
+access to the clinical history as an additional feature. Below we summarize the performance
+of these models and the relative value of increasing the dimension of sE            A
+                                                                            ir and si .
+

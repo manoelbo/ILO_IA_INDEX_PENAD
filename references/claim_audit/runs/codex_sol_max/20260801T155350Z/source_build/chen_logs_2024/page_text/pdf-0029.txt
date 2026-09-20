@@ -1,0 +1,57 @@
+                                        Figure 2: Density of bribe amount in Sequeira (2016)
+
+
+
+
+                Density   7.5e−05
+
+
+
+
+                          5.0e−05
+
+
+
+
+                          2.5e−05
+
+
+
+
+                          0.0e+00
+                                    0                20000            40000           60000
+                                                              Bribe amount (MZN)
+
+Note: this figure shows a kernel density estimate of the bribe amount in Sequeira (2016), pooling across all observations
+with a positive bribe. The kernel density estimates are constructed using the default settings of the stat_density
+function in R.
+
+
+energy-efficient stoves. They use the randomized price (pi ) as an instrument for whether an indi-
+vidual i buys an energy-efficient stove (Di ). They use this instrument to estimate the effects of
+stove-adoption on outcomes such as charcoal spending (Yi ).
+
+Original specification and sensitivity to scale.                         Let Xi be a vector of control variables (in-
+cluding a constant). Berkouwer and Dean (2022) estimate
+
+                                                   arcsinhpYi q “ Di β ` Xi1 γ ` ǫi                                 (11)
+
+by two-stage least squares (TSLS), using pi as an instrument for Di .40 (They also report re-
+sults where spending is measured in levels.) The estimated coefficient β̂ is an estimate of the
+LATE of stove adoption on the arcsinh of charcoal spending for instrument-compliers whose de-
+cision of whether to purchase the stove depends on the price offered in the experiment.41                             In
+Berkouwer and Dean (2022), Yi is measured as weekly charcoal spending in dollars. They obtain a
+coefficient of β̂ “ ´0.50 and write “[t]he 50 log point reduction corresponds to a 39 percent decrease
+in charcoal consumption [since expp´0.50q “ 1 ´ 0.39]” (p. 3306).
+  40
+     More precisely, each observation i is an individual-by-week pair, and some (but not all) individuals are surveyed
+on multiple weeks. Standard errors are clustered at the respondent level.
+  41
+     We use the phrase “instrument-compliers” to distinguish compliers for the instrument, whose value of Dpzq
+depends on z, from “compliers” discussed earlier who have Y p1q ą 0, Y p0q “ 0. Since the instrument takes on multiple
+values (i.e. multiple price offers), β corresponds to a weighted average of treatment effects across instrument-compliers
+for different values of the instrument (Angrist et al., 2000).
+
+
+                                                                 29
+

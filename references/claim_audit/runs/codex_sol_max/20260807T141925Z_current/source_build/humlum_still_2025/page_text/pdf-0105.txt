@@ -1,0 +1,98 @@
+                     Figure F.8: Have Adopting Workplaces Fared Differently?
+                      Heterogeneity by Occupation (DiD to Non-Encouraged)
+
+                                      (a) Log Hours of Incumbent Workers
+                                               All
+
+                                    Software Dev.
+
+                                       Legal Prof.
+
+                                     Accountants
+
+                                Customer Service
+
+                                        Marketing
+
+                                Financial Advisors
+
+                                         HR Prof.
+
+                                     Office Clerks
+
+                                        Teachers
+
+                                       IT Support
+                                                           -.02           0                     .02         .04         .06
+
+                                                                                     2023         2024
+
+
+
+
+                                                              (b) Job Creation
+                                               All
+
+                                    Software Dev.
+
+                                       Legal Prof.
+
+                                     Accountants
+
+                                Customer Service
+
+                                        Marketing
+
+                                Financial Advisors
+
+                                         HR Prof.
+
+                                     Office Clerks
+
+                                        Teachers
+
+                                       IT Support
+                                                     -.2     -.15   -.1       -.05          0         .05   .1    .15     .2
+
+                                                                                     2023         2024
+
+
+
+
+                                                           (c) Job Destruction
+                                               All
+
+                                    Software Dev.
+
+                                       Legal Prof.
+
+                                     Accountants
+
+                                Customer Service
+
+                                        Marketing
+
+                                Financial Advisors
+
+                                         HR Prof.
+
+                                     Office Clerks
+
+                                        Teachers
+
+                                       IT Support
+                                                     -.2     -.15   -.1       -.05          0         .05   .1    .15     .2
+
+                                                                                     2023         2024
+
+
+Notes: This figure shows occupation-specific estimates for the remaining workplace outcomes from Figure 8. Panel (a)
+shows log hours of incumbent workers (those employed at the workplace throughout the pre-period, 2021M1-2022M11);
+Panels (b) and (c) show job creation and destruction rates (measured as the share of hires and separations, respectively, in
+total employment). Estimates are based on the pooled specification in Equation (3), with 95% confidence intervals shown as
+whiskers. Sample: All completed 2024 survey responses linked to registry data.
+
+
+
+
+                                                                              55

@@ -1,0 +1,54 @@
+68     ILO Working Paper 140
+
+
+
+
+     References
+
+     Acemoglu, D., 2024. The Simple Macroeconomics of AI. Mass. Inst. Technol., Working Paper 32487,
+     https://www.nber.org/papers/w32487
+
+     Acemoglu, D., Kong, F., Restrepo, P., 2024. Tasks At Work: Comparative Advantage, Technology
+     and Labor Demand. Working Paper Series. https://doi.org/10.3386/w32872
+
+     Acemoglu, D., Restrepo, P., 2022. Tasks, Automation, and the Rise in U.S. Wage Inequality.
+     Econometrica 90, 1973–2016. https://doi.org/10.3982/ECTA19815
+
+     Ananian, S., Aubert, P., Behaghel, L., 2006. Travailleurs âgés, nouvelles technologies et change-
+     ments organisationnels : un réexamen à partir de l’enquête « Reponse ». Suivi d’un commentaire
+     de Luc Behaghel : emploi des seniors - Des effets du changement technologique aux recomman-
+     dations. Econ. Stat. 397, 21–49. https://doi.org/10.3406/estat.2006.7125
+
+     Autor, D., 2024. Applying AI to Rebuild Middle Class Jobs. NBER Working Paper Series, 32140,
+     https://doi.org/10.3386/w32140
+
+     Bessen, J.E., 2016. How Computer Automation Affects Occupations: Technology, Jobs, and Skills.
+     https://doi.org/10.2139/ssrn.2690435
+
+     Bick, A., Blandin, A., Deming, D.J., 2024. The Rapid Adoption of Generative AI. Working Paper
+     Series. https://doi.org/10.3386/w32966
+
+     Bubeck, S., Chandrasekaran, V., Eldan, R., Gehrke, J., Horvitz, E., Kamar, E., Lee, P., Lee, Y.T., Li,
+     Y., Lundberg, S., Nori, H., Palangi, H., Ribeiro, M.T., Zhang, Y., 2023. Sparks of Artificial General
+     Intelligence: Early experiments with GPT-4.
+
+     Cazzaniga, M., Jaumotte, F., Li, L., Melina, G., Augustus J., P., Carlo, P., Emma J., R., Mendes, M., 2024.
+     Gen-AI: Artificial Intelligence and the Future of Work, IMF, https://www.imf.org/en/Publications/
+     Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-
+     Work-542379 (accessed 2.19.24).
+
+     Comunale, M., Manera, A., 2024. The Economic Impacts and the Regulation of AI: A Review
+     of the Academic Literature and Policy Actions, IMF, https://www.imf.org/en/Publications/WP/
+     Issues/2024/03/22/The-Economic-Impacts-and-the-Regulation-of-AI-A-Review-of-the-Academic-
+     Literature-and-546645 (accessed 3.26.24).
+
+     Faverio, M., Tyson, A., 2022. What the data says about Americans’ views of artificial intelligence.
+     Pew Res. Cent., https://www.pewresearch.org/short-reads/2023/11/21/what-the-data-says-about-
+     americans-views-of-artificial-intelligence/ (accessed 3.14.24).
+
+     Felten, E.W., Raj, M., Seamans, R., 2023. Occupational Heterogeneity in Exposure to Generative
+     AI. https://doi.org/10.2139/ssrn.4414065
+
+     Frey, C.B., Osborne, M.A., 2017. The future of employment: How susceptible are jobs to computerisa-
+     tion? Technol. Forecast. Soc. Change 114, 254–280. https://doi.org/10.1016/j.techfore.2016.08.019
+

@@ -1,0 +1,80 @@
+the best of our knowledge, this trade-off between the strength of these assumptions has not been noticed
+before.
+
+Remark 2. In some applications, practitioners may not be comfortable with using “never-treated” units
+as part of the comparison group because they behave very differently from the other “eventually treated”
+units. In these cases, practitioners could drop all “never-treated” units from the analysis and proceed with
+Assumption 5.
+
+2.4   Nonparametric Identification of the Group-Time Average Treatment Effects
+In this section, we show that the family of group-time average treatment effects are nonparametrically
+point-identified under the aforementioned assumptions. Furthermore, we show that one can use outcome
+regression (OR), inverse probability weighting (IPW), or doubly robust (DR) estimands to recover the
+AT T (g, t)’s. In addition, we also highlight the roles played by Assumption 3 and by Assumptions 4 and
+5 when forming these different estimands.
+   Before formalizing all the results, we need to introduce some additional notation. Let mnev
+                                                                                           g,t,δ (X) =
+E [Yt − Yg−δ−1 |X, C = 1] and mny
+                               g,t,δ (X) = E [Yt − Yg−δ−1 |X, Dt+δ = 0, Gg = 0]. These are population
+outcome regressions for the never-treated group and for the “not-yet-treated” by time t + δ group. Let
+
+                                                    pg (X) C
+                                                                          
+
+                 nev
+                                    Gg           1 − pg (X)               
+           AT Tipw                  E [Gg ] −  pg (X) C   (Yt − Yg−δ−1 ) ,
+                     (g, t; δ) = E                                                                (2.2)
+                                                                           
+                                                 E
+                                                    1 − pg (X)
+                                                                      
+                 nev                  Gg                     nev
+                                                                     
+           AT Tor (g, t; δ) = E              Yt − Yg−δ−1 − mg,t,δ (X) ,                            (2.3)
+                                     E [Gg ]
+                                                    pg (X) C
+                                                                                      
+
+                 nev
+                                    Gg           1 − pg (X)                   nev
+                                                                                        
+           AT Tdr                   E [Gg ] −  pg (X) C   Yt − Yg−δ−1 − mg,t,δ (X)  .
+                     (g, t; δ) = E                                                                (2.4)
+                                                                                       
+                                                 E
+                                                    1 − pg (X)
+
+Analogously, let
+
+                                          pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )
+                                                                                         
+
+       ny                Gg                       1 − pg,t+δ (X)                         
+  AT Tipw                E [Gg ] −  pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )   (Yt − Yg−δ−1 ) ,
+          (g, t; δ) = E                                                                              (2.5)
+                                                                                          
+                                        E
+                                                     1 − pg,t+δ (X)
+                                                              
+       ny                  Gg     
+                                                       ny
+  AT Tor (g, t; δ) = E              Yt − Yg−δ−1 − mg,t,δ (X) ,                                        (2.6)
+                          E [Gg ]
+                                          pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )
+                                                                                                   
+
+       ny                Gg                       1 − pg,t+δ (X)                                 
+                                                                               Yt − Yg−δ−1 − mny (X)  .
+  AT Tdr  (g, t; δ) = E            −                                                       g,t,δ
+                         E [Gg ]          pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )                         
+                                        E
+                                                     1 − pg,t+δ (X)
+                                                                                                      (2.7)
+
+   With some abuse of notation, we write ḡ − δ = ∞ for any non-negative δ whenever ḡ = ∞.
+
+
+
+                                                    10
+

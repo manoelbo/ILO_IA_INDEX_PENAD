@@ -1,0 +1,57 @@
+    Finally, the null results across our 11 exposed occupations stand in contrast to some
+
+evidence from online freelance platforms, showing sharp declines in demand for tasks
+
+like writing and translation after ChatGPT’s release (Teutloff et al., 2025). Yet while
+
+some freelance tasks are highly substitutable with chatbots, our survey shows that most
+
+work—even in exposed occupations—is not, and that workers often reallocate saved time
+
+to other tasks. A key advantage of our administrative data is that it captures workers’
+
+total earnings and hours, regardless of such reallocations.
+
+
+1     Data and Institutional Setting
+
+Denmark offers an ideal setting for examining the labor market impacts of Generative AI.
+
+    First, Danish workers have been at the forefront of Generative AI adoption, with
+
+take-up rates comparable to those in the United States (Bick, Blandin and Deming, 2025;
+
+Humlum and Vestergaard, 2025; RISJ, 2024).
+
+    Second, Denmark’s labor market is highly flexible, with low hiring and firing costs—
+
+similar to those of the U.S.—which allow firms and workers to adjust employment in
+
+response to technological change (Botero et al., 2004; Dahl, Le Maire and Munch, 2013).
+
+Appendix C.1 details wage-setting in our occupations, showing that most workers engage
+
+in annual negotiations with their employers, providing regular opportunities to adjust
+
+earnings and hours in response to AI chatbot adoption.
+
+    Third, Denmark has exceptional infrastructure for tracking the adoption of new
+
+technologies. In particular, every Dane has a digital mailbox that Statistics Denmark can
+
+use to distribute survey invitations. We use this infrastructure to conduct two large-scale,
+
+representative surveys on AI chatbot adoption.
+
+    Finally, our partnership with Statistics Denmark allows us to link these surveys
+
+to administrative matched employer-employee data, providing a unique opportunity to
+
+analyze labor market effects such as changes in earnings, working hours, and job mobility.
+
+    Taken together, these factors make Denmark a prime setting for observing early
+
+labor market effects of Generative AI, with insights that may extend to other advanced
+
+                                             5
+

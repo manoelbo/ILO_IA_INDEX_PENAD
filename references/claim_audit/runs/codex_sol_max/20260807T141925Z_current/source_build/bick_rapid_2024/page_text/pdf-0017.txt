@@ -1,0 +1,173 @@
+            Figure 6: Accounting for Variation in Generative AI Adoption At Work By Occupation
+ (a) Predicted Exposure: Eloundou et al. (2024)                                                                      (b) Predicted Exposure: Felten et al. (2021)
+              60
+
+
+
+
+                                                                                                                          60
+                                       ρ=0.65                                                                                                                         ρ=0.71
+                        50
+
+
+
+
+                                                                                                                                    50
+ Share Using For Work (%)
+
+
+
+
+                                                                                                             Share Using For Work (%)
+                                                                                        Computer / Math                                                                                      Computer / Math
+                                                                   Management                                                                                                               Management
+                 40
+
+
+
+
+                                                                                                                             40
+                                                                     Business / Finance                                                                                                         Business / Finance
+
+                                     Health Practitioners                                                                                                 Health Practitioners
+                                                                  Arts / Entert. / Sports                                                                                           Arts / Entert. / Sports
+           30
+
+
+
+
+                                                                                                                       30
+                                            Education                                                                                                                      Education Education
+                                                                    Archit. / Engin. / Science                                                              Archit. / Engin. / Science
+                                Legal / Social Services                                                                                                                                    Legal / Social Services
+   20
+
+
+
+
+                                                                                                               20
+                                             Blue Collar        Sales        Office / Administration                                                                                 SalesOffice / Administration
+
+                                            Personal Services                                                                                                           Personal Services
+              10
+
+
+
+
+                                                                                                                          10
+              0
+
+
+
+
+                                0          20       40        60          80                      100                     0                  -3       -2      -1       0         1        2                    3
+                                          AI Exposure: Eloundou, et al. (2024)                                                                          AI Exposure: Felten, et al. (2021)
+
+
+                                    (c) Share Stating AI Not Useful                                                                         (d) Share Stating AI Barriers at Work
+
+
+                                                                                                                                                      Computer / Math
+                                           Computer / Math
+              50
+
+
+
+
+                                                                                                                          50
+
+
+
+
+                                Busin. / Finance                                                                                                            Busin. / Finance
+                                                   Management
+                                                                                                                                                               Management
+  Share Using AI For Work (%)
+
+
+
+
+                                                                                                              Share Using AI For Work (%)
+                        40
+
+
+
+
+                                                                                                                                    40
+
+
+
+
+                                                                                                                                                    Health Practitioners
+                                                        Health Practitioners
+                                        Education                                                                                                                  Education
+                                                         Arts / Entert. / Sports
+                                                             Archit. / Engin. / Science                                                                   Arts / Entert. / Sports
+                                                                                                                                                            Archit. / Engin. / Science
+                 30
+
+
+
+
+                                                                                                                             30
+
+
+
+
+                                                           Legal / Social Services
+                                                                                                                                                                         Legal / Social Services
+                                                                Sales       Blue Collar
+                                                                                                                                                             Blue Collar Sales
+                                                                 Office / Administration
+        20
+
+
+
+
+                                                                                                                    20
+
+
+
+
+                                                                                                                                                                      Office / Administration
+                                                                         Personal Services
+                                                                                                                                                     Personal Services
+ 10
+
+
+
+
+                                                                                                             10
+
+
+
+
+                                     ρ=-0.88                                                                                                      ρ=-0.30
+              0
+
+
+
+
+                                                                                                                          0
+
+
+
+
+                                0        10       20       30      40        50                                                              0        10        20      30       40        50
+                                     Share Not Using AI Because Not Useful (%)                                                                    Share Not Using AI Due to Work Barriers (%)
+
+
+Notes: Panel (a) scatters occupational genAI adoption rates at work against predicted genAI exposure
+(ChatGPT-β) from Eloundou et al. (2024). Panel (b) scatters occupational genAI adoption rates at work
+against predicted genAI exposure from Felten et al. (2021). Panel (c) scatters occupational genAI adoption
+rates at work against the share of all workers in that occupation who reported that they did not use genAI
+because it was not useful for their job. Panel (d) scatters occupational genAI adoption rates at work against
+the share of all workers in that occupation who reported that they did not use genAI due to barriers at work.
+The data source for genAI use and reasons for non-use is the November 2024 RPS. The sample for the RPS is
+employed individuals age 18-64 (N = 3671). We exclude workers in “agriculture / forestry / fishing” due to a
+very low sample size.
+
+
+
+                                                                                                        15
+

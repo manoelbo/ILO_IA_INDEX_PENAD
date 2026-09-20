@@ -1,0 +1,67 @@
+Finally, f (E(U )) = fN /fD , with
+               1                   
+            1 X        d
+                         XX
+       fN =       (−1)         Ng,t E (1{Dg,t = 1 − d, Dg,t−1 = d}(Yg,t − Yg,t−1 ))
+            G d=0        t∈T g   d
+                                                                                                   
+                                              E(P1−d,d,t )
+                                            −              E (1{Dg,t = Dg,t−1 = d}(Yg,t − Yg,t−1 ))
+                                               E(Pd,d,t )
+              X
+       fD =         E[P1,0,t + P0,1,t ].
+              t≥2
+
+Reasoning as in the proof of Theorem 3 (see in particular Equations (20)-(21)) and noting that
+if t 6∈ Td , then, by Assumption S10 Pr(Dg,t = 1 − d, Dg,t−1 = d) = 0, we get fN = E(T S ).
+Moreover, fD = E(P S ). Hence,
+                                  
+               √           E(T S )    d         
+                 G DIDM −       S
+                                     −→ N 0, σ 2 , with σ 2 = Jf (U ∞ )ΣJf (U ∞ )0 .      (38)
+                           E(P )
+                          √                         
+Convergence to 0 of G E(T S )/E(P S ) − δ S
+  Let us define DG = (Dg,t )(g,t):g≤G,t=1...T , Te = E[T S |DG ] and I = 1{|P S − E(P S )| < εG },
+where εG > 0 will be specified below. By Assumption S10, limG→∞ E(P S ) > 0. Thus, it suffices
+                √                     
+to prove that G E(P S )δ S − E(T S ) → 0 . Because δ S = E[T S /P S ], we have
+                            h                       i
+     E(P S )δ S − E(T S ) =E Te(E(P S ) − P S )/P S
+                            h                         i     h                         i
+                              e       S         S   S         e           S
+                          =E T I(E(P ) − P )/P + E T (1 − I)(E(P ) − P )/P .    S   S
+                                                                                             (39)
+
+First, consider the second term on the right-hand side. By applying twice the Cauchy-Schwarz
+inequality, we get
+         √                                     √               h                        i1/4
+                 e            S     S     S
+           G|E[T (1 − I)(E(P ) − P )/P ]| ≤ GV (P )      S 1/2       e   S 4
+                                                                E[(T /P ) ] Pr(I = 0)
+                     √
+By Assumption S9, GV (P S )1/2 converges towards a finite limit. Thus, it suffices to show that
+the term into brackets tends to 0. To this end, note first that
+                             1 X
+               E[T S |DG ] =         Ng,t 1{Dg,t 6= Dg,t−1 }E[Yg,t (1) − Yg,t (0)|DG ].
+                             G
+                                     (g,t):t≥2
+
+Now, let Ag,t = Ng,t 1{Dg,t 6= Dg,t−1 } and Bg,t = E[Yg,t (1) − Yg,t (0)|DG ]. By Assumption S9 and
+Jensen’s inequality, sup(g,G,t):g≤G E[|Bg,t |4 ] < +∞. Then
+                                         !4         P                   !4
+                                      Te               g,t Ag,t |Bg,t |
+                                               ≤       P
+                                     PS                    g,t Ag,t
+                                                                  
+                                                                 4
+                                               ≤ max |Bg,t |
+                                                    g,t
+                                                  X
+                                               ≤     |Bg,t |4 .
+                                                     g,t
+
+
+
+                                                       29
+

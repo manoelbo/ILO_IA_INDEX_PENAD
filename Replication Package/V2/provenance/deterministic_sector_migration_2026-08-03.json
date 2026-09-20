@@ -1,0 +1,72 @@
+{
+  "candidate": {
+    "numeric_claims_failed": 0,
+    "numeric_claims_reconciled": 92,
+    "run_manifest_sha256": "bcdf582be75dc0c90f66ed402c41fe731ce4317115d7be0e489908c06984d45f"
+  },
+  "changed_artifacts": [
+    "caged/audit/cd_exposure_and_control_summary.json",
+    "caged/diagnostics/pretrend_level2.csv",
+    "caged/diagnostics/pretrend_level2_coefficients.csv",
+    "caged/diagnostics/pretrend_master_table.csv",
+    "caged/models/sector_fixed_effect_ladder.csv",
+    "caged/models/sector_fixed_effect_support.json",
+    "caged/models/sector_level1_vs_level2.csv",
+    "caged/replication/complete_r/comparison_status.json",
+    "caged/replication/complete_r/python_r_model_comparison.csv",
+    "caged/replication/complete_r/python_r_pretrend_comparison.csv",
+    "caged/replication/complete_r/r_model_results.csv",
+    "caged/replication/complete_r/r_pretrend_diagnostics.csv",
+    "caged/tables/table_5_1_1_sector_control.csv"
+  ],
+  "deterministic_build": {
+    "duckdb_threads": 1,
+    "ordered_key": [
+      "cbo_4d",
+      "secao",
+      "divisao",
+      "periodo_num"
+    ],
+    "proof_runs": 2,
+    "proof_runs_byte_identical": true,
+    "sector_comparison_sha256": "23f7245121537e75546a896c972199a22dee973dedcd0c0bcc18b1acc026906c",
+    "sector_panel_bytes": 52188706,
+    "sector_panel_rows": 1332307,
+    "sector_panel_sha256": "072ab8423033f8784a7d833577dd867d102d514cf124bc51716df521b2416182",
+    "sector_report_sha256": "bf1ef96277240d534bcb326442a28792679dd2290282d8960ea8347219806508",
+    "sector_results_sha256": "3b94e52ce9c76798c99157942f4be2712277aae8f7e54fc2f403e46ce035148b",
+    "sector_support_csv_sha256": "cd9a40f3ddc808dc46736f37271ac92e78233e00523cd1d2b7560926ac3b79cb",
+    "sector_support_json_sha256": "ca72712df8855882536d938b4d58a80968e596937e739213a16782481e48e509"
+  },
+  "format_version": 1,
+  "migration_reason": "DuckDB parallel aggregation and unordered Parquet output made sector-derived bytes depend on aggregation order. The replacement forces one DuckDB worker and orders the analytical key before writing Parquet.",
+  "reference": {
+    "artifact_contracts_sha256": "a86099d3cad9a77fe07c3d8157bdfe3fb690dd924a2e7350f8f194b6fdd3c059",
+    "artifacts": 267,
+    "candidate_comparison_artifacts": 264,
+    "candidate_comparison_failures": 0,
+    "new_manifest_sha256": "35d9084497f070b9333a8df3cdf6701c966a385dc68094a87c7fd8a9f4c9d451",
+    "new_signature": "cd7db7e34370b5262a552e6009a5e8c3508db62f06483b039075df1361615944",
+    "old_archive_path": "Replication Package/_archive/v2-reference/2026-08-03-pre-deterministic-sector",
+    "old_manifest_sha256": "d38d34dd9383d65ed1be9bb9ee437dc3d1f44d175ab85d8f8c01fe56f3bd0005",
+    "old_signature": "d4bc7f20dc8aae44e258b69405bdb2f337c90db6daa8adc9ae4e7df0bcdef6fe",
+    "semantic_contracts_unchanged": true
+  },
+  "scientific_equivalence": {
+    "categorical_values_exact": true,
+    "integer_like_values_exact": true,
+    "json_key_sets_exact": true,
+    "maximum_coefficient_absolute_difference": 2.298001199052546e-13,
+    "maximum_condition_number_absolute_difference": 2.571428194642067e-05,
+    "maximum_covariance_eigenvalue_absolute_difference": 3.1738663346797535e-16,
+    "maximum_p_value_absolute_difference": 7.043698957431843e-12,
+    "maximum_standard_error_absolute_difference": 6.411537967210279e-14,
+    "maximum_test_statistic_absolute_difference": 6.913734296176699e-08,
+    "numeric_claims_exact_at_contract_tolerances": true,
+    "reference_event_times_exact": true,
+    "row_counts_exact": true,
+    "sample_cluster_and_status_fields_exact": true,
+    "schemas_exact": true
+  },
+  "status": "pass"
+}

@@ -1,0 +1,50 @@
+     MINISTÉRIO DA SAÚDE
+
+
+     Registros: Sistema de Informações de Mortalidade (SIM) da Fundação
+     Nacional de Saúde (Funasa)
+
+O SIM, iniciado em 1979 após um processo de elaboração desencadeado em 1975, é
+um sistema informatizado de registro das informações constantes nas Declarações de
+Óbito. Ou seja, seus campos (variáveis) são exatamente os mesmos que constam no
+formulário oficial, cujo conteúdo é definido por legislação específica baseada em um
+modelo recomendado pela Organização Mundial da Saúde. O SIM é uma parte es-
+sencial do Sistema de Estatísticas Vitais, que engloba também os dados sobre nasci-
+mentos (ver Sinasc adiante). Idealmente, todas as pessoas que morrem necessitam da
+declaração de óbito, sem a qual não é possível proceder ao enterro ou à cremação do
+morto em cemitérios ou crematórios formalizados, tampouco dar início aos trâmites
+legais para a constituição de inventário dos bens do falecido para sua transmissão aos
+herdeiros. Todavia, é conhecido o fato de que ainda hoje, a despeito dos esforços des-
+pendidos em prol da melhoria dos registros de óbito no último quarto de século, em
+várias áreas do país os óbitos são subenumerados: nem todos os óbitos são comunica-
+dos e registrados pelas autoridades competentes, pois muitas pessoas são enterradas
+em cemitérios clandestinos. Quanto às crianças, nos rincões mais esquecidos do país,
+há as que nascem e morrem sem que o Estado jamais chegue a tomar conhecimento
+de sua existência.
+     • A informação de “cor ou raça” passou a ser registrada nas Declarações de Óbi-
+      to a partir de 1996, embora os arquivos de dados do SIM já tivessem o campo
+      preparado desde 1995;
+     • A informação de “cor ou raça” nas Declarações de Óbito é coletada segundo o
+      sistema classificatório de cinco categorias do IBGE, sendo que para indígenas
+      há a previsão para o registro da etnia;
+     • O método de identificação racial é complexo e sujeito a imperfeições, pois, por
+      um motivo muito óbvio, os sujeitos da classificação não podem declarar a pró-
+      pria cor. Assim, o responsável pelo preenchimento da Declaração de Óbito –
+      inclusive do quesito de “cor ou raça”, pois não há previsão específica quanto a
+      este nas normas – será:
+         1. Alguém da unidade notificadora, para os óbitos naturais que ocorrerem
+            com assistência médica em estabelecimentos de saúde;
+         2. O médico responsável, para os óbitos naturais que ocorrerem com assis-
+            tência médica fora de estabelecimentos de saúde;
+         3. Para os óbitos naturais que ocorrerem sem assistência médica e fora de
+            estabelecimentos de saúde:
+            § Médico do Serviço de Verificação de Óbito, se existente;
+            § Médico da localidade, se existente;
+            § Responsável pelo morto e duas testemunhas – o preenchimento da De-
+              claração de Óbito será feito no Cartório de Registro Civil.
+
+
+
+
+42                         texto para discussão | 996 | nov. 2003               ipea
+

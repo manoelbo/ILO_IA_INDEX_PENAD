@@ -1,0 +1,42 @@
+                                                                                                             7
+
+skilled experts from teleradiology companies under contracts that allow us to incentivize
+our participants. A key differentiating factor of our research is that, unlike previous studies
+which mainly concentrated on performance, our work emphasizes behavioral biases and their
+impact on human-AI interaction.
+An emerging literature in economics also compares human and AI performance. Within
+economics, these studies tend to rely on observational approaches, with examples addressing
+issues in medicine (Ribers and Ullrich, 2022; Mullainathan and Obermeyer, 2019) and bail
+decisions (Kleinberg et al., 2015; Angelova et al., 2022). However, analyses based on obser-
+vational data face critical identification challenges, such as the selective labels problem (see
+Kleinberg et al., 2017; Mullainathan and Obermeyer, 2019; Rambachan, 2021)). A limited
+set of studies use quasi-experimental approaches (e.g., Stevenson and Doleac, 2019; Angelova
+et al., 2022) or randomized controlled trials (e.g., Imai et al. (2020); Bundorf et al. (2020);
+Noy and Zhang (2023); Grimon et al. (2022)) to investigate human use of AI tools, typically
+focusing on overall performance or variability in participant response. We add to this litera-
+ture by developing an experimental approach that manipulates the information environment
+that calculates and compares behavior with a Bayesian benchmark to document systematic
+biases and demonstrate that these biases lead to a non-trivial delegation problem.6
+While several studies in behavioral economics have documented errors in probabilistic judg-
+ment and belief formation, they do not focus on the issues surrounding human-AI interaction
+(c.f. Tversky and Kahneman, 1974; Benjamin et al., 2019; Enke and Zimmermann, 2019; Con-
+lon et al., 2022, for example). Our definitions of own-information and automation bias build
+on the framework in Grether (1980). We contribute to this literature in two ways. First,
+we develop an approach to estimate the parameters of the model in Grether (1992) in an
+environment where the joint distribution of the signals cannot be controlled (or partialled
+out) by the researcher.7 This approach is necessary because we cannot modify the signal
+within medical images. Second, we link the design of AI information provision to the (bi-
+ased) updating rule that humans use. This link shows that the use of AI information by
+humans is an important and practical application of the ideas in this literature.
+   6
+     Our finding that radiologists exhibit automation neglect is related to those in Dietvorst et al. (2015),
+which shows that humans are averse to following algorithmic recommendations as compared to human recom-
+mendations. This aversion can be reduced if humans are allowed to modify the algorithm’s recommendation
+(Dietvorst et al., 2018).
+   7
+     Most applications that we are aware of rely on one of two experimental approaches. In the first approach,
+the researcher can partial out either the prior information or the likelihood ratio of the signal provided, for
+example in the classic bookbag-and-poker-chip experiments (see Benjamin et al. 2019; Benjamin 2019, for
+reviews). In the second approach, the researcher directly provides signals from a known joint distribution
+(e.g. Conlon et al., 2022).
+

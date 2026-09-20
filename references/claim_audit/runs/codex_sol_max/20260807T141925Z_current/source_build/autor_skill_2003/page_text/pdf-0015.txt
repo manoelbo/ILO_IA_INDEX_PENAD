@@ -1,0 +1,47 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                         1293
+
+requirements for detailed occupations in the United States, it also
+has well-known limitations [Miller et al. 1980]. These include
+limited sampling of occupations (particularly in the service sec-
+tor), imprecise denitions of measured constructs, and omission
+of important job skills. These shortcomings are likely to reduce
+the precision of our analysis.12
+
+II.A. Selecting Measures of Routine and Nonroutine Tasks
+     To identify variables that best approximate our task con-
+structs, we reduced the DOT variables to a relevant subset using
+DOT textual denitions, means of DOT measures by occupation
+from 1970, and detailed examples of DOT evaluations from the
+Handbook for Analyzing Jobs. We selected two variables to mea-
+sure nonroutine cognitive tasks, one to capture interactive, com-
+munication, and managerial skills and the other to capture ana-
+lytic reasoning skills. The rst codes the extent to which occupa-
+tions involve Direction, Control, and Planning of activities (DCP).
+It takes on consistently high values in occupations requiring
+managerial and interpersonal tasks. The second variable, GED-
+MATH, measures quantitative reasoning requirements. For rou-
+tine cognitive tasks, we employ the variable STS, which measures
+adaptability to work requiring Set limits, Tolerances, or Stan-
+dards. As a measure of routine manual activity, we selected the
+variable FINGDEX, an abbreviation for Finger Dexterity. To
+measure nonroutine manual task requirements, we employ the
+variable EYEHAND, an abbreviation for Eye-Hand-Foot coordi-
+nation. Denitions and example tasks from the Handbook for
+Analyzing Jobs are provided in Appendix 1.
+     A limitation of the DOT variables is that they do not have a
+natural scale and, moreover, cannot condently be treated as
+cardinal. To address this limitation, we transformed the DOT
+measures into percentile values corresponding to their rank in
+the 1960 distribution of task input. We choose 1960 as the base
+period for this standardization because it should primarily reect
+the distribution of tasks prior to the computer era. Consequently,
+all of our outcome measures may be interpreted as levels or
+
+
+    12. Researchers who have used the DOT to analyze changing job skill re-
+quirements include Rumberger [1981], Spenner [1983, 1990], Howell and Wolff
+[1991], Wolff [1996, 2002], Handel [2000], and Ingram and Neumann [2000]. What
+is unique to our work is the focus on routine and nonroutine tasks, and the joint
+analyses of the effect of computerization on task changes between and within
+occupations.
+

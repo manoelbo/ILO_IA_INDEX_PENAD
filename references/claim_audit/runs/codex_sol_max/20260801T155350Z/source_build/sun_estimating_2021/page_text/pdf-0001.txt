@@ -1,0 +1,42 @@
+                                                 Estimating Dynamic Treatment Effects in Event Studies with
+
+                                                                           Heterogeneous Treatment Effects∗
+arXiv:1804.05785v2 [econ.EM] 22 Sep 2020
+
+
+
+
+                                                                                     Liyang Sun† and Sarah Abraham‡
+
+                                                                                             September 22, 2020
+
+
+
+                                                                                                     Abstract
+
+                                                      To estimate the dynamic effects of an absorbing treatment, researchers often use two-way fixed
+                                                  effects regressions that include leads and lags of the treatment. We show that in settings with variation in
+                                                  treatment timing across units, the coefficient on a given lead or lag can be contaminated by effects from
+                                                  other periods, and apparent pretrends can arise solely from treatment effects heterogeneity. We propose
+                                                  an alternative estimator that is free of contamination, and illustrate the relative shortcomings of two-way
+                                                  fixed effects regressions with leads and lags through an empirical application.
+
+
+                                           Keywords: difference-in-differences, two-way fixed effects, pretrend test
+
+
+
+
+                                               ∗ We are grateful to Isaiah Andrews, Amy Finkelstein, Anna Mikusheva, and Heidi Williams for their guidance and sup-
+
+                                           port. We thank Alberto Abadie, Jonathan Cohen, Nathan Hendren, Peter Hull, Guido Imbens, Yunan Ji, Sylvia Klosin,
+                                           Kevin Kainan Li, Paichen Li, Therese A. McCarty, Whitney Newey, James Poterba, Pedro H. C. Sant’Anna, Gergely Ujhe-
+                                           lyi and Helen Willis for helpful discussions. This research was supported by the National Institute on Aging, Grant Num-
+                                           ber T32-AG000186. A preliminary draft of this paper was circulated on April 16, 2018. Replication code is available at
+                                           http://economics.mit.edu/grad/lsun20/. The companion Stata package eventstudyweights is available from the SSC
+                                           repository.
+                                               † Department of Economics, MIT, 77 Massachusetts Avenue, Cambridge, MA 02139. Corresponding author; lsun20@mit.edu.
+                                               ‡ Cornerstone Research, 699 Boylston St, Boston, MA 02116. The views expressed herein are solely those of the author, who is
+
+                                           responsible for the content, and do not necessarily represent the views of Cornerstone Research.
+

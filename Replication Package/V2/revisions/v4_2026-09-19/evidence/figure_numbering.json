@@ -1,0 +1,99 @@
+[
+  {
+    "old": "5.2.1.1",
+    "new": "A.3.1",
+    "file": "figures/figure_A_3_1_sex_admissions.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "sex",
+    "outcome": "admissoes",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.1.2",
+    "new": "A.3.2",
+    "file": "figures/figure_A_3_2_sex_wage.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "sex",
+    "outcome": "ln_salario_real_adm",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.2.1",
+    "new": "A.4.1",
+    "file": "figures/figure_A_4_1_race_admissions.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "race",
+    "outcome": "admissoes",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.2.2",
+    "new": "A.4.2",
+    "file": "figures/figure_A_4_2_race_wage.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "race",
+    "outcome": "ln_salario_real_adm",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.3.1",
+    "new": "A.5.1",
+    "file": "figures/figure_A_5_1_age_admissions.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "age",
+    "outcome": "admissoes",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.3.2",
+    "new": "A.5.2",
+    "file": "figures/figure_A_5_2_age_wage.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "age",
+    "outcome": "ln_salario_real_adm",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.4.1",
+    "new": "A.6.1",
+    "file": "figures/figure_A_6_1_education_admissions.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "education",
+    "outcome": "admissoes",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.4.2",
+    "new": "A.6.2",
+    "file": "figures/figure_A_6_2_education_wage.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "education",
+    "outcome": "ln_salario_real_adm",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.5.1",
+    "new": "A.7.1",
+    "file": "figures/figure_A_7_1_income_admissions.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "income",
+    "outcome": "admissoes",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.5.2",
+    "new": "A.7.2",
+    "file": "figures/figure_A_7_2_income_wage.png",
+    "source": "results/reference/artifacts/caged/models/group_event_study_coefficients.csv",
+    "dimension": "income",
+    "outcome": "ln_salario_real_adm",
+    "operation": "same series, intervals, and plotting function; title and note revised"
+  },
+  {
+    "old": "5.2.3.3",
+    "new": "A.5.3",
+    "file": "figures/figure_A_5_3_canaries_wage.png",
+    "source": "results/reference/artifacts/caged/models/canaries_22_25_wage_event_study.csv",
+    "operation": "same series and intervals; title and incorrect uniqueness note revised"
+  }
+]

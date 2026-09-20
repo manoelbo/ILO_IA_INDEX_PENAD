@@ -1,0 +1,30 @@
+           The primitives’ value is in what they can predict
+
+            Our goal was to create classifiers that are straightforward to implement and
+            in combination provide potentially important economic signals. While we are
+            very confident in the directional accuracy of the new measures (e.g., tasks with
+            higher average years of education needed to understand the human prompt
+            are likely more complex), none of the measures should be taken as exact or
+            definitive (e.g., Claude.ai may somewhat underestimate the human education
+            years needed for many tasks).
+
+            Even so, the primitives enrich our understanding of how people use AI.
+            Systematic relationships emerge across primitives, regions, and tasks—
+            patterns we explore in depth in Chapters 3 and 4. That these relationships are
+            intuitive and consistent suggests the primitives capture relevant aspects of
+            how people and businesses use Claude.
+
+            External benchmarks reinforce this. In our productivity work, Claude’s
+            time estimates correlate with actual time spent on software engineering
+            tasks. Figure 2.1 shows that our human education measure correlates with
+            actual worker education levels across occupations. These validations suggest
+            individual primitives are directionally correct—and combining them may
+            provide additional analytical value, such as enriching productivity estimates
+            with task success rates or constructing new measures of occupational
+            exposure.
+
+
+
+
+The Anthropic Economic Index Report                                                            23
+

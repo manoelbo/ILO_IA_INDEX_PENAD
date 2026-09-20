@@ -1,0 +1,50 @@
+θATE% considered in Section 4.1.53
+       We note, however, that if one were instead to impose (C.4) with the assumption that ErlogpU pdqq |
+Ds “ 0, then the regression of logpY q on D would be consistent for β, whereas Poisson regression
+would generally be inconsistent for β. Indeed, under the potential outcomes model in (C.5) with
+the assumption that ErlogpU pdqqs “ 0, we have that β “ ErlogpY p1qq ´ logpY p0qqs, the ATE in
+logs.54
+       This discussion highlights that whether or not an estimator is consistent depends on the specifi-
+cation of the target parameter. Our results help to illuminate what parameters can be consistently
+estimated by enumerating the properties that identified causal parameters can (or cannot) have.
+
+C.3       Tobit models
+An alternative structural approach is to explicitly model the extensive margin, a classic exam-
+ple of which is the Tobit model (Tobin, 1958).                   Following the discussion of Tobit models in
+Angrist and Pischke (2009), suppose there exist latent potential outcomes Y ˚ pdq “ µd ` U , where
+U „ N p0, σ 2 q and D KK U . The observed potential outcome Y pdq is then the latent potential
+outcome truncated at zero, Y pdq “ maxpY ˚ pdq, 0q. We note that in this model, the treatment has
+a constant additive effect of µ1 ´ µ0 on the latent outcome, and the latent potential outcomes are
+assumed to be normally distributed.
+    Thanks to the parametric assumptions, the unknown parameters µ1 , µ0 , σ 2 are identified and
+estimable via, e.g., maximum likelihood. As a result, the entire joint distribution of potential
+outcomes is identified, since this depends only on pµ1 , µ0 , σq. This implies, in turn, that all of the
+possible target parameters considered in Section 4 are point-identified. For example, under this
+model
+                Erlog Y pdq | Y p1q ą 0, Y p0q ą 0s “ E rlog pµd ` U q | U ą ´µ1 , U ą ´µ0 s ,
+
+where the right-hand side can be computed numerically since U „ N p0, σ 2 q. Thus, the intensive
+margin treatment effect in logs, θIntensive , is actually point-identified under the Tobit model.55
+       It is worth nothing that unlike some of the models considered above, the Tobit model is consistent
+with a nonzero extensive margin. However, the assumptions of normal errors and constant treatment
+effects on the latent index are restrictive. As discussed in Section 4, imposing these assumptions
+is not necessary for identification if one is ultimately interested in, say, ErY p1q ´ Y p0qs{ErY p0qs,
+and one can obtain bounds on the intensive margin effect without imposing these assumptions.56
+Moreover, as Angrist and Pischke (2009) and Angrist (2001) point out, it is often not clear what
+the economic meaning of the latent potential outcome Y ˚ pdq is—if Y pdq is earnings, for example,
+  53
+     Bellégo et al. (2022) also consider (C.4), but consider the more general class of identifying restrictions of the form
+ErD logpU ` δqs “ 0, where δ is a tuning parameter.
+  54
+     Note that the assumption that ErlogpU qs “ 0 implicitly implies that U ą 0, and thus Y ą 0.
+  55
+     Likewise, the intensive margin treatment effect in levels, ErY p1q ´ Y p0q | Y p1q ą 0, Y p0q ą 0s is simply µ1 ´ µ0 .
+  56
+     We note that the assumptions of the Tobit model imply (but are strictly stronger than) the assumption of rank
+preservation of the potential outcomes. However, rank preservation alone suffices to point identify Erlog Y p1q ´
+log Y p0q | Y p1q ą 0, Y p0q ą 0s.
+
+
+
+                                                            12
+

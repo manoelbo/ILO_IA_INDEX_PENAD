@@ -1,0 +1,39 @@
+   This paper aims to measure the potential seniority-biased impact of GenAI on the labor
+market. Specifically, we ask whether GenAI adoption by firms disproportionately affects
+junior roles relative to more senior positions. This perspective extends the classic litera-
+ture on skill-biased technological change (e.g., Katz and Murphy, 1992; Autor et al., 2003;
+Acemoglu and Autor, 2011), which emphasizes shifts in labor demand across education
+or occupation groups, to a related but distinct dimension: seniority.3
+   We begin with a simple conceptual framework, building on Acemoglu and Autor
+(2011) and Acemoglu and Restrepo (2018), to analyze why GenAI adoption may dispro-
+portionately reduce demand for junior workers and to clarify the mechanisms underlying
+this pattern. The framework is motivated by two broad patterns in the emerging evi-
+dence: micro-level experimental studies consistently find that GenAI disproportionately
+increases the productivity of less-experienced and less-skilled workers in a given task
+(Brynjolfsson et al., 2025b; Noy and Zhang, 2023; Dell’Acqua et al., 2023; Cui et al., 2025;
+Cruces et al., 2026), whereas labor market evidence, including our results, links GenAI
+adoption and exposure to declines in junior employment (Brynjolfsson et al., 2025a; Azar
+et al., 2025; Klein Teeselink, 2025). The framework reconciles these patterns.
+   In the framework, junior and senior workers sort into a continuum of tasks accord-
+ing to comparative advantage. GenAI both automates low-complexity tasks previously
+performed by juniors and augments productivity on remaining tasks, with larger gains
+for juniors. The change in junior labor demand decomposes into three forces: a displace-
+ment effect, capturing the loss of automated tasks; a productivity effect, whereby higher
+productivity reduces labor required per task; and a reallocation effect, whereby juniors ex-
+pand into some previously senior tasks as their relative productivity rises (in the spirit
+of Althoff and Reichardt, 2026; Hosseini and Lichtinger, 2026). When tasks are comple-
+mentary in production, both displacement and productivity effects reduce junior labor
+demand, while reallocation is the only offsetting force and depends on the extent of differ-
+ential augmentation. Whether junior employment declines more than senior employment
+therefore depends on which force dominates.
+   We then move to our main empirical analysis, drawing on a dataset that combines
+LinkedIn résumés and job-posting data from Revelio Labs (Revelio Labs, 2025). The
+   3 See Ide and Talamas (2025) for a closely related theoretical framework, analyzing how GenAI may
+
+differentially affect workers within firms depending on their knowledge and role.
+
+
+
+
+                                                    3
+

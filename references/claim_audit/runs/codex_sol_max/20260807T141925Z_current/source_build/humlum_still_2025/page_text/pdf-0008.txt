@@ -1,0 +1,31 @@
+   We provide the first representative account of employer adoption of AI chatbots.
+Whereas surveys on traditional “pre-generative” AI show relatively low uptake (Acemoglu
+et al., 2022; Bonney et al., 2024), we find that most employers in exposed occupations
+have now embraced AI chatbots. Our findings align with Yotzov et al. (2026), who
+document widespread firm-level adoption of generative AI but limited perceived impacts
+on employment or revenue productivity. Alternative firm-level data proxy adoption
+through generative AI skills in job postings (Lichtinger and Hosseini Maasoum, 2025;
+Schubert, 2025), but it is unclear how well these capture actual tool use, especially for
+non-specialized tools like chatbots. We address this gap by surveying workers on their
+chatbot use and employer initiatives, linking responses to administrative firm data. Our
+survey also allows us to measure complementary workplace investments that otherwise
+would go unrecorded (Brynjolfsson, Rock and Syverson, 2021).
+   While employer chatbot initiatives have not led to net changes in earnings or hours,
+they strongly predict the emergence of new AI-related job tasks (Acemoglu and Restrepo,
+2018a; Autor et al., 2024). This points to the mechanism behind the still-waters pattern:
+employers are absorbing generative AI through task reorganization rather than adjusting on
+the margin of total labor input. This is consistent with recent work on “job transformation,”
+which emphasizes that new technologies alter the task content of jobs well before they
+displace them (Autor and Thompson, 2025; Freund and Mann, 2025).
+   Finally, our account of “still waters over rapid currents” echoes Robert Solow’s famous
+observation about the IT revolution: “You can see the computer age everywhere but in the
+productivity statistics” (Solow, 1987)—and is consistent with the “productivity J-curves”
+observed at the onset of general-purpose technologies (Brynjolfsson, Rock and Syverson,
+2021; McElheran et al., 2025). We document the hallmarks of such a trough: widespread
+adoption accompanied by substantial employer investments in training, integration, and
+oversight that have yet to translate into hard economic outcomes. Our unique data
+infrastructure reveals what lies beneath the still waters: the reorganization of work that
+absorbs technological change before it surfaces in hours or earnings.
+
+
+                                             6

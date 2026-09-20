@@ -1,0 +1,59 @@
+       RAMBACHAN AND ROTH              A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                               2561
+
+     2.2.1. Example: non-staggered DiD (continued). Suppose the observed outcome satisfies
+Yit = Di Yit (1) + (1 − Di )Yit (0), where Yit (1) and Yit (0) are, respectively, the potential out-
+comes when unit i is ultimately treated/not treated. Assume further that there is no anticipation of
+treatment, so that Yit (1) = Yit (0) for all t < 1. Then, for any s, under mild regularity conditions
+β̂ s will be consistent for
+
+             βs = τ AT T,s + E [Yis (0) − Yi0 (0) | Di = 1] − E [Yis (0) − Yi0 (0) | Di = 0],
+                                                                                        
+
+
+
+
+                                                                                                                           Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                           differential trend =:δs
+
+
+where τ AT T,s = E [Yis (1) − Yis (0) | Di = 1] is the average treatment effect on the treated in
+period s, and δs is the difference in trends in potential outcomes between period 0 and period
+s.4 Since the no-anticipation assumption implies that τ AT T,s = 0 for s < 0, this yields the
+decomposition (3).
+
+    2.2.2. Example: staggered DiD (continued). Likewise, in the staggered DiD context,
+define Yit (g) to be the potential outcome for unit i in period t if they are first treated
+at period g and Yit (∞) to be the never-treated potential outcome. Then β̂ r will be con-
+sistent for the parameter βr = τr + δr , where τr = g wg AT T (g, g + r ) and AT T (g, g +
+r ) = E Yi,g+r (g) − Yi,g+r (∞) | G i = g is the ATT in period g + r for units first treated at
+period g. Likewise, δr = wg δg,g+r , where δg,g+r = E Yi,g+r (∞) − Yi,g−1 (∞) | G i = g −
+E Yi,g+r (∞) − Yi,g−1 (∞) | G i > g + r is the difference in trends in never-treated potential
+outcomes between units first treated at period g and units first treated after period g + r . Under
+a no-anticipation assumption, τr = 0 for r < 0, which again yields the decomposition (3).
+
+    2.2.3. Example: other related estimators (continued). We can decompose β as in (3) for
+other estimators as well. For example, for event-study IVs (with non-staggered timing), τ post
+is a vector containing the local average treatment effect for each period, and δ represents the
+asymptotic bias of the IV estimator (e.g. from violations of independence or exclusion) for each
+period. For methods that flexibly control for covariate differences between treated and compar-
+ison groups, τ post is again a vector of ATTs, and δ post represents a weighted average (across
+covariates) of the violation of the conditional parallel trends assumption.
+
+
+2.3.    Target parameter and identification
+We suppose the target parameter is a linear combination of the post-treatment causal effects,
+θ := l  τ post for some known T̄ -vector l. For example, θ equals the tth period causal effect τt
+when the vector l equals the tth standard basis vector. Similarly, θ equals the average causal
+effect across all post-treatment periods when l = (1/T̄ , . . . , 1/T̄ ) .
+    We obtain partial identification of θ by assuming that δ lies in a researcher-specified set
+of possible differences in trends  ⊆ RT¯ +T̄ . This nests the usual parallel trends assumption as
+the special case with  = {δ : δ post = 0}. Since δ pr e = β pr e is identified, the assumption that
+
+
+correspond with a vector of first-differences or triple-differences estimators, and δ the violation of the corresponding
+identifying assumption.
+       4. We focus on the ATT as the target parameter, as in most of the DiD literature. If one is interested in the
+population-wide average treatment effect (ATE), one could obtain bounds on the ATE under restrictions on treatment
+effect heterogeneity, or other assumptions that allow one to bound the treatment effects for untreated units; see Manski
+and Pepper (2013) for an insightful discussion.
+

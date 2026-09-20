@@ -1,0 +1,48 @@
+               Table 3: Effect of LLM exposure on firm-level job outcomes
+
+                           Employees   Low seniority    High seniority   Frac. low seniority   Av. comp.
+   LLM exposure x Post     −0.003∗      −0.004∗∗             −0.002          −0.001∗∗          106.313∗
+                           (0.002)       (0.002)             (0.002)         (0.0003)          (59.029)
+
+   Firm fixed effects         Yes           Yes                Yes              Yes               Yes
+   Industry-by-period FE      Yes           Yes                Yes              Yes               Yes
+   Observations            1,268,013     1,267,955          1,266,331        1,267,955         1,268,013
+   Adj. R-squared            0.983         0.983              0.981            0.979             0.978
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level employment outcomes, averaged over the post-treatment period. Employees is the total
+number of jobs in the firm. Low seniority and High seniority denote the number of positions in
+seniority levels 1–3 and 4–7, respectively. Low seniority (%) is the share of jobs that are low-
+seniority. Av. comp. is the mean annual salary plus bonuses. All regressions include firm fixed
+effects and industry-by-period fixed effects. Standard errors are clustered at the firm level and
+reported in parentheses. Significance is denoted by ∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+
+
+
+    The regression results in Table 3 show, averaged over the entire post-treatment
+period, a significant 0.4 percent reduction in junior employees per standard deviation
+increase in exposure, and a statistically insignificant reduction in senior employees.
+The fraction of junior employees goes down by 0.1 percentage points per standard
+deviation of LLM exposure (p = 0.028).
+    The observed compositional shift towards more senior roles has direct implica-
+tions for compensation patterns. Figure 3 shows that average compensation rises
+modestly in highly exposed firms following the introduction of ChatGPT, with a one
+standard deviation increase in exposure associated with a £106 increase in average
+compensation, although the overall estimate is only marginally significant.
+
+
+4.2      Job Posting Dynamics
+4.2.1     Firm-Level Postings
+
+While employment stocks adjust slowly, job postings provide a real-time window
+into firms’ evolving labor demand. We therefore examine how firms’ hiring inten-
+tions respond to LLM exposure by analyzing whether exposed firms post fewer
+vacancies overall and whether they adjust the composition of roles they seek to fill.
+This posting data captures the extensive margin of recruitment activity and reveals
+forward-looking decisions that precede the employment stock changes documented
+above. By tracking the same firms across both datasets, we can directly observe
+
+
+                                                       15
+

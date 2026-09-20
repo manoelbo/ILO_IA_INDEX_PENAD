@@ -1,0 +1,5 @@
+outcome,outcome_label,n_obs,n_cbo,n_pre_coefficients,n_pre_p_lt_005,joint_statistic,joint_p_value,joint_test_method,pretrend_status
+ln_admissoes,Admissões (log),18307,341,11,6,30.469492960886583,0.0013365869899686971,wald_chi2,fail
+ln_desligamentos,Demissões (log),18307,341,11,8,21.192512363661635,0.03143054540694147,wald_chi2,fail
+ln_salario_adm,Salário de admissão (log),18307,341,11,0,4.979843659034916,0.9321388289996901,wald_chi2,pass
+ln_salario_desl,Salário de demissão (log),18307,341,11,0,9.589266965311005,0.5676665517584569,wald_chi2,pass

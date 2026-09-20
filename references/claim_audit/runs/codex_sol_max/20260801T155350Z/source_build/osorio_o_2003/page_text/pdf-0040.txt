@@ -1,0 +1,52 @@
+tão sendo coletados por esses novos instrumentos ainda não estão disponíveis para o
+público em geral, eximir-se-á aqui de tecer comentários acerca destes. Optou-se, por-
+tanto, por privilegiar as fontes já disponíveis comumente empregadas para a produção
+de indicadores. A exceção fica por conta do Cadastro do Cartão SUS em razão de sua
+ligação umbilical com os Sistemas de Informações Hospitalares e Ambulatoriais.
+     Convém lembrar que existem várias fontes secundárias de indicadores de desigual-
+dades raciais, muitas vezes calculados a partir das fontes primárias aqui relacionadas.
+Entre estas, vale mencionar o banco de dados agregados “Desigualdade Racial: indica-
+dores socioeconômicos – Brasil, 1991-2001”, lançado pelo Ipea em dezembro de 2002.
+      É importante ainda fazer um comentário que se aplica a praticamente todas as
+fontes de informações primárias a serem apresentadas, independentemente de sua natu-
+reza, se levantamentos ou registros administrativos. Mesmo quando há a informação de
+“cor ou raça” com boa qualidade, as instituições responsáveis pela produção ou coleta e
+pela disseminação dos dados raramente facilitam o acesso ao quesito de “cor ou raça”,
+tampouco possuem a cultura da divulgação dos indicadores que produzem com cortes
+raciais. Normalmente, a informação de cor fica restrita à divulgação dos percentuais de
+pessoas em cada categoria na fonte em questão. Um bom exemplo de tal situação é o
+Sistema de Informações de Mortalidade (SIM): apesar de, para alguns estados, a infor-
+mação de “cor ou raça” das declarações de óbito apresentar um elevado percentual de
+preenchimento, não é possível obter dados deste sistema para os grupos raciais nem pe-
+lo TabNet nem pelo TabWin, que são os aplicativos do Departamento de Processa-
+mento e Disseminação de Dados da Secretaria Executiva do Ministério da Saúde
+(Datasus) comumente empregados para a consulta das bases. A variável de “cor ou ra-
+ça” está lá, mas exige um conhecimento do processamento das bases muito superior ao
+necessário, por exemplo, para obter as informações por sexo.
+
+
+     MINISTÉRIO DO PLANEJAMENTO, ORÇAMENTO E GESTÃO
+
+
+     Levantamento: Censo e Contagem de População do IBGE
+
+Os Censos estão por certo entre os levantamentos mais importantes de que se dispõe pa-
+ra estudar as características da população brasileira, sendo a principal fonte para estudos
+cuja unidade geográfica de análise é o município. São conduzidos decenalmente e estão
+disponíveis em microdados – informações questionário a questionário – os Censos de
+1970, 1980, 1991, e 2000, bem como a Contagem de População de 1996 (um levan-
+tamento de caráter censitário com um conjunto restrito de variáveis). Os Censos cap-
+tam informações genéricas sobre as moradias e as características demográficas,
+educacionais, do trabalho, e dos rendimentos dos residentes.
+     • O Censo de 1970 e a Contagem de População de 1996 não captaram a “cor
+       ou raça” como um dos atributos dos indivíduos;
+     • Os Censos de 1980, 1991 e 2000 captaram a “cor ou raça” a partir de 1991
+       com o sistema classificatório do IBGE;
+     • A informação de “cor ou raça” do Censo é coletada por meio de auto-atribuição
+       induzida, isto é, o entrevistado tem liberdade para indicar sua “cor ou raça” en-
+
+
+
+
+38                          texto para discussão | 996 | nov. 2003                  ipea
+

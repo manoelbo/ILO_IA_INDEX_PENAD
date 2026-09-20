@@ -1,0 +1,65 @@
+    Figure 10. Comparison of 2x2 DD Components and Decomposition Weights with and
+                        without Unit-Specific Linear Time Trends
+                                                                                             A. 2x2 DD's
+
+                                  30
+                                                                  DDs w/out trends = -3.08
+                                  20
+                                  10
+                  2x2 DDs w/ trends
+
+
+
+
+                                                                   1970 v NRS
+
+                                                     DDs w/ trends = 0.59
+                         0
+
+
+
+
+                                                           1970 v PRE
+                -10               -20
+
+
+
+
+                                                                                                              Timing Estimates
+                                                                                                              Treated/Untreated Estimates
+                                  -30
+
+
+
+
+                                                     -30            -20             -10            0            10           20             30
+                                                                                           2x2 DDs w/out trends
+                                                                                           B. 2x2 Weights
+
+                                                                        Timing Estimates
+                                  .1
+
+
+
+
+                                                                        Treated/Untreated Estimates
+                   Decomposition weights w/ trends
+                .02     .04       .06
+                                  0          .08
+
+
+
+
+                                                     0                  .02           .04           .06             .08             .1
+                                                                                  Decomposition weights w/out trends
+
+Notes: Panel A plots the two-group DD’s from a model with unit-specific time trends (y-axis) against those from a
+model without trends (x-axis). The size of each point is proportional to its weight in a model without trends. The trend-
+adjusted estimate is small and positive compared to a negative DD estimate without them. Much of the change comes
+from the effect of trends on each 2x2 estimate, especially for treated/untreated comparisons (closed triangles). Panel
+B is the same except that it plots the weights. Treated/untreated terms that received the most weight in the unadjusted
+model get relatively less in a trend-adjusted model. Timing terms that received more weight get relatively more in a
+trend-adjusted model.
+
+                                                                                                40
+

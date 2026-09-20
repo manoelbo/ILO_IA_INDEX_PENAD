@@ -1,0 +1,59 @@
+                     Table 3: Estimates for the Effect of Hospitalization on Outcomes
+                                       (a) Out-of-pocket Medical Spending
+                                              FE             IW                      C ATTe,`
+     ` Wave Relative to Hospitalization        µ`
+                                               b              ν`
+                                                              b              δ1,`
+                                                                             b         δ2,`
+                                                                                       b          δ3,`
+                                                                                                  b
+                    -3                        149            591              -         -        591
+                                             (792)         (1273)                               (1273)
+                     -2                       203            353              -        299       411
+                                             (480)          (698)                     (967)     (1030)
+                     -1                        0              0               0         0          0
+
+                      0                       3,013         2,960            2,826    3,031     3,092
+                                              (511)         (543)           (1038)    (704)     (998)
+                      1                        888           530              825      107        -
+                                              (664)         (587)            (912)    (653)
+                      2                       1,172          800              800       -          -
+                                              (983)        (1010)           (1010)
+                      3                       1,914           -                -         -         -
+                                             (1426)
+
+                                               (b) Labor Earnings
+                                              FE             IW                      C ATTe,`
+    ` Wave Relative to Hospitalization        µ`
+                                              b               ν`
+                                                              b              δ1,`
+                                                                             b         δ2,`
+                                                                                       b          δ3,`
+                                                                                                  b
+                   -3                       -2,642         -8,228             -         -       -8,228
+                                            (3504)         (6592)                               (6592)
+                     -2                     -5,089         -7,823             -      -7,691     -7,964
+                                            (3005)         (4197)                    (6348)     (4766)
+                     -1                        0              0               0         0          0
+
+                      0                      -1,225          -863          455         3,032    -7,107
+                                             (2742)         (2967)       (5593)       (4152)    (5883)
+                      1                      -7,508         -5,435       -1,670      -10,826       -
+                                             (4312)         (4348)       (6500)       (4863)
+                      2                     -11,102        -10,670      -10,670          -         -
+                                             (5976)         (6154)       (6154)
+                      3                      -8,780            -            -           -          -
+                                             (8332)
+
+Notes: This table reports three different sets of estimates for the dynamic effects of hospitalization on out-
+of-pocket medical spending in panel (a) and labor earnings in panel (b). The first column reports estimates
+from the FE estimator bµ` . The sample includes observations from wave t = 0, 1, 2, 3, 4. Columns 3-5 report
+the estimates for C ATTe,` from bδe,` . The sample includes observations from wave t = 0, 1, 2, 3. Column 2
+reports the IW estimates which are constructed as the weighted average of b δe,` ’s across cohorts e who are `
+periods from hospitalization. Standard errors (clustered on the individual) are shown in parentheses.
+
+
+
+
+                                                      39
+

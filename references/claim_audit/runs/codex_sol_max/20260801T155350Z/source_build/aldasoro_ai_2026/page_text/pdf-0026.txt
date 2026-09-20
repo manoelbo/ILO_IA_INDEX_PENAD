@@ -1,0 +1,40 @@
+    Second, we find no evidence that AI adoption reduces employment in the short run,
+though longer-term effects remain uncertain. While our naı̈ve specifications associate AI
+with 8% higher employment, the relationship vanishes after using predicted AI adop-
+tion. Moreover, our results suggest that on average the employees of AI-adopting firms
+benefit in terms of higher wages. This pattern alleviates near-term concerns about job
+destruction but raises questions about wage inequality. Indeed, benefits may accrue dis-
+proportionately to skilled workers coordinating AI-augmented workflows.11
+
+    The divergence between significant productivity gains and null employment effects
+suggests that AI primarily enables capital deepening. This implies that firms increase
+worker output without reducing headcount, consistent with micro-level evidence that AI
+tools accelerate task completion without displacing labor (e.g., Noy and Zhang (2023)’s
+40% time reduction in writing tasks; Baily, Brynjolfsson, and Korinek (2023)’s 14% pro-
+ductivity lift in customer support). To further support the capital deepening mechanism,
+we also test whether AI-adopting firms are more innovative. Table B.4 in the Appendix
+presents the results, based on both actual adoption and our instrumented version, includ-
+ing firm-level controls and the same fixed effects as before. AI-adopting firms are more
+likely to develop products, services, or processes that are new for the firm (columns 1-2),
+country (columns 3-4) or global frontier (columns 5-6).
+
+    Third, in Table 5 we break down the effects of AI adoption by firm size groups. This
+heterogeneity analysis reveals that AI’s productivity benefits are concentrated. Medium
+and large firms exhibit stronger gains, highlighting the role of scale in absorbing integra-
+tion costs and accessing complementary assets (e.g., data infrastructure, technical talent).
+This is also consistent with the important role that midcaps play in Europe (EIB, 2024).
+The disparities point to risks of widening productivity gaps between firms and regions.
+This echoes the warnings in Cazzaniga et al. (2024) about AI exacerbating inequality.
+
+
+
+
+  11
+     We also test whether the impact on employment varies by country using various indicators from the
+OECD employment protection database. We find no heterogeneous effects for the EU. The results are
+available upon request.
+
+
+
+                                                 20
+

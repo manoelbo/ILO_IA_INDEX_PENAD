@@ -1,0 +1,64 @@
+51 and 5415). Results are quite similar, consistent with the above case studies showing employment
+
+changes across various occupations. Results with firm-time fixed effects in Figure 4 further show
+
+that our findings are robust to firm- or industry-level shocks that impact general hiring trends.
+
+These results indicate that our findings are not specific to technology roles.
+
+
+Remote Work Figures A14 and A15 show results for occupations amenable to remote work
+
+(telework) and those that are not, according to Dingel and Neiman (2020).23 We find that, for
+
+young workers, more exposed occupations have slower employment growth, both in teleworkable
+
+occupations and in non-teleworkable occupations. The results for non-teleworkable occupations in
+
+particular suggest that our findings are not driven by outsourcing or work-from-home disruptions,
+
+at least solely.24
+
+
+Longer Sample Figure A16 shows results when extending the balanced sample of firms to 2018.
+
+This reduces the sample size and makes the data somewhat noisier. Nonetheless, the trends remain
+
+largely ordered by exposure in the post-GPT era, whereas this is not the case before 2022. A concern
+
+is that for the Eloundou et al. (2024) measures the most exposed quintile had slower employment
+
+growth starting around 2020. This is not the case for the Anthropic exposure measures, shown
+
+in Figures A17, A18, and A19. For these measures the most exposed groups have comparable
+
+employment growth throughout the period before generative AI, with divergent trends afterwards.
+
+
+Changes in Education Another possibility is that our results stem from worsening education
+
+outcomes during the COVID-19 Pandemic, as more educated workers have greater average AI
+
+exposure (Kuhfeld and Lewis, 2025).25 In Figure A20 we show trends for occupations in which
+
+greater than 70% of workers have a college degree according to the 2017 American Community
+
+Survey (ACS).26 In Figure A21 we show trends for occupations in which fewer than 30% of workers
+  23
+      Whether an occupation is amenable to remote work is positively correlated with AI exposure. Only two telework-
+able occupations fall in the lowest quintile of estimated AI exposure according to the GPT-4 β measure. Likewise
+few non-teleworkable occupations fall in the highest quintile of AI exposure. For this reason in Figure A14 we pool
+together the two lowest AI exposure quintiles into one group. In Figure A15 we pool together the two highest AI
+exposure quintiles.
+   24
+      Non-teleworkable occupations with high AI exposure include bank tellers, travel agents, and tax preparers.
+   25
+      Chandar (2025a) finds that declines in average skill levels for college graduates explain a sizable share of the
+slowdown in the growth of the college wage gap in recent decades.
+   26
+      Not a single occupation in the first quintile of GPT-4 β based exposure measure has a college share above 35%,
+so that quintile is excluded from the results in Figure A20.
+
+
+
+                                                         14

@@ -1,0 +1,53 @@
+62       ILO Working Paper 140
+
+
+
+
+     3. Survey Questionnaire
+                                               Welcome Screen:
+
+                                               Dear Participants,
+
+     We kindly ask you to complete this survey to share your opinions on new technologies. The sur-
+     vey is anonymous, and the results will be analyzed and presented only in aggregate form.
+
+     Survey Questions:
+
+     1. What is your gender?
+     (Please mark one [1] answer with an X)
+
+     a. Female
+
+     b. Male
+
+     c. Other gender
+
+     d. Prefer not to say
+
+     2. Enter your year of birth
+     (Range from 1940 to 2009)
+
+     .......................................
+
+     3. Select the size of the locality where you live
+     (Please mark one [1] answer with an X)
+
+     a. Village
+
+     b. City up to 20,000 inhabitants
+
+     c. City from 20,001 to 50,000 inhabitants
+
+     d. City from 50,001 to 100,000 inhabitants
+
+     e. City from 100,001 to 200,000 inhabitants
+
+     f. City from 200,001 to 500,000 inhabitants
+
+     g. City above 500,000 inhabitants
+
+     4. Select the voivodeship (province) where you live.
+     (Please mark one [1] answer with an X)
+
+     a. Lower Silesian
+

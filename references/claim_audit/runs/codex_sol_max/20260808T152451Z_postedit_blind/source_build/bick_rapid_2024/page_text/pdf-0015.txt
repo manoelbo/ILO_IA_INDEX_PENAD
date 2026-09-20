@@ -1,0 +1,46 @@
+rapidly (Nelson and Phelps, 1966). Third, genAI may directly increase workers’ productivity
+and wages. Our data do not allow us to distinguish between these explanations.
+
+
+4.1    Tasks, Predicted Exposure, and Generative AI Adoption
+
+Why do some groups of workers adopt genAI at higher rates than others? One reason could be
+that workers differ in their job tasks or responsibilities, and genAI is more helpful in assisting
+some tasks than others.
+
+   Consistent with this explanation, we first document that genAI adoption differs greatly
+between occupations; see Figure 5. The three occupations with the highest genAI adoption are
+computer and mathematical, management, and business and finance occupations (54%, 52%,
+and 48%, respectively) and the bottom three are blue collar, office and administration, and
+personal services occupations (26%, 23%, and 16%, respectively). At the same time, genAI
+adoption exceeds 20% in all but one occupation groups, suggesting that the technology is
+useful for a broad range of occupations. As with demographic differences, differences between
+occupations are driven by the rates of daily and weekly genAI users.
+
+    Do different adoption rates between occupations reflect differences in tasks or responsibili-
+ties? One approach to assess this is to construct task-based-exposure measures across occupa-
+tions (Eloundou et al., 2024; Felten et al., 2021; Webb, 2020). For example, Eloundou et al.
+(2024) constructs a rubric that assigns each task in the O*NET database a zero or one corre-
+sponding to whether LLMs (a popular class of genAI) could feasibly produce large productivity
+gains for that task. They then construct a predicted exposure score for each occupation by
+aggregating task-level scores for each occupation. Using RPS data, we can ask whether these
+predictions are correlated with adoption. Our study is the first to evaluate these task-based
+“exposure” predictions using actual genAI adoption rates.12
+
+    Figure 6a plots an occupation group’s predicted genAI exposure from Eloundou et al. (2024)
+against actual genAI adoption in the 2024 RPS. We find that predicted genAI exposure is highly
+correlated with actual genAI adoption (ρ = 0.65). In Figure 6b, we find a similar correlation
+(ρ = 0.71) using the predicted exposure score from Felten et al. (2021). For example, personal
+service and blue-collar occupations have relatively low predicted exposure and also relatively
+low adoption, while computer and mathematical occupations have both high predicted exposure
+and high adoption.
+
+   The high correlation between predicted exposure and actual adoption provides partial vali-
+dation of task-based exposure predictions, supporting their utility for researchers. At the same
+  12
+    Handa et al. (2025) assign tasks to conversations by Claude.ai Free and Pro users and show that task usage
+rates are correlated with the predictions by Eloundou et al. (2024).
+
+
+                                                     13
+

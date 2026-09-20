@@ -1,0 +1,46 @@
+                               Figure B.2: Composition of New Job Tasks
+
+
+         Teachers
+         Journalists
+         Legal Professionals
+         Marketing Professionals
+         Office Clerks
+         HR Professionals
+         IT Support
+         Accountants
+         Software Developers
+         Financial Advisors
+         Customer Support
+
+                                   0   0.1     0.2    0.3        0.4    0.5   0.6       0.7   0.8   0.9     1
+
+
+                                                             AI Tasks    Non-AI Tasks
+
+Notes: This figure shows the share of new job tasks that are directly linked to AI chatbot use. Occupations are ordered
+according to their shares of AI tasks. Sample: All completed responses from the 2024 survey who reported new job tasks
+due to AI chatbots.
+
+
+
+
+                                                         1
+
+C       Institutional Setting
+C.1       Wage Setting Systems in Denmark
+
+The Danish labor market is characterized by both high flexibility and strong collective
+institutions. Union density is relatively high at 65%, and the coverage rate of collective
+bargaining agreements (CBAs) is even higher at 81% (Jäger, Naidu and Schoefer, 2025;
+Munch and Olney, 2024). While unions negotiate CBAs, coverage is not dependent on
+union membership. A worker may be a union member without being covered by a CBA,
+and conversely, a non-union member may still be covered. Whether a worker is covered
+depends on whether their employer is a member of an employer organization.
+    Beginning in the 1980s and continuing through the 1990s, the Danish wage-setting
+system underwent significant decentralization (Dahl, Le Maire and Munch, 2013). Today,
+many workers negotiate at least part of their wages individually, even when they are
+formally covered by a CBA. When a CBA is negotiated, the resulting wage-setting
+
+
+                                                            31

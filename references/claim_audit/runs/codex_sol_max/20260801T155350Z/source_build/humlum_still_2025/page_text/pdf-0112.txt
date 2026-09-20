@@ -1,0 +1,46 @@
+             Table E.10: Decomposition of Adopters’ Time Use with AI Chatbots
+
+                                                   Time Use      Time Used Per Day Used  Days Used
+                                                 / Work Hours      / Daily Work Hours   / Work Days Covariance
+  Occupation                                          (1)                   (2)             (3)         (4)
+  Software Developers         Encouraged             .053                  .074            .567        .011
+  Software Developers         Non-Encouraged         .033                   .06            .378         .01
+  Marketing Professionals     Encouraged             .049                  .076            .515         .01
+  Marketing Professionals     Non-Encouraged         .036                  .062            .388        .011
+  Customer Service Rep.       Encouraged             .035                  .058            .439         .01
+  Customer Service Rep.       Non-Encouraged         .014                   .04             .24        .005
+  IT Support                  Encouraged             .034                   .06            .407        .009
+  IT Support                  Non-Encouraged         .023                  .051            .283        .008
+  HR Professionals            Encouraged             .031                  .056            .405        .009
+  HR Professionals            Non-Encouraged         .016                  .049            .237        .004
+  Legal Professionals         Encouraged             .027                  .057            .336        .007
+  Legal Professionals         Non-Encouraged          .01                  .044            .166        .003
+  Journalists                 Encouraged             .025                  .048            .374        .007
+  Journalists                 Non-Encouraged         .013                  .038            .221        .005
+  Office Clerks               Encouraged             .023                  .054            .309        .006
+  Office Clerks               Non-Encouraged         .012                  .044            .177        .004
+  Accountants and Auditors    Encouraged             .018                  .044            .282        .006
+  Accountants and Auditors    Non-Encouraged         .007                  .038            .143        .002
+  Financial Advisors          Encouraged             .016                  .038            .288        .005
+  Financial Advisors          Non-Encouraged          .01                  .031            .179        .005
+  Teachers                    Encouraged             .009                  .052             .14        .002
+  Teachers                    Non-Encouraged         .005                  .043            .088        .001
+  All                         Encouraged             .029                  .056            .369        .008
+  All                         Non-Encouraged         .016                  .046            .227        .006
+Notes: This table presents workers’ time use with AI chatbots, categorized by workers’ occupations and employer policies.
+The table focuses on workers who have ever used AI chatbots for work. Column (1) reports the average time used as a
+percentage of total work hours. The remaining columns decompose this time use into three components: time use per day
+of use (Column (2)), the share of workdays with AI chatbot usage (Column (3)), and the covariance between Columns (2)
+and (3) (Column (4)). These components satisfy the relationship: Column (1) = Column (2) × Column (3) + Column (4),
+which follows from the identity: E[XY ] = E[X]E[Y ] + Cov(X, Y ). We code daily time savings (Column (2)) as follows:
+0–15 minutes/day as 7.5 minutes, 15–60 minutes as 37.5 minutes, and 60+ minutes as 90 minutes. We code frequency of use
+(Column (3)) as follows: daily use is divided by 1; weekly use by 5 (corresponding to 5 workdays per week); monthly use by
+21 23 (corresponding to 4 13 weeks per month); and use a few times by 65 (corresponding to 4 uses over 12 months). We set
+daily work hours to 8, as nearly all sampled workers are full-time employees. Sample: The table is based on all completed
+responses from the 2024 survey that can be linked to the registry data.
+
+
+
+
+                                                           77
+

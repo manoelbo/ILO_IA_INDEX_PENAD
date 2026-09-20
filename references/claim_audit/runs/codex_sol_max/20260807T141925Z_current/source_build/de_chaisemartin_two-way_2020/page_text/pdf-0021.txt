@@ -1,0 +1,44 @@
+                   Table 2: Descriptive statistics on two-way fixed effects papers
+
+                                                                                                # Papers
+  Panel A. Estimation method
+  Fixed-effects OLS regression                                                                      13
+  First-difference OLS regression                                                                   6
+  Fixed-effects or first-difference OLS regression, with several treatment variables                 6
+  Fixed-effects or first-difference 2LS regression                                                  3
+  Other regression                                                                                   5
+
+  Panel B. Research design
+  Sharp design                                                                                      26
+  Fuzzy design                                                                                       7
+
+  Panel C. Are there stable groups?
+  Yes                                                                                               12
+  Presumably yes                                                                                    14
+  Presumably no                                                                                     5
+  No                                                                                                2
+
+Notes. This table reports the estimation method and the research design used in the 33 papers using two-way
+fixed effects regressions published in the AER from 2010 to 2012, and whether those papers have stable groups.
+
+
+
+6.2   Application to Gentzkow et al. (2011)
+
+Gentzkow et al. (2011) study the effect of newspapers on voters’ turnout in US presidential
+elections between 1868 and 1928. They regress the first-difference of the turnout rate in county
+g between election years t − 1 and t on state-year fixed effects and on the first difference of
+the number of newspapers available in that county. This corresponds to Regression 2, with
+state-year fixed effects as controls. As reproduced in Table 3 below, Gentzkow et al. (2011) find
+that βbf d = 0.0026 (s.e.= 9 × 10−4 ). According to this regression, one more newspaper increased
+voters’ turnout by 0.26 percentage points. On the other hand, βbf e = −0.0011 (s.e.= 0.0011).
+βbf e and βbf d are significantly different (t-stat=2.86).
+We use the twowayfeweights Stata package, downloadable with its help file from the SSC
+repository, to estimate the weights attached to βbf e . 6,212 are strictly positive, 4,161 are strictly
+negative. The negative weights sum to -0.53. σ  bf e = 3 × 10−4 , meaning that βf e and the ATT
+may be of opposite signs if the standard deviation of the ATEs across all the treated (g, t) cells
+
+
+
+                                                     21
+

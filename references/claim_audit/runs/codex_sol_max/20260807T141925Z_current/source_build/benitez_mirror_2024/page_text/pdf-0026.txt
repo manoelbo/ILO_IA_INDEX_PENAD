@@ -1,0 +1,49 @@
+         Table 5: Occupational Exposure in the U.S. Labor Market According to GENOE
+
+                                          1-year horizon          5-year horizon          10-year horizon
+
+
+   All workers                            0.280                   0.392                   0.461
+
+   Sex
+   Men                                    0.262                   0.381                   0.455
+   Women                                  0.298                   0.404                   0.466
+
+   Education level
+   No High-School                         0.293                   0.423                   0.503
+   High-School                            0.309                   0.434                   0.509
+   Associate Degree                       0.276                   0.386                   0.451
+   Bachelor’s                             0.261                   0.357                   0.417
+   Master’s                               0.199                   0.281                   0.333
+   Professional School                    0.158                   0.242                   0.313
+   Doctorate                              0.175                   0.260                   0.319
+
+   Quintiles of weekly earnings
+   1st                                    0.339                   0.469                   0.549
+   2nd                                    0.335                   0.464                   0.538
+   3rd                                    0.320                   0.446                   0.518
+   4th                                    0.301                   0.422                   0.492
+   5th                                    0.215                   0.318                   0.378
+
+   Jobs exposed (in millions)             42.642                  59.763                  70.249
+
+Source: Authors’ calculations using data from the 2023 Current Population Survey (CPS), O*NET, and surveys con-
+ducted with GPT-4 through OpenAI’s API. Note: This table shows the average GENOE score for each time horizon
+by gender, educational level, and quintiles of weekly earnings. The total jobs exposed are calculated as the average
+exposure multiplied by total U.S. employment in 2023.
+
+
+
+    Average occupational exposure in Mexico is quite similar to that in the United States, with 28%,
+41%, and 48% of jobs exposed to AI in the one-year, five-year, and 10-year horizons, respectively
+(Table 6). In the immediate future, the analysis indicates that approximately 16 million jobs are
+at risk of being displaced by AI adoption. In contrast to the United States, the distribution of
+exposure by educational level and earnings is different. In Mexico, both low- and medium-skilled
+workers—those with post-secondary technical and professional education—face higher exposure
+levels. Additionally, exposure is higher for workers in the middle of the wage distribution.
+    This pattern probably reflects the occupational structure in Mexico (and probably of many
+developing economies), where office and administrative workers are more commonly found in
+
+
+                                                        22
+

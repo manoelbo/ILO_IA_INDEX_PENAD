@@ -1,0 +1,43 @@
+    of Care in Child Care Markets. Table 7, Columns 4 and 5.
+    In Regression Equation (1), the dependent variable is the outcome for market m in state s
+    and year t, and the explanatory variables are state and year fixed effects, various measures
+    of regulations in state s in year t, and some controls. This regression corresponds to
+    Regression 1 with several treatment variables and with some controls. The stable groups
+    assumption is presumably satisfied: between each pair of consecutive years, it is likely that
+    there are states whose regulations do not change. This is a sharp design.
+
+11. Mian and Sufi (2011), House Prices, Home Equity-Based Borrowing, and the
+    US Household Leverage Crisis. Tables 2 and 3.
+    In Regression Equation (1), the dependent variable is the change in homeowner leverage
+    from 2002 to 2006 for individual i living in zip code z in MSA m, and the dependent
+    variable is the change in the house price for that individual, instrumented by MSA-level
+    housing supply elasticity. This regression is the 2SLS version of Regression 2, with some
+    controls. The stable groups assumption is presumably not satisfied: it is unlikely that
+    some MSAs have an housing supply elasticity equal to 0. This is a sharp design.
+
+12. Wang (2011), State Misallocation and Housing Prices: Theory and Evidence
+    from China. Table 5, Panel A.
+    In regression Equation (15), the dependent variable is the quantity of housing services
+    in household i’s residence in year t, while the explanatory variables are an indicator for
+    period t being after the reform, a measure of mismatch in household i, the interaction of
+    the measure of mismatch and the time indicator, and some controls. This regression is
+    similar to Regression 1 with some controls, except that it has a measure of mismatch in
+    household i instead of household fixed effects. The stable groups assumption is presumably
+    satisfied: it is likely that some households have a mismatch equal to 0. This is a sharp
+    design.
+
+13. Duranton and Turner (2011), The Fundamental Law of Road Congestion: Ev-
+    idence from US Cities. Table 5.
+    In the regressions presented in, say, the first column of Table 5, the dependent variable
+    is the change in vehicle kilometers traveled in MSA s between decades t and t-1, and the
+    explanatory variables are the change in kilometers of roads in MSA s between decades
+    t and t-1, and decade effects. This regression corresponds to Regression 2. The stable
+    groups assumption is presumably satisfied: it is likely that between each pair of consecu-
+    tive decades, there are some MSAs where the kilometers of roads do not change. This is a
+    sharp design.
+
+14. Acemoglu et al. (2011), The Consequences of Radical Reform: The French
+    Revolution. Table 3.
+
+                                              16
+

@@ -1,0 +1,45 @@
+02    ILO Working Paper 140
+
+
+
+
+     Table of contents
+
+          Abstract   01
+
+          About the authors   01
+
+          Acronyms   07
+
+
+
+
+     XX   Introduction   09
+
+
+
+     XX 1 Task-based approaches to automation in the literature   11
+
+
+
+     XX 2 Tasks and occupations in the 6-digit system in Poland   12
+
+
+
+     XX 3 Assessment of tasks’ automation potential   14
+          3.1. Initial Algorithmic predictions   14
+
+          3.2. Selection of occupational tasks for human assessment   15
+
+          3.3. Survey design and recruitment   17
+
+          3.4. Survey design limitations   18
+
+          3.5. Survey of Task Automation Potential   19
+
+            3.5.1. Sample properties   19
+
+            3.5.2. Participants’ Exposure to GenAI: Screening Questions   22
+
+            3.5.3. Scoring of task automation potential   23
+

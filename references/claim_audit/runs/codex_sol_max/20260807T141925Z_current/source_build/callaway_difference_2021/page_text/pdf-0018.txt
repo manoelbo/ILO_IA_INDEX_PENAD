@@ -1,0 +1,61 @@
+earnings gains induced by the training program. Alternatively, in health applications, researchers may
+want to measure how many COVID-19 cases have been averted by shelter-in-place orders up to day t̃.
+To consider the cumulative effect, consider the following parameter
+
+                                                                 t̃
+                                                                 X
+                                             θccumu
+                                                        
+                                                       t̃ =            θc (t).                         (3.9)
+                                                                 t=2
+
+θccumu t̃ can be interpreted as the cumulative average treatment effect among the units that have been
+         
+
+treated by time t̃.
+
+3.2   Aggregations into Overall Treatment Effect Parameters
+Finally in this section, we consider some ideas for aggregating group time average treatment effects into
+an overall effect of participating in the treatment. One very simple idea is to just average all of the
+identified group-time average treatment effects together; i.e., to consider the parameter
+                                        T
+                            O     1 XX
+                           θW =        1{t ≥ g}AT T (g, t)P (G = g|G ≤ T )                           (3.10)
+                                  κ
+                                    g∈G t=2
+
+            P       PT
+where κ =     g∈G t=2 1{t ≥ g}P (G = g|G ≤ T ) (which ensures that the weights on AT T (g, t) in the sec-
+                          O is a weighted average of each AT T (g, t) putting more weight on AT T (g, t)’s
+ond term sum up to one). θW
+with larger group sizes. Unlike β in the TWFE regression specification (3.2), this simple combination of
+AT T (g, t)’s immediately rules out troubling issues due to negative weights; as a particular example, when
+the effect of participating in the treatment is positive for all units, this aggregated parameter cannot be
+negative.
+   That being said, just requiring positive weights is a very minimal requirement of a reasonable overall
+                                                          O is that it systematically puts more weight
+treatment effect parameter. For example, one drawback of θW
+on groups that participate in the treatment for longer. Instead, we suggest the following parameter as a
+general-purpose summary of the average effect of participating in the treatment
+                                              X
+                                     O
+                                    θsel =          θsel (g)P (G = g|G ≤ T )                         (3.11)
+                                              g∈G
+
+where θsel (g) is the average effect of participating in the treatment for units in group g as defined in
+                       O first computes the average effect for each group (across all time periods) and
+Equation (3.7) above. θsel
+then averages these effects together across groups to summarize the overall average effect of participating
+                         O is the average effect of participating in the treatment experienced by all
+in the treatment. Thus, θsel
+units that ever participated in the treatment. In this respect, its interpretation is the same as the ATT in
+the canonical DiD setup with two periods and two groups. This is an attractive property for a summary
+measure of the overall effect of participating in the treatment in the context of multiple time periods and
+variation in treatment timing.
+   Working by analogy, one can also define overall treatment effect parameters by averaging θes (e) across
+
+
+
+
+                                                            18
+

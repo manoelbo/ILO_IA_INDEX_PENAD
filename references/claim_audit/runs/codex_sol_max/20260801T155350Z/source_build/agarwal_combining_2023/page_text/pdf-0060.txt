@@ -1,0 +1,40 @@
+                                                                                               60
+
+Clinical History: includes available lab results or indications by the treating physician, if any.
+AI support: This tool uses only the X-ray image to predict the probability of each potential
+pathology of interest. The tool is based on state-of-the-art machine learning algorithms
+developed by a leading team of researchers at Stanford University.
+Responses
+For each patient and pathology, we will ask for both an assessment and a treatment decision:
+
+  1. We will first ask for your assessment of the probability that each condition is present in
+     a patient. Please consider all pathologies and findings that would be relevant
+     in a radiology report for the patient. You should express your uncertainty
+     about the presence of one or many conditions by appropriately choosing the
+     probability. Note that it is possible that the patient has multiple such conditions or
+     none of them.
+
+  2. If you determine that a pathology may be present, we may ask you to rate the severity
+     and/or extent of the disease on a scale.
+
+  3. Finally, when relevant we will ask whether you would recommend treatment or follow
+     up according to the clinical standard of care if you determine that the pathology may
+     be present. The first two responses are diagnostic while the third is a clinical decision.
+     We are aware that a single physician or radiologist typically does not perform both
+     tasks. However, for this study, we ask that you respond to the best of your ability in
+     both of these roles.
+
+Browser Compatibility
+This platform supports desktop versions of Chrome, Firefox, and Edge. Important features
+on non-supported browsers (including Safari) are missing and we discourage their use for this
+experiment. In addition, the platform does not support any mobile devices and the platform
+will perform poorly on mobile. If you encounter any issues during the experiment, please
+send an email to DiagnosticAI@mit.edu and we will follow-up quickly.
+
+
+Hierarchy
+
+The interface uses a hierarchy to categorize various thoracic conditions. It will be useful to
+familiarize yourself with this hierarchy before you start, but you may also revisit the hierarchy
+at any time throughout the experiment by clicking the help tab in the upper right corner.
+

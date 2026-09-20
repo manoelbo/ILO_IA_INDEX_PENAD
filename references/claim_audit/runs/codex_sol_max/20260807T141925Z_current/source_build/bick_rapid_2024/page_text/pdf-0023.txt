@@ -1,0 +1,45 @@
+1.6% and 6.6% of total work hours were assisted by genAI.
+
+
+5.2   Reported Time Savings Due to Generative AI
+
+In the November 2024 wave, we asked workers who used genAI in the previous week to estimate
+how much time genAI saved them in the past week:
+
+
+      You indicated that LAST WEEK you worked X hours and that you used Generative AI
+      for your job. Now, imagine that LAST WEEK you did not have access to Generative AI.
+      How many additional hours of work would you have needed to complete the same amount
+      of work?     [For X we fill in the respondent’s reported hours worked last week.]
+
+
+    The answer options were: Less than 1 hour, 1 hour, 2 hours, 3 hours, 4 hours, More than 4
+hours. For respondents who selected “less than 1 hour”, we assume that genAI saved zero hours
+of work. For respondents who selected “more than 4 hours,” we assume that genAI saved 4
+hours of work. These assumptions are conservative in the sense that they reflect a lower bound
+of time savings.
+
+    Figure 9 reports the results: 34.2% said genAI saved them an hour or less last week, 25.4%
+reported two hours, 19.9% reported three hours, and 20.4% reported four hours or more. More
+frequent users report higher average time savings. Among workers who used genAI every day
+last week, 36.8% reported saving four hours or more, compared to 10.4% of respondents who
+used it one day last week.
+
+    For each genAI user, we compute the share of working hours saved as the ratio of time saved
+last week to hours worked last week. We find an average time savings of 5.2% of work hours
+by genAI users in the November 2024 wave, or about 2.1 hours for a 40-weekly-hour worker.
+When we include all workers, including non-users, on average genAI saved workers saved 1.4%
+of total hours.
+
+
+5.3   Potential Productivity Gains from Generative AI By Industry
+
+We now present a standard production model to demonstrate how our data on genAI use and
+time savings can be used to estimate productivity gains on the industry or aggregate level.
+Detailed derivations can be found in Appendix D.1.
+
+
+
+
+                                              21
+

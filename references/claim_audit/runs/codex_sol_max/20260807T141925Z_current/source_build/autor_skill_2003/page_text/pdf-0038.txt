@@ -1,0 +1,59 @@
+1316              QUARTERLY JOURNAL OF ECONOMICS
+
+
+tion requirements in industries and occupations as a function of
+their task inputs:
+
+
+                                              O p z T 1e.
+                                               4
+                                                        k
+(17)              College Sharej 5 a 1              k   j      j
+                                             k51
+
+
+In this equation, College Sharej is the college-equivalent share of
+employment (in FTEs) in industry or occupation j at the midpoint
+of our samples, and the T kj ’s measure industry or occupation task
+input in centiles during the same period.25 The coefcients, p̂ k ,
+obtained from (17) provide an estimate of college-equivalent labor
+demand as a function of industry or occupation task inputs. We
+estimate this model separately for industry and occupation task
+demands, using employment data from our CPS samples from
+1980 and 1984 paired to the 1977 DOT job task measures.26
+     We refer to equation (17) as a xed coefcients model because
+it neglects the impact of task prices on task demands— or equiva-
+lently, assumes that the elasticity of substitution between college
+and noncollege equivalent workers is zero. This is an imperfect
+approximation: if the market price of nonroutine relative to rou-
+tine tasks has risen, this calculation will understate demand
+shifts favoring nonroutine tasks and, by implication, college
+graduate employment.
+     The second step of our methodology is to translate task
+shifts into predicted changes in college employment. We rst
+assemble changes in our four key task measures over 1970 to
+1998, DT k1 9 7 0 – 1 9 98 . We then apply these task shift measures to
+the “xed coefcients” estimated from equation (17) to calculate
+
+
+                                              O p̃ z DT
+                                               4
+                                                            k
+(18)         D̃College Share1970–1998 5             k       1970–1998   .
+                                              k51
+
+
+Here, D̃College Share1970 –1998 is the change in the college share of
+aggregate employment predicted by task shifts over 1970 –1998.
+
+     25. We follow Autor, Katz, and Krueger [1998] and Murphy, Romer, and
+Riddell [1998] in dening college equivalent workers as all those with a college
+degree or greater plus half of those with some college. Results using exclusively
+college graduates are quite similar.
+     26. The industry task demand model is estimated using the 1980 MORG
+employment data, which is at the midpoint of our sample. The occupation task
+demand model is estimated using the 1984 CPS sample, which is at the midpoint
+of our occupation sample. For completeness, estimates of equation (17) also control
+for input of nonroutine manual tasks. Inclusion or exclusion of this covariate has
+no substantive impact.
+

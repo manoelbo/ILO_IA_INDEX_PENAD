@@ -1,0 +1,23 @@
+{
+  "all_converged": true,
+  "causal_roles": [
+    "principal_reference_only",
+    "robustness"
+  ],
+  "cbo_with_insufficient_pre_observations": 1,
+  "labelled_robustness_only": true,
+  "minimum_pre_observations": 6,
+  "model_count": 15,
+  "pre_period_end": 202211,
+  "principal_specification_changed": false,
+  "specifications": [
+    "00_no_trend_control",
+    "01_predetermined_pretrend_control",
+    "02_differential_linear_trend"
+  ],
+  "task": "T8A.5",
+  "trend_scales": [
+    "level",
+    "log1p"
+  ]
+}

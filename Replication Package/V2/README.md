@@ -1,34 +1,146 @@
-# V2 Dissertation Replication Package
+# Dissertation Replication Package V2
 
-Status: **released** on 26 July 2026. The public reproduction command, complete
-test suite, signed-reference refresh, Python-R cross-replication, and
-Checkpoint H audit all pass.
+This package reproduces every computational table and figure in Sections 3--5
+and Appendices A--D of *Generative Artificial Intelligence and the Brazilian
+Labor Market: An Analysis of Occupational Exposure and Its Distributional
+Effects*. Table 2.1 is a literature synthesis and is intentionally outside the
+computational registry.
 
-V2 supersedes V1 because it materially improves data lineage, outcome
-construction, estimator coverage, and reproducibility. It is not selected
-because it produces larger or more significant coefficients.
+The manuscript registry contains exactly 53 publications. Each row in
+`config/manuscript_artifacts.csv` names its producer, analytical input,
+reference artifact, and public command. Narrative quantities are independently
+registered in `config/numeric_claims.csv` and reconciled after every run.
 
 ## Quick start
 
-From this directory:
+Requirements are Python 3.10, `uv`, R 4.4.1, and the analytical bundle
+described in `DATA_AVAILABILITY.md`.
 
 ```bash
-uv sync
-.venv/bin/python run_replication.py \
-  --section 4-5 \
-  --mode reproduce
+uv sync --frozen
+Rscript -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv"); renv::restore(prompt = FALSE)'
+
+uv run python run_replication.py \
+  --target all \
+  --mode reproduce \
+  --data-dir /path/to/replication-v2-bundle \
+  --output-dir results/reproduced
 ```
 
-Inspect the complete DAG and input preflight without estimating:
+The locked R environment includes `fixest` 0.14.0, `HonestDiD` 0.2.6, and
+`data.table` 1.17.0. Cross-language model contracts are estimated independently;
+R never reads coefficients produced by Python. Every public run fails at
+preflight unless R 4.4.1 and all package versions match `renv.lock`.
+The HonestDiD routines consume the event-study vector and covariance matrix
+estimated by that independent R replay; Python validates those inputs against
+its own estimates before either sensitivity analysis can run.
+
+`reproduce` is offline: it reads only the frozen analytical bundle, re-estimates
+the registered results, renders the publications, validates the immutable
+reference, runs independent R replications, and reconciles the manuscript
+claims. `full` acquires missing official sources, verifies their hashes,
+rebuilds the derived inputs, and then executes the same inferential DAG. A
+`full` run containing PNADc requires an explicit `--billing-project` and fails
+at preflight when it is omitted.
+
+Inspect the complete plan without executing it:
 
 ```bash
-.venv/bin/python run_replication.py \
-  --section 4-5 \
+uv run python run_replication.py \
+  --target all \
   --mode reproduce \
+  --data-dir /path/to/replication-v2-bundle \
   --dry-run
 ```
 
-Run the release tests:
+Rebuild every component from the frozen official-source cache:
+
+```bash
+uv run python run_replication.py \
+  --target all \
+  --mode full \
+  --data-dir /path/to/replication-v2-bundle \
+  --raw-dir /path/to/replication-v2-raw-cache \
+  --billing-project YOUR_BILLING_PROJECT
+```
+
+## Public interface
+
+```text
+python run_replication.py
+  --target {all,section3,caged,rais,pnadc,spatial}
+  --mode {reproduce,full}
+  [--data-dir PATH]
+  [--raw-dir PATH]
+  [--output-dir PATH]
+  [--billing-project PROJECT]
+  [--skip-figures]
+  [--dry-run]
+```
+
+The legacy alias `--section 3|4-5|all` remains available. `--section 4-5`
+selects CAGED, RAIS, PNADc, and the spatial support analysis.
+
+Outputs are written only to `results/reproduced/` or the requested output
+directory. An existing directory is replaced only when its manifest proves
+that it is a complete output created by this package. Code, inputs, and
+`results/reference/` are never valid output destinations. The output directory
+must also be disjoint from both `--data-dir` and `--raw-dir`: it cannot equal,
+contain, or be contained by either input root.
+
+## Components
+
+| Target | Manuscript coverage | Role |
+|---|---|---|
+| `section3` | Section 3 | PNADc 2025 Q3 exposure and distributional profile |
+| `caged` | Sections 4, 5.1--5.2 and Appendices A and C | Panels, DiD/DDD, event studies, diagnostics, and occupation cases |
+| `rais` | Appendices B.1 and D.1 | Formal stock, turnover, and job tenure |
+| `pnadc` | Appendices B.2 and D.2 | Informality, self-employment, employment stocks, and income |
+| `spatial` | Section 4.5 and Appendices B.3--B.4 | Placebos, pretrends, and the support stopping rule |
+
+The spatial component stops at the registered support gate. Family F retains
+12 declared positions, but it contains no treatment coefficient, nominal
+p-value, or multiplicity-adjusted p-value.
+
+## Evidence and interpretation
+
+The code preserves failed pretrend tests, non-positive-semidefinite covariance
+diagnostics, rank-deficient covariance blocks, thin support, and
+non-identification. These are results, not errors to be hidden. National CAGED
+estimates and subgroup DDD contrasts must be read
+as exploratory post-ChatGPT treated-versus-control differences because the
+registered identifying diagnostics fail. RAIS and PNADc are complementary
+measurement evidence, not causal extensions.
+
+Python performs acquisition, data construction, DAG orchestration, and
+rendering. R receives coefficient-free analytical inputs and model contracts.
+It independently re-estimates every registered numerical result; Python then
+matches stable analysis, model, term, and event-time identifiers. Coefficients
+and standard errors must agree within `1e-6`; observation counts, clusters,
+sample identifiers, statuses, and reference periods must agree exactly.
+
+See `RESEARCH_DESIGN.md` for the estimands and scientific gates and
+`DATA_AVAILABILITY.md` for source and bundle details.
+
+## Repository map
+
+```text
+R/                         independent R estimators
+code/
+  common/                  shared paths, manifests, and validation
+  section3/                descriptive analysis
+  caged/                   CAGED ingestion, panels, models, and audits
+  rais/, pnadc/, spatial/  complementary evidence
+  render/                  manuscript renderers
+  replication/             registries and cross-language checks
+config/                    publication, claim, analysis, and data contracts
+data/                      local mount point; large files are not distributed
+results/reference/         immutable signed reference
+results/reproduced/        default public output
+tests/                     scientific, interface, and portability tests
+```
+
+## Verification
 
 ```bash
 OPENBLAS_NUM_THREADS=1 \
@@ -36,96 +148,19 @@ OMP_NUM_THREADS=1 \
 MKL_NUM_THREADS=1 \
 NUMBA_NUM_THREADS=1 \
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
-.venv/bin/pytest -q tests
+uv run pytest -q tests
 ```
 
-## Public interface
+The complete test suite expects the analytical bundle to be mounted or copied
+at `data/`. Runner-interface and portability tests can be executed without that
+mount; public runs may instead keep the bundle external and pass `--data-dir`.
 
-```text
-run_replication.py
-  --section {all,3,4-5}
-  --mode {reproduce,full}
-  [--raw-dir PATH]
-  [--output-dir PATH]
-  [--skip-figures]
-  [--dry-run]
-```
+The test suite checks the typed DAG, the 53-publication set, numerical claims,
+scientific gates, output isolation, deterministic manifests, and the
+cross-language contracts. A release is not valid merely because a coefficient
+is statistically significant.
 
-- `reproduce` validates the signed reference and re-estimates every
-  inferential family from the frozen derived inputs.
-- `full` additionally rebuilds the signed movement partitions, treatment
-  classification, and national and sector panels from the 195 raw archives.
-- `--section 3` validates the frozen Section 3 reference.
-- `--section 4-5` runs the 17-node empirical DAG.
-- `--output-dir` copies the rendered bundle to another destination without
-  replacing the canonical results.
+## Citation and license
 
-The log distinguishes `RE-ESTIMATED`, `FROZEN ESTIMATE VALIDATED`,
-`DATA REBUILT`, and `ARTIFACT RENDERED`.
-
-The validated local `reproduce` run completed all 17 nodes. Its HonestDiD node
-dominated runtime and took approximately 102 minutes on the release machine;
-future runs should expect this step to be computationally expensive even when
-it emits no intermediate log lines.
-
-## Frozen data contract
-
-- official cutoff: May 2026;
-- period: January 2021-May 2026;
-- raw vintage: 195 official MOV/FOR/EXC archives;
-- signed fact-month layer: 77 Parquet partitions;
-- reconstruction identity: `MOV + FOR − EXC`;
-- official validation: exact monthly agreement with the adjusted PDET series
-  for all 65 months and all three aggregates;
-- treatment crosswalk and external exposure sources: local frozen copies with
-  checksums, never live scraping during estimation.
-
-The corrected 2021 reconstruction is 36,554,795 MOV + 2,680,702 FOR −
-132,425 EXC = 39,103,072 net movements. Gross FOR is 7.33% of MOV and the net
-adjustment is 6.97%.
-
-## Empirical contract
-
-- principal contrast: G1-G4 versus `Not Exposed`, excluding
-  `Minimal Exposure`;
-- admissions, separations, and gross flows: PPML principal and OLS
-  `log(1+y)` secondary;
-- admission wage: OLS on valid log real wages;
-- net flow: OLS on `asinh(net flow)` as a complementary outcome;
-- CBO4 and month fixed effects, with CBO4-clustered inference;
-- no contemporary composition controls in the principal specification;
-- balanced event window `-23…+23`, with November 2022 omitted and no grouped
-  endpoints;
-- sector robustness retains both CNAE section and division and uses CBO4 ×
-  division two-way clustering;
-- DDD requires `post × treatment × subgroup` and all lower-order terms;
-- planned inference families report multiplicity adjustment and support.
-
-## Headline evidence and interpretation boundary
-
-The principal no-control estimates are -0.053772 for admissions, -0.042014
-for separations, -0.048093 for gross flows, -0.050740 for real admission wage,
-and -0.551267 for asinh net balance. Only admission wage rejects at 5%.
-
-All five exact event-study specifications fail the joint pretrend diagnostic.
-The wage HonestDiD interval does not exclude zero even at `M = 0`.
-Accordingly, V2 does **not** support an unqualified national causal claim.
-The estimates should be described as post-ChatGPT treated-versus-control
-differences under the frozen occupational-exposure design.
-
-The public-versus-private falsification is explicitly not executed: the
-available official fields encode registration form rather than employer
-ownership. No ownership coefficient is fabricated.
-
-## Audit map
-
-- `CHECKPOINTS.md`: checkpoint verdicts and evidence.
-- `DECISIONS.md`: pre-estimation decisions, exceptions, and resolutions.
-- `COMPARACAO_V1_V2.md`: one-line-per-change empirical comparison.
-- `results/reconciliation/RECONCILIACAO.md`: vintage, PDET, and exact V1-model
-  reconciliation.
-- `results/reference/manifest.json`: signed semantic reference inventory.
-- `results/replication/`: independent Python-R agreement evidence.
-
-The dissertation-text revision is intentionally outside this package and
-must be handled as a separate round.
+Use `CITATION.cff` to cite the package. Package code and original documentation
+are licensed under MIT; source datasets retain their providers' terms.

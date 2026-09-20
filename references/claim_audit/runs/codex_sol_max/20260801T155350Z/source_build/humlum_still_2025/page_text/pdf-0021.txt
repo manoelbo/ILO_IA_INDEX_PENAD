@@ -1,0 +1,59 @@
+through several years of prior education. Thus, the absence of switching effects in these
+
+occupations reinforces that the mobility effects we see elsewhere reflect a real link between
+
+chatbot use and newcomers gaining occupation-relevant skills.
+
+
+Discussion. A consistent finding from experimental studies is that AI chatbots provide
+
+greater productivity benefits to workers with less prior expertise in their occupations
+
+(Brynjolfsson, Li and Raymond, 2025; Dell’Acqua et al., 2023; Noy and Zhang, 2023).
+
+This section presents large-scale evidence supporting a key implication of those studies:
+
+chatbot adoption is associated with occupational switching. In this sense, our findings
+
+align with the thesis of Autor (2024), who argues that Generative AI may help individuals
+
+extend their work into new occupations.
+
+
+3.3       Workplace Employment
+
+Figure 3 examines how employer chatbot initiatives affect workplace outcomes. Panel (a)
+
+first shows that workplaces that encourage chatbot usage have seen no differential change
+
+in total employment after the arrival of AI chatbots.16 Our estimates are precise, ruling
+
+out effects larger than 2%.
+
+       Panel (b) focuses on the employment of early-career workers, which Brynjolfsson,
+
+Chandar and Chen (2025) document have seen a sharp drop in aggregate employment
+
+in the United States since 2022—a pattern Appendix G.2 replicates in the Danish labor
+
+market. Importantly, however, the difference-in-differences estimates in Figure 3, Panel
+
+(b) show that the decline in early-career jobs is not driven by firms adopting AI chatbots.
+
+Our estimates are again precise, ruling out effects on early-career employment greater
+
+than one-fifth of a full-time equivalent.
+
+       Figure 3, Panel (c) examines impacts on job churn. Even with constant employment
+
+levels, AI chatbots may require a different mix of skills, potentially increasing the rate
+
+of job creation and destruction in the workplace. For instance, adopting and operating
+  16
+    Appendix E.2.3 shows that wage bills are similarly flat. Furthermore, while Figure 3 focuses
+on employment within workers’ respective occupations, Appendix E.2.3 shows that overall workplace
+employment remains flat as well.
+
+
+                                               19
+

@@ -1,0 +1,60 @@
+and presenting additional visualizations.
+
+       In Section D.1, we first document employers’ chatbot initiatives, showing that otherwise
+
+similar firms often pursue markedly different approaches. In Section D.2, we then examine
+
+how these strategies relate to worker adoption, user-reported benefits, and the emergence
+
+of new tasks. Finally, in Section D.3, we quantify the total self-reported time savings
+
+across occupations and employer initiatives.
+
+
+D.1        Employer Initiatives
+
+Figure D.1, Panel (a) shows the prevalence of employer policies related to AI chatbot
+
+usage across our 11 occupations. Firms are now heavily invested in AI chatbots: about
+
+43% of workers are explicitly encouraged to use them, another 21% are allowed, while
+
+only about 6% are explicitly prohibited from doing so. This marks a shift from early
+
+responses to ChatGPT, when many employers restricted its use due to concerns over data
+
+confidentiality and output accuracy (Humlum and Vestergaard, 2025).25
+
+       Employers not only set usage policies but also invest directly in chatbot adoption. Panel
+
+(b) shows that 38% of firms have an enterprise AI chatbot solution—most often customized
+
+versions—and Panel (c) shows that 30% of employees have participated in training courses
+
+on AI chatbot usage, most often organized by their employer.26 Notably, these firm-
+
+led investments are prevalent in all 11 occupations but are particularly widespread in
+
+journalism and marketing and more limited in teaching. The widespread investments
+
+in AI chatbots at the workplace are consistent with their potential as a general-purpose
+
+technology (Eloundou et al., 2024).
+
+       Which firms have adopted different AI chatbot initiatives? Table D.1 shows that firms
+
+encouraging AI chatbot use tend to be slightly younger (each additional 10 years of age
+  25
+      Although outright bans are now rare, they persist in some occupations that involve sensitive data
+(e.g., financial advisors) or require high factual accuracy (e.g., legal professionals).
+   26
+      Customized chatbots are typically versions of ChatGPT, tailored for workplace use through adjust-
+ments such as compliance with data security, access to internal data, and custom prompt creation. Often,
+these are thin wrappers around ChatGPT Enterprise or the OpenAI API. Appendix E.1.3 details the
+usage of AI chatbot products, showing that ChatGPT remains the dominant player. It also provides
+additional information on the characteristics of enterprise chatbots.
+
+
+
+                                                  42
+

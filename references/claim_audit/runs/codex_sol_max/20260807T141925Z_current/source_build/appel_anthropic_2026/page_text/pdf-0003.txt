@@ -1,0 +1,46 @@
+                Worldwide, uneven adoption remains well-explained by GDP per capita.
+                Within the US, workforce composition plays a key role in shaping uneven
+                adoption as states with more computer and mathematical professionals show
+                systematically more Claude usage.
+
+
+                While substantial concentration remains, since our last report Claude usage
+                has become noticeably more evenly distributed across US states. If sustained,
+                usage per capita would be equalized across the country in 2–5 years.
+
+
+
+
+            Introducing and analyzing our new economic primitives
+
+            In the second chapter, we discuss the motivation for and introduce our new
+            economic primitives, including how they were selected and operationalized,
+            and their limitations. We additionally present evidence that our primitives
+            capture directionally accurate aspects of underlying usage patterns as
+            compared to external benchmarks. In chapters three and four, we use these
+            primitives to further investigate implications for adoption and productivity.
+            We find:
+            •   Claude use diversifies with higher adoption and income
+                While the most common use of Claude is for work, coursework use is highest
+                in countries with the lowest GDP per capita, while rich countries show the
+                highest rates of personal use. This aligns with a simple adoption curve
+                story: early adopters in less developed countries tend to be technical users
+                with specific, high-value applications or use Claude for education, whereas
+                mature markets see usage diversify toward casual and personal purposes.
+
+            •   Claude succeeds on most tasks, but less so on the most complex ones
+                We find that Claude generally succeeds at the tasks it is given, and that the
+                education level of its responses tends to match the user’s input. Claude
+                struggles on more complex tasks: As the time it would take a human to do
+                the task increases, Claude’s success rate falls, much like prominent evals
+                measuring the longest tasks that AIs can reliably perform.
+
+            •   Job exposure to AI looks different when success rates are factored in
+                We also use the success rate primitive to better understand job exposure
+                to AI, calculating the share of each occupation that Claude can perform
+                by weighting task coverage by both success rates and the importance of
+                each task within the job. For some occupations, like data entry keyers and
+                database architects, Claude shows proficiency in large swaths of the job.
+
+The Anthropic Economic Index Report                                                             3
+

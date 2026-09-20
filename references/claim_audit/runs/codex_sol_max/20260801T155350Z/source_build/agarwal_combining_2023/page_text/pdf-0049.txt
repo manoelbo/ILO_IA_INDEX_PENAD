@@ -1,0 +1,50 @@
+                                                                                         49
+
+Enke and Zimmermann. Correlation neglect in belief formation. Rev. Econ. Stud., 2019.
+
+Ed Felten, Manav Raj, and Robert Seamans. How will language modelers like ChatGPT
+  affect occupations and industries? March 2023.
+
+Edward W Felten, Manav Raj, and Robert Seamans. The occupational impact of artificial
+  intelligence: Labor, skills, and polarization. September 2019.
+
+Riccardo Fogliato, Shreya Chappidi, Matthew Lungren, Paul Fisher, Diane Wilson, Michael
+  Fitzke, Mark Parkinson, Eric Horvitz, Kori Inkpen, and Besmira Nushi. Who goes first?
+  influences of Human-AI workflow on decision making in clinical imaging. In Proceedings
+  of the 2022 ACM Conference on Fairness, Accountability, and Transparency, FAccT ’22,
+  pages 1362–1374. Association for Computing Machinery, June 2022.
+
+Martin Ford. Rise of the Robots: Technology and the Threat of a Jobless Future. Basic Books,
+ May 2015.
+
+Morgan R Frank, David Autor, James E Bessen, Erik Brynjolfsson, Manuel Cebrian, David J
+ Deming, Maryann Feldman, Matthew Groh, José Lobo, Esteban Moro, Dashun Wang,
+ Hyejin Youn, and Iyad Rahwan. Toward understanding the impact of artificial intelligence
+ on labor. Proc. Natl. Acad. Sci. U. S. A., 116(14):6531–6539, April 2019.
+
+Susanne Gaube, Harini Suresh, Martina Raue, Eva Lermer, Timo Koch, Matthias Hudecek,
+  Alun D Ackery, Samir C Grover, Joseph F Coughlin, Dieter Frey, Felipe Kitamura, Marzyeh
+  Ghassemi, and Errol Colak. Who should do as AI say? only non-task expert physicians
+  benefit from correct explainable AI advice. June 2022.
+
+Susanne Gaube, Harini Suresh, Martina Raue, Eva Lermer, Timo K Koch, Matthias F C
+  Hudecek, Alun D Ackery, Samir C Grover, Joseph F Coughlin, Dieter Frey, Felipe C
+  Kitamura, Marzyeh Ghassemi, and Errol Colak. Non-task expert physicians benefit from
+  correct explainable AI advice when reviewing x-rays. Sci. Rep., 13(1):1383, January 2023.
+
+Avi Goldfarb, Bledi Taska, and Florenta Teodoridis. Could machine learning be a general
+  purpose technology? a comparison of emerging technologies using data from online job
+  postings. Res. Policy, 52(1):104653, January 2023.
+
+David M Grether. Bayes rule as a descriptive model: The representativeness heuristic. Q. J.
+ Econ., 95(3):537–557, November 1980.
+
+David M Grether. Testing bayes rule and the representativeness heuristic: Some experimental
+ evidence. J. Econ. Behav. Organ., 17(1):31–57, January 1992.
+
+Dale Griffin and Amos Tversky. The weighing of evidence and the determinants of confidence.
+ Cogn. Psychol., 24(3):411–435, July 1992.
+
+Grimon, Marie-Pascale, and Christopher Mills. The impact of algorithmic tools on child
+  protection: Evidence from a randomized controlled trial. 2022.
+

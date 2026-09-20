@@ -1,0 +1,43 @@
+counties, in the counterfactual state of the world where A and B have a low minimum wage at
+both dates. For that to be true, the economy of those two counties should be pretty similar.
+For instance, if A has a very service-oriented economy, while B has a very industry-oriented
+economy, it is unlikely that their employment levels will react similarly to Chinese competition.
+Now, if the economies of A and B are similar, they should also have similar effects of the
+minimum wage on employment, thus implying that the treatment effect is homogenous between
+groups. On the other hand, the treatment effect may vary over time. For instance, the drop in
+the employment levels of A and B due to Chinese competition will probably be higher if their
+minimum wage is high than if their minimum wage is low. This is equivalent to saying that
+the effect of the minimum wage on employment diminishes from the first to the second period:
+due to Chinese competition in the second period, the minimum wage may have a more negative
+effect on employment then.1
+Second, assume one wants to learn the effect of a job training program implemented in some
+US counties on participants’ wages. Let us suppose that individuals self-select into the training
+according to a Roy model:
+
+                                   Di,g,t = 1{Yi,g,t (1) − Yi,g,t (0) > cg,t },                             (23)
+
+where cg,t represents the cost of the training for individuals in county g and period t. We consider
+fuzzy designs such as this one in the next section. Here, the common trends condition requires
+that average wages without the training follow the same evolution in all counties. As above,
+for this to hold counties used in the analysis should have similar economies, so let us assume
+that those counties are actually identical copies of each other: at each period, their distribution
+of wages without and with the training is the same. Therefore, (g, t) 7→ E(Yg,t (1) − Yg,t (0)) is
+constant. However, cg,t may vary across counties and over time: some counties may subsidize
+the training more than others, and some counties may change their subsidies over time. Then,
+(g, t) 7→ E(Yi,g,t (1) − Yi,g,t (0)|Di,g,t = 1) will not be constant, despite the fact that all counties
+in the sample have similar economies and experience similar trends on their wages.
+Overall, when the treatment is assigned at the group × period level as in the minimum wage
+example, the economic restrictions underlying the common trends assumption may also imply
+homogeneous treatment effect between groups. However, those restrictions usually do not imply
+that the treatment effect is constant over time. Moreover, when the treatment is assigned at
+the individual level, as in the job training example, the economic restrictions underlying the
+common trends assumption neither imply homogeneous treatment effects between groups, nor
+homogeneous treatment effects over time.
+   1
+      To simplify our discussion, in this example we consider only two counties. But in order to estimate consis-
+tently average treatment effects in the presence of county-specific shocks, the number of groups should tend to
+infinity, as in Section 5 below.
+
+
+                                                        2
+

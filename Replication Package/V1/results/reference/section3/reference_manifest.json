@@ -1,0 +1,260 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2974,
+      "path": "INDEX.md",
+      "sha256": "0c38287ea7f99ad3b5cc81b7bf2d483d14060e2183fbd304722646d250b5a9ab"
+    },
+    {
+      "bytes": 7878,
+      "path": "artifact_manifest.csv",
+      "sha256": "111d7494f2d5d4755679693a36f80fe6b0201f06ecce9cae8a35ef9c8a844d22"
+    },
+    {
+      "bytes": 424,
+      "path": "backing_data/data_build_diagnostics.csv",
+      "sha256": "de285428ee72196e83572d5f7b735cdb7a689fb5310f40e953206f22b63a11ad"
+    },
+    {
+      "bytes": 101324,
+      "path": "figures/figure_3_10_formality.png",
+      "sha256": "76e35bdf19d601adac7cef336cf6e73ac18a24248d7fe39350bbbef20cc91800"
+    },
+    {
+      "bytes": 207932,
+      "path": "figures/figure_3_1_histogram_kde.png",
+      "sha256": "ad21bc3e027469ed84c9cf2edd720aac13fa0332cbe0283b60cbd30f5991c8a1"
+    },
+    {
+      "bytes": 207432,
+      "path": "figures/figure_3_2_gradient_population.png",
+      "sha256": "78d8d659bf3b81174b28e78e2e1189fe793b6761d964bbe6cead1f9567fe28c8"
+    },
+    {
+      "bytes": 184070,
+      "path": "figures/figure_3_3_score_by_occupation_group.png",
+      "sha256": "2658bd44069b3b2c2c9d8de407b2560b8f3cec4175dd8491fde12ddd842d26d1"
+    },
+    {
+      "bytes": 532333,
+      "path": "figures/figure_3_4_state_high_exposure.png",
+      "sha256": "c3f7864f86527a057bd500da65545c0ad0455d4c57c732846bcbdb24a38d27b1"
+    },
+    {
+      "bytes": 96290,
+      "path": "figures/figure_3_5_sex.png",
+      "sha256": "9d583cd1e8202278e26e4d2ca07ae161eda28b8fb77610ed00e91ffac57131bf"
+    },
+    {
+      "bytes": 111661,
+      "path": "figures/figure_3_6_race.png",
+      "sha256": "4c39c809dc2e3f2ef698b65052c8fea3ca07f44b71d566daaa10a1f1c8fd33d1"
+    },
+    {
+      "bytes": 143655,
+      "path": "figures/figure_3_7_age.png",
+      "sha256": "9b738f07089b30328ac459919c25ec96d941a3d58c52030c08835b0ef44855e6"
+    },
+    {
+      "bytes": 213224,
+      "path": "figures/figure_3_8_education.png",
+      "sha256": "8d807b0b14da880d2c9acf434382e5236a9b5f00a0adaf6f5c4abe1198218237"
+    },
+    {
+      "bytes": 151162,
+      "path": "figures/figure_3_9_income.png",
+      "sha256": "194de082e1af792f6fd74fc66ebcf6ee96486043960a4bf72df22f632bf20c4a"
+    },
+    {
+      "bytes": 610,
+      "path": "tables/table_3_1_base_specs.csv",
+      "sha256": "ec15f08e0d5a7f04426cfb25ef9ef4aa4776e80c5f2c424c4d5e47445484b7a3"
+    },
+    {
+      "bytes": 773,
+      "path": "tables/table_3_1_base_specs.md",
+      "sha256": "03ae243377bf07fb08d7082f988974282b5415dd74257a76e8180b7250eb0bd8"
+    },
+    {
+      "bytes": 500,
+      "path": "tables/table_3_2_gradients.csv",
+      "sha256": "f0d9cc483c1115eacb4cd0f0c7048481b56d380caf36c9bee98528d629ac9cdb"
+    },
+    {
+      "bytes": 653,
+      "path": "tables/table_3_2_gradients.md",
+      "sha256": "22ec9c096ffe28f5d81c527ec21295cd676a473354cd5642b4f24951d3920669"
+    },
+    {
+      "bytes": 446,
+      "path": "tables/table_3_3_high_exposure_occupations.csv",
+      "sha256": "0ba3f97c9466e819f11ac9ce15d9266cbe0cb26d027adf35d8a16d223cec83f4"
+    },
+    {
+      "bytes": 616,
+      "path": "tables/table_3_3_high_exposure_occupations.md",
+      "sha256": "f22652506c85aab46204c4afe57f9513f3681a248957858f67fd7c2c222a9a39"
+    },
+    {
+      "bytes": 1492,
+      "path": "tables/table_3_4_sector_exposure.csv",
+      "sha256": "ffc2d20b1a5dc6b190ab3435fbd4c46c217123b57d57f284fe85437eadba69cb"
+    },
+    {
+      "bytes": 2122,
+      "path": "tables/table_3_4_sector_exposure.md",
+      "sha256": "fa925571ed185c5e952f439fd842de73d9fc417ffd4eb95b6069d6bfd9cae784"
+    },
+    {
+      "bytes": 1245,
+      "path": "tables/table_3_5_demographics_summary.csv",
+      "sha256": "f1426f84f71ff660959b98961bdfb7cbed7f80c507fc59a2dd18e5947eea3053"
+    },
+    {
+      "bytes": 1788,
+      "path": "tables/table_3_5_demographics_summary.md",
+      "sha256": "c039ee2eb4fac48720bd1c1e37093c91330ab25b999390c9780dd38e7db2c5aa"
+    },
+    {
+      "bytes": 3751,
+      "path": "validation/validation_checks.csv",
+      "sha256": "7f208c1af2e95b84bbff2b40638da0713b1757c31f22a2823e781466122a2bdd"
+    },
+    {
+      "bytes": 4135,
+      "path": "validation/validation_checks.md",
+      "sha256": "589681ceb0833fa06da201263844de73e98afab8f9b3d8dcf363eb42e7f02968"
+    }
+  ],
+  "code": [
+    {
+      "bytes": 5127,
+      "path": "run_replication.py",
+      "sha256": "78c2037bcea7e4b2f944227abc67bf7765f6df54142bf696da5385dffbe27e14"
+    },
+    {
+      "bytes": 156,
+      "path": "requirements.txt",
+      "sha256": "cdcd0d1b8938d8db8b0c99e9c313e10baa4b99d4b9025fb0a82e51c2be4325d4"
+    },
+    {
+      "bytes": 304,
+      "path": "requirements-full.txt",
+      "sha256": "90087a6b243dcc2376353657d9f35af9939f8626ae13c4c05c88ea4bb948697d"
+    },
+    {
+      "bytes": 64,
+      "path": "code/common/__init__.py",
+      "sha256": "8a0d6a00c0007e1302ba6a9d820834fe2be6f39b510e83eeff59e5153e572b6a"
+    },
+    {
+      "bytes": 7742,
+      "path": "code/common/artifacts.py",
+      "sha256": "20c82701c7a0d5eed05c1f3eca0058fa610297d9b37c1c6c13979334de04333f"
+    },
+    {
+      "bytes": 3031,
+      "path": "code/common/files.py",
+      "sha256": "c9815b0b41c26774b89fce55447efd55f5da2b5fb759b41c1b76fbf68a4b3957"
+    },
+    {
+      "bytes": 2944,
+      "path": "code/common/manifest.py",
+      "sha256": "08a0982411729b06a56d21730a49bb7966a5dc5a7e86b4bd6aa1e8594fe9a509"
+    },
+    {
+      "bytes": 2832,
+      "path": "code/common/validation.py",
+      "sha256": "9cf3542f90c2721d4e61352e89a9c84c586643c7da9606a3499d30bf5d48c3c2"
+    },
+    {
+      "bytes": 75,
+      "path": "code/section3/__init__.py",
+      "sha256": "801718d984acbfd01458d83f82f5efb3320d3d477a70f3bb73134e2d491f8a88"
+    },
+    {
+      "bytes": 15103,
+      "path": "code/section3/build_data.py",
+      "sha256": "4ae3c157d9f57c37694f45310399f0a044900e61a434ce34d0de691a690c372c"
+    },
+    {
+      "bytes": 5786,
+      "path": "code/section3/constants.py",
+      "sha256": "d646952a0426daa32b9d911cb14a49b5c553e006b52c8eb9106051913b6e90e5"
+    },
+    {
+      "bytes": 6274,
+      "path": "code/section3/data.py",
+      "sha256": "14948a86744b390bbf16775212b8360f2f63193e2ea3eb3b26f0a1f2225c9041"
+    },
+    {
+      "bytes": 16906,
+      "path": "code/section3/figures.py",
+      "sha256": "4447abb5873f43cfa3414510b05427530ebe2e6f5d189c2d8a33a5b28251a2a1"
+    },
+    {
+      "bytes": 1744,
+      "path": "code/section3/formatting.py",
+      "sha256": "477bd925f17cd714d44a948dc6541ac74eebba9c5eb4b0ecd298ec2f87b473d4"
+    },
+    {
+      "bytes": 6465,
+      "path": "code/section3/pipeline.py",
+      "sha256": "fd8be230ebc0c9c4b0c1bf267374f5fe59cf3db4d0099c09b39be614901a916f"
+    },
+    {
+      "bytes": 10255,
+      "path": "code/section3/tables.py",
+      "sha256": "0ec1c358388770d2dd6bc8002ef84b95933ccdfa63b08adc6db6ed798e0bbba2"
+    },
+    {
+      "bytes": 1670,
+      "path": "code/section3/validation.py",
+      "sha256": "665a2d361e1225e0f386ad1817163e64d62b138ca12b671bdf25867bab45a603"
+    }
+  ],
+  "failure_count": 0,
+  "inputs": [
+    {
+      "bytes": 3962990,
+      "path": "data/derived/section3/pnad_ilo_merged.parquet",
+      "sha256": "027f16541c3f7b9aea8df410a5c24519d547b1ad5d82710d34cfc9699dd05ec3"
+    },
+    {
+      "bytes": 14790,
+      "path": "data/derived/section3/ilo_exposure_clean.parquet",
+      "sha256": "28e8d17c6e9110c2218fc20172e25f0d16b19ff008349ca53231799dda4d267f"
+    },
+    {
+      "bytes": 424,
+      "path": "data/derived/section3/data_build_diagnostics.csv",
+      "sha256": "de285428ee72196e83572d5f7b735cdb7a689fb5310f40e953206f22b63a11ad"
+    },
+    {
+      "bytes": 1105920,
+      "path": "data/derived/section3/brazil_states_2020.gpkg",
+      "sha256": "1812f6a0f173a9c63ba67ad611996e2785024405ef6f4318325896cc7070252a"
+    }
+  ],
+  "mode": "reference",
+  "schema_version": "dissertation_replication_v2",
+  "section": "3",
+  "software": {
+    "Pillow": "12.1.1",
+    "basedosdados": "2.0.2",
+    "geopandas": "1.1.0",
+    "google-cloud-bigquery": "3.40.0",
+    "google-cloud-bigquery-storage": "2.36.0",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "openpyxl": "3.1.5",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.0",
+    "pyfixest": "0.40.1",
+    "pyogrio": "0.12.1",
+    "python": "3.11.4",
+    "scipy": "1.15.3",
+    "seaborn": "0.13.2",
+    "shapely": "2.1.0"
+  }
+}

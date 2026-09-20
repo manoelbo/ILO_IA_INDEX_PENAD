@@ -1,0 +1,18 @@
+### D.2 Deslocamento para a informalidade na PNAD Contínua
+O segundo exercício pergunta se houve deslocamento para a informalidade, com 57 cortes trimestrais de 2012T1 a 2026T1, entre ocupados de 18 a 65 anos e ponderados pelo peso amostral. Excluí 2022T4, que contém o evento e seria pré e pós ao mesmo tempo, de modo que o pós vai de 2023T1 a 2026T1. São dois braços: um individual, no nível da observação, e um de estoque por grupo ocupacional e trimestre, por PPML. Só o pareamento exato de quatro dígitos com a ISCO-08 herda o rótulo de exposição, o que cobre 97,9% das observações; o restante recebe `Sem classificação` e fica fora da estimação.
+**Tabela D.2: Composição e estoque ocupacional (família E)**
+
+[TABLE]
+Braço | Desfecho | Estimador | Coeficiente | EP | p nominal | p ajustado
+Individual | Informalidade | MQO ponderado | +0,0085 | 0,0113 | 0,452 | 0,543
+Individual | Conta própria | MQO ponderado | +0,0213 | 0,0209 | 0,312 | 0,543
+Estoque | Ocupados, total | PPML | +0,0616 | 0,0430 | 0,155 | 0,477
+Estoque | Ocupados formais | PPML | +0,0420 | 0,0482 | 0,386 | 0,543
+Estoque | Ocupados informais | PPML | +0,0817 | 0,0576 | 0,159 | 0,477
+Individual | Rendimento (log) | MQO ponderado | −0,0093 | 0,0218 | 0,670 | 0,670
+[/TABLE]
+
+> *Notas: família E, de seis testes, com ajuste de Benjamini-Hochberg aplicado uma única vez sobre o conjunto declarado antes da estimação. O estimando é o diferencial médio entre expostos e controle no período de 2023T1 a 2026T1, condicional a efeitos fixos de grupo ocupacional e de trimestre sobre a janela de 2012T1 a 2026T1, excluído 2022T4. Não há nenhuma rejeição a 5%, nem nominal nem ajustada, e as 12 classificações de tendência prévia do modelo exato falham, inclusive nas especificações que excluem 2020. O rendimento entra como reconciliação com a Seção 3 e nunca como desfecho principal. A restrição de inferência, já que os erros-padrão agrupados por grupo ocupacional não implementam o desenho amostral complexo da PNAD Contínua, a replicação em R e os testes de tendência prévia estão no Apêndice B.2.*
+Procurei o deslocamento e não o encontrei. Os sinais até apontam para composição mais informal entre os expostos, 0,85 ponto percentual na informalidade e 2,1 pontos no trabalho por conta própria, mas nenhum dos seis testes rejeita, nem antes nem depois do ajuste.
+O braço de estoque afasta a leitura de substituição por estrutura, e não por falta de precisão: os diferenciais são positivos ao mesmo tempo para o estoque informal, cerca de 8,5%, para o formal, 4,3%, e para o total, 6,4%. Se houvesse migração do emprego formal para o informal, as duas primeiras séries teriam sinais opostos, e não é o que aparece.
+Uma fronteira fica de pé: o desenho mede composição de cortes transversais repetidos, não trajetória individual, e por isso não observa transição entre estados. Responder sobre transição exigiria um painel de pessoa por trimestre com identificador estável e pesos longitudinais, que os arquivos públicos não oferecem.

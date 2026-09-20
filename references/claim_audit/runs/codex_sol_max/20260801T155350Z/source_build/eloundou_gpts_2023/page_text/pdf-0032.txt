@@ -1,0 +1,58 @@
+                                            WORKING PAPER
+
+
+Acemoglu, D. (2002). Technical change, inequality, and the labor market. Journal of Economic Literature,
+  40.
+
+Acemoglu, D. and Autor, D. (2011a). Skills, tasks and technologies: Implications for employment and
+  earnings. In Handbook of labor economics, volume 4, pages 1043–1171. Elsevier.
+
+Acemoglu, D. and Autor, D. (2011b). Skills, Tasks and Technologies: Implications for Employment and
+  Earnings. In Ashenfelter, O. and Card, D., editors, Handbook of Labor Economics, volume 4 of Handbook
+  of Labor Economics, chapter 12, pages 1043–1171. Elsevier.
+
+Acemoglu, D., Autor, D., Hazell, J., and Restrepo, P. (2020). Ai and jobs: Evidence from online vacancies.
+  Technical report, National Bureau of Economic Research.
+
+Acemoglu, D. and Restrepo, P. (2018). The race between man and machine: Implications of technology for
+  growth, factor shares, and employment. American economic review, 108(6):1488–1542.
+
+Acemoglu, D. and Restrepo, P. (2019). Automation and new tasks: How technology displaces and reinstates
+  labor. Journal of Economic Perspectives, 33(2):3–30.
+
+Acemoglu, D. and Restrepo, P. (2022a). Demographics and automation. The Review of Economic Studies,
+  89(1):1–44.
+
+Acemoglu, D. and Restrepo, P. (2022b). Tasks, automation, and the rise in us wage inequality. Econometrica,
+  90(5):1973–2016.
+
+Aghion, P., Jones, B. F., and Jones, C. I. (2018). Artificial intelligence and economic growth. In The
+  economics of artificial intelligence: An agenda, pages 237–282. University of Chicago Press.
+
+Agrawal, A. K., Gans, J. S., and Goldfarb, A. (2021). Ai adoption and system-wide change. Technical report,
+  National Bureau of Economic Research.
+
+Arntz, M., Gregory, T., and Zierahn, U. (2017). Revisiting the risk of automation. Economics Letters,
+  159:157–160.
+
+Autor, D., Chin, C., Salomons, A. M., and Seegmiller, B. (2022a). New frontiers: The origins and content of
+  new work, 1940–2018. Technical report, National Bureau of Economic Research.
+
+Autor, D., Mindell, D. A., and Reynolds, E. B. (2022b). The Work of the Future: Building Better Jobs in an
+  Age of Intelligent Machines. The MIT Press.
+
+Autor, D. H., Katz, L. F., and Kearney, M. S. (2006). The polarization of the us labor market. American
+  economic review, 96(2):189–194.
+
+Autor, D. H., Levy, F., and Murnane, R. J. (2003). The skill content of recent technological change: An
+  empirical exploration. The Quarterly journal of economics, 118(4):1279–1333.
+
+Babina, T., Fedyk, A., He, A., and Hodson, J. (2021). Artificial intelligence, firm growth, and product
+  innovation. Firm Growth, and Product Innovation (November 9, 2021).
+
+Bai, Y., Jones, A., Ndousse, K., Askell, A., Chen, A., DasSarma, N., Drain, D., Fort, S., Ganguli, D.,
+  Henighan, T., Joseph, N., Kadavath, S., Kernion, J., Conerly, T., El-Showk, S., Elhage, N., Hatfield-Dodds,
+  Z., Hernandez, D., Hume, T., Johnston, S., Kravec, S., Lovitt, L., Nanda, N., Olsson, C., Amodei, D.,
+  Brown, T., Clark, J., McCandlish, S., Olah, C., Mann, B., and Kaplan, J. (2022). Training a Helpful and
+  Harmless Assistant with Reinforcement Learning from Human Feedback. arXiv:2204.05862 [cs].
+

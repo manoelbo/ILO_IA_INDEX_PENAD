@@ -1,0 +1,49 @@
+                                                                                            53
+
+Ashesh Rambachan. Identifying prediction mistakes in observational data, 2021.
+
+Carlo Reverberi, Tommaso Rigon, Aldo Solari, Cesare Hassan, Paolo Cherubini, and Andrea
+  Cherubini. Experimental evidence of effective human–AI collaboration in medical decision-
+  making. Sci. Rep., 12(1):1–10, September 2022.
+
+Michael Allan Ribers and Hannes Ullrich. Machine predictions and human decisions with
+ variation in payoff and skills: the case of antibiotic prescribing, 2022.
+
+Andrew B Rosenkrantz, Tarek N Hanna, Scott D Steenburg, Mary Jo Tarrant, Robert S
+ Pyatt, and Eric B Friedberg. The current state of teleradiology across the united states: A
+ national survey of radiologists’ habits, attitudes, and perceptions on teleradiology practice.
+ J. Am. Coll. Radiol., 16(12):1677–1687, December 2019.
+
+Jarrel C Y Seah, Cyril H M Tang, Quinlan D Buchlak, Xavier G Holt, Jeffrey B Ward-
+  man, Anuar Aimoldin, Nazanin Esmaili, Hassan Ahmad, Hung Pham, John F Lambert,
+  Ben Hachey, Stephen J F Hogg, Benjamin P Johnston, Christine Bennett, Luke Oakden-
+  Rayner, Peter Brotchie, and Catherine M Jones. Effect of a comprehensive deep-learning
+  model on the accuracy of chest x-ray interpretation by radiologists: a retrospective, mul-
+  tireader multicase study. Lancet Digit Health, 3(8):e496–e506, August 2021.
+
+Victor S Sheng, Foster Provost, and Panagiotis G Ipeirotis. Get another label? improving
+  data quality and data mining using multiple, noisy labelers. In Proceedings of the 14th ACM
+  SIGKDD international conference on Knowledge discovery and data mining, KDD ’08,
+  pages 614–622, New York, NY, USA, August 2008. Association for Computing Machinery.
+
+Yongsik Sim, Myung Jin Chung, Elmar Kotter, Sehyo Yune, Myeongchan Kim, Synho Do,
+  Kyunghwa Han, Hanmyoung Kim, Seungwook Yang, Dong-Jae Lee, and Byoung Wook
+  Choi. Deep convolutional neural network–based software improves radiologist detection of
+  malignant lung nodules on chest radiographs. Radiology, 294(1):199–209, January 2020.
+
+Christopher A Sims. Implications of rational inattention. J. Monet. Econ., 50(3):665–690,
+ April 2003.
+
+Akshay Smit, Saahil Jain, Pranav Rajpurkar, Anuj Pareek, Andrew Y Ng, and Matthew P
+ Lungren. CheXbert: Combining automatic labelers and expert annotations for accurate
+ radiology report labeling using BERT. April 2020.
+
+Megan Stevenson and Jennifer L Doleac. Algorithmic risk assessment in the hands of humans.
+ December 2019.
+
+Yasasvi Tadavarthi, Brianna Vey, Elizabeth Krupinski, Adam Prater, Judy Gichoya, Nabile
+  Safdar, and Hari Trivedi. The state of radiology AI: Considerations for purchase decisions
+  and current market offerings. Radiol Artif Intell, 2(6):e200004, November 2020.
+
+Matt Taddy. The technological elements of artificial intelligence. February 2018.
+

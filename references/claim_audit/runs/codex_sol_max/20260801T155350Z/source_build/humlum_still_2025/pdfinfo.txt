@@ -1,0 +1,19 @@
+Title:           
+Creator:         Adobe Acrobat 25.1.20756
+Producer:        Adobe Acrobat 25.1.20756
+CreationDate:    Tue Oct 21 15:58:45 2025 -03
+ModDate:         Tue Oct 21 16:00:56 2025 -03
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            AcroForm
+JavaScript:      no
+Pages:           157
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       2690011 bytes
+Optimized:       yes
+PDF version:     1.6

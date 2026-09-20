@@ -1,0 +1,50 @@
+               Figure 4: Effect of LLM exposure on firm-level job listings
+
+
+
+
+                                        0.015
+                                        0.010
+                                        0.005
+                                        0.000
+                          Coefficient
+
+                                        −0.005
+                                        −0.010
+                                        −0.015
+
+
+
+
+                                                 −10   0              10          20   30
+
+                                                           Periods to treatment
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on the probability that
+a UK firm posts any job vacancy in a given month. Coefficients are estimated from Equation (3)
+with firm fixed effects and industry-by-period fixed effects. Standard errors are clustered at the firm
+level. The dependent variable is an indicator equal to one if the firm posted at least one vacancy in
+month t. The vertical line marks November 2022, when ChatGPT was publicly released. Shaded
+areas denote 95% confidence intervals.
+
+
+
+firm posts any vacancy for that specific role in a given month. We continue to
+compare exposed vs. less exposed firms in the same time period.
+    Figure 5 presents these occupation-specific treatment effects, ordered by mag-
+nitude. The results reveal substantial heterogeneity in hiring adjustments across
+roles. Technical positions experience the sharpest declines: a one standard devia-
+tion increase in firm-level LLM exposure reduces the likelihood of posting software
+engineer positions by 1.1 percentage points (p < 0.001), QA tester positions by 1.0
+percentage points (p < 0.001), and data analyst positions by 0.8 percentage points
+(p < 0.001). We find similar declines for other technical roles such as IT specialists,
+IT project managers, and infrastructure engineers. Creative and design roles also see
+significant reductions, with job postings for designer positions decreasing by 0.6 per-
+centage points (p < 0.001) and for producers by 0.5 percentage points (p < 0.001).
+In contrast, sales representative positions show a statistically significant increase of
+0.3 percentage points (p < 0.001). This pattern suggests that exposed firms are scal-
+ing back recruitment for technical and analytical roles where LLMs can augment or
+
+                                                               18
+

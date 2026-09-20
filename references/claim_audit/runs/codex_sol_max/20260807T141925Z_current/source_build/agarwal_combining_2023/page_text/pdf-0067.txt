@@ -1,0 +1,13 @@
+                                                                                                                            67
+
+
+
+
+                                   Figure B.7: Clinical History Information
+
+
+
+
+Note: The clinical history information environment in the experiment had information on patient indications, vitals and abnormal
+labs.
+

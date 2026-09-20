@@ -1,0 +1,65 @@
+                                                                                                                                                                                                                      85
+
+                                                               Figure C.18: Conditional treatment effect given radiologist prediction
+                                                     (a) Deviation from Ground Truth                                                                                  (b) Incorrect Decision
+ATE of AI on deviation from ground truth
+
+
+
+
+                                           .1                                                                                                         .2
+
+
+
+
+                                                                                                                    ATE of AI on incorrect decision
+                                                                                                                                                      .1
+                                            0
+
+                                                                                                                                                       0
+
+                                           -.1
+                                                                                                                                                      -.1
+
+
+                                           -.2                                                                                                        -.2
+                                                     [0,0.2)      [0.2,0.4)    [0.4,0.6)     [0.6,0.8)    [0.8,1]                                           [0,0.2)     [0.2,0.4)    [0.4,0.6)     [0.6,0.8)    [0.8,1]
+                                                                Radiologist probability bins without AI                                                               Radiologist probability bins without AI
+
+
+       Note: Main specifications similar to figure 2 with the exception that observations are from design 3 only.
+
+
+
+
+                                                                    Figure C.19: Conditional treatment effect given AI prediction
+                                                     (a) Deviation from Ground Truth                                                                                  (b) Incorrect Decision
+                                           .15                                                                                                        .2
+ATE on deviation from ground truth
+
+
+
+
+                                                                                                                    ATE on incorrect decision
+
+
+
+
+                                             .1
+                                                                                                                                                      .1
+
+                                           .05
+                                                                                                                                                       0
+                                                 0
+
+                                                                                                                                                      -.1
+                                           -.05
+
+
+                                            -.1                                                                                                       -.2
+                                                      [0,0.2)      [0.2,0.4)   [0.4,0.6)    [0.6,0.8)     [0.8,1]                                           [0,0.2)     [0.2,0.4)   [0.4,0.6)    [0.6,0.8)      [0.8,1]
+                                                                           AI prediction bins                                                                                   AI prediction bins
+
+
+       Note: Main specifications similar to figure 3 with the exception that observations are from design 3 only.
+

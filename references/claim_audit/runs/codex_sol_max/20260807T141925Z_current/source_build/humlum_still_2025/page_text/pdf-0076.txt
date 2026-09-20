@@ -1,0 +1,44 @@
+B.3     Classification of New Job Tasks
+
+Our survey includes free-text responses about the new tasks workers have received due to
+AI chatbots. We categorize these responses into six broad AI-related categories, listed in
+Table B.6, as well as into more granular, occupation-specific subtasks. The task categories
+fall into three groups: Generation of new content, Oversight of AI outputs, and Integration
+of AI tools.
+
+                 Table B.6: Categories of New Tasks from AI Chatbots
+
+ Group      Task                      Description
+ Generation AI Ideation               Leveraging AI to spark or expand creative
+                                      ideas—such as concepts, strategies, or solutions.
+                                      The human selects and builds on the most promis-
+                                      ing suggestions.
+               AI Content Drafting    Using AI tools to generate initial drafts of text or
+                                      media (e.g., documents, emails, code). The human
+                                      professional prompts the AI, then edits and refines
+                                      the output for accuracy and tone.
+               AI Data Insights       Using AI to analyze data or documents and surface
+                                      patterns, summaries, or key insights. The human
+                                      then interprets and applies these findings to deci-
+                                      sions.
+ Oversight     AI Quality Review      Reviewing AI-generated content for accuracy, clar-
+                                      ity, and relevance. The human fact-checks, corrects
+                                      errors, and ensures the output meets required stan-
+                                      dards.
+               AI Ethics & Compliance Ensuring AI use follows ethical, legal, and institu-
+                                      tional standards. This includes setting guidelines,
+                                      monitoring for bias or misuse, and reviewing out-
+                                      puts for compliance.
+ Integration   AI Integration         Embedding AI into workflows to automate or en-
+                                      hance tasks. Professionals design prompts, refine
+                                      workflows, correct outputs, and fine-tune systems
+                                      based on feedback.
+                   Notes: This table describes our six broad categories of AI-related tasks.
+
+
+
+
+   Examples of occupation-specific tasks, along with their corresponding general task
+categories, include:
+
+                                                     26

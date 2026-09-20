@@ -1,0 +1,44 @@
+30        ILO Working Paper 140
+
+
+
+
+     XX   5 Adjustment of survey sub-sample
+
+
+     In the next step, we compared the average of expert scores with the original mean survey scores
+     using two independent AI models as impartial arbiters to propose an adjusted score.13 The mod-
+     els were informed about the sources of the scores in such a way that would prevent them from
+     automatically siding with the expert group: group one was defined as “practical knowledge of the
+     work and types of tasks they were presented, since they worked in the same occupational groups from
+     which we selected tasks they scored”, while the second group was described as “respondents with
+     more theoretical knowledge of technology and labour markets”. Rather than simply averaging the
+     two scores, the models were explicitly instructed to focus their analysis on the task characteris-
+     tics and the current capabilities of generative AI and required to provide justifications for each
+     adjustment and its relative position to the original scores.
+
+
+      XX Figure 13. Task-level scores from the survey and experts, compared to AI-arbitrated scores
+
+
+
+
+     The overall correlation between the adjusted scores produced by the two AI models is 0.96, with
+     correlations within occupational groups exceeding 0.9 in all but one case14 (Figure 14). This high
+     level of agreement demonstrates that, when provided with sufficient background knowledge
+     in the form of reference ranges of scores, the models converge on remarkably similar predic-
+     tions. Notably, only three tasks exhibited an absolute difference in scores exceeding 0.2 (orange
+     dots in Figure 13). In these cases, GPT-4o tended to adopt a more optimistic perspective on the
+     feasibility of automation, whereas Gemini emphasized the importance of human judgment as
+     a critical factor.
+
+
+
+
+     13
+          We used OpenAI’s GPT-4o and Google’s Gemini Flash 1.5, which have comparable abilities. We also tested OpenAI o1, which at the
+          time of writing was among the models with strongest capacities of « algorithmic reasoning » and observed very similar results. The
+          process was set up as a cycle of sequential API calls, which loop over each task and capture the response into a data frame.
+     14
+          Public authorities, senior officials and managers in Figure 10.
+

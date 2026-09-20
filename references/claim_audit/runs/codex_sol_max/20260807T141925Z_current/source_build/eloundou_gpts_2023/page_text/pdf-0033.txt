@@ -1,0 +1,59 @@
+                                             WORKING PAPER
+
+
+Baumol, W. J. (2012). The cost disease: Why computers get cheaper and health care doesn’t. Yale university
+  press.
+
+Benzell, S. G., Kotlikoff, L. J., LaGarda, G., and Ye, V. Y. (2021). Simulating endogenous global automation.
+  Working Paper 29220, National Bureau of Economic Research.
+
+Bessen, J. (2018). Artificial intelligence and jobs: The role of demand. In The economics of artificial
+  intelligence: an agenda, pages 291–307. University of Chicago Press.
+
+BLS (2022). Employment by detailed occupation.
+
+BLS (2023a). Demographic characteristics (cps).
+
+BLS (2023b). Occupational outlook handbook a-z index.
+
+Bommasani, R., Hudson, D. A., Adeli, E., Altman, R., Arora, S., von Arx, S., Bernstein, M. S., Bohg, J.,
+  Bosselut, A., Brunskill, E., et al. (2021). On the opportunities and risks of foundation models. arXiv
+  preprint arXiv:2108.07258.
+
+Bresnahan, T. (2019). Artificial intelligence technologies and aggregate growth prospects.
+
+Bresnahan, T., Greenstein, S., Brownstone, D., and Flamm, K. (1996). Technical progress and co-invention
+  in computing and in the uses of computers. Brookings Papers on Economic Activity. Microeconomics,
+  1996:1–83.
+
+Bresnahan, T. F. (1999). Computerisation and wage dispersion: an analytical reinterpretation. The economic
+  journal, 109(456):390–415.
+
+Bresnahan, T. F., Brynjolfsson, E., and Hitt, L. M. (2002). Information technology, workplace organization, and
+  the demand for skilled labor: Firm-level evidence. The quarterly journal of economics, 117(1):339–376.
+
+Bresnahan, T. F. and Trajtenberg, M. (1995). General purpose technologies ‘engines of growth’? Journal of
+  econometrics, 65(1):83–108.
+
+Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry,
+  G., Askell, A., et al. (2020). Language models are few-shot learners. Advances in neural information
+  processing systems, 33:1877–1901.
+
+Brynjolfsson, E., Frank, M. R., Mitchell, T., Rahwan, I., and Rock, D. (2023). Quantifying the Distribution of
+  Machine Learning’s Impact on Work. Forthcoming.
+
+Brynjolfsson, E. and Mitchell, T. (2017). What can machine learning do? workforce implications. Science,
+  358(6370):1530–1534.
+
+Brynjolfsson, E., Mitchell, T., and Rock, D. (2018). What can machines learn, and what does it mean for
+  occupations and the economy? AEA Papers and Proceedings, 108:43–47.
+
+Brynjolfsson, E., Rock, D., and Syverson, C. (2021). The productivity j-curve: How intangibles complement
+  general purpose technologies. American Economic Journal: Macroeconomics, 13(1):333–72.
+
+Chase, H. (2022). LangChain.
+
+Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. d. O., Kaplan, J., Edwards, H., Burda, Y., Joseph,
+  N., Brockman, G., et al. (2021). Evaluating large language models trained on code. arXiv preprint
+  arXiv:2107.03374.
+

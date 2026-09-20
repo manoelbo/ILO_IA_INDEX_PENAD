@@ -1,0 +1,43 @@
+  Table 1: Worker Adoption, Reported Benefits, and New Workloads by Employer Initiatives
+                                                                                     Reported Benefits                  New Workloads         New Workloads
+                                                      Adoption                      (Among Ever Used)                 (Among Ever Used)     (Among Never Used)
+                                                   Ever       Daily     Any Time      60+                             Same         New       Same       New
+                                                  Used         Use        Saving    min/day Quality       Creativity Tasks        Tasks      Tasks      Tasks
+                                                    (1)         (2)         (3)        (4)      (5)           (6)       (7)         (8)        (9)       (10)
+    Encouraged                                   0.350∗∗∗    0.110∗∗∗    0.087∗∗∗   0.034∗∗∗ 0.076∗∗∗      0.065∗∗∗  0.020∗∗∗    0.039∗∗∗    -0.003    0.018∗∗
+                                                 (0.009)     (0.008)     (0.011)    (0.010) (0.014)        (0.013)   (0.006)     (0.008)    (0.003)    (0.009)
+
+    Enterprise Chatbot                           0.163∗∗∗     0.008       -0.000    -0.024∗∗   -0.033∗      -0.016     0.005     0.027∗∗∗   0.020∗∗∗   0.023∗∗∗
+                                                 (0.012)     (0.007)     (0.015)    (0.011)    (0.017)     (0.016)    (0.008)    (0.010)    (0.006)    (0.007)
+
+    Training                                     0.284∗∗∗    0.019∗∗∗   -0.065∗∗∗     -0.006   -0.041∗∗    -0.031∗    0.015∗∗    0.078∗∗∗    -0.002    0.050∗∗∗
+                                                 (0.014)     (0.007)     (0.018)     (0.011)   (0.017)     (0.017)    (0.007)    (0.016)    (0.004)    (0.016)
+
+    Encouraged × Enterprise Chatbot              -0.137∗∗∗    0.015       0.009       0.014    0.045∗∗      0.009      0.009      0.001      -0.007     0.002
+                                                  (0.016)    (0.013)     (0.019)     (0.016)   (0.023)     (0.021)    (0.011)    (0.014)    (0.009)    (0.015)
+
+    Encouraged × Training                        -0.154∗∗∗    -0.014      0.028       -0.013   0.066∗∗∗    0.079∗∗∗   -0.022∗∗   -0.035∗     0.018      -0.018
+                                                  (0.017)    (0.014)     (0.023)     (0.016)   (0.024)     (0.024)    (0.011)    (0.021)    (0.014)    (0.032)
+
+    Enterprise Chatbot × Training                -0.089∗∗∗   0.033∗∗      0.040       -0.011   0.095∗∗∗     0.022      0.001     -0.052∗∗   0.056∗∗     -0.032
+                                                  (0.023)    (0.016)     (0.032)     (0.020)   (0.033)     (0.031)    (0.015)    (0.025)    (0.026)    (0.029)
+
+    Encouraged × Enterprise Chatbot × Training   0.109∗∗∗     0.038       0.023      0.043∗     -0.047      -0.020     0.011      0.042     -0.056∗     -0.050
+                                                 (0.028)     (0.025)     (0.037)     (0.026)   (0.039)     (0.039)    (0.020)    (0.030)    (0.033)    (0.043)
+    Worker Controls                                 ✓           ✓           ✓           ✓          ✓          ✓          ✓          ✓          ✓          ✓
+    Occupation FEs                                  ✓           ✓           ✓           ✓          ✓          ✓          ✓          ✓          ✓          ✓
+    No Initiative, Level                          0.399       0.061       0.702       0.148      0.460      0.448      0.051      0.080      0.007      0.027
+    Within R2                                     0.217       0.068       0.041       0.016      0.021      0.019      0.012      0.014      0.011      0.009
+    R2                                            0.292       0.183       0.077       0.063      0.073      0.032      0.027      0.029      0.015      0.043
+    Observations                                  24796       24796       14790       14790     14790       14790      14790      14790      10006      10006
+
+Notes: This table reports how workers’ chatbot adoption (Columns 1–2), user-reported benefits (Columns 3–6), and new workloads
+from AI chatbots (Columns 7–10) vary with employer chatbot initiatives. 60+ min/day indicates time savings of more than one
+hour per day of use. The regressions control for occupation fixed effects and workers’ predetermined characteristics (age, gender,
+experience); see Appendix D.2.1 for details. Sample: All completed 2024 survey responses linked to registry data.
+
+
+
+
+                                                                           33
+

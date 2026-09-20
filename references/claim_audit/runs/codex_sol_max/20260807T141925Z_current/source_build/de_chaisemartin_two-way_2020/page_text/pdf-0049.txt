@@ -1,0 +1,45 @@
+with probability tending to one as G → ∞. The last condition in Assumption S10 simply states
+that asymptotically, the proportion of switchers is strictly postive.
+The following result shows that under these conditions, DIDM is asymptotically normal, and
+that CI1−α (δ S ) is asymptotically conservative.
+
+Theorem S6 Suppose that Assumptions 1-5, 9-10 and S9-S10 hold. Then, as G → ∞,
+                                 √             d
+                                  G DIDM − δ S −→ N (0, σ 2 ),
+
+with σ 2 defined in (38) below. Moreover,
+                                                            
+                               lim sup Pr δ S ∈ CI1−α (δ S ) ≥ 1 − α.
+                                G→∞
+
+
+Theorem S6 shows that DIDM is an asymptotically normal estimator of δ S when the number of
+groups tends to infinity, provided the outcomes and treatments are independent across groups.
+As is usually the case for estimators constructed using independent but not identically distributed
+random variables (see e.g. Liu and Singh, 1995), the asymptotic variance of DIDM can only be
+conservatively estimated. As a result, the confidence interval we propose is asymptotically
+conservative.
+
+
+6    Detailed literature review
+
+We now review the 33 papers that use two-way fixed effects or closely related regressions that
+we found in our literature review. For each paper, we use the following presentation:
+Authors (year), Title. Where the two-way fixed effects estimator is used in the paper.
+Description of the two-way fixed effects estimator used in the paper, and how it relates to
+Regression 1 or 2. Assessment of whether the stable groups assumption holds in this paper.
+Assessment of whether the research design is sharp or fuzzy.
+
+    1. Chandra et al. (2010), Patient Cost-Sharing and Hospitalization Offsets in the
+       Elderly. First line of Tables 2 and 3.
+       In the regressions in the first line of Tables 2 and 3, the outcomes (e.g. a measure of
+       utilization for plan p in month t) are regressed on plan fixed effects, month fixed effects,
+       and an indicator of whether plan p had increased copayments in month t (see regression
+       equation at the bottom of page 198). This regression corresponds to Regression 1. The
+       period analyzed runs from January 2000 to September 2003. The stable groups assumption
+       is satisfied until January 2002, when the HMO plans also become treated. This is a sharp
+       design.
+
+
+                                                13
+

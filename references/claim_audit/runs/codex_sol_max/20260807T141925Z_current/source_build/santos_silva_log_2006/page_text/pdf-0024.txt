@@ -1,0 +1,37 @@
+from Feenstra et al. (1997). Data on real GDP per capita and population come from
+the World Bank’s World Development Indicators (2002). Data on location and dum-
+mies indicating contiguity, common language (oﬃcial and second languages), colonial ties
+(direct and indirect links), and access to water are constructed from the CIA’s World
+Factbook. The data on language and colonial links are presented on Tables A2 and A3 in
+the appendix.21 Bilateral distance is computed using the great circle distance algorithm
+provided by Andrew Gray (2001). Remoteness — or relative distance — is calculated as the
+(log of) GDP-weighted average distance to all other countries (see Wei, 1996). Finally,
+information on preferential-trade agreements comes from Frankel (1997), complemented
+with data from the World Trade Organization. The list of preferential trade agreements
+(and stronger forms of trade agreements) considered in the analysis is displayed in Table
+A4 in the Appendix. Table A5 in the Appendix provides a description of the variables
+and displays the summary statistics.
+
+
+5.2 Results
+
+5.2.1 The Traditional Gravity Equation
+
+Table 3 presents the estimation outcomes resulting from the various techniques for the
+traditional gravity equation. The first column reports OLS estimates using the logarithm
+of trade as the dependent variable; as noted before, this regression leaves out pairs of
+countries with zero bilateral trade (only 9, 613 country pairs, or 52 percent of the sample,
+exhibit positive import flows).
+  The second column reports the OLS estimates using ln(1 + Tij ) as dependent variable,
+as a way of dealing with zeroes. The third column presents Tobit estimates based on
+Eaton and Tamura (1994). The fourth column shows the results of standard NLS. The
+fifth column reports Poisson estimates using only the subsample of positive-trade pairs.
+  21
+       Alternative estimates based on Boisso and Ferrantino (1997)’s index of language similarity are avail-
+able, at request, from the authors.
+
+
+
+
+                                                      23
+

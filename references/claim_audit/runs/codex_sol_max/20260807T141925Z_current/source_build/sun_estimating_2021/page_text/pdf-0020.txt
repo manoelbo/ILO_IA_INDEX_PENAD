@@ -1,0 +1,72 @@
+are statistically indifferent from zero” as evidence for lack of pretrends. As another example, Chetty et al.
+
+(2014) assert “there is no trend toward higher individual pension contributions prior to year 0 ... as one would
+
+expect if individuals’ tastes for saving were changing around the job switch” based on pre-period coefficient
+
+estimates. These tests are only appropriate when the authors are willing to make strong assumptions.
+
+    To provide further intuition for why this test is not meaningful without additional assumptions we walk
+
+through a simple example of the fully dynamic specification. Consider a balanced panel with T = 2 and
+
+cohorts Ei ∈ {1, 2}. There are at least two multi-colinearities from including all four relative time indicators.
+
+To form the fully dynamic specification we include g incl = {−2, 0} and exclude g excl = {−1, 1}:
+
+
+                                                                                `
+                                                                 Õ
+                                     Yi,t = αi + λt +                       µ` Di,t + υi,t .                   (23)
+                                                               ` ∈ {−2,0}
+
+The choice of g excl is based on the common practice of normalizing relative to the −1 period and distant
+
+lags.
+
+    When there are no never treated units, we can express the pre-trend coefficient µ−2 in terms of C ATTs:
+
+                              1          1          1                      1
+              µ−2 =C ATT2,−2 + C ATT1,0 − C ATT2,0 + C ATT1,1 − C ATT1,−1 − C ATT2,−1                          (24)
+                   | {z } |   2          2          2                      2
+                                       {z       } |                {z               }
+                     own period
+                                       ` 0 ∈g i ncl ,` 0 ,−2                                   ` 0 ∈g e x cl
+
+
+It is apparent the weights maintain the structure described in Proposition 1. Without any anticipation effect,
+
+the effects C ATTe,`<0 are zero and thus we expect µ−2 to be zero regardless of the cohort shares. With
+
+homogeneous treatment effect, cohorts 1 and 2 experience the same treatment effect at relative time 0 so
+
+that C ATT1,0 and C ATT2,0 cancel. But even with homogeneous treatment effect, the last term reflects the
+
+role of excluded periods as C ATT1,−1 , C ATT2,−1 and C ATT1,1 receive non-zero weights. If there is any
+
+lagged effect and C ATT1,1 is non-zero, the coefficient µ−2 would be non-zero even without any anticipation
+
+effect. Note such behavior is independent of the distribution of the two cohorts.
+
+    We can further introduce never treated units to our example to demonstrate how the weight ωe,`
+                                                                                               −2 can
+                                                                                                   0
+
+
+be non-linear in the distribution of cohorts while maintaining the structure described in Proposition 1. In
+
+Figure 1 we plot the weights ωe,`
+                              −2 as we vary the distribution of cohorts. Specifically, we vary the total share
+                                  0
+
+
+of treated cohorts (shown on the x-axis), holding the shares of cohort 1 and 2 equal to each other and setting
+
+the remaining to be the share of never treated units. For any distribution of cohorts, we have ω2,−2
+                                                                                                −2 = 1 (not
+
+
+pictured). Panel (a) shows the weights for the included period ` 0 = 0 while panel (b) shows the weights for
+
+                                                                 20
+

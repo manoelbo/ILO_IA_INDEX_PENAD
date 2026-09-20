@@ -1,0 +1,57 @@
+                                            WORKING PAPER
+
+
+Katz, L. F. and Murphy, K. M. (1992). Changes in relative wages, 1963–1987: supply and demand factors.
+  The quarterly journal of economics, 107(1):35–78.
+
+Khlaaf, H., Mishkin, P., Achiam, J., Krueger, G., and Brundage, M. (2022). A hazard analysis framework for
+  code synthesis large language models.
+
+Klinova, K. and Korinek, A. (2021). Ai and shared prosperity. In AIES 2021 - Proceedings of the 2021
+  AAAI/ACM Conference on AI, Ethics, and Society.
+
+Kogan, L., Papanikolaou, D., Schmidt, L. D. W., and Seegmiller, B. (2021). Technology, vintage-specific
+  human capital, and labor displacement: Evidence from linking patents with occupations. Working Paper
+  29552, National Bureau of Economic Research.
+
+Korinek, A. (2023). Language models and cognitive automation for economic research. Technical report,
+  National Bureau of Economic Research.
+
+Korinek, A. and Stiglitz, J. E. (2018). Artificial intelligence and its implications for income distribution
+  and unemployment. In The economics of artificial intelligence: An agenda, pages 349–390. University of
+  Chicago Press.
+
+Lipsey, R. G., Carlaw, K. I., and Bekar, C. T. (2005). Economic transformations: general purpose technologies
+  and long-term economic growth. Oup Oxford.
+
+Meindl, B., Frank, M. R., and Mendonça, J. (2021). Exposure of occupations to technologies of the fourth
+ industrial revolution. arXiv preprint arXiv:2110.13317.
+
+Mialon, G., Dessì, R., Lomeli, M., Nalmpantis, C., Pasunuru, R., Raileanu, R., Rozière, B., Schick, T.,
+ Dwivedi-Yu, J., Celikyilmaz, A., et al. (2023). Augmented language models: a survey. arXiv preprint
+ arXiv:2302.07842.
+
+Moll, B., Rachel, L., and Restrepo, P. (2021). Uneven growth: Automation’s impact on income and wealth
+ inequality. SSRN Electronic Journal.
+
+Mollick, E. R. and Mollick, L. (2022). New modes of learning enabled by ai chatbots: Three methods and
+ assignments. Available at SSRN.
+
+Noy, S. and Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial
+  intelligence. Available at SSRN 4375283.
+
+O*NET (2023). O*net 27.2 database.
+
+OpenAI (2022). Introducing chatgpt.
+
+OpenAI (2023a). Gpt-4 system card. Technical report, OpenAI.
+
+OpenAI (2023b). Gpt-4 technical report. Technical report, OpenAI.
+
+Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhang, C., Agarwal, S., Slama,
+  K., Ray, A., et al. (2022). Training language models to follow instructions with human feedback. arXiv
+  preprint arXiv:2203.02155.
+
+Peng, S., Kalliamvakou, E., Cihon, P., and Demirer, M. (2023). The impact of ai on developer productivity:
+  Evidence from github copilot. arXiv preprint arXiv:2302.06590.
+

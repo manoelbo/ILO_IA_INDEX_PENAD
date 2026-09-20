@@ -1,0 +1,59 @@
+2564                                    REVIEW OF ECONOMIC STUDIES
+
+i.e.  = {δ : δt = γ · t, γ ∈ R}. There are often concerns, however, that the linear specification
+is not exactly correct (Wolfers, 2006; Lee and Solon, 2011). A natural relaxation is therefore
+to impose only that the differential trends evolve smoothly over time by bounding the extent to
+which its slope may change across consecutive periods. Such a restriction can be formalized in
+our framework by imposing that δ ∈ SD (M) for M ≥ 0, where
+
+                          SD (M) := {δ : |(δt+1 − δt ) − (δt − δt−1 )| ≤ M, ∀ t}.                                      (8)
+
+
+
+
+                                                                                                                               Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+The parameter M ≥ 0 governs the amount by which the slope of δ can change between con-
+secutive periods, and thus bounds the discrete analogue of the second derivative. We use the
+abbreviation SD for “second differences” or “second derivative.”9 In the special case where
+M = 0, SD (0) requires that the difference in trends be exactly linear, which corresponds with
+the assumption underlying the parametric linear specification common in applied work.
+
+   2.4.4. Example: non-staggered DiD (continued). In the three-period DiD model, assum-
+ing the differential trend is exactly linear is equivalent to assuming  = {δ : δ1 = −δ−1 }.
+Assuming δ ∈ SD (M) requires only that the linear extrapolation be approximately correct,
+δ1 ∈ [−δ−1 − M, −δ−1 + M].
+
+    2.4.5. Combining smoothness and relative magnitudes bounds. In some contexts,
+researchers may be willing to assume that the difference in trends evolves relatively smoothly
+over time but may be unsure about the smoothness bound M ≥ 0 introduced above. In such
+cases, it may be reasonable to assume that the possible non-linearities in the post-treatment dif-
+ference in trends are bounded by the observed non-linearities in the pre-treatment difference in
+trends. This can be formalized with the restriction
+
+ S D R M ( M̄) = {δ : ∀ t ≥ 0, |(δt+1 − δt ) − (δt − δt−1 )| ≤ M̄ · max |(δs+1 − δs ) − (δs − δs−1 )|},
+                                                                                 s<0
+
+which bounds the maximum deviation from a linear trend in the post-treatment period by M̄ ≥ 0
+times the equivalent maximum in the pre-treatment period. The set  S D R M ( M̄) is thus similar
+to SD (M) introduced above, except it allows the magnitude of the possible non-linearity to
+explicitly depend on the observed pre-trends.
+
+    2.4.6. Sign and monotonicity restrictions. Context-specific knowledge may sometimes
+also suggest sign or monotonicity restrictions on the differential trend. For instance, if the
+policy of interest occurs at the same time as a confounding policy change that we expect to
+have a positive effect on the outcome, we might restrict the post-treatment bias to be positive,
+δ ∈  P B := {δ : δt ≥ 0 ∀ t ≥ 0}. Likewise, there may be secular pre-existing trends that we
+expect would have continued following the treatment date.10 We may then wish to impose that
+the differential trend be increasing, δ ∈  I := {δ : δt ≥ δt−1 ∀ t}, or monotone with unknown
+sign, δ ∈  Mon :=  I ∪ (− I ). Sign and monotonicity restrictions may be combined with the
+
+
+        9. Restrictions on the second derivative of the conditional expectation function or density have been used in
+regression discontinuity settings (Kolesár and Rothe, 2018; Frandsen, 2016; Noack and Rothe, 2020). Smoothness
+restrictions are also used to obtain partial identification in e.g. Manski (1997); Kim et al. (2018).
+        10. Monotone violations of parallel trends are often discussed in applied work. For example, Lovenheim and
+Willen (2019a) argue that violations of parallel trends cannot explain their results because “pre-[treatment] trends are
+either zero or in the wrong direction (i.e. opposite to the direction of the treatment effect).” Greenstone and Hanna (2014)
+estimate upward-sloping pre-existing trends and argue that “if the pre-trends had continued” their estimates would be
+upward biased.
+

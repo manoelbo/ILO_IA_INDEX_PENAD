@@ -1,0 +1,46 @@
+            2.2–2.6 percentage points per year, consistent with greater specialization in
+            tasks where AI provides the largest speedups.
+
+
+            In both cases the implied productivity impact based on API traffic is more
+            responsive to the degree of task substitutability. This is consistent with the
+            fact that there is a larger share of API traffic concentrated in fewer tasks
+            and associated occupations as compared to Claude.ai: When tasks are
+            complements, this concentration amplifies the bottleneck problem; when they
+            are substitutes, it amplifies productivity gains from task specialization.
+
+            What this analysis shows is that the productivity effects of automation may
+            ultimately be constrained by bottleneck tasks that elude AI automation for the
+            time being. And the labor market implications of increasingly capable AI could
+            be similarly affected by such forces. For example, Gans and Goldfarb (2026)
+            argue that the presence of bottleneck tasks within jobs means that partial AI
+            automation can lead to an increase in labor income as such tasks increase in
+            economic value (at least until a job is entirely automated).
+
+
+
+
+            Conclusion
+
+            The upshot of this chapter is that the impact of AI on the economy is unlikely
+            to be uniform. As our effective AI coverage framework illustrates, the labor
+            market implications for different workers will hinge on how reliable frontier AI
+            tools are for their most central tasks.
+
+            But the labor market effects may also depend on the skill requirements of tasks
+            that AI can proficiently handle relative to the rest of the economy. Indeed, we
+            find that removing tasks Claude can already handle from the economy would
+            produce a net deskilling effect: the tasks remaining for humans have lower
+            educational requirements than those handled by AI.
+
+            While highly suggestive, this may miss an important detail: the most complex
+            tasks where Claude is used tend also to be those where it struggles most.
+            Rather than displacing highly skilled professionals, this could instead reinforce
+            the value of their complementary expertise in understanding AI’s work and
+            assessing its quality.
+
+
+
+
+The Anthropic Economic Index Report                                                             51
+

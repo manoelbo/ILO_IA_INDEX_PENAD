@@ -1,0 +1,46 @@
+                       Table 1: Average GENOE Score in 23 Major Occupational Groups
+
+  Main occupations                                              1-year horizon       5-year horizon       10-year horizon
+
+  Management                                                    0.21                 0.28                 0.33
+  Business and Financial Operations                             0.35                 0.45                 0.52
+  Computer and Mathematical                                     0.29                 0.38                 0.45
+  Architecture and Engineering                                  0.24                 0.33                 0.38
+  Life, Physical, and Social Science                            0.22                 0.30                 0.35
+  Community and Social Service                                  0.15                 0.21                 0.25
+  Legal                                                         0.26                 0.36                 0.41
+  Educational Instruction and Library                           0.16                 0.22                 0.26
+  Arts, Design, Entertainment, Sports, and Media                0.28                 0.35                 0.41
+  Healthcare Practitioners and Technical                        0.15                 0.24                 0.30
+  Healthcare Support                                            0.21                 0.31                 0.36
+  Protective Service                                            0.21                 0.29                 0.36
+  Food Preparation and Serving Related                          0.28                 0.41                 0.50
+  Building and Grounds Cleaning and Maintenance                 0.22                 0.33                 0.40
+  Personal Care and Service                                     0.23                 0.32                 0.38
+  Sales and Related                                             0.42                 0.51                 0.57
+  Office and Administrative Support                             0.60                 0.70                 0.75
+  Farming, Fishing, and Forestry                                0.29                 0.41                 0.48
+  Construction and Extraction                                   0.18                 0.28                 0.35
+  Installation, Maintenance, and Repair                         0.17                 0.27                 0.33
+  Production                                                    0.44                 0.59                 0.65
+  Transportation and Material Moving                            0.30                 0.46                 0.55
+Source: Authors’ calculations using data from O*NET and surveys conducted with GPT-4 through OpenAI’s API. Note: This table
+displays the simple average GENOE score aggregated for the 23 major occupational groups according to the SOC 2018 classification.
+
+
+
+          However, there is significant heterogeneity in AI exposure across different occupations. To
+     better illustrate this variation, Tables 2 and 3 presents the top 30 occupations with the highest AI
+     exposure scores and the top 30 occupations with the lowest exposure scores, respectively. Roles
+     such as firefighters, surgeons, priests, and athletes consistently show the lowest levels of AI ex-
+     posure across all time horizons. These roles typically involve complex physical skills, high-stakes
+     decision-making, or deeply human elements that current AI technologies struggle to replicate.
+     Conversely, occupations like telemarketers, credit authorizers, word processors, and data entry
+     keyers exhibit the highest levels of exposure, likely due to the routine and data-centric nature of
+     their tasks.
+
+
+
+
+                                                               8
+

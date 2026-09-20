@@ -1,0 +1,39 @@
+A     Supplemental Appendix
+
+A.1    Representativeness of the LinkedIn/Revelio Data
+
+This appendix evaluates how the LinkedIn/Revelio sample compares to official bench-
+marks along three dimensions—industry, occupation, and an age proxy based on seniority—
+both in 2024 levels and in stability over the GenAI diffusion period. Two findings emerge.
+First, the data display the well-documented compositional tilt of LinkedIn toward man-
+agerial, professional, and high-information occupations and industries. Second, this tilt
+is essentially unchanged from 2021Q1 through 2025Q1, so the level differences are ab-
+sorbed by the firm and sector fixed effects in our main specifications and the differential
+identification of treatment effects is unaffected.
+    We use three official benchmarks. The industry benchmark is constructed from BLS
+Quarterly Census of Employment and Wages (QCEW) national-area files, retaining all-
+size observations, averaging employment across the three months within each quarter,
+and aggregating to 3-digit NAICS. The occupation benchmark uses annual national OEWS
+employment shares aggregated to 2-digit SOC. After aggregating LinkedIn occupations
+to 2-digit SOC, the common support covers 100% of 2024 official OEWS employment. The
+age benchmark is constructed from quarterly QWI age-by-industry employment aggre-
+gated from 3-digit industries to broad sectors. To match LinkedIn’s junior/senior split,
+we divide the QWI 25–34 age bin evenly between 25–29 and 30–34 and compare LinkedIn
+juniors with the under-30 workforce and LinkedIn seniors with the 30+ workforce.
+
+
+Industry representation. Figure A.1 compares LinkedIn and QCEW employment shares
+for the twenty broad sectors in 2024. Manufacturing, Educational Services, Professional
+Services, Information, Finance and Insurance, and Public Administration are over-represented
+in LinkedIn, while Retail, Accommodation and Food, Administrative and Waste, and
+Transportation are under-represented. These patterns are consistent with prior work us-
+ing large-scale online employment data, which finds that coverage is concentrated in in-
+dustries with a high share of white-collar and college-educated workers (e.g., Hershbein
+and Kahn, 2018). Figure A.2 shows the analogous comparison at the more granular 2-digit
+NAICS level: despite the level differences, the points line up closely along the 45-degree
+line, with a 2024 cross-sectional correlation of 0.70.
+
+
+
+                                             A.1
+

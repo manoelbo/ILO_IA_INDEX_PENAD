@@ -1,0 +1,35 @@
+3     Methods and Data Collection
+
+3.1    Data on AI Exposure
+
+I use the occupation-level AI exposure estimates from Eloundou et al. (2024). The authors
+estimate AI exposure based on O*NET task and detailed work activity (DWA) descriptions.
+I use their exposure measures that leverage GPT-4 to classify all tasks and DWAs based on
+the whether using an LLM reduces the time it takes to complete the task by at least 50%.
+I aggregate from tasks to occupations by equally weighting exposure across tasks within an
+occupation.
+    Eloundou et al. (2024) report a variety of different exposure measures based on this
+approaches. Each measure varies assumed capabilities of LLMs, namely whether they can
+reduce the time to complete a task on their own or in conjunction with additional software.
+I focus on their GPT-4-based β measure for most of the analysis, though I show robustness
+to alternative measures for certain results.
+
+
+3.2    Data on Employment and Earnings
+
+Employment and earnings data comes from the Current Population Survey (CPS). I use the
+CPS monthly employment file, focusing on the period from Q4 2022 onwards. This coincides
+with the period after the release of ChatGPT, which rapidly accelerated the use of LLMs in
+common practice.
+    The CPS samples about 60,000 households each month. It reports employment status
+for each member of the household along with their Census occupation code, education, and
+other demographic variables. This information in the CPS is used to compute the official
+US Bureau of Labor Statistics (BLS) national unemployment rate.
+    I use the merged outgoing rotation group (MORG) data to collect weekly earnings infor-
+mation. The MORG data is a subsample of the CPS that includes earnings data for workers
+
+
+
+
+                                               5
+

@@ -1,0 +1,44 @@
+trast, when instrumenting AI adoption using our PSM strategy and controlling for firm
+characteristics, we find no significant effect on employment (column (4)).
+
+    Taking the results from Tables 2 and 3 together begs the question whether the increase
+in labor productivity translates into benefits for workers. Table 4 addresses this issue by
+replicating our main regression with controls and all fixed effects, but using either the
+total wage bill or the average wage per employee, both at the firm level. The results
+show that AI-adopting firms display higher wages (overall and per employee) than non-
+adopting firms, after controlling for age, size and country-sector-wave fixed effects. The
+results suggest that productivity gains have so far benefited employees. It remains to be
+seen whether the patterns will hold in the medium to long term.
+
+    Our empirical analysis yields three key insights regarding AI adoption by non-financial
+firms in Europe. First, the instrumental variable estimates confirm a positive causal effect
+of AI adoption on labor productivity. AI adoption raises productivity by 4%, an effect
+that remains statistically significant even after controlling for firm-specific characteristics
+such as investment intensity, profitability, leverage and size.10
+
+    While direct comparisons with the macroeconomic literature are not straightforward
+– given that our results focus on labor productivity and reflect a one-off effect, whereas
+macro studies typically estimate long-run impacts on total factor productivity (TFP) –
+our findings appear more consistent with mid-range projections (e.g., Bergeaud (2024)’s
+0.3 percentage points annual TFP gains or Aghion and Bunel (2024)’s 0.7 percentage
+points). The magnitude suggests that AI acts as a complementary input that enhances
+efficiency, though its aggregate impact is moderated by implementation frictions and
+skill gaps, contrasting with more optimistic projections of transformative productivity
+booms (e.g., Baily, Brynjolfsson, and Korinek (2023)’s 1.7 percentage points scenario).
+The increase in the coefficient from 2.8% (before matching) to 4.1% (after matching)
+indicates that endogenous adoption – whereby not all productive firms self-select into AI
+– understates perceived benefits. After isolating exogenous variation by benchmarking
+with the US adoption rates, the net effect remains positive, significant and economically
+plausible, reflecting incremental gains from task automation and cognitive augmentation.
+
+
+
+  10
+     In the baseline specification, labor productivity is expressed as turnover per employee. However,
+the effect remains significant at 3.4% when use instead value added per employee (see Table B.3 in the
+Appendix).
+
+
+
+                                                 18
+

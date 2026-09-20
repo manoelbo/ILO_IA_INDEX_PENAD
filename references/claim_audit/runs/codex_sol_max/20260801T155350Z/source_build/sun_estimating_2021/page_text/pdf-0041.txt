@@ -1,0 +1,81 @@
+      • for any time-invariant random variables Zi,t such that Zi,t = Zi , double-demeaning annihilates it:
+
+        ZÜi,t = 0.
+
+
+Proof. The zero-mean and zero-sum
+                               "      properties hold by definition of double-demeaning:
+                                                                                      #
+                                                         T                T
+                                                    1   Õ            1   Õ
+                 E[ XÜi,t ] = E Xi,t − E[Xi,t ] −           Xi,s +           E[Xi,s ]                                                  (33)
+                                                  T + 1 s=0        T + 1 s=0
+                                                                           T                    T
+                                                                      1 Õ                  1 Õ
+                                       = E[Xi,t ] − E[Xi,t ] −                E[Xi,s ] +           E[Xi,s ] = 0                        (34)
+                                                                    T + 1 s=0            T + 1 s=0
+and
+                       T               T              T                   T         T          T         T
+                       Õ               Õ              Õ                  Õ     1 Õ            Õ     1 Õ
+                             XÜi,t =         Xi,t −         E[Xi,t ] −                 Xi,s +               E[Xi,s ]                   (35)
+                       t=0             t=0            t=0                t=0
+                                                                             T + 1 s=0        t=0
+                                                                                                  T + 1 s=0
+                                       ÕT             ÕT                 T
+                                                                         Õ              T
+                                                                                        Õ
+                                  =          Xi,t −         E[Xi,t ] −         Xi,s +         E[Xi,s ] = 0                             (36)
+                                       t=0            t=0                s=0            s=0
+For the idempotent property, first note that by definition of double-demeaning, rearranging terms we can
+
+write E[ XÜi,t ZÜi,t ] as     "                !     #   "                               !      #
+                                       T                                      T
+                                 1 Õ                                     1   Õ
+                 = E Xi,t −                Xi,s ZÜi,t − E E[Xi,t ] −             E[Xi,s ] ZÜi,t        (37)
+                              T + 1 s=0                                T + 1 s=0
+                     "                 T
+                                               !     #                     T
+                                                                                     !
+                                 1 Õ                                 1   Õ
+                 = E Xi,t −                Xi,s ZÜi,t − E[Xi,t ] −           E[Xi,s ] · E[ ZÜi,t ]     (38)
+                              T + 1 s=0                            T + 1 s=0
+By the zero-mean property E[ ZÜi,t ] = 0, the second term of the above expression is zero. Summing the first
+
+term over t, we have "                          !    #                                        ! T
+  T                 T                    T               T                            T                       T
+ Õ                  Õ               1 Õ                 Õ                        1   Õ         Õ             Õ
+           Ü
+    E[Xi,t Zi,t ] −   E                     Xi,s Zi,t =
+                                                  Ü                Ü
+                                                            E[Xi,t Zi,t ] − E[           Xi,s       Zi,t ] =
+                                                                                                    Ü            E[Xi,t ZÜi,t ]
+t=0                   t=0
+                                  T + 1 s=0             t=0
+                                                                               T + 1 s=0        t=0          t=0
+
+                                                                                                                                       (39)
+where the last equality follows from the zero-sum property t=0 ZÜi,t = 0. This proves                                  t=0 E[ Xi,t Zi,t ] =
+                                                                                                                               Ü   Ü
+                                                                                         ÍT                        ÍT
+
+
+ t=0 E[Xi,t Zi,t ]. Similarly we can show t=0 E[ Xi,t Zi,t ] = t=0 E[ Xi,t Zi,t ].
+ÍT          Ü                            ÍT      Ü Ü          ÍT      Ü
+
+      The annihilating property of double-meaning holds by definition for any time-invariant random variable.
+
+Specifically, plugging in Zi,t = Zi we have
+                                                                           T                T
+                                                                      1 Õ              1 Õ
+                                    ZÜi,t = Zi,t − E[Zi,t ] −                 Zi,s +           E[Zi,s ]                                (40)
+                                                                    T + 1 s=0        T + 1 s=0
+
+                                             = Zi − E[Zi ] − Zi + E[Zi ] = 0                                                           (41)
+
+                                                                                                                                         
+
+
+
+
+                                                                           41
+

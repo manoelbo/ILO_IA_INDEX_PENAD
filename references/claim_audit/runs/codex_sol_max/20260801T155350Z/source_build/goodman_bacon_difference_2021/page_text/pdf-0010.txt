@@ -1,0 +1,72 @@
+                              � 2𝑥𝑥2,𝑘𝑘 ≡ �𝑦𝑦𝑀𝑀𝐼𝐼𝐼𝐼(𝑘𝑘,ℓ) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘) � − �𝑦𝑦𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘,ℓ) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘) �
+                              𝛽𝛽 𝑘𝑘ℓ         𝑘𝑘               𝑘𝑘                ℓ                ℓ
+
+                              � 2𝑥𝑥2,ℓ ≡ �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) − 𝑦𝑦𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘,ℓ) � − �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) − 𝑦𝑦𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘,ℓ) �
+                              𝛽𝛽 𝑘𝑘ℓ        ℓ               ℓ                   𝑘𝑘              𝑘𝑘
+
+the weights are:
+                                                                           �𝑘𝑘 (1 − 𝐷𝐷
+                                                                𝑛𝑛𝑘𝑘 𝑛𝑛𝑈𝑈 𝐷𝐷             �𝑘𝑘 )
+                                         𝑠𝑠𝑘𝑘𝑘𝑘     =
+                                                                        � (𝐷𝐷
+                                                                       𝑣𝑣𝑣𝑣𝑣𝑣   � 𝑖𝑖𝑖𝑖 )
+                                                      �𝑘𝑘 − 𝐷𝐷
+                                            𝑛𝑛𝑘𝑘 𝑛𝑛ℓ (𝐷𝐷    �ℓ )(1 − (𝐷𝐷     �𝑘𝑘 − 𝐷𝐷  �ℓ ))
+                              𝑠𝑠𝑘𝑘ℓ =
+                                                            � (𝐷𝐷
+                                                           𝑣𝑣𝑣𝑣𝑣𝑣  � 𝑖𝑖𝑖𝑖 )
+                                                                            1 − 𝐷𝐷 �𝑘𝑘
+                              𝜇𝜇𝑘𝑘ℓ =
+                                                                     1 − (𝐷𝐷   �𝑘𝑘 − 𝐷𝐷  �ℓ )
+and ∑𝑘𝑘≠𝑈𝑈 𝑠𝑠𝑘𝑘𝑘𝑘 + ∑𝑘𝑘≠𝑈𝑈 ∑ℓ>𝑘𝑘 𝑠𝑠𝑘𝑘ℓ = 1.
+
+Proof: See appendix A.
+
+           Theorem 1 completely describes the sources of identifying variation in a general DD model
+
+and their importance. With 𝐾𝐾 timing groups, one could form 𝐾𝐾 2 − 𝐾𝐾 “timing-only” estimates that
+
+                                                            � 2𝑥𝑥2,𝑘𝑘 ) or a later- to earlier-treated timing
+either compare an earlier- to a later-treated timing group (𝛽𝛽 𝑘𝑘ℓ
+
+             2𝑥𝑥2,ℓ
+       �
+group (𝛽𝛽     ). With an untreated group, one could form 𝐾𝐾 2x2 DD’s that compare each timing
+          𝑘𝑘ℓ
+
+                                                  2𝑥𝑥2
+                              � ). Therefore, with 𝐾𝐾 timing groups and one untreated group, the
+group to the untreated group (𝛽𝛽 𝑘𝑘𝑘𝑘
+
+
+DD estimator comes from 𝐾𝐾 2 distinct 2x2 DDs.
+
+           The weights come both from group sizes, via the 𝑛𝑛𝑗𝑗 ’s, and the treatment variance in each
+
+                                                                        �𝑘𝑘 (1 − 𝐷𝐷
+pair. 11 With one treated group, the variance of the treatment dummy is 𝐷𝐷       �𝑘𝑘 ), and is highest
+
+
+
+
+11
+    Many other least-squares estimators weight heterogeneity this way. A univariate regression coefficient equals an
+average of coefficients in mutually exclusive (and demeaned) subsamples weighted by size and the subsample 𝑥𝑥 -
+variance:
+                                                                                              𝐴𝐴            𝐵𝐵            2,𝐴𝐴               2,𝐵𝐵
+         ∑𝑖𝑖(𝑦𝑦𝑖𝑖 − 𝑦𝑦�)(𝑥𝑥𝑖𝑖 − 𝑥𝑥̅ ) ∑𝐴𝐴( 𝑦𝑦 − 𝑦𝑦)(𝑥𝑥 − 𝑥𝑥) + ∑𝐵𝐵( 𝑦𝑦 − 𝑦𝑦)(𝑥𝑥 − 𝑥𝑥) 𝑛𝑛𝐴𝐴 𝑠𝑠𝑥𝑥𝑥𝑥  + 𝑛𝑛𝐵𝐵 𝑠𝑠𝑥𝑥𝑥𝑥   𝑛𝑛𝐴𝐴 𝑠𝑠𝑥𝑥𝑥𝑥        𝑛𝑛𝐵𝐵 𝑠𝑠𝑥𝑥𝑥𝑥
+   𝛼𝛼� =                             =                                               =                           =             �
+                                                                                                                               𝛼𝛼𝐴𝐴 +             � 𝐵𝐵
+                                                                                                                                                  𝛼𝛼
+             ∑𝑖𝑖(𝑥𝑥𝑖𝑖 − 𝑥𝑥̅ )2                         ∑𝑖𝑖 ( 𝑥𝑥 − 𝑥𝑥)2                              2
+                                                                                                  𝑠𝑠𝑥𝑥𝑥𝑥                 2
+                                                                                                                      𝑠𝑠𝑥𝑥𝑥𝑥               2
+                                                                                                                                         𝑠𝑠𝑥𝑥𝑥𝑥
+Similarly, the Wald/IV theorem (Angrist 1988) shows that any IV estimate is a linear combination of Wald estimators
+that compare two values of the instrument. Gibbons, Serrato, and Urbancic (2018) show a nearly identical weighting
+formula for one-way fixed effects. Panel data provide another well-known example: a pooled regression coefficients
+equals a variance-weighted average of two distinct estimators that each use less information: the between estimator
+for subsample means, and the within estimator for deviations from subsample means.
+
+                                                                          8
+

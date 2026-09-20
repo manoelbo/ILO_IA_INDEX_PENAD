@@ -1,0 +1,52 @@
+CURRENT SOURCE-TO-CLAIM AUDIT PROTOCOL
+
+Runtime: gpt-5.6-sol, reasoning effort max, no fallback. Each primary judgment,
+blind quality-control judgment, and adjudication must run in a fresh isolated
+context for exactly one (claim_id, citation_key, occurrence_id) row. Workers run
+strictly sequentially within each phase.
+
+The current run is authoritative only for the frozen Notion snapshot identified
+in source_snapshot/snapshot_manifest.json and for the source hashes recorded in
+references/pdf_manifest.tsv. Do not read or use any Claude run. Historical Codex
+results are unavailable to primary workers and may be used by the controller only
+for the seven REUSED_EXACT rows already reconciled before primary auditing.
+
+PDF protocol:
+- Read the split-pdf skill before opening source content.
+- Use the run-specific page-text index only to locate candidate evidence.
+- Never load a whole PDF into model context.
+- Inspect at most three immutable four-page splits in one batch.
+- Continue in separately documented bounded batches if necessary.
+- Do not use an abstract, web snippet, secondary source, or another article as
+  substantive evidence.
+- Visually inspect the actual page for tables, figures, equations, footnotes,
+  unusual layout, or questionable OCR.
+- Keep printed pagination and one-based physical PDF indices separate.
+
+Verdicts: SUPPORTED, PARTIALLY_SUPPORTED, OVERSTATED, CONTRADICTED, NOT_FOUND,
+or NOT_VERIFIABLE. Only SUPPORTED is a full pass. Every other verdict requires
+at least one structured issue, an explanation, evidence examined, a recommended
+revision, and whether a new source is needed.
+
+Balanced calibration rule:
+- Missing age or sample qualifiers are population errors only when omission
+  materially changes meaning, sign, or order of magnitude.
+- PARTIALLY_SUPPORTED applies when separable components receive different levels
+  of support. OVERSTATED is reserved for a materially broader causal, population,
+  temporal, magnitude, certainty, or generality claim than the evidence.
+- An AUTHOR_INFERENCE fails only when a factual premise fails or the dissertation
+  attributes its own inference to the source. Assess premises, reasonableness, and
+  whether the source explicitly states the inference separately.
+
+Evidence contract:
+- Every completed row has non-empty pages, printed_pages, pdf_page_indices,
+  source_locator, evidence_summary_pt, evidence_anchor, evidence_path,
+  search_coverage, source_version, source_sha256, confidence, and timestamps.
+- The anchor is a verbatim source phrase of no more than 12 words.
+- Evidence PDFs contain exactly the declared physical pages. Legal HTML evidence
+  uses an exact legal hierarchy and "N/A" physical indices.
+- Evidence summaries, mismatch explanations, and proposed corrections are PT-BR.
+
+No worker may edit Notion, Zotero, library.bib, manifests, original PDFs, the
+inventory, the queue, the consolidated TSV, another row's result, or any path
+outside its own candidate, evidence, and optional render directory.

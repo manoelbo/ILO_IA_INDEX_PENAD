@@ -1,0 +1,43 @@
+to job losses or complete occupational obsolescence. Rather, it indicates the proportion of occu-
+pations that may undergo substantial changes due to AI integration. The impact on employment
+will likely be more complex, involving occupational transformations, the emergence of new roles,
+and potential displacement in some sectors.
+   Our analysis shows that in the United States and Mexico, women are more vulnerable to AI
+displacement, partly due to their significant presence in office and administrative jobs. In the
+United States, low-educated and low-wage workers are particularly exposed, while in Mexico,
+both low- and medium-skilled workers, especially those in middle-income formal jobs, are more
+vulnerable, whereas informal jobs remain less exposed. This suggests that AI adoption could ex-
+acerbate income inequalities by disproportionately impacting lower- and middle-income workers,
+echoing, to some extent, findings from previous technological advancements (Autor et al., 2006;
+Autor and Dorn, 2013; Autor, 2019; Acemoglu and Restrepo, 2022).
+   To better understand the rationale behind the synthetic AI survey assessments, we conducted
+follow-up surveys, asking the model to explain the considerations behind each occupation’s esti-
+mation. These responses revealed that the model’s rationale focuses on several key factors: cur-
+rent and expected technological capabilities and limitations, the routine and non-routine nature
+of tasks, ethical considerations, the regulatory environment, and cost-benefit analyses. The mod-
+els evaluated AI’s current abilities and future potential, emphasized the likelihood of replacing
+routine tasks, and frequently mentioned ethical considerations and safety concerns, particularly
+for roles with direct human interaction. Regulatory factors were noted for industries with strict
+standards, and cost-benefit analyses influenced the economic feasibility of automation.
+   We conducted several alternative exercises to examine how the GENOE index changes with
+different methodologies and prompts. These variations included omitting occupation names,
+excluding ethical considerations, assessing tasks individually, and concentrating on specific AI
+technologies. Most notably, when we instructed the model to disregard ethical, regulatory, and
+social considerations and focus purely on AI’s technical abilities, we observed a significant in-
+crease in the estimated exposure across occupations. This alternative GENOE index, which we
+term GENOE-Tech, provides an estimation of AI’s potential impact based solely on its growing
+technical capabilities.
+   This paper makes several contributions to the literature on AI’s impact on employment. First,
+it overcomes some limitations of the existing indexes that measure occupational exposure to AI
+(Brynjolfsson et al., 2018; Webb, 2019; Felten et al., 2021; Tolan et al., 2021; Pizzinelli et al., 2023;
+Eloundou et al., 2024). Most existing indexes disaggregate occupations into collections of separate
+tasks, skills, or abilities. The first restriction of this approach is that it overlooks more complex in-
+terrelations between tasks or abilities. For instance, journalists and technical writers share several
+automatable routine tasks related to writing, editing, and generating content. Yet, routine roles in
+journalism often interact with non-routine roles like creating engaging narratives and storytelling,
+evaluating the significance of news, and engaging in investigative reporting, all of which require
+
+
+
+                                                   2
+

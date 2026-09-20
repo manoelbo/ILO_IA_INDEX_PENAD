@@ -1,0 +1,34 @@
+            Persistent regional concentration
+
+            In our previous report, we introduced the Anthropic AI Usage Index (AUI), a
+            measure of whether Claude is over- or underrepresented in a given geography
+            relative to the size of its working-age population. The AUI is defined as
+
+
+
+
+            An AUI above 1 indicates that a country uses Claude more intensively than
+            its population alone would predict, while an AUI below 1 indicates lower-
+            than-expected usage. For example, Denmark has an AUI of 2.1, meaning its
+            residents use Claude at roughly twice the rate its share of the global working-
+            age population would suggest.
+
+            A key fact about Claude usage globally is that it is geographically concentrated:
+            a small number of countries comprise an outsized share of use. From a global
+            perspective, little changed in this respect between August and November 2025.
+            Indeed, the left panel of Figure 1.6 shows that the AUI concentration across
+            countries was essentially unchanged between our last report and this report.
+
+            By contrast, usage became more evenly distributed across US states from
+            August to November 2025: the Gini coefficient, a standard measure of equality,
+            fell from 0.37 to 0.32. While it is important to exercise caution in interpreting
+            short-run changes, this is a relatively large change toward perfect equality in
+            which the AUI is equal to 1 for all states with a Gini coefficient of 0. If the Gini
+            coefficient for the US again falls by 0.05 every three months, then parity of
+            usage would be reached in roughly two years.
+
+
+
+
+The Anthropic Economic Index Report                                                                12
+

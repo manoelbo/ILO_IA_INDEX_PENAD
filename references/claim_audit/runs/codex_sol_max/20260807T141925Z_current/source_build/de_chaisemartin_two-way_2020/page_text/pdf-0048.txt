@@ -1,0 +1,61 @@
+5    Statistical properties of DIDM and inference on δ S
+
+In this section, we establish the asymptotic properties of DIDM and construct confidence intervals
+on δ S based on DIDM . We consider an asymptotic framework where the number of groups G
+tends to infinity. To define the confidence intervals, let Pd,d0 ,t = Nd,d0 ,t /G and
+                                  1 X
+                     Qd,d0 ,t =       Ng,t 1{Dg,t = d, Dg,t−1 = d0 } (Yg,t − Yg,t−1 ) .
+                                  G g
+                 P b2
+Then, let σ
+          b2 =    g ψg /G, with
+
+            G X           h                                                  i
+      ψbg =           Ng,t 1{Dg,t 6= Dg,t−1 }(Yg,t − Yg,t−1 − DIDM ) − ψbg,t
+                                                                         B
+                                                                               ,
+            NS t>1
+                                                                                                 
+             1                                                                             Q
+    ψbg,t =
+       B                                                                                     0,0,t
+                     1{Dg,t > Dg,t−1 }Q0,0,t + P1,0,t 1{Dg,t = Dg,t−1 = 0} Yg,t − Yg,t−1 −
+            P0,0,t                                                                         P0,0,t
+                                                                                                 
+             1                                                                             Q1,1,t
+          +          1{Dg,t < Dg,t−1 }Q1,1,t + P0,1,t 1{Dg,t = Dg,t−1 = 1} Yg,t − Yg,t−1 −            .
+            P1,1,t                                                                         P1,1,t
+
+We consider confidence intervals of the form
+                                                                   
+                                               b
+                                               σ                 b
+                                                                 σ
+                   CI1−α (δ ) = DIDM − z1−α/2 √ , DIDM + z1−α/2 √
+                           S
+                                                                      ,
+                                                G                 G
+where z1−α/2 denotes the quantile of order 1 − α/2 of a standard normal variable.
+We now establish the asymptotic properties of DIDM and CI1−α (δ S ) under the following assump-
+tions. Hereafter, we denote U = (P0,0,1 , Q0,0,1 , ..., P1,1,T , Q1,1,T ).
+
+Assumption S9 (Existence of moments and limits) supg,t Ng,t < +∞ and sup(d,g,t) E(Yg,t
+                                                                                    4
+                                                                                       (d)) <
++∞. limG E[U ] and limG G × V (U ) exist.
+
+Assumption S10 (Positive probability of “stable” groups and existence of switchers) For all
+(d, g, t) ∈ {0, 1}×(N\{0})×{2, ..., T }, Pr(Dg,t = 1−d, Dg,t−1 = d) > 0 implies limG E[P1−d,d,t ] >
+0 and limG E[Pd,d,t ] > 0. Moreover, limG E[P0,1,t + P1,0,t ] > 0 for at least one t.
+
+Assumption S9 imposes the (uniform) existence of moments of order 4 of Yg,t (d), and that
+some non-random averages converge as G tends to infinity. These assumptions ensure that
+we can apply law of large numbers and central limit theorems in our set-up where groups are
+independent but not necessarily identically distributed. Assumption S10 imposes that when at
+least one group switches from d to 1 − d with a positive probability on a given period, then on
+average over all groups, the limit probabilities of switching from d to 1 − d will be positive as
+G → ∞. The limit probability of remaining at d will also be positive. This latter condition may
+be seen as a weaker version of Assumption 11, as it imposes the existence of “stable” groups only
+
+                                                      12
+

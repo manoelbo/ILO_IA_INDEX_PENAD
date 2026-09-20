@@ -1,0 +1,43 @@
+                                                     WORKING PAPER
+
+
+Cross-Functional Skills
+Note: We selected only Programming from the list of cross-functional skills because of our prior knowledge
+about the models’ ability to code.
+
+     • Programming - Writing computer programs for various purposes.
+
+
+                                               Median Income   Emp (000s)   H𝛼     M𝛼      H𝛽     M𝛽     H𝜁     M𝜁
+
+
+           No formal educational credential          $31,900       36,187   0.05   0.06    0.10   0.10   0.15   0.15
+           High school diploma or equivalent         $45,470       67,033   0.09   0.13    0.20   0.25   0.31   0.37
+           Postsecondary nondegree award             $48,315        9,636   0.07   0.15    0.19   0.28   0.31   0.41
+           Some college, no degree                   $40,970        2,898   0.23   0.34    0.39   0.53   0.55   0.72
+           Associate’s degree                        $60,360        3,537   0.12   0.14    0.31   0.36   0.49   0.59
+           Bachelor’s degree                         $78,375       71,698   0.23   0.17    0.47   0.51   0.70   0.84
+           Master’s degree                           $79,605        3,216   0.26   0.14    0.46   0.44   0.66   0.74
+           Doctoral or professional degree           $82,420        5,290   0.21   0.13    0.41   0.43   0.60   0.74
+
+Table 10: Mean exposure scores for occupations, grouped by typical education needed for entry into the
+occupation. Alongside exposure scores, we display the median of median annual income for each occupation,
+as well as the total number of workers in each group, in thousands.
+
+
+
+C     Industrial and Productivity Exposure
+Figures 6 and 7 show the overall employment-weighted relative exposure of 3-digit NAICS industries
+according to human raters and GPT-4 respectively (based on our exposure rubric). The impact potential
+is present across nearly all industries, with wide heterogeneity. Both methods agree generally on relative
+exposures: data processing, information processing, and hospitals all have high exposure.9
+
+
+
+
+Recent productivity growth (both total factor and labor) appears uncorrelated with exposure as well. Figures C
+and C show little relationship between productivity growth since 2012 and current exposure to LLMs as rated
+by the model. A high correlation between already fast-growing productive industries and exposure might
+   9Aggregations are done according to the 𝛽 method described above. Task weights for supplemental tasks are half the core task
+weights, summing to one within an occupation. Occupation counts are used as weights to build industry-level measures of exposure.
+

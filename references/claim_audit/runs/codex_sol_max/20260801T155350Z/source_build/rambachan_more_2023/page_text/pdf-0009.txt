@@ -1,0 +1,61 @@
+       RAMBACHAN AND ROTH                A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                  2563
+
+2.4.    Possible choices of 
+The class of possible differences in trends  must be specified by the researcher, and the choice
+of  will depend on the economic context. We highlight several possible choices of  that may
+be reasonable in empirical applications and formalize intuitive arguments that are commonly
+made by applied researchers regarding possible violations of parallel trends. Throughout our
+discussion, we write δ pr e = (δ−T , . . . δ−1 ) and δ post = (δ1 , . . . δT̄ ) , with δ0 normalized to zero.
+                                 ¯
+This aligns the notation with Example      1, where δ corresponds to the difference in trends between
+
+
+
+
+                                                                                                                                Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+treated and comparison groups, and δ0 is normalized to zero.
+
+    2.4.1. Bounding relative magnitudes. In empirical applications, researchers may be will-
+ing to assume that the confounding factors which produce non-parallel trends in the post-
+treatment periods are not too much larger in magnitude than the confounding factors in the
+pre-treatment periods. In their empirical application to right-to-carry gun laws, Manski and Pep-
+per (2018) operationalize this intuition by calibrating bounds on |δ1 | to the largest violations
+of parallel trends in the pre-treatment period (see their Table 3).6 Such a restriction can be
+formalized in our framework by imposing that δ ∈  R M ( M̄) for M̄ ≥ 0, where
+
+                       R M ( M̄) = {δ : ∀ t ≥ 0, |δt+1 − δt | ≤ M̄ · max |δs+1 − δs |}.
+                                                                                 s<0
+
+
+ R M ( M̄) bounds the maximum post-treatment violation of parallel trends between consecutive
+periods by M̄ times the maximum pre-treatment violation of parallel trends. We use the abbre-
+viation RM for “relative magnitudes.” The choice  R M ( M̄) may be reasonable if the researcher
+suspects that possible violations of parallel trends are driven by confounding economic shocks
+that are of a similar magnitude to confounding economics shocks in the pre-period. When
+the number of pre-treatment and post-treatment periods is similar, a natural benchmark may
+be M̄ = 1, which bounds the worst-case post-treatment difference in trends by the equivalent
+maximum in the pre-treatment period.7
+
+    2.4.2. Example: non-staggered DiD (continued). In the three-period DiD model
+(T = T̄ = 1), assuming δ ∈  R M ( M̄) = {(δ−1 , δ1 ) : |δ1 | ≤ M̄|δ−1 |} bounds the magnitude of
+δ¯1 based on the magnitude of δ−1 . The larger the magnitude of the pre-treatment violation
+in parallel trends, |δ−1 |, the wider the range of possible post-treatment violations of parallel
+trends. 
+
+    2.4.3. Smoothness restrictions. In other empirical settings, researchers may be worried
+about confounding from secular trends (e.g. long-run changes in labour supply) that they suspect
+evolve smoothly over time. In such settings, it is common for empirical researchers to control
+for a linear group-specific time trend.8 This approach is valid if the difference in trends is linear,
+
+
+        6. In their application, Manski and Pepper (2018) observe the outcome for the entire population of interest, and
+thus their observed pre-treatment data corresponds with δ pr e rather than β̂ pr e .
+        7. In settings where later pre-periods are thought to be more informative, the researcher could use a different value
+of M̄ for different pre-periods, e.g. imposing that |δt+1 − δt | ≤ max{|δ0 − δ−1 |, 2 · |δ−1 − δ−2 |}. Likewise, although
+we’ve considered bounds on changes across consecutive periods, the researcher could also impose bounds on changes
+across multiple periods, e.g. |δt+2 − δt | ≤ M̄ · maxs<−1 |δs+2 − δs |.
+        8. Specifically, researchers often augment specification (2) with group-specific linear trends, an approach Dobkin
+et al. (2018) refer to as a “parametric event-study.” An analogous approach is to estimate a linear trend using only
+observations prior to treatment, and then subtract out the estimated linear trend from the observations after treatment
+(Bhuller et al., 2013; Goodman-Bacon, 2018, 2021).
+

@@ -1,0 +1,65 @@
+Proof of the decomposition for the fixed-effect regression
+
+First, we have
+         X
+             Ng,t εg,t E (Yg,t |D)
+             g,t
+           X
+       =            Ng,t εg,t [E (Yg,t |D) − E (Y1,t |D)]
+             g,t
+            T
+              "                                 #
+           XX   X
+       =                              Ng,t0 εg,t0 [E (Yg,t |D) − E (Yg,t−1 |D) − (E (Y1,t |D) − E (Y1,t−1 |D))]
+             g      t=2       t0 ≥t
+            T
+              "                                 #
+           XX   X
+       =                              Ng,t0 εg,t0 [(Dg,t − Dg,t−1 )E (∆g,t |D) − (D1,t − D1,t−1 )E (∆1,t |D)]
+             g      t=2       t0 ≥t
+                                          "                                                  #
+                        X                                                  X Ng,t0
+       =                                      Ng,t (Dg,t − Dg,t−1 )                       εg,t0 E (∆g,t |D) .                    (26)
+                                                                           t0 ≥t
+                                                                                   Ng,t
+           (g,t):Dg,t 6=Dg,t−1 ,t≥2
+
+The first equality follows by (6). The second equality follows from summation by part and (6).
+The third equality follows from Lemma S2. The fourth equality stems from the fact that by (6),
+the terms with g = 1 vanish.
+Similarly,
+                                                      T
+                                                        "                            #
+                       X                             XX   X
+                               Ng,t εg,t Dg,t =                           Ng,t0 εg,t0 [Dg,t − Dg,t−1 ]
+                        g,t                           g    t=2    t0 ≥t
+                                                              X                                         X Ng,t0
+                                                 =                              Ng,t (Dg,t − Dg,t−1 )                  εg,t0 .   (27)
+                                                                                                        t0 ≥t
+                                                                                                                Ng,t
+                                                     (g,t):Dg,t 6=Dg,t−1 ,t≥2
+
+The result follows by combining (4), (26), (27), and the law of iterated expectations.
+
+Proof of the decomposition for the first-difference regression
+
+First, we have
+             X
+                               Ng,t εf d,g,t (E (Yg,t |D) − E (Yg,t−1 |D))
+                   (g,t):t≥2
+                     X
+             =                 Ng,t εf d,g,t (E (Yg,t |D) − E (Yg,t−1 |D) − (E (Y1,t |D) − E (Y1,t−1 |D)))
+                   (g,t):t≥2
+                     X
+             =                 Ng,t εf d,g,t [(Dg,t − Dg,t−1 )E (∆g,t |D) − (D1,t − D1,t−1 )E (∆1,t |D)]
+                   (g,t):t≥2
+                     X
+             =                 Ng,t εf d,g,t (Dg,t − Dg,t−1 )E (∆g,t |D) .
+                   (g,t):t≥2
+
+The first equality follows from (14). The second equality follows from Lemma S2. The third
+equality follows from (14) again. The result follows by combining (13) with the last display, and
+using the law of iterated expectations.
+
+                                                                           24
+

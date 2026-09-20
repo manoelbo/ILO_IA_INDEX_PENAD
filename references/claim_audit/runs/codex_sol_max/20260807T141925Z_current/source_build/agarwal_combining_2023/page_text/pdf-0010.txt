@@ -1,0 +1,58 @@
+                                                                                                            10
+
+ωi = 1 to ωi = 0 given that the human’s signal is sE       ir . The first term is positive if, given the
+realization sE                   A
+              ir , the signal si is more likely if ωi = 1 as compared to ωi = 0. In this case,
+the posterior odds shift in favor of the state ωi = 1. Analogously, the odds shift away from
+ωi = 1 if, given sE                  A
+                    ir , the signal si is more likely if the state were ωi = 0.
+
+The task of empirically analyzing deviations in participants’ beliefs from the benchmark in
+equation (3) is challenging because the signals differ across cases i and humans may, due to
+differences in skill, have heterogeneous signal distributions πr (·) . The ideal dataset would
+                                               
+elicit pr ωi = 1 sAi , sE
+                        ir   and π r   ωi = 1 s E
+                                                ir for the same case and the same human to keep
+                        
+the signals sA    E
+             i , sir , and human-specific parameters fixed, and use the latter to estimate
+                    
+πr ω i = 1 s A    E
+             i , sir using equation (3).
+
+However, empirically implementing this strategy requires us to confront several experimental
+and methodological challenges. First, the experiment needs to be sensitive to anchoring and
+                                                                    
+order effects when eliciting pr ωi = 1 sA
+                                        i , sE
+                                             ir   and π r   ωi = 1 s E
+                                                                     ir from participants. Second,
+the potential for measurement error and the dependence of the first term in equation (3) on
+a latent signal sE
+                 ir complicates the exercise. We defer our approach to this second challenge
+to section 5, and turn our attention to the experimental design.
+
+
+3       Setting and Experiment
+
+Our experiment elicits the probability of a pathology’s presence pr (ω = 1 |s ) and a recom-
+mended treatment/follow-up decision a under varying information treatments. There are four
+information treatments in the experiment, with only the chest X-ray in the minimal informa-
+tion case, to which we add AI assistance, contextual information, or both. Next, we describe
+the experimental context and interface before presenting the design of our experiments.
+
+
+3.1     Experimental Context
+
+3.1.1    Radiology
+
+Radiologists diagnose the presence of a given pathology at the request of a treating physician.
+The information available to a radiologist consists of diagnostic images (e.g. chest X-rays),
+any relevant medical history (e.g. laboratory results), and clinical indication notes of the
+treating physician.8 The treating physician’s notes are of varying detail levels – they may
+provide no clinical information or guidance, request the analysis of a specific pathology, or
+    8
+    Radiologists are rarely in direct contact with the patient or the treating physician, except via the formal
+information exchange outlined here.
+

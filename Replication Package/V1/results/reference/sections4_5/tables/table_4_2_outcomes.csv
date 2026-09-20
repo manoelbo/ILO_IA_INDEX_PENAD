@@ -1,0 +1,5 @@
+Grupo,Outcome,Definição,Transformação
+Fluxos,Admissões,Número de admissões formais na ocupação-mês,lo g ( y + 1 ) ; Poisson na robustez
+Fluxos,Desligamentos,Número de desligamentos formais na ocupação-mês,lo g ( y + 1 ) ; Poisson na robustez
+Salários,Salário real de admissão,Salário médio de admissão deflacionado pelo IPCA,lo g
+Saldo,Saldo líquido,Admissões menos desligamentos na ocupação-mês,asinh ( saldo )

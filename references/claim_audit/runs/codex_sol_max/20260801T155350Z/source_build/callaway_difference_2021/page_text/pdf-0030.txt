@@ -1,0 +1,68 @@
+the increase.17
+                        Table 3: Minimum Wage Aggregated Treatment Effect Estimates
+
+
+               (a) Unconditional Parallel Trends
+                                                           Partially Aggregated                      Single Parameters
+
+               TWFE                                                                                         -0.037
+                                                                                                           (0.006)
+               Simple Weighted Average                                                                      -0.052
+                                                                                                           (0.006)
+               Group-Specific Effects           g=2004      g=2006      g=2007
+                                                 -0.091      -0.047      -0.028                             -0.039
+                                                (0.019)     (0.008)     (0.007)                            (0.007)
+               Event Study                        e=0         e=1         e=2          e=3
+                                                 -0.027      -0.071      -0.125       -0.136                -0.090
+                                                (0.006)     (0.009)     (0.021)      (0.023)               (0.013)
+               Calendar Time Effects            t=2004      t=2005      t=2006       t=2007
+                                                 -0.034      -0.071      -0.055       -0.050                -0.052
+                                                (0.019)      (0.02)     (0.009)      (0.006)               (0.013)
+               Event Study                        e=0         e=1
+               w/ Balanced Groups                -0.027      -0.071                                         -0.049
+                                                (0.009)     (0.009)                                        (0.008)
+
+               (b) Conditional Parallel Trends
+                                                           Partially Aggregated                      Single Parameters
+
+               TWFE                                                                                         -0.008
+                                                                                                           (0.006)
+               Simple Weighted Average                                                                      -0.033
+                                                                                                           (0.007)
+               Group-Specific Effects           g=2004      g=2006      g=2007
+                                                 -0.044      -0.029      -0.029                             -0.031
+                                                (0.020)     (0.008)     (0.008)                            (0.007)
+               Event Study                        e=0         e=1         e=2          e=3
+                                                 -0.024      -0.041      -0.050       -0.071                -0.046
+                                                (0.006)     (0.009)     (0.022)      (0.026)               (0.013)
+               Calendar Time Effects            t=2004      t=2005      t=2006       t=2007
+                                                 -0.030      -0.025      -0.030       -0.049                -0.033
+                                                (0.022)     (0.021)     (0.009)      (0.007)               (0.012)
+               Event Study                        e=0         e=1
+               w/ Balanced Groups                -0.016      -0.041                                         -0.028
+                                                (0.010)     (0.009)                                        (0.008)
+    Notes: The table reports aggregated treatment effect parameters under the unconditional and conditional parallel trends
+   assumptions and with clustering at the county level. The row ‘TWFE’ reports the coefficient on a post-treatment dummy
+   variable from a two-way fixed effects regression. The row ‘Simple Weighted Average’ reports the weighted average (by group
+   size) of all available group-time average treatment effects as in Equation (3.10). The row ‘Group-Specific Effects’ summarizes
+   average treatment effects by the timing of the minimum wage increase; here, g indexes the year that a county is first treated. The
+   row ‘Event Study’ reports average treatment effects by the length of exposure to the minimum wage increase; here, e indexes the
+   length of exposure to the treatment. The row ‘Calendar Time Effects’ reports average treatment effects by year; here, t indexes
+   the year. The row ‘Event Study w/ Balanced Groups’ reports average treatment effects by length of exposure using a fixed set
+   of groups at all lengths of exposure; here, e indexes the length of exposure and the sample consists of counties that have at least
+   two years of exposure to minimum wage increases. The column ‘Single Parameters’ represents a further aggregation of each type
+   of parameter, as discussed in the text. The estimates in Panel (b) use the the doubly robust estimator discussed in the text.
+
+
+  17
+      Notice that these estimates are exactly the same as in the first two periods for the dynamic treatment effect estimates
+that do not hold the composition of groups constant across different lengths of exposure. The reason that they are the same
+for initial exposure is coincidental as the results holding group composition constant do not include the group first treated
+in 2007 (the estimated effect of the minimum wage in 2007 for the group of states first treated in 2007 is 2.76% lower teen
+employment which just happens to correspond to the estimated effect for the balanced groups). On the other hand, for the
+second period, they correspond by construction because both estimates only include the groups first treated in 2004 and
+2006.
+
+
+                                                                  30
+

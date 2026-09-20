@@ -1,0 +1,38 @@
+                       Table B.4: Effects of AI adoption on innovation activity
+
+                               (1)         (2)             (3)         (4)           (5)            (6)
+                              Firm        Firm           Country     Country        World          World
+ AI adoption (actual)       0.035***                     0.025***                  0.055***
+                             -0.007                       -0.004                    -0.004
+ AI adoption (US-based)                 0.078***                     0.015***                    0.033***
+                                           -0.01                      -0.005                       -0.006
+ Investment (lag)             0.001          0             0.002       0.001       0.004**        0.004**
+                             -0.002       -0.003          -0.001      -0.002        -0.002         -0.002
+ Profitability (lag)        0.049***     0.036*            0.008       0.008        -0.004         -0.008
+                             -0.016        -0.02           -0.01      -0.012        -0.011         -0.013
+ Financial leverage (lag)     0.015        0.017          -0.001       0.001         0.007          0.012
+                             -0.011       -0.013          -0.006      -0.007        -0.007         -0.008
+ Total assets (log, lag)     -0.001      -0.004*          0.001        0.001       0.006***      0.008***
+                             -0.002       -0.002          -0.001      -0.001        -0.001         -0.001
+ Size FE                      Yes          Yes             Yes         Yes           Yes            Yes
+ Age FE                       Yes          Yes             Yes         Yes           Yes            Yes
+ Country-sector-wave FE       Yes          Yes             Yes         Yes           Yes            Yes
+ Observations                35427        30446           35427       30446         35427          30446
+ R-squared                   0.081        0.082           0.082       0.089         0.123          0.126
+ Adjusted R-squared          0.038        0.032           0.038       0.039         0.081          0.078
+
+
+Note: The dependent variable is a binary indicator for innovation activity for firms that report to develop
+products, services or processes that are new at the level of the firm (Columns 1-2), the country (Columns
+3-4) or the global frontier (Columns 5-6). AI adoption (US-matched) is the AI implementation status
+derived from similar firms in the US. Investment is expressed as the annual change in total fixed assets.
+Profitability is the ratio of EBIT to total assets. Financial leverage is the ratio of loans and long-term
+debt to total assets. All control variables come from ORBIS and are lagged by 1 year. Standard errors
+clustered at the country-sector-wave level are reported in parentheses. *, **, *** correspond to 0.1, 0.05
+and 0.01 significance levels, respectively.
+
+
+
+
+                                                    32
+

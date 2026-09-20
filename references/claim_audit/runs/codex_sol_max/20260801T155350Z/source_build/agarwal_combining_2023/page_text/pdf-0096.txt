@@ -1,0 +1,39 @@
+                                                                                                                            96
+
+                                    Table C.15: Average Treatment Effects
+
+                                               Deviation            Deviation               Effort Measures
+                                               from AI              from GT              Active Time    Clicks
+   Sessions                                       (1)                  (2)                    (3)         (4)
+   Design 2: Session 1                            −0.016                0.029                  41.18               14.72
+                                                  (0.011)              (0.014)                (11.17)              (2.68)
+   Design 2: Session 2                            −0.033                0.014                  −3.68                6.64
+                                                  (0.010)              (0.011)                 (9.91)              (2.48)
+   Design 2: Session 3                            −0.032                0.004                 −25.13                3.68
+                                                  (0.011)              (0.012)                (9.77)               (2.58)
+   Design 2: Session 4                            −0.035                0.007                 −38.73                1.35
+                                                  (0.010)              (0.011)                (7.87)               (2.38)
+   Design 3                                        0.020               −0.005                     -                   -
+                                                  (0.009)              (0.012)                    -                   -
+   Control Mean                                    0.219                0.216                 164.82               40.76
+                                                  (0.007)              (0.010)                (6.74)               (1.53)
+   Design 2: Session 1 × AI                       −0.002                0.006                   5.09                0.47
+                                                  (0.007)              (0.010)                 (6.02)              (1.30)
+   Design 2: Session 2 × AI                        0.003               −0.005                  −1.67               −0.92
+                                                  (0.008)              (0.009)                 (5.56)              (1.26)
+   Design 2: Session 3 × AI                       −0.002                0.001                  −1.08               −1.04
+                                                  (0.008)              (0.009)                 (4.81)              (1.29)
+   Design 2: Session 4 × AI                        0.006                0.004                  −1.97               −0.28
+                                                  (0.007)              (0.011)                 (4.86)              (1.19)
+   Design 3 × AI                                  −0.009               −0.001                     -                   -
+                                                  (0.009)              (0.008)                    -                   -
+   Control Mean × AI                              −0.036                0.004                   6.28                1.69
+                                                  (0.004)              (0.005)                 (3.47)              (0.74)
+   Pathology FE                                     Yes                  Yes                     -                   -
+   Observations                                    36280                36280                  14635               14635
+   F-stat                                           .63                  .26                    .46                 .42
+   P>F-stat                                         .67                  .93                    .76                 .79
+Note: Main specifications similar to table 2 with additional control variables for sequence number of a particular case and the
+experiment session. Due to the high volume of sequence numbers, we do not show them in this table but account for them.
+Design 1 session dummy is ommitted due to collinearity and is thus the control mean.
+

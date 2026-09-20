@@ -1,0 +1,56 @@
+66      ILO Working Paper 140
+
+
+
+
+      Here’s a brief explanation of Generative Artificial Intelligence (GenAI). In this study, we distin-
+      guish between GenAI and Artificial Intelligence (AI).
+
+      AI makes decisions based on data (e.g., suggesting the next product in an online store, recog-
+      nizing license plates at parking lot entrances, and raising the barrier).
+
+      GenAI can create new content, such as images, text, or speech. The most popular tool is ChatGPT,
+      which can answer questions, write emails, prepare applications for offices, create reports, sum-
+      marize texts (e.g., articles, books), and more.
+
+      What can GenAI do?
+
+      ●● Write text, "imitating" a specific person, e.g., an official, a poet, a financial analyst;
+      ●● Prepare translations between languages, e.g., from Polish to English;
+      ●● Convert written text into human speech ("read" text in a given language);
+      ●● Program—convert specified tasks into computer code, e.g., Python, HTML;
+      ●● Generate images, e.g., photos based on descriptions, or recognize and describe images (e.g.,
+         what is in a photo).
+
+
+
+     13. How often do you use Generative Artificial Intelligence tools (GenAI, e.g., ChatGPT)?
+      (Please mark one [1] answer with an X)
+
+      a. Never
+
+      b. Rarely (a few times a year)
+
+      c. Sometimes (a few times a month)
+
+      d. Often (a few times a week)
+
+      e. Very often (daily)
+
+     14. To what extent do you think Generative Artificial Intelligence (GenAI, e.g., ChatGPT) will
+         impact jobs in your industry over the next 5 years?
+      (Please mark one [1] answer with an X)
+
+      a. Not at all
+
+      b. Slightly
+
+      c. Moderately
+
+      d. Significantly
+
+      e. Completely (will transform the profession)
+
+     15. To what extent could your position be replaced by Generative Artificial Intelligence (e.g.,
+         ChatGPT) within the next 5 years?
+

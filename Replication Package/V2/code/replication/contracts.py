@@ -97,76 +97,226 @@ def _atomic_json(payload: Any, path: Path) -> None:
 
 def source_id_for(artifact_path: str) -> str:
     path = artifact_path.lower()
+    component = ""
+    for component in ("section3", "caged", "rais", "pnadc", "spatial"):
+        prefix = f"{component}/"
+        if path.startswith(prefix):
+            path = path[len(prefix) :]
+            break
+    else:
+        component = "caged"
+    if component == "caged" and path in {"index.md", "publication_index.csv"}:
+        return "code.replication.reference_validation"
+    if component == "caged" and path.startswith("validation/"):
+        return "code.replication.claims"
+    if component == "section3":
+        if "r_" in path or "cross_language" in path:
+            return "code.section3.r_validation"
+        return "code.section3.pipeline"
+    if component in {"rais", "pnadc", "spatial"}:
+        if path.startswith("tables/") or path == "artifact_index.json":
+            return "code.render.complementary"
+        if path.startswith("validation/"):
+            return "code.replication.component_pipeline"
+        if component == "rais":
+            if "rais_pretrend_r_" in path:
+                return "code.rais.r_pretrend_replication"
+            if "rais_cross_replication" in path:
+                return "code.rais.r12_cross_replication"
+            if "rais_static_results" in path:
+                return "code.rais.r9_static"
+            if "rais_pretrends" in path:
+                return "code.rais.r8_pretrends"
+            if "rais_sensitivities" in path:
+                return "code.rais.r10_sensitivities"
+            if "rais_support" in path:
+                return "code.rais.part1"
+        if component == "pnadc":
+            if "pnadc_pretrend_cross_" in path:
+                return "code.pnadc.pnadc_pretrend_cross_replication"
+            if "pnadc_cross_replication" in path:
+                return "code.pnadc.pnadc_cross_replication"
+            if "pnadc_sensitivities" in path:
+                return "code.pnadc.pnadc_sensitivities"
+            if "pnadc_pretrends" in path:
+                return "code.pnadc.pnadc_pretrends"
+            if "pnadc_results" in path or "pnadc_support" in path:
+                return "code.pnadc.pnadc_estimation"
+        if component == "spatial":
+            if "spatial_r_" in path:
+                return "code.spatial.spatial_r_replication"
+            if "family_f_declaration" in path or "anatel_a6_" in path:
+                return "code.spatial.support"
+            if "anatel_" in path or "spatial_pretrend_coefficients" in path:
+                return "code.spatial.diagnostics"
+        raise SemanticContractError(
+            f"No {component} source declaration for artifact: {artifact_path}"
+        )
+    if path.startswith("tables/"):
+        return "code.render.phase8b_tables"
+    if path.startswith(
+        "backing_data/figure_5_2_6_group_outcome_forest"
+    ):
+        return "code.render.phase8b_tables"
+    if path.startswith("figures/figure_5_2_3_3_canaries"):
+        return "code.render.canaries_wage_figure"
+    if path.startswith("figures/"):
+        return "code.render.phase8b_figures"
     if path.startswith("treatment/"):
-        return "code.panel.treatment_variants"
+        return "code.caged.panel.treatment_variants"
+    if path.startswith("models/group_did"):
+        return "code.caged.models.group_did_results"
+    if path.startswith("models/group_event_stud"):
+        return "code.caged.models.group_event_studies"
+    if path.startswith("models/canaries"):
+        return "code.caged.models.canaries_wage_event_study"
+    if path.startswith("models/national_event_study_extended"):
+        return "code.caged.models.national_event_study_extended"
+    if path.startswith("models/long_run_horizon_estimates") or path.startswith(
+        "models/long_run_horizon_reconciliation"
+    ) or path.startswith("models/long_run_horizons_support") or path.endswith(
+        "models/long_run_horizons.md"
+    ):
+        return "code.caged.models.long_run_horizons"
+    if path.startswith("models/pretrend_control") or path.endswith(
+        "models/pretrend_control_specification.md"
+    ):
+        return "code.caged.models.pretrend_control_spec"
     if path.startswith("models/event_study") or path.endswith(
         "models/long_run_horizons.csv"
     ):
-        return "code.models.event_study"
+        return "code.caged.models.event_study"
     if path.startswith("models/specification_ladder"):
-        return "code.models.specification_ladder"
+        return "code.caged.models.specification_ladder"
     if path.startswith("models/secondary_log_flow") or path.endswith(
         "models/secondary_flow_estimators.md"
     ):
-        return "code.models.secondary_flow_models"
+        return "code.caged.models.secondary_flow_models"
     if path.startswith("models/sector") or path.endswith(
         "models/01_sector_fixed_effect_support.csv"
     ):
-        return "code.models.sector_models"
+        return "code.caged.models.sector_models"
+    if path.startswith("diagnostics/pretrend_master") or path.endswith(
+        "diagnostics/diagnostico_pretrends.md"
+    ):
+        return "code.caged.models.pretrend_report"
+    if path.startswith(
+        (
+            "diagnostics/pretrend_sample_2022",
+            "diagnostics/pretrend_power_check",
+            "diagnostics/pretrend_ladder_variants",
+            "diagnostics/pretrend_wage_balanced_coverage",
+            "diagnostics/pretrend_national_variants_support",
+            "diagnostics/pretrend_national_variants_coefficients",
+        )
+    ):
+        return "code.caged.models.pretrend_national_variants"
+    if path.startswith("diagnostics/pretrend_level2"):
+        return "code.caged.models.pretrend_sector"
+    if path.startswith("diagnostics/cbo_pre_period_slopes"):
+        return "code.caged.models.pretrend_control_spec"
     if path.startswith("diagnostics/pretrend") or path.endswith(
         "diagnostics/pretrend_diagnostics.md"
     ):
-        return "code.models.pretrends"
+        return "code.caged.models.pretrends"
+    if path.startswith(
+        (
+            "diagnostics/honest_did_event_coefficients",
+            "diagnostics/honest_did_event_vcov_long",
+        )
+    ):
+        return "code.caged.models.pretrends"
+    if path.startswith(
+        (
+            "diagnostics/honest_did_delta_comparison",
+            "diagnostics/honest_did_sensitivity",
+            "diagnostics/honest_did_summary",
+        )
+    ):
+        return "R.honest_did_sd"
     if "honest_did" in path:
         return "R.honest_did"
+    if path.startswith(
+        (
+            "diagnostics/ddd_pretrends",
+            "diagnostics/ddd_alternative_partitions_pretrends",
+        )
+    ):
+        return "code.caged.models.ddd_pretrends"
     if "ddd_" in path or path.endswith(
         "diagnostics/ddd_multiplicity_results.md"
     ):
-        return "code.models.heterogeneity"
+        return "code.caged.models.heterogeneity"
     if "placebo" in path:
-        return "code.models.placebos"
+        return "code.caged.models.placebos"
     if path.startswith("mechanisms/separation"):
-        return "code.models.separation_mechanisms"
+        return "code.caged.models.separation_mechanisms"
     if path.startswith("mechanisms/stock_proxy"):
-        return "code.models.stock_proxy"
+        return "code.caged.models.stock_proxy"
     if path.startswith("mechanisms/hourly_wage"):
-        return "code.models.hourly_wage"
+        return "code.caged.models.hourly_wage"
     if path.startswith("mechanisms/employer"):
-        return "code.models.employer_size"
+        return "code.caged.models.employer_size"
     if path.startswith("mechanisms/exposure"):
-        return "code.models.exposure_sensitivity"
-    if path.startswith("replication/cross_replication"):
-        return "R.cross_replication"
-    if path == "mechanisms/employer_size.md":
-        return "code.models.employer_size"
-    if path == "mechanisms/hourly_wage.md":
-        return "code.models.hourly_wage"
-    if path == "mechanisms/separation_mechanisms.md":
-        return "code.models.separation_mechanisms"
-    if path == "mechanisms/stock_proxy.md":
-        return "code.models.stock_proxy"
-    if path == "mechanisms/exposure_measure_sensitivity.md":
-        return "code.models.exposure_sensitivity"
-    if path.startswith("reconciliation/pdet_"):
-        return "code.ingest.reconcile_pdet"
-    if path.startswith("reconciliation/v1_vs_v2") or path.endswith(
-        "reconciliation/reconciliacao.md"
+        return "code.caged.models.exposure_sensitivity"
+    if path.startswith("mechanisms/occupation_case_trajector") or path.startswith(
+        "mechanisms/occupation_case_terminal"
+    ) or path.endswith("mechanisms/occupation_case_trajectories.md"):
+        return "code.caged.models.occupation_case_trajectories"
+    if path.startswith("mechanisms/occupation_case") or path.endswith(
+        (
+            "mechanisms/occupation_case_monthly_coverage.md",
+            "mechanisms/occupation_case_preperiod_diagnostics.md",
+        )
     ):
-        return "code.ingest.reconcile_v1"
+        return "code.caged.panel.occupation_cases"
+    if path.startswith("replication/complete_r/"):
+        if path.endswith(
+            (
+                "python_r_model_comparison.csv",
+                "python_r_pretrend_comparison.csv",
+                "python_r_honest_did_coefficient_comparison.csv",
+                "python_r_honest_did_vcov_comparison.csv",
+                "comparison_status.json",
+            )
+        ):
+            return "code.replication.r_validation"
+        return "R.complete_replication"
+    if path.startswith("audit/"):
+        if path.startswith("audit/a"):
+            return "code.caged.audit.wage_composition"
+        if path.startswith("audit/b"):
+            return "code.caged.audit.jackknife_occupations"
+        if path.startswith(("audit/c", "audit/d")):
+            return "code.caged.audit.exposure_and_control"
+        if path.startswith("audit/e"):
+            return "code.caged.audit.transfer_share"
+    if path == "mechanisms/employer_size.md":
+        return "code.caged.models.employer_size"
+    if path == "mechanisms/hourly_wage.md":
+        return "code.caged.models.hourly_wage"
+    if path == "mechanisms/separation_mechanisms.md":
+        return "code.caged.models.separation_mechanisms"
+    if path == "mechanisms/stock_proxy.md":
+        return "code.caged.models.stock_proxy"
+    if path == "mechanisms/exposure_measure_sensitivity.md":
+        return "code.caged.models.exposure_sensitivity"
+    if path.startswith("reconciliation/pdet_"):
+        return "code.caged.ingest.reconcile_pdet"
     if path.startswith("reconciliation/gate_modelo_antigo"):
-        return "code.models.gate_v1_model"
+        return "code.caged.models.gate_v1_model"
     if path.startswith("reconciliation/crosswalk_coverage") or path.startswith(
         "reconciliation/treatment_classification"
     ):
-        return "code.panel.crosswalk"
+        return "code.caged.panel.crosswalk"
     if path.startswith("reconciliation/painel_") or path.startswith(
         "reconciliation/cnae_month"
     ):
-        return "code.panel.build_panel"
+        return "code.caged.panel.build_panel"
     if path.startswith("reconciliation/build_movements"):
-        return "code.ingest.build_movements"
+        return "code.caged.ingest.build_movements"
     if path.startswith("reconciliation/"):
-        return "code.ingest.diagnose_vintage"
+        return "code.caged.ingest.diagnose_vintage"
     raise SemanticContractError(
         f"No source declaration for artifact: {artifact_path}"
     )
@@ -337,14 +487,26 @@ def validate_artifact_semantics(
         raise SemanticContractError(f"Unknown media type: {media_type}")
 
 
+# Registered audit outputs back narrative values in the manuscript and are
+# therefore part of the signed replication evidence.
+EXCLUDED_FROM_REFERENCE: tuple[str, ...] = ()
+
+
 def _result_artifacts(results_dir: Path) -> list[Path]:
     return sorted(
         path
         for path in results_dir.rglob("*")
         if path.is_file()
-        and DEFAULT_REFERENCE.name not in path.relative_to(
-            results_dir
-        ).parts
+        and DEFAULT_REFERENCE.name
+        not in path.relative_to(results_dir).parts
+        and not any(
+            part in EXCLUDED_FROM_REFERENCE
+            for part in path.relative_to(results_dir).parts
+        )
+        and not any(
+            part.startswith(".")
+            for part in path.relative_to(results_dir).parts
+        )
     )
 
 

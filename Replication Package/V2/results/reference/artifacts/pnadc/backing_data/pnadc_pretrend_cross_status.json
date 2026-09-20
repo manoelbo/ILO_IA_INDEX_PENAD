@@ -1,0 +1,9 @@
+{
+  "failed_models": 0,
+  "input_rows": 74442,
+  "joint_statistic_relative_tolerance": 1e-06,
+  "maximum_absolute_difference": 0.00020978766167445428,
+  "models": 12,
+  "numeric_tolerance": 1e-06,
+  "status": "pass"
+}

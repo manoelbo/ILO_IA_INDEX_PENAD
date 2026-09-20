@@ -9,7 +9,7 @@ from openpyxl import Workbook
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "ingest" / "reconcile_pdet.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "ingest" / "reconcile_pdet.py"
 
 
 def load_pdet_module():

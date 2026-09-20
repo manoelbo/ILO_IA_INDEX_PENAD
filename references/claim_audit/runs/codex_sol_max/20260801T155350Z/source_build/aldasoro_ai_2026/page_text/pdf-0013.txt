@@ -1,0 +1,38 @@
+                                        Figure 1: AI patents
+
+
+
+
+(a) AI patents in domestic portfolio                      (b) Share AI patents in total domestic port-
+(count).                                                  folio (%).
+
+Note: AI patents are a subdomain of the digital patent classification based on EPO (2017). Source:
+PATSTAT.
+
+
+
+    The picture is somewhat more nuanced when looking at AI deployment and adoption.
+On average, AI adoption levels are similar in the EU and the US. Nevertheless, as shown
+in Figure 2, the share of firms using big data and AI technology is structurally lower in
+EU countries with low financial development.3 There was a relatively strong catch-up in
+less financially developed countries in 2022 (from 17% in 2021 to 27% of firms in 2022),
+but a gap has opened up again in 2023-24 as adoption has remained flat. EU countries
+with high financial development have a similar share of firms adopting AI as in the US
+for the period 2019-24.
+
+
+
+
+   3
+     The classification is based on the index of financial development proposed by Betz et al. (2025). The
+index uses financial market data from 2015 to 2023 and consists of two composite indicators: (i) financial
+market size and integration, and (ii) financial market depth. The group of EU countries with high
+financial development includes: Austria, Belgium, Denmark, Finland, France, Germany, Ireland, Italy,
+Luxembourg, Netherlands, Poland, Spain, and Sweden. The group of EU countries with low financial
+development includes: Bulgaria, Croatia, Cyprus, Czechia, Estonia, Greece, Hungary, Malta, Latvia,
+Lithuania, Portugal, Romania, Slovakia, and Slovenia.
+
+
+
+                                                    7
+

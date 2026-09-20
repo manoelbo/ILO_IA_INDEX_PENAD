@@ -1,0 +1,130 @@
+{
+  "block_c": {
+    "gradient_four": {
+      "distance_to_threshold": 0.006666666666666599,
+      "families_at_or_above_threshold": 0,
+      "gradient_4_threshold": 0.6,
+      "highest_observed_score": 0.5933333333333334,
+      "mean_isco_targets_per_family": 1.9587155963302751,
+      "mean_pooled_sd": 0.0974381142773209,
+      "reading": "Gradient 4 is empty by arithmetic, not by choice: no CBO family reaches 0.60 because the family score averages over its ISCO destinations and that average cannot exceed the destinations' own maximum. The dissertation's dilution explanation is confirmed.",
+      "scored_cbo_families": 436
+    },
+    "score_overlap": {
+      "band_composition": {
+        "control": 30,
+        "excluded_minimal": 31,
+        "treated": 3
+      },
+      "binary_treatment_is_monotone_in_score": false,
+      "cbo_families_in_band": 64,
+      "control_maximum_score": 0.32,
+      "overlap_band": [
+        0.28,
+        0.32
+      ],
+      "treated_minimum_score": 0.28
+    },
+    "unscored_families": 193,
+    "unscored_share_pct": 30.683624801271858
+  },
+  "block_d": {
+    "minimal_exposure": {
+      "max_absolute_delta": 0.038553416497447146,
+      "rows": [
+        {
+          "coefficient_as_control": -0.0887042633781861,
+          "coefficient_excluded": -0.0537723981585714,
+          "delta": -0.0349318652196147,
+          "outcome": "admissoes",
+          "p_value_as_control": 0.0222700848617032,
+          "p_value_excluded": 0.1640757055204185
+        },
+        {
+          "coefficient_as_control": -0.0707158669259652,
+          "coefficient_excluded": -0.042014072599854,
+          "delta": -0.028701794326111196,
+          "outcome": "desligamentos",
+          "p_value_as_control": 0.0557989227913837,
+          "p_value_excluded": 0.2268409951592573
+        },
+        {
+          "coefficient_as_control": -0.0800691169322043,
+          "coefficient_excluded": -0.0480931611194387,
+          "delta": -0.0319759558127656,
+          "outcome": "n_movimentacoes",
+          "p_value_as_control": 0.0303431795732074,
+          "p_value_excluded": 0.1744161382010118
+        },
+        {
+          "coefficient_as_control": -0.0455689138807191,
+          "coefficient_excluded": -0.0507404538197659,
+          "delta": 0.005171539939046801,
+          "outcome": "ln_salario_real_adm",
+          "p_value_as_control": 1.9804665752021226e-05,
+          "p_value_excluded": 1.411223007563578e-06
+        },
+        {
+          "coefficient_as_control": -0.5898203027434695,
+          "coefficient_excluded": -0.5512668862460224,
+          "delta": -0.038553416497447146,
+          "outcome": "asinh_saldo",
+          "p_value_as_control": 0.1165186553712829,
+          "p_value_excluded": 0.1459958387457991
+        }
+      ]
+    },
+    "sector_level_comparison": [
+      {
+        "coefficient_delta_level_2_minus_level_1": -0.0213035861971261,
+        "level_1_coefficient": -0.0537723981585714,
+        "level_1_p_value": 0.1640757055204185,
+        "level_1_standard_error": 0.0385602106882426,
+        "level_2_coefficient": -0.0750759843556975,
+        "level_2_p_value": 0.0359136901030934,
+        "level_2_standard_error": 0.0356440911016504,
+        "outcome": "admissoes"
+      },
+      {
+        "coefficient_delta_level_2_minus_level_1": -0.0244320687487655,
+        "level_1_coefficient": -0.042014072599854,
+        "level_1_p_value": 0.2268409951592573,
+        "level_1_standard_error": 0.0347015248522746,
+        "level_2_coefficient": -0.0664461413486195,
+        "level_2_p_value": 0.0572525287648506,
+        "level_2_standard_error": 0.034827722520502,
+        "outcome": "desligamentos"
+      },
+      {
+        "coefficient_delta_level_2_minus_level_1": -0.0225718406961792,
+        "level_1_coefficient": -0.0480931611194387,
+        "level_1_p_value": 0.1744161382010118,
+        "level_1_standard_error": 0.0353367232298032,
+        "level_2_coefficient": -0.0706650018156179,
+        "level_2_p_value": 0.0401553618758421,
+        "level_2_standard_error": 0.0343027299510752,
+        "outcome": "n_movimentacoes"
+      },
+      {
+        "coefficient_delta_level_2_minus_level_1": 0.015142250476736,
+        "level_1_coefficient": -0.0507404538197659,
+        "level_1_p_value": 1.411223007563578e-06,
+        "level_1_standard_error": 0.0103323620988367,
+        "level_2_coefficient": -0.0355982033430298,
+        "level_2_p_value": 6.419984566186089e-08,
+        "level_2_standard_error": 0.0064381919803425,
+        "outcome": "ln_salario_real_adm"
+      },
+      {
+        "coefficient_delta_level_2_minus_level_1": 0.4117732531415795,
+        "level_1_coefficient": -0.5512668862460224,
+        "level_1_p_value": 0.1459958387457991,
+        "level_1_standard_error": 0.3783166056230572,
+        "level_2_coefficient": -0.1394936331044428,
+        "level_2_p_value": 0.0583106193473925,
+        "level_2_standard_error": 0.0734269934691378,
+        "outcome": "asinh_saldo"
+      }
+    ]
+  }
+}

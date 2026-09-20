@@ -1,0 +1,48 @@
+area. The treatment effect in levels for Y may be difficult to interpret, since a change in employment
+of 1,000 means something very different in New York City versus a small rural town. However, if X
+is the area’s population, then Ỹ is the employment-to-population ratio, which may be more compa-
+rable across places, and is already in percentage (i.e. per capita) units. We note that the ATE for
+Ỹ is a scale-invariant, point-identified parameter of the form θ “ EP rgpY p1q, Y p0q, Xqs, and thus
+escapes the trilemma in Proposition 2 by avoiding property (a).25 The viability of this approach, of
+course, depends on having a variable X such that the normalized outcome Ỹ is of economic inter-
+est. We suspect that in many contexts, reasonable options will be available, including pre-treatment
+observations of the outcome (assuming these are positive), or the predicted control outcome given
+some observable characteristics (i.e., X “ ErY p0q | W s, for observable characteristics W ).
+       A second example is to use Ỹ “ FY ˚ pY q, where FY ˚ is the cumulative distribution function
+(CDF) of some reference random variable Y ˚ , as suggested in Delius and Sterck (2020). The trans-
+formed outcome Ỹ then corresponds to the rank (i.e. percentile) of an individual in the reference
+distribution, and the ATE for Ỹ can be interpreted as the average change in rank caused by the
+treatment. The ATE for Ỹ is unit-invariant so long as Y and Y ˚ and measured in the same units.
+Outcomes of this form have become increasingly popular in the literature on intergenerational mo-
+bility, where Ỹ corresponds to a child’s rank in the national income distribution. This approach has
+been found to yield more stable estimates than approaches using logpc ` Y q, which Chetty et al.
+(2014) show are sensitive to the choice of c.26
+       Finally, the researcher might report treatment effects on transformed outcomes of the form
+1rY ě ys for different values of y. For example, the researcher might report the impact of the
+treatment on the probability that an individual earns at least $50,000, $60,000, etc., and interpret
+it as the treatment effect on the probability of obtaining a “well-paying job.” 27 Such treatment
+effects have interpretable units as percentage points (i.e. changes in probabilities). We note that
+treatment effects for outcomes of this form combine the effect of the treatment along the intensive
+and extensive margin, since for example, a worker who has Y p1q ą $50, 000 ą Y p0q could either not
+work under control (Y p0q “ 0) or work under control but have earnings below $50,000.
+
+4.2      When the goal is to capture decreasing returns
+We next consider the case where the researcher wants to capture some form of decreasing marginal
+utility over the outcome. For example, when Y is strictly positively valued, the ATE in logs corre-
+sponds to the change in utility from implementing the treatment for a utilitarian social planner with
+log utility over the outcome, U “ ErlogpY qs. Intuitively, this social welfare function captures the
+fact that the planner values a percentage point of change in the outcome equally for all individuals,
+regardless of their initial level of the outcome.
+  25
+      It is scale-invariant in the sense that gpy1 , y0 , xq “ gpay1 , ay0 , axq.
+  26
+      Similar to the discussion in Footnote 21, the treatment effect in ranks cannot be converted back to obtain the
+ATE in levels without additional assumptions.
+   27
+      The researcher could also report the implied CDF of Y p1q and Y p0q, from which one can infer the treatment
+effect on outcomes of this form for all y.
+
+
+
+                                                        19
+

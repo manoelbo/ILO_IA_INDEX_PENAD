@@ -1,0 +1,58 @@
+much less marked differences in employment growth across AI exposure quintiles.15
+
+
+4.2      Fact 2: Though overall employment continues to grow, employment growth
+         for young workers has been stagnant
+
+Overall employment in the ADP data remains robust, coinciding with a low national unemployment
+
+rate in the post-pandemic period. However, Figure A4 suggests some leveling off in employment
+
+growth for young workers relative to other age groups, consistent with recent discussion of a wors-
+
+ening job market for entry-level workers (Chen, 2025; Federal Reserve Bank of New York, 2025).
+
+       Figure A5 offers insight into how these trends relate to AI exposure. For each age group,
+
+employment growth from late 2022 to September 2025 was 5-13% for the lowest three AI exposure
+
+quintiles, with no clear ordering in employment growth by age. In contrast, for the highest two
+
+exposure quintiles employment for 22-25 year olds declined by 6% between late 2022 and September
+
+2025, while employment for workers aged 35-49 grew by over 8%. These results show that declining
+
+employment in AI-exposed jobs is driving tepid overall emplyoment growth for workers between
+
+the ages of 22 and 25.
+
+       While these findings suggest divergent employment outcomes by AI exposure for young workers,
+
+we caution the trends observed in these first two facts could be driven by other changes in the US
+
+economy. Our subsequent facts evaluate the robustness of the results to alternative analyses.
+
+
+4.3      Fact 3: Entry-level employment has declined in applications of AI that
+         automate work, with muted changes for augmentation
+
+AI exposure can either complement or substitute for labor. These may have very different impli-
+
+cations for the labor market (Brynjolfsson, 2022).
+
+       To assess how employment patterns differ based on the complementarity or substitutability of
+
+AI with labor, we use data on generative AI usage from the Anthropic Economic Index (Handa
+
+et al., 2025). The Index provides an estimate of the share of queries that pertain to each occupation.
+
+In addition, for each task it reports estimates of the share of queries pertaining to that task that
+
+are “automative,” “augmentative,” or none of the above. We use these classifications as estimates
+  15
+    Figure A3 shows that declining employment for young workers spans a range of occupations. Close to 70% of
+occupations in the first exposure quintile see rising early career employment between October 2022 and September
+2025, compared to less than half of occupations in the fifth quintile.
+
+
+                                                      10

@@ -1,0 +1,41 @@
+                                                                                                         13
+
+3.2.2   Design 2 (Figure B.2)
+
+Radiologists diagnose each patient case in each of the four information environments in the
+second design. For the moment, set aside concerns arising from the feature that the same
+radiologist encounters the same case multiple times. This design will allow us to estimate
+an empirical analog to equation (5). It also has the added benefit of controlling for both
+case-radiologist heterogeneity because, unlike in the previous design, we can conduct within-
+case-radiologist comparisons across treatments.
+Because radiologists repeatedly encounter cases, we need to address the potential for order
+effects due to memory. For example, radiologists might anchor on their previous assessment
+using AI predictions or contextual information and might remember this information the
+next time the same case is encountered. We, therefore, limit radiologists’ ability to remem-
+ber either their diagnosis or previously provided information by using a “washout” interval
+between two encounters of the same case.12 Specifically, radiologists complete the experi-
+ment in four sessions that are separated by at least two weeks. Each session is similar to the
+first design: radiologists diagnose fifteen cases in each of the four information environments
+with no case repeated within a session. Across sessions, the information environment under
+which a given case is diagnosed is permuted. Thus, by the end of the fourth session, each of
+the sixty cases is diagnosed exactly once in each information environment. Our results are
+consistent with the washout being effective – radiologists’ predictions do not move towards
+the AI prediction if it was provided in a prior session but do if it is provided in the current
+session (see figure C.28).
+
+
+3.2.3   Design 3 (Figure B.3)
+
+In the third design, we address residual concerns about the order effects of radiologists
+diagnosing cases with AI before those without AI–whether due to anchoring, memory, or
+experimenter demand–by having participants diagnose fifty cases, first without and then
+with AI assistance. Within each block, clinical history is randomly provided in either the
+first or second half of images.
+This design also allows us to conduct within case-radiologist comparisons. The potential
+disadvantage of this design is that we cannot distinguish order effects from the effect of
+providing AI. This issue is unavoidable given the guiding principle that participants receive
+weakly more information about a case during a repeat encounter. However, we can test for
+  12
+    This principle has been used in computer science (Seah et al., 2021; Conant et al., 2019; Pacilè et al.,
+2020).
+

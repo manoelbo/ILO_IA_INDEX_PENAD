@@ -1,0 +1,11 @@
+panel_family_group,outcome,ddd_estimate_se,nominal_p_value,bh_adjusted_p_value,group_pretrend,ddd_pretrend,group_mde_80_power,n_and_cbo_support
+Contrastes DDD · Família A (100) · Homens,"Admissões (PPML, nível)","0,0116 (0,0466)",0.8029528062138955,0.9067913075389056,fail,fail,0.0764870308695096,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Homens,"Desligamentos (PPML, nível)","0,0332 (0,0390)",0.3950905223468139,0.5810154740394323,fail,fail,0.0685200323350449,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Homens,"Fluxo bruto (PPML, nível)","0,0216 (0,0420)",0.6072376367928947,0.741780137977147,fail,fail,0.0655077328044553,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Homens,Salário real de admissão (log),"0,0022 (0,0100)",0.8238281563548353,0.9067913075389056,fail,fail,0.0342169093607555,N=15.867; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Homens,Saldo líquido (asinh),"0,7989 (0,2145)",0.0002296423388941,0.0025515815432678,fail,fail,0.9648696024032803,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Mulheres,"Admissões (PPML, nível)","−0,0116 (0,0466)",0.8029528053786466,0.9067913075389056,fail,fail,0.1302377908272116,N=15.926; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Mulheres,"Desligamentos (PPML, nível)","−0,0332 (0,0390)",0.3950905202636909,0.5810154740394323,fail,fail,0.1042873407377009,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Mulheres,"Fluxo bruto (PPML, nível)","−0,0216 (0,0420)",0.6072376351533375,0.741780137977147,fail,fail,0.114246363800598,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Mulheres,Salário real de admissão (log),"−0,0022 (0,0100)",0.8238281563548353,0.9067913075389056,fail,fail,0.03294636069204,N=15.418; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Mulheres,Saldo líquido (asinh),"−0,7989 (0,2145)",0.0002296423388941,0.0025515815432678,fail,fail,0.8471791420308337,N=15.935; CBOs 75/266; adequate

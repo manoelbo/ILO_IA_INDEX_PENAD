@@ -1,0 +1,51 @@
+Combining Human Expertise with Artificial Intelligence:
+       Experimental Evidence from Radiology∗
+
+         Nikhil Agarwal, Alex Moehring, Pranav Rajpurkar, Tobias Salz†
+
+                                           June 30, 2023
+                                               Abstract
+
+          While Artificial Intelligence (AI) algorithms have achieved performance levels com-
+       parable to human experts on various predictive tasks, human experts can still access
+       valuable contextual information not yet incorporated into AI predictions. Humans as-
+       sisted by AI predictions could outperform both human-alone or AI-alone. We conduct
+       an experiment with professional radiologists that varies the availability of AI assistance
+       and contextual information to study the effectiveness of human-AI collaboration and
+       to investigate how to optimize it. Our findings reveal that (i) providing AI predictions
+       does not uniformly increase diagnostic quality, and (ii) providing contextual informa-
+       tion does increase quality. Radiologists do not fully capitalize on the potential gains
+       from AI assistance because of large deviations from the benchmark Bayesian model
+       with correct belief updating. The observed errors in belief updating can be explained
+       by radiologists’ partially underweighting the AI’s information relative to their own and
+       not accounting for the correlation between their own information and AI predictions.
+       In light of these biases, we design a collaborative system between radiologists and AI.
+       Our results demonstrate that, unless the documented mistakes can be corrected, the
+       optimal solution involves assigning cases either to humans or to AI, but rarely to a
+       human assisted by AI.
+
+JEL: C50, C90, D83, D47
+Keywords: Artificial Intelligence, Belief Updating, Radiology
+   ∗
+     We are grateful to Stanford University Hospital for facilitating data access. The authors acknowledge
+support from the Alfred P. Sloan Foundation (2022-17182), JPAL Healthcare Delivery Initiative, and MIT
+SHASS. The experiment was pre-registered on the AEA registry, number AEARCTR-0009620. The preanal-
+ysis plans are available at SSR Registration 9620 and SSR registration 8799.
+   †
+     Agarwal: Department of Economics, MIT and NBER, email: agarwaln@mit.edu. Moehring: MIT Sloan
+School of Management, email: moehring@mit.edu. Rajpurkar: Department of Biomedical Informatics, Har-
+vard Medical School, email: pranav_rajpurkar@hms.harvard.edu. Salz: Department of Economics, MIT and
+NBER, email: tsalz@mit.edu. The project benefitted from collaboration with several radiologists, including
+Drs. Matthew Lungren, Curtis Langlotz, and Anuj Pareek of Stanford, Drs. Etan Dayan and Adam Jacobi
+of Mt. Sinai Hospital, Steven Truong of VinBrain and several radiologists at VINMEC, and teleradiologists
+at USARAD, Vesta Teleradiology, and Advanced Telemed. We thank Daron Acemoglu, David Autor, David
+Chan, Glenn Ellison, Amy Finkelstein, Drew Fudenberg, Paul Joskow, Whitney Newey, Pietro Ortoleva,
+Paul Oyer, Ariel Pakes, Alex Rees-Jones, Frank Schilbach, Chad Syverson, and Alex Wolitzky for helpful
+conversations, comments and suggestions. Oishi Banerjee, Andrew Komo, Manasi Kutwal, Angelo Marino
+and Jett Pettus provided invaluable research assistance.
+
+
+
+
+                                                    1
+

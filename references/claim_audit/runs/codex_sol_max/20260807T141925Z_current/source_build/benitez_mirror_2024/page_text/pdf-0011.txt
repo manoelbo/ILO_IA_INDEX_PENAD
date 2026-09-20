@@ -1,0 +1,22 @@
+       Figure 1: AI-Generated Index of Occupational Exposure to AI (GENOE) over Time
+
+
+
+
+Source: Authors’ calculations using data from O*NET and surveys conducted with GPT-4o through OpenAI’s API.
+Note: This figure displays the GENOE for the next one, five, and 10 years. The index measures the likelihood that
+occupations will be displaced by AI within each time horizon.
+
+
+    Additionally, we analyze occupational exposure among the 23 major occupational groups. As
+depicted in Table 1, the most exposed groups are office and administrative support, production,
+and sales and related occupations. This result aligns with current trends in AI and machine learn-
+ing, which have significantly improved the ability to automate tasks involving data entry, inven-
+tory management, and transaction processing. These roles often involve structured, predictable
+environments that are ideal for AI applications.
+
+
+
+
+                                                         7
+

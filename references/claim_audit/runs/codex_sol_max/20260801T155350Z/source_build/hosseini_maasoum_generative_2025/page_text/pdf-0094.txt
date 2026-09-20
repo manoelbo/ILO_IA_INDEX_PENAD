@@ -1,0 +1,40 @@
+A.17      Difference-in-Differences Estimates by Seniority
+To place the descriptive patterns documented in Section 5.2 in a more formal framework, we estimate a
+difference-in-differences (DiD) specification, comparing employment in adopting and non-adopting firms.
+Specifically, we estimate the following specification separately for junior and senior workers:
+
+                                            2025Q1
+                log(Employmentit ) = α +      ∑       β j 1{t = j} × Adopti + δt + Adopti + ε it ,        (34)
+                                           j=2015Q2
+
+
+where the dependent variable log(Employmentit ) denotes the log employment of junior (or senior) workers
+at firm i in quarter t.37 The term 1{t = j} is an indicator function that equals one if t = j and zero oth-
+erwise, so that the coefficients β j capture the differential evolution of employment for adopters relative to
+non-adopters in each period j. The variable Adopti is a dummy equal to one for firms that adopt GenAI.38
+Time fixed effects δt absorb aggregate shocks common to all firms, while Adopti controls for time-invariant
+differences between adopters and non-adopters. The error term ε it captures unobserved idiosyncratic de-
+terminants of employment.
+
+    Figure A.21 reports the estimated coefficients β j . For junior workers, the coefficients are flat and in-
+distinguishable from zero through 2022Q4, consistent with parallel pre-trends. Starting in 2023Q1, they
+turn sharply negative, indicating that junior employment in adopting firms fell by about 9 percent rela-
+tive to controls six quarters after the diffusion of GenAI. By contrast, coefficients for senior workers show
+a persistent upward trajectory throughout the sample, suggesting that adopting firms expanded senior
+employment more strongly than non-adopters over the last decade.
+
+
+
+
+  37 For computational efficiency we aggregate our panel data to quarterly frequency in all analyses.
+  38 Note that Adopt
+                      i is time-invariant: a firm is defined as an adopter if it posted at least one GenAI
+integrator vacancy at any point during the sample (see Section 4.2 for more details). In Section 5.3, we relax
+this definition by exploiting variation in the timing of adoption across firms using a staggered event-study
+design.
+
+
+
+
+                                                      A.49
+

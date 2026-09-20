@@ -1,0 +1,50 @@
+on the event study type of aggregation. Third, we make use of simultaneous inference procedures that
+explicitly account for potential multiple-testing problems; Sun and Abraham (2020) focuses on pointwise
+inference. On the other hand, we do not have any results highlighting the pitfalls associated with using
+TWFE specifications with leads and lags of treatment indicators to conduct causal inference; these are
+unique to Sun and Abraham (2020).
+    We also note that Athey and Imbens (2018) considers a staggered treatment adoption setup similar
+to ours. However, the starting point of Athey and Imbens (2018) is an assumption that the treatment
+adoption date is fully randomized which is stronger than our parallel trends assumptions. We also note
+that Athey and Imbens (2018) abstracts away from the important role played by covariates in the DiD
+analysis and does not consider aggregation schemes to summarize treatment effect heterogeneity like
+we do. On the other hand, we stress that the main focus of their paper is on providing design-based
+inference procedures for staggered DiD setups with random treatment dates. Their design-based inference
+procedures complement our sampling-based inference procedures.
+
+    Organization of the paper: The remainder of this article is organized as follows. Section 2 presents
+our main identification results. We discuss our different aggregation schemes in Section 3. Estimation
+and inference procedures for the treatment effects of interest are presented in Section 4. We revisit the
+effect of minimum wage on employment in Section 5. Section 6 concludes. Proofs as well as additional
+methodological results are reported in the Appendix. In the Supplementary Appendix, we present proofs
+for the results when only repeated cross-sections data is available, provide additional details about the
+empirical application, and present a small scale Monte Carlo simulation to illustrate the finite sample
+properties of our proposed estimators.2
+
+
+2       Identification
+2.1     Setup
+We first introduce the notation we use throughout the article. We consider the case with T periods and
+denote a particular time period by t where t = 1, . . . , T . In a canonical DiD setup, T = 2 and no one
+is treated in period t = 1. Let Di,t be a binary variable equal to one if unit i is treated in period t and
+equal to zero otherwise. We make the following assumption about the treatment process:
+
+Assumption 1 (Irreversibility of Treatment). D1 = 0 almost surely (a.s.). For t = 2, . . . , T ,
+
+                                          Dt−1 = 1 implies that Dt = 1 a.s..
+
+    Assumption 1 states that no one is treated at time t = 1, and that once a unit becomes treated,
+that unit will remain treated in the next period.3 This assumption is also called staggered treatment
+
+
+    2
+     Supplementary Appendix is available at https://pedrohcgs.github.io/files/Callaway_SantAnna_2020_supp.pdf.
+    3
+     In applications, it can be the case that some units are already treated by the first time period. In our case, we would
+drop these units; this is analogous to the case with two time periods. The reason to drop these units is that untreated
+potential outcomes are never observed for this group which will imply that treatment effects are not identified for this group
+nor are they useful as a comparison group under a parallel trends assumption.
+
+
+                                                              5
+

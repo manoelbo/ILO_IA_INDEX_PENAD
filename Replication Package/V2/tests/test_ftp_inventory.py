@@ -7,7 +7,7 @@ import pytest
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "ingest" / "ftp_inventory.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "ingest" / "ftp_inventory.py"
 
 
 def load_inventory_module():

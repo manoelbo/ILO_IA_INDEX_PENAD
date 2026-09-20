@@ -1,0 +1,21 @@
+              the automation share is essentially unrelated to the human levels of education
+              required to write the prompt (Appendix Figure A.1).2 On both Claude.ai and
+              1P API, tasks across education levels show automation patterns in roughly
+              equal shares.
+
+              In what contexts do users defer more to Claude? Claude.ai users give the AI
+              slightly more autonomy when working on more complex tasks. In contrast, API
+              usage shows uniformly lower autonomy at all levels of complexity.
+
+
+
+
+Figure 4.2: AI autonomy vs. human education.
+The plot shows a binned scatterplot of the bivariate relationship between AI autonomy and human education required, all measured at
+the O*NET task level. The dashed lines show the fit from a linear regression.
+
+
+
+
+The Anthropic Economic Index Report                                                                                              40
+

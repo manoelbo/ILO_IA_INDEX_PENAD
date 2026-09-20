@@ -1,0 +1,51 @@
+to distinguish between AI adopters and non-adopters. Table 1 reports that firms adopting
+AI are larger on average, invest more per employee, are more innovative and are more
+likely use strategic business monitoring systems. They also tend to have less problems
+with access to finance, since they are more likely to rely on alternative sources of financing,
+such as equity or bonds, they are more likely to be publicly listed, and they are less likely
+to be finance constrained.
+
+                                      Table 1: Descriptive statistics
+
+                                                              AI    Non-AI              All firms
+                                                             Mean    Mean    Obs      St. Dev.    p10    p90
+
+ Productivity     Labor productivity (log)                   12.1    11.9    59,208     1.10     10.6    13.2
+ Age              Young (less than 10 years)                 0.06    0.08    60,868     0.26
+ Size             SMEs                                       0.29    0.52    60,868     0.50
+                  Size (log of total assets)                 17.6    16.4    47,414     2.10     13.8    19.3
+ Investment       Investment/employee (log)                  8.80    8.30    53,058     1.70      6.20   10.5
+                  Fixed assets growth                        0.13    0.13    46,033     0.75     -0.18   0.38
+ Access to financeNewly issued bonds/equity                  0.04    0.01    60,868     0.14
+                  Publicly listed                            0.04    0.01    60,567     0.14
+                  Financial leverage (debt/total assets)     0.23    0.20    37,886     0.24      0      0.51
+                  Financial constraints                      0.05    0.06    58,013     0.23
+ Innovation       Innovator                                  0.49    0.37    59,448     0.49
+                  Innovation new to the country              0.06    0.03    59,448     0.20
+                  Innovation new to the global market        0.11    0.06    59,448     0.26
+ Management       Business monitoring system                 0.71    0.46    59,453     0.50
+                  Profitability (EBITA/total assets)         0.13    0.11    41,863     0.15       0     0.26
+                  Profitability (Net income/total assets)    0.07    0.06    41,678     0.14     -0.04   0.20
+
+
+Note: Labor productivity is calculated as turnover per employee. Innovators are companies which
+developed or introduced new products, processes or services that can be new to the company, the
+country or the global market. Business monitoring systems describe firms using a formal strategic
+business monitoring system that compares the firm’s current performance against a series of strategic
+key performance indicators (KPIs). Source: EIBIS 2019-2024.
+
+
+
+    The heterogeneity in AI development and adoption between the US and EU is at the
+core of our empirical approach. By leveraging detailed survey and financial data, our
+analysis aims to capture the exogenous component of AI adoption for EU firms, using
+data on similar firms in the US. This approach helps mitigate endogeneity bias in the
+subsequent regression analysis, which may arise if AI adoption is correlated with unob-
+served firm-specific factors, such as managerial quality, innovation culture or strategic
+priorities. By using AI adoption patterns in the US – where firms operate under different
+institutional and policy environments – as a benchmark, we isolate variation in AI uptake
+
+
+
+                                                        10
+

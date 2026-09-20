@@ -1,0 +1,35 @@
+purpose of the study is to gauge the magnitude of these biases. Naturally, the log-linear
+model cannot be estimated in these conditions because the dependent variable equals zero
+for some observations. Following what is the usual practice in these circumstances, the
+truncated OLS estimation of the log-linear model was performed dropping the observa-
+tions for which the dependent variable equals zero. Notice that the observations discarded
+with this procedure are exactly the same that are discarded by OLS (y > 0.5) in the first
+set of experiments. Therefore, this estimator is also denoted OLS (y > 0.5).
+  The results of the two sets of experiments are summarized in Table 1, which displays the
+biases and standard errors of the diﬀerent estimators of β obtained with 10, 000 replicas
+of the simulation procedure described above. Only results for β 1 and β 2 are presented as
+these are generally the parameters of interest.
+  As expected, OLS only performs well in Case 3. In all other cases this estimator is clearly
+inadequate because, despite its low dispersion, it is often badly biased. Moreover, the sign
+and magnitude of the bias vary considerably. Therefore, even when the dependent variable
+is strictly positive, estimation of constant elasticity models using the log-linearized model
+cannot generally be recommended. As for the modifications of the log-linearized model
+designed to deal with the zeros of the dependent variable, ET-Tobit, OLS (y + 1) and OLS
+(y > 0.5), their performance is also very disappointing. These results clearly emphasize
+the need to use adequate methods to deal with the zeros in the data and raise serious
+doubts about the validity of the results obtained using the traditional estimators based on
+the log-linear model. Overall, except under very special circumstances, estimation based
+on the log-linear model cannot be recommended.
+  One remarkable result of this set of experiments is the extremely poor performance of
+the NLS estimator. Indeed, when the heteroskedasticity is more severe (cases 3 and 4)
+this estimator, despite being consistent, leads to very poor results because of its erratic
+behavior.18 Therefore, it is clear that the loss of eﬃciency caused by some of the forms
+of heteroskedasticity considered in these experiments is strong enough to render this
+estimator useless in practice.
+ 18
+      Manning and Mullahy (2001) report similar results.
+
+
+
+                                                   19
+

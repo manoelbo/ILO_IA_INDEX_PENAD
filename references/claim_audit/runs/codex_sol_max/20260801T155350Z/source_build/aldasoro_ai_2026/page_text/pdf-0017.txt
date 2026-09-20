@@ -1,0 +1,40 @@
+that is plausibly exogenous to the EU context. This cross-country comparison allows us
+to construct an instrumental variable or control function that reflects external drivers of
+AI adoption, thereby improving the causal interpretation of our estimates.
+
+    Last but not least, we explore the link between AI adoption and productivity in a
+stylized distributional exercise. Figure 5 compares the distribution of firm size, average
+wage per employee and labor productivity for firms that adopted AI and those that
+did not. The distributions for firms using AI are shifted to the right. Firms that have
+adopted big data and AI technologies are, on average, larger (in line with descriptive
+evidence discussed above), pay higher wages and have slightly higher productivity. This
+provides preliminary evidence that firms that use AI tend to perform better than other
+companies.
+
+Figure 5: Distributions of firm characteristics for firms using AI (dashed) and firms not
+using AI (solid line)
+
+
+
+
+        (a) Firm size.                   (b) Average wage.               (c) labor productivity.
+
+Note: The graphs show the distributions net of country and sector fixed effects. Firm size is measured
+using the logarithm of total assets. EU firms only. Source: EIBIS 2019-2024.
+
+
+
+
+4     Empirical methodology
+
+We estimate the causal impact of AI adoption on firm-level productivity with a two-stage
+empirical strategy using EIBIS data. Our primary specification is a linear probability
+model, which allows for a straightforward interpretation of the marginal effects of AI
+adoption on the likelihood of observing productivity improvements. The identification
+challenge is that AI adoption is potentially endogenous, i.e. firms that are more produc-
+tive or better managed may be more likely to adopt AI technologies, leading to biased
+
+
+
+                                                 11
+

@@ -1,0 +1,51 @@
+Like VWATT, VWCT is also an average of the difference in untreated potential outcome trends
+
+between pair of groups (and over different time periods) using the weights from the decomposition
+
+theorem. VWCT is new, it defines internal validity for the DD design with timing, and it is weaker
+
+than the more commonly assumed equal counterfactual trends across groups.
+
+        The last term in (12) equals a weighted sum of the change in treatment effects within each
+
+unit’s post-period:
+
+          Δ𝐴𝐴𝐴𝐴𝐴𝐴 ≡ � � 𝜎𝜎𝑘𝑘ℓ (1 − 𝜇𝜇𝑘𝑘ℓ )�𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)� − 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)��               (12𝑐𝑐)
+                      𝑘𝑘≠𝑈𝑈 ℓ>𝑘𝑘
+
+Because already-treated groups sometimes act as controls, the 2x2 estimators in equation (11c)
+
+subtract average changes in their untreated outcomes and their treatment effects. Equation (12c)
+
+defines the bias that comes from estimating a single-coefficient DD model when treatment effects
+
+vary over time. Note that this does not mean that the DD research design is invalid. In this case
+
+other specifications, such as an event-study model (Jacobson, LaLonde, and Sullivan 1993) or
+
+“stacked DD” (Abraham and Sun 2018, Deshpande and Li 2017, Fadlon and Nielsen 2015), or
+
+other estimators such as reweighting strategies (Callaway and Sant'Anna 2018, de Chaisemartin
+
+and D’HaultfŒuille 2018b) may be more appropriate.
+
+    Recent DD research comes to related conclusions about DD models with timing, but does not
+
+describe the full estimator as in equation (12). Abraham and Sun (2018), Borusyak and Jaravel
+
+(2017), and de Chaisemartin and D’HaultfŒuille (2018b) begin by imposing pairwise common
+
+trends (VWCT=0), and then incorporating Δ𝐴𝐴𝐴𝐴𝐴𝐴 into the DD estimand. 15 The structure of the
+
+decomposition theorem, however, suggests that we should think of Δ𝐴𝐴𝐴𝐴𝐴𝐴 as a source of bias
+
+
+15
+   Abraham and Sun (2018, p 6) assume “parallel trends in baseline outcome”; Borusyak and Jaravel (2017, p 10)
+assume “no pre-trends”; and de Chaisemartin and D’HaultfŒuille (2018b, p 6) assume “common trends” in
+counterfactual outcomes. Two of these papers analyze common specifications that I do not consider. de Chaisemartin
+and D’HaultfŒuille (2018b) discuss designs where treatment evolves continuously within group-by-time cells and
+first-difference specifications. Abraham and Sun (2018) analyze the estimand for semi-parametric event-study models.
+
+                                                        12
+

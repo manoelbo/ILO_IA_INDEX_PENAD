@@ -1,0 +1,22 @@
+Figure 4.4: Effective AI coverage vs. Task coverage
+The plot shows a scatter of the bivariate relationship between task effective AI coverage (%) and task coverage, measured at the
+occupation level. Effective AI coverage tracks the share of a worker’s time-weighted duties that AI could successfully perform, based
+on Claude.ai data. Task coverage is the share of tasks that appear in Claude.ai usage. The dashed line shows where Effective AI
+coverage share equals task coverage.
+
+
+
+              Zooming in, several occupations show large differences in effective AI
+              coverage compared to task coverage. For example, data entry workers have
+              one of the highest effective AI coverage. This is because although only two of
+              their nine tasks are covered, their largest task—reading and entering data from
+              source documents—has high success rates with Claude. AI excels at what they
+              spend most of their time doing.
+
+
+              Medical transcriptionists and radiologists also move up because their covered
+              tasks happen to be their most time-intensive and highest-frequency work.
+              For radiologists, their top two tasks— interpreting diagnostic images and
+
+The Anthropic Economic Index Report                                                                                                 44
+

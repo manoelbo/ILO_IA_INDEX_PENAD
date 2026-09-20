@@ -1,0 +1,25 @@
+Figure 1.7: AUI and share of workers in Computer & Mathematical occupations in each US State
+This figure shows that the share of workers in Computer & Mathematical occupations across US states is highly correlated with the
+Anthropic AI Usage Index (AUI). This is consistent with the view that overall Claude usage patterns—and associated capabilities—are
+shaping regional adoption patterns within the US. This pattern holds more generally when formally calculating the KL divergence
+between each state’s workforce distribution and global Claude.ai usage shares by SOC major group.
+
+
+
+              While we would intuitively expect Claude usage to be higher in states with
+              more tech workers, this pattern holds more generally: Usage per capita is
+              higher in states with more workers in occupations where Claude usage
+              is overrepresented as compared to the US workforce (e.g., Arts, Design,
+              Entertainment, Sports and Media) or with relatively fewer workers in
+              occupations where Claude usage is low as compared to the national economy
+              (e.g., Transportation and Material Moving). This can be seen by calculating
+              the Kullback–Leibler (KL) divergence between the composition of each state’s
+              workforce and the global composition of Claude usage. States with a lower
+              KL divergence—and thus with a workforce that looks more similar to Claude
+              usage patterns—tend to have higher usage per capita.
+
+
+
+
+The Anthropic Economic Index Report                                                                                               14
+

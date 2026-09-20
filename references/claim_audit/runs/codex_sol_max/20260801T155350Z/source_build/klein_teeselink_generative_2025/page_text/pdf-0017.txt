@@ -1,0 +1,72 @@
+                         Figure 3: Effect of LLM exposure on firm-level compensation
+                                     (a) Level                                                              (b) Log
+
+                        300
+
+
+
+
+                                                                                         0.002
+                        200
+
+
+
+
+                                                                                         0.001
+          Coefficient
+
+
+
+
+                                                                           Coefficient
+                        100
+
+
+
+
+                                                                                         0.000
+                        0
+                        −100
+
+
+
+
+                                                                                         −0.001
+                               −10   0              10          20   30                           −10   0              10          20   30
+
+                                         Periods to treatment                                               Periods to treatment
+
+
+
+
+Notes: This figure plots event study estimates of the effect of LLM exposure on average compensa-
+tion within UK firms. Compensation is defined as annual base salary plus bonuses. Panel A shows
+compensation in levels, Panel B in logs. Coefficients are estimated from Equation (3) and are
+shown relative to October 2022, the final pre-treatment month. All regressions include firm fixed
+effects and industry-by-period fixed effects. Standard errors are clustered at the firm level. The
+vertical line marks November 2022, when ChatGPT was publicly released. Shaded areas denote
+95% confidence intervals.
+
+
+
+    Figure 4 presents event study estimates for the probability that exposed vs.
+less exposed firms post any job vacancy in a given month. The results show a
+change in hiring patterns following November 2022. Prior to this date, firms with
+different exposure levels did not have statistically significantly different trends in
+job postings.8 Following the release of ChatGPT, however, we observe that a one
+standard deviation increase in LLM exposure reduces firms’ likelihood of posting new
+jobs by 1.0 percentage point (p < 0.001, see Table A1). This effect emerges gradually
+and becomes statistically significant after approximately 10 months, mirroring the
+timeline of employment stock adjustments.
+    Next, we decompose the aggregate hiring reduction by estimating occupation-
+specific effects across job categories. We estimate Equation (4) separately for 50
+distinct occupational categories, with the outcome variable indicating whether a
+   8
+     Although all pre-trend estimates are statistically insignificant, the point estimates exhibit a
+slight downward drift. If this reflects a differential pre-trend rather than sampling variation, the
+post-treatment estimates may overstate the true effect.
+
+
+
+                                                                          17
+

@@ -1,0 +1,43 @@
+AI-adopting firms have so far benefited from higher wages. The productivity benefits
+are unevenly distributed, with medium and larger firms experiencing significantly higher
+productivity gains than their smaller peers. The stratification highlights concerns that
+AI could exacerbate income gaps (Cazzaniga et al., 2024; Cornelli, Frost, and Mishra,
+2023), particularly given Europe’s SME-dominated industrial structure.
+
+   The findings carry significant implications for European policy makers seeking to
+harness the productivity-enhancing potential of AI while ensuring inclusive and balanced
+growth. Given the disruptive nature of AI and the higher returns associated with AI
+adoption for larger companies, a balanced policy approach should focus on creating an
+environment suitable for small and innovative firms’ growth, accompanied by targeted
+incentives to fully exploit the benefits of AI adoption. In this context, developed financial
+markets play a crucial role.
+
+    Our results also highlight the importance of complementary investments in intan-
+gible assets – particularly software and data or workforce training – in realizing AI’s
+productivity dividends. To maximize the returns from AI deployment, public policy
+must go beyond hardware subsidies and incentivize firm-level investment in integration,
+workflow redesign, and continuous learning. Workforce re-skilling programs should prior-
+itize “fusion skills”, such as prompt engineering, data stewardship and human-in-the-loop
+decision-making that enhance human-AI complementarity.
+
+    The structure of the paper is as follows. Section 2 reviews the related literature on AI
+adoption, productivity and labor market effects. Section 3 describes the data and presents
+stylized facts that motivate the empirical strategy. Section 4 outlines our identification
+approach and empirical methodology. Section 5 reports the main results on productivity
+and employment, along with several robustness checks. Section 6 concludes by discussing
+policy implications and avenues for future research.
+
+
+
+2    Related literature
+
+Our study engages with three interconnected strands of research on AI and its economic
+implications. First, the literature on firm-level technology adoption provides critical
+frameworks for understanding AI diffusion patterns. Seminal studies by Comin and
+Hobijn (2010) and Comin and Mestieri (2018) establish that technological innovations
+
+
+
+
+                                             3
+

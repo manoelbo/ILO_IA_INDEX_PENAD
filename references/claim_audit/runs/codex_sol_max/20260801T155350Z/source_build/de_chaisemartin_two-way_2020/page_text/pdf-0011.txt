@@ -1,0 +1,62 @@
+   e is the standard deviation of the conditional ATEs, and σ(w) is the standard deviation of
+σ(∆)
+the w-weights,12 across the treated (g, t) cells. Let n = #{(g, t) : Dg,t = 1} denote the number of
+treated cells. For every i ∈ {1, ..., n}, let w(i) denote the ith largest of the weights of the treated
+cells: w(1) ≥ w(2) ≥ ... ≥ w(n) , and let N(i) and ∆    e (i) be the number of observations and the
+                                                                                         P
+conditional ATE of the corresponding cell. Then, for any k ∈ {1, ..., n}, let Pk = i≥k N(i) /N1 ,
+      P                                P
+Sk = i≥k (N(i) /N1 )w(i) and Tk = i≥k (N(i) /N1 )w(i)   2
+                                                          .
+
+Corollary 1 Suppose that Assumptions 1-5 hold.
+                                          e compatible with βef e and ∆
+   1. If σ(w) > 0, the minimal value of σ(∆)                          e T R = 0 is
+
+                                                                     |βef e |
+                                                            σf e =            .
+                                                                     σ(w)
+
+   2. If βef e 6= 0 and at least one of the wg,t weights is strictly negative, the minimal value of
+      σ(∆)e compatible with βef e and with ∆e g,t of a different sign than βef e for all (g, t) is
+
+                                                                     |βef e |
+                                                 σf e =                              ,
+                                                          [Ts + Ss2 /(1 − Ps )]1/2
+        where s = min{i ∈ {1, ..., n} : w(i) < −S(i) /(1 − P(i) )}.
+
+
+σ f e and σ f e can be estimated simply by replacing βef e by βbf e . An estimator of σ f e can be used
+to assess the robustness of βbf e to treatment effect heterogeneity across groups and periods. If
+σ f e is close to 0, βef e and ∆
+                               e T R can be of opposite signs even under a small and plausible amount
+of treatment effect heterogeneity. In that case, treatment effect heterogeneity would be a serious
+concern for the validity of βbf e . On the contrary, if σ f e is very large, βef e and ∆
+                                                                                       e T R can only be
+of opposite signs under a very large and implausible amount of treatment effect heterogeneity.
+Then, treatment effect heterogeneity is less of a concern.
+Similarly, if σ f e is close to 0, one may have, say, βef e > 0, while ∆  e g,t ≤ 0 for all (g, t), even if the
+dispersion of the ∆   e g,t s across (g, t) cells is relatively small. Notice that σ is only defined if at
+                                                                                         fe
+least one of the weights is strictly negative: if all the weights are positive, then one cannot have
+that βef e is of a different sign than all the ∆
+                                               e g,t s.
+
+When some of the weights wg,t are negative, βbf e may still be robust to heterogeneous treatment
+effects across groups and periods, provided the assumption below is satisfied.
+                                             h                                                  i
+Assumption 7 (w uncorrelated with ∆)    e E P                   Ng,t
+                                                                     (w g,t − 1)(∆e g,t − e
+                                                                                          ∆ TR
+                                                                                               )  = 0.
+                                                  (g,t):Dg,t =1 N1
+
+
+Corollary 2 If Assumptions 1-5 and 7 hold, then βf e = δ T R .
+  12
+                           P
+       One can show that       (g,t):Dg,t =1 (Ng,t /N1 )wg,t = 1.
+
+
+                                                               11
+

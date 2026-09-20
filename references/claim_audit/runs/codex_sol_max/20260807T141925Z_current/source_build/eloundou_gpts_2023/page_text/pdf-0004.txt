@@ -1,0 +1,50 @@
+                                             WORKING PAPER
+
+
+policymakers to predict and regulate. As with other general-purpose technologies, much of these algorithms’
+potential will emerge across a broad range of economically valuable use cases, including the creation of new
+types of work (Acemoglu and Restrepo, 2018; Autor et al., 2022a). Our research serves to measure what is
+technically feasible now, but necessarily will miss the evolving impact potential of the LLMs over time.
+    The paper is structured as follows: Section 2 reviews relevant prior work, Section 3 discusses methods
+and data collection, Section 4 presents summary statistics and results, Section 5 relates our measurements to
+earlier efforts, Section 6 discusses the results, and Section 7 offers concluding remarks.
+
+
+2     Literature Review
+2.1   The Advancement of Large Language Models
+In recent years, generative AI models have gained significant attention from both the artificial intelligence
+(AI) research community and the general public, due to their ability to tackle a wide array of complex
+language-based tasks. The progress in these models’ abilities has been fueled by multiple factors, including
+increased model parameter count, greater training data volume, and enhanced training configurations (Brown
+et al., 2020; Radford et al., 2019; Hernandez et al., 2021; Kaplan et al., 2020). Broad, state-of-the-art LLMs,
+such as LaMDA (Thoppilan et al., 2022) and GPT-4 (OpenAI, 2023b), excel in diverse applications like
+translation, classification, creative writing, and code generation—capabilities that previously demanded
+specialized, task-specific models developed by expert engineers using domain-specific data.
+     Concurrently, researchers have improved the steerability, reliability, and utility of these models using
+methods like fine-tuning and reinforcement learning with human feedback (Ouyang et al., 2022; Bai et al.,
+2022). These advancements enhance the models’ ability to discern user intent, rendering them more
+user-friendly and practical. Moreover, recent studies reveal the potential of LLMs to program and control
+other digital tools, such as APIs, search engines, and even other generative AI systems (Schick et al., 2023;
+Mialon et al., 2023; Chase, 2022). This enables seamless integration of individual components for better
+utility, performance, and generalization. At their limit, these trends suggest a world where LLMs may be
+capable of executing any task typically performed at a computer.
+     Generative AI models have mostly been deployed as modular specialists, performing specific tasks such as
+generating images from captions or transcribing text from speech. However, we argue that it is essential to view
+LLMs as versatile building blocks for creating additional tools. Developing these tools and integrating them
+into systems will require time and possibly significant reconfiguration of existing processes across various
+industries. Nevertheless, we are already witnessing emerging adoption trends. Despite their limitations,
+LLMs are increasingly being integrated into specialized applications in fields like writing assistance, coding,
+and legal research. These specialized applications then allow businesses and individuals to adopt LLMs into
+their workflows.
+     We emphasize the significance of these complementary technologies, partly because out-of-the-box
+general-purpose LLMs may continue to be unreliable for various tasks due to issues such as factual inaccuracies,
+inherent biases, privacy concerns, and disinformation risks (Abid et al., 2021; Schramowski et al., 2022;
+Goldstein et al., 2023; OpenAI, 2023a). However, specialized workflows—including tooling, software, or
+human-in-the-loop systems—can help address these shortcomings by incorporating domain-specific expertise.
+For example, Casetext offers LLM-based legal research tools that provide lawyers with quicker and more
+accurate legal research results, utilizing embeddings and summarization to counter the risk that GPT-4 could
+provide inaccurate details about a legal case or set of documents. GitHub Copilot is a coding assistant that
+employs LLMs to generate code snippets and auto-complete code, which users can then accept or reject based
+on their expertise. In other words, while it’s true that on its own GPT-4 does not "know what time it is," it’s
+easy enough to give it a watch.
+

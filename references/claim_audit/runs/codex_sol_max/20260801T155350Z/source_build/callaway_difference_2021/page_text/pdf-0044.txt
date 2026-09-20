@@ -1,0 +1,51 @@
+Malani, A., and Reif, J. (2015), “Interpreting pre-trends as anticipation: Impact on estimated treatment effects
+  from tort reform,” Journal of Public Economics, 124, 1–17.
+Mammen, E. (1993), “Bootstrap and wild bootstrap for high dimensional linear models,” The Annals of Statistics,
+  21(1), 255–285.
+Marcus, M., and Sant’Anna, P. H. C. (2020), “The role of parallel trends in event study settings : An application to
+  environmental economics,” Journal of the Association of Environmental and Resource Economists, Forthcoming.
+McCrary, J. (2007), “The effect of court-ordered hiring quotas on the composition and quality of police,” American
+  Economic Review, 97(1), 318–353.
+Meer, J., and West, J. (2016), “Effects of the minimum wage on employment dynamics,” Journal of Human
+  Resources, 51(2), 500–522.
+Montiel Olea, J. L., and Plagborg-Møller, M. (2018), “Simultaneous confidence bands: Theory, implementation,
+  and an application to SVARs,” Journal of Applied Econometrics, pp. 1–64.
+Murphy, S. A. (2003), “Optimal dynamic treatment regimes,” Journal of the Royal Statistical Society Series B,
+  65(2), 331–366.
+Murphy, S. A., Van der Laan, M. J., Robins, J. M., Bierman, K. L., Coie, J. D., Greenberg, M. T., Lochman, J. E.,
+  McMahon, R. J., and Pinderhughes, E. (2001), “Marginal mean models for dynamic regimes,” Journal of the
+  American Statistical Association, 96(456), 1410–1423.
+Neumark, D., and Wascher, W. (2000), “Minimum wages and employment: A case study of the fast-food industry
+  in New Jersey and Pennsylvania: Comment,” American Economic Review, 90(5), 1362–1396.
+Neumark, D., and Wascher, W. L. (2008), Minimum Wages, Cambridge, MA: The MIT Press.
+Newey, W. K. (1994), “The asymptotic variance of semiparametric estimators,” Econometrica, 62(6), 1349–1382.
+Newey, W. K., and McFadden, D. (1994), “Large sample estimation and hypothesis testing,” in Handbook of
+  Econometrics, Vol. 4, Amsterdam: North-Holland: Elsevier, chapter 36, pp. 2111–2245.
+Oreopoulos, P., von Wachter, T., and Heisz, A. (2012), “The short- and long-term career effects of graduating in a
+  recession,” American Economic Journal: Applied Economics, 4(1), 1–29.
+Qin, J., and Zhang, B. (2008), “Empirical-likelihood-based difference-in-differences estimators,” Journal of the
+  Royal Statistical Society. Series B (Methodological), 75(8), 329–349.
+Robins, J. M. (1986), “A new approach to causal inference in mortality studies with a sustained exposure period -
+  Application to control of the healthy worker survivor effect,” Mathematical Modelling, 7, 1393–1512.
+Robins, J. M. (1987), “Addendum to ‘A new approach to causal inference in mortality studies with a sustained
+  exposure period - Application to control of the healthy worker survivor effect’,” Computers & Mathematics with
+  Applications, 14(9-12), 923–945.
+Roth, J. (2020), “Pre-test with caution: Event-study estimates after testing for parallel trends,” Working Paper,
+  pp. 1–84.
+Rubin, D. B. (2007), “The design versus the analysis of observational studies for causal effects: Parallels with the
+  design of randomized trials,” Statistics in Medicine, 26(1), 20–36.
+Rubin, D. B. (2008), “For objective causal inference, design trumps analysis,” Annals of Applied Statistics,
+  2(3), 808–840.
+Sant’Anna, P. H. C., and Song, X. (2019), “Specification tests for the propensity score,” Journal of Econometrics,
+  210, 379–404.
+Sant’Anna, P. H., and Zhao, J. (2020), “Doubly robust difference-in-differences estimators,” Journal of Economet-
+  rics, 219(1), 101–122.
+Sherman, M., and Le Cessie, S. (2007), “A comparison between bootstrap methods and generalized estimating
+  equations for correlated outcomes in generalized linear models,” Communications in Statistics - Simulation and
+  Computation, 26(3), 901–925.
+
+
+
+
+                                                        44
+

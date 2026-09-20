@@ -1,0 +1,69 @@
+                                  Figure E.15: Workplace Effects of Chatbot Initiatives:
+                    Heterogeneity by Strength of Treatment (DiD to Non-Encouraged)
+
+                              (a) Job Creation                                                                       (b) Job Destruction
+
+                                  Encouraged                                                                                 Encouraged
+
+
+
+
+                        Encouraged + Training                                                                      Encouraged + Training
+
+
+
+
+              Encouraged + Enterprise Chatbot                                                            Encouraged + Enterprise Chatbot
+
+
+
+
+    Encouraged + Enterprise Chatbot + Training                                                 Encouraged + Enterprise Chatbot + Training
+
+
+                                                 -.15   -.1   -.05      0     .05   .1   .15                                                -.15   -.1   -.05      0     .05   .1   .15
+
+                                                                 2023       2024                                                                            2023       2024
+
+
+
+
+             (c) Adopter Propensity of Hires                                                    (d) Adopter Propensity of Separations
+
+                                  Encouraged                                                                                 Encouraged
+
+
+
+
+                        Encouraged + Training                                                                      Encouraged + Training
+
+
+
+
+              Encouraged + Enterprise Chatbot                                                            Encouraged + Enterprise Chatbot
+
+
+
+
+    Encouraged + Enterprise Chatbot + Training                                                 Encouraged + Enterprise Chatbot + Training
+
+
+                                                 -.15   -.1   -.05      0     .05   .1   .15                                                -.15   -.1   -.05      0     .05   .1   .15
+
+                                                                 2023       2024                                                                            2023       2024
+
+
+Notes: This figure shows workplace outcomes for workers who report encouraged usage policies relative to those without
+encouragement, indexed to November 2022. Panels (a) and (b) show job creation and destruction rates (measured as
+the share of hires and separations, respectively, in total employment). Panels (c) and (d) show the adopter propensity
+of hires and separations (see Appendix H.1 for details). Estimates are based on the pooled specification in Equation (2),
+with 95% confidence intervals shown as whiskers. Encouraged + Training restricts the treatment group to encouraged
+workers who received employer-provided training; Encouraged + Enterprise Chatbot, to those whose employer deployed an
+enterprise chatbot; and Encouraged + Enterprise Chatbot + Training, to those with both. Sample: All completed 2024
+survey responses linked to registry data.
+
+
+
+
+                                                                                         83
+

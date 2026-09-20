@@ -1,0 +1,17 @@
+{
+  "contracts": 646,
+  "diagnostic_backend_status_divergences": 0,
+  "diagnostic_models": 296,
+  "failed_models": 0,
+  "honest_did_coefficient_rows": 92,
+  "honest_did_covariance_rows": 4232,
+  "model_result_rows": 16852,
+  "packages": {
+    "data.table": "1.17.0",
+    "fixest": "0.14.0",
+    "jsonlite": "2.0.0",
+    "MASS": "7.3.60.2"
+  },
+  "r_version": "4.4.1",
+  "status": "pass"
+}

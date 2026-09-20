@@ -1,0 +1,70 @@
+potential outcomes for all the possible treatment values. For instance Yi,g,t (d) is the counter-
+factual outcome of observation i in cell (g, t) if she receives treatment value d. We also need
+to modify the treatment effect parameters we consider. In lieu of δ T R , we consider the average
+causal response (ACR) on the treated,
+                                                                           !
+                                        1 X
+                          δ ACR = E             Yi,g,t (Dg,t ) − Yi,g,t (0) .
+                                       N1 i,g,t
+
+Similarly, for all (g, t) such that Dg,t 6= 0, we consider, instead of ∆g,t ,
+                                                          Ng,t
+                                                   1      X
+                                      ∆ACR
+                                       g,t =                   [Yi,g,t (Dg,t ) − Yi,g,t (0)] .
+                                                Ng,t Dg,t i=1
+
+Then, similarly to (2), the following decomposition holds:
+                                                               
+                                           X Ng,t Dg,t
+                             δ ACR = E                    ∆ACR
+                                                            g,t
+                                                                .
+                                                     N1
+                                                       (g,t):Dg,t 6=0
+
+                     εg,t
+Let wg,t
+     O
+         =P         Ng,t Dg,t        . Note that if the treatment is binary, wg,t
+                                                                              O
+                                                                                  = wg,t .
+                g,t   N1
+                              εg,t
+
+
+
+Theorem S3 Suppose that Assumptions 1-5 hold and Di,g,t ∈ {0, ..., d}. Then,
+                                                           
+                                  X Ng,t Dg,t
+                       βf e = E                  O
+                                                 wg,t ∆ACR
+                                                        g,t
+                                                            .
+                                            N1
+                                                   (g,t):Dg,t 6=0
+
+
+
+
+Theorem S3 shows that under Assumption 5, when the treatment is not binary βf e identifies a
+weighted sum of the ACRs in all the (g, t) cells that are not untreated. Then, since the proof of
+Corollary 1 does not rely on the nature of the treatment, Corollary 1 directly applies to ordered
+treatments as well, by just replacing wg,t and Ng,t by wg,t
+                                                        O
+                                                            and Ng,t Dg,t , respectively. Corollary 2
+extends as well to this set-up, by simply modifying the no-correlation condition appropriately.
+
+
+3.3     Including covariates
+
+Often times, researchers also include a vector of covariates Xg,t as control variables in their
+regression. In this section, we show that our Theorem 1 can be extended to this case.6 We start
+by redefining Regression 1 in this context.
+  6
+      Theorem 2 can also be extended to regressions with covariates.
+
+
+
+                                                                    7
+

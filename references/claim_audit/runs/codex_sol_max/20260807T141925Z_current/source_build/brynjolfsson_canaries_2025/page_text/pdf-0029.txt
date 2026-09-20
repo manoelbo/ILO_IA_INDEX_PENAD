@@ -1,0 +1,164 @@
+                                   Quintile 2                                           Quintile 3                                           Quintile 4                                           Quintile 5                                           Quintile 2                                           Quintile 3                                             Quintile 4                                           Quintile 5
+
+                             0.1                                                  0.1                                                  0.1                                                  0.1                                                  0.1                                                  0.1                                                    0.1                                                  0.1
+     Coefficient Estimate
+
+
+
+
+                                                          Coefficient Estimate
+
+
+
+
+                                                                                                               Coefficient Estimate
+
+
+
+
+                                                                                                                                                                    Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                         Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                              Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                     Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                          Coefficient Estimate
+                             0.0                                                  0.0                                                  0.0                                                  0.0                                                  0.0                                                  0.0                                                    0.0                                                  0.0
+
+                            −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                   −0.1                                                 −0.1
+
+                            −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                   −0.2                                                 −0.2
+
+                            −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                   −0.3                                                 −0.3
+
+                               2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                               2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025
+                                                Date                                                 Date                                                 Date                                                 Date                                                 Date                                                 Date                                                   Date                                                 Date
+
+
+                                                                                                       (a) Age 22-25                                                                                                                                                                                                       (b) Age 26-30
+                                   Quintile 2                                           Quintile 3                                           Quintile 4                                           Quintile 5                                           Quintile 2                                           Quintile 3                                             Quintile 4                                           Quintile 5
+
+                             0.1                                                  0.1                                                  0.1                                                  0.1                                                  0.1                                                  0.1                                                    0.1                                                  0.1
+     Coefficient Estimate
+
+
+
+
+                                                          Coefficient Estimate
+
+
+
+
+                                                                                                               Coefficient Estimate
+
+
+
+
+                                                                                                                                                                    Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                         Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                              Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                     Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                          Coefficient Estimate
+                             0.0                                                  0.0                                                  0.0                                                  0.0                                                  0.0                                                  0.0                                                    0.0                                                  0.0
+
+                            −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                   −0.1                                                 −0.1
+
+                            −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                   −0.2                                                 −0.2
+
+                            −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                   −0.3                                                 −0.3
+
+                               2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                               2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025
+                                                Date                                                 Date                                                 Date                                                 Date                                                 Date                                                 Date                                                   Date                                                 Date
+
+
+                                                                                                       (c) Age 31-34                                                                                                                                                                                                       (d) Age 35-40
+                                   Quintile 2                                           Quintile 3                                           Quintile 4                                           Quintile 5                                           Quintile 2                                           Quintile 3                                             Quintile 4                                           Quintile 5
+
+                             0.1                                                  0.1                                                  0.1                                                  0.1                                                  0.1                                                  0.1                                                    0.1                                                  0.1
+     Coefficient Estimate
+
+
+
+
+                                                          Coefficient Estimate
+
+
+
+
+                                                                                                               Coefficient Estimate
+
+
+
+
+                                                                                                                                                                    Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                         Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                              Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                     Coefficient Estimate
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                          Coefficient Estimate
+                             0.0                                                  0.0                                                  0.0                                                  0.0                                                  0.0                                                  0.0                                                    0.0                                                  0.0
+
+                            −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                 −0.1                                                   −0.1                                                 −0.1
+29
+
+
+
+
+                            −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                 −0.2                                                   −0.2                                                 −0.2
+
+                            −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                 −0.3                                                   −0.3                                                 −0.3
+
+                               2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025                               2021 2022 2023 2024 2025                             2021 2022 2023 2024 2025
+                                                Date                                                 Date                                                 Date                                                 Date                                                 Date                                                 Date                                                   Date                                                 Date
+
+
+                                                                                                       (e) Age 41-49                                                                                                                                                                                                            (f) Age 50+
+
+     Figure 4: Poisson regression event study estimates for employment changes by age and AI exposure. Estimates are all relative to
+     occupational exposure quintile 1. Exposure quintiles use Eloundou et al. (2024) GPT-4 β measures. Estimates control for firm-time and
+     firm-quintile fixed effects following Equation 4.1. Shaded regions are 95% confidence intervals. Standard errors are clustered by firm.

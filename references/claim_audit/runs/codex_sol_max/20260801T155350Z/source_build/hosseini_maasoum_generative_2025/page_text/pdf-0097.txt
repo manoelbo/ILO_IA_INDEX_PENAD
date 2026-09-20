@@ -1,0 +1,202 @@
+A.19      Triple-Difference Including the Largest Firms
+As described in Section 4.1, our main sample excludes the approximately 800 largest firms in the Revelio
+data (ranked by post-2021 new hires) to prevent the estimates from being driven by a handful of extreme
+outliers. In this appendix, we re-estimate the triple-difference specification of Equation 11 on a sample
+that adds these firms back. Acquiring and processing the full raw job-postings corpus for these firms—
+needed to classify their postings as GenAI integrator vacancies—is computationally prohibitive given the
+scale of their posting volume. However, because these firms are very likely to qualify as adopters under
+our definition given their size and posting activity, we include them in this robustness check as adopters.
+
+    Figure A.23 reports the resulting coefficients. The triple-difference profile is essentially unchanged from
+the baseline in Figure 5: the coefficients are flat through 2022Q4—consistent with parallel pre-trends—and
+then decline sharply beginning in 2023Q1, reaching roughly 9 percent by 2025Q1. Including the largest
+firms therefore does not alter the seniority-biased contraction in junior employment relative to senior em-
+ployment documented in the main analysis.
+
+
+                                                                               ChatGPT launch
+                                   .05
+
+
+                                     0
+          Log Average Employment
+
+
+
+
+                                   -.05
+
+
+                                    -.1
+
+
+                                   -.15
+
+
+                                    -.2
+                                         1
+
+
+
+
+                                                    1
+
+
+
+
+                                                             1
+
+
+
+
+                                                                      1
+
+
+
+
+                                                                                    1
+
+
+
+
+                                                                                                     1
+
+
+
+
+                                                                                                              1
+
+
+
+
+                                                                                                                       1
+                                      8q
+
+
+
+
+                                                 9q
+
+
+
+
+                                                          0q
+
+
+
+
+                                                                   1q
+
+
+
+
+                                                                                 2q
+
+
+
+
+                                                                                                  3q
+
+
+
+
+                                                                                                           4q
+
+
+
+
+                                                                                                                    5q
+                                      1
+
+
+
+
+                                                  1
+
+
+
+
+                                                           2
+
+
+
+
+                                                                    2
+
+
+
+
+                                                                                  2
+
+
+
+
+                                                                                                   2
+
+
+
+
+                                                                                                            2
+
+
+
+
+                                                                                                                     2
+                                   20
+
+
+
+
+                                               20
+
+
+
+
+                                                        20
+
+
+
+
+                                                                 20
+
+
+
+
+                                                                               20
+
+
+
+
+                                                                                                20
+
+
+
+
+                                                                                                         20
+
+
+
+
+                                                                                                                  20
+
+
+
+
+                                                                          Quarter
+
+
+
+                                          Figure A.23: Triple-Difference Including the Largest Firms
+     Notes: This figure reproduces the triple-difference of Equation 11 (Figure 5) on the main analysis
+     sample augmented with the approximately 800 largest firms (ranked by post-2021 new hires) that
+     are excluded from the main analysis. Because their firm-level adoption date is poorly identified,
+     these firms are treated as GenAI adopters. The coefficients capture how junior employment
+     evolves relative to senior employment within the same firm and period, comparing adopters to
+     non-adopters, and are normalized to zero in 2022Q4. Standard errors are clustered at the firm
+     level.
+
+
+
+
+                                                                        A.52
+

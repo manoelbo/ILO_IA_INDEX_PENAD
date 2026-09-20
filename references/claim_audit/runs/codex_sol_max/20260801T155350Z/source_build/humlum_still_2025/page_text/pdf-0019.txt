@@ -1,0 +1,60 @@
+not endorse or invest in the tools, they may be reluctant to reward their use. From this
+
+perspective, it is surprising that adopters supported by employer initiatives have not
+
+experienced earnings gains.
+
+       Another possibility is that workers simply overestimate the actual benefits they derive
+
+from the tools (Becker et al., 2025; Edelman, Ngwe and Peng, 2023).13 The key contribution
+
+of our study is to link these responses to third-party recorded administrative data, allowing
+
+us to move the analysis beyond self-reported effects.
+
+
+3.2       Occupational Mobility
+
+Figure 2, Panel (c) shows that adopters have seen greater occupational switching since the
+
+arrival of AI chatbots. By 2024, the additional hours worked in their latest occupations
+
+amount to about 4% of a full-time equivalent. The figure provides four insights.
+
+       First, the flat pre-trend prior to the arrival of chatbots suggests that the association
+
+between occupation switching and chatbot adoption reflects a real effect rather than
+
+omitted confounders (e.g., more dynamic workers both adopting chatbots and switching
+
+jobs more generally). This contrasts with the earnings gaps in Panel (a), which were
+
+entirely attributable to type-specific selection.
+
+       Second, the figure supports the notion that chatbots appeal to workers who are new
+
+to their occupations. This correlation may reflect that chatbots facilitate occupational
+
+switching or, perhaps more likely, that they are simply more attractive after a switch. While
+
+the difference-in-differences estimates do not settle the direction of causality, they clearly
+
+establish that chatbot adoption and occupational switching are intrinsically linked.14
+
+       Third, the significant estimates provide reassurance that our empirical specification
+
+can detect effects where one might hold a prior that a dynamic correlation exists, offering
+
+a useful contrast to other outcomes (e.g., worker earnings or workplace employment)
+  13
+     Consistent with experimental evidence from Becker et al. (2025), Appendix E.1.6 shows that workers
+who report greater time savings from chatbots are also more likely to have new tasks from the tools.
+  14
+     In contrast, Appendix E.2.2 shows that the association between chatbot adoption and workplace
+mobility is weaker, and occupational mobility is no stronger at workplaces that encourage chatbot use.
+These patterns align with Figure 4, Panel (b), which indicates that occupational switching is driven
+primarily by individual rather than firm-level factors.
+
+
+                                                 17
+

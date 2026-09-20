@@ -1,0 +1,51 @@
+capital.25
+
+A.2.4     Model Predictions
+
+We now derive predictions for how chatbot arrival affects labor market outcomes.
+
+
+Worker earnings. Combining Equations (10)–(11), the log change in earnings of
+worker i at firm j is:
+
+
+                 d log Yij =     d log Wj           +        Ai Bij                                    (25)
+                                 |    {z    }                | {z }
+                               skill–price effect       productivity effect
+                                            κ
+                           = d log W0 + Ej     + Ai (αb0 + βb × i) + Ej Ai αb1 .                       (26)
+                                           1−ϵ
+
+This yields three key predictions:
+
+   1. Non-adopters experience an earnings loss at encouraged firms:
+
+                                                                               κ
+                             log Yi1 (Ai = 0) − log Yi0 (Ai = 0) = −              ≤0                   (27)
+                                                                              ϵ−1
+
+   2. Holding encouragement fixed, adoption increases earnings by the productivity effect:
+
+
+                     log YiE (Ai = 1) − log YiE (Ai = 0) = αb0 + αb1 × E + βb × i                      (28)
+
+
+   3. The effect of encouragement on adopter earnings is ambiguous, depending on the
+       relative magnitudes of the productivity and skill price effects:
+
+                                                                                κ
+                          log Yi1 (Ai = 1) − log Yi0 (Ai = 1) = αb1 −              ≷ 0.                (29)
+                                                                               ϵ−1
+
+       Even if encouragement enhances productivity (αb1 > 0, as documented in Section 2.2),
+       these gains need not translate into higher earnings when encouragement is costly
+       (high κ), demand is inelastic (low ϵ), or productivity gains are modest (low αb1 ).
+  25
+    With heterogeneous encouragement costs, skill price differentials also depend on the distribution of
+κj through the supply and demand for human capital across encouraged and non-encouraged firms. The
+key qualitative predictions are unchanged: encouragement is priced into skill differentials, and the sign of
+the earnings effect for encouraged adopters remains ambiguous.
+
+
+
+                                                           13

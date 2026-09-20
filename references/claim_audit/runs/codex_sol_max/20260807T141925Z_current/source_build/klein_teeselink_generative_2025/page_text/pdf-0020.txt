@@ -1,0 +1,48 @@
+          Table 4: Effect of LLM exposure on occupation-level job postings
+
+                                        Job postings (log)      Salary      Salary (log)   Salary (SD)
+          LLM exposure x Post               −0.039∗∗          −495.483∗∗∗   −0.011∗∗∗        −56.802
+                                             (0.018)           (135.270)     (0.003)        (108.358)
+
+          Occupation fixed-effects            Yes                Yes           Yes             Yes
+          Year-by-month fixed effects         Yes                Yes           Yes             Yes
+          Observations                       16,815             16,815        16,815         16,804
+          Adjusted R2                        0.962              0.948         0.953           0.729
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level outcomes. Job postings (log) is the log number of new vacancies in occupation
+o in month t. Salary is the mean advertised annual compensation, Salary (log) is its logarithm,
+and Salary (SD) is the within-occupation standard deviation of posted salaries. Exposure is the
+occupation-level LLM exposure score from Eloundou et al. (2024). Post equals one for Novem-
+ber 2022 onward. Standard errors are clustered at the occupation level. Significance is denoted by
+∗
+  p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+
+
+
+4.2.2    Occupation-Level Postings
+
+This analysis examines occupation-level job posting data to understand how ag-
+gregate labor demand evolves for specific roles. This analysis exploits variation in
+LLM exposure across 384 occupations, from minimally affected roles such as cooks
+(exposure score: 0) to highly exposed positions like proofreaders and copy markers
+(exposure score: 0.86). We examine three outcomes: posting volumes to measure
+aggregate demand, advertised salaries to assess compensation responses, and within-
+occupation salary dispersion to measure wage polarization.
+    Figure 6 presents event study estimates for job posting volumes. Prior to Novem-
+ber 2022, high- and low-exposure occupations follow parallel trajectories, validating
+our identification strategy. Following ChatGPT’s release, however, exposed occupa-
+tions experience a sustained reduction in hiring demand, with effects first becoming
+statistically significant after 7 months and intensifying thereafter. After 20 months,
+we see a slight resurgence, and job postings converge back to their original levels.
+When averaged across the post-treatment period (Table 4), a one standard devia-
+tion increase in LLM exposure is associated with a 3.9% reduction in posting volume
+(p = 0.029). This is an economically meaningful change.
+    Turning to compensation, we observe immediate and persistent wage pressure for
+exposed occupations. Figure 7 indicates that posted salaries begin declining shortly
+after ChatGPT’s introduction. A one standard deviation increase in LLM exposure
+is associated with a £495 decline in posted salaries and a 1.1% reduction in log
+
+
+                                                         20
+

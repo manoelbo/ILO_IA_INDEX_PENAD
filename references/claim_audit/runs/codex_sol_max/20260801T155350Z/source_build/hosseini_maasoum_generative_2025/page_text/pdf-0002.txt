@@ -1,0 +1,42 @@
+1     Introduction
+
+The impact of generative artificial intelligence (GenAI) on juniors, especially in high-skill,
+white-collar jobs, has attracted growing attention from both researchers and the media. In
+many such jobs, workers begin at the bottom of the career ladder performing intellectually
+mundane tasks—routine yet cognitively demanding activities such as debugging code or
+reviewing legal documents, which are likely to be especially exposed to recent advances
+in GenAI. As these workers gain experience, they often move up the career ladder to
+more senior roles that involve more complex problem-solving or managerial responsibil-
+ities (Becker, 1964; Garicano, 2000; Ide and Talamas, 2025). If GenAI disproportionately
+substitutes for entry-level tasks, the lower rungs of these career ladders may be eroding
+(Garicano and Rayo, 2025).1
+    Recent media reports reinforce these concerns (e.g., The New York Times, 2025b; The
+Wall Street Journal, 2025b). For instance, a July 2025 Wall Street Journal article highlighted
+a sharp drop in demand for junior workers linked to GenAI adoption, drawing on in-
+sights from major employers, recruiters, labor market analysts, and recent graduates (The
+Wall Street Journal, 2025a). One executive at the recruiting firm Hirewell noted that “mar-
+keting agency clients have all but stopped requesting entry-level staff—young grads once
+in high demand but whose work is now a ‘home run’ for AI.”2 The issue has also drawn
+attention from policymakers. At the September 2025 FOMC press conference, Chair Pow-
+ell was asked about the labor market impact of AI and noted: “You are seeing some effects
+... A particular focus on young people coming out of college. Companies may be able to use AI
+more than they had in the past ... Hard to say how big it is.” (Federal Reserve Board, 2025).
+Some observers have also linked the diffusion of GenAI to the recent rise in unemploy-
+ment among college graduates (The New York Times, 2025a; The Atlantic, 2025; Forbes,
+2025). Others, however, dispute this interpretation, pointing instead to alternative factors
+such as macroeconomic uncertainty, post-pandemic adjustment, and increased offshoring
+(e.g., Financial Times, 2025).
+    1 The implications can extend beyond short-term employment effects, as early-career earnings strongly
+
+influence lifetime income trajectories and, consequently, inequality and mobility (Deming, 2023; Guvenen
+et al., 2022).
+    2 Moreover, a survey from April 2024 of 804 U.S. hiring managers found that 78% anticipate laying off
+
+recent graduates due to AI, with the most vulnerable tasks including research, data entry, email writing,
+and other routine entry-level assignments (Intelligent, 2024).
+
+
+
+
+                                                    2
+

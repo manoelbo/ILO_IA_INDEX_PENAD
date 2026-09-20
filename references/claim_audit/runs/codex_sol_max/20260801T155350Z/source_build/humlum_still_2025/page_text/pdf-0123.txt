@@ -1,0 +1,51 @@
+                 Figure E.18: Perceived Labor Market Impacts among Workers
+
+                                                   (a) Adopters
+
+                Software Developers
+             Marketing Professionals
+              Customer Service Rep.
+                   Financial Advisors
+                          IT Support
+                        Office Clerks
+            Accountants and Auditors
+                   HR Professionals
+                 Legal Professionals
+                           Teachers
+                          Journalists
+                                        -5             -2.5              0               2.5             5
+                                                   Percent Change in Earnings (Stated by Workers)
+
+                                                 Encouraged Adopers        Non-Encouraged Adopers
+
+
+                                                (b) Non-Adopters
+
+             Marketing Professionals
+                          IT Support
+                 Legal Professionals
+                          Journalists
+              Customer Service Rep.
+                   Financial Advisors
+                           Teachers
+            Accountants and Auditors
+                   HR Professionals
+                        Office Clerks
+                Software Developers
+                                        -5             -2.5              0               2.5             5
+                                                   Percent Change in Earnings (Stated by Workers)
+
+                                             Encouraged Non-Adopters       Non-Encouraged Non-Adopters
+
+
+Notes:This figure shows the average perceived impact of AI chatbots on earnings, broken down by workers’ occupations
+and whether their employers encourage chatbot use. Panel (a) focuses on adopters—workers who have used AI chatbots
+for work. Panel (b) focuses on non-adopters—those who have not. See the notes of Table E.11 for how we code perceived
+earnings impacts. Whiskers represent 95% confidence intervals. Sample: All completed responses from the 2024 survey
+round linked to registry data.
+
+
+
+
+                                                          88
+

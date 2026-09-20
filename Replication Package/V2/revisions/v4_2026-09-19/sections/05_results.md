@@ -1,0 +1,723 @@
+# 5 Resultados
+## 5.1 Resultados médios nacionais
+Começo pelo resultado médio nacional. A Tabela 5.1 traz as estimativas do modelo de diferenças em diferenças, comparando as ocupações expostas à IA (gradientes da OIT) com as não expostas depois do lançamento do ChatGPT. Os coeficientes medem a variação relativa das ocupações expostas.
+**Tabela 5.1 — Resultados médios nacionais**
+<table header-row="true">
+	<tr>
+		<td>Resultado</td>
+		<td>Estimador</td>
+		<td>Coeficiente</td>
+		<td>EP</td>
+		<td>IC 95%</td>
+		<td>p nominal</td>
+		<td>Pré-tendência</td>
+		<td>N</td>
+	</tr>
+	<tr>
+		<td>Admissões</td>
+		<td>PPML</td>
+		<td>−0,0538</td>
+		<td>0,0386</td>
+		<td>[−0,1296; 0,0221]</td>
+		<td>0,164</td>
+		<td>falha</td>
+		<td>22.049</td>
+	</tr>
+	<tr>
+		<td>Desligamentos</td>
+		<td>PPML</td>
+		<td>−0,0420</td>
+		<td>0,0347</td>
+		<td>[−0,1103; 0,0262]</td>
+		<td>0,227</td>
+		<td>falha</td>
+		<td>22.049</td>
+	</tr>
+	<tr>
+		<td>Salário real (log)</td>
+		<td>OLS</td>
+		<td>−0,0507\*\*\*</td>
+		<td>0,0103</td>
+		<td>[−0,0711; −0,0304]</td>
+		<td>\<0,001</td>
+		<td>falha</td>
+		<td>22.012</td>
+	</tr>
+	<tr>
+		<td>Saldo (asinh)</td>
+		<td>OLS</td>
+		<td>−0,5513</td>
+		<td>0,3783</td>
+		<td>[−1,2954; 0,1929]</td>
+		<td>0,146</td>
+		<td>falha</td>
+		<td>22.049</td>
+	</tr>
+</table>
+> Notas: modelo 01_no_controls, com efeitos fixos de CBO e mês; erros-padrão agrupados em 341 CBOs e inferência t com 340 graus de liberdade. Estrelas sobre p nominal: \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Admissões e desligamentos: PPML em nível; salário: MQO em log; saldo: MQO em asinh, sem leitura percentual. Fonte: specification_ladder.csv, preservado no pacote de replicação. Todos os diagnósticos nacionais de pré-tendências falham; as estrelas não estabelecem validade causal.
+**REVISAR COM MANÉ — R03: magnitude, precisão e interpretação dos resultados nacionais**
+Os quatro coeficientes têm sinal negativo: cerca de 5,4% nas admissões, 4,2% nos desligamentos e 5,1% no salário real de admissão, além de um saldo líquido negativo. O salário é a única estimativa cujo intervalo de 95% não inclui zero, entre −7,1% e −3,0%. Nos demais resultados, os intervalos são largos e incluem tanto diferenças negativas quanto valores próximos de zero. Essas magnitudes podem ser importantes na prática, mas eu não defini antecipadamente um valor a partir do qual as classificaria como relevantes. Por isso apresento o tamanho estimado e sua incerteza, sem rotulá-las como economicamente relevantes ou irrelevantes.
+Significância estatística e importância econômica respondem a perguntas diferentes. O p-valor indica a incompatibilidade dos dados com um coeficiente igual a zero, sob o modelo e a inferência adotados. O intervalo mostra a faixa de valores compatível com essa incerteza. A estimativa salarial é mais precisa; os fluxos admitem tanto diferenciais negativos quanto valores próximos de zero. Nenhuma dessas propriedades resolve o problema de identificação.
+As porcentagens acima são aproximações de 100 × β. A conversão exata, 100 × (exp(β) − 1), corresponde a −5,24% nas admissões, −4,11% nos desligamentos e −4,95% no salário. Para o salário, o IC transformado é de aproximadamente −6,86% a −3,00%. O saldo em asinh permanece em sua própria escala.
+Nenhum dos quatro resultados sustenta leitura causal. O diagnóstico de tendências paralelas falha em todos, e nenhuma das 51 células examinadas nas especificações nacionais e alternativas passa no conjunto dos critérios registrados. Isso não demonstra ausência de mudança tecnológica; mostra que os grupos já não forneciam uma comparação capaz de isolá-la.
+A Figura 5.1 apresenta os perfis mensais estendidos de −23 a +41, relativos a novembro de 2022, com intervalos de 95%. Os quatro painéis são estudos de eventos; as linhas horizontais tracejadas mostram a média dos coeficientes do pré-período, e a linha vertical pontilhada marca +23. Os testes registrados e o HonestDiD usam a janela balanceada que termina nesse ponto.
+**Figura 5.1 — Estudos de eventos nacionais, janela estendida**
+<image src="file-upload://3e0cc8ca-4610-8174-b22e-00b201d92b2a"></image>
+No salário, os coeficientes posteriores ficam predominantemente abaixo dos anteriores. A média pré da figura é cerca de +0,037, pois cada mês é normalizado contra novembro de 2022. A Tabela 5.1 compara o pós com todo o pré-período. Essa diferença de referência ajuda a entender por que a distância de aproximadamente 5,1% da tabela é maior que a distância visual entre os coeficientes posteriores e zero; não torna os dois estimandos intercambiáveis.
+A falha de pré-tendências é acompanhada de diferenças anteriores ao evento: o desvio-padrão do crescimento mensal do controle era 14,0%, contra 8,3% no grupo exposto, e a amplitude sazonal, 44,7%, contra 27,3%. A Seção 6.1 discute o que essas diferenças permitem levantar como hipótese. A próxima subseção mostra quanto os resultados mudam com especificação setorial, tendências, composição e escolhas de amostra.
+## 5.2 Diagnósticos e especificações complementares
+**Especificação setorial co-principal.** O nível 1 compara ocupações expostas e não expostas em toda a economia. O nível 2 acrescenta efeitos fixos de seção da CNAE por mês, ou seja, compara ocupações dentro do mesmo setor e do mesmo mês. A diferença entre as duas diz bastante.
+**Tabela 5.2.1 — Controle setorial: especificações co-principais**
+<table header-row="true">
+	<tr>
+		<td>Resultado</td>
+		<td>Nível 1 (EP)</td>
+		<td>p nominal</td>
+		<td>Nível 2 (EP)</td>
+		<td>p nominal</td>
+		<td>N2 − N1</td>
+	</tr>
+	<tr>
+		<td>Admissões</td>
+		<td>−0,0538 (0,0386)</td>
+		<td>0,164</td>
+		<td>−0,0751\*\* (0,0356)</td>
+		<td>0,036</td>
+		<td>−0,0213</td>
+	</tr>
+	<tr>
+		<td>Desligamentos</td>
+		<td>−0,0420 (0,0347)</td>
+		<td>0,227</td>
+		<td>−0,0664\* (0,0348)</td>
+		<td>0,057</td>
+		<td>−0,0244</td>
+	</tr>
+	<tr>
+		<td>Fluxo bruto</td>
+		<td>−0,0481 (0,0353)</td>
+		<td>0,174</td>
+		<td>−0,0707\*\* (0,0343)</td>
+		<td>0,040</td>
+		<td>−0,0226</td>
+	</tr>
+	<tr>
+		<td>Salário real (log)</td>
+		<td>−0,0507\*\*\* (0,0103)</td>
+		<td>\<0,001</td>
+		<td>−0,0356\*\*\* (0,0064)</td>
+		<td>\<0,001</td>
+		<td>0,0151</td>
+	</tr>
+	<tr>
+		<td>Saldo (asinh)</td>
+		<td>−0,5513 (0,3783)</td>
+		<td>0,146</td>
+		<td>−0,1395\* (0,0734)</td>
+		<td>0,058</td>
+		<td>0,4118</td>
+	</tr>
+</table>
+> Notas: nível 1, efeitos fixos de CBO e mês; nível 2, de CBO × seção da CNAE e seção da CNAE × mês. Erros-padrão agrupados por CBO em ambos. Nível 1: 22.049 observações, 22.012 no salário; nível 2: 804.574–804.735 nos fluxos/saldo e 682.889 no salário, com 341 clusters. Estrelas sobre p nominal: \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Os dez diagnósticos de pré-tendências falham. A diferença entre coeficientes não é uma decomposição causal. Fonte: sector_level1_vs_level2.csv e table_5_1_1_sector_control.csv, preservados no pacote.
+Ao incluir efeitos fixos de setor por mês, os diferenciais estimados para os fluxos ficam mais negativos: as admissões passam de −0,0538 para −0,0751 e o fluxo bruto, de −0,0481 para −0,0707. No salário, o diferencial diminui de −0,0507 para −0,0356, o que sugere que parte da diferença agregada acompanha a composição entre setores. O saldo líquido também se aproxima de zero, de −0,5513 para −0,1395. Essas mudanças mostram que a especificação setorial altera a magnitude e a precisão das estimativas, mas não resolve o problema de identificação: os cinco pré-testes também falham nesse nível. Portanto, os p-valores menores dos fluxos não transformam os coeficientes em efeitos causais; o nível 2 serve para comparar ocupações dentro do mesmo setor e mês.
+**Sensibilidade a tendências prévias.** O procedimento de [Rambachan e Roth (2023)](https://doi.org/10.1093/restud/rdad018), descrito na Seção 4.6, pergunta quanto a conclusão depende de restringir os desvios das tendências paralelas. Aqui ele se aplica à média dos coeficientes pós-evento de k = 0 a +23, normalizada a novembro de 2022, de −0,0154 no salário. Não é uma análise do coeficiente estático −0,0507, que usa outra referência e vai até +41. No estimando do estudo de eventos, o intervalo já inclui zero em M = 0. Sob a restrição de curvatura, o ponto de quebra fica abaixo da curvatura pré-tratamento observada. O Apêndice A.1 e as saídas HonestDiD do pacote preservam o detalhamento.
+**Decomposição do diferencial salarial.** Eu decompus o diferencial salarial entre a parcela observada dentro das faixas de escolaridade e a parcela associada à mudança no perfil dos novos contratados. Nas ocupações expostas, a participação de admitidos com ensino superior caiu 2,7 pontos percentuais a mais do que nas não expostas. A decomposição por escolaridade indica que cerca de 23% do diferencial salarial agregado está associado a essa mudança de composição. Em uma especificação mais ampla, que também considera características anteriores das ocupações relacionadas à escolaridade, idade, sexo e raça, essa parcela chega a aproximadamente 29%. O padrão é compatível com a hipótese de uma redução relativa das oportunidades de entrada para trabalhadores com ensino superior nas ocupações expostas, mas não permite atribuir essa mudança à IA, sobretudo porque as pré-tendências falham. O diferencial do salário-hora, de 6,95%, também não sugere que uma redução da jornada explique a queda do salário mensal. Os cálculos e as tabelas completas são apresentados no Apêndice A.2.
+Os cerca de 23% usam a decomposição por escolaridade do diferencial agregado; os aproximadamente 29% resumem a redução do coeficiente quando a especificação incorpora características prévias das ocupações. Não são a mesma decomposição, nem parcelas identificadas de um efeito da IA. O diferencial do salário-hora e as mudanças na composição ajudam a descrever a margem salarial, sem identificar o mecanismo que a produziu.
+**Robustez e placebos selecionados.** O salário mantém sinal negativo nos quatro horizontes longos examinados (−0,0514, −0,0507, −0,0481 e −0,0548), todos com p nominal abaixo de 5%. Mas iniciar a amostra em 2022 reduz o coeficiente para −0,0363. A escolha da janela importa, mesmo quando o sinal persiste. No placebo de dezembro de 2021, limitado ao pré-período verdadeiro, o coeficiente é −0,0198, com p = 0,081: não rejeita a 5%, mas corresponde a cerca de 39% do coeficiente principal. Não rejeitar esse placebo não valida a interpretação causal.
+A definição do controle também importa. Ao incluir as 95 CBOs de exposição mínima, admissões passam de −0,0538 (p = 0,164) para −0,0887 (p = 0,022), fluxo bruto de −0,0481 (p = 0,174) para −0,0801 (p = 0,030) e desligamentos de −0,0420 (p = 0,227) para −0,0707 (p = 0,056). A especificação principal permanece a previamente definida, com controle estrito; o resultado mais preciso não determina a escolha. A composição do grupo tratado também é concentrada: as cinco maiores famílias respondem por 65,4% das admissões prévias, motivo para preservar o diagnóstico de influência ocupacional descrito na Seção 4.6.
+A escada completa, o jackknife, as reatribuições de tratamento, as variantes de exposição e os demais exercícios permanecem nas saídas do pacote de replicação; os diagnósticos nacionais e a decomposição estão no Apêndice A.1–A.2. Esses exercícios mostram sensibilidade, sem superar a falha de identificação. A discussão da hipótese de acomodação silenciosa e dos contrapontos da RAIS e da PNADc fica na Seção 6.3.
+## 5.3 Heterogeneidades demográficas
+O DiD dentro de um grupo pergunta se suas ocupações expostas mudaram de forma diferente das não expostas. O DDD pergunta se esse diferencial difere do observado no grupo de comparação. As tabelas abaixo priorizam o segundo estimador, em admissões, desligamentos e salário. O Apêndice A preserva os cinco desfechos e todas as partições dos DDDs, os 130 DiDs dentro dos grupos e as figuras de apoio. A seleção das colunas não cria novas famílias de multiplicidade.
+### 5.3.1 Resultados por sexo
+**Tabela 5.3.1 — Contrastes DDD por sexo**
+<table header-row="true">
+	<tr>
+		<td>Grupo (família)</td>
+		<td>Resultado</td>
+		<td>DDD (EP)</td>
+		<td>p BH</td>
+		<td>Pré-tendência DDD</td>
+		<td>Suporte</td>
+	</tr>
+	<tr>
+		<td>Homens (A)</td>
+		<td>Admissões</td>
+		<td>0,0116 (0,0466)</td>
+		<td>0,907</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Homens (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0332 (0,0390)</td>
+		<td>0,581</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Homens (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0022 (0,0100)</td>
+		<td>0,907</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Mulheres (A)</td>
+		<td>Admissões</td>
+		<td>−0,0116 (0,0466)</td>
+		<td>0,907</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Mulheres (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,0332 (0,0390)</td>
+		<td>0,581</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Mulheres (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0022 (0,0100)</td>
+		<td>0,907</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+</table>
+> Notas: DDD estimado pela interação pós × exposta × grupo; cada grupo é comparado com seu complemento na partição indicada. Contagens em PPML; salário em MQO sobre log. EP agrupados por CBO. Estrelas e p-valores BH preservam a família original: A, 100 testes; B, 30 testes. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Suporte e diagnóstico permanecem junto do resultado. As tabelas completas, com fluxo bruto, saldo, p nominal, N e diagnósticos dos dois modelos, estão no Apêndice A.
+Em admissões, desligamentos e salário, os contrastes DDD não distinguem homens e mulheres após o ajuste. Na orientação homens em relação às mulheres, são +0,0116 nas admissões (p BH = 0,907), +0,0332 nos desligamentos (0,581) e +0,0022 no salário (0,907). As duas orientações da tabela são o mesmo contraste, com sinal invertido; não são dois achados independentes.
+O saldo é a exceção: +0,7989 para homens em relação às mulheres, com p BH = 0,0026, e sinal oposto na orientação inversa. O resultado não tem leitura percentual e sua pré-tendência falha. A maior exposição potencial das mulheres, documentada na Seção 3, não coincide com uma diferença detectável nas três margens principais, mas isso não demonstra ausência de impacto. Os DiDs e as figuras correspondentes estão no Apêndice A.3.
+### 5.3.2 Resultados por raça/cor
+**Tabela 5.3.2 — Contrastes DDD por raça/cor**
+<table header-row="true">
+	<tr>
+		<td>Grupo (família)</td>
+		<td>Resultado</td>
+		<td>DDD (EP)</td>
+		<td>p BH</td>
+		<td>Pré-tendência DDD</td>
+		<td>Suporte</td>
+	</tr>
+	<tr>
+		<td>Branca (A)</td>
+		<td>Admissões</td>
+		<td>0,0827\*\*\* (0,0188)</td>
+		<td>\<0,001</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Branca (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0651\*\*\* (0,0136)</td>
+		<td>\<0,001</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Branca (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0080 (0,0088)</td>
+		<td>0,556</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Preta (A)</td>
+		<td>Admissões</td>
+		<td>−0,0088 (0,0399)</td>
+		<td>0,907</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Preta (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0445 (0,0309)</td>
+		<td>0,341</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Preta (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0052 (0,0101)</td>
+		<td>0,742</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Parda (A)</td>
+		<td>Admissões</td>
+		<td>−0,0817\*\* (0,0304)</td>
+		<td>0,042</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Parda (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,0886\*\* (0,0292)</td>
+		<td>0,018</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Parda (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0102 (0,0092)</td>
+		<td>0,465</td>
+		<td>não rejeitada</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Amarela (A)</td>
+		<td>Admissões</td>
+		<td>−0,2770\*\*\* (0,0576)</td>
+		<td>\<0,001</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Amarela (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,2179\*\*\* (0,0365)</td>
+		<td>\<0,001</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Amarela (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0171 (0,0150)</td>
+		<td>0,454</td>
+		<td>alerta</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Indígena (A)</td>
+		<td>Admissões</td>
+		<td>−0,1744 (0,1003)</td>
+		<td>0,218</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Indígena (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,1172 (0,1140)</td>
+		<td>0,507</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Indígena (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0036 (0,0178)</td>
+		<td>0,910</td>
+		<td>não rejeitada</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Não identificada (A)</td>
+		<td>Admissões</td>
+		<td>0,0197 (0,0300)</td>
+		<td>0,681</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Não identificada (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0541 (0,0263)</td>
+		<td>0,126</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Não identificada (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0415\*\*\* (0,0107)</td>
+		<td>0,002</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Negra (preta e parda) (B)</td>
+		<td>Admissões</td>
+		<td>−0,1144\*\* (0,0346)</td>
+		<td>0,015</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Negra (preta e parda) (B)</td>
+		<td>Desligamentos</td>
+		<td>−0,0990\*\* (0,0310)</td>
+		<td>0,015</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Negra (preta e parda) (B)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0121 (0,0084)</td>
+		<td>0,399</td>
+		<td>não rejeitada</td>
+		<td>adequate</td>
+	</tr>
+</table>
+> Notas: DDD estimado pela interação pós × exposta × grupo; cada grupo é comparado com seu complemento na partição indicada. Contagens em PPML; salário em MQO sobre log. EP agrupados por CBO. Estrelas e p-valores BH preservam a família original: A, 100 testes; B, 30 testes. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Suporte e diagnóstico permanecem junto do resultado. As tabelas completas, com fluxo bruto, saldo, p nominal, N e diagnósticos dos dois modelos, estão no Apêndice A.
+Os contrastes DDD mais precisos aparecem em raça/cor. Para trabalhadores negros, são **−0,1144 nas admissões**, **−0,0990 nos desligamentos** e **−0,1068 no fluxo bruto**, os três com p ajustado de 0,015. Em termos aproximados, os diferenciais são de 10,8% nas admissões e 9,4% nos desligamentos. No salário, o DDD é de −0,0121, com p ajustado de 0,399. Assim, o padrão salarial aparece nos dois grupos, sem diferença racial detectável. Como as pré-tendências falham, os contrastes de fluxo permanecem exploratórios.
+Na desagregação, os contrastes negativos mais precisos aparecem na categoria parda. Na desagregação em seis categorias, o contraste de pardos é de −0,0817 nas admissões (p ajustado de 0,042) e −0,0886 nos desligamentos (p ajustado de 0,018), enquanto o de pretos não se distingue de zero em nenhum desfecho: −0,0088 nas admissões (p ajustado de 0,907) e +0,0445 nos desligamentos (p ajustado de 0,341). Agregar as duas categorias produz um contraste maior, mas não autoriza interpretação causal sobre nenhuma delas.
+O complemento muda entre as linhas: Negra compara pretos e pardos com brancos, amarelos, indígenas e não identificados; Parda compara pardos com um complemento que inclui pretos. O contraste do agregado não é uma média dos contrastes de seus componentes. Essa diferença de estimando, composição e amostra impede atribuir mecanicamente a magnitude do agregado a uma das categorias.
+A categoria amarela precisa de uma distinção clara entre os dois estimadores. O DiD dentro do grupo é de −0,3479 nas admissões e −0,2722 nos desligamentos. Já o DDD, que compara esse grupo com seu complemento, é de −0,2770 e −0,2179, respectivamente. Nos quatro casos, o p ajustado fica abaixo de 0,001 e o suporte ocupacional é adequado, mas as pré-tendências falham. 
+Há ainda duas exceções nos desfechos completos: o saldo da categoria branca é positivo (+0,7390; p BH = 0,026) e o DDD salarial da categoria sem raça/cor identificada é +0,0415 (p BH = 0,0018). A segunda linha representa ausência de informação de raça/cor, não um grupo racial substantivo. Nenhuma autoriza uma leitura causal. Tabelas e figuras de apoio estão no Apêndice A.4.
+### 5.3.3 Resultados por faixa etária
+**Tabela 5.3.3 — Contrastes DDD por idade: faixas do artigo de referência**
+<table header-row="true">
+	<tr>
+		<td>Grupo (família)</td>
+		<td>Resultado</td>
+		<td>DDD (EP)</td>
+		<td>p BH</td>
+		<td>Pré-tendência DDD</td>
+		<td>Suporte</td>
+	</tr>
+	<tr>
+		<td>22–25 (A)</td>
+		<td>Admissões</td>
+		<td>−0,0189 (0,0269)</td>
+		<td>0,652</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>22–25 (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0002 (0,0367)</td>
+		<td>0,995</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>22–25 (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0004 (0,0083)</td>
+		<td>0,974</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>26–30 (A)</td>
+		<td>Admissões</td>
+		<td>−0,0105 (0,0139)</td>
+		<td>0,616</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>26–30 (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,0125 (0,0113)</td>
+		<td>0,465</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>26–30 (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0070 (0,0081)</td>
+		<td>0,581</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>31–34 (A)</td>
+		<td>Admissões</td>
+		<td>0,0253 (0,0122)</td>
+		<td>0,125</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>31–34 (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0202 (0,0121)</td>
+		<td>0,245</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>31–34 (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0105 (0,0070)</td>
+		<td>0,325</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>35–40 (A)</td>
+		<td>Admissões</td>
+		<td>0,0353\* (0,0148)</td>
+		<td>0,062</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>35–40 (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0275 (0,0166)</td>
+		<td>0,245</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>35–40 (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0026 (0,0068)</td>
+		<td>0,832</td>
+		<td>alerta</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>41–49 (A)</td>
+		<td>Admissões</td>
+		<td>0,0841\*\*\* (0,0236)</td>
+		<td>0,004</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>41–49 (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0699\*\* (0,0245)</td>
+		<td>0,027</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>41–49 (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0010 (0,0076)</td>
+		<td>0,925</td>
+		<td>alerta</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>50+ (A)</td>
+		<td>Admissões</td>
+		<td>0,0663 (0,0533)</td>
+		<td>0,418</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>50+ (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0069 (0,0377)</td>
+		<td>0,919</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>50+ (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0136 (0,0103)</td>
+		<td>0,394</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+</table>
+> Notas: DDD estimado pela interação pós × exposta × grupo; cada grupo é comparado com seu complemento na partição indicada. Contagens em PPML; salário em MQO sobre log. EP agrupados por CBO. Estrelas e p-valores BH preservam a família original: A, 100 testes; B, 30 testes. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Suporte e diagnóstico permanecem junto do resultado. As tabelas completas, com fluxo bruto, saldo, p nominal, N e diagnósticos dos dois modelos, estão no Apêndice A.
+Nas faixas etárias do artigo de referência, o DDD das admissões entre trabalhadores de 22 a 25 anos é de −0,0189, com p ajustado de 0,652. Portanto, não aparece uma queda adicional dos mais jovens em relação ao restante da amostra. O contraste que permanece abaixo de 5% após o ajuste é o da faixa de 41 a 49 anos, e tem sinal positivo: +0,0841 nas admissões, +0,0699 nos desligamentos e +0,0776 no fluxo bruto.
+Em termos simples, o DDD positivo da faixa de 41 a 49 anos indica que a diferença entre ocupações expostas e não expostas foi menos negativa, ou mais positiva, nesse grupo do que em seu complemento. Os contrastes intermediários mudam gradualmente de sinal, mas nenhum permanece abaixo de 5% após o ajuste. Como as pré-tendências falham, o conjunto deve ser lido apenas como um padrão relativo entre faixas etárias, sem atribuição de mecanismo.
+No salário, nenhum contraste etário sobrevive ao ajuste: o DDD da faixa de 22 a 25 anos é de −0,0004, com p ajustado de 0,974. O diferencial salarial é generalizado e não etário.
+A partição alternativa da PNAD/IBGE está completa no Apêndice A.5, com seu ajuste original na família B. Nenhum DDD de admissões, desligamentos ou salário dessa partição rejeita a 5% após BH. No saldo, porém, há exceções: +1,2056 para 50 anos ou mais na família A (p BH = 0,0075) e +1,0083 para 55–65 anos na família B (p BH = 0,035). Ambos têm pré-tendência DDD falha e não medem proteção ou aumento do estoque de empregos.
+No DiD dentro da coorte de 22–25 anos, o diferencial salarial é −0,0517 e o teste conjunto de pré-tendências não rejeita (p = 0,585). Trata-se de uma das duas células classificadas como pass entre os 100 diagnósticos dentro dos grupos associados às partições da família A; a outra é o salário na categoria indígena. Há também três alertas e cinco diagnósticos indefinidos por posto. Esses 100 diagnósticos não são a família C de 130 testes de coeficientes, e não receberam ajuste de multiplicidade. A Figura A.5.3 mostra a exceção de 22–25 anos, sem transformá-la em validação causal.
+### 5.3.4 Resultados por nível de escolaridade
+**Tabela 5.3.4 — Contrastes DDD por escolaridade**
+<table header-row="true">
+	<tr>
+		<td>Grupo (família)</td>
+		<td>Resultado</td>
+		<td>DDD (EP)</td>
+		<td>p BH</td>
+		<td>Pré-tendência DDD</td>
+		<td>Suporte</td>
+	</tr>
+	<tr>
+		<td>Fundamental ou menos (A)</td>
+		<td>Admissões</td>
+		<td>0,1231\* (0,0502)</td>
+		<td>0,055</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Fundamental ou menos (A)</td>
+		<td>Desligamentos</td>
+		<td>0,1321\* (0,0531)</td>
+		<td>0,055</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Fundamental ou menos (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0349\* (0,0142)</td>
+		<td>0,055</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Médio (A)</td>
+		<td>Admissões</td>
+		<td>−0,0057 (0,0344)</td>
+		<td>0,923</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Médio (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,0333 (0,0288)</td>
+		<td>0,451</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Médio (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0014 (0,0112)</td>
+		<td>0,925</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Superior (A)</td>
+		<td>Admissões</td>
+		<td>−0,1108\* (0,0451)</td>
+		<td>0,055</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Superior (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,1064\* (0,0435)</td>
+		<td>0,055</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Superior (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0076 (0,0128)</td>
+		<td>0,707</td>
+		<td>alerta</td>
+		<td>adequate</td>
+	</tr>
+</table>
+> Notas: DDD estimado pela interação pós × exposta × grupo; cada grupo é comparado com seu complemento na partição indicada. Contagens em PPML; salário em MQO sobre log. EP agrupados por CBO. Estrelas e p-valores BH preservam a família original: A, 100 testes; B, 30 testes. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Suporte e diagnóstico permanecem junto do resultado. As tabelas completas, com fluxo bruto, saldo, p nominal, N e diagnósticos dos dois modelos, estão no Apêndice A.
+No contraste DDD, a direção se mantém e a magnitude é grande, **mas a significância fica no limite depois do ajuste de multiplicidade**. O contraste do ensino superior nas admissões é de −0,1108, com p nominal de 0,0145 e **p ajustado de 0,055**: fora do limiar de 5%, ainda que por pouco. Nos desligamentos ocorre o mesmo, com −0,1064 e p ajustado de 0,055. Dois contrastes do grupo sobrevivem ao ajuste: o fluxo bruto, com −0,1083 e p ajustado de 0,048, e o saldo líquido, com −0,8421 e p ajustado de 0,015. O sentido oposto também aparece: o contraste do ensino fundamental é positivo, com +0,1231 nas admissões, também no limite, e saldo de +0,9560 com p ajustado de 0,043.
+Os contrastes de fluxo do ensino superior apontam na direção negativa, mas, nas duas margens mais diretas, admissões e desligamentos, não cruzam o limiar ajustado. Apenas as medidas agregadas de fluxo bruto e saldo ficam abaixo de 5%. No salário, o DDD do ensino superior é de +0,0076, com p ajustado de 0,707, sem diferença detectável entre níveis. As falhas de pré-tendências impedem interpretação causal desses padrões.
+O Apêndice A.6 reúne os cinco desfechos, os DiDs dentro dos grupos e os perfis mensais. Eles mostram que o diferencial de salário aparece dentro dos níveis médio e superior, mas não estabelecem diferença salarial entre níveis nem contração líquida de emprego causada pela IA.
+### 5.3.5 Resultados por faixa salarial ocupacional
+**Tabela 5.3.5 — Contrastes DDD por faixa salarial ocupacional prévia**
+<table header-row="true">
+	<tr>
+		<td>Grupo (família)</td>
+		<td>Resultado</td>
+		<td>DDD (EP)</td>
+		<td>p BH</td>
+		<td>Pré-tendência DDD</td>
+		<td>Suporte</td>
+	</tr>
+	<tr>
+		<td>Até 2 SM (A)</td>
+		<td>Admissões</td>
+		<td>0,1183 (0,0793)</td>
+		<td>0,325</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Até 2 SM (A)</td>
+		<td>Desligamentos</td>
+		<td>0,0112 (0,0952)</td>
+		<td>0,925</td>
+		<td>falha</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Até 2 SM (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0062 (0,0236)</td>
+		<td>0,907</td>
+		<td>alerta</td>
+		<td>adequate</td>
+	</tr>
+	<tr>
+		<td>Mais de 2 a 5 SM (A)</td>
+		<td>Admissões</td>
+		<td>−0,1474 (0,0779)</td>
+		<td>0,164</td>
+		<td>falha</td>
+		<td>limited</td>
+	</tr>
+	<tr>
+		<td>Mais de 2 a 5 SM (A)</td>
+		<td>Desligamentos</td>
+		<td>−0,0543 (0,0911)</td>
+		<td>0,707</td>
+		<td>falha</td>
+		<td>limited</td>
+	</tr>
+	<tr>
+		<td>Mais de 2 a 5 SM (A)</td>
+		<td>Salário real (log)</td>
+		<td>−0,0031 (0,0256)</td>
+		<td>0,925</td>
+		<td>falha</td>
+		<td>limited</td>
+	</tr>
+	<tr>
+		<td>Mais de 5 SM (A)</td>
+		<td>Admissões</td>
+		<td>0,0947 (0,1133)</td>
+		<td>0,581</td>
+		<td>falha</td>
+		<td>thin</td>
+	</tr>
+	<tr>
+		<td>Mais de 5 SM (A)</td>
+		<td>Desligamentos</td>
+		<td>0,2486 (0,1375)</td>
+		<td>0,193</td>
+		<td>falha</td>
+		<td>thin</td>
+	</tr>
+	<tr>
+		<td>Mais de 5 SM (A)</td>
+		<td>Salário real (log)</td>
+		<td>0,0643\*\* (0,0242)</td>
+		<td>0,043</td>
+		<td>falha</td>
+		<td>thin</td>
+	</tr>
+</table>
+> Notas: DDD estimado pela interação pós × exposta × grupo; cada grupo é comparado com seu complemento na partição indicada. Contagens em PPML; salário em MQO sobre log. EP agrupados por CBO. Estrelas e p-valores BH preservam a família original: A, 100 testes; B, 30 testes. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Suporte e diagnóstico permanecem junto do resultado. As tabelas completas, com fluxo bruto, saldo, p nominal, N e diagnósticos dos dois modelos, estão no Apêndice A.
+As faixas são definidas pela mediana salarial pré-tratamento da CBO, em salários mínimos, e não pela renda individual corrente. A faixa intermediária tem suporte limitado, com 26 CBOs tratadas e 32 de controle. Seus DDDs de admissões (−0,1474; p BH = 0,164) e desligamentos (−0,0543; 0,707) não distinguem seu diferencial do complemento. A queda de admissões no DiD dentro desse grupo (−0,1914; p BH = 0,021) responde a outra pergunta.
+**REVISAR COM MANÉ — R04: renda alta, suporte e diagnósticos de modelos distintos**
+Acima de 5 salários mínimos, o DDD salarial é +0,0643 (p BH = 0,043), mas o grupo-alvo contém apenas 3 CBOs tratadas e 6 de controle com fluxos, classificado como suporte baixo. O coeficiente permanece na tabela; não sustenta uma afirmação sobre proteção do topo. O diagnóstico DDD falha. Já os cinco estudos de eventos estimados dentro do grupo-alvo têm matriz de covariância dos 22 leads com posto 7: seus testes conjuntos e inclinações GLS são indefinidos, embora os coeficientes mensais e os erros-padrão existam. Isso é diferente de aprovação, rejeição ou falha de estimação do modelo.
+Os testes conjuntos salariais dentro das faixas baixa e intermediária têm p = 0,0156 e p = 0,000169 na janela balanceada e são classificados como falha. Na faixa alta, o teste conjunto permanece indefinido por insuficiência de posto, não devendo ser interpretado como não rejeição de tendências paralelas. Os perfis estendidos até +41 aparecem no Apêndice A.7 com identificação da janela. Nenhum contraste de renda combina rejeição ajustada, suporte adequado e diagnóstico favorável.
+### 5.3.6 Síntese das heterogeneidades demográficas
+**REVISAR COM MANÉ — R05: síntese dos contrastes e preservação das exceções**
+Dos 100 testes DDD da família A, 34 rejeitam a 5% nominal e 21 após BH. Na família B, são 6 de 30 antes e 4 depois do ajuste. Essas contagens são de testes, não de descobertas independentes: incluem desfechos relacionados e as duas orientações de sexo. Os contrastes mais precisos de admissões e desligamentos aparecem em raça/cor e na faixa de 41–49 anos. Sexo não apresenta diferenças nessas margens ou no salário; escolaridade superior fica em p BH = 0,055 nas duas margens. Permanecem, porém, as exceções de saldo por sexo, idade, raça/cor e escolaridade, o fluxo bruto do ensino superior e o salário da renda alta com suporte baixo, detalhadas acima.
+No salário de admissão, 22 dos 26 DiDs dentro dos grupos são negativos e rejeitam após o ajuste da família C. Entre os DDDs da família A, somente 2 dos 20 testes salariais rejeitam após BH aplicado à família inteira de 100 testes: raça/cor não identificada e renda ocupacional acima de 5 salários mínimos. A primeira exige cautela por representar informação ausente; a segunda, pelo suporte baixo. O padrão salarial difundido dentro dos grupos não implica uma diferença de magnitude bem identificada entre eles.
+As Figuras A.8.1–A.8.3 sintetizam os DiDs de admissões, desligamentos e salário, com os intervalos no limiar BH e os marcadores de suporte originais. Fluxo bruto e saldo permanecem nas tabelas completas do Apêndice A.3–A.7. O conjunto é exploratório: p-valores ajustados menores não corrigem pré-tendências nem ampliam o suporte ocupacional.

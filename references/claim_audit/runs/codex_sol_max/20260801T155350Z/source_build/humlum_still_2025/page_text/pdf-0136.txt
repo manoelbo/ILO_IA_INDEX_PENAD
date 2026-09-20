@@ -1,0 +1,49 @@
+    Table G.1 shows the employment headcount in each occupation and age group in
+
+October 2022. We use the same age groups as Brynjolfsson, Chandar and Chen (2025):
+
+early career 1 (age 22-25), early career 2 (age 26-30), developing (31-34), mid career
+
+1 (35-40), mid career 2 (41-49), and senior (50+). Most occupational employment is
+
+concentrated in older categories, with the exception of customer support, which employs
+
+many early-career workers.
+
+    Figure G.2 shows the employment trends for each of the occupations and age groups,
+
+indexing these to October 2022 as in Brynjolfsson, Chandar and Chen (2025). The plots
+
+show that we replicate the declines in early-career jobs in many exposed occupations,
+
+including software development, legal professions, marketing, IT support, journalism, HR,
+
+and financial advisors. Importantly, however, our difference-in-differences analysis in
+
+Section 3.3 shows that the declines are not driven by firms adopting Generative AI.
+
+
+          Table G.1: Employment by Occupation and Age Groups (October 2022)
+
+                        Early Career 1     Early Career 2      Developing     Mid-Career 1     Mid-Career 2      Senior
+  Occupation                (22-25)            (26-30)           (31-34)         (35-40)          (41-49)         (50+)
+  IT Support                 1157               2358              1800            2140             2804           3911
+  Teachers                   4825               9253              8349           11925            23283          26562
+  Office Clerks             16954              17508             11632           16572            29232           54354
+  HR Prof.                    399                970               919            1582             2897           3076
+  Financial Adv.              839               2361              1824            2845             3782           6602
+  Marketing                  1470               4088              3201            3588             4767            4929
+  Customer Service           1625               1404               783             779              933            1148
+  Accountants                2227               4627              3318            4276             6566           12270
+  Legal Prof.                1479               5362              4080            4313             4735            4269
+  Software Dev.              2840               9748              7901            9104            12441          14862
+  Journalists                 532               1616              1319            1623             2165           2365
+Notes: Table G.1 reports employment headcounts by occupation and age group in October 2022. We follow Brynjolfsson,
+Chandar and Chen (2025) in defining the age groups: early career 1 (ages 22–25), early career 2 (26–30), developing (31–34),
+mid-career 1 (35–40), mid-career 2 (41–49), and senior (50+). Sample: All registry data.
+
+
+
+
+                                                           101
+

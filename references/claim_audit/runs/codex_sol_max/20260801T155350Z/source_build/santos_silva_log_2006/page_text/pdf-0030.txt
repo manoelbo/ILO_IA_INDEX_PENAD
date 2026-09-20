@@ -1,0 +1,34 @@
+sample, and PPML. Note that, because this exercise uses cross sectional data, we can
+only identify bilateral variables.28
+  As with the standard specification of the gravity equation, we find that using the
+Anderson-van Wincoop (2003) specification, estimates obtained with the Poisson method
+vary little when only the positive-trade subsample is used. Moreover, we find again strong
+evidence that the errors of the log-linear model estimated using the sample with positive-
+trade are heteroskedastic. With this specification, the two-degrees-of-freedom special case
+of White’s test for heteroskedasticity leads to a test statistic of 469.2 and a p-value of
+zero.
+  Since we are now conditioning on a much larger set of controls, it is not surprising to
+find that most coeﬃcients are sensitive to the introduction of fixed eﬀects. For example,
+in the Poisson method, although the distance elasticity remains about the same and the
+coeﬃcient on common colonial ties is still insignificant, the eﬀect on common language
+is now smaller and the coeﬃcient on free-trade agreements is larger. The results of the
+other estimations methods are generally much more sensitive to the inclusion of the fixed
+eﬀects.
+  Comparing the results of PPML and OLS for the positive-trade subsample, the follow-
+ing observations are in order. The distance elasticity is substantially larger under OLS
+(−1.35 versus −0.75). Sharing a border has a positive eﬀect on trade under Poisson, but
+no significant eﬀect under OLS. Sharing a common language has similar eﬀects under
+both techniques. Common colonial ties have strong eﬀects under OLS (with an aver-
+age enhancement eﬀect of 100 percent), whereas Poisson predicts no significant eﬀect.
+Finally, both techniques produce reasonably similar estimates for the coeﬃcient on the
+trade-agreement dummy, implying a trade-enhancement eﬀect of the order of 40 percent.
+  28
+       Since income elasticities cannot be separately identified, we use trade as the dependent variable of
+the gravity equation and not the ratio of trade to the product of GDP’s, as in Anderson-van Wincoop
+(2003).
+
+
+
+
+                                                     29
+

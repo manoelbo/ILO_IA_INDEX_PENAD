@@ -1,0 +1,14 @@
+                                                                                             46
+
+mediated by organizational incentives and the regulatory environment. Organizations may
+set guidelines on how to use AI or provide feedback, and regulations may influence liability
+implications. These issues are interesting avenues for future work.
+AI continues to evolve rapidly. This development is increasingly driven by large corporate
+labs (Heston and Zwetsloot, 2020), which have resources that are unaffordable to academic
+institutions. For these and other reasons, economists are unlikely to have a major role in
+the technical development of AI tools. Our comparative advantage lies in studying how
+humans interact with these tools and thereby help shape the institutions that guide their use
+to ensure that this development is beneficial to society. Empirical analysis is a particularly
+useful tool in this endeavor, especially if the algorithms themselves are a black-box and cannot
+be understood from first principles.
+

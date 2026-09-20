@@ -1,0 +1,1 @@
+"""Spatial-diagnostics replication component."""

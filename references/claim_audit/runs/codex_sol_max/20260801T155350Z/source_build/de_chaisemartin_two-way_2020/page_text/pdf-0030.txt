@@ -1,0 +1,73 @@
+Proof of Corollary 1
+
+Proof of the first point
+                                                                                  e T R = 0, then
+We start by proving the first point. If the assumptions of the corollary hold and ∆
+                                         P
+                               βef e =                    Ng,t    e
+                                             (g,t):Dg,t =1 N1 wg,t ∆g,t ,
+                               0 = P                      Ng,t e
+                                             (g,t):Dg,t =1 N1 ∆g,t ,
+
+where the first equality follows from (10). These two conditions and the Cauchy-Schwarz in-
+equality imply
+                                       X           Ng,t
+                      |βef e | =                                   e g,t − ∆
+                                                        (wg,t − 1)(∆                       e
+                                                                           e T R ) ≤ σ(w)σ(∆).
+                                                   N1
+                                   (g,t):Dg,t =1
+
+         e ≥ σf e.
+Hence, σ(∆)
+Now, we prove that we can rationalize this lower bound. Let us define
+                                                            e
+                                                    e T R = βf e (wg,t − 1) .
+                                                    ∆ g,t
+                                                                 σ 2 (w)
+Then,
+                                                                                                          
+                          X           Ng,t βef e (wg,t − 1)     βef e             X           Ng,t
+             e TR =
+             ∆                                              =                                       wg,t − 1 = 0,
+                                      N1         σ 2 (w)      σ 2 (w)                          N1
+                      (g,t):Dg,t =1                                            (g,t):Dg,t =1
+                                                            P                 Ng,t
+as it follows from the definition of wg,t that                  (g,t):Dg,t =1 N1 wg,t = 1.
+
+Similarly,
+                    X           Ng,t      βef e (wg,t − 1)     βef e           X           Ng,t
+                                     wg,t                  =                                    wg,t (wg,t − 1)
+                                N1              σ 2 (w)      σ 2 (w)                       N1
+                (g,t):Dg,t =1                                              (g,t):Dg,t =1
+
+                                                                   βef e       X           Ng,t
+                                                             =                                  (wg,t − 1)2
+                                                                 σ 2 (w)                   N1
+                                                                           (g,t):Dg,t =1
+
+                                                             = βef e ,
+                                                                                  P                 Ng,t
+where the second equality follows again from the fact that                            (g,t):Dg,t =1 N1 wg,t = 1.
+
+
+Proof of the second point
+
+We first suppose that βef e > 0. We seek to solve:
+                                  N(i)  e          2
+                              Xn                                    Xn
+                                                                        N(i)
+                 min                           e TR
+                                        ∆(i) − ∆       s.t. βef e =               e (i) ,
+                                                                             w(i) ∆
+             e (1) ,...,∆
+             ∆          e (n)
+                              i=1
+                                  N 1                               i=1
+                                                                        N 1
+
+                                                                         e (i) ≤ 0 for all i ∈ {1, ..., n}.
+                                                                         ∆
+
+                                                               30
+

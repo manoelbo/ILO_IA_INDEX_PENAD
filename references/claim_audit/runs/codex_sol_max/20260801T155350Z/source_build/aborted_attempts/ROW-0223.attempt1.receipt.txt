@@ -1,0 +1,1 @@
+Auditoria bloqueada: `source_build/prompts/ROW-0223.md` não existe no workspace. Nenhum PDF foi aberto e nenhum candidato foi produzido. Disponibilize o arquivo obrigatório para prosseguir.

@@ -1,0 +1,52 @@
+so expectations of layoffs add a firing wedge βϕ to the effective marginal cost of labor at
+t = 0, lowering the optimal n0 .
+   Closed-form comparative statics (Cobb–Douglas). With f (n) = nα and 0 < α < 1, the
+period-0 choice under the contraction (anticipated-firing) regime satisfies
+
+                                                                 1
+                                                   αA0             1− α
+                                   n0C =                                  .               (18)
+                                               w0 + ch + βϕ
+
+At t = 1, the firing-region choice solves
+
+                                           1
+                                    αA1        1− α
+                       n1− =                                 (assuming w1 > ϕ).           (19)
+                                   w1 − ϕ
+
+The contraction regime is relevant whenever
+
+                                     A1          A0
+                                          ≤              .                                (20)
+                                   w1 − ϕ   w0 + ch + βϕ
+
+Differentiating (18) yields
+
+                              ∂n0C      β       n0C
+                                   =−      ·             < 0,                             (21)
+                               ∂ϕ     1 − α w0 + ch + βϕ
+
+which captures the option value of restraint: hiring less today mitigates expected firing costs
+tomorrow.
+
+
+A.5.2   Embedding the Mechanism in a Task-Based Model
+
+To connect with canonical theories of task displacement, suppose production in each pe-
+riod requires a unit measure of tasks z ∈ [0, 1]. Tasks z < It are automated (performed by
+capital) and z ≥ It are performed by labor; write Γt ≡ 1 − It for the labor share of tasks.
+Output aggregates capital- and labor-performed tasks with CES elasticity σ > 1,
+
+                      h                                                   iσ/(σ−1)
+                              (σ−1)/σ                             (σ−1)/σ
+               Yt = At Γ1/σ
+                        t   n t       + ( 1 − Γ t ) 1/σ
+                                                        ( A K
+                                                              K )                  ,      (22)
+
+
+
+
+                                                      A.20
+

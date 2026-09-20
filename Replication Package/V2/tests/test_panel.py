@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -10,7 +11,7 @@ import pytest
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "panel" / "build_panel.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "panel" / "build_panel.py"
 
 
 def load_panel_module():
@@ -43,6 +44,72 @@ def test_build_ipca_frame_rebases_monthly_variation() -> None:
     assert frame.loc[1, "indice"] == pytest.approx(100.0)
     assert frame.loc[0, "indice"] == pytest.approx(100 / 1.02)
     assert frame.loc[2, "indice"] == pytest.approx(103.0)
+
+
+def test_registered_source_is_reused_and_hash_validated(
+    tmp_path: Path,
+) -> None:
+    module = load_panel_module()
+    payload = b"frozen official source"
+    raw_path = tmp_path / "vintage" / "source.bin"
+    raw_path.parent.mkdir(parents=True)
+    raw_path.write_bytes(payload)
+    manifest = {
+        "source.bin": {
+            "bytes": len(payload),
+            "sha256": hashlib.sha256(payload).hexdigest(),
+            "url": "https://example.test/source.bin",
+        }
+    }
+
+    observed, entry, reused = module._load_or_fetch_registered_source(
+        raw_path=raw_path,
+        manifest=manifest,
+        manifest_key="source.bin",
+        expected_url="https://example.test/source.bin",
+        fetch=lambda _url: pytest.fail("registered source must not be fetched"),
+    )
+
+    assert observed == payload
+    assert entry == manifest["source.bin"]
+    assert reused is True
+
+    raw_path.write_bytes(b"tampered")
+    with pytest.raises(RuntimeError, match="Registered source mismatch"):
+        module._load_or_fetch_registered_source(
+            raw_path=raw_path,
+            manifest=manifest,
+            manifest_key="source.bin",
+            expected_url="https://example.test/source.bin",
+            fetch=lambda _url: pytest.fail("tampering must not trigger fetch"),
+        )
+
+
+def test_missing_registered_source_is_downloaded_once(tmp_path: Path) -> None:
+    module = load_panel_module()
+    payload = b"frozen official source"
+    raw_path = tmp_path / "vintage" / "source.bin"
+    calls: list[str] = []
+    manifest = {
+        "source.bin": {
+            "bytes": len(payload),
+            "sha256": hashlib.sha256(payload).hexdigest(),
+            "url": "https://example.test/source.bin",
+        }
+    }
+
+    observed, _entry, reused = module._load_or_fetch_registered_source(
+        raw_path=raw_path,
+        manifest=manifest,
+        manifest_key="source.bin",
+        expected_url="https://example.test/source.bin",
+        fetch=lambda url: calls.append(url) or payload,
+    )
+
+    assert observed == payload
+    assert raw_path.read_bytes() == payload
+    assert calls == ["https://example.test/source.bin"]
+    assert reused is False
 
 
 def test_national_panel_preserves_zero_flow_missingness(
@@ -182,3 +249,25 @@ def test_frozen_cnae_dictionary_has_official_division_structure() -> None:
     assert len(divisions) == 87
     assert divisions["secao"].nunique() == 21
     assert divisions["divisao"].nunique() == 87
+
+
+def test_sector_support_serialization_matches_the_signed_reference(
+    tmp_path: Path,
+) -> None:
+    module = load_panel_module()
+    reference = (
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "reconciliation"
+        / "painel_cbo_cnae_support.json"
+    )
+    payload = json.loads(reference.read_text(encoding="utf-8"))
+    reversed_payload = dict(reversed(list(payload.items())))
+    observed = tmp_path / reference.name
+
+    module.write_sector_support(reversed_payload, observed)
+
+    assert observed.read_bytes() == reference.read_bytes()

@@ -1,0 +1,44 @@
+5.1.1   Task-Level Evidence: Testing the Framework’s Mechanisms in Our Data
+
+We begin with direct evidence on the displacement and reallocation channels using task-
+level information extracted from our own job-postings data (Section 4.1). For each O*NET
+task j, firm i, 6-digit occupation c, and seniority group s ∈ {junior, senior}, let Prev jicsτ be
+the share of (i, c, s) postings in period τ whose extracted bundle contains task j. Splitting
+the sample at the ChatGPT launch (τ =pre: 2021Q3–2022Q4; τ =post: 2023Q1 through
+early April 2025, the latest postings in our extract), the dependent variable is the Davis
+et al. (1998) (DHS) growth rate:
+
+                                                          post       pre
+                                                   Prev jics − Prev jics
+                         ∆   DHS
+                                   Prev jics = 2          post       pre × 100.                   (7)
+                                                   Prev jics + Prev jics
+
+This is similar to the task-level DHS measure used by Hampole et al. (2025). Observations
+are weighted by the harmonic mean of pre- and post-period cell sizes (the standard DHS
+weight), and standard errors are clustered at the firm level throughout.
+
+
+Test 1: Displacement. Under the maintained assumption α < x̂, automated tasks lie in
+the junior range, so displacement predicts that AI-exposed tasks are removed from junior
+bundles at adopters post-ChatGPT and not from senior ones. We operationalize a task’s
+displaceability with the standardized Eloundou et al. (2024) GPT-4 exposure score Exp j ,
+and estimate, separately for juniors and seniors,
+
+                   ∆DHS Prev jics = βs Exp j × Adopti + α j + αic + ε jics ,                      (8)
+
+and a pooled triple-difference that adds the Seniors dimension:
+
+∆DHS Prev jics = β A Exp j × Adopti + β AS Exp j × Adopti × Seniors + Γ′ Z jics + α j + αic + ε jics ,
+                                                                                                   (9)
+where Adopti is the firm-level adopter indicator (Section 4.2), Seniors = 1 for seniors,
+Z jics collects the lower-order interactions, and α j and αic are task and firm-by-occupation
+fixed effects (firm only in the less demanding spec). Identification comes from within-
+cell, cross-task variation in exposure interacted with adoption. Under displacement, we
+expect β J < 0, βS ≥ 0, and β AS > 0. Table 1 reports the results.
+
+
+
+
+                                                     25
+

@@ -1,0 +1,50 @@
+1        Introduction
+When the outcome of interest Y is strictly positive, researchers often estimate an average treatment
+effect (ATE) in logs of the form EP rlogpY p1qq ´ logpY p0qqs, which has the appealing feature that
+its units approximate percentage changes in the outcome.1 A practical challenge in many economic
+settings, however, is that the outcome may sometimes equal zero, and thus the ATE in logs is not
+well-defined. When this is the case, it is common for researchers to estimate ATEs for alternative
+                                                                     `?           ˘
+transformations of the outcome such as logp1`Y q or arcsinhpY q “ log 1 ` Y 2 ` Y , which behave
+similarly to logpY q for large values of Y but are well-defined at zero. The treatment effects for these
+alternative transformations are typically interpreted like the ATE in logs, i.e. as (approximate)
+average percentage effects. For example, among the 11 papers published in the American Economic
+Review since 2018 that interpret a treatment effect for arcsinhpY q, all but one interpret the result
+as a percentage effect or elasticity.2
+        The main point of this paper is that identified ATEs that are well-defined with zero-valued out-
+comes should not be interpreted as percentage effects, at least if one imposes the logical requirement
+that a percentage effect does not depend on the baseline units in which the outcome is measured
+(e.g. dollars, cents, or yuan).
+        Our first main result shows that if mpyq is a function that behaves like logpyq for large values
+of y but is defined at zero, then the ATE for mpY q will be arbitrarily sensitive to the units of Y .
+Specifically, we consider continuous, increasing functions mp¨q that approximate logpyq for large
+values of y in the sense that mpyq{ logpyq Ñ 1 as y Ñ 8. The common logp1 ` yq and arcsinhpyq
+transformations satisfy this property. We show that if the treatment affects the extensive margin
+(i.e. P pY p1q “ 0q ‰ P pY p0q “ 0q), then one can obtain any magnitude for the ATE for mpY q by
+rescaling the outcome by some positive factor a. It is therefore inappropriate to interpret the ATE
+for mpY q as a percentage effect, since a percentage is inherently a unit-invariant quantity, while the
+ATE for mpY q depends arbitrarily on the units of Y .
+        The intuition for this result is that a “percentage” treatment effect is not well-defined for an
+individual for whom treatment increases their outcome from zero to a positive value. For example,
+in our application to Carranza et al. (2022) in Section 5, the treatment induces more people to have
+positive hours worked. The percentage change in hours is then not well-defined for individuals who
+would work positive hours under the treatment condition but zero hours under the control condition.
+Any average treatment effect that is well-defined with zero-valued outcomes must therefore implicitly
+assign a value for a change along the extensive margin. For logarithm-like transformations mp¨q, the
+importance of the extensive margin is determined implicitly by the units of Y . To see why this is
+the case, consider an individual who works positive hours only if they are treated, so that Y p1q ą 0
+and Y p0q “ 0. Their treatment effect for the transformed outcome mpY q is mpY p1qq ´ mp0q, which
+becomes larger if the units of Y are re-scaled by some a ą 1, e.g. if we convert from weekly hours
+   That is, logpY p1q{Y p0qq « Y p1q´Y
+    1
+                                  Y p0q
+                                        p0q
+                                            when Y p1q{Y p0q « 1.
+    2
+   We found 17 papers overall using arcsinhpY q as an outcome variable, of which 11 interpret the units; see
+Appendix Table 1.
+
+
+
+                                                     2
+

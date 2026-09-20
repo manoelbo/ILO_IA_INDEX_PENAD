@@ -1,0 +1,67 @@
+      b (g, t) are estimators for w (g, t) such that for all g ∈ G and t = 2, . . . , T ,
+where w
+                                                                       n
+                               √                              1 X w
+                                      b (g, t) − w (g, t)) = √
+                                   n (w                          ξg,t (Wi ) + op (1) ,
+                                                               n
+                                                                      i=1
+
+                                 w (W)0 finite and positive definite. Estimators based on the sample
+       w               w            
+with E ξgt (W) = 0 and E ξgt (W)ξgt
+analogue of the weights discussed in Section 3 satisfy this condition.
+    Let
+                                T                                                                         
+                                                        dr,nev
+                                                               (Wi ; κ∗,nev
+                               XX
+                  lw (Wi ) =                w (g, t) · ψg,t,0         g,t   ) + ξ w
+                                                                                  g,t (W i ) · AT T (g, t)   ,
+                               g∈G t=2
+       dr,nev
+where ψg,t,δ  are as defined in (4.4).
+    The following result follows immediately from Theorem 2, and can be used to conduct asymptotically
+valid inference for the summary causal parameters θ.
+
+Corollary 2. Under the assumptions of Theorem 2,
+                                                                 n
+                                        √                1 X w
+                                            n(θ̂ − θ) = √        l (Wi ) + op (1)
+                                                          n
+                                                             i=1
+                                                                 h       i
+                                                      d
+                                                      → N 0, E lw (W )2
+                                                      −
+
+    Corollary 2 implies that one can construct standard errors andh confidence
+                                                                           i   intervals for summary
+treatment effect parameters based on a consistent estimator of E lw (W )2 or by using a bootstrap
+procedure like the one in Algorithm 1. The main advantage of using the bootstrap procedure akin
+to Algorithm 1 is that inference procedures would be robust against multiple-testing problems. This
+                                                      bal (e; e0 ), θ (g̃), and θ t̃ , as practitioners would
+                                                                                    
+is particularly attractive when considering θes (e), θes             sel         c
+probably analyze how these parameters differ across event-times e, groups g̃, and calendar-time t̃.
+
+Remark 13. As discussed in Remark 10, the validity of the “cluster-robust” multiplier bootstrap procedure
+relies on the number of clusters being “large.” In some applications such a condition may be more plausible
+when analyzing the aggregated parameter θ than when analyzing the AT T (g, t) themselves.
+
+
+5    The Effect of Minimum Wage Policy on Teen Employment
+In this section, we illustrate the empirical relevance of our proposed methods. To do this, we apply our
+methods to study the effect of the minimum wage on teen employment. The main goal of this section
+is to compare results arising from using a TWFE specification (as is most common in applications) to
+results coming from our proposed method. We think that this comparison is important in order to get
+a sense of whether the theoretical limitations of TWFE discussed in recent work end up translating into
+meaningful differences in applications. Moreover, one might expect that understanding the effect of a
+minimum wage change on employment is a challenging case for TWFE as the effect of the minimum wage
+may be dynamic (Meer and West (2016)) and the timing of minimum wage changes varies across states.
+Unlike TWFE, the approach that we have proposed in the current paper is robust to these challenges.
+
+
+
+                                                               26
+

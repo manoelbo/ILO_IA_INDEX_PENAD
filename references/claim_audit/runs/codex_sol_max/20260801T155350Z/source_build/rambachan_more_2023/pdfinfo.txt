@@ -1,0 +1,22 @@
+Title:           
+Subject:         
+Keywords:        
+Author:          
+Creator:         LaTeX with hyperref
+Producer:        Acrobat Distiller 8.1.0 (Windows); modified using iTextSharp 4.1.6 by 1T3XT
+CreationDate:    Fri Aug 11 07:53:35 2023 -03
+ModDate:         Wed Sep  6 21:12:14 2023 -03
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           37
+Encrypted:       no
+Page size:       534.954 x 696.983 pts
+Page rot:        0
+File size:       916176 bytes
+Optimized:       no
+PDF version:     1.3

@@ -1,0 +1,43 @@
+2.1      Job Profile Data
+The first dataset consists of all publicly available professional LinkedIn profiles be-
+tween January 2021 through June 2025. The dataset includes approximately 75
+million employment spells from 23 million unique individuals across 2.5 million UK-
+based firms. Each observation includes the worker’s job title, employer, start and
+end dates (if available), seniority level,3 and compensation.4 The data provide
+near-real-time employment stocks, which enable us to track within-firm workforce
+composition changes over time.
+    From the panel of individual LinkedIn profiles, we construct a monthly firm-level
+panel from January 2021 through June 2025. For each firm-month, we calculate
+total employment as the count of unique individuals with active employment spells
+at a certain company in that month, and log-transform this variable. This is our
+main employment stock measure. We then separate total employment into junior
+and senior employment stocks based on Revelio seniority classifications of jobs. We
+also calculate average compensation as the log of the mean of reported salaries plus
+bonuses in a firm. We only focus on firms that remained in business throughout the
+sample period.
+    To calculate firm-level exposure scores, we use the assessment framework devel-
+oped by Eloundou et al. (2024). They evaluate 19,265 detailed work activities and
+tasks from the O*NET 27.2 database to determine whether LLM assistance could
+reduce task completion time by at least 50% while maintaining quality. We focus
+on their ‘E1’ measure, which captures exposure to current LLMs, rather than LLMs
+combined with additional software. We do so because it is the most appropriate
+metric for identifying short-term labor market effects that do not require additional
+software development or complex organizational changes. To obtain our firm-level
+   3
+      Revelio Labs determines seniority using an ensemble model that combines three components:
+(i) current job characteristics including title, company, and industry; (ii) employment history
+including tenure and previous position seniority; and (iii) individual age. These three scores are
+averaged to create a continuous seniority metric, which is then mapped to seven ordinal levels
+based on keyword benchmarks (e.g., “junior,” “senior,” “director”). The levels range from Entry
+Level (e.g., interns, trainees) through Junior, Associate, Manager, and Director levels, to Executive
+and Senior Executive levels (e.g., C-suite positions).
+    4
+      Revelio Labs estimates compensation using a predictive model trained on publicly available
+visa application data, self-reported salaries, and job posting information. The model incorporates
+position-specific variables (job title, seniority level, company, location), individual-specific factors
+(tenure at company), and temporal controls (year of observation) to generate salary predictions
+for positions where compensation data are not directly observed.
+
+
+                                                   6
+

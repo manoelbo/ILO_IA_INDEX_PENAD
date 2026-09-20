@@ -1,0 +1,42 @@
+driven by differences in both the intensity of genAI use and labor cost shares. These factors
+can offset one another: for example, the information services sector has high rates of genAI use
+and time savings, but its estimated productivity gain is muted by its low labor cost share. At
+the aggregate level, we estimate a potential productivity gain of 1.2% based on current genAI
+use. This is close to Acemoglu (2024), who uses a similar framework to estimate a 0.7% gain
+based on predicted task exposure rather than actual adoption. Notably, however, Acemoglu
+(2024) assumed these productivity gains may take a decade to materialize. In contrast, our
+estimates reflect current adoption and time savings, implying a faster pace of diffusion. We also
+emphasize that our estimates do not capture potential productivity gains from using genAI to
+reorganize or completely automate production processes, and therefore likely represent a lower
+bound over longer horizons (Bresnahan and Trajtenberg, 1995; Brynjolfsson and Hitt, 2000;
+David, 1990; Jovanovic and Rousseau, 2005).
+
+
+2     Data Sources and Measurement
+
+2.1   The Real-Time Population Survey (RPS)
+
+Our main data source is the Real-Time Population Survey (RPS), a national labor market
+survey of U.S. adults aged 18-64 (for a detailed discussion, see Bick and Blandin 2023). The RPS
+is fielded online by Qualtrics, a large commercial survey provider, and has collected multiple
+survey waves each year starting in 2020.
+
+    The RPS is designed to mirror the Current Population Survey (CPS) along key dimensions.
+The RPS matches questions on demographics and labor market outcomes in the basic CPS
+and CPS Outgoing Rotation Group, using the same word-for-word phrasing when practical
+and replicating the intricate sequence of questions necessary to elicit labor market outcomes
+in a manner consistent with the CPS (US Census Bureau, 2015). Replicating key portions
+of an existing high-quality survey ensures that survey concepts are comparable, which allows
+researchers to validate RPS outcomes against a widely used benchmark with a larger sample
+size and to construct sample weights. Bick and Blandin (2023) and Bick et al. (2025a,b) show
+that the RPS closely aligns with government household surveys on distributions of employment,
+hours worked, earnings, industry composition, employee tenure, and work from home.
+
+    In June 2024, the RPS introduced a novel module measuring genAI use both at work and
+at home.
+
+
+
+
+                                               3
+

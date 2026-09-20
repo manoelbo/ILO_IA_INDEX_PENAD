@@ -1,0 +1,54 @@
+           Substituting equations (11a)-(11c) into the DD decomposition theorem expresses the
+
+probability limit of the two-way fixed effects DD estimator (assuming that 𝑇𝑇 is fixed and 𝑁𝑁 grows)
+
+in terms of potential outcomes and separates the estimand from the identifying assumptions:
+
+                                   𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 = 𝛽𝛽 𝐷𝐷𝐷𝐷 = 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 + 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 + Δ𝐴𝐴𝐴𝐴𝐴𝐴                      (12)
+                                   𝑁𝑁→∞
+
+           The first term in (12) is the two-way fixed effects DD estimand, which I call the “variance-
+
+weighted average treatment effect on the treated” (VWATT):
+
+     𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 ≡ � 𝜎𝜎𝑘𝑘𝑘𝑘 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)�
+                      𝑘𝑘≠𝑈𝑈
+
+
+                          + � � 𝜎𝜎𝑘𝑘ℓ �𝜇𝜇𝑘𝑘ℓ 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� + (1 − 𝜇𝜇𝑘𝑘ℓ )𝐴𝐴𝐴𝐴𝑇𝑇ℓ �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)��         (12𝑎𝑎)
+                              𝑘𝑘≠𝑈𝑈 ℓ>𝑘𝑘
+
+The 𝜎𝜎 terms correspond to the 𝑠𝑠 terms in equation (7), but replace sample shares (𝑛𝑛) with
+
+population shares (𝑛𝑛𝑘𝑘∗ ). 14 VWATT is always a positively weighted average of ATTs for the units
+
+and periods that act as treatment groups across the 2x2 DD’s that make up 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 . The weights come
+
+from the decomposition theorem and reflect group size and treatment variance.
+
+           The second term, which I call “variance-weighted common trends” (VWCT) generalizes
+
+common trends to a setting with timing variation:
+
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 ≡ � 𝜎𝜎𝑘𝑘𝑘𝑘 �Δ𝑌𝑌𝑘𝑘0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)� − Δ𝑌𝑌𝑈𝑈0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)��
+              𝑘𝑘≠𝑈𝑈
+
+
+                       + � � 𝜎𝜎𝑘𝑘ℓ �𝜇𝜇𝑘𝑘ℓ �Δ𝑌𝑌𝑘𝑘0 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)� − Δ𝑌𝑌ℓ0 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘)��
+                          𝑘𝑘≠𝑈𝑈 ℓ>𝑘𝑘
+
+
+                       + (1 − 𝜇𝜇𝑘𝑘ℓ )�Δ𝑌𝑌ℓ0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ), 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� − Δ𝑌𝑌𝑘𝑘0 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ), 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)���     (12𝑏𝑏)
+
+
+
+
+14
+     Note that a DD estimator is not consistent if 𝑇𝑇 gets large because the permanently turned on treatment dummy
+                                                     𝑋𝑋 ′𝑋𝑋
+becomes collinear with the unit fixed effects (    does not converge to a positive definite matrix). Asymptotics with
+                                                𝑇𝑇
+respect to 𝑇𝑇 require the time dimension to grow in both directions (see Perron 2006).
+
+                                                                11
+

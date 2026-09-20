@@ -1,0 +1,29 @@
+                                                    A BSTRACT1
+      This paper introduces the AI Generated Index of Occupational Exposure (GENOE), a novel
+      measure quantifying the potential impact of artificial intelligence on occupations and their
+      associated tasks. Our methodology employs synthetic AI surveys, leveraging large language
+      models to conduct expert-like assessments. This approach allows for a more holistic evaluation
+      of job replacement likelihood, reducing assumptions about the mechanisms through which AI
+      innovations could replace job tasks and skills. Our findings reveal that the average occupa-
+      tional exposure to AI is 0.28 within one year, increasing to 0.38 and 0.44 over the five- and
+      10-year horizons, respectively. We also show evidence that the index not only considers task
+      automation, but also contextual factors such as social and ethical considerations and regulatory
+      constraints that may affect the likelihood of replacement. After calibrating the index with labor
+      market microdata from the United States and Mexico, we show that approximately 43 million
+      and 16 million jobs, respectively, are highly exposed to AI within a one-year time horizon. The
+      GENOE index provides valuable insights for policymakers, employers, and workers, offering
+      a data-driven foundation for strategic workforce planning and adaptation in the face of rapid
+      technological change.
+
+
+      JEL classifications: C53, C81, J23, J24, O33
+      Keywords: Artificial intelligence (AI), Labor markets, Job displacement, Automation, Occupa-
+      tional exposure, Tasks, Synthetic AI surveys, AI Generated Index (GENOE)
+
+
+
+
+    1 We thank Carlos Scartascini for his valuable comments, and Carlo Pizzinelli and his co-authors for sharing with
+
+us their complementarity index and C-AIOE estimates.
+

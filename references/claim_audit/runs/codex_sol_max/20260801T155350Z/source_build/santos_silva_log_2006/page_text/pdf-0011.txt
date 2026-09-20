@@ -1,0 +1,34 @@
+representation of the constant-elasticity model is only useful as a device to estimate the
+parameters of interest under very specific conditions on the error term.
+  When η i is statistically independent of xi , the conditional variance of yi (and εi ) is
+proportional to exp (2xi β). Although economic theory generally does not provide any in-
+formation on the variance of εi , we can infer some of its properties from the characteristics
+of the data. Because yi is non-negative, when E [yi |x] approaches zero, the probability
+of yi being positive must also approach zero. This implies that V [yi |x], the conditional
+variance of yi , tends to vanish as E [yi |x] passes to zero.8 On the other hand, when the
+expected value y is far away from its lower bound, it is possible to observe large devia-
+tions from the conditional mean in either direction, leading to greater dispersion. Thus,
+in practice, εi will generally be heteroskedastic and its variance will depend on exp (xi β),
+but there is no reason to assume that V [yi |x] is proportional to exp (2xi β). Therefore, in
+general, regressing ln (yi ) on xi by OLS will lead to inconsistent estimates of β.
+  It may be surprising that the pattern of heteroskedasticity and, indeed, the form of
+all higher-order moments of the conditional distribution of the error term can aﬀect the
+consistency of an estimator, rather than just its eﬃciency. The reason is that the non-
+linear transformation of the dependent variable in equation (7) changes the properties of
+the error term in a non-trivial way since the conditional expectation of ln (η i ) depends on
+the shape of the conditional distribution of η i . Hence, unless very strong restrictions are
+imposed on the form of this distribution, it is not possible to recover information about the
+conditional expectation of yi from the conditional mean of ln (yi ) simply because ln (η i ) is
+correlated with the regressors. Nevertheless, estimating (7) by OLS will produce consistent
+estimates of the parameters of E [ln (yi )| x] as long as E [ln (yi )| x] is a linear function of
+   8
+       In the case of trade data, when E [yi |x] is close to its lower bound (i.e., for pairs of small and distant
+countries), it is unlikely that large values of trade are observed since they cannot be oﬀset by equally
+large deviations in the opposite direction simply because trade cannot be negative. Therefore, for these
+observations, dispersion around the mean tends to be small.
+
+
+
+
+                                                        10
+

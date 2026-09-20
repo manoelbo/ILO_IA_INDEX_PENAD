@@ -1,0 +1,42 @@
+3      Conceptual Framework
+
+3.1      Overview
+
+This section develops a simple formal framework to analyze the “seniority-biased” labor
+demand effects of GenAI. The objective is to explain why GenAI adoption may dispropor-
+tionately reduce demand for junior workers and to clarify potential mechanisms under-
+lying this pattern.11 The framework is motivated by two broad patterns in the emerging
+evidence: micro-level experimental studies consistently find that GenAI disproportion-
+ately increases the productivity of less-experienced workers (Brynjolfsson et al., 2025b;
+Noy and Zhang, 2023; Dell’Acqua et al., 2023; Cui et al., 2025), whereas labor market
+evidence, including our results, suggests that GenAI adoption and exposure are asso-
+ciated with declines in junior employment (Brynjolfsson et al., 2025a; Azar et al., 2025;
+Klein Teeselink, 2025; Lodefalk et al., 2026).
+     The model examines how GenAI adoption reshapes the composition of labor demand
+between junior and senior workers in a partial-equilibrium setting. It highlights three
+mechanisms: a displacement effect, whereby automation removes tasks previously per-
+formed by juniors; a productivity effect, whereby higher productivity reduces labor re-
+quired on surviving tasks; and a reallocation effect, whereby juniors expand into some pre-
+viously senior tasks as their relative productivity rises. The main result is that when tasks
+are complementary or Cobb-Douglas (σ ≤ 1), displacement and productivity effects re-
+duce junior labor demand, while reallocation is the only offsetting force. Whether junior
+employment declines more than senior employment therefore depends on the relative
+strength of these forces.
+
+
+3.2      Setup
+
+We build on the task-based framework of Acemoglu and Autor (2011) and Acemoglu and
+Restrepo (2018). We consider a short-run partial-equilibrium setting in which firm out-
+put Y and wages are held fixed. The goal is to isolate how adoption of GenAI by a firm
+    11 This framework explains the incidence of GenAI across seniority levels—why juniors may bear the labor
+
+demand cost while seniors do not. It is distinct from, and complementary to, the forward-looking hiring
+model in Supplemental Appendix A.5, which explains the timing of the employment response—why firms
+adjust junior hiring early, before automation is fully realized.
+
+
+
+
+                                                     12
+

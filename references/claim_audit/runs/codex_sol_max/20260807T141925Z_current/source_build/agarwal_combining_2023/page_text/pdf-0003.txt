@@ -1,0 +1,39 @@
+                                                                                                       3
+
+assistance unambiguously improves prediction and decision quality. Unless the costs in terms
+of human effort outweigh these benefits, it is optimal to provide AI assistance to humans.
+However, substantial literature in economics suggests that humans may err when making
+probabilistic judgments by deviating from the benchmark model of Bayesian updating with
+correct beliefs (see Benjamin et al., 2019, for a review). The optimal approach for combining
+human and AI information in the presence of these mistakes is non-trivial.
+The experiment employs professional radiologists whom we recruit through teleradiology
+companies to diagnose retrospective patient cases. We experimentally manipulate the in-
+formation set radiologists have access to when making decisions in a two-by-two factorial
+design. In the minimal information environment, we provide only the chest X-ray image to
+which we add either AI predictions or contextual information, or both. The AI information
+treatment provides probabilities that a patient case is positive for a potential chest pathology
+generated using an algorithm trained on over 250,000 X-rays with corresponding disease la-
+bels (Irvin et al., 2019). This algorithm was shown to perform comparably to board-certified
+radiologists. The contextual information treatment provides clinical history information that
+radiologists typically have available but, for privacy reasons, was not available to train the
+AI. This information includes the treating doctors’ indications, the patient’s vitals, and the
+patient’s labs.
+We first estimate the treatment effects of those informational interventions on radiologists’
+prediction accuracy and the probability of making a correct decision. We then test alterna-
+tive models of biased belief updating to investigate whether radiologists exhibit systematic
+deviations from a Bayesian benchmark when incorporating AI predictions. For example, hu-
+mans may suffer from automation bias, a tendency to place more weight on machine-provided
+predictions than on one’s own information.3 Additionally, humans may treat AI predictions
+as independent of their own information (Enke and Zimmermann, 2019). Finally, we evaluate
+various forms of human-AI collaboration – in terms of diagnostic performance and costs of
+expert time – that decide, as a function of the AI prediction, to use only the AI input, only
+the human input, or the human input with access to AI.
+Diagnostic radiology is an ideal laboratory for investigating human-AI interaction for var-
+ious reasons. Deep learning has made significant advances in radiology, surpassing human
+decision-making in many cases, and such algorithms are already clinically deployed Rajpurkar
+and Lungren (2023). It, therefore, serves as a useful leading indicator for other professions
+   3
+   This terminology is borrowed from the literature that dates to the proliferation of computerized auto-
+mated support systems in aviation, which raised concerns about human complacency or automation bias (see
+Alberdi et al., 2009, for an overview).
+

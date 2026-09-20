@@ -1,0 +1,36 @@
+exp (xi β) is large. This is because, under the assumption that E [yi |x] ∝ V [yi |x], all
+observations have the same information on the parameters of interest as the additional
+information on the curvature of the conditional mean coming from observations with large
+exp (xi β) is oﬀset by their larger variance. Of course, this estimator may not be optimal,
+but without further information on the pattern of heteroskedasticity, it seems natural to
+give the same weight to all observations.12 Even if E [yi |x] is not proportional to V [yi |x],
+the PML estimator based on (9) is likely to be more eﬃcient than the NLS estimator
+when the heteroskedasticity increases with the conditional mean.
+  The estimator defined by (9) is numerically equal to the Poisson pseudo-maximum
+likelihood (PPML) estimator which is often used for count data.13 The form of (9) makes
+clear that all that is needed for this estimator to be consistent is the correct specification
+of the conditional mean, i.e., E [yi |x] = exp (xi β). Therefore, the data do not have to
+be Poisson at all and, what is more important, yi does not even have to be an integer,
+for the estimator based on the Poisson likelihood function to be consistent. This is the
+well-known pseudo-maximum likelihood result first noted by Gourieroux, Monfort and
+Trognon (1984).
+  The implementation of the PPML estimator is straightforward since there are standard
+econometric programs with commands that permit the estimation of Poisson regression,
+even when the dependent variables are not integers. Because the assumption V [yi |x] ∝
+E [yi |x] is unlikely to hold, this estimator does not fully account for the heteroskedasticity
+in the model and all inference has to be based on an Eicker-White (Eicker, 1963; and
+White, 1980) robust covariance matrix estimator.
+  Of course, if it was known that V [yi |x] is a function of higher powers of E [yi |x], a more
+eﬃcient estimator could be obtained down-weighing even more the observations with
+large conditional mean. An example of such estimator is the gamma pseudo-maximum
+likelihood estimator studied by Manning and Mullahy (2001) which, like the log-linearized
+  12
+       The same strategy is implicitly used by Papke and Wooldridge (1996) in their pseudo-maximum
+estimator for fractional data models.
+  13
+     See Cameron and Trivedi (1998) and Winkelmann (2003) for more details on the Poisson regression
+and on more general models for count data.
+
+
+                                                 13
+

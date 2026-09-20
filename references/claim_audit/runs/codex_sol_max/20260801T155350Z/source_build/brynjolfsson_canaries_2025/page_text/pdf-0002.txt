@@ -1,0 +1,64 @@
+1        Introduction
+
+The proliferation of generative artificial intelligence (AI) has sparked a global debate about its
+
+potential impact on the labor market. This discourse, across academia, public policy, business, and
+
+popular media, spans utopian predictions of enhanced productivity, dystopian fears of widespread
+
+job displacement, and skeptical views that AI will have minimal effects on employment or pro-
+
+ductivity. Historically, technologies have affected different tasks, occupations, and industries in
+
+different ways, replacing work in some, augmenting others, and transforming still others. These
+
+heterogeneous effects suggest that there may be “canaries in the coal mine” which are harbingers
+
+of more widespread effects of AI.
+
+        There have been rapid improvements in AI capabilities in several areas. For instance, according
+
+to the most recent AI Index Report, AI systems could solve just 4.4% of coding problems on SWE-
+
+Bench, a widely used benchmark for software engineering, in 2023, but performance increased to
+
+71.7% in 2024 (Maslej et al., 2025).1 AI has improved on other benchmarks as well including
+
+language understanding, subject knowledge, and reasoning. At the same time, AI systems are
+
+increasingly widely adopted. According to Hartley et al. (2025), LLM adoption at work among
+
+U.S. survey respondents above age 18 reached 46% by June/July 2025.2
+
+        Given the better capabilities and widespread adoption, a central concern, amplified in recent
+
+headlines, is whether AI is beginning to supplant human labor, particularly for younger, entry-level
+
+workers in highly exposed professions like software engineering and customer service.3
+
+        Despite the intensity of this debate, empirical evidence has struggled to keep pace with techno-
+
+logical advancement, leaving many fundamental questions unanswered. This paper confronts this
+
+empirical gap by leveraging a large-scale, high-frequency administrative dataset from ADP, the
+
+largest payroll software provider in the United States. Our sample consists of monthly, individual-
+
+level payroll records through July 2025, encompassing millions of workers across tens of thousands
+
+of firms. This rich panel structure allows us to track employment dynamics with a high degree of
+    1
+      SWE-bench is designed to evaluate the performance of large language models (LLMs) on real-world software
+engineering tasks. It uses a collection of GitHub issues to assess an LLM’s ability to generate code that resolves those
+issues.
+    2
+      Similarly, Bick et al. (2024) found that in late 2024, nearly 40% of the U.S. population age 18-64 reported using
+generative AI, with 23% of employed respondents saying they had used generative AI for work at least once in the
+previous week, and 9% every work day.
+    3
+      Improved productivity of workers in an occupation could lead to either reduced or increased employment, de-
+pending on, among other things, how elastic demand is for the output of those workers.
+
+
+                                                           2
+

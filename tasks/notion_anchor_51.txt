@@ -1,0 +1,18 @@
+**Tabela 5.1: Resultados médios nacionais**
+<table header-row="true">
+<tr>
+<td>Amostra</td>
+<td>Admissões (log)</td>
+<td>Desligamentos (log)</td>
+<td>Salário real de admissão (log)</td>
+</tr>
+<tr>
+<td>Nacional</td>
+<td>-0,0309<br>(0,0263)</td>
+<td>-0,0417<br>(0,0254)</td>
+<td>-0,0207<br>(0,0140)</td>
+</tr>
+</table>
+> *Notas: as células apresentam o coeficiente DiD e, entre parênteses, o erro-padrão clusterizado por CBO de quatro dígitos. \\* p\<0,10; \** p\<0,05; \\*\*\* p\<0,01. O tratamento compara as CBOs expostas segundo os gradientes da OIT às CBOs classificadas como `Not Exposed`.\*
+Os resultados são predominantemente nulos: os três coeficientes têm sinal negativo, mas nenhum é estatisticamente significativo. As reduções aproximadas são de 3,0% nas admissões, 4,1% nos desligamentos e 2,0% no salário real de admissão. As estimativas pontuais são numericamente não desprezíveis, mas imprecisas; como não foi definido um limiar ex ante de relevância econômica, elas não devem ser classificadas como economicamente relevantes.
+Para admissões e desligamentos, a interpretação causal é ainda mais limitada: os testes de tendências paralelas são rejeitados, indicando que os grupos já divergiam antes do ChatGPT. Como admissões e desligamentos caem simultaneamente, o padrão é compatível com menor movimentação dos fluxos. Entretanto, como o modelo não observa o estoque de emprego, ele não permite concluir se houve ou não destruição líquida de vínculos.

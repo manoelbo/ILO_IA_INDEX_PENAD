@@ -1,0 +1,7 @@
+dimension,group_id,group_label,outcome,outcome_label,outcome_role,result_status,coef,se,p_value,stars,n_obs,n_cbo,pretrend_status,pretrend_p_value
+national,national,Nacional,ln_admissoes,Admissões (log),primary,estimated,-0.0308787948103385,0.0262877745409277,0.2409589210346685,,18307,341,fail,0.0013365869899686
+national,national,Nacional,ln_desligamentos,Desligamentos (log),primary,estimated,-0.0416583904078593,0.0254181321975804,0.1021540182055371,,18307,341,fail,0.0314305454069414
+national,national,Nacional,ln_salario_real_adm,Salário real de admissão (log),primary,estimated,-0.0207064895904558,0.0139919807485837,0.1398305308731688,,18307,341,pass,0.93213882899969
+national,national,Nacional,asinh_saldo,Saldo líquido (asinh),primary,estimated,-0.6596605902038598,0.3772509887277814,0.0812628859814739,*,18307,341,fail,5.704557456666176e-06
+national,national,Nacional,saldo_per_pre_adm,Saldo líquido / admissões pré,balance_robustness,estimated,0.0119382848018534,0.0193208518986567,0.5370585022306735,,18299,340,fail,0.000643190422487
+national,national,Nacional,saldo_flow_rate,Saldo líquido / fluxo total,balance_robustness,estimated,0.0042464833462695,0.0087739054371311,0.628704483256842,,18307,341,not_available,

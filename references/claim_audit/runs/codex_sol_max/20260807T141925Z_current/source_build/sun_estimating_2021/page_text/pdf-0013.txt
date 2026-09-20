@@ -1,0 +1,76 @@
+relative periods into [−T, −K) and (L,T] and estimate a “binned” specification
+
+                                                                −2                 L
+                                                        `                  `                 `                `
+                                                   Õ            Õ                  Õ                   Õ
+                    Yi,t = αi + λt + β ·               Di,t +          µ` Di,t +         µ` Di,t +γ·         Di,t + υi,t        (8)
+                                               `<−K             `=−K               l=0                 `>L
+
+
+without excluding any distant relative periods so that g excl = {−1}. For “trimming”, researchers trim their
+
+panel to be balanced in relative periods.
+
+      Neither “binning” nor “trimming” resolves the issues of contamination discussed below (i.e. the pos-
+
+sibility that treatment effects from other periods affect the estimate for a given µg ). We show the contam-
+
+ination issue for the general specification (4) encompasses both practices. For a given coefficient in the
+
+dynamic specification, “trimming” does however mechanically remove any treatment effects from the rela-
+
+tive periods “trimmed” from the specification. For the static specification put forth in Borusyak and Jaravel
+
+(2017), they noted that “trimming” also does not resolve the contamination issue they identified with the
+
+static specification.
+
+
+3.2     Interpreting the coefficients under no assumptions
+
+First we show that without any assumptions, we can write µg as a linear combination of differences in trends.
+
+Proposition 1. The population regression coefficient on relative period bin g is a linear combination of
+
+differences in trends from its own relative period ` ∈ g, from relative periods ` ∈ g 0 belonging to other bins
+
+g 0 , g but included in the specification, and from relative periods excluded from the specification ` ∈ g excl :
+
+                               ÕÕ                                                        
+                                           g
+                        µg =              ωe,` E[Yi,e+` −Yi,0
+                                                           ∞
+                                                              |Ei = e] − E[Yi,e+`
+                                                                             ∞       ∞
+                                                                                  −Yi,0 ]                                       (9)
+                               ` ∈g e
+                                      Õ        ÕÕ                                                        
+                                                           g
+                               +                          ωe,` E[Yi,e+` −Yi,0
+                                                                           ∞
+                                                                              |Ei = e] − E[Yi,e+`
+                                                                                             ∞       ∞
+                                                                                                  −Yi,0 ]                      (10)
+                                   g0 ,g,g0 ∈ G ` ∈g0 e
+                                     Õ Õ                                                         
+                                                    g
+                               +                   ωe,` E[Yi,e+` −Yi,0
+                                                                    ∞
+                                                                       |Ei = e] − E[Yi,e+`
+                                                                                      ∞       ∞
+                                                                                           −Yi,0 ] .                           (11)
+                                   ` ∈g e x cl e
+
+
+                                                                       g                                                   g
+We use the superscript g to associate the weight ωe,` with the coefficient µg . The weight ωe,` is equal to
+                                                                        ` ·1
+the population regression coefficient on 1{t − Ei ∈ g} from regressing Di,t  {Ei = e} on all bin indicators
+
+{1{t − Ei ∈ g}}g ∈ G included in the specification (4) and two-way fixed effects.
+
+      The above proposition is a direct result of regression mechanics. We provide an intuitive derivation for
+
+
+                                                                       13
+

@@ -1,0 +1,56 @@
+because it arises from the way equation (2) forms “the” control group. This distinction, made clear
+
+in equation (12), ensures an interpretable estimand (VWATT) and clearly defined identifying
+
+assumptions. 16 This follows from at least two related precedents. de Chaisemartin and
+
+D’HaultfŒuille (2018a, p. 5) prove identification of dose-response DD models under the
+
+assumption that “the average effect of going from 0 to d units of treatment among units with
+
+D(0)=d is stable over time.” Treatment effect homogeneity ensures an estimand with no negative
+
+weights. Similarly, the monotonicity assumption in Imbens and Angrist (1994) ensures that the
+
+local average treatment effect does not have negative weights. In other words, negative weights
+
+are a failure of identification rather than a feature of the IV estimand.
+
+A. Interpreting the DD Estimand
+
+When the treatment effect is a constant, 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 (𝑊𝑊) = 𝐴𝐴𝐴𝐴𝐴𝐴, Δ𝐴𝐴𝐴𝐴𝐴𝐴 = 0, and 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 = 𝐴𝐴𝐴𝐴𝐴𝐴. The
+
+rest of this section assumes that VWCT=0 and discusses how to interpret VWATT under different
+
+forms of treatment effect heterogeneity.
+
+     i.   Effects that vary across units but not over time
+If treatment effects are constant over time but vary across units, then 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 (𝑊𝑊) = 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 and we
+
+still have Δ𝐴𝐴𝐴𝐴𝐴𝐴 = 0. In this case DD identifies:
+
+                                                                        ≡ 𝑤𝑤𝑘𝑘𝑇𝑇
+                                            ⎡                                                  ⎤
+                                            ⎢�������������������������
+                                                      𝑘𝑘−1                       𝐾𝐾
+                                                                                               ⎥
+                    𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 = � 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 ⎢𝜎𝜎𝑘𝑘𝑘𝑘 + � 𝜎𝜎𝑗𝑗𝑗𝑗 (1 − 𝜇𝜇𝑗𝑗𝑗𝑗 ) + � 𝜎𝜎𝑗𝑗𝑗𝑗 𝜇𝜇𝑗𝑗𝑗𝑗 ⎥                             (13)
+                                 𝑘𝑘≠𝑈𝑈
+                                            ⎢         𝑗𝑗=1                    𝑗𝑗=𝑘𝑘+1
+                                                                                               ⎥
+                                            ⎢                                                  ⎥
+                                            ⎣                                                  ⎦
+
+
+16
+   Equation (12) shows that the negative weighting pointed out elsewhere only occurs when treatment effects vary
+over time. The mapping between (12) and existing decompositions can be made explicit by rewriting all the 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 (𝑊𝑊)
+terms (see equation 9) in terms of group-time effects, which are the object of, for example, Theorem 1 in de
+Chaisemartin and D’HaultfŒuille (2018b). In general, each group-time effect receives a total amount of weight that
+comes partly from strictly positive terms (equation 12b) and some from potentially negative terms (equation 12c).
+When treatment effects are constant, though, the negative weights in (12c) on the group-time effects in
+𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� cancel with the positive weights on group-time effects in 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)�. Then Δ𝐴𝐴𝐴𝐴𝐴𝐴 = 0 and
+DD estimates VWATT, which has strictly positive weights.
+
+                                                             13
+

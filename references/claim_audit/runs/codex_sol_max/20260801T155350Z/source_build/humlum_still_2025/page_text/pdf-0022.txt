@@ -1,0 +1,60 @@
+new tools may require hiring new workers who displace incumbents (Bessen et al., 2023),
+
+whereas assistance from the tools could instead help retain workers (Brynjolfsson, Li
+
+and Raymond, 2025). Yet rates of job creation and destruction have remained stable for
+
+workplaces that encourage chatbot use. Our confidence bands rule out effects on monthly
+
+job churn rates greater than 0.5% of employment.
+
+       Finally, even if overall rates of job churn are constant at the workplace, encouraging
+
+AI chatbots may attract workers who would like to use the tools. Figure 3, Panel (d)
+
+explores this possibility by estimating the “adopter propensity” of hires and separations
+
+at the workplace—that is, the predicted adoption rate (based on workers’ pre-determined
+
+characteristics) of workers who join or leave the workplace.17 However, despite the
+
+model prediction that AI chatbots may lead to workers re-sorting across firms, we see
+
+no differential changes in the adopter propensity of workers who join or leave workplaces
+
+that encourage chatbot usage. The confidence bands rule out effects on the adopter
+
+propensities of hires and separations larger than 1 percentage point.
+
+
+Heterogeneity by Strength of Treatment. Figure 4, Panels (c) and (d) examine the
+
+effects of additional initiatives in enterprise chatbots and training. Although Appendix D
+
+shows that uptake and reported benefits are highest when the full suite of initiatives is
+
+implemented, we find no detectable impacts on overall employment or early-career jobs
+
+at these workplaces. Similarly, Appendix E.2.3 shows that job churn and worker sorting
+
+have not changed differentially at workplaces with these investments.
+
+
+Occupational Heterogeneity. Figure 5, Panels (c) and (d) report the estimated effects
+
+of AI chatbots on workplace employment and early-career jobs across the 11 occupations
+
+in our sample. We find no significant effects in any occupation: the estimates are close to
+
+zero and generally rule out effects larger than 10%.18 Even between our most contrasting
+
+groups—software developers and marketers (with flexible labor rules) versus teachers
+  17
+     Appendix H.1 details the estimation of these adopter propensities, which our economic framework in
+Section A.2 microfounds as workers’ latent willingness to use AI chatbots.
+  18
+     Appendix E.2.3 similarly shows null results for job churn and worker sorting.
+
+
+                                                  20
+

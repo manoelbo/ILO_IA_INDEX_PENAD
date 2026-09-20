@@ -1,0 +1,42 @@
+            CHAPTER 1
+
+            What has changed since
+            our last report
+
+            Overview
+
+            Because frontier AI model capabilities are improving rapidly and adoption
+            has been swift, it is important to regularly take stock of changes in how people
+            and businesses are using such systems—and what this usage implies for the
+            broader economy.1
+            In this chapter we analyze how Claude usage and diffusion patterns changed
+            from August 2025 to November 2025 just prior to the release of Opus 4.5. We
+            make four observations:
+
+
+            i. Usage remains highly concentrated across tasks
+                The ten most common tasks represent 24% of usage on Claude.ai, up
+                from 23% in our last report. For first-party (1P) API enterprise customers,
+                concentration among tasks increased more notably: the top ten tasks now
+                represent 32% of traffic, up from 28% in the last report.
+
+            ii. Augmentation is once again more common than automation on Claude.ai
+                In our previous report we noted that automated use had risen to exceed
+                augmented use on Claude.ai, perhaps capturing both improving
+                capabilities and greater familiarity among users with LLMs. Data from
+                November 2025 points to a broad-based shift back toward augmented use
+                on Claude.ai: The share of conversations classified as augmented jumped
+                5pp to 52% and the share deemed automated fell 4pp to 45%.2 Product
+                changes during this period—including file creation capabilities, persistent
+                memory, and Skills for workflow customization—may have shifted usage
+                patterns toward more collaborative, human-in-the-loop interactions.
+
+            iii. Within the US, lower usage states have relatively faster gains in adoption
+                Within the US, usage per capita remains largely shaped by how well-
+                matched the workforce is to broader Claude usage: For example, states
+                with a larger share of workers in computer and mathematical occupations
+                tend to have higher usage. Indeed, the top five US states account for nearly
+
+
+The Anthropic Economic Index Report                                                            5
+

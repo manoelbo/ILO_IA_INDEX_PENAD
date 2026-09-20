@@ -1,0 +1,53 @@
+Since (2) shows that the sensitivity to scaling depends on the size of the extensive margin effect, we
+also estimate the extensive margin effect by using the same procedure as in the original paper but
+with the outcome 1rY ą 0s.
+
+                                                                                                     Change from
+                                          Treatment Effect Using:                                   rescaling units:
+
+ Paper                                 arcsinhpY q     arcsinhp100 ¨ Y q      Ext. Margin           Raw                %
+ Azoulay et al (2019)                         0.003                 0.017              0.003       0.014           464
+ Fetzer et al (2021)                         -0.177                -0.451             -0.059      -0.273           154
+ Johnson (2020)                              -0.179                -0.448             -0.057      -0.269           150
+ Carranza et al (2022)                        0.201                 0.453              0.055       0.252           125
+ Cao and Chen (2022)                          0.038                 0.082              0.010       0.044           117
+ Rogall (2021)                                1.248                 2.150              0.195       0.902            72
+ Moretti (2021)                               0.054                 0.068              0.000       0.013            24
+ Berkouwer and Dean (2022)                   -0.498                -0.478              0.010       0.020            -4
+ Arora et al (2021)                           0.113                 0.110             -0.001      -0.003            -3
+ Hjort and Poulsen (2019)                     0.354                 0.354              0.000       0.000             0
+
+Table 1: Change in estimated treatment effects from re-scaling the outcome by a factor of 100 in
+papers published in the AER using arcsinhpY q
+
+Note: This table replicates treatment effect estimates using arcsinhpY q as the outcome in recent papers published
+in the AER, and explores their sensitivity to the units of Y . The first column shows the author(s) and date of the
+paper. The second column shows the treatment effect on arcsinhpY q using the units originally reported in the paper.
+The third column shows a treatment effect estimate constructed identically to the estimate in column 2 except using
+arcsinhp100 ¨ Y q as the outcome instead of arcsinhpY q, e.g. converting Y from dollars to cents before taking the
+arcsinh transformation. The fourth column shows an estimate of the size of the extensive margin, obtained using
+1rY ą 0s as the outcome. The final two columns show the raw difference and percentage difference between the
+second and third columns. The table is sorted on the magnitude of the percentage difference.
+
+
+       The results of this exercise, shown in Table 1, illustrate that treatment effect estimates can be
+quite sensitive to the scaling of the outcome when the extensive margin is not approximately zero.
+Indeed, in 5 of the 10 replicable papers, multiplying the outcome by a factor of 100 changes the
+estimated treatment effect by more than 100% of the original estimate. The change in the estimated
+treatment effect is less than 10% only in three papers, all of which have either zero or near-zero (ă1
+p.p.) effects on the extensive margin. Figure 1 shows that the (absolute) change in the estimated
+treatment effect is larger when the extensive margin effect is larger, with the change lining up very
+closely with the approximation given in (2).15
+    Using the same 10 papers, we also estimate treatment effects using logp1 ` Y q as the outcome,
+and analogously explore how the results change when we multiply the units of Y by 100. (Four of
+the 10 papers that we replicate report an alternative specification using logp1 ` Y q in the paper.)
+The results, shown in Appendix Table 2, are qualitatively quite similar those in Table 1, with five
+  15
+    In Appendix Figure 1, we plot the t-statistics for the treatment effects estimates as well as those for the extensive
+margin effect. In line with the discussion in Remark 5, we find that the t-statistics for the treatment effect using
+arcsinhpY q tend to be similar to those for the extensive margin, except when the extensive margin is very small, and
+become even closer when multiplying the units by 100.
+
+
+                                                           11
+

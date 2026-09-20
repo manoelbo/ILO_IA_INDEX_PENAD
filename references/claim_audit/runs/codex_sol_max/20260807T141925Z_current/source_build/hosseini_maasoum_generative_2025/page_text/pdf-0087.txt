@@ -1,0 +1,47 @@
+     {
+         "seniority":                "junior" | "senior",
+         "years_experience":         integer | null,
+         "likely_occupation":        string,
+         "extracted_tasks":          [
+              { "task_id":      <enum of the 50 candidate IDs>,
+                 "confidence": "HIGH" | "MEDIUM" | "LOW" }
+         ]
+     }
+
+
+
+The task_id field is constrained at token-sampling time to one of the fifty candidate identifiers, which pre-
+vents the model from hallucinating task IDs outside the retrieved set. In our output, all 2,748,260 returned
+task IDs satisfy this constraint.
+
+    The system prompt, reproduced verbatim, instructs the model to perform three classifications (senior-
+ity, years of experience, likely occupation) and a task-selection step:
+
+         You are an expert labor economist analyzing job postings.            For each posting, you
+         must:
+         1. SENIORITY: Classify as “junior” or “senior” based on Revelio’s 7-tier ordinal
+         scale.    Mentally place the posting into one of these 7 levels, then collapse to
+         junior/senior:
+             L1 Entry Level (intern, trainee, entry-level)                                 → JUNIOR
+             L2 Junior Level (jr., associate analyst, bookkeeper)                          → JUNIOR
+             L3 Associate Level (senior individual contributor, attorney)                  → SENIOR
+             L4 Manager Level (manager, superintendent, lead)                              → SENIOR
+             L5 Director Level (director, head of, VP of a function)                       → SENIOR
+             L6 Executive Level (managing director, partner, SVP)                          → SENIOR
+             L7 Senior Executive (CEO, CFO, COO, president)                                → SENIOR
+         2. YEARS OF EXPERIENCE: Extract the minimum years of experience required as an integer.
+         Return null if not mentioned.
+         3. LIKELY OCCUPATION: Provide your best guess of the O*NET occupation title.
+         4. O*NET TASKS: From the candidate task list below, select which tasks are genuinely
+         required by this posting.
+
+             - You MUST only return task_id values that appear in the candidate list.               Do
+               NOT invent or modify task IDs.
+             - Be SELECTIVE: only include tasks clearly implied by the posting duties/responsibilities.
+             - Typical range:       5–20 tasks per posting.
+
+
+
+
+                                                     A.42
+

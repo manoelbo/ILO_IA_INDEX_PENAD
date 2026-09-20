@@ -1,0 +1,67 @@
+the first part of Proposition 6.
+
+                                                 δe,` . The standard OLS asymptotics applies because by
+    We next show the asymptotic normality of the b
+                                             Ü i,t , Üi,t ) is iid across i and has nonzero finite fourth moments.
+assumption after double demeaning, the data (B
+
+The asymptotic distribution of this estimator is thus                      !     !
+                             √                           T
+                                                           Õ −1
+                               N b δ − δ →d N 0, V BÜ V ar
+                                                      −1        Ü i,t Üi,t V Ü
+                                                                B             −1
+                                                                              B
+                                                                                                                   (90)
+                                                                    t=0
+               T
+               Õ −1
+                                |
+where V BÜ =                  Ü ].
+                        Ü i,t B
+                      E[B      i,t
+               t=0
+   Lastly, by the delta method, we have
+                            √         |               |                          
+                              N vec b  f` b    δ − vec f ` δ →d N 0, δ | Σ f ` δ + Σ`                          (91)
+                                T −1
+                                                   !
+                                                                                               
+where Σ` = vec(f ` )| V −1                                      `
+                                Õ
+                        Ü  VB
+                             ar      Ü
+                                     B i,t 
+                                           Ü 2 Ü|
+                                           i,t B i,t V −1
+                                                       Ü
+                                                       B
+                                                          vec(f   ). This follows because vec  f ` and b
+                                                                                               b       δ are uncor-
+                                     t=0
+related: the asymptotic covariance between Í N`e Ne and b   δ is equal to
+                                              e∈h
+                                        `
+                     V BÜ Cov(1 Ei ∈ h ηi (e), Bi,t Üi,t ) V −1                            `
+                                                                 Ü E[Bηi (e) Üi,t | Ei ∈ h ]
+                       −1                         Ü                    Ü
+                                
+
+                                            2
+                                                           =     B
+                                                                                     2
+                                                                                              .                   (92)
+                              E[1 Ei ∈ h` ]2                         E[1 Ei ∈ h` ]2
+                                                                         
+
+Since BÜ and ηi (e) are functions of Ei , we have E[Bη Ü i (e) Üi,t | Ei ∈ h` ] = E[BηÜ i (e) E[Üi,t | Ei, Ei ∈ h` ]].
+
+Furthermore, specification (26) is saturated in Ei and relative time so E[Üi,t | Ei ] = 0. This proves the
+
+asymptotic asymptotic normality of the IW estimators, the second part of Proposition 6.                               
+
+
+
+
+                                                           51
+

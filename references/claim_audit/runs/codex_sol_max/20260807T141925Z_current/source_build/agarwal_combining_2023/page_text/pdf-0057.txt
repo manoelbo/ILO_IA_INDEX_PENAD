@@ -1,0 +1,44 @@
+                                                                                                                                                    57
+
+B      Appendix of Experimental Interface and Instructions
+
+B.1      Design
+
+
+                                                                 Figure B.1: Design 1
+
+
+                                                                             Within subject comparison,
+                                 Initial randomization into tracks           no image encountered twice
+
+
+
+
+                                               XO                     CH                 AI               AI + CH
+                           Track 1
+                                              Set 1                  Set 2              Set 3              Set 4
+
+
+
+                                               CH                     ...                ...
+                           Track 2                                                                          ...
+                                              Set 1
+      60 reads per track
+       15 reads per set
+                                               AI
+                           Track 3                                    ...                ...                ...        Random assignment to
+                             .                Set 1                                                                 remaining treatments and sets
+
+                             .
+                             .
+                           Track 24         AI + CH                   ...                 ...               ...
+                                             Set 1
+
+
+
+
+Note: In this design, radiologists are assigned to a randomized sequence of the four information environments., resulting in
+twenty-four possible tracks. Under each information environment they read fifteen cases. Radiologists encounter each patient
+case at most once. At the beginning of the experiment every radiologist reads eight practice cases. Furthermore, a random half
+of the participating radiologists receive incentives for accuracy.
+

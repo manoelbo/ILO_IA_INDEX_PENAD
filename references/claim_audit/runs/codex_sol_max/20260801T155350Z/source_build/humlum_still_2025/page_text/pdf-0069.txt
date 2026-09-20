@@ -1,0 +1,51 @@
+B.3     Classification of New Job Tasks
+
+Our survey includes free-text responses about the new tasks workers have received due to
+
+AI chatbots. We categorize these responses into six broad AI-related categories, listed in
+
+Table B.6, as well as into more granular, occupation-specific subtasks.
+
+
+                  Table B.6: Categories of New Tasks from AI Chatbots
+
+ Task                            Description
+ AI Ideation                     Leveraging AI to spark or expand creative ideas—such as
+                                 concepts, strategies, or solutions. The human selects and
+                                 builds on the most promising suggestions.
+ AI Content Drafting             Using AI tools to generate initial drafts of text or media (e.g.,
+                                 documents, emails, code). The human professional prompts
+                                 the AI, then edits and refines the output for accuracy and
+                                 tone.
+ AI Quality Review               Reviewing AI-generated content for accuracy, clarity, and
+                                 relevance. The human fact-checks, corrects errors, and ensures
+                                 the output meets required standards.
+ AI Data Insights                Using AI to analyze data or documents and surface patterns,
+                                 summaries, or key insights. The human then interprets and
+                                 applies these findings to decisions.
+ AI Integration                  Embedding AI into workflows to automate or enhance tasks.
+                                 Professionals design prompts, refine workflows, correct outputs,
+                                 and fine-tune systems based on feedback.
+ AI Ethics & Compliance          Ensuring AI use follows ethical, legal, and institutional stan-
+                                 dards. This includes setting guidelines, monitoring for bias or
+                                 misuse, and reviewing outputs for compliance.
+                    Notes: This table describes our six broad categories of AI-related tasks.
+
+
+
+
+   Examples of occupation-specific tasks, along with their corresponding general task
+
+categories, include:
+
+  1. Accountants: Brainstorming budget plans or tax strategies with AI suggestions
+
+      (AI Ideation), Drafting financial statements and reports using AI for initial content
+
+      (AI Content Drafting), Reviewing AI-generated financial outputs for accuracy and
+
+      completeness (AI Quality Review), Analyzing financial data with AI tools to identify
+
+
+                                                      34
+

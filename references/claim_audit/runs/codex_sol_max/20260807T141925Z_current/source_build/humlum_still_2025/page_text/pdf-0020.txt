@@ -1,0 +1,33 @@
+        adopters may be more likely to switch occupations (Autor, 2024). Section 3.3 tests
+        this prediction, exploring heterogeneity across occupations and firm- and worker-level
+        drivers of adoption.
+
+3.1.1     Identification Strategy and Challenges
+
+We use a series of difference-in-differences analyses to identify the relevant effects, com-
+paring adopters and non-adopters before and after the introduction of AI chatbots and
+examining outcomes at both the worker and workplace levels. At its core, our analysis
+asks a simple question: have adopters fared differently from non-adopters since the arrival
+of chatbots?
+   The key identifying assumption is that, absent AI chatbots, adopters and non-adopters
+would have experienced similar changes in labor market outcomes. We apply this assump-
+tion at both the worker level (e.g., earnings of users versus non-users) and the workplace
+level (e.g., labor demand at encouraged versus non-encouraged workplaces). Appendix A.2
+draws on our theoretical framework to clarify these identifying assumptions and to provide
+a structural interpretation of the difference-in-differences estimands.
+   A first concern in our analysis is that adoption may remain a relatively weak treatment:
+workers may struggle to use the tools effectively, and firms may provide limited guidance
+or infrastructure to support their implementation. Section 2.2 showed that employer
+encouragement is critical for unlocking both higher use and greater reported benefits.
+We use these “AI front-runner” workplaces—those with encouraged use—as our primary
+workplace treatment, since they offer a window into the effects of AI chatbots as employers
+embrace the tools. We also examine the effects of additional investments in employer-
+provided chatbots and training. At the individual level, we also analyze heterogeneity by
+intensity of use and reported gains.
+   A second concern is that adopters may have fared differently in the labor market
+even without AI chatbots. We take several steps to address this issue. First, we control
+for workers’ pre-determined characteristics—including gender, age, and labor market
+
+
+
+                                              18

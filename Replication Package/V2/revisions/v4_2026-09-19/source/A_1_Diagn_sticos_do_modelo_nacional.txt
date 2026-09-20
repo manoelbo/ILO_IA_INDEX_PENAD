@@ -1,0 +1,45 @@
+### A.1 Diagnósticos do modelo nacional
+**Tabela A.1: Diagnósticos dos resultados médios nacionais**
+Painel B.1: Estimativas DiD e diagnósticos dos desfechos principais
+
+[TABLE]
+Resultado | DiD nacional | p DiD | Pretrend | p pretrend | N | CBOs
+Admissões (PPML, nível) | −0,0538\<br\>(0,0386) | 0,164 | fail | p\<0,001 | 22.049 | 341
+Desligamentos (PPML, nível) | −0,0420\<br\>(0,0347) | 0,227 | fail | p\<0,001 | 22.049 | 341
+Fluxo bruto (PPML, nível) | −0,0481\<br\>(0,0353) | 0,174 | fail | p\<0,001 | 22.049 | 341
+Salário real de admissão (log) | −0,0507\*\*\*\<br\>(0,0103) | p\<0,001 | fail | p=1,6e-04 | 22.012 | 341
+Saldo líquido (asinh) | −0,5513\<br\>(0,3783) | 0,146 | fail | p\<0,001 | 22.049 | 341
+[/TABLE]
+
+Painel B.2: Proxy cumulativo de fluxo líquido
+
+[TABLE]
+Resultado | DiD nacional | p DiD | Pretrend | N | CBOs
+Proxy cumulativo de fluxo líquido | 1,4292\<br\>(1,3093) | 0,276 | not_available | 22.100 | 340
+[/TABLE]
+
+Notas: as células do Painel B.1 apresentam o coeficiente e, entre parênteses, o erro-padrão clusterizado por CBO de quatro dígitos, com inferência baseada na distribuição t com G−1 graus de liberdade. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. Admissões, desligamentos e fluxo bruto são estimados por PPML, e o coeficiente é semi-elasticidade da média condicional em nível, não log-log. O tratamento compara CBOs expostas nos gradientes da OIT a CBOs `Not Exposed`; `Minimal Exposure` não integra o controle principal. **Os cinco pretrends falham**, incluindo o do salário real de admissão, cujo teste conjunto tem p=1,6e-04 e 11 dos 22 leads individualmente significativos. O pretrend é o teste conjunto dos coeficientes mensais anteriores ao tratamento, estimado sobre o modelo exato do event study. `asinh(saldo)` aceita valores negativos e zero e não deve ser interpretado como percentual. O Painel B.2 substitui as duas construções alternativas do saldo por um índice cumulativo de fluxo líquido, normalizado pelo fluxo bruto pré-tratamento; **ele não observa o estoque de emprego** e não deve ser lido como tal. A validação contra o estoque observado na RAIS, descrita na Apêndice D, classifica o índice como concordante apenas em direção: todas as correlações estimáveis são positivas, mas a mediana de nível é 0,03 e a de variação é 0,11. Uma CBO é excluída do proxy por ter fluxo bruto pré-tratamento igual a zero. Os p-valores desta tabela são convencionais e não recebem correção por testes múltiplos, que se aplica às famílias de heterogeneidade do Apêndice A. N denota observações CBO-mês, não trabalhadores. Esta é a única tabela do trabalho que mantém um Painel B.2.
+**Tabela A.1b — Sensibilidade a tendências prévias (Rambachan e Roth, 2023)**
+
+[TABLE]
+Desfecho | Estimativa (EP) | IC 95% original | Maior M com IC excluindo zero | Status em M = 0 | Curvatura pré observada | Quebra abaixo da curvatura observada
+Salário real de admissão (log) | −0,0154 (0,0122) | \[−0,0392; +0,0085\] | — | não robusto | 0,0818 | sim
+Saldo líquido (asinh) | −3,3079 (0,7068) | \[−4,6931; −1,9227\] | 0,05 | robusto | 2,9233 | sim
+[/TABLE]
+
+> *Notas: método C-LF sobre 22 períodos pré e 24 pós, com grade de M de 0 a 2 em passos de 0,05. O estimando alvo é a média pós-tratamento do estudo de eventos normalizada a novembro de 2022, distinta do coeficiente estático da Tabela 5.1, que compara o pós à média de todo o pré-período. As duas primeiras colunas de M referem-se à restrição de variação relativa, que limita quanto o desvio de tendência pode mudar entre períodos consecutivos; as duas últimas, à restrição de suavidade, que limita sua curvatura. No salário, o intervalo já contém zero em M = 0, isto é, antes de se admitir qualquer violação de tendências paralelas, e os 12 pontos da grade de suavidade produzem intervalos não informativos. Nos dois desfechos, o ponto de quebra fica abaixo da curvatura pré-tratamento efetivamente observada. O procedimento cobre os dois desfechos estimados por MQO; os desfechos de contagem estimados por PPML não integram este quadro. Fonte: **`results/diagnostics/honest_did_summary.csv`**.*
+**Tabela A.1c — Comparabilidade pré-tratamento entre tratados e controle**
+
+[TABLE]
+Indicador (jan/2021 a nov/2022) | Tratados (75 CBOs) | Controle (265 CBOs)
+Admissões no período | 9.443.185 | 17.351.605
+Admissões médias mensais | 410.573 | 754.418
+Participação com ensino superior | 19,7% | 4,0%
+Salário real médio de admissão | R\$ 2.300,58 | R\$ 1.962,51
+Idade média dos admitidos | 28,9 | 33,8
+Crescimento mensal médio | 0,38% | 0,44%
+Desvio-padrão do crescimento mensal | 8,3% | 14,0%
+Amplitude sazonal | 27,3% | 44,7%
+[/TABLE]
+
+> *Notas: a tabela não é um teste de balanceamento no sentido experimental, porque o desenho não randomiza; ela documenta quanto os dois grupos já diferiam antes do evento. A razão de quase cinco para um na participação de ensino superior, somada às diferenças de idade, salário e sazonalidade, indica que o contraste opera entre estruturas ocupacionais distintas, e não entre o mesmo tipo de trabalho sob exposições diferentes. É esse fato que sustenta a discussão da subseção 6.3 sobre a coincidência entre a fronteira do índice e a fronteira entre trabalho de escritório e trabalho não-escritório, e ajuda a explicar a rejeição sistemática das tendências paralelas. Fonte: **`results/audit/d1_pre_period_comparability.csv`**.*

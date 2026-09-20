@@ -1,0 +1,54 @@
+There may be a bias-variance trade-off between DIDM and the two-way fixed effects regression
+estimators. For instance, assume that Regression 1 is correctly specified:
+
+                                                         Yg,t (0) = αg + λt + εg,t ,
+                                                         Yg,t (1) − Yg,t (0) = δ,
+                                                         E(εg,t |D) = 0.
+
+Then, if the errors εg,t are homoskedastic and uncorrelated, it follows from the Gauss-Markov
+theorem that βbf e is the linear estimator of δ, the constant treatment effect parameter, with the
+lowest variance. As DIDM is also an unbiased linear estimator of δ, the variance of βbf e must be
+lower than that of DIDM . With heteroskedastic or correlated errors, one can construct examples
+where the variance of βbf e is higher than that of DIDM , but this still suggests that DIDM may
+often have a larger variance than that of βbf e , as we find in our applications in Section 6.
+DIDM uses groups whose treatment is stable to infer the trends that would have affected switchers
+if their treatment had not changed. This strategy could fail, if switchers experience different
+trends than groups whose treatment is stable. To assess if this is a serious concern, we propose
+to use the following placebo estimator, that essentially compares the outcome’s evolution from
+t − 2 to t − 1, in groups that switch and do not switch treatment between t − 1 and t. This
+placebo estimator is defined under a modified version of Assumption 11.
+
+Assumption 13 (Existence of “stable” groups for the placebo test) For all t ∈ {3, ..., T }:
+
+   1. If there is at least one g ∈ {1, ..., G} such that Dg,t−2 = Dg,t−1 = 0 and Dg,t = 1, then
+      there exists at least one g 0 6= g, g 0 ∈ {1, ..., G} such that Dg0 ,t−2 = Dg0 ,t−1 = Dg0 ,t = 0.
+
+   2. If there is at least one g ∈ {1, ..., G} such that Dg,t−2 = Dg,t−1 = 1, Dg,t = 0, then there
+      exists at least one g 0 6= g, g 0 ∈ {1, ..., G} such that Dg0 ,t−2 = Dg0 ,t−1 = Dg0 ,t = 1.
+
+For all t ∈ {2, ..., T } and for all (d, d0 , d00 ) ∈ {0, 1}3 , let
+                                                            X
+                                Nd,d0 ,d00 ,t =                                                      Ng,t
+                                                          g:Dg,t =d,Dg,t−1   =d0 ,D   g,t−2   =d00
+
+
+denote the number of observations with treatment status d00 at period t − 2, d0 at period t − 1,
+and d at period t. Let
+                           X
+     NSpl =                                     Ng,t ,
+              (g,t):t≥3,Dg,t 6=Dg,t−1 =Dg,t−2
+                          X                  Ng,t                                              X             Ng,t
+  DIDpl
+     +,t =                                           (Yg,t−1 − Yg,t−2 ) −                                            (Yg,t−1 − Yg,t−2 ) ,
+                                            N1,0,0,t                                                        N0,0,0,t
+              g:Dg,t =1,Dg,t−1 =Dg,t−2 =0                                      g:Dg,t =Dg,t−1 =Dg,t−2 =0
+                         X                 Ng,t                                                X             Ng,t
+  DIDpl
+     −,t =                                         (Yg,t−1 − Yg,t−2 ) −                                              (Yg,t−1 − Yg,t−2 ) .
+                                          N1,1,1,t                                                          N0,1,1,t
+              g:Dg,t =Dg,t−1 =Dg,t−2 =1                                      g:Dg,t =0,Dg,t−1 =Dg,t−2 =1
+
+
+
+                                                                   17
+

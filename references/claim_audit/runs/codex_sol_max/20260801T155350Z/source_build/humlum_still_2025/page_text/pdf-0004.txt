@@ -1,0 +1,59 @@
+to labor market outcomes.
+
+   To examine these outcomes, we link our surveys to administrative records on monthly
+
+earnings, hours worked, and occupations through December 2024—two years after the
+
+launch of ChatGPT. Using a difference-in-differences framework, we compare adopters
+
+and non-adopters before and after the arrival of AI chatbots, estimating impacts at both
+
+the worker and workplace levels.
+
+   We begin by analyzing workers who use AI chatbots. If these tools enhance individual
+
+productivity, a natural question is whether such gains translate into higher earnings. Our
+
+first key finding is that AI chatbots have had minimal overall impact on workers who use
+
+them. Difference-in-differences estimates for earnings, recorded hours, and wages are all
+
+precisely estimated zeros, with confidence intervals ruling out average effects larger than
+
+2%. These null results hold even for workers who use the tools daily, report substantial
+
+productivity gains, perform new AI-related tasks, and work in firms that encourage and
+
+invest in chatbots. Moreover, we find no significant effects in any of our 11 occupations,
+
+including those with flexible, decentralized wage-setting.
+
+   While chatbots have not led to earnings gains for users, we find a clear link to
+
+occupational mobility: adopters are more likely to have transitioned into new occupations
+
+after the arrival of AI chatbots. This aligns with experimental evidence that chatbots are
+
+especially beneficial for workers with less prior expertise (Brynjolfsson, Li and Raymond,
+
+2025; Noy and Zhang, 2023), and supports the view that Generative AI helps workers
+
+extend into new occupations (Autor, 2024). However, the effects are modest—amounting
+
+to 4% of full-time equivalent employment—and do not result in net gains in hours or
+
+earnings.
+
+   Next, we zoom out to the workplace level and examine whether employers that
+
+encourage and invest in AI chatbots have experienced differential changes in labor demand.
+
+If chatbots substitute for labor, they could lead to slower hiring or trigger layoffs; if
+
+they enhance productivity, firms might expand hiring. Yet we find no such differences:
+
+workplaces that encourage chatbot use show no differential changes in employment or
+
+
+                                            2
+

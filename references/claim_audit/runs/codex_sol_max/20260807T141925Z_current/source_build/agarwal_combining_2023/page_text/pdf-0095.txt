@@ -1,0 +1,52 @@
+                                                                                                                                                                                                       95
+
+      C.4.5                                  Controlling for sequence number and session
+
+      Figure C.29 uses the following specification that controls for the sequence number in which the
+      participants saw a particular case within one experiment session and the session dummies
+      for the different designs and experiment sessions to estimate the heterogeneous treatment
+      effects. There are four sessions in Design 2, whereas Design 1 and 3 have only one session.
+
+
+                                                                                  Xh                                                                              i
+                                     Yirt = γhi + γAI · dAI (t) +                           γg · dg (sA                          A
+                                                                                                      i ) + γAI×g · dAI (t).dg (si ) + γwirt + γmirt + εirt
+                                                                                    g
+
+
+      where Yirt is an outcome variable of interest for radiologist r diagnosing patient case-pathology
+      i and treatment t, γhi are pathology fixed effects, γwirt are sequence number dummies and
+      γmirt are session dummies. Here, g is defined as an index for an interval of the AI signal
+      range where 1 ≤ g ≤ 5. A case is said to be in an interval g conditional on the signal value
+      for the given patient-case.
+
+                                                       Figure C.29: Conditional treatment effect given AI prediction
+                                            (a) Deviation from Ground Truth                                                                               (b) Incorrect Decision
+                                      .15                                                                                                .15
+ATE on deviation from ground truth
+
+
+
+
+                                                                                                             ATE on incorrect decision
+
+
+
+
+                                       .1                                                                                                  .1
+
+
+                                      .05                                                                                                .05
+
+
+                                       0
+                                                                                                                                           0
+
+                                     -.05
+                                                                                                                                         -.05
+                                             [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)     [0.8,1]                                           [0,0.2)      [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                               AI prediction bins                                                                                    AI prediction bins
+
+
+      Note: Main specifications similar to figure 3 with additional controls for rounds and session.
+

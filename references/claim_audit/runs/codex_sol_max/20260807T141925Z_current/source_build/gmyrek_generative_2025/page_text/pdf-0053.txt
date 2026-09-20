@@ -1,0 +1,83 @@
+50    ILO Working Paper 140
+
+
+
+
+     Exposure     4-digit code   Occupation Name                                               Mean   SD
+
+     Gradient 2   5243           Door-to-door Salespersons                                     0.46   0.18
+
+     Gradient 2   2423           Personnel and Careers Professionals                           0.45   0.07
+
+     Gradient 2   3315           Valuers and Loss Assessors                                    0.45   0.19
+
+     Gradient 2   3353           Government Social Benefits Officials                          0.45   0.07
+
+     Gradient 2   4212           Bookmakers, Croupiers and Related Gaming Workers              0.45   0.19
+
+     Gradient 2   1330           Information and Communications Technology Service Managers    0.44   0.07
+
+     Gradient 2   1420           Retail and Wholesale Trade Managers                           0.44   0.15
+
+     Gradient 2   2165           Cartographers and Surveyors                                   0.44   0.12
+
+     Gradient 2   3324           Trade Brokers                                                 0.44   0.1
+
+     Gradient 2   3339           Business Services Agents Not Elsewhere Classified             0.44   0.12
+
+     Gradient 2   4322           Production Clerks                                             0.44   0.06
+
+     Gradient 2   2432           Public Relations Professionals                                0.43   0.09
+
+     Gradient 2   3341           Office Supervisors                                            0.43   0.11
+
+     Gradient 2   3354           Government Licensing Officials                                0.43   0.07
+
+                                 Information and Communications Technology Operations
+     Gradient 2   3511           Technicians                                                   0.43   0.13
+
+     Gradient 2   3513           Computer Network and Systems Technicians                      0.43   0.08
+
+     Gradient 2   4214           Debt Collectors and Related Workers                           0.43   0.07
+
+     Gradient 2   5221           Shopkeepers                                                   0.43   0.1
+
+                                 Business Services and Administration Managers Not Elsewhere
+     Gradient 2   1219           Classified                                                    0.42   0.1
+
+     Gradient 2   2152           Electronics Engineers                                         0.42   0.13
+
+     Gradient 2   4229           Client Information Workers Not Elsewhere Classified           0.42   0.13
+
+     Gradient 2   5242           Sales Demonstrators                                           0.42   0.11
+
+     Gradient 2   1221           Sales and Marketing Managers                                  0.41   0.09
+
+     Gradient 2   2424           Training and Staff Development Professionals                  0.41   0.09
+
+     Gradient 2   4412           Mail Carriers and Sorting Clerks                              0.41   0.15
+
+     Gradient 2   2131           Biologists, Botanists, Zoologists and Related Professionals   0.4    0.1
+
+     Gradient 1   2351           Education Methods Specialists                                 0.39   0.11
+
+     Gradient 1   2634           Psychologists                                                 0.39   0.14
+
+     Gradient 1   3411           Legal and Related Associate Professionals                     0.39   0.14
+
+     Gradient 1   3431           Photographers                                                 0.39   0.12
+
+     Gradient 1   5230           Cashiers and Ticket Clerks                                    0.39   0.14
+
+     Gradient 1   2111           Physicists and Astronomers                                    0.38   0.14
+
+     Gradient 1   3141           Life Science Technicians (excluding Medical)                  0.38   0.18
+
+     Gradient 1   5223           Shop Sales Assistants                                         0.38   0.16
+
+     Gradient 1   7321           Pre-press Technicians                                         0.38   0.22
+
+     Gradient 1   9623           Meter Readers and Vending-machine Collectors                  0.38   0.21
+
+     Gradient 1   1411           Hotel Managers                                                0.37   0.13
+

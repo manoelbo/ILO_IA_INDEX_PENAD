@@ -1,0 +1,61 @@
+1    Introduction
+
+Rich panel data has fueled a growing literature estimating treatment effects with two-way fixed effects re-
+
+gressions. This body of applied work has prompted a corresponding econometrics literature investigating
+
+the assumptions required for these regressions to yield causally interpretable estimates. For example, Athey
+
+and Imbens (2018), Borusyak and Jaravel (2017), Callaway and Sant’Anna (2020a), de Chaisemartin and
+
+D’Haultfœuille (2020) and Goodman-Bacon (2018) interpret the coefficient on the treatment status when
+
+there is treatment effects heterogeneity and variation in treatment timing. Researchers are often also inter-
+
+ested in dynamic treatment effects, which they estimate by the coefficients µ` associated with indicators for
+
+being ` periods relative to the treatment, in a specification that resembles the following:
+
+                                                      Õ
+                                   Yi,t = αi + λt +       µ` 1{t − Ei = `} + υi,t .                            (1)
+                                                      `
+
+
+Here Yi,t is the outcome of interest for unit i at time t, Ei is the time when unit i initially receives the binary
+
+absorbing treatment, and αi and λt are the unit and time fixed effects. Units are categorized into different
+
+cohorts based on their initial treatment timing. The relative times ` = t − Ei included in (1) cover most of the
+
+possible relative periods, but may still exclude some periods.
+
+    The first goal of this paper is to uncover potential pitfalls associated with using the estimates of the
+
+relative period coefficients µ` as “reasonable” measures of dynamic treatment effects. We decompose µ` to
+
+show it can be expressed as a linear combination of cohort-specific effects from both its own relative period
+
+` and other relative periods; unless strong assumptions regarding treatment effects homogeneity hold, the
+
+terms that include treatment effects from other relative periods will not cancel out and will contaminate the
+
+estimate of µ` . Importantly, this demonstrates that the widespread practice of using estimates of treatment
+
+leads in (1) as a way of testing for parallel pretrends is problematic. Roth (2019), in his survey of the applied
+
+literature, notes that checking whether µ` = 0 for ` leads of treatment is a common test for pretrends. Our
+
+decomposition result implies that such a test would be invalid because the estimate of µ` is affected by both
+
+pretrends and treatment effects heterogeneity, thus any test of µ` = 0 cannot accept or reject the existence of
+
+pretrends without further assumptions on treatment effects.
+
+    We show how to calculate the weights underlying the linear combination of treatment effects in µ` using
+
+an auxiliary regression. This auxiliary regression depends only on the distribution of cohorts and the relative
+
+
+
+                                                           2
+

@@ -1,0 +1,49 @@
+C.1    Proof of the validity of the IW estimator
+
+Proof of Proposition 5
+
+Proof. Provided that the DID estimator is well-defined with pre-period s and control cohorts C, we first
+
+show the DID estimator is an unbiased and consistent estimator for E[Yi,e+` −Yi,s | Ei = e] − E[Yi,e+` −Yi,s |
+                                                      E N [(Yi, e+` −Yi, s ) ·1{Ei =e }]
+Ei ∈ C]. We prove the first term in the DID estimator         E N [1{Ei =e }]            is unbiased and consistent for
+
+E[Yi,e+` −Yi,s | Ei = e. The argument for the second term in the DID estimator follows similarly.
+
+    For unbiasedness, note that by  the Law of Iterated  Expectations andlinearity of E N , we have
+                E N [ Yi,e+` −Yi,s · 1 {Ei = e}]           E N [ Yi,e+` −Yi,s · 1 {Ei = e}]
+                                                       h                                         i
+             E[                                  ]=E E                                       | Ei                 (74)
+                         E N [1 {Ei = e}]                           E N [1 {Ei = e}]
+                                                           h                                     i
+                                                       E N E[ Yi,e+` −Yi,s  · 1 {Ei = e} | Ei ] 
+                                                  =E                                                              (75)
+                                                                     E N [1 {Ei = e}]
+                                                           h                                        i
+                                                       E N E[Yi,e+` −Yi,s | Ei = e] · 1 {Ei = e} 
+                                                  =E                                                              (76)
+                                                                       E N [1 {Ei = e}]
+                                                       E[ Yi,e+` −Yi,s | Ei = e] · E N [1 {Ei = e}]
+                                                                         
+                                                  = E[                                                ]           (77)
+                                                                       E N [1 {Ei = e}]
+                                                  = E[ Yi,e+` −Yi,s | Ei = e].
+                                                                     
+                                                                                                                  (78)
+
+For consistency, by the Law of Large Numbers the numerator and the denominator converge in probability to
+
+E[ Yi,e+` −Yi,s · 1 {Ei = e}] and Pr {Ei = e} respectively. By the Law of Iterated Expectations and Slutsky’s
+               
+
+theorem, it converges in probability to E[Yi,e+` −Yi,s | Ei = e].
+
+    To show that the DID estimator is an unbiased and consistent estimator for C ATTe,` , it remains to show
+
+E[Yi,e+` −Yi,s | Ei = e] − E[Yi,e+` −Yi,s | Ei ∈ C] = C ATTe,` .
+
+
+
+
+                                                          49
+

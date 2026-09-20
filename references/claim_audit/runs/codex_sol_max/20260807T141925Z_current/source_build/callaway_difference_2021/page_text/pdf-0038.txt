@@ -1,0 +1,118 @@
+                                   h                                        i 1 X n
+                               − En wbgtreat · Yt − Yg−δ−1 − mnev
+                                                              g,t,δ
+                                                                      bnev
+                                                                      β g,t,δ    √       Vi · w treat
+                                                                                              bg,i
+                                                                                   n i=1
+                                   1,treat     2,treat     3,treat
+                               = Ibg,t,δ   − Ibg,t,δ   − Ibg,t,δ   ,
+
+        nev                                             nev      ∗,nev     nev      ∗,nev
+where β̄g,t,δ is an intermediate point that satisfies β̄g,t,δ − βg,t,δ ≤ βbg,t,δ − βg,t,δ a.s.. From the strong law of
+large numbers and the fact that V is mean zero, independent of W , it follows that
+                                       n
+                   1,treat   1 X          treat
+                                                                     
+                                                                             ∗,nev
+                                                                                   
+                 Ibg,t,δ   =√       Vi · wg,i   · Yt − Yg−δ−1 − mnev
+                                                                 g,t,δ Wi ; βg,t,δ    + op∗ (1)
+                              n i=1
+                                 n
+                   3,treat   1 X          treat
+                                                   h                             
+                                                                                    ∗,nev
+                                                                                          i
+                 Ibg,t,δ   =√       Vi · wg,i   · E wgtreat · Yt − Yg−δ−1 − mnev
+                                                                             g,t,δ βg,t,δ     + op∗ (1)
+                              n i=1
+
+                                                                                             2,treat
+Similarly, from Assumptions 7 and 8, and the strong law of large numbers, we conclude that Ibg,t,δ   = op∗ (1). Now
+(A.9) follows from combining these results.
+    Next, we show
+                              n
+                        1 X        
+                                      comp,nev                         comp,nev              ∗,nev
+                                                                                                    
+                       √       Vi · ψbg,t,δ                 nev
+                                                     bg , βbg,t,δ
+                                               (Wi ; π            ) − ψg,t,δ    (Wi ; πg∗ , βg,t,δ ) = op∗ (1) .                                      (A.10)
+                         n i=1
+
+Again, by the mean value theorem, we write
+             n
+        1 X           comp,nev              nev
+       √       Vi · ψbg,t,δ    (Wi ; π
+                                     bg , βbg,t,δ )
+         n i=1
+                  n
+          1 X                                                        
+                                                                             ∗,nev
+                                                                                   
+        =√            bgcomp,nev (Wi ; π
+                 Vi · w                bg ) · Yi,t − Yi,g−δ−1 − mnev
+                                                                 g,t,δ Wi ; βg,t,δ
+           n i=1
+                                     n
+           √  nev       ∗,nev
+                               0 1 X
+                                             bgcomp,nev (Wi ; π
+                                                              bg ) · ṁnev          nev
+                                                                                          
+       −    n βbg,t,δ − βg,t,δ          Vi · w                         g,t,δ Wi ; β̄g,t,δ
+                                  n i=1
+            h                                                               i 1 X       n
+       − En w bgcomp,nev (b πg ) · Yt − Yg−δ−1 − mnev         g,t,δ   βbnev
+                                                                        g,t,δ       √          Vi · w bgcomp,nev (Wi ; π    bg )
+                                                                                       n i=1
+                            pg Xi ; πg∗ Ci
+                                           
+                n                              
+          1 X               1 − pg X; πg∗                                                  
+                                                                                                       ∗,nev
+                                                                                                              
+       =√          Vi ·                            · Yi,t − Yi,g−δ−1 − mnev         g,t,δ   W  i ; β g,t,δ
+           n i=1               pbg (X; π bg ) C
+                        En
+                              1 − pbg (X; π   bg )
+                                                      Ci
+                                n                                   2
+         √               0 1 X             (1 − pg (Xi ; π̄g ))                                              
+                                                                                                                         ∗,nev
+                                                                                                                               
+       + n π   bg − πg∗            Vi ·                               · Yi,t − Yi,g−δ−1 − mnev         g,t,δ   W i ; β g,t,δ    · ṗg (Xi ; π̄g )
+                            n i=1                pbg (X; π bg ) C
+                                          En
+                                                1 − pbg (X; π   bg )
+                                          n
+         √   
+                 nev       ∗,nev
+                                  0 1  X
+                                                   bgcomp,nev (Wi ; π    bg ) · ṁnev              nev
+                                                                                                         
+       − n βbg,t,δ    − βg,t,δ               Vi · w                                g,t,δ Wi ; β̄g,t,δ
+                                     n i=1
+                                      pg Xi ; πg∗ Ci
+                                                    
+                        n                                
+           comp 1
+                       X             1 − pg Xi ; πg∗
+       − Mg,t,δ √
+         c                  Vi ·                            
+                    n i=1                pbg (X; π bg ) C
+                                 En
+                                        1 − pbg (X; π  bg )
+                                                                Ci
+                                          n                                   2
+                  √               0 1  X            (1 − pg (Xi ; π̄g ))
+       −Mccomp n π      bg − πg∗              Vi ·                               · ṗg (Xi ; π̄g )
+           g,t,δ
+                                                        
+                                     n i=1                 pbg (X; π  bg ) C
+                                                   En
+                                                          1 − pbg (X; π   bg )
+
+                                                                          38
+

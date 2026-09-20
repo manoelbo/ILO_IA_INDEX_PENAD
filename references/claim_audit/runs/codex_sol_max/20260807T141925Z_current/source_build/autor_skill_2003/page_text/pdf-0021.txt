@@ -1,0 +1,48 @@
+                     SKILL CONTENT OF TECHNICAL CHANGE                                          1299
+
+the 1960 median. These shifts are visible from 1960 to 1980 and
+become even more pronounced by 1998. Adding variation along
+the intensive margin augments the rightward shift, particularly
+for the nonroutine interactive measure.
+     Panels C and D of Figure II plot the corresponding densities
+for routine cognitive and routine manual task input. Consistent
+with the theoretical model, the distribution of labor input of both
+routine cognitive and routine manual tasks shifted sharply left-
+ward after 1960 — opposite to the case for nonroutine tasks. The
+shift is particularly pronounced for the routine cognitive task
+measure, and becomes even more apparent when the intensive
+margin is added. As suggested by Figure I, the decline in the
+input of routine manual tasks is less dramatic, though still
+visible.
+     In sum, the evidence in Figures I and II supports our model’s
+primary macroeconomic implications. Between 1970 and 1998
+there were secular declines in labor input of routine cognitive and
+routine manual tasks and corresponding increases in labor input
+of nonroutine analytic and interactive tasks. We next analyze the
+sources of these task shifts at the industry level.
+
+III.B. Task Changes within and between Industries
+    The changes in economywide labor input of routine and non-
+routine tasks documented in Figure I and Table II could stem
+from substitution of computer capital for routine labor inputs
+within detailed industries, as our model suggests. Alternatively,
+they could stem from changes in the composition of nal demand.
+Since much of our detailed analysis focuses on changes in task
+input at the industry level, we explore briey the extent to which
+changes in job content are due to within-industry task shifts.
+    Panel B of Table II presents a standard decomposition of task
+changes into within- and between-industry components.16 This
+decomposition shows quite consistent patterns of task change.
+
+    16. We decompose the use of task k in aggregate employment between years t
+and t (DTkt 5 Tkt 2 Tkt) into a term reecting the reallocation of employment across
+sectors and a term reecting changes in task j input within industries using
+the equation DT k t 5 ¥ j (DE j t g j k ) 1 ¥ j (Dg j k t E j ) 5 DT bk t 1 DT w  k t , where j indexes
+industries, Ejkt is the employment of workers in task k in industry j in
+year t as a share of aggregate employment in year t, Ejt is total employment
+(in FTEs) in industry j in year t, gjkt is the mean of task k in industry j in
+year t, g j k 5 (g j k t 1 g j k t )/ 2, and E j 5 (E j t 1 E j t )/ 2. The rst term (DT bk t ) reects
+the change in aggregate employment of task k attributable to changes
+in employment shares between industries that utilize different intensities of
+task k. The second term (DTw              kt) reects within-industry task change.
+

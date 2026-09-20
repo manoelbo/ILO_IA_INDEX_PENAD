@@ -1,0 +1,28 @@
+                                                                                                                                                                              101
+
+                                                         Figure C.37: Conditional treatment effect given AI prediction
+                                            (a) Deviation from Ground Truth                                                             (b) Incorrect Decision
+                                     .05                                                                                   .05
+ATE on deviation from ground truth
+
+
+
+
+                                                                                               ATE on incorrect decision
+                                       0                                                                                     0
+
+
+
+
+                                     -.05                                                                                  -.05
+
+
+
+
+                                      -.1                                                                                   -.1
+                                             [0.2,0.4)    [0.4,0.6)      [0.6,0.8)   [0.8,1]                                      [0.2,0.4)   [0.4,0.6)      [0.6,0.8)   [0.8,1]
+                                                             AI prediction bins                                                                  AI prediction bins
+
+
+      Note: Main specifications similar to figure 3 with the exception that only the abnormal pathology is considered.
+

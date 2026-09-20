@@ -1,0 +1,66 @@
+Table A6: Effect of LLM exposure on occupation-level job outcomes, London vs.
+non-London
+
+                                        Job postings (log)           Salary     Salary (log)   Salary (SD)
+          Panel A: Job in London
+          LLM exposure x Post               −0.034∗∗              −562.818∗∗∗    −0.010∗∗∗        74.609
+                                             (0.017)               (139.355)      (0.002)       (132.525)
+
+          Occupation fixed-effects             Yes                    Yes           Yes            Yes
+          Year-by-month fixed effects          Yes                    Yes           Yes            Yes
+          Observations                        16,734                 16,734        16,734        16,625
+          Adjusted R2                         0.954                  0.922         0.926          0.605
+
+          Panel B: Job outside London
+          LLM exposure x Post               −0.040∗∗              −475.947∗∗∗    −0.011∗∗∗      −119.267
+                                             (0.018)               (141.444)      (0.003)       (111.131)
+
+          Occupation fixed-effects             Yes                    Yes           Yes            Yes
+          Year-by-month fixed effects          Yes                    Yes           Yes            Yes
+          Observations                        16,812                 16,812        16,812        16,799
+          Adjusted R2                         0.961                  0.938         0.945          0.683
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, separately for London-based jobs and jobs based outside London.
+Panel A presents results for job openings in London, Panel B for job openings outside London. All
+other definitions are as in Table 4.
+
+
+
+A2.3       Occupation-Level Job Listings
+
+Table A5: Effect of LLM exposure on occupation-level job outcomes, high vs. low
+salary occupations
+
+                                        Job postings (log)          Salary      Salary (log)   Salary (SD)
+         Panel A: High salary occupations
+         LLM exposure x Post               −0.057∗∗∗              −782.371∗∗∗   −0.013∗∗∗      −354.844∗∗∗
+                                            (0.022)                (184.426)     (0.003)        (131.069)
+
+         Occupation fixed-effects              Yes                    Yes           Yes            Yes
+         Year-by-month fixed effects           Yes                    Yes           Yes            Yes
+         Observations                         8,413                  8,413         8,413          8,412
+         Adjusted R2                          0.964                  0.903         0.901          0.726
+
+         Panel B: Low salary occupations
+         LLM exposure x Post                 −0.020                −112.614       −0.004         240.391
+                                             (0.031)               (179.137)      (0.004)       (170.804)
+
+         Occupation fixed-effects              Yes                    Yes           Yes            Yes
+         Year-by-month fixed effects           Yes                    Yes           Yes            Yes
+         Observations                         8,402                  8,402         8,402          8,392
+         Adjusted R2                          0.961                  0.817         0.860          0.436
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, separately for high- and low-salary occupations. Occupations are
+split at the median pre-treatment average posted salary (October 2022). Panel A presents results
+for occupations above the median salary, Panel B for occupations below the median. All other
+definitions are as in Table 4.
+
+
+
+
+                                                             36
+

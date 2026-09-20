@@ -1,0 +1,50 @@
+                                                                                                                                          38
+
+                                                                            Figure 6: Model Treatment Effects
+
+                                                         0.3
+                                                                       Human + AI (Data)
+                                                                       Bayes
+             ATE of AI on deviation from ground truth
+
+                                                         0.2           Estimated Model (True Joint Distribution)
+                                                                       Estimated Model (Conditionally Independent)
+
+                                                         0.1
+
+
+                                                         0.0
+
+
+                                                        −0.1
+
+
+                                                        −0.2
+
+
+                                                        −0.3
+                                                               (0.0, 0.2]      (0.2, 0.4]       (0.4, 0.6]      (0.6, 0.8]   (0.8, 1.0]
+                                                                                            AI prediction bin
+
+
+Note: This graph shows the observed conditional treatment effects of providing radiologists access to AI (Human+AI) and
+compares those to three different model-implied treatment effects: giving AI access to a Bayesian decision maker, giving AI
+access to a decision maker who acts according to the empirical version of equation 5, both under the correct updating term and
+when the decision maker treats the AI signal as conditionally independent.
+
+
+
+conditional on intermediate AI predictions as in our treatment effect analysis. We see that
+such a model closes even more of the gap between the Bayesian treatment effects and the
+observed treatment effects.
+It is significant that the model presented above is able to replicate the pattern of conditional
+treatment effects even though it is restrictive – it imposes linearity in log-odds and does
+not allow for heterogeneity in b and d across radiologists. Appendix C.5.5 investigates the
+linearity restriction in equation (7). We estimate a boosted tree that predicts the dependent
+variable in the equation using the same two independent variables in the equation. We
+find that the empirical analog to the relevant boundary of the decision-regions depicted in
+figure 5 is well-approximated using a linear model. Appendix C.5.6 investigates heterogeneity
+– it presents estimates that allow for b and d to vary with radiologists. We find that the
+estimated distributions of br and dr are centered close to the point estimates above, with most
+of the estimated distributions of br and dr in the range [0.1, 0.4] and [1.0, 1.2] respectively.
+

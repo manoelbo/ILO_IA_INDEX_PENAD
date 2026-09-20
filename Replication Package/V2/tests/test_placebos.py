@@ -10,7 +10,7 @@ import pandas as pd
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "placebos.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "placebos.py"
 
 
 def load_module():
@@ -222,7 +222,14 @@ def test_lightweight_ppml_matches_closed_form_two_by_two_did() -> None:
 
 
 def test_generated_placebo_family_is_complete_and_passes_gate() -> None:
-    diagnostics = PACKAGE_ROOT / "results" / "diagnostics"
+    diagnostics = (
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "diagnostics"
+    )
     temporal = pd.read_csv(
         diagnostics / "temporal_placebo_results.csv"
     )
@@ -238,10 +245,6 @@ def test_generated_placebo_family_is_complete_and_passes_gate() -> None:
     status = json.loads(
         (diagnostics / "group_placebo_status.json").read_text()
     )
-    backend = pd.read_csv(
-        diagnostics / "group_placebo_backend_validation.csv"
-    )
-
     assert len(temporal) == 5
     assert temporal["p_value"].ge(0.05).all()
     assert gate["status"] == "pass"
@@ -252,4 +255,42 @@ def test_generated_placebo_family_is_complete_and_passes_gate() -> None:
     assert len(summary) == 5
     assert status["status"] == "completed"
     assert status["model_count"] == 2_500
-    assert backend["absolute_difference"].max() < 1e-8
+    assert status["backend"] == "ppml_ipf_and_ols_fwl"
+
+    module = load_module()
+    panel = pd.read_parquet(
+        PACKAGE_ROOT / "data" / "derived" / "painel_nacional.parquet"
+    )
+    ladder = pd.read_csv(
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "models"
+        / "specification_ladder.csv"
+    )
+    with np.errstate(divide="ignore", invalid="ignore"):
+        lightweight, _, _ = module.run_group_placebo(
+            panel,
+            ladder,
+            repetitions=1,
+            seed=module.GROUP_PLACEBO_SEED,
+        )
+        reference, _, _ = module.run_group_placebo_reference(
+            panel,
+            ladder,
+            repetitions=1,
+            seed=module.GROUP_PLACEBO_SEED,
+        )
+    comparison = reference[["outcome", "estimator", "coefficient"]].merge(
+        lightweight[["outcome", "estimator", "coefficient"]],
+        on=["outcome", "estimator"],
+        suffixes=("_reference", "_lightweight"),
+        validate="one_to_one",
+    )
+    difference = (
+        comparison["coefficient_reference"]
+        - comparison["coefficient_lightweight"]
+    ).abs()
+    assert difference.max() < 1e-8

@@ -1,0 +1,62 @@
+    The emergence of AI chatbots marks the rise of Generative Artificial Intelligence (AI).
+
+By some measures, these technologies are already living up to the immense hype: AI
+
+chatbots have seen the fastest worker take-up of any new technology (Bick, Blandin and
+
+Deming, 2025; Humlum and Vestergaard, 2025), randomized controlled trials (RCTs)
+
+demonstrate substantial productivity gains for users (Brynjolfsson, Li and Raymond, 2025;
+
+Noy and Zhang, 2023), and case studies indicate notable effects on online labor market
+
+platforms (Teutloff et al., 2025).1
+
+    Yet even as Generative AI tools have become widespread, substantial disagreement
+
+remains about their labor market effects, with forecasts ranging from dramatic disruption
+
+within a few years (Axios, 2025) to negligible impacts over a decade (Acemoglu, 2025).2
+
+    This paper provides large-scale, representative evidence on the early labor market
+
+impacts of AI chatbots. In collaboration with Statistics Denmark, we conducted a series of
+
+extensive surveys of the adoption of AI chatbots in 11 highly exposed occupations, linking
+
+responses to administrative labor market records.3 Our latest survey round, conducted in
+
+late 2024, includes responses from 25,000 workers across 7,000 workplaces. Leveraging
+
+this unique data link, we provide the first comprehensive evidence on how AI chatbot
+
+adoption has affected labor market outcomes at both the worker and workplace levels.
+
+    To set the stage, we first describe the landscape of AI chatbot adoption. While
+
+chatbots are widespread, many otherwise similar workplaces and workers have taken
+
+markedly different paths: some employers still do not encourage use; others promote it
+
+with guidelines, enterprise tools, and training. Likewise, even among otherwise similar
+
+workers under identical policies, usage varies from none to daily. This rich variation—across
+
+both workplaces and workers—offers an opportunity to study how chatbot adoption relates
+    1
+      These effects on productivity and platform demand are remarkable in both magnitude—ranging from
+15% to 50%—and speed, materializing within a few months.
+    2
+      Anthropic CEO Dario Amodei recently predicted that AI could eliminate half of all entry-level
+white-collar jobs, driving unemployment to 10-20% within the next one to five years (Axios, 2025). In
+contrast, Acemoglu (2025) predicts that AI will increase annual TFP growth by less than 0.07 percentage
+points over the next ten years.
+    3
+      Our list of occupations is accountants, customer support specialists, financial advisors, HR profession-
+als, IT support specialists, journalists, legal professionals, marketing professionals, office clerks, software
+developers, and teachers.
+
+
+
+                                                      1
+

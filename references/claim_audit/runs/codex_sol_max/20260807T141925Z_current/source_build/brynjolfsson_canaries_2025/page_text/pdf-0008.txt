@@ -1,0 +1,59 @@
+ADP services does not exactly match the distribution of firms across the broader US economy.
+
+Further details on differences in firm composition can be found in Cajner et al. (2018) and ADP
+
+Research (2025).13
+
+
+3.2      Occupational AI Exposure
+
+We use two approaches for measuring occupational exposure to AI. The first uses exposure measures
+
+from Eloundou et al. (2024), who estimate AI exposure by O*NET task using ChatGPT validated
+
+with human labeling. They construct occupational exposure measures by aggregating the task data
+
+to the 2018 SOC code level. We focus on the GPT-4 based β exposure measures from their paper.
+
+       The second approach we take uses generative AI usage data from the Anthropic Economic
+
+Index (Handa et al., 2025). This index reports the estimated share of queries pertaining to each
+
+O*NET task based on several million conversations with Claude, Anthropic’s generative AI model.
+
+It aggregates the data to the occupational level based on these task shares. One feature of the
+
+Anthropic Economic Index is that for each task it reports estimates of the share of queries pertaining
+
+to that task that are “automative,” “augmentative,” or none of the above. We use this as an estimate
+
+of whether AI usage for an occupation is primarily complementary or substitutable with labor.14
+
+       We use a 2010 SOC code to 2018 SOC code crosswalk from the BLS to merge the exposure
+
+measures to the payroll data. Table A1 shows example occupations for each AI exposure measure.
+
+
+3.3      Other Data
+
+To compare employment changes for teleworkable versus non-teleworkable occupations, we use data
+
+from Dingel and Neiman (2020). We use the Personal Consumption Expenditure index from the
+
+BLS to compute real earnings, indexed to October 2017. We use monthly Current Population
+
+Survey (CPS) data as a comparison for our main findings.
+  13
+      Cajner et al. (2018) find a somewhat higher share of manufacturing and services firms compared to the QCEW
+using data from March 2016. They also find that ADP somewhat overrepresents firms in the Northeast. In addition,
+firms using ADP tend to grow faster on average than the typical firm in the US economy.
+   14
+      Handa et al. (2025) use Claude to classify conversations into six categories. Directive and Feedback Loop
+conversations are considered Automative; Task Iteration, Learning, and Validation are considered Augmentative.
+They also instruct the model to choose None of the above “liberally.” Table A2 reproduces Table 1 from Handa et al.
+(2025) and shows more details about the automation and augmentation measures.
+
+
+
+
+                                                        8

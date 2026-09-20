@@ -1,0 +1,58 @@
+     Table A15: Effect of LLM exposure on firm-level job listings, onet weights
+
+                                          LLM exposure x Post                     −0.010∗∗∗
+                                                                                   (0.002)
+
+                                          Firm fixed-effects                         Yes
+                                          Industry-by-period fixed effects           Yes
+                                          Observations                            1,268,013
+                                          Adjusted R2                               0.522
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level job postings, using ONET importance weights for tasks instead of the weights used by
+Eloundou et al. (2024). All other definitions are as in Table A1.
+
+
+
+
+Table A16: Effect of LLM exposure on occupation-level job outcomes, onet weights
+
+                                              Job postings (log)             Salary           Salary (log)      Salary (SD)
+            LLM exposure x Post                    −0.040∗∗            −352.827∗∗∗            −0.007∗∗∗           −31.785
+                                                    (0.018)             (128.078)              (0.002)           (102.706)
+
+            Occupation fixed-effects                 Yes                      Yes                Yes                   Yes
+            Year-by-month fixed effects              Yes                      Yes                Yes                   Yes
+            Observations                            16,815                   16,815             16,815               16,804
+            Adjusted R2                             0.962                    0.948              0.952                 0.729
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job postings, using ONET importance weights for tasks instead of the weights
+used by Eloundou et al. (2024). All other definitions are as in Table 4.
+
+
+
+A3.5          Weighted Regressions
+
+Table A17: Effect of LLM exposure on firm-level job outcomes, weighted regressions
+
+                                     Employees         Low seniority         High seniority        Frac. low seniority        Av. comp.
+ LLM exposure x Post                  −0.003            −0.006∗∗∗               −0.0001                  −0.002∗∗∗            220.367∗∗∗
+                                      (0.002)            (0.002)                (0.003)                   (0.0004)             (54.378)
+
+ Firm fixed effects                     Yes                 Yes                   Yes                       Yes                  Yes
+ Industry-by-period fixed effects       Yes                 Yes                   Yes                       Yes                  Yes
+ Observations                        1,268,013           1,267,955             1,266,331                 1,267,955            1,268,013
+ Adj. R-squared                        0.998               0.998                 0.998                     0.991                0.991
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, weighting observations by pre-treatment employment (October 2022).
+All other definitions are as in Table 3.
+
+
+
+
+                                                                 40
+

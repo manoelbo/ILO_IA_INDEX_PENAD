@@ -1,0 +1,88 @@
+                                                                = E [Gg · E [ (Yt − Yg−δ−1 )| X, C = 1]] .
+
+                                                                                    nev
+Thus, combined this with (A.3), we establish (A.1), implying that AT T (g, t) = AT Tipw (g, t; δ).
+   Finally, notice that
+
+                                                       pg (X) C
+                                                                                              
+
+                      nev
+                                         Gg         1 − pg (X)                     nev
+                                                                                                
+                 AT Tdr                  E [Gg ] −  pg (X) C   Yt − Yg−δ−1 − mg,t,δ (X) 
+                          (g, t; δ) = E                                                       
+                                                    E
+                                                       1 − pg (X)
+                                                       pg (X) C
+                                                                               
+                                         Gg         1 − pg (X)                 
+                                    = E E [Gg ] −  pg (X) C   (Yt − Yg−δ−1 )
+                                                                                
+                                                    E
+                                                       1 − pg (X)
+                                      |                     {z                    }
+                                                                        nev (g,t;δ)
+                                                                   ≡AT Tipw
+
+                                                                           pg (X) C
+                                                                                                     
+                                                          Gg            1 − pg (X)    nev
+                                                                                                        
+                                                    − E  E [Gg ] −  pg (X) C   mg,t,δ (X)
+                                                                                                       
+                                                                       E
+                                                                           1 − pg (X)
+                                                                                                    
+                                                            1               E [Gg |X] C
+                                         = AT T (g, t) −         E Gg −                   mnev
+                                                                                            g,t,δ (X)
+                                                         E [Gg ]              E [C|X]
+                                                            1
+                                                                 E (E [Gg |X] − E [Gg |X]) · mnev
+                                                                                                         
+                                         = AT T (g, t) −                                        g,t,δ (X)
+                                                         E [Gg ]
+                                         = AT T (g, t) .
+
+                                          nev
+where the third equality follows from AT Tipw (g, t; δ) = AT T (g, t), (A.2) and (A.3), and the fourth equality from
+the law of iterated expectations.
+
+    Part 2: Identification when Assumption 5 is invoked.
+    In this case, given the result in Lemma A.2,
+
+                AT T (g, t) = E[AT TX (g, t)|Gg = 1]
+                           = E [ (E[Yt − Yg−δ−1 |X, Gg = 1] − E[Yt − Yg−δ−1 |X, Dt+δ = 0, Gg = 0])| Gg = 1]
+                                                                                                     
+                                                                                                     
+                                                        |E[Yt − Yg−δ−1 |X,{zDt+δ = 0, Gg = 0]}|Gg = 1
+                           = E[Yt − Yg−δ−1 |Gg = 1] − E                                              
+                                                                                      =mny
+                                                                                        g,t,δ (X)
+                                                                         
+                                     Gg       
+                           =E                     Yt − Yg−1−a − mny
+                                                                 g,t,δ (X)   .
+                                    E [Gg ]
+                                      ny
+Hence, we have that AT T (g, t) = AT Tor (g, t; δ) .
+                                         ny
+   Next, to show that AT T (g, t) = AT Tipw (g, t; δ), it suffices to show that
+                                                            
+              pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )
+      E                                        (Yt − Yg−δ−1 )
+                       1 − pg,t+δ (X)                            E [Gg · E[Yt − Yg−δ−1 |X, Dt+δ = 0, Gg = 0]]
+                                                             =                                              .   (A.4)
+                      pg,t+δ (X) (1 − Dt+δ ) (1 − Gg )                              E [Gg ]
+                  E
+                               1 − pg,t+δ (X)
+
+Towards this end, recall that pg,t+δ (X) = P (Gg = 1|X, Gg + (1 − Dt+δ ) (1 − Gg ) = 1) and also notice that
+
+                                    E [Gg |X]                                E [(1 − Dt+δ ) (1 − Gg ) |X]
+        pg,t+δ (X) =                                       , 1 − pg (X) =                                   ,     (A.5)
+                         E [Gg + (1 − Dt+δ ) (1 − Gg ) |X]                E [Gg + (1 − Dt+δ ) (1 − Gg ) |X]
+
+                                                                      35
+

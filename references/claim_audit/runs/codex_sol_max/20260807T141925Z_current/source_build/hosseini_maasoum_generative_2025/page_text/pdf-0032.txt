@@ -1,0 +1,46 @@
+adoption on junior relative to senior employment, provided that—after conditioning on
+firm-by-time and industry-by-seniority-by-time effects—no other factors since 2023 sys-
+tematically affected juniors and seniors differently across adopting and non-adopting
+firms. This might be a concern due to the potential endogeneity of GenAI adoption.
+The close similarity in relative junior employment dynamics between adopters and non-
+adopters from 2018 through 2022 helps alleviate this concern by supporting the plausi-
+bility of parallel pre-trends. We provide further support for our interpretation through
+analyses by occupational exposure (Section 5.2.3) and a staggered event-study design
+(Section 5.3). Section 5.4 further discusses possible forces that could challenge this inter-
+pretation and how we address them.
+
+
+5.2.3   Triple-Difference by Occupational Exposure
+
+The previous section showed that GenAI adoption is associated with a decline in junior
+employment relative to senior employment. We now examine whether this seniority-
+biased effect is concentrated in occupations most exposed to GenAI. To do so, we ex-
+tend the triple-difference specification of Equation 11 by replacing the Juniors dimen-
+sion with an indicator for high-exposure occupations, and by estimating the specification
+separately for juniors and seniors. This yields, for each seniority group, a comparison
+of how employment in high-exposure occupations evolves relative to low-exposure oc-
+cupations, between adopters and non-adopters.28 Specifically, for each seniority group
+s ∈ {junior, senior} we estimate:
+
+                                  2025Q1
+              s
+log(Employmentict ) = α+              ∑     βsj 1{t = j} × Adopti × HighExpc
+                                 j=2018Q1
+                               2025Q1                               2025Q1
+                           +     ∑        π j 1{t = j} × Adopti +     ∑        ρ j 1{t = j} × HighExpc
+                               j=2018Q1                             j=2018Q1
+
+                           + κ (Adopti × HighExpc ) + γit + ξ p(i)ct + ε ict ,                    (12)
+
+                    s
+where log(Employmentict ) denotes log employment of seniority group s in exposure cell
+c ∈ {high, low} at firm i in quarter t; HighExpc equals one for high-exposure occupa-
+  28 Supplemental Appendix A.22 shows the most common high- and low-exposure occupations by indus-
+
+try, ranked by number of positions.
+
+
+
+
+                                                   32
+

@@ -1,0 +1,69 @@
+                                                                                                                                                                     115
+
+  a Bayesian hierarchical model, where we model the individual parameter vector θr as follows.
+
+                                                                       θr ∼N (µ, Σ)
+                                                                       µ ∼N (0, 100I)
+                                                                       Σ =diag (τ ) Ωdiag (τ )
+                                                                       τk ∼Cauchy (0, 2.5)
+                                                                       Ω ∼LKJCorr (10)
+
+  We sample from the posterior of this model and plot the marginal distribution of the posterior
+  means of θr below.
+
+                                              Figure C.39: Individual Heterogeneity in b and d
+                          (a) Top Level with AI                                                                      (b) Pooled with AI
+
+                   Own Information Bias (d)                                                                 Own Information Bias (d)
+          3.5                                                                                   3.0
+                   Automation Bias (b)                                                                      Automation Bias (b)
+          3.0
+                                                                                                2.5
+          2.5
+                                                                                                2.0
+Density
+
+
+
+
+                                                                                      Density
+
+
+
+
+          2.0
+                                                                                                1.5
+          1.5
+                                                                                                1.0
+          1.0
+
+          0.5                                                                                   0.5
+
+          0.0                                                                                   0.0
+             0.0    0.2       0.4          0.6        0.8        1.0    1.2                           0.0      0.2        0.4       0.6        0.8       1.0   1.2
+                                    Individual b / d Estimates                                                              Individual b / d Estimates
+
+
+
+  Note: Marginal distributions of individual b and d estimates by radiologist for top level pathologies with AI and all pathologies
+  with AI.
+
+
+
+  C.6              Preference Estimation
+
+  In the experiment we elicit both probability assessment and treatment decisions, allowing us
+  to identify the relative costs of false positives and false negatives the radiologists are using.
+  Recall that radiologist r chooses to treat or follow-up on pathology p in patient case i under
+  treatment t if aritp = 1 where aritp is given by
+                                                                        "                                             #
+                                                                      pritp
+                                                          aritp = 1           − crp
+                                                                                 rel + εritp > 0
+                                                                    1 − pritp
+
+  where pritp is the radiologist’s probability assessment, crp
+                                                            rel is the relative cost of false positives
+  and false negatives for radiologist r and pathology p, and εritp captures unobserved preference
+  heterogeneity. If εritp follows a Logistic distribution, we can estimate crp  rel through a logistic
+

@@ -1,0 +1,14 @@
+{
+  "alternative_rows": 30,
+  "bh_significant_005": 40,
+  "estimated": 130,
+  "family_id": "C",
+  "family_size": 130,
+  "frozen_coefficients_exact": true,
+  "frozen_rows": 100,
+  "is_causal_effect": false,
+  "multiplicity_method": "Benjamini-Hochberg",
+  "multiplicity_passes": 1,
+  "nominal_significant_005": 54,
+  "task": "T8B.4"
+}

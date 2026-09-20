@@ -1,0 +1,42 @@
+Supplemental Appendix A.6 for the local approximation). It is increasing in the differen-
+tial augmentation δ J − δS : the larger the gap in productivity gains across worker types, the
+more tasks shift from seniors to juniors. It is decreasing in the steepness of comparative
+advantage at the boundary—i.e., how rapidly the productivity ratio γS ( x )/γ J ( x ) rises at
+x̂. When this slope is steep, even a large augmentation advantage shifts few tasks. When
+δ J = δS , the threshold does not shift and the reallocation effect vanishes entirely.
+   When tasks are complementary or Cobb-Douglas (σ ≤ 1), two of the three forces re-
+duce junior labor demand: displacement is unambiguously negative and the productivity
+effect is negative under any GenAI adoption (α > 0 or δ J > 0). The only countervailing
+force—reallocation—depends on the differential augmentation δ J − δS and vanishes en-
+tirely when GenAI augments both worker types equally. Junior labor demand therefore
+declines whenever the reallocation effect is sufficiently small relative to the combined dis-
+placement and productivity effects—for example, when comparative advantage is steep
+near x̂ or when the differential augmentation δ J − δS is small.
+   An analogous decomposition holds for seniors. Under the maintained assumption
+α < x̂, no senior tasks are automated, so the displacement effect is zero. The reallocation
+effect now runs in the opposite direction—seniors lose tasks near x̂ to juniors—and the
+productivity effect operates on surviving senior tasks [ x̂ ′ , 1]. Formally,
+                                     Z x̂′               Z 1h                      i
+                                            ∗pre                 ∗post      ∗pre
+         ∆L∗S =       0          + −       lS ( x ) dx +        lS ( x ) − lS ( x ) dx .   (6)
+                                                              ′
+                                   | x̂ {z               | x̂
+                     |{z}
+                  displacement                       }                  {z           }
+                                      reallocation (≤0)           productivity (≶0)
+
+
+The reallocation effect is weakly negative: the magnitude of senior task losses depends on
+δ J − δS and the steepness of comparative advantage near x̂, and vanishes when δ J = δS .
+The productivity effect is non-positive when σ ≤ 1, and smaller in magnitude than for
+juniors because δS ≤ δ J . Supplemental Appendix A.6 provides the formal derivation.
+   The two decompositions reveal an asymmetry: juniors uniquely face displacement,
+while reallocation operates as an offsetting force only for them. Junior employment there-
+fore declines by more than senior employment whenever displacement and productivity
+effects outweigh reallocation.
+
+
+
+
+                                                   16
+

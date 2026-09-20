@@ -1,0 +1,23 @@
+                                                                                                                     83
+
+
+
+
+                                     Table C.8: Average Treatment Effects
+
+                                   Deviation              Deviation from                    Effort Measures
+                                   from AI                Ground Truth                    Active Time   Clicks
+   Treatment                             (1)                        (2)                          (3)         (4)
+   AI × CH                            −0.001                       0.003                       −1.63         0.13
+                                      (0.003)                     (0.004)                      (3.45)       (0.64)
+   AI                                 −0.034                       0.004                        7.16         1.17
+                                      (0.004)                     (0.004)                      (2.24)       (0.53)
+   CH                                  0.001                      −0.008                        8.09         0.22
+                                      (0.002)                     (0.003)                      (2.36)       (0.44)
+   Control Mean                        0.189                       0.234                       154.19       47.25
+                                      (0.009)                     (0.013)                      (5.71)       (1.75)
+   Pathology FE                         Yes                        Yes                            -           -
+   Observations                        15840                      15840                         7917        7917
+
+Note: Main specifications similar to table 2 with the exception that observations are from design 2 only.
+

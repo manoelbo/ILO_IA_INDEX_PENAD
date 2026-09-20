@@ -1,0 +1,54 @@
+outcomes under both treatments. We address each of these cases in turn below, with a summary of
+some possible parameters in Table 2.
+
+                                                                     Main property
+ Description               Parameter                                                     Pros/Cons
+                                                                      sacrificed?
+
+ Normalized ATE            ErY p1q ´ Y p0qs{ErY p0qs                ErgpY p1q, Y p0qqs   Pro: Percent interpretation
+                                                                                         Con: Does not capture decreasing returns
+
+ Normalized outcome        ErY p1q{X ´ Y p0q{Xs                     ErgpY p1q, Y p0qqs   Pro: Per-unit-X interpretation
+                                                                                         Con: Need to find sensible X
+                                          #
+                                           logpyq      yą0
+ Explicit tradeoff of      ATE for mpyq “                           Scale-invariance     Pro: Explicit tradeoff of two margins
+ intensive/extensive                       ´x          y“0                               Con: Need to choose x; Monotone only if
+ margins                                                                                      support excludes p0, e´x q
+                            ”   ´       ¯                       ı
+                                    p1q
+ Intensive margin effect   E log YY p0q   | Y p1q ą 0, Y p0q ą 0    Point-               Pro: ATE in logs for the intensive margin
+                                                                    identification       Con: Partial identification
+
+
+                           Table 2: Summary of alternative target parameters
+
+Remark 8 (Statistical reasons for transforming the outcome). We focus on settings where the
+researcher is interested in a parameter other than the ATE in levels. In some settings, the researcher
+may be interested in the ATE in levels, but simple regression estimators may be noisy owing to a
+long right-tail of the outcome (Athey et al., 2021). The researcher might then try to estimate the
+ATE in levels by first estimating the ATE for a log-like transformation, and then multiplying by the
+baseline mean. However, since the ATE for a log-like transformation depends on the units of the
+outcome—and is thus not a true “percentage” effect—the validity of this approach for recovering
+the ATE in levels will depend on the initial units of Y .21 We refer the reader to Athey et al. (2021)
+and Müller (2023) for alternative approaches to estimation and inference targeted to settings where
+the ATE in levels is of interest but the outcome has heavy tails.
+Remark 9 (Transformation-specific identification). Another reason that researchers may consider
+taking a transformation of the outcome is that a parametric assumption used for identification
+may be more plausible for some functional forms than others. For example, when the outcome
+is strictly positive, parallel trends in logs may be more plausible than parallel trends in levels if
+time-varying factors are thought to have a multiplicative impact on the outcome. We note that
+justifying parallel trends for a log-like transformation is especially tricky, however, since if parallel
+trends holds for the arcsinh of an outcome measured in dollars, say, it will not generally hold for the
+arcsinh of the outcome measured in cents (Roth and Sant’Anna, 2023). Thus, the parallel trends
+assumption is specific to both the transformation mp¨q and the units of the outcome. Moreover,
+even if the researcher is confident in parallel trends for a particular log-like transformation and unit
+of the outcome, our results imply that they should not interpret the resulting ATT as an average
+  21
+    Even in the case where Y is strictly positive and one first estimates the ATE in logs, this approach will only
+recover the ATE in levels under certain homogeneity assumptions, e.g. constant proportional effects. See Wooldridge
+(1992) for related discussion.
+
+
+                                                          16
+

@@ -1,0 +1,81 @@
+55    ILO Working Paper 140
+
+
+
+
+     Exposure      4-digit code   Occupation Name                                             Mean   SD
+
+     Minimal
+     Exposure      5245           Service Station Attendants                                  0.24   0.16
+
+     Minimal
+     Exposure      8332           Heavy Truck and Lorry Drivers                               0.24   0.22
+
+     Minimal
+     Exposure      3221           Nursing Associate Professionals                             0.22   0.21
+
+     Not Exposed   1213           Policy and Planning Managers                                0.36   0.04
+
+     Not Exposed   2144           Mechanical Engineers                                        0.32   0.07
+
+     Not Exposed   3116           Chemical Engineering Technicians                            0.32   0.02
+
+     Not Exposed   1111           Legislators                                                 0.31   0.04
+
+     Not Exposed   2151           Electrical Engineers                                        0.31   0.08
+
+     Not Exposed   2612           Judges                                                      0.31   0.08
+
+     Not Exposed   2142           Civil Engineers                                             0.3    0.06
+
+     Not Exposed   2149           Engineering Professionals Not Elsewhere Classified          0.3    0.08
+
+     Not Exposed   2330           Secondary Education Teachers                                0.3    0.07
+
+     Not Exposed   2132           Farming, Forestry and Fisheries Advisers                    0.29   0.1
+
+     Not Exposed   2146           Mining Engineers, Metallurgists and Related Professionals   0.29   0.05
+
+     Not Exposed   2211           Generalist Medical Practitioners                            0.29   0.1
+
+     Not Exposed   3121           Mining Supervisors                                          0.29   0.08
+
+     Not Exposed   3133           Chemical Processing Plant Controllers                       0.29   0.1
+
+     Not Exposed   3134           Petroleum and Natural Gas Refining Plant Operators          0.29   0.11
+
+     Not Exposed   3152           Ships' Deck Officers and Pilots                             0.29   0.11
+
+                                  Environmental and Occupational Health and Hygiene
+     Not Exposed   2263           Professionals                                               0.28   0.05
+
+     Not Exposed   2352           Special Needs Teachers                                      0.28   0.1
+
+     Not Exposed   2635           Social Work and Counselling Professionals                   0.28   0.1
+
+     Not Exposed   2652           Musicians, Singers and Composers                            0.28   0.09
+
+     Not Exposed   3112           Civil Engineering Technicians                               0.28   0.07
+
+     Not Exposed   3117           Mining and metallurgical technicians                        0.28   0.06
+
+     Not Exposed   3123           Construction Supervisors                                    0.28   0.06
+
+     Not Exposed   3131           Power Production Plant Operators                            0.28   0.11
+
+     Not Exposed   2212           Specialist Medical Practitioners                            0.27   0.12
+
+     Not Exposed   3113           Electrical Engineering Technicians                          0.27   0.05
+
+     Not Exposed   3132           Incinerator and Water Treatment Plant Operators             0.27   0.09
+
+     Not Exposed   3153           Aircraft Pilots and Related Associate Professionals         0.27   0.05
+
+     Not Exposed   8132           Photographic Products Machine Operators                     0.27   0.06
+
+     Not Exposed   2341           Primary School Teachers                                     0.26   0.09
+
+     Not Exposed   3111           Chemical and Physical Science Technicians                   0.26   0.09
+
+     Not Exposed   3115           Mechanical Engineering Technicians                          0.26   0.08
+

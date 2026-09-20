@@ -1,0 +1,77 @@
+Proof of Lemma S3
+
+Under Assumption 2, we have E (Yg,t |D) = E (Yg,t (0)|D)+E (Yg,t (Dg,t ) − Yg,t (0)|D). The result
+follows by decomposing similarly the three other terms E (Yg,t0 |D), E (Yg0 ,t |D), and E (Yg0 ,t0 |D),
+using Assumptions 3-5, and finally using the definition of ∆ACR
+                                                            g,t .
+
+
+
+Proof of Theorem S4
+
+The proof relies on the following lemma, that resembles Lemma 1 and that we do not prove.
+
+Lemma S4 If Assumptions 1, 2, and S3-S4 hold, for all (g, g 0 , t, t0 ) ∈ {1, ..., G}2 × {1, ..., T }2 ,
+
+               0
+                                           0
+                                                          
+   E Yg,t − Xg,t γ X, D − E Yg,t0 − Xg,t      0 γ X, D
+                                                             
+  − E Yg0 ,t − Xg0 0 ,t γ X, D − E Yg0 ,t0 − Xg0 0 ,t0 γ X, D
+  =Dg,t E (∆g,t |X, D) − Dg,t0 E (∆g,t0 |X, D) − (Dg0 ,t E (∆g0 ,t |X, D) − Dg0 ,t0 E (∆g0 ,t0 |X, D)) .
+
+It follows from the Frisch-Waugh theorem and the definition of εX
+                                                                g,t that
+
+                                                      P             X
+                                                            g,t Ng,t εg,t E (Yg,t |X, D)
+                               E βbf e X, D =                   P            X
+                                                                                         .            (30)
+                                                                  g,t Ng,t εg,t Dg,t
+
+
+Now, by definition of εX
+                       g,t again,
+
+                                      T
+                                      X
+                                                  g,t = 0 for all g ∈ {1, ..., G},
+                                            Ng,t εX                                                   (31)
+                                      t=1
+                                      XG
+
+                                                  g,t = 0 for all t ∈ {1, ..., T },
+                                            Ng,t εX                                                   (32)
+                                      g=1
+                                      X
+                                            Ng,t εX
+                                                  g,t Xg,t = 0.                                       (33)
+                                      g,t
+
+
+Then,
+                     X
+                           Ng,t εX
+                                 g,t E (Yg,t |X, D))
+                     g,t
+                     X                                   
+                                               0
+                 =         Ng,t εX
+                                 g,t E Yg,t − Xg,t λ X, D )
+                     g,t
+                     X                                                          
+                                               0                      0
+                 =         Ng,t εX
+                                 g,t E Yg,t − Xg,t λ X, D − E Yg,1 − Xg,1 λ X, D
+                     g,t
+                                              0
+                                                                    0
+                                                                                
+                                   −E Y1,t − X1,t λ X, D + E Y1,1 − X1,1 λ X, D
+
+
+
+
+                                                            26
+

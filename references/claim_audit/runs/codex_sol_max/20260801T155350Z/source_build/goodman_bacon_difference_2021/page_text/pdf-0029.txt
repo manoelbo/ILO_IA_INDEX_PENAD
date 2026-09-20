@@ -1,0 +1,52 @@
+they over control. Unit-specific trends also increase the weight on units treated at the extremes of
+
+the panel, changing estimates for this reason as well.
+
+          The unilateral divorce analysis provides a striking illustration of how unit-specific trends
+
+can fail because figure 5 shows no pre-trends but strongly time-varying treatment effects. Trends
+
+shrink the estimate so much that its sign changes (0.59, s.e.=1.35). Table 2 shows that changes in
+
+2x2 DD’s account for 90 percent of the difference between estimates with and without trends, and
+
+panel A of figure 10 shows that most of the treated/untreated components are much less negative
+
+with trends, with especially large differences for the terms involving the 1970 states. Panel B of
+
+figure 10 shows that trends reduce the weight on 𝛽𝛽̂𝑘𝑘𝑘𝑘
+                                                    2𝑥𝑥2
+                                                         terms, and increase the importance of
+
+timing-only comparisons. Since equation (11c) shows that the timing-only terms are already biased
+
+by the time-varying treatment effects, the change in weighting induced by unit-specific trends
+
+exacerbates this bias, accounting for 47 percent of the coefficient difference. Because unit-specific
+
+trends change the treated/untreated terms and give them less weight, the interaction of those two
+
+factors accounts for -36 percent of the overall change in the estimates.
+
+     v.   Group-specific linear pre-trends
+A simple strategy to address counterfactual trends is to estimate pre-treatment trends in 𝑌𝑌𝑘𝑘0 directly
+
+and partial them out of the full panel (cf. Bhuller et al. 2013, Goodman-Bacon 2018). This is what
+
+we hope that unit-specific trends do, it does not depend on the treatment effect pattern, and it does
+
+not change the weighting of the 2x2 DD’s. Specifically, using data from before 𝑡𝑡1∗ , one can estimate
+
+a pre-trend in 𝑦𝑦𝑖𝑖𝑖𝑖 for each timing group. 39 The slope will equal the linear component of
+
+
+39
+   One could estimate pre-trends for each unit, but this yields identical point estimates to the group-specific pre-trends.
+Moreover, group-specific trends reduce the variability of the estimator because trend deviations that would bias unit
+specific pre-trends cancel out to some extent when averaged by timing group. This matters because this strategy
+extrapolates potentially many periods into the future, magnifiying specification error in the pre-trends. This point
+applies to unit-specific linear trend specifications as well. Point estimates are identical when this specification includes
+linear trends for each group rather than each unit.
+
+                                                            27
+

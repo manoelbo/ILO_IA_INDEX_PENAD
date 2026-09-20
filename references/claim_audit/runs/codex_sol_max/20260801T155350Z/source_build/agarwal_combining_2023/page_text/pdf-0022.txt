@@ -1,0 +1,30 @@
+                                                               Table 2: Average treatment effects
+
+                              Deviation from AI                 Deviation from Ground Truth                                    Effort Measures
+                             All Designs  Design 1              All Designs      Design 1                            All Designs               Design 1
+                                                                                                               Active Time      Clicks  Active Time     Clicks
+  Treatment                       (1)               (2)              (3)                     (4)                     (5)              (6)             (7)              (8)
+  AI × CH                       0.001            −0.001             0.004                  0.003                   −0.86             0.22             0.04             0.32
+                               (0.003)           (0.006)           (0.005)                (0.012)                  (3.68)           (0.82)           (6.94)           (1.63)
+  AI                           −0.038            −0.036             0.002                  0.002                    6.75             1.34             6.26             1.53
+                               (0.004)           (0.006)           (0.004)                (0.008)                  (2.47)           (0.56)           (4.71)           (1.05)
+  CH                           −0.001            −0.004            −0.011                 −0.015                    7.37             0.16             6.53             0.09
+                               (0.002)           (0.004)           (0.004)                (0.008)                  (2.53)           (0.55)           (4.78)           (1.08)
+  Control Mean                  0.211             0.221             0.227                  0.224                   157.57           44.25           161.56            40.71
+                               (0.007)           (0.008)           (0.010)                (0.011)                  (4.46)           (1.21)          (7.05)            (1.53)
+  Pathology FE                   Yes               Yes               Yes                    Yes                      -                -                -                -
+  Observations                  36280             13440             36280                  13440                   14635            14635            6718             6718
+
+
+Note: This table summarizes the average treatment effects (ATE) of different information environments on the absolute value of the difference between the radiologist
+probability and AI probability (column (1) and (2)); absolute value of the difference between the radiologist probability and the ground truth (columns (3) and (4)); and
+radiologists’ effort measured in terms of active time and clicks (columns (5), (6), (7) and (8)). We either pool across all designs (All Designs) or condition on only design 1.
+Results on effort measure excludes five patient-cases with unaccounted time measure, and observations from design 3 because of learning effects in this set-up. The results
+are for the two top-level pathologies, airspace opacity and cardiomediastinal abnormality. Standard errors are two-way clustered at the radiologist and patient-case level in
+parenthesis. Robustness by design can be found in section C.4.1.
+
+
+
+
+                                                                                                                                                                                   22
+

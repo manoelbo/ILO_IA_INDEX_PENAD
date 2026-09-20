@@ -1,0 +1,55 @@
+04    ILO Working Paper 140
+
+
+
+
+     List of Figures
+
+         Figure 1. Income- and population-based similarities (A) and access to the internet (B) across
+            countries   12
+
+         Figure 2. Distribution of synthetic automation scores from 3 LLMs, by ISCO-08 1-digit   14
+
+         Figure 3. Age and sex distribution in the survey compared to Labour Force Survey (LFS) data
+            in Poland (employed individuals)   20
+
+         Figure 4. Distribution of occupational groups in the survey, compared to LFS in Poland (em-
+            ployed individuals) and to the desired sample (Table 2)   21
+
+         Figure 5. Occupation and sex distribution among survey participants compared to LFS in
+            Poland (employed individuals)   21
+
+         Figure 6. Frequency of use of GenAI, by 1-digit ISCO-08   22
+
+         Figure 7. Expectations of impact on the work area   23
+
+         Figure 8. Expectations of impact on individuals’ current job – distribution of individual scores   23
+
+         Figure 9. Distribution of task-level scores by sex and occupational group (1-digit ISCO-08)   24
+
+         Figure 10. Scoring as a function of familiarity with GenAI and the scored task – distribution
+            of individual scores   25
+
+         Figure 11. Schema of the scoring stages   27
+
+         Figure 12. Example of a dendogram used for the review of tasks’ semantic clustering   28
+
+         Figure 13. Task-level scores from the survey and experts, compared to AI-arbitrated scores   30
+
+         Figure 14. Comparison of Adjusted Scores: GPT-4o vs Gemini by Occupational Group   31
+
+         Figure 15. Survey scores, expert evaluation and final adjustments for 2,861 tasks in the main
+            survey   34
+
+         Figure 16. AI Exposure Gradients: ISCO-08 4-digit level occupations   37
+
+         Figure 17. AI Exposure: Comparison of 2025 with 2023, ISCO -08 4-digit level occupations   40
+
+         Figure 18. Changes to occupational exposure between 2023 and 2025 within Gradient 4   41
+
+         Figure 19. 4-digit level occupations (ISCO-08) with largest changes in mean scores between
+            2023 and 2024   42
+
+         Figure 20. Global estimates of occupations potentially exposed to GenAI (% of employment
+            by sex)   43
+

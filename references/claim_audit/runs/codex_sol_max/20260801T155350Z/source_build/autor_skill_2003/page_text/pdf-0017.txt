@@ -1,0 +1,47 @@
+                 SKILL CONTENT OF TECHNICAL CHANGE                           1295
+
+tion—approximately 13 percentage points apart in on-the-job
+computer use.
+     We have estimated many variations of this basic model to
+verify its robustness, including specifying the dependent variable
+as the level or percentile rank of industry computer use in 1984,
+1997, or the average of both; scaling the routine task share
+measure in percentiles of the 1960 task distribution; calculating
+the routine task share index using task percentiles rather than
+task levels; and replacing the routine task index with its loga-
+rithm. These many tests provide robust support for the rst
+proposition of our theoretical model: demand for computer capital
+is greatest in industries that were historically routine task
+intensive.
+
+
+               III. TRENDS IN JOB TASK INPUT, 1960 –1998
+    Our model implies that the rapidly declining price of com-
+puter capital should have reduced aggregate demand for labor
+input of routine tasks and increased demand for labor input of
+nonroutine cognitive tasks. This section analyzes the evidence for
+such shifts.
+
+III.A. Aggregate Trends
+     Figure I illustrates the extent to which changes in the occu-
+pational distribution over the period 1960 to 1998 resulted in
+changes in the tasks performed by the U. S. labor force. This
+gure is constructed by pairing the selected DOT 1977 task
+measures with Census and CPS employment data for each de-
+cade. By construction, each task variable has a mean of 50 cen-
+tiles in 1960. Subsequent points depict the employment-weighted
+mean of each assigned percentile over each decade.14
+     As is evident in the gure, the share of the labor force
+employed in occupations that made intensive use of nonroutine
+analytic and nonroutine interactive tasks increased substantially
+during the last four decades. Although both of these measures of
+nonroutine tasks increased in the 1960s—that is, during the
+
+
+     14. We do not impose an adding-up constraint across task measures—
+whereby total task allocation must sum to one within jobs or time periods—since
+this structure is not intrinsic to the DOT. It is therefore possible for the econ-
+omywide average of total task input to either rise or fall. This over-time variation
+is modest in practice. The mean of all ve task measures, equal to 50 by construc-
+tion in 1960, rose slightly to 52.5 in 1980, and fell to 51.2 in 1998.
+

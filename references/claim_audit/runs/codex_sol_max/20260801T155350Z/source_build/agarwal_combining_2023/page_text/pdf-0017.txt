@@ -1,0 +1,41 @@
+                                                                                                             17
+
+that are more specific, which may be further subdivided in some cases. The groups all
+correspond to a standard class of pathologies. For instance, “airspace opacity” is distinct
+from a “cardiomediastinal abnormality.” In the main text we focus on the parent categories
+with AI predictions and drop further subdivisions from the analysis. We refer to those as
+top-level pathologies. Our results are robust to including the lower-level pathologies in the
+analysis as we show in appendix C.4. The interface categorizes thoracic pathologies into
+groups by type to ease data entry. For example, allowing the user to simultaneously set the
+assessed probability of each disease in a specific category to zero.18 In addition, we elicited
+an overall bottom-line assessment of whether the radiologists considers the case normal or
+not.
+We also ask for a binary “treatment/follow-up” recommendation for each pathology that
+is not definitively ruled out.19 We will interpret this input as a∗r (s). In a real clinical
+setting, a recommendation to follow-up could trigger the treating physician to prescribe
+additional medical tests or interventions with potential costs and benefits. Thus, an optimal
+recommendation trades off the cost of false positives and false negatives when recommending
+an action as in section 2. The probabilistic assessments with the follow-up decision will allow
+us to estimate radiologists’ relative cost of false positives and false negatives.
+In addition to pr (ω = 1 |s ) and a∗r (s), we record active time, response times, and any click-
+stream data that results from the interaction with the interface. The participants are not
+explicitly informed about this monitoring, and there are no explicit time limits. Our ex-
+periment runs remotely, and participants connect to a server, which hosts the interface and
+records responses. The interface has been extensively tested beforehand on different browsers
+by conducting pilots with every company we recruited the participants from.20
+  18
+      Our radiology collaborators grouped pathologies into eight exclusive parent categories based on their
+type. Each group has children that are more specific, which may be further subdivided in some cases. The
+groups all correspond to a standard class of pathologies. For instance, an “airspace opacity” is distinct from a
+“cardiomediastinal abnormality.” The more specific disease of “bacterial pneumonia” manifests as an airspace
+opacity. This structure reduced the burden on our participants, and we piloted the interface with several
+radiologists specializing in the interpretation of chest X-rays. Prior clinical research on AI in chest X-Ray
+image classification has used similar hierarchies (see Seah et al., 2021, for example).
+   19
+      The binary treatment/follow-up decision is only asked for pathologies where a follow-up is clinically
+relevant. This includes all pathologies with AI assistance.
+   20
+      This interface is browser-based and built using the o-tree framework Chen et al. (2016). Since we
+are not directly communicating with our participants we also deploy a device fingerprinting service from
+fingerprint.com to ensure that there are no repeat participants.
+

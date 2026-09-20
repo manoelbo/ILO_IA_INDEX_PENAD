@@ -1,0 +1,67 @@
+                                                                                                                                                                                                                                                97
+
+ C.4.6                                                      Calibrated radiologist probability
+
+
+                                                                              Figure C.30: Comparing AI performance to Radiologists
+                                                            (a) RMSE Radiologists and AI                                                                                                    (b) AUROC Radiologists and AI
+                                                                            AI (Pct. 73)                                                                                                                        AI (Pct. 33)
+                                   15                                                                                                                                          15
+
+
+
+                                   10                                                                                                                                          10
+Density
+
+
+
+
+                                                                                                                                                                    Density
+                                                 5                                                                                                                                 5
+
+
+
+                                                 0                                                                                                                                 0
+                                                     .15           .2          .25           .3           .35             .4                                                           .6             .7             .8               .9         1
+                                                                                     RMSE                                                                                                                          AUROC
+
+
+ Note: Main specifications similar to figure 1 with the exception that reported probability of the radiologists is calibrated to the
+ ground truth.
+
+
+
+
+                                                                                           Figure C.31: Deviation from Ground Truth
+                                                      (a) Conditional on radiologist signal                                                                                            (b) Conditional on AI signal
+      ATE of AI on deviation from ground truth
+
+
+
+
+                                                           .02
+                                                                                                                               ATE on deviation from ground truth
+
+
+
+
+                                                                                                                                                                              .1
+
+                                                             0
+                                                                                                                                                                         .05
+                                                           -.02
+
+                                                                                                                                                                              0
+                                                           -.04
+
+                                                           -.06                                                                                                        -.05
+
+                                                           -.08
+                                                                                                                                                                          -.1
+                                                                  [0,0.2)   [0.2,0.4) [0.4,0.6) [0.6,0.8)       [0.8,1]                                                                [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                                         Radiologist probability bins without AI                                                                                         AI prediction bins
+
+
+ Note: Main specifications similar to figure 2 and figure 3 with the exception that reported probability of the radiologists is
+ calibrated to the ground truth and there are no separate results for ATE on incorrect decision.
+

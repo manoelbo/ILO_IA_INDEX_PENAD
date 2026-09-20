@@ -1,0 +1,44 @@
+parameters. We view this level of generality and flexibility as one of the main advantages of our proposal.
+   We provide sufficient conditions related to treatment anticipation behavior and conditional parallel
+trends under which these group-time average treatment effects are nonparametrically point-identified.
+A unique feature of our framework is that it shows how researchers can flexibly incorporate covariates
+into the staggered DiD setup with multiple groups and multiple periods. This is particularly important
+in applications in which differences in observed characteristics create non-parallel outcome dynamics
+between different groups – in this case, unconditional DiD strategies are generally not appropriate to
+recover sensible causal parameters of interest (Heckman et al., 1997, 1998; Abadie, 2005). We propose
+three different types of DiD estimands in staggered treatment adoption setups: one based on outcome
+regressions (Heckman et al., 1997, 1998), one based on inverse probability weighting (Abadie, 2005),
+and one based on doubly-robust methods (Sant’Anna and Zhao, 2020). We provide versions of these
+estimands both for the case with panel data and for the case with repeated cross sections data. To the
+best of our knowledge, this paper is the first to show how one can allow for covariate-specific trends across
+groups in DiD setups with variation in treatment timing. Our results also highlight that, in practice, one
+can rely on different types of parallel trends assumptions and allow some types of treatment anticipation
+behavior; our proposed estimands explicitly reflect these assumptions.
+   Our framework acknowledges that in some applications there may be many group-time average treat-
+ment effects and researchers may want to aggregate them into different summary causal effect measures.
+This characterizes the aggregation step of the analysis. We provide ways to aggregate the potentially
+large number of group-time average treatment effects into a variety of intuitive summary parameters and
+discuss specific aggregation schemes that can be used to highlight different sources of treatment effect
+heterogeneity across groups and time periods. In particular, we consider aggregation schemes that deliver
+a single overall treatment effect parameter with similarities to the ATT in the two period and two group
+case as well as partial aggregations that highlight heterogeneity along certain dimensions such as (a) how
+average treatment effects vary with length of exposure to the treatment (event-study-type estimands); (b)
+how average treatment effects vary across treatment groups; and (c) how cumulative average treatment
+effects evolve over calendar time. We also provide a formal discussion of the costs and benefits of balanc-
+ing the sample in “event time” when analyzing dynamic treatment effects. Overall, our setup makes it
+clear that, in general, the “best” aggregation scheme is application-specific as it depends on the type of
+question one wants to answer.
+   Given that our identification results are constructive, we propose easy-to-use plug-in type (parametric)
+estimators for the causal parameters of interest. Although the outcome regression, inverse probability
+weighting and doubly-robust estimands are equivalent from the identification point of view, they suggest
+different types of DiD estimators one can use in practice. Here, we note that using doubly-robust
+estimators can be particularly attractive as they rely on less stringent modeling conditions than the
+outcome regression and the inverse probability weighting procedures.
+   In order to conduct asymptotically valid inference, we justify the use of a computationally conve-
+nient multiplier-type bootstrap procedure. This approach can be used to obtain simultaneous confidence
+bands for the group-time average treatment effects. Unlike commonly used pointwise confidence bands,
+our simultaneous confidence bands asymptotically cover the entire path of the group-time average treat-
+ment effects with fixed probability and take into account the dependency across different group-time
+
+                                                     3
+

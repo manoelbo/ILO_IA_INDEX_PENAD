@@ -1,0 +1,47 @@
+point-identification. We say that g is scale-invariant if its value is the same under any re-scaling of
+the units of y by a positive constant a.
+
+Definition 1. We say that the function g is scale-invariant if it is homogeneous of degree zero, i.e.
+gpy1 , y0 q “ gpay1 , ay0 q for all a, y1 , y0 ą 0.
+
+       We next describe point-identification. We consider parameters that are identified without plac-
+ing restrictions on treatment effect heterogeneity. As in Fan et al. (2017), this is formalized by
+considering parameters that can be learned if we know the marginal distributions of Y p1q and Y p0q,
+but not the full joint distribution of pY p1q, Y p0qq.
+       To connect treatment effect heterogeneity to the joint distribution of potential outcomes, con-
+sider the simple case of a randomized experiment. By examining the outcome distribution for the
+treated group, we can learn the marginal distribution of Y p1q. Likewise, by examining the outcome
+distribution for the control group, we can learn the marginal distribution of Y p0q. If treatment
+effects were assumed to be constant, then for each observed treated unit with outcome Y p1q, we
+could infer their untreated outcome as Y p0q “ Y p1q ´ τ , where τ is the average treatment effect.
+Hence, the joint distribution of pY p1q, Y p0qq would be identified. However, if we allow for treatment
+effect heterogeneity, then for an observed treated unit with outcome Y p1q, we do not know what
+their value of Y p0q would be, and thus we do not know the joint distribution of pY p1q, Y p0qq. This
+winds up being especially important in settings with an extensive margin, since when we observe the
+distribution of outcomes for treated units, it means that we do not know which of the treated units
+would have had a zero outcome under the control condition, and thus it is difficult to disentangle
+the intensive and extensive margins.17
+       With that intuition in mind, we now give a formal definition. Recall that P denotes the joint
+distribution of pY p1q, Y p0qq, while PY pdq denotes the marginal distribution of Y pdq. We then say θg
+is point-identified if it depends on P only through the marginals PY p1q , PY p0q .
+
+Definition 2 (Identification). We say that θg is point-identified from the marginals at P if for every
+joint distribution Q with the same marginals as P (i.e. such that QY pdq “ PY pdq for d “ 0, 1),
+EP rgpY p1q, Y p0qqs “ EQ rgpY p1q, Y p0qqs. For a class of distributions P, we say that θg is point-
+identified over P if for every P P P, θg is point-identified from the marginals at P .
+
+We will denote by P` the set of distributions on r0, 8q2 . Thus, θg is point-identified over P` if it is
+always identified when Y takes on zero or weakly positive values. Our next result formalizes that it
+is not possible to have a parameter of the form EP rgpY p1q, Y p0qqs that is both scale-invariant and
+point-identified over P` .
+Proposition 2 (A trilemma). The following three properties cannot hold simultaneously:
+
+  (a) θg “ EP rgpY p1q, Y p0qqs for a non-constant function g : r0, 8q2 Ñ R that is weakly increasing
+         in its first argument.
+  17
+    In Appendix C, we discuss a variety of structural approaches that impose assumptions restricting the joint
+distribution, thus allowing us to separately point-identify the effects for the two margins.
+
+
+                                                      13
+

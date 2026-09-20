@@ -1,0 +1,32 @@
+                                                                                                   Change from
+                                         Treatment Effect Using:                                  rescaling units:
+
+ Paper                                logp1 ` Y q     logp1 ` 100 ¨ Y q     Ext. Margin            Raw               %
+ Azoulay et al (2019)                        0.002                 0.015             0.003        0.012          529
+ Fetzer et al (2021)                        -0.138                -0.410            -0.059       -0.272          197
+ Johnson (2020)                             -0.139                -0.408            -0.057       -0.269          194
+ Carranza et al (2022)                       0.166                 0.415             0.055        0.249          149
+ Cao and Chen (2022)                         0.032                 0.076             0.010        0.044          136
+ Rogall (2021)                               1.109                 2.015             0.195        0.906           82
+ Moretti (2021)                              0.041                 0.067             0.000        0.026           64
+ Berkouwer and Dean (2022)                  -0.412                -0.484             0.010       -0.072           17
+ Arora et al (2021)                          0.110                 0.111            -0.001        0.001            1
+ Hjort and Poulsen (2019)                    0.354                 0.354             0.000        0.001            0
+
+Appendix Table 2: Change in estimated treatment effects using logp1 ` Y q from re-scaling the
+outcome by a factor of 100 in papers published in the AER
+
+Note: this table repeats the exercise in Table 1 but replacing arcsinhpY q with logp1 ` Y q as the outcome in the second
+column, and arcsinhp100Y q with logp1`100Y q in the third column. The fourth column shows the estimated extensive
+margin effect, which is identical to the fourth column of Table 1. The final two columns show the raw difference and
+percentage difference between the second and third columns. The rows are sorted based on the percentage differences.
+Among the papers surveyed, which by construction report at least one specification using arcsinhpY q, Arora et al.
+(2021); Fetzer et al. (2021); Moretti (2021); Rogall (2021) also report specifications that contain logp1 ` Y q on the
+left-hand side, and Johnson (2020) reports a specification with logpc ` Y q on the left-hand side, where c is the first
+nonzero percentile of the distribution of the observed outcome variable.
+
+
+
+
+                                                          18
+

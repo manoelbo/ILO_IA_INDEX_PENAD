@@ -1,0 +1,46 @@
+             Table 2: Summary Statistics Occupation-Level Job Postings
+
+                                        Low exposure               High exposure
+                                      Before        After        Before        After
+              Job postings            4,056        3,358         3,343        2,745
+              Salary                £44,828.34   £49,359.93    £46,177.33   £50,262.62
+              Salary (SD)           £13,940.86   £15,238.06    £13,469.71   £14,136.39
+              LLM exposure score      0.045        0.045         0.263        0.263
+
+Notes: This table reports occupation-level summary statistics on job postings by exposure to
+large language models (LLMs). Occupations are classified into high- and low-exposure groups
+based on whether their exposure score lies above or below the median score. Job postings gives the
+mean number of vacancies posted. Salary reports the mean advertised annual compensation, while
+Salary (SD) gives the corresponding standard deviation across postings. LLM exposure score is
+the average predicted LLM-exposure of tasks in the occupation, based on Eloundou et al. (2024).
+Before refers to the pre-treatment period (prior to November 2022), while After refers to the post-
+treatment period (November 2022 onward).
+
+
+
+(2024). We then aggregate vacancies to the occupation-month level. Our monthly
+occupation-level variables capture multiple dimensions of labor demand. Posting
+volume is measured as the total new vacancies posted, which we log-transform.
+Posted salary represents the mean advertised salary for positions (level or log).7 We
+additionally calculate salary dispersion as the standard deviation of posted salaries
+within occupation-month cells to capture within-occupation inequality effects.
+    Table 2 presents summary statistics for occupation-level job postings. We sep-
+arate the data by high vs. low exposure occupations, and show the data for the
+periods before and after the release of ChatGPT in November 2022. Job posting
+volumes declined across both exposure groups following the introduction of Chat-
+GPT, with high-exposure occupations experiencing a sharper decline of 17.9 percent
+(from 3,343 to 2,745 monthly postings) compared to 17.2 percent for low-exposure
+occupations (from 4,056 to 3,358). Second, average posted salaries increased for both
+groups, rising from £44,828 to £49,360 (10.1 percent) in low-exposure occupations
+and from £46,177 to £50,263 (8.8 percent) in high-exposure occupations, with salary
+dispersion increasing similarly across both groups. Finally, high-exposure occupa-
+tions have LLM exposure scores approximately 6 times higher than low-exposure
+occupations.
+   7
+     When salary is not explicitly listed, it is inferred from a predictive model based on job charac-
+teristics, company, and location, trained on visa applications, self-reported data, and job postings,
+with salaries inferred for companies lacking direct data.
+
+
+                                                 10
+

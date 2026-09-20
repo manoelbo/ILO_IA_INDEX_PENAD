@@ -1,0 +1,65 @@
+                                                                                                                            114
+
+C.5.5                   Linearity of the Update Model
+
+To assess the appropriateness of linear relationship in the model of radiologist updating
+with AI we estimate non-parametric versions of the model and plot the empirical analog
+of Figure 5 along with the joint distribution of signals. To do so, we estimate a boosted
+                                               pr (ωi =1|sA ,sE )
+tree that estimates the radiologist’s reported p ω =0|sAir ,sEir as a non-parametric function of a
+                                                r( i      ir ir )
+constant, the update term, and the reported probability without AI assistance. We impose
+monotonicity constraints on the update term and the reported probability without AI. We
+then plot the frontier in which radiologists are indifferent between following up on the case-
+pathology and not following up. We compare this frontier to the cutoff frontier of a Bayesian
+decision maker, the radiologist without AI assistance, and the radiologist with AI assistance
+under the linear model.
+
+                                               Figure C.38: Empirical analog of figure 5
+                           (a) Airspace Opacity                                 (b) Cardiomediastinal Abnormality
+
+                    4
+                                                     Estimated Linear
+                                                     Estimated Non-linear
+
+                    2
+            |ω=1)
+       π(sA |ω=0)
+   A
+
+
+
+
+                    0
+   log π(s
+
+
+
+
+               −2
+
+
+               −4
+                 −4           −2          0              2                  4
+                                               E
+                                        π(ω=1|s )
+                                    log π(ω=0|s E)
+
+
+
+
+Note: For the two top-level pathologies with AI assistance, we plot estimates of the indifference frontier where radiologists are
+indifferent between following up on a patient-case and not following up on a patient-case for a Bayesian decision maker, the
+linear model estimated in equation 7, a non-parametric version of equation 7, and the human only without AI assistance. In
+addition, we plot the joint distribution of the signals log-likelihoods.
+
+
+
+
+C.5.6                   Individual Heterogeneity
+
+Here we show the distribution of individual estimates of equation (7). Each estimate contains
+sampling error, as each radiologist is only reading a subset of cases. Therefore, the unadjusted
+distribution of individual-level estimates is overdispersed as it is a convolution of the true
+individual-level parameters and the sampling noise. We adjust for this over-dispersion using
+

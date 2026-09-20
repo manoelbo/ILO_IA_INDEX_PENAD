@@ -1,0 +1,8 @@
+26     ILO Working Paper 140
+
+
+
+
+     robustness, we supplement this with expert evaluation of a subset of tasks (section 5), ensuring
+     that final scores reflect both practical insights and a realistic appraisal of current GenAI capabilities.
+

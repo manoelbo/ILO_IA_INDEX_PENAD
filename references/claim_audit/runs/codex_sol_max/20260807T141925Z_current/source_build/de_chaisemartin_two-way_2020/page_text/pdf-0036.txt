@@ -1,0 +1,38 @@
+another group g2 such that Dg2 ,t−2 = Dg2 ,t−1 = Dg2 ,t = 0. Then,
+                                  
+                           pl
+             N1,0,0,t E DID+,t D
+                       X
+            =                        Ng,t E (Yg,t−1 (0) − Yg,t−2 (0)|D)
+               g:Dg,t =1,Dg,t−1 =Dg,t−2 =0
+                  N1,0,0,t         X
+               −                                   Ng,t E (Yg,t−1 (0) − Yg,t−2 (0)|D)
+                  N0,0,0,t g:D =D
+                              g,t g,t−1 =Dg,t−2 =0
+                                                                                            
+                                  X                       N1,0,0,t          X
+             =ψ0,t−1                             Ng,t −                                Ng,t 
+                        g:D =1,D      =D      =0
+                                                          N 0,0,0,t
+                                                                    g:D =D     =D    =0
+                            g,t     g,t−1     g,t−2                g,t   g,t−1   g,t−2
+
+
+             =0.                                                                                 (23)
+
+The second equality follows by (19), and the third follows after some algebra. If there exists no
+g such that Dg,t−2 = Dg,t−1 = 0 and Dg,t = 1, (23) still holds, as DIDpl
+                                                                      +,t = 0 in this case.
+
+A similar reasoning yields
+                                                               
+                                            N0,1,1,t E DIDpl
+                                                          −,t D   =0                             (24)
+
+The result follows after plugging (23) and (24) into (22).
+
+
+
+
+                                                      36
+

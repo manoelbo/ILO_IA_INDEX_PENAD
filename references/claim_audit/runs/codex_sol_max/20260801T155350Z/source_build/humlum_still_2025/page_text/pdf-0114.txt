@@ -1,0 +1,60 @@
+              Figure E.12: Have Adopting Workers Experienced Earnings Gains?
+                    (Log Earnings Relative to Non-Encouraged Non-Adopters)
+
+      .15
+
+
+
+        .1
+
+
+
+      .05
+
+
+
+        0
+
+
+
+      -.05
+        2021m1       2021m7        2022m1        2022m7       2023m1        2023m7       2024m1        2024m7
+
+                                         Enc. Adopters vs Non-Enc. Non-Adopters
+                                         Non-Encouraged, Adopters vs Non-Adopters
+                                         Non-Adopters, Encouraged vs Non-Encouraged
+
+
+Notes: This figure shows the earnings gap of workers according to their encouragement and adoption status. Each group is
+compared to non-encouraged non-adopters. The figure reports the difference in log earnings, controlling for occupation fixed
+effects, pre-determined worker characteristics, and seasonality. Shaded areas represent 95% confidence intervals. Sample:
+All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+E.2.2        Job Mobility
+
+Our main analysis in Section 3.2 focuses on occupational mobility. In addition, AI
+
+chatbots may also induce mobility across workplaces. For instance, if chatbots help
+
+workers move up firm-specific learning curves, adopters may be more likely to switch
+
+employers. Alternatively, if encouraged-use policies enhance the utility of chatbots (as
+
+shown in Appendix D), adopters may seek to sort into such workplaces. This prediction
+
+is formalized in our theoretical framework in Appendix A.2. Despite these possibilities,
+
+Figure E.13 shows only a weak link between chatbot adoption and workplace mobility
+
+(Panel a). Moreover, job mobility effects—across either workplaces or occupations—are
+
+not stronger among adopters whose use is encouraged by their endline employers (Panel
+
+b).
+
+
+                                                            79
+

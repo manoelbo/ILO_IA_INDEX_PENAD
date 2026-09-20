@@ -1,0 +1,14 @@
+{
+  "aggregate_effect": -0.0507404538197659,
+  "composition_component": -0.011498784254616354,
+  "composition_share_of_aggregate": 0.22661965727505995,
+  "hourly": {
+    "hourly_wage": -0.0695080679658283,
+    "monthly_wage": -0.0507404538197659,
+    "weekly_hours": 0.0015517567460793
+  },
+  "pre_treatment_controls_effect": -0.0359977297931129,
+  "pre_treatment_controls_implied_composition": -0.014742724026652998,
+  "pre_treatment_controls_implied_share": 0.29055167852893704,
+  "within_education_price_component": -0.039241669565149545
+}

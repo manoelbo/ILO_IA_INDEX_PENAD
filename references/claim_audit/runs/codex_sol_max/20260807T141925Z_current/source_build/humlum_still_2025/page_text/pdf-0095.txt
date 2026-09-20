@@ -1,0 +1,37 @@
+F       Robustness Analysis
+F.1       Employer Initiatives
+
+Figure F.1 shows that the prevalence of employer initiatives (Figure 1, Panel (a)) is similar
+at the workplace level. Table F.1 shows that the correlations between employer initiatives
+and firm characteristics (Table E.1) are robust to controlling for worker characteristics.
+
+                            Figure F.1: Employer Usage Policies (Workplaces)
+
+         Marketing
+         Software Developers
+         Journalists
+         HR Professionals
+         IT Support
+         Financial Advisors
+         Customer Service
+         Accountants
+         Office Clerks
+         Legal Professionals
+         Teachers
+
+                               0      0.1     0.2     0.3       0.4   0.5       0.6    0.7     0.8     0.9      1
+                                       Encouraged     Allowed     Not Allowed     No Policy   Don’t Know
+
+Notes: This figure shows the share of workplaces affected by various employer usage initiatives for AI chatbots. Workers in
+our sample have been reweighted so all workplaces have the same weight. Sample: All completed responses from the 2024
+survey.
+
+
+
+
+                                                            1
+
+
+
+
+                                                            45

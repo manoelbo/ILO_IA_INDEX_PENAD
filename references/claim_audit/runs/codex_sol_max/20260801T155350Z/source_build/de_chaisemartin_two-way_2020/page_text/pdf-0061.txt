@@ -1,0 +1,68 @@
+Proof that wg,t
+            S
+                ≥ 0 under Assumption 6 and if Ng,t /Ng,t−1 does not depend on g
+
+Under Assumption 6, one has that Dg,t = 1{t ≥ ag }, with ag ∈ {1, ..., T + 1}. Therefore, given
+the form of wg,t
+             S
+                 , we just have to prove that for all g,
+                                          X
+                                              Ng,t εg,t ≥ 0.                               (28)
+                                                   t≥ag
+
+Because Ng,t /Ng,t−1 does not vary across g for all t ≥ 2, we have Ng,t = Ng,0 γt for some γt ≥ 0.
+                                                            P                       P
+Moreover, εg,t = Dg,t − Dg,. − D.,t + D.,. . Let γ et = γt / t≥0 γt , then Dg,. =           et , and
+                                                                                       t≥ag γ
+      P
+           et D.,t . Hence,
+D.,. = t≥0 γ
+             1    X                                                    X
+             P            Ng,t εg,t = Dg,. (1 − Dg,. + D.,. ) −               et D.,t
+                                                                              γ
+      Ng,0    t γt t≥ag                                                t≥ag
+                                                                                                  
+                                                              X                         X
+                                  = Dg,. 1 − Dg,. +                 et D.,t  − 
+                                                                     γ                         et D.,t  (1 − Dg,. ).
+                                                                                               γ                        (29)
+                                                              t<ag                      t≥ag
+
+Now, because D.,t ≤ 1,
+                                           X                  X
+                                                  et D.,t ≤
+                                                  γ                  et = Dg,. .
+                                                                     γ
+                                           t≥ag               t≥ag
+
+Hence, in view of (29),
+                                       1       X                         X
+                                       P            Ng,t εg,t ≥ Dg,.            et D.,t ≥ 0.
+                                                                                γ
+                                Ng,0    t γt t≥ag                        t<ag
+
+Therefore, (28) and the result follows.
+
+Proof that wfSd,g,t ≥ 0
+
+We just have to focus on the cases where Dg,t 6= Dg,t−1 . Note that εf d,g,t = Dg,t − Dg,t−1 −
+(D.,t − D.,t−1 ). Then, if Dg,t − Dg,t−1 = 1, the numerator of wfSd,g,t has the same sign as
+1 − (D.,t − D.,t−1 ), which is positive. If Dg,t − Dg,t−1 = −1, the numerator of wfSd,g,t has the same
+sign as 1 + (D.,t − D.,t−1 ), which is also positive. Because the denominator sums terms that are
+always positive, it is positive as well. The result follows.
+
+
+Proof of Theorem S3
+
+The reasoning is exactly the same as in Theorem 1, except that we rely on Lemma S3 below,
+instead of Lemma 1. We thus only prove Lemma S3.
+Lemma S3 If Assumptions 1-5 hold and Di,g,t ∈ {0, , ..., d}.
+
+       E (Yg,t |D) − E (Yg,t0 |D) − (E (Yg0 ,t |D) − E (Yg0 ,t0 |D))
+                                                                                         
+      =Dg,t E ∆ACR
+                 g,t D − Dg,t0 E ∆ACR                             ACR             ACR
+                                       g,t0 D − Dg 0 ,t E ∆g 0 ,t D − Dg 0 ,t0 E ∆g 0 ,t0 D    .
+
+                                                          25
+

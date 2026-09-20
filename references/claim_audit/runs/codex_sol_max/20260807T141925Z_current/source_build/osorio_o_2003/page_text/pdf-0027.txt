@@ -1,0 +1,57 @@
+sem categorias predefinidas, com os entrevistados tendo total liberdade para seleciona-
+rem o termo que consideravam descrever sua cor ou a daqueles por quem respondiam; e
+o segundo induzido, no qual tinham de escolher uma entre as quatro categorias predefi-
+nidas então previstas pela classificação: branco, preto, amarelo e pardo.
+     A compilação das respostas ao quesito de declaração livre revelou nada menos
+que 136 termos distintos de identificação racial. Porém, as quatro categorias do sis-
+tema classificatório do IBGE apareceram em nada menos que 57% das respostas es-
+pontâneas. E 38% das respostas estavam concentradas em três outros termos:
+morena, morena-clara e clara. Ou seja, a despeito da enorme variedade, 95% das res-
+postas se enquadravam livremente em apenas sete termos. A tabela 4 mostra os dois
+quesitos cotejados.
+
+      TABELA 4
+      Cor induzida versus cor espontânea – Brasil, 1976
+      (Em%)
+                                                              Cor espontânea
+Cor induzida
+                 Branca         Preta     Parda     Amarela      Morena Morena-clara   Clara   Outras    Total
+Branca            42,8           0,1       0,2        0,1           8,2      1,5        2,0     2,3      57,2
+Preta               0,1          4,2       0,2        0,0           3,0      0,1        0,0     1,0       8,5
+Amarela             0,4          0,0       0,1        0,8           0,9      0,2        0,1     0,3       2,7
+Parda               0,8          0,4       6,7        0,1          21,0      0,9        0,2     1,5      31,6
+Total             44,0           4,7       7,1        1,0          33,0      2,7        2,3     5,1     100,0
+      Fonte: IBGE, Pesquisa Nacional por Amostra de Domicílios, 1976, em microdados.
+      Elaboração: Disoc/Ipea.
+
+
+
+
+      Outra pesquisa que permite cotejar a cor atribuída espontaneamente com a indu-
+zida foi conduzida pelo Datafolha em 1995. Como para a cor induzida foram empre-
+gadas as categorias do IBGE, é interessante comparar os resultados. Todavia, deve-se ter
+em mente nessa comparação que a pesquisa do IBGE tem qualidade e abrangência in-
+finitamente superiores, o que faz que as duas pesquisas não sejam estritamente compa-
+ráveis. Além disso, outro problema para a comparabilidade é a ausência da categoria
+indígena no levantamento de 1976. A tabela 5 apresenta os resultados da pesquisa do
+Datafolha, retabulados para serem comparáveis aos da tabela 4, e para serem apresentados
+como percentagem do total, o que confere mais flexibilidade à realização de outros tipos
+de análise e ajuda a mitigar a possibilidade de que conclusões errôneas sobre os dados se-
+jam produzidas pelo desconhecimento das distribuições marginais das variáveis.
+     É interessante notar que a despeito dos quase vinte anos que separam os dois
+levantamentos e das grandes diferenças metodológicas, os resultados são pratica-
+mente os mesmos, especialmente para as categorias branca e parda da declaração in-
+duzida. As categorias da classificação do IBGE respondem, no levantamento do
+Datafolha, por 50% das respostas livres, um pouco menos do que os 57% verifica-
+dos em 1976. Entretanto, as sete categorias de cor que no levantamento de 1976
+cobriam 95% das respostas espontâneas, em 1995 cobriam 94%, praticamente a
+mesma percentagem. Na declaração espontânea, a principal diferença fica por conta
+da categoria negro, que não era expressiva (0,1%) em 1976 e passou a representar 3%
+das respostas em 1995. Ou seja, somando-se essas respostas ao grupo das categorias
+usadas na resposta induzida e às mais expressivas livremente declaradas – morena,
+
+
+
+
+ipea                                    texto para discussão | 996 | nov. 2003                               25
+

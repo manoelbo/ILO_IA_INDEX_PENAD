@@ -1,0 +1,45 @@
+E.1.3   AI Chatbot Products
+
+While our main analysis focuses on the adoption of any AI chatbot, our survey also
+
+measures usage of specific products. This section provides details on product-level
+
+adoption.
+
+   The main takeaway is that ChatGPT remains the dominant tool. Figures E.6–E.7
+
+show that approximately 80% of all adopters use ChatGPT, and its dominance holds
+
+across all occupations.
+
+   Table E.4 further reveals that users of other chatbots often multihome—that is, they
+
+also use ChatGPT. For example, 84% of daily Gemini users also use ChatGPT daily.
+
+An exception is Microsoft Copilot: only 39% of its daily users also use ChatGPT. Still,
+
+this figure is substantially higher than the overall share of daily ChatGPT users in
+
+the population (11%), suggesting that workers are generally not exclusive to a single
+
+chatbot—those who use one are more likely to use others as well.
+
+   Table E.5 characterizes workers’ use of AI chatbot products based on whether their
+
+employers provide an enterprise chatbot. The patterns of daily and weekly usage in Panels
+
+(a) and (b) are especially informative about ongoing, active use. The table shows that even
+
+customized enterprise chatbots are most often versions of ChatGPT. These are typically
+
+thin wrappers around ChatGPT Enterprise or the OpenAI API, adapted for workplace
+
+use through features such as data security compliance, training on internal data, and
+
+custom prompt creation.
+
+
+
+
+                                            67
+

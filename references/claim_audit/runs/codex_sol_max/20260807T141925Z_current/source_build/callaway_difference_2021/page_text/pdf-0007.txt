@@ -1,0 +1,47 @@
+to the case with repeated cross sections data and this case is developed in Appendix B. Here, we note
+that Assumption 2 allows us to view all potential outcomes as random. Furthermore, it does not impose
+restrictions between potential outcomes and treatment allocation, nor does it restrict the time series
+dependence of the observed random variables. On the other hand, Assumption 2 imposes that each
+unit i is randomly drawn from a large population of interest. For an alternative design-based inference
+approach, see Athey and Imbens (2018).
+   Henceforth, to keep the notation more concise, we will suppress the unit index i in our notation.
+
+2.2      The Group-Time Average Treatment Effect Parameter
+Given that different potential outcomes cannot be observed for the same unit at the same time, researchers
+often focus on identifying and estimating some average causal effects. For instance, in the canonical DiD
+setup with two time periods, the most popular treatment effect parameter of interest is the average
+treatment effect on the treated, denoted by6
+
+                                           AT T = E[Y2 (2) − Y2 (0)|G2 = 1].
+
+In this paper, we consider a natural generalization of the AT T that is suitable to setups with multiple
+treatment groups and multiple time periods. More precisely, we use the average treatment effect for units
+who are members of a particular group g at a particular time period t, denoted by
+
+                                         AT T (g, t) = E[Yt (g) − Yt (0)|Gg = 1],
+
+as the main building block of our framework. We call this causal parameter the group-time average
+treatment effect.
+   Note that the AT T (g, t) does not impose any restriction on treatment effect heterogeneity across
+groups or across time. Thus, focusing on the family of AT T (g, t)’s allow us to analyze how average
+treatment effects vary across different dimensions in a unified manner. For instance, by fixing a group g
+and varying time t, one is able to highlight how average treatment effects evolve over time for that specific
+group. By doing this for different groups, we can have a better understanding about how treatment effect
+dynamics vary across groups. In addition, as we discuss in Section 3, one can build on the AT T (g, t)’s
+to form more aggregated causal parameters that are constructed to answer specific questions like: (a)
+What was the average effect of participating in the treatment across all groups that participated in the
+treatment by time period T ? (b) Are average treatment effects heterogeneous across groups? (c) How do
+average treatment effects vary by length of exposure to the treatment? (d) How do cumulative average
+treatment effects evolve over calendar time? We view this level of generality and flexibility as one of the
+main advantages of our framework that first focuses on the family of AT T (g, t)’s.
+
+2.3      Identifying Assumptions
+In order to identify the AT T (g, t) and their functionals, we impose the following assumptions.
+
+
+   6
+       Existence of expectations is assumed throughout.
+
+
+                                                            7
+

@@ -1,0 +1,45 @@
+                            Table C.1: Wage Setting Systems in Denmark
+
+                                   Proxies for CBA coverage                    Wage setting systems under CBAs
+                        Public sector Large private firms Total (1+2)          Central TwoTier      Decentral
+  Accountants               .055               .729          .784               .092      .059         .839
+  Customer Service           .09               .826          .916               .228      .447         .304
+  Financial Advisors        .019               .942          .961               .008      .909          .08
+  HR Prof.                  .395               .548          .943               .156      .056         .781
+  IT Support                .211               .681          .892               .124      .171         .697
+  Journalists               .416               .544           .96                 0        .54         .457
+  Legal Prof.               .561               .379           .94               .043      .002         .954
+  Marketing                 .023               .851          .874               .127      .152         .711
+  Office Clerks             .493               .385          .878               .351      .048         .583
+  Software Dev.             .005               .766          .771                 0         0          .999
+  Teacher                   .787               .148          .935               .956        0          .043
+  All                       .278               .618          .896                .19      .217         .586
+Notes: This table summarizes the prevalence of wage-setting systems across our study occupations. Columns (1)–(2) report
+proxies for collective bargaining agreement (CBA) coverage: the share of workers in the public sector and in large (25+
+employee) private firms. Column (3) sums these as a proxy for overall CBA coverage. Columns (4)–(6) show the share of
+CBA-covered workers under centralized, two-tiered, and decentralized bargaining systems, based on industry-by-occupation
+classifications from Dahl, Le Maire and Munch (2013).
+
+
+
+
+D        Labor Market Trends
+
+In this appendix, we present aggregate employment trends for our 11 highly-exposed study
+occupations.
+
+
+D.1       Aggregate Employment
+
+Figure D.1 plots the share of our 11 survey occupations in aggregate Danish employment.
+These occupations have tracked the rest of the economy, maintaining a stable 20% share
+of hours and earnings before and after the arrival of AI chatbots. This pattern aligns
+with Kauhanen and Rouvinen (2025), who use Finnish population data to show that
+occupations exposed to Generative AI have not experienced differential changes in hours or
+earnings. Similarly, occupations exposed to generative AI have not experienced differential
+changes in aggregate employment in the United States Brynjolfsson, Chandar and Chen
+(2025); Chandar (2025); The Budget Lab at Yale (2026).
+
+
+
+                                                          33

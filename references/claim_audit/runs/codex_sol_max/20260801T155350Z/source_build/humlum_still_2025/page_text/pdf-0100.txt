@@ -1,0 +1,98 @@
+Figure E.4: Influence of Employer Initiatives on Worker Gaps in AI Chatbot Adoption
+                                                                         (i) Usage Policy: Encouraged
+                                  (a) Ever Used                                                                                                              (b) Daily Use
+
+                Female                 p< 0.01                                                                                      Female                                p< 0.01
+
+
+
+         Age (10 Years)                                  p< 0.01                                                             Age (10 Years)                                                      p= 0.094
+
+
+
+  Experience (10 Years)                                         p= 0.255                                               Experience (10 Years)                                    p< 0.01
+
+
+
+           log(Earnings)                                                                      p= 0.012                         log(Earnings)                                                                    p= 0.072
+
+
+
+   Net Wealth / Earnings                                                       p= 0.032                                Net Wealth / Earnings                                                                 p= 0.044
+
+
+                           -.15        -.1                    -.05                  0                  .05                                            -.08      -.06              -.04            -.02               0     .02
+
+                                           Encouraged           Other (Non-Encouraged)                                                                          Encouraged                Other (Non-Encouraged)
+
+
+                                                                        (ii) Usage Policy: Not Allowed
+                                  (a) Ever Used                                                                                                              (b) Daily Use
+
+                Female            p= 0.080                                                                                          Female                        p< 0.01
+
+
+
+         Age (10 Years)                               p< 0.01                                                                Age (10 Years)                                               p= 0.026
+
+
+
+  Experience (10 Years)                                   p= 0.231                                                     Experience (10 Years)                                        p< 0.01
+
+
+
+           log(Earnings)                                                                p= 0.015                               log(Earnings)                                                                    p= 0.121
+
+
+
+   Net Wealth / Earnings                                                p= 0.320                                       Net Wealth / Earnings                                                                p= 0.235
+
+
+                           -.15      -.1               -.05                0                .05              .1                                -.06             -.04                      -.02                  0                .02
+
+                                                      Not Allowed           Other                                                                                           Not Allowed              Other
+
+
+                                                                          (iii) Firm-Arranged Training
+                                  (a) Ever Used                                                                                                              (b) Daily Use
+
+                Female                      p< 0.01                                                                                 Female                                 p= 0.038
+
+
+
+         Age (10 Years)                                       p< 0.01                                                        Age (10 Years)                                              p= 0.257
+
+
+
+  Experience (10 Years)                                           p< 0.01                                              Experience (10 Years)                              p= 0.196
+
+
+
+           log(Earnings)                                                                          p= 0.034                     log(Earnings)                                                                p= 0.076
+
+
+
+   Net Wealth / Earnings                                                       p= 0.015                                Net Wealth / Earnings                                                        p= 0.681
+
+
+                           -.15            -.1                 -.05                 0                  .05                                     -.1                       -.05                            0                       .05
+
+                                                 Firm-Arranged Training             Other                                                                              Firm-Arranged Training                Other
+
+
+
+Notes: This figure illustrates the impact of employer initiatives on worker disparities in AI chatbot adoption. The estimates
+are obtained from regressions of AI chatbot adoption on worker characteristics X, controlling for occupation fixed effects,
+and are estimated separately based on employers’ AI chatbot initiatives. Panel (i) splits workers based on whether their
+employer encourages AI chatbot use, Panel (ii) splits workers based on whether their employer allows AI chatbot use, and
+Panel (iii) splits workers based on whether they have participated in firm-arranged AI chatbot training. For each of these,
+subpanels (a) predicts whether workers have ever used AI chatbots for work, while subpanels (b) predicts whether workers
+use AI chatbots daily. Panel (i) is identical to Figure E.2. Whiskers represent 95% confidence intervals. The reported
+p-values test whether the coefficients differ between the two groups. Sample: All completed responses from the 2024 survey
+linked to registry data.
+
+
+
+
+                                                                                                                  65
+

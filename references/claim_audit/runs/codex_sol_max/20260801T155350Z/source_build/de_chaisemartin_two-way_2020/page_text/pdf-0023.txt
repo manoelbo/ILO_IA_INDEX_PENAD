@@ -1,0 +1,49 @@
+             Table 3: Estimates of the effect of one additional newspaper on turnout
+
+                                                     Estimate     Standard error       N
+                βbf d                                  0.0026         0.0009         15,627
+                βbf e                                 -0.0011         0.0011         16,872
+                DIDM                                   0.0043         0.0015         16,872
+                DIDpl M                               -0.0009         0.0016         13,221
+                DIDM , on placebo subsample            0.0045         0.0019         13,221
+
+Notes. This table reports estimates of the effect of one additional newspaper on turnout, as well as a placebo
+estimate of the common trends assumption underlying DIDM . Estimators are computed using the data of
+Gentzkow et al. (2011), with state-year fixed effects as controls. Standard errors are clustered by county. To
+compute the DIDM estimators, the number of newspapers is grouped into 4 categories: 0, 1, 2, and more than 3.
+
+
+
+6.3    The effect of union membership on wages
+
+A number of articles have estimated the effect of union membership on wages using panel data
+and controlling for workers’ fixed effects. For instance, Jakubson (1991) has found a 8.3% union
+membership premium using that strategy, in a sample of American males from the PSID followed
+from 1976 to 1980. Vella and Verbeek (1998) estimate a similar regression and find similar results,
+in a sample of young American males from the NLSY followed from 1980 to 1987.21
+We use the data in Vella and Verbeek (1998) to compute various estimators of the union wage
+premium. As union status is often measured with error (see, e.g. Freeman, 1984; Card, 1996),
+we discard changes in union status happening twice in three consecutive years. Specifically,
+for individuals with Di,t−1 = 0, Di,t = 1, and Di,t+1 = 0, we replace Di,t by 0. Similarly, for
+individuals with Di,t−1 = 1, Di,t = 0, and Di,t+1 = 1, we replace Di,t by 1. Doing so, we discard
+half of the union status changes in the initial data.22
+We start by estimating a two-way fixed effects regression of wages on union membership with
+worker and year fixed effects. Table 4 below shows that βbf e = 0.107 (s.e.= 0.030), a result close
+to that of the worker fixed effects regressions in Jakubson (1991) and Vella and Verbeek (1998).
+Then, we estimate the weights attached to βbf e . 820 are strictly positive, 196 are strictly negative,
+                                                   bf e = 0.097, meaning that βf e and the ATT may
+but the negative weights only sum to -0.01. Still, σ
+be of opposite signs if the standard deviation of the treatment effect across the unionized worker
+× year observations is equal to 0.097, a substantial but still possible amount of heterogeneity.
+  21
+     The fixed effects regression is not the main specification in Vella and Verbeek (1998). The authors favor
+instead a dynamic selection model.
+  22
+      Keeping the original data does not change much the results presented below, except that the placebo
+estimator DIDpl,2
+               M becomes significant.
+
+
+
+                                                     23
+

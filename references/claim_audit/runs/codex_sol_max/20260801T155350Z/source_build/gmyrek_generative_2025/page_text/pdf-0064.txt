@@ -1,0 +1,64 @@
+61        ILO Working Paper 140
+
+
+
+
+      Exposure           4-digit code     Occupation Name                                                             Mean        SD
+
+                                          Building Frame and Related Trades Workers Not Elsewhere
+      Not Exposed        7119             Classified                                                                  0.09        0.01
+
+      Not Exposed        7133             Building Structure Cleaners                                                 0.09        0.01
+
+      Not Exposed        9122             Vehicle Cleaners                                                            0.09        0.01
+
+      Not Exposed        9211             Crop Farm Labourers                                                         0.09        0.02
+
+      Not Exposed        9215             Forestry Labourers                                                          0.09        0.02
+
+      Not Exposed        9312             Civil Engineering Labourers                                                 0.09        0.02
+
+      Not Exposed        9313             Building Construction Labourers                                             0.09        0.02
+
+      Not Exposed        9611             Garbage and Recycling Collectors                                            0.09        0.02
+
+      Not Exposed        9613             Sweepers and Related Labourers                                              0.09        0.03
+
+      Not Exposed        9624             Water and Firewood Collectors                                               0.09        0.03
+
+
+
+
+     2. Sampling Formula for section 4.2.
+     As presented in section 4.2, we apply the standard formula for calculating sample size in order
+     to assign assigning the scoring tasks to the human evaluators.
+
+                                                                  Z 2 ⋅ p ⋅ (1 − p)
+                                                             n=
+                                                                          E2
+
+     Where:
+
+     –– N is sample size
+     –– Z is the Z-value (1.96 for a 95% confidence level)
+     –– p is the estimated proportion of the population that has a particular characteristic
+     –– E is the margin of error (e.g., standard 0.05)
+     In this formula, p traditionally refers to the proportion of "successes" in the population, which
+     represents a probability-based assumption about the variability. Since in the selection of a sam-
+     ple of tasks we do not know that variability, we use the most conservative approach of applying
+     p=0.5, which gives the safest (largest) sample size for each group of tasks.21 Subsequently, we
+     apply the standard correction formula for a finite population, where N is the number of tasks
+     for each 1-digit category:
+
+                                                                               n
+                                                            nadjusted =        n−1
+                                                                          1+
+                                                                                N
+
+
+
+
+     21
+          This is because p=0.5 maximizes the product p(1−p). For example, if p=0.5, we get p(1−p)=0.25, for any other value of p (say 0.3 or
+          0.7), the product p(1−p) would be smaller, resulting in a smaller required sample size.
+

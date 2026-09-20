@@ -1,0 +1,33 @@
+Table A25: Comparison of ONS and Revelio Labs Employment Shares across In-
+dustries
+
+
+          Table A26: Comparison of ONS and Revelio employment shares
+
+                                                   Dependent variable:
+                                                   Revelio employment
+                         ONS employment                  0.706∗∗∗
+                                                          (0.161)
+
+                         ONS job listings                  0.018
+                                                          (0.012)
+
+                         Observations                        16
+                         R2                                0.578
+                         Adjusted R2                       0.548
+                         Residual Std. Error          0.023 (df = 14)
+                         Note:                 ∗ p<0.1; ∗∗ p<0.05; ∗∗∗ p<0.01
+
+
+
+
+Notes: This table reports OLS estimates from regressing Revelio Labs industry employment shares
+on ONS industry employment shares. Employment shares are calculated as each industry’s fraction
+of total employment. Industries are defined using 16 broad ONS Standard Industrial Classification
+(SIC) categories.
+
+
+
+
+                                                45
+

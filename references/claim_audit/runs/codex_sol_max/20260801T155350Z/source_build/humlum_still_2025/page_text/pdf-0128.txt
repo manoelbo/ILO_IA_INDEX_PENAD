@@ -1,0 +1,56 @@
+E.5      Coworker Encouragement
+
+A key focus of our analysis is the link between employer chatbot initiatives and labor
+
+market outcomes. Section 1.4 shows how workers’ adoption and reported work effects vary
+
+with these initiatives, and Section 3 uses employer-encouraged use as the main workplace
+
+treatment.
+
+   While our main analysis relies on self-reported employer encouragement, this appendix
+
+demonstrates robustness to using coworker reports. At the individual level, this helps
+
+assess whether effects reflect workplace-wide initiatives or individual interventions; at the
+
+workplace level, it addresses concerns about attenuation bias from survey measurement
+
+error.
+
+   We focus the robustness analysis on encouraged use, our primary workplace treatment.
+
+Section E.5.1 describes how we construct coworker measures, and Section E.5.2 shows that
+
+our findings hold when using coworker encouragement, replicating first the adoption and
+
+self-reported work effects from Section 1.4, then the labor market results from Section 3.
+
+E.5.1    Empirical Strategy
+
+To operationalize these ideas, we construct leave-one-out averages of coworkers’ reported
+
+employer encouragement for each worker i:
+
+                                            1       X
+                     Encouragedj,−i =                        Encouragedk ,              (70)
+                                        Nj(i) − 1 k∈j(i)\i
+
+where Nj(i) denotes the number of respondents in the same workplace-occupation cell j(i)
+
+as worker i.
+
+   The coworker measurements are made possible by our workplace-based sampling design
+
+(described in Section 1.3), which ensures that most respondents have coworkers who also
+
+participated in the survey. To mitigate measurement error due to incomplete sample
+
+coverage, we apply an empirical shrinkage procedure to the leave-out encouragement rates,
+
+Encouragedj,−i (see Appendix H.2 for details on this method). Importantly, our results in
+
+Section E.5.2 are robust to using the raw leave-out means instead.
+
+                                             93
+

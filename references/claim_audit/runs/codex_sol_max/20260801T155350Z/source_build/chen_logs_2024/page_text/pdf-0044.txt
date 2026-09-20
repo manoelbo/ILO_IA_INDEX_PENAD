@@ -1,0 +1,47 @@
+effect. Our results thus cover the OLS estimator when it is consistent for the ATE for some (sub)-
+population P (e.g. in an RCT or under unconfoundedness). Given the prominence of OLS in
+applied work—and the fact that it is sometimes used for non-causal analyses—we now provide a
+direct result on the sensitivity to scaling of the estimand of an OLS regression of an outcome of the
+form mpaY q on an arbitrary random variable X.
+   Specifically, suppose that pX, Y q „ Q, for Y P r0, 8q and X P RJ , where the first element of X
+is a constant. Consider the OLS estimand
+
+                                      βpaq “ EQ rXX 1 s´1 EQ rXmpaY qs,
+
+i.e. the population coefficient from a regression of mpaY q on X. We assume that EQ rXX 1 s is
+full-rank so that βpaq is well-defined. Letting βj paq “ e1j βpaq be the j th element of βpaq, we will
+show that βj paq can be made to have arbitrary magnitude via the choice of a if γj ‰ 0, where
+
+                                      γ “ EQ rXX 1 s´1 EQ rX 1rY ą 0ss
+
+is the coefficient from a regression of 1rY ą 0s on X.
+Proposition 6. Suppose that
+
+   1. The function m satisfies parts 1 and 2 of Proposition 1.
+
+   2. (Finite expectations) EQ rkXks ă 8 and EQ rkX logpY qk | Y ą 0s ă 8 .
+
+Then for every j P t2, ..., Ju, βj paq{ logpaq Ñ γj as a Ñ 8. Moreover, if γj ‰ 0 for some j P t2, ..., Ju,
+then for every βj˚ P p0, 8q, there exists a ą 0 such that |βj paq| “ βj˚ . In particular βj paq is continuous
+with βj paq Ñ 0 as a Ñ 0 and |βj paq| Ñ 8 as a Ñ 8.
+   We note that Proposition 6 implies that the OLS estimator for the j th coefficient, β̂j paq, will be
+arbitrarily sensitive to the choice of a when the corresponding extensive margin OLS estimator γ̂j ,
+is non-zero. This follows immediately from setting Q to be the empirical distribution of pYi , Xi qN
+                                                                                                   i“1
+and applying Proposition 6 (note that part 2 of the Proposition is trivially satisfied for the empirical
+distribution, since X and Y are both bounded over the empirical distribution).
+
+OLS Standard Errors. We also show that as a Ñ 8, the t-statistic for the OLS estimate β̂j
+constructed using heteroskedasticity-robust standard errors converges to the t-statistic for γ̂j (again
+using heteroskedasticity-robust standard errors). Formally, let
+                              ˜                ¸´1 ˜                         ¸˜                ¸´1
+                                  1 ÿ                  1 ÿ                        1 ÿ
+                  Ω̂β paq “           Xi Xi1               Xi Xi1 ǫ̂i paq2            Xi Xi1
+                                  N i                  N i                        N i
+
+denote the estimator of the heteroskedasticity-robust variance matrix for β̂paq, where ǫ̂i paq “
+mpaYi q ´ Xi1 β̂paq, and β̂paq is the OLS estimate of βpaq. The t-statistic for β̂j paq is then t̂βj paq “
+
+
+                                                          7
+

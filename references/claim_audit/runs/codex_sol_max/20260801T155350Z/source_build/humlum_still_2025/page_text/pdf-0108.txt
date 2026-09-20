@@ -1,0 +1,55 @@
+E.1.6                                       Workloads and Task Creation
+
+Figure E.9 shows that workers who report greater time savings are also more likely to
+
+report new job tasks from chatbots
+
+                            Figure E.10 shows the composition of new job tasks from AI chatbots by employer
+
+initiatives. Ethics and compliance tasks are especially common among workers who have
+
+received employer-provided training in AI chatbots. In contrast, workplaces that merely
+
+encourage chatbot use have a higher share of “productive AI tasks” focused on content
+
+generation and ideation.
+
+                            Table E.8 for the full set of regression estimates underlying Figure D.5.
+
+                                                   Figure E.9: New Work and Reported Time Savings
+
+                                       40
+  Reporting New Work Tasks (Percent)
+
+
+
+
+                                       30
+
+
+
+                                       20
+
+
+
+                                       10
+
+
+
+                                       0
+                                            -5          0                  5               10               15       20
+                                                            Self Reported Time Saving (Percent of Work Hours)
+
+                                                                    Encouraged       Non-Encouraged
+
+
+Notes: This figure presents a binned scatterplot of workers’ reported new tasks from AI chatbots against their estimated
+time savings from these tools, absorbing occupation fixed effects. The sample is divided based on whether employers
+encourage AI chatbot use. The regression line represents the line of best fit for each group, controlling for occupation fixed
+effects. Sample: All completed responses from the 2024 survey.
+
+
+
+
+                                                                               73
+

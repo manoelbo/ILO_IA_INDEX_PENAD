@@ -1,0 +1,53 @@
+Theorem 1. Let Assumptions 1, 2, 3 and 6 hold.
+   (i) If Assumption 4 holds, then, for all g and t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and t ≥ g − δ,
+
+                                           nev                 nev                 nev
+                        AT T (g, t) = AT Tipw  (g, t; δ) = AT Tor  (g, t; δ) = AT Tdr  (g, t; δ) .
+
+   (ii) If Assumption 5 holds, then, for all g and t such that g ∈ Gδ , t ∈ {2, . . . T − δ} and g−δ ≤ t < ḡ−δ,
+
+                                            ny                 ny                 ny
+                         AT T (g, t) = AT Tipw (g, t; δ) = AT Tor (g, t; δ) = AT Tdr (g, t; δ) .
+
+   Theorem 1 is the first main result of this paper. It provides powerful identification results that
+extend the DiD identification results based on the outcome regression approach of Heckman et al. (1997,
+1998), the IPW approach of Abadie (2005), and the DR approach of Sant’Anna and Zhao (2020) to
+the multiple-periods, multiple groups setup. In other words, Theorem 1 says that, from an identification
+point of view, one can recover the AT T (g, t)’s by exploiting different parts of the data generating process:
+the OR approach only relies on modeling the conditional expectation of the outcome evolution for the
+comparison groups, the IPW approach relies on modeling the conditional probability of being in group
+g, whereas the DR approach exploits both OR and IPW components.
+   In order to extend the results of Heckman et al. (1997, 1998), Abadie (2005), and Sant’Anna and Zhao
+(2020) to the multiple groups, multiple periods framework, we have to address two different challenges: one
+associated with an appropriate reference time period and one associated with an appropriate comparison
+group. Theorem 1 highlights how a solution to these challenges is directly connected to the limited
+anticipation and the conditional parallel trends assumptions. More specifically, Theorem 1 says that we
+can use the time period t = g − δ − 1 as an appropriate reference time period under Assumption 3 and
+either Assumption 4 or 5. This is the most recent time period when untreated potential outcomes are
+observed for units in group g. Interestingly, the more treatment anticipation is allowed (i.e., the higher
+δ is), the further back in time one needs to go.9 Theorem 1 also suggests that the choice of comparison
+group is directly tied to the conditional parallel trends assumption one makes: under Assumption 4, one
+can use “never treated” units as a fixed comparison group for all “eventually treated” units; whereas,
+under Assumption 5, one can use the “not-yet-treated by time t + δ” units as a valid comparison group
+for those who are first treated at time g. In this latter case, Theorem 1 also highlights that when all units
+eventually gets treated (ḡ < ∞), one is only able to identify the AT T (g, t)’s for time periods before the
+last treated group “effectively” starts their treatment, i.e., t < ḡ − δ. In this case, one can not identify
+the AT T (g, t) for the last treated cohort, too.
+   Finally, we note that when pre-treatment covariates play no role in identification (i.e., Assumptions
+3, 4, and 5 hold unconditionally on X), (2.2)-(2.4) collapse to
+
+                            nev
+                        AT Tunc (g, t; δ) = E[Yt − Yg−δ−1 |Gg = 1] − E[Yt − Yg−δ−1 |C = 1],                   (2.8)
+
+and (2.5)-(2.7) collapse to
+
+                          ny
+                      AT Tunc (g, t; δ) = E[Yt − Yg−δ−1 |Gg = 1] − E[Yt − Yg−δ−1 |Dt+δ = 0].                  (2.9)
+
+
+   9
+       As mentioned in Remark 1, as one allows δ to increase, Assumptions 4 and 5 becomes more restrictive.
+
+
+                                                            11
+

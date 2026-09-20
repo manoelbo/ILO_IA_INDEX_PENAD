@@ -1,0 +1,40 @@
+subsequent two years, while the corresponding senior series continues to rise. This pat-
+tern is consistent with GenAI substituting for exposed junior tasks while leaving demand
+for senior workers in those occupations largely unaffected.6
+    We complement these analyses with a staggered event study that traces employment
+dynamics around firms’ GenAI adoption date, proxied by the first period in which the
+firm posts a GenAI integrator role. This design helps distinguish adoption effects from
+broader time-specific shocks by exploiting variation in the timing of adoption across
+firms. However, it is sensitive to measurement error in the adoption timing proxy—for
+instance, if firms begin using GenAI before, or only several periods after, posting for an
+integrator role. The estimates reveal no evidence of differential pre-trends: employment
+evolves similarly in adopting and non-adopting firms throughout the eight quarters pre-
+ceding adoption. However, roughly two quarters after adoption, junior employment in
+adopting firms begins to decline, reaching an 8 percent reduction after eight quarters.
+The absence of significant pre-trends provides additional reassurance that these post-
+adoption declines are unlikely to be driven by confounding shocks.
+    We next address potential endogeneity concerns. Adopting and non-adopting firms
+differ systematically, which could bias our estimates; for example, if adopting firms are
+more responsive to other shocks affecting employment. One concern is that GenAI adopters
+may have been more sensitive to the 2022–2023 monetary tightening cycle. Several pieces
+of evidence suggest that this mechanism does not drive our findings: including industry-
+by-seniority-by-time fixed effects leaves the results essentially unchanged; the event-
+study estimates show no pre-adoption trends; and a formal test based on the high-frequency
+identified monetary-policy surprises of Jarocinski and Karadi (2020), following Ottonello
+and Winberry (2020), finds no evidence that adopter firms are more responsive to mon-
+etary shocks. This result is also consistent with the literature documenting that larger
+firms—which are more likely to adopt GenAI—tend to be less sensitive to monetary pol-
+icy (Chodorow-Reich, 2014; Gertler and Gilchrist, 1994).
+    We also consider three interrelated concerns arising from the post-pandemic labor
+market: the hiring boom and subsequent correction in the technology sector, the expan-
+   6 Supplemental Appendix A.3 reports a complementary heterogeneity exercise by juniors’ educational
+
+background. Measuring school quality by the prestige of juniors’ alma mater, we find a U-shaped pattern:
+juniors from mid-tier universities experienced the largest relative declines, while those from the most and
+least prestigious institutions saw smaller reductions.
+
+
+
+
+                                                    6
+

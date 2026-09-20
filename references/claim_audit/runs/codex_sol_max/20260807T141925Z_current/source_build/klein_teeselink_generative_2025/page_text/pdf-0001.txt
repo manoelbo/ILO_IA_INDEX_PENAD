@@ -1,0 +1,42 @@
+        Generative AI and Labor Market Outcomes:
+           Evidence from the United Kingdom
+                                      Bouke Klein Teeselink∗1,2,3
+                       1
+                           Department of Political Economy, King’s College London
+                                           2
+                                             AI Objectives Institute
+                                 3
+                                   King’s Institute for Artificial Intelligence
+
+
+
+                                          December 21, 2025
+
+
+
+                                               Abstract
+            This paper examines the effects of LLMs on UK labor market outcomes.
+         We use a difference-in-differences design that compares outcomes across firms
+         and occupations from 2021 to 2025 based on their differential exposure to LLM
+         capabilities. Our results show that highly exposed firms reduce employment,
+         with effects concentrated in junior positions. These firms sharply curtail new
+         hiring, with technical and creative roles experiencing the steepest declines.
+         At the occupation level, roles more exposed to LLMs also show substantial
+         reductions in job listings. The observed effects concentrate almost entirely in
+         high-wage segments. Hence, our findings suggest that LLMs may compress
+         wage inequality.
+
+       Keywords: Generative AI; Large Language Models; Automation; Labor demand;
+United Kingdom.
+       JEL: O33; J23; J31
+
+
+
+   ∗
+    Contact: bouke.klein teeselink@kcl.ac.uk. I would like to thank Philip Tomei, Barbara Pi-
+otrowska, Bharat Chandar, and seminar participants of the Economics of TAI group for insightful
+comments. I particularly want to thank Jacob Schaal for exceptional research assistance.
+
+
+                                                    1
+

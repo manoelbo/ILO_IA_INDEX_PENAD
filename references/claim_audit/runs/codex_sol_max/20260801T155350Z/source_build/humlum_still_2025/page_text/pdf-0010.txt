@@ -1,0 +1,58 @@
+1.3.1      Representativeness and Response Quality
+
+Appendix B.2.1 conducts several checks on the representativeness and quality of our
+
+survey responses. These analyses extend the checks in Humlum and Vestergaard (2025) to
+
+the 2024 survey round. First, we ensure that our sample represents the population based
+
+on observables, including age, gender, experience, earnings, and wealth. Second, following
+
+Dutz et al. (2025), we use randomized participation incentives to show that our findings
+
+are also balanced on workers’ latent willingness to participate in the survey. Finally, we
+
+cross-check that the survey responses align with variables that are also recorded in the
+
+administrative registers.
+
+
+1.4       The Landscape of AI Chatbot Adoption
+
+By the end of 2024, employers and employees have taken clear positions on AI chatbots:
+
+adoption is widespread across all 11 exposed occupations, but strategies vary markedly
+
+within each. Appendix D provides detailed evidence on adoption and workers’ reported
+
+experiences, and Appendix A.1 develops a Roy-style adoption model to interpret these
+
+patterns. Here, we highlight the key points that set the stage for our analysis of labor
+
+market effects.
+
+      Most employers now encourage chatbot use. As Figure 1 shows, 43% of workers are
+
+explicitly encouraged to use them, another 21% are allowed, and only 6% are prohibited.
+
+Employers also make tangible investments in chatbots: among encouraged workers, 39%
+
+have received training, 61% have access to an enterprise chatbot, and 29% have both.5
+
+      Many otherwise similar firms have adopted markedly different strategies. Observable
+
+firm characteristics (age, size, productivity, and ownership) explain only 1.3% of the within-
+
+occupation variation in encouragement—well below the 10.6% explained by occupation
+
+alone (Appendix D.1).
+
+      Encouragement is associated with substantially higher adoption and reported benefits.
+
+Even without employer initiatives, 40% of workers have used chatbots at work and 6%
+  5
+      Among non-encouraged workers, 21% have access, 11% have training, and 4% have both.
+
+
+                                                 8
+

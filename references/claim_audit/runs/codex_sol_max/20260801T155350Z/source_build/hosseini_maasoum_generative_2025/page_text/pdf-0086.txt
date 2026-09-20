@@ -1,0 +1,49 @@
+A.14      Task Extraction Pipeline
+This appendix documents the pipeline that maps each of the 355,013 raw job-postings in our 1,000-firm
+sample to a subset of the 19,265 standardized O*NET tasks, producing the 2,748,186 (posting, task) pairs
+used in Section 5.1.1.
+
+    The pipeline has two stages. Stage 1 is a classical information-retrieval step that, given a posting’s raw
+text, narrows the 19,265-task universe to the K = 50 O*NET tasks most textually similar to the posting.
+Stage 2 is a large language model (LLM) that reads the posting together with these 50 candidates and se-
+lects the subset of candidates it judges to be genuinely required by the posting, tagging each selection with
+a confidence label. The retrieval stage is deliberately occupation-agnostic—we do not restrict candidates to
+tasks listed in O*NET under the posting’s Revelio-assigned 6-digit SOC code—because Revelio’s SOC as-
+signment is itself imperfect and many postings span tasks from adjacent occupations. Stage 2 is responsible
+for enforcing relevance and is the sole source of the final match decision.
+
+
+Stage 1: Multi-view TF-IDF retrieval Rather than hashing the posting into a single bag of words,
+the retriever scores each of the 19,265 O*NET task strings against three views of the posting and combines
+the three similarities into a weighted score. The three views are:
+
+   1. the full raw text of the posting, after stripping boilerplate (equal-employment-opportunity state-
+       ments, benefits enumerations, legal disclaimers);
+
+   2. the duties block, extracted by locating section headers such as “Responsibilities,” “What you’ll do,”
+       “Key tasks,” or “Duties,” and taking the following paragraph(s) up to the next section header;
+
+   3. the requirements block, extracted analogously from headers such as “Qualifications,” “Require-
+       ments,” or “What we’re looking for.”
+
+When a duties block is detected, the three views are combined with weights (0.40, 0.45, 0.15); otherwise the
+full-text view carries 0.85 and the requirements view 0.15. Each view is built from TF-IDF over (1, 2)-grams
+after lowercasing and stop-word removal; the posting’s job title is boosted by a factor of two in every view.
+Final candidates are the K = 50 O*NET tasks with the highest combined similarity, returned without any
+SOC restriction.
+
+    This retrieval step is deterministic, runs locally on a sparse matrix, and serves purely to bound the
+LLM’s search space so that the Stage 2 prompt remains short enough for batch-API throughput.
+
+
+Stage 2: LLM selection with constrained JSON output The LLM is OpenAI’s gpt-4o-mini,
+queried through the OpenAI Batch API (24-hour asynchronous window; batches of up to 10,000 requests
+per JSONL file). For each posting we send one request whose content is the posting’s raw text and the
+Stage-1 candidate list (fifty pairs of task_id and task description). The response must conform to a JSON
+schema with "strict":      True and the following structure:
+
+
+
+
+                                                    A.41
+

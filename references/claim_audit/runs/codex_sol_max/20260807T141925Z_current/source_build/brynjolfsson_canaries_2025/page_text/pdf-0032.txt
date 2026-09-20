@@ -1,0 +1,149 @@
+            a. Marketing and Sales Managers                 b. First-Line Production Supervisors
+     1.2                                             1.2
+     1.1                                             1.1
+     1.0                                             1.0
+     0.9                                             0.9
+     0.8                                             0.8
+           Oc 021
+           Ap 021
+           Oc 022
+           Ap 022
+           Oc 023
+           Ap 023
+           Oc 024
+           Ap 024
+           Oc 025
+                   5
+
+
+
+
+                                                           Oc 021
+                                                           Ap 021
+                                                           Oc 022
+                                                           Ap 022
+                                                           Oc 023
+                                                           Ap 023
+                                                           Oc 024
+                                                           Ap 024
+                                                           Oc 025
+                                                                   5
+                02
+
+
+
+
+                                                                02
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+
+
+
+
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+           Ap
+
+
+
+
+                                                           Ap
+                            Date                                            Date
+                      c. Stock Clerks                                 d. Health Aides
+     1.2                                             1.2
+     1.1                                             1.1
+     1.0                                             1.0
+     0.9                                             0.9
+     0.8                                             0.8
+           Oc 021
+           Ap 021
+           Oc 022
+           Ap 022
+           Oc 023
+           Ap 023
+           Oc 024
+           Ap 024
+           Oc 025
+                   5
+
+
+
+
+                                                           Oc 021
+                                                           Ap 021
+                                                           Oc 022
+                                                           Ap 022
+                                                           Oc 023
+                                                           Ap 023
+                                                           Oc 024
+                                                           Ap 024
+                                                           Oc 025
+                                                                   5
+                02
+
+
+
+
+                                                                02
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+             r2
+             t2
+
+
+
+
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+                                                             r2
+                                                             t2
+           Ap
+
+
+
+
+                                                           Ap
+
+
+
+                            Date                                            Date
+                Early Career 1 (22-25)    Developing (31-34)              Mid-Career 2 (41-49)
+                Early Career 2 (26-30)    Mid-Career 1 (35-40)            Senior (50+)
+
+Figure A2: Employment changes for marketing and sales managers (exposure quintile 4), first-line
+production supervisors (exposure quintile 3), stock clerks and order fillers (exposure quintile 2),
+and health aides (exposure quintile 1), normalized to 1 in October 2022. Exposure quintiles are
+defined based on the Eloundou et al. (2024) GPT-4 β measure.
+
+
+
+
+                                                32

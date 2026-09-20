@@ -1,0 +1,38 @@
+  In the cases studied in Section 5 we find overwhelming evidence that the error terms
+in the usual log-linear specification of the gravity equation are heteroskedastic, which
+                                  ¡ ¢
+violates the assumption that ln η ij is statistically independent of the regressors and
+suggests that this estimation method leads to inconsistent estimates of the elasticities of
+interest.
+  A related problem with the analogy between Newtonian gravity and trade is that grav-
+itational force can be very small, but never zero, whereas trade between several pairs of
+countries is literally zero. In many cases, these zeros occur simply because some pairs
+of countries did not trade in a given period. For example, it would not be surprising
+to find that Tajikistan and Togo did not trade in a certain year.3 These zero observa-
+tions pose no problem at all for the estimation of gravity equations in their multiplicative
+form. In contrast, the existence of observations for which the dependent variable is zero
+creates an additional problem for the use of the log-linear form of the gravity equation.
+Several methods have been developed to deal with this problem (see Frankel, 1997, for a
+description of the various procedures). The approach followed by the large majority of
+empirical studies is simply to drop the pairs with zero trade from the dataset and estimate
+the log-linear form by OLS. Rather than throwing away the observations with Tij = 0,
+some authors estimate the model using Tij + 1 as the dependent variable or use a Tobit
+estimator. However, these procedures will generally lead to inconsistent estimators of β.
+The severity of these inconsistencies will depend on the particular characteristics of the
+sample and model used, but there is no reason to believe that they will be negligible.
+  Zeroes may also be the result of rounding errors.4 If trade is measured in thousands of
+dollars, it is possible that for pairs of countries for which bilateral trade did not reach a
+minimum value, say $500, the value of trade is registered as zero. If these rounded-down
+   3
+       The absence of trade between small and distant countries might be explained, among other factors,
+by large variable costs (e.g., bricks are too costly to transport) or large fixed costs (e.g., information
+on foreign markets). At the aggregate level, these costs can be best proxied by the various measures of
+distance and size entering the gravity equation.
+   4
+     Trade data can suﬀer from many other forms of errors, as described in Feenstra, Lipsey, and Bowen
+(1997).
+
+
+
+                                                    6
+

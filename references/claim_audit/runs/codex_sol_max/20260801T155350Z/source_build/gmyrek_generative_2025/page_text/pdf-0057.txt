@@ -1,0 +1,70 @@
+54    ILO Working Paper 140
+
+
+
+
+     Exposure    4-digit code   Occupation Name                                            Mean   SD
+
+     Minimal
+     Exposure    3135           Metal Production Process Controllers                       0.31   0.13
+
+     Minimal
+     Exposure    3154           Air Traffic Controllers                                    0.31   0.09
+
+     Minimal
+     Exposure    3212           Medical and Pathology Laboratory Technicians               0.31   0.16
+
+     Minimal
+     Exposure    7515           Food and Beverage Tasters and Graders                      0.31   0.16
+
+     Minimal
+     Exposure    7543           Product Graders and Testers (except Foods and Beverages)   0.31   0.11
+
+     Minimal
+     Exposure    1341           Child Care Service Managers                                0.3    0.15
+
+     Minimal
+     Exposure    2222           Midwifery Professionals                                    0.3    0.15
+
+     Minimal
+     Exposure    3213           Pharmaceutical Technicians and Assistants                  0.3    0.12
+
+     Minimal
+     Exposure    3259           Health Associate Professionals Not Elsewhere Classified    0.3    0.15
+
+     Minimal
+     Exposure    5161           Astrologers, Fortune-tellers and Related Workers           0.3    0.16
+
+     Minimal
+     Exposure    9629           Elementary Workers Not Elsewhere Classified                0.29   0.14
+
+     Minimal
+     Exposure    2264           Physiotherapists                                           0.28   0.14
+
+     Minimal
+     Exposure    5131           Waiters                                                    0.28   0.16
+
+     Minimal
+     Exposure    8171           Pulp and Papermaking Plant Operators                       0.28   0.14
+
+     Minimal
+     Exposure    8212           Electrical and Electronic Equipment Assemblers             0.28   0.19
+
+     Minimal
+     Exposure    1311           Agricultural and Forestry Production Managers              0.27   0.13
+
+     Minimal
+     Exposure    5153           Building Caretakers                                        0.27   0.16
+
+     Minimal
+     Exposure    8211           Mechanical Machinery Assemblers                            0.27   0.17
+
+     Minimal
+     Exposure    5112           Transport Conductors                                       0.25   0.17
+
+     Minimal
+     Exposure    5322           Home-based Personal Care Workers                           0.25   0.18
+
+     Minimal
+     Exposure    8321           Motorcycle Drivers                                         0.25   0.17
+

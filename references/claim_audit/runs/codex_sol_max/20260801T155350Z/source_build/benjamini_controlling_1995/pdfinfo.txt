@@ -1,0 +1,19 @@
+Title:           Controlling the False Discovery Rate: a Practical and Powerful Approach to Multiple Testing
+Creator:         Elsevier
+Producer:        iTextSharp 5.4.1 ©2000-2012 1T3XT BVBA (AGPL-version); modified using iTextSharp.LGPLv2.Core 3.7.4.0
+CreationDate:    Wed Sep  5 06:59:40 2018 -03
+ModDate:         Tue Jul 28 15:06:56 2026 -03
+Custom Metadata: yes
+Metadata Stream: yes
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           13
+Encrypted:       no
+Page size:       468 x 684 pts
+Page rot:        0
+File size:       837548 bytes
+Optimized:       no
+PDF version:     1.4

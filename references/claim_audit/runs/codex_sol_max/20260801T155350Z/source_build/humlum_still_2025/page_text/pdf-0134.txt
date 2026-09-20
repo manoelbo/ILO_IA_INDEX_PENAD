@@ -1,0 +1,55 @@
+   First, we assess the extent of spillovers across different segments of the labor market
+
+by varying the level of aggregation in the difference-in-differences analysis. For instance,
+
+the fact that encouraged workplaces do not experience differential outcomes in Section 3.3
+
+suggests that spillovers between adopters and non-adopters within workplaces are limited.
+
+Consistent with this interpretation, Figure E.12 shows that non-adopters in encouraged
+
+workplaces have fared similarly to their counterparts in non-encouraged workplaces
+
+following the introduction of AI chatbots. Extending this approach, Appendix G.1 shifts
+
+the analysis to the occupation level, showing that our exposed study occupations have also
+
+evolved similarly to the rest of the economy, maintaining a stable 20% share of aggregate
+
+hours and earnings before and after the arrival of AI chatbots.
+
+   Second, Appendix A.3.1 uses an equilibrium model to show that our difference-in-
+
+differences estimates are informative about the magnitude of the “missing intercept.”
+
+Under reasonable product demand elasticities, null effects at both the workplace and
+
+worker levels imply that the occupation-wide equilibrium effect is also negligible. The
+
+key intuition is that adopters generate spillovers to non-adopters only when their own
+
+market outcomes change. Thus, the absence of adoption effects at both levels implies that
+
+spillovers to non-adopters are likewise limited.
+
+   Finally, as discussed in Section 4.1, workers’ perceived earnings impacts offer an
+
+independent lens for evaluating general equilibrium spillovers. In particular, the fact that
+
+virtually all non-adopters report no effect on their earnings further reinforces the finding
+
+that occupation-wide impacts of AI chatbots are minimal.
+
+   Taken together, these different analyses—difference-in-differences at varying levels of
+
+aggregation, equilibrium calibration of existing estimates, and perceived impacts among
+
+workers—all point to the conclusion that AI chatbots have not had any meaningful impact
+
+on occupation-wide equilibrium outcomes thus far.
+
+
+
+
+                                            99
+

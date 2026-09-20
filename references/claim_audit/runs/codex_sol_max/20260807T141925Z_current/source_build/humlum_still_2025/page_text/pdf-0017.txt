@@ -1,0 +1,35 @@
+workers handle new responsibilities caused by AI chatbots.
+       To further understand how AI chatbots affect the nature of work, we asked respondents
+to describe the new job tasks they perform as a result of AI chatbots. In Appendix B.3,
+we categorize the free-text responses into common new tasks associated with AI chatbots
+in each occupation. AI chatbots have generated new job tasks for workers across all 11
+occupations, with 53% to 91% of new tasks directly linked to AI use.
+       Figure 4 breaks down the composition of AI-related job tasks by occupation and
+task category. Appendix B.3 provides example tasks for each pair. About 42% of new
+AI-related tasks relate to generating new content, including AI Ideation, AI Content
+Drafting, and AI Data Insights. For example, marketing professionals report new tasks
+related to “prompting and iterating with AI to produce marketing copy, social media
+posts, and product descriptions.” Notably, 35% of new AI-related work is dedicated
+to AI Quality Review and AI Ethics & Compliance, suggesting that AI adoption shifts
+workers not only toward content generation but also toward supervisory roles overseeing
+AI outputs.10 For example, a large share of teachers report new work related to “detecting
+AI-generated homework.” Finally, the single most common new AI task category is AI
+Integration—that is, the integration of AI chatbots into the workplace, which accounts for
+about 26% of all new tasks, with the highest share observed in IT support and software
+development. For example, software developers report “fine-tuning AI coding assistants
+by providing feedback and project-specific examples,” and legal professionals describe
+“developing organizational AI usage policies and guidelines.”
+       AI chatbot workloads extend beyond direct users: Figure 3, Panel (b) shows that
+4% of non-users report new workloads resulting from AI chatbots, with effects most
+pronounced in workplaces that have adopted chatbot initiatives. In particular, Figure B.1,
+Panel (b) shows that 10% of teachers who have not used AI chatbots report new AI-related
+  10
+    Appendix Figure E.3 shows that AI Ethics & Compliance tasks are especially common among
+workers who have received employer-provided AI chatbot training, helping to contextualize the finding in
+Section 2.2 that training—when implemented in isolation—is associated with lower productivity gains
+from AI chatbots. In contrast, workplaces that only encourage chatbot use exhibit a higher share of
+“generative tasks” focused on AI Ideation and AI Content Drafting.
+
+
+
+                                                  15

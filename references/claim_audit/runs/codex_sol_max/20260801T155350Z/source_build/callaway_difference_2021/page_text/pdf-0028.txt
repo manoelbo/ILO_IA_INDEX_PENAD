@@ -1,0 +1,48 @@
+                                Table 2: Summary Statistics for Main Dataset
+
+                                     Treated Counties       Untreated Counties        Diff.    P-val on Diff.
+          Midwest                           0.59                    0.34              0.25           0.00
+          South                             0.27                     0.59             -0.32          0.00
+          West                               0.14                    0.07              0.07          0.00
+          Population (1000s)                94.32                   53.43             40.89          0.00
+          White                              0.89                    0.83              0.06          0.00
+          HS Graduates                      0.59                     0.55              0.04          0.00
+          Poverty Rate                      0.13                     0.16             -0.03          0.00
+          Median Inc. (1000s)               33.91                   31.89              2.02          0.00
+        Notes: Summary statistics for counties located in states that raised their minimum wage between Q2 of
+       2003 and Q1 of 2007 (treated) and states whose minimum wage was effectively set at the federal minimum
+       wage for the entire period (untreated). The sample consists of 2284 counties. Sources: Quarterly Workforce
+       Indicators and 2000 County Data Book
+
+
+effect of raising the minimum wage on teen employment. The results for group-time average treatment
+effects are reported in Panel (a) of Figure 1 along with a uniform 95% confidence band. All inference
+procedures use clustered bootstrapped standard errors at the county level, and account for the autocorre-
+lation of the data. The plot contains pre-treatment estimates that can be used to “pre-test” the parallel
+trends assumption as well as treatment effect estimates in post-treatment periods.
+   The group-time average treatment effect estimates provide support for the view that increasing the
+minimum wage led to a reduction in teen employment. For 5 out of 7 group-time average treatment ef-
+fects, there is a clear statistically significant negative effect on employment. The other two are marginally
+insignificant (and negative). The group-time average treatment effects range from 2.3% lower teen em-
+ployment to 13.6% lower teen employment. The simple average (weighted only by group size) is 5.2%
+lower teen employment, and the average effect of a minimum wage increase across all groups that in-
+                                                             O above) is 3.9% lower teen employment
+creased their minimum wage (corresponding to an estimate of θsel
+(see Panel (a) of Table 3). A two-way fixed effects model with a post treatment dummy variable also
+provides similar results, indicating 3.7% lower teen employment due to increasing the minimum wage. In
+light of the literature on the minimum wage these results are not surprising as they correspond to the
+types of regressions that tend to find that increasing the minimum wage decreases employment; see the
+discussion in Dube et al. (2010).
+   As in Meer and West (2016), there also appears to be a dynamic effect of increasing the minimum wage.
+For Illinois (the only state in the group that first raised its minimum wage in 2004), teen employment
+is estimated to be 3.4% lower on average in 2004 than it would have been if the minimum wage had
+not been increased. In 2005, teen employment is estimated to be 7.1% lower; in 2006, 12.5% lower; and
+in 2007, 13.6% lower. For states first treated in 2006, there is a small effect in 2006: 2.3% lower teen
+employment; however, it is larger in 2007: 7.1% lower teen employment.
+   Panel (a) of Table 3 reports aggregated treatment effect measures. First, we consider how the effect
+of increasing the minimum changes by the amount of time that the policy has been in place. These
+parameters paint largely the same picture as the group-time average treatment effects. The effect of
+
+
+                                                          28
+

@@ -1,0 +1,42 @@
+encouragement costs are low (Fκ is high), product demand is elastic (ϵ is high), the
+
+productivity benefits of chatbot adoption (αb , βb ) are small, and adoption costs (αc , βc )
+
+are high:
+
+
+                              W1:0 ( Fκ , |{z}
+                                           ϵ , αb , βb , αc , βc ).                     (66)
+                                   |{z}       |{z} |{z} |{z} |{z}
+                                     +    +    −    −     +    +
+
+
+We may use the policy rules for encouragement, adoption, and sorting to further bound
+
+the equilibrium skill price differentials.
+
+   First, in any equilibrium where some but not all firms encourage chatbot use, Equation
+
+(19) implies that the relative skill price must lie within:
+
+
+                           log W1:0 ∈ [κmax /(1 − ϵ), κmin /(1 − ϵ)] .                  (67)
+
+
+Similarly, in any equilibrium where only some workers sort into encouraged firms, Equation
+
+(22) implies that:
+
+
+                                     log W1:0 ∈ [−α̂1 , 0] .                            (68)
+
+
+That is, when log W1:0 > 0, even non-adopters prefer encouraged firms; when log W1:0 <
+
+−α̂1 , even adopters prefer non-encouraged firms.
+
+
+
+
+                                               27
+

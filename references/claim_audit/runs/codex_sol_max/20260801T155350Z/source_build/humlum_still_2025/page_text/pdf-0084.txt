@@ -1,0 +1,71 @@
+                      Figure D.3: Employer Initiatives and Chatbot Adoption
+
+                                       No Initiative
+
+                                   Encourage Use
+
+                                Enterprise Chatbot
+
+                                           Training
+
+              Encourage Use + Enterprise Chatbot
+
+                         Encourage Use + Training
+
+                      Enterprise Chatbot + Training
+
+                                          All Three
+                                                        0           .2             .4             .6          .8    1
+
+                                                                               Daily Use          Ever Used
+
+Notes: This figure illustrates how workers’ use of AI chatbots vary with their employer initiatives. The estimates are based
+on predicted values from Equation (69), varying EmployerInitiatives while holding workers’ characteristics X at their mean
+values. Whiskers represent 95% confidence bands of the predicted values. Some confidence intervals are too narrow to
+be distinguished from the point estimates at this scale. Table E.2 reports the full set of regression estimates, including
+specifications that use the share of workers with Monthly or More and Weekly or More usage as dependent variables.
+Sample: All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                 Figure D.4: Employer Initiatives and Gender Gaps in Adoption
+
+
+                                        No Initiative
+
+
+                                   Encouraged Use
+
+
+                                 Enterprise Chatbot
+
+
+                                            Training
+
+
+               Encouraged Use + Enterprise Chatbot
+
+
+                         Encouraged Use + Training
+
+
+                       Enterprise Chatbot + Training
+
+
+                                           All Three
+
+                                                        -.15             -.1               -.05           0        .05
+
+
+Notes: This figure illustrates how gender gaps in AI chatbot adoption varies with employer initiatives. The estimates are
+obtained from a multivariate regression of AI chatbot adoption on worker characteristics X, controlling for occupation fixed
+effects, and are estimated separately based on employers’ AI chatbot initiatives. Worker characteristics include gender,
+age, experience, earnings, and net wealth; see Table E.3 for the full set of regression estimates. Whiskers represent 95%
+confidence intervals. Sample: All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                               49
+

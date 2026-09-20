@@ -1,0 +1,50 @@
+                                             WORKING PAPER
+
+
+2020; Benzell et al., 2021). The realization of general purpose technologies’ full potential requires extensive
+co-invention (Bresnahan and Trajtenberg, 1995; Bresnahan et al., 1996, 2002; Lipsey et al., 2005; Dixon et al.,
+2021), a costly and time-consuming process involving the discovery of new business procedures (David, 1990;
+Bresnahan, 1999; Frey, 2019; Brynjolfsson et al., 2021; Feigenbaum and Gross, 2021). Consequently, many
+studies of machine learning technologies focus on systems-level adoption, arguing that organizational systems
+may require redesign to effectively take advantage of novel machine learning advancements (Bresnahan,
+2019; Agrawal et al., 2021; Goldfarb et al., 2023). Appropriately designed systems can yield considerable
+business value and improve firm performance (Rock, 2019; Babina et al., 2021; Zolas et al., 2021), with AI
+tools facilitating the discovery process (Cockburn et al., 2018; Cheng et al., 2022). By employing task-level
+information to assess whether LLMs fulfill the criteria of a general purpose technology, we seek to merge the
+two perspectives for understanding the technology-labor relationship.
+    We attempt to build on these diverse literature streams in several ways. Echoing (Felten et al., 2023), we
+focus our analysis on the impact of LLMs, rather than addressing machine learning or automation technologies
+more broadly. Additionally, we propose a novel method that employs LLMs, specifically GPT-4, to assess tasks
+for exposure and automation potential, thereby bolstering human scoring efforts. Subsequently, we aggregate
+our findings to occupations and industries, capturing the overall potential exposure in the contemporary U.S.
+labor market.
+
+
+3     Methods and Data Collection
+3.1     Data on Activities and Tasks Performed by Occupation in the US
+We use the O*NET 27.2 database (O*NET, 2023), which contains information on 1,016 occupations, including
+their respective Detailed Work Activities (DWAs) and tasks. A DWA is a comprehensive action that is part of
+completing task, such as "Study scripts to determine project requirements." A task, on the other hand, is an
+occupation-specific unit of work that may be associated with zero, one, or multiple DWAs. We offer a sample
+of tasks and DWAs in Table 1. The two datasets we use consist of:
+
+      • 19,265 tasks, consisting of a "task description" and a corresponding occupation, and
+
+      • 2,087 DWAs, where most DWAs are connected to one or more tasks, and tasks may be associated with
+        one or more DWAs, though some tasks lack any associated DWAs.
+
+
+3.2     Data on Wages, Employment, and Demographics
+We obtain employment and wage data from the 2020 and 2021 Occupational Employment series provided by
+the Bureau of Labor Statistics. This dataset encompasses occupational titles, the number of workers in each
+occupation, and occupation-level employment projections for 2031, typical education required for entry in an
+occupation and on-the-job training required to attain competency in an occupation (BLS, 2022). We use the
+BLS-recommended crosswalk to O*NET (BLS, 2023b) to link the O*NET task and DWA dataset and the
+BLS Labor Force Demographics (BLS, 2023a), which is derived from the Current Population Survey (CPS).
+Both of these data sources are collected by the U.S. government and primarily capture workers who are not
+self-employed, are documented, and are working in the so-called formal economy.
+
+3.3     Exposure
+We present our results based on an exposure rubric, in which we define exposure as a measure of whether
+access to an LLM or LLM-powered system would reduce the time required for a human to perform a specific
+

@@ -1,0 +1,46 @@
+McElheran, Kristina, Mu-Jeung Yang, Zachary Kroff, and Erik Brynjolfsson. 2025.
+ “The Rise of Industrial AI in America: Microfoundations of the Productivity J-curve(s).” Center
+  for Economic Studies, U.S. Census Bureau Working Paper CES-25-27. Also available via
+  SSRN: SSRN 5036270.
+Munch, Jakob R, and William W Olney. 2024. “Offshoring and the Decline of Unions.”
+ IZA Discussion Paper 17116.
+Noy, Shakked, and Whitney Zhang. 2023. “Experimental Evidence on the Productivity
+ Effects of Generative Artificial Intelligence.” Science, 381(6654): 187–192.
+Oster, Emily. 2019. “Unobservable Selection and Coefficient Stability: Theory and Evidence.”
+ Journal of Business & Economic Statistics, 37(2): 187–204.
+RISJ. 2024. “Reuters Institute for the Study of Journalism: What Does the Public in Six
+ Countries Think about Generative AI in News?” https: // reutersinstitute. politics.
+ ox. ac. uk/ what-does-public-six-countries-think-generative-ai-news# : ˜ :
+ text= Averaging% 20across% 20six% 20countries% 2C% 20people,tried% 20to% 20use%
+ 20generative% 20AI , Accessed 28-June-2024.
+Robinson, Joan. 1969. The economics of imperfect competition. Springer.
+Rosen, Sherwin. 1986. “The theory of equalizing differences.” Handbook of labor economics,
+ 1: 641–692.
+Roy, Andrew Donald. 1951. “Some thoughts on the distribution of earnings.” Oxford economic
+ papers, 3(2): 135–146.
+Schubert, Gregor. 2025. “Organizational Technology Ladders: Remote Work and Generative
+  AI Adoption.” Available at SSRN.
+Solow, Robert M. 1987. “We’d Better Watch Out.” New York Review of Books.
+Teutloff, Ole, Johanna Einsiedler, Otto Kässi, Fabian Braesemann, Pamela Mishkin,
+  and R Maria del Rio-Chanona. 2025. “Winners and Losers of Generative AI: Early
+  Evidence of Shifts in Freelancer Demand.” Journal of Economic Behavior & Organization,
+  106845.
+The Budget Lab at Yale. 2026. “Evaluating the Impact of AI on the Labor Mar-
+ ket: November/December CPS Update.” https: // budgetlab. yale. edu/ research/
+ evaluating-impact-ai-labor-market-novemberdecember-cps-update , Accessed 2026-
+ 02-15.
+Tomlinson, Kiran, Sonia Jaffe, Will Wang, Scott Counts, and Siddharth Suri. 2025.
+ “Working with AI: Measuring the Occupational Implications of Generative AI.” arXiv preprint
+  arXiv:2507.07935.
+Walker, W Reed. 2013. “The Transitional Costs of Sectoral Reallocation: Evidence from the
+ Clean Air Act and the Workforce.” The Quarterly journal of economics, 128(4): 1787–1835.
+Walters, Christopher. 2024. “Empirical Bayes Methods in Labor Economics.” In Handbook of
+ Labor Economics. Vol. 5, 183–260. Elsevier.
+Yotzov, Ivan, Jose Maria Barrero, Nicholas Bloom, Philip Bunn, Steven J Davis,
+ Kevin M Foster, Aaron Jalca, Brent H Meyer, Paul Mizen, Michael A Navarrete,
+ et al. 2026. “Firm Data on AI.” National Bureau of Economic Research.
+
+
+
+
+                                              38

@@ -1,0 +1,55 @@
+O. Teutloff et al.                                                                               Journal of Economic Behavior and Organization 235 (2025) 106845
+
+Hui, X., Reshef, O., Zhou, L., 2023. The short-term effects of generative artificial intelligence on employment: Evidence from an online labor market. Available
+    at SSRN 4527336.
+Humburg, M., Van der Velden, R., 2017. What is expected of higher education graduates in the twenty-first century? In: The Oxford Handbook of Skills and
+    Training. Oxford University Press US, p. 201.
+Karjus, A., 2023. Machine-assisted mixed methods: augmenting humanities and social sciences with artificial intelligence. arXiv:2309.14379.
+Kässi, O., Lehdonvirta, V., 2018. Online labour index: Measuring the online gig economy for policy and research. Technol. Forecast. Soc. Change 137, 241–248.
+Klimek, P., Hausmann, R., Thurner, S., 2012. Empirical confirmation of creative destruction from world trade data. PLoS One 7 (6), e38924.
+Li, Z., Shi, Y., Liu, Z., Yang, F., Liu, N., Du, M., 2024. Quantifying multilingual performance of large language models across languages. arXiv preprint
+    arXiv:2404.11553.
+Liu, J., Xu, X., Li, Y., Tan, Y., 2023. " generate" the future of work through AI: Empirical evidence from online labor markets. arXiv preprint arXiv:2308.05201.
+Lukac, M., 2021. Two worlds of online labour markets: Exploring segmentation using finite mixture models and a network of skill co-occurrence.
+Lysyakov, M., Viswanathan, S., 2023. Threatened by AI: Analyzing users’ responses to the introduction of AI in a crowd-sourcing platform. Inf. Syst. Res. 34 (3),
+    1191–1210.
+MacKinnon, J.G., Webb, M.D., 2020. Randomization inference for difference-in-differences with few treated clusters. J. Econometrics (ISSN: 0304-4076) 218 (2),
+    435–450. http://dx.doi.org/10.1016/j.jeconom.2020.04.024, URL: https://www.sciencedirect.com/science/article/pii/S0304407620301445.
+Marinescu, I., Wolthoff, R., 2020. Opening the black box of the matching function: The power of words. J. Labor Econ. 38 (2), 535–568.
+McInnes, L., Healy, J., 2017. Accelerated hierarchical density based clustering. In: 2017 IEEE International Conference on Data Mining Workshops. ICDMW, IEEE,
+    pp. 33–42.
+McInnes, L., Healy, J., Melville, J., 2018. Umap: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:1802.03426.
+Mealy, P., del Rio-Chanona, R.M., Farmer, J.D., 2018. What you do at work matters: new lenses on labour. What You Do at Work Matters: New Lenses on
+    Labour (March 18, 2018).
+Mikolov, T., Chen, K., Corrado, G., Dean, J., 2013. Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781.
+Mollick, E., Mollick, L., Bach, N., Ciccarelli, L., Przystanski, B., Ravipinto, D., 2024. AI agents and education: Simulated practice at scale. arXiv preprint
+    arXiv:2407.12796.
+Moussiades, L., Zografos, G., Papakostas, G., 2024. GPT-4 vs. GPT-3.5 As Coding Assistants. Research Square Platform LLC, http://dx.doi.org/10.21203/rs.3.rs-
+    3920214/v1.
+Neffke, F., Henning, M., 2013. Skill relatedness and firm diversification. Strateg. Manag. J. 34 (3), 297–316.
+Neffke, F., Nedelkoska, L., Wiederhold, S., 2024. Skill mismatch and the costs of job displacement. Res. Policy 53 (2), 104933.
+Noy, S., Zhang, W., 2023. Experimental evidence on the productivity effects of generative artificial intelligence. Available at SSRN 4375283.
+OpenAI, 2023. Best practices for prompt engineering with openai API. https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-
+    openai-api. (Accessed 12 February 2024).
+Peng, S., Kalliamvakou, E., Cihon, P., Demirer, M., 2023. The impact of ai on developer productivity: Evidence from github copilot. arXiv preprint arXiv:
+    2302.06590.
+Pennington, J., Socher, R., Manning, C.D., 2014. Glove: Global vectors for word representation. In: Proceedings of the 2014 Conference on Empirical Methods
+    in Natural Language Processing. EMNLP, pp. 1532–1543.
+Qiao, D., Rui, H., Xiong, Q., 2023. AI and jobs: Has the inflection point arrived? Evidence from an online labor platform. arXiv preprint arXiv:2312.04180.
+Retkowsky, J., Hafermalz, E., Huysman, M., 2024. Managing a ChatGPT-empowered workforce: Understanding its affordances and side effects. Bus. Horiz..
+Ritala, P., Ruokonen, M., Ramaul, L., 2023. Transforming boundaries: how does ChatGPT change knowledge work? J. Bus. Strategy (ahead-of-print).
+Rubbo, E., 2023. Fragmentation of production and the wage distribution. Working Paper.
+Stephany, F., Kässi, O., Rani, U., Lehdonvirta, V., 2021. Online labour index 2020: New ways to measure the world’s remote freelancing market. Big Data Soc.
+    8 (2), 20539517211043240.
+Stephany, F., Teutloff, O., 2024. What is the price of a skill? The value of complementarity. Res. Policy 53 (1), 104898.
+Teutloff, O., Stenzhorn, E., Kässi, O., 2023. Skills, job application behavior and the gender wage gap: Evidence from online freelancing. Available at SSRN.
+Van Der Maaten, L., Postma, E.O., van den Herik, H.J., et al., 2009. Dimensionality reduction: A comparative review. J. Mach. Learn. Res. 10 (66–71), 13.
+Webb, M., 2019. The impact of artificial intelligence on the labor market. Available at SSRN 3482150.
+Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E.H., Le, Q., Zhou, D., 2022. Chain of thought prompting elicits reasoning in large language models. CoRR
+    abs/2201.11903. URL: https://arxiv.org/abs/2201.11903.
+
+
+
+
+                                                                               19
+

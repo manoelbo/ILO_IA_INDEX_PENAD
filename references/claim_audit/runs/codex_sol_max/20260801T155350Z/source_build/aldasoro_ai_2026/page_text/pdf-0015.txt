@@ -1,0 +1,36 @@
+    Beyond cross-country differences, AI adoption also varies significantly across sectors.
+This variation is driven by several structural and operational factors that influence both
+the applicability and the perceived benefits of AI technologies. Sectors such as Informa-
+tion and Communications Technology (ICT) and manufacturing tend to be early adopters
+due to their high data intensity, well-established digital infrastructure, and clear use cases
+for automation and predictive analytics. These industries often possess the technical ca-
+pabilities and investment capacity required to integrate AI into core business processes,
+unlike a sector like accommodation and food services, where firms are significantly smaller
+on average. Some sectors may thus face greater barriers to adoption, including lower lev-
+els of digital maturity, limited availability of structured data, and fewer standardized AI
+applications. Additionally, the regulatory environment, workforce skill levels and cul-
+tural openness to technological change play a critical role in shaping sectoral adoption
+patterns. For example, stringent data privacy regulations can slow down implementation.
+The cross-sector differences are illustrated by the strong correlation between investment
+in innovation and AI adoption. Figure 4 shows AI uptake across EU firms, broken down
+by 12 sectors and corresponding innovation levels. While high-tech sectors – such as ICT
+and pharmaceuticals – are unsurprisingly among the highest adopters, some traditional
+sectors, like food manufacturing, also show above-average levels of AI uptake.
+
+   Figure 4: AI and investment in innovation by industrial sector (% of firms, 2024)
+
+
+
+
+Note: Firms are weighted by value added. Source: EIBIS 2024.
+
+
+
+   On a more granular level, there are several firm-level factors which correlate with AI
+adoption. To keep the list transparent and manageable, we group EIBIS and ORBIS
+variables into stylised groups in terms of financial and non-financial metrics, which help
+
+
+
+                                                9
+

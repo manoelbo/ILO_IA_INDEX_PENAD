@@ -1,0 +1,14 @@
+                                                                                                                           68
+
+
+
+
+                                            Figure B.8: Interface Slider
+
+
+
+
+Note: The participants use the slider to indicate the probability of a pathology being present for a given patient based on the
+treatment offered. For prevalence greater than 10% the participants are required to indicate the prevalence of a sub-pathology
+(if it exists) and whether a follow-up is recommended.
+

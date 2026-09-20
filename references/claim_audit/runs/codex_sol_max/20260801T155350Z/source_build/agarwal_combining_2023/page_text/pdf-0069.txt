@@ -1,0 +1,41 @@
+                                                                                                           69
+
+B.3      Additional Details on the AI Algorithm
+
+The training data is a set of tuples of images and labels. These training datasets typically
+rely on human input to assign the labels, which indicate whether or not a specific pattern
+or object is present in the image. Training is conducted through stochastic gradient descent.
+These algorithms build on the nested structure of the neural net to compute gradients com-
+putationally efficient via chain rule. Each training step is performed on a small batch of
+data so that the algorithm does not have to consider the entire dataset for each optimization
+step. After each round of optimization on the training set, the model performance is assessed
+through predictions on a hold-out validation sample. Most humans are able to recognize cars,
+pedestrians, and traffic light, which means that training datasets for common classification
+tasks are easy to come by. The same is not true for medical imaging. Classifying disease
+based on X-rays, CT scans, and retina scans requires the input of highly trained experts.
+Recently, several researchers have released large training datasets of medical images with
+disease labels that are extracted from written clinical descriptions (Irvin et al., 2019). The
+neural net has a DenseNet121 architecture. A DenseNet is a type of convolutional neural
+network that utilizes dense connections between layers through Dense Blocks; in these blocks,
+we connect all layers with matching feature-map sizes directly with each other. Images are
+supplied in a standardized format of 320 × 320 pixels. For optimization the researchers use
+the Adam optimizer with default β-parameters of β1 = 0.9, β2 = 0.999 and learning rate 1
+× 10−4. The batch size is fixed at 16 images. The training is performed for 3 epochs. The
+full training procedure is described in (Irvin et al., 2019).
+
+
+C       Data Appendix
+
+C.1      Balance Tests
+
+We verify that the randomization occurred as expected through various balance and ran-
+domization tests. Figure C.9 plots the distribution of treatment probabilities by patient-case
+in Design 1. We also plot a placebo distribution that samples from the null distribution to
+support the claim that the randomization occurred as expected. To test this formally, we
+present balance tests for Design 1 and Design 2 in Table C.1 and Table C.2 , respectively.32
+For these balance tests, we calculate the average covariates across the four treatment arms
+and report p-values from the test of the joint null that the four means are equal. For Design
+2, these are done within sessions as patients are balanced by design across all sessions.
+ 32
+      Design 3 is balanced by design, as each radiologist reads the same cases with and without AI assistance.
+

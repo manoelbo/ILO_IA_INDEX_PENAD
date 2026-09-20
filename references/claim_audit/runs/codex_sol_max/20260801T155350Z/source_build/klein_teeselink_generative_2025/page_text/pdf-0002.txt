@@ -1,0 +1,38 @@
+1       Introduction
+The release of ChatGPT in November 2022 marked the beginning of large-scale
+diffusion of large language models (LLMs) around the world. Within months, mil-
+lions of workers gained access to tools capable of drafting documents, writing code,
+analyzing data, and performing countless other cognitive tasks that previously re-
+quired human expertise. This rapid integration into workplace workflows has gen-
+erated widespread anxiety about the future of work, technological unemployment,
+and economic disruption, with some early evidence showing large productivity gains
+(Brynjolfsson, Li and Raymond, 2025; Noy and Zhang, 2023).
+    This uncertainty reflects a potential shift in the nature of this technological
+innovation. Unlike previous technologies that predominantly displaced routine tasks
+in lower- and middle-skilled occupations (Autor, 2015; Autor et al., 2003), LLMs
+possess capabilities that extend across the entire skill distribution, with the potential
+to affect highly skilled professional and analytical roles as well (Eloundou et al.,
+2024). Estimates suggest that around 80% of the U.S. workforce could see at least
+10% of their tasks affected, with exposure rising in higher-income occupations on
+average (Eloundou et al., 2024). As such, the introduction of generative AI raises
+important questions about whether LLMs will erode job security, depress white-
+collar wages, and increase or decrease inequality.
+    To examine these questions, we use detailed UK labor market data from Reve-
+lio Labs, covering millions of firms and job postings between 2021 and 2025. Our
+identification strategy exploits the sudden and arguably exogenous introduction of
+ChatGPT in November 2022. The impact of this shock varied across firms and
+industries depending on their occupational mix and the extent to which core ac-
+tivities are susceptible to LLM automation. We measure this heterogeneity using
+the occupational level LLM exposure scores developed by Eloundou et al. (2024),
+who evaluate 19,265 detailed work activities from the O*NET database using both
+human annotators and GPT-4 to determine whether LLM assistance could reduce
+task completion time by at least 50% while maintaining quality. These exposure
+scores allow us to quantify the share of tasks within each occupation, or the share
+of jobs within each firm that can be performed by LLMs.1
+    1
+    Their measure strongly correlates with other LLM exposure measures (see e.g. Tomlinson et al.,
+2025; Hampole et al., 2025).
+
+
+                                                2
+

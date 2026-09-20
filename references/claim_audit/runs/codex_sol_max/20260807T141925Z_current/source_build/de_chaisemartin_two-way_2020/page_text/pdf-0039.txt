@@ -1,0 +1,60 @@
+2        Results in fuzzy designs
+
+In this section, the research design may be fuzzy: the treatment may vary within (g, t) cells.
+For instance, Enikolopov et al. (2011) study the effect of having access to an independent TV
+channel in Russia, and in each Russian region some people have access to that channel while
+other people do not.
+
+
+2.1       Generalizing the decomposition of βf e to fuzzy designs
+
+For any (g, t) ∈ {1, ..., G} × {1, ..., T }, let
+                                                1         X
+                                  ∆Tg,tR =                    [Yi,g,t (1) − Yi,g,t (0)]
+                                             Ng,t Dg,t i:D =1
+                                                         i,g,t
+
+
+
+denote the average treatment effect across the treated units of cell cell (g, t). One has
+                                                              !
+                                            X Ng,t Dg,t
+                                δT R = E                ∆Tg,tR ,
+                                            g,t
+                                                  N 1
+
+
+which generalizes (2) to fuzzy designs.2 Theorem 1 shows that βf e is also equal to the expectation
+of a weighted sum of the ∆Tg,tR s. Let
+
+                                                TR              εg,t
+                                               wg,t =P         Ng,t Dg,t
+                                                                              .
+                                                           g,t   N1
+                                                                         εg,t
+
+Theorem S1 Suppose that Assumptions 1 and 3-5 hold. Then,
+                                                        !
+                                   X Ng,t Dg,t
+                                                TR TR
+                          βf e = E             wg,t ∆g,t .
+                                    g,t
+                                         N 1
+
+
+Theorem S1 shows that in fuzzy designs, βf e is equal to the expectation of a weighted sum of
+the ATTs in each (g, t) cell. Again, some of the weights may be strictly negative. Note that
+under Assumption 2, Theorem S1 reduces to Theorem 1 in the paper.
+The weights have a simple expression in the following special case.
+
+Assumption S1 (Heterogenous adoption) T = 2 and for all g ∈ {1, ..., G}, Dg,2 > Dg,1 = 0.
+
+Assumption S1 is satisfied in applications with two time periods, and where all groups are fully
+untreated at t = 1 and partly treated at t = 2. This type of design often arises in practice, for
+instance when an innovation is heterogeneously adopted by various groups.
+    2
+        Any equation with a numbering lower than (23) refers to an equation in the paper.
+
+
+                                                             3
+

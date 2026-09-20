@@ -1,0 +1,49 @@
+03     ILO Working Paper 140
+
+
+
+
+     XX 4 Expert validation survey    27
+
+
+
+     XX 5 Adjustment of survey sub-sample    30
+
+
+
+     XX 6 Adjustment of all survey scores    34
+
+
+
+     XX 7 Prediction of synthetic task-level scores for all ISCO-08 and 6-digit occupa-
+          tions    35
+
+
+
+     XX 8 Adjusted Global Index of GenAI Exposure    37
+
+
+
+     XX 9 Changes to occupational classifications    40
+
+
+
+     XX 10 Revised global employment estimates    43
+
+
+
+     XX   Conclusion   46
+
+
+          Annex   48
+
+          1. Exposure by 4-digit ISCO-08 occupation   48
+
+          2. Sampling Formula for section 4.2.   61
+
+          3. Survey Questionnaire   62
+
+          References   68
+
+          Acknowledgements   71
+

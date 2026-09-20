@@ -1,0 +1,45 @@
+1294             QUARTERLY JOURNAL OF ECONOMICS
+
+
+changes in task input relative to the 1960 task distribution,
+measured in “centiles.”13
+
+II.B. A Predictive Test
+     As an initial check on our data and conceptual framework, we
+test the rst proposition of our theoretical model: industries his-
+torically intensive in routine tasks should have adopted computer
+capital relatively rapidly as its price fell. To operationalize this
+test, we form an index of industry-level routine task intensity
+during the precomputer era. Using the 1960 Census data paired
+to our selected DOT task measures, we calculate the percentage
+share of routine task input in industry j’s total task input as,
+Routine Task Sharej, 1 9 6 0 5 100 3 r j ,1 9 6 0 /(r j,1 9 6 0 1 n j,1 9 6 0 ),
+where all task measures are standardized with equal mean and
+variance. The numerator of this index is the sum of industry
+routine cognitive and routine manual task inputs, while the de-
+nominator is the sum of all ve task inputs: routine cognitive and
+manual; nonroutine analytic, interactive, and manual. This in-
+dex, which has mean 40.0 and standard deviation 5.0, should
+roughly correspond to (1 2 b j ) in our model.
+     To proxy computer adoption after 1960, we use the Current
+Population Survey to calculate industries’ percentile rank of com-
+puter use in 1997. Although we do not have a measure of industry
+computer use in 1960, this was likely close to zero in all cases.
+Consequently, the 1997 measure should closely reect post-1960
+computer adoption.
+     We t the following equation:
+(12)   Computer adoptionj,1960–1997 5
+                         224.56 1 1.85 3 Routine Task Share j,1960
+                         ~19.18! ~0.48!   ~n 5 140, R2 5 0.10!.
+The point estimate of 1.85 (standard error 0.48) for the routine
+task share variable conrms that an industry’s routine task in-
+tensity in 1960 is strongly predictive of its subsequent computer
+adoption. Comparing two industries that in 1960 were 10 per-
+centage points (2 standard deviations) apart in routine task in-
+put, the model predicts that by 1997, these industries would be 19
+percentage points apart in the distribution of computer adop-
+
+    13. An earlier version of this paper [Autor, Levy, and Murnane 2001] em-
+ployed raw DOT scores rather than the percentile measures used here. Results
+were qualitatively identical.
+

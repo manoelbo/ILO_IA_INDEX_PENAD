@@ -1,0 +1,81 @@
+rely on putative model restrictions directly tied to the parameter of interest. Instead, the IPW approach
+requires one to correctly model the conditional probability of unit i being in group g given their covari-
+ates X and that they are either in group g or in an appropriate comparison group. The DR approach
+combines both the OR and IPW approaches as it relies on modeling both the outcome evolution and the
+propensity score. However, it only requires one to correctly specify either (but not necessarily both) the
+outcome evolution for the comparison group or the propensity score model (Sant’Anna and Zhao, 2020).
+Thus, the DR approach enjoys additional robustness against model misspecifications when compared to
+the OR and IPW approaches. In addition, the DR approach potentially allows one to use a broader set
+of estimation methods such as those that involve penalization and some types of model selection, see, e.g.
+Belloni et al. (2017).
+    Given these attractive robustness features associated with the DR approach, in this section we consider
+estimators of the DR form; the discussion on how to proceed with the OR and IPW approaches is
+analogous and therefore omitted. We also focus on parametric estimators for the nuisance functions. We
+consider this case mainly for its practical appeal which is especially true in applications where the number
+of covariates is fairly large and the number of observations is only moderate.13
+    More concisely, let
+
+
+                     nev                 h                                                   i
+               AT
+               [  T dr (g, t; δ) = En   w                                  b nev
+                                                  bgcomp,nev Yt − Yg−δ−1 − m
+                                        bgtreat − w                          g,t,δ   X; bnev
+                                                                                        β g,t,δ      ,                    (4.1)
+                     ny               h                                                     i
+                                        bgtreat − w                       b ny
+                                                  bgcomp,ny Yt − Yg−δ−1 − m            bny
+                                                           
+                AT
+                [  T dr (g, t; δ) = En w                                    g,t,δ X; βg,t,δ        ,                      (4.2)
+
+where
+                                        pbg (X; πbg ) C                       pbg,t+δ (X; πbg,t+δ ) (1 − Dt+δ ) (1 − Gg )
+              Gg                       1 − pbg (X; π bg )                                1 − pbg,t+δ (X; π
+                                                                                                         bg,t+δ )
+  bgtreat =
+  w                    bgcomp,nev =
+                     , w                                      bgcomp,ny =
+                                                            , w                                                           ,
+            En [Gg ]                       pbg (X; π
+                                                   bg ) C                                    bg,t+δ ) (1 − Dt+δ ) (1 − Gg )
+                                                                                 pbg,t+δ (X; π
+                                    En                                     En
+                                          1 − pbg (X; πbg )                                1 − pbg,t+δ (X; π
+                                                                                                           bg,t+δ )
+
+             bg ), pbg,t+δ (·; π
+with pbg (·; π                           b nev
+                               bg,t+δ ), m           bnev         b ny
+                                           g,t,δ (·; βg,t,δ ) and m
+                                                                              bny
+                                                                    g,t,δ (·; βg,t,δ ) being (parametric) estimators of pg (·),
+                                                                                                                   nev
+pg,t+δ (·), mnev (·) and mny (·), respectively, and for a generic Z, En [Z] = n−1 n Zi . AT
+                                                                                                   P
+             g,t,δ           g,t,δ                                                                  i=1
+                                                                                                              [  T dr (g, t; δ)
+           nev
+and AT
+    [  T dr (g, t; δ) are our proposed DR DiD estimators for AT T (g, t) when one invokes Assumption
+4 and Assumption 5, respectively. These estimators extend the DR DiD estimators of Sant’Anna and
+Zhao (2020) from the two periods, two groups setup to the multiple groups, multiple periods setup while
+allowing for possible treatment anticipation. In addition, these estimators are of the Hájek (1971)-type
+and their associated weights are guaranteed to sum up to one in finite samples. As illustrated by Busso
+et al. (2014), this usually leads to improved finite sample properties.
+    With the estimators for the AT T (g, t)’s in hand, one can use the analogy principle and combine these
+
+   13
+     Alternatively, one could adopt a fully nonparametric approach. Let f (x) be a generic notation for the nuisance
+functions. From Newey (1994), Chen et al. (2003), Ai and Chen (2003, 2007, 2012), and Chen et al. (2008), onecan see
+                                                                                                                    
+                                                                                                g (x) − g (x)kH = op n−1/4
+that the use of nonparametric first-step estimators gb (x) of g (x) is warranted provided that kb
+for a pseudo-metric k·kH , H being a vector space of functions. However, when the dimension of X is moderate or large, as
+                                                                       g (x) − g (x)kH = op n−1/4 can be rather stringent
+is often the case in empirical applications, conditions ensuring that kb
+due to the so-called “curse of dimensionality”.
+
+
+                                                              20
+

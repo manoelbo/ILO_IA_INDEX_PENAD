@@ -1,0 +1,50 @@
+                                      .08
+
+                                      .04
+
+             ATT (Normalized at -1)     0
+
+                                      -.04
+
+                                      -.08
+
+                                      -.12
+
+                                      -.16
+
+                                       -.2
+                                             -8   -6   -4        -2            0            2   4   6   8
+                                                                      Event Time (Quarters)
+
+
+                                                            Figure 7: Event Study
+      Notes: The graph presents the estimated coefficients β j from Equation 13 using the method of
+      Callaway and Sant’Anna (2021) for staggered adoption. Firms with zero recorded employment
+      in 2021Q1—eight quarters before the diffusion of GenAI—are excluded (2.3 percent of firms).
+      Standard errors are clustered at the firm level.
+
+
+
+   Figure 7 reports the results. The coefficients remain flat during the pre-adoption pe-
+riod, supporting the parallel-trends assumption. Approximately two quarters after adop-
+tion, employment begins to decline, reaching an 8 percent reduction after eight quarters.
+The absence of significant pre-trends provides additional reassurance that these post-
+adoption declines are not driven by confounding shocks. Appendix A.27 repeats this
+exercise for senior employment and shows no comparable post-adoption decline.
+
+
+5.4    Addressing Endogeneity Concerns
+
+This section examines potential endogeneity concerns that could confound our interpreta-
+tion of the estimated effects of GenAI adoption on junior employment. The central worry
+is that some other shock coinciding with the diffusion of GenAI—rather than GenAI
+itself—differentially reduced demand for junior workers at adopting firms. We consider
+the most plausible candidates: monetary tightening, the post-COVID hiring cycle, the
+normalization of remote work, and supply-side shocks to junior labor. In each case we
+explain why, although these factors are important for broader labor-market trends, they
+
+
+
+
+                                                                         36
+

@@ -1,0 +1,43 @@
+      it as an informational resource or tutor.
+
+   • Task iteration: the user and GenAI collaboratively refine an output through re-
+      peated exchange, with the user providing feedback and the GenAI revising its work.
+
+   • Validation: the user presents work or reasoning to the GenAI for checking, verifi-
+      cation, or quality assurance.
+
+   • Feedback loop: a hybrid mode combining elements of directive and iterative inter-
+      action.
+
+
+We use these collaboration modes as an interpretive proxy for the framework’s conceptual
+distinction between displacement and augmentation, recognizing that this mapping is a
+classification choice rather than a direct measurement of economic substitution. Specif-
+ically, we classify directive use and feedback loops as displacement-type interactions, in
+which GenAI usage tilts toward substitution for human task execution, and learning, task
+iteration, and validation as augmentation-type interactions, in which GenAI complements
+human judgment and expertise. We use data from both the Claude.ai consumer platform
+and the first-party API, though we focus primarily on Claude.ai usage in the reported
+results.
+
+
+Revelio Labs/LinkedIn workforce composition. Our primary seniority measure is based
+on Revelio Labs data derived from public LinkedIn profiles. For each occupation, we
+compute the average seniority level of active workers as of January 2023 (pre-ChatGPT)
+using Revelio’s 1–7 seniority scale, and standardize to a z-score. The Revelio measure
+captures the actual seniority composition of the workforce—whether an occupation is
+predominantly staffed by junior or senior workers—which directly corresponds to the
+junior–senior distinction emphasized in the conceptual framework. We restrict the sam-
+ple to occupations with at least 50 observed workers and partition occupations into ter-
+ciles based on this measure (“low/junior-type,” “medium,” “high/senior-type”).
+
+
+O*NET experience requirements. As a complementary validation, we also report the
+average years of related work experience required for each occupation from the O*NET
+Education, Training, and Experience database (version 30.0). This normative measure
+
+
+
+
+                                            A.27
+

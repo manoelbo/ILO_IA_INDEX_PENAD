@@ -1,0 +1,90 @@
+A.25      Job Postings: Difference-in-Differences
+
+This appendix reports the difference-in-differences estimates for job postings, referenced in the discussion
+of labor-supply shocks and reverse causality in Section 5.4. We re-estimate the difference-in-differences
+specification of Equation 34 using the quarterly number of job postings as the dependent variable rather
+than employment.
+
+
+                                                       .2           ChatGPT launch
+             Number of Postings (Percentage Change)
+
+
+
+
+                                                       0
+
+
+
+                                                      -.2
+
+
+
+                                                      -.4
+
+
+
+                                                      -.6
+                                                            q1
+
+
+
+
+                                                                        q1
+
+
+
+
+                                                                                                   q1
+
+
+
+
+                                                                                                          q1
+                                                        22
+
+
+
+
+                                                                       23
+
+
+
+
+                                                                                                   24
+
+
+
+
+                                                                                                          25
+                                                      20
+
+
+
+
+                                                                     20
+
+
+
+
+                                                                                                 20
+
+
+
+
+                                                                                                        20
+                                                                                       Quarter
+
+
+
+                                                                 Figure A.27: DiD—Job Postings
+     Notes: This figure reports the difference-in-differences estimates (β j from Equation 34) for the
+     quarterly number of job postings. The estimates are normalized to represent percentage changes
+     relative to the firm’s average number of postings before 2022. Standard errors are clustered at
+     the firm level.
+
+
+
+
+                                                                                     A.60
+

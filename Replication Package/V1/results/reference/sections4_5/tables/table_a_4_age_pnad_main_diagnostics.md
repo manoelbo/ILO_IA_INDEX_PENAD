@@ -1,0 +1,24 @@
+# Appendix PNAD age main-outcome diagnostics
+
+| Grupo | Resultado | DDD grupo–complemento | p DDD | Pretrend grupo | Pretrend DDD | Poder grupo | N grupo | CBOs trat./controle |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 18–24 | Admissões (log) | 0,0060<br>(0,0157) | 0,704 | pass (p=0,505) | pass (p=0,256) | adequate | 18.307 | 75/266 |
+| 18–24 | Desligamentos (log) | 0,0209<br>(0,0215) | 0,331 | pass (p=0,115) | pass (p=0,433) | adequate | 18.307 | 75/266 |
+| 18–24 | Salário real de admissão (log) | -0,0199<br>(0,0191) | 0,298 | pass (p=0,902) | pass (p=0,928) | adequate | 17.947 | 75/266 |
+| 18–24 | Saldo líquido (asinh) | 0,7359*<br>(0,3989) | 0,065 | fail (p=0,008) | pass (p=0,298) | adequate | 18.119 | 75/266 |
+| 25–34 | Admissões (log) | -0,0197*<br>(0,0117) | 0,092 | pass (p=0,442) | pass (p=0,355) | adequate | 18.307 | 75/266 |
+| 25–34 | Desligamentos (log) | -0,0569***<br>(0,0116) | <0,001 | pass (p=0,540) | pass (p=0,546) | adequate | 18.307 | 75/266 |
+| 25–34 | Salário real de admissão (log) | -0,0016<br>(0,0132) | 0,907 | pass (p=0,744) | pass (p=0,805) | adequate | 18.181 | 75/266 |
+| 25–34 | Saldo líquido (asinh) | -0,0325<br>(0,2201) | 0,883 | pass (p=0,811) | pass (p=0,385) | adequate | 18.272 | 75/266 |
+| 35–44 | Admissões (log) | 0,0087<br>(0,0123) | 0,480 | pass (p=0,182) | pass (p=0,262) | adequate | 18.307 | 75/266 |
+| 35–44 | Desligamentos (log) | 0,0229*<br>(0,0119) | 0,054 | pass (p=0,816) | pass (p=0,167) | adequate | 18.307 | 75/266 |
+| 35–44 | Salário real de admissão (log) | -0,0244*<br>(0,0125) | 0,050 | pass (p=0,303) | pass (p=0,119) | adequate | 18.111 | 75/266 |
+| 35–44 | Saldo líquido (asinh) | -0,0924<br>(0,2570) | 0,719 | pass (p=0,305) | fail (p=0,022) | adequate | 18.242 | 75/266 |
+| 45–54 | Admissões (log) | 0,0343**<br>(0,0167) | 0,040 | warning (p=0,066) | fail (p=0,048) | adequate | 18.307 | 75/266 |
+| 45–54 | Desligamentos (log) | 0,0501***<br>(0,0168) | 0,003 | pass (p=0,637) | fail (p=0,047) | adequate | 18.307 | 75/266 |
+| 45–54 | Salário real de admissão (log) | 0,0073<br>(0,0153) | 0,634 | pass (p=0,148) | pass (p=0,108) | adequate | 17.782 | 75/266 |
+| 45–54 | Saldo líquido (asinh) | 0,4210<br>(0,3109) | 0,176 | pass (p=0,685) | pass (p=0,468) | adequate | 18.103 | 75/266 |
+| 55+ | Admissões (log) | 0,0379<br>(0,0248) | 0,126 | warning (p=0,071) | pass (p=0,115) | adequate | 18.307 | 75/266 |
+| 55+ | Desligamentos (log) | 0,0413*<br>(0,0225) | 0,066 | fail (p=<0,001) | fail (p=<0,001) | adequate | 18.307 | 75/266 |
+| 55+ | Salário real de admissão (log) | -0,0012<br>(0,0187) | 0,949 | pass (p=0,364) | pass (p=0,282) | adequate | 16.635 | 75/265 |
+| 55+ | Saldo líquido (asinh) | 1,0860***<br>(0,3524) | 0,002 | fail (p=<0,001) | warning (p=0,093) | adequate | 17.685 | 75/266 |

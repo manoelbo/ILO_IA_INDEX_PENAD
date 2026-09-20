@@ -1,0 +1,4 @@
+outcome,sample_window,joint_lead_count,joint_lead_p_value,linear_pretrend_p_value,dynamic_pre_p_lt_005,lead_covariance_positive_semidefinite,pretrend_status,n_obs,minimum_clusters
+estoque_3112,2019-2024,3,0.0818075765968376,0.1448255513692662,2,True,fail,2040,340
+ln_taxa_rotatividade,2021-2024,1,0.4687683295683665,0.4692680408157361,0,True,pass,1359,340
+ln_tempo_emprego_medio,2019-2024,3,0.0468008418933606,0.8002387409499567,0,True,fail,2040,340

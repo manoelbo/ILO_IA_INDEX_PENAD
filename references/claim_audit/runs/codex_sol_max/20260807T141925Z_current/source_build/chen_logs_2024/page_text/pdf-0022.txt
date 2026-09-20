@@ -1,0 +1,52 @@
+prospective employers to vouch for their skills. Individuals in the control group do not receive
+test results.32 They then investigate how this treatment impacts labor market outcomes such as
+employment, hours worked, and earnings. We focus here on the effects on hours worked.
+
+Original specification and sensitivity to units. Carranza et al. (2022) estimate the effect of
+their randomized treatment on the inverse hyperbolic sine of weekly hours worked. Formally, they
+estimate the OLS regression specification
+
+                                     arcsinhpYi q “ β0 ` Di β1 ` Xi1 γ ` ui ,                                     (3)
+
+where Yi is average weekly hours worked for unit i, Di is an indicator for whether unit i was in
+the treatment group, and Xi is a vector of controls.33 Their estimate of the ATE (β̂1 ) is 0.201
+(see column (1) in Table 3). They interpret this as a 20% change in hours: “Certification increases
+average weekly hours worked, coded as zero for nonemployed candidates, by 20 percent” (p. 3560).
+
+                                    arcsinh(weekly hrs)       arcsinh(yearly hrs)      arcsinh(FTEs)
+           Treatment                      0.201                      0.417                   0.031
+                                         (0.052)                    (0.096)                 (0.012)
+           Units of outcome:            Weekly Hrs                 Yearly Hrs                FTEs
+
+      Table 3: Estimates using arcsinhpY q with different units of Y in Carranza et al. (2022)
+
+Note: This table shows estimates of the average treatment effect in Carranza et al. (2022) on the inverse hyperbolic
+sine of hours worked, estimated using (3). In the first column, the outcome is the inverse hyperbolic sine of weekly
+hours, as in the original paper. The remaining columns use the inverse hyperbolic sine of annualized hours (weekly
+hours times 52) or the inverse hyperbolic sine of the number of full-time equivalents worked (weekly hours divided by
+40). Standard errors are clustered at the assessment date (the unit of treatment assignment) as in the original paper.
+
+
+    However, the results in Section 2 suggest that the estimate of β1 should not be interpreted as a
+percentage effect, since it depends on the units of the outcome. To illustrate this, in columns (2)
+and (3) we re-estimate specification (3) with Yi redefined to be (a) yearly hours worked, i.e. weekly
+hours times 52, or (b) the number of full-time equivalents (FTE) worked, i.e. weekly hours divided
+by 40. The results change quite substantially depending on the units used, with an estimate of
+0.417 using yearly hours and 0.031 using FTEs. We therefore turn next to alternative approaches
+with a percentage interpretation in this setting.
+
+Percentage changes in the average.                 The average number of (weekly) hours worked was 9.84
+in the treated group and 8.85 in the control group. A simple summary of the treatment effect is
+  32
+     Some individuals are also assigned to a “placebo” arm in which they are provided the test results but the form
+does not include the individual’s name, and thus cannot credibly be shared with employers. We focus on the effect
+of the main treatment relative to the pure control group.
+  33
+     Carranza et al. (2022) include individuals receiving the “placebo” treatment in the sample and add an indicator
+for receiving the placebo treatment in Xi . We follow the same practice, although the results are similar if units
+receiving the placebo treatment are dropped.
+
+
+
+                                                         22
+

@@ -1,0 +1,38 @@
+experience—to ensure these factors do not drive our estimates (e.g., adopters being
+younger and naturally on upward earnings trajectories). Second, we leverage our panel
+data to implement a difference-in-differences approach indexed to November 2022, the
+release date of ChatGPT. This allows us to control for time-invariant differences between
+workers (e.g., high-ability adopters who would have earned more regardless) and examine
+whether adopters experienced differential changes after the launch of ChatGPT. Crucially,
+the event-study design allows us to assess whether adopters were on distinct labor market
+trends before AI chatbots became available. Finally, we verify that our conclusions about
+the effects of worker-level use are robust when we rely only on the variation in chatbot use
+that stems from employer policies. Employer initiatives may be more plausibly unrelated
+to individual worker trajectories, as they reflect firm-level choices rather than worker
+self-selection into chatbot use.
+       A third challenge is timing: When should we date the arrival of AI chatbots, and
+when should we expect their effects on labor market outcomes to appear? We use the
+launch of ChatGPT in November 2022 as a before-and-after moment in an event-study
+design, marking a sharp rise in public awareness of AI chatbots.11 We also separately
+examine effects for early adopters, identified as workers already using chatbots in our 2023
+survey round, to allow more time for effects to materialize.12 Even with rapid adoption,
+however, labor market effects may take time to materialize. We examine these adjustment
+dynamics in two ways. First, we implement a dynamic difference-in-differences design to
+trace how effects unfold monthly following the introduction of AI chatbots. Second, we
+analyze heterogeneity across occupations that vary in the flexibility of labor rules.
+       A final concern is that difference-in-differences identifies only differential effects for
+  11
+     This timing is motivated by the rapid uptake of ChatGPT among workers: most adopters began
+using it within a year of its launch (Humlum and Vestergaard, 2025). Appendix E.2 shows that ChatGPT
+remains the dominant AI chatbot to date. Moreover, event studies centered on its launch in November
+2022 have become common in the literature (e.g., Brynjolfsson, Chandar and Chen (2025); Eisfeldt et al.
+(2024); Lichtinger and Hosseini Maasoum (2025); Schubert (2025); Teutloff et al. (2025)), facilitating
+comparison across studies.
+  12
+     Our survey does not record the exact timing of adoption, precluding event studies indexed to workers’
+month of first use. However, even if such information were available, adoption is unlikely to represent a
+sharp before-and-after event, as workers typically ramp up usage gradually. This is another reason why
+we expect difference-in-differences effects to emerge over time rather than immediately.
+
+
+                                                   19

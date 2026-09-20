@@ -1,0 +1,35 @@
+workloads, largely consisting of monitoring and responding to students’ AI use.
+
+
+Discussion. The widespread creation of new tasks and spillovers to non-users highlight
+the broader workplace transformations caused by AI chatbots. These patterns support
+task-based frameworks of technological change, in which automation may reinstate labor
+demand (Acemoglu and Restrepo, 2018a; Autor et al., 2024), including models of “job
+transformation” where technologies reshape the content of jobs well before they displace
+them (Autor and Thompson, 2025; Freund and Mann, 2025). Workers shift not only
+toward content generation but also toward supervisory roles overseeing AI outputs—a
+pattern consistent with AI chatbots altering the hierarchical structure of production,
+with humans increasingly serving as monitors and validators of AI-generated work (Ide
+and Talamas, 2025). Finally, the high prevalence of integration tasks likely reflects an
+early phase of major technological change, with workers and firms still in the process of
+embedding AI into their workflows. These patterns could suggest that some organizations
+remain in the trough of a productivity J-curve (Brynjolfsson, Rock and Syverson, 2021;
+McElheran et al., 2025). On the other hand, as shown in Section 2.2, a substantial share
+of workers already report large time savings and quality improvements from using AI
+chatbots—especially when employers encourage and invest in the tools. In the next section,
+we assess whether and how these workplace transformations surface in administrative
+labor market outcomes.
+
+
+3    The Surface: Earnings and Employment
+
+Our preceding analysis shows that AI chatbots have generated strong currents within
+workplaces: employers are adopting chatbot initiatives, workers report substantial work-
+related benefits, and new AI-related tasks are emerging broadly. Do these currents surface
+in “hard” labor market outcomes such as earnings or hours? To answer this question, we
+link our survey responses to administrative labor market records.
+
+
+
+
+                                           16

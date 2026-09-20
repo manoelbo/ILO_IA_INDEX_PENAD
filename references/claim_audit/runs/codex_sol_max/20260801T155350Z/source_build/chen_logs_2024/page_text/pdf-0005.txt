@@ -1,0 +1,45 @@
+        Other work has considered the interpretation of regressions using arcsinhpY q or logp1 ` Y q from
+the perspective of structural equations models, as opposed to the potential outcomes model consid-
+ered here. This literature has reached diverging conclusions: For example, Bellemare and Wichman
+(2020) conclude that coefficients from arcsinhpY q regressions have an interpretation as a semi-
+elasticity, while Cohn et al. (2022) conclude that these estimators are inconsistent and advocate for
+Poisson regression instead. Thakral and Tô (2023) show that the semi-elasticities implied by OLS
+regressions using arcsinhpY q or logp1 ` Y q are sensitive to scale; they recommend instead the use
+of power functions Y k , which they show are the only transformations (besides log) for which the
+implied semi-elasticities for OLS regressions are scale-invariant. In Appendix C, we show that these
+diverging conclusions stem from the fact that the structural equations considered in these papers
+implicitly impose different restrictions on the potential outcomes—some of which are incompati-
+ble with zero-valued outcomes—and consider different target causal parameters. This highlights
+the value of a potential outcomes framework such as ours, which makes transparent what causal
+parameters are identifiable and what properties they can have.
+        Finally, there is a long history in econometrics of explicitly modeling the intensive and extensive
+margins in settings with zero-valued outcomes, such as Tobin (1958) and Heckman (1979). Broadly
+speaking, these methods impose parametric structure on the joint distribution of the potential
+outcomes, which allows one to separate out the intensive and extensive margin effects of a treatment
+(see Appendix C for technical details). Of course, the parametric restrictions underlying these
+approaches may often be difficult to justify in practice, which perhaps has contributed to the growth
+in the use of log-like transformations in place of approaches that explicitly model the extensive
+margin. Our paper shows that the presence of an extensive margin should not simply be ignored
+by taking a log-like transformation. It also clarifies what parameters can be learned in such cases
+without imposing restrictions on the joint distribution of the potential outcomes.
+
+1.1        Setup and notation
+Let D P t0, 1u be a binary treatment and let Y P r0, 8q be a weakly positively-valued outcome.5
+We assume that Y “ DY p1q ` p1 ´ DqY p0q, where Y p1q and Y p0q are respectively the potential
+outcomes under treatment and control. We suppose that in some (sub-)population of interest,
+pY p1q, Y p0qq „ P for some (unknown) joint distribution P . We denote the marginal distribution
+of Y pdq under P by PY pdq for d “ 0, 1. We assume that neither PY p0q nor PY p1q is a degenerate
+distribution at zero.
+
+
+2        Sensitivity to scaling for transformations that behave like logpY q
+We first consider average treatment effects of the form θ “ EP rmpY p1qq´mpY p0qqs for an increasing
+function m. We note that θ corresponds to the ATE among the (sub-)population indexed by P ;
+    5
+    The arcsinh transformation is sometimes used in settings where Y can be negative. We impose that Y P r0, 8q,
+and thus do not consider this case. See Appendix B.2 for extensions of our results to settings with continuous
+treatments.
+
+
+                                                       5
+

@@ -1,0 +1,30 @@
+                                                                                                36
+
+sA                                                                           E
+ i only includes the focal pathology and is conditionally independent of sir given    ωi . The
+                                                                                         
+second allows for dependence between sA          E                                      E
+                                         i and sir given ωi , but only through π ωi | sir for
+the focal pathology and potentially clinical history. The third utilizes the correct update
+                                                                                              
+term constructed using all available AI predictions and the vector of probabilities π ωi | sE
+                                                                                            ir
+for all pathologies. Setting b = d = 1 and the constant to 0 in this last case corresponds to
+Bayesian updating with correct beliefs.
+The results from this exercise point to two types of errors in radiologists’ use of AI signals. The
+first type of error is that radiologists neglect signal dependence even though AI predictions
+and radiologists’ signals are highly correlated after conditioning on the ground truth (see
+appendix table C.18). This conclusion follows because we select the model in column 1,
+which uses an update term based on equation (6) and therefore does not control for sE .
+Another implication of the selected model is that radiologists do not incorporate information
+across different pathologies since only the focal pathology is relevant. This result validates
+our previous analysis that analyzes each pathology separately.
+Second, across different models, including all models that are not selected, we estimate that
+radiologists exhibit automation neglect. However, radiologists do not exhibit substantial own-
+information bias or neglect since the estimated value of d is close to 1 in all specifications.
+Accounting for measurement error in estimating this model is important, as versions that do
+not do so estimate d significantly less than 1 (appendix C.5.3) .
+Connecting these observations back to our theoretical discussion in section 2, the parame-
+ters are such that radiologists will not benefit unambiguously from access to the AI signal,
+primarily because of signal dependence neglect.
+

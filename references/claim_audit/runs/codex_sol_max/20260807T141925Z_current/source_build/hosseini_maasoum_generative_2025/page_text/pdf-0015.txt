@@ -1,0 +1,48 @@
+                               Junior tasks                                       Senior tasks
+         Pre-AI:
+                   0                                            x̂                                              1
+
+
+                       Automated                    Junior tasks                        Senior tasks
+        Post-AI:
+                   0               α                            x̂         x̂ ′                                 1
+                    Displacement       Productivity Reallocation
+
+                   Figure 1: Task Partition Before and After GenAI Adoption
+  Notes: The figure is schematic and drawn for the maintained case α < x̂ (AI automates only junior
+  tasks). The top line shows the pre-AI task partition: juniors perform tasks x < x̂ and seniors per-
+  form tasks x ≥ x̂. The bottom line shows the post-AI partition: tasks x ≤ α are automated, juniors
+  perform (α, x̂ ′ ), and seniors perform [ x̂ ′ , 1]. The three components of Proposition 1 correspond to: dis-
+  placement—junior tasks lost to automation [0, α]; productivity—changes in labor demand on surviving
+  junior tasks (α, x̂ ); and reallocation—tasks shifted from seniors to juniors [ x̂, x̂ ′ ].
+
+
+reflects two channels (see Supplemental Appendix A.6 for the formal derivation). First, a
+cost-index channel: GenAI reduces the CES cost index from Ppre to Ppost ≤ Ppre , which low-
+ers labor demand on all surviving tasks regardless of σ. This channel is larger the greater
+are α (scope of displacement) and δ J , δS (augmentation). Second, a within-task augmenta-
+tion channel, whose sign depends on the elasticity of substitution σ. When σ < 1, tasks
+are complementary in production, so the firm requires a roughly fixed mix of task out-
+puts; making juniors more productive per task means fewer are needed, reinforcing the
+cost-index channel. When σ = 1 (Cobb-Douglas), only the cost-index channel operates
+and the productivity effect is still negative. Thus, if σ ≤ 1, the within-task augmentation
+channel is non-positive and the cost-index channel is negative, making the productivity
+effect unambiguously negative.15 When σ > 1, within-task augmentation tends to raise
+labor demand and can offset the cost-index channel, making the net productivity effect
+ambiguous.
+   Finally, the reallocation effect captures juniors’ expanded task set due to differential
+augmentation. The number of tasks reallocated to juniors depends on two forces (see
+  15 The formal expression, derived in Supplemental Appendix A.6, shows that the ratio of post- to pre-AI
+                                            ∗post
+                                        l           (x)
+labor demand on a surviving task is J∗pre                 = ρ · (1 + δ J )σ−1 , where ρ ≡ ( Ppost /Ppre )σ ≤ 1 captures the
+                                        lJ      (x)
+cost-index channel. P is the Lagrange multiplier on the fixed-output constraint—the shadow (unit) cost of
+output—rather than a market price; since wages are fixed in units of an outside numéraire, P cannot be
+normalized to one both before and after adoption.
+
+
+
+
+                                                                15
+

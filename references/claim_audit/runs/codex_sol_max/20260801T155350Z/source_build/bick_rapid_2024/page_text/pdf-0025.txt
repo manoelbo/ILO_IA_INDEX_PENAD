@@ -1,0 +1,56 @@
+   We model aggregate or industry output with a Cobb-Douglas function:
+
+                                         Y = AK α L1−α ,                                      (1)
+                                               N
+                                               X
+                                         L=           ℓi ei ,                                 (2)
+                                                i=1
+
+
+where Y is output, K is capital, ℓi is hours worked by worker i, ei is the efficiency of worker i,
+and L is the effective quantity of labor. If worker i saves si hours per week due to genAI and
+spends this time on additional production within their job, their effective labor becomes ℓi + si
+and the change in the effective quantity of labor is
+
+                                                  N
+                                                  X
+                                         ∆L =            si ei .                              (3)
+                                                   i=1
+
+
+Assuming a competitive labor market and constant TFP, capital, and hours worked, Appendix
+D.1 shows that we can write the approximate percent change in output from genAI as:
+                                                                P
+                               ∆Y                                   s w̃
+                                  ≈     (1 − α)          ×      Pi i i                        (4)
+                               Y                                    ℓi w̃i
+                                                                | i{z }
+                                        | {z }
+                                      labor cost share
+                                                             ∆%effective labor
+
+
+where w̃i is worker i’s wage relative to mean wages. This equation states that the percent change
+in output due to genAI is the ratio of mean time savings to mean hours worked, weighted by
+worker’s wages, and scaled by labor’s share of production. Information on time savings and
+wages is available in the November 2024 RPS.
+
+    Figure 9a plots genAI use against time savings at the industry level using RPS data. We
+observe considerable variation in genAI use across industries, which is strongly correlated with
+genAI time savings. Information Services and Finance have the highest genAI use (9.4% and
+9.6%, respectively) and time savings (2.7% and 2.3%, respectively), while Accommodation and
+Food Services has the lowest use (1.5%) and time savings (0.6%). The slope of the dashed OLS
+line is 0.21, indicating that a 10 percentage point increase in genAI use is associated with a
+2.1% rise in time savings. The relationship is approximately linear; in particular, we do not
+observe a plateauing of time savings at higher rates of adoption.
+
+   Next, Figure Figure 9b translates time savings into productivity gains using equation (4).
+The impact of time savings on productivity depends on two factors: (i) the share of labor in
+production costs, and (ii) the wages of genAI users relative to non-users within the industry.
+(Appendix Table D.1 lists the labor shares used for each industry.)
+
+   The implied productivity gains range from a low of 0.1% in Real Estate to a high of 1.7%
+
+
+                                                  23
+

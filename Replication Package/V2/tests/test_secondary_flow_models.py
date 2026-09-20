@@ -10,12 +10,12 @@ import pandas as pd
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = (
-    PACKAGE_ROOT / "code" / "models" / "secondary_flow_models.py"
+    PACKAGE_ROOT / "code" / "caged" / "models" / "secondary_flow_models.py"
 )
 
 
 def load_module():
-    sys.path.insert(0, str(PACKAGE_ROOT / "code" / "models"))
+    sys.path.insert(0, str(PACKAGE_ROOT / "code" / "caged" / "models"))
     spec = importlib.util.spec_from_file_location(
         "secondary_flow_models",
         MODULE_PATH,

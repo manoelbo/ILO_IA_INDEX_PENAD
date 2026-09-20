@@ -1,0 +1,42 @@
+(OpenAI GPT-4o-mini) that reads the posting text together with the candidate list and
+selects the tasks it judges to be genuinely required. The procedure yields a panel of
+2,748,186 posting-task pairs. Appendix A.14 describes the pipeline in detail, reports the
+exact prompt and JSON schema, and presents sanity checks on the output.
+
+
+4.1.2   Main Sample
+
+Our final sample merges all U.S. positions in the Revelio Labs dataset with job postings at
+the firm level. The resulting dataset covers 281,111 firms that were successfully matched
+to both employee position data and job postings, and that were actively hiring between
+January 2021 and March 2025.18 For these firms, we observe 161,192,969 positions held
+by 65,470,800 workers dating back to 2015, as well as 198,773,384 job postings since 2021,
+all with raw text descriptions.19
+
+
+4.1.3   Measuring Workforce Dynamics by Seniority
+
+We construct a monthly panel at the firm level. For each firm-by-month, we calculate the
+number of employees who held a position at the firm that started before and ended after
+that month, capturing the firm’s workforce size in that period. We repeat this calculation
+separately for each seniority category, enabling us to track the workforce composition
+over time. Additionally, we identify monthly inflows and outflows by seniority. For
+each firm-by-month, we define new hires as workers who began a new position at the
+firm that month, having most recently worked at another firm or for whom this is their
+first observed job. Separations are defined as workers whose position at the firm ended
+in that month and who either moved to a different firm or had no subsequent position
+listed. Finally, we define promotions as workers who start a new position at the firm after
+  18 A firm is considered active if it had at least 20 new positions starting during this period.
+  19 We exclude the top 1 percent of firms with the highest postings-to-hires ratios. Manual inspection indi-
+
+cates that many of these firms are HR intermediaries recruiting on behalf of other employers. In addition,
+we exclude the approximately 800 largest firms in the Revelio data (ranked by post-2021 new hires), rep-
+resenting about 0.2 percent of the firms in the sample, to avoid the influence of extreme outliers on our
+estimates. Supplemental Appendix A.19 shows that our main triple-difference results remain robust when
+these firms are added back.
+
+
+
+
+                                                      19
+

@@ -1,0 +1,65 @@
+                                                                                      �𝑡𝑡ℓ∗ −𝑡𝑡𝑘𝑘∗ +1�
+the middle window in which treatment status varies: 𝜙𝜙                                       2
+                                                                                                         . 𝛽𝛽̂𝑘𝑘ℓ
+                                                                                                              2𝑥𝑥2,ℓ
+                                                                                                                     , however, is biased
+
+because the control group (𝑘𝑘) experiences a trend in outcomes due to the treatment effect: 20
+
+                                            �𝑇𝑇−(𝑡𝑡ℓ∗ −1)�
+                                       𝜙𝜙
+                                                  2
+                       2𝑥𝑥2,ℓ �� � � ���    �� ��       �𝑇𝑇 − (𝑡𝑡𝑘𝑘∗ − 1)�      (𝑡𝑡𝑘𝑘∗ − 𝑡𝑡ℓ∗ )
+                     𝛽𝛽𝑘𝑘ℓ = 𝐴𝐴𝐴𝐴𝑇𝑇ℓ (𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)) − 𝜙𝜙                    = 𝜙𝜙                 ≤0                                   (14)
+                                                                             2                             2
+                             2𝑥𝑥2
+This bias feeds through to 𝛽𝛽𝑘𝑘ℓ  according to the size of (1 − 𝜇𝜇𝑘𝑘ℓ ):
+
+                                         2𝑥𝑥2             [(2𝜇𝜇𝑘𝑘ℓ − 1)(𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ ) + 1]
+                                       𝛽𝛽𝑘𝑘ℓ  = 𝜙𝜙                                                                                   (15)
+                                                                       2
+
+The entire two-group timing estimate can be wrong signed if 𝜇𝜇𝑘𝑘ℓ is small (putting more weight on
+
+the downward biased term). In figure 3, for example, both units are treated equally close to the
+
+                                                                                                           𝜙𝜙
+ends of the panel, so 𝜇𝜇𝑘𝑘ℓ = 0.5 and the estimated DD effect equals 2 , even though both units
+
+experience treatment effects as large as 𝜙𝜙 ⋅ [𝑇𝑇 − (𝑡𝑡𝑘𝑘∗ − 1)]. This type of bias affects the overall
+
+DD estimate according to the weights in equation (7). It is smaller when there are untreated units,
+
+more so when these units are large.
+
+     Note that this bias is specific to the specification in equation (2). More flexible event-study
+
+specifications may not suffer from this problem (although see Proposition 2 in Abraham and Sun
+
+
+
+20
+   The average of the effects for group 𝑘𝑘 during any set of positive event-times is just 𝜙𝜙 times the average event-time.
+The 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ) period contains event-times 0 through 𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ − 1 and the 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) period contains event-times 𝑡𝑡ℓ∗ −
+(𝑡𝑡𝑘𝑘∗ − 1) through 𝑇𝑇 − (𝑡𝑡𝑘𝑘∗ − 1)), so we have:
+                                                                (𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ )(𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ + 1)      𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ + 1
+                                  𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� = 𝜙𝜙                ∗        ∗)        = 𝜙𝜙
+                                                                           2(𝑡𝑡ℓ − 𝑡𝑡𝑘𝑘                       2
+                                                                                                                           𝑇𝑇 − 𝑡𝑡ℓ∗ + 2
+                                    𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)�                                        = 𝜙𝜙(𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ ) + 𝜙𝜙
+                                                                                                                                 2
+And the difference, which appears in the identifying assumption in (11c) equals:
+                                                                                     𝑇𝑇 − 𝑡𝑡ℓ∗ + 2      𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ + 1 𝜙𝜙
+        𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ)� − 𝐴𝐴𝐴𝐴𝑇𝑇𝑘𝑘 �𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ)� = 𝜙𝜙(𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ ) + 𝜙𝜙                 − 𝜙𝜙                  = �𝑇𝑇 − (𝑡𝑡𝑘𝑘∗ − 1)�
+                                                                                            2                  2             2
+Another way to see this, as noted in figure 3, is that average outcomes in the treatment group are always below average
+outcomes in the early group in the 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) period and the difference equals the maximum size of the treatment effect
+in group 𝑘𝑘 at the end of the 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ) period: 𝜙𝜙 ⋅ (𝑡𝑡ℓ∗ − 𝑡𝑡𝑘𝑘∗ + 1). Average outcomes for the late group are also below
+average outcomes in the early group in the 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ) period, but by the average amount of the treatment effect in
+                                                   (𝑡𝑡 ∗ −𝑡𝑡 ∗ +1)
+group 𝑘𝑘 during the 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ) period: 𝜙𝜙 ℓ 𝑘𝑘 . Outcomes in group ℓ actually fall on average relative to group 𝑘𝑘,
+                                               2
+which makes the DD estimate negative even when all treatment effects are positive.
+
+                                                                     16
+

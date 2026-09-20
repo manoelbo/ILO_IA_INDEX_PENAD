@@ -1,0 +1,57 @@
+2574                                          REVIEW OF ECONOMIC STUDIES
+  (a)                                             (b)                                            (c)
+
+
+
+
+                                                                                                                                                   Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                    F IGURE 1
+             Diagram illustrating when LICQ (Assumption 2) will and will not hold in the case where T̄ = 2.
+Note: In each panel, we assume that the rows associated with binding moments are ordered first in the matrix A for ease of notation. The
+blue shading denotes the identified set for (τ1 , τ2 ) and the dashed red arrow points in the direction l = ( 12 , 12 ) . In panel (a), LICQ is
+                                    ∗
+satisfied since there is a unique τ post (coloured in red) at which two linearly independent moments are binding. In panel (b), even though
+  ∗
+τ post is not unique, LICQ is satisfied as there is either one or two linearly independent binding moments at the values of τ post ∗    coloured
+                                                             ∗
+in red. In panel (c), there are three binding moments at τ post  (coloured in red), and so LICQ is violated.
+
+
+
+
+    In the three period DiD model (where there are no nuisance parameters, since T̄ = 1), LICQ
+is satisfied when the bounds of the identified set are each determined by one moment. This holds
+everywhere for SD (M) when M > 0. It holds almost everywhere for  S D P B (M) when M > 0,
+although it fails when both the sign restrictions and smoothness restrictions are simultaneously
+binding. (For LICQ to hold with non-binding moments slack by at least , i.e. P ∈ P , δ P must
+not be local to a point at which LICQ fails.) When M = 0, both the upper and lower bounds for
+SD (M) and  S D P B (M) are binding, so LICQ fails.
+    More generally, the result in Proposition 3.3 is under the asymptotic regime where the sam-
+pling variation grows small relative to the length of the identified set, and thus the binding and
+non-binding moments are “far” apart relative to sampling variation. Importantly, it can be shown
+that the LICQ condition rules out settings where θ is point identified. Thus, the asymptotics
+considered in Proposition 3.3 may not provide a good approximation to the finite-sample per-
+formance of the conditional test in settings where θ is point-identified, or when the length of the
+identified set is “small” relative to sampling variation.
+    We are not aware of results analogous to Proposition 3.3 for any test that controls size in the
+finite-sample normal model. Kaido and Santos (2014) provide an efficiency result under a related
+Slater constraint qualification condition, but their test does not control size when the constraint
+qualification fails. It is worth highlighting that if LICQ holds for a particular set of moments,
+                                                                          ∗
+then it also holds if one adds moments that are slack at the optimal τ post   . Proposition 3.3 thus
+requires that the asymptotic power of the test is not affected by the inclusion of slack moments.
+The only other non-trivial tests that we are aware of that control size in the finite-sample normal
+model and have this form of insensitivity to slack moments are the tests proposed by Cox and
+Shi (2022). An interesting open question is whether the tests proposed by Cox and Shi (2022)
+also converge to the power envelope under LICQ.23
+
+   3.5.3. Extensions. Proposition 3.3 is stated for the case when  is a single polyhedron.
+                                                       K
+An immediate corollary, however, is that when  = k=1     k , the conditional test based on the
+union of confidence sets has optimal local asymptotic power when the k that determines the
+identified set bounds is unique and satisfies the conditions of Proposition 3.3. This implies,
+
+
+       23. Extending the results to the Cox and Shi tests is non-trivial given that they use a different test statistic and
+construct critical values in a different way.
+

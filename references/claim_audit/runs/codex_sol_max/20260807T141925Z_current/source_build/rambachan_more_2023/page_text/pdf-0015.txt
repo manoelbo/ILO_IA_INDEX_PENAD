@@ -1,0 +1,62 @@
+    RAMBACHAN AND ROTH              A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                         2569
+
+ψαC (β̂ n , A, d, θ̄, n ) an indicator for whether the conditional test rejects the null that θ = θ̄ for
+ = {δ : Aδ ≤ d}.
+    We can then form a confidence set for θ by test inversion, Cα,n       C
+                                                                             (β̂ n , n ) := {θ̄ : ψαC (β̂ n ,
+A, d, θ̄, n ) = 0}. The construction of the conditional test implies that Eβ̂ n ∼N (δ+τ, n )
+[ψαC (β̂ n , A, d, l  τ post , n )] ≤ α for any δ ∈ . It therefore follows that Cα,n
+                                                                                   C
+                                                                                       (β̂ n , n ) satisfies
+the finite-sample coverage requirement (10). In Section 3.3 below, we show that coverage in the
+normal model translates to uniform asymptotic coverage over a large class of DGPs.
+
+
+
+
+                                                                                                                 Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+Example 4. An instructive example is when T̄ = 1 (so that there are no nuisance parameters),
+and ˜ n = I . Then η̂ = max j Ỹn, j is the maximum component of Ỹn , v lo = max j= ĵ Ỹn, j is the
+second-largest element of Ỹn (where ĵ denotes the index of the max), and v up = ∞. Thus, the
+conditional test rejects when η̂ exceeds the 1 − α quantile of the standard normal distribution
+truncated to [v lo , ∞). Intuitively, this means that the conditional test will tend to reject when
+the maximum sample moment is far enough away from the second-largest sample moment. Two
+special cases are worth special consideration. First, consider the case where in population one
+moment is violated and the remaining moments are very slack, e.g. μ̃1 > 0 while μ̃ j  0 for
+ j = 1. Then with high probability η̂ will equal Ỹn,1 and v lo will be very negative. Thus, the con-
+ditional test will behave similarly to a one-sided t-test using Ỹn,1 , which can be shown to be
+the most powerful test in the finite-sample normal model in this example. On the other hand,
+if μ1 ≈ μ2 > 0, then the maximum and second-largest sample moments (i.e. η̂ and v lo ) will be
+close together with high probability, so the conditional test may not reject with substantial prob-
+ability even if both μ1 and μ2 are large, and thus the conditional test may have poor power. To
+improve power in these settings where the binding and non-binding moments are close together
+(relative to sampling variation), ARP introduce a “hybrid” test, which we describe next.
+
+    3.2.2. Hybrid confidence sets. ARP propose a “hybrid” test that combines the condition-
+ing approach above with a test based on the “least-favourable” assumption that μ̃(θ̄ ) = 0. In
+particular, ARP show that the distribution of η̂ under the null is bounded above (in the sense
+of first-order stochastic dominance) by the distribution of η̂ when μ̃(θ̄ ) = 0 (see Section 3.2
+of ARP). One can therefore construct a size-κ least-favourable (LF) test in the finite-sample
+normal model that rejects whenever η̂ exceeds the 1 − κ quantile of maxγ ∈V ( ) γ  ξ , where
+ξ ∼ N (0, ˜ n ). This critical value, which we will denote by c L F,κ , can easily be calculated by
+simulation. For 0 < κ < α, the ARP conditional-LF hybrid test is defined to reject if a first-
+stage, size-κ LF test rejects. If this first-stage test does not reject, then in the second stage the
+hybrid test conducts a modified version of the size-((α − κ)/(1 − κ)) conditional test that also
+conditions on the event that the first-stage LF test did not reject. In particular, by similar logic as
+for the conditional test, we have that
+
+                                                                                   up
+                        η̂ | {γ∗ ∈ V̂n , Sn = s, η̂ ≤ c L F,κ } ∼ ξ | ξ ∈ [v lo , v H ],
+
+         up
+where v H = min{v lo , c L F,κ } (see Section 3.4 of ARP). The second-stage of the hybrid test
+                                                                                                            up
+rejects if η̂ exceeds the critical value for the size-((α − κ)/(1 − κ)) conditional test that uses v H
+instead of v up . We will denote by ψκ,α  C-L F
+                                                (β̂ n , A, d, θ̄, n ) an indicator for whether the hybrid
+test rejects at a particular value θ̄ , and denote by Cκ,α,nC-L F
+                                                                  (β̂ n , n ) the confidence set that collects
+the values of θ̄ for which the hybrid test does not reject. As with the conditional test, by construc-
+tion the hybrid confidence set satisfies that coverage criterion (10) in the finite-sample normal
+model. In our implementation below, we use κ = α/10, following ARP.
+

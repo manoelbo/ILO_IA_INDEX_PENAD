@@ -1,0 +1,10 @@
+geopandas==1.1.0
+matplotlib==3.10.8
+numpy==2.2.6
+pandas==2.3.3
+Pillow==12.1.1
+pyarrow==23.0.0
+pyogrio==0.12.1
+pyfixest==0.40.1
+scipy==1.15.3
+shapely==2.1.0

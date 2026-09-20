@@ -1,0 +1,44 @@
+                       APPENDIX 1: DEFINITIONS OF TASK MEASURES FROM THE 1977 DICTIONARY OF OCCUPATIONAL TITLES
+
+   Variable             DOT denition           Task interpretation                        Example tasks from Handbook for Analyzing Jobs
+
+1. GED Math        General educational          Measure of             Lowest level: Adds and subtracts 2-digit numbers; performs operations with units such as
+   (MATH)            development,                nonroutine              cup, pint, and quart. Midlevel: Computes discount, interest, prot, and loss; inspects
+                     mathematics                 analytic tasks          at glass and compiles defect data based on samples to determine variances from
+                                                                         acceptable quality limits. Highest level: Conducts and oversees analyses of aerodynamic
+                                                                         and thermodynamic systems . . . to determine suitability of design for aircraft and
+                                                                         missiles.
+2. Direction,      Adaptability to accepting    Measure of             Plans and designs private residences, ofce buildings, factories, and other structures;
+   Control,          responsibility for the      nonroutine              applies principles of accounting to install and maintain operation of general accounting
+   Planning          direction, control, or      interactive tasks       system; conducts prosecution in court proceedings . . . gathers and analyzes evidence,
+   (DCP)             planning of an activity                             reviews pertinent decisions . . . appears against accused in court of law; commands
+                                                                         shing vessel crew engaged in catching sh and other marine life.
+3. Set Limits,     Adaptability to              Measure of routine     Operates a billing machine to transcribe from ofce records data; calculates degrees,
+   Tolerances,       situations requiring        cognitive tasks         minutes, and second of latitude and longitude, using standard navigation aids;
+   or Standards      the precise attainment                              measures dimensions of bottle, using gauges and micrometers to verify that setup of
+   (STS)             of set limits,                                      bottle-making conforms to manufacturing specications; prepares and veries voter
+                     tolerances, or                                      lists from ofcial registration records.
+                     standards
+4. Finger          Ability to move ngers,      Measure of routine     Mixes and bakes ingredients according to recipes; sews fasteners and decorative
+   Dexterity         and manipulate small        manual tasks            trimmings to articles; feeds tungsten lament wire coils into machine that mounts
+   (FINGDEX)         objects with ngers,                                them to stems in electric light bulbs; operates tabulating machine that processes data
+                     rapidly or accurately                               from tabulating cards into printed records; packs agricultural produce such as bulbs,
+                                                                         fruits, nuts, eggs, and vegetables for storage or shipment; attaches hands to faces of
+                                                                                                                                                                     SKILL CONTENT OF TECHNICAL CHANGE
+
+
+
+
+                                                                         watches.
+5. Eye Hand        Ability to move the hand     Measure of             Lowest level: Tends machine that crimps eyelets, grommets; next level: attends to beef
+   Foot              and foot coordinately       nonroutine              cattle on stock ranch; drives bus to transport passengers; next level: pilots airplane to
+   Coordination      with each other in          manual tasks            transport passengers; prunes and treats ornamental and shade trees; highest level:
+   (EYEHAND)         accordance with visual                              performs gymnastic feats of skill and balance.
+                     stimuli
+                                                                                                                                                                     1323
+
+
+
+
+    Source: U. S. Department of Labor, Manpower Administration, Handbook for Analyzing Jobs (Washington, DC, 1972).
+

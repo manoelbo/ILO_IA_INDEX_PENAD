@@ -1,0 +1,42 @@
+hood of replacement for each task individually. These estimates are then averaged and weighted
+according to the relevance and importance of each task within the occupation, providing a granu-
+lar view of task vulnerability.
+   Ethical Emphasis Index: Here, we explicitly ask the model to consider the ethical repercussions
+and potential social resistance to replacing certain tasks with AI. This approach highlights whether
+explicitly including ethical considerations causes a significant deviation from the baseline, which
+may already implicitly factor in such considerations.
+   Ethical Exclusion Index: This index explicitly asks the model not to consider ethical, regulatory,
+or social impediments to replacing tasks with AI. The objective of this index, compared to the
+previous one, is to measure the increase in the index when these considerations are excluded.
+   LLM-Specific Index: This variant focuses specifically on large language model (LLM) technolo-
+gies. By narrowing the scope to LLM innovations, we assess the unique impact of advancements
+in natural language processing and related applications on occupational exposure, contrasting it
+with the general AI exposure measured in the baseline.
+   Non-AI Technologies Index: We estimate the probability of task replacement by non-AI technolo-
+gies such as digital tools, robotics, and computer software. This provides a comparative baseline,
+distinguishing the impact of traditional technologies from AI-driven automation.
+   AI-Only Index: This index is derived by subtracting the Non-AI Technologies Index from the
+baseline GENOE, capturing the incremental exposure attributable solely to AI advancements. It
+allows us to identify occupations where AI-specific risks have significantly increased.
+   Table 4 provides the descriptive statistics of these alternative indexes, their correlation with the
+baseline GENOE, and other existing exposure indexes, and the extent to which they differ from
+the baseline. Both the Blind Index and the Ethical Emphasis Index do not deviate significantly
+from the baseline, although the mean differences are statistically significant. This indicates that
+there are slight changes in the reasoning of the model when the occupation name is omitted or
+when ethical considerations are explicitly prompted, but most of these factors are already incor-
+porated in the baseline index. The overall correlations of these indexes with the baseline GENOE
+are 0.95 and 0.99, respectively. This consistency is supported by follow-up surveys, where ethi-
+cal considerations and occupation-specific criteria were crucial elements for many of the model’s
+assessments.
+   GENOE’s ability to reflect ethical, regulatory, and social considerations in its assessment of AI’s
+potential to replace human labor, even when not explicitly directed to do so, is a critical aspect of
+our argument. This aspect was initially confirmed by our follow-up survey analysis and is also
+supported by the comparisons with alternative indexes. Notably, when we explicitly instructed
+the model to include these factors, the resulting index showed only a minor reduction of one
+percentage point over the 5-year horizon. However, when we asked the model to exclude these
+considerations, the index increased by four percentage points, from 0.38 to 0.42. A similar pattern
+is observed for the 10-year horizon, as illustrated in Appendix Figure A.3, though the effect is less
+
+
+                                                 15
+

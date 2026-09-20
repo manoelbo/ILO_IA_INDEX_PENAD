@@ -1,0 +1,47 @@
+                                                                                                                                90
+
+                    Figure C.25: Conditional treatment effect given AI prediction
+
+
+                                                                  .1
+
+
+
+
+                           ATE on deviation from ground truth
+                                                                .05
+
+
+
+                                                                  0
+
+
+
+                                                                -.05
+                                                                       [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                                                         AI prediction bins
+
+
+
+Note: Main specifications similar to figure 3 with the exception that ground truth is constructed using continuous values.
+
+
+
+
+                                                                   Table C.12: Average Treatment Effects
+
+                                                                                   Deviation from Ground Truth
+                         Treatment                                                                       (1)
+                         AI × CH                                                                       0.004
+                                                                                                      (0.004)
+                         AI                                                                           −0.006
+                                                                                                      (0.003)
+                         CH                                                                           −0.009
+                                                                                                      (0.003)
+                         Control Mean                                                                  0.182
+                                                                                                      (0.007)
+                         Pathology FE                                                                   Yes
+                         Observations                                                                  36280
+
+Note: Main specifications similar to table 2 with the exception that ground truth is constructed using continuous values.
+

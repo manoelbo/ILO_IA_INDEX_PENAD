@@ -1,0 +1,49 @@
+1284               QUARTERLY JOURNAL OF ECONOMICS
+
+
+substituted for workers in performing routine manual tasks. This
+phenomenon is not novel. Substitution of machinery for repetitive
+human labor has been a thrust of technological change through-
+out the Industrial Revolution [Hounshell 1985; Mokyr 1990; Gol-
+din and Katz 1998]. By increasing the feasibility of machine
+substitution for repetitive human tasks, computerization fur-
+thers—and perhaps accelerates—this long-prevailing trend.
+     The advent of computerization also marks a qualitative en-
+largement in the set of tasks that machines can perform. Because
+computers can perform symbolic processing—storing, retrieving,
+and acting upon information—they augment or supplant human
+cognition in a large set of information-processing tasks that his-
+torically were not amenable to mechanization. Over the last three
+decades, computers have substituted for the calculating, coordi-
+nating, and communicating functions of bookkeepers, cashiers,
+telephone operators, and other handlers of repetitive informa-
+tion-processing tasks [Bresnahan 1999].
+     This substitution marks an important reversal. Previous
+generations of high technology capital sharply increased demand
+for human input of routine information-processing tasks, as seen
+in the rapid rise of the clerking occupation in the nineteenth
+century [Chandler 1977; Goldin and Katz 1995]. Like these tech-
+nologies, computerization augments demand for clerical and in-
+formation-processing tasks. But in contrast to its nineteenth cen-
+tury predecessors, it permits these tasks to be automated.
+     The capability of computers to substitute for workers in carry-
+ing out cognitive tasks is limited, however. Tasks demanding exi-
+bility, creativity, generalized problem-solving, and complex commu-
+nications—what we call nonroutine cognitive tasks—do not (yet)
+lend themselves to computerization [Bresnahan 1999]. At present,
+the need for explicit programmed instructions appears a binding
+constraint. There are very few computer-based technologies that can
+draw inferences from models, solve novel problems, or form persua-
+sive arguments.5 In the words of computer scientist Patrick Winston
+
+
+     5. It is, however, a fallacy to assume that a computer must reproduce all of the
+functions of a human to perform a task traditionally done by workers. For example,
+Automatic Teller Machines have supplanted many bank teller functions, although
+they cannot verify signatures or make polite conversation while tallying change.
+Closely related, computer capital may substitute for the routine components of
+predominantly nonroutine tasks, e.g., on-board computers that direct taxi cabs. What
+is required for our conceptual model is that the routine and nonroutine tasks embod-
+ied in a job are imperfect substitutes. Consequently, a decline in the price of accom-
+plishing routine tasks does not eliminate demand for nonroutine tasks.
+

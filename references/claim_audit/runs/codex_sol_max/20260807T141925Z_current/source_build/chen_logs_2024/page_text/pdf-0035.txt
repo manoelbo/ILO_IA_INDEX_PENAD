@@ -1,0 +1,57 @@
+Müller, Ulrich K., “A More Robust t-Test,” The Review of Economics and Statistics, February
+ 2023, pp. 1–46.
+
+Norris, Samuel, Matthew Pecenco, and Jeffrey Weaver, “The effects of parental and sibling
+ incarceration: Evidence from Ohio,” American Economic Review, 2021, 111 (9), 2926–63.
+
+Rambachan, Ashesh and Jonathan Roth, “A More Credible Approach to Parallel Trends,”
+ The Review of Economic Studies, October 2023, 90 (5), 2555–2591.
+
+Rogall, Thorsten, “Mobilizing the masses for genocide,” American Economic Review, 2021, 111
+ (1), 41–72.
+
+Roth, Jonathan, “Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends,”
+ American Economic Review: Insights, September 2022, 4 (3), 305–322.
+
+   and Pedro HC Sant’Anna, “When is parallel trends sensitive to functional form?,” Econo-
+  metrica, 2023, 91 (2), 737–747.
+
+Sequeira, Sandra, “Corruption, Trade Costs, and Gains from Tariff Liberalization: Evidence from
+  Southern Africa,” American Economic Review, October 2016, 106 (10), 3029–3063.
+
+Silva, J. M. C. Santos and Silvana Tenreyro, “The Log of Gravity,” The Review of Economics
+  and Statistics, November 2006, 88 (4), 641–658.
+
+Thakral, Neil and Linh T Tô, “When Are Estimates Independent of Measurement Units?,” 2023.
+
+Tobin, James, “Estimation of Relationships for Limited Dependent Variables,” Econometrica,
+  1958, 26 (1), 24–36. Publisher: [Wiley, Econometric Society].
+
+Williams, C. B., “The Use of Logarithms in the Interpretation of Certain Ento-
+ mological Problems,” Annals of Applied Biology, 1937, 24 (2), 404–414.      _eprint:
+ https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1744-7348.1937.tb05042.x.
+
+Wooldridge, Jeffrey M., “Some Alternatives to the Box-Cox Regression Model,” International
+ Economic Review, 1992, 33 (4), 935–955. Publisher: [Economics Department of the University of
+ Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University].
+
+Wooldridge, Jeffrey M, Econometric Analysis of Cross Section and Panel Data, MIT Press,
+ 2010.
+
+  , “Simple approaches to nonlinear difference-in-differences with panel data,” The Econometrics
+  Journal, September 2023, 26 (3), C31–C66.
+
+Zhang, Junni L. and Donald B. Rubin, “Estimation of Causal Effects via Principal Stratifica-
+ tion When Some Outcomes are Truncated by “Death”,” Journal of Educational and Behavioral
+ Statistics, December 2003, 28 (4), 353–368. Publisher: American Educational Research Associa-
+ tion.
+
+  , , and Fabrizia Mealli, “Evaluating the effects of job training programs on wages through
+  principal stratification,” in Tom Fomby, R. Carter Hill, Daniel L. Millimet, Jeffrey A. Smith, and
+  Edward J. Vytlacil, eds., Modelling and Evaluating Treatment Effects in Econometrics, Vol. 21 of
+  Advances in Econometrics, Emerald Group Publishing Limited, January 2008, pp. 117–145.
+
+
+
+                                                35
+

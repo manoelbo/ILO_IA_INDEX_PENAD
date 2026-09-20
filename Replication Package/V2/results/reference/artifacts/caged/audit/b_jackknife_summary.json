@@ -1,0 +1,57 @@
+{
+  "admissoes": {
+    "any_single_removal_changes_5pct_verdict": true,
+    "baseline": -0.0537723981585714,
+    "draws": 75,
+    "largest_absolute_shift": 0.02799667792526455,
+    "max": -0.03997659619867354,
+    "min": -0.08176907608383595,
+    "most_influential_cbo": "4211",
+    "share_significant_at_5pct": 0.013333333333333334,
+    "sign_flips": 0
+  },
+  "asinh_saldo": {
+    "any_single_removal_changes_5pct_verdict": false,
+    "baseline": -0.5512668862460224,
+    "draws": 75,
+    "largest_absolute_shift": 0.17622342561135623,
+    "max": -0.37504346063466615,
+    "min": -0.6300087988189021,
+    "most_influential_cbo": "1423",
+    "share_significant_at_5pct": 0.0,
+    "sign_flips": 0
+  },
+  "desligamentos": {
+    "any_single_removal_changes_5pct_verdict": true,
+    "baseline": -0.042014072599854,
+    "draws": 75,
+    "largest_absolute_shift": 0.021826904605600467,
+    "max": -0.020738268308704396,
+    "min": -0.06384097720545447,
+    "most_influential_cbo": "4211",
+    "share_significant_at_5pct": 0.013333333333333334,
+    "sign_flips": 0
+  },
+  "ln_salario_real_adm": {
+    "any_single_removal_changes_5pct_verdict": false,
+    "baseline": -0.0507404538197659,
+    "draws": 75,
+    "largest_absolute_shift": 0.005857086754903713,
+    "max": -0.044883367064862185,
+    "min": -0.052411080873705974,
+    "most_influential_cbo": "7686",
+    "share_significant_at_5pct": 1.0,
+    "sign_flips": 0
+  },
+  "n_movimentacoes": {
+    "any_single_removal_changes_5pct_verdict": true,
+    "baseline": -0.0480931611194387,
+    "draws": 75,
+    "largest_absolute_shift": 0.02515734549403472,
+    "max": -0.030899180520784594,
+    "min": -0.07325050661347342,
+    "most_influential_cbo": "4211",
+    "share_significant_at_5pct": 0.013333333333333334,
+    "sign_flips": 0
+  }
+}

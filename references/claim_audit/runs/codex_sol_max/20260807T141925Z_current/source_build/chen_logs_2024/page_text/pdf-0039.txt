@@ -1,0 +1,51 @@
+A.2       Proof of Proposition 2
+Proposition 2 (A trilemma). The following three properties cannot hold simultaneously:
+
+  (a) θg “ EP rgpY p1q, Y p0qqs for a non-constant function g : r0, 8q2 Ñ R that is weakly increasing
+         in its first argument.
+
+ (b) The function g is scale-invariant.
+
+  (c) θg is point-identified over P` .47
+
+Proof. To establish the proof of Proposition 2, we rely on Proposition 3, which shows that the only
+scale-invariant parameter of the form EP rgpY p1q, Y p0qqs that is identified over distributions on the
+positive reals is the ATE in logs (up to an affine transformation).
+       Given Proposition 3, note that if g : r0, 8q2 Ñ R is increasing in y1 , then it cannot be equal
+to c logpy1 {y0 q ` d for c ą 0 everywhere on p0, 8q2 , since this would imply that limy1 Ñ0 gpy1 , 1q “
+´8 ă gp0, 1q. Proposition 2 is then immediate from Proposition 3, which shows that if properties
+(a) and (b) are satisfied, and θg is point-identified over P`` Ă P` , then g “ c logpy1 {y0 q ` d on
+p0, 8q2 . Thus, there does not exist such a g.
+
+Proposition 3. Let P`` denote the set of distributions over compact subsets of p0, 8q2 . Suppose
+g : p0, 8q2 Ñ R is weakly increasing in y1 and scale-invariant. Then θg is point-identified over P``
+if and only if gpy1 , y0 q “ c ¨ plogpy1 q ´ logpy0 qq ` d, for constants c ě 0 and d P R.
+
+Proof. We first show that point-identification over P`` implies that gp¨, ¨q must be additively sepa-
+rable. We do so by considering the points ty0 , y0 ` bu ˆ ty1 , y1 ` au on a rectangular grid. If gp¨, ¨q
+is not additively separable, then its expectation with respect to distributions supported on the
+rectangular grid depends on the correlation. Similar arguments appear in, e.g., Fan et al. (2017).
+       Formally, suppose that there there exist positive values y1 , y0 , a, b ą 0 such that
+
+                         gpy1 , y0 q ` gpy1 ` a, y0 ` bq ‰ gpy1 ` a, y0 q ` gpy1 , y0 ` bq.
+
+Now, consider the marginal distributions PY pdq such that P pY p1q “ y1 q “ 21 “ P pY p1q “ y1 `
+aq and P pY p0q “ y0 q “ 12 “ P pY p0q “ y0 ` bq. Let P1 and P2 denote the joint distributions
+corresponding with these marginals and perfect positive and negative correlation of the potential
+outcomes, respectively. Then we have that
+
+                                                     1
+                            EP1 pgpY p1q, Y p0qqq “    pgpy1 , y0 q ` gpy1 ` a, y0 ` bqq
+                                                     2
+                                                     1
+                                                    ‰ pgpy1 ` a, y0 q ` gpy1 , y0 ` bqq
+                                                     2
+  47
+    A minor technical complication arises from the fact that EP rgpY p1q, Y p0qs could be infinite for some P . For the
+purposes of our result, it suffices to trivially define θg to be identified in this case. Alternatively, the same result
+holds if part (c) is modified to impose only that θg is point-identified over all distributions in P` with finite support,
+thus avoiding issues related to undefined expectations.
+
+
+                                                            2
+

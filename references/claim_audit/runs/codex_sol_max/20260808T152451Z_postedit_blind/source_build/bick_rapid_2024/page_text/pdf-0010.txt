@@ -1,0 +1,47 @@
+    We presented genAI users a list of common products (and a write-in option) and asked them
+to select (all) the products they use. This allows us to compare ChatGPT use in the RPS with
+other surveys. The three most used genAI products were ChatGPT (32% of all respondents),
+Gemini (19%), and embedded tools like Microsoft Copilot (15%). Appendix Figure C.2a shows
+the full distribution of product usage. In April 2024, Fletcher and Nielsen (2024) conducted an
+online survey of ChatGPT adoption using a different survey provider (YouGov). They found
+that 18% of U.S. adults used ChatGPT at least weekly, compared to 22% who used ChatGPT
+in the previous week in our Fall 2024 surveys.6
+
+    A potential concern with online-based surveys is that they may suffer from selection based
+on unobservable characteristics that are correlated with genAI use. For example, online survey
+respondents may be more comfortable using technology and therefore be more likely to use
+genAI than the overall U.S. population. From this perspective, a valuable point of comparison
+is a survey conducted by the Pew Research Center (McClain, 2024). That survey sampled
+respondents using a nationally representative sample of U.S. Postal Services addresses. Im-
+portantly, the survey included respondents without internet access. (Internet access per se is
+unlikely to substantially impact our results: in the 2022 ACS, 96.8% of individuals aged 18-64
+reported having access to the internet.) They find that in February 2024, 27% of U.S. adults
+age 18-64 reported ever having used ChatGPT, compared to 32% of individuals who report
+using ChatGPT in our survey in August and November 2024.
+
+    Finally, we can also compare genAI adoption by workers to adoption by firms. The monthly
+Census BTOS Survey asks firms: “In the last two weeks, did this business use Artificial In-
+telligence (AI) in producing goods or services? (Examples of AI: machine learning, natural
+language processing, virtual agents, voice recognition, etc.)” (Bonney et al., 2024). Between
+August and November 2024, 5.3% of firms report using AI, compared with 32.1% of workers
+who report using genAI in the RPS. While differences in question wording may explain part of
+this gap, they are unlikely to account for all of it.7 We conclude that, so far, genAI adoption
+by workers is outpacing firm-wide adoption, implying that firm-based measures may miss an
+important share of genAI’s impact (Babina et al., 2024).
+
+
+3.2    How Does Early Generative AI Adoption Compare to Other Technologies?
+
+Figure 2 compares the pace of genAI adoption with PCs two to three years since the release of
+the first-mass market product for each technology. (As described in Section 2.2, adoption was
+   6
+     Humlum and Vestergaard (2024) survey a representative sample of workers in eleven occupations in Denmark
+about their usage of ChatGPT at work. We find similar patterns by age, education and gender in the occupations
+covered by both surveys.
+   7
+     For example, some respondents in the BTOS survey may not interpret using a genAI tool in a company’s
+human resource department as being used “in producing goods or services.”
+
+
+                                                      8
+

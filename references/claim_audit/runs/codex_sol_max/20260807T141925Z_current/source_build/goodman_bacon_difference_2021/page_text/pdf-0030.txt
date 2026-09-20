@@ -1,0 +1,55 @@
+unobservables plus a linear approximation to trend deviations before before 𝑡𝑡1∗ . Removing this
+
+trend from the full panel yields an outcome variable that is robust to linear trends, unaffected by
+
+time-varying treatment effects, and weights each 2x2 DD component in the same way as the
+
+unadjusted estimator. Like the unit-specific time trend control strategy, group-specific pre-trends
+
+are sensitive to non-linear unobservables in the pre-period. Appendix C analyzes this estimator in
+
+detail. Partialling out pre-trends yields a unilateral divorce effect of -6.52 (s.e. = 1.7); close to the
+
+average post-treatment effect of -4.92. While inference is outside the scope of this paper (see Athey
+
+and Imbens 2018), note that this two-step strategy necessarily involves a partly estimated outcome
+
+variable so second-stage standard errors are incorrect.
+
+ vi.     Disaggregated time effects
+If counterfactual outcomes evolve differently by a category, 𝑅𝑅, to which units belong, one can
+
+model these changes flexibly by including separate time fixed effects for each category:
+
+                                                   𝑅𝑅(𝑖𝑖)       𝐷𝐷𝐷𝐷
+                                𝑦𝑦𝑖𝑖𝑖𝑖 = 𝛼𝛼𝑖𝑖 + 𝛼𝛼𝑡𝑡        + 𝛽𝛽𝑅𝑅×𝑡𝑡 𝐷𝐷𝑖𝑖𝑖𝑖 + 𝑒𝑒𝑖𝑖𝑖𝑖                 (21)
+
+                    𝐷𝐷𝐷𝐷
+The coefficient 𝛽𝛽� 𝑅𝑅×𝑡𝑡 equals an average of two-way fixed effects estimates by values of 𝑅𝑅 weighted
+
+                                                                       �𝑖𝑖𝑖𝑖 . For simplicity, I refer to 𝑅𝑅
+by the share of units in each 𝑅𝑅 (𝑛𝑛𝑅𝑅 ) and the within-𝑅𝑅 variance of 𝐷𝐷
+
+as “region”, but the analysis is not specific to region-by-time fixed effects. When treatments vary
+
+by county or city, for example, studies include state-by-time fixed effects (e.g. Almond, Hoynes,
+
+and Schanzenbach 2011, Bailey and Goodman-Bacon 2015); when treatments vary by firm studies
+
+include industry-by-year fixed effects (e.g. Kovak, Oldenski, and Sly 2018).
+
+         Since the decomposition theorem holds for each within-region DD estimate, it also holds
+       𝐷𝐷𝐷𝐷                                                                             2𝑥𝑥2   2𝑥𝑥2
+for 𝛽𝛽� 𝑅𝑅×𝑡𝑡 . Each 2x2 DD averages the region-specific 2x2 DD’s (𝛽𝛽
+                                                                   �
+                                                                      𝑘𝑘𝑘𝑘,𝑅𝑅
+                                                                                  �
+                                                                              and 𝛽𝛽 𝑘𝑘ℓ,𝑅𝑅
+                                                                                            ) but the weights
+
+reflect region size and the within-region distribution of timing groups:
+
+
+
+                                                             28
+

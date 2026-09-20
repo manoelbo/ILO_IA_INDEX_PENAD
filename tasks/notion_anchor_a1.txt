@@ -1,0 +1,72 @@
+**Tabela A.1: Diagnósticos dos resultados médios nacionais**
+Painel B.1: Estimativas DiD e diagnósticos dos outcomes principais
+<table header-row="true">
+<tr>
+<td>Resultado</td>
+<td>DiD nacional</td>
+<td>p DiD</td>
+<td>Pretrend</td>
+<td>N</td>
+<td>CBOs</td>
+</tr>
+<tr>
+<td>Admissões (log)</td>
+<td>-0,0309\<br\>(0,0263)</td>
+<td>0,241</td>
+<td>fail (p=0,001)</td>
+<td>18.307</td>
+<td>341</td>
+</tr>
+<tr>
+<td>Desligamentos (log)</td>
+<td>-0,0417\<br\>(0,0254)</td>
+<td>0,102</td>
+<td>fail (p=0,031)</td>
+<td>18.307</td>
+<td>341</td>
+</tr>
+<tr>
+<td>Salário real de admissão (log)</td>
+<td>-0,0207\<br\>(0,0140)</td>
+<td>0,140</td>
+<td>pass (p=0,932)</td>
+<td>18.307</td>
+<td>341</td>
+</tr>
+<tr>
+<td>Saldo líquido (asinh)</td>
+<td>-0,6597\*\<br\>(0,3773)</td>
+<td>0,081</td>
+<td>fail (p\<0,001)</td>
+<td>18.307</td>
+<td>341</td>
+</tr>
+</table>
+Painel B.2: Robustez da construção do saldo
+<table header-row="true">
+<tr>
+<td>Resultado</td>
+<td>DiD nacional</td>
+<td>p DiD</td>
+<td>Pretrend</td>
+<td>N</td>
+<td>CBOs</td>
+</tr>
+<tr>
+<td>Saldo líquido / admissões pré</td>
+<td>0,0119\<br\>(0,0193)</td>
+<td>0,537</td>
+<td>fail (p\<0,001)</td>
+<td>18.299</td>
+<td>340</td>
+</tr>
+<tr>
+<td>Saldo líquido / fluxo total</td>
+<td>0,0042\<br\>(0,0088)</td>
+<td>0,629</td>
+<td>not_available</td>
+<td>18.307</td>
+<td>341</td>
+</tr>
+</table>
+Notas: as células do Painel A apresentam o coeficiente DiD nacional e, entre parênteses, o erro-padrão. O Painel B.1 repete essas estimativas para reunir p-valores, pretrends e suporte da amostra; não se trata de um contraste DDD, pois não há divisão por subgrupo. Os erros-padrão são clusterizados por CBO de quatro dígitos. \* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. O tratamento compara CBOs expostas nos gradientes da OIT a CBOs `Not Exposed`; `Minimal Exposure` não integra o controle principal. O pretrend do Painel B é o teste conjunto dos coeficientes mensais anteriores ao tratamento; `not_available` indica que o teste conjunto não foi estimado para aquela construção. `asinh(saldo)` aceita valores negativos e zero e não deve ser interpretado como percentual. `Saldo/admissões pré` normaliza pelo porte pré-tratamento da CBO; `saldo/fluxo total` divide o saldo por admissões mais desligamentos no mês. As duas medidas do Painel B.2 são checagens de robustez, não outcomes principais. Os p-valores são convencionais e não recebem correção por testes múltiplos. N denota observações CBO-mês, não trabalhadores. A Tabela A.1 usa o teste da especificação original na amostra completa (N=18.307), enquanto a Figura 5.1 usa a janela estrita t=−12,…,24, sem agrupamento de caudas (N=12.538). Os p-valores diferem, embora a classificação pass/fail seja a mesma.

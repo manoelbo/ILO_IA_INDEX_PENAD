@@ -9,7 +9,7 @@ import pandas as pd
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "employer_size.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "employer_size.py"
 
 
 def load_module():
@@ -56,7 +56,14 @@ def test_registration_fields_do_not_identify_public_private() -> None:
 
 
 def test_generated_size_family_and_nature_support_are_complete() -> None:
-    results = PACKAGE_ROOT / "results" / "mechanisms"
+    results = (
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "mechanisms"
+    )
     estimates = pd.read_csv(results / "employer_size_ddd_results.csv")
     size_support = pd.read_csv(results / "employer_size_support.csv")
     nature_support = pd.read_csv(

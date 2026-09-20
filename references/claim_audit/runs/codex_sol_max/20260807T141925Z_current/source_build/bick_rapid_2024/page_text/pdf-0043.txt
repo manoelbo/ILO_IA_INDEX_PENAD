@@ -1,0 +1,30 @@
+  4. I am unsure whether my employer allows me to use Generative AI.
+
+  5. I feel pressure from coworkers to not use Generative AI.
+
+  6. I have privacy or security concerns.
+
+  7. I have ethical concerns.
+
+  8. I am skeptical about the quality and accuracy of AI-generated output.
+
+  9. I am worried that using Generative AI could eventually replace some or all parts of my
+     job.
+
+ 10. I am worried that using Generative AI would dilute my personal style or the creativity
+     and authenticity of my work output.
+
+ 11. Other reasons
+
+
+    We then followed up with the following question, displaying only the answer options selected
+in the previous question.
+
+   You indicated that you not using Generative AI for your job for the following reasons. Please
+rank these tasks from “most important” (top) to “least important” (bottom) by dragging them.
+
+
+
+
+                                              11
+

@@ -1,0 +1,48 @@
+if P refers to the sub-population of compliers for an instrument, for instance, then θ is the local
+average treatment effect (LATE), rather than the ATE in the full population. We are interested in
+how θ changes if we change the units of Y by a factor of a. That is, how does
+
+                                       θpaq “ EP rmpaY p1qq ´ mpaY p0qqs
+
+depend on a? Setting a “ 100, for example, might correspond with a change in units between
+dollars and cents. Of course, if Y is strictly positive and mpyq “ logpyq, then θpaq is the ATE in
+logs and does not depend on the value of a.
+       We consider “log-like” functions mpyq that are well-defined at zero but behave like logpyq for
+large values of y, in the sense that mpyq{ logpyq Ñ 1 as y Ñ 8. This property is satisfied by
+logp1 ` yq and arcsinhpyq, for example. Our first main result shows that if the treatment affects the
+extensive margin, then |θpaq| can be made to take any desired value through the appropriate choice
+of a.
+Proposition 1. Suppose that:
+
+   1. (The function m is continuous and increasing) m : r0, 8q Ñ R is a continuous, weakly in-
+         creasing function.
+
+   2. (The function m behaves like log for large values) mpyq{ logpyq Ñ 1 as y Ñ 8.
+
+   3. (Treatment affects the extensive margin) P pY p1q “ 0q ‰ P pY p0q “ 0q.
+
+   4. (Finite expectations) EPY pdq r| logpY pdqq| | Y pdq ą 0s ă 8 for d “ 0, 1.6
+
+Then, for every θ ˚ P p0, 8q, there exists an a ą 0 such that |θpaq| “ θ ˚ . In particular, θpaq is
+continuous with θpaq Ñ 0 as a Ñ 0 and |θpaq| Ñ 8 as a Ñ 8.
+       Proposition 1 casts serious doubt on the interpretation of ATEs for functions like logp1 ` Y q or
+arcsinhpY q as (approximate) average percentage effects. While a percent (or log point) is entirely
+invariant to the units of the outcome, Proposition 1 shows that, in sharp contrast, the ATEs for
+these transformations are arbitrarily dependent on units.
+
+2.1      Intuition for Proposition 1
+Loosely speaking, the result in Proposition 1 follows from the fact that a “percentage” treatment
+effect is not well-defined for individuals who have Y p0q “ 0 but Y p1q ą 0.7 Any ATE that is well-
+defined with zero-valued outcomes must implicitly determine how much weight to place on changes
+along the extensive margin relative to proportional changes along the intensive margin.
+       When mpY q behaves like logpY q for large values of Y , the importance of the extensive margin
+is implicitly determined by the units of Y . For intuition, suppose that we re-scale the outcomes so
+   6
+   This assumption simply ensures that EPY pdq r|mpaY pdqq| | Y ą 0s exists for all values of a ą 0.
+   7
+   See Delius and Sterck (2020) for an intuitive discussion of this difficulty in the context of the arcsinhp¨q transfor-
+mation. They write, “the concept of elasticity itself does not make sense with zeros” (p. 21).
+
+
+                                                           6
+

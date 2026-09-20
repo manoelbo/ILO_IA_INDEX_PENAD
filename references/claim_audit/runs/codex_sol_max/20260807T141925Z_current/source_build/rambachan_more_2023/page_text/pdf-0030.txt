@@ -1,0 +1,41 @@
+2584                                   REVIEW OF ECONOMIC STUDIES
+
+
+
+
+                                                                                                                        Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                        F IGURE 4
+          Event-study coefficients {βs } for log profits, estimated using the event-study specification in (19).
+
+
+
+than those in the pre-treatment period—whereas imposing that industry-specific shocks fol-
+low a smooth trend seems unreasonable—and so we base our analysis on bounds on relative
+magnitudes  R M ( M̄).
+    The left panel of Figure 5 shows robust confidence sets for the treatment effect in 2009 for
+ R M ( M̄) using different values of M̄. The figure shows that if we impose M̄ = 1, meaning that
+we restrict the post-treatment violations of parallel trends to be no larger than the maximal pre-
+treatment violation of parallel trends, then we obtain a robust confidence set of [0.07, 0.31] for
+the causal effect on restaurant profits in 2009. This is wider than the original OLS confidence
+interval which is only valid if parallel trends holds exactly, but nevertheless rules out a null effect
+on restaurant profits in 2009. Looking further to the right, we see that the “breakdown value” for
+a null effect is around M̄ = 2. Thus, our conclusion of a significant effect on restaurant profits
+depends on whether we are willing to restrict that the post-treatment violations of parallel trends
+can be no more than twice as large as the maximal pre-treatment violation. Given that the first
+year after the treatment coincided with a large recession in France (2009), it may be plausible
+that the differential factors affecting restaurants were larger in that year than in the pre-treatment
+period. Our approach helps formalize how much larger they would need to be to reject the
+conclusion of a null effect (or other hypotheses).
+    The right panel of Figure 5 shows analogous results when the estimand is the average causal
+effect on restaurant profits across all four post-treatment periods (τ̄ ). When M̄ = 1, our robust
+confidence set now includes zero, and is about twice as large as for the first-period effect. The
+intuition for why the confidence sets are larger when looking at τ̄ than τ2009 is that  R M ( M̄)
+bounds the violation of parallel trends across consecutive periods by M̄ times the max in the
+pre-treatment period. Thus, the identified set will be larger for later periods, since the treatment
+and control groups have more time to diverge (e.g. the identified set for the second period will
+be twice as larger as for the first period).34 If we are willing to bound the magnitude of economic
+
+
+      34. This intuition holds generally for choices of  that bound changes across consecutive periods, but need not
+necessarily hold for other types of restrictions.
+

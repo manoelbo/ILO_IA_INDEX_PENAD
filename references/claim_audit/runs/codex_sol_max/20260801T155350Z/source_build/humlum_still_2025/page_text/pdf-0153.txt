@@ -1,0 +1,44 @@
+                              Survey Questionnaire – Danish Version
+
+1. Introduction
+AI chatbots bruger kunstig intelligens til at læse og skrive tekst. Du er blevet udvalgt til at deltage i
+denne undersøgelse, fordi du arbejder i et erhverv, hvor det kan være relevant at bruge AI chatbots.
+Din deltagelse er vigtig uanset dit kendskab til chatbots eller kunstig intelligens.
+
+                                        Block 1: Occupation and tasks
+2.a Occupation
+Er du beskæftiget med [journalistik]?
+    • Ja
+    • Nej
+
+2.b Occupation [if 2.a=’Nej’]
+Er du beskæftiget inden for et af følgende områder?
+Hvis du er beskæftiget indenfor flere områder, vælg da dit primære arbejdsområde.
+    • HR-arbejde
+    • IT-support
+    • Kontor- og sekretærarbejde
+    • Kundesupport
+    • Juridisk arbejde
+    • Marketing
+    • Revisions- og regnskabsarbejde
+    • Softwareudvikling
+    • Undervisning
+    • Økonomisk rådgivning
+    • Jeg er ikke beskæftiget inden for ovenstående arbejdsområder
+
+3. Task Importance [if 2.b!= ’Jeg er ikke beskæftiget inden for ovenstående arbejdsområder’; all tasks]
+Vi vil først spørge ind til nogle typiske arbejdsopgaver blandt [journalister].
+Til hver opgave bedes du vurdere, hvor vigtig opgaven er for dit arbejde.
+Ekstremt vigtig betyder, at opgaven er kritisk for varetagelsen af dit nuværende job.
+[Skrive kommentarer, klummer eller artikler]
+     • Ikke vigtig
+     • Lidt vigtig
+     • Vigtig
+     • Meget vigtig
+     • Ekstremt vigtig
+
+
+
+
+                                                    118
+

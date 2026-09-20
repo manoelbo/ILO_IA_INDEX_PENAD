@@ -1,0 +1,14 @@
+.DS_Store
+.pytest_cache/
+.replication-work/
+.venv/
+__pycache__/
+*.py[cod]
+results/reproduced/
+
+# Public replication contracts and provenance override repository-wide
+# extensions ignored for raw data and generated outputs.
+!config/
+!config/*.csv
+!provenance/
+!provenance/*.json

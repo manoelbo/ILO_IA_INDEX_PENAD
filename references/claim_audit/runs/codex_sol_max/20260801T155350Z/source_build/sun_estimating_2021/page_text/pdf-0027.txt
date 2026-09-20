@@ -1,0 +1,73 @@
+          ∞ is mean independent of the timing of hospitalization. The parallel trends assumption is more
+outcome Yi,t
+
+plausible as it allows the timing to depend on unobserved time-invariant characteristics such as chronic dis-
+
+ease. Furthermore, hospitalized individuals might be on a downward trend for labor earnings already prior to
+
+hospitalization compared to individuals who are never hospitalized. To reduce such confounding, we follow
+
+Dobkin et al. (2018) to restrict the parallel trends assumption to individuals who were ever hospitalized.
+
+      No anticipatory behavior (Assumption 2). It is plausible that there is no anticipatory behavior prior
+
+to the hospitalization, given that the treatment is restricted to conditions that are likely unexpected hospital-
+
+izations. This assumption may be violated if individuals have private information about the probability of
+
+these hospitalizations over time and thus adjust their behavior prior to hospitalization.
+
+      Treatment effect heterogeneity (Assumptions 3). For out-of-pocket medical spending, the effect of
+
+hospitalization is potentially heterogenous across individuals hospitalized in different waves. Individuals
+
+hospitalized in later waves are mechanically older at the time of hospitalization than individuals hospitalized
+
+in earlier waves. The effect on out-of-pocket medical spending is largely determined by generosity of
+
+health insurance, which may decrease as individuals age into Medicare. The effect on labor earnings is also
+
+likely heterogenous as it depends on the labor market condition at the time of hospitalization: for example,
+
+individuals hospitalized during the financial crisis may find it more difficult to return to the labor force, and
+
+suffer a more grave decrease in earnings.
+
+
+5.3     Illustrating weights in two-way fixed effects regression
+
+We illustrate our results on two-way fixed effects regression by estimating the following specification with
+
+indicators for up to three leads and lags following equation (3) of Dobkin et al. (2018)
+
+
+                  Yi,t = αi + λt + µ−3 Di,t
+                                        −3
+                                            + µ−2 Di,t
+                                                   −2
+                                                       + µ0 Di,t
+                                                             0
+                                                                 + µ1 Di,t
+                                                                       1
+                                                                           + µ2 Di,t
+                                                                                 2
+                                                                                     + µ3 Di,t
+                                                                                           3
+                                                                                               + υi,t .     (29)
+
+
+For their estimation, Dobkin et al. (2018) trim their sample, keeping only observations up to three waves
+
+prior to the hospitalization and three waves after the hospitalization, and weight their regression with survey
+
+weights. To fully illustrate issues with this specification, we do not trim, but rather use a sample balanced in
+
+calendar time for t ∈ {0, . . ., 4}, and do not apply survey weights. With a sample balanced in calendar time,
+
+we need to exclude at least two relative period indicators due to multicollinearity. Following Dobkin et al.
+
+(2018), we exclude the period right before hospitalization (` = −1). We also exclude ` = −4. Since we do
+
+
+                                                           27
+

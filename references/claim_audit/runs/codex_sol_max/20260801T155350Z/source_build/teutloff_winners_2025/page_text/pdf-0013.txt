@@ -1,0 +1,16 @@
+O. Teutloff et al.                                                                            Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+
+
+Fig. 5. Estimates of log change in demand at the skill cluster level. Error bars denote standard errors, and the node size is proportional to the log average
+number of job postings in the given skill cluster.
+
+
+
+
+Randomization inference. As noted by MacKinnon and Webb (2020), randomization inference can provide more accurate p-values
+when the share of treated clusters is small relative to the control clusters, resulting in either too large or too small standard errors.
+
+                                                                             13
+

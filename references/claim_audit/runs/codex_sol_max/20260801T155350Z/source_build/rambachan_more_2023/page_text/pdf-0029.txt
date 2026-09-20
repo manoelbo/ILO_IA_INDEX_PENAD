@@ -1,0 +1,59 @@
+       RAMBACHAN AND ROTH               A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                 2583
+
+accompany the paper.32 Furthermore, these confidence sets are quick to compute. Each sensitiv-
+ity analysis plot in the empirical applications below took less than 9 minutes to compute on a
+2012 Macbook Pro with a 2.3 GHz Quad-Core Intel Core i7 and 16 GB RAM.
+
+    6.1.3. Sensitivity analyses. Once the researcher has chosen a baseline class of restrictions
+on the possible violations of trends (e.g. relative magnitudes bounds  R M ( M̄) or smoothness
+bounds SD (M)), we recommend conducting sensitivity analysis over the associated param-
+eter ( M̄ ≥ 0 or M ≥ 0, respectively) that governs how different the post-treatment violations
+
+
+
+
+                                                                                                                              Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+of parallel trends can be from the pre-trends. It is natural to report both the sensitivity of the
+researcher’s causal conclusion to the choice of this parameter and the “breakdown” parameter
+value at which particular hypotheses of interest can no longer be rejected; similar “breakdown”
+concepts appear in the partial identification settings of Horowitz and Manski (1995), Kline and
+Santos (2013), Manski and Pepper (2018), and Masten and Poirier (2020).33 We illustrate how
+one can interpret the magnitudes of the breakdown points in our two empirical illustrations
+below.
+
+
+6.2.    Estimating the incidence of a value-added tax cut
+Benzarti and Carloni (2019b, henceforth, BC) study the incidence of a decrease in the value-
+added tax (VAT) on restaurants in France. France reduced its VAT on sit-down restaurants from
+19.6 % to 5.5 % in July of 2009. BC analyse the impact of this change using a dynamic DiD
+design that compares restaurants to a control group of other market services firms that were not
+affected by the VAT change, estimating the OLS regression specification
+                                       
+                              Yit =             βs × 1[t = s] × Di + φi + λt + it ,                                  (19)
+                                      s=2008
+
+
+where Yit is the log of (before-tax) profits for firm i in year t; Di is an indicator for whether
+firm i is a restaurant; φi and λt are firm and year fixed effects; and standard errors are clustered
+at the regional level. BC’s main finding is that the VAT reduction had a large, positive effect
+on restaurant profits. Figure 4 shows the estimated event-study coefficients {β̂s } from specifi-
+cation (19) (Benzarti and Carloni, 2019a). We can formally reject the hypothesis that β pr e = 0
+( p < 0.01), as there appears to have been a difference in trends between 2006 and 2007. Nev-
+ertheless, the post-treatment coefficients for 2009–2011 appear to be substantially larger in
+magnitude than any of the pre-trends coefficients.
+    A key concern in this empirical setting is that there may be unobserved, industry-specific
+or macroeconomic shocks that would have affected restaurants differently from other market-
+services firms even in the absence of a change in VAT. It seems reasonable to impose that
+the industry-specific shocks to restaurants in the post-treatment period are not too much larger
+
+
+         32. The latest version of the R and Stata packages are respectively available at
+http://github.com/asheshrambachan/HonestDiD and https://github.com/mcaceresb/stata-honestdid/.
+         33. Our main focus in this paper is on constructing robust confidence sets given a particular restriction (M),
+rather than inference on the identification breakdown point or breakdown frontier as in e.g. Masten and Poirier (2020).
+Note, however, that if we define M ∗ = min M s.t. 0 ∈ S(β, (M)) to be the identification breakdown point for a null
+effect, and M̂ ∗ = min M s.t. 0 ∈ C(β̂ n , ˆ n ; (M)) to be the sample breakdown point, then P( M̂ ∗ ≥ M ∗ ) ≥ P(0 ∈
+C(β̂ n , ˆ n ; (M ∗ )). It follows that (−∞, M̂ ∗ ] is a valid (1 − α)-level confidence interval for M ∗ provided that our
+conditions for size control are satisfied for (M ∗ ). We suspect that our results could be extended to allow for uniform
+coverage of the breakdown frontier under additional regularity conditions, but leave this to future work.
+

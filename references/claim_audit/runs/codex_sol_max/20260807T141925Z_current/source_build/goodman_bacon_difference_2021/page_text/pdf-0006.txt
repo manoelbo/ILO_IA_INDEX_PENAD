@@ -1,0 +1,50 @@
+do. These weights, derived from the estimator itself, form the basis of a new balance test that
+
+generalizes the traditional notion of balance between treatment and control groups, and improves
+
+on existing strategies that test between treated/untreated units or early/later treated units.
+
+       Finally, I use the weighted average result to develop simple tools to describe the general
+
+DD design and evaluate why estimates change across specifications. Simply plotting the 2x2 DD’s
+
+against their weight displays heterogeneity in the estimated components and shows which terms
+
+or groups matter most. Summing the weights on the timing comparisons versus treated/untreated
+
+comparisons quantifies “how much” of the variation comes from timing (a common question in
+
+practice). Additionally, the difference between DD estimates across specifications can often be
+
+written as a Oaxaca-Blinder-Kitagawa style decomposition allowing researchers to calculate how
+
+much comes from the 2x2 DD’s, the weights, or the interaction of the two. The source of instability
+
+matters because changes due to different weighting reflect changes in the estimand (not bias),
+
+while changes in the 2x2 DD’s suggest that covariates address confounding. Scatter plots of the
+
+2x2 DD’s (or the weights) from different specifications show which specific terms drive these
+
+differences. I develop this approach for models that weight, use triple-differences, control for unit-
+
+specific time trends (or pre-trends only), and control for disaggregated time fixed effects.
+
+       To demonstrate these methods I replicate Stevenson and Wolfers (2006) two-way fixed
+
+effects DD study of the effect of unilateral divorce laws on female suicide rates. The two-way
+
+fixed effects model suggest that unilateral divorce leads to 3 fewer suicides per million women.
+
+More than a third of the identifying variation comes from treatment timing and the rest comes from
+
+comparisons to states with no reforms during the sample period. Event-study estimates show that
+
+the treatment effects vary strongly over time, however, which biases many of the timing
+
+comparisons. The DD estimate (-3.08) is therefore a misleading summary estimate of the average
+
+
+
+                                                   4
+

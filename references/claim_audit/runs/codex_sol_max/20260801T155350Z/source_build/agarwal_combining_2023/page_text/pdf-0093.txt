@@ -1,0 +1,19 @@
+                                                                                                 93
+
+C.4.4   Incentives
+
+This section tests if incentives for assessment accuracy promote radiologists to make more
+accurate assessments. We find that the incentives do not play a significant role in getting
+a correct response. The effect of incentives are estimated using the following regression
+specification and the results are shown in Table C.14.
+
+        Yirt =γhi + γIN C · dIN C (r)
+               + γCH · dCH (t) + γCH×IN C · dCH (t).dIN C (r)
+               + γAI · dAI (t) + γAI×IN C · dAI (t).dIN C (r)
+               + γAI×CH · dCH (t) · dAI (t) + γAI×CH×IN C · dCH (t) · dAI (t).dIN C (r) + εirt
+
+where Yirt is an outcome variable of interest for radiologist r diagnosing patient case-pathology
+i and treatment t, and γhi are pathology fixed effects. Here CH refers to cases with access to
+clinical history information, AI to cases with AI predictions and IN C refers to incentivized
+cases.
+

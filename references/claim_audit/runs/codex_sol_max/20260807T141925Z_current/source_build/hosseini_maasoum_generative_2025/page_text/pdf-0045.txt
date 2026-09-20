@@ -1,0 +1,47 @@
+Lodefalk, M., Löthman, L., Koch, M., and Engberg, E. (2026). Same storm, different boats: Gener-
+  ative AI and the age gradient in hiring. Technical report, Working Paper.
+Medical Design & Development Staff (2023). Nuance, Microsoft Develop AI-Automated Clinical
+  Documentation Application. Accessed 2025-10-30.
+Mia Sato (2023). CNET is Doing Big Layoffs Just Weeks After AI-generated Stories Came to Light.
+  Accessed 2025-10-30.
+Moll, B. and Hanney, O. (2025). The ‘Missing Intercept’ Problem with Going from Micro to Macro.
+  VoxDev. Accessed: 2025-09-28.
+Montiel Olea, J. L. and Plagborg-Møller, M. (2021). Local Projection Inference Is Simpler and More
+  Robust Than You Think. Econometrica, 89(4):1789–1823.
+Morgan Stanley (2023). Morgan Stanley Wealth Management Announces Key Milestone in Inno-
+  vation Journey with OpenAI. Press Release. Accessed 2025-10-29.
+Noy, S. and Zhang, W. (2023). Experimental Evidence on the Productivity Effects of Generative
+  Artificial Intelligence. Science, 381(6654):187–192.
+Ottonello, P. and Winberry, T. (2020). Financial Heterogeneity and the Investment Channel of
+  Monetary Policy. Econometrica, 88(6):2473–2502.
+Reuters (2023a). IBM to pause hiring as it plans to replace 7,800 jobs with AI. Reuters.
+Reuters (2023b). Meta creates Top-Level Team to Focus on AI. Reuters. Accessed 2025-10-29.
+Reuters (2023c). Meta to Cut 10,000 Jobs, Eliminate 5,000 Open Roles in Efficiency Push. Reuters.
+Revelio Labs (2025). Revelio Labs Workforce Data. Accessed via Wharton Research Data Services.
+Sherwood News (2024). Companies are talking about ai considerably less than before. Article
+  discussing trends in AI mentions; cites FactSet CallStreet transcripts.
+Simon, L. K. (2025). Is AI Responsible for the Rise in Entry-Level Unemployment? Revelio Labs.
+The Atlantic (2025). Something Alarming Is Happening to the Job Market. By Derek Thompson.
+  Published in The Atlantic, April 2025.
+The New York Times (2025a). For Some Recent Graduates, the A.I. Job Apocalypse May Already
+  Be Here.
+The New York Times (2025b). LinkedIn Executive: A.I. Is Coming for Entry-Level Jobs. Accessed:
+  2025-06-20.
+The Wall Street Journal (2025a). AI Is Wrecking an Already Fragile Job Market for College Gradu-
+  ates. The Wall Street Journal. Accessed September 25, 2025.
+The Wall Street Journal (2025b). The ‘Great Hesitation’ That’s Making It Harder to Get a Tech Job.
+  Accessed: 2025-06-20.
+The Wendy’s Company (2023). Wendy’s Taps Google Cloud to Revolutionize the Drive-Thru
+  Experience with Artificial Intelligence. PR Newswire. Accessed 2025-10-29.
+TMCnet (2023). Presto and CKE Restaurants Announce Drive-Thru Voice AI Automation Partner-
+  ship. Press release via TMCnet, accessed 2025-10-30.
+U.S. Bureau of Labor Statistics (2025). All Employees, Information [CEU5000000001]. Retrieved
+  from FRED, Federal Reserve Bank of St. Louis.
+Wolf, C. K. (2023). The Missing Intercept: A Demand Equivalence Approach. American Economic
+  Review, 113(8):2232–2269.
+
+
+
+
+                                               45
+

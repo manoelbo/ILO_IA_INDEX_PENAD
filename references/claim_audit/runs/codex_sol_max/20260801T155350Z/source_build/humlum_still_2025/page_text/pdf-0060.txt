@@ -1,0 +1,63 @@
+Demand for human capital. Combining Equations (55)-(56), the aggregate demand
+
+for human capital by encouraged firms relative to non-encouraged firms satisfies
+
+                          D                                P[Ej = 1]H1:0
+                         H1:0 (W1:0 | Fκ , |{z}
+                                            ϵ )=                                                (57)
+                                | {z } |{z}
+                                                  +
+                                                           1 − P[Ej = 1]
+                                 −      +
+                                                                                  −ϵ
+                                                          Fκ [(1 − ϵ) log W1:0 ] W1:0
+                                                        =                             ,         (58)
+                                                          1 − Fκ [(1 − ϵ) log W1:0 ]
+
+which is strictly decreasing in the relative skill price W1:0 , strictly increasing in the elasticity
+
+of product demand ϵ (since W1:0 < 1 in equilibrium), and increasing in Fκ . Intuitively,
+
+the relative demand for human capital at encouraged firms is higher when encouragement
+
+costs are low (i.e., Fκ (x) is high for any x), the relative skill price W1:0 is low (enhancing
+
+the productivity advantage of encouraged firms), and product demand is highly elastic
+
+(allowing firms to scale more easily, recoup encouragement costs, and hire more workers).
+
+
+Adoption. The share of workers who sort into encouraged firms and adopt chatbots
+
+satisfies (following Equation (22)):
+
+                                              1
+                            P[Ai = 1] = i∗ = − (α̂0 + α̂1 + log W1:0 ).                         (59)
+                                              β̂
+
+Supply of human capital. The aggregate supply of human capital to encouraged firms
+
+satisfies:
+                                            Z i∗
+   H1S (W1:0 | αb , αc , βb , βc ) =                  exp(αb0 + αb1 + βb i)di                   (60)
+        | {z } |{z} |{z} |{z} |{z}            0
+             +   +   −      +      −
+                                    exp(αb0 + αb1 )              ∗
+                                  =                 [exp(βb i)]i0                               (61)
+                                         βb
+                                                    "                                  #
+                                    exp(αb0 + αb1 )          βb
+                                  =                  exp(− (α̂0 + α̂1 + log W1:0 )) − 1 ,       (62)
+                                         βb                  β̂
+
+which is strictly increasing in the relative skill price (W1:0 ), strictly increasing in both the
+
+common and idiosyncratic productivity benefits of AI chatbots (αb and βb ), and strictly
+
+decreasing in both the common and idiosyncratic adoption costs (αc and βc )—under the
+
+assumption that chatbots are never counterproductive when encouraged (i.e., Bij (i =
+
+
+                                                           25
+

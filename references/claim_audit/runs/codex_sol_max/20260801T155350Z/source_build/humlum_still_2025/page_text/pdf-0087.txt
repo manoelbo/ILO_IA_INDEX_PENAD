@@ -1,0 +1,60 @@
+new responsibilities introduced by AI tools.
+
+    The importance of task creation for the impact of AI chatbots on workloads supports
+
+key theoretical predictions for how automation technologies may reinstate the demand for
+
+labor in the production process (Acemoglu and Restrepo, 2019; Autor et al., 2024). To
+
+further understand how AI chatbots affect the nature of work, we asked respondents to
+
+describe the new job tasks they perform as a result of AI chatbots. In Appendix B.3, we
+
+categorize the free-text responses into common new tasks associated with AI chatbots
+
+in each occupation. AI chatbots have generated new job tasks for workers across all 11
+
+occupations, with 50% to 95% of these directly linked to AI use.
+
+    Appendix B.3 breaks down the composition of AI-related job tasks by occupation
+
+and task category, and provides example tasks for each pair. Notably, most new work
+
+revolves around integrating and overseeing the use of AI chatbots. Specifically, only 41%
+
+of new tasks focus on “productive AI use” (AI Ideation, AI Content Drafting, and AI
+
+Data Insights), while the remaining 59% relate to “AI implementation and oversight” (AI
+
+Quality Review, AI Integration, and AI Ethics & Compliance).35
+
+    Figure E.10 shows that ethics and compliance tasks are especially common among
+
+workers who have received employer-provided training in AI chatbots. In contrast,
+
+workplaces that merely encourage chatbot use have a higher share of “productive AI tasks”
+
+focused on content generation and ideation.
+
+    Consistent with the finding that AI chatbot workloads extend beyond direct use,
+
+Figure D.5.(b) shows that 5% of non-users report new workloads resulting from AI
+
+chatbots, with the effects most pronounced in workplaces with chatbot initiatives. In
+
+particular, Figure B.1.(b) shows that 10% of teachers who have not used AI chatbots
+
+report new workloads from the technology—almost entirely due to newly assigned tasks.
+  35
+     The most common task relates to the integration of AI chatbots into the workplace, accounting for
+15%–40% of all new tasks, with the highest shares observed in IT support and software development. AI
+Integration refers to embedding AI chatbots into workflows to automate or enhance tasks. For example,
+software developers report “fine-tuning AI coding assistants by providing feedback and project-specific
+examples,” legal professionals describe “developing organizational AI usage policies and guidelines,” and
+teachers mention “adapting exams and assignments to account for AI tool usage.”
+
+
+
+
+                                                   52
+

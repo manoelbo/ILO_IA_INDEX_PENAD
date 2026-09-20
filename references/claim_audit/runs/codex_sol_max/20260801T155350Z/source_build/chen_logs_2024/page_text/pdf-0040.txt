@@ -1,0 +1,50 @@
+                                                        “ EP2 pgpY p1q, Y p0qqq,
+
+and thus θg is not point-identified from the marginals at P1 . Hence, if θg is identified over P`` ,
+then it must be that
+
+              gpy1 , y0 q ` gpy1 ` a, y0 ` bq “ gpy1 ` a, y0 q ` gpy1 , y0 ` bq for all y1 , y0 , a, b ą 0,
+
+and hence
+
+              gpy1 ` a, y0 q ´ gpy1 , y0 q “ gpy1 ` a, y0 ` bq ´ gpy1 , y0 ` bq for all y1 , y0 , a, b ą 0.
+
+It follows that we can write gpy1 , y0 q “ rpy1 q ` qp y10 q, where rpy1 q “ gpy1 , 1q ´ gp1, 1q and qp y10 q “
+gp1, y0 q.
+       Second, we show that homogeneity of degree zero, combined with monotonicity, implies that g
+must be a difference in logarithms. Observe that since g is scale-invariant,
+                                                  ˆ           ˙        ˆ         ˙     ˆ ˙
+                                                      y1 y0                y1           y1
+                                gpy1 , y0 q “ g         ,         “g          , 1 “: h     ,
+                                                      y0 y0                y0           y0
+
+where h is an increasing function. We thus have that for any a, b ą 0,
+
+                                          gp1, 1q “ hp1q “ rp1q ` qp1q
+                                          gpa, 1q “ hpaq “ rpaq ` qp1q
+                                           ˆ      ˙
+                                                1
+                                          g 1,      “ hpbq “ rp1q ` qpbq
+                                                b
+                                           ˆ      ˙
+                                                1
+                                          g a,      “ hpabq “ rpaq ` qpbq
+                                                b
+
+and hence hpabq “ hpaq`hpbq´hp1q. It follows that h̃pxq “ hpxq´hp1q is an increasing function such
+that h̃pabq “ h̃paq ` h̃pbq for all a, b P R, i.e. an increasing function satisfying Cauchy’s logarithmic
+function equation: φpabq “ φpaq ` φpbq for all positive reals a, b. Recall that if a function is
+increasing, then it has countably many discontinuity points, and thus is continuous somewhere.
+It is a well-known result in functional equations that the only solutions to Cauchy’s logarithmic
+equation are of the form φptq “ c logptq, if we require that these solutions are continuous at some
+point; see Aczél (1966), Theorem 2 in Section 2.1.2.48 Since we require monotonicity, the constant
+c ě 0. Thus, gpy1 , y0 q “ hpy1 {y0 q “ h̃py1 {y0 q ` h̃p1q “ c logpy1 q ´ c logpy0 q ` h̃p1q. Letting d “ h̃p1q
+completes the proof of Proposition 3.
+  48
+       Correspondingly, non-trivial solutions to Cauchy’s logarithmic equations are highly ill-behaved.
+
+
+
+
+                                                                  3
+

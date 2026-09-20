@@ -1,0 +1,40 @@
+captures how much experience an occupation requires rather than the actual seniority of
+its workforce, providing an independent check that the Revelio-based classification aligns
+with established occupational characteristics.
+
+
+O*NET task-to-occupation mapping.        The AEI matches conversations to O*NET task
+descriptions, and the O*NET task statements database provides the mapping from tasks
+to detailed occupations (8-digit O*NET-SOC codes). Each task may appear in multiple
+occupations, and each occupation contains multiple tasks. We merge the AEI usage data
+with this mapping to create a dataset at the task–occupation level, where each observation
+represents a specific O*NET task within a specific occupation, with associated GenAI
+usage statistics. After merging, the analysis sample contains 4,494 task–occupation pairs
+spanning 753 occupations across 22 two-digit SOC groups.
+
+
+A.7.2   Descriptive Patterns
+
+Table A.1 reports average GenAI usage patterns by Revelio seniority tercile. To summa-
+rize the balance between automation and augmentation in GenAI usage, we construct
+two measures at the task level: displacement intensity, defined as the share of classified
+GenAI interactions (displacement + augmentation) accounted for by displacement-type
+modes (directive and feedback loop), and augmentation intensity, defined analogously for
+augmentation-type modes (learning, validation, and task iteration). The two sum to 100%
+by construction for each task.
+   The aggregation from raw conversations to the tercile-level statistics in Table A.1 pro-
+ceeds as follows. First, the AEI assigns each conversation a collaboration mode and maps
+it to an O*NET task; we compute mode shares at the task–occupation level (the share of
+conversations for a given task in a given occupation that fall into each mode). Second, we
+aggregate to the occupation level by taking weighted averages of task-level mode shares,
+with weights proportional to AEI task usage counts. Third, we classify occupations into
+terciles based on Revelio seniority and report unweighted averages across occupations
+within each tercile. The regression analyses in Table A.2 use the occupation-level mea-
+sures as dependent variables. The sample shrinks from 753 occupations (full merged
+sample) to 559 in Table A.1 (requiring ≥50 Revelio workers for tercile assignment) and to
+387 in Table A.2 (additionally requiring ≥3 AI-used tasks and non-missing seniority).
+
+
+
+                                          A.28
+

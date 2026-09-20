@@ -1,0 +1,52 @@
+A.22         Most Common High- and Low-Exposed Occupations by Industry
+
+Table A.6: Most Common Low/High-Exposure Occupations by Industry (Share of All ONET Roles
+in Industry)
+
+ NAICS                   Low Exposure (Top 5)                                          High Exposure (Top 5)
+ 3                       – Door-to-Door Sales Workers, News and Street Vendors, and    – Software Developers (6.8%)
+ Manufacturing           Related Workers (5.4%)                                        – Computer User Support Specialists (2.7%)
+                         – Retail Salespersons (2.2%)                                  – Customer Service Representatives (2.5%)
+                         – Maintenance Workers, Machinery (1.8%)                       – Bioengineers and Biomedical Engineers (2.0%)
+                         – Machinists (1.4%)                                           – Validation Engineers (1.9%)
+                         – Biofuels Processing Technicians (1.4%)
+ 4                       – Retail Salespersons (9.9%)                                  – Customer Service Representatives (5.8%)
+ Trade / Retail          – Gambling Change Persons and Booth Cashiers (5.8%)           – Computer User Support Specialists (1.7%)
+                         – Cashiers (4.6%)                                             – Bookkeeping, Accounting, and Auditing Clerks (1.6%)
+                         – Stockers and Order Fillers (4.0%)                           – Software Developers (1.6%)
+                         – Merchandise Displayers and Window Trimmers (3.5%)           – Sales Representatives, Wholesale and Manufacturing, Ex-
+                                                                                       cept Technical and Scientific Products (1.6%)
+ 51                      – Actors (2.3%)                                               – Software Developers (13.1%)
+ Information             – Retail Salespersons (1.7%)                                  – Writers and Authors (6.0%)
+                         – Door-to-Door Sales Workers, News and Street Vendors, and    – News Analysts, Reporters, and Journalists (5.6%)
+                         Related Workers (1.2%)                                        – Editors (4.2%)
+                         – Nannies (1.1%)                                              – Customer Service Representatives (4.0%)
+                         – Career/Technical Education Teachers, Secondary School
+                         (1.0%)
+ 52                      – Gambling Change Persons and Booth Cashiers (0.9%)           – Loan Officers (7.9%)
+ Finance & Insur-        – Door-to-Door Sales Workers, News and Street Vendors, and    – Customer Service Representatives (7.2%)
+ ance                    Related Workers (0.8%)                                        – Securities, Commodities, and Financial Services Sales
+                         – Phlebotomists (0.6%)                                        Agents (6.1%)
+                         – Retail Salespersons (0.6%)                                  – Loan Interviewers and Clerks (5.5%)
+                         – Nannies (0.5%)                                              – Software Developers (4.4%)
+ 54                      – Demonstrators and Product Promoters (1.0%)                  – Software Developers (7.4%)
+ Professional     Ser-   – Medical and Clinical Laboratory Technicians (1.0%)          – Writers and Authors (5.7%)
+ vices                   – Door-to-Door Sales Workers, News and Street Vendors, and    – Accountants and Auditors (4.1%)
+                         Related Workers (0.9%)                                        – Computer User Support Specialists (4.1%)
+                         – Retail Salespersons (0.9%)                                  – Public Relations Specialists (3.2%)
+                         – Career/Technical Education Teachers, Secondary School
+                         (0.7%)
+ 61                      – Substitute Teachers, Short-Term (20.0%)                     – Public Relations Specialists (3.1%)
+ Educational      Ser-   – Career/Technical Education Teachers, Secondary School       – Computer User Support Specialists (2.6%)
+ vices                   (19.1%)                                                       – Executive Secretaries and Executive Administrative Assis-
+                         – Coaches and Scouts (3.8%)                                   tants (1.8%)
+                         – Lifeguards, Ski Patrol, and Other Recreational Protective   – Software Developers (1.8%)
+                         Service Workers (3.5%)                                        – Writers and Authors (1.7%)
+                         – Nannies (3.4%)
+ 62                      – Acute Care Nurses (14.3%)                                   – Eligibility Interviewers, Government Programs (2.2%)
+ Health Care & So-       – Licensed Practical and Licensed Vocational Nurses (11.5%)   – Executive Secretaries and Executive Administrative Assis-
+ cial Assistance         – Phlebotomists (7.9%)                                        tants (1.9%)
+                         – Home Health Aides (6.2%)                                    – Public Relations Specialists (1.8%)
+                         – Nannies (5.4%)                                              – Computer User Support Specialists (1.7%)
+                                                                                       – Customer Service Representatives (1.5%)
+

@@ -1,0 +1,56 @@
+chatbot use. In addition, the panel analyses in Section 3 confirm that adopters of different
+
+initiatives followed similar labor market trajectories prior to the arrival of AI chatbots.
+
+    Second, because our data come from workers rather than senior leadership, our
+
+estimates reflect initiatives as perceived by workers. Policies may not be perfectly commu-
+
+nicated, and self-reports may diverge from employer intentions. Nonetheless, Appendix E.5
+
+shows that our results are robust when employer initiatives are measured using coworker
+
+reports, indicating that these measures capture workplace-wide initiatives.
+
+
+2     Empirical Strategy
+
+Evaluating the labor market impacts of AI chatbots raises several conceptual questions:
+
+What are the relevant treatments to consider? If the treatments have an effect, in which
+
+labor market outcomes would they manifest? And how can we identify these impacts in
+
+the data?
+
+    Motivated by the dual nature of adoption—with variation across workplaces depending
+
+on their chatbot initiatives and within workplaces depending on individual use—we analyze
+
+impacts at both the worker and workplace levels. Appendix A.2 presents a theoretical
+
+framework for how adoption translates into labor market outcomes, guiding the following
+
+analyses:
+
+    1. Worker earnings: If AI chatbots raise individual productivity, these gains may
+
+      translate into higher wages for users (Krueger, 1993). Notably, the wage effects
+
+      depend on whether adoption is worker- or firm-driven, the productivity and amenity
+
+      value of chatbot use, and the relative scarcity of adopting workers versus firms.
+
+      Section 3.1 investigates these predictions by estimating the impacts of chatbot
+
+      adoption on earnings by workers’ intensity of use, employer initiatives, reported
+
+      productivity gains, and new AI tasks.
+
+    2. Workplace employment: If chatbots reduce the need for labor, adopting workplaces
+
+      might slow hiring or lay off workers. Conversely, if the tools boost productivity and
+
+
+                                            10
+

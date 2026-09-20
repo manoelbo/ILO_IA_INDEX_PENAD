@@ -1,0 +1,37 @@
+then examine the experience composition of junior and senior workers over time, sep-
+arately at adopting and non-adopting firms. We find that the average labor market ex-
+perience of junior and senior workers evolves in parallel at adopting and non-adopting
+firms; a statistically detectable but quantitatively small differential emerges for seniors
+in the event-study specification, but its magnitude is unlikely to meaningfully affect our
+employment results. Together, these exercises indicate that the relative decline in junior
+employment we find below is unlikely to be driven by changes in seniority classification.
+
+
+
+5     Results
+
+The main empirical exercise of the paper is to test the framework’s central implication:
+whether GenAI adoption disproportionately reduces junior employment relative to se-
+nior employment. We pursue this in Sections 5.2–5.5 using the firm-level résumé and
+posting data, with a triple-difference design, a staggered event study, and a flow decom-
+position. Before turning to this aggregate evidence, Section 5.1 brings direct empirical
+evidence on the framework’s underlying channels.
+
+
+5.1   Empirical Evidence on the Framework’s Channels
+
+Proposition 1 decomposes the change in junior labor demand into three forces: a displace-
+ment effect (α > 0, junior tasks lost to automation), a within-task productivity effect (on
+the workers-per-task margin), and a reallocation effect (x̂ ′ > x̂, juniors expanding into
+formerly-senior tasks because δ J > δS ). For the productivity channel, and especially for
+the assumption δ J ≥ δS , a now-large experimental literature provides strong evidence
+(Brynjolfsson et al., 2025b; Noy and Zhang, 2023; Dell’Acqua et al., 2023; Cui et al., 2025;
+Cruces et al., 2026). This subsection tests the remaining two channels using evidence from
+two sources: task-level information extracted from our own postings data, and external
+task-level data from the Anthropic Economic Index.
+
+
+
+
+                                            24
+

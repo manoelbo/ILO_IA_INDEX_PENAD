@@ -1,0 +1,40 @@
+cannot be used without further information on the distribution of the errors. In principle,
+this problem can be tackled by estimating the multiplicative model using a consistent
+estimator, and then obtaining the appropriate weights estimating the skedastic function
+non-parametrically, as suggested by Delgado (1992) and Delgado and Kniesner (1997).
+However, this nonparametric generalized least squares estimator is rather cumbersome
+to implement, especially if the model has a large number of regressors. Moreover, the
+choice of the first round estimator is an open question as the NLS estimator may be
+a poor starting point due to its considerable ineﬃciency. Therefore, the nonparametric
+generalized least squares estimator is not appropriate to use as a work-horse for routine
+estimation of multiplicative models.10 Indeed, what is needed is an estimator that is
+consistent and reasonably eﬃcient under a wide range of heteroskedasticity patterns and
+is also simple to implement.
+  A possible way of obtaining an estimator that is more eﬃcient than the standard NLS
+without the need to use nonparametric regression is to follow McCullagh and Nelder
+(1989) and estimate the parameters of interest using a pseudo-maximum likelihood es-
+timator based on some assumption on the functional form of V [yi |x].11 Among the
+many possible specifications, the hypothesis that the conditional variance is propor-
+tional to the conditional mean is particularly appealing. Indeed, under this assumption
+E [yi |x] = exp (xi β) ∝ V [yi |x], and β can be estimated by solving the following set of first
+order conditions:
+                                     n h
+                                     X          ³ ´i
+                                        yi − exp xi β̃ xi = 0.                                        (9)
+                                      i=1
+
+  Comparing equations (8) and (9), it is clear that, unlike the NLS estimator, which is
+a PML estimator obtained assuming that V [yi |x] is constant, the PML estimator based
+on (9) gives the same weight to all observations, rather than emphasizing those for which
+  10
+       A nonparametric generalized least squares estimator can also be used to estimate linear models in
+presence of heteroskedasticity of unknown form (Robinson, 1987). However, despite having been proposed
+more than 15 years ago, this estimator has never been adopted as a standard tool by empirical researchers,
+who generally prefer the simplicity of the ineﬃcient OLS, with an appropriate covariance matrix.
+ 11
+    See also Manning and Mullahy (2001). A related estimator is proposed by Papke and Wooldridge
+(1996) for the estimation of models for fractional data.
+
+
+                                                    12
+

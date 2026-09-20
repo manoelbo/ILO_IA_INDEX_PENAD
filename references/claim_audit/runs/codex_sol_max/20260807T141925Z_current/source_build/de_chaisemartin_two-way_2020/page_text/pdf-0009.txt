@@ -1,0 +1,43 @@
+Here is some intuition as to why one weight is negative in this example. It follows from Equation
+(7) in the proof of Theorem 1 (see also Theorem 1 in Goodman-Bacon, 2018) that in this simple
+example, βf e = (DID1 + DID2 )/2, with
+
+                        DID1 = E(Y2,2 ) − E(Y2,1 ) − (E(Y1,2 ) − E(Y1,1 )) ,
+                        DID2 = E(Y1,3 ) − E(Y1,2 ) − (E(Y2,3 ) − E(Y2,2 )) .
+
+The first DID compares the evolution of the mean outcome from period 1 to 2 in group 2 and
+in group 1. The second one compares the evolution of the mean outcome from period 2 to 3 in
+group 1 and in group 2. The control group in the second DID, group 2, is treated both in the
+pre and in the post period. Therefore, under the common trends assumption, it follows from
+Lemma 1 in Appendix A (a similar result appears in Lemma 1 of de Chaisemartin (2011) and
+in Equation (13) of Goodman-Bacon (2018)) that DID1 = E [∆2,2 ], but
+
+                             DID2 = E [∆1,3 ] − (E [∆2,3 ] − E [∆2,2 ]).
+
+DID2 is equal to the ATE in group 1 period 3, minus the change in group 2’s ATE between
+periods 2 and 3. Intuitively, the mean outcome of groups 1 and 2 may follow different trends
+from period 2 to 3 either because group 1 becomes treated, or because group 2’s ATE changes.
+The intuition that negative weights arise because βbf e uses treated observations as controls also
+appears in Borusyak and Jaravel (2017).
+We now generalize the previous illustration by characterizing the (g, t) cells whose ATEs are
+weighted negatively by βf e .
+
+Proposition 1 Suppose that Assumption 1 holds and for all t ≥ 2 Ng,t /Ng,t−1 does not vary
+across g. Then, for all (g, t, t0 ) such that Dg,t = Dg,t0 = 1, D.,t > D.,t0 implies wg,t < wg,t0 .
+Similarly, for all (g, g 0 , t) such that Dg,t = Dg0 ,t = 1, Dg,. > Dg0 ,. implies wg,t < wg0 ,t .
+
+Proposition 1 shows that βf e is more likely to assign a negative weight to periods where a large
+fraction of groups are treated, and to groups treated for many periods. Then, negative weights
+are a concern when treatment effects differ between periods with many versus few treated groups,
+or between groups treated for many versus few periods.
+Proposition 1 has interesting implications in staggered adoption designs, a special case of sharp
+designs defined as follows.
+
+Assumption 6 (Staggered adoption designs) For all g, Dg,t ≥ Dg,t−1 for all t ≥ 2.
+
+Assumption 6 is satisfied in applications where groups adopt a treatment at heterogeneous dates
+(see e.g. Athey and Stern, 2002). In that design, Borusyak and Jaravel (2017) show that βf e
+is more likely to assign a negative weight to treatment effects at the last periods of the panel.
+
+                                                 9
+

@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.venv/
+work/
+results/reproduced/
+
+data/raw/*
+!data/raw/section3/
+!data/raw/sections4_5/
+data/raw/section3/*
+data/raw/sections4_5/*
+!data/raw/section3/.gitkeep
+!data/raw/sections4_5/.gitkeep
+
+# The repository-level ignore file excludes data formats globally. These
+# package-local exceptions keep the frozen replication inputs and references.
+!data/derived/**/*.csv
+!data/derived/**/*.parquet
+!data/derived/sections4_5/outputs/
+!data/derived/sections4_5/outputs/treatment_scenario_grid/
+!data/derived/sections4_5/outputs/treatment_scenario_grid/*.csv
+!results/reference/**/*.csv
+!results/reference/**/*.png
+!results/reference/**/*.json

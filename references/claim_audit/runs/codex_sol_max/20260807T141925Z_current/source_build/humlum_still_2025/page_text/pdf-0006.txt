@@ -1,0 +1,32 @@
+greater AI chatbot relevance. On average, these workers see earnings grow 12 percentage
+points faster than other employed workers. While these switchers are still too few to
+drive average adopter earnings, this pattern suggests that occupational mobility may be
+a channel through which AI chatbots deliver broader earnings effects over time (Kleven
+et al., 2025).
+   Next, we zoom out to the workplace level and examine whether employers that
+encourage and invest in AI chatbots have experienced differential changes in labor demand.
+If chatbots enhance labor productivity, firms may expand hiring; if they substitute for
+labor, they may slow hiring or trigger layoffs (Acemoglu and Restrepo, 2019). Recent
+declines in early-career employment in AI-exposed occupations have raised concerns that
+generative AI is already displacing entry-level jobs (Brynjolfsson, Chandar and Chen,
+2025). Crucially, our data allow us to split these employment trends by whether firms have
+actually adopted generative AI. While we replicate the pattern of declining early-career
+employment in exposed occupations in Denmark, our difference-in-differences analysis
+reveals that the declines are not driven by firms adopting AI chatbots. Our estimates are
+sufficiently precise to rule out even modest changes. Workplaces that encourage chatbot
+use exhibit no differential changes in employment or wage bills, job creation or destruction,
+or the composition of hires or separations, including among early-career workers. These
+null results hold across occupations and persist even when encouragement is paired with
+enterprise chatbot solutions and training.
+   Taken together, our findings show that early labor market transformation under
+generative AI is occurring beneath the surface. Even as wages and recorded hours remain
+stable, workplaces adopt chatbot initiatives, workers take on new AI-related tasks, and
+adopters transition into new occupations.
+
+
+Contributions to the Literature. This paper makes two linked contributions. The
+first is conceptual: we show how labor markets adjust at the onset of major technological
+change, arguing that substantial reorganization of work absorbs change before it surfaces in
+economic statistics. The second is measurement: we develop a unique data infrastructure
+
+                                             4

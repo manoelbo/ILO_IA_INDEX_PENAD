@@ -1,0 +1,61 @@
+Table A12: Effect of LLM exposure on firm-level job outcomes, min 50 employees
+
+                                     Employees      Low seniority        High seniority        Low seniority (%)         Av. comp.
+      LLM exposure x Post            −0.003∗∗        −0.004∗∗∗              −0.002                 −0.0004∗∗             136.552∗∗
+                                      (0.001)         (0.001)               (0.002)                 (0.0002)              (53.014)
+
+      Firm fixed effects                Yes              Yes                  Yes                     Yes                   Yes
+      Industry-by-period FE             Yes              Yes                  Yes                     Yes                   Yes
+      Observations                   2,541,572        2,541,147            2,530,632               2,541,147             2,541,572
+      Adj. R-squared                    0.98            0.978                0.977                   0.969                 0.966
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes. We use all firms with at least 50 listed employees in October 2022,
+instead of 100 employees as in our main analysis. All other definitions are as in Table 3.
+
+
+
+
+Table A13: Effect of LLM exposure on firm-level job listings, different minimum
+firm size thresholds
+
+                                                                 min. 10 employees           min. 50 employees
+                         LLM exposure x Post                          −0.004∗∗∗                 −0.008∗∗∗
+                                                                       (0.0003)                  (0.001)
+
+                         Firm fixed-effects                               Yes                       Yes
+                         Industry-by-period fixed effects                 Yes                       Yes
+                         Observations                                 11,476,930                 2,541,572
+                         Adjusted R2                                     0.487                     0.504
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity. We use all firms with at least 10 (column 1) or 50 (column 2) listed
+employees in October 2022, instead of 100 employees as in our main analysis. All other definitions
+are as in Table A1.
+
+
+
+A3.4          Alternative Task-Importance Weights
+
+    Table A14: Effect of LLM exposure on firm-level job outcomes, onet weights
+
+                                        Employees      Low seniority         High seniority        Frac. low seniority       Av. comp.
+  LLM exposure x Post                    −0.002             −0.004∗                −0.001              −0.001∗∗∗              98.318∗
+                                         (0.002)            (0.002)                (0.002)              (0.0003)              (56.416)
+
+  Firm fixed effects                       Yes                 Yes                Yes                     Yes                   Yes
+  Industry-by-period fixed effects         Yes                 Yes                Yes                     Yes                   Yes
+  Observations                          1,268,013           1,267,955          1,266,331               1,267,955             1,268,013
+  Adj. R-squared                          0.983               0.983              0.981                   0.979                 0.978
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, using ONET importance weights for tasks instead of the weights used
+by Eloundou et al. (2024). All other definitions are as in Table 3.
+
+
+
+
+                                                                  39
+

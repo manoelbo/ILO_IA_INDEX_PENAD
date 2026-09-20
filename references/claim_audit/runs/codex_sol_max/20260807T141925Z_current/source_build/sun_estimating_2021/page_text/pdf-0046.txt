@@ -1,0 +1,64 @@
+Proof of Proposition 2
+
+Proof. Under the parallel trends assumption, we can replace each term in Proposition 1 with
+                             ∞
+                 E[Yi,e+` −Yi,0             ∞
+                                |Ei ] − E[Yi,e+`    ∞
+                                                 −Yi,0 ] = C ATTe,` + E[Yi,t
+                                                                          ∞     ∞
+                                                                             −Yi,0             ∞
+                                                                                   |Ei ] − E[Yi,t    ∞
+                                                                                                  −Yi,0 ]        (64)
+                                                                      |              {z               }
+                                                                                            =0
+for t = e + `.                                                                                                     
+
+
+Proof of Proposition 3
+
+Proof. Under the no anticipation assumption, setting the corresponding terms to zero in the linear combina-
+
+tion underlying µg displayed in Proposition 2.                                                                     
+
+
+Proof of Proposition 4
+
+Proof. Under the assumption of homogeneous treatment effect, we have C ATTe,` = ATT` for all e. This
+
+simplifies Proposition 2 to    !                !                                                   !
+                 Õ Õ                   ÕÕ Õ             Õ                               Õ
+                            g                g                                                g
+                           ωe,` ATT` +      ωe,` ATT` +                                      ωe,`       ATT` .   (65)
+                   ` ∈g    e                g0 ,g ` ∈g0   e               ` ∈g e x cl   e
+                       g
+Recall the weight ωe,` is equal to the population regression coefficient on 1{t − Ei ∈ g} from regressing
+ ` ·1
+Di,t  {Ei = e} on all the bin indicators, i.e. {1{t − Ei ∈ g}}g ∈ G and two-way fixed effects included in (4).
+                                             g   Í g
+Summing over e would imply the weight ω` B e ωe,` is equal to the population regression coefficient on
+                               ` on all the bin indicators, i.e. {1{t − E ∈ g}}
+1{t − Ei ∈ g} from regressing Di,t                                       i      g ∈ G and two-way fixed effects
+
+included in (4).                                                                                                   
+
+
+
+C     Supplementary results related to IW estimator
+
+In this section, we first provide detailed definition for the IW estimator, and then state its asymptotic behav-
+
+ior. We then prove its asymptotic normality and derive its asymptotic variance in Section C.1.
+
+Definition 4. The IW estimator for νg , a weighted average of C ATTe,` ∈g is constructed via the following
+
+three steps. We focus on the setting without never-treated units, using pre-period s = −1 and the last-treated
+
+cohort as the control cohort C = {max{Ei }}. The setting with never-treated units can be defined similarly
+
+by modifying the interacted specification.
+
+
+
+
+                                                              46
+

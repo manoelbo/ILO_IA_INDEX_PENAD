@@ -1,0 +1,76 @@
+                                                  �𝑘𝑘 = 0.5. With two treated groups, the variance
+for units treated in the middle of the panel with 𝐷𝐷
+
+                                           �𝑘𝑘 − 𝐷𝐷
+of the difference in treatment dummies is (𝐷𝐷    �ℓ )(1 − (𝐷𝐷
+                                                           �𝑘𝑘 − 𝐷𝐷
+                                                                 �ℓ )), and is highest for pairs
+
+                                                                           �𝑘𝑘 = 0.67 and 𝐷𝐷
+whose treatment shares differ by 0.5. Figure 2 sets 𝑡𝑡𝑘𝑘∗ and 𝑡𝑡ℓ∗ so that 𝐷𝐷             �ℓ = 0.15,
+
+                 �𝑘𝑘 (1 − 𝐷𝐷
+which means that 𝐷𝐷       �𝑘𝑘 ) = 0.22 > 0.13 = 𝐷𝐷
+                                                �ℓ (1 − 𝐷𝐷
+                                                        �ℓ ). Because it has higher treatment
+
+                                                        � 2𝑥𝑥2 , gets more weight (𝑠𝑠𝑘𝑘𝑘𝑘 = 0.365) than
+variance, group 𝑘𝑘’s comparison to the untreated group, 𝛽𝛽 𝑘𝑘𝑘𝑘
+
+                                                2𝑥𝑥2
+                                    �
+the corresponding term for group ℓ, 𝛽𝛽                                                          �𝑘𝑘 −
+                                           (𝑠𝑠ℓ𝑈𝑈 = 0.202). The difference in treated shares is 𝐷𝐷
+                                       ℓ𝑈𝑈
+
+�ℓ = 0.52, so 𝑠𝑠𝑘𝑘ℓ = 0.412. 12
+𝐷𝐷
+
+         This decomposition theorem also shows how DD compares groups treated at different
+
+times. A two-group “timing-only” estimator is itself a weighted average of the 2x2 DD’s plotted
+
+in panels C and D of figure 2:
+
+                                   � 2𝑥𝑥2
+                                   𝛽𝛽       ≡          �
+                                                 𝜇𝜇𝑘𝑘ℓ 𝛽𝛽
+                                                         2𝑥𝑥2,𝑘𝑘
+                                                                                   �
+                                                                    + (1 − 𝜇𝜇𝑘𝑘ℓ ) 𝛽𝛽
+                                                                                      2𝑥𝑥2,ℓ
+                                                                                                                     (8)
+                                      𝑘𝑘ℓ                 𝑘𝑘ℓ                         𝑘𝑘ℓ
+
+Both groups serve as controls for each other during periods when their treatment status does not
+
+change, and the group with higher treatment variance (that is, treated closer to the middle the panel)
+
+                                             �𝑘𝑘 (1 − 𝐷𝐷
+gets more weight. In the three group example 𝐷𝐷       �𝑘𝑘 ) > 𝐷𝐷
+                                                              �ℓ (1 − 𝐷𝐷
+                                                                      �ℓ ) so 𝜇𝜇𝑘𝑘ℓ = .67.
+
+                                              � 2𝑥𝑥2,ℓ gets less weight than 𝛽𝛽
+Multiplying this by 𝑠𝑠𝑘𝑘ℓ = 0.412, shows that 𝛽𝛽                             � 2𝑥𝑥2,𝑘𝑘 : 𝑠𝑠𝑘𝑘ℓ (1 − 𝜇𝜇𝑘𝑘ℓ ) =
+                                                 𝑘𝑘ℓ                            𝑘𝑘ℓ
+
+0.135 < 0.278 = 𝑠𝑠𝑘𝑘ℓ 𝜇𝜇𝑘𝑘ℓ . 13
+
+
+
+
+12
+   Changing the number or spacing of time periods changes the weights. Imagine adding 𝑇𝑇 periods to the end of the
+three-group panel. This would reduce 𝑣𝑣𝑣𝑣𝑣𝑣  � (𝐷𝐷𝑘𝑘𝑘𝑘 ) to 0.835(1 − 0.835) = 0.138, but it would increase 𝑣𝑣𝑣𝑣𝑣𝑣
+                                                                                                             � (𝐷𝐷ℓ𝑡𝑡 ) to
+0.58(1 − 0.58) = 0.244. This puts less weight on terms where 𝑘𝑘 is the treatment group (𝑠𝑠𝑘𝑘𝑘𝑘 = 0.24 and 𝑠𝑠𝑘𝑘ℓ 𝜇𝜇𝑘𝑘ℓ =
+0.07) and more weight on terms where ℓ is the treatment group (𝑠𝑠ℓ𝑈𝑈 = 0.43 and 𝑠𝑠𝑘𝑘ℓ (1 − 𝜇𝜇𝑘𝑘ℓ ) = 0.26).
+13
+   Two recent papers present clear analyses using two-group timing-only estimators. Malkova (2017) studies a
+maternity benefit policy in the Soviet Union and Goodman (2017) studies high school math mandates. Both papers
+show differences between early and late groups before the reform, 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘), during the period when treatment status
+differs, 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), and in the period after both have implemented reforms, 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ).
+
+                                                                9
+

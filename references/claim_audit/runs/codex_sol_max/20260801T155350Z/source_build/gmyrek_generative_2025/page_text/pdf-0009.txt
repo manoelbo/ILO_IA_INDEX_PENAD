@@ -1,0 +1,13 @@
+06    ILO Working Paper 140
+
+
+
+
+     List of Boxes
+
+         Text Box 1. Sample Question for Task Automation Assessment   18
+
+         Text Box 2. Introductory prompt for survey respondents   19
+
+         Text Box 3. The conceptual structure of the LLM prompt (Python code for GPT-4o)    35
+

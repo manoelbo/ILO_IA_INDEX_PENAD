@@ -1,0 +1,52 @@
+             Figure 7: In Which Specific Work Tasks Is Generative AI Most Useful?
+
+                              Writing Communications                                             45.1
+                      Performing Administrative Tasks                               29.9
+               Interpreting / Translating / Summarizing                           25.9
+                    Searching for Facts or Information                       21.1
+                  Generating / Developing New Ideas                    15.7
+                                      Coding Software                  15.4
+               Documentation or Detailed Instructions                 14.5
+                 Support with Customers / Coworkers                  12.5
+                          Data Analysis / Visualization             10.7
+                   Tutoring or Educational Assistance          5.7
+                                                 Other        3.2
+                                                          0                  10                20           30         40   50
+                                                                                         Share Ranking Task #1-2 (%)
+
+
+
+Notes: The figure shows which work tasks genAI users report that genAI is most helpful in completing. Em-
+ployed respondents who used genAI were first provided with a list of tasks and asked to select those that they
+had used genAI to help with last week. Respondents were then asked to rank these selected tasks according
+to how helpful genAI was in completing the task. The figure reports the share of genAI users who ranked a
+particular task either #1 (AI was most helpful in this task) or #2. The bars do not have a natural sum because
+some respondents selected fewer than two tasks. Data source is employed respondents ages 18-64 who used
+genAI for work and selected at least one task in the August and November 2024 waves of the RPS.
+
+
+4.2   Generative AI Use Across Specific Tasks
+
+Given the high correlation between job tasks and adoption, a natural follow up question is to
+ask which tasks genAI helps workers complete. We present genAI users with the list of tasks
+in Figure 7 and ask them to select any for which they had used genAI in the last week. (They
+were also allowed to write in other tasks.) Respondents were then asked to rank these tasks
+according to how helpful genAI was in completing them.
+
+    Figure 7 reports the share of respondents who ranked each task in the top two in terms
+of importance. The highest ranked tasks at work were writing (45.1%), administrative tasks
+(29.9%), and interpreting/translating/summarizing text or data (25.9%). These findings mirror
+recent experimental evidence on how genAI reshapes work behavior. Dillon et al. (2025) show
+that workers with access to integrated generative AI tools (Microsoft 365 Copilot) spent less
+time on email and completed written documents more quickly. At the same time, while genAI
+seems most useful for creating, absorbing, and organizing written information, eight of the ten
+tasks in our list were ranked by at least 10% of users, indicating a variety of use cases for genAI.
+
+
+5     How Large Are Potential Productivity Gains from GenAI?
+
+New technologies raise productivity by enabling complementary innovations in processes, skills,
+and organizational practices. These innovations typically evolve gradually over time (Brynjolf-
+
+                                                                            18
+

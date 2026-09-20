@@ -1,0 +1,33 @@
+   Finally, as discussed in Section 3.5, workers’ perceived earnings impacts offer an
+independent lens for evaluating general equilibrium spillovers. In particular, the fact that
+virtually all non-adopters report no effect on their earnings further reinforces the finding
+that spillover impacts of AI chatbots remain minimal.
+   Taken together, these different analyses—difference-in-differences at varying levels
+of aggregation, equilibrium calibration of micro-level estimates, and perceived impacts
+among workers—all point to the conclusion that AI chatbots have not had any meaningful
+impact on non-adopters’ earnings or employment thus far.
+
+3.1.2   Regression Specifications
+
+Sampling Design and Data. Our data and sampling are designed to answer the
+questions described above. By linking survey responses from workers in the most highly
+exposed occupations to comprehensive matched employer–employee panel data covering
+the entire Danish economy, we can study labor market outcomes before and after the
+arrival of AI chatbots. Crucially, the matched data allow us to track not only the surveyed
+workers themselves but also other workers at the same workplaces, including those who
+have since left.
+   Our survey sampling design also imposes restrictions that we explicitly account for
+in the analysis. In particular, because we survey workers in exposed occupations, all
+respondents are, by construction, employed in those occupations at the time of the survey
+sampling. Accordingly, all specifications include survey-occupation × time fixed effects,
+ensuring that all comparisons are made within survey strata and time period, between
+workers (or workplaces) that differ in their adoption of AI chatbots. We also study
+heterogeneity in effects by survey occupation.
+   Let Yit denote a labor market outcome (e.g., earnings) for worker i in month-year t, let
+Xi denote survey-occupation fixed effects and worker pre-determined characteristics—age,
+gender, and potential experience in 2022—and let Ai indicate whether the worker has
+adopted AI chatbots. We examine both worker-level effects (e.g., worker earnings by
+
+
+
+                                            21

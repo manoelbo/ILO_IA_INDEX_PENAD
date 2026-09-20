@@ -1,0 +1,51 @@
+thus that average hours worked were 11% higher in the treated group (9.84{8.85 “ 1.11). This
+is an estimate of the parameter θATE% “ ErY p1q ´ Y p0qs{ErY p0qs discussed in Section 4.1 above.
+A numerically equivalent way to obtain this estimate of 11% is to use Poisson quasi-maximum
+likelihood estimation (Poisson QMLE) to estimate
+
+                                             Yi “ exppβ0 ` β1 Di qUi                                               (4)
+
+and then calculate θ̂ATE% “ exppβ̂1 q ´ 1 “ 0.11 (see column (1) in Table 4).34 This formulation
+in terms of Poisson QMLE is useful since it allows us to include covariates to potentially increase
+precision. Column (2) of Table 4 shows the estimate of θ̂ATE% from estimating
+
+                                         Yi “ exppβ0 ` β1 Di ` Xi1 γqUi                                            (5)
+
+by Poisson QMLE, with smaller standard errors than in column (1) (0.069 vs. 0.081).
+
+                                                                 (1)        (2)
+                                   β0                           2.180      0.150
+                                                               (0.058)    (0.311)
+                                   β1                           0.106      0.150
+                                                               (0.072)    (0.060)
+                                   Implied Prop. Effect         0.112      0.150
+                                                               (0.081)    (0.069)
+                                   Covariates                     N          Y
+
+       Table 4: Poisson Regression and Implied Proportional Effects in Carranza et al. (2022).
+
+Note: the first two rows of column (1) show the estimates of the coefficients β0 and β1 in (4), estimated using Poisson
+QMLE. The third row shows the implied estimate of the proportional effect, ErY p1q ´ Y p0qs{ErY p0qs, calculated as
+θ̂ATE% “ exppβ̂1 q ´ 1. The second column shows analogous estimates using (5), which adds controls for pre-treatment
+covariates (we do not show the coefficients on the controls in the interest of brevity). Standard errors are clustered
+at the assessment date (the unit of treatment assignment) as in the original paper.
+
+
+
+Separate estimates for the extensive/intensive margins. As shown in Table 1, the treat-
+ment in Carranza et al. (2022) has an estimated extensive margin treatment effect of 0.055, meaning
+that it increases the fraction of people with positive hours worked by 5.5 percentage points. We may
+be interested in whether the overall 11% increase in hours worked is driven entirely by the extensive
+margin, or whether there is an intensive margin effect. That is, does the treatment increase hours
+only by bringing people into the labor force, or does it also allow people who would have worked
+anyway to find jobs with more hours (e.g. full-time instead of part-time)? To this end, we can use
+the method of Lee (2009) to compute bounds for the effect of the treatment for “always-takers” who
+  34
+    This estimation is done in the sample of treated units and control units, discarding the placebo group. One could
+equivalently retain the units in the placebo group and add an indicator for the placebo group to (4).
+
+
+
+
+                                                          23
+

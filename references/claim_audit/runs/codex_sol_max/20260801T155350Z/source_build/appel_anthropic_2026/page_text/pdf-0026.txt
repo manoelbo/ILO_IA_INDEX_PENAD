@@ -1,0 +1,44 @@
+            Use case. Claude classifies 64% of software development requests as work-
+            related, compared to just 17% for personal life management. This illustrates
+            that Claude can be used for very different purposes. Overall, Claude.ai use is
+            46% work, 19% coursework, and 35% personal.
+
+            AI autonomy. Both clusters show similar estimated autonomy levels (~3.5
+            on a 1 to 5 scale), near the global average. This means that both software
+            development and personal life management tasks, on average, afford Claude a
+            similar autonomy to make decisions on how to complete the task.
+
+            Task success. Claude assesses personal tasks as successfully completed 78% of
+            the time, versus 61% for software development. Harder tasks—those requiring
+            more specialized knowledge and where users could not easily complete them
+            alone—show lower estimated success rates.
+
+
+
+
+           Tasks and primitives differ between Claude.ai
+           and API users
+
+            As in our previous report, we find major differences in the tasks and primitives
+            in Claude.ai conversations compared to the 1P API data. Part of this reflects
+            the nature of the interaction: Claude.ai transcripts can include multi-turn
+            conversations, while the API data we analyze is limited to single input-output
+            pairs. This is because API requests arrive independently, with no metadata
+            linking them to prior exchanges. This means we can only analyze them as
+            isolated user-assistant pairs rather than full conversation trajectories.
+
+            Overall, API usage is overwhelmingly work-related (74% vs. 46%) and
+            directive (64% vs. 32%), with three-quarters of interactions classified as
+            automation compared to less than half on Claude.ai (see Figure 1.3).
+
+            Claude.ai users, by contrast, engage in more back-and-forth: task iteration and
+            learning modes are far more common, and tasks tend to be more lengthy—
+            both in terms of human time with AI (15 minutes vs. 5 minutes) and the
+            estimated time a human would need to complete the task alone (3.1 hours vs.
+            1.7 hours). Claude.ai also shows higher task success rates (67% vs. 49%), which
+            may reflect the benefits of multi-turn conversation, where users can clarify,
+            correct course, and iterate toward a solution. Claude.ai users also give the AI
+
+
+The Anthropic Economic Index Report                                                            26
+

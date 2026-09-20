@@ -1,0 +1,87 @@
+    Figure 5: Effect of LLM exposure on firm-level hiring across job categories
+                                                                    Effect of AI Exposure on Probability of Hiring by Role
+                                         Sales Representative
+                                             Customer Service
+                                               Sales Associate
+                                                     Retail Sales
+                                                    Receptionist
+                                                  Merchandiser
+                                                     Coordinator
+                                            Quality Assurance
+                                                         Cashier
+                                              Financial Advisor
+                                                            Legal
+                                           Solutions Specialist
+                                         Investment Specialist
+                                 Clinical Research Associate
+                                                 Crew Member
+                                          Operations Manager
+                                                        Scientist
+                                              Claims Specialist
+                                                       Geologist
+                                            Technical Architect
+                                      Sustainability Specialist
+                                  Communications Specialist
+                                                      Technician
+                                                        Logistics
+                         Role
+
+
+                                         Distribution Specialist
+                                               Billing Specialist
+                                          Business Operations
+                                                     Accountant
+                                          Production Operator
+                                                    Medical Rep
+                                             Machine Operator
+                                    Operations Administrator
+                                               Project Manager
+                                       Development Manager
+                                             Product Manager
+                                                Client Services
+                                Human Resources Specialist
+                                                       Marketing
+                                       Infrastructure Engineer
+                                             Delivery Manager
+                                         Mechanical Engineer
+                                                       Recruiter
+                                                       Producer
+                                           IT Project Manager
+                                          Application Engineer
+                                                    IT Specialist
+                                                        Designer
+                                                    Data Analyst
+                                                       QA Tester
+                                            Software Engineer
+                                                                              −0.010             −0.005              0.000
+                                                                                         Coefficient (with 95% CI)
+
+
+Notes: This figure reports coefficient estimates and 95% confidence intervals for the effect of LLM
+exposure on firms’ hiring at the extensive margin across 50 job roles. For each role, we estimate
+Equation (4) with firm fixed effects and industry-by-period fixed effects. Standard errors are
+clustered at the firm level. The dependent variable equals one if a firm posts at least one vacancy
+for that job role in month t.
+
+
+
+replace human capabilities, while maintaining or slightly increasing hiring for roles
+requiring direct customer interaction and relationship building that remain beyond
+current LLM capabilities.
+    Importantly, to emphasize that these estimates capture differential responses
+between exposed and less exposed firms, not absolute changes in hiring patterns.
+Hence, a coefficient of zero does not imply that hiring for a particular role remained
+unchanged. Rather, it indicates that exposed and less exposed firms adjusted their
+demand for that role similarly. For instance, if all firms reduced hiring of software
+engineers, regardless of their own exposure levels, our estimates would show no dif-
+ferential effect. The significant negative coefficient for e.g. data analysts therefore
+reveals that exposed firms reduced analyst hiring beyond any economy-wide reduc-
+tion, suggesting that firm-level exposure amplifies the substitution effects already
+occurring across the labor market. We next turn to our occupation-level analysis to
+examine how hiring intentions of exposed jobs change in the aggregate.
+
+
+
+
+                                                                                       19
+

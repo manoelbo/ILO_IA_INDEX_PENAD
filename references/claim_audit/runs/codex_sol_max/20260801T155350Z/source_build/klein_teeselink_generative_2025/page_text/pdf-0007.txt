@@ -1,0 +1,47 @@
+measures, we first obtain occupation-level measures by calculating the share of tasks
+within an occupation that meet the 50% time-saving threshold. We weight this by
+task importance, assigning 0.5 to supplementary tasks and 1.0 to core tasks.5
+   Formally, for occupation o:
+
+                                  X
+                           αo =          wt · 1[LLM reduces time by ≥50%]                   (1)
+                                  t∈To
+
+    where To denotes occupation o’s task set, wt represents task importance weights
+(1.0 for core tasks, 0.5 for supplemental), and 1[·] is an indicator function for sub-
+stantial LLM impact. αo gives us an occupation-level exposure score that we can
+assign to each employee.
+    We then calculate each firm’s average exposure score by taking the average ex-
+posure score of all employees who report working for that firm on 30 October 2022,
+immediately before the introduction of ChatGPT.6
+    Formally:
+
+                                                X Lio,Oct2022
+                              Exposurei =                          · αo                     (2)
+                                                  o
+                                                      Li,Oct2022
+
+    where Lio,Oct2022 denotes firm i’s employment in occupation o as of October 2022.
+    We restrict our sample of firms to those with at least 100 employees imme-
+diately before ChatGPT’s introduction to address two methodological concerns.
+First, larger firms reduce noise from idiosyncratic employment changes and ensure
+adequate LinkedIn coverage for constructing reliable firm-level exposure scores from
+individual employee profiles. Second, this threshold minimizes attrition bias from
+firms exiting the sample while maintaining a sufficiently large set of employers that
+account for a large part of UK employment. Appendix A3.3 in the Appendix exam-
+ines the sensitivity of our results to different firm-size thresholds.
+    Our final firm-level sample includes 26,979 firms with 1,268,013 firm-month ob-
+   5
+     Our robustness checks cover alternative weights based on O*NET task-importance classifica-
+tions.
+   6
+     We measure firm-level exposure using the pre-treatment workforce composition to avoid endo-
+geneity concerns. If we calculated exposure using post-ChatGPT employment, our measure would
+be contaminated by the treatment effect itself, as firms might have already adjusted their occu-
+pational mix in response to LLM capabilities. By fixing exposure at the pre-treatment date, we
+ensure that our exposure measure captures firms’ initial vulnerability to LLM disruption rather
+than their endogenous response to it.
+
+
+                                                  7
+

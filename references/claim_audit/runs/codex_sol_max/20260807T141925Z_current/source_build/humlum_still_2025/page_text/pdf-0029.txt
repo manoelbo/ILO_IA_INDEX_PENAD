@@ -1,0 +1,36 @@
+capture these changes relative to the launch of ChatGPT. By December 2024, adopters
+have increased their hours in their most recent occupation by about 4% of a full-time
+equivalent relative to non-adopters. The figure provides four insights.
+       First, the figure suggests that chatbots appeal to workers who are new to their
+occupations. This relationship may reflect that chatbots facilitate occupational transitions—
+for instance, by granting access to otherwise scarce expertise—or that workers who have
+recently switched find chatbots especially valuable as they adapt to new roles.17
+       Second, the effects on occupational mobility grow steadily, likely reflecting both the
+deepening of adoption over time and the emergence of new labor market opportunities. As
+we show below, these transitions tend to be into occupations with higher wage premia and
+greater AI chatbot relevance, suggesting that this mobility channel may gain importance
+over time.
+       Third, the flat pre-trend prior to the arrival of chatbots suggests that this association
+reflects a real effect rather than omitted confounders (e.g., more dynamic workers both
+adopting chatbots and switching jobs more generally). This contrasts with the earnings
+gaps in Panel (a), which were entirely attributable to pre-existing differences between
+adopters and non-adopters.
+       Finally, the significant estimates provide reassurance that our empirical specification
+has the power to detect effects when they exist—a useful contrast to the null results for
+earnings and employment.
+
+
+Heterogeneity by Intensity of Adoption. Figure 6, Panel (b) examines how the
+relationship between chatbot adoption and occupational mobility varies with the intensity
+of adoption. The figure shows that the association between chatbot adoption and occu-
+pational switching is driven primarily by individual-level factors rather than firm-level
+initiatives. For example, our main estimate on occupational switching rises from 1.3%
+  17
+   In contrast, Appendix F.3 shows that the association between chatbot adoption and workplace
+mobility is weaker, and occupational mobility is no stronger at workplaces that encourage chatbot use.
+These patterns align with Figure 6, Panel (b), which indicates that the relationship between chatbot
+adoption and occupational switching is driven primarily by individual rather than firm-level factors.
+
+
+
+                                                 27

@@ -1,0 +1,50 @@
+group g and groups that are “not-yet-treated” by time t + δ.7 Importantly, both of these assumptions
+allow for covariate-specific trends and do not restrict the relationship between treatment timing and the
+potential outcomes, Yt (g)’s. Thus, they are weaker than the randomization-based assumption made by
+Athey and Imbens (2018). We also note that the unconditional versions of Assumptions 4 and 5 are
+weaker than the parallel trends assumption imposed by de Chaisemartin and D’Haultfœuille (2020) and
+Sun and Abraham (2020) as they impose fewer restrictions on the evolution of Yt (0) in pre-treatment
+periods; see, e.g., Marcus and Sant’Anna (2020) for a comparison.
+    In our view, practitioners may favor Assumption 4 with respect to Assumption 5 when there is a
+sizable group of units that do not participate in the treatment in any period, and, at the same time,
+these units are similar enough to the “eventually treated” units. When a “never-treated” group of units
+is not available or “too small”, researchers may favor Assumption 5 as it allows one to use more groups
+as valid comparison units, which potentially leads to more informative inference procedures. However, it
+is important to stress that favoring Assumption 5 with respect to Assumption 4 also involves potential
+drawbacks. For instance, in the absence of treatment anticipation (δ = 0), Assumption 4 does not restrict
+observed pre-treatment trends across groups, whereas Assumption 5 does; see, e.g., Marcus and Sant’Anna
+(2020). Not restricting pre-treatment trends may be particularly meaningful in applications where the
+economic environment during the “early-periods” was potentially different from the “later-periods.” In
+these cases, the outcomes of different groups may evolve in a non-parallel manner during “early-periods”,
+perhaps because the groups were exposed to different shocks, while trends become parallel in the “later-
+periods.” We recommend taking these trade-offs into account when deciding which conditional parallel
+trends assumption is more appropriate for a given application.8
+    The final identifying assumption we impose is an overlap condition.
+
+Assumption 6 (Overlap). For each t ∈ {2, . . . , T }, g ∈ G, there exist some ε > 0 such that P (Gg = 1) >
+ε and pg,t (X) < 1 − ε a.s..
+
+    Assumption 6 extends the overlap assumption in Heckman et al. (1997, 1998), Abadie (2005), and
+Sant’Anna and Zhao (2020) to the multiple groups and multiple periods setup. It states that a positive
+fraction of the population starts treatment in period g, and that, for all g and t, the generalized propensity
+score is uniformly bounded away from one. Assumption 6 rules out “irregular identification”, see, e.g.,
+Khan and Tamer (2010).
+
+Remark 1. Note that Assumption 3 and Assumption 4 (Assumption 5) are intrinsically connected. For
+instance, when one imposes the “no-anticipation” condition (so that δ = 0), Assumption 4 would then
+impose conditional parallel trends only for post-treatment periods t ≥ g. If one allows for anticipation
+behavior (so that δ > 0), Assumption 4 would then impose conditional parallel trends in some pre-
+treatment periods, too. In fact, the parallel trends assumptions become stronger as one increases δ. To
+
+    7
+      Athey and Imbens (2006) and de Chaisemartin and D’Haultfœuille (2017) also consider using “not-yet-treated” units
+as comparison groups in related DiD procedures.
+    8
+      It may be tempting to use statistical pre-tests to select between different versions of the parallel trends assumption.
+However, the results of Roth (2020) show that such a practice can lead to important distortions when conducting inference.
+Thus, we do not recommend following this path, but instead recommend taking the context of the application into account
+in order to choose the appropriate parallel trends assumption.
+
+
+                                                             9
+

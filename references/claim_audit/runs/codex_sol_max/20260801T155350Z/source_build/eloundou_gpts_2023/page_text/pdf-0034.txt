@@ -1,0 +1,59 @@
+                                             WORKING PAPER
+
+
+Cheng, Z., Lee, D., and Tambe, P. (2022). Innovae: Generative ai for understanding patents and innovation.
+  Available at SSRN.
+
+Chow, A. R. (2023). Why ChatGPT Is the Fastest Growing Web Platform Ever | Time.
+
+Cockburn, I. M., Henderson, R., and Stern, S. (2018). The impact of artificial intelligence on innovation: An
+  exploratory analysis. In The economics of artificial intelligence: An agenda, pages 115–146. University
+  of Chicago Press.
+
+Constantz, J. (2023). Nearly a third of white collar workers have tried chatgpt or other ai programs, according
+  to a new survey.
+
+David, P. A. (1990). The dynamo and the computer: an historical perspective on the modern productivity
+  paradox. The American Economic Review, 80(2):355–361.
+
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019). Bert: Pre-training of deep bidirectional
+  transformers for language understanding. ArXiv, abs/1810.04805.
+
+Dixon, J., Hong, B., and Wu, L. (2021). The robot revolution: Managerial and employment consequences for
+  firms. Management Science, 67(9):5586–5605.
+
+Feigenbaum, J. J. and Gross, D. P. (2021). Organizational frictions and increasing returns to automation:
+  Lessons from at&t in the twentieth century. Technical report, National Bureau of Economic Research.
+
+Felten, E., Raj, M., and Seamans, R. (2023). How will language modelers like chatgpt affect occupations and
+  industries? arXiv preprint arXiv:2303.01157.
+
+Felten, E. W., Raj, M., and Seamans, R. (2018). A method to link advances in artificial intelligence to
+  occupational abilities. AEA Papers and Proceedings, 108:54–57.
+
+Frey, C. B. (2019). The technology trap. In The Technology Trap. Princeton University Press.
+
+Frey, C. B. and Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation?
+  Technological Forecasting and Social Change, 114(C):254–280.
+
+Goldfarb, A., Taska, B., and Teodoridis, F. (2023). Could machine learning be a general purpose technology? a
+  comparison of emerging technologies using data from online job postings. Research Policy, 52(1):104653.
+
+Goldstein, J. A., Sastry, G., Musser, M., DiResta, R., Gentzel, M., and Sedova, K. (2023). Generative language
+  models and automated influence operations: Emerging threats and potential mitigations.
+
+Grace, K., Salvatier, J., Dafoe, A., Zhang, B., and Evans, O. (2018). When will ai exceed human performance?
+  evidence from ai experts. Journal of Artificial Intelligence Research, 62:729–754.
+
+Hernandez, D., Kaplan, J., Henighan, T., and McCandlish, S. (2021). Scaling laws for transfer. arXiv preprint
+  arXiv:2102.01293.
+
+Horton, J. J. (2023). Large language models as simulated economic agents: What can we learn from homo
+  silicus? arXiv preprint arXiv:2301.07543.
+
+Huang, M.-H. and Rust, R. T. (2018). Artificial intelligence in service. Journal of service research,
+  21(2):155–172.
+
+Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J.,
+  and Amodei, D. (2020). Scaling laws for neural language models. arXiv preprint arXiv:2001.08361.
+

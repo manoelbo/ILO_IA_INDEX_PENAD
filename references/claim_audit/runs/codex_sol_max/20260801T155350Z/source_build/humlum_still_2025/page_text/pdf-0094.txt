@@ -1,0 +1,69 @@
+Figure E.1: The Prevalence of Employer Initiatives for AI Chatbot Adoption (Workplaces)
+                                                      (a) Usage Policies
+
+                    Marketing
+                    Software Developers
+                    Journalists
+                    HR Professionals
+                    IT Support
+                    Financial Advisors
+                    Customer Service
+                    Accountants
+                    Office Clerks
+                    Legal Professionals
+                    Teachers
+
+                                          0     0.1   0.2     0.3        0.4   0.5       0.6      0.7   0.8    0.9   1
+                                                 Encouraged   Allowed      Not Allowed     No Policy    Don’t Know
+
+
+                                              (b) Have Enterprise AI Chatbot
+
+                    Marketing
+                    Software Developers
+                    Journalists
+                                                                    1
+                    HR Professionals
+                    IT Support
+                    Financial Advisors
+                    Customer Service
+                    Accountants
+                    Office Clerks
+                    Legal Professionals
+                    Teachers
+
+                                          0     0.1   0.2     0.3        0.4   0.5       0.6      0.7   0.8    0.9   1
+                                                                        Customized     Standard
+
+
+                                    (c) Have Received Training in AI Chatbots
+
+                    Marketing
+                    Software Developers
+                    Journalists
+                                                                    1
+                    HR Professionals
+                    IT Support
+                    Financial Advisors
+                    Customer Service
+                    Accountants
+                    Office Clerks
+                    Legal Professionals
+                    Teachers
+
+                                          0     0.1   0.2     0.3        0.4   0.5       0.6      0.7   0.8    0.9   1
+                                                              Firm-Arranged          Worker-Arranged
+
+Notes: This figure shows the share of workplaces affected by various employer initiatives related to AI chatbot adoption.
+Workers in our sample have been reweighted so all workplaces have the same weight. Panel (a) shows employers’ policies on
+AI chatbot usage for work. Panel (b) indicates whether the employer has its own AI chatbot. Panel (c) reports whether
+workers have participated in AI chatbot training courses. Sample: All completed responses from the 2024 survey.
+
+
+                                                                    1
+
+
+
+
+                                                                    59
+

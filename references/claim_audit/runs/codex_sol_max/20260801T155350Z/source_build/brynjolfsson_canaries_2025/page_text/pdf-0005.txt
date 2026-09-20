@@ -1,0 +1,64 @@
+tacit knowledge, the idiosyncratic tips and tricks that accumulate with experience. 5 As young
+
+workers supply relatively more codified knowledge than tacit knowledge, they may face greater
+
+task replacement from AI in exposed occupations, leading to greater employment reallocation
+
+(Acemoglu and Autor, 2011). In contrast older workers with accumulated tacit knowledge may face
+
+less task replacement. These benefits of tacit knowledge may accrue less to non-college workers in
+
+occupations with low returns to experience. Furthermore, more experienced workers may be more
+
+skilled in other ways, making them less vulnerable to substitution by AI tools (Ide, 2025). An
+
+important direction for research is to further model and test these predictions.
+
+
+
+2       Related Literature
+
+This paper engages with a large public debate in academia, public policy, business, and media
+
+on the employment effects of artificial intelligence. Much of this discourse centers on whether AI
+
+is displacing workers in exposed professions such as software engineers.6 Some work has noted
+
+that the unemployment rate for college graduates has risen above the rate for non-graduates,
+
+suggesting this as evidence of employment disruptions from AI (Thompson, 2025). Others have
+
+noted that these trends long preceded the spread of AI and have noted that publicly available
+
+data such as the Current Population Survey (CPS) show mixed evidence on employment changes
+
+in AI-exposed occupations (Lim et al., 2025; The Economist, 2025; Smith, 2025; Eckhardt and
+
+Goldschlag, 2025; Frick, 2025).7 These debates remain unsettled and in search of high quality data
+
+on labor market changes among exposed groups. Our paper provides large-scale data to measure
+
+employment changes with a high degree of granularity and precision, finding that young workers in
+
+AI-exposed occupations have indeed experienced employment declines.
+    5
+      Ironically, one of the practical skills more likely to be learned on the job than in university computer science
+classes may be how to use AI software development.
+    6
+      Some recent media on this topic includes Horowitch (2025); Ettenheim (2025); Raman (2025); Roose (2025); Peck
+(2025); Hoover (2025); Milmo and Almeida (2025); Wu (2025); Raval (2025). A number of technology executives
+have also warned of potential job loss from AI (Allen, 2025; Sherman, 2025; Bacon, 2025) or laid off workers with the
+aim of incresing AI investments (Jamali, 2025).
+    7
+      Reports from industry have also shown mixed findings. Job posting platform TrueUp suggests a recent increase in
+postings in the tech sector (Lenny Rachitsky, 2025). On the other hand, Revelio Labs finds a decline in job postings,
+with the decrease steeper for entry-level workers (Simon, 2025). Indeed job posting data suggest declines in postings
+for new graduates but find these declines for less AI-exposed occupations as well (Lim et al., 2025). Chandar (2025b)
+notes that the correlation between job postings and employment has been weak over recent years. SignalFire finds
+steep declines in new graduate hires in the tech sector compared to pre-Pandemic levels (Doshay and Bantock, 2025),
+consistent with the findings in this paper. Data from Gusto also suggests a decline in new graduate hiring (Bowen,
+2025).
+
+
+                                                          5
+

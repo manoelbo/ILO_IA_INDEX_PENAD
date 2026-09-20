@@ -1,0 +1,5 @@
+Grupo,Resultado,DDD grupo–complemento,p DDD,Pretrend grupo,Pretrend DDD,Poder grupo,N grupo,CBOs trat./controle
+Homens,Saldo líquido / admissões pré,"0,0679***<br>(0,0189)","<0,001","warning (p=0,057)","pass (p=0,952)",adequate,18.278,75/265
+Homens,Saldo líquido / fluxo total,"0,0171**<br>(0,0079)","0,030","fail (p=0,011)","pass (p=0,769)",adequate,18.286,75/266
+Mulheres,Saldo líquido / admissões pré,"-0,0679***<br>(0,0189)","<0,001","pass (p=0,576)","pass (p=0,952)",adequate,17.981,75/264
+Mulheres,Saldo líquido / fluxo total,"-0,0171**<br>(0,0079)","0,030","pass (p=0,131)","pass (p=0,769)",adequate,17.990,75/266

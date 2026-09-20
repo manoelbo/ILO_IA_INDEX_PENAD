@@ -1,0 +1,43 @@
+                                                                                                               11
+
+only list the patient’s primary symptom (see appendix B.2 for examples). Irrespective of
+the pathology suspected by the treating physicians, radiologists are expected to report all
+pathological findings.
+Because image-based classification is a core task performed by radiologists, a high-paying
+profession, it is not surprising that AI tools have made significant inroads in the field in the
+last decade. Recent advances in deep learning methods for image recognition have yielded
+algorithms that can match or surpass the performance of human radiologists (Obermeyer and
+Emanuel, 2016; Langlotz, 2019). As of 2020, 55 companies offered a total of 119 algorithmic
+products of which 46 have FDA approval (Tadavarthi et al., 2020). Most products related
+to clinical decision-making are marketed as support tools as opposed to autonomous tools,
+partly due to regulatory and liability issues (Harvey and Gowda, 2020).
+
+
+3.1.2   CheXpert
+
+We provide AI assistance using the CheXpert model, which is a deep learning prediction
+algorithm for chest X-ray interpretation (Irvin et al., 2019). This model is trained on a
+dataset of 224,316 chest radiographs of 65,240 patients labeled for the presence of fourteen
+common chest radiographic pathologies.9 The algorithm does not use any other patient
+information, such as the clinical history or vitals.10 Nonetheless, a prior version of this
+algorithm was shown to match or surpass the performance of board-certified radiologists
+from Stanford Hospital on five pathologies (Patel et al., 2019). These study results are also
+presented to our participants when introducing the AI tool. Section 4 confirms that the
+algorithm outperforms a majority of radiologists in our experiment. We relegate additional
+details about the algorithm to appendix B.3. The algorithm assistance to our participants
+will be in the form of a vector of probabilities for the presence of every pathology.11
+   9
+     The term artificial intelligence is typically reserved for a system of different prediction tasks to mimic a
+more complex set of behaviors, whereas machine learning is concerned with one specific prediction task. For
+a detailed discussion of this distinction see, for instance, (Taddy, 2018).
+  10
+     While large datasets of images are increasingly available (e.g. Kramer et al. 2011, Johnson et al. 2016,
+Irvin et al. 2019) it is significantly more difficult to construct such datasets for other patient information due
+to the compulsory manual review of textual data for HIPPA compliance.
+  11
+     Some algorithms attempt to make their predictions explainable to a human by highlighting the parts
+of the image that drive a specific prediction. However, prior studies show that providing such localization
+in addition to the numeric output does not improve the accuracy of radiologists (Gaube et al., 2022). A
+quantitative output allows us to compute a Bayesian benchmark to the radiologist’s prediction, which is
+otherwise difficult.
+

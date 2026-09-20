@@ -1,0 +1,13 @@
+                                                                                            110
+
+C.5.4   Model Selection Without Adjusting for Measurement Error
+
+This section presents the results of the model selection exercise not accounting for measure-
+ment error in the human signal. In these analyses, the instruments are constructed using the
+radiologist’s report on the case in the treatment arm without AI assistance. Note that some
+time elapses between the reads, so the radiologist likely observes a different draw of sE intro-
+ducing measurement error into the right-hand side variables of equation 7. This is why the
+preferred method uses instruments constructed using a leave-one-out average of reports for
+the case. Table C.23 presents results for top-level pathologies with AI, Table C.24 presents
+results for all pathologies with AI, and Table C.25 presents results for abnormal.
+

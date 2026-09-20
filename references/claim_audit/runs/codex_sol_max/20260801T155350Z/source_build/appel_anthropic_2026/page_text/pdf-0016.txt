@@ -1,0 +1,22 @@
+Figure 1.8: Anthropic AI Usage Index (AUI) across the US, August 2025 (V3) and November 2025 (V4)
+By comparing the AUI in November 2025 with its value in August 2025 we can estimate the implied rate of diffusion of Claude usage
+within the US. Under a model of proportional convergence toward a steady state in which AUI = 1 for all US states, the estimated
+elasticity can be used to calculate the pace of diffusion (see text for more details). Our range of estimates implies a pace of regional
+convergence of AUI in 2-5 years.
+
+
+
+              A concern with estimating convergence this way is that our AUI estimates are
+               subject to sampling noise and other variation unrelated to diffusion. This can
+               produce classical attenuation bias: even if AUI is not actually changing, our
+              estimate of could end up meaningfully below one.
+
+              To address this, we estimate the model by two-stage least squares (2SLS),
+              instrumenting the log of AUI in August 2025 with the composition of each
+               state’s workforce, measured by its proximity to overall Claude usage patterns.
+              The logic behind this instrument is that workforce composition is a strong
+
+
+
+The Anthropic Economic Index Report                                                                                                        16
+

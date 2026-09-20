@@ -1,0 +1,27 @@
+                              Survey Questionnaire – Danish Version
+
+15. Allocation of time savings from AI chatbots
+Hvis AI chatbots sparer tid i løsningen af en opgave, forventer du så, at
+    • Løse flere af samme opgaver
+    • Bruge mere tid på andre opgaver
+    • Tage flere pauser
+    • Tage mere fritid
+
+16. Workloads from AI chatbots
+Oplever du, at AI chatbots har øget din arbejdsmængde?
+    • Ja, flere af de samme arbejdsopgaver
+    • Ja, nye slags arbejdsopgaver
+    • Nej
+
+17. New job tasks [if 16=’Ja, nye slags arbejdsopgaver’]
+Hvilke slags nye arbejdsopgaver oplever du at have fået efter brugen af AI chatbots?
+    • [Fritekstfelt]
+
+17. End of survey
+Mange tak for at deltage i undersøgelsen.
+Hvis du vinder en af præmierne, vil du få direkte besked i din e-Boks.
+
+
+
+
+                                                    81

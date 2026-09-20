@@ -1,0 +1,47 @@
+Dafny, L., Duggan, M. and Ramanarayanan, S. (2012), ‘Paying a premium on your premium?
+ consolidation in the us health insurance industry’, American Economic Review 102(2), 1161–
+ 1185.
+
+Dahl, G. B. and Lochner, L. (2012), ‘The impact of family income on child achievement: Evidence
+ from the earned income tax credit’, American Economic Review 102(5), 1927–1956.
+
+de Chaisemartin, C. (2010), A note on instrumented difference in differences. Working Paper.
+
+de Chaisemartin, C. and D’Haultfœuille, X. (2018), ‘Fuzzy differences-in-differences’, The Review
+  of Economic Studies 85(2), 999–1028.
+
+Dinkelman, T. (2011), ‘The effects of rural electrification on employment: New evidence from
+  south africa’, American Economic Review 101(7), 3078–3108.
+
+Duflo, E. (2001), ‘Schooling and labor market consequences of school construction in indonesia:
+ Evidence from an unusual policy experiment’, American Economic Review 91(4), 795–813.
+
+Duggan, M. and Morton, F. S. (2010), ‘The effect of medicare part d on pharmaceutical prices
+ and utilization’, American Economic Review 100(1), 590–607.
+
+Duranton, G. and Turner, M. A. (2011), ‘The fundamental law of road congestion: Evidence
+ from us cities’, American Economic Review 101(6), 2616–2652.
+
+Ellul, A., Pagano, M. and Panunzi, F. (2010), ‘Inheritance law and investment in family firms’,
+  American Economic Review 100(5), 2414–2450.
+
+Enikolopov, R., Petrova, M. and Zhuravskaya, E. (2011), ‘Media and political persuasion: Evi-
+  dence from russia’, American Economic Review 101(7), 3253–3285.
+
+Fang, H. and Gavazza, A. (2011), ‘Dynamic inefficiencies in an employment-based health insur-
+  ance system: Theory and evidence’, American Economic Review 101(7), 3047–77.
+
+Faye, M. and Niehaus, P. (2012), ‘Political aid cycles’, American Economic Review 102(7), 3516–
+  3530.
+
+Forman, C., Goldfarb, A. and Greenstein, S. (2012), ‘The internet and local wages: A puzzle’,
+  American Economic Review 102(1), 556–575.
+
+Gentzkow, M., Shapiro, J. M. and Sinkinson, M. (2011), ‘The effect of newspaper entry and exit
+ on electoral politics’, American Economic Review 101(7), 2980–3018.
+
+Hornbeck, R. (2012), ‘The enduring impact of the american dust bowl: Short-and long-run
+  adjustments to environmental catastrophe’, American Economic Review 102(4), 1477–1507.
+
+                                               34
+

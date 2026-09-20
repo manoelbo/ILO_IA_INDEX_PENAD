@@ -1,0 +1,35 @@
+{
+  "admissao": {
+    "control_post_pct": 0.0,
+    "control_pre_pct": 0.0,
+    "did_pp": 0.0,
+    "gap_post_pp": 0.0,
+    "gap_pre_pp": 0.0,
+    "treated_post_pct": 0.0,
+    "treated_pre_pct": 0.0
+  },
+  "desligamento": {
+    "control_post_pct": 0.0,
+    "control_pre_pct": 0.0,
+    "did_pp": 0.0,
+    "gap_post_pp": 0.0,
+    "gap_pre_pp": 0.0,
+    "treated_post_pct": 0.0,
+    "treated_pre_pct": 0.0
+  },
+  "excluded_by_separation_mechanisms": [
+    "50",
+    "60",
+    "80"
+  ],
+  "movement_type_usability": {
+    "admission_type_ignored_pct": 93.23627985890789,
+    "note": "Separation type is usable and admission type is not. Any entry-margin decomposition by admission type is foreclosed.",
+    "separation_type_ignored_pct": 0.0816804371117532,
+    "transfer_rows_found": 0
+  },
+  "panel_filters_transfers": false,
+  "transfer_in_code": "70",
+  "transfer_out_code": "80",
+  "verdict": "void: codes 70 and 80 do not occur in the frozen vintage, so establishment transfers cannot be inflating the flow outcomes"
+}

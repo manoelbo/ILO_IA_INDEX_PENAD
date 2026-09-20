@@ -1,0 +1,10 @@
+{
+  "results/reference/artifacts/caged/models/group_did_results.csv": "03c42c0962da33c7445766430379ab19dd98a94e4fca8a7bfd0c8b553fcb8781",
+  "results/reference/artifacts/caged/diagnostics/ddd_multiplicity_results.csv": "f5ab2a3b68a9542f24dfda6323134313118eedb8c87f048a3d2fe08a3c0b6f3c",
+  "results/reference/artifacts/caged/diagnostics/ddd_alternative_partitions.csv": "3b9986370572f8c620001410d739151f60745c3e71cc707e70e8ff3767a22325",
+  "results/reference/artifacts/caged/diagnostics/ddd_pretrends.csv": "13cd9bfb175281bef977dfaf814ff61fa834555b579f14d59c582a94f416b9db",
+  "results/reference/artifacts/caged/diagnostics/ddd_alternative_partitions_pretrends.csv": "3b01188ba54011a584ee441db14ae86531cab3f3f216c211f00341f62dd00c38",
+  "results/reference/artifacts/caged/backing_data/figure_5_2_6_group_outcome_forest.csv": "9d0eb5c3c725fbd22a7d34b0a2a0401e9cadddd49d5120e5ac335c9b1738caa6",
+  "results/reference/artifacts/caged/tables/table_5_1_national_results.csv": "24c193fd0f7069b0ffb01a9b4f630a1709e2645d502cb9c7a7d7c45f807ed5be",
+  "results/reference/artifacts/caged/tables/table_5_1_1_sector_control.csv": "255bb41924dc5ec3e884b64eda2625fc818e5fd43ecade1b5ba5b3119036caba"
+}

@@ -1,0 +1,42 @@
+attributing these changes to GenAI; and the junior employment decline is driven primar-
+ily by slower hiring rather than increased separations. While these patterns align with
+forward-looking adjustments, our data do not allow us to test this channel directly. One
+potential implication is that if firms overestimate the near-term automation capabilities
+of GenAI, the resulting decline in junior employment may ultimately prove temporary.
+    We conclude by noting several limitations. Our adoption definition captures deliber-
+ate integration of GenAI into firm workflows, but does not account for “silent” adoption,
+such as employees using GenAI tools without firm integration. Therefore, our definition
+can be thought of as conservative: more likely to misclassify adopters as non-adopters
+(false negatives) than the reverse (false positives). Such misclassification, by assigning
+treated firms to the control group, is likely to attenuate estimates toward zero. However,
+silent adoption may have distinct implications for employment dynamics from the delib-
+erate, firm-level adoption we capture.7 An additional caveat is that, as with any empirical
+analysis based on cross-sectional variation, our results do not necessarily generalize to the
+aggregate economy without additional assumptions, due to the “missing intercept prob-
+lem” (see Acemoglu and Restrepo, 2020; Wolf, 2023; Moll and Hanney, 2025).
+    The remainder of the paper is organized as follows. Section 2 reviews related liter-
+ature. Section 3 develops the conceptual framework. Section 4 describes the data and
+descriptive patterns. Section 5 presents our empirical strategy and main findings. Section
+6 concludes.
+
+
+
+2     Related Literature
+
+Our study relates to three main strands of the literature: (i) skill-biased technological
+change, (ii) firm-level adoption of AI technologies, and (iii) the emerging evidence on the
+labor-market impacts of GenAI.
+
+
+Skill-Biased Technological Change: The classic literature on skill-biased technologi-
+cal change (SBTC) shows that computers and automation have historically displaced
+    7 We partly address this concern in Supplemental Appendix A.4 by constructing an augmented adoption
+
+measure that combines integrator postings with worker position descriptions classified as integrator roles;
+the headline result is robust to this alternative definition.
+
+
+
+
+                                                    8
+

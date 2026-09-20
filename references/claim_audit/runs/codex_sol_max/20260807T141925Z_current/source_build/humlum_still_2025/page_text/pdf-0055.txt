@@ -1,0 +1,55 @@
+Benefits for users. Table 1, Columns 3–6 show how reported benefits among chatbot
+users vary with employer initiatives. The average benefit reported by users is:
+
+
+                             B̄(E) = E[Bi (α) | i ≤ i∗ (α)] = γαc + (1 − γ)αb ,                                               (9)
+
+
+where γ = 2ββ̂b ≥ 0. Equation (9) yields two key insights.
+        First, initiatives that reduce adoption costs (αc ) lower average reported benefits
+through a selection effect: lower costs induce adoption by workers with lower idiosyncratic
+benefits (higher i). This negative selection effect is stronger when workers are more
+homogeneous in net benefits (β̂ numerically small, so initiatives generate larger adoption
+increases; cf. Equation (8)) but more heterogeneous in gross benefits (βb large in absolute
+value, so marginal adopters have substantially lower benefits).
+        Second, initiatives that increase benefits (αb ) have two offsetting effects. A higher αb
+directly raises each user’s benefit Bi , but also expands adoption to workers with lower
+idiosyncratic benefits, triggering the same negative selection effect. The net effect on B̄ is
+positive if and only if γ < 1—a condition more likely when workers are similar in gross
+benefits (βb small) but differ in adoption costs (βc large).
+
+Figure A.1: The Impact of Employer Initiatives on Adoption Rates and Reported Benefits
+                                                                                  (b) Higher Benefits
+                       (a) Lower Costs
+
+                                                      Costs0
+
+                                                                      B̄1
+  B̄0                                                                                                                Costs0
+
+
+  B̄1                                                                 B̄0
+
+                                                      Costs1
+
+
+
+
+                                                                                                                     Benefits1
+
+                                                      Benefits0
+
+                                                                                                                     Benefits0
+                 i∗0              i∗1                                           i∗0        i∗1
+
+
+Notes: This figure illustrates how employer initiatives affect adoption rates (i∗ ) and average reported benefits among users
+(B̄). Panel (a) shows initiatives that reduce adoption costs (αc ); Panel (b) depicts initiatives that enhance benefits (αb ).
+Lower costs unambiguously increase adoption and reduce average reported benefits via negative selection. Initiatives that
+raise benefits also increase adoption, but their impact on average reported benefits is theoretically ambiguous and, at most,
+equal to their individual-level effect.
+
+
+
+
+                                                                  5

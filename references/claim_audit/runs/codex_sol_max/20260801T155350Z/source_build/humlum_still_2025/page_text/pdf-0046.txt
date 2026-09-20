@@ -1,0 +1,57 @@
+abstracting from more autonomous systems. Second, we model workers’ adoption decisions,
+
+as modeled in Section A.1, using a Roy framework that allows for heterogeneity in both
+
+productivity benefits and adoption costs. We apply a parallel Roy adoption model to
+
+firms’ initiatives, assuming that firms encourage chatbot use when expected profit gains
+
+exceed encouragement costs. Finally, we assume that product markets are characterized by
+
+monopolistic competition and labor markets are perfectly competitive. Modeling employer
+
+encouragement as a binary decision, our model falls within the Rosen (1986) framework
+
+of amenity provision and equalizing differences.
+
+
+Productivity and earnings. Worker i’s earnings from working at firm j are the
+
+product of a firm-specific skill price Wj and the worker’s efficiency units of human capital
+
+Hij :
+
+
+                                  Yij (Aij ) = Wj Hij (Aij ).                            (9)
+
+
+Workers are endowed with a unit of baseline human capital, which may be augmented
+
+through chatbot use, Aij ∈ {0, 1}:
+
+
+                                 Hij (Aij ) = exp(Bij Aij ),                            (10)
+
+
+where Bij captures the productivity benefit of AI chatbots.
+
+    As in Section A.1, the productivity benefit and adoption cost depends on worker i’s
+
+type and firm j’s chatbot initiatives:
+
+
+                               Bij = αb0 + αb1 Ej + βb × i                              (11)
+
+                                Cij = αc0 + αc1 Ej + βc × i.                            (12)
+
+
+Firm production and demand. Firms produce using efficiency units of labor:
+                                              Z
+                                 Yj = Hj =               Hij di,                        (13)
+                                                i∈I(j)
+
+
+
+
+                                              11
+

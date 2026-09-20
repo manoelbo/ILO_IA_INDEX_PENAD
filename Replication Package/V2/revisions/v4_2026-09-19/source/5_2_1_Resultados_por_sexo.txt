@@ -1,0 +1,27 @@
+### 5.2.1 Resultados por sexo
+A Tabela 5.2.1 traz as estimativas por sexo, com o DiD calculado dentro da amostra de cada grupo. O contraste formal entre homens e mulheres está no Apêndice A.
+**Tabela 5.2.1: Resultados por sexo**
+
+[TABLE]
+Grupo | Resultado | DiD no grupo | EP | p BH | Pretrend | Suporte
+Homens | Admissões (PPML, nível) | −0,0779\*\* | 0,0272 | 0,019 | fail | adequate
+Homens | Desligamentos (PPML, nível) | −0,0635\*\* | 0,0244 | 0,034 | fail | adequate
+Homens | Salário real de admissão (log) | −0,0501\*\*\* | 0,0122 | \< 0,001 | fail | adequate
+Homens | Saldo líquido (asinh) | −0,2451 | 0,3434 | 0,582 | fail | adequate
+Mulheres | Admissões (PPML, nível) | −0,0724 | 0,0464 | 0,228 | fail | adequate
+Mulheres | Desligamentos (PPML, nível) | −0,0776\* | 0,0371 | 0,095 | fail | adequate
+Mulheres | Salário real de admissão (log) | −0,0491\*\*\* | 0,0117 | \< 0,001 | fail | adequate
+Mulheres | Saldo líquido (asinh) | −1,0188\*\*\* | 0,3015 | 0,004 | fail | adequate
+[/TABLE]
+
+> *Notas: cada linha traz o DiD estimado dentro da amostra do próprio grupo, com erro-padrão clusterizado por CBO de quatro dígitos. Família C, de 130 testes; as estrelas são calculadas exclusivamente sobre o p ajustado de Benjamini-Hochberg: \\* p\<0,10; \*\* p\<0,05; \*\*\* p\<0,01. **Estas células não medem heterogeneidade.** O teste entre grupos é o contraste DDD do Apêndice A, no qual apenas 2 dos 100 contrastes salariais sobrevivem ao mesmo ajuste. O saldo em transformação asinh não deve ser interpretado como percentual. Fonte: `results/models/group_did_results.csv`.\*
+Dentro de cada grupo, as estimativas repetem o padrão nacional: os diferenciais de admissões são de cerca de −7,5% entre homens e −7,0% entre mulheres, e os diferenciais do salário real de admissão são de −4,9% e −4,8%, ambos abaixo de 5% após o ajuste de multiplicidade. Em admissões, desligamentos e salário, homens e mulheres apresentam estimativas próximas, e os contrastes DDD não indicam uma diferença relevante entre os sexos. O saldo é uma exceção separada, discutida no parágrafo seguinte, mas sua pré-tendência falha.
+O teste de heterogeneidade não encontra assimetria. O DDD de admissões é de **+0,0116**, com p ajustado de 0,907; o de desligamentos, +0,0332, com BH p = 0,581; o de salário, +0,0022, com BH p = 0,907. O único contraste de sexo que sobrevive ao ajuste é o saldo líquido, +0,7989 com BH p = 0,0026, e o saldo é o desfecho com o pior diagnóstico de tendências prévias de todo o trabalho, com 21 dos 22 leads individualmente significativos a 5%. Ele não sustenta leitura causal.
+As Figuras 5.2.1.1 e 5.2.1.2 trazem os event studies e as trajetórias de admissões e salário de admissão por sexo.
+**Figura 5.2.1.1: Admissões — event study e trajetórias por sexo**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/9dba5094-eeaa-4447-8e53-56041b378fa0/figure_5_2_1_1_sex_admissions.png]
+**Figura 5.2.1.2: Salário real de admissão — event study e trajetórias por sexo**
+[IMAGE: https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/f0048003-e495-4148-994f-63f869144d68/figure_5_2_1_2_sex_wage.png]
+Nas admissões, as trajetórias de homens e mulheres em ocupações expostas correm próximas ao longo de todo o período, antes e depois do evento. No salário, os dois grupos ficam abaixo da média do próprio pré-período, com magnitudes muito parecidas: é a versão visual do que a tabela mostra.
+A ausência de contrastes ajustados converge com [Brynjolfsson, Chandar e Chen (2025)](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/), que também não encontram efeitos diferenciais por sexo nos Estados Unidos. Continua valendo a leitura da Subseção 3.5.1 e de [Gmyrek ](https://doi.org/10.54394/HETP0387)[*et al.*](https://doi.org/10.54394/HETP0387)[ (2025)](https://doi.org/10.54394/HETP0387) sobre a maior exposição ocupacional das mulheres, que é uma afirmação sobre exposição potencial, e não sobre ajuste realizado. O desenho não observa adoção de IA; as estimativas não revelam diferença entre os sexos no período observado, sem permitir concluir se houve ou não adoção ou impacto da IA.
+Em resumo: nenhum contraste DDD de admissões, desligamentos ou salário por sexo sobrevive ao ajuste de multiplicidade. A maior exposição ocupacional das mulheres, documentada na Seção 3, não coincide com diferenças detectáveis nas estimativas da porta de entrada, mas isso não demonstra ausência de impacto.

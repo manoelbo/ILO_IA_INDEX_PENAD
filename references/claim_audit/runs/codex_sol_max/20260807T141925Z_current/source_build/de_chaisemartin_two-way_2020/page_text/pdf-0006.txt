@@ -1,0 +1,49 @@
+Assumption 4 (Strong exogeneity) For all (g, t) ∈ {1, ..., G} × {2, ..., T },
+E(Yg,t (0) − Yg,t−1 (0)|Dg,1 , ..., Dg,T ) = E(Yg,t (0) − Yg,t−1 (0)).
+
+Assumption 4 requires that the shocks affecting a group’s Yg,t (0) be mean independent of that
+group’s treatment sequence. This rules out the possibility that a group gets treated because it
+experiences negative shocks, the so-called Ashenfelter’s dip (see Ashenfelter, 1978). Assumption
+4 is related to the strong exogeneity condition in panel data models, which, as is well-known, is
+necessary to obtain the consistency of the fixed effects estimator (see, e.g., Wooldridge, 2002).
+We now define the FE regression described in the introduction.4
+
+Regression 1 (Fixed-effects regression)
+Let βbf e denote the coefficient of Dg,th in ian OLS regression of Yi,g,t on group fixed effects, period
+fixed effects, and Dg,t . Let βf e = E βbf e .5
+
+                                   P                      P
+For all g and t, let Ng,. = Tt=1 Ng,t and N.,t = G          g=1 Ng,t respectively denote the total number of
+observations in group g and in period t. For any variable Xg,t defined in each (g, t) cell, let Xg,. =
+PT                                                                                       PG
+   t=1 (Ng,t /Ng,. )Xg,t denote the average value of Xg,t in group g, let X.,t =             g=1 (Ng,t /N.,t )Xg,t
+                                                                       P
+denote the average value of Xg,t in period t, and let X.,. = g,t (Ng,t /N )Xg,t denote the average
+value of Xg,t . For instance, D3,. and D.,2 respectively denote the average treatment in group
+3 across time and in period 2 across groups, whereas Y.,. denotes the average value of the
+outcome across groups and time. Finally, for any variable Xg,t , we let X denote the vector
+(Xg,t )(g,t)∈{1,...,G}×{1,...,T } collecting the values of that variable in each (g, t) cell. For instance, D
+is the vector (Dg,t )(g,t)∈{1,...,G}×{1,...,T } collecting the treatments of all the (g, t) cells.
+
+
+3       Two-way fixed effects regressions
+
+3.1      A decomposition result
+
+We study the FE regression under the following common trends assumption.
+
+Assumption 5 (Common trends) For t ≥ 2, E(Yg,t (0) − Yg,t−1 (0)) does not vary across g.
+
+Assumption 5 requires that the expectation of the outcome without treatment follow the same
+evolution over time in every group. When t represents birth cohorts, Assumption 5 requires that
+the outcome difference between consecutive cohorts be the same across groups.
+    4
+      Throughout the paper, we assume that Dg,t in Regression 1 and Dg,t − Dg,t−1 in Regression 2 below are
+not collinear with the other independent variables in those regressions, so βbf e and βbf d are well-defined.
+   5
+     As the independent variables in Regression 1 are constant within each (g, t) cell, Regression 1 is equivalent
+to a (g, t)-level regression of Yg,t on group and period fixed effects and Dg,t , weighted by Ng,t .
+
+
+                                                        6
+

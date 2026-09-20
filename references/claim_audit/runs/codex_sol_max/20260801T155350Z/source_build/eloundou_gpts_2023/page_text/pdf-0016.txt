@@ -1,0 +1,53 @@
+                                              WORKING PAPER
+
+
+
+
+               Group               Occupations with highest exposure                 % Exposure
+               Human 𝛼             Interpreters and Translators                              76.5
+                                   Survey Researchers                                        75.0
+                                   Poets, Lyricists and Creative Writers                     68.8
+                                   Animal Scientists                                         66.7
+                                   Public Relations Specialists                              66.7
+               Human 𝛽             Survey Researchers                                        84.4
+                                   Writers and Authors                                       82.5
+                                   Interpreters and Translators                              82.4
+                                   Public Relations Specialists                              80.6
+                                   Animal Scientists                                         77.8
+               Human 𝜁             Mathematicians                                           100.0
+                                   Tax Preparers                                            100.0
+                                   Financial Quantitative Analysts                          100.0
+                                   Writers and Authors                                      100.0
+                                   Web and Digital Interface Designers                      100.0
+                                     Humans labeled 15 occupations as "fully exposed."
+               Model 𝛼             Mathematicians                                           100.0
+                                   Correspondence Clerks                                     95.2
+                                   Blockchain Engineers                                      94.1
+                                   Court Reporters and Simultaneous Captioners               92.9
+                                   Proofreaders and Copy Markers                             90.9
+               Model 𝛽             Mathematicians                                           100.0
+                                   Blockchain Engineers                                      97.1
+                                   Court Reporters and Simultaneous Captioners               96.4
+                                   Proofreaders and Copy Markers                             95.5
+                                   Correspondence Clerks                                     95.2
+               Model 𝜁             Accountants and Auditors                                 100.0
+                                   News Analysts, Reporters, and Journalists                100.0
+                                   Legal Secretaries and Administrative Assistants          100.0
+                                   Clinical Data Managers                                   100.0
+                                   Climate Change Policy Analysts                           100.0
+                                     The model labeled 86 occupations as "fully exposed."
+               Highest variance    Search Marketing Strategists                              14.5
+                                   Graphic Designers                                         13.4
+                                   Investment Fund Managers                                  13.0
+                                   Financial Managers                                        13.0
+                                   Insurance Appraisers, Auto Damage                         12.6
+
+Table 4: Occupations with the highest exposure according to each measurement. The final row lists the
+occupations with the highest 𝜎 2 value, indicating that they had the most variability in exposure scores.
+Exposure percentages indicate the share of an occupation’s task that are exposed to GPTs (𝛼   𝛼 ) or GPT-powered
+software (𝛽𝛽 and 𝜁 ), where exposure is defined as driving a reduction in time it takes to complete the task by at
+least 50% (see exposure rubric A.1). As such, occupations listed in this table are those where we estimate
+that GPTs and GPT-powered software are able to save workers a significant amount of time completing a
+large share of their tasks, but it does not necessarily suggest that their tasks can be fully automated by these
+technologies. All tasks are assigned equal weight within an occupation.
+

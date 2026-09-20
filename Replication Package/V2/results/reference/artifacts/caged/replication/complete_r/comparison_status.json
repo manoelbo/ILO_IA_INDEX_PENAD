@@ -1,0 +1,34 @@
+{
+  "coefficient_models": 646,
+  "coefficient_rows": 16852,
+  "coefficient_rows_failed": 0,
+  "contracts": 646,
+  "diagnostic_models": 296,
+  "diagnostic_models_failed": 0,
+  "diagnostic_p_value_tolerance": 2e-05,
+  "diagnostic_relative_tolerance": 0.001,
+  "exact_fields": [
+    "n_obs",
+    "minimum_clusters",
+    "sample_id",
+    "status",
+    "reference_event_time"
+  ],
+  "explicit_failed_estimation_contracts": 0,
+  "honest_did_input_comparison": {
+    "coefficient_rows": 92,
+    "coefficient_rows_failed": 0,
+    "covariance_rows": 4232,
+    "covariance_rows_failed": 0,
+    "maximum_coefficient_absolute_difference": 8.732570222491631e-12,
+    "maximum_covariance_absolute_difference": 2.616573624436569e-12,
+    "numeric_tolerance": 1e-06,
+    "status": "pass"
+  },
+  "max_coefficient_absolute_difference": 7.541345325989823e-11,
+  "max_diagnostic_absolute_difference": 0.0023563854995813927,
+  "max_standard_error_absolute_difference": 5.022547106998954e-07,
+  "numeric_tolerance": 1e-06,
+  "r_models": 646,
+  "status": "pass"
+}

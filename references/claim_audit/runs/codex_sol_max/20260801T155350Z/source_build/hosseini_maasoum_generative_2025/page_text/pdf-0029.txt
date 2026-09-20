@@ -1,0 +1,41 @@
+digit SOC fixed effects, a one-standard-deviation increase in seniority is associated with
+a 3.68 percentage point decline in displacement intensity (p = 0.002). These patterns are
+consistent with the framework’s assumption that junior-type tasks are disproportionately
+the ones GenAI can automate. Supplemental Appendix A.7 provides full details on the
+data, methodology, and the complete set of results.
+
+
+5.2     Employment Dynamics by Adoption and Seniority
+
+5.2.1   Descriptive Employment Trends
+
+We begin by comparing the evolution of junior and senior employment over time in
+GenAI-adopting versus non-adopting firms. Figure 4a plots average junior employment
+across the two groups. From 2018 through the end of 2022, junior employment in adopt-
+ing and non-adopting firms followed closely parallel trajectories. Starting in late 2022,
+however, the trends diverged sharply: junior employment in adopting firms began to
+decline markedly, while employment in non-adopting firms remained relatively stable.
+By contrast, Figure 4b shows that since 2018, senior employment in adopting and non-
+adopting firms grew at a similar pace—aside from a small and brief acceleration in adopt-
+ing firms in 2021—with no apparent break in trend around 2023. These patterns are con-
+sistent with Brynjolfsson et al. (2025a), who document a similar divergence by occupa-
+tional exposure among younger workers in U.S. payroll data, with no corresponding shift
+for older workers.
+   Appendix A.17 formalizes these descriptive patterns with a difference-in-differences
+specification that compares employment in adopting and non-adopting firms, estimated
+separately for juniors and seniors. The estimates confirm the visual evidence: junior
+employment at adopters is flat relative to non-adopters through 2022Q4 and then turns
+sharply negative, falling by about 9 percent six quarters after the diffusion of GenAI.
+
+
+5.2.2   Triple-Difference by Seniority
+
+To directly assess the “seniority-biased” effects associated with GenAI adoption, we esti-
+mate a triple-difference specification that compares changes in junior versus senior em-
+ployment within adopting firms relative to non-adopters:
+
+
+
+
+                                            29
+

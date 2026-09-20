@@ -1,0 +1,38 @@
+          Figure 7. Weighted Common Trends in the Unilateral Divorce Analysis: The
+                     Treatment/Control Weights on Eachf Timing
+                                                           ( Group)
+
+                           .3
+                                                          Sample Share
+          Weight for Each Treatment Group
+                                     .2
+
+
+
+
+                                                                                        Treatment-Control Weight
+               0           .1
+
+
+
+
+                                                   Treatment-Control Weight, Timing-Only
+                           -.1
+
+
+
+
+                                            1970      1975                           1980                           1985
+                                                          Treatment Time
+
+Notes: The figure plots the weights that determine each timing group’s role in the weighted common trends expression.
+These are show in solid triangles and equal the difference between the total weight each treatment timing group
+receives in terms where it is the treatment group (𝑤𝑤𝑇𝑇𝑘𝑘 ) and terms where it is the control group (𝑤𝑤𝐶𝐶𝑘𝑘 ): 𝑤𝑤𝑘𝑘𝑇𝑇 − 𝑤𝑤𝑘𝑘𝐶𝐶 . The
+solid circles show the same weights but for versions of each estimator that exclude the untreated (or already-treated)
+units and, therefore, are identified only by treatment timing. The open squares plot each group’s sample share.
+
+
+
+
+                                                                37
+

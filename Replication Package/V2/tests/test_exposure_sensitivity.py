@@ -10,12 +10,12 @@ import pytest
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "exposure_sensitivity.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "exposure_sensitivity.py"
 
 
 def load_module():
-    sys.path.insert(0, str(PACKAGE_ROOT / "code" / "panel"))
-    sys.path.insert(0, str(PACKAGE_ROOT / "code" / "models"))
+    sys.path.insert(0, str(PACKAGE_ROOT / "code" / "caged" / "panel"))
+    sys.path.insert(0, str(PACKAGE_ROOT / "code" / "caged" / "models"))
     spec = importlib.util.spec_from_file_location(
         "exposure_sensitivity",
         MODULE_PATH,

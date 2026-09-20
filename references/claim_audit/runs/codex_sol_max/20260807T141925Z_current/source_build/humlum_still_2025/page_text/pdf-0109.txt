@@ -1,0 +1,34 @@
+assess whether effects reflect workplace-wide initiatives or individual interventions; at the
+workplace level, it addresses concerns about attenuation bias from survey measurement
+error.
+   We focus the robustness analysis on encouraged use, our primary workplace treatment.
+Section F.6.1 describes how we construct coworker measures, and Section F.6.2 shows that
+our findings hold when using coworker encouragement, replicating first the adoption and
+self-reported work effects from Section 2.2, then the labor market results from Section 3.
+
+F.6.1    Empirical Strategy
+
+To operationalize these ideas, we construct leave-one-out averages of coworkers’ reported
+employer encouragement for each worker i:
+
+                                            1       X
+                     Encouragedj,−i =                        Encouragedk ,              (48)
+                                        Nj(i) − 1 k∈j(i)\i
+
+where Nj(i) denotes the number of respondents in the same workplace-occupation cell j(i)
+as worker i.
+   The coworker measurements are made possible by our workplace-based sampling design
+(described in Section 1.3), which ensures that most respondents have coworkers who also
+participated in the survey. To mitigate measurement error due to incomplete sample
+coverage, we apply an empirical shrinkage procedure to the leave-out encouragement rates,
+Encouragedj,−i (see Appendix G.1 for details on this method). Importantly, our results in
+Section F.6.2 are robust to using the raw leave-out means instead.
+   Table F.3 shows that coworker encouragement strongly predicts an individual worker’s
+own reported encouragement: the first-stage coefficient is approximately 1, with an F-
+statistic of 3,116. The strong correlation in reported employer encouragement at the
+workplace level supports our interpretation of these initiatives as centralized policies.
+
+
+
+
+                                             59

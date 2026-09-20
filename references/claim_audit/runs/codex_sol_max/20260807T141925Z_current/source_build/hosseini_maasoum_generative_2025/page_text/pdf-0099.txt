@@ -1,0 +1,52 @@
+A.21      Early 2023 Labor-Market Adjustments to GenAI—Anecdotal Evi-
+          dence
+In this appendix, we compile narrative evidence from early 2023 documenting how major U.S. companies
+began adjusting their hiring practices and internal workflows, explicitly attributing these changes to the
+adoption or anticipated impact of generative AI.
+
+
+IBM: In May 2023, IBM’s CEO told Bloomberg that the company “expects to pause hiring for roles as roughly
+7,800 jobs could be replaced by Artificial Intelligence in the coming years” (Reuters, 2023a).
+
+
+Dropbox: In April 2023, Dropbox’s CEO announced that the company will reduce its workforce by 16
+percent. According to his letter, one of the main explanations is that “the AI era of computing has finally
+arrived. We’ve believed for many years that AI will give us new superpowers and completely transform knowledge
+work.” (Houston, 2023).
+
+
+Meta: In February 2023, Meta created a “top-level product group” to “turbocharge” generative-AI work and
+then announced 10,000 layoffs and cancellation of 5,000 open roles (March 2023) while emphasizing a pivot
+to AI (Reuters, 2023b,c).
+
+
+CNET: In March 2023, shortly after revealing its use of AI-generated articles, CNET laid off about 10 per-
+cent of its staff. Parent company Red Ventures cited a refocus on search-optimized content and appointed
+the editor-in-chief to lead AI strategy, signaling ongoing integration of generative AI (Mia Sato, 2023).
+
+
+Nuance and Microsoft: In March 2023, Nuance, a Microsoft subsidiary, launched DAX Express, a
+GPT-4–powered tool that automates clinical documentation from patient interactions, aiming to reduce
+physicians’ administrative workload and burnout (Medical Design & Development Staff, 2023).
+
+
+Morgan Stanley: In March 2023, the Wealth Management division launched a new GPT-4-powered as-
+sistant. According to its co-president, the technology was meant to help “freeing up valuable time for financial
+advisors to do what they do best—serve their clients” (Morgan Stanley, 2023).
+
+
+Wendy’s: In May 2023, Wendy’s partnered with Google Cloud to pilot FreshAI, a generative-AI system
+automating drive-thru orders using large language models to handle complex, customizable requests and
+improve accuracy and speed (The Wendy’s Company, 2023).
+
+
+Presto and CKE Restaurants: Similarly, in May 2023, Presto Automation expanded its partnership
+with CKE Restaurants to deploy Presto Voice, an AI system automating drive-thru orders at Carl’s Jr. and
+Hardee’s. After pilots showed higher sales and efficiency, CKE began offering the technology to franchisees
+nationwide (TMCnet, 2023).
+
+
+
+
+                                                        A.54
+

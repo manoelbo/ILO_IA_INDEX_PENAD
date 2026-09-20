@@ -1,0 +1,71 @@
+                        Figure F.9: Occupational Mobility of Incumbent Workers
+
+                                  (a) Average Impacts (Dynamic Diff-in-Diff)
+                  .15
+
+
+
+
+                   .1
+
+
+
+
+                  .05
+
+
+
+
+                    0
+
+
+
+
+                 -.05
+                    2021m1       2021m7         2022m1   2022m7    2023m1         2023m7   2024m1   2024m7
+
+
+                           (b) Occupational Heterogeneity (Pooled Diff-in-Diff)
+                                   All
+
+                        Software Dev.
+
+                           Legal Prof.
+
+                         Accountants
+
+                  Customer Service
+
+                            Marketing
+
+                  Financial Advisors
+
+                             HR Prof.
+
+                         Office Clerks
+
+                            Teachers
+
+                           IT Support
+                                         -.05                                 0                              .05
+
+                                                                       2023        2024
+
+
+Notes: This figure shows full-time equivalent employment of incumbent workers in their original occupations, in encouraged-
+use workplaces relative to those without encouragement, indexed to November 2022. Incumbent workers are those employed
+at the workplace throughout the pre-period (2021M1-2022M11). Panel (a) is based on the dynamic difference-in-differences
+specification in Equation (2), with shaded areas representing 95% confidence intervals. Panel (b) shows the effects separately
+by survey occupation, based on the pooled specification in Equation (3), with 95% confidence intervals shown as whiskers.
+Sample: All completed 2024 survey responses linked to registry data.
+
+
+
+
+F.5       Additional Controls
+
+This section evaluates the robustness of the relationships between employer encouragement
+of AI chatbots and workers’ adoption and reported benefits. We leverage the richness of
+
+
+                                                                  56

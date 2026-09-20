@@ -1,0 +1,59 @@
+A1        Additional Tables
+
+               Table A1: Effect of LLM exposure on firm-level job listings
+
+                                                                        Job postings
+                                 LLM exposure x Post                     −0.010∗∗∗
+                                                                          (0.002)
+
+                                 Firm fixed-effects                         Yes
+                                 Industry-by-period fixed effects           Yes
+                                 Observations                            1,268,013
+                                 Adjusted R2                               0.522
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity. The dependent variable is an indicator equal to one if firm i posted at
+least one job vacancy in month t. LLM exposure is the firm’s standardized pre-treatment exposure
+score, calculated as the employment-weighted average of occupational LLM exposure scores from
+Eloundou et al. (2024) using the workforce composition on 30 October 2022. All regressions include
+firm fixed effects and industry-by-period fixed effects. All other definitions are as in Table 3.
+
+
+
+
+A2        Heterogeneous Treatment Effects
+A2.1        Firm-Level Employment Stocks
+
+Table A2: Effect of LLM exposure on firm-level job outcomes, high vs. low com-
+pensation firms
+
+                             Employees     Low seniority      High seniority         Low seniority (%)   Av. comp.
+     Panel A: High compensation firms
+     LLM exposure x Post     −0.007∗∗∗       −0.008∗∗∗              −0.005∗              −0.001∗         195.240∗
+                              (0.003)         (0.003)               (0.003)              (0.0004)        (101.538)
+
+     Firm fixed effects         Yes             Yes                   Yes                  Yes              Yes
+     Industry-by-period FE      Yes             Yes                   Yes                  Yes              Yes
+     Observations             634,030         633,977               634,018              633,977          634,030
+     Adj. R-squared            0.975           0.973                 0.974                0.963            0.956
+
+     Panel B: Low compensation firms
+     LLM exposure x Post      0.0001           −0.001               −0.00002             −0.0004           69.929
+                              (0.003)          (0.003)               (0.003)             (0.0003)         (46.938)
+
+     Firm fixed effects         Yes             Yes                   Yes                  Yes              Yes
+     Industry-by-period FE      Yes             Yes                   Yes                  Yes              Yes
+     Observations             633,983         633,978               632,313              633,978          633,983
+     Adj. R-squared            0.988           0.988                 0.985                0.956            0.946
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, separately for high- and low-compensation firms. Firms are split at
+the median pre-treatment average compensation level (October 2022). Panel A presents results for
+firms above the median compensation, Panel B for firms below the median. All other definitions
+are as in Table 3.
+
+
+
+                                                         34
+

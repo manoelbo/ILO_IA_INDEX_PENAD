@@ -1,0 +1,42 @@
+                  The Rapid Adoption of Generative AI∗
+
+                         Alexander Bick                                Adam Blandin
+               Federal Reserve Bank of St. Louis & CEPR                Vanderbilt University
+
+                                         David J. Deming
+                                    Harvard Kennedy School & NBER
+
+
+
+
+                                           October 27, 2025
+
+
+
+                                                 Abstract
+
+       Generative artificial intelligence (AI) is a potentially important new technology, but its
+       impact on the economy depends on the speed and intensity of adoption. This paper
+       reports results from a series of nationally representative U.S. surveys of generative AI
+       use at work and at home. As of late 2024, 45% of the U.S. population age 18-64 uses
+       generative AI. Among employed respondents, 27% used generative AI for work at least
+       once in the previous week: 10% used it every workday, and 17% on some but not all
+       workdays. Relative to each technology’s first mass-market product launch, work adoption
+       of generative AI has been as fast as the personal computer (PC), and overall adoption
+       has been faster than either PCs or the internet. Between 1 and 7% of all work hours are
+       currently assisted by generative AI, and respondents report time savings equivalent to
+       1.4% of total work hours. Potential productivity gains vary widely by industry, and firm
+       climate and policies play an important role in adoption patterns.
+
+       JEL Codes: J24, O33
+       Keywords: Generative AI, Technology Adoption, Labor Productivity
+
+
+
+
+   ∗
+    Contact: alexander.bick@stls.frb.org; adam.blandin@vanderbilt.edu; david deming@harvard.edu. We
+thank Kevin Bloodworth II and Eli Tsung for excellent research assistance. The views in this paper are those
+of the authors and do not necessarily reflect the views of the Federal Reserve Bank of St. Louis or the Federal
+Reserve System.
+

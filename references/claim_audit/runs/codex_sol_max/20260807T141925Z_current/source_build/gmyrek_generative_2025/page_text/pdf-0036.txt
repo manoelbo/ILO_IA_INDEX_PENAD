@@ -1,0 +1,16 @@
+33     ILO Working Paper 140
+
+
+
+
+     Task                                            Justification
+
+     Maintaining documenta-      0.16   0.43   0.3   Generative AI can assist in maintaining documentation by gen-
+     tion of classes conducted                       erating templates, formatting, and summarizing information,
+     with children.                                  which supports automation of routine documentation tasks.
+                                                     However, nuances in class content, individual student pro-
+                                                     gress, and teacher observations require human oversight, lim-
+                                                     iting full automation potential. My score aligns closer to the
+                                                     higher revised score, acknowledging GenAI's capabilities while
+                                                     recognizing the need for human involvement.
+

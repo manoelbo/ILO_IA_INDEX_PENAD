@@ -1,0 +1,28 @@
+Figure 1.6: AUI concentration around the world and within the US in this and the prior report
+Lorenz curves for the Anthropic AI Usage Index (AUI) around the world and within the US, August and November 2025. A curve that is
+closer to the 45-degree line indicates less concentration. The plot on the right shows, for example, that the top 20 percent of US states
+accounted for 40 percent of population-adjusted usage in the US.
+
+
+
+              What shapes patterns of usage within the US and around the world? In our
+              previous report we emphasized the key role played by income differences
+              globally: Variation in Claude usage across countries is largely accounted for by
+              variation in GDP per capita. In Chapter 3 we revisit the importance of income
+              in shaping not just usage intensity but also patterns of usage around the world.
+
+              Within the US, income is less clearly a predictor of usage. Instead, what
+              appears to matter most is the composition of each state’s workforce and
+              how well-matched the workforce is to Claude capabilities as reflected in
+              task-level usage. States that have a higher share of workers in computer and
+              mathematical occupations—like Washington D.C., Virginia, and Washington—
+              tend to have higher usage per capita. Quantitatively, each 1% increase in the
+              share of such tech workers in a state is associated with 0.36% higher usage per
+              capita (Figure 1.7). This alone accounts for nearly two-thirds of the cross-state
+              variation in AUI.
+
+
+
+
+The Anthropic Economic Index Report                                                                                                    13
+

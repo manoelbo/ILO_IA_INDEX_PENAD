@@ -1,0 +1,46 @@
+                SKILL CONTENT OF TECHNICAL CHANGE                          1321
+
+college-educated labor grew rapidly between 1970 and 1998. Us-
+ing the consensus value of s 5 1.4, we estimate that demand for
+college labor rose by 3.9 log points annually. If we instead assume
+that s 5 0, we obtain a smaller—though still quite rapid—
+demand shift of 3.3 log points annually.29
+     In the bottom of panel E we nally compare our task-based
+demand estimates with the CES-based numbers. To facilitate
+comparison, we convert predicted changes in the college employ-
+ment level (panels C and D) into changes in log relative college-
+equivalent/noncollege employment. As noted above, this task-
+based calculation ignores wage changes and hence corresponds to
+an elasticity of substitution of s 5 0. It is therefore useful to
+compare the task-based demand estimates to the corresponding
+CES numbers using both the consensus elasticity of s 5 1.4 and
+the more comparable, albeit less realistic, value of s 5 0.
+     As is visible in panel E, the task model explains a sizable
+share—25 to 65 percent— of the estimated growth in college-
+equivalent/noncollege-equivalent demand in each decade. Consis-
+tent with the accelerating rate of task change shown in Figure I,
+the smallest share of the overall demand shift is explained by
+task shifts in the 1970s and the largest share in the 1990s.
+     Comparing task changes potentially attributable to comput-
+erization to the CES demand index for these three decades, we
+nd that these extensive margin task changes explain 20 to 25
+percent of the estimated demand shift for college versus noncol-
+lege labor during 1970 to 1998. If we focus on only the two most
+recent decades and include both intensive and extensive margin
+changes, the task model can explain a large fraction— 60 to 90
+percent— of the estimated increase in relative demand for college
+employment. Notably, almost 40 percent of the computer contri-
+bution to rising educational demand in the last two decades is due
+to shifts in task composition within nominally unchanging
+occupations.
+     In net, these illustrative calculations demonstrate that
+changes in task demands accompanying workplace computeriza-
+tion are economically large and—with caveats noted— could have
+contributed substantially to relative demand shifts favoring edu-
+cated labor in the United States since 1970.
+
+
+    29. The estimated demand shift is smaller in the latter calculation because a
+higher value of s places greater weight on relative wage changes, and the relative
+earnings of college graduates rose rapidly after 1980.
+

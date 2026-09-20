@@ -1,0 +1,48 @@
+These expressions for AT T (g, t) clearly resemble the one for AT T in the canonical two-periods and two-
+groups case. As in that case, the average effect of participating in the treatment for units in group g is
+identified by taking the path of outcomes (i.e., the change in outcomes between the most recent period
+before they were affected by the treatment and the current period) actually experienced by that group
+and adjusting it by the path of outcomes experienced by a comparison group. Under the parallel trends
+assumption, this latter path is the path of outcomes that units in group g would have experienced if they
+had not participated in the treatment.
+
+Remark 3. From (2.8) one can see that when Assumptions 3 and 4 hold unconditionally and there is
+no-anticipation, the AT T (g, t) parameter can be obtained by first subsetting the data to only contain
+observations at time t and g − 1, from units with either Gg = 1 or C = 1, and then, using only the
+observations of this subset, running the (population) linear regression
+
+                   Y = α1g,t + α2g,t · Gg + α3g,t · 1 {T = t} + β g,t · (Gg × 1 {T = t}) + g,t .           (2.10)
+
+It is then easy to verify that β g,t = AT T (g, t). Note that one would need to consider different partitions
+of the data to characterize different AT T (g, t) in terms of regression parameters. Alternatively, one could
+use the interacted two-way fixed effects regression proposed by Sun and Abraham (2020).
+
+Remark 4. When covariates are available, the β̃ g,t coefficient of the population linear regression
+
+               Y = α̃1g,t + α̃2g,t · Gg + α̃3g,t · 1 {T = t} + β̃ g,t · (Gg × 1 {T = t}) + γ̃ · X + ˜g,t
+
+that uses the same subset of data as in Remark 3 is, in general, not equal to AT T (g, t) unless one is
+willing to assume (i) homogeneous (in X) treatment effects, i.e., E[Yt (g) − Yt (0)|Gg = 1, X] = E[Yt (g) −
+Yt (0)|Gg = 1] a.s., and (ii) rule-out covariate-specific trends, i.e., for E [Yt − Yt−1 |X, G] = E[Yt − Yt−1 |G]
+a.s. for all groups and time periods; see, e.g., Sloczyński (2018) for a related discussion. The characteri-
+zations of AT T (g, t) discussed in Theorem 1 do not rely on these restrictive conditions.
+
+Remark 5. Although the IPW, OR, and DR based estimands presented in Theorem 1 are identical from
+an identification standpoint, this is not the case when one wants to estimate and make inference about
+the AT T (g, t). As we discuss in Section 4, DiD estimators based on the DR estimands (2.4) and (2.7)
+usually enjoy additional robustness against model-misspecifications when compared to the IPW and OR
+estimands.
+
+Remark 6. Theorem 1 suggests that we can identify AT T (g, t) only for groups in Gδ ⊆ G which can
+involve dropping some “early treated” groups due to anticipation effects. When δ = 0, i.e. when there is
+no anticipation, Gδ = G. Theorem 1 also suggests that we can identify AT T (g, t) only until t = T − δ
+because of potential treatment anticipation behavior. In applications where some units are known to never
+participate in the treatment (including periods after time period T ), however, we can identify AT T (g, t)
+up to t = T by using these units as a valid comparison group for all time periods t = T − δ + 1, . . . , T ,
+provided that an appropriate parallel trends assumption is satisfied.
+
+Remark 7. From Theorem 1 it is clear that pre-treatment covariates play a prominent role in our anal-
+ysis. Importantly, Assumptions 4 and 5 suggest that researchers should include pre-treatment covariates
+
+                                                          12
+

@@ -1,0 +1,9 @@
+45     ILO Working Paper 140
+
+
+
+
+     Finally, the estimates do not account for new jobs that may be created, nor the technological
+     advances that could potentially automate more tasks in the future. In that sense, our estimates
+     present a static snapshot of the exposure of existing occupations to GenAI at the start of 2025.
+

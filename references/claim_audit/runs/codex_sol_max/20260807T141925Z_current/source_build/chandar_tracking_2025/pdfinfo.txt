@@ -1,0 +1,22 @@
+Title:           Tracking Employment Changes in AI-Exposed Jobs
+Subject:         
+Keywords:        
+Author:          Bharat ChandarStanford University; chandarb@stanford.edu. I thank Erik Bynjolfsson, Basil Halperin, Philip Trammell, Luca Vendraminelli, Ruyu Chen, and Tom Mitchell for helpful comments.
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.22
+CreationDate:    Fri Aug  1 16:04:28 2025 -03
+ModDate:         Fri Aug  1 16:04:28 2025 -03
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           23
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       878600 bytes
+Optimized:       no
+PDF version:     1.5

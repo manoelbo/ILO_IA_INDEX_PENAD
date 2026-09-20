@@ -1,0 +1,51 @@
+Filippucci, F., P. Gal, and M. Schief (2024). Miracle or Myth? Assessing the macroeconomic
+    productivity gains from Artificial Intelligence. OECD.
+Fletcher, R. and R. Nielsen (2024). What does the public in six countries think of generative AI
+    in news? Reuters Institute for the Study of Journalism.
+Gathmann, C., F. Grimm, and E. Winkler (2024). AI, Task Changes in Jobs, and Worker
+    Reallocation. Working Paper 11585. CESifo.
+Handa, K., A. Tamkin, M. McCain, S. Huang, E. Durmus, S. Heck, J. Mueller, J. Hong, S.
+    Ritchie, T. Belonax, K. K. Troy, D. Amodei, J. Kaplan, J. Clark, and D. Ganguli (2025).
+    Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conver-
+    sations. arXiv: 2503.04761 [cs.CY].
+Humlum, A. and E. Vestergaard (2024). “The Adoption of ChatGPT”. In: University of
+    Chicago, Becker Friedman Institute for Economics Working Paper 2024-50.
+Humlum, A. and E. Vestergaard (May 2025). Large Language Models, Small Labor Market
+    Effects. Working Paper 33777. National Bureau of Economic Research.
+Jovanovic, B. and P. L. Rousseau (2005). “General purpose technologies”. In: Handbook of
+    economic growth. Vol. 1. Elsevier, pp. 1181–1224.
+Kanazawa, K., D. Kawaguchi, H. Shigeoka, and Y. Watanabe (2025). “AI, skill, and produc-
+    tivity: The case of taxi drivers”. In: Management Science.
+Karabarbounis, L. (2024). “Perspectives on the labor share”. In: Journal of Economic Perspec-
+    tives 38.2, pp. 107–136.
+Laughlin, L., X. Song, M. Wisniewski, and J. Xu (2024). From Job Descriptions to Occupations:
+    Using Neural Language Models to Code Job Data. Working Paper. U.S. Census Bureau,
+    University of Pennsylvania, and Pennsylvania State University.
+Leiner, B. M., V. G. Cerf, D. D. Clark, R. E. Kahn, L. Kleinrock, D. C. Lynch, J. Postel,
+    L. G. Roberts, and S. Wolff (2009). “A brief history of the Internet”. In: ACM SIGCOMM
+    computer communication review 39.5, pp. 22–31.
+Levine, A. (2024). “Consumers Are Diving Into AI, New Data Show. Companies Are Being
+    More Cautious.” In: Barron’s. Accessed: 2025-01-24.
+McClain, C. (2024). Americans’ use of ChatGPT is ticking up, but few trust its election infor-
+    mation. Pew Charitable Trusts.
+McElheran, K., J. F. Li, E. Brynjolfsson, Z. Kroff, E. Dinlersoz, L. Foster, and N. Zolas (2024).
+    “AI adoption in America: Who, what, and where”. In: Journal of Economics & Management
+    Strategy 33.2, pp. 375–415.
+Nelson, R. R. and E. S. Phelps (1966). “Investment in humans, technological diffusion, and
+    economic growth”. In: The American economic review 56.1/2, pp. 69–75.
+Noy, S. and W. Zhang (2023). “Experimental evidence on the productivity effects of generative
+    artificial intelligence”. In: Science 381.6654, pp. 187–192.
+Otis, N., R. Clarke, S. Delecourt, D. Holtz, and R. Koning (2024). The uneven impact of
+    generative AI on entrepreneurial performance. Working Paper. Harvard Business School.
+Pena-Lopez, I. et al. (2009). “Manual for measuring ICT access and use by households and
+    individuals”. In.
+Peng, S., E. Kalliamvakou, P. Cihon, and M. Demirer (2023). “The impact of ai on developer
+    productivity: Evidence from github copilot”. In: arXiv preprint arXiv:2302.06590.
+US Census Bureau (2015). “Current Population Survey Interviewing Material”. In: https :
+    // www2. census. gov/ programs-surveys/ cps/ methodology/ intman/ CPS_ Manual_
+    April2015. pdf .
+
+
+
+                                               28
+

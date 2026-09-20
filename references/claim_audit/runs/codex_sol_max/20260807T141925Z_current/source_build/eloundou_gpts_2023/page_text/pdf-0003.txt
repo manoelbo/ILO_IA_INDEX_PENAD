@@ -1,0 +1,52 @@
+                                                      WORKING PAPER
+
+
+levels in GPT-4 responses and between human and machine evaluations, when aggregated to the task level.
+This exposure measure reflects an estimate of the technical capacity to make human labor more efficient;
+however, social, economic, regulatory, and other determinants imply that technical feasibility does not
+guarantee labor productivity or automation outcomes. Our analysis indicates that approximately 19% of jobs
+have at least 50% of their tasks exposed when considering both current model capabilities and anticipated
+tools built upon them. Human assessments suggest that only 3% of U.S. workers have over half of their tasks
+exposed to LLMs when considering existing language and code capabilities without additional software or
+modalities. Accounting for other generative models and complementary technologies, our human estimates
+indicate that up to 49% of workers could have half or more of their tasks exposed to LLMs.
+     Our findings consistently show across both human and GPT-4 annotations that most occupations exhibit
+some degree of exposure to LLMs, with varying exposure levels across different types of work. Occupations
+with higher wages generally present with higher exposure, a result contrary to similar evaluations of overall
+exposure to machine learning (Brynjolfsson et al., 2023). When regressing exposure measures on skillsets
+using O*NET’s skill rubric, we discover that roles heavily reliant on science and critical thinking skills show
+a negative correlation with exposure, while programming and writing skills are positively associated with
+LLM exposure. Following Autor et al. (2022a), we examine barriers to entry by "Job Zones" and find that
+occupational exposure to LLMs weakly increases with the difficulty of job preparation. In other words,
+workers facing higher (lower) barriers to entry in their jobs tend to experience more (less) exposure to LLMs.
+     We further compare our measurements to previous efforts documenting the distribution of automation
+exposure in the economy and find broadly consistent results. Most other technology exposure measures we
+examine are statistically significantly correlated with our preferred exposure measure, while measures of
+manual routineness and robotics exposure show negative correlations. The variance explained by these earlier
+efforts (Acemoglu and Autor, 2011a; Frey and Osborne, 2017; Brynjolfsson et al., 2018; Felten et al., 2018;
+Webb, 2020; Brynjolfsson et al., 2023), along with wage controls, ranges from 60 to 72%, indicating that 28
+to 40% of the variation in our AI exposure measure remains unaccounted for by previous technology exposure
+measurements.
+     We analyze exposure by industry and discover that information processing industries (4-digit NAICS)
+exhibit high exposure, while manufacturing, agriculture, and mining demonstrate lower exposure. The
+connection between productivity growth in the past decade and overall LLM exposure appears weak, suggesting
+a potential optimistic case that future productivity gains from LLMs may not exacerbate possible cost disease
+effects (Baumol, 2012; Aghion et al., 2018). 3
+     Our analysis indicates that the impacts of LLMs like GPT-4, are likely to be pervasive. While LLMs
+have consistently improved in capabilities over time, their growing economic effect is expected to persist and
+increase even if we halt the development of new capabilities today. We also find that the potential impact of
+LLMs expands significantly when we take into account the development of complementary technologies.
+Collectively, these characteristics imply that Generative Pre-trained Transformers (GPTs) are general-purpose
+technologies (GPTs).4 (Bresnahan and Trajtenberg, 1995; Lipsey et al., 2005).
+     (Goldfarb et al., 2023) argue that machine learning as a broad category is likely a general-purpose
+technology. Our evidence supports a wider impact, as even subsets of machine learning software meet the
+criteria for general-purpose technology status independently. This paper’s primary contributions are to provide
+a set of measurements of LLM impact potential and to demonstrate the use case of applying LLMs to develop
+such measurements efficiently and at scale. Additionally, we showcase the general-purpose potential of LLMs.
+If "GPTs are GPTs," the eventual trajectory of LLM development and application may be challenging for
+    3Baumol’s cost disease is a theory that explains why the cost of labor-intensive services, such as healthcare and education,
+increases over time. This happens because wages for skilled workers in other industries increase, but there is no corresponding
+increase in productivity or efficiency in these service industries. Therefore, the cost of labor in these industries becomes relatively
+more expensive compared to other goods and services in the economy.
+   4For the remainder of the paper we spell out general-purpose technologies when it is used outside of stating "GPTs are GPTs."
+

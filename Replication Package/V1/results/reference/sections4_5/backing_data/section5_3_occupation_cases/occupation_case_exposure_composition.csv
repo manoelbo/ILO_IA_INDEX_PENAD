@@ -1,0 +1,37 @@
+case_id,exposure_category,pre_admissions,share_pct
+customer_service,Exposed: Gradient 3,160341,100
+customer_service,Exposed: Gradient 2,0,0
+customer_service,Exposed: Gradient 1,0,0
+customer_service,Minimal Exposure,0,0
+customer_service,Not Exposed,0,0
+customer_service,No score,0,0
+health_care_aides,Exposed: Gradient 3,0,0
+health_care_aides,Exposed: Gradient 2,0,0
+health_care_aides,Exposed: Gradient 1,0,0
+health_care_aides,Minimal Exposure,55594,37.61408921
+health_care_aides,Not Exposed,92207,62.38591079
+health_care_aides,No score,0,0
+marketing_sales_managers,Exposed: Gradient 3,0,0
+marketing_sales_managers,Exposed: Gradient 2,68132,100
+marketing_sales_managers,Exposed: Gradient 1,0,0
+marketing_sales_managers,Minimal Exposure,0,0
+marketing_sales_managers,Not Exposed,0,0
+marketing_sales_managers,No score,0,0
+production_supervisors,Exposed: Gradient 3,0,0
+production_supervisors,Exposed: Gradient 2,0,0
+production_supervisors,Exposed: Gradient 1,0,0
+production_supervisors,Minimal Exposure,3469,5.510460185
+production_supervisors,Not Exposed,36684,58.27204422
+production_supervisors,No score,22800,36.21749559
+software_developers,Exposed: Gradient 3,189798,64.5806467
+software_developers,Exposed: Gradient 2,87996,29.94150932
+software_developers,Exposed: Gradient 1,0,0
+software_developers,Minimal Exposure,0,0
+software_developers,Not Exposed,0,0
+software_developers,No score,16099,5.477843977
+stock_clerks,Exposed: Gradient 3,0,0
+stock_clerks,Exposed: Gradient 2,0,0
+stock_clerks,Exposed: Gradient 1,0,0
+stock_clerks,Minimal Exposure,1593069,100
+stock_clerks,Not Exposed,0,0
+stock_clerks,No score,0,0

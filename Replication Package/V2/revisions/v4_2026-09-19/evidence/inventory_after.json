@@ -1,0 +1,482 @@
+{
+  "image_count": 40,
+  "native_table_count": 40,
+  "equation_count": 5,
+  "equations": [
+    "$$\nE\\left[Y_{c,t} \\mid \\cdot\\right] = \\exp\\left(\\beta\\,(\\text{Exposta}_c \\times \\text{Pós}_t) + \\alpha_c + \\delta_t\\right)\n$$",
+    "$$\nY_{c,t} = \\beta\\,(\\text{Exposta}_c \\times \\text{Pós}_t) + \\alpha_c + \\delta_t + \\varepsilon_{c,t}\n$$",
+    "$$\nE\\left[Y_{c,t} \\mid \\cdot\\right] = \\exp\\left(\\sum_{k=-23,\\, k \\neq -1}^{+23} \\beta_k \\, \\mathbf{1}[t - t^{*} = k] \\times \\text{Exposta}_c + \\alpha_c + \\delta_t\\right)\n$$",
+    "$$\nY_{c,g,t} = \\beta_{\\text{DDD}}\\,(\\text{Pós}_t \\times \\text{Exposta}_c \\times \\text{Grupo}_g) + \\gamma_1 (\\text{Pós} \\times \\text{Exposta}) + \\gamma_2 (\\text{Pós} \\times \\text{Grupo}) + \\gamma_3 (\\text{Exposta} \\times \\text{Grupo}) + \\alpha_c + \\delta_t + \\theta_g + \\varepsilon_{c,g,t}\n$$",
+    "$$\n\\widehat{\\beta}_{\\text{dentro}}=\\sum_g s_{g,\\text{expostas},\\text{pré}}\\widehat{\\beta}_g=-0,03924\n$$"
+  ],
+  "items": [
+    {
+      "kind": "table_caption",
+      "line": 71,
+      "section": "## 2.3 Índices de exposição à IA na literatura",
+      "caption": "**Tabela 2.1 — Comparação dos índices de exposição à IA**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 133,
+      "section": "## **3.1 Base analítica e amostra**",
+      "caption": "**Tabela 3.1: Ficha técnica da base analítica final**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 212,
+      "section": "## **3.2 Distribuição agregada da exposição à IA no Brasil**",
+      "caption": "**Tabela 3.2: População ocupada por gradiente de exposição à IA**"
+    },
+    {
+      "kind": "image",
+      "line": 267,
+      "section": "## **3.2 Distribuição agregada da exposição à IA no Brasil**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/e293fd6c-05a8-47c8-8aca-b0ee093f3113/image.png)"
+    },
+    {
+      "kind": "image",
+      "line": 271,
+      "section": "## **3.2 Distribuição agregada da exposição à IA no Brasil**",
+      "reference": "![]()"
+    },
+    {
+      "kind": "image",
+      "line": 272,
+      "section": "## **3.2 Distribuição agregada da exposição à IA no Brasil**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/04f3793a-74c8-4d47-82d0-6a5085acbc8c/image.png)"
+    },
+    {
+      "kind": "image",
+      "line": 278,
+      "section": "## **3.3 Ocupações mais expostas à IA**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/de6695ff-4024-40a3-aea8-e9e92f611c5d/image.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 281,
+      "section": "## **3.3 Ocupações mais expostas à IA**",
+      "caption": "**Tabela 3.3: Top 5 ocupações em alta exposição com maior contingente de trabalhadores**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 330,
+      "section": "## **3.4 Distribuição setorial e regional dos trabalhadores em alta exposição**",
+      "caption": "**Tabela 3.4: Exposição à IA por setor (CNAE-Domiciliar 2.0, IBGE)**"
+    },
+    {
+      "kind": "image",
+      "line": 497,
+      "section": "## **3.4 Distribuição setorial e regional dos trabalhadores em alta exposição**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/1373c5b8-11db-48c3-9b4e-2f5137efbaa0/image.png)"
+    },
+    {
+      "kind": "image",
+      "line": 506,
+      "section": "### **3.5.1 Análise por sexo**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/be72584a-ec5f-4be2-9fdd-3ddc197b68d4/7c9d0510-dd42-485a-99f5-5c38939958ad.png)"
+    },
+    {
+      "kind": "image",
+      "line": 511,
+      "section": "### **3.5.2 Análise por raça**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/ef4545d0-02af-4968-9a16-52ee00fffd7c/63487b0c-af82-47cd-a41b-47c4a7a09f4b.png)"
+    },
+    {
+      "kind": "image",
+      "line": 516,
+      "section": "### **3.5.3 Análise por faixa etária**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/18134332-88f2-4a27-a749-36cc9eb9f465/305f57f1-ea80-4489-b48f-1458e3b2b0e6.png)"
+    },
+    {
+      "kind": "image",
+      "line": 521,
+      "section": "### **3.5.4 Análise por nível de escolaridade**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/bc60ec35-aa67-4e8f-ad52-3b662d104bac/7a88f2d4-6599-4c85-872e-1e9a7690de45.png)"
+    },
+    {
+      "kind": "image",
+      "line": 526,
+      "section": "### **3.5.5 Análise por renda**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/a18842f5-17d1-482b-9503-18ecfefc5819/acc6a675-2b6b-40d9-9c66-f87bd6614375.png)"
+    },
+    {
+      "kind": "image",
+      "line": 531,
+      "section": "### **3.5.6 Análise por situação de formalidade**",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/f202a434-d610-4db8-b019-d5610ce848e6/09bebfba-37e6-4804-a4b0-4d8d0595c2ed.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 548,
+      "section": "## 4.1 Dados e construção do painel CAGED",
+      "caption": "**Tabela 4.1.1 — Escopo do painel ocupação-mês**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 587,
+      "section": "## 4.2 Correspondência CBO–OIT e definição dos grupos",
+      "caption": "**Tabela 4.2.1 — Classificação das CBOs segundo o índice da OIT e definição de grupos de tratamento e controle.**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 675,
+      "section": "## 4.2 Correspondência CBO–OIT e definição dos grupos",
+      "caption": "**Tabela 4.2.2: Cobertura do painel por grupo de exposição**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 754,
+      "section": "### 4.4.3 Desfechos e transformações",
+      "caption": "**Tabela 4.4.1: Desfechos da análise**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 848,
+      "section": "## 5.1 Resultados médios nacionais",
+      "caption": "**Tabela 5.1 — Resultados médios nacionais**"
+    },
+    {
+      "kind": "image",
+      "line": 909,
+      "section": "## 5.1 Resultados médios nacionais",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/bc7a2b7c-918b-48cc-b18d-814e554e23a6/figure_5_1_national_event_studies.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 914,
+      "section": "## 5.2 Diagnósticos e especificações complementares",
+      "caption": "**Tabela 5.2.1 — Controle setorial: especificações co-principais**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 976,
+      "section": "### 5.3.1 Resultados por sexo",
+      "caption": "**Tabela 5.3.1 — Contrastes DDD por sexo**"
+    },
+    {
+      "kind": "image",
+      "line": 1043,
+      "section": "### 5.3.1 Resultados por sexo",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/9dba5094-eeaa-4447-8e53-56041b378fa0/figure_5_2_1_1_sex_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1049,
+      "section": "### 5.3.1 Resultados por sexo",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/f0048003-e495-4148-994f-63f869144d68/figure_5_2_1_2_sex_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1051,
+      "section": "### 5.3.2 Resultados por raça/cor",
+      "caption": "**Tabela 5.3.2 — Contrastes DDD por raça/cor**"
+    },
+    {
+      "kind": "image",
+      "line": 1241,
+      "section": "### 5.3.2 Resultados por raça/cor",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/43569aa6-4fda-4f26-8bec-dda7e914784d/figure_5_2_2_1_race_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1247,
+      "section": "### 5.3.2 Resultados por raça/cor",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/a085e669-69fb-46ff-b89d-b5c38af8715b/figure_5_2_2_2_race_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1249,
+      "section": "### 5.3.3 Resultados por faixa etária",
+      "caption": "**Tabela 5.3.3 — Contrastes DDD por idade: faixas do artigo de referência**"
+    },
+    {
+      "kind": "image",
+      "line": 1415,
+      "section": "### 5.3.3 Resultados por faixa etária",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/83d038a4-ea95-4dca-9499-6e98ef3e4670/figure_5_2_3_1_age_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1421,
+      "section": "### 5.3.3 Resultados por faixa etária",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/f2ed0e44-a833-4aa6-a352-2a2b6a05f7f0/figure_5_2_3_2_age_wage.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1427,
+      "section": "### 5.3.3 Resultados por faixa etária",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/d38fc5a1-b553-4453-bdb4-cd486a06860c/2cd4f183-47b1-4136-8fed-c2e403155a78.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1429,
+      "section": "### 5.3.4 Resultados por nível de escolaridade",
+      "caption": "**Tabela 5.3.4 — Contrastes DDD por escolaridade**"
+    },
+    {
+      "kind": "image",
+      "line": 1521,
+      "section": "### 5.3.4 Resultados por nível de escolaridade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/60273f1e-707d-4f3a-a4b6-a57229a20808/figure_5_2_4_1_education_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1527,
+      "section": "### 5.3.4 Resultados por nível de escolaridade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/4fc552e5-f436-4e79-b799-ee9749a4e119/figure_5_2_4_2_education_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1529,
+      "section": "### 5.3.5 Resultados por faixa salarial ocupacional",
+      "caption": "**Tabela 5.3.5 — Contrastes DDD por faixa salarial ocupacional prévia**"
+    },
+    {
+      "kind": "image",
+      "line": 1622,
+      "section": "### 5.3.5 Resultados por faixa salarial ocupacional",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/230c0c5e-7145-4568-bd88-6a94acbd37cf/figure_5_2_5_1_income_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1628,
+      "section": "### 5.3.5 Resultados por faixa salarial ocupacional",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/de949134-0684-4087-9a5f-7526bb134454/figure_5_2_5_2_income_wage.png)"
+    },
+    {
+      "kind": "image",
+      "line": 1639,
+      "section": "### 5.3.6 Síntese das heterogeneidades demográficas",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/d5337407-9dba-4b46-9b01-9d58fe1a48d3/image.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1689,
+      "section": "### A.1 Diagnósticos do modelo nacional",
+      "caption": "**Tabela A.1: Diagnósticos dos resultados médios nacionais**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1767,
+      "section": "### A.1 Diagnósticos do modelo nacional",
+      "caption": "**Tabela A.1b — Sensibilidade a tendências prévias (Rambachan e Roth, 2023)**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1798,
+      "section": "### A.1 Diagnósticos do modelo nacional",
+      "caption": "**Tabela A.1c — Comparabilidade pré-tratamento entre tratados e controle**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1850,
+      "section": "### A.2 Decomposição do diferencial salarial e composição dos admitidos",
+      "caption": "**Tabela A.2.1: Mudança na composição educacional dos admitidos**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1900,
+      "section": "### A.2 Decomposição do diferencial salarial e composição dos admitidos",
+      "caption": "**Tabela A.2.2: Decomposição do diferencial salarial**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 1931,
+      "section": "### A.3 Sexo",
+      "caption": "**Tabela A.3.1 — Contrastes DDD completos: sexo**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 2056,
+      "section": "### A.3 Sexo",
+      "caption": "**Tabela A.3.2 — DiDs dentro dos grupos: sexo**"
+    },
+    {
+      "kind": "image",
+      "line": 2161,
+      "section": "### A.3 Sexo",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/9c505293-ca21-4df3-bf2f-2b7376ee6068/figure_A_3_1_sex_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 2163,
+      "section": "### A.3 Sexo",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/dcc5a720-cd92-414d-9946-0a8b3f2376e6/figure_A_3_2_sex_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 2166,
+      "section": "### A.4 Raça/cor",
+      "caption": "**Tabela A.4.1 — Contrastes DDD completos: raça/cor**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 2566,
+      "section": "### A.4 Raça/cor",
+      "caption": "**Tabela A.4.2 — DiDs dentro dos grupos: raça/cor**"
+    },
+    {
+      "kind": "image",
+      "line": 2896,
+      "section": "### A.4 Raça/cor",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/45c88744-6e64-4fa3-a01d-0c8f8c82d9c6/figure_A_4_1_race_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 2898,
+      "section": "### A.4 Raça/cor",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/7b85f792-a0f8-40cc-9b72-6e529342c14e/figure_A_4_2_race_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 2901,
+      "section": "### A.5 Idade",
+      "caption": "**Tabela A.5.1 — Contrastes DDD completos: idade**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 3521,
+      "section": "### A.5 Idade",
+      "caption": "**Tabela A.5.2 — DiDs dentro dos grupos: idade**"
+    },
+    {
+      "kind": "image",
+      "line": 4031,
+      "section": "### A.5 Idade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/728afdc7-9aaa-4864-b01b-48f275e90409/figure_A_5_1_age_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4033,
+      "section": "### A.5 Idade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/2ad14e40-7112-43af-b109-6051babb4ae8/figure_A_5_2_age_wage.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4035,
+      "section": "### A.5 Idade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/e25b5523-562d-42b4-b64b-8013f419d439/figure_A_5_3_canaries_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4038,
+      "section": "### A.6 Escolaridade",
+      "caption": "**Tabela A.6.1 — Contrastes DDD completos: escolaridade**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4218,
+      "section": "### A.6 Escolaridade",
+      "caption": "**Tabela A.6.2 — DiDs dentro dos grupos: escolaridade**"
+    },
+    {
+      "kind": "image",
+      "line": 4368,
+      "section": "### A.6 Escolaridade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/fee7df88-0e47-4459-974c-28784918f6ce/figure_A_6_1_education_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4370,
+      "section": "### A.6 Escolaridade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/99f5524a-6371-4bb2-99b2-1dca14c683f0/figure_A_6_2_education_wage.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4373,
+      "section": "### A.7 Renda ocupacional pré-tratamento",
+      "caption": "**Tabela A.7.1 — Contrastes DDD completos: renda ocupacional pré-tratamento**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4553,
+      "section": "### A.7 Renda ocupacional pré-tratamento",
+      "caption": "**Tabela A.7.2 — DiDs dentro dos grupos: renda ocupacional pré-tratamento**"
+    },
+    {
+      "kind": "image",
+      "line": 4703,
+      "section": "### A.7 Renda ocupacional pré-tratamento",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/6ddae0ce-7149-4f62-acfb-bfdac18db8b8/figure_A_7_1_income_admissions.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4705,
+      "section": "### A.7 Renda ocupacional pré-tratamento",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/79176617-518a-4669-b358-d0059503d981/figure_A_7_2_income_wage.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4711,
+      "section": "### A.8 Síntese dos DiDs dentro dos grupos",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/e819e4be-4124-4767-b96f-994a5fb88743/figure_a_8_1_admissoes.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4713,
+      "section": "### A.8 Síntese dos DiDs dentro dos grupos",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/7bd0155e-5faa-4308-b5ac-48019545b68f/figure_a_8_2_desligamentos.png)"
+    },
+    {
+      "kind": "image",
+      "line": 4715,
+      "section": "### A.8 Síntese dos DiDs dentro dos grupos",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/805b69e9-0ca8-49b3-9dd9-03808d24cc07/figure_a_8_3_ln_salario_real_adm.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4720,
+      "section": "### B.1 Tendências prévias da RAIS",
+      "caption": "**Tabela B.1: Tendências prévias no modelo e na amostra exatos — RAIS**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4763,
+      "section": "### B.2 Tendências prévias da PNAD Contínua",
+      "caption": "**Tabela B.2: Tendências prévias no modelo e na amostra exatos — PNAD Contínua**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4888,
+      "section": "### B.3 Falsificação e suporte da extensão espacial",
+      "caption": "**Tabela B.3: Placebo temporal de dezembro de 2021 na interação tripla**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4925,
+      "section": "### B.3 Falsificação e suporte da extensão espacial",
+      "caption": "**Tabela B.4: Clusters efetivos do regressor de interesse, por proxy**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 4966,
+      "section": "### C.1 Seleção e composição dos casos ocupacionais",
+      "caption": "**Tabela C.1: Seleção e composição da exposição dos casos ocupacionais**"
+    },
+    {
+      "kind": "image",
+      "line": 5028,
+      "section": "### C.2 Trajetórias por idade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/3405eba2-a1e6-434f-9b13-ef4515319074/figure_5_3_1_occupation_cases_admissions_by_age.png)"
+    },
+    {
+      "kind": "image",
+      "line": 5031,
+      "section": "### C.2 Trajetórias por idade",
+      "reference": "![](https://prod-files-secure.s3.us-west-2.amazonaws.com/07ecc8ca-4610-810a-aaa1-0003f557fbe1/6ef46caa-d351-41ca-af17-3b8088b82e8a/figure_5_3_2_occupation_cases_wage_by_age.png)"
+    },
+    {
+      "kind": "table_caption",
+      "line": 5042,
+      "section": "### D.1 Estoque de vínculos formais na RAIS",
+      "caption": "**Tabela D.1: Estoque, rotatividade e tempo de emprego (família D)**"
+    },
+    {
+      "kind": "table_caption",
+      "line": 5090,
+      "section": "### D.2 Deslocamento para a informalidade na PNAD Contínua",
+      "caption": "**Tabela D.2: Composição e estoque ocupacional (família E)**"
+    }
+  ]
+}

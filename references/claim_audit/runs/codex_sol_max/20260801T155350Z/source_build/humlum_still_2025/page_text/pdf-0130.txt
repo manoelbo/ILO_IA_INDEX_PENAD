@@ -1,0 +1,45 @@
+where Xj,−i denotes the leave-one-out mean of the characteristics X of worker i’s coworkers.
+
+Table E.13 reports estimates of Equation (71).
+
+E.5.2   Results
+
+Adoption and Work. Table E.14 and Figure E.21 compare the effects of self- and
+
+coworker-reported employer encouragement on AI chatbot adoption and associated benefits.
+
+The results broadly align, but with some interesting differences.
+
+   The impact of coworker-reported encouragement on adoption (Panel (a)) is 1.5–2
+
+times larger than the effect of self-reported encouragement. Furthermore, Figure E.21.(b)
+
+shows that coworker encouragement can entirely eliminate the gender gap in AI chatbot
+
+adoption. By contrast, coworker encouragement has a more muted effect on reported
+
+benefits among adopters (Panel (b)). For example, self-reported encouragement increases
+
+the share of workers reporting time savings by 10 percentage points, whereas the effect
+
+of coworker encouragement is only 5.3 percentage points. Finally, Panel (d) shows that
+
+coworker encouragement has roughly twice the effect of self-reported encouragement on
+
+the creation of new tasks among adopters.
+
+   Taken together, these results suggest that workplace-wide encouragement (captured by
+
+coworker reports) significantly boosts chatbot adoption and leads to broader organizational
+
+changes that induce task creation. However, individual-level benefits—such as perceived
+
+time savings—appear more sensitive to whether workers personally feel encouraged, as
+
+measured by self-reports.
+
+
+
+
+                                            95
+

@@ -1,0 +1,149 @@
+{
+  "notion_page": "https://app.notion.com/p/3e0cc8ca461080c08ca1fe386472b72e",
+  "snapshot_last_edited_at": "2026-09-19T17:51:20.790Z",
+  "counts": {
+    "tables": 40,
+    "images_including_preexisting_empty_block": 40,
+    "equations": 5,
+    "review_markers": 10,
+    "manual_markers": 12,
+    "conclusion_paragraphs": 7
+  },
+  "generated_table_matches": {
+    "ddd_age.md": 1,
+    "ddd_education.md": 1,
+    "ddd_income.md": 1,
+    "ddd_race.md": 1,
+    "ddd_sex.md": 1,
+    "did_age.md": 1,
+    "did_education.md": 1,
+    "did_income.md": 1,
+    "did_race.md": 1,
+    "did_sex.md": 1,
+    "main_age.md": 1,
+    "main_education.md": 1,
+    "main_income.md": 1,
+    "main_race.md": 1,
+    "main_sex.md": 1,
+    "national.md": 1,
+    "sector.md": 1
+  },
+  "unchanged_sections": {
+    "section_2": true,
+    "section_3": true
+  },
+  "frozen_numerical_source_hashes_match": {
+    "results/reference/artifacts/caged/models/group_did_results.csv": true,
+    "results/reference/artifacts/caged/diagnostics/ddd_multiplicity_results.csv": true,
+    "results/reference/artifacts/caged/diagnostics/ddd_alternative_partitions.csv": true,
+    "results/reference/artifacts/caged/diagnostics/ddd_pretrends.csv": true,
+    "results/reference/artifacts/caged/diagnostics/ddd_alternative_partitions_pretrends.csv": true,
+    "results/reference/artifacts/caged/backing_data/figure_5_2_6_group_outcome_forest.csv": true,
+    "results/reference/artifacts/caged/tables/table_5_1_national_results.csv": true,
+    "results/reference/artifacts/caged/tables/table_5_1_1_sector_control.csv": true
+  },
+  "all_original_image_blocks_preserved": true,
+  "uploaded_image_checks": [
+    {
+      "number": "A.3.1",
+      "file": "figures/figure_A_3_1_sex_admissions.png",
+      "bytes": 383408,
+      "sha256": "6d3444c2694321856af14a112d6826cfb4d4b16bf9a30f4670fb32712f3a6763",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.3.2",
+      "file": "figures/figure_A_3_2_sex_wage.png",
+      "bytes": 379280,
+      "sha256": "f2e090f5f9a716b57f45f1cd39a1fa1c21ce3d22fdd360fbca5a54c4f5f7db6b",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.4.1",
+      "file": "figures/figure_A_4_1_race_admissions.png",
+      "bytes": 384412,
+      "sha256": "2d54d7c5f65d692b1f43a6f6b39f55aeaedb587885f4ebdaea5e9a631e36c612",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.4.2",
+      "file": "figures/figure_A_4_2_race_wage.png",
+      "bytes": 379167,
+      "sha256": "bb848bc7141847f5576794ab70ecd435c61fe4e1d5b221b239b032076778bc07",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.5.1",
+      "file": "figures/figure_A_5_1_age_admissions.png",
+      "bytes": 585659,
+      "sha256": "b081976adbb566d5c50225aedfa120d2fbc37dad3a4aee8e5e0d00dad066f1a4",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.5.2",
+      "file": "figures/figure_A_5_2_age_wage.png",
+      "bytes": 662424,
+      "sha256": "31025366c65ecb2961135bad5e43cdce909df11827cf647028be29c82c69f3c8",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.6.1",
+      "file": "figures/figure_A_6_1_education_admissions.png",
+      "bytes": 408808,
+      "sha256": "11e68b0a478a98c7331e16e3922819d2e02d49c694299f4d6509e0628fa77281",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.6.2",
+      "file": "figures/figure_A_6_2_education_wage.png",
+      "bytes": 496278,
+      "sha256": "0c9ecf6b7cbdd4df429b170509db981169efea6140f1b09705782bec4d716dce",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.7.1",
+      "file": "figures/figure_A_7_1_income_admissions.png",
+      "bytes": 389339,
+      "sha256": "16bc5de6aed4f8fb081d26667f2db07072b0ce16c7a04a086e9023ff2586f3b5",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.7.2",
+      "file": "figures/figure_A_7_2_income_wage.png",
+      "bytes": 437242,
+      "sha256": "a83b04ebf6347f3c2a3583bcf7e035889de35736e65699b61fddb7fa4000d03e",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.5.3",
+      "file": "figures/figure_A_5_3_canaries_wage.png",
+      "bytes": 280444,
+      "sha256": "0412480ee5b78fe24bb8dbcb1664fcdb97c040827dd0f3f0a60e8e1e9a552f27",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.8.1",
+      "file": "figures/figure_a_8_1_admissoes.png",
+      "bytes": 233200,
+      "sha256": "ec25c5c2cd3d42f24f54de5bddbbad3d6b8e8272c6811a3ec87b0623fd5a0fd5",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.8.2",
+      "file": "figures/figure_a_8_2_desligamentos.png",
+      "bytes": 235260,
+      "sha256": "f80d40833b3f3e42b1e2a15ac6eef569de108b19341131128cb4a89a9d0a2e6f",
+      "identical_to_local": true
+    },
+    {
+      "number": "A.8.3",
+      "file": "figures/figure_a_8_3_ln_salario_real_adm.png",
+      "bytes": 229105,
+      "sha256": "962564f42ab5f9cd8781c0418ed6eecd05416d8e6ed859cb87a924dd3dab13d1",
+      "identical_to_local": true
+    }
+  ],
+  "remote_visual_inspection": "unavailable: browser control timed out; connector readback and downloaded-file verification completed",
+  "manual_cleanup": "12 original image blocks remain in section 5.3, each marked M01-M12; appendix destinations are verified",
+  "regressions_run": 0
+}

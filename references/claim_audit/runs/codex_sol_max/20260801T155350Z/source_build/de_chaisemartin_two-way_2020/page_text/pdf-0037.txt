@@ -1,0 +1,41 @@
+    Web appendix of “Two-way fixed effects estimators with
+             heterogeneous treatment effects”
+                      Clément de Chaisemartin∗                  Xavier D’Haultfœuille†
+
+                                             February 13, 2020
+
+
+                                                    Abstract
+              In this web appendix, we first discuss whether common trends necessarily implies ho-
+          mogenous treatment effect. Second, we show that the decomposition in Theorem 1 in
+          the paper extends to fuzzy designs, to regressions with covariates, to regressions with a
+          non-binary treatment, and we derive another decomposition under the supplementary as-
+          sumption that the treatment effect does not change over time. Third, we extend the DIDM
+          estimator to non-binary treatments. Fourth, we discuss inference. Fifth, we review all the
+          papers included in our survey of papers published in the AER between 2010 and 2012 (see
+          Section 6 of the paper). Finally, the last section gathers the proofs of all the additional
+          results in this Web Appendix.
+
+
+
+1        Can common trends hold with heterogeneous treatment effects?
+
+Throughout the paper, we assume that groups experience common trends, but that the effect of
+the treatment may be heterogeneous between groups and / or over time. We now discuss two
+examples where this may happen. We then argue that the mechanisms behind these examples are
+fairly general. Thus treatment effects are often likely to be heterogeneous, even when common
+trends are plausible.
+First, assume one wants to learn the effect of the minimum wage on the employment levels of
+some US counties. For simplicity, let us assume that the minimum wage can only take two
+values, a low and a high value. Also, let us assume that there are only two periods, the 90s
+and the 2000s. Between these two periods, the amount of competition from China for the US
+industry increased substantially. Thus, for the common trends assumption to hold for counties
+A and B, the effect of that increase in competition should be the same on averge in those two
+    ∗
+        University of California at Santa Barbara, clementdechaisemartin@ucsb.edu
+    †
+        CREST, xavier.dhaultfoeuille@ensae.fr
+
+
+                                                         1
+

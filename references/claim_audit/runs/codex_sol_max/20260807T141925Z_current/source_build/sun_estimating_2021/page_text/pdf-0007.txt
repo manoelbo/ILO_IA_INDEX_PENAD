@@ -1,0 +1,62 @@
+treatment is
+
+                                     C ATTe,` = E[Yi,e+` −Yi,e+`
+                                                            ∞
+                                                                 | Ei = e].                                 (3)
+
+      Each C ATTe,` represents the average treatment effect ` periods from the initial treatment for the cohort
+
+of units first treated at time e. We shift from calendar time index t to relative period index ` which denotes
+
+the periods since treatment; for cohort e, ` ranges from −e to T − e because we observe at most e periods
+
+before the initial treatment and T − e periods after the initial treatment. Relative periods allow us to compare
+
+cohorts while holding their exposure to the treatment constant.
+
+
+2.2     Identifying assumptions
+
+With the above definitions, we formalize three potential identifying assumptions for outcomes of interest in
+
+our event study design. The first assumption is a generalized form of a parallel trends assumption. The sec-
+
+ond assumption requires no anticipation of the treatment. The third assumption imposes no variation across
+
+cohorts. For each assumption, we first discuss its meaning and then compare it with similar assumptions
+
+made in the literature interpreting two-way fixed effects regressions. Later in Section 3 we interpret the
+
+relative period coefficients µ` from two-way fixed effects regressions under different combinations of these
+
+assumptions.
+
+                                                                             ∞ −Y ∞ |E = e] is the same for
+Assumption 1. (Parallel trends in baseline outcomes.) For all s , t, the E[Yi,t  i,s i
+
+all e ∈ supp(Ei ).
+
+      If an application includes never-treated units so that ∞ ∈ supp(Ei ), we need to especially consider
+
+whether these never-treated units satisfy the parallel trends assumption. Never-treated units are likely to
+
+differ from ever-treated units in many ways, and may not share the same evolution of baseline outcomes. If
+
+the never-treated units are unlikely to satisfy the parallel trends assumption, then we should exclude them
+
+from the estimation to avoid violation of this assumption.
+
+      While common in the applied literature, the parallel trends assumption is strong and oftentimes violated.
+
+For example, Ashenfelter (1978) documented that participants in job training programs experience a decline
+
+in earnings prior to the training period (Ashenfelter’s dip). The timing of job training is dependent on the
+
+evolution of individual’s baseline earnings, and this scenario therefore does not satisfy the parallel trends
+
+assumption. Proposition 1 is the only result in this paper derived without this assumption, but there is an
+
+
+
+                                                       7
+

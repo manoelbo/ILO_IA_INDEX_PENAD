@@ -1,0 +1,41 @@
+37      ILO Working Paper 140
+
+
+
+
+     XX   8 Adjusted Global Index of GenAI Exposure
+
+
+     To classify ISCO-08 occupations into varying levels of exposure to Generative AI (GenAI), we up-
+     date the framework introduced in Gmyrek et al. (2023). Similarly to the original approach, we
+     rely on two moments of distribution: occupational mean and standard deviation (SD) of task-lev-
+     el scores pertaining to a given 4-digit occupation. However, instead of using automation and
+     augmentation potential as two extreme categories with the "big unknown" in between, we now
+     adopt a more nuanced classification scheme that represents a spectrum of exposure, with occu-
+     pations considered as exposed classified into four increasing gradients (Figure 16 and Table 5).
+
+
+     XX Figure 16. AI Exposure Gradients: ISCO-08 4-digit level occupations
+
+
+
+
+     Note: Figure 16 presents all ISCO-08 4-digit occupations classified into GenAI exposure categories as per the criteria in Table 5.
+     A detailed list of occupation-level means and SDs is available in the Appendix, Table A1. In addition, task-level scores within the
+     overall hierarchy of ISCO-08 are available here: https://pgmyrek.github.io/2025_GenAI_scores_ISCO08/
+
+     Gradient 1 represents occupations with low overall GenAI exposure but significant variability
+     across tasks (Low exposure, high task variability). While some tasks within these roles may have
+     high automation potential, the occupation has many tasks that continue requiring human roles,
+     aligning closely with the notion of augmentation in the old framework. Gradient 2 includes occu-
+     pations with moderate GenAI exposure and a mix of highly exposed and minimally exposed tasks,
+     resulting in uneven impacts where some tasks may be disrupted while others remain unaffected
+     (Moderate exposure, high task variability). Gradient 3 captures occupations where a significant
+     portion of tasks are consistently exposed to GenAI, signaling growing automation risks and re-
+     quiring adaptation strategies for workers (Significant exposure, high task variability). Gradient 4
+     highlights occupations with the highest share of tasks exposed to potential GenAI-driven auto-
+     mation, and with a high consistency of this exposure across tasks (Highest exposure, low task var-
+     iability). This gradient aligns closely with the notion of automation risk in our earlier classification
+     system (Gmyrek et al., 2023). In addition, among occupations outside these four categories, we
+     introduce a more granular distinction of Minimal Exposure, where some interaction with GenAI
+

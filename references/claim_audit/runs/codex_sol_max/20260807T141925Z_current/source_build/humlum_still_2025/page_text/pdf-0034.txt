@@ -1,0 +1,34 @@
+software development, customer support, legal professions, and marketing, these declines
+are not driven by firms adopting generative AI chatbots. This suggests that other forces,
+such as changes in the macroeconomic environment or anticipatory hiring freezes unrelated
+to actual adoption, may be driving the aggregate pattern.
+
+
+Discussion. Workplaces that have adopted AI chatbots have not fared differently in
+terms of employment, early-career jobs, job churn, or incumbent worker outcomes. How
+do we reconcile this “still surface” with the “rapid currents” documented in Section 2?
+The task creation evidence in Section 2.3 provides a key part of the answer: employers
+are absorbing generative AI through task reorganization—creating new roles, reassigning
+responsibilities, investing in training and oversight—rather than adjusting on the margin
+of total labor input. Consistent with this, workers who report larger time savings are
+also more likely to have taken on new tasks (Appendix Figure E.2), suggesting that
+individual productivity gains are absorbed into task reorganization. In this sense, the null
+employment results are not evidence of inaction but of a specific mode of adjustment: one
+that operates through the internal reorganization of work rather than through the external
+labor market. This pattern is consistent with the productivity J-curves observed at the
+onset of prior general-purpose technologies, where substantial organizational investments
+precede measurable changes in economic outcomes (Brynjolfsson, Rock and Syverson,
+2021; David, 1990; Solow, 1987).
+
+
+3.5    Perceived Impacts
+
+To complement the difference-in-differences analysis, we asked respondents directly: “Have
+AI chatbots affected your labor earnings?” If so, we followed up with, “By how much?”
+If AI chatbots were meaningfully affecting labor market conditions, workers in exposed
+occupations would likely notice.
+   Appendix E.5 reports workers’ perceived earnings impacts from AI chatbots. Virtually
+all respondents—97.7% of adopters and 99.5% of non-adopters—state that AI chatbots
+have had no impact on their labor earnings. While individuals may struggle to assess
+
+                                            32

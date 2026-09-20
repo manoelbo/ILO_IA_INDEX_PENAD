@@ -1,0 +1,63 @@
+A3         Robustness Checks
+A3.1         Alternative Fixed Effects
+
+ Table A7: Effect of LLM exposure on firm-level job outcomes, time fixed effects
+
+                                   Employees         Low seniority    High seniority     Low seniority (%)       Av. comp.
+   LLM exposure x Post              −0.00002           −0.004∗∗            0.002            −0.002∗∗∗           117.995∗∗∗
+                                     (0.001)            (0.001)           (0.002)            (0.0002)            (45.546)
+
+   Firm fixed effects                  Yes                Yes              Yes                  Yes                    Yes
+   Year-by-month fixed effects         Yes                Yes              Yes                  Yes                    Yes
+   Observations                     1,268,013          1,267,955        1,266,331            1,267,955              1,268,013
+   Adj. R-squared                     0.983              0.982            0.981                0.979                  0.978
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level employment outcomes, using year-by-month fixed effects instead of industry-by-period fixed
+effects. All other definitions are as in Table 3.
+
+
+
+
+   Table A8: Effect of LLM exposure on firm-level job listings, time fixed effects
+
+                                                                       Job postings
+                                            LLM exposure x Post        −0.018∗∗∗
+                                                                        (0.002)
+
+                                            Firm fixed-effects             Yes
+                                            Time fixed effects             Yes
+                                            Observations                1,268,013
+                                            Adjusted R2                   0.519
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity, using year-by-month fixed effects instead of industry-by-period fixed
+effects. All other definitions are as in Table A1.
+
+
+
+
+Table A9: Effect of LLM exposure on occupation-level job postings, job-role by time
+fixed effects
+
+                                                Job postings (log)      Salary         Salary (log)      Salary (SD)
+          LLM exposure x Post                      −0.049∗∗∗          −556.171∗∗∗      −0.011∗∗∗          −105.062
+                                                    (0.018)            (141.990)        (0.003)           (110.474)
+
+          Occupation fixed-effects                     Yes               Yes              Yes                Yes
+          Jobrole-by-period fixed effects              Yes               Yes              Yes                Yes
+          Observations                               16,815             16,815           16,815            16,804
+          Adjusted R2                                 0.963             0.951            0.955              0.736
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job outcomes, using job-category (1 out of 7) by year-by-month fixed effects
+instead of just year-by-month fixed effects. All other definitions are as in Table 4.
+
+
+
+
+                                                                 37
+

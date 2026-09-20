@@ -1,0 +1,58 @@
+Review of Economic Studies (2023) 90, 2555–2591                                        doi:10.1093/restud/rdad018
+© The Author(s) 2023. Published by Oxford University Press on behalf of The Review of Economic Studies Limited.
+Advance access publication 15 February 2023
+
+
+
+
+      A More Credible Approach to
+            Parallel Trends
+
+
+
+
+                                                                                                                     Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                        ASHESH RAMBACHAN
+                                Microsoft Research New England and MIT
+                                                         and
+                                            JONATHAN ROTH
+                                                 Brown University
+
+          First version received July 2021; Editorial decision October 2022; Accepted January 2023 (Eds.)
+
+              This paper proposes tools for robust inference in difference-in-differences and event-study designs
+       where the parallel trends assumption may be violated. Instead of requiring that parallel trends holds
+       exactly, we impose restrictions on how different the post-treatment violations of parallel trends can be
+       from the pre-treatment differences in trends (“pre-trends”). The causal parameter of interest is partially
+       identified under these restrictions. We introduce two approaches that guarantee uniformly valid infer-
+       ence under the imposed restrictions, and we derive novel results showing that they have desirable power
+       properties in our context. We illustrate how economic knowledge can inform the restrictions on the pos-
+       sible violations of parallel trends in two economic applications. We also highlight how our approach can
+       be used to conduct sensitivity analyses showing what causal conclusions can be drawn under various
+       restrictions on the possible violations of the parallel trends assumption.
+
+       Key words: Difference-in-differences, Event-study, Parallel trends, Robust inference, Sensitivity analysis,
+       Partial identification
+       JEL codes: C1
+
+
+
+                                              1. INTRODUCTION
+Researchers using difference-in-differences (DiD) and related methods are often unsure about
+the validity of the parallel trends assumption needed for point identification of the causal param-
+eter of interest. It has therefore become common practice to assess the plausibility of the parallel
+trends assumption by testing for pre-treatment differences in trends (“pre-trends”). Although
+pre-trends tests are intuitive, recent research has shown that they may suffer from low power
+(Freyaldenhoven et al., 2019; Bilinski and Hatfield, 2020; Kahn-Lang and Lang, 2020; Roth,
+2022), and that conditioning the analysis on passing pre-trends tests introduces statistical issues
+related to pre-testing (Roth, 2022). How then should researchers proceed when they are unsure
+about the validity of the parallel trends assumption?
+    This paper proposes methods for robust inference and sensitivity analysis in empirical set-
+tings where the parallel trends assumption may not hold. Building on work by Manski and
+Pepper (2018), we show that the causal parameter of interest can be (partially) identified under
+
+
+The editor in charge of this paper was Francesca Molinari.
+
+                                                          2555
+

@@ -1,0 +1,24 @@
+O. Teutloff et al.                                                                         Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+
+
+Fig. 4. (a) Logarithm of aggregated demand per AI exposure category between September 2021 and August 2023. (b) OLS coefficient estimates and their 95%
+confidence intervals showing the difference between each treatment group and the control.
+
+
+
+
+significant and is also much smaller economically across all project duration categories. These findings indicate that the launch of
+ChatGPT resulted in a shift of work from short gigs to longer projects in the substitutable clusters.
+
+3.2.2. Worker experience level heterogeneity
+    To study the heterogeneous effects with respect to worker experience levels, we split our data into three subsets based on the
+employers’ desired worker experience and then aggregate the data into week × cluster cells (analogous to the previous subsection).
+We present our results in Table 2 (models 9 – 11).
+    The effect of the ChatGPT launch on the demand for substitutable skills is roughly similar across desired worker experience
+levels. The regression coefficient on the Substitutable × After term is slightly smaller in absolute value in the novice subset compared
+to the other two subsets. However, due to large standard errors, this difference is not statistically significant. More interestingly,
+
+                                                                          11
+

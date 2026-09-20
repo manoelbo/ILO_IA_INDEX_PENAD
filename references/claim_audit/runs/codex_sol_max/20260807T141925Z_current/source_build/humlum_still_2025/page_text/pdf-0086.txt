@@ -1,0 +1,110 @@
+                  Figure D.2: Employment Trends by Occupation and Age Groups
+
+       (a) Study Occupations (Exposed)                                                               (b) Other Occupations (Non-Exposed)
+1.25                                                                                                 1.25
+
+
+1.15                                                                                                 1.15
+
+
+1.05                                                                                                 1.05
+
+
+ .95                                                                                                  .95
+
+
+ .85                                                                                                  .85
+
+
+ .75                                                                                                  .75
+  2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1       2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                date                                                                                                 date
+
+           Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)                   Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+           Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)                         Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+
+
+                (c) Software Developers                                                                               (d) Legal Professionals
+1.25                                                                                                 1.25
+
+
+1.15                                                                                                 1.15
+
+
+1.05                                                                                                 1.05
+
+
+ .95                                                                                                  .95
+
+
+ .85                                                                                                  .85
+
+
+ .75                                                                                                  .75
+  2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1       2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                date                                                                                                 date
+
+           Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)                   Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+           Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)                         Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+
+
+                           (e) IT Support                                                                                (f) Customer Service
+1.25                                                                                                 1.25
+
+
+1.15                                                                                                 1.15
+
+
+1.05                                                                                                 1.05
+
+
+ .95                                                                                                  .95
+
+
+ .85                                                                                                  .85
+
+
+ .75                                                                                                  .75
+  2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1       2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                date                                                                                                 date
+
+           Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)                   Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+           Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)                         Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+
+
+           (g) Marketing Professionals                                                                                           (h) Journalist
+1.25                                                                                                 1.25
+
+
+1.15                                                                                                 1.15
+
+
+1.05                                                                                                 1.05
+
+
+ .95                                                                                                  .95
+
+
+ .85                                                                                                  .85
+
+
+ .75                                                                                                  .75
+  2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1       2021m1   2021m7      2022m1       2022m7     2023m1     2023m7      2024m1   2024m7     2025m1
+                                                date                                                                                                 date
+
+           Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)                   Early Career 1 (22-25)            Early Career 2 (26-30)        Developing (31-34)
+           Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)                         Mid-Career 1 (35-40)              Mid-Career 2 (41-49)          Senior (50+)
+
+
+                                                         Notes: This figure is continued on the next page.
+
+
+
+
+                                                                                                36

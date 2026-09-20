@@ -1,0 +1,85 @@
+1995]                                    CONTROLLING FALSE DISCOVERY RATE                                                                              297
+                                         (a)                                                   (b)                                    (e)
+
+                     1.0 r - - - - - - - - ,
+
+
+                     0.8
+
+
+                ~    0.6
+
+
+
+
+                    0.2 '-r--,...---.--.----,-I
+
+
+
+
+                                                                                                                                                             Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+                     1.0
+
+
+                    0.8
+
+
+                    0.6
+
+
+
+
+                    0.2 L,---,...-~-~-,J
+
+                    1.0
+
+
+                    0.8
+
+
+
+
+                                                     .
+                                                   ..,. ."           .
+                    0.2    L,---,...---.--.----,-I
+
+
+                    1.0
+
+
+                    0.8
+
+
+            ~       0,6
+                                                                          ~
+                                                                          ............
+                                                                                                                             ..........
+                                                                                                                                          "'-.
+                                                                                ... ~ ....
+            ~.~
+                                                                            "
+
+
+                                                                                             ......~~::.:: .; ::.::::.
+            a       0.4       ...•~.~.~.~.':~ _
+                                           ...••~.--=.':':..':.:,-"".~.
+
+                    0.2 '-.---,...---.--.----,-1
+                                  8       16           32          64                        16        32          64    8          16       32   64
+
+                                                                   Number of Tested Hypotheses
+
+Fig. 1. Simulation-based estimates of the average power (the proportion of the false null hypotheses
+which are correctly rejected) for two FWER controlling methods, the Bonferroni (              ) and
+Hochberg's (1988) (-----) methods, and the FDR controlling procedure ( - - ) : (a) decreasing;
+(b) equally spread; (c) increasing
+
+
+
+   (c) The power of the FDR controlling method is uniformly larger than that of
+       the other methods.
+   (d) The advantage increases with the number of non-null hypotheses.
+   (e) The advantage increases in m. Therefore, the loss of power as m increases
+       is relatively small for the FDR controlling method in the E- and
+       I-configurations.
+

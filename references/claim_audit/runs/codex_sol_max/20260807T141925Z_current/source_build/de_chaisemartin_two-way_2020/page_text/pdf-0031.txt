@@ -1,0 +1,78 @@
+This is a quadratic programming problem, with a matrix that is symmetric positive but not
+definite. Hence, by Frank and Wolfe (1956) and the fact that the linear term in the quadratic
+problem is 0, the solution exists if and only if the set of constraints is not empty. If w(n) ≥ 0, the
+                                      P N              e (i) ≤ 0 < βef e . On the other hand, if w(n) < 0,
+set of constraints is empty because ni=1 N(i)  1
+                                                 w(i) ∆
+this set is non-empty since it includes (0, ..., 0, βef e /(P(n) w(n) )).
+We now derive the corresponding bound. For that purpose, remark that
+              n                n
+                                            !2    n               n
+                                                                              !2
+            X    N(i) e       X   N(i) e         X   N(i) e 2    X   N(i) e
+                       ∆(i) −          ∆(i)    =          ∆(i) −          ∆(i) .
+             i=1
+                 N 1          i=1
+                                  N 1            i=1
+                                                     N 1         i=1
+                                                                     N 1
+
+The Karush–Kuhn–Tucker necessary conditions for optimality are that for all i:
+                                      e (i) = ∆
+                                      ∆        e T R + λw(i) − γ(i) ,
+                                      Xn
+                                            N(i)      e (i) = βef e ,
+                                                 w(i) ∆
+                                      i=1
+                                            N 1
+
+                                      γ(i) ≥ 0,
+                                           e (i) = 0,
+                                      γ(i) ∆
+
+where ∆  e T R = Pn N(i) ∆  e (i) , 2λ is the Lagrange multiplier of the constraint Pn N(i) w(i) ∆
+                                                                                                 e (i) =
+                     i=1 N1                                                          i=1 N1
+             N
+βef e and 2 (i) γ(i) is the Lagrange multiplier of the constraint ∆
+           N1
+                                                                     e (i) ≤ 0.
+
+These constraints imply that ∆   e (i) = 0 if and only if ∆
+                                                          e T R +λw(i) ≥ 0. Therefore, if ∆
+                                                                                          e T R +λw(i) <
+   e (i) 6= 0 so γ(i) = 0, and ∆
+0, ∆                           e (i) = ∆e T R + λw(i) . Therefore,
+
+                                     e (i) = min(∆
+                                     ∆           e T R + λw(i) , 0).                                 (11)
+                           e (i) ≤ ∆
+This equation implies that ∆       e T R + λw(i) , which in turn implies that ∆
+                                                                              e TR ≤ ∆
+                                                                                     e T R + λ, so
+λ ≥ 0.
+As a result, ∆ e T R + λw(i) is decreasing in i, and because x 7→ min(x, 0) is increasing, ∆e (i) is also
+decreasing in i. Then ∆  e (n) < 0: otherwise one would have ∆   e (i) = 0 for all i which would imply
+βef e = 0, a contradiction. Let s = min{i ∈ {1, ..., n} : ∆
+                                                          e (i) < 0}. Using again (11), we get
+                                         X N(i)
+                                e TR =
+                                ∆                    e (i) = Ps ∆
+                                                     ∆          e T R + λSs .
+                                         i≥s
+                                                N1
+
+Therefore,
+
+                                               e T R = λSs .
+                                               ∆                                                     (12)
+                                                      1 − Ps
+                e in (11), we obtain that for all i ≥ s,
+Hence, plugging ∆
+                                                          
+                                 e             Ss
+                                 ∆(i) = λ            + w(i) .
+                                            1 − Ps
+
+                                                      31
+

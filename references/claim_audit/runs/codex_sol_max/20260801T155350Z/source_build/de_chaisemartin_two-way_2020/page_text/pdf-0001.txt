@@ -1,0 +1,42 @@
+                                                Two-way fixed effects estimators with heterogeneous
+                                                                 treatment effects∗
+                                                            Clément de Chaisemartin†                  Xavier D’Haultfœuille‡
+arXiv:1803.08807v7 [econ.EM] 5 Mar 2020
+
+
+
+
+                                                                                      March 5, 2020
+
+
+                                                                                          Abstract
+
+                                                   Linear regressions with period and group fixed effects are widely used to estimate treat-
+                                                ment effects. We show that they estimate weighted sums of the average treatment effects
+                                                (ATE) in each group and period, with weights that may be negative. Due to the negative
+                                                weights, the linear regression coefficient may for instance be negative while all the ATEs
+                                                are positive. We propose another estimator that solves this issue. In the two applications
+                                                we revisit, it is significantly different from the linear regression estimator.
+
+                                          Keywords: linear regressions, fixed effects, heterogeneous treatment effects, difference-in-differences.
+                                          JEL Codes: C21, C23
+
+
+
+
+                                            ∗
+                                               We are very grateful to Olivier Deschêsnes, Guido Imbens, Peter Kuhn, Kyle Meng, Jesse Shapiro, Dick
+                                          Startz, Doug Steigerwald, Clémence Tricaud, Gonzalo Vazquez-Bare, members of the UCSB econometrics research
+                                          group, and seminar participants at Bergen, CIREQ Econometrics conference, CREST, Goteborg, Gothenburg,
+                                          Groningen, ITAM, Pompeu Fabra, Stanford, SMU, Tinbergen Institute, UCL, UCLA, UC Davis, UCSB, USC,
+                                          and Warwick for their helpful comments. Xavier D’Haultfœuille gratefully acknowledges financial support from
+                                          the research grants Otelo (ANR-17-CE26-0015-041) and the Labex Ecodec: Investissements d’Avenir (ANR-11-
+                                          IDEX-0003/Labex Ecodec/ANR-11-LABX-0047).
+                                             †
+                                               University of California at Santa Barbara, clementdechaisemartin@ucsb.edu
+                                             ‡
+                                               CREST-ENSAE, xavier.dhaultfoeuille@ensae.fr
+
+
+                                                                                               1
+

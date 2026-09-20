@@ -1,0 +1,47 @@
+C       SWAA
+
+The Survey of Working Arrangements and Attitudes (SWAA) is a monthly cross-sectional
+survey of Americans aged 20 to 64 that has been running since May 2020. In December 2024,
+we incorporated a subset of our questions on genAI usage into the SWAA. Similar to the
+RPS, the SWAA is fielded online, though it is conducted by a different commercial survey
+provider (IncQuery) and targets a sample representative of the U.S. population aged 20–64 by
+age, sex, income, race, and region. Table C.1 shows the analogue of Table A.1 and compares
+the unweighted SWAA to the weighted CPS. In addition to the targeted variables by the
+SWAA, we also include live-in-partner (in lieu of marital status) and the number of children.
+Individual income in the last 12 months is not collected by the SWAA. Similar to the RPS,
+the SWAA matches the targeted (and non-targeted) quotas fairly closely and the unemployed
+are somewhat overrepresented. We note that the SWAA uses a single question to determine
+employment status, which differs from the more detailed protocol used in the CPS and RPS,
+and map the SWAA’s employment categories into the CPS definitions.2
+
+
+C.1     Weights
+
+To maximize comparability between the RPS and SWAA, we construct our own set of weights
+rather than using the weights provided by the SWAA.3 In particular, we use again the iterative
+proportional fitting (raking) algorithm of Deming and Stephan (1940). We include all the
+demographic variables shown in Table C.1 and also interact all of them with gender. The
+sampling weights further replicate the employed-at-work rate, the employment rate, and the
+labor force participation rate in the aggregate and interacted with the demographic variables
+used for overall weighting. To ensure a sufficient sample size for these latter interactions, we
+use a broader group for age (20-29, 30-39, 40-49, 50-64) and a dummy variable for whether
+there is a child in the house. We also include the broad occupation groups in our weighting
+scheme, and as for the RPS, without any interaction.
+
+
+C.2     Validation
+
+Figure C.1 shows that similar to the RPS the occupation and industry distribution in SWAA
+closely aligns with CPS in December 2024.
+    2
+     In particular, the SWAA asks: “Last week what was your work status?” with the following answer options
+(a) Working for pay, whether on business premises or working from home, (b) Still employed and paid, but
+not working, (c) Unemployed, looking for work, (d) Unemployed, awaiting recall for my old job, and (e) Not
+working, and not looking for work.
+   3
+     Notably, the employment-to-population ratio calculated using the SWAA’s provided weights is with 59%
+much lower than in the raw SWAA data (76.2%) and in the CPS (75.7%).
+
+
+                                                    14
+

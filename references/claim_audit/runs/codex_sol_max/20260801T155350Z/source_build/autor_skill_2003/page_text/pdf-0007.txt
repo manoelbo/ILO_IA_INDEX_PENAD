@@ -1,0 +1,47 @@
+                 SKILL CONTENT OF TECHNICAL CHANGE                          1285
+
+[1999]: “The goal of understanding intelligence, from a computa-
+tional point of view, remains elusive. Reasoning programs still ex-
+hibit little or no common sense. Today’s language programs trans-
+late simple sentences into database queries, but those language
+programs are derailed by idioms, metaphors, convoluted syntax, or
+ungrammatical expressions.”6
+     The implication of our discussion is that because present
+computer technology is more substitutable for workers in carry-
+ing out routine tasks than nonroutine tasks, it is a relative
+complement to workers in carrying out nonroutine tasks. From a
+production function standpoint, outward shifts in the supply of
+routine informational inputs, both in quantity and quality, in-
+crease the marginal productivity of workers performing nonrou-
+tine tasks that demand these inputs. For example, comprehen-
+sive bibliographic searches increase the quality of legal research
+and timely market information improves the efciency of mana-
+gerial decision-making. More tangibly, because repetitive, pre-
+dictable tasks are readily automated, computerization of the
+workplace raises demand for problem-solving and communica-
+tions tasks such as responding to discrepancies, improving pro-
+duction processes, and coordinating and managing the activities
+of others. This changing allocation of tasks was anticipated by
+Drucker [1954] in the 1950s: “The technological changes now
+occurring will carry [the Industrial Revolution] a big step further.
+They will not make human labor superuous. On the contrary,
+they will require tremendous numbers of highly skilled and
+highly trained men—managers to think through and plan, highly
+trained technicians and workers to design the new tools, to pro-
+duce them, to maintain them, to direct them” [p. 22, brackets
+added].
+     Table I provides examples of tasks in each cell of our two-by-
+two matrix of workplace tasks (routine versus nonroutine, man-
+ual versus information processing) and states our hypothesis
+about the impact of computerization for each cell. The next sec-
+tion formalizes these ideas and derives empirical implications.7
+
+    6. Software that recognizes patterns (e.g., neural networks) or solves prob-
+lems based upon inductive reasoning from well-specied models is under devel-
+opment. But these technologies have had little role in the “computer revolution” of
+the last several decades. As one example, current speech recognition software
+based on pattern recognition can recognize words and short phrases but can only
+process rudimentary conversational speech [Zue and Glass 2000].
+    7. Our focus on task shifts in the process of production within given jobs
+overlooks two other potentially complementary avenues by which technical
+

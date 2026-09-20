@@ -1,0 +1,43 @@
+able upon request. The only exception is industry composition in the June 2024 survey (ex-
+cluded from the main text), where the correlation is 0.74. This results from a higher Other
+Services” share in the RPS than in the CPS, a recurring issue in past RPS waves Bick and
+Blandin, 2023. We attribute this to respondents selecting Other” when unsure of their indus-
+try, unlike in the CPS, where professional coders classify responses. To address this, starting
+in the August 2024 survey, we prompted those selecting “Other Services” with the following
+question: “We would like to know some more details about what kind of business or industry
+this job is. Please include the main activity, product, or service provided at the location where
+you are employed. (For example: elementary school, residential construction).” We provided
+an open text field for respondents to type their answers. These responses were routed to an
+industry and occupational coder at the National Institute for Occupational Safety and Health
+(NIOSH) (https://csams.cdc.gov/nioccs/SingleCoding.aspx). Based on the provided re-
+sponses, the system suggested the top five 6-digit NAICS codes plus an “Other” option. We
+assigned industry based on their choice, with “Other” being classified as “Other Services -
+Other Personal Services.” Figure A.3 confirms this resolved the issue.
+
+
+A.4   Definition of Industries and Occupations
+
+Industries correspond to the 22 major industries in the NAICS: Agriculture, Forestry, Fish-
+ing, and Hunting (NAICS=11); Mining, Quarrying, and Oil and Gas Extraction (NAICS=21);
+Utilities (NAICS=22); Construction (NAICS=23); Manufacturing (NAICS=31-33); Wholesale
+Trade (NAICS=42); Retail Trade (NAICS=44-45); Transportation and Warehousing (NAICS=48-
+49); Information (NAICS=51); Finance and Insurance (NAICS=52); Real Estate and Rental
+and Leasing (NAICS=53); Professional, Scientific, and Technical Services (NAICS=54); Man-
+agement of Companies and Enterprises (NAICS=55); Administrative and Support and Waste
+Management Services (NAICS=56); Educational Services (NAICS=61); Health Care and Social
+Assistance (NAICS=62); Arts, Entertainment, and Recreation (NAICS=71); Accommodation
+and Food Services (NAICS=72); Other Services (except Public Administration) (NAICS=81);
+Public Administration (NAICS=99).
+
+    The industry groupings used in the main text figures are: Agriculture / Extraction (sec-
+tors 11, 21), Construction (23), Manufacturing (31-33), Wholesale / Retail Trade (42, 44-45),
+Transportation / Utilities (22, 48-49), Info Services (51), Finance / Real Estate (52, 53), Pro-
+fessional / Business Services (54, 55, 56), Education / Health/ Social / Public Services (61, 62,
+92), Leisure / Accommodation / Other (71, 72, 81).
+
+   Occupations correspond to the 22 major occupations in the SOC: Management Occupations
+(SOC=11); Business and Financial Operations Occupations (SOC=13); Computer and Math-
+ematical Occupations (SOC=15); Architecture and Engineering Occupations (SOC=17); Life,
+
+                                               9
+

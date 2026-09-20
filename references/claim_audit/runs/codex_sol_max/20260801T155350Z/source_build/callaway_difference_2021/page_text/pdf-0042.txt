@@ -1,0 +1,51 @@
+Abadie, A., Athey, S., Imbens, G., and Wooldridge, J. (2017), “When should you adjust standard errors for
+  clustering?,” Working Paper.
+Abbring, J. H., and van den Berg, G. J. (2003), “The nonparametric identification of treatment effects in duration
+  models,” Econometrica, 71(5), 1491–1517.
+Ai, C., and Chen, X. (2003), “Efficient estimation of models with conditional moment restrictions containin un-
+  known functions,” Econometrica, 71(6), 1795–1843.
+Ai, C., and Chen, X. (2007), “Estimation of possibly misspecified semiparametric conditional moment restriction
+  models with different conditioning variables,” Journal of Econometrics, 141(1), 5–43.
+Ai, C., and Chen, X. (2012), “The semiparametric efficiency bound for models of sequential moment restrictions
+  containing unknown functions,” Journal of Econometrics, 170(2), 442–457.
+Athey, S., and Imbens, G. W. (2006), “Identification and inference in nonlinear difference in differences models,”
+  Econometrica, 74(2), 431–497.
+Athey, S., and Imbens, G. W. (2018), “Design-based analysis in difference-in-differences settings with staggered
+  adoption,” Working Paper.
+Bailey, M. J., and Goodman-Bacon, A. (2015), “The war on poverty’s experiment in public medicine: Community
+  health centers and the mortality of older Americans,” American Economic Review, 105(3), 1067–1104.
+Belloni, A., Chernozhukov, V., Fernández-Val, I., and Hansen, C. (2017), “Program evaluation and causal inference
+  with high-dimensional data,” Econometrica, 85(1), 233–298.
+Bertrand, M., Duflo, E., and Mullainathan, S. (2004), “How much should we trust differences-in-differences esti-
+  mates?,” The Quarterly Journal of Economics, 119(1), 249–275.
+Bojinov, I., Rambachan, A., and Shephard, N. (2020), “Panel Experiments and Dynamic Causal Effects: A Finite
+  Population Perspective,” Working Paper.
+Bonhomme, S., and Sauder, U. (2011), “Recovering distributions in difference-in-differences models: A comparison
+  of selective and comprehensive schooling,” Review of Economics and Statistics, 93(May), 479–494.
+Borusyak, K., and Jaravel, X. (2017), “Revisiting event study designs,” Working Paper.
+Botosaru, I., and Gutierrez, F. H. (2018), “Difference-in-differences when the treatment status is observed in only
+  one period,” Journal of Applied Econometrics, 33(1), 73–90.
+Busso, M., Dinardo, J., and McCrary, J. (2014), “New evidence on the finite sample properties of propensity score
+  reweighting and matching estimators,” The Review of Economics and Statistics, 96(5), 885–895.
+Callaway, B., Li, T., and Oka, T. (2018), “Quantile treatment effects in difference in differences models under
+  dependence restrictions and with only two time periods,” Journal of Econometrics, 206(2), 395–413.
+Card, D., and Krueger, A. B. (1994), “Minimum wages and employment: A case study of the fast-food industry in
+  New Jersey and Pennsylvania,” American Economic Review, 84(4), 772–793.
+Chen, X., Hong, H., and Tarozzi, A. (2008), “Semiparametric efficiency in GMM models with auxiliary data,” The
+  Annals of Statistics, 36(2), 808–843.
+Chen, X., Linton, O., and Van Keilegom, I. (2003), “Estimation of semiparametric models when the criterion
+  function is not smooth,” Econometrica, 71(5), 1591–1608.
+Cheng, G., Yu, Z., and Huang, J. Z. (2013), “The cluster bootstrap consistency in generalized estimating equations,”
+  Journal of Multivariate Analysis, 115, 33–47.
+Chernozhukov, V., Fernández-Val, I., Hahn, J., and Newey, W. (2013), “Average and quantile effects in nonseparable
+  panel models,” Econometrica, 81(2), 535–580.
+Chernozhukov, V., Fernández-Val, I., and Luo, Y. (2018), “The sorted effects method: Discovering heterogeneous
+  effects beyond their averages,” Econometrica, 86(6), 1911–1938.
+Conley, T., and Taber, C. (2011), “Inference with “difference in differences” with a small number of policy changes,”
+  Review of Economics and Statistics, 93(1), 113–125.
+
+
+
+
+                                                         42
+

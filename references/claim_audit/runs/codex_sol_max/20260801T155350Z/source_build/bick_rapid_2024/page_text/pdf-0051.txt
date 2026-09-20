@@ -1,0 +1,60 @@
+is:
+                                                   X                X
+                                ∆L ≡ L′ − L =            si ei =          si w̃i             (D.6)
+                                                     i              i
+
+
+Assuming no change in TFP, capital, and hours worked, the percent change in aggregate pro-
+ductivity from genAI equals the percent change in aggregate output. The approximate percent
+change in aggregate output from genAI is given by:
+                                                                           P
+                         ∆Y           ∆L                                       s w̃
+                            ≈ (1 − α)    =         (1 − α)          ×      Pi i i            (D.7)
+                          Y           L                                        ℓi w̃i
+                                                                           | i{z }
+                                                   | {z }
+                                                 labor cost share
+                                                                        ∆%effective labor
+
+
+This equation states that the percent change in output due to genAI is the ratio of mean time
+savings to mean hours worked, weighted by worker’s wages, and scaled by labor’s share of
+production costs.
+
+    Using November 2024 RPS data on hourly wages wi , weekly hours worked ℓi , and weekly
+genAI time savings si , we use (D.7) to estimate that genAI currently increases aggregate effec-
+tive labor supply by 2.1%. If we assume an AI-exposure-adjusted labor share of 0.57, following
+Acemoglu (2024), the implied potential productivity gain is 1.2%.
+
+      Comparisons to Micro and Macro Estimates of GenAI Productivity Gains
+
+   How does our estimate of the aggregate productivity gain from genAI compare with exper-
+imental estimates from the literature? To answer this question, we reformulate the model to
+express time savings as a linear function of time spent using the technology:
+                                   X                     X                X
+                            L′ =       (li + γui )ei =       li ei + γ          ui e i       (D.8)
+                                   i                     i                  i
+
+
+In this expression, ui is the weekly hours spent using genAI by worker i, and γ is the productivity
+gain associated with one hour of genAI use.
+
+      We can then write the percent increase in aggregate effective labor supply due to genAI as
+                                                P
+                                           ∆L  γ i w̃i ui
+                                              = P                                            (D.9)
+                                            L    i w̃i li
+
+
+Next, we solve for the value of γ that would generate a 2.1 percent increase in aggregate effective
+labor supply given our estimates of genAI use:
+                                                 P           
+                                                     i w̃i li
+                                       γ = 2.1% · P                                         (D.10)
+                                                    i w̃i ui
+
+
+
+
+                                                   19
+

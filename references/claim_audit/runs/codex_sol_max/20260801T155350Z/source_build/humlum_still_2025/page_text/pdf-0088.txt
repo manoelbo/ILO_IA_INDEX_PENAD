@@ -1,0 +1,66 @@
+          Figure D.5: Employer Initiatives and New Workloads From AI Chatbots
+
+                                                           (a) Adopters
+                                           No Initiative
+
+                                       Encourage Use
+
+                                    Enterprise Chatbot
+
+                                               Training
+
+                    Encourage Use + Enterprise Chatbot
+
+                             Encourage Use + Training
+
+                          Enterprise Chatbot + Training
+
+                                              All Three
+                                                           0              .05      .1         .15          .2       .25
+
+                                                                   New Tasks     Same Tasks         New and Same Tasks
+
+
+
+                                                      (b) Non-Adopters
+                                           No Initiative
+
+                                       Encourage Use
+
+                                    Enterprise Chatbot
+
+                                               Training
+
+                    Encourage Use + Enterprise Chatbot
+
+                             Encourage Use + Training
+
+                          Enterprise Chatbot + Training
+
+                                              All Three
+                                                               0           .05      .1        .15          .2       .25
+
+                                                                   New Tasks     Same Tasks         New and Same Tasks
+
+
+
+Notes: This figure illustrates how new workloads created by AI chatbots vary with employer initiatives. Panel (a) presents
+results for adopters, while Panel (b) focuses on non-adopters (workers who have never used AI chatbots for work). Estimates
+are predicted values from Equation (69), varying EmployerInitiatives while holding workers’ characteristics X at their mean
+values; see Table E.8 for the full set of regression estimates. Whiskers represent 95% confidence bands of the predicted
+values. Some confidence intervals are too narrow to be distinguished from the point estimates at this scale. Sample: All
+completed responses from the 2024 survey linked to registry data.
+
+
+
+
+    In summary, the widespread creation of new tasks and spillovers to non-users highlight
+
+the broader workplace transformations caused by AI chatbots. Yet, the high prevalence
+
+of “non-productive AI tasks” related to integration, compliance, and oversight suggests
+
+that many organizations remain in the trough of a productivity J-curve. Notably, the
+
+                                                                     53
+

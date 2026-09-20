@@ -1,0 +1,45 @@
+             SKILL CONTENT OF TECHNICAL CHANGE               1329
+
+As with the industry data, we transformed the DOT task mea-
+sures into percentiles of the base year distribution, in this case
+using occupational employment shares from 1984 to form employ-
+ment weights.
+
+A.7. Computer Usage Data from the Current Population Survey
+     Industry computer use frequencies were calculated from the
+October 1984 and 1997 School Enrollment Supplements to the
+Current Population Survey (CPS) as the weighted fraction of
+currently employed workers ages 18 – 65 who answered yes to the
+question, “Do you use a computer directly at work?” within con-
+sistent CIC industries. A computer is dened as a desktop termi-
+nal or PC with keyboard and monitor and does not include an
+electronic cash register or a handheld data device. To calculate
+these frequencies in 1984 and 1997, 61,712 and 56,247 observa-
+tions were used, respectively.
+
+A.8. Computer and Capital Investment Measures from the
+National Income and Products Accounts
+     We used data on industry capital stocks and ows of equip-
+ment, structures, and computers from the National Income and
+Product Accounts [U. S. Department of Commerce, 2002a, 2002b]
+for the years 1950 –1998. All NIPA stock and investment vari-
+ables are measured in real 1996 dollars. Investment variables
+measure cumulated real investment in the relevant asset over the
+prior ten years, except in 1998 where we use 1.25 times cumu-
+lated investment over the previous eight years. Deation of NIPA
+measures is performed by the Bureau of Economic Analysis using
+primarily Producer Price Indexes (PPIs). PPIs for computer in-
+vestment are based on quality adjustment, price linking, and
+hedonic regression methods. As denominators for capital/FTE
+and computer investment/FTE variables, we used Census and
+CPS samples to calculate FTEs by industry by year. Computer
+investment is calculated as the sum of investment in mainframe
+computers, personal computers, packaged and custom software,
+printers, terminals, storage devices, and other integrated devices.
+Structures and equipment variables are dened in the NIPA.
+     To match CPS and Census data to the NIPA, we used a
+crosswalk developed by Autor, Katz, and Krueger [1998] and
+revised for this analysis to accommodate small changes in the
+NIPA sector scheme made during the recent NIPA revision. The
+resulting aggregation of NIPA and CIC data contains 47 consis-
+

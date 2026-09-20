@@ -1,0 +1,45 @@
+       Of course, log utility is not well-defined when there is an extensive margin: A coherent utility
+function defined with zero-valued outcomes must take a stand on the relative importance of the
+intensive versus extensive margins. Recall from Section 2.1 that when using transformations like
+logp1 ` yq or arcsinhpyq, the scaling of the outcome implicitly determines the weights placed on
+these margins.
+       Instead of implicitly weighting the margins via the scaling of Y , a more transparent approach
+is to explicitly take a stand on how much one values the two margins of treatment. Of course, if
+one knows that their utility is captured by U “ ErmpY qs (for a particular unit of Y , say earnings
+in dollars), then the ATE for mpY q is appropriate. If one is unsure exactly of their utility function,
+then a rough calibration is to specify how much one values a change in earnings from 0 to 1
+relative to a percentage change in earnings for those with non-zero earnings. If, for example, one
+values the extensive margin effect of moving from 0 to 1 the same as a 100x percent increase in
+earnings, then one might consider setting mpyq “ logpyq for y ą 0 and mp0q “ ´x. The ATE for
+this transformation can be interpreted as an approximate percentage (log point) effect, where an
+increase from 0 to 1 is valued at 100x log points.28
+       We emphasize that for a fixed value of x, this approach necessarily depends on the scaling of the
+outcome (thus avoiding the trilemma in Proposition 2). However, this may not be so concerning
+since the appropriate choice of x also depends on the units of the outcome—e.g., saying a change from
+0 to 1 is worth 100x percent means something very different if 1 corresponds with one dollar versus
+a million dollars. In other words, ATEs for transformations such as arcsinhpY q may be difficult to
+interpret because the scaling of the outcome implicitly determines the relative importance of the
+intensive and extensive margins; this approach avoids that difficulty by explicitly taking a stand
+on the tradeoff between these two margins. Nevertheless, a challenge with this approach is that
+researchers may have differing opinions over the appropriate choice of x (or more generally, over the
+appropriate utility function).
+
+4.3      When the goal is to understand intensive and extensive margins
+Finally, we consider the case where the researcher is interested in understanding the intensive and
+extensive margin effects separately. A common question in the literature on job training programs
+(Card et al., 2010), for instance, is whether a program raises participants’ earnings by helping them
+find a job—which would be expected only to have an extensive-margin effect—or by increasing
+human capital, which would be expected to also affect the intensive margin. In such settings, it is
+natural to target separate parameters for the intensive and extensive margins.
+       For example, the parameter
+
+                         θIntensive “ ErlogpY p1qq ´ logpY p0qq | Y p1q ą 0, Y p0q ą 0s
+  28
+    Note that this transformation will generally only be sensible if the support of Y excludes p0, e´x q, since otherwise
+the function mpyq is not monotone in y over the support of Y . It is common, however, to have a lower-bound on
+non-zero values of the outcome; e.g., a firm cannot have between 0 and 1 employees. In our application to Sequeira
+(2016) below, we normalize the minimum non-zero value of Y to 1 when applying this approach.
+
+
+                                                           20
+

@@ -1,0 +1,194 @@
+                                                       Figure 9: Generative AI Use, Time Savings, and Productivity Gains by Industry
+
+
+                                                                          (a) Time Savings                                                                                                    (b) % Change in Productivity (Model)
+                                                                            vs. genAI Use                                                                                                                vs. genAI Use
+                                            3
+
+
+
+
+                                                                                                                                                                  3
+   Time Savings (% of Work Hours Last Week)
+
+
+
+
+                                                                                                                       Information
+
+
+                                                               ρ=0.93                                                   Finance                                                                        ρ=0.65
+
+
+
+
+                                                                                                                                          Productivity Gain (%)
+                                                                                                      Prof/Sci/Tech
+                             2
+
+
+
+
+                                                                                                                                                            2
+                                                                                                                                                                                                                                             Prof/Sci/Tech
+                                                                                Construction
+                                                                                    Retail                                                                                                                                                                        Finance
+                                                           Education           Real Estate
+                                                                                           Health/Social                                                                                                                        Health/Social                    Information
+                                                                 Public        Manufacturing                                                                                                                         Construction
+                                                                                                                                                                                                  Education
+                                                                                                                                                                                                         Other Services
+               1
+
+
+
+
+                                                                                                                                            1
+                                                                       Transportation                                                                                                                                   Retail
+                                                                  Other Services
+                                                                                                                                                                                                                    Manufacturing
+                                                                 Accommod/Food Service                                                                                                                  Public Transportation
+                                                                                                                                                                                                         Accommod/Food Service
+                                                                                                                                                                                                                    Real Estate
+                           0
+
+
+
+
+                                                                                                                                                                  0
+                                                       0          2           4          6          8           10                                                                            0          2           4          6          8           10
+                                                              Share of Last Week's Work Hours Spent Using AI (%)                                                                                     Share of Last Week's Work Hours Spent Using AI (%)
+
+
+      (c) % Change in Productivity (Data)                                                                                                                                                     (d) % Change in Productivity (Data)
+ vs. % Change in Effective Labor Supply (Model)                                                                                                                                               vs. % Change in Productivity (Model)
+   Detrended Annual Change in Labor Productivity (%)
+
+
+
+
+                                                                                                                                          Detrended Annual Change in Labor Productivity (%)
+                                                 8
+
+
+
+
+                                                                                                                                                                                        8
+
+
+
+
+                                                                                      Retail                                                                                                                             Retail
+                                         6
+
+
+
+
+                                                                                                                                                                                6
+
+
+
+
+                                                                                                               Information                                                                                                          Information
+                                    4
+
+
+
+
+                                                                                                                                                                           4
+
+
+
+
+                                                                          Transportation                                                                                                                          Transportation
+
+                                                                Real Estate
+                               2
+
+
+
+
+                                                                                                                                                                      2
+
+
+
+
+                                                                                                     Finance                                                                                                                          Finance
+                                                                              Education                                                                                                           Real Estate            Education
+                                                                                     Manufacturing Prof/Sci/Tech                                                                                                    Manufacturing                   Prof/Sci/Tech
+                         0
+
+
+
+
+                                                                                                                                                                0
+
+
+
+
+                                                                                  Health/Social                                                                                                                                 Health/Social
+                                                                               Admin & Support                                                                                                                          Admin & Support
+                    -2
+
+
+
+
+                                                                                                                                                           -2
+
+
+
+
+                                                                          Arts/Entert/Rec                                                                                                                              Arts/Entert/Rec
+               -4
+
+
+
+
+                                                                                                                                                      -4
+
+
+
+
+                                                           ρ=0.39                                                                                                                                  ρ=0.00
+                                                                                Other Services                                                                                                                               Other Services
+          -6
+
+
+
+
+                                                                                                                                                 -6
+    -8
+
+
+
+
+                                                                                                                                           -8
+
+
+
+
+                                                       0              1                 2              3                       4                                                              0                           1                                  2
+                                                             Change in Effective Labor (% of Work Hours Last Week)                                                                                               Predicted Productivity Gain (%)
+
+Notes: Data source are the November 2024 wave of the RPS, ages 18-64 (the August 2024 wave did not ask
+about time savings). The sample is employed individuals (RPS, N = 3473). Labor productivity is calculated as
+real value added (Bureau of Economic Analysis) divided by employment (Bureau of Labor Statistics) in each
+sector. We exclude Agriculture because the productivity cannot be constructed with the standard BLS data,
+and Mining, Utilities, Wholesale Trade, and Management industries due to low sample size. Panel (a) plots
+industry-wide time savings from genAI against industry-wide hours worked last week using genAI, with both
+variables expressed relative to total industry hours worked last week. Panel (b) plots estimated productivity
+gains, as defined in Equation (4), against the industry-wide hours using genAI last week relative to total industry
+hours worked last week. When calculating the mean share of last week’s work hours spent using genAI, we
+weight observations by their last week’s work hours to obtain an aggregate estimate of genAI usage as a share
+of hours worked. See text for details on the calculation of estimated productivity gains. Panels (c) and (d)
+plot estimated changes in effective labor and productivity against annualized labor productivity growth in the
+US over the years 2022 - 2024, detrended by subtracting the annualized growth predicted by the trend over
+the period 2015-2019 from the actual growth rate. To minimize the impact of outliers, panels (b), (c), and (d),
+which weight time savings using wages, exclude observations with (i) hourly wages below the national minimum
+wage of $7.25 or (ii) weekly earnings above $10,000.
+
+
+
+
+                                                                                                                                     22
+

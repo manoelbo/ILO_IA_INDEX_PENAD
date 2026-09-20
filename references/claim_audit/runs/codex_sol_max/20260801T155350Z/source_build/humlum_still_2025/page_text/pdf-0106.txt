@@ -1,0 +1,60 @@
+E.1.4      Comparison to 2023 Survey
+
+Figure E.8 compares demographic gaps in ChatGPT use for work across the 2023 and
+
+2024 survey rounds.
+
+                       Figure E.8: Use of ChatGPT for Work (Nov ‘23, ‘24)
+
+
+                      Female
+
+
+
+             Age (10 Years)
+
+
+
+     Experience (10 Years)
+
+
+
+               log(Earnings)
+
+
+
+      Net Wealth / Earnings
+
+
+                                -.15             -.1             -.05              0              .05              .1
+
+                                                                   2023        2024
+
+
+Notes: This figure presents estimates from a multivariate regression of ChatGPT usage for work on worker characteristics,
+controlling for occupation fixed effects. The regressions are estimated separately for the 2023 and 2024 survey rounds.
+Sample: All completed responses from the 2023 and 2024 survey rounds.
+
+
+
+
+E.1.5      User-Reported Benefits
+
+Table E.6 shows occupational differences in perceived benefits. Marketing professionals are
+
+more than twice as likely as teachers to report improved work quality (69.8% vs. 32.1%),
+
+and software developers are more than twice as likely as journalists to report higher job
+
+satisfaction (30.5% vs. 12.6%). Across all exposed occupations, however, 64–90% of users
+
+report time savings.
+
+    Table E.7 shows how workers reallocate these time savings under different employer
+
+initiatives. When use is encouraged, workers are more likely to shift time to new tasks
+
+rather than leisure.
+
+                                                          71
+

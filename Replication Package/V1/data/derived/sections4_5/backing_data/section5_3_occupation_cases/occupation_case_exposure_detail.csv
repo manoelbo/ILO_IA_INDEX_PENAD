@@ -1,0 +1,77 @@
+case_id,variant_id,cbo_6d,cbo_4d,pre_admissions,within_case_pre_admission_share_pct,exposure_category,exposure_score_4d,cbo_title,mapping_confidence
+customer_service,primary,422315,4223,135106,84.26166732,Exposed: Gradient 3,0.535,Operador de telemarketing receptivo,high
+customer_service,primary,422320,4223,25235,15.73833268,Exposed: Gradient 3,0.535,Operador de telemarketing técnico,high
+health_care_aides,primary,322220,3222,748,0.5060858858,Minimal Exposure,0.22,Técnico de enfermagem psiquiátrica,medium
+health_care_aides,primary,322230,3222,53152,35.96186765,Minimal Exposure,0.22,Auxiliar de enfermagem,medium
+health_care_aides,primary,322235,3222,1188,0.8037834656,Minimal Exposure,0.22,Auxiliar de enfermagem do trabalho,medium
+health_care_aides,primary,322250,3222,506,0.3423522168,Minimal Exposure,0.22,Auxiliar de enfermagem da estratégia de saúde da família,medium
+health_care_aides,primary,515110,5151,16599,11.2306412,Not Exposed,0.17,Atendente de enfermagem,medium
+health_care_aides,primary,516210,5162,54421,36.82045453,Not Exposed,0.215,Cuidador de idosos,medium
+health_care_aides,primary,516220,5162,21187,14.33481506,Not Exposed,0.215,Cuidador em saúde,medium
+marketing_sales_managers,primary,142315,1423,20601,30.23689309,Exposed: Gradient 2,0.465,Gerente de marketing,high
+marketing_sales_managers,primary,142320,1423,47531,69.76310691,Exposed: Gradient 2,0.465,Gerente de vendas,high
+production_supervisors,primary,720105,7201,207,0.3288167363,No score,,Mestre (afiador de ferramentas),medium
+production_supervisors,primary,720110,7201,3369,5.35161152,No score,,Mestre de caldeiraria,medium
+production_supervisors,primary,720115,7201,163,0.2589233237,No score,,Mestre de ferramentaria,medium
+production_supervisors,primary,720120,7201,49,0.07783584579,No score,,Mestre de forjaria,medium
+production_supervisors,primary,720125,7201,528,0.8387209506,No score,,Mestre de fundição,medium
+production_supervisors,primary,720130,7201,145,0.2303305641,No score,,Mestre de galvanoplastia,medium
+production_supervisors,primary,720135,7201,1946,3.091195019,No score,,Mestre de pintura (tratamento de superfícies),medium
+production_supervisors,primary,720140,7201,1738,2.760789796,No score,,Mestre de soldagem,medium
+production_supervisors,primary,720145,7201,781,1.240608073,No score,,Mestre de trefilação de metais,medium
+production_supervisors,primary,720150,7201,950,1.509062316,No score,,Mestre de usinagem,medium
+production_supervisors,primary,720155,7201,586,0.9308531762,No score,,Mestre serralheiro,medium
+production_supervisors,primary,720160,7201,133,0.2112687243,No score,,Supervisor de controle de tratamento térmico,medium
+production_supervisors,primary,720205,7202,398,0.6322176862,Minimal Exposure,0.31,Mestre (construção naval),medium
+production_supervisors,primary,720210,7202,822,1.305736025,Minimal Exposure,0.31,Mestre (indústria de automotores e material de transportes),medium
+production_supervisors,primary,720215,7202,2117,3.362826235,Minimal Exposure,0.31,Mestre (indústria de máquinas e outros equipamentos mecânicos),medium
+production_supervisors,primary,720220,7202,132,0.2096802376,Minimal Exposure,0.31,Mestre de construção de fornos,medium
+production_supervisors,primary,730105,7301,4203,6.676409385,Not Exposed,0.17,Supervisor de montagem e instalação eletroeletrônica,medium
+production_supervisors,primary,740105,7401,357,0.5670897336,No score,,Supervisor da mecânica de precisão,medium
+production_supervisors,primary,740110,7401,11,0.01747335314,No score,,Supervisor de fabricação de instrumentos musicais,medium
+production_supervisors,primary,750105,7501,72,0.1143710387,No score,,Supervisor de joalheria,medium
+production_supervisors,primary,750205,7502,350,0.5559703271,Not Exposed,0.17,Supervisor da indústria de minerais não metálicos (exceto os derivados de petróleo e carvão),medium
+production_supervisors,primary,760105,7601,1137,1.80610932,Not Exposed,0.255,Contramestre de acabamento (indústria têxtil),medium
+production_supervisors,primary,760110,7601,173,0.2748081902,Not Exposed,0.255,Contramestre de fiação (indústria têxtil),medium
+production_supervisors,primary,760115,7601,144,0.2287420774,Not Exposed,0.255,Contramestre de malharia (indústria têxtil),medium
+production_supervisors,primary,760120,7601,547,0.8689021969,Not Exposed,0.255,Contramestre de tecelagem (indústria têxtil),medium
+production_supervisors,primary,760125,7601,4088,6.49373342,Not Exposed,0.255,Mestre (indústria têxtil e de confecções),medium
+production_supervisors,primary,760205,7602,54,0.08577827903,No score,,Supervisor de curtimento,medium
+production_supervisors,primary,760305,7603,1220,1.937953711,No score,,Encarregado de corte na confecção do vestuário,medium
+production_supervisors,primary,760310,7603,4337,6.889266596,No score,,Encarregado de costura na confecção do vestuário,medium
+production_supervisors,primary,760405,7604,3850,6.115673598,Not Exposed,0.17,Supervisor  (indústria de calçados e artefatos de couro),medium
+production_supervisors,primary,760505,7605,1159,1.841056026,No score,,"Supervisor da confecção de artefatos de tecidos, couros e afins",medium
+production_supervisors,primary,760605,7606,1210,1.922068845,Not Exposed,0.26,Supervisor das artes gráficas  (indústria editorial e gráfica),medium
+production_supervisors,primary,770105,7701,2917,4.633615554,Not Exposed,0.16,Mestre (indústria de madeira e mobiliário),medium
+production_supervisors,primary,770110,7701,1475,2.343017807,Not Exposed,0.16,Mestre carpinteiro,medium
+production_supervisors,primary,780105,7801,1734,2.754435849,No score,,Supervisor de embalagem e etiquetagem,medium
+production_supervisors,primary,810105,8101,400,0.6353946595,Not Exposed,0.265,Mestre (indústria petroquímica e carboquímica),medium
+production_supervisors,primary,810110,8101,1200,1.906183979,Not Exposed,0.265,Mestre de produção química,medium
+production_supervisors,primary,810205,8102,1813,2.879926294,Not Exposed,0.26,Mestre (indústria de borracha e plástico),medium
+production_supervisors,primary,810305,8103,652,1.035693295,No score,,Mestre de produção farmacêutica,medium
+production_supervisors,primary,820105,8201,361,0.5734436802,No score,,Mestre de siderurgia,medium
+production_supervisors,primary,820110,8201,136,0.2160341842,No score,,Mestre de aciaria,medium
+production_supervisors,primary,820115,8201,308,0.4892538878,No score,,Mestre de alto-forno,medium
+production_supervisors,primary,820120,8201,14,0.02223881308,No score,,Mestre de forno elétrico,medium
+production_supervisors,primary,820125,8201,146,0.2319190507,No score,,Mestre de laminação,medium
+production_supervisors,primary,820205,8202,1176,1.868060299,No score,,"Supervisor de fabricação de produtos cerâmicos, porcelanatos e afins",medium
+production_supervisors,primary,820210,8202,468,0.7434117516,No score,,Supervisor de fabricação de produtos de vidro,medium
+production_supervisors,primary,830105,8301,605,0.9610344225,Not Exposed,0.265,"Mestre (indústria de celulose, papel e papelão)",medium
+production_supervisors,primary,840105,8401,7059,11.21312725,Not Exposed,0.24,Supervisor de produção da indústria alimentícia,medium
+production_supervisors,primary,840110,8401,478,0.7592966181,Not Exposed,0.24,Supervisor da indústria de bebidas,medium
+production_supervisors,primary,840115,8401,104,0.1652026115,Not Exposed,0.24,Supervisor da indústria de fumo,medium
+production_supervisors,primary,840120,8401,818,1.299382079,Not Exposed,0.24,Chefe de confeitaria,medium
+production_supervisors,primary,860110,8601,623,0.9896271822,Not Exposed,0.26,"Supervisor de operação de fluidos (distribuição, captação, tratamento de água, gases, vapor)",medium
+production_supervisors,primary,860115,8601,3490,5.543818404,Not Exposed,0.26,"Supervisor de operação elétrica (geração, transmissão e distribuição de energia elétrica)",medium
+software_developers,primary,212205,2122,8593,2.923853239,No score,,Engenheiro de aplicativos em computação,high
+software_developers,primary,212215,2122,7506,2.553990738,No score,,Engenheiros de sistemas operacionais em computação,high
+software_developers,primary,212405,2124,182814,62.20427162,Exposed: Gradient 3,0.5471428571,Analista de desenvolvimento de sistemas,high
+software_developers,primary,212415,2124,6984,2.376375075,Exposed: Gradient 3,0.5471428571,Analista de sistemas de automação,high
+software_developers,primary,317105,3171,6174,2.100764564,Exposed: Gradient 2,0.4766666667,Desenvolvedor web (técnico),high
+software_developers,primary,317110,3171,79899,27.18642499,Exposed: Gradient 2,0.4766666667,Desenvolvedor de sistemas de tecnologia da informação (técnico),high
+software_developers,primary,317120,3171,1923,0.6543197694,Exposed: Gradient 2,0.4766666667,Desenvolvedor de multimídia,high
+stock_clerks,primary,414105,4141,399728,25.09169408,Minimal Exposure,0.4,Almoxarife,high
+stock_clerks,primary,414110,4141,265569,16.67027605,Minimal Exposure,0.4,Armazenista,high
+stock_clerks,primary,414125,4141,137566,8.635281962,Minimal Exposure,0.4,Estoquista,high
+stock_clerks,primary,414135,4141,76419,4.796967363,Minimal Exposure,0.4,Expedidor de mercadorias,high
+stock_clerks,primary,521125,5211,713787,44.80578054,Minimal Exposure,0.328,Repositor de mercadorias,high

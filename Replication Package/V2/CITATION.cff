@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite both the dissertation and this software artifact."
+title: "Replication Package for Generative Artificial Intelligence and the Brazilian Labor Market"
+type: software
+authors:
+  - family-names: "Orlandi"
+    given-names: "Manoel Brasil"
+version: "2.0.0"
+license: MIT
+abstract: >-
+  Code, analytical-input contracts, signed reference results, and independent
+  Python-R validation for 53 computational tables and figures in a master's
+  dissertation on occupational exposure to generative AI in Brazil.
+keywords:
+  - reproducibility
+  - labor economics
+  - generative artificial intelligence
+  - Brazil
+  - difference in differences

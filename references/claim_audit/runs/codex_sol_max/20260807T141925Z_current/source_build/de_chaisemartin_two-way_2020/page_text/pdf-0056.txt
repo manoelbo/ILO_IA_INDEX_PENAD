@@ -1,0 +1,43 @@
+    Equation (1), the dependent variable is, say, the change in log land value in county c
+    between period t and 1930, and the explanatory variables are state × year fixed effects, the
+    share of county c in high erosion regions, the share of county c in medium erosion regions,
+    and some control variables. This regression is similar to Regression 1 with controls, except
+    that it has two treatment variables. The stable groups assumption is satisfied: many
+    counties have 0% of their land situated in medium or high erosion regions. This a fuzzy
+    design: the treatments of interest are whether a piece of land is in high or in medium
+    erosion regions, which varies within (county,year) cells.
+
+27. Bajari et al. (2012), A Rational Expectations Approach to Hedonic Price Re-
+    gressions with Time-Varying Unobserved Product Attributes: The Price of
+    Pollution. Table 5.
+    In, say, the first regression equation in the bottom of page 1915, the dependent variable
+    is the change in the price of house j between sales 2 and 3, and the explanatory variables
+    are the change in various pollutants in the area around house j between sales 2 and 3,
+    and some controls. This regression is similar to Regression 2 with controls, except that it
+    has several treatment variables. The stable groups assumption is presumably satisfied: it
+    is likely that for each pair of consecutive sales, there are houses where the level of each
+    pollutant does not change. This is a sharp design.
+
+28. Dahl and Lochner (2012), The Impact of Family Income on Child Achievement:
+    Evidence from the Earned Income Tax Credit. Table 3.
+    In regression Equation (4), the dependent variable is the change in test scores for child
+    i between years a and a-1, while the explanatory variables are the change in the EITC
+    income of her family and some controls, and the change in the expected EITC income
+    of her family based on her family income in year a-1 is used to instrument for the actual
+    change of her family’s EITC income. This regression is a 2SLS version of Regression 2 with
+    controls, except that it does not have years fixed effects. The stable groups assumption is
+    presumably satisfied: it is likely that for each pair of consecutive years, there are children
+    whose family’s expected EITC income does not change. This is a sharp design.
+
+29. Imberman et al. (2012), Katrina’s Children: Evidence on the Structure of Peer
+    Effects from Hurricane Evacuees. Tables 3-6.
+    In regression Equation (1), the dependent variable is the test score of student i in school
+    j in grade g and year t, and the explanatory variables are school and grade × year fixed
+    effects, the fraction of Katrina evacuee students received by school j in grade g and year t,
+    and some controls. This regression is a three-way fixed effects version of Regression 1. The
+    stable groups assumption is satisfied: there are schools that did not receive any Katrina
+    evacuee. This a fuzzy design: the treatment of interest is the proportion of evacuees in
+
+
+                                              20
+

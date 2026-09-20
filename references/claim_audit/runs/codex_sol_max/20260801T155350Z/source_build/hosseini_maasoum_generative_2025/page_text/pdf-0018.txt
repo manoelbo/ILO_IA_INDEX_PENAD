@@ -1,0 +1,41 @@
+ment positions, including job titles, start and end dates, and the employing firm.16
+   A key feature of the dataset is the standardized seniority level variable for each posi-
+tion, constructed by Revelio through an ensemble modeling approach based on multiple
+sources of information. This measure combines information from (i) the worker’s current
+job (title, firm, and industry), (ii) their work history (tenure and previous seniority), and
+(iii) their age. These three inputs produce separate scores, which are averaged and then
+categorized into seven standardized seniority levels: Entry Level, Junior Level, Associate
+Level, Manager Level, Director Level, Executive Level, and Senior Executive Level. In the
+analysis that follows, we group positions into two broad categories: juniors (Entry and Ju-
+nior) and seniors (Associate and above).17 Supplemental Appendices A.1 and A.2 provide
+comprehensive data validation; Section 4.3 below summarizes their main findings.
+   We merge the worker résumé data with Revelio’s job postings database at the firm
+level. The job postings database tracks firms’ recruitment activity since September 2021
+and contains, for each posting, a firm identifier, posting date, and the raw text of the job
+description. We use these job-posting texts to construct our measure of firm-level GenAI
+adoption, as described in Section 4.2.
+   In addition, we incorporate the occupational GenAI exposure measures from Eloun-
+dou et al. (2024), merged with our position-level data via O*NET SOC codes. We rely on
+the GPT-4–based beta exposure measure (as in, for example, Brynjolfsson et al., 2025a),
+and classify all the positions into three categories: low exposure (0–25th percentile), medium
+exposure (25–75th percentile), and high exposure (75–100th percentile).
+   We also construct a representative sample of tasks from Revelio’s job postings database.
+The extraction pipeline is motivated by Hampole et al. (2025), who construct firm-level
+AI exposure by mapping résumé text to O*NET tasks. From the Revelio job-postings
+corpus we draw a representative sample of 1,000 firms containing 355,013 postings, and
+map each posting’s free-text description to a subset of the 19,265 standardized O*NET
+tasks using a two-stage pipeline. The first stage is a TF-IDF retriever that returns the top
+50 candidate O*NET tasks for each posting; the second stage is a large language model
+  16 The initial data download was performed in May 2025. In April 2026, we re-downloaded the positions
+
+data to capture profile updates that users added with a lag, ensuring more complete coverage of recent
+employment spells.
+  17 More details on Revelio’s seniority classification methodology are available at https://www.data-
+
+dictionary.reveliolabs.com/methodology.html#seniority.
+
+
+
+
+                                                  18
+

@@ -1,0 +1,39 @@
+tion, the multiplicative gravity relationship can be written as the exponential function
+exp [ln (α0 ) + α1 ln (Yi ) + α2 ln (Yj ) + α3 ln (Dij )], which is interpreted as the conditional
+expectation E(Tij |Yi , Yj , Dij ).
+  Since the relation yi = exp (xi β) holds on average, but not for each i, there is an error
+term associated with each observation, which is defined as εi = yi − E [yi |x].6 Therefore,
+the stochastic model can be formulated as
+
+                                             yi = exp (xi β) + εi ,                                         (6)
+
+with yi ≥ 0 and E [εi |x] = 0.
+  As we mentioned before, the standard practice of log-linearizing equation (6) and esti-
+mating β by OLS is inappropriate for a number of reasons. First of all, yi can be zero,
+in which case log-linearization is unfeasible. Second, even if all observations of yi are
+strictly positive, the expected value of the log-linearized error will in general depend on
+the covariates and hence OLS will be inconsistent. To see the point more clearly, notice
+that equation (6) can be expressed as
+
+                                              yi = exp (xi β) η i ,
+
+with η i = 1 + εi / exp (xi β) and E [η i |x] = 1. Assuming for the moment that yi is positive,
+the model can be made linear in the parameters by taking logarithms of both sides of the
+equation, leading to
+                                           ln (yi ) = xi β + ln (η i ) .                                    (7)
+
+  To obtain a consistent estimator of the slope parameters in equation (6) estimating
+(7) by OLS, it is necessary that E [ln (η i )| x] does not depend on xi .7 Since η i = 1 +
+εi / exp (xi β), this condition is met only if εi can be written as εi = exp (xi β) ν i , where ν i
+is a random variable statistically independent of xi . In this case, η i = ν i and therefore is
+statistically independent of xi , implying that E [ln (η i )| x] is constant. Thus, the log-linear
+   6
+       Whether the error term enters additively or multiplicatively is irrelevant for our purposes, as explained
+below.
+   7
+     Consistent estimation of the intercept would also require E [ ln (ηi )| x] = 0.
+
+
+
+                                                        9
+

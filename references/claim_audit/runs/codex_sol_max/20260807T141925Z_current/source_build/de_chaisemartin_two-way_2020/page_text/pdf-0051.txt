@@ -1,0 +1,43 @@
+   idence on the Impact of MERCOSUR on Argentinean Firms. Tables 3 to 12.
+   In regression Equation (11), the dependent variable is the change in exporting status of
+   firm i in sector j between 1992 and 1996, and the explanatory variables are the change
+   in trade tariffs in Brasil for products in sector j over the same period, and some control
+   variables. This regression corresponds to Regression 2, with some controls. The stable
+   groups assumption is presumably satisfied: it seems likely that there are sectors where
+   trade tariffs in Brasil did not change between 1992 and 1996. This is a sharp design.
+
+7. Anderson and Sallee (2011), Using Loopholes to Reveal the Marginal Cost of
+   Regulation: The Case of Fuel-Economy Standards. Table 5 Column 2.
+   In the regression in Table 5 Column (2), the dependent variable is an indicator for whether
+   a car sold is a flexible fuel vehicle, and the explanatory variables are state and month fixed
+   effects, the percent of gas stations that have ethanol fuel in each month × state, and some
+   controls. This regression corresponds to Regression 1. The stable groups assumption is
+   presumably satisfied: it seems likely that between each pair of consecutive months, there
+   are states where the percent ethanol availability does not change. This a fuzzy design: the
+   treatment of interest is whether a car buyer has access to ethanol fuel, which varies within
+   (month,state) cells.
+
+8. Bagwell and Staiger (2011), What Do Trade Negotiators Negotiate About?
+   Empirical Evidence from the World Trade Organization. Table 3, OLS columns.
+   In regression equations (15a) and (15b), the dependent variable is the ad valorem tariff
+   level bound by country c on product g, while the explanatory variables are country and
+   product fixed effects, and two treatment variables which vary at the country × product
+   level. These regressions are similar to Regression 1, except that they have two treatment
+   variables. The stable groups assumption is not applicable here, as none of the two sets of
+   fixed effects included in the regression correspond to an ordered variable. This is a sharp
+   design.
+
+9. Zhang and Zhu (2011), Group Size and Incentives to Contribute: A Natural
+   Experiment at Chinese Wikipedia. Tables 3 and 4, Columns 4-6.
+   In the regression in, say, Table 3 Column (4), the dependent variable is the total number
+   of contributions to Wikipedia by individual i at period t, regressed on individual fixed
+   effects, an indicator for whether period t is after the Wikipedia block, the interaction of
+   this indicator and a measure of social participation by individual i, and some controls. This
+   regression corresponds to Regression 1 with some controls. The stable groups assumption
+   is satisfied: there are individuals with a social participation measure equal to 0. This is a
+   sharp design.
+
+10. Hotz and Xiao (2011), The Impact of Regulations on the Supply and Quality
+
+                                             15
+

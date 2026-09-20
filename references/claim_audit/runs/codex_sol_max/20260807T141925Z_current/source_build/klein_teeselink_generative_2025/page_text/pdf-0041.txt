@@ -1,0 +1,64 @@
+Table A18: Effect of LLM exposure on firm-level job listings, weighted regressions
+
+                                           LLM exposure x Post                     −0.006
+                                                                                   (0.008)
+
+                                           Firm fixed-effects                        Yes
+                                           Industry-by-period fixed effects          Yes
+                                           Observations                           1,268,013
+                                           Adjusted R2                              0.425
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on firm-
+level job posting activity, weighting observations by the volume of pre-treatment job listings. All
+other definitions are as in Table A1.
+
+
+
+Table A19: Effect of LLM exposure on occupation-level job outcomes, weighted
+regressions
+
+                                               Job postings (log)         Salary             Salary (log)     Salary (SD)
+             LLM exposure x Post                   −0.038∗∗∗            −473.659∗∗           −0.011∗∗∗         −144.807
+                                                    (0.014)              (188.293)            (0.003)          (169.704)
+
+             Occupation fixed-effects                 Yes                  Yes                   Yes                Yes
+             Year-by-month fixed effects              Yes                  Yes                   Yes                Yes
+             Observations                            16,815               16,815               16,815              16,804
+             Adjusted R2                             0.952                0.979                 0.984              0.871
+
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+occupation-level job posting, weighting observations by the volume of pre-treatment job listings.
+All other definitions are as in Table 4.
+
+
+
+A3.6          Non-Linear Exposure
+
+Table A20: Effect of LLM exposure on firm-level job outcomes, non-linear exposure
+
+                                      Employees         Low seniority         High seniority       Low seniority (%)        Av. comp.
+  LLM exposure bin 2 x Post             0.003               0.002                 0.004                  −0.001               50.364
+                                       (0.004)             (0.004)               (0.004)                 (0.001)            (119.736)
+
+  LLM exposure bin 3 x Post            −0.003              −0.007∗                0.003                 −0.002∗∗∗           263.580∗
+                                       (0.004)             (0.004)               (0.005)                 (0.001)            (134.525)
+
+  LLM exposure bin 4 x Post            0.0004              −0.005                 0.006                 −0.003∗∗∗           283.476∗
+                                       (0.005)             (0.005)               (0.005)                 (0.001)            (157.186)
+
+  Firm fixed-effects                     Yes                 Yes                   Yes                     Yes                 Yes
+  Industry-by-period fixed effects       Yes                 Yes                   Yes                     Yes                 Yes
+  Observations                        1,268,013           1,267,955             1,266,331               1,267,955           1,268,013
+  Adj. R-squared                        0.983               0.983                 0.981                   0.979               0.978
+
+Notes: This table reports difference-in-differences estimates of the effect of LLM exposure on
+firm-level employment outcomes using exposure quartiles. Firms are divided into four bins based
+on their pre-treatment LLM exposure scores, with bin 1 (lowest exposure quartile) serving as the
+reference category. Bins 2, 3, and 4 represent the second, third, and fourth quartiles of the exposure
+distribution, respectively. All other definitions are as in Table 3.
+
+
+
+                                                                 41
+

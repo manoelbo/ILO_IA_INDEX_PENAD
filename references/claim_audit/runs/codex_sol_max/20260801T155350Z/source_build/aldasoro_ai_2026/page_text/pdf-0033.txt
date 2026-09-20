@@ -1,0 +1,39 @@
+A     Are US-matched firms different from non-matched
+      firms?
+
+While the EIBIS results indicate virtually no aggregate difference in AI adoption between
+US and EU firms, particularly in financially developed countries (see Section 3.1), it is
+important exercise to examine which US firms are selected by the matching algorithm
+and how they differ from their non-matched counterparts, for at least three reasons.
+
+    First, the comparison can provide a robustness check on the matching methodology it-
+self, shedding light on whether the algorithm systematically favors certain types of firms
+(e.g. larger, more innovative or less financially constrained). Second, even if average
+adoption rates are similar across the US and EU, the characteristics of firms driving
+adoption may diverge, with potential implications for productivity dynamics. Finally,
+contrasting matched and non-matched US firms can reveal whether transatlantic com-
+parisons are shaped by differences in firm composition rather than adoption per se, thus
+helping to interpret the aggregate similarities more carefully.
+
+   To this end, we apply the Oaxaca–Blinder decomposition to a synthetic dataset that
+compares all US firms with the subset of US firms identified as nearest neighbours in the
+matching procedure. In the exercise, we include only firms that disclose the full set of
+matching variables such that the average AI adoption rate in the sample deviates slightly
+from the unconditional US average. We therefore treat this as an approximation.
+
+    The decomposition, originally developed by Blinder (1973) and Oaxaca (1973), par-
+titions the mean difference in AI adoption into components explained by observable firm
+characteristics and a residual unexplained part. Consistent with the matching strategy de-
+scribed in Section 4, we compute the decomposition relative to sector- and size-normalised
+means of value added, which controls for compositional shifts in the fixed effects.
+
+   Figure A.1 shows that US-matched firms exhibit, on average, a 2 percentage points
+lower AI adoption rate than the full set of US firms. Close to 80% of this gap is explained
+by differences in matching variables and sector- and size-class composition. This supports
+the robustness of the matching design.
+
+
+
+
+                                            27
+

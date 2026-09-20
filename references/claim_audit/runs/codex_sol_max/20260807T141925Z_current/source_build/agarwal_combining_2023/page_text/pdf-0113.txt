@@ -1,0 +1,27 @@
+                           Table C.25: Model Selection: Abnormal without Accounting for Measurement Error
+
+                                       (1)         (2)         (3)         (4)         (5)         (6)        (7)         (8)         (9)        (10)        (11)         (12)
+Automation Bias (b)                   0.47        0.35        0.44        0.42        0.37        0.37       0.36        0.36        0.36        0.41        0.37         0.36
+                                     (0.02)      (0.02)      (0.03)      (0.02)      (0.02)      (0.02)     (0.02)      (0.02)      (0.02)      (0.02)      (0.02)      (0.02)
+Own Info Bias (d)                     0.92        0.89        0.86        0.90        0.88        0.88       0.85        0.88        0.82        0.87        0.87         0.88
+                                     (0.02)      (0.02)      (0.02)      (0.02)      (0.02)      (0.02)     (0.02)      (0.02)      (0.02)      (0.02)      (0.02)      (0.02)
+Constant                              1.23        0.98        1.16        1.12        1.02        1.05       0.99        1.04        1.01        1.11        1.05         1.00
+                                     (0.07)      (0.06)      (0.08)      (0.07)      (0.06)      (0.06)     (0.06)      (0.06)      (0.07)      (0.07)      (0.07)      (0.06)
+Focal sA                                ✓           ✓           ✓           ✓           ✓           ✓          ✓           ✓           ✓          ✓           ✓            ✓
+Other sA                                            ✓                                   ✓           ✓                      ✓                                  ✓            ✓
+Focal sE                                                        ✓           ✓           ✓           ✓                                  ✓           ✓          ✓            ✓
+Other sE                                                                    ✓                       ✓                                              ✓                       ✓
+Clinical History sE                                                                                           ✓            ✓          ✓            ✓          ✓            ✓
+J-Statistic                          12.09         7.1        0.35        4.71        3.06       4.94         0.0         5.79        0.0         0.34        0.0         4.85
+MMSC-BIC                             -13.23       -5.56       -3.87       -3.73      -1.16       -3.5         0.0        -2.65        0.0        -3.88        0.0        -3.59
+Number of Moments                      9            6           4           5           4         5            3            5          3           4           3            5
+Observations                          5710        5710        5710        5710       5710        5710        5710        5710        5710        5710        5710        5710
+R-Squared                             0.56        0.54        0.53         0.54       0.54       0.54        0.54         0.54       0.53         0.53       0.54         0.54
+
+Note: This table presents results of the model selection exercise as described in Table 3 for abnormal without accounting for measurement error in the radiologist reports.
+
+
+
+
+                                                                                                                                                                                 113
+

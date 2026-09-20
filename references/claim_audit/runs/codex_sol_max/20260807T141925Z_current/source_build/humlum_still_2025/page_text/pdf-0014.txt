@@ -1,0 +1,34 @@
+Brynjolfsson and Hitt, 2000), which emphasizes that the returns to technology adoption
+may depend critically on firms’ broader organizational investments and management
+practices. Moreover, because early adoption of AI chatbots was largely worker-driven,
+this analysis sheds light on how adoption and work-related benefits differ in workplaces
+where employers also invest in the technology.
+       Appendix A.1 presents a Roy-style model of chatbot adoption to help interpret the
+estimates in Equation (1). The model shows that β for user-reported benefits combines an
+individual-level effect of the initiative on each user’s gains with a selection effect arising
+from shifts in which workers opt into use. When workers adopt based on their individual
+gains, selection will tend to be negative: initiatives that expand adoption draw in workers
+who benefit less from the technology. We do not attempt to separate these two effects, as
+we view the bundled impact of employer initiatives as informative in itself.
+       While we interpret Equation (1) as descriptive, our rich firm- and worker-level data
+allow us to assess the robustness of these patterns to a range of potential confounders.
+Appendix F.5 presents these robustness checks. First, we show that all results hold when
+controlling for firm characteristics, ensuring that differences across employer initiatives
+are not driven by variation in firm age, size, or productivity. Second, we show that
+the results are robust to controlling for workers’ detailed task mixes within occupations,
+demonstrating that the effects of employer initiatives are not driven by differences in
+the types of tasks more amenable to AI chatbot use.7 In addition, the panel analyses
+in Section 3 confirm that adopters of different initiatives followed similar labor market
+trajectories prior to the arrival of AI chatbots. Together, these robustness checks help
+rule out confounding factors and support the validity of our estimated relationships.
+       Since our data are collected from workers rather than senior leadership, our estimates
+reflect employer initiatives as perceived by workers. Since employer policies may not be
+perfectly communicated, worker self-reports may not fully align with employer intentions.
+   7
+    We do not include task controls in our main specification, as task mix may itself be endogenous
+to chatbot adoption. Indeed, Section 2.3 shows that AI chatbots have created new job tasks for many
+workers.
+
+
+
+                                                12

@@ -1,0 +1,38 @@
+Table 1: Most and Least AI-Exposed Occupations. Exposure is defined using the GPT-
+4-based β measure from Eloundou et al. (2024). Occupations are 2018 Census occupation
+titles from the CPS merged via crosswalk to the 2018 SOC codes.
+
+       Most Exposed Occupations                        Least Exposed Occupations
+ Mathematicians                                  Athletes and sports competitors
+ Court reporters and simultaneous captioners Packaging and filling machine operators
+ Proofreaders and copy markers                   Paper goods machine setters and operators
+ Correspondence clerks                           Roustabouts, oil and gas
+ Computer programmers                            Bus and truck mechanics
+ Web developers                                  Automotive glass installers and repairers
+ Database administrators and architects          Riggers
+ Telephone operators                             Electrical power-line installers
+ Interpreters and translators                    Excavating machine operators
+ Writers and authors                             Rail-track maintenance operators
+
+
+4-based β metric. The plots shows the average employment and average real usual weekly
+earnings in each quarter for each quartile of AI exposure. Each series is normalized to 1 in
+Q4 2022, correponding to the time when ChatGPT was first released. The results suggest
+little if any evidence of relative employment declines in the most AI-exposed occupations
+since the release of ChatGPT. Real earnings have also grown at a similar rate. Figures A1
+through A3 show similar results using alternative measures of AI exposure.
+
+
+4.2    Software and Customer Service as Case Studies
+
+Trends in the aggregate data mask the divergent patterns for key high-exposure occupa-
+tions. This section presents two case studies—software developers and customer service
+representatives—that highlight this heterogeneity. Table 1 shows that software development
+occupations have some of the highest estimated exposure to AI, consistent with LLMs being
+relatively proficient in writing computer code. Figure 2 shows the employment trends for
+the Census occupation code corresponding to software developers. The results suggest an
+
+
+
+                                             7
+

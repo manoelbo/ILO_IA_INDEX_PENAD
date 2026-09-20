@@ -1,0 +1,60 @@
+adoption of Generative AI (Bick, Blandin and Deming, 2025; Hartley et al., 2025; Humlum
+
+and Vestergaard, 2025). While our adoption patterns align with these studies, our key
+
+contribution is to link survey responses to administrative data on labor market outcomes,
+
+thereby moving the analysis beyond self-reported effects.4
+
+       Third, while several experiments document sizable productivity gains from chatbot
+
+use on specific tasks (Brynjolfsson, Li and Raymond, 2025; Cui et al., 2024; Dillon et al.,
+
+2025; Noy and Zhang, 2023), it remains unclear how these gains translate into workers’
+
+earnings and hours, as high-quality microdata on such outcomes are rarely available.
+
+While our occupation-wide surveys show more modest gains—about 3% time savings
+
+for the typical user—we still find null results even for workers and workplaces reporting
+
+substantial productivity improvements. Nonetheless, we find a clear association between
+
+adoption and occupational mobility, aligning with experimental evidence that chatbots
+
+provide greater benefits to workers with less prior expertise.
+
+       Fourth, we provide the first representative account of employer adoption of AI chatbots.
+
+Whereas surveys on traditional “pre-generative” AI show relatively low uptake (Acemoglu
+
+et al., 2022; Bonney et al., 2024), we find that most employers in exposed occupations
+
+have now embraced AI chatbots. Alternative firm-level data on Generative AI come from
+
+online job postings, where adoption is proxied by the listing of Generative AI skills in job
+
+descriptions (Lichtinger and Hosseini Maasoum, 2025; Schubert, 2025). While job postings
+
+indicate notable changes in such proxies after ChatGPT’s release, it is less clear how well
+
+they capture employees’ actual use of tools, especially non-specialized ones like chatbots.
+
+We address this gap by surveying workers on their chatbot use and employer initiatives,
+
+linking responses to administrative firm data. Although employer chatbot initiatives have
+
+not led to net changes in earnings or hours, they strongly predict the emergence of new
+
+AI-related job tasks (Acemoglu and Restrepo, 2018a; Autor et al., 2024).
+   4
+     Most recently, the AI labs have started to release descriptive statistics on their internal usage data
+(Chatterji et al., 2025; Handa et al., 2025; Tomlinson et al., 2025). A complementary strength of our
+survey data is that we can capture the full range of AI chatbot products, link responses to external data
+sets (e.g., administrative labor market records), and sample both users and non-users from a well-defined
+population frame.
+
+
+
+                                                    4
+

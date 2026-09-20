@@ -1,0 +1,59 @@
+                                                     WORKING PAPER
+
+
+       Task ID   Occupation Title        DWAs                                     Task Description
+         14675   Computer Systems        Monitor computer system performance      Monitor system operation to detect potential
+                 Engineers/Architects    to ensure proper operation.              problems.
+         18310   Acute Care Nurses       Operate diagnostic or therapeutic        Set up, operate, or monitor invasive equipment
+                                         medical instruments or equipment.        and devices, such as colostomy or tracheotomy
+                                         Prepare medical supplies or equipment    equipment, mechanical ventilators, catheters,
+                                         for use.                                 gastrointestinal tubes, and central lines.
+        4668.0   Gambling Cage           Execute sales or other financial         Cash checks and process credit card advances
+                 Workers                 transactions.                            for patrons.
+         15709   Online Merchants        Execute sales or other financial         Deliver e-mail confirmation of completed
+                                         transactions.                            transactions and shipment.
+         6529    Kindergarten            –                                        Involve parent volunteers and older students in
+                 Teachers, Except                                                 children’s activities to facilitate involvement in
+                 Special Education                                                focused, complex play.
+         6568    Elementary School       –                                        Involve parent volunteers and older students in
+                 Teachers, Except                                                 children’s activities to facilitate involvement in
+                 Special Education                                                focused, complex play.
+
+Table 1: Sample of occupations, tasks, and Detailed Work Activities from the O*NET database. We see
+that aggregating over activities alone is imprecise, as evidenced by the fact that we’d expect Gambling Cage
+Workers to complete the given DWA in person, using some physicality while we’d expect Online Merchants
+to complete the same activity solely with a computer.
+
+
+DWA or complete a task by at least 50 percent. Though GPT-4 has vision capabilities OpenAI (2023b) and
+"LLM" is often used to refer to a much wider range of modalities, vision and image capabilities were only
+included in our definition of LLM-powered software. We provide a summary of our rubric below, while the
+complete rubric can be found in A.1. When we have labels for DWAs, we first aggregate them to the task
+level before aggregating to the occupation level.
+
+
+       Summary of exposure rubric
+
+        No exposure (E0) if:
+            • using the described LLM results in no or minimal reduction in the time required to
+               complete the activity or task while maintaining equivalent qualitya or
+            • using the described LLM results in a decrease in the quality of the activity/task output.
+        Direct exposure (E1) if:
+            • using the described LLM via ChatGPT or the OpenAI playground can decrease the time
+               required to complete the DWA or task by at least half (50%).
+        LLM+ Exposed (E2) if:
+            • access to the described LLM alone would not reduce the time required to complete the
+               activity/task by at least half, but
+            • additional software could be developed on top of the LLM that could reduce the time it
+               takes to complete the specific activity/task with quality by at least half. Among these
+               systems, we count access to image generation systems.b
+           a Equivalent quality means that a third party, typically the recipient of the output, would not notice or
+        care about LLM assistance.
+           b In practice, as can be seen in the full rubric in Appendix A.1, we categorize access to image capabilities
+        separately (E3) to facilitate annotation, though we combine E2 and E3 for all analyses.
+
+
+
+
+    We set the exposure threshold at a potential 50% reduction in time required to complete a specific DWA
+

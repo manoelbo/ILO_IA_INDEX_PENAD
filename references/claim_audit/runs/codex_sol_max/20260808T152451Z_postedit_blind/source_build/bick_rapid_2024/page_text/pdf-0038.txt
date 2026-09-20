@@ -1,0 +1,44 @@
+    Reweighting strategy. In the August 2025 wave, we can adjust for this bias by reweight-
+ing Group 1 respondents to match Group 2 usage rates. We constructed adjustment weights
+across gender, age, education, employment status, and usage (at work and at home) using a
+raking algorithm that increases the weight of Group 1 users relative to non-users while leaving
+Group 2 weights unchanged. To maintain coverage across demographic–usage cells, we did not
+incorporate intensity of usage into the adjustment. (Alternatively, we find that weighting on
+intensity of genAI interacted with only one demographic characteristics leads to very similar
+results.)
+
+   We then apply this adjustment to the 2024 survey waves used in this paper. Since all
+respondents in these prior waves received the question sequence of Group 1, we apply the
+adjustment to all respondents in these waves. Furthermore, the share of respondents stating
+they have heard of genAI (prior to our weighting adjustment) shows no trend between the
+surveys prior to the August 2025 survey and is very similar to Group 1 in the August 2025
+survey (79.6% in vs. 79.4% in the August 2024 survey. This stability suggests that the bias in
+August 2025 likely existed consistently across earlier waves as well.
+
+
+A.3   Validation Checks
+
+To illustrate how the RPS and CPS compare for characteristics that are not part of the sampling
+scheme and the effect of weighting, panels (a) and (b) of Figure A.2 compare the usual weekly
+earnings distribution in the RPS and CPS in the pooled August and November 2024 waves,
+with and without weights, respectively. The unweighted distributions are already similar, and
+the weights improve the fit further.
+
+    Panels (c) and (d) of Figure A.2 compare occupation shares in the RPS and the CPS,
+unweighted and weighted respectively. The unweighted correlation is 0.88, with Management
+as the only major outlier. Applying the weights corrects this imbalance and mechanically
+increases the correlation to 1.
+
+   Figure A.3 compare the industry shares in the RPS and CPS in the pooled August and
+November 2024 waves, with and without weights, as well as college major shares in the RPS
+and 2022 American Community Survey (ACS). The unweighted correlations of the industry
+shares is 0.89, comparable to those for occupations. The correlation of college majors in the
+RPS and the ACS is 0.83. The major with the highest share relative to the ACS is Computers,
+Mathematics, & Statistics, while the major with the lowest share relative to the ACS is Science
+and Engineering Related Fields. Weighting the data marginally improves the fit between the
+RPS and the two other data sets.
+
+   All four variables align closely across survey waves, including the June pilot, and are avail-
+
+                                               6
+

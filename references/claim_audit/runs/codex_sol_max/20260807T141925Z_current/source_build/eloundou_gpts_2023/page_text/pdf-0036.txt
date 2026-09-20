@@ -1,0 +1,57 @@
+                                              WORKING PAPER
+
+
+Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., Sutskever, I., et al. (2019). Language models are
+  unsupervised multitask learners. OpenAI blog, 1(8):9.
+
+ResumeBuilder.com (2023). 1 in 4 companies have already replaced workers with chatgpt.
+
+Rock, D. (2019). Engineering value: The returns to technological talent and investments in artificial
+  intelligence. Available at SSRN 3427412.
+
+Schick, T., Dwivedi-Yu, J., Dessì, R., Raileanu, R., Lomeli, M., Zettlemoyer, L., Cancedda, N., and Scialom, T.
+  (2023). Toolformer: Language models can teach themselves to use tools. arXiv preprint arXiv:2302.04761.
+
+Schramowski, P., Turan, C., Andersen, N., Rothkopf, C. A., and Kersting, K. (2022). Large pre-trained
+  language models contain human-like biases of what is right and wrong to do. Nature Machine Intelligence,
+  4(3):258–268.
+
+Shahaf, D. and Horvitz, E. (2010). Generalized task markets for human and machine computation. Proceedings
+  of the AAAI Conference on Artificial Intelligence.
+
+Singla, A. K., Horvitz, E., Kohli, P., and Krause, A. (2015). Learning to hire teams. In AAAI Conference on
+  Human Computation & Crowdsourcing.
+
+Solaiman, I., Brundage, M., Clark, J., Askell, A., Herbert-Voss, A., Wu, J., Radford, A., Krueger, G., Kim,
+  J. W., Kreps, S., McCain, M., Newhouse, A., Blazakis, J., McGuffie, K., and Wang, J. (2019). Release
+  strategies and the social impacts of language models.
+
+Sorensen, T., Robinson, J., Rytting, C., Shaw, A., Rogers, K., Delorey, A., Khalil, M., Fulda, N., and Wingate,
+  D. (2022). An information-theoretic approach to prompt engineering without ground truth labels. In
+  Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1:
+  Long Papers). Association for Computational Linguistics.
+
+Thoppilan, R., De Freitas, D., Hall, J., Shazeer, N., Kulshreshtha, A., Cheng, H.-T., Jin, A., Bos, T., Baker, L.,
+  Du, Y., et al. (2022). Lamda: Language models for dialog applications. arXiv preprint arXiv:2201.08239.
+
+Tolan, S., Pesole, A., Martínez-Plumed, F., Fernández-Macías, E., Hernández-Orallo, J., and Gómez, E.
+  (2021). Measuring the occupational impact of ai: tasks, cognitive abilities and ai benchmarks. Journal of
+  Artificial Intelligence Research, 71:191–236.
+
+Van Reenen, J. (2011). Wage inequality, technology and trade: 21st century evidence. Labour economics,
+  18(6):730–741.
+
+Webb, M. (2020). The impact of artificial intelligence on the labor market. Working paper, Stanford University.
+
+Weidinger, L. et al. (2021). Ethical and social risks of harm from language models. arXiv:2112.04359 [cs].
+
+Weidinger, L., Uesato, J., Rauh, M., Griffin, C., Huang, P.-S., Mellor, J., Glaese, A., Cheng, M., Balle, B.,
+ Kasirzadeh, A., Biles, C., Brown, S., Kenton, Z., Hawkins, W., Stepleton, T., Birhane, A., Hendricks, L. A.,
+ Rimell, L., Isaac, W., Haas, J., Legassick, S., Irving, G., and Gabriel, I. (2022). Taxonomy of risks posed by
+ language models. In 2022 ACM Conference on Fairness, Accountability, and Transparency, FAccT ’22,
+ page 214–229, New York, NY, USA. Association for Computing Machinery.
+
+Zolas, N., Kroff, Z., Brynjolfsson, E., McElheran, K., Beede, D. N., Buffington, C., Goldschlag, N., Foster, L.,
+  and Dinlersoz, E. (2021). Advanced technologies adoption and use by us firms: Evidence from the annual
+  business survey. Technical report, National Bureau of Economic Research.
+

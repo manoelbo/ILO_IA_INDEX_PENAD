@@ -1,0 +1,77 @@
+48     ILO Working Paper 140
+
+
+
+
+     Annex
+
+
+     1. Exposure by 4-digit ISCO-08 occupation
+     XX Table A1. ISCO-08 occupations by exposure gradient
+
+
+     Exposure       4-digit code   Occupation Name                                                 Mean   SD
+
+     Gradient 4     4132           Data Entry Clerks                                               0.7    0.03
+
+     Gradient 4     4131           Typists and Word Processing Operators                           0.65   0.05
+
+     Gradient 4     4311           Accounting and Bookkeeping Clerks                               0.64   0.07
+
+     Gradient 4     4312           Statistical, Finance and Insurance Clerks                       0.64   0.02
+
+     Gradient 4     3311           Securities and Finance Dealers and Brokers                      0.63   0.04
+
+     Gradient 4     4419           Clerical Support Workers Not Elsewhere Classified               0.63   0.03
+
+     Gradient 4     2413           Financial Analysts                                              0.62   0.06
+
+     Gradient 4     4313           Payroll Clerks                                                  0.61   0.08
+
+     Gradient 4     5244           Contact Centre Salespersons                                     0.61   0.1
+
+     Gradient 4     2513           Web and Multimedia Developers                                   0.6    0.08
+
+     Gradient 4     3312           Credit and Loans Officers                                       0.6    0.04
+
+     Gradient 4     4110           General Office Clerks                                           0.6    0.1
+
+     Gradient 4     4416           Personnel Clerks                                                0.6    0.09
+
+     Gradient 3     2643           Translators, Interpreters and Other Linguists                   0.59   0.11
+
+     Gradient 3     4120           Secretaries (general)                                           0.58   0.1
+
+     Gradient 3     4211           Bank Tellers and Related Clerks                                 0.58   0.09
+
+     Gradient 3     4222           Contact Centre Information Clerks                               0.58   0.06
+
+     Gradient 3     4414           Scribes and Related Workers                                     0.58   0.08
+
+     Gradient 3     2412           Financial and Investment Advisers                               0.57   0.11
+
+     Gradient 3     2514           Applications Programmers                                        0.57   0.08
+
+     Gradient 3     2521           Database Designers and Administrators                           0.57   0.08
+
+     Gradient 3     2522           Systems Aministrators                                           0.57   0.05
+
+     Gradient 3     3314           Statistical, Mathematical and Related Associate Professionals   0.57   0.1
+
+     Gradient 3     3331           Clearing and Forwarding Aents                                   0.57   0.09
+
+     Gradient 3     4225           Inquiry Clerks                                                  0.57   0.09
+
+     Gradient 3     4226           Receptionists (general)                                         0.57   0.17
+
+     Gradient 3     2120           Mathematicians, Actuaries and Statisticians                     0.56   0.09
+
+     Gradient 3     4221           Travel Consultants and Clerks                                   0.56   0.07
+
+     Gradient 3     2431           Advertising and Marketing Professionals                         0.55   0.09
+
+                                   Software and Applications Developers and Analysts Not
+     Gradient 3     2519           Elsewhere Classified                                            0.55   0.16
+
+     Gradient 3     2622           Librarians and Related Information Professionals                0.55   0.04
+

@@ -1,0 +1,64 @@
+2570                                REVIEW OF ECONOMIC STUDIES
+
+3.3.      Uniform asymptotic size control
+We now provide conditions under which size control in the finite sample normal model trans-
+lates to uniform asymptotic size control over a large class of data-generating processes P under
+which β̂ n is asymptotically normally distributed and n is replaced with a consistent estimator
+ ˆ n . In particular, we provide sufficient conditions on β̂ n , ˆ n , and  such that the higher-level
+conditions for size control in ARP are satisfied (Proposition 2 in ARP).
+      Throughout this section, we fix  = {Aδ ≤ d} for some A with all non-zero rows, and
+
+
+
+
+                                                                                                                   Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+assume that  is non-empty.
+                          √           We consider a class of data-generating processes, indexed by
+P ∈ P, under which n(β̂ n − β P ) is asymptotically normal, where β P satisfies the causal
+decomposition in (3), i.e. β P = δ P + L post τ P, post for δ P ∈  and τ P, post ∈ RT¯ . The parame-
+ter of interest is θ P := l  τ P, post , for some fixed l = 0. Our first assumption imposes uniform
+asymptotic normality of β̂ n .
+Assumption 2. Let B L 1 denote the set of Lipschitz functions which are bounded by 1 in absolute
+value and have Lipschitz constant bounded by 1. We assume
+                                    √                                
+                                                                       
+                      lim sup sup E P f ( n(β̂ n − β P )) − E f (ξ P )  = 0,
+                     n→∞ P∈P f ∈B L
+                                      1
+
+
+
+where ξ P ∼ N (0,        P ), and β P = δ P + L post τ P, post for δ P ∈  and τ P, post ∈ R
+                                                                                               T̄
+                                                                                                    .
+    Convergence in distribution is equivalent to convergence in bounded Lipschitz metric (see
+Theorem 1.12.4 in van der Vaart and Wellner,
+                                       √       1996), so Assumption 2 formalizes the notion of
+uniform convergence in distribution of n(β̂ n − β P ) to a N (0, P ) variable under P.
+    Our next two assumptions require that the eigenvalues of the asymptotic variance of β̂ n be
+bounded above and away from zero, and that there exists a uniformly consistent estimator for
+the variance of β̂ n .
+Assumption 3. Let S denote the set of matrices with eigenvalues bounded below by λ > 0 and
+above by λ̄ ≥ λ. For all P ∈ P, P ∈ S.                                           ¯
+              ¯
+Assumption 4. We have an estimator ˆ n that is uniformly consistent for P ,
+                                                                     
+                                  lim sup P P  ˆ n −        P >         = 0,
+                                 n→∞ P∈P
+
+
+for all     > 0.
+    Finally, we impose some regularity conditions on the matrix A.
+Assumption 5. At least one of the following holds.
+       (A) For k1+ k2 =dim(δ), the matrix A can be written as T Q, where Q has full row-rank
+                    Ik1 0
+       and T =     −Ik1 0    . (We allow for the case where one of k1 or k2 is 0, in which case the
+                     0 Ik2
+       zero-dimensional blocks can be ignored).
+       (B) Let γ̄1 , . . . , γ̄ K be the elements of V (I ). Then for all k, either γ̄k A = 0 or
+       infa≥0 inf j=k (γ̄k − a γ̄ j ) A > 0.
+   Part (A) of Assumption 5 imposes that the only source of degeneracy in the rows of A is
+matching inequalities of opposite signs. This is the case for many restrictions of interest, such
+as SD (M) and the polyhedra that form  R M ( M̄). Part (B) provides an alternative, higher-
+level condition that ensures that for distinct vertices γ̄k , γ̄ j , the random variables γ̄ j Ỹn and γ̄k Ỹn
+

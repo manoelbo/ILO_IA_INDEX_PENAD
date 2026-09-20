@@ -1,0 +1,41 @@
+                                                                                           52
+
+Allison Park, Chris Chute, Pranav Rajpurkar, Joe Lou, Robyn L Ball, Katie Shpanskaya,
+  Rashad Jabarkheel, Lily H Kim, Emily McKenna, Joe Tseng, Jason Ni, Fidaa Wishah,
+  Fred Wittber, David S Hong, Thomas J Wilson, Safwan Halabi, Sanjay Basu, Bhavik N
+  Patel, Matthew P Lungren, Andrew Y Ng, and Kristen W Yeom. Deep Learning-Assisted
+  diagnosis of cerebral aneurysms using the HeadXNet model. JAMA network open, 2(6):
+  e195600, June 2019.
+Bhavik N Patel, Louis Rosenberg, Gregg Willcox, David Baltaxe, Mimi Lyons, Jeremy Irvin,
+  Pranav Rajpurkar, Timothy Amrhein, Rajan Gupta, Safwan Halabi, Curtis Langlotz, Ed-
+  ward Lo, Joseph Mammarappallil, A J Mariano, Geoffrey Riley, Jayne Seekins, Luyao
+  Shen, Evan Zucker, and Matthew Lungren. Human–Machine partnership with artificial
+  intelligence for chest radiograph diagnosis. npj Digital Medicine, 2(1):111, December 2019.
+M Rabin. Inference by believers in the law of small numbers. Q. J. Econ., 2002.
+M Rabin and D Vayanos. The gambler’s and hot-hand fallacies: Theory and applications.
+ Rev. Econ. Stud., 2010.
+Matthew Rabin. Incorporating limited rationality into economics. J. Econ. Lit., 51(2):
+ 528–543, June 2013.
+Maithra Raghu, Katy Blumer, Greg Corrado, Jon Kleinberg, Ziad Obermeyer, and Sendhil
+ Mullainathan. The algorithmic automation problem: Prediction, triage, and human effort.
+ arXiv, March 2019.
+Pranav Rajpurkar and Matthew P Lungren. The current and future state of AI interpretation
+  of medical images. N. Engl. J. Med., 388(21):1981–1990, May 2023.
+Pranav Rajpurkar, Jeremy Irvin, Kaylie Zhu, Brandon Yang, Hershel Mehta, Tony Duan,
+  Daisy Ding, Aarti Bagul, Curtis Langlotz, Katie Shpanskaya, Matthew P Lungren, and
+  Andrew Y Ng. CheXNet: Radiologist-Level pneumonia detection on chest X-Rays with
+  deep learning. (1711.05225), December 2017.
+Pranav Rajpurkar, Jeremy Irvin, Robyn L Ball, Kaylie Zhu, Brandon Yang, Hershel Mehta,
+  Tony Duan, Daisy Ding, Aarti Bagul, Curtis P Langlotz, Bhavik N Patel, Kristen W Yeom,
+  Katie Shpanskaya, Francis G Blankenberg, Jayne Seekins, Timothy J Amrhein, David A
+  Mong, Safwan S Halabi, Evan J Zucker, Andrew Y Ng, and Matthew P Lungren. Deep
+  learning for chest radiograph diagnosis: A retrospective comparison of the CheXNeXt
+  algorithm to practicing radiologists. PLoS Med., 15(11):e1002686, November 2018.
+Pranav Rajpurkar, Chloe O’Connell, Amit Schechter, Nishit Asnani, Jason Li, Amirhossein
+  Kiani, Robyn L Ball, Marc Mendelson, Gary Maartens, Daniël J van Hoving, Rulan Griesel,
+  Andrew Y Ng, Tom H Boyles, and Matthew P Lungren. CheXaid: Deep learning assistance
+  for physician diagnosis of tuberculosis using chest X-Rays in patients with HIV. npj Digital
+  Medicine, 3:115, December 2020.
+Pranav Rajpurkar, Emma Chen, Oishi Banerjee, and Eric J Topol. AI in health and medicine.
+  Nat. Med., 28(1):31–38, January 2022.
+

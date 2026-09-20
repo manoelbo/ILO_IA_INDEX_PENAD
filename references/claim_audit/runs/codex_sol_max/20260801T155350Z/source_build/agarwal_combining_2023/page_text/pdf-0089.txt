@@ -1,0 +1,63 @@
+                                                                                                                                                    89
+
+Continuous Ground Truth
+
+This section computes the main results using a continuous ground truth constructed using a
+simple average of the ground truth labelers’ probability assesment.
+
+                                                                          Figure C.23: RMSE Radiologists and AI
+
+
+                                                                                     AI (Pct. 2)
+                                                                      8
+
+
+                                                                      6
+                           Density
+
+
+
+
+                                                                      4
+
+
+                                                                      2
+
+
+                                                                      0
+                                                                            .2                 .3           .4               .5                .6
+                                                                                                         RMSE
+
+
+
+Note: Main specifications similar to figure 1 with the exception that ground truth is constructed using continuous values.
+
+
+
+
+               Figure C.24: Conditional treatment effect given radiologist prediction
+                           ATE of AI on deviation from ground truth
+
+
+
+
+                                                                            .05
+
+
+                                                                                 0
+
+
+                                                                           -.05
+
+
+                                                                            -.1
+
+
+                                                                           -.15
+                                                                                       [0,0.2)   [0.2,0.4) [0.4,0.6) [0.6,0.8)       [0.8,1]
+                                                                                              Radiologist probability bins without AI
+
+
+
+Note: Main specifications similar to figure 2 with the exception that ground truth is constructed using continuous values.
+

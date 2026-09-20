@@ -1,0 +1,46 @@
+                    Table 1: Summary Statistics Firm Employment
+
+                                      Low exposure                High exposure
+                                   Before         After        Before         After
+           Total jobs                456           507           639           708
+           Low seniority (%)        0.705         0.703         0.667         0.662
+           High seniority (%)       0.295         0.297         0.333         0.338
+           Compensation          £ 94,325.66   £ 94,079.89   £100,230.08   £100,184.41
+           LLM exposure score       0.096         0.096         0.172         0.172
+
+Notes: This table reports summary statistics on firm-level employment outcomes by exposure to
+large language models (LLMs). Firms are classified into high- and low-exposure groups based
+on whether their average exposure score lies above or below the median across all firms. Total
+jobs gives the mean number of active positions in the firm. Low seniority and High seniority
+denote the share of employees in junior and senior roles, respectively, as defined by seniority of
+1-3 (junior) or 4-7 (senior). Compensation gives the mean annual salary plus bonuses, and LLM
+exposure score is the average predicted LLM-exposure of jobs in a firm based on Eloundou et al.
+(2024). Before refers to the pre-treatment period (prior to November 2022), while After refers to
+the post-treatment period (November 2022 onward).
+
+
+
+servations. These firms employ 16 million workers in our data as of October 2022,
+representing approximately 49% of UK employment (Office for National Statistics,
+2022).
+    Table 1 presents firm-level employment summary statistics. Firm-level employ-
+ment stocks increased for both exposure groups following ChatGPT’s introduction,
+rising 11.2 percent for low-exposure firms (from 456 to 507 employees) and 10.8
+percent for high-exposure firms (from 639 to 708 employees). However, this increase
+could reflect an increase in the number of people joining LinkedIn during the sam-
+ple period. The workforce composition reveals important differences: high-exposure
+firms maintain a more senior-skewed workforce, with 33.3 percent of positions at
+high-seniority levels compared to 29.5 percent in low-exposure firms. Following
+ChatGPT’s release, this seniority gap widened slightly, as the share of high-seniority
+positions increased by 0.5 percentage points in high-exposure firms versus 0.2 per-
+centage points in low-exposure firms. These patterns suggest that high-exposure
+firms are gradually shifting their workforce composition toward more senior roles,
+potentially reflecting the displacement of entry-level positions. Consistent with their
+more senior workforce composition, high-exposure firms offer higher average com-
+pensation.
+
+
+
+
+                                                8
+

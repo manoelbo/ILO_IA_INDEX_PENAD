@@ -1,0 +1,141 @@
+                                                         .1
+
+
+
+
+                    Log Size (Triple-DiD Coefficients)
+                                                          0
+
+
+
+
+                                                         -.1
+
+
+
+
+                                                         -.2
+                                                               1
+
+
+                                                                        1
+
+
+                                                                                   1
+
+
+                                                                                               1
+
+
+                                                                                                            1
+
+
+                                                                                                                     1
+
+
+                                                                                                                              1
+
+
+                                                                                                                                       1
+                                                             q
+
+
+                                                                       q
+
+
+                                                                                   q
+
+
+                                                                                               q
+
+
+                                                                                                           q
+
+
+                                                                                                                    q
+
+
+                                                                                                                             q
+
+
+                                                                                                                                      q
+                                                          18
+
+
+                                                                    19
+
+
+                                                                                20
+
+
+                                                                                            21
+
+
+                                                                                                        22
+
+
+                                                                                                                 23
+
+
+                                                                                                                          24
+
+
+                                                                                                                                   25
+                                                         20
+
+
+                                                                   20
+
+
+                                                                              20
+
+
+                                                                                          20
+
+
+                                                                                                       20
+
+
+                                                                                                                20
+
+
+                                                                                                                         20
+
+
+                                                                                                                                  20
+                                                                                                     Quarter
+
+                                                                        Juniors (High vs Low Exp.)
+                                                                        Seniors (High vs Low Exp.)
+
+
+        Figure 6: Triple-Difference by Occupational Exposure—Juniors vs. Seniors
+    Notes: This figure reports the estimated coefficients βsj from Equation 12, estimated separately for
+    juniors (red) and seniors (blue). Each series captures the evolution of log employment in high-
+    exposure occupations relative to low-exposure occupations at adopters relative to non-adopters,
+    conditional on firm-by-time and industry-by-exposure-by-time fixed effects. Details on the expo-
+    sure measure are provided in Section 4.1. Shaded bands are 95% confidence intervals. Standard
+    errors are clustered at the firm level.
+
+
+estimates the DiD specification within tiers of juniors’ educational background, measured
+by the prestige of their alma mater. The relative decline in junior employment is U-shaped
+across tiers: largest for juniors from mid-tier institutions and smallest for juniors from the
+most and least selective institutions.
+
+
+5.2.4   Discussion: The Timing of the Junior Employment Decline
+
+The early and pronounced decline in the triple-difference coefficients—starting to emerge
+in 2023Q1, shortly after the release of ChatGPT—may appear surprising, given that au-
+tomation effects typically unfold more gradually. One plausible explanation is that the
+rapid diffusion of GenAI tools at the end of 2022 constituted a discrete shock to firms’ ex-
+pectations about future automation. In response, firms may have adjusted in a forward-
+looking manner by scaling back hiring for junior roles they anticipated would be auto-
+mated in the near future. Such preemptive adjustments could be optimal for firms if
+
+
+
+
+                                                                                                34
+

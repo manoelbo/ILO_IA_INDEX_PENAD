@@ -1,0 +1,39 @@
+                                                    WORKING PAPER
+
+
+                                                 Occupation Level Exposure
+                                                     Human             GPT-4
+                                                   mean      std    mean      std
+                                             𝛼     0.14     0.14    0.14     0.16
+                                             𝛽     0.30     0.21    0.34     0.22
+                                             𝜁     0.46     0.30    0.55     0.34
+                                                    Task Level Exposure
+                                                     Human             GPT-4
+                                                   mean      std    mean      std
+                                             𝛼     0.15     0.36    0.14     0.35
+                                             𝛽     0.31     0.37    0.35     0.35
+                                             𝜁     0.47     0.50    0.56     0.50
+
+Table 3: Summary statistics of our human and model exposure data. Tasks designated as core tasks for an
+occupation are given twice the weight as those indicated to be supplemental in the O*NET task file.
+
+
+
+
+Figure 3: Exposure intensity across the economy, displayed in terms of percent of affected occupations. A
+given data point gives the percent of occupations with exposure below the given threshold. A previous version
+of this paper had two labels reversed in the chart, flipping human and model responses. In this figure, all tasks
+within an occupation are given equal weight.
+
+
+    Aggregated at the occupation level, human and GPT-4 annotations exhibit qualitative similarities and
+tend to correlate, as demonstrated in Figure 4. Human annotations estimate marginally lower exposure for
+high-wage occupations compared to GPT-4 annotations. While there are numerous low-wage occupations
+with high exposure and high-wage occupations with low exposure, the overall trend in the binscatter plot
+reveals that higher wages are associated with increased exposure to LLMs.7
+    The potential exposure to LLMs seems to have little correlation with current employment levels. In
+Figure 4, both human and GPT-4 ratings of overall exposure are aggregated to the occupation-level (y-axis)
+and compared with the log of total employment (x-axis). Neither plot reveals significant differences in LLM
+exposure across varying employment levels.
+   7In aggregating tasks to the occupation-level, we assign half the weight to O*NET supplemental tasks as we do for core tasks.
+

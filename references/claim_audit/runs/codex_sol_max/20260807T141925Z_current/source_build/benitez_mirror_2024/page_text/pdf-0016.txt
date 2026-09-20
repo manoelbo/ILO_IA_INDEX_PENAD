@@ -1,0 +1,46 @@
+icant manual dexterity, precision, and personal interaction involved in barbering are challenging
+to replicate with current or medium-term advances in technology.
+      Tasks Nature (Routine vs Non-Routine). The model consistently distinguishes between routine
+and non-routine tasks. Occupations with routine, repetitive tasks are considered more likely to be
+replaced by AI. The term ”routine” appears 72 times in the responses, indicating a strong emphasis
+on the predictability and repetitiveness of tasks. For example, the response for ”Anesthesiologists”
+(likelihood 0.2) notes that although AI might assist with some routine tasks such as diagnostic
+procedures, monitoring patients, and scheduling, the holistic and critical (non-routine) nature of
+anesthesiology, including patient care, emergency response, coordination with medical teams, and
+individualized decision-making, presents substantial challenges to full automation.
+      Ethical Considerations. The model frequently raises ethical concerns, particularly for occupa-
+tions involving direct human interaction or safety-critical roles. The terms ”ethical” and “safety”
+appear 28 and 81 times, respectively, in the responses. For example, in the case of ”Judges,”
+ChatGPT notes that the complex and highly ethical nature of judicial tasks, such as interpreting
+laws and making nuanced judgments, poses significant challenges for AI, making it unlikely that
+judges will be replaced by AI soon (likelihood of 0.2). Similarly, in occupations like Pilots and
+Amusement and Recreation Attendants, safety concerns are raised to lower AI prospects of re-
+placement.
+      Regulatory Environment. Legal and regulatory factors are also considered. Regulatory concerns
+were raised 63 times in the follow-up responses. This occurs in occupations like bakers, drivers,
+and civil engineers. Heavily regulated industries might be less likely due to strict regulations and
+standards that AI must meet.
+      Cost-Benefit Analysis. Economic feasibility also plays a role. For instance, jobs that require high
+(low) levels of human expertise and are less (more) economically viable for automation may have
+lower (higher) likelihoods. This factor is considered in occupations such as ”Farm Equipment
+Mechanics and Service Technicians” and “Hand Packers and Packagers.”
+      These findings not only provide insight into the model’s decision-making process but also
+align with established theories in labor economics and technological change. The consideration
+of task routineness, for instance, echoes the task-based approach to technological change (Autor
+et al., 2003, 2006; Acemoglu and Autor, 2011; Autor, 2013), while the emphasis on ethical and
+regulatory factors reflects the growing awareness of AI’s societal implications.
+
+
+3.2     Comparison with Existing Indexes
+
+      Figure 2 compares the GENOE index with other indexes of computerization and occupational
+exposure to technological displacement.6 Interestingly, our index shows little correlation with
+    6 Since most indexes were calculated using the SOC-2010 classification, we transformed the GENOE from SOC-
+
+2018 to SOC-2010 using the crosswalks from the Bureau of Labor Statistics for comparison purposes. Henceforth, in
+this document, whenever the generated indexes are compared to existing indexes, they are transformed to SOC-2010.
+
+
+
+                                                       12
+

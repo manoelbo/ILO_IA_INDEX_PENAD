@@ -1,0 +1,62 @@
+0 ≤ e1 < e2 ≤ T − 2, consider the difference between θes (e2 ) and θes (e1 ) which is given by
+                           X
+ θes (e2 ) − θes (e1 ) =         1{g + e1 ≤ T }P (G = g|G + e1 ≤ T )(AT T (g, g + e2 ) − AT T (g, g + e1 ))              (3.5)
+                                                                    |                  {z                 }
+                           g∈G
+                                                                                          dynamic effect for group g
+                               X
+                           +         1{g + e2 ≤ T }(P (G = g|G + e2 ≤ T ) − P (G = g|G + e1 ≤ T ))AT T (g, g + e2 )
+                                                   |                      {z                     }
+                               g∈G
+                                                                            differences in weights
+                               X
+                           −         1{T − e2 < g ≤ T − e1 }P (G = g|G + e1 ≤ T )AT T (g, g + e2 ).
+                                     |         {z          }
+                               g∈G
+                                     different composition of groups
+
+From the above decomposition it becomes clear that comparing θes (e) at two different values of e provides
+a weighted average of the dynamic effect of participating in the treatment – the first component on the
+right-hand side of (3.5) – plus two extra undesirable terms. Both of these undesirable terms are due
+to different compositions of groups at different event times.11 The first term arises because the weights
+at each length of exposure differ due to the changing composition of groups at each event time. The
+second term comes directly from different compositions of groups at each length of exposure. These two
+additional terms may prevent one from interpreting the differences in θes (e) across different values of e
+as being actual dynamic effects of participating in the treatment unless one is willing to impose that
+AT T (g, g + e) does not vary with g for any e ≥ 0; i.e., that dynamic effects are common across groups.12
+However, this sort of homogeneity condition may be deemed too strong in many applications.
+    A simple alternative causal parameter that can be used to highlight treatment effect dynamics with
+respect to length of exposure to the treatment and does not suffer from the issue of compositional changes
+highlighted in (3.5) arises from “balancing” the groups with respect to event time, i.e., to only aggregate
+the AT T (g, t)’s for a fixed set of groups that are exposed to the treatment for at least some particular
+number of time periods and thereby circumvent the issue of compositional changes across different values
+of e. In particular, for some event time e0 with 0 ≤ e ≤ e0 ≤ T − 2, let
+                                            X
+                          bal
+                         θes  (e; e0 ) =          1{g + e0 ≤ T }AT T (g, g + e)P (G = g|G + e0 ≤ T ).                    (3.6)
+                                            g∈G
+
+                               bal (e; e0 ) is very similar to θ (e) except that it calculates the average group-
+Notice that the definition of θes                               es
+time average treatment effect for units whose event time is equal to e and who are observed to participate
+in the treatment for at least e0 periods. In this case, since the composition of groups is the same across
+                                                                                         bal (e; e0 ) across
+all values of e, the additional terms in (3.5) do not show up at all and differences in θes
+different values of e cannot be due to differences in the composition of groups at different values of e. As
+an example, when one is interested in analyzing the evolution of treatment effects up to 5 periods after
+treatment was implemented, one can set e0 = 5 and, this way, the same groups of units will be used when
+           bal (0; 5), θ bal (1; 5), . . . , θ bal (5; 5).
+computing θes           es                    es
+    The price one pays for “balancing” the groups with respect to event time is that fewer groups are
+used to compute these event-study-type estimands, which can lead to less informative inference. Thus, in
+
+   11
+      The composition changes mentioned here arise due to the staggered adoption of the treatment. For example, when
+T = 3, groups 2 and 3 both show up in the expression for θes (0), but only group 2 shows up in the expression for θes (1).
+   12
+      If AT T (g, g + e) does not vary with g for any e ≥ 0, it is straightforward to show that the last two terms of (3.5) sum
+up to 0.
+
+
+                                                                       16
+

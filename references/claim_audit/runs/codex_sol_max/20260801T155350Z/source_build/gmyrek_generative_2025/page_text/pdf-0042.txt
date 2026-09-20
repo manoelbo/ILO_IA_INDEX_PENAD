@@ -1,0 +1,24 @@
+39        ILO Working Paper 140
+
+
+
+
+     We stress that these classifications merely suggest the general trends and types of occupations
+     at different levels of exposure, since any type of task scoring system carries a degree of subjec-
+     tivity. While the abilities of GenAI and its derivative technologies evolve rapidly, many additional
+     local factors, not covered in this global study, can either speed up and expand, or limit the impact
+     of these technologies on specific occupations. The advantage of this more detailed categoriza-
+     tion of occupations into four progressive gradients is that it will allow for tracking the movement
+     of occupations over time, and for occupational-level comparisons across national classification
+     systems with varying collections of tasks.19
+
+
+
+
+     19
+          To address the weakness of missing country-level nuance in this global index, we develop an AI-based predictor described in Section
+          8, which captures the general scoring structure and relative score differences across 2,861 tasks in our database. We can apply this
+          knowledge repository to predict scores for more specific tasks in national-level classification systems. For demonstrative purposes,
+          we intend to apply this method to the context of 6-digit occupations in Poland (Gmyrek et al., forthcoming in 2025), with the possi-
+          bility of replicating the method for other countries where detailed occupational descriptions are available.
+

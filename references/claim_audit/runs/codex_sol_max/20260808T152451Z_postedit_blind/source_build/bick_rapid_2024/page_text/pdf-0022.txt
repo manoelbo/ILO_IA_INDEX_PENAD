@@ -1,0 +1,61 @@
+                             Figure 8: GenAI Intensity and Reported Time Savings
+
+
+                                            (a) Intensity of Generative AI Use For Work
+
+                              Overall                      36.9                                42.8                      20.3
+
+
+
+
+    Used in Last Month, Not Last Week       6.4                      45.8                                 47.7
+
+
+       Used At Least 1 Day Last Week                26.3                                50.7                         23.0
+
+
+           Used Every Day Last Week                                    65.7                                  26.9               7.5
+
+                                        0          10        20       30     40      50     60     70      80            90       100
+                                                                  Share Using AI For X Minutes per Day (%)
+                                                   60+ Minutes / Day          15-59 Minutes / Day        0-14 Minutes / Day
+
+
+
+
+                                       (b) Reported Time Savings Due to Generative AI
+
+                             Overall              20.4               19.9               25.4                     34.2
+
+
+
+
+              Used 1 Day Last Week          10.4            20.5              23.3                         45.7
+
+
+    Used More Than 1 Day Last Week          12.9              21.8                   32.7                         32.6
+
+
+          Used Every Day Last Week                        36.8                  17.5              19.6              26.1
+
+                                        0          10      20     30       40    50    60     70     80     90                    100
+                                                        Share Reporting AI Saved Them X Hours Last Week (%)
+                                                        4 or More Hours       3 Hours          2 Hours    1 Hour or Less
+
+
+
+
+Notes: Panel (a) shows the distribution of daily time spent actively using genAI for work, among genAI users.
+The “Overall” bar reflects the distribution among all workers who use genAI. Other bars break down daily time
+use by daily frequency of use. Data source is the November 2024 waves of the RPS, ages 18-64. The sample is
+employed respondents who use genAI for work (N = 1000). Panel (b) shows the distribution of work time saved
+in the previous week due to genAI, among individuals who use genAI for work. The “Overall” bar reflects the
+distribution among all workers who use genAI. Other bars break down time savings by daily frequency of use.
+Data source is the November 2024 wave of the RPS, ages 18-64 (the August 2024 wave did not ask about time
+savings). The sample is employed respondents who used genAI for work in the last week (N = 925).
+
+
+
+
+                                                                                     20
+

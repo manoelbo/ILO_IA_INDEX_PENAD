@@ -1,0 +1,61 @@
+       TABELA 6
+       Cor induzida versus cor espontânea
+       Regiões Metropolitanas de São Paulo,Rio de Janeiro, Porto Alegre,
+       Belo Horizonte, Salvador e Recife, 1998
+       (Em %)
+                                                               Cor espontânea
+Cor induzida
+                  Branca         Preta    Parda      Amarela     Morena      Morena-clara   Clara      Outras     Total
+Branca             53,2           0,0      0,1         0,0           2,8         1,1         0,7        0,4       58,5
+Preta               0,1           4,1      0,1         0,0           1,3         0,0         0,0        3,6        9,3
+Amarela             0,1           0,0      0,0         1,0           0,1         0,0         0,0        0,0        1,3
+Parda               0,4           0,1     10,0         0,0          15,9         1,7         0,1        1,4       29,5
+Indígena            0,0           0,0      0,0         0,0           0,5         0,1         0,0        0,2        0,9
+Ignorado            0,2           0,0      0,1          ...          0,1         0,0         0,0        0,2        0,6
+Total              54,0           4,2     10,3        1,1          20,8         2,9          0,8        5,9      100,0
+       Fonte: IBGE, Pesquisa Mensal de Emprego, julho de 1998. In: Schwartzman (1999).
+       Ob.: Dados retabulados.
+
+
+
+
+     Mais uma vez, embora os levantamentos não sejam estritamente comparáveis em
+razão das diferenças metodológicas e da cobertura geográfica distinta, o quadro que
+emerge da PME é essencialmente o mesmo mostrado pela Pnad de 1976 e pela pesqui-
+sa do Datafolha. Os sete termos de cor, que nos dois levantamentos anteriores abarca-
+vam, respectivamente, 95% e 94% das respostas, continuam a englobar 94% destas,
+uma estabilidade impressionante e significativa, levando-se em consideração as diferen-
+ças metodológicas e temporais. Como no levantamento do Datafolha, a grande dife-
+rença nas declarações espontâneas da PME em relação à Pnad de 1976 fica por conta
+da categoria negro, que aparece em 3% das respostas. Ou seja, adicionando-se esse ter-
+mo aos outros sete, cobrem-se 97% das respostas livres,21 exatamente como no levan-
+tamento do Datafolha. Cores e denominações esdrúxulas também surgiram em
+profusão, mas são proporcionalmente desprezíveis.
+      Comparando-se a tabela 6 às tabelas 4 e 5, percebe-se outra tendência deveras
+interessante: o aumento da correlação entre a cor espontânea e a induzida. Das pesso-
+as declaradas espontaneamente brancas, 97% mantiveram a cor na classificação indu-
+zida em 1976, 95% em 1995, e nada menos que 99% em 1998. Situação semelhante
+se reproduz para as categorias preta e parda: para a primeira, 90%, 87% e 98%; para
+a parda, 94%, 92% e 97%. Pode-se prever também que pessoas declaradas esponta-
+neamente claras tendem a ser consideradas brancas na classificação induzida: 86%
+agiram dessa forma tanto em 1976 quanto em 1998. Das categorias mais expressivas
+da declaração livre, as únicas que constituem fontes de “perturbação” são, portanto,
+morena e morena-clara, mas principalmente a última. Os morenos tendem a ser con-
+siderados pardos na classificação induzida: 64% em 1976, e 77% em 1998. Já a cate-
+goria morena-clara apresenta um comportamento irregular, pois em 1976, 57% dos
+que assim se declararam optaram pela cor branca na classificação induzida; em 1998,
+a situação se inverteu, pois 57% declararam-se pardos. Entretanto, deve-se ressalvar
+que morena-clara é uma das categorias menos escolhidas entre o conjunto das deno-
+minações livremente mencionadas proporcionalmente relevantes, com pouco menos
+de 3% das respostas em 1976 e em 1998. Assim, não constitui uma fonte significativa
+de problemas para a classificação.
+
+
+21. Deve-se ressalvar ainda que, nos três levantamentos, se as cores nuançadas, como as várias tonalidades de moreno, fossem
+agregadas em torno da cor central, essas percentagens seriam próximas de 100%.
+
+
+
+
+28                                       texto para discussão | 996 | nov. 2003                                    ipea
+

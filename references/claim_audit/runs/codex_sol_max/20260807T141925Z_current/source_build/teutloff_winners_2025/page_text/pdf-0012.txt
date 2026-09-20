@@ -1,0 +1,69 @@
+O. Teutloff et al.                                                                                 Journal of Economic Behavior and Organization 235 (2025) 106845
+
+we find a negative and statistically significant difference in differences estimate for the complementary group for novice workers.
+This indicates that the demand for novice labor decreased in the complemented cluster after the launch of ChatGPT. This finding
+highlights the importance of considering other dimensions of heterogeneity beyond skill requirements when studying the effects of
+LLMs on the labor market.
+
+
+3.2.3. Effect heterogeneity by skill cluster
+    Next, we formally examine the heterogeneity of the impact of the ChatGPT launch across clusters in the substitutable and
+complementary AI exposure categories by estimating the regression in Eq. (2) presented in the methods section.
+    Fig. 5 illustrates the estimated changes in demand for each skill cluster in the substitutable and complementary category. Most
+substitutable clusters exhibit a decline compared to the counterfactual: Writing related to real estate and ’about us’ pages show
+the most substantial decreases, at 52% and 59%, respectively. The largest cluster in our sample of affected skill clusters — content
+writing for blogs — declined by 20%. Translation is also significantly impacted, with the ’Western European Languages’ category
+experiencing a 23% decline. In the complementary clusters, demand changes are mixed, with some clusters showing significant
+decreases and others increases. Notably, the demand for jobs in the cluster ’AI-powered chatbots’ nearly tripled, with a 179%
+increase. The cluster of ’Machine learning’ also shows a significant rise, with demand increasing by 29%.
+    Cluster-specific estimates should be interpreted with caution for two reasons. First, while the complementary and substitutable
+clusters show no statistically significant pre-trends on average, individual clusters may still display notable pre-trends, which could
+influence some results. Rather than excluding clusters with statistically significant pre-trends, we present results for all clusters.
+Given the large number of comparisons, some statistically significant pre-trends will occur by chance, and it is difficult to distinguish
+between true pre-trends and those arising randomly. Second, comparing estimates requires adjusting for multiple hypothesis testing.
+However, adjusting for every pairwise comparison is impractical, as it would inflate standard errors and make Fig. 5 uninformative.4
+We therefore recommend focusing on the top and bottom of the distribution shown in Fig. 5.
+    Notwithstanding these caveats, the main takeaway from Fig. 5 is that ChatGPT resulted in substantial demand increases for
+clusters related to AI for chatbot development, lead generation, and machine learning and significantly decreased demand for writing
+and translation jobs.5
+    The results from Fig. 5 align with results on the performance of LLMs across languages (Li et al., 2024) and domains (del Rio-
+Chanona et al., 2024). The significant decline in demand for translation of Western European languages compared to less common
+languages, such as Arabic and Hebrew, is consistent with the superior performance of LLMs in Western languages, making them
+more easily substitutable. Clusters related to writing that do not exhibit a significant decrease in demand include Spanish localization
+and translation, fiction writing, editing, and script writing for explainer videos. These skills require an understanding of language
+nuances, creativity, and interaction with video content, which explains their relatively stable demand. In programming, the most
+affected clusters are related to JavaScript, HTML, and CSS, which are also among the most affected programming languages in
+collaborative programming platforms such as Stack Overflow (del Rio-Chanona et al., 2024). The increase in demand for AI-powered
+chatbot development and machine learning is intuitive, as businesses increasingly adopt these technologies.
+
+
+3.2.4. Sensitivity analyses
+   We have conducted a series of sensitivity analyses to demonstrate that our results are robust to reasonable variations in the
+regression model and pass standard checks for identification. While the main exhibits related to these exercises are provided in the
+appendices, we briefly discuss each of them here individually.
+
+Placebo tests. We first provide a standard ’placebo treatment time’ test to show that our results do not capture underlying trends
+that are unrelated to ChatGPT. We do this by entirely dropping the post-ChatGPT period from our data. Thereafter, we introduce a
+placebo treatment set to 30th May 2022. In Appendix F, we show that the difference in differences estimates are indistinguishable
+from zero in this case.
+
+Dropping graphic design. So far, we have focused on studying the effects of LLMs on the labor market, ignoring other breakthroughs
+in generative artificial intelligence technologies related to image generation (such as Dall-E, originally released in 2021, and
+Midjourney, originally released in 2022). According to our labeling which only focuses on text-based models, graphic design tasks
+are mostly in unaffected clusters. Nonetheless, one could argue that our results might be affected by graphic design jobs in the control
+group, which were likely affected by the advent of advanced AI image generation capabilities. We addressed this by dropping all
+clusters that include ’graphic design’ as one of their important skills from the control group. We report the results of this robustness
+check in Appendix G, which are virtually unchanged.
+
+
+
+   4 Depending on the exact method for multiple hypothesis testing correction, we would need to inflate the standard errors by some constant for every 70 × 69
+
+pairwise comparison we make.
+   5 The standard errors on cluster-specific estimates are very similar because the analysis sample consists of week-by-cluster cells, resulting in identical sample
+
+sizes across clusters.
+
+
+                                                                                12
+

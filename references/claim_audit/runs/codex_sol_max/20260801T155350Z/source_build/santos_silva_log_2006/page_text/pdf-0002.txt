@@ -1,0 +1,55 @@
+Abstract
+Although economists have long been aware of Jensen's inequality, many econometric applications
+have neglected an important implication of it: the standard practice of interpreting the parameters of
+log-linearized models estimated by ordinary least squares as elasticities can be highly misleading in
+the presence of heteroskedasticity. This paper explains why this problem arises and proposes an
+appropriate estimator. Our criticism to conventional practices and the solution we propose extends to
+a broad range of economic applications where the equation under study is log-linearized. We develop
+the argument using one particular illustration, the gravity equation for trade, and apply the proposed
+technique to provide new estimates of this equation. We find significant differences between
+estimates obtained with the proposed estimator and those obtained with the traditional method. These
+discrepancies persist even when the gravity equation takes into account multilateral resistance terms
+or fixed effects
+
+Keywords: Elasticities, Gravity equation, Heteroskedasticity, Jensen's inequality, Poisson regression,
+Preferential-trade agreements
+JEL Classifications: C13, C21, F10, F11, F12, F15
+Data: Feenstra, R.C., R.E. Lipsey and H.P. Bowen (1997), "World Trade Flows, 1970-1992, with
+Production and Tariff Data", NBER Working Paper No. 5910.
+
+
+This paper was produced as part of the Centre’s Macro Programme. The Centre for Economic
+Performance is financed by the Economic and Social Research Council.
+
+
+Acknowledgements
+The authors are grateful to two anonymous referees for their constructive comments and suggestions.
+We also thank Francesco Caselli, Juan Carlos Hallak, Daniel Mota, Paulo Parente, Manuela Simarro
+and Kim Underhill for helpful advice on previous versions of this paper. The usual disclaimer applies.
+Jiaying Huang provided excellent research assistance. Santos Silva gratefully acknowledges the
+partial financial support from Fundação para a Ciência e Tecnologia, program POCTI, partially
+funded by FEDER. A previous version of this paper circulated as “Gravity-Defying Trade.”
+         Joao Santos Silva is a Professor in the Maths Department at ISEG/Universidade Tecnica de
+Lisboa R. do Quelhas 6, 1200-781 Lisboa, Portugal http://www.iseg.utl.pt/~jmcss/
+Email: jmcss@iseg.utl.pt
+         Silvana Tenreyro is an Economist at the Federal Reserve Bank of Boston and lecturer at the
+London School of Economics. Email: s.tenreyro@lse.ac.uk
+
+
+Published by
+Centre for Economic Performance
+London School of Economics and Political Science
+Houghton Street
+London WC2A 2AE
+
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system or
+transmitted in any form or by any means without the prior permission in writing of the publisher nor
+be issued to the public or circulated in any form other than that in which it is published.
+
+Requests for permission to reproduce any article or part of the Working Paper should be sent to the
+editor at the above address.
+
+© J. Santos Silva and S. Tenreyro, submitted 2005
+
+ISBN 0 7530 1882 9
+

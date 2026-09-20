@@ -1,0 +1,47 @@
+11     ILO Working Paper 140
+
+
+
+
+     XX   1 Task-based approaches to automation in the
+          literature
+
+
+     Central to the study of technology on work is the insight that jobs are a “bundle of tasks” (Autor,
+     2015). As such, task automation might, or might not lead to job automation, depending on the
+     importance of a particular task to an occupation. Analyses of employment effects of automation
+     that use the task-based approach, including this study, attempt to capture two central consider-
+     ations: (i) the ability of a specific technology to automate a given task and (ii) the character of ex-
+     isting occupations in the labour market, based on the detailed tasks performed by these occupa-
+     tions. By modelling the intersection of these two dimensions, one arrives at a range of possible
+     projections of how such technology could interact with occupational tasks, leading either to their
+     full automation through technology-driven substitution, or to a transformation, through partial
+     automation and human-machine complementarity. While the task-based framework certainly has
+     limitations, recent academic literature shows the analytical advantages of this method for mod-
+     elling employment and labour market impacts (Acemoglu et al., 2024; Nurski and Ruer, 2024).
+
+     Research on AI and tasks has shown important improvements in methods and scope in recent
+     years, which includes using AI tools for research purposes. In one of the early papers on Machine
+     Learning (ML) and jobs, Frey and Osborne, (2013) fed the opinions of a group of IT technology
+     experts into an ML algorithm to develop occupational-level projections of automation poten-
+     tial for the US job market. The emergence of GenAI APIs has simplified the possibility of com-
+     bining human expertise and algorithmic capacities for research purposes. Relying on this idea,
+     Eloundou et al. (2023) demonstrated a close alignment of GPT-4 predictions with a survey of 70
+     AI experts on the potential of automating occupational tasks with LLMs, and subsequently built
+     on this feature to develop synthetic automation scores for the US market.
+
+     Most task-based studies are focussed on the US, due to the very detailed nature of the O*NET
+     database, as well as its public accessibility. This typically forces researchers interested in the
+     global picture or other countries and regions to base their analysis on the strong assumption
+     of similarity of local economic and labour effects to those projected in the US context. In reality,
+     occupational tasks can vary significantly among individual countries, which poses a particular
+     challenge in developing countries. As such, working with tasks in the ISCO-08 system offers a
+     useful and simple common denominator for projections across different countries, regions and
+     income groups. Our method combines the strengths of this global framework with a significantly
+     more detailed national classification system in Poland, which provides a detailed list of occupa-
+     tions and tasks, based on the latest labour market data. This helps us establish a starting point
+     for modelling interaction of GenAI’s abilities with up-to-date tasks and occupations in a setting
+     located between the countries with highest incomes and the emerging economies (Figure 1).
+     Using a combination of GenAI tools, we subsequently transfer this knowledge back to the tasks
+     in ISCO-08 system.
+

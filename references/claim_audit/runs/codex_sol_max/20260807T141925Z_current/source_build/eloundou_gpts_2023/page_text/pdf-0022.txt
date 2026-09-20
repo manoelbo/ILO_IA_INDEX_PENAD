@@ -1,0 +1,47 @@
+                                             WORKING PAPER
+
+
+6     Discussion
+6.1   GPTs as a General-Purpose Technology
+Earlier in this paper we discuss the possibility that LLMs could be classified as a general-purpose technology.
+This classification requires LLMs to meet three core criteria: improvement over time, pervasiveness throughout
+the economy, and the ability to spawn complementary innovations (Lipsey et al., 2005). Evidence from the AI
+and machine learning literature thoroughly demonstrates that LLMs meet the first criteria – they are improving
+in capabilities over time with the ability to complete or be helpful for an increasingly complex set of tasks and
+use-cases (see 2.1). This paper presents evidence to support the latter two criteria, finding that LLMs on their
+own can have pervasive impacts across the economy, and that complementary innovations enabled by LLMs –
+particularly via software and digital tools – can have widespread application to economic activity.
+    Figure 3 offers one illustration of the potential economic impact of complementary software built on top of
+LLMs. Taking the difference in the y-axis (the share of all occupations) between 𝛼 and 𝜁 at a given point along
+the x-axis (the share of tasks within an occupation that are exposed) gives the aggregate within-occupation
+exposure potential attributable to tools and software over and above direct exposure from LLMs on their
+own. The difference in means across all tasks between 𝛼 and 𝜁 of 0.42 using the GPT-4 annotations and 0.32
+using the human annotations (see Figure 3), suggests that the average impact of LLM-powered software on
+task-exposure may be more than twice as large as the mean exposure from LLMs on their own (mean 𝜁 of 0.14
+based on both human annotations and GPT-4 annotations). While our findings suggest that out-of-the-box
+these models are relevant to a meaningful share of workers and tasks, they also suggest that the software
+innovations they spawn could drive a much broader impact.
+    One component of the pervasiveness of a technology is its level of adoption by businesses and users.
+This paper does not systematically analyze adoption of these models, however, there is early qualitative
+evidence that adoption and use of LLMs is becoming increasingly widespread. The power of relatively
+simple UI improvements on top of LLMs was evident in the rollout of ChatGPT – wherein versions of the
+underlying language model had been previously available via API, but usage skyrocketed after the release of
+the ChatGPT interface. (Chow, 2023; OpenAI, 2022) Following this release, a number of commercial surveys
+indicate that firm and worker adoption of LLMs has increased over the past several months. (Constantz, 2023;
+ResumeBuilder.com, 2023)
+    Widespread adoption of these models requires addressing existing bottlenecks. A key determinant of
+their utility is the level of confidence humans place in them and how humans adapt their habits. For instance,
+in the legal profession, the models’ usefulness depends on whether legal professionals can trust model
+outputs without verifying original documents or conducting independent research. The cost and flexibility
+of the technology, worker and firm preferences, and incentives also significantly influence the adoption of
+tools built on top of LLMs. In this way, adoption may be driven by progress on some of the ethical and
+safety risks associated with LLMs: bias, fabrication of facts, and misalignment, to name a few OpenAI
+(2023a). Moreover, the adoption of LLMs will vary across different economic sectors due to factors such
+as data availability, regulatory environment, and the distribution of power and interests. Consequently, a
+comprehensive understanding of the adoption and use of LLMs by workers and firms requires a more in-depth
+exploration of these intricacies.
+    One possibility is that time savings and seamless application will hold greater importance than quality
+improvement for the majority of tasks. Another is that the initial focus will be on augmentation, followed by
+automation (Huang and Rust, 2018). One way this might take shape is through an augmentation phase where
+jobs first become more precarious (e.g., writers becoming freelancers) before transitioning to full automation.
+

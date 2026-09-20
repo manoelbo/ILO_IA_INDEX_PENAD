@@ -1,0 +1,42 @@
+A.2     Validation of the Seniority Classification
+
+We conduct two complementary exercises to evaluate the seniority classification pro-
+duced by Revelio and to verify its stability over the GenAI diffusion period. First, we
+analyze job title keywords for junior and senior roles. Second, we examine the average
+experience levels within each seniority group. In both exercises, we study patterns over
+time and across adoption status.
+
+
+A.2.1   Job Title Keywords by Seniority
+
+What junior and senior positions look like.         We first examine the distribution of key-
+words in raw job titles, separately for junior and senior workers. Figure A.6 presents word
+clouds summarizing the most frequently occurring keywords in each seniority group
+across the full sample. The classification is meaningful: junior positions are dominated
+by terms such as assistant, intern, specialist, associate, technician, and analyst, while senior
+positions are concentrated around manager, director, senior, consultant, president and lead.
+These patterns confirm that Revelio’s seniority variable aligns well with conventional ti-
+tling and motivate the keyword lists used in the exercises below.
+
+
+Stability of keyword distributions across 2023.        We next compare the distribution of
+keyword frequencies in positions that started before 2023 to those that started in 2023
+or later, pooled across all firms. Figure A.7 shows that the relative prominence of key-
+words is stable over time within each seniority group. Junior positions continue to be
+dominated by the same keywords before and after 2023, and senior positions by theirs.
+The main exception is intern, whose share increases after 2023 relative to the earlier pe-
+riod. This stability argues against a systematic shift in titling conventions or classification
+methodology around the diffusion of GenAI.
+
+
+Differential evolution at adopting vs. non-adopting firms. The previous exercises pool
+all firms together. To directly address the concern that adopting firms may be reclassify-
+ing positions differentially, we track the evolution of keyword shares over time, sepa-
+rately at adopting and non-adopting firms. For each firm-quarter cell, we compute two
+shares: the share of junior-classified positions whose raw title contains any junior-leaning
+
+
+
+
+                                              A.6
+

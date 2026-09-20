@@ -1,0 +1,49 @@
+                            Table 2: Top Exposed Occupations According to GENOE
+
+                                                                 1-year horizon     5-year horizon      10-year horizon
+
+
+ Telephone Operators                                             0.92               0.93                0.95
+ Data Entry Keyers                                               0.90               0.90                0.91
+ Telemarketers                                                   0.87               0.88                0.89
+ Word Processors and Typists                                     0.86               0.87                0.90
+ Switchboard Operators, Including Answering Service              0.84               0.85                0.86
+ Credit Authorizers, Checkers, and Clerks                        0.83               0.84                0.85
+ Meter Readers, Utilities                                        0.81               0.85                0.86
+ Motion Picture Projectionists                                   0.81               0.83                0.86
+ Order Clerks                                                    0.80               0.82                0.84
+ Shoe Machine Operators and Tenders                              0.77               0.84                0.84
+ Cutting and Slicing Machine Setters, Operators, and             0.80               0.82                0.83
+ Tenders
+ Textile Winding, Twisting, and Drawing Out Machine              0.78               0.82                0.84
+ Setters, Operators, and Tenders
+ Machine Feeders and Offbearers                                  0.75               0.81                0.84
+ Billing and Posting Clerks                                      0.76               0.80                0.84
+ File Clerks                                                     0.72               0.82                0.85
+ Statistical Assistants                                          0.76               0.80                0.83
+ Travel Agents                                                   0.76               0.80                0.82
+ Graders and Sorters, Agricultural Products                      0.76               0.79                0.83
+ Office Machine Operators, Except Computer                       0.72               0.81                0.83
+ Correspondence Clerks                                           0.76               0.78                0.82
+ Coil Winders, Tapers, and Finishers                             0.74               0.78                0.83
+ Medical Transcriptionists                                       0.73               0.79                0.82
+ Bookkeeping, Accounting, and Auditing Clerks                    0.72               0.79                0.83
+ Payroll and Timekeeping Clerks                                  0.74               0.77                0.82
+ Mail Clerks and Mail Machine Operators, Except Postal           0.73               0.78                0.82
+ Service
+ Gambling Change Persons and Booth Cashiers                      0.72               0.77                0.84
+ Tellers                                                         0.70               0.79                0.83
+ Packaging and Filling Machine Operators and Tenders             0.70               0.79                0.83
+ Desktop Publishers                                              0.73               0.79                0.80
+ Grinding, Lapping, Polishing, and Buffing Machine               0.74               0.76                0.81
+ Tool Setters, Operators, and Tenders, Metal and Plastic
+
+Source: Authors’ calculations using data from O*NET and surveys conducted with GPT-4 through OpenAI’s API. Note: This table
+shows the occupations most exposed to AI, along with the GENOE estimates for the next one, five, and 10 years. Occupations were
+ranked based on the average exposure value across the three horizons.
+
+
+
+
+                                                             9
+

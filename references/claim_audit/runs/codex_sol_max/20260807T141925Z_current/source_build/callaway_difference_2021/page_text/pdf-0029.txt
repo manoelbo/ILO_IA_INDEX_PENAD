@@ -1,0 +1,91 @@
+                              Figure 1: Minimum Wage Group-Time Average Treatment Effects
+
+                                                                       ●       Pre−Treatment
+                                                                       ●       Post−Treatment
+
+                            (a) Unconditional Parallel Trends                                             (b) Conditional Parallel Trends
+               Group 2004                                                                    Group 2004
+
+         0.2                                                                           0.2
+
+         0.1                                                                           0.1
+
+                  ●            ●                                                                 ●
+         0.0                                                                           0.0                 ●
+                                         ●                                                                            ●          ●
+                                                                                                                                             ●
+                                                    ●                                                                                               ●
+        −0.1                                                                          −0.1
+                                                                 ●         ●
+
+
+        −0.2                                                                          −0.2
+
+                2002         2003       2004       2005         2006   2007                     2002      2003       2004       2005        2006   2007
+
+
+               Group 2006                                                                    Group 2006
+
+         0.2                                                                           0.2
+
+         0.1                                                                           0.1
+                               ●                                                                           ●
+                                                                                                                      ●          ●
+                                         ●          ●
+         0.0                                                                           0.0       ●                                           ●
+                  ●                                              ●
+                                                                                                                                                    ●
+                                                                           ●
+        −0.1                                                                          −0.1
+
+        −0.2                                                                          −0.2
+
+                2002         2003       2004       2005         2006   2007                     2002      2003       2004       2005        2006   2007
+
+
+               Group 2007                                                                    Group 2007
+
+         0.2                                                                           0.2
+
+         0.1                                                                           0.1
+
+                               ●         ●                                                                 ●          ●
+         0.0                                        ●                                  0.0                                       ●
+                  ●                                                        ●                     ●                                                  ●
+                                                                 ●                                                                           ●
+
+
+        −0.1                                                                          −0.1
+
+        −0.2                                                                          −0.2
+
+                2002         2003       2004       2005         2006   2007                     2002      2003       2004       2005        2006   2007
+
+
+
+    Notes: The effect of the minimum wage on teen employment estimated under the unconditional parallel trends assumption
+    (Panel (a)) and the conditional parallel trends assumption (Panel (b)). Red lines give point estimates and uniform 95%
+    confidence bands for pre-treatment periods allowing for clustering at the county level. Under the null hypothesis of the
+    parallel trends assumption holding in all periods, these should be equal to 0. Blue lines provide point estimates and uniform
+    95% confidence bands for the treatment effect of increasing the minimum wage allowing for clustering at the county level.
+    The top row includes states that increased their minimum wage in 2004, the middle row includes states that increased their
+    minimum wage in 2006, and the bottom row includes states that increased their minimum wage in 2007. The estimates in
+    Panel (b) use the the doubly robust estimator discussed in the text.
+
+
+
+increasing the minimum wage on teen employment appears to be negative and increasing in magnitude
+the longer states are exposed to the higher minimum wage. In particular, in the first year that a state
+increases its minimum wage, teen employment is estimated to decrease by 2.7%, in the second year it
+is estimated to decrease by 7.1%, in the third year by 12.5%, and in the fourth year by 13.6%. Notice
+that the last two dynamic treatment effect estimates are exactly the same as the estimates coming from
+Illinois alone because Illinois is the only state that is treated for at least two years. These results are
+robust to keeping the composition of groups constant by “balancing” the groups across different lengths
+of exposure to the treatment (see the row in Table 3 labeled ‘Event Study w/ Balanced Groups’). When
+we restrict the sample to only include groups that had a minimum wage increase for at least one full
+year (i.e., we keep groups 2004 and 2006 but not 2007), we estimate that the effect of increasing the
+minimum wage on impact is 2.7% lower teen employment and 7.1% lower teen employment one year after
+
+
+                                                                                 29
+

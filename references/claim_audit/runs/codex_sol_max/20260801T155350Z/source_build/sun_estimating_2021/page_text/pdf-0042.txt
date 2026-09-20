@@ -1,0 +1,81 @@
+A.1      Expression of the weight
+
+                                                                                                         ` =
+In this section, we provide detailed definitions for the three elements in the expression of the weight ωe,` 0
+
+                              `
+σe,0 · ∆e+`0 A`−1 . Recall ωe,` 0 is the weight associated with C ATTe,` 0 in the linear combination underlying µ` :
+
+                   T
+                                   ! −1
+ ω` 0 = e                                 Ü i,t D`0 · 1 {Ei = e}]
+                 Õ
+             |          Ü i,t D| ] E[D
+   e,`       `       E[D          i,t                i,t
+                 t=0
+           |             {z             }
+                       B(A−1
+                          `
+                             )|
+                       T                           T                                    T
+                       Õ                      1 Õ             `0                   1 Õ `0
+         = (A`−1 )|          Cov(Di,t −               Di,t , Di,t · 1 {Ei = e} −          D · 1 {Ei = e})
+                       t=0
+                                            T + 1 t=0                            T + 1 t=0 i,t
+                                                       T                                             T
+                                                1 Õ                                            1 Õ               
+         = (A`−1 )| Pr {Ei = e} ·                        Di,e+`0 | Ei = e] − E[Di,e+`0 ] − E[
+                                                                           
+                                   E[Di,e+`0 −                                                          Di,e+`0 ]
+                                               T + 1 t=0                                      T + 1 t=0
+                    Õ                1   Õ
+         = (A`−1 )|    E[Di,e+`0 −           Di,t | Ei = e 0] · Cov (1{Ei = e}, 1{Ei = e 0 })
+                    e0
+                                   T + 1  t
+
+         B (σe, · )| ∆e+`0 A`−1
+
+We note that
+
+    • The first term is the vector σe, · = (σe,e0 )e0 ∈supp(Ei ) of the covariance between cohort indicators. Each
+
+         entry σe,e0 = Cov (1{Ei = e}, 1{Ei = e 0 }) is the covariance between being in cohort e and being in
+
+         cohort e 0.
+
+    • The second term is the matrix ∆e+`0 of demeaned relative time indicators. The rows of the matrix are
+
+         indexed by cohorts e 0 ∈ supp(Ei ) and the columns of the matrix are indexed by relative time indicators
+
+         included in the specification (7). The entry that corresponds to cohort e 0 and relative time indicator
+           ` is E[D`                  `                                Í `
+                    i,e+` 0 − T +1 t Di,t | Ei = e ]. Note that the sum t Di,t is equal to 1 {Ei ∈ I` } the indicator
+                                1 Í               0
+         Di,t
+
+         for whether this individual ever experience the relative time `.
+
+                                                                                               ` . Here
+    • The third term is the row vector of A−1 that corresponds to the relative time indicator Di,t
+
+         A is the covariance matrix of demeaned relative time indicators included in the specification (7).
+
+         Specifically, the entry that corresponds to the covariance between demeaned Di,t      ` and D` is  0
+
+                                                                                           !          i,t
+                                      Õ
+                                                  `     1   Õ
+                                                                 `      ` 0     1   Õ 0
+                                                                                       `
+                                  A=      Cov Di,t  −           Di,t , Di,t −         Di,t   .
+                                       t
+                                                      T + 1  t
+                                                                              T + 1 t
+                      Í `
+         Plugging in t Di,t   = 1 {Ei ∈ I` } gives the expression in the main text.
+
+
+
+
+                                                                  42
+

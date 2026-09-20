@@ -1,0 +1,61 @@
+degree of granularity, providing a near real-time view of labor market adjustments. By linking this
+
+data to established measures of occupational AI exposure and other variables, we can quantify the
+
+realized employment changes since the widespread adoption of generative AI.
+
+   This paper systematically presents six key facts that emerge from the data, offering an assess-
+
+ment of how the AI revolution is reshaping the American workforce.
+
+   Our first key finding is that we uncover substantial declines in employment for early-career
+
+workers (ages 22-25) in occupations most exposed to AI, such as software developers and cus-
+
+tomer service representatives. In contrast, employment trends for more experienced workers in the
+
+same occupations, and workers of all ages in less-exposed occupations such as nursing aides, have
+
+remained stable or continued to grow.
+
+   Our second key fact is that overall employment continues to grow robustly, but employment
+
+growth for young workers has been stagnant since late 2022. In jobs less exposed to AI, young
+
+workers have experienced comparable employment growth to older workers. In contrast, workers
+
+aged 22 to 25 have experienced a 6% decline in employment from late 2022 to September 2025 in
+
+the most AI-exposed occupations, compared to a 6-9% increase for older workers. These results
+
+suggest that declining employment in AI-exposed jobs drives stagnant overall employment growth
+
+for 22- to 25-year-olds.
+
+   Our third key fact is that not all uses of AI are associated with declines in employment. In
+
+particular, entry-level employment has declined in applications of AI that automate work, but not
+
+those that most augment it. We distinguish between automation and augmentation empirically us-
+
+ing estimates of the extent to which observed queries to Claude, the LLM, substitute or complement
+
+the tasks in that occupation. While we find employment declines for young workers in occupations
+
+where AI primarily automates work, we find employment growth in occupations in which AI use
+
+is most augmentative. These findings are consistent with automative uses of AI substituting for
+
+labor while augmentative uses do not.
+
+   Fourth, we find that employment declines for young, AI-exposed workers remain after condition-
+
+ing on firm-time effects. One class of explanations for our patterns is that they may be driven by
+
+industry- or firm-level shocks such as interest rate changes that correlate with sorting patterns by
+
+age and measured AI exposure. We test for a class of such confounders by controlling for firm-time
+
+effects in an event study regression, absorbing aggregate firm shocks that impact all workers at a
+
+                                                 3

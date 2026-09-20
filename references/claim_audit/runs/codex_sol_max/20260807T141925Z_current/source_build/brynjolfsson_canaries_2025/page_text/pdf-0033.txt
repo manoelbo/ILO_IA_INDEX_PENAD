@@ -1,0 +1,24 @@
+                        % of Occupations with Rising Employment
+                   70
+                   60
+                   50
+% of Occupations
+
+
+
+
+                   40
+                   30
+                   20
+                   10
+                    0
+                         1         2                3              4              5
+                                       GPT 4 Beta Quintile
+  Figure A3: Percent of occupations with an increase in employment for 22-25 year old workers
+  between October 2022 and September 2025. Exposure quintiles are defined based on the Eloundou
+  et al. (2024) GPT-4 β measure.
+
+
+
+
+                                               33

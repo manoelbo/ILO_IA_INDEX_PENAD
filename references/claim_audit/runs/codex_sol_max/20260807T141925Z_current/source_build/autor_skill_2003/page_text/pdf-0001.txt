@@ -1,0 +1,59 @@
+  THE SKILL CONTENT OF RECENT TECHNOLOGICAL
+       CHANGE: AN EMPIRICAL EXPLORATION*
+
+                                 DAVID H. AUTOR
+                                   FRANK LEVY
+                              R ICHARD J. MURNANE
+
+     We apply an understanding of what computers do to study how computerization
+alters job skill demands. We argue that computer capital (1) substitutes for workers
+in performing cognitive and manual tasks that can be accomplished by following
+explicit rules; and (2) complements workers in performing nonroutine problem-
+solving and complex communications tasks. Provided that these tasks are imperfect
+substitutes, our model implies measurable changes in the composition of job tasks,
+which we explore using representative data on task input for 1960 to 1998. We nd
+that within industries, occupations, and education groups, computerization is asso-
+ciated with reduced labor input of routine manual and routine cognitive tasks and
+increased labor input of nonroutine cognitive tasks. Translating task shifts into
+education demand, the model can explain 60 percent of the estimated relative de-
+mand shift favoring college labor during 1970 to 1998. Task changes within nomi-
+nally identical occupations account for almost half of this impact.
+
+
+                                   INTRODUCTION
+     A wealth of quantitative and case-study evidence documents
+a striking correlation between the adoption of computer-based
+technologies and the increased use of college-educated labor
+within detailed industries, within rms, and across plants within
+industries.1 This robust correlation is frequently interpreted as
+evidence of skill-biased technical change. Yet, as critics point out,
+this interpretation merely labels the correlation without explain-
+
+
+    * We thank the Alfred P. Sloan Foundation, the Russell Sage Foundation, and
+the MIT-Ford Research Collaboration for nancial support and Kokkeong Puah,
+Detelina Vasileva, and especially Melissa S. Kearny for research assistance. We
+are indebted to Daron Acemoglu, Joshua Angrist, Lex Borghans, Nicole Fortin,
+Edward Glaeser, Lawrence Katz, Kevin Lang, Thomas Lemieux, Sendhil Mullain-
+athan, Richard Nelson, Kathryn Shaw, Marika Tatsutani, Bas ter Weel, three
+anonymous referees, and numerous seminar participants for excellent sugges-
+tions. We thank Randy Davis of the Massachusetts Institute of Technology Arti-
+cial Intelligence Laboratory and Peter Szolovits of the Massachusetts Institute of
+Technology Laboratory for Computer Science for clarifying issues in articial
+intelligence, and Michael Handel for providing key data sources and expert advice
+on use of the Dictionary of Occupational Titles.
+    1. Berman, Bound, and Griliches [1994], Autor, Katz, and Krueger [1998],
+Machin and Van Reenen [1998], Berman, Bound, and Machin [1998, 2000], and Gera,
+Gu, and Lin [2001] present evidence on industry level demand shifts from the United
+States, OECD, Canada, and other developed and developing countries. Levy and
+Murnane [1996], Doms, Dunne, and Troske [1997], and Bresnahan, Brynjolfsson, and
+Hitt [2002] provide evidence on rm and plant level shifts. Katz and Autor [1999]
+summarize this literature. Card and DiNardo [2002] offer a critique.
+
+© 2003 by the President and Fellows of Harvard College and the Massachusetts Institute of
+Technology.
+The Quarterly Journal of Economics, November 2003
+
+
+                                         1279
+

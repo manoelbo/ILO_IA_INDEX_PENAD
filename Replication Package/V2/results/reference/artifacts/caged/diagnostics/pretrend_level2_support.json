@@ -1,0 +1,20 @@
+{
+  "cbo_clusters": 341,
+  "cbo_section_levels": 6017,
+  "cells": 581738,
+  "division_clusters": 87,
+  "event_window": [
+    -23,
+    23
+  ],
+  "lead_window": "-23_to_-2",
+  "model_count": 10,
+  "pretrend_status_counts": {
+    "fail": 10
+  },
+  "principal_specification_changed": false,
+  "section_period_levels": 987,
+  "sector_effects_resolve_any_pretrend": false,
+  "support_table_written_before_coefficients": true,
+  "task": "T8A.2"
+}

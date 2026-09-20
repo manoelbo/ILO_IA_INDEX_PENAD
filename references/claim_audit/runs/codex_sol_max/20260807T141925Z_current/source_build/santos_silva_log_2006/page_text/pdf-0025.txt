@@ -1,0 +1,38 @@
+Finally, the sixth column shows the Poisson results for the whole sample (including zero-
+trade pairs).
+  The first point to notice is that PPML-estimated coeﬃcients are remarkably similar
+using both the whole sample and the positive-trade subsample.22 However, most coef-
+ficients diﬀer — oftentimes significantly — from those obtained using OLS. This suggests
+that in this case, heteroskedasticity (rather than truncation) is responsible for the diﬀer-
+ences between PPML results and those of OLS using only the observations with positive
+trade. Further evidence on the importance of the heteroskedasticity is provided by the
+two-degrees-of-freedom special case of White’s test for heteroskedasticity (see Wooldridge,
+2002, p. 127), which leads to a test statistic of 476.6 and to a p-value of zero. That is,
+the null hypothesis of homoskedastic errors is unequivocally rejected.
+  Poisson estimates reveal that the coeﬃcients on importer’s and exporter’s GDPs in
+the traditional equation are not, as generally believed, close to 1. The estimated GDP
+elasticities are just above 0.7 (s.e. = 0.03). OLS generates significantly larger estimates,
+especially on exporter’s GDP (0.94, s.e. = 0.01). Although all these results are conditional
+on the particular specification used,23 it is worth pointing out that unit-income elasticities
+in the simple gravity framework are at odds with the observation that the trade-to-GDP
+ratio decreases with total GDP, or, in other words, that smaller countries tend to be more
+open to international trade.24
+  The role of geographical distance as trade deterrent is significantly larger under OLS;
+the estimated elasticity is −1.17 (s.e. = 0.03), whereas the Poisson estimate is −0.78
+(s.e. = 0.06). This lower estimate suggests a smaller role for transport costs in the
+determination of trade patterns. Furthermore, Poisson estimates indicate that, after
+controlling for bilateral distance, sharing a border does not influence trade flows, while
+  22
+       The reason why truncation has little eﬀect in this case is that observations with zero trade correspond
+to pairs for which the estimated value of trade is close to zero. Therefore, the corresponding residuals
+are also close to zero and their elimination from the sample has little eﬀect.
+  23
+     This result holds when one looks at the subsample of OECD countries. It is also robust to the
+exclusion of GDP per capita from the regressions.
+  24
+     Note also that PPML predicts almost equal coeﬃcients for the GDPs of exporters and importers.
+
+
+
+                                                      24
+

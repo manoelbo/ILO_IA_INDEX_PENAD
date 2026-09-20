@@ -1,0 +1,47 @@
+percentage effect, since that ATT is dependent on the units in which the outcome is measured
+(Proposition 1).
+       In what follows, we consider alternative parameters that may be of interest when the marginal
+distributions of the potential outcomes are identified for some population of interest. Such iden-
+tification is obtained in RCTs or under conditional unconfoundedness (for the full population), as
+well in instrumental variables settings (for the population of compliers), as these designs do not rely
+on functional form assumptions for identification. If the original identification strategy relies on a
+functional form assumption (e.g. parallel trends), then obtaining identification of the alternative
+parameters discussed below may require different identifying assumptions. We discuss these issues
+in detail in Section 5.2, where we revisit the difference-in-differences application in Sequeira (2016).
+
+4.1      When the goal is interpretable units
+We first consider the case where the researcher’s primary goal is to obtain a treatment effect pa-
+rameter with easily interpretable units, such as percentages.
+
+Normalizing the ATE in levels.               One possibility is to target the parameter
+
+                                                       ErY p1q ´ Y p0qs
+                                           θATE% “                      ,
+                                                          ErY p0qs
+
+which is the ATE in levels expressed as a percentage of the control mean. For example, if a researcher
+is studying a program D meant to reduce healthcare spending Y , then θATE% is the percentage
+reduction in costs from implementing the program. This parameter is point-identified and scale-
+invariant, and thus has an intuitive percentage interpretation. Importantly, however, θATE% is the
+percentage change in the average outcome between treatment and control, but is not an average of
+individual-level percentage changes.22 That is, θATE% does not take the form EP rgpY p1q, Y p0qqs,
+thus avoiding the trilemma in Proposition 2.
+       We note that θATE% is consistently estimable by Poisson regression (see Gourieroux et al. (1984);
+Santos Silva and Tenreyro (2006); Wooldridge (2010, Chapter 18.2)) under an appropriate identi-
+fying assumption. With a randomly assigned D, for example, estimation of Y “ exppα ` βDqU
+by Poisson quasi-maximum likelihood (QMLE) consistently estimates the population coefficient β,
+which satisfies eβ ´ 1 “ ErY p1qs{ErY p0qs ´ 1 “ θATE% . In Section 5 below, we illustrate how θATE%
+can be estimated by Poisson regression in practice in several empirical examples, including both an
+RCT and DiD setting.
+  We also emphasize that θATE% is influenced by treatment effects along both the intensive and
+extensive margins. In particular, the numerator of θATE% is the ATE in levels. Thus, if an individual
+has a treatment effect of say 1, that contributes the same to θATE% regardless of whether their
+outcome changes from 0 to 1 (an extensive margin change) or 1 to 2 (an intensive margin change).
+  22
+    This is roughly analogous to how quantile treatment effects show changes in the quantiles of the potential outcomes
+distributions, but not the quantiles of the treatment effects (without further assumptions).
+
+
+
+                                                          17
+

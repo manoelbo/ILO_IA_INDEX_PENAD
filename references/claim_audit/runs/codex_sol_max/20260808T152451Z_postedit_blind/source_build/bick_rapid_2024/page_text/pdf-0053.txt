@@ -1,0 +1,31 @@
+D.2   Industry Labor Shares
+
+                          Table D.1: Labor Shares by Industry
+
+Industry (NAICS2)                                                        Labor Share
+Mining, quarrying, and oil and gas extraction                               0.227
+Utilities                                                                   0.237
+Construction                                                                0.717
+Manufacturing                                                               0.479
+Wholesale trade                                                             0.528
+Retail Trade                                                                0.583
+Transportation and Warehousing                                              0.660
+Information                                                                 0.389
+Finance and Insurance                                                       0.547
+Real Estate and Rental and Leasing                                          0.070
+Professional, Scientific, and Technical Services                            0.759
+Management of Companies and Enterprises                                     0.887
+Administrative and Support and Waste Management and Remediation Services    0.780
+Educational Services                                                        0.849
+Health Care and Social Assistance                                           0.846
+Arts, Entertainment, and Recreation                                         0.806
+Accommodation and Food Services                                             0.696
+Other Services (except Public Administration)                               0.837
+Public Administration                                                       0.503
+              Notes: Estimates are for the BLS in 2023 from Karabarbounis (2024).
+
+
+
+
+                                              21
+

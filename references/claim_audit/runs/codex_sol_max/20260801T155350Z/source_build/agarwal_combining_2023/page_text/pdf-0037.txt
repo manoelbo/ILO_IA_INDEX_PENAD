@@ -1,0 +1,45 @@
+                                                                                                                            37
+
+                         Table 3: Model Selection: Top Level with AI – IVGMM
+
+                                                  (1)         (2)         (3)          (4)          (5)      (6)
+         Automation Bias (b)                     0.29        0.34        0.35         0.19         0.27      0.35
+                                                (0.02)      (0.03)      (0.03)       (0.02)       (0.02)   (0.03)
+         Own Info Bias (d)                       1.10        1.08        1.05         1.07         1.06     1.05
+                                                (0.01)      (0.01)      (0.01)       (0.01)       (0.01)   (0.01)
+         Constant                                0.40        0.40        0.37         0.31         0.33     0.36
+                                                (0.03)      (0.04)      (0.04)       (0.03)       (0.03)   (0.04)
+         Focal sA                                  ✓           ✓           ✓            ✓            ✓        ✓
+         Other sA                                                          ✓                                  ✓
+         Focal sE                                              ✓           ✓                        ✓         ✓
+         Other sE                                                          ✓                                  ✓
+         Clinical History sE                                                          ✓             ✓         ✓
+         J-Statistic                            18.23       16.86        0.17         4.3          10.7     0.09
+         MMSC-BIC                               -23.96      -21.12      -8.27       -12.57        -10.39    -8.35
+         Number of Moments                        13          12           5           7            8          5
+         Observations                           11420       11420       11420       11420         11420    11420
+         R-Squared                               0.50        0.49        0.52        0.46          0.48     0.52
+Note: This table summarizes estimates of b and d for different specifications of the update term. The models differ by whether
+the update term conditions on the signal sE of the pathology at hand, the AI’s and the radiologist’s signal of other pathologies
+as well as the information that is provided in the clinical history of a patient. Each model is estimated via GMM. The reported
+MMSC-BIC statistic adjusts the J-statistic for the number of included parameters, awarding bonus terms for models with fewer
+parameters (see Andrews and Lu (2001) for details). This table presents a subset of the models that we select from. The full
+set of models included in the selection procedure are presented in table C.20. The update term is estimated via random forest
+as described in appendix section C.5.2. Standard errors are clustered at the radiologist level.
+
+
+
+These deviations also explain the heterogeneous conditional average treatment effects docu-
+mented in section 4. Figure 6 shows the treatment effect of AI on the deviation from ground
+truth of our radiologists along with three different models under which we compute the same
+treatment effects: the Bayesian benchmark, the model in equation (5) where radiologists use
+the correct updating term, and the selected model from table 3. As expected, the Bayesian
+would benefit significantly from gaining access to the AI signal. In fact, as indicated by the
+large reductions in the deviation from the ground truth, there is significant potential value
+in combining the human and the AI signal. Imposing the model in equation (5) with the
+correct updating term – column (6) – reduces these improvements and moves the implied
+treatment effects closer to the data. However, we see that throughout the entire signal range
+of sA , such a decision-maker would still unambiguously benefit from gaining access to the AI.
+Only when we impose the selected update term, under which radiologists do not account for
+the dependence of signals, does the model generate the observed negative treatment effect
+

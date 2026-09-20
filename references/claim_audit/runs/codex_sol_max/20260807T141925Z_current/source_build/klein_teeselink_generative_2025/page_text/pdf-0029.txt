@@ -1,0 +1,37 @@
+should consider addressing both immediate displacement and longer-term structural
+changes through, for example, education reform and alternative skill development
+pathways.
+    Several important limitations qualify our findings. First, our identification strat-
+egy cannot rule out other shocks that differentially affected high- versus low-exposure
+firms or occupations, such as sector-specific demand shifts, regulatory changes, or
+complementary technological developments that correlate with LLM susceptibility,
+although our robustness checks provide evidence against most of these channels.
+Second, the LinkedIn-based employment data likely overrepresents professional and
+technical workers who maintain online profiles while underrepresenting manual, ser-
+vice, and informal sector employment, potentially inflating our estimates if LLM
+impacts concentrate among digitally-active occupations. Third, our exposure mea-
+sures from Eloundou et al. (2024) capture potential vulnerability to LLM disruption
+rather than actual adoption, which depends on unobserved factors including finan-
+cial resources, management quality, technological infrastructure, and organizational
+culture. Firms with high exposure scores may resist adoption while nominally less-
+exposed firms might implement LLMs aggressively, attenuating our reduced-form
+estimates. Finally, our framework cannot observe the creation of entirely new occu-
+pational categories enabled by LLM technology such as prompt engineers, AI safety
+specialists, or human-AI collaboration designers, which historical evidence suggests
+constitutes a primary channel through which technological change generates em-
+ployment (Restrepo, 2024).
+    These limitations highlight the preliminary nature of our findings and provide po-
+tential avenues for future research. Most fundamentally, our 30-month observation
+window may capture only short-term labor market disruption rather than long-term
+equilibrium outcomes. Previous general-purpose technologies required decades for
+complementary innovations, business process reengineering, and workforce retrain-
+ing to fully work their way through the labor market. The initial displacement we
+document might reverse as organizations develop new LLM-augmented tasks where
+humans maintain comparative advantage, or intensify as models become more ca-
+pable and adoption barriers fall. In fact, we already see some evidence that the
+decrease in hiring in highly exposed occupations attenuates towards the end of the
+sample period. Future research should extend the analysis period to distinguish be-
+tween temporary adjustment and permanent structural change. Additionally, future
+
+                                          29
+

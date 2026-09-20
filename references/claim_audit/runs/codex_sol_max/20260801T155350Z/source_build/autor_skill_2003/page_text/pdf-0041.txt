@@ -1,0 +1,61 @@
+                      SKILL CONTENT OF TECHNICAL CHANGE                                               1319
+
+                                               TABLE VII
+                                               (CONTINUED)
+
+                 1. 1970– 2. 1980– 3. 1990– 4. 1970– 5. 1980– 6. 1980–        7. 1980–
+                   1980      1990      1998      1998      1998      1998       1998
+                 extensive extensive extensive extensive extensive intensive extensive 1
+                  margin    margin    margin    margin    margin    margin    intensive
+
+                 D. 103 annual changes in college-equivalent share of employment in percentage
+                      points, predicted by impact of computerization on task input (panel B)
+
+                    NIPA computer investment measure                     CPS computer use measure
+
+
+Nonroutine          0.40         0.65         1.10          0.69         1.41          0.40         1.81
+  tasks
+Routine             0.29         0.48         0.81          0.51         0.80          1.04         1.84
+  tasks
+All tasks           0.70         1.12         1.91          1.19         2.21          1.44         3.65
+
+                  E. Estimated log demand shifts for college-equivalent/noncollege-equivalent
+                                 labor 1970–1998 (100 3 annual log changes)
+
+                 Using constant-elasticity of substitution model to estimate changes in college
+                                                     demand
+
+
+s 5 0.0             4.99         2.53         2.25          3.33                                    2.41
+s 5 1.4             3.95         4.65         2.76          3.86                                    3.81
+s 5 2.0             3.50         5.56         2.98          4.09                                    4.41
+
+
+                              Using task model to predict changes in college demand
+
+Total task D        1.23         1.29         1.43          1.31         1.56        20.06          1.51
+  (panel C)
+Predicted by        0.64         0.70         0.98          0.76         1.39          0.91         2.29
+  computer-
+  ization
+  (panel D)
+
+     Panels C and D: Implied employment share changes for college-equivalent labor (in percentage points)
+are calculated as the inner product of observed or predicted changes in task input from panels A and B and
+the coefcient vector from a xed coefcient model of educational input. For extensive margin task shifts, this
+coefcient vector is estimated from a regression of college equivalent employment (in FTEs) in 140 consistent
+CIC industries on the ve DOT measures of industry task input (in centiles) and a constant using the 1980
+MORG sample. For intensive margin task shifts, the coefcient vector is estimated from a regression of
+college equivalent employment in 470 COC occupations on the ve DOT measures of occupational task input
+(in centiles) and a constant using the 1984 CPS sample. College-equivalents labor is dened as all workers
+with college or greater education plus half of those with some college.
+     Panel E: Fixed coefcients log relative demand shifts are calculated as the change in the log ratio of
+college-equivalent/noncollege-equivalent employment using the initial (1970, 1980, or 1990) college-equiva-
+lent/equivalent employment share in full-time equivalents and the implied percentage point change in this
+share from Panels C and D.
+     Constant Elasticity of Substitution (CES) implied relative demand shifts for college-equivalent labor are
+calculated following Autor, Katz, and Krueger [1998] using a CES aggregate production function with two
+inputs, college and high school equivalents, and an elasticity of substitution denoted by s. See Table II of
+Autor, Katz, and Krueger for details.
+

@@ -1,0 +1,52 @@
+                                                     WORKING PAPER
+
+
+or task while maintaining consistent quality. We anticipate that adoption will be highest and most immediate
+for applications that realize a considerable increase in productivity. Although this threshold is somewhat
+arbitrary, it was selected for ease of interpretation by annotators. Moreover, regardless of the chosen threshold,
+we guessed that the real-world reduction in task time would likely be slightly or significantly lower than our
+estimates, leading us to opt for a relatively high threshold. In our own validation labeling, we found that this
+corresponded closely to whether an LLM or LLM-powered software could perform the core part of a task or
+nearly the entire task.
+
+               Comparison                                     𝛾    Weighting        Agreement         Pearson’s
+               GPT-4, Rubric 1; Human                        𝛼     E1                      80.8%              0.223
+                                                             𝛽     E1 + .5*E2              65.6%              0.591
+                                                             𝜁     E1 + E2                 82.1%              0.654
+               GPT-4, Rubric 2; Human                        𝛼     E1                      81.8%              0.221
+                                                             𝛽     E1 + .5*E2              65.6%              0.538
+                                                             𝜁     E1 + E2                 79.5%              0.589
+               GPT-4, Rubric 1; GPT-4, Rubric 2              𝛼     E1                      91.1%              0.611
+                                                             𝛽     E1 + .5*E2              76.0%              0.705
+                                                             𝜁     E1 + E2                 82.4%              0.680
+
+Table 2: Model and human comparison of agreement and Pearson’s correlation scores. The agreement score
+is determined by looking at how often the two groups agree on the annotation (e.g. E0, E1 or E2). In the
+paper we use GPT-4, Rubric 1. Core tasks are given twice the weight at the occupation-level as supplemental
+tasks. All weights sum to one.
+
+    We then collected both human and GPT-4-generated annotations using the exposure rubric, which underlie
+the bulk of the analyses in this paper.
+
+     • Human Ratings: We obtained human annotations by applying the rubric to each O*NET Detailed
+       Worker Activity (DWA) and a subset of all O*NET tasks and then aggregated those DWA and task
+       scores5 at the task and occupation levels. The authors personally labeled a large sample of tasks and
+       DWAs and enlisted experienced human annotators who have reviewed GPT-3, GPT-3.5 and GPT-4
+       outputs as part of OpenAI’s alignment work (Ouyang et al., 2022).
+
+     • GPT-4 Ratings: We administered a similar rubric to an early version of GPT-4 (OpenAI, 2023b) but on
+       all task/occupation pairs rather than DWAs. We made slight modifications to the rubric (which was
+       used as a "prompt" to the model in this case) to enhance agreement with a set of human labels. Full
+       agreement rates are given in Table 2.
+
+     We construct three primary measures for our dependent variable of interest: (i) 𝛼, corresponding to E1 in
+the exposure rubric above, anticipated to represent the lower bound of the proportion of exposed tasks within
+an occupation, (ii) 𝛽, which is the sum of E1 and 0.5*E2, where the 0.5 weight on E2 is intended to account
+for exposure when deploying the technology via complementary tools and applications necessitates additional
+investment, and (iii) 𝜁, the sum of E1 and E2, an upper bound of exposure that provides an assessment of
+maximal exposure to an LLLM and LLM-powered software. We summarize agreement between annotation
+groups and measures in Table 2. For the remainder of the analysis, if not specified, the reader may assume that
+    5The authors annotated DWAs that clearly required a high degree of physicality or manual dexterity, and the contracted annotators
+labeled the remaining activities, along with a subset of tasks including those without associated DWAs and those for which there was
+no clear task-level annotation after aggregating the DWA annotations.
+

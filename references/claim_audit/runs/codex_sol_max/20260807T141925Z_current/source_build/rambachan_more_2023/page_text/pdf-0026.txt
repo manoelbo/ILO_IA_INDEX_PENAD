@@ -1,0 +1,49 @@
+2580                                         REVIEW OF ECONOMIC STUDIES
+
+
+
+
+                                                                                                                                              Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                        F IGURE 2
+           Simulation results for SD (M) and  S D P B (M): Median efficiency ratios for proposed procedures.
+Note: Median efficiency ratios for our proposed confidence sets over SD (M) and  S D P B (M) under the assumption of parallel trends
+and zero treatment effects (i.e. β = 0). The efficiency ratio for a procedure is defined as the efficiency bound divided by the procedure’s
+expected excess length. The results for the FLCI are plotted in purple, conditional-LF (“C-LF Hybrid”) hybrid in blue, and conditional
+confidence set in green. Results are averaged over 1,000 simulations for each of the 12 papers surveyed, and the median across papers is
+reported here.
+
+
+
+
+    We report results for three methods for constructing confidence sets: FLCIs, conditional
+confidence sets, and conditional-least favourable hybrid confidence sets.30 For  R M ( M̄) and
+ S D R M ( M̄), we omit results for the FLCI since the FLCIs have infinite length.
+
+
+5.2.     Simulation results
+To compare results easily across the 12 papers in the simulation study, we normalize the units
+of δ−1 and M by the standard deviation of β̂ 1 (denoted σ1 ). Large normalized values of M or
+δ−1 correspond with the case where the identified set is large relative to sampling variation,
+mimicking our asymptotic power results in which sampling variation grows small relative to the
+identified set. In the graphs below, we report the median value of excess length efficiency across
+the papers in the survey. The normalization described above implies that the units of the x-axis
+correspond with the worst-case bias of the naive estimator β̂ 1 divided by its standard error.31
+
+    5.2.1. Results for SD (M). The left panel of Figure 2 plots the efficiency ratio for each
+procedure as a function of M/σ1 when  = SD (M). All procedures perform well as M/σ1
+grows large with efficiency ratios approaching 1, illustrating our asymptotic (near-)optimality
+results for this design. However, the FLCIs perform best for smaller values of M/σ1 , includ-
+ing the point-identified case where M = 0, illustrating the finite-sample near-optimality results
+for the FLCIs when Assumption 8 holds. Although the conditional and hybrid confidence sets
+have efficiency approaching the optimal bound for M/σ1 large, their efficiency is only about
+50% when M/σ1 = 0, in which case θ is point identified and thus LICQ does not hold. The
+conditional and hybrid confidence sets perform similarly.
+
+
+
+       30. For the conditional-least favourable hybrid confidence sets, we use a first-stage least-favourable test of size
+κ = α/10, following ARP and Romano et al. (2014).
+       31. For β̂ 1 normally distributed, the worst-case coverage of a conventional 95% confidence interval as a function
+of the normalized worst-case bias b is (1.96 + b) − (−1.96 + b), which is 0.95 for b = 0, 0.83 for b = 1, 0.48 for
+b = 2, etc.
+

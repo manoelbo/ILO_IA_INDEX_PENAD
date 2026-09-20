@@ -1,0 +1,46 @@
+  Generative AI as Seniority-Biased Technological Change:
+           Evidence from U.S. Résumé and Job Posting Data*
+
+                                   Seyed M. Hosseini†                        Guy Lichtinger‡
+
+
+                                             First Version: August 31, 2025
+                                                This Version: June 6, 2026
+
+
+                                                              Abstract
+
+             This paper studies whether generative AI (GenAI) constitutes seniority-biased tech-
+        nological change, disproportionately reducing demand for junior workers. We de-
+        velop a conceptual framework in which GenAI adoption reduces junior labor de-
+        mand through task displacement and labor-saving productivity gains. We test the
+        framework’s mechanisms and implications using U.S. résumé data covering 65 mil-
+        lion workers at more than 280,000 firms, allowing us to track firm-level employment
+        by seniority. GenAI adoption is identified through text analysis that detects ‘GenAI
+        integrator’ job postings, signaling active GenAI implementation by firms. Follow-
+        ing adoption, junior employment declines in adopting firms relative to non-adopters,
+        while senior employment trends remain largely unchanged. This decline is concen-
+        trated in occupations most exposed to GenAI and is driven primarily by slower hiring
+        rather than increased separations. Moreover, in adopting firms, GenAI-exposed tasks
+        become increasingly less likely to appear in junior task bundles.
+
+    * We are extremely grateful to Lawrence Katz, Jesse Shapiro, and Ludwig Straub for their continued guidance and feedback on this
+project. We are also deeply thankful to David Autor, Erik Brynjolfsson, Gabriel Chodorow-Reich, Oren Danieli, Eric Gold, Jonathon
+Hazell, Ori Heffetz, David Lagakos, Amanda Pallais, Santiago Medina, and Austin Zheng for their invaluable discussions and advice
+throughout various stages of this work. We additionally thank Netanel Ben-Porath, Shotaro Beppu, Martin Bernstein, Olena Bogdan,
+Bharat Chandar, Ruyu Chen, Fiona Chen, Rupsha Debnath, Cameron Deal, Aristotle Epanomeritakis, Sarah Gao, Jay Garg, Shao-Yu
+Jheng, Xianruo Kang, Iris Li, Saketh Prazad, Ewan Rawcliffe, Emanuel Schertz, Peyman Shahidi, Ragini Srinivasan, James Stratton,
+and Katherine Wang as well as participants in the Macro Lunch at Harvard, Digital Economy Lab seminar series at Stanford University,
+the Economics of AI Reading Group at MIT, the Midwest Economics Association Annual Meetings 2026, the Macro Seminar at the Boston
+Fed, the MAD Conference at Columbia Business School, the Departmental Seminar at the Hebrew University of Jerusalem, the Applied
+Economics Seminar at Tel Aviv University, and the AI in the Workplace Conference at the University of Chicago for their valuable feedback
+and discussion. All errors are our own.
+Latest Version: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425555.
+    † Harvard University. Email: shosseinimaasoum@fas.harvard.edu
+   ‡ Harvard University. Email: guylichtinger@g.harvard.edu
+
+
+
+
+                                                                   1
+

@@ -1,0 +1,49 @@
+individual usage) and workplace-level effects (e.g., workplace employment by employer
+initiatives).
+
+
+Dynamic Difference-in-Differences. To assess how impacts evolve over time, we
+employ a dynamic difference-in-differences specification that traces the monthly evolution
+of outcomes for adopters relative to non-adopters around the introduction of AI chatbots:
+
+                                  X                                X
+                        Yit =              λ1τ Xi 1{t=τ } +                  βτ Ai 1{t=τ } +αi + εit ,          (2)
+                                      τ                       τ ̸=2022M 11
+                                  |           {z         }    |              {z           }
+                                            Controls              Dynamic Diff-in-Diffs
+
+
+where αi are individual (workplace) fixed effects. The parameters of interest, βτ , capture
+the differential changes in labor market outcomes for adopters, indexed to November 2022,
+the release date of ChatGPT. We estimate Equation (2) by OLS and cluster the standard
+errors at the survey workplace-occupation level.
+
+
+Pooled Difference-in-Differences. To examine heterogeneous impacts across multiple
+dimensions, we also estimate a pooled specification comparing average outcomes of adopters
+and non-adopters before and after the introduction of AI chatbots. To capture dynamics,
+we estimate separate effects for each year following the launch of ChatGPT:13
+
+                        X                                                  2024
+                                                                           X
+                Yit =           λ1τ Xi 1{t=τ } + λ2 Ai t +                        βy Ai 1{y(t)=y} +αi + εit ,   (3)
+                            τ
+                                                         | {z }
+                                                                       y=2023
+                        |             {z           }   Time Trends     |            {z             }
+                                 Controls                                   Pooled Diff-in-Diffs
+
+
+where adopter-specific time trends guard against spurious pre-trends driving the estimates
+(which the dynamic specification instead reveals nonparametrically). The parameters of
+interest, βy , measure how labor market outcomes for adopters changed in year y after the
+introduction of AI chatbots. We estimate Equation (3) by OLS and cluster the standard
+errors at the survey workplace-occupation level.
+  13
+    To align with our dynamic difference-in-differences specification (Equation (2)), which defines post-
+periods as months after 2022M11, we include 2022M12 in the 2023 estimate.
+
+
+
+
+                                                                  22

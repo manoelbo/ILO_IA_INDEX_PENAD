@@ -1,0 +1,36 @@
+  Labor market impact potential of LLMs,” Science, 384, 1306–1308, publisher: American
+  Association for the Advancement of Science. 1, 2, 3.1, 3.3, 1, 1, 4.3, A1, A2, A3
+
+Felten,      E.,     M.   Raj,    and   R.   Seamans    (2021):         “Occupational,     indus-
+  try,    and geographic exposure to artificial intelligence:           A novel dataset and
+  its    potential   uses,”   Strategic Management Journal,       42,    2195–2217,      _eprint:
+  https://onlinelibrary.wiley.com/doi/pdf/10.1002/smj.3286. 2
+
+——— (2023): “How will Language Modelers like ChatGPT Affect Occupations and Indus-
+  tries?” ArXiv:2303.01157 [econ]. 2
+
+Felten, E. W., M. Raj, and R. Seamans (2018): “A Method to Link Advances in
+  Artificial Intelligence to Occupational Abilities,” AEA Papers and Proceedings, 108, 54–
+  57. 2
+
+——— (2019): “The Occupational Impact of Artificial Intelligence: Labor, Skills, and Po-
+  larization,” . 2
+
+Frank, M. R., Y.-Y. Ahn, and E. Moro (2025): “AI exposure predicts unemployment
+  risk: A new approach to technology-driven job loss,” PNAS Nexus, 4, pgaf107. 4
+
+Frey, C. B. and M. A. Osborne (2017): “The future of employment: How susceptible
+  are jobs to computerisation?” Technological Forecasting and Social Change, 114, 254–280.
+  2
+
+Gmyrek, P., J. Berg, and D. Bescond (2023): “Generative AI and Jobs: A Global
+  Analysis of Potential Effects on Job Quantity and Quality,” . 2
+
+Gmyrek, P., J. Berg, K. Kamiński, F. Konopczyński, A. Ładna, K. Rosłaniec,
+  and M. Troszyński (2025): “Generative AI and jobs: A 2025 update,” . 2
+
+Hampole, M., D. Papanikolaou, L. D. Schmidt, and B. Seegmiller (2025): “Ar-
+  tificial Intelligence and the Labor Market,” . 2, 4
+
+                                             17
+

@@ -1,0 +1,56 @@
+                                     b                  ?
+β̂j paq{σ̂βj paq, where σ̂βj paq “       e1j Ω̂β paqej { N . Analogously, let
+
+                               ˜                ¸´1 ˜                     ¸˜                ¸´1
+                                   1 ÿ                  1 ÿ                    1 ÿ
+                       Ω̂γ “           Xi Xi1               Xi Xi1 û2i            Xi Xi1
+                                   N i                  N i                    N i
+
+be the heteroskedasticity-robust variance estimator for γ̂, the OLSb       estimate of γ, where ui “ 1rYi ą
+       1
+                                                                                        ?
+0s ´ Xi γ̂. The t-statistic for γ̂j is then t̂γj “ γ̂j {σ̂γj , where σ̂γj “ e1j Ω̂γ ej { N .
+Proposition 7. Suppose that N1 i Xi Xi1 is full-rank and that σ̂γj ą 0. If the function m satisfies
+                                   ` ř           ˘
+
+parts 1 and 2 of Proposition 1 and γ̂j ą 0, then t̂βj paq Ñ t̂γj as a Ñ 8.
+    It follows that when the units of Y are made large, the t-statistic for a treatment effect estimate
+for mpY q estimated using OLS will converge to the t-statistic for the OLS estimate of the extensive
+margin. Appendix Figure 1 shows that, indeed, the t-statistics for estimates using arcsinhpY q in the
+AER tend to be close to the t-statistics for the extensive margin, and tend to become even closer
+after rescaling the units by a factor of 100.
+
+Proof of Proposition 6. Fix j P t2, ..., Ju. Note that βp0q “ EQ rXX 1 s´1 ErXmp0qs, is the coefficient
+from a regression of a constant outcome mp0q on X, and thus β1 p0q “ mp0q while βk p0q “ 0 for k ě 2.
+Thus βj p0q “ 0. To complete the proof, we will first show that βj pan q “ γj logpan q ` oplogpan qq.
+Hence, if γj ą 0, then |βj paq| Ñ 8 as a Ñ 8. We will then establish that βj paq is continuous
+for a P r0, 8q. The fact that one can obtain any positive value for |βj paq| then follows from the
+intermediate value theorem.
+    For ease of notation, let ν 1 “ e1j EQ rXX 1 s´1 , so that βj paq “ EQ rν 1 XmpaY qs.
+    We first show that βj pan q “ γj logpan q ` oplogpan qq. Consider a sequence an Ñ 8, and assume
+without loss of generality that an ą e. Let fn px, yq “ ν 1 x¨mpan yq{ logpan q. Observe that fn px, yq Ñ
+ν 1 x ¨ 1ry ą 0s pointwise, since fn px, 0q “ ν 1 x ¨ mp0q{ logpan q Ñ 0, while for y ą 0,
+
+                                          mpan yq            mpan yq logpan q ` logpyq
+                    fn px, yq “ ν 1 x ¨            “ ν 1x ¨                            Ñ ν 1 x,
+                                          logpan q          logpan yq    logpan q
+
+where we use the fact that mpyq{ logpyq Ñ 1 as y Ñ 8. We showed in the proof to Proposition 4
+that
+                           |mpan yq|
+                                     ď κ ` 2 ¨ 1ry ą 0s ¨ p1 ` | logpyq|q,
+                            logpan q
+which implies that
+
+                     |fn px, yq| ď |ν 1 x ¨ pκ ` 2 ¨ 1ry ą 0s ¨ p1 ` | logpyq|qq| “: f px, yq.
+
+Moreover, part 2 of the proposition implies that f pX, Y q is integrable. From the dominated con-
+vergence theorem, it follows that
+
+                             βj pan q
+                                      “ EQ rfn pX, Y qs Ñ EQ rν 1 X 1rY ą 0ss “ γj .
+                            logpan q
+
+
+                                                           8
+

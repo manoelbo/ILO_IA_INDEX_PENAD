@@ -1,0 +1,38 @@
+                            Table 4: Effects of AI adoption on wages
+
+                                (1)                (2)                (3)                    (4)
+                             Wage (log)         Wage (log)       Wage/Empl.(log)        Wage/Empl.(log)
+                            With controls      With controls      With controls          With controls
+ AI adoption (actual)          0.135***                               0.069***
+                                (0.010)                                (0.008)
+ AI adoption (US-based)                            0.024*                                    0.033***
+                                                   (0.014)                                    (0.011)
+ Investment (lag)                 0.002             -0.000              0.005                  0.002
+                                 (0.004)           (0.005)             (0.004)                (0.004)
+ Profitability (lag)           0.226***           0.269***            0.160***              0.193***
+                                 (0.033)           (0.033)             (0.028)                (0.028)
+ Financial leverage (lag)      -0.129***         -0.107***            -0.120***             -0.108***
+                                 (0.022)           (0.023)             (0.017)                (0.019)
+ Total assets (log, lag)        0.342***         0.354***             0.170***               0.171***
+                                 (0.005)           (0.005)             (0.004)                (0.004)
+ Size FE                          Yes               Yes                  Yes                   Yes
+ Age FE                           Yes               Yes                  Yes                   Yes
+ Country-sector-wave FE           Yes               Yes                  Yes                   Yes
+ Observations                    34249             29304                34249                 29304
+ R-squared                       0.865             0.868                0.569                 0.580
+ Adjusted R-squared              0.859             0.860                0.548                 0.556
+
+
+Note: The dependent variables are the log of the total wage bill (Columns 1-2) and the log of the average
+wage per employee (Column 3-4), and they are derived from EIBIS. AI adoption (US-matched) is the
+AI implementation status derived from similar firms in the US. Investment is expressed as the annual
+change in total fixed assets. Profitability is the ratio of EBIT to total assets. Financial leverage is the
+ratio of loans and long-term debt to total assets. All control variables come from ORBIS and are lagged
+by 1 year. Standard errors clustered at the country-sector-wave level are reported in parentheses. *, **,
+*** correspond to 0.1, 0.05 and 0.01 significance levels, respectively.
+
+
+
+
+                                                    19
+

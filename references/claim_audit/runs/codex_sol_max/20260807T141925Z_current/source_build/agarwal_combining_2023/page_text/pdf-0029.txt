@@ -1,0 +1,66 @@
+                                                                                                                        29
+
+not correctly account for the dependence between sA           E
+                                                     i and sir , which we call signal dependence
+neglect. For example, if humans act as-if sA         E
+                                              i and sir are independent conditional on ωi even
+if they are not, then their posterior beliefs can be written as
+                                                                                                    
+                     pr ωi = 1|sA    E
+                                i , sir                  πr s A
+                                                              i |ωi = 1                  πr ωi = 1|sE
+                                                                                                    ir
+               log                            = br log                        + dr log                       ,          (6)
+                     pr (ωi = 0|sA    E
+                                 i , sir )               πr (sA
+                                                              i |ωi = 0)                 πr (ωi = 0|sE
+                                                                                                     ir )
+
+
+where br and dr are allowed to differ from 1 as above. In the case when the signals are jointly
+multivariate normal and br = dr = 1, signal dependence neglect yields correlation neglect as
+defined in (Enke and Zimmermann, 2019).26 More generally, we will consider models that
+vary the conditioning set in the first term on the right-hand side and the dimension of sA    i
+in the first term on the right-hand side. The specific examples are motivated and discussed
+further in section 5.3 below.
+We intend the functional form above as descriptions of humans’ updating rules and will
+remain agnostic about underlying mechanisms and micro-foundations. In particular, we
+remain silent on whether our participants are Bayesians that are utilizing the incorrect joint
+                            
+distribution of ωi , sA
+                      i , sE
+                           ir when updating their beliefs or if they are non-Bayesians. The
+former type of model, known as a quasi-Bayesian model,27 can generate automation bias
+or neglect as well as correlation biases.28 An implicit assumption in our model, and likely
+other micro-foundations for the functional forms above as well, is that the signal acquired
+by the human is invariant to the provision of AI assistance. Whether additional training,
+or experience with the AI can correct deviations from the benchmark model is therefore
+something that we leave for future work.
+Nonetheless, the models above will prove useful for our purposes. From a theoretical per-
+spective, they will help outline the types of deviations that potentially decrease decision
+quality. From an empirical perspective, they help understand the drivers of the treatment
+effects documented earlier and turn out to be a good approximation to the data from the
+experiment.
+                                                       
+  26
+     If sA      E                                  A E
+         i and sir are unidimensional with si , sir ∼ N (0, Σr ), then the covariance          matrix    Σr is a sufficient
+                                                                                                 A     E
+statistic for the posterior   probability  that   ωi =  1 given   the  signals if   ωi   = 1  s i + s ir ≥ εi   and εi is
+independent of sA  i , sE
+                        ir   .
+  27
+     See Rabin (2013) for a definition and Barberis et al. (1998); Rabin (2002); Rabin and Vayanos (2010) for
+examples.
+                                                                E b
+                                                                                                     
+  28
+     To see this, assume that pr sA            E         A
+                                      i |ωi , sir = π si |ωi , sir     and pr sE                   E
+                                                                                ir , ωi = πr si , ωi to generate the
+functional form in equation (5) for any br as long as dr = 1. The derivation of equation (6) is similar. In
+contrast to automation bias/neglect and correlation biases, own-information
+                                                                                     bias/neglect cannot be derived
+in a quasi-Bayesian model because we assume that pr ωi |sE                       E
+                                                                  ir = πr ωi |sir .
+

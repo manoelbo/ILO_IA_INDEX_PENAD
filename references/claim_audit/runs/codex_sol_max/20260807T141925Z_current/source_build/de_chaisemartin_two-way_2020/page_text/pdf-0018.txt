@@ -1,0 +1,56 @@
+When there is no group such that Dg,t = 1, Dg,t−1 = Dg,t−2 = 0 or no group such that Dg,t =
+Dg,t−1 = Dg,t−2 = 0, we let DIDpl                                               pl
+                               +,t = 0, and we adopt the same convention for DID−,t = 0. Let
+
+                                          T
+                                                                                 !
+                                          X     N1,0,0,t          N
+                                DIDpl                    DIDpl             DIDpl
+                                                                   0,1,1,t
+                                   M =             pl       +,t +    pl       −,t .
+                                          t=3    NS                NS
+
+                                                                   h      i
+                                                                       pl
+Theorem 4 If Assumptions 1, 2, 4, 5, 9, 10, 12, and 13 hold, then E DIDM = 0.
+
+DIDpl+,t compares the evolution of the mean outcome from t − 2 to t − 1 in two sets of groups:
+those untreated at t − 2 and t − 1 buth treatedi at t, and those untreated at t − 2, t − 1, and t.
+If Assumptions 4 and 5 hold, then E DIDpl   +,t = 0. Similarly, if Assumptions 9 and 10 hold,
+   h        i             h        i
+E DIDpl                         pl
+         −,t = 0. Then, E DIDM = 0 is a testable implication of Assumptions 4, 5, 9, and 10,
+
+so finding DIDpl
+               M significantly different from 0 would imply that those assumptions are violated:
+groups that switch treatment experience different trends before that switch than the groups used
+to reconstruct their counterfactual trends when they switch.15 Note that DIDpl  M compares the
+trends of switching and stable groups one period before the switch. One can define other placebo
+estimators comparing those trends, say, two or three periods before the switch. DIDpl  M and all
+those other placebo estimators are computed by the did_multiplegt Stata package.
+
+
+5         Extensions
+
+In this section, we briefly review some of the extensions in our Web Appendix. First, we show
+that the decomposition of βf e in Theorem 1 can be extended to fuzzy designs where the treatment
+varies within (g, t) cells, to applications with a non binary treatment, and to two-way fixed effects
+regressions with control variables.16 In fuzzy designs or with a non-binary treatment, the weights
+in Theorem 1 remain essentially unchanged.
+We also consider two-way fixed effects regressions with covariates. Specifically, we study the
+coefficient of Dg,t in a regression of Yi,g,t on group and period fixed effects, Dg,t , and a vector of
+covariates Xg,t . We show that a result very similar to Theorem 1 applies to that coefficient, up
+to two differences. First, including covariates allows for different trends across groups, provided
+those differential trends are fully accounted for by a linear model in Xg,t − Xg,t−1 , the change in
+a group’s covariates. Specifically, instead of Assumptions 4 and 5, one needs to assume that
+
+                     E (Yg,t (0)|Dg , Xg ) − E (Yg,t−1 (0)|Dg , Xg ) = (Xg,t − Xg,t−1 )0 γ + λt ,
+    15
+         See also Callaway and Sant’Anna (2018), who propose another placebo test in staggered adoption designs.
+    16
+         The decomposition of βf d in Theorem 2 can also be extended to all of those cases.
+
+
+
+                                                         18
+

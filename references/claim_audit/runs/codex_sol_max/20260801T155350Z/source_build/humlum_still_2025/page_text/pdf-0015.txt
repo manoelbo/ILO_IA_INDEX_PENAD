@@ -1,0 +1,63 @@
+2.1      Regression Specifications
+
+Let Yit denote a labor market outcome (e.g., earnings) for worker i in month-year t, let Xi
+
+represent a vector of workers’ pre-determined characteristics (age, gender, experience, and
+
+occupation FEs), and let Ai indicate whether the worker has adopted AI chatbots. We
+
+examine both worker-level effects (e.g., worker earnings by chatbot usage) and workplace-
+
+level effects (e.g., workplace employment by chatbot initiatives).
+
+
+Dynamic Difference-in-Differences. To assess overall impacts, we employ a dynamic
+
+difference-in-differences specification that compares the monthly outcomes of adopters
+
+and non-adopters before and after the introduction of AI chatbots:
+
+                    X                           X                                     X
+        Yit =                λ1τ Xi 1{t=τ } +        λ2m 1{m=m(t)} +                           βτ Ai 1{t=τ } +β0 Ai + εit ,      (1)
+                        τ                       m                               τ ̸=2022M 11
+                    |           {z       }      |            {z             }   |              {z                }
+                  Pre-Determined Controls                Seasonality                 Dynamic Diff-in-Diffs
+
+
+where λ2m are month fixed effects that control for seasonality in labor market outcomes.
+
+The parameters of interest, βτ , capture the differential changes in labor market outcomes
+
+for adopters, indexed to November 2022, the release of ChatGPT. We estimate Equation
+
+(1) by OLS and cluster the standard errors by workplace-occupation level.
+
+
+Pooled Difference-in-Differences. To examine heterogeneous impacts across multiple
+
+dimensions, we use a pooled specification that compares average outcomes of adopters
+
+and non-adopters before and after the introduction of AI chatbots. To capture dynamics,
+
+we estimate separate effects for each year following their introduction.9 Our estimating
+
+equation reads:
+
+          X                              X                                                       2024
+                                                                                                 X
+Yit =             λ1τ Xi 1{t=τ } +           λ2m 1{m=m(t)} + λ3 t + λ4 Ai t +                            βy Ai 1{y(t)=y} +β0 Ai + εit ,
+              τ                          m
+                                                                       |        {z       }
+                                                                                             y=2023
+          |             {z           }   |          {z            }        Time Trends       |              {z             }
+        Pre-Determined Controls              Seasonality                                            Pooled Diff-in-Diffs
+                                                                                                                                 (2)
+   9
+    To align with our dynamic difference-in-differences specification (Equation (1)), which defines post-
+periods as months after 2022M11, we include 2022M12 in the 2023 estimate.
+
+
+
+
+                                                                      13
+

@@ -1,0 +1,57 @@
+    RAMBACHAN AND ROTH           A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                     2557
+
+in the estimation of the event-study coefficients. We introduce two main inference approaches,
+with different desirable properties depending on the shape of .
+    We first introduce a general inference approach that can accommodate a large class of choices
+for . This approach is based on the observation that conducting inference on θ can be cast as the
+problem of testing a system of moment inequalities, allowing us to leverage a large economet-
+rics literature on moment inequality testing (Canay and Shaikh, 2017 provide a recent review).
+The moments have a potentially large number of nuisance parameters that enter linearly, and
+we therefore consider an implementation of this approach based on the conditional and hybrid
+
+
+
+
+                                                                                                          Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+approaches of Andrews et al. (forthcoming, henceforth ARP), who considered moment inequal-
+ities with this structure. Uniform size control for these tests follows nearly immediately from
+results in ARP.
+    We then prove that the tests proposed by ARP have some desirable power properties in our
+context. First, the conditional and hybrid tests are consistent, in the sense that they have power
+approaching 1 against fixed alternatives outside of the identified set. Second, we prove that
+the conditional test has optimal local asymptotic power under a linear independence constraint
+qualification (LICQ) assumption. As described in Kaido et al. (2021), LICQ and related con-
+straint qualifications have been used widely in the partial identification literature, and are often
+imposed to ensure size control. By contrast, we show that the ARP conditional test is asymp-
+totically valid even when LICQ fails, but has optimal local asymptotic power when LICQ is
+satisfied. Intuitively, this result implies that the conditional test will perform well when the bind-
+ing and non-binding moments are “far apart” relative to the sampling variation in the data. We
+provide several intuitive examples to illustrate when this result will and will not be applicable.
+Our result also implies that the ARP hybrid test will have near-optimal local asymptotic power
+under LICQ. These power results are new, and exploit additional structure in our context not
+contained in ARP.
+    Our second approach to inference is based on fixed length confidence intervals (FLCIs)
+(Donoho, 1994). FLCIs have desirable finite-sample guarantees for particular s of interest. In
+particular, results from Armstrong and Kolesár (2018, 2020b) imply that when  is convex and
+centrosymmetric, FLCIs have near-optimal expected length in the finite-sample normal model.
+These results are applicable for one of our leading examples, SD , which restricts the smooth-
+ness of the difference in trends. In Monte Carlo simulations, we find that the use of such FLCIs
+can lead to substantial power gains over the conditional/hybrid approaches for SD when the
+length of the identified set is short relative to the sampling variation in the data. This is intuitive
+since the asymptotic power guarantees for the conditional/hybrid approaches are in the asymp-
+totic regime where sampling uncertainty is small relative to the length of the identified set, in
+contrast to the finite-sample guarantees for FLCIs. On the other hand, FLCIs are applicable for
+a much smaller class of s: indeed, we show that for many other choices of , they will be
+inconsistent in the strong sense that power against fixed points outside the identified set need not
+converge to one asymptotically.
+    Based on our theoretical results and Monte Carlo simulations, we recommend the ARP
+hybrid approach for general forms of , but prefer the FLCI approach in special cases (such
+as for SD ) where the conditions for consistency and finite-sample near-optimality are met.
+    We recommend that applied researchers use our methods to construct robust confidence sets
+under economically-motivated restrictions on how the pre-trends relate to the post-treatment vio-
+lations of parallel trends. Our tools can also be used to to conduct sensitivity analyses in which
+the researcher reports confidence sets under varying restrictions on the possible differences in
+trends. For example, if the researcher suspects that the confounding factors in the post-treatment
+periods are similar in magnitude to those in the pre-treatment periods, then it may be reasonable
+to impose that the post-treatment violations of parallel trends are no larger than the maximum
+

@@ -1,0 +1,93 @@
+             Figure 2: Have Adopting Workers Fared Differently? (Adopter DiD)
+                                   (a) Log Earnings: Differences in Means
+                             .15
+
+
+
+
+                              .1
+
+
+
+
+                             .05
+
+
+
+
+                              0
+
+
+
+
+                            -.05
+                              2021m1   2021m7   2022m1    2022m7      2023m1      2023m7    2024m1       2024m7
+
+                                                Encouraged Adopters            Non-Encouraged Adopters
+
+
+
+                            (b) Log Earnings: Difference-in-Differences (DiD)
+                             .15
+
+
+
+
+                              .1
+
+
+
+
+                             .05
+
+
+
+
+                              0
+
+
+
+
+                            -.05
+                              2021m1   2021m7   2022m1    2022m7      2023m1      2023m7    2024m1       2024m7
+
+                                                Encouraged Adopters            Non-Encouraged Adopters
+
+
+
+                                        (c) Occupational Mobility (DiD)
+
+                             .05
+
+                             .04
+
+                             .03
+
+                             .02
+
+                             .01
+
+                              0
+
+                            -.01
+
+                            -.02
+                              2021m1   2021m7   2022m1    2022m7      2023m1      2023m7    2024m1       2024m7
+
+                                                                       Adopters
+
+
+Notes: This figure shows labor market outcomes for chatbot adopters. Panels (a) and (b) separate adopters with and
+without employer encouragement, while Panel (c) pools the two (Figure E.13, Panel (b) shows the groups fare similarly). In
+all panels, adopters are compared to non-encouraged non-adopters. Panel (a) reports the difference in log earnings between
+AI chatbot adopters and non-adopters, controlling for occupation fixed effects, predetermined worker characteristics, and
+seasonality. Panel (b) presents the difference-in-differences corresponding to Panel (a), indexed to November 2022, the
+launch of ChatGPT. Panel (c) shows occupational mobility measured as full-time-equivalent (FTE) employment in workers’
+latest (December 2024) occupations. The difference-in-differences estimates are based on the specification in Equation (1).
+Shaded areas represent 95% confidence intervals. Sample: All completed responses from the 2024 survey linked to registry
+data.
+
+
+
+                                                               29
+

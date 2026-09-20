@@ -1,0 +1,61 @@
+                                                                                                                         35
+
+dence neglect when updating beliefs. As prefaced earlier, although the humans’ and AI’s
+signals are not conditionally independent given the ground truth, humans may act as-if they
+are. We will therefore estimate and select between models that vary the set of signals condi-
+tioned on in the update term. For example, in the case when radiologists behave as if sA  i and
+ E                                                                                   E
+sir are independent conditional on ωi , the update term drops the conditioning on sir . We can
+vary the pathologies across the set of models considered when constructing I (ci ).29 Including
+these models in our selection approach will also tell us whether radiologists’ assessments are
+separable across different pathologies.
+                                                                                                    h                i
+The correct model of behavior satisfies the conditional moment restriction E εirt | sE             A
+                                                                                           i,−r , si    =
+            E
+0, where si,−r collects the signals of the radiologists other than r in our experiment. For
+estimation, we utilize unconditional moment restrictions based on functions of sE              i,−r and
+                                                                                           π (        i )
+                                                                                               ωi =1|sA
+sA
+ i  that closely   mimic  the  terms   in   equation     (7). Our instruments include  log π ( ωi =0|sA
+                                                                                                          ,
+                                                                                                      i )
+                                      π ( ωi =1|sA ,sE )
+and leave-one-out averages of log π ω =0|sAi ,sEir′ for radiologists other than r that use various
+                                        ( i i ir′ )
+             E
+proxies for sir′ based on different sets of pathologies I (ci ) that are conditioned on.30 Empirical
+analogs of the resulting moment conditions are used to estimate the model using GMM.
+We will employ the model-selection procedure proposed in Andrews and Lu (2001) to select
+between non-nested models. This method utilizes the J-statistic of the GMM objective
+function, which is adjusted for the number of moments and parameters that are included
+in the model. The selection criterion, MMSC-BIC, penalizes models that reject a greater
+number of moment restrictions.
+
+
+5.4    Results
+
+Table 3 presents estimates from six models, which is a subset of the models we consider.31
+The first three models do not utilize clinical history when made available to the participants
+to construct the proxy for sEir whereas the last three models do. We consider three models
+in each of these two sets by varying I (ci ). The first corresponds to the case when the signal
+  29
+     The conditionally independent case corresponds to the extreme case in which I (ci ) = ∅, whereas the
+Bayesian model includes all pathologies.
+  30
+     Specifically, we construct fourteen instruments. The first is a constant and the second is the average of
+    π ( ωi =1|sE
+               ir ′ )
+log π ω =0|sE         for all r′ ̸= r. The remaining twelve construct the average of log π( ωi =1|sir′ )          ′
+                                                                                         π( ωi =0|sir′ ) for all r ̸= r by
+      ( i      ir ′
+                    )
+varying the conditioning variables sir . The different sets of conditioning variables in sir are presented in the
+second panel of appendix table C.21. These sets are used because they are the relevant terms in at least one
+of the models that we consider in the testing procedure.
+  31
+     See table C.20 in the appendix for the results from all models. Results from all pathologies with AI
+are qualitatively similar (see table C.21). These analyses were pre-registered except for the model selection
+exercise, which was not included in the pre-analysis plan.
+

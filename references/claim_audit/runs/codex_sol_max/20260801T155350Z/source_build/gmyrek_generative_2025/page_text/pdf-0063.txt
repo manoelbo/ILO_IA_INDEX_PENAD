@@ -1,0 +1,83 @@
+60    ILO Working Paper 140
+
+
+
+
+     Exposure      4-digit code   Occupation Name                                                    Mean   SD
+
+     Not Exposed   7124           Insulation Workers                                                 0.13   0.02
+
+     Not Exposed   7131           Painters and Related Workers                                       0.13   0.04
+
+     Not Exposed   7211           Metal Moulders and Coremakers                                      0.13   0.01
+
+     Not Exposed   7212           Welders and Flame Cutters                                          0.13   0.05
+
+     Not Exposed   7215           Riggers and Cable Splicers                                         0.13   0.03
+
+     Not Exposed   7234           Bicycle and Related Repairers                                      0.13   0.02
+
+     Not Exposed   7318           Handicraft Workers in Textile, Leather and Related Materials       0.13   0.03
+
+     Not Exposed   7511           Butchers, Fishmongers and Related Food Preparers                   0.13   0.03
+
+     Not Exposed   7544           Fumigators and Other Pest and Weed Controllers                     0.13   0.04
+
+     Not Exposed   8342           Earthmoving and Related Plant Operators                            0.13   0.02
+
+     Not Exposed   9332           Drivers of Animal-drawn Vehicles and Machinery                     0.13   0.08
+
+     Not Exposed   9412           Kitchen Helpers                                                    0.13   0.02
+
+     Not Exposed   3413           Religious Associate Professionals                                  0.12   0.07
+
+     Not Exposed   6210           Forestry and Related Workers                                       0.12   0.05
+
+     Not Exposed   6330           Subsistence Mixed Crop and Livestock Farmers                       0.12   0.05
+
+     Not Exposed   6340           Subsistence Fishers, Hunters, Trappers and Gatherers               0.12   0.05
+
+     Not Exposed   7132           Spray Painters and Varnishers                                      0.12   0
+
+     Not Exposed   7533           Sewing, Embroidery and Related Workers                             0.12   0.02
+
+     Not Exposed   7542           Shotfirers and Blasters                                            0.12   0.05
+
+     Not Exposed   8341           Mobile Farm and Forestry Plant Operators                           0.12   0.03
+
+     Not Exposed   9112           Cleaners and Helpers in Offices, Hotels and Other Establishments   0.12   0.02
+
+     Not Exposed   9212           Livestock Farm Labourers                                           0.12   0.03
+
+     Not Exposed   9214           Garden and Horticultural Labourers                                 0.12   0.02
+
+     Not Exposed   9329           Manufacturing Labourers Not Elsewhere Classified                   0.12   0.02
+
+     Not Exposed   7113           Stonemasons, Stone Cutters, Splitters and Carvers                  0.11   0.02
+
+     Not Exposed   7123           Plasterers                                                         0.11   0.01
+
+     Not Exposed   7214           Structural Metal Preparers and Erectors                            0.11   0.02
+
+     Not Exposed   7535           Pelt Dressers, Tanners and Fellmongers                             0.11   0.03
+
+     Not Exposed   9123           Window Cleaners                                                    0.11   0.03
+
+     Not Exposed   9213           Mixed Crop and Livestock Farm Labourers                            0.11   0.03
+
+     Not Exposed   9216           Fishery and Aquaculture Labourers                                  0.11   0.03
+
+     Not Exposed   9311           Mining and Quarrying Labourers                                     0.11   0.02
+
+     Not Exposed   9622           Odd Job Persons                                                    0.11   0.03
+
+     Not Exposed   7114           Concrete Placers, Concrete Finishers and Related Workers           0.1    0.03
+
+     Not Exposed   7122           Floor Layers and Tile Setters                                      0.1    0.02
+
+     Not Exposed   9129           Other Cleaning Workers                                             0.1    0.01
+
+     Not Exposed   6224           Hunters and Trappers                                               0.09   0.03
+
+     Not Exposed   7112           Bricklayers and Related Workers                                    0.09   0.01
+

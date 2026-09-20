@@ -1,0 +1,60 @@
+300                                   BENJAMINI AND HOCHBERG                                    [No.1,
+
+                                P(k)~      k     mO + j - 1 *
+                                                                                                      (7)
+                                  P "" mO + j - 1 (m + l)p q
+When conditioning on P[mo) = P, the Pjlp for i = 1, 2, ... , mo - 1 are distributed as
+mo - 1 independent U(O, 1) random variables, and the pi/p for i = I, 2, ... , j are
+numbers corresponding to false null hypotheses between 0 and 1. Using inequality (7) to
+test the mo + j - 1 = m' ~ m hypotheses is equivalent to using procedure (l), with the
+constant {(mo + j - 1)/(m + l)p}q* taking the role of q*. Applying now the induction
+hypothesis, we have
+                                             mo - I mo + j - 1             mo - I
+
+
+
+
+                                                                                                            Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+E(QIP[mo) = p, Pmo+ 1 = Ph ... , Pm = Pm) ~ mo + j _ I -(--'m-+-l)-ip-q*= (m + I)p q*
+                                                                                                     (8).
+The bound in inequality (8) depends on p, but not on the segment Pj < P < Pj+ 1 for which
+it was evaluated, so
+
+
+
+
+                 = -m
+                    - qo*) 1 (mo - I)p(m o- 2 )dp = - mo
+                                                      - q * {I _ pH(mo-I)}.                           (9)
+                    m+1          p"                          m+ 1
+Adding inequalities (6) and (9) completes the proof of the lemma.
+
+
+                                           REFERENCES
+Godfrey, K. (1985) Comparing the means of several groups. New Engl. J. Med., 311, 1450-1456.
+Hochberg, Y. (1988) A sharper Bonferroni procedure for multiple tests of significance. Biometrika,
+  75, 800-803.
+Hochberg, Y. and Benjamini, Y. (1990) More powerful procedures for multiple significance testing.
+  Statist. Med., 9, 811-818.
+Hochberg, Y. and Tamhane, A. (1987) Multiple Comparison Procedures. New York: Wiley.
+Holm, S. (1979) A simple sequentially rejective multiple test procedure. Scand. J. Statist., 6, 65-70.
+Hommel, G. (1988) A stagewise rejective multiple test procedure based on a modified Bonferroni test.
+  Biometrika, 75, 383-386.
+Neuhaus, K. L., Von Essen, R., Tebbe, U., Vogt, A., Roth, M., Riess, M., Niederer, W., Forycki,
+  F., Wirtzfeld, A., Maeurer, W., Limbourg, P., Merx, W. and Haerten, K. (1992) Improved
+  thrombolysis in acute myocardial infarction front-loaded administration of Alteplase: results of the
+  rt-PA-APSAC patency study (TAPS). J. Am. Coli. Card., 19, 885-891.
+Pocock, S. J., Hughes, M. D. and Lee, R. J. (1987) Statistical problems in reporting of clinical trials.
+  J. Am. Statist. Ass., 84, 381-392.
+Rom, D. M. (1990) A sequentially rejective test procedure based on a modified Bonferroni inequality.
+  Biometrika, 77, 663-665.
+Saville, D. J. (1990) Multiple comparison procedures: the practical solution. Am. Statistn, 44,
+  174-180.
+Simes, R. J. (1986) An improved Bonferroni procedure for multiple tests of significance. Biometrika,
+  73,751-754.
+Smith, D. E., Clemens, J., Crede, W., Harvey, M. and Gracely, E. J. (1987) Impact of multiple
+  comparisons in randomized clinical trials. Am. J. Med., 83, 545-550.
+Soric, B. (1989) Statistical "discoveries" and effect size estimation. J. Am. Statist. Ass., 84, 608-610.
+Spjetvoll, E. (1972) On the optimality of some multiple comparison procedure. Ann. Math. Statist.,
+  43, 398-411.
+

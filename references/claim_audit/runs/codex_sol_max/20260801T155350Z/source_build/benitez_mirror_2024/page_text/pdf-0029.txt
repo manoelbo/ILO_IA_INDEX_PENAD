@@ -1,0 +1,44 @@
+                                    6   CONCLUDING REMARKS
+
+
+This paper introduces the AI-Generated Index of Occupational Exposure (GENOE), a novel mea-
+sure of susceptibility to job replacement by artificial intelligence. Using synthetic AI surveys con-
+ducted with advanced language models, we estimate the likelihood of job replacement by AI over
+one, five, and 10-year horizons. Our findings reveal a significant increase in exposure over time,
+with the average likelihood of job replacement rising from 0.28 in the next year to 0.38 and 0.44
+over the next five and 10 years, respectively, underscoring the accelerating impact of AI on the
+labor market.
+   The GENOE methodology of synthetic AI surveys leverages the extensive knowledge and an-
+alytical capabilities of AI models to provide expert-like assessments. This approach offers a com-
+prehensive view of occupational exposure by considering not only the tasks performed within
+each occupation but also ethical and social contexts that influence the likelihood of AI-driven au-
+tomation. By doing so, it overcomes the limitations of previous measures by incorporating a more
+holistic task-based analysis and integrating other occupation-specific, social, and ethical consid-
+erations more organically and with fewer assumptions. This contrasts with prior methods that
+isolated tasks or abilities separately or relied on more predefined criteria for measuring exposure.
+   We validated the consistency of the index by varying key elements of the methodology and
+the prompts, such as calculating the task-by-task exposure, occupation name omission, and ex-
+plicitly nudging the model to consider ethical and social resistance to automation considerations.
+Additionally, follow-up surveys with AI models uncovered key patterns including understanding
+and projections of current and expected technological capabilities, the routine versus non-routine
+nature of tasks, ethical considerations, regulatory environments, and cost-benefit analyses.
+   The GENOE index offers significant and practical uses and implications for academia, policy-
+makers, industries, and individual workers. By identifying which types of tasks, occupations, and
+industries are most susceptible to AI-driven automation, the GENOE index can inform strategic
+decisions and policy formulations. For academia, it offers a robust framework for future research
+on labor market dynamics and technology’s impact, opening new avenues for interdisciplinary
+studies on AI and employment.
+   Policymakers can use the index to develop targeted interventions and support measures for
+workers in highly exposed occupations, ensuring a smoother transition in the face of technologi-
+cal change. This data-driven approach can inform education and training policies, unemployment
+insurance programs, and economic development strategies. Industries can leverage the index to
+guide strategic decision on workforce development, technology integration, and long-term busi-
+ness planning. It can help companies anticipate skill gaps, plan for reskilling initiatives, and opti-
+mize human-AI collaboration.
+   For individual workers, the index provides valuable insights for career planning and skill
+development, helping them prepare for potential shifts in their occupational landscape. In the
+
+
+
+                                                 25
+

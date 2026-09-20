@@ -1,0 +1,50 @@
+a skewed distribution, as is the case here (see Figure 2). One might argue that a world in which
+most products receive medium-sized bribes is more corrupt than one in which a very small fraction
+of products receive large bribes—even if they both produce the same average bribe amount. This
+motivates studying the treatment effect on a concave transformation of the outcome that is less
+heavily influenced by outcomes in the tail of the distribution. As an illustration of this, we first
+normalize the outcome so that 1 corresponds to the value of the minimum non-zero bribe in the data
+(that is, we divide by ymin “ minYit ą0 Yit “ 15.68 MZN). We then estimate the treatment effect for
+the transformed outcome mpY q, where mpyq “ logpyq for y ą 0 and mp0q “ ´x for some choice of
+x, as described in Section 4.2. If x is set to 0, then this estimates the treatment effect in logs where
+all zero bribes are set to equal the smallest positive bribe in the data; this specification thus “shuts
+off” the extensive margin change between 0 and ymin . If instead x is set to 0.1, for example, then a
+change between 0 and ymin is valued as the equivalent of a 10 log point change along the intensive
+margin.
+    We estimate the treatment effect for these transformations using the analogue to (6) that replaces
+logp1`Yit q with mpYit q on the left-hand side.39 The results for x P t0, 0.1, 1, 3u are shown in Table 7.
+Column (1) shows an effect of 249 log points (β̂1 “ ´2.49) when we treat zero bribes as if they were
+equal to ymin (i.e. setting x “ 0). The estimated treatment effect grows in magnitude as we place
+more value on the extensive margin by increasing x. Interestingly, the original estimate in Sequeira
+(2016) of ´3.748 using logp1 ` Y q is similar to what we obtain when we value a change from 0 to
+ymin at 300 log points (x “ 3). The original specification can thus be viewed as placing a rather
+large weight on the extensive margin.
+
+                                                       (1)            (2)            (3)            (4)
+             Post ˆ Treatment                        ´2.493         ´2.538         ´2.949         ´3.860
+                                                     p0.740q        p0.752q         p0.861q       p1.106q
+             Extensive margin value (x):              0.000          0.100           1.000         3.000
+
+                 Table 7: Explicit calibration of the extensive margin in Sequeira (2016)
+
+Note: this table shows estimates of the treatment effect on the treated using mpY q as the outcome in Sequeira
+(2016), where mpyq is defined to equal logpyq for y ą 0 and ´x for y “ 0. The outcome is normalized so that Y “ 1
+corresponds to the minimum non-zero value of the outcome. Thus, the treatment effect assigns a value of 100x log
+points to an extensive margin change between 0 and the minimum non-zero value of Y . The treatment effects are
+estimated using (6), except replacing logp1 ` Yit q with mpYit q. Standard errors are clustered at the four-digit product
+code as in the original paper.
+
+
+
+5.3     An IV setting: Berkouwer and Dean (2022)
+Berkouwer and Dean (2022) conduct an RCT in Nairobi in which they randomize the price for
+  39
+     As usual, identification of the treatment effect for mpY q using difference-in-differences requires parallel trends for
+mpY p0qq. The identifying assumption thus varies depending on the choice of x. The results in Roth and Sant’Anna
+(2023) imply that parallel trends will hold for all values of x when a parallel trends assumption is satisfied for the
+distribution of Y p0q. If more pre-treatment periods were available, these identifying assumptions could be partially
+evaluated using pre-trends tests. See Remark 9 for additional discussion of identification.
+
+
+                                                             28
+

@@ -1,0 +1,35 @@
+24         ILO Working Paper 140
+
+
+
+
+     reflecting a different perception of task automatability or biases regarding clerical work, despite
+     their lower representation in this group. Conversely, men dominate responses in occupations
+     such as craft and trade workers and plant and machine operators, but for the tasks in these oc-
+     cupations, they assign lower scores than women. These differences may be representative of
+     different task composition or even tasks performed by men and women, even when in the same
+     occupational category, which then influence their scoring.
+
+
+         XX Figure 9. Distribution of task-level scores by sex and occupational group (1-digit ISCO-08)
+
+
+
+
+     To better understand the factors associated with higher task automation scores, we conducted
+     a set of exploratory regressions using the main task-level score as the dependent variable and
+     controlling for occupational clustering. Results suggest that across occupations, familiarity with
+     a task is associated with higher scores, and this relationship strengthens with greater reported
+     exposure to GenAI. Respondents who use GenAI frequently – such as on a daily or weekly ba-
+     sis – tend to assign higher scores. Similarly, those who believe GenAI will have a “Complete” or
+     “Significant Impact” on their occupation consistently assign the highest task scores (Figure 10).8
+
+
+
+
+     8
+            These results are based on exploratory regressions conducted for descriptive purposes. Full model specifications, diagnostics, and
+            robustness checks were beyond the scope of this paper, as the survey serves as a starting point in a multi-layered refinement meth-
+            od. A more comprehensive econometric analysis of scoring behavior, including model selection and treatment of potential confound-
+            ers, could be the focus of a separate methodological paper.
+

@@ -1,0 +1,59 @@
+             Figure 1: Change from multiplying outcome by 100 versus extensive margin effect
+
+
+
+
+                                             0.75
+                    Actual Absolute Change
+
+
+                                                                  45 Deg Line
+                                             0.50
+
+
+
+
+                                             0.25
+
+
+
+
+                                             0.00
+
+                                                    0.00   0.25                 0.50          0.75
+                                                              |Extensive Margin| * log(100)
+
+
+Note: This figure shows the relationship between the sensitivity of treatment effects using arcsinhpY q to re-scaling
+the units of Y and and the size of the extensive margin. For each replicated paper, this figure plots the absolute
+value of the change in the estimated treatment effect from multiplying the outcome by 100 (i.e. the absolute value of
+the Raw Change column in Table 1) on the y-axis against logp100q times the absolute value of the extensive margin
+effect on the x-axis. If the approximation in (2) were exact, all points would lie on the 45 degree line.
+
+
+of the 10 treatment effect estimates again changing by more than 100%. These results underscore
+the fact that Proposition 1 applies to all log-like transformations, including both arcsinhpY q and
+logpc ` Y q for any constant c.
+
+
+3         Sensitivity to scaling for other ATEs
+Our results so far show that ATEs for transformations that are defined at zero and approximate
+logpyq are arbitrarily sensitive to scaling. What other options are available when there are zero-
+valued outcomes? To help delineate alternative options, in this section we provide a result showing
+what properties a parameter defined with zero-valued outcomes can have. Specifically, we establish
+a “trilemma”: When there are zero-valued outcomes, there is no parameter that is (a) an average of
+individual-level treatment effects of the form θg “ EP rgpY p1q, Y p0qqs, (b) scale-invariant, and (c)
+point-identified.16 Any approach for settings with zero-valued outcomes must therefore abandon
+one of the properties (a)–(c); in Section 4 below we discuss several approaches that relax one (or
+more) of these requirements.
+         Before stating our formal result, we must make precise what we mean by scale-invariance and
+    16
+    Of course, not all parameters of the form EP rgpY p1q, Y p0qqs can be interpreted as an average of individual
+treatment effects. For example Er1rY p1q ą 0, Y p0q ą 0ss is the fraction of individuals whose outcomes is positive
+under both treatments, rather than a treatment effect. Our results apply to all parameters of this form, regardless
+of whether they are average treatment effects per se.
+
+
+
+                                                                       12
+

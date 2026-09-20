@@ -1,0 +1,2 @@
+## Apêndice D — Evidências complementares sobre estoque formal e informalidade
+O CAGED observa fluxo, não estoque, e só enxerga o mercado formal. As duas limitações estão declaradas na subseção 4.1 e não têm solução dentro da própria base, então recorro a bases complementares. Desenho, tamanho de família e regra de parada foram declarados antes da estimação, aqui e nos dois exercícios seguintes. Os dois são medição, não identificação: nenhum coeficiente abaixo autoriza leitura causal, e por isso nenhum recebe marcação de significância.

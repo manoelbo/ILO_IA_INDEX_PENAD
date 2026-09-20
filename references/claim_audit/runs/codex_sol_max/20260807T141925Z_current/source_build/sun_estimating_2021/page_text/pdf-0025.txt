@@ -1,0 +1,61 @@
+                                                                        ∞ −Y ∞ |E = e] = E[Y ∞ −Y ∞ |E >
+choice allows us to relax the parallel trends assumption to be just E[Yi,e+` i,0 i          i,e+` i,0 i
+
+e + `]. If instead we want to relax Assumption 2 to allow some anticipation, we then need the parallel trends
+
+assumption to hold. For example, suppose we are only willing to assume away anticipation 2 periods before
+
+a unit is treated, we may still be able to recover several C ATTe,` by appropriately selecting a pre-period and
+
+a smaller set of control cohorts. We may choose any s < e − 2 for the pre-period, and for control cohorts, we
+
+may choose cohorts treated only after at least 2 periods from now C ⊆ {c : e + ` + 2 < c ≤ T }, or choose the
+
+latest-treated cohort C = {max{Ei }} as specified in regression (26).
+
+
+
+5     Empirical Illustration
+
+We illustrate our findings in the setting of Dobkin et al. (2018). Dobkin et al. (2018) study the economic
+
+consequences of hospitalization, which is a large source of economic risk for adults in the United States. To
+
+quantify these economic risks, in the first part of their analysis, Dobkin et al. (2018) leverage variation in
+
+the timing of hospitalization observed in the publicly-available dataset, Health and Retirement Study (HRS),
+
+which we describe in more detail in Section 5.1. Their estimation of the dynamic effects of hospitalization
+
+using two-way fixed effects regressions provides a good context for demonstrating our results. As we argue
+
+below in Section 5.2, parallel trends and no anticipation assumptions are plausible in this setting. However,
+
+the effect of hospitalization is potentially heterogenous across individuals hospitalized in different years.
+
+Our findings of non-convex and non-zero weighting would therefore apply to their two-way fixed effects
+
+regression estimates, and our alternative estimator could lead to different estimates. Furthermore, this dataset
+
+is publicly available, which allows us to provide replication files.
+
+
+5.1   Data
+
+Our sample selection closely follows Dobkin et al. (2018) but we include a cursory explanation here for com-
+
+pleteness with an emphasis on how our final sample differs from their main analysis sample. Our primary
+
+source of data is the biennial Health and Retirement Study (HRS). We identify the sample of individuals
+
+who appear in two sequential waves of surveys and newly report having a hospital admission over the last
+
+two years (the “index” or initial admission) at the second survey. To focus on health “shocks”, we restrict
+
+attention to non-pregnancy-related hospital admissions as in Dobkin et al. (2018). We also follow Dobkin
+
+et al. (2018) by focusing on adults who are hospitalized at ages 50-59.
+
+
+                                                      25
+

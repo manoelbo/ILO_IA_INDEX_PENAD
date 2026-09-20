@@ -1,0 +1,56 @@
+     III.   DD DECOMPOSITION IN PRACTICE: UNILATERAL DIVORCE AND FEMALE SUICIDE
+To illustrate how to use DD decomposition theorem in practice, I replicate Stevenson and Wolfers’
+
+(2006) analysis of no-fault divorce reforms and female suicide. Unilateral (or no-fault) divorce
+
+allowed either spouse to end a marriage, redistributing property rights and bargaining power
+
+relative to fault-based divorce regimes. Stevenson and Wolfers exploit “the natural variation
+
+resulting from the different timing of the adoption of unilateral divorce laws” in 37 states from
+
+1969-1985 (see table 1) using the “remaining fourteen states as controls” to evaluate the effect of
+
+these reforms on female suicide rates. Figure 5 replicates their event-study result for female suicide
+
+using an unweighted model with no covariates. 28 Our results match closely: suicide rates display
+
+no clear trend before the implementation of unilateral divorce laws, but begin falling soon after.
+
+They report a DD coefficient in logs of -9.7 (s.e. = 2.3). I find a DD coefficient in levels of -3.08
+
+(s.e. = 1.13), or a proportional reduction of 6 percent. 29
+
+  A. Describing the design
+Figure 6 uses the DD decomposition theorem to illustrate the sources of variation. I plot each 2x2
+
+DD against its weight and calculate the average effect and total weight for the three types of 2x2
+
+comparisons: treated/untreated, early/late, late/early. 30 As theorem 1 states, the two-way fixed
+
+effects estimate, -3.08, is an average of the y-axis values weighted by their x-axis values. Summing
+
+the weights on timing terms (𝑠𝑠𝑘𝑘ℓ ) shows exactly how much of 𝛽𝛽̂ 𝐷𝐷𝐷𝐷 comes from timing variation
+
+(37 percent). The large untreated group puts a lot of weight on 𝛽𝛽̂𝑘𝑘𝑘𝑘
+                                                                   2𝑥𝑥2
+                                                                        terms, but more on those
+
+
+28
+   Data on suicides by age, sex, state, and year come from the National Center for Health Statistics’ Multiple Cause of
+Death files from 1964-1996, and population denominators come from the 1960 Census (Haines and ICPSR 2010) and
+the Surveillance, Epidemiology, and End Results data (SEER 2013). The outcome is the age-adjusted (using the
+national female age distribution in 1964) suicide mortality rate per million women. The average suicide rate in my
+data is 52 deaths per million women versus 54 in Stevenson and Wolfers (2006). My replication analysis uses levels
+to match their figure, but the conclusions all follow from a log specification as well.
+29
+   The differences in the magnitudes likely come from three sources: age-adjustment (the original paper does not
+describe an age-adjusting procedure); data on population denominators; and my omission of Alaska and Hawaii.
+30
+   There are 156 distinct DD components: 12 comparisons between timing groups and pre-reform states, 12
+comparisons between timing groups and non-reform states, and (122 − 12)/2 = 66 comparisons between an earlier
+switcher and a later non-switcher, and 66 comparisons between a later switcher and an earlier non-switcher
+
+                                                         20
+

@@ -1,0 +1,57 @@
+    Figure 6. Difference-in-Differences Decomposition for Unilateral Divorce and Female
+                                           Suicide
+                  30
+                                         Later Group Treatment vs. Earlier Group Control
+                                                    Weight = 0.26; DD = 3.51
+                  20
+
+
+
+
+                                                 Treatment vs. Non-Reform States
+                          10
+
+
+
+
+                                                    Weight = 0.24; DD = -5.33
+          2x2 DD Estimate
+                0
+
+
+
+
+                                                                                  DD Estimate = -3.08
+       -10
+
+
+
+
+                                                                Treatment vs. Pre-1964 Reform States
+                                                                     Weight = 0.38; DD = -7.04
+                  -20
+
+
+
+
+                                         Earlier Group Treatment vs. Later Group Control
+                                                    Weight = 0.11; DD = -0.19
+                  -30
+
+
+
+
+                               0   .02           .04            .06                .08               .1
+                                                           Weight
+Notes: Notes: The figure plots each 2x2 DD components from the decomposition theorem against their weight for the
+unilateral divorce analysis. The open circles are terms in which one timing group acts as the treatment group and the
+pre-1964 reform states act as the control group. The closed triangles are terms in which one timing group acts as the
+treatment group and the non-reform states act as the control group. The x’s are the timing-only terms. The figure notes
+the average DD estimate and total weight on each type of comparison. The two-way fixed effects estimate, -3.08,
+equals the average of the y-axis values weighted by their x-axis value.
+
+
+
+
+                                                         36
+

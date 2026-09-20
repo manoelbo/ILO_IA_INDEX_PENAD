@@ -1,0 +1,37 @@
+sample construction by varying minimum firm size thresholds. We consider alterna-
+tive task-level weights to construct our exposure measures. We estimate weighted
+regressions that give greater weight to larger firms and occupations to ensure our
+results reflect typical worker experiences. Finally, we relax the assumption of lin-
+ear treatment effects by categorizing firms and occupations into exposure quartiles.
+These analyses consistently support our main findings.
+    These robustness checks notwithstanding, we acknowledge the possibility that
+other factors differentially affected exposed and less exposed firms or occupations
+around the time of ChatGPT’s introduction. For instance, if firms anticipating AI
+disruption had already begun adjusting their workforce composition before Novem-
+ber 2022, or if other technological or economic shocks coincidentally affected high-
+exposure entities differently, our estimates could be biased. Additionally, our ex-
+posure measures capture potential susceptibility to LLM disruption but may not
+perfectly predict actual adoption patterns, which likely vary with firm-specific fac-
+tors such as technological capabilities, management quality, and financial resources.
+
+
+4     Results
+This section presents our main empirical findings on the effects of LLM exposure on
+UK labor market outcomes. We organize the analysis in three parts. First, we exam-
+ine how employment stocks, workforce composition, and compensation evolve within
+firms with different levels of LLM exposure. Second, we investigate occupation-level
+hiring patterns through job posting data. Third, we explore within-firm recruitment
+strategies by combining firm-level exposure measures with their occupation-specific
+hiring patterns. Throughout, we present both event study specifications and static
+difference-in-differences estimates.
+
+
+4.1    Firm-Level Employment Effects
+Figure 1 presents the event study plots for the effect of LLM exposure on the to-
+tal number of employees in UK firms. We find that highly exposed firms start
+experiencing a statistically significant decline in total employment beginning ap-
+proximately 18 months after the introduction of ChatGPT, suggesting that exposed
+firms reduce headcount in response to this new technology, but that it takes time to
+
+                                         13
+

@@ -1,0 +1,50 @@
+           Figure 3: Demographic Heterogeneity in Work Adoption of Generative AI
+
+
+
+
+                     Men          11.8                       18.1               5.1      35.0
+
+                  Women          9.2                  15.2            4.6         29.0
+
+
+
+
+               Age 18-29         9.2                    19.2                 6.2         34.6
+
+               Age 30-39              14.3                     18.1                4.6         36.9
+
+               Age 40-49          12.0                        19.7                4.0     35.7
+
+               Age 50-64        6.7          11.1            4.8      22.6
+
+
+
+
+        Less than College       6.5            12.6           4.6        23.7
+
+               Bachelors              14.6                          21.7                 4.8          41.1
+
+                Graduate                18.2                               23.3                   6.1         47.5
+
+
+                            0            10               20         30         40                           50      60
+                                                        Share Using Generative AI (%)
+
+
+                                                             Used every day last week
+
+                                                             Used at least 1 day last week
+
+                                                             Used, but not last week
+
+
+
+Notes: The figure shows adoption rates at work for genAI by sex, age, and education. The data source is the
+August and November 2024 waves of the RPS. The sample is employed individuals ages 18-64 (RPS, N = 6935).
+
+
+
+
+                                                                    11
+

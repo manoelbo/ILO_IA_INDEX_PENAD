@@ -1,0 +1,60 @@
+                Figure E.13: Have Adopters Experienced Greater Job Mobility?
+                                 (DiD to Non-Encouraged Non-Adopters)
+
+                                 (a) FTE Employment in Latest Workplace
+               .05
+
+               .04
+
+               .03
+
+               .02
+
+               .01
+
+                 0
+
+               -.01
+
+               -.02
+
+                 2021m1      2021m7     2022m1      2022m7      2023m1     2023m7     2024m1       2024m7
+
+                                        Encouraged Adopters              Non-Encouraged Adopters
+
+
+
+                                (b) FTE Employment in Latest Occupation
+
+
+               .05
+
+               .04
+
+               .03
+
+               .02
+
+               .01
+
+                 0
+
+               -.01
+
+               -.02
+                 2021m1      2021m7     2022m1      2022m7      2023m1     2023m7     2024m1       2024m7
+
+                                        Encouraged Adopters              Non-Encouraged Adopters
+
+
+Notes: This figure presents difference-in-differences estimates of work hours in workers’ latest jobs. Panel (a) focuses on
+workplaces, while Panel (b) focuses on occupations. The estimates compare changes for adopters—both encouraged and
+non-encouraged—relative to non-encouraged non-adopters, indexed to the launch of ChatGPT in November 2022. Estimates
+are based on the dynamic difference-in-differences specification in Equation (1). Shaded areas represent 95% confidence
+intervals. Sample: All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                           80
+

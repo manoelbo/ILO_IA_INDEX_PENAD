@@ -1,36 +1,73 @@
-# Section 3 Descriptive Analysis Replication Package
+# Versioned Dissertation Replication Package
 
-This folder contains the official supplementary script for the dissertation's
-Section 3 descriptive analysis.
+This directory separates the empirical package into immutable research
+generations.
 
-The package is post-build by design. It uses the already constructed analytic
-file at `data/output/pnad_ilo_merged.csv` and does not download PNAD data,
-query BigQuery, rebuild CAGED panels, or import exploratory notebooks.
-
-## Run
-
-From the project root:
-
-```bash
-python "Replication Package/replicate_section3_descriptive.py" --strict
+```text
+Replication Package/
+├── README.md
+├── V1/
+├── V2/
+└── _archive/             development history, not public package input
 ```
 
-To skip PNG generation and only write tables plus the claims audit:
+## V1
+
+`V1/` is the byte-audited snapshot of the package that existed at the
+start of the final review on 25 July 2026. It is intentionally preserved
+with its known strengths and defects; it must not be silently patched.
+
+Run its public interface with:
 
 ```bash
-python "Replication Package/replicate_section3_descriptive.py" --strict --skip-figures
+python V1/run_replication.py \
+  --section all \
+  --mode reproduce
 ```
 
-## Outputs
+The full V1 instructions, requirements, tests, and data contract remain
+inside `V1/README.md`.
 
-The default output directory is `Replication Package/outputs/`.
+Because V1 is immutable, its historical quick-start block still says
+`cd "Replication Package"`. After this versioned migration, interpret
+that location as `Replication Package/V1`, or use the wrapper command
+shown above. The stale directory name is documented rather than patched
+inside the frozen snapshot.
 
-- `section3_claims_audit.md`: human-readable audit of all registered claims
-- `section3_claims_audit.csv`: machine-readable claim registry
-- `MANIFEST.md`: data sources and denominators
-- `tables/table_3_*.md` and `tables/table_3_*.csv`: stable supplemental tables
-- `figures/figure_3_*.png`: stable supplemental figures
+## V2
 
-`WARN` items identify text/table harmonization issues in the dissertation.
-`FAIL` is reserved for missing source files or validation failures that prevent
-replication.
+`V2/` is the current five-component replication package. Its typed registry
+covers the 53 computational tables and figures in Sections 3--5 and
+Appendices A--D. Table 2.1 is excluded because it is a literature synthesis.
+
+The public runner supports an offline analytical-bundle replay and a complete
+official-source rebuild:
+
+```bash
+python V2/run_replication.py --target all --mode reproduce \
+  --data-dir /path/to/replication-v2-bundle
+
+python V2/run_replication.py --target all --mode full \
+  --data-dir /path/to/replication-v2-bundle \
+  --raw-dir /path/to/replication-v2-raw-cache
+```
+
+The Git distribution contains code, metadata, manifests, and the signed
+reference. The analytical bundle and raw-source cache are separate artifacts;
+see `V2/DATA_AVAILABILITY.md` for their integrity and access contracts.
+
+## Technical schema naming
+
+Some V1 internals use names such as `dissertation_replication_v2`.
+Those identifiers describe an internal technical schema revision and
+do not identify the empirical generation. They remain unchanged inside
+the immutable V1 snapshot.
+
+## Audit authority
+
+The V2 signed reference, publication index, narrative-number registry,
+cross-language receipts, and reproducibility instructions are all inside
+`V2/`. Development plans and logs are preserved under `_archive/` and are not
+inputs to a public run. Statistical significance is never a release gate; the
+gates are data integrity, identification, portability, and claim-to-artifact
+consistency.

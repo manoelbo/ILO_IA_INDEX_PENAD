@@ -1,0 +1,48 @@
+                                            WORKING PAPER
+
+
+of LLMs on the workforce, policymakers and stakeholders can make more informed decisions to navigate the
+complex landscape of AI and its role in shaping the future of work.
+
+7.1   LLM Conclusion (GPT-4’s Version)
+Generative Pre-trained Transformers (GPTs) generate profound transformations, garnering potential technolog-
+ical growth, permeating tasks, greatly impacting professions. This study probes GPTs’ potential trajectories,
+presenting a groundbreaking rubric to gauge tasks’ GPT exposure, particularly in the U.S. labor market.
+
+7.2   LLM Conclusion (Author-Augmented Version)
+Generative Pre-trained Transformers (GPTs) generate profound transformations, garnering potential techno-
+logical growth, permeating tasks, gutting professional management. Gauging possible trajectories? Generate
+pioneering taxonomies, gather policymakers together, generalize past today.
+
+
+Acknowledgments
+Thank you to the group of annotators who helped us annotate task exposure, including Muhammad Ahmed
+Saeed, Bongane Zitha, Merve Özen Şenen, J.J., and Peter Hoeschele. We also thank Lauryn Fuld, Ashley Glat,
+Michael Lampe, and Julia Susser for excellent research assistance. We thank Miles Brundage for significant
+feedback on this paper.
+    We thank Todor Markov and Vik Goel for setting up the infrastructure we use to run our rubrics with
+GPT-4. We thank Lama Ahmad, Donald Bakong, Seth Benzell, Erik Brynjolfsson, Parfait Eloundou-Enyegue,
+Carl Frey, Sarah Giroux, Gillian Hadfield, Johannes Heidecke, Alan Hickey, Eric Horvitz, Shengli Hu,
+Ashyana Kachra, Christina Kim, Katya Klinova, Daniel Kokotajlo, Gretchen Krueger, Michael Lampe, Aalok
+Mehta, Larissa Schiavo, Daniel Selsam, Sarah Shoker, Prasanna Tambe, and Jeff Wu for feedback and edits at
+various stages of the project.
+
+
+LLM assistance statement
+GPT-4 and ChatGPT were used for writing, coding, and formatting assistance in this project.
+
+
+A     Rubric
+A.1    Exposure
+# E Exposure Taxonomy
+    Consider the most powerful OpenAI large language model (LLM) This model can complete many tasks
+that can be formulated as having text input and text output where the context for the input can be captured in
+2000 words. The model also cannot draw up-to-date facts (those from <1 year ago) unless they are captured
+in the input.
+    Assume you are a worker with an average level of expertise in your role trying to complete the given task.
+You have access to the LLM as well as any other existing software or computer hardware tools mentioned
+in the task. You also have access to any commonly available technical tools accessible via a laptop (e.g. a
+microphone, speakers, etc.). You do not have access to any other physical tools or materials.
+    Please label the given task according to the taxonomy below.
+    ## E0 – No exposure
+

@@ -1,0 +1,40 @@
+                                                                                                    18
+
+3.3.3     Participant Training
+
+We train the participants using a combination of written instructions and a video. The
+materials provide an overview of the experimental tasks, the interface, and information about
+the AI assistance tool. The firms and the participants know that the research study involves
+retrospective patient cases. To train participants on the AI tool, we provide them with
+materials that explain the development of the algorithm, present metrics of its performance
+on various diseases, and summarize the algorithm’s performance relative to radiologists based
+on prior research. The participants are informed that the algorithm only uses the chest X-
+ray to form predictions, and this knowledge is later tested in a comprehension question. In
+addition, we show the participants fifty example cases that show the X-ray and clinical history
+next to the AI output. After the instructions, they answer eight comprehension questions,
+which the participants must answer correctly before proceeding to the experiment. We also
+include an endline survey. We do not directly interact with the subjects except to field
+questions about the experiment or provide tech support.21 The complete set of instructions
+is provided in appendix B.2.
+
+
+4        Estimated Treatment Effects
+
+4.1      Overall Performance of AI and Radiologists
+
+This section’s analysis focuses on measures of performance (deviation from ground truth,
+incorrect decision), deviation from AI prediction, and measures of effort. Table 1 summarizes
+the data on these measures and sample sizes from our experiment. The main text focuses
+on top-level pathologies with AI with robustness to other pathology groups relegated to
+appendix C.4.22
+Radiologists make the correct follow-up/treatment recommendation on approximately 70%
+of case-pathologies on average and spend ~2.8 minutes per case with large variability across
+cases. All summary statistics are very similar across the three expertimental designs (tables
+C.7 and C.9). For instance, the average deviation from the ground truth for the three designs
+ranges from 0.191 to 0.232, and average active time ranges from 2.58 to 3.03 minutes.
+    21
+   We are blinded to the participants’ treatment status while the experiment is in progress.
+    22
+   These pathology groups and, unless otherwise noted, the subsequent analyses were pre-registered (see
+SSR Registration 9620).
+

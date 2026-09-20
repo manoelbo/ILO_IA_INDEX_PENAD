@@ -1,0 +1,34 @@
+          Table 5: Effects of AI adoption on labor productivity by company size
+
+                                 (1)               (2)                (3)                    (4)
+                              LP (log)          LP (log)            LP (log)              LP (log)
+                             Micro (5-9)      Small (10-49)      Medium (50-249)        Large (250+)
+ AI adoption (US-based)          -0.059            -0.041              0.040*              0.079***
+                                (0.068)           (0.046)              (0.024)              (0.024)
+ Investment (lag)                 0.010             0.009               0.004                0.025
+                                (0.012)           (0.008)              (0.014)              (0.020)
+ Profitability (lag)           0.326***          0.658***             0.735***             0.608***
+                                (0.089)           (0.080)              (0.080)              (0.092)
+ Financial leverage (lag)     -0.256***         -0.162***               -0.072            -0.190***
+                                (0.080)           (0.050)              (0.046)              (0.049)
+ Total assets (log, lag)       0.468***         0.414***              0.383***             0.325***
+                                (0.020)           (0.012)              (0.010)              (0.011)
+ Age FE                           Yes              Yes                  Yes                   Yes
+ Country-sector-wave FE           Yes              Yes                  Yes                   Yes
+ Observations                    3761             7859                 11256                 6340
+ R-squared                       0.597            0.615                0.590                 0.583
+ Adjusted R-squared              0.522            0.560                0.535                 0.500
+
+Note: The dependent variable is labor productivity, calculated as the log of turnover per employee,
+and is derived from EIBIS. AI adoption (US-matched) is the AI implementation status derived from
+similar firms in the US. Investment is expressed as the annual change in total fixed assets. Profitability
+is the ratio of EBIT to total assets. Financial leverage is the ratio of loans and long-term debt to total
+assets. All control variables come from ORBIS and are lagged by 1 year. Standard errors clustered at
+the country-sector-wave level are reported in parentheses. *, **, *** correspond to 0.1, 0.05 and 0.01
+significance levels, respectively.
+
+
+
+
+                                                   21
+

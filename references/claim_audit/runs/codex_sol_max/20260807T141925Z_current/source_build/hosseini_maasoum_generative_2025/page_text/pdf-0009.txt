@@ -1,0 +1,41 @@
+workers in routine, codifiable tasks while complementing more complex ones. Autor
+et al. (2003) documented how computerization reduced demand for routine cognitive
+and manual work, leading to job polarization. Acemoglu and Autor (2011) emphasized
+that technology replaced mid-skill tasks while raising demand for high-skill labor, and
+Autor and Dorn (2013) showed that this was accompanied by growth in low-skill service
+jobs. More recently, Acemoglu and Restrepo (2022) estimated that automation explains
+a large share of rising U.S. wage inequality since 1980. While this literature focuses on
+differences across education or occupations, our paper extends the analysis to seniority
+within firms. We ask whether GenAI is a “seniority-biased” technological change, dispropor-
+tionately affecting juniors who typically perform simpler, more routinized tasks even in
+high-skill fields.8
+
+
+Evidence from Firm-Level AI Adoption:               A related strand of work—closest to our em-
+pirical approach—examines the implications of firm-level AI adoption. Babina et al.
+(2024) construct a measure of firm-level AI investment by combining online résumé data
+from Cognism with Burning Glass postings. Their results suggest that for U.S. firms in the
+2010s, AI-adopting firms grow faster in sales, employment, and innovation, with work-
+forces becoming more educated and technologically oriented. Acemoglu et al. (2022) sim-
+ilarly use Burning Glass postings from 2010–2018 to identify AI-exposed establishments
+based on tasks and skills in vacancies. They find that exposure is associated with lower
+hiring at the establishment level, but aggregate occupation/industry effects are too small
+to detect over that period. More recently, Hampole et al. (2025) use similar data and NLP
+methods to develop measures of firm-level AI adoption and task-level exposure, which
+we closely follow in our analysis. They infer adoption from résumé text, using a large
+language model to extract in-house AI applications and map them to O*NET tasks via
+sentence embeddings, thereby identifying tasks exposed to AI. They find that between
+2010 and 2023, higher exposure corresponds to lower labor demand, but that firms’ pro-
+ductivity gains offset job losses by expanding employment elsewhere, resulting in muted
+   8 While it is usually not the main focus, the SBTC literature has also examined variation by age/experi-
+
+ence. For instance, Acemoglu and Autor (2011) show that the surge in the college wage premium during the
+1980s was concentrated among less experienced workers, whereas from the mid-1990s onward, the increase
+was driven primarily by more experienced cohorts. They argue this pattern is consistent with changes over
+time in relative supply by experience and education (and imperfect substitution across experience groups).
+
+
+
+
+                                                    9
+

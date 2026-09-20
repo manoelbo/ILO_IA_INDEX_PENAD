@@ -1,0 +1,498 @@
+aggregate_id,scope,key,metric,value
+base::sample::corrected_sectors,base,sample,corrected_sectors,19
+base::sample::federal_units,base,sample,federal_units,27
+base::sample::four_digit_match_pct,base,sample,four_digit_match_pct,97.9394038508713
+base::sample::matched_occupations,base,sample,matched_occupations,422
+base::sample::observations,base,sample,observations,207901
+base::sample::occupations,base,sample,occupations,428
+base::sample::original_sectors,base,sample,original_sectors,17
+base::sample::population_m,base,sample,population_m,97.7837761804038
+base::sample::score_coverage_pct,base,sample,score_coverage_pct,99.1644697099785
+base::sample::scored_population_m,base,sample,scored_population_m,96.9667631116897
+base::sample::three_digit_match_pct,base,sample,three_digit_match_pct,1.25684821140831
+base::sample::unscored_rows_pct,base,sample,unscored_rows_pct,0.803747937720357
+demographic::age:18-24::high_population_m,demographic,age:18-24,high_population_m,2.43708374586715
+demographic::age:18-24::high_share_pct,demographic,age:18-24,high_share_pct,16.2477551739841
+demographic::age:18-24::low_share_pct,demographic,age:18-24,low_share_pct,61.886606881676
+demographic::age:18-24::mean_score,demographic,age:18-24,mean_score,0.30381167308366
+demographic::age:18-24::moderate_share_pct,demographic,age:18-24,moderate_share_pct,21.8656379443407
+demographic::age:18-24::population_m,demographic,age:18-24,population_m,14.9995105155782
+demographic::age:25-34::high_population_m,demographic,age:25-34,high_population_m,3.08417428315769
+demographic::age:25-34::high_share_pct,demographic,age:25-34,high_share_pct,12.5529722308727
+demographic::age:25-34::low_share_pct,demographic,age:25-34,low_share_pct,67.5405258086685
+demographic::age:25-34::mean_score,demographic,age:25-34,mean_score,0.292779532017067
+demographic::age:25-34::moderate_share_pct,demographic,age:25-34,moderate_share_pct,19.9065019604585
+demographic::age:25-34::population_m,demographic,age:25-34,population_m,24.5692751201384
+demographic::age:35-44::high_population_m,demographic,age:35-44,high_population_m,2.25293656445825
+demographic::age:35-44::high_share_pct,demographic,age:35-44,high_share_pct,8.8345800680851
+demographic::age:35-44::low_share_pct,demographic,age:35-44,low_share_pct,71.5284208251618
+demographic::age:35-44::mean_score,demographic,age:35-44,mean_score,0.276172824836867
+demographic::age:35-44::moderate_share_pct,demographic,age:35-44,moderate_share_pct,19.6369991067539
+demographic::age:35-44::population_m,demographic,age:35-44,population_m,25.5013429851293
+demographic::age:45-54::high_population_m,demographic,age:45-54,high_population_m,1.35180389122695
+demographic::age:45-54::high_share_pct,demographic,age:45-54,high_share_pct,6.79382377427665
+demographic::age:45-54::low_share_pct,demographic,age:45-54,low_share_pct,75.3422903483596
+demographic::age:45-54::mean_score,demographic,age:45-54,mean_score,0.25841867726245
+demographic::age:45-54::moderate_share_pct,demographic,age:45-54,moderate_share_pct,17.8638858773638
+demographic::age:45-54::population_m,demographic,age:45-54,population_m,19.8975412983961
+demographic::age:55+::high_population_m,demographic,age:55+,high_population_m,0.64902596559041
+demographic::age:55+::high_share_pct,demographic,age:55+,high_share_pct,5.91314851155674
+demographic::age:55+::low_share_pct,demographic,age:55+,low_share_pct,76.0799468295401
+demographic::age:55+::mean_score,demographic,age:55+,mean_score,0.251890955976004
+demographic::age:55+::moderate_share_pct,demographic,age:55+,moderate_share_pct,18.0069046589033
+demographic::age:55+::population_m,demographic,age:55+,population_m,10.9759794519272
+demographic::education:1::high_population_m,demographic,education:1,high_population_m,0.02677548973672
+demographic::education:1::high_share_pct,demographic,education:1,high_share_pct,1.93131405214806
+demographic::education:1::low_share_pct,demographic,education:1,low_share_pct,88.3585033297221
+demographic::education:1::mean_score,demographic,education:1,mean_score,0.183494709494438
+demographic::education:1::moderate_share_pct,demographic,education:1,moderate_share_pct,9.71018261812974
+demographic::education:1::population_m,demographic,education:1,population_m,1.38638714438698
+demographic::education:2::high_population_m,demographic,education:2,high_population_m,0.09014732945886
+demographic::education:2::high_share_pct,demographic,education:2,high_share_pct,0.599472336625022
+demographic::education:2::low_share_pct,demographic,education:2,low_share_pct,90.8031589814337
+demographic::education:2::mean_score,demographic,education:2,mean_score,0.178548137693429
+demographic::education:2::moderate_share_pct,demographic,education:2,moderate_share_pct,8.59736868194128
+demographic::education:2::population_m,demographic,education:2,population_m,15.0377797191413
+demographic::education:3::high_population_m,demographic,education:3,high_population_m,0.1229508499165
+demographic::education:3::high_share_pct,demographic,education:3,high_share_pct,2.06545019581064
+demographic::education:3::low_share_pct,demographic,education:3,low_share_pct,85.3168318282711
+demographic::education:3::mean_score,demographic,education:3,mean_score,0.204370231772493
+demographic::education:3::moderate_share_pct,demographic,education:3,moderate_share_pct,12.6177179759181
+demographic::education:3::population_m,demographic,education:3,population_m,5.95273854416251
+demographic::education:4::high_population_m,demographic,education:4,high_population_m,0.20805241346108
+demographic::education:4::high_share_pct,demographic,education:4,high_share_pct,3.53373030607905
+demographic::education:4::low_share_pct,demographic,education:4,low_share_pct,81.6338139329604
+demographic::education:4::mean_score,demographic,education:4,mean_score,0.218101310141152
+demographic::education:4::moderate_share_pct,demographic,education:4,moderate_share_pct,14.8324557609603
+demographic::education:4::population_m,demographic,education:4,population_m,5.88761437462188
+demographic::education:5::high_population_m,demographic,education:5,high_population_m,3.61055817632632
+demographic::education:5::high_share_pct,demographic,education:5,high_share_pct,9.70893809896272
+demographic::education:5::low_share_pct,demographic,education:5,low_share_pct,69.1991372138056
+demographic::education:5::mean_score,demographic,education:5,mean_score,0.274626063821416
+demographic::education:5::moderate_share_pct,demographic,education:5,moderate_share_pct,21.0919246872303
+demographic::education:5::population_m,demographic,education:5,population_m,37.1879822440321
+demographic::education:6::high_population_m,demographic,education:6,high_population_m,1.38141340821957
+demographic::education:6::high_share_pct,demographic,education:6,high_share_pct,21.5632998882242
+demographic::education:6::low_share_pct,demographic,education:6,low_share_pct,49.7629463002759
+demographic::education:6::mean_score,demographic,education:6,mean_score,0.358790961895406
+demographic::education:6::moderate_share_pct,demographic,education:6,moderate_share_pct,28.6737538114999
+demographic::education:6::population_m,demographic,education:6,population_m,6.40631728622374
+demographic::education:7::high_population_m,demographic,education:7,high_population_m,4.33512678318142
+demographic::education:7::high_share_pct,demographic,education:7,high_share_pct,17.9994078124424
+demographic::education:7::low_share_pct,demographic,education:7,low_share_pct,57.1850377490062
+demographic::education:7::mean_score,demographic,education:7,mean_score,0.36413784952799
+demographic::education:7::moderate_share_pct,demographic,education:7,moderate_share_pct,24.8155544385504
+demographic::education:7::population_m,demographic,education:7,population_m,24.0848300586017
+demographic::formality:0::high_population_m,demographic,formality:0,high_population_m,3.6398961969223
+demographic::formality:0::high_share_pct,demographic,formality:0,high_share_pct,6.6665257861833
+demographic::formality:0::low_share_pct,demographic,formality:0,low_share_pct,74.1557849001498
+demographic::formality:0::mean_score,demographic,formality:0,mean_score,0.258479288506465
+demographic::formality:0::moderate_share_pct,demographic,formality:0,moderate_share_pct,19.177689313668
+demographic::formality:0::population_m,demographic,formality:0,population_m,54.5995967564719
+demographic::formality:1::high_population_m,demographic,formality:1,high_population_m,6.13512825337813
+demographic::formality:1::high_share_pct,demographic,formality:1,high_share_pct,14.8392038645896
+demographic::formality:1::low_share_pct,demographic,formality:1,low_share_pct,65.2346228113749
+demographic::formality:1::mean_score,demographic,formality:1,mean_score,0.30474112201358
+demographic::formality:1::moderate_share_pct,demographic,formality:1,moderate_share_pct,19.9261733240355
+demographic::formality:1::population_m,demographic,formality:1,population_m,41.3440526146973
+demographic::income:1-2 SM::high_population_m,demographic,income:1-2 SM,high_population_m,4.22975750585201
+demographic::income:1-2 SM::high_share_pct,demographic,income:1-2 SM,high_share_pct,10.9274883012689
+demographic::income:1-2 SM::low_share_pct,demographic,income:1-2 SM,low_share_pct,70.2506004887279
+demographic::income:1-2 SM::mean_score,demographic,income:1-2 SM,mean_score,0.27551104699663
+demographic::income:1-2 SM::moderate_share_pct,demographic,income:1-2 SM,moderate_share_pct,18.8219112100027
+demographic::income:1-2 SM::population_m,demographic,income:1-2 SM,population_m,38.7074997404558
+demographic::income:2-3 SM::high_population_m,demographic,income:2-3 SM,high_population_m,1.18044447712708
+demographic::income:2-3 SM::high_share_pct,demographic,income:2-3 SM,high_share_pct,11.8216208335385
+demographic::income:2-3 SM::low_share_pct,demographic,income:2-3 SM,low_share_pct,68.1488070316194
+demographic::income:2-3 SM::mean_score,demographic,income:2-3 SM,mean_score,0.303331612644867
+demographic::income:2-3 SM::moderate_share_pct,demographic,income:2-3 SM,moderate_share_pct,20.0295721348427
+demographic::income:2-3 SM::population_m,demographic,income:2-3 SM,population_m,9.98547063680226
+demographic::income:3-5 SM::high_population_m,demographic,income:3-5 SM,high_population_m,1.12922723845373
+demographic::income:3-5 SM::high_share_pct,demographic,income:3-5 SM,high_share_pct,12.3994976655609
+demographic::income:3-5 SM::low_share_pct,demographic,income:3-5 SM,low_share_pct,62.1296071789642
+demographic::income:3-5 SM::mean_score,demographic,income:3-5 SM,mean_score,0.332345178930808
+demographic::income:3-5 SM::moderate_share_pct,demographic,income:3-5 SM,moderate_share_pct,25.4708951554748
+demographic::income:3-5 SM::population_m,demographic,income:3-5 SM,population_m,9.10704021171856
+demographic::income:5+ SM::high_population_m,demographic,income:5+ SM,high_population_m,0.9169672033069
+demographic::income:5+ SM::high_share_pct,demographic,income:5+ SM,high_share_pct,12.2939716767992
+demographic::income:5+ SM::low_share_pct,demographic,income:5+ SM,low_share_pct,56.8563423470022
+demographic::income:5+ SM::mean_score,demographic,income:5+ SM,mean_score,0.365076707648989
+demographic::income:5+ SM::moderate_share_pct,demographic,income:5+ SM,moderate_share_pct,30.8496859761987
+demographic::income:5+ SM::population_m,demographic,income:5+ SM,population_m,7.45867346544624
+demographic::income:Até 1 SM::high_population_m,demographic,income:Até 1 SM,high_population_m,2.24833927223594
+demographic::income:Até 1 SM::high_share_pct,demographic,income:Até 1 SM,high_share_pct,7.58069209312956
+demographic::income:Até 1 SM::low_share_pct,demographic,income:Até 1 SM,low_share_pct,76.7517385279355
+demographic::income:Até 1 SM::mean_score,demographic,income:Até 1 SM,mean_score,0.237336096630885
+demographic::income:Até 1 SM::moderate_share_pct,demographic,income:Até 1 SM,moderate_share_pct,15.6675693789344
+demographic::income:Até 1 SM::population_m,demographic,income:Até 1 SM,population_m,29.65875997356
+demographic::race:Branca::high_population_m,demographic,race:Branca,high_population_m,5.19463990802693
+demographic::race:Branca::high_share_pct,demographic,race:Branca,high_share_pct,12.5064549338816
+demographic::race:Branca::low_share_pct,demographic,race:Branca,low_share_pct,64.9060927041884
+demographic::race:Branca::mean_score,demographic,race:Branca,mean_score,0.304977141441346
+demographic::race:Branca::moderate_share_pct,demographic,race:Branca,moderate_share_pct,22.5874523619303
+demographic::race:Branca::population_m,demographic,race:Branca,population_m,41.5356704636898
+demographic::race:Negra::high_population_m,demographic,race:Negra,high_population_m,4.46156890411739
+demographic::race:Negra::high_share_pct,demographic,race:Negra,high_share_pct,8.35685321961562
+demographic::race:Negra::low_share_pct,demographic,race:Negra,low_share_pct,74.6115476450632
+demographic::race:Negra::mean_score,demographic,race:Negra,mean_score,0.25709434983009
+demographic::race:Negra::moderate_share_pct,demographic,race:Negra,moderate_share_pct,17.0315991353221
+demographic::race:Negra::population_m,demographic,race:Negra,population_m,53.3881448778468
+demographic::race:Outras::high_population_m,demographic,race:Outras,high_population_m,0.11881563815612
+demographic::race:Outras::high_share_pct,demographic,race:Outras,high_share_pct,11.6504876973904
+demographic::race:Outras::low_share_pct,demographic,race:Outras,low_share_pct,65.3532199385305
+demographic::race:Outras::mean_score,demographic,race:Outras,mean_score,0.301455346463814
+demographic::race:Outras::moderate_share_pct,demographic,race:Outras,moderate_share_pct,22.9962923640792
+demographic::race:Outras::population_m,demographic,race:Outras,population_m,1.01983402963237
+demographic::sex:Homem::high_population_m,demographic,sex:Homem,high_population_m,3.63103805607591
+demographic::sex:Homem::high_share_pct,demographic,sex:Homem,high_share_pct,6.76039255986474
+demographic::sex:Homem::low_share_pct,demographic,sex:Homem,low_share_pct,74.8136034814196
+demographic::sex:Homem::mean_score,demographic,sex:Homem,mean_score,0.258927697555769
+demographic::sex:Homem::moderate_share_pct,demographic,sex:Homem,moderate_share_pct,18.4260039587169
+demographic::sex:Homem::population_m,demographic,sex:Homem,population_m,53.7104616917182
+demographic::sex:Mulher::high_population_m,demographic,sex:Mulher,high_population_m,6.14398639422453
+demographic::sex:Mulher::high_share_pct,demographic,sex:Mulher,high_share_pct,14.5477685484156
+demographic::sex:Mulher::low_share_pct,demographic,sex:Mulher,low_share_pct,64.5858528940798
+demographic::sex:Mulher::mean_score,demographic,sex:Mulher,mean_score,0.302834831933155
+demographic::sex:Mulher::moderate_share_pct,demographic,sex:Mulher,moderate_share_pct,20.8663785575045
+demographic::sex:Mulher::population_m,demographic,sex:Mulher,population_m,42.2331876794512
+exposure_group::high::population_m,exposure_group,high,population_m,9.77502445030048
+exposure_group::high::share_pct,exposure_group,high,share_pct,10.1882975208548
+exposure_group::low::population_m,exposure_group,low,population_m,67.4593963052123
+exposure_group::low::share_pct,exposure_group,low,share_pct,70.3114763169342
+exposure_group::moderate::population_m,exposure_group,moderate,population_m,18.7092286156567
+exposure_group::moderate::share_pct,exposure_group,moderate,share_pct,19.5002261622108
+gradient::Exposed: Gradient 1::population_m,gradient,Exposed: Gradient 1,population_m,8.68740500838009
+gradient::Exposed: Gradient 1::share_pct,gradient,Exposed: Gradient 1,share_pct,8.95915747788099
+gradient::Exposed: Gradient 2::population_m,gradient,Exposed: Gradient 2,population_m,10.0218236072766
+gradient::Exposed: Gradient 2::share_pct,gradient,Exposed: Gradient 2,share_pct,10.3353182943037
+gradient::Exposed: Gradient 3::population_m,gradient,Exposed: Gradient 3,population_m,4.79396206593736
+gradient::Exposed: Gradient 3::share_pct,gradient,Exposed: Gradient 3,share_pct,4.94392296091755
+gradient::Exposed: Gradient 4::population_m,gradient,Exposed: Gradient 4,population_m,4.98106238436309
+gradient::Exposed: Gradient 4::share_pct,gradient,Exposed: Gradient 4,share_pct,5.13687600216759
+gradient::Minimal Exposure::population_m,gradient,Minimal Exposure,population_m,15.2303365030828
+gradient::Minimal Exposure::share_pct,gradient,Minimal Exposure,share_pct,15.7067597332706
+gradient::Not Exposed::population_m,gradient,Not Exposed,population_m,52.2290598021298
+gradient::Not Exposed::share_pct,gradient,Not Exposed,share_pct,53.8628475635209
+gradient::Sem classificação::population_m,gradient,Sem classificação,population_m,1.02311374052028
+gradient::Sem classificação::share_pct,gradient,Sem classificação,share_pct,1.055117967939
+high_occupation::1:4110:Apoio administrativo::mean_score,high_occupation,1:4110:Apoio administrativo,mean_score,0.6
+high_occupation::1:4110:Apoio administrativo::population_m,high_occupation,1:4110:Apoio administrativo,population_m,3.75186848210289
+high_occupation::2:4226:Apoio administrativo::mean_score,high_occupation,2:4226:Apoio administrativo,mean_score,0.570000000000002
+high_occupation::2:4226:Apoio administrativo::population_m,high_occupation,2:4226:Apoio administrativo,population_m,1.03588502505472
+high_occupation::3:2411:Profissionais das ciências::mean_score,high_occupation,3:2411:Profissionais das ciências,mean_score,0.51
+high_occupation::3:2411:Profissionais das ciências::population_m,high_occupation,3:2411:Profissionais das ciências,population_m,0.58721395306841
+high_occupation::4:4120:Apoio administrativo::mean_score,high_occupation,4:4120:Apoio administrativo,mean_score,0.580000000000001
+high_occupation::4:4120:Apoio administrativo::population_m,high_occupation,4:4120:Apoio administrativo,population_m,0.49642179406711
+high_occupation::5:2431:Profissionais das ciências::mean_score,high_occupation,5:2431:Profissionais das ciências,mean_score,0.55
+high_occupation::5:2431:Profissionais das ciências::population_m,high_occupation,5:2431:Profissionais das ciências,population_m,0.42604530912296
+occupation_group::Agropecuária qualificada::mean_score,occupation_group,Agropecuária qualificada,mean_score,0.174176793216284
+occupation_group::Agropecuária qualificada::population_m,occupation_group,Agropecuária qualificada,population_m,4.44182560768865
+occupation_group::Apoio administrativo::mean_score,occupation_group,Apoio administrativo,mean_score,0.553870547777735
+occupation_group::Apoio administrativo::population_m,occupation_group,Apoio administrativo,population_m,8.19748734858572
+occupation_group::Dirigentes e gerentes::mean_score,occupation_group,Dirigentes e gerentes,mean_score,0.399646202256707
+occupation_group::Dirigentes e gerentes::population_m,occupation_group,Dirigentes e gerentes,population_m,3.54310857405803
+occupation_group::Indústria qualificada::mean_score,occupation_group,Indústria qualificada,mean_score,0.150557527135862
+occupation_group::Indústria qualificada::population_m,occupation_group,Indústria qualificada,population_m,12.7105172999793
+occupation_group::Ocupações elementares::mean_score,occupation_group,Ocupações elementares,mean_score,0.130224151232844
+occupation_group::Ocupações elementares::population_m,occupation_group,Ocupações elementares,population_m,15.1435254072859
+occupation_group::Operadores de máquinas::mean_score,occupation_group,Operadores de máquinas,mean_score,0.222545642789001
+occupation_group::Operadores de máquinas::population_m,occupation_group,Operadores de máquinas,population_m,9.42658684037499
+occupation_group::Profissionais das ciências::mean_score,occupation_group,Profissionais das ciências,mean_score,0.353451717386736
+occupation_group::Profissionais das ciências::population_m,occupation_group,Profissionais das ciências,population_m,13.2386290345699
+occupation_group::Serviços e vendedores::mean_score,occupation_group,Serviços e vendedores,mean_score,0.305016016503856
+occupation_group::Serviços e vendedores::population_m,occupation_group,Serviços e vendedores,population_m,21.2745997788838
+occupation_group::Técnicos nível médio::mean_score,occupation_group,Técnicos nível médio,mean_score,0.344722259633381
+occupation_group::Técnicos nível médio::population_m,occupation_group,Técnicos nível médio,population_m,8.99048322026354
+score_distribution::all::maximum,score_distribution,all,maximum,0.7
+score_distribution::all::minimum,score_distribution,all,minimum,0.09
+score_distribution::all::weighted_mean,score_distribution,all,weighted_mean,0.278250927726328
+sector::Administração Pública::brazil_share_pct,sector,Administração Pública,brazil_share_pct,4.45395404727979
+sector::Administração Pública::exposed_population_m,sector,Administração Pública,exposed_population_m,1.9627778855572
+sector::Administração Pública::exposed_share_pct,sector,Administração Pública,exposed_share_pct,45.9313479282196
+sector::Administração Pública::high_population_m,sector,Administração Pública,high_population_m,1.12318456208372
+sector::Administração Pública::high_share_pct,sector,Administração Pública,high_share_pct,26.283860893423
+sector::Administração Pública::low_population_m,sector,Administração Pública,low_population_m,2.31050816871795
+sector::Administração Pública::low_share_pct,sector,Administração Pública,low_share_pct,54.0686520717808
+sector::Administração Pública::mean_score,sector,Administração Pública,mean_score,0.352308954639085
+sector::Administração Pública::moderate_population_m,sector,Administração Pública,moderate_population_m,0.839593323473479
+sector::Administração Pública::moderate_share_pct,sector,Administração Pública,moderate_share_pct,19.6474870347966
+sector::Administração Pública::population_m,sector,Administração Pública,population_m,4.27328605427514
+sector::Agropecuária::brazil_share_pct,sector,Agropecuária,brazil_share_pct,7.26463742493687
+sector::Agropecuária::exposed_population_m,sector,Agropecuária,exposed_population_m,0.11189693654569
+sector::Agropecuária::exposed_share_pct,sector,Agropecuária,exposed_share_pct,1.60541759916722
+sector::Agropecuária::high_population_m,sector,Agropecuária,high_population_m,0.05841354561643
+sector::Agropecuária::high_share_pct,sector,Agropecuária,high_share_pct,0.838075974708049
+sector::Agropecuária::low_population_m,sector,Agropecuária,low_population_m,6.85806132252251
+sector::Agropecuária::low_share_pct,sector,Agropecuária,low_share_pct,98.3945824008328
+sector::Agropecuária::mean_score,sector,Agropecuária,mean_score,0.155378041379959
+sector::Agropecuária::moderate_population_m,sector,Agropecuária,moderate_population_m,0.05348339092926
+sector::Agropecuária::moderate_share_pct,sector,Agropecuária,moderate_share_pct,0.76734162445917
+sector::Agropecuária::population_m,sector,Agropecuária,population_m,6.9699582590682
+sector::Alojamento e Alimentação::brazil_share_pct,sector,Alojamento e Alimentação,brazil_share_pct,5.30616140343444
+sector::Alojamento e Alimentação::exposed_population_m,sector,Alojamento e Alimentação,exposed_population_m,1.23527110013062
+sector::Alojamento e Alimentação::exposed_share_pct,sector,Alojamento e Alimentação,exposed_share_pct,24.2641784418532
+sector::Alojamento e Alimentação::high_population_m,sector,Alojamento e Alimentação,high_population_m,0.22552003808289
+sector::Alojamento e Alimentação::high_share_pct,sector,Alojamento e Alimentação,high_share_pct,4.42984414164481
+sector::Alojamento e Alimentação::low_population_m,sector,Alojamento e Alimentação,low_population_m,3.85565379184883
+sector::Alojamento e Alimentação::low_share_pct,sector,Alojamento e Alimentação,low_share_pct,75.7358215581465
+sector::Alojamento e Alimentação::mean_score,sector,Alojamento e Alimentação,mean_score,0.26559305938046
+sector::Alojamento e Alimentação::moderate_population_m,sector,Alojamento e Alimentação,moderate_population_m,1.00975106204773
+sector::Alojamento e Alimentação::moderate_share_pct,sector,Alojamento e Alimentação,moderate_share_pct,19.8343343002084
+sector::Alojamento e Alimentação::population_m,sector,Alojamento e Alimentação,population_m,5.09092489197947
+sector::Artes e Cultura::brazil_share_pct,sector,Artes e Cultura,brazil_share_pct,1.14606809545601
+sector::Artes e Cultura::exposed_population_m,sector,Artes e Cultura,exposed_population_m,0.27325012556309
+sector::Artes e Cultura::exposed_share_pct,sector,Artes e Cultura,exposed_share_pct,24.8504188992845
+sector::Artes e Cultura::high_population_m,sector,Artes e Cultura,high_population_m,0.10327411030203
+sector::Artes e Cultura::high_share_pct,sector,Artes e Cultura,high_share_pct,9.39214537291698
+sector::Artes e Cultura::low_population_m,sector,Artes e Cultura,low_population_m,0.82632942949607
+sector::Artes e Cultura::low_share_pct,sector,Artes e Cultura,low_share_pct,75.1495811007156
+sector::Artes e Cultura::mean_score,sector,Artes e Cultura,mean_score,0.315791061396395
+sector::Artes e Cultura::moderate_population_m,sector,Artes e Cultura,moderate_population_m,0.16997601526106
+sector::Artes e Cultura::moderate_share_pct,sector,Artes e Cultura,moderate_share_pct,15.4582735263675
+sector::Artes e Cultura::population_m,sector,Artes e Cultura,population_m,1.09957955505916
+sector::Atividades Imobiliárias::brazil_share_pct,sector,Atividades Imobiliárias,brazil_share_pct,0.726122116771215
+sector::Atividades Imobiliárias::exposed_population_m,sector,Atividades Imobiliárias,exposed_population_m,0.21766866882839
+sector::Atividades Imobiliárias::exposed_share_pct,sector,Atividades Imobiliárias,exposed_share_pct,31.2442441440897
+sector::Atividades Imobiliárias::high_population_m,sector,Atividades Imobiliárias,high_population_m,0.12402818994489
+sector::Atividades Imobiliárias::high_share_pct,sector,Atividades Imobiliárias,high_share_pct,17.8030539178923
+sector::Atividades Imobiliárias::low_population_m,sector,Atividades Imobiliárias,low_population_m,0.4789993888931
+sector::Atividades Imobiliárias::low_share_pct,sector,Atividades Imobiliárias,low_share_pct,68.7557558559103
+sector::Atividades Imobiliárias::mean_score,sector,Atividades Imobiliárias,mean_score,0.38574474537394
+sector::Atividades Imobiliárias::moderate_population_m,sector,Atividades Imobiliárias,moderate_population_m,0.0936404788835
+sector::Atividades Imobiliárias::moderate_share_pct,sector,Atividades Imobiliárias,moderate_share_pct,13.4411902261974
+sector::Atividades Imobiliárias::population_m,sector,Atividades Imobiliárias,population_m,0.69666805772149
+sector::Comércio::brazil_share_pct,sector,Comércio,brazil_share_pct,18.5822739435916
+sector::Comércio::exposed_population_m,sector,Comércio,exposed_population_m,10.6348766530398
+sector::Comércio::exposed_share_pct,sector,Comércio,exposed_share_pct,59.6509501051796
+sector::Comércio::high_population_m,sector,Comércio,high_population_m,1.36474125643151
+sector::Comércio::high_share_pct,sector,Comércio,high_share_pct,7.65482433410329
+sector::Comércio::low_population_m,sector,Comércio,low_population_m,7.19363510459006
+sector::Comércio::low_share_pct,sector,Comércio,low_share_pct,40.349049894821
+sector::Comércio::mean_score,sector,Comércio,mean_score,0.342083016054969
+sector::Comércio::moderate_population_m,sector,Comércio,moderate_population_m,9.2701353966083
+sector::Comércio::moderate_share_pct,sector,Comércio,moderate_share_pct,51.9961257710763
+sector::Comércio::population_m,sector,Comércio,population_m,17.8285117576298
+sector::Construção::brazil_share_pct,sector,Construção,brazil_share_pct,7.53737325289929
+sector::Construção::exposed_population_m,sector,Construção,exposed_population_m,0.29487928030621
+sector::Construção::exposed_share_pct,sector,Construção,exposed_share_pct,4.07763175016296
+sector::Construção::high_population_m,sector,Construção,high_population_m,0.18069597403366
+sector::Construção::high_share_pct,sector,Construção,high_share_pct,2.49868909094308
+sector::Construção::low_population_m,sector,Construção,low_population_m,6.93675168525182
+sector::Construção::low_share_pct,sector,Construção,low_share_pct,95.9223682498371
+sector::Construção::mean_score,sector,Construção,mean_score,0.146110039907522
+sector::Construção::moderate_population_m,sector,Construção,moderate_population_m,0.11418330627255
+sector::Construção::moderate_share_pct,sector,Construção,moderate_share_pct,1.57894265921988
+sector::Construção::population_m,sector,Construção,population_m,7.23163096555802
+sector::Educação::brazil_share_pct,sector,Educação,brazil_share_pct,7.48858368611986
+sector::Educação::exposed_population_m,sector,Educação,exposed_population_m,1.11775430366375
+sector::Educação::exposed_share_pct,sector,Educação,exposed_share_pct,15.5571639904326
+sector::Educação::high_population_m,sector,Educação,high_population_m,0.64770234244199
+sector::Educação::high_share_pct,sector,Educação,high_share_pct,9.01487162727009
+sector::Educação::low_population_m,sector,Educação,low_population_m,6.06706617101371
+sector::Educação::low_share_pct,sector,Educação,low_share_pct,84.4428360095674
+sector::Educação::mean_score,sector,Educação,mean_score,0.290267456968636
+sector::Educação::moderate_population_m,sector,Educação,moderate_population_m,0.47005196122176
+sector::Educação::moderate_share_pct,sector,Educação,moderate_share_pct,6.54229236316252
+sector::Educação::population_m,sector,Educação,population_m,7.18482047467746
+sector::Finanças e Seguros::brazil_share_pct,sector,Finanças e Seguros,brazil_share_pct,1.59227699878185
+sector::Finanças e Seguros::exposed_population_m,sector,Finanças e Seguros,exposed_population_m,1.38769673008347
+sector::Finanças e Seguros::exposed_share_pct,sector,Finanças e Seguros,exposed_share_pct,90.836357286388
+sector::Finanças e Seguros::high_population_m,sector,Finanças e Seguros,high_population_m,0.83800276995266
+sector::Finanças e Seguros::high_share_pct,sector,Finanças e Seguros,high_share_pct,54.8542901112291
+sector::Finanças e Seguros::low_population_m,sector,Finanças e Seguros,low_population_m,0.13999193064557
+sector::Finanças e Seguros::low_share_pct,sector,Finanças e Seguros,low_share_pct,9.16364271361175
+sector::Finanças e Seguros::mean_score,sector,Finanças e Seguros,mean_score,0.512391079977127
+sector::Finanças e Seguros::moderate_population_m,sector,Finanças e Seguros,moderate_population_m,0.54969396013081
+sector::Finanças e Seguros::moderate_share_pct,sector,Finanças e Seguros,moderate_share_pct,35.9820671751589
+sector::Finanças e Seguros::population_m,sector,Finanças e Seguros,population_m,1.52768866072904
+sector::Ind. Extrativa::brazil_share_pct,sector,Ind. Extrativa,brazil_share_pct,0.615121707949637
+sector::Ind. Extrativa::exposed_population_m,sector,Ind. Extrativa,exposed_population_m,0.09436751939047
+sector::Ind. Extrativa::exposed_share_pct,sector,Ind. Extrativa,exposed_share_pct,15.9898817397035
+sector::Ind. Extrativa::high_population_m,sector,Ind. Extrativa,high_population_m,0.03802889957645
+sector::Ind. Extrativa::high_share_pct,sector,Ind. Extrativa,high_share_pct,6.44371719047119
+sector::Ind. Extrativa::low_population_m,sector,Ind. Extrativa,low_population_m,0.49580269529068
+sector::Ind. Extrativa::low_share_pct,sector,Ind. Extrativa,low_share_pct,84.0101182602965
+sector::Ind. Extrativa::mean_score,sector,Ind. Extrativa,mean_score,0.26205562468053
+sector::Ind. Extrativa::moderate_population_m,sector,Ind. Extrativa,moderate_population_m,0.05633861981402
+sector::Ind. Extrativa::moderate_share_pct,sector,Ind. Extrativa,moderate_share_pct,9.54616454923228
+sector::Ind. Extrativa::population_m,sector,Ind. Extrativa,population_m,0.59017021468115
+sector::Ind. Transformação::brazil_share_pct,sector,Ind. Transformação,brazil_share_pct,11.7898801647443
+sector::Ind. Transformação::exposed_population_m,sector,Ind. Transformação,exposed_population_m,1.71045667292734
+sector::Ind. Transformação::exposed_share_pct,sector,Ind. Transformação,exposed_share_pct,15.1212068133927
+sector::Ind. Transformação::high_population_m,sector,Ind. Transformação,high_population_m,0.75938180421647
+sector::Ind. Transformação::high_share_pct,sector,Ind. Transformação,high_share_pct,6.71327692401147
+sector::Ind. Transformação::low_population_m,sector,Ind. Transformação,low_population_m,9.60118461361601
+sector::Ind. Transformação::low_share_pct,sector,Ind. Transformação,low_share_pct,84.8787931866071
+sector::Ind. Transformação::mean_score,sector,Ind. Transformação,mean_score,0.244575883375142
+sector::Ind. Transformação::moderate_population_m,sector,Ind. Transformação,moderate_population_m,0.951074868710869
+sector::Ind. Transformação::moderate_share_pct,sector,Ind. Transformação,moderate_share_pct,8.40792988938125
+sector::Ind. Transformação::population_m,sector,Ind. Transformação,population_m,11.3116412865434
+sector::Informação e Comunicação::brazil_share_pct,sector,Informação e Comunicação,brazil_share_pct,1.80219414911143
+sector::Informação e Comunicação::exposed_population_m,sector,Informação e Comunicação,exposed_population_m,1.39712726099885
+sector::Informação e Comunicação::exposed_share_pct,sector,Informação e Comunicação,exposed_share_pct,80.8012645944418
+sector::Informação e Comunicação::high_population_m,sector,Informação e Comunicação,high_population_m,0.5519048931422
+sector::Informação e Comunicação::high_share_pct,sector,Informação e Comunicação,high_share_pct,31.9187911843249
+sector::Informação e Comunicação::low_population_m,sector,Informação e Comunicação,low_population_m,0.33196357441235
+sector::Informação e Comunicação::low_share_pct,sector,Informação e Comunicação,low_share_pct,19.1987354055581
+sector::Informação e Comunicação::mean_score,sector,Informação e Comunicação,mean_score,0.45596391662518
+sector::Informação e Comunicação::moderate_population_m,sector,Informação e Comunicação,moderate_population_m,0.845222367856649
+sector::Informação e Comunicação::moderate_share_pct,sector,Informação e Comunicação,moderate_share_pct,48.8824734101169
+sector::Informação e Comunicação::population_m,sector,Informação e Comunicação,population_m,1.7290908354112
+sector::Outros Serviços::brazil_share_pct,sector,Outros Serviços,brazil_share_pct,4.20785068027569
+sector::Outros Serviços::exposed_population_m,sector,Outros Serviços,exposed_population_m,0.43585489063786
+sector::Outros Serviços::exposed_share_pct,sector,Outros Serviços,exposed_share_pct,10.7960619979882
+sector::Outros Serviços::high_population_m,sector,Outros Serviços,high_population_m,0.25252196317492
+sector::Outros Serviços::high_share_pct,sector,Outros Serviços,high_share_pct,6.25493215482878
+sector::Outros Serviços::low_population_m,sector,Outros Serviços,low_population_m,3.60131061210823
+sector::Outros Serviços::low_share_pct,sector,Outros Serviços,low_share_pct,89.2039380020118
+sector::Outros Serviços::mean_score,sector,Outros Serviços,mean_score,0.219060033721342
+sector::Outros Serviços::moderate_population_m,sector,Outros Serviços,moderate_population_m,0.18333292746294
+sector::Outros Serviços::moderate_share_pct,sector,Outros Serviços,moderate_share_pct,4.54112984315943
+sector::Outros Serviços::population_m,sector,Outros Serviços,population_m,4.03716550274609
+sector::Saúde::brazil_share_pct,sector,Saúde,brazil_share_pct,6.45522982514879
+sector::Saúde::exposed_population_m,sector,Saúde,exposed_population_m,1.60031353124611
+sector::Saúde::exposed_share_pct,sector,Saúde,exposed_share_pct,25.8390852507684
+sector::Saúde::high_population_m,sector,Saúde,high_population_m,0.849773216893919
+sector::Saúde::high_share_pct,sector,Saúde,high_share_pct,13.7206629616162
+sector::Saúde::low_population_m,sector,Saúde,low_population_m,4.5930695382978
+sector::Saúde::low_share_pct,sector,Saúde,low_share_pct,74.1609147492314
+sector::Saúde::mean_score,sector,Saúde,mean_score,0.29983845017355
+sector::Saúde::moderate_population_m,sector,Saúde,moderate_population_m,0.75054031435219
+sector::Saúde::moderate_share_pct,sector,Saúde,moderate_share_pct,12.1184222891522
+sector::Saúde::population_m,sector,Saúde,population_m,6.19338306954392
+sector::Serviços Administrativos::brazil_share_pct,sector,Serviços Administrativos,brazil_share_pct,4.55437207999444
+sector::Serviços Administrativos::exposed_population_m,sector,Serviços Administrativos,exposed_population_m,1.35061802525054
+sector::Serviços Administrativos::exposed_share_pct,sector,Serviços Administrativos,exposed_share_pct,30.9092024797733
+sector::Serviços Administrativos::high_population_m,sector,Serviços Administrativos,high_population_m,0.822635983233599
+sector::Serviços Administrativos::high_share_pct,sector,Serviços Administrativos,high_share_pct,18.8262126652708
+sector::Serviços Administrativos::low_population_m,sector,Serviços Administrativos,low_population_m,3.01901275423776
+sector::Serviços Administrativos::low_share_pct,sector,Serviços Administrativos,low_share_pct,69.0907975202263
+sector::Serviços Administrativos::mean_score,sector,Serviços Administrativos,mean_score,0.29364124472767
+sector::Serviços Administrativos::moderate_population_m,sector,Serviços Administrativos,moderate_population_m,0.52798204201694
+sector::Serviços Administrativos::moderate_share_pct,sector,Serviços Administrativos,moderate_share_pct,12.0829898145025
+sector::Serviços Administrativos::population_m,sector,Serviços Administrativos,population_m,4.36963077948831
+sector::Serviços Domésticos::brazil_share_pct,sector,Serviços Domésticos,brazil_share_pct,5.52580990986718
+sector::Serviços Domésticos::exposed_population_m,sector,Serviços Domésticos,exposed_population_m,0.0382908998432
+sector::Serviços Domésticos::exposed_share_pct,sector,Serviços Domésticos,exposed_share_pct,0.722243094232662
+sector::Serviços Domésticos::high_population_m,sector,Serviços Domésticos,high_population_m,0
+sector::Serviços Domésticos::high_share_pct,sector,Serviços Domésticos,high_share_pct,0
+sector::Serviços Domésticos::low_population_m,sector,Serviços Domésticos,low_population_m,5.26337278499711
+sector::Serviços Domésticos::low_share_pct,sector,Serviços Domésticos,low_share_pct,99.2777569057673
+sector::Serviços Domésticos::mean_score,sector,Serviços Domésticos,mean_score,0.160418499684795
+sector::Serviços Domésticos::moderate_population_m,sector,Serviços Domésticos,moderate_population_m,0.0382908998432
+sector::Serviços Domésticos::moderate_share_pct,sector,Serviços Domésticos,moderate_share_pct,0.722243094232662
+sector::Serviços Domésticos::population_m,sector,Serviços Domésticos,population_m,5.30166368484031
+sector::Serviços Profissionais::brazil_share_pct,sector,Serviços Profissionais,brazil_share_pct,4.2392557783335
+sector::Serviços Profissionais::exposed_population_m,sector,Serviços Profissionais,exposed_population_m,2.17587019547771
+sector::Serviços Profissionais::exposed_share_pct,sector,Serviços Profissionais,exposed_share_pct,53.4967167633761
+sector::Serviços Profissionais::high_population_m,sector,Serviços Profissionais,high_population_m,1.26891254405766
+sector::Serviços Profissionais::high_share_pct,sector,Serviços Profissionais,high_share_pct,31.1979340992095
+sector::Serviços Profissionais::low_population_m,sector,Serviços Profissionais,low_population_m,1.89142650443362
+sector::Serviços Profissionais::low_share_pct,sector,Serviços Profissionais,low_share_pct,46.5032832366237
+sector::Serviços Profissionais::mean_score,sector,Serviços Profissionais,mean_score,0.420218741683779
+sector::Serviços Profissionais::moderate_population_m,sector,Serviços Profissionais,moderate_population_m,0.906957651420051
+sector::Serviços Profissionais::moderate_share_pct,sector,Serviços Profissionais,moderate_share_pct,22.2987826641666
+sector::Serviços Profissionais::population_m,sector,Serviços Profissionais,population_m,4.06729669991134
+sector::Transporte::brazil_share_pct,sector,Transporte,brazil_share_pct,5.95805722607539
+sector::Transporte::exposed_population_m,sector,Transporte,exposed_population_m,2.23874639431959
+sector::Transporte::exposed_share_pct,sector,Transporte,exposed_share_pct,39.163725294189
+sector::Transporte::high_population_m,sector,Transporte,high_population_m,0.45652998976517
+sector::Transporte::high_share_pct,sector,Transporte,high_share_pct,7.98635126921379
+sector::Transporte::low_population_m,sector,Transporte,low_population_m,3.47763113999983
+sector::Transporte::low_share_pct,sector,Transporte,low_share_pct,60.836274705811
+sector::Transporte::mean_score,sector,Transporte,mean_score,0.279695594274246
+sector::Transporte::moderate_population_m,sector,Transporte,moderate_population_m,1.78221640455442
+sector::Transporte::moderate_share_pct,sector,Transporte,moderate_share_pct,31.1773740249752
+sector::Transporte::population_m,sector,Transporte,population_m,5.71637753431941
+sector::Utilidades::brazil_share_pct,sector,Utilidades,brazil_share_pct,0.754777509228605
+sector::Utilidades::exposed_population_m,sector,Utilidades,exposed_population_m,0.2065359921473
+sector::Utilidades::exposed_share_pct,sector,Utilidades,exposed_share_pct,28.5207249959679
+sector::Utilidades::high_population_m,sector,Utilidades,high_population_m,0.10977236735028
+sector::Utilidades::high_share_pct,sector,Utilidades,high_share_pct,15.158556476301
+sector::Utilidades::low_population_m,sector,Utilidades,low_population_m,0.51762509483944
+sector::Utilidades::low_share_pct,sector,Utilidades,low_share_pct,71.4792750040321
+sector::Utilidades::mean_score,sector,Utilidades,mean_score,0.293476267165548
+sector::Utilidades::moderate_population_m,sector,Utilidades,moderate_population_m,0.09676362479702
+sector::Utilidades::moderate_share_pct,sector,Utilidades,moderate_share_pct,13.3621685196669
+sector::Utilidades::population_m,sector,Utilidades,population_m,0.72416108698674
+state::AC::high_population_m,state,AC,high_population_m,0.03325939023575
+state::AC::high_share_pct,state,AC,high_share_pct,10.6658414921119
+state::AC::population_m,state,AC,population_m,0.31183090673481
+state::AL::high_population_m,state,AL,high_population_m,0.1008718837476
+state::AL::high_share_pct,state,AL,high_share_pct,8.79475701744867
+state::AL::population_m,state,AL,population_m,1.14695475437777
+state::AM::high_population_m,state,AM,high_population_m,0.15450038471339
+state::AM::high_share_pct,state,AM,high_share_pct,9.08166241878714
+state::AM::population_m,state,AM,population_m,1.70123461530322
+state::AP::high_population_m,state,AP,high_population_m,0.0302451014724
+state::AP::high_share_pct,state,AP,high_share_pct,9.44203656114793
+state::AP::population_m,state,AP,population_m,0.32032391821964
+state::BA::high_population_m,state,BA,high_population_m,0.44860418207841
+state::BA::high_share_pct,state,BA,high_share_pct,7.4486336580542
+state::BA::population_m,state,BA,population_m,6.02263720666856
+state::CE::high_population_m,state,CE,high_population_m,0.32603575243848
+state::CE::high_share_pct,state,CE,high_share_pct,9.27695354280886
+state::CE::population_m,state,CE,population_m,3.51447003516807
+state::DF::high_population_m,state,DF,high_population_m,0.23335526413869
+state::DF::high_share_pct,state,DF,high_share_pct,16.316867902987
+state::DF::population_m,state,DF,population_m,1.43014741264144
+state::ES::high_population_m,state,ES,high_population_m,0.17108454992445
+state::ES::high_share_pct,state,ES,high_share_pct,8.92614026718092
+state::ES::population_m,state,ES,population_m,1.91666884905992
+state::GO::high_population_m,state,GO,high_population_m,0.34373644697568
+state::GO::high_share_pct,state,GO,high_share_pct,9.45920047066367
+state::GO::population_m,state,GO,population_m,3.63388478806141
+state::MA::high_population_m,state,MA,high_population_m,0.17233040018641
+state::MA::high_share_pct,state,MA,high_share_pct,6.84834263857619
+state::MA::population_m,state,MA,population_m,2.51638110534491
+state::MG::high_population_m,state,MG,high_population_m,0.923338874546689
+state::MG::high_share_pct,state,MG,high_share_pct,9.00502229734957
+state::MG::population_m,state,MG,population_m,10.253598981298
+state::MS::high_population_m,state,MS,high_population_m,0.13224092861076
+state::MS::high_share_pct,state,MS,high_share_pct,9.80033346961163
+state::MS::population_m,state,MS,population_m,1.34935131565478
+state::MT::high_population_m,state,MT,high_population_m,0.18542922273534
+state::MT::high_share_pct,state,MT,high_share_pct,9.81667468195724
+state::MT::population_m,state,MT,population_m,1.88892093038545
+state::PA::high_population_m,state,PA,high_population_m,0.26303124129058
+state::PA::high_share_pct,state,PA,high_share_pct,7.64986678316235
+state::PA::population_m,state,PA,population_m,3.43837675539033
+state::PB::high_population_m,state,PB,high_population_m,0.14362650897125
+state::PB::high_share_pct,state,PB,high_share_pct,9.01084688220136
+state::PB::population_m,state,PB,population_m,1.59392908179305
+state::PE::high_population_m,state,PE,high_population_m,0.30392153502272
+state::PE::high_share_pct,state,PE,high_share_pct,8.61827198097465
+state::PE::population_m,state,PE,population_m,3.52647880797502
+state::PI::high_population_m,state,PI,high_population_m,0.08952369475411
+state::PI::high_share_pct,state,PI,high_share_pct,7.03651589204137
+state::PI::population_m,state,PI,population_m,1.27227304148301
+state::PR::high_population_m,state,PR,high_population_m,0.61323223647642
+state::PR::high_share_pct,state,PR,high_share_pct,10.4013446560995
+state::PR::population_m,state,PR,population_m,5.89570153428972
+state::RJ::high_population_m,state,RJ,high_population_m,0.882537441231271
+state::RJ::high_share_pct,state,RJ,high_share_pct,11.5998099384892
+state::RJ::population_m,state,RJ,population_m,7.60820604743643
+state::RN::high_population_m,state,RN,high_population_m,0.11235526152846
+state::RN::high_share_pct,state,RN,high_share_pct,8.50887630097224
+state::RN::population_m,state,RN,population_m,1.3204477013683
+state::RO::high_population_m,state,RO,high_population_m,0.06112890094317
+state::RO::high_share_pct,state,RO,high_share_pct,8.38022429114188
+state::RO::population_m,state,RO,population_m,0.729442301535829
+state::RR::high_population_m,state,RR,high_population_m,0.03360364036731
+state::RR::high_share_pct,state,RR,high_share_pct,12.6334412402782
+state::RR::population_m,state,RR,population_m,0.26598960432233
+state::RS::high_population_m,state,RS,high_population_m,0.57428594297346
+state::RS::high_share_pct,state,RS,high_share_pct,10.6097323684331
+state::RS::population_m,state,RS,population_m,5.41282214320617
+state::SC::high_population_m,state,SC,high_population_m,0.456219621528729
+state::SC::high_share_pct,state,SC,high_share_pct,10.7220570177693
+state::SC::population_m,state,SC,population_m,4.25496358369157
+state::SE::high_population_m,state,SE,high_population_m,0.07937417095817
+state::SE::high_share_pct,state,SE,high_share_pct,9.24479029613246
+state::SE::population_m,state,SE,population_m,0.85858270891635
+state::SP::high_population_m,state,SP,high_population_m,2.8361642639543
+state::SP::high_share_pct,state,SP,high_share_pct,12.3244356991483
+state::SP::population_m,state,SP,population_m,23.012528388219
+state::TO::high_population_m,state,TO,high_population_m,0.0709876084964601
+state::TO::high_share_pct,state,TO,high_share_pct,9.4966337917263
+state::TO::population_m,state,TO,population_m,0.747502852624539

@@ -1,0 +1,55 @@
+294                            BENJAMINI AND HOCHBERG                               [No.1,
+
+               let k be the largest i for which P(i) ~         i    . a;
+                                                            m + 1 -1
+                        then reject all H(i) i = 1, 2, ... , k.
+
+   Note the relationship between Hochberg's procedure and the FDR controlling
+procedure when q* is chosen to equal a. Both Hochberg's procedure and the FDR
+controlling procedure are step-down procedures, which start by comparing P(m)
+with a, and if smaller all hypotheses are rejected - as if a PCER approach had been
+taken. If P(m) > a, proceed to smaller p-values until one satisfies the condition.
+
+
+
+
+                                                                                               Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+The procedures end, if not terminated earlier, by comparing PO) with aim, as in
+a pure Bonferroni comparison. At the two ends the procedures are similar, but, in
+between, the sequence of p(i)s is compared with {I - (i - 1)lm}a in the current
+procedure, rather than with {1/ (m + 1 - i)}a in Hochberg's procedure. The series
+of linearly decreasing constants of the FDR controlling method is always larger than
+the hyperbolically decreasing constants of Hochberg, and the extreme ratio is as
+large as 4ml(m + 1)2 at i = (m + 1)12. This shows that the suggested procedure
+rejects samplewise at least as many hypotheses as Hochberg's method and therefore
+has also greater power than other FWER controlling methods such as Holm's
+(1979).
+
+
+          3.2. Example oj False Discovery Rate Controlling Procedure
+   Thrombolysis with recombinant tissue-type plasminogen activator (rt-PA) and
+anisoylated plasminogen streptokinase activator (APSAC) in myocardial infarction
+has been proved to reduce mortality. Neuhaus et al. (1992) investigated the effects
+of a new front-loaded administration of rt-PA versus those obtained with a standard
+regimen of APSAC, in a randomized multi centre trial in 421 patients with acute
+myocardial infarction. Four families of hypotheses can be identified in the study:
+
+  (a) base-line comparisons (11 hypotheses), where the problem is of showing
+      equivalence;
+  (b) patency of infarct-related artery (eight hypotheses);
+  (c) reocclusion rates of patent infarct-related artery (six hypotheses);
+  (d) cardiac and other events after the start of thrombolitic treatment (15
+      hypotheses) .
+
+In this last family FDR control may be desired: we do not wish to conclude that the
+front-loaded treatment is better if it is merely equivalent to the previous treatment
+in all respects.
+   In the paper, however, there is no attention to the problem of multiplicity (the
+only exception being the division of the end points into primary and secondary).
+The individual p-values are reported as they are, with no word of warning regarding
+their interpretation. The authors conclude that
+  'Compared to APSAC treatment, despite more early reocclusions, the clinical course with
+  rt-PA treatment is more favorable with fewer bleeding complications and a substantially
+  lower in-hospital mortality rate, presumably due to improved early patency of the infarct-
+  related artery'.
+

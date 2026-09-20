@@ -1,0 +1,60 @@
+     RAMBACHAN AND ROTH                 A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                2579
+                                                     TABLE 1
+                              Summary of expected properties for each simulation design
+                                                  Parallel Trends                              Pulse Pre-Trend
+
+                                         SD (M)              S D P B (M)            S D R M ( M̄)          R M ( M̄)
+Conditional and Hybrid
+Consistent                                                                                                     
+Asymptotically (near-)optimal                                                                                  ×
+FLCI
+
+
+
+
+                                                                                                                             Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+Consistent                                                         ×                      ×                      ×
+Finite-sample near-optimal                                         ×                      ×                      ×
+
+
+
+
+is the average causal effect in the post-treatment periods (θ = τ̄ post ), with qualitatively similar
+results.
+    For a given choice of , we compute the identified set S(β, ) using the formulas provided
+in Lemma 2.1 and calculate the expected excess length for each of the proposed confidence
+sets. We benchmark the expected excess length of our proposed confidence sets relative to an
+efficiency bound for confidence sets that satisfy the uniform coverage requirement.29 We report
+the efficiency ratio of each procedure, which is defined as the ratio of the optimal benchmark
+relative to the average excess length for the procedure. All results are calculated over 1,000
+simulations per paper.
+    We consider four choices of  to highlight the performance of our proposed confidence sets
+across a range of conditions: SD (M),  S D P B (M),  R M ( M̄), and  S D R M ( M̄). We consider
+simulations under the assumption of zero treatment effects, so that τ = 0 and thus β = δ. We
+consider two forms for δ. First, we consider the baseline case of parallel trends (δ = 0). Second,
+we consider a “pulse” pre-trend in which δ−1 is non-zero and the remaining elements of δ are
+zero. Such a pre-trend might arise in practice if there are confounding policy changes or other
+events close to the time of treatment. These different choices of δ allow us to highlight the
+relative strengths of the proposed inference procedures. For example, FLCIs have near-optimal
+expected length when δ = 0 and  = SD (M), whereas the conditional test has optimal local
+asymptotic power under the pulse design when  =  S D P B (M). Table 1 summarizes which of
+our theoretical results hold for each of the simulation designs when M and M̄ are non-zero.
+    In practice, we find that for SD (M) and  S D P B (M), the results depend on M but are quali-
+tatively similar across values of δ. By contrast, for  S D R M ( M̄) and  R M ( M̄), the choice of δ is
+more important than the choice of M̄. Therefore, to highlight the most important dimensions for
+each of the simulation designs, in the main text of the paper we report results for SD (M) and
+ S D P B (M) under different values of M and δ = 0 (parallel trends), whereas for  R M ( M̄) and
+ S D R M ( M̄) we vary the magnitude of the pre-treatment pulse δ−1 , holding M̄ = 1 constant. In
+the supplementary materials, we report results for additional choices of these parameters.
+
+
+
+
+        29. For choices of  that are convex (e.g. SD (M) and  S D P B (M)), we benchmark the expected excess length
+of our proposed confidence sets against a sharp optimal bound over confidence sets that satisfy the finite-sample coverage
+requirement (10). This optimal bound is provided in the supplementary materials, and follows as a corollary from results
+in Armstrong and Kolesár (2018) on the optimal expected length of a confidence set satisfying the uniform coverage
+requirement (10). For choices of  that can be written as the union of convex sets (e.g.  R M ( M̄) and  S D R M ( M̄)),
+we compare the expected excess length of our proposed confidence sets against the maximal optimal bound over each
+set in the union, which is a potentially non-sharp bound for any confidence set with correct coverage.
+

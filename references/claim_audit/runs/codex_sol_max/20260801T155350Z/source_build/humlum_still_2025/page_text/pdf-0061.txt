@@ -1,0 +1,66 @@
+1, Ej = 1) = αb0 + αb1 + βb > 0).
+
+   The aggregate supply of human capital to non-encouraged firms satisfies:
+                                                            Z 1
+                                                                                   1
+           H0S (W1:0 | αb ,         βb , αc , βc ) =               1di = 1 +           (α̂0 + α̂1 + log W1:0 ),           (63)
+                | {z } |{z}
+                    −       −
+                                    |{z} |{z} |{z}            i∗                  β̂
+                                     −       +      +
+
+
+which is strictly decreasing in the relative skill price W1:0 , strictly increasing in both the
+
+common and idiosyncratic productivity benefits of AI chatbots (αb and βb ), and strictly
+
+decreasing in both the common and idiosyncratic adoption costs (αc and βc ).
+
+   Combining Equations (59)-(62), the aggregate supply of human capital to encouraged
+
+firms relative to non-encouraged firms satisfies
+                                                                     h                                            i
+                                                    exp(αb0 +αb1 )
+                                                         βb
+                                                                         exp(− ββ̂b (α̂0 + α̂1 + log W1:0 )) − 1
+    S
+   H1:0 (W1:0 | αb , βb , αc , βc ) =                                                                                 ,   (64)
+        | {z } |{z} |{z} |{z} |{z}                                 1 + β̂1 (α̂0 + α̂1 + log W1:0 )
+          +     +       +       −        −
+
+
+Intuitively, the relative supply of human capital to encouraged firms is higher when the
+
+relative skill price is high (inducing more workers to sort into these firms), the productivity
+
+benefits of chatbot adoption (αb and βb ) are large, and adoption costs (αc and βc ) are
+
+low—provided that chatbots are not counterproductive for encouraged adopters.
+
+
+Skill price differentials. Equilibrium skill price differentials equate the relative supply
+
+and demand for human capital at encouraged firms:
+
+                                                  S              D
+                                                 H1:0 (W1:0 ) = H1:0 (W1:0 )                                              (65)
+
+                           S                                                        D
+   Since the supply curve H1:0 is strictly increasing in W1:0 and the demand curve H1:0 is
+
+strictly decreasing, Equation (65) pins down a unique equilibrium skill price differential.
+
+   Panel (b) of Figure A.2 illustrates the inverse aggregate supply and demand curves
+
+for relative human capital at encouraged firms. The equilibrium skill price differential
+
+corresponds to their intersection.
+
+   Equilibrium skill price differentials are high when relative demand for human capital,
+ D                               S
+H1:0 , exceeds relative supply, H1:0 . From Equations (58) and (64), this occurs when
+
+
+
+                                                              26
+

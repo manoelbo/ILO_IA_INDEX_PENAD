@@ -1,0 +1,48 @@
+The parameter θATE% may therefore be attractive in settings where the researcher does not want to
+distinguish between the intensive and extensive margins. For example, if Y is a count of publications
+by a researcher in a particular year, and publications are sometimes zero owing to the idiosyncracies
+of the publication process, then it may be reasonable to view a change between 0 and 1 as similar
+to a change between 1 and 2. On the other hand, in settings where a zero corresponds to a distinct
+economic choice, such as not participating in the labor market, then it may be of interest to separate
+the effects along the intensive and extensive margin, as we discuss in more detail in Section 4.3 below.
+       It is also worth noting that if the researcher has determined that the ATE in levels is not of
+economic interest, then similar issues will likely arise for θATE% , since θATE% is just a re-scaling of
+the ATE in levels. For one, the ATE in levels (and hence θATE% ) imposes no diminishing returns,
+and thus might be dominated by individuals in the tail of the outcome distribution, particularly
+when the outcome is skewed. Whether this is warranted will depend on the economic question: if
+the policy-maker’s goal is to reduce healthcare spending, it may not matter whether the savings
+are produced mainly by reducing spending for a small fraction of individuals with catastrophic
+medical spending. On the other hand, a policy that increases every American’s income by $100 and
+one that increases Elon Musk’s income by $35 billion and has no effect on anyone else would have
+approximately the same value of θATE% , yet the former may be vastly preferred by an inequality-
+minded policy-maker. We therefore next turn to alternative approaches that place less weight on
+the tails of the outcome distribution.
+
+Normalizing other functionals. While θATE% normalizes the ATE by the control mean, one can
+obtain scale-invariance by normalizing other functionals of the potential outcomes distributions.23
+For example,
+                                              MedianpY p1qq ´ MedianpY p0qq
+                                θMedian% “                                  ,
+                                                     MedianpY p0qq
+is the quantile treatment effect at the median normalized by the median of Y p0q.24 Put otherwise,
+it captures the percentage change in the median between the treated and control distributions.
+(θMedian% thus may be particularly relevant for politicians interested in maximizing the happiness
+of the median voter!) As is typically the case with quantile treatment effects, however, the numerator
+of θMedian% need not correspond to the median of individual-level treatment effects. Moreover, in
+many settings, decision-makers may care about treatment effects throughout the distribution, not
+just at the median, in which case θMedian% may not be the most economically-relevant parameter.
+
+Normalizing the outcome. A related approach to obtaining a treatment effect with more intu-
+itive units is to estimate the ATE for a transformed outcome that has a percentage interpretation.
+One example is to consider an outcome of the form Ỹ “ Y {X, where Y is the original outcome and
+X is some pre-determined characteristic. For example, suppose Y is employment in a particular
+  23
+     Indeed, any functional φpP q is homogeneous of degree zero if and only if it can be written as the ratio of two
+homogeneous of degree one functionals.
+  24
+     Note that θMedian% is well-defined only if MedianpY p0qq ą 0.
+
+
+
+                                                        18
+

@@ -1,0 +1,37 @@
+    Building on these exposure measures, we estimate a series of difference-in-differences
+models around the introduction of ChatGPT that exploit firm- and occupation-level
+variation in LLM exposure to estimate the causal effects of the ChatGPT shock
+on employment, wages, pay dispersion, job seniority, workplace arrangements, and
+overall hiring dynamics.
+    Our results show a clear impact of LLM introduction on UK labor markets, with
+effects emerging gradually across multiple dimensions of employment. At the firm
+level, a one standard deviation increase in LLM exposure is associated with a 0.3 per-
+cent reduction in total employment. The impact is concentrated among junior po-
+sitions, with low-seniority employment declining by 0.4 percent while high-seniority
+positions show smaller and partly insignificant reductions. This compositional shift
+reduces the fraction of low-seniority workers, which mechanically raises average com-
+pensation in exposed companies as the workforce skews toward higher-paid senior
+employees.
+    These patterns also show up in hiring intentions. In an analysis of firm-level
+job posting data, we find that a one standard deviation increase in LLM exposure
+reduces the likelihood that firms post job vacancies in a given month by 1.0 per-
+centage point. The reduction in job postings among exposed firms is strongest for
+technical and creative roles such as software engineers and designers. At the occu-
+pation level, we observe even more pronounced effects on hiring. A one standard
+deviation increase in an occupation’s LLM exposure is associated with a 3.9 percent
+decline in job postings, accompanied by substantial reductions in posted salaries.
+    Importantly, these effects are not uniformly distributed across the labor mar-
+ket. Our heterogeneity analysis shows that LLM disruption is concentrated almost
+entirely in higher-wage segments. High-compensation firms experience employment
+reductions of 0.7 percent per standard deviation increase in exposure, compared with
+near-zero effects for low-compensation firms. Similarly, high-salary occupations ex-
+perience 5.7 percent declines in job postings per standard deviation, while low-salary
+roles show no significant change. These results point in the opposite direction from
+historical automation experiences, in which routine middle-skill occupations bore
+the brunt of technological displacement (Autor, 2024).
+    To interpret these results, we draw on the task-based framework (Autor et al.,
+2003; Acemoglu and Restrepo, 2018, 2019, 2020; Autor and Thompson, 2025). This
+framework models production as discrete tasks allocated between labor and capi-
+
+                                           3
+

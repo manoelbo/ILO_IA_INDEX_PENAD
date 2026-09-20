@@ -1,0 +1,56 @@
+        The challenge in this setting has been to articulate how estimates of equation (2) compare
+
+the groups and times depicted in figure 1. We do, however, have clear intuition, for 2x2 designs in
+
+which one group’s treatment status changes and another’s does not. We could form several such
+
+designs, estimable by equation (1), in the three-group case. Figure 2 plots them.
+
+        Panels A and B show that with only one of the two treatment groups, an estimate from
+
+equation (2) reduces to the canonical case comparing a treated to an untreated group:
+
+               � 2𝑥𝑥2 ≡ �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑗𝑗) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑗𝑗) � − �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(𝑗𝑗) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑗𝑗) � , 𝑗𝑗 = 𝑘𝑘, ℓ .
+               𝛽𝛽                                                                                            (3)
+                  𝑗𝑗𝑗𝑗     𝑗𝑗               𝑗𝑗                𝑈𝑈               𝑈𝑈
+
+
+If instead there were no untreated units, the two way fixed effects estimator would be identified
+
+only by the differential treatment timing between groups 𝑘𝑘 and ℓ. For this case, panels C and D
+
+plot two clear 2x2 DD’s based on sub-periods when only one group’s treatment status changes.
+
+Before 𝑡𝑡ℓ∗ , the early units act as the treatment group because their treatment status changes, and
+
+later units act as controls during their pre-period. We compare outcomes between the window
+
+when treatment status varies, 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ), and group 𝑘𝑘’s pre-period, 𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘):
+
+                     � 2𝑥𝑥2,𝑘𝑘 ≡ �𝑦𝑦𝑀𝑀𝐼𝐼𝐼𝐼(𝑘𝑘,ℓ) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘) � − �𝑦𝑦𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘,ℓ) − 𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃(𝑘𝑘) �
+                     𝛽𝛽                                                                                      (4)
+                        𝑘𝑘ℓ         𝑘𝑘               𝑘𝑘                ℓ                ℓ
+
+
+The opposite situation, shown in panel D, arises after 𝑡𝑡𝑘𝑘∗ when the later group changes treatment
+
+status but the early group does not. Later units act as the treatment group, early units act as controls,
+
+and we compare average outcomes between the periods 𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) and 𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘, ℓ):
+
+                     � 2𝑥𝑥2,ℓ ≡ �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) − 𝑦𝑦𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘,ℓ) � − �𝑦𝑦𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃(ℓ) − 𝑦𝑦𝑀𝑀𝑀𝑀𝑀𝑀(𝑘𝑘,ℓ) �
+                     𝛽𝛽                                                                                      (5)
+                        𝑘𝑘ℓ        ℓ               ℓ                   𝑘𝑘              𝑘𝑘
+
+
+The already-treated units in group 𝑘𝑘 can serve as controls even though they are treated because
+
+treatment status does not change.
+
+        My central result is that any two-way fixed effects DD estimator is a weighted average of
+
+well-understood 2x2 DD estimators, like those plotted in figure 2. To see why, first assume a
+
+
+                                                              6
+

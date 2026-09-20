@@ -1,0 +1,68 @@
+                                                                                                 ν` by taking
+at least l periods relative to hospitalization by its sample analog. Third, we form IW estimates b
+
+                     δe,` (returned from step one) with sample cohort share (returned from step two) as
+weighted averages of b
+
+weights.
+
+                                           µ` and the IW estimates b
+    In Table 3, we report the FE estimates b                       ν` , as well as the underlying C ATTe,`
+
+          δe,` . In this application, the FE estimates and IW estimates happen to be very similar in their
+estimates b
+
+magnitude. The conclusion from Dobkin et al. (2018) based on FE estimates similar to ours still holds: we
+
+find a substantial and persistent decline in the earnings due to hospitalization, and the increase in out-of-
+
+pocket spending is transitory and small in comparison.
+
+    However, the FE estimates still suffer from non-convex and non-zero weighting as we show in Section
+
+5.3, which can lead to interpretability issues depending on the amount of treatment effect heterogeneity.
+
+                              µ0 falls in the convex hull of its underlying C ATTe,0 estimates, b
+Even though for both outcomes b                                                                 µ−2 turns
+
+out to be outside the convex hull of its underlying C ATTe,−2 estimates. In contrast, by construction, the IW
+
+          ν` fall within the convex hull of its underlying C ATTe,` estimates and are unaffected by C ATTe,`0
+estimates b
+
+estimates from other periods ` 0 , `. Thus, they have an interpretation as an average effect of the treatment
+
+on the treated ` periods after initial treatment.
+
+
+
+6    Conclusions
+
+This paper analyzes the behavior of relative period coefficients µ` on the indicator for being ` periods away
+
+from the treatment from two-way fixed effects regressions in settings with variation in treatment timing
+
+and treatment effects heterogeneity. For dynamic treatment effects, researchers are usually interested in
+
+estimating some average of treatment effects from ` periods relative to the treatment, and it is common
+
+                                   µ` assuming that interpretation is valid. However, we show that in the
+to report the coefficient estimate b
+
+presence of heterogenous treatment effects, the coefficient µ` does not necessarily capture the dynamic
+
+treatment effect as it can fall outside the convex hull of C ATTe,` from its corresponding period ` and may
+
+pick up spurious terms consisting of treatment effects from periods other than `. This negative result is based
+
+on the decomposition of the coefficients µ` as a linear combination of cohort-specific average treatment
+
+effects on the treated C ATTe,` . The weights in the linear combination can be non-convex, and non-zero on
+
+relative periods ` 0 , `.
+
+    Given these negative results on two-way fixed effects regression estimators, we propose “interaction-
+
+
+                                                      29
+

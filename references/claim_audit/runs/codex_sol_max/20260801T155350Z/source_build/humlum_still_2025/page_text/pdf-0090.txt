@@ -1,0 +1,58 @@
+             Figure D.6: Total Time Savings from AI Chatbots in % of Work Hours
+
+         Marketing Professionals
+         Software Developers
+         HR Professionals
+         IT Support
+         Customer Service
+         Legal Professionals
+         Office Clerks
+         Journalists
+         Financial Advisors
+         Accountants
+         Teachers
+
+                                   0     1         2         3         4         5         6         7          8
+                                              Encouraged Adopters      Non-Encouraged Adopters
+
+Notes: This figure presents workers’ time savings from AI chatbots, categorized by workers’ occupations and employer
+policies. The figure focuses on workers who have ever used AI chatbots for work. Occupations are sorted by their average
+time savings among encouraged users. We estimate total time savings by combining workers’ frequency of use (from Figure
+D.3) with their reported time savings per day of usage (from Table D.2). Table E.9 decomposes the time savings into
+each of its components: frequency of use, time savings per day of usage, and the covariance between the two. The table
+notes provide additional details on how time savings and usage frequencies are coded. Sample: The figure is based on all
+completed responses from the 2024 survey that can be linked to the registry data.
+
+
+
+D.4         Comparison to the Literature
+
+The widespread adoption of AI chatbots—and the substantial gender gaps in usage—are
+                                                                  1
+well documented in the literature.37 We contribute to this evidence by documenting that
+
+employer initiatives for AI chatbot adoption are now common and play an important role
+
+in shaping overall adoption rates and demographic disparities in usage.38
+
+       The importance of employer policies in driving adoption aligns with Dillon et al. (2025),
+
+who show that firm effects are a key determinant of workers’ uptake of a randomized offer
+
+for Microsoft Copilot. The importance of training in closing gender gaps in adoption is
+  37
+      For example, our 2023 survey found that 39.8% of workers had used ChatGPT for work, with adoption
+rates 15.9 percentage points lower among women within occupations (Humlum and Vestergaard, 2025)
+(see Appendix E.1.4 for a comparison of the 2023 and 2024 adoption patterns). Higher adoption rates
+among younger, less experienced, and higher-earning workers also replicate the patterns observed in our
+earlier round. Bick, Blandin and Deming (2025) report similar adoption patterns among U.S. workers,
+and Otis et al. (2024) show that gender gaps in Generative AI adoption are pervasive across contexts.
+   38
+      By contrast, earlier surveys found relatively low take-up rates of AI at the firm level. For example,
+Bonney et al. (2024) document that as of February 2024, only 5.4% of U.S. firms reported using AI, with
+adoption in the leading sector (Information) still below 20%.
+
+
+
+                                                          55
+

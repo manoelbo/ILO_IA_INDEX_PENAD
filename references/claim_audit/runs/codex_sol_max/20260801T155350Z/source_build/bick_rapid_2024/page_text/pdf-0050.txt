@@ -1,0 +1,50 @@
+D      Details on Time Savings and Productivity Calculations
+
+D.1     Derivations Using the Aggregate Production Model
+
+The Aggregate Productivity Gain from Generative AI
+
+   We model the economy’s aggregate output using a Cobb-Douglas aggregate production
+function where labor supply is perfectly substitutable across workers. The economy contains
+N workers. Let Y denote the aggregate output, and let L denote the aggregate supply of labor
+measured in efficiency units (going forward we refer to this as aggregate effective labor supply).
+The aggregate production function is given by:
+
+                                           Y = AK α L1−α ,                                  (D.1)
+
+where A is TFP, K is the aggregate capital stock, and α is the Cobb-Douglas share on capital.
+The aggregate effective supply of labor L is defined as the weighted sum of individual labor
+supplies:
+                                             XN
+                                        L=       ℓi ei                                 (D.2)
+                                                   i=1
+
+where ℓi is the number of hours worked per week by worker i, and ei is the efficiency units of
+labor supplied by worker i.
+
+    In a competitive labor market, each worker is paid their marginal product of labor:
+
+                                        wi = (1 − α)A(K/L)α ei                              (D.3)
+
+where wi is the worker’s hourly wage. Normalizing the mean efficiency unit to e = 1, we have:
+
+              wi      wi           (1 − α)A(K/L)α ei        (1 − α)A(K/L)α ei
+      w̃i ≡      = P          = P                         =                   = ei          (D.4)
+              w   ( i wi ) /N  ( i (1 − α)A(K/L)α ei ) /N   (1 − α)A(K/L)α e
+
+where w̃i is worker i’s wage relative to mean wages w.
+
+    Suppose that worker i saves si hours per week due to genAI and spends this time on
+additional production within their job. The effective weekly labor supply for worker i is then
+ℓi + si . Substituting this into the expression for aggregate effective labor supply, we have:
+                                    X                    X             X
+                             L′ =       (ℓi + si )ei =       ℓi ei +       si ei .          (D.5)
+                                    i                    i             i
+
+
+
+    The change in aggregate effective labor supply attributable to genAI-induced time savings
+
+
+                                                   18
+

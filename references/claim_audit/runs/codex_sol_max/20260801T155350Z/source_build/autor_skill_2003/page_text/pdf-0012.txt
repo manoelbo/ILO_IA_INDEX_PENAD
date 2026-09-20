@@ -1,0 +1,71 @@
+1290             QUARTERLY JOURNAL OF ECONOMICS
+
+
+considering equation (1) as representing the production function
+of a single industry, with distinct industries j producing outputs
+q j that demand different mixes of routine and nonroutine tasks.
+We write industry j’s production function as
+
+(8)                      q j 5 r 12b
+                                 j
+                                    j
+                                      n bj j, b j [ ~0,1!,
+
+where b j is the industry-specic factor share of nonroutine tasks,
+and r j , n j denote the industry’s task inputs. All industries use
+Cobb-Douglas technology, but industries with smaller b j are more
+routine task intensive.
+    We assume that consumer preferences in this economy may
+be represented with a Dixit-Stiglitz [1977] utility function,
+
+(9)               U~q 1,q 2, . . . , q j! 5 ~      Oq !
+                                                    j
+                                                        12v 1/~12v!
+                                                        j         ,
+
+
+where 0 , v , 1. The elasticity of demand for each good is
+2(1/v), with the market clearing price inversely proportional to
+                                        v
+the quantity produced, p j (q j ) } q 2
+                                      j .
+    Industry prot maximization yields the following rst-order
+conditions for wages:
+                                               bj 12bj 2v
+(10)          r 5 n bj jr 2b
+                          j ~1 2 b j!~1 2 v!~n j r j
+                             j
+                                                      !               and
+
+            wN 5 n bj21r 12bjb j~1 2 v!~n bj jr 12b
+                                                j    ! .
+                                                    j 2v
+
+
+
+
+Rearranging to obtain factor demands gives
+
+(11)   nj 5 wN 21/v ~bj ~1 2 v!!1/v   S                    D
+                                          wN ~1 2 bj ! ~~12b j !~12v!!/v
+                                           r
+                                             z
+                                                bj
+                                                                               and
+
+       r j 5 r 21/v~~1 2 b j!~1 2 v!! 1/v    S   w N ~1 2 b j! ~bj~v21!!/v
+                                                  r
+                                                    z
+                                                        bj        D        .
+
+Using these equations, we obtain the following three proposi-
+tions, which we test empirically below.
+    P1. Although all industries face the same price of computer
+         capital, r, the degree to which industries adopt this
+         capital as its price declines depends upon b j . For a given
+         price decline, the proportionate increase in demand for
+         routine task input is larger in routine-task-intensive (b j
+         small) industries, as may be seen by taking the cross-
+         partial derivative of routine task demand with respect to
+         r and b j :
+

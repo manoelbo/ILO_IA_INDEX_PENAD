@@ -1,0 +1,22 @@
+Title:           Winners and losers of generative AI: Early Evidence of Shifts in Freelancer Demand
+Subject:         Journal of Economic Behavior and Organization, 235 (2025) 106845. doi:10.1016/j.jebo.2024.106845
+Keywords:        Generative AI technologies,Large language models,Automation and employment,Labor market implications of AI,Technological transition,Online labor markets
+Author:          Ole Teutloff
+Creator:         Elsevier
+Producer:        Acrobat Distiller 8.1.0 (Windows)
+CreationDate:    Mon Jun  9 04:41:52 2025 -03
+ModDate:         Mon Jun  9 05:12:11 2025 -03
+Custom Metadata: yes
+Metadata Stream: yes
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           19
+Encrypted:       no
+Page size:       544.252 x 742.677 pts
+Page rot:        0
+File size:       2765187 bytes
+Optimized:       no
+PDF version:     1.7

@@ -1,0 +1,249 @@
+version: 2
+
+goal:
+  title: "Section 4 Event Study and Pre-Trends with Strict and Broad Controls"
+  slug: "section4-event-study-by-scenario"
+  kind: existing_plan
+  tranche: "Validate the updated event-study plan, implement the standalone script, generate all planned strict/broad-control artifacts, verify outputs, and audit contrast recommendations."
+  status: done
+  oracle:
+    signal: "The standalone event-study script compiles, runs, generates every planned CSV/PNG/Markdown artifact for the baseline and six strict/broad OIT contrasts, passes output validation gates, and leaves only expected changes."
+    cadence: "after the Worker implementation package and at final audit"
+    final_proof: "Receipts show passing py_compile, script execution, artifact validation for all seven contrasts and four outcomes, reference-period checks, strict/broad control checks, No score/no-MTE exclusion checks, sample-summary checks, pre-trend column checks, report/figure existence checks, and git diff hygiene."
+  intake:
+    original_request: "atualize os arquivos que você fez agora"
+    interpreted_outcome: "Update the GoalBuddy board so the Section 4 event-study plan uses strict and broad controls, with Minimal Exposure included in the broad control group."
+    input_shape: existing_plan
+    audience: "dissertation author and research reviewers"
+    authority: requested
+    proof_type: test
+    completion_proof: "All planned script, CSV, PNG, sample summary, and Markdown outputs exist and pass validation for the seven contrasts; final audit records full_outcome_complete: true."
+    likely_misfire: "The run could create plausible-looking charts or reports while using wrong treatment/control roles, putting Minimal Exposure in the wrong contrast, including No score or no-MTE CBOs, omitting contrasts/outcomes, weakening the t = -1 reference convention, or modifying the old Stage 2b pipeline."
+    blind_spots_considered:
+      - "pyfixest 0.40.1 may not expose covariance in the expected shape, so the joint pre-trend test needs an explicit validated fallback."
+      - "Pre-trend recommendations must be conservative and evidence-backed, not just narrative-friendly."
+      - "Known dissertation hard gates around demographic recoding and missing outcomes should remain hard failures."
+      - "The report language convention differs by artifact: code and GoalBuddy docs in English, dissertation-facing analytical reports in Portuguese unless repo evidence says otherwise."
+      - "The new broad-control specification should be evaluated as required robustness, while the strict-control specification remains the main causal discussion unless evidence supports changing that framing."
+    existing_plan_facts:
+      - "Create src/scripts/build_section4_event_study_by_scenario.py."
+      - "Inputs are data/output/painel_2b_ready.parquet and outputs/treatment_scenario_grid/scenario_cbo_classification.csv."
+      - "Use seven contrasts: baseline_mte2d_top20_vs_rest, trat_alta_expo_strict_control, trat_alta_expo_broad_control, trat_media_expo_strict_control, trat_media_expo_broad_control, trat_expostos_strict_control, and trat_expostos_broad_control."
+      - "For trat_alta_expo, treatment is Exposed: Gradient 3 or Exposed: Gradient 4."
+      - "For trat_media_expo, treatment is Exposed: Gradient 1 or Exposed: Gradient 2."
+      - "For trat_expostos, treatment is Exposed: Gradient 1, 2, 3, or 4."
+      - "For strict_control contrasts, control is Not Exposed only."
+      - "For broad_control contrasts, control is Not Exposed plus Minimal Exposure."
+      - "No score, no-MTE, and invalid classifications remain outside treatment and control."
+      - "The baseline baseline_mte2d_top20_vs_rest remains as currently defined, with no strict/broad variant."
+      - "For each contrast, merge by cbo_4d, keep only treated/control rows, define scenario_treat, bin tempo_relativo_meses to [-12, 24], use t = -1 as reference, and create interaction event dummies."
+      - "Estimate ln_admissoes, ln_desligamentos, saldo, and ln_salario_adm with controls idade_media_adm, pct_mulher_adm, pct_superior_adm, pct_negra_adm, fixed effects cbo_4d and periodo, and clustering by cbo_4d."
+      - "Write outputs/dissertation_section4/event_study/event_study_coefficients_long.csv with scenario_id, outcome, and t coverage."
+      - "Write outputs/dissertation_section4/event_study/event_study_pretrend_tests.csv with required pre-trend columns and classification."
+      - "Write outputs/dissertation_section4/event_study/event_study_sample_summary.csv with treated/control/excluded counts and evidence that broad controls increase the control group relative to strict controls."
+      - "Generate one 2x2 figure per contrast and one comparison figure per outcome."
+      - "Generate one Markdown report per contrast and event_study_comparison_report.md."
+      - "The general report must compare strict vs broad, rank contrasts by pre-trend quality, and recommend main, robustness, or exploratory use."
+      - "Acceptance commands include py_compile, running the script, output validation, and git diff --check excluding notebook/_output/etapa_3b_analise_did_municipio_conectividade.html."
+
+rules:
+  pm_owns_state: true
+  one_active_task: true
+  max_write_workers: 1
+  no_implementation_without_worker_or_pm_task: true
+  no_completion_without_judge_or_pm_audit: true
+  planning_is_not_completion: true
+  queued_required_worker_blocks_completion: true
+  continuous_until_full_outcome: true
+  missing_input_or_credentials_do_not_stop_goal: true
+  preserve_and_validate_existing_plan: true
+  intake_misfire_must_be_audited: true
+  goal_pressure_requires_oracle: true
+  no_completion_on_weak_proof: true
+  slice_policy:
+    max_consecutive_tiny_tasks: 2
+    prefer_vertical_slices: true
+    judge_picks_largest_safe_slice: true
+    worker_completes_whole_slice: true
+
+agents:
+  scout: installed
+  worker: installed
+  judge: installed
+
+visual_board:
+  selected: local
+  local:
+    status: live
+    url: "http://goalbuddy.localhost:41737/section4-event-study-by-scenario/"
+    command: "npx goalbuddy board docs/goals/section4-event-study-by-scenario"
+
+active_task: null
+
+tasks:
+  - id: T001
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Validate and operationalize the user-provided event-study plan before implementation."
+    inputs:
+      - "Attached plan: Event Study E Pre-Trends Com Controle Estrito E Controle Amplo"
+      - "docs/goals/section4-event-study-by-scenario/goal.md"
+      - "Current repository structure and relevant existing Section 4 scripts/results, read-only"
+      - "data/output/painel_2b_ready.parquet, metadata or schema only unless full read is necessary"
+      - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv, metadata or schema only unless full read is necessary"
+    constraints:
+      - "Read-only."
+      - "Do not implement or edit repository files."
+      - "Preserve the existing plan unless evidence shows a necessary correction."
+      - "Reject any plan variant that modifies the legacy Stage 2b pipeline."
+      - "Confirm the treatment/control role contract for all seven contrasts, including strict_control = Not Exposed and broad_control = Not Exposed plus Minimal Exposure."
+      - "Confirm that No score, no-MTE, and invalid classifications stay outside treatment and control."
+      - "Confirm that treatment is Gradient 3-4 for trat_alta_expo, Gradient 1-2 for trat_media_expo, and Gradient 1-4 for trat_expostos."
+      - "Treat wrong crosswalk/treatment definitions, missing outcomes, missing contrast roles, zero or anomalous demographic controls, and impossible pre-trend tests as hard gates."
+    expected_output:
+      - "Decision: approved | approved_with_changes | blocked"
+      - "Refined Worker objective for the largest safe implementation slice"
+      - "Final allowed_files for Worker"
+      - "Verification commands and output validation checks"
+      - "Stop conditions"
+      - "Any plan corrections that must be applied before implementation"
+    receipt:
+      result: done
+      decision: "approved_with_changes"
+      full_outcome_complete: false
+      summary: "Plan validation approved implementation using the existing scenario grid as the source of truth. The OIT contrasts must be rebuilt from cbo_ilo_gradient rather than from the old role__trat_* columns, because the old roles use Not Exposed only and exclude Minimal Exposure."
+      evidence:
+        - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv contains 266 Not Exposed, 95 Minimal Exposure, 31 Exposed: Gradient 3, 31 Exposed: Gradient 2, 13 Exposed: Gradient 1, and 193 No score CBOs."
+        - "Baseline roles remain role__baseline_mte2d_top20_vs_rest with 92 treated, 344 control, and 193 excluded CBOs."
+        - "Strict OIT controls are 266 Not Exposed CBOs; broad OIT controls are 361 Not Exposed plus Minimal Exposure CBOs."
+      worker_objective: "Implement and run the standalone Section 4 event-study package for baseline plus strict/broad OIT treatment contrasts using the precomputed scenario grid classification."
+      allowed_files:
+        - "src/scripts/build_section4_event_study_by_scenario.py"
+        - "outputs/dissertation_section4/event_study/**"
+        - "docs/goals/section4-event-study-by-scenario/state.yaml"
+        - "docs/goals/section4-event-study-by-scenario/notes/**"
+      verify:
+        - "python -m py_compile src/scripts/build_section4_event_study_by_scenario.py"
+        - "python src/scripts/build_section4_event_study_by_scenario.py"
+        - "Validate all seven contrasts, all four outcomes, explicit t = -1 reference rows, strict/broad control definitions, No score/no-MTE exclusions, sample summary, expected reports/figures, and git diff hygiene."
+
+  - id: T002
+    type: worker
+    assignee: Worker
+    status: done
+    reasoning_hint: medium
+    objective: "Implement and run the standalone Section 4 event-study package for the baseline and strict/broad OIT treatment contrasts."
+    inputs:
+      - "T001 Judge receipt"
+      - "src/scripts/build_section4_event_study_by_scenario.py"
+      - "data/output/painel_2b_ready.parquet"
+      - "outputs/treatment_scenario_grid/scenario_cbo_classification.csv"
+    constraints:
+      - "Do not edit legacy Stage 2b pipeline files."
+      - "Keep the script standalone and reproducible."
+      - "Use English for code, function names, comments, and logs."
+      - "Use Portuguese for dissertation-facing analytical Markdown report prose unless T001 finds a stronger repo convention."
+      - "Keep t = -1 as the reference period and represent it explicitly with coefficient zero in output validation."
+      - "Never include No score, no-MTE, invalid, or otherwise excluded rows in estimation."
+      - "Implement strict_control as Not Exposed only and broad_control as Not Exposed plus Minimal Exposure."
+      - "Implement OIT treatment groups exactly as Gradient 3-4, Gradient 1-2, and Gradient 1-4."
+      - "Use an explicit joint_test_method value when covariance access requires a fallback."
+      - "Do not silently skip failed model fits; record failures clearly and make validation fail if required outputs are missing."
+    allowed_files:
+      - "src/scripts/build_section4_event_study_by_scenario.py"
+      - "outputs/dissertation_section4/event_study/**"
+      - "docs/goals/section4-event-study-by-scenario/state.yaml"
+      - "docs/goals/section4-event-study-by-scenario/notes/**"
+    verify:
+      - "python -m py_compile src/scripts/build_section4_event_study_by_scenario.py"
+      - "python src/scripts/build_section4_event_study_by_scenario.py"
+      - "Validate event_study_coefficients_long.csv contains all seven contrasts, all four outcomes per contrast, and explicit t = -1 reference rows with coefficient zero."
+      - "Validate event_study_pretrend_tests.csv contains scenario_id, outcome, n_pre_coefficients, n_pre_p_lt_005, max_abs_pre_coef, mean_abs_pre_coef, joint_p_value, pretrend_status, and joint_test_method."
+      - "Validate event_study_sample_summary.csv exists, is non-empty, includes treated/control/excluded counts, and shows control counts increase in broad_control relative to strict_control for each OIT scenario."
+      - "Validate strict_control includes only Not Exposed controls and broad_control includes Not Exposed plus Minimal Exposure controls."
+      - "Validate No score and no-MTE rows never enter treatment or control."
+      - "Validate all seven contrast figures, all four outcome comparison figures, all seven contrast reports, and event_study_comparison_report.md exist and are non-empty."
+      - "Validate event_study_comparison_report.md explicitly compares strict vs broad and recommends main, robustness, or exploratory use."
+      - "git diff --check -- . ':(exclude)notebook/_output/etapa_3b_analise_did_municipio_conectividade.html'"
+    stop_if:
+      - "T001 does not approve implementation."
+      - "Required input files are missing or schema-incompatible."
+      - "Need to modify files outside allowed_files."
+      - "Need to change the legacy Stage 2b pipeline."
+      - "Treatment/control definitions are ambiguous, omit Minimal Exposure from broad_control, include Minimal Exposure in strict_control, or contradict the current scenario grid."
+      - "Verification fails twice for the same unresolved reason."
+    receipt:
+      result: done
+      full_outcome_complete: false
+      changed_files:
+        - "src/scripts/build_section4_event_study_by_scenario.py"
+        - "outputs/dissertation_section4/event_study/event_study_coefficients_long.csv"
+        - "outputs/dissertation_section4/event_study/event_study_pretrend_tests.csv"
+        - "outputs/dissertation_section4/event_study/event_study_sample_summary.csv"
+        - "outputs/dissertation_section4/event_study/event_study_contrast_cbo_roles.csv"
+        - "outputs/dissertation_section4/event_study/*.png"
+        - "outputs/dissertation_section4/event_study/*.md"
+      commands:
+        - cmd: "python -m py_compile src/scripts/build_section4_event_study_by_scenario.py"
+          status: pass
+        - cmd: "python src/scripts/build_section4_event_study_by_scenario.py"
+          status: pass
+        - cmd: "external Python validation of CSV contracts, output files, strict/broad controls, No score/no-MTE exclusions, t=-1 reference rows, and report text"
+          status: pass
+        - cmd: "git diff --check -- . ':(exclude)notebook/_output/etapa_3b_analise_did_municipio_conectividade.html'"
+          status: pass
+      summary: "Implemented the standalone event-study script, reused scenario_cbo_classification.csv as the source of truth for CBO gradient assignments, generated all seven contrasts across four outcomes, wrote CSVs/figures/Portuguese reports, and passed validation. The broad-control contrasts use Not Exposed plus Minimal Exposure and have 361 control CBOs versus 266 in strict controls."
+
+  - id: T999
+    type: judge
+    assignee: Judge
+    status: done
+    reasoning_hint: high
+    objective: "Audit whether the event-study package satisfies the updated strict/broad-control plan and supports the contrast recommendations."
+    inputs:
+      - "T001 receipt"
+      - "T002 receipt"
+      - "Generated outputs under outputs/dissertation_section4/event_study/"
+      - "Last verification results"
+      - "Current dirty diff"
+    constraints:
+      - "Read-only."
+      - "Reject completion if the script did not run successfully."
+      - "Reject completion if required contrasts, outcomes, reports, figures, sample summary, pre-trend columns, or reference-period rows are missing."
+      - "Reject completion if No score, no-MTE, invalid, or otherwise excluded rows entered estimation."
+      - "Reject completion if strict_control/broad_control definitions or Gradient treatment groups are wrong."
+      - "Reject completion if broad controls do not increase the control group relative to strict controls for the OIT scenarios unless a documented data reason explains it."
+      - "Reject completion if the narrative recommendation is stronger than the pre-trend evidence supports."
+      - "If the full outcome is not complete, create or recommend the next safe Worker task instead of marking the goal done."
+    expected_output:
+      - "complete | not_complete"
+      - "full_outcome_complete: true | false"
+      - "Evidence mapping from receipts and files to the goal oracle"
+      - "Missing evidence or failed gates"
+      - "Next task if not complete"
+    receipt:
+      result: done
+      decision: complete
+      full_outcome_complete: true
+      evidence:
+        - "src/scripts/build_section4_event_study_by_scenario.py compiles and runs successfully."
+        - "event_study_coefficients_long.csv has 1,036 rows: 7 contrasts x 4 outcomes x 37 event-time rows."
+        - "event_study_pretrend_tests.csv has 28 rows and required columns, with joint_test_method = wald_chi2 for all rows."
+        - "event_study_sample_summary.csv confirms strict controls use 266 Not Exposed CBOs and broad controls use 361 Not Exposed plus Minimal Exposure CBOs."
+        - "event_study_contrast_cbo_roles.csv confirms No score and no-MTE rows do not enter treatment/control roles."
+        - "All seven contrast figures, four outcome comparison figures, seven contrast reports, and event_study_comparison_report.md exist and are non-empty."
+        - "git diff --check passed."
+      summary: "Final audit complete. The requested event studies were generated and verified. Substantively, the diagnostics are weak for admissions, separations, and net balance: every contrast has three failed pre-trend outcomes and one passing wage outcome, so reports frame non-wage contrasts as problematic or exploratory rather than main causal findings."
+
+checks:
+  dirty_fingerprint: unknown
+  last_verification:
+    result: pass
+    task: T999
+    commands:
+      - "python -m py_compile src/scripts/build_section4_event_study_by_scenario.py"
+      - "python src/scripts/build_section4_event_study_by_scenario.py"
+      - "external Python validation of output contracts"
+      - "git diff --check -- . ':(exclude)notebook/_output/etapa_3b_analise_did_municipio_conectividade.html'"

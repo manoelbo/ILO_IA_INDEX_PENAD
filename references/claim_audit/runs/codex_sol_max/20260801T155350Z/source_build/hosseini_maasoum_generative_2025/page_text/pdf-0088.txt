@@ -1,0 +1,52 @@
+          - For each task, rate confidence:             HIGH (explicitly described), MEDIUM (strongly
+             implied), LOW (plausible but not stated).
+
+       Return ONLY valid JSON matching the schema exactly.
+
+    Batches are submitted sequentially so that the in-flight token budget stays below the organisation quota.
+A manifest file records the batch_id, submission time, and completion state of every batch. Failed or
+partially completed batches are resubmitted; successfully completed batches are skipped on reruns. Stage-
+1 retrieval artefacts (candidate lists per posting) are cached, so reruns of Stage 2 (e.g., after prompt changes)
+do not require recomputing TF-IDF.
+
+    The pipeline produces two parquet files: a posting-level table with one row per posting (job_id, rcid,
+post_date, onet_code, job_title, LLM-inferred seniority, years_experience, likely_occupation, and
+n_tasks), and a task-level table with one row per extracted (posting, task) pair (job_id, task_id, task_text,
+confidence, valid_id). Table A.4 reports summary statistics.
+
+                     Table A.4: Task Extraction Output: Summary Statistics
+
+                       Posting-level
+                       Postings processed                                         355,013
+                         classified junior                                        158,139
+                         classified senior                                        196,874
+                       Tasks per posting, mean (s.d.)                          7.74 (2.65)
+                       Tasks per posting, median                                         8
+                       Task-level
+                       Total (posting, task) pairs                             2,748,260
+                       Distinct O*NET tasks appearing           16,342 of 19,265 (84.8%)
+                       Task IDs within the candidate enum                       100.00%
+                       Confidence distribution
+                       HIGH (explicitly described)                                 58.4%
+                       MEDIUM (strongly implied)                                   40.1%
+                       LOW (plausible but not stated)                               1.4%
+
+
+    Three features of the output are worth highlighting. First, the LLM respects the JSON schema perfectly:
+every returned task_id is one of the 50 candidates retrieved in Stage 1, so there are no hallucinated tasks.
+Second, the output is broad—84.8% of the O*NET task universe appears at least once—but selective within
+each posting: the median bundle has eight tasks, consistent with the prompt’s “typical range 5–20” instruc-
+tion. Third, the vast majority of selections (98.5%) are labelled HIGH or MEDIUM confidence; in our main
+analysis we use all three tiers, but all results are robust to dropping the 1.4% of LOW-confidence matches.
+
+    Our pipeline is motivated by the task-extraction step in Hampole et al. (2025), but the two exercises
+differ in input and target. They extract AI applications from résumé text and map each application to the
+single nearest O*NET task via sentence-embedding cosine similarity, in order to construct a firm-level AI-
+exposure score. We instead extract the multi-task bundle of a job posting—the set of O*NET tasks the posting
+is asking the worker to perform—because our object of interest is the composition of labour demand and
+
+
+
+
+                                                     A.43
+

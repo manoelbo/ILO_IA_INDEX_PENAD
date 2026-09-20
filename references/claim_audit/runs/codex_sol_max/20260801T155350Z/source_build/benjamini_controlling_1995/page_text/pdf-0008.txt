@@ -1,0 +1,50 @@
+1995)                      CONTROLLING FALSE DISCOVERY RATE                              295
+The statement about the mortality is based on a p-value of 0.0095.
+  Consider now the fourth family, which contains the comparison of mortality and
+14 other comparisons. The ordered p(i)s for the 15 comparisons made are
+    0.0001,    0.0004,    0.0019,      0.0095,   0.0201,   0.0278,   0.0298,   0.0344,
+           0.0459,   0.3240,       0.4262,   0.5719,   0.6528,   0.7590,   1.000.
+Controlling the FWER at 0.05, the Bonferroni approach, using 0.05/15 = 0.0033,
+rejects the three hypotheses corresponding to the smallest p-values. These hy-
+potheses correspond to reduced allergic reaction, and to two different aspects of
+
+
+
+
+                                                                                               Downloaded from https://academic.oup.com/jrsssb/article/57/1/289/7035855 by guest on 28 July 2026
+bleeding; they do not include the comparison of mortality. Using Hochberg's
+procedure leaves us with the same three hypotheses rejected. Thus the statement
+about a significant reduction in mortality is unjustified from the classical point
+of view.
+   Using the FDR controlling procedure with q* = 0.05, we now compare sequen-
+tially each P(i) with 0.05i/I5, starting with P(l5). The first p-value to satisfy the
+constraint is P(4) as
+                                                 4
+                            P(4)   = 0.0095 ~ 150.05 = 0.013.
+Thus we reject the four hypotheses having p-values which are less than or equal
+to 0.013. We may support now with appropriate confidence the statements about
+mortality decrease, of which we did not have sufficiently strong evidence before.
+
+
+        3.3.   Another Look at False Discovery Rate Controlling Procedure
+  The above FOR controlling procedure can be viewed as a post hoc maximizing
+procedure, as the following theorem suggests.
+   Theorem 2. The FOR controlling procedure given by expression (1) is the
+solution of the following constrained maximization problem:
+        choose a that maximizes the number of rejections at this level, r(a),
+                         subject to the constraint am/r(a) ~ q*.                         (3)
+   Proof. Observe that, for each a, if P(i) ~ a < P(i+I)' then r(a) = i, Further-
+more, as the ratio on the left-hand side of constraint (3) increases in a over the range
+on which r(a) is constant, it is enough to investigate as which are equal to one of
+the P(i)s. This a = P(k) satisfies the constraint because a/r(a) = p(k/k ~ q*/m.
+By considering the largest potential as (largest P(i)s) first, the procedure yields the
+a with the largest r(a) satisfying the constraint.
+   Thus the procedure has also the appearance of a simultaneous maximization of
+R and FOR control being attempted after experimentation. When each hypothesis
+is tested individually at level a, the expected number of wrong rejections satisfies
+E(V) ~ am. So, after observing the outcome of the experiment, an upper bound
+estimate of Qe is om/ria), In view of the observed p-values, the level a can now
+be chosen, by maximizing the observed number of rejections r(a) subject to the
+constraint on the implied FOR-like bound. As noted in the examples of Section 2.2
+this aspect of the procedure is desirable.
+

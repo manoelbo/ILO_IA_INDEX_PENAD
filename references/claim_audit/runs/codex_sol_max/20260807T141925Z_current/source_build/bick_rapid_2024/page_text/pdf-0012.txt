@@ -1,0 +1,45 @@
+   A key question is whether genAI’s faster adoption was driven by work or non-work use.10
+The faster overall pace of genAI adoption compared with PCs is driven by non-work adoption.
+The middle pair of bars in Figure 2 plots work adoption of genAI and PCs. We find similar
+work adoption rates for genAI after two years (32%) and PCs after three years (25%). By
+contrast, the bottom pair of bars in Figure 2 reveals much higher non-work adoption rates for
+genAI (38%) compared with PCs (5%).
+
+   The computer and related information technologies induced far-reaching changes in firm
+organization and management, which led to substantial productivity gains (Brynjolfsson and
+Hitt, 1996). The similar pace of genAI adoption by workers thus far suggests that this new
+technology could also be transformative for firms. At the same time, the choice of whether to
+adopt a technology depends on both its benefits and costs. PCs required purchasing expensive
+immobile hardware and nontrivial training. In contrast, many genAI products are free or
+inexpensive and user-friendly. On the one hand, this lower adoption cost likely contributes to
+genAI’s rapid uptake. On the other hand, this means that similar adoption rates for PCs and
+genAI at work do not necessarily imply equivalent benefits.
+
+
+4         Which Workers Use Generative AI?
+
+In this section, we document that early genAI adoption has not been uniform throughout
+the workforce. Understanding which workers are adopting genAI at higher rates provides
+several important insights. First, because many workers are adopting genAI ahead of firm-level
+adoption, variation in genAI use can help managers allocate support, training, and integration
+efforts. Second, we show that employer encouragement of genAI use is highly predictive of
+adoption, suggesting that firms and managers can influence the nature and extent of genAI use
+in their organization. Third, adoption patterns shed light on how genAI maps onto specific
+tasks and roles within the firm, which is relevant for decisions regarding job redesign and firm
+reorganization.
+
+   Figure 3 documents demographic heterogeneity in work adoption of genAI. The top panel
+shows genAI adoption is 6 percentage points higher for men. The middle panel show genAI
+adoption by age. Workers aged 18-49 have similar adoption rates, while adoption is lower for
+workers aged 50-64. The bottom panel shows that adoption rates are increasing in educational
+attainment. In particular, workers with a Bachelor’s degree or more use genAI at roughly
+twice the rate of non-college educated workers. Differences between demographic groups are
+primarily driven by users who use genAI every workday or at least once in the previous week.
+
+         Figure 4 plots the kernel density of genAI adoption by weekly earnings percentile. Adoption
+    10
+         Unfortunately, internet adoption data do not allow us to distinguish work from non-work adoption.
+
+
+                                                         10
+

@@ -1,0 +1,11 @@
+                                                                                                   56
+
+A.2    Proof of Proposition 2
+
+                           π ( ω=1|sE )                  π ( sA |ω=1)        π ( ω=1|sE )
+Consider log crel > log π( ω=0|sE ) and log crel < b log π( sA |ω=0) + d log π( ω=0|sE ) so that 0 =
+                                                       π ( sA |ω=1,sE )               π ( sA |ω=1)
+a∗ sE ; p ̸= a∗ sA , sE ; p = 1. For small enough log π( sA |ω=0,sE ) , log crel < log π( sA |ω=0) +
+    π ( ω=1|sE )                                                           π ( ω=1|sE )
+log π( ω=0|sE ) so that a∗ sA , sE ; π = 0. The case in which log crel < log π( ω=0|sE ) is analagous.
+

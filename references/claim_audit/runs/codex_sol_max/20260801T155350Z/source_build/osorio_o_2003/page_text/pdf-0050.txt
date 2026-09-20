@@ -1,0 +1,19 @@
+     • Talvez em razão do baixo preenchimento do quesito, a cor não é uma variável
+      disponível para consulta no SGT, que é o aplicativo que permite a recuperação
+      de dados da Rais para a elaboração de estatísticas, tampouco nas tabelas dispo-
+      níveis no sítio do ministério (Anuário Estatístico da Rais). Versões da Rais com
+      a variável de cor só podem ser obtidas mediante solicitação especial ao Ministé-
+      rio do Trabalho e Emprego, pois há sérias questões legais que envolvem a ga-
+      rantia do sigilo dos dados;
+     • Outro sério empecilho ao uso da informação de cor da Rais é o fato de sua u-
+      nidade de análise não ser propriamente o empregado no mercado formal de
+      trabalho, mas o vínculo empregatício. Assim, por exemplo, um sujeito que
+      possua dois empregos formais em estabelecimentos distintos, surgirá duas vezes
+      na Rais. Não foi possível encontrar estudos que avaliem as implicações do fato
+      de a unidade de análise ser o vínculo empregatício.
+
+
+
+
+48                        texto para discussão | 996 | nov. 2003                ipea
+

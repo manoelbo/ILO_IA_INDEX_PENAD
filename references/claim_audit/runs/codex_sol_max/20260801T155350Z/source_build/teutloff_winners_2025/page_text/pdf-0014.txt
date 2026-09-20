@@ -1,0 +1,49 @@
+O. Teutloff et al.                                                                     Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+
+
+Fig. 6. Event study: log mean budget - This figure plots the difference in log mean budget between the unaffected cluster and substituted and
+augmented clusters and the corresponding 95% confidence intervals. The vertical line corresponds to ChatGPT launch. Standard errors are clustered
+at job posting cluster level.
+
+
+
+
+Accordingly, we implemented a randomization inference procedure as follows: we first shuffled the treatment labels (Unaffected,
+Complementary, Substitutable) randomly. Then, we re-estimated the difference-in-differences model given by Eq. (1) using the
+shuffled treatment labels, saving the difference-in-differences terms 𝛿1 and 𝛿2 . Repeating this procedure many times produces a
+distribution of 𝛿1 and 𝛿2 pairs under the null hypothesis that the launch of ChatGPT has no effect on the demand for complementary
+and substitutable clusters. Comparing the actual estimates of 𝛿1 and 𝛿2 to this distribution of placebo estimates allows us to
+understand how extreme they are in comparison. We report the results of this exercise in Appendix H. The results indicate that
+the p-values based on randomization inference are very similar to those based on the cluster robust covariance matrix reported in
+the main text.
+
+3.2.5. Isolating the demand shock from general equilibrium effects
+    The previous analysis demonstrated a reduction in job postings for substitutable skill clusters following the launch of ChatGPT.
+Here, we strengthen the argument that this decline reflects a demand-side shock rather than a reduction in labor supply with three
+key points.
+    First, we highlight, that using job postings as a measure of labor demand is a well-established approach in labor economics (Davis
+et al., 2013; Marinescu and Wolthoff, 2020; Barnichon, 2010). Job postings are initiated by employers to signal a need for labor,
+making them a relatively pure indicator of demand, independent of supply-side factors such as the number or characteristics of job
+seekers.
+    Second, we show that the mean budget per job posting spent by employers require complementary and substituted skill clusters
+did not change due to the introduction of ChatGPT. This suggests that employers were willing to pay the same price for labor but
+demanded less of it, consistent with a leftward shift in the labor demand curve following the ChatGPT launch. Although we lack data
+on realized wages for all employers, some job postings include a desired employer budget as a part of the job posting. We use the
+subset data of job postings of employers who reported a budget, and replicate the event study analysis of the previous section, but
+with the log mean budget as the dependent variable. Fig. 6 and Column (1) of Table 3 show the results of this analysis. There is no
+significant change in the average employer budget across complementary and substitutable clusters in comparison to the unaffected
+category.
+    Third, we show that applications per job posting increased due to a decrease in job postings rather than an increase in
+applications. To do this, we replicate the event study analysis using the log of the average number of applicants per job posting as
+the dependent variable. As Fig. 7 and Column (2) of Table 3 show, the number of applicants per project increased after the launch
+of ChatGPT. Moreover, we can decompose the increase in applications per job posting as follows
+            (∑                  )       (                 )
+                𝑗 𝐴𝑝𝑝𝑙𝑖𝑐𝑎𝑛𝑡𝑠𝑗𝑖𝑡           ∑
+        log                       = log      𝐴𝑝𝑝𝑙𝑖𝑐𝑎𝑛𝑡𝑠𝑗𝑖𝑡 − log(𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡 ).                                                    (3)
+                 𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡              𝑗
+
+
+                                                                       14
+

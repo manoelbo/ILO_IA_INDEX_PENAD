@@ -1,0 +1,53 @@
+References
+
+Abadie, Alberto, “Semiparametric Difference-in-Differences Estimators,” The Review of Economic Studies,
+
+  2005, 72 (1), 1–19.
+
+Ashenfelter, Orley, “Estimating the Effect of Training Programs on Earnings,” The Review of Economics
+
+  and Statistics, 1978, 60 (1), 47–57.
+
+Athey, Susan and Guido Imbens, “Design-based Analysis in Difference-In-Differences Settings with Stag-
+
+  gered Adoption,” Working Paper arXiv:1808.05293 [econ.EM], ArXiV August 2018.
+
+Bailey, Martha J. and Andrew Goodman-Bacon, “The War on Poverty’s Experiment in Public Medicine:
+
+  Community Health Centers and the Mortality of Older Americans,” American Economic Review, March
+
+  2015, 105 (3), 1067–1104.
+
+Blundell, Richard, Monica Costa Dias, Costas Meghir, and John van Reenen, “Evaluating the Employ-
+
+  ment Impact of a Mandatory Job Search Program,” Journal of the European Economic Association, 2004,
+
+  2 (4), 569–606.
+
+Borusyak, Kirill and Xavier Jaravel, “Revisiting Event Study Designs,” Working Paper, Harvard Univer-
+
+  sity May 2017.
+
+Botosaru, Irene and Federico H. Gutierrez, “Difference-in-differences when the treatment status is ob-
+
+  served in only one period,” Journal of Applied Econometrics, 2018, 33 (1), 73–90.
+
+Callaway, Brantly and Pedro H. C. Sant’Anna, “Difference-in-Differences With Multiple Time Peri-
+
+  ods and an Application on the Minimum Wage and Employment,” Working Paper arXiv:1803.09015
+
+  [econ.EM], ArXiV March 2020.
+
+  and Pedro H.C. Sant’Anna, did: Treatment Effects with Multiple Periods and Groups 2020. R package
+
+  version 1.2.3.
+
+Chernozhukov, Victor, Ivan Fernandez-Val, Jinyong Hahn, and Whitney Newey, “Average and Quantile
+
+  Effects in Nonseparable Panel Models,” Econometrica, 2013, 81 (2), 535–580.
+
+
+
+
+                                                   31
+

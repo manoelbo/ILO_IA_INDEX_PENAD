@@ -1,0 +1,69 @@
+                                                                                                                   34
+
+follows:
+                                                                                                      
+                   πr s A            E
+                        ir |ωi = 1, sir               πr ωi = 1|sA     E
+                                                                 ir , sir               πr ωi = 1|sE
+                                                                                                   ir
+             log                              = log                             − log                          .
+                   πr (sA            E
+                        ir |ωi = 0, sir )             πr (ωi = 0|sA     E
+                                                                  ir , sir )            πr (ωi = 0|sE
+                                                                                                    ir )
+
+
+If sE
+    ir can be constructed or controlled for, then we can estimate the first term on the right-
+hand side using data on ωi and sA ir via a binary response model. This estimation is possible
+because the signal from the AI that the humans receive is isomorphic to the vector of predicted
+probabilities for the various diseases observed. The second term in this equation has been
+elicited.
+                                                                                                                  
+This brings us to the second challenge – constructing sE                                        A E
+                                                           ir when estimating πr ωi = 1|sir , sir
+because we do not observe it directly. Let ci be the patient case associated with case-
+pathology i and I (ci ) be the set of case-pathologies associated with case ci . If sE
+                                                                                     ir is unidimen-
+                                                            
+                    E                       E                E
+sional and πr ωi | sir is monotonic in sir , then πr ωi | sir is a valid control variable. How-
+ever, we want to allow for the possibility that the radiologist evaluates a case holistically and
+                                                                                           
+uses signals across pathologies. Under the assumption that sA         E                   E
+                                                                 i ⊥ sir ωi , πr ωi′ | si′ r    ′
+                                                                                                    ,
+                                                                                              i ∈I(c
+                                                                                                 i )
+                                                                                                          
+                                                                                             E
+the vector of probabilities for all pathologies reported by r for case i, denoted πr ωi′ | si′ r ′            ,
+                                                                                                    i ∈I(ci )
+is a valid control variable. In this multi-dimensional case, a sufficient condition is that sE    ir is
+                          
+                         E
+invertible in πr ωi′ | si′ r ′           . Our empirical specifications will therefore employ multi-
+                               i ∈I(ci )
+variate proxy controls for sE ir using elicited probability assessments for multiple pathologies.
+
+To allow for flexible interactions between sA        E
+                                             i and sir while avoiding over-fitting, we estimate
+                   
+πr ωi = 1|sA      E
+            ir , sir using a pathology-specific random forest that predicts ωi using the vector
+of predicted probabilities for all pathologies for case ci reported by radiologist r without
+AI assistance, the vector of predicted probabilities for case ci the AI algorithm produces,
+and summaries of the patient clinical history when made available to the radiologist, and
+participant-specific fixed-effects. The hyper-parameters of the random forest are chosen by
+grouped k-fold cross-validation, where we ensure that each patient case appears in only one
+fold to avoid overfitting to the patient case. Further details of the training procedure are
+described in appendix C.5.2.
+The third challenge is the potential for measurement error, particularly in the form that
+radiologists’ signal sE
+                      ir when elicited without AI might differ from their signal when given AI
+assistance. Classical measurement error arising from this source would lead to attenuation
+bias in the coefficient estimates. To address this issue, we will construct instruments sE
+                                                                                         ir using
+the reported probabilities of the other radiologists in our experiment.
+With these solutions in hand, we would like to assess whether humans exhibit signal depen-
+

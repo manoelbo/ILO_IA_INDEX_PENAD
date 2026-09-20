@@ -1,0 +1,59 @@
+where we have weaker priors about the direction or magnitude of effects.
+
+       Finally, although the patterns in occupational mobility are clear and statistically
+
+significant, the estimated effects are modest—amounting to roughly a 4% increase in
+
+full-time equivalent employment—and not large enough to generate net gains in hours or
+
+earnings for adopters (Section 3.1).
+
+
+Heterogeneity by Strength of Treatment. Figure 4, Panel (b) examines how the
+
+relationship between chatbot adoption and occupational mobility varies with the strength
+
+of the adoption treatment. The figure shows that the association between chatbot adoption
+
+and occupational switching is driven primarily by individual-level factors rather than
+
+firm-level initiatives. For example, our main estimate on occupational switching rises from
+
+1.4% to 3.0% for individuals who use the tools daily, and to 3.8% for those who report
+
+large time savings.15 By contrast, the relationship between adoption and occupation
+
+switching is fairly similar across employer chatbot initiatives, ranging in 2024 from about
+
+1.6% for non-encouraged adopters to about 0.9% for those with both encouraged-use,
+
+enterprise chatbots, and training.
+
+
+Occupational Heterogeneity. Figure 5, Panel (c), splits the effects of chatbot adoption
+
+on mobility by occupation. Positive effects appear in multiple occupations, but are
+
+strongest and most statistically significant among IT supporters, and to some extent, office
+
+clerks. These are jobs where individual workers likely have more flexibility in choosing
+
+their toolset, allowing newcomers to take advantage of AI chatbots. In contrast, financial
+
+advisors and customer support specialists often work with established IT systems, making
+
+it harder for newcomers to compensate for missing skills by using chatbots on an individual
+
+basis. These patterns align with Dillon et al. (2025), who show that workers primarily
+
+adopt Microsoft Copilot for tasks where they can use the tools without coordinating with
+
+others. Finally, some occupations, such as teachers and accountants, require licensing
+  15
+    The effect magnitudes in Figure 4, Panel (b), are generally smaller than the endline estimates in
+Figure 2, Panel (c), reflecting that the pooled specifications in Figure 4 control for time trends (see
+Equation (2)).
+
+
+                                                  18
+

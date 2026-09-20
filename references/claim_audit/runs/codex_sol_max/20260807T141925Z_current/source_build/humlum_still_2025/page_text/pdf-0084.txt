@@ -1,0 +1,54 @@
+         Figure D.1: Share of Study Occupations in Aggregate Danish Employment
+
+                        (a) Hours                                                 (b) Earnings
+   .24                                                          .26
+
+
+
+   .22                                                          .24
+
+
+
+    .2                                                          .22
+
+
+
+   .18                                                           .2
+
+
+
+   .16                                                          .18
+
+
+
+   .14                                                          .16
+    2021m1         2022m1         2023m1        2024m1           2021m1         2022m1        2023m1         2024m1
+
+
+Notes: This figure shows the share of our 11 survey occupations in aggregate employment in Denmark. Panel (a) focuses on
+employment in hours, while Panel (b) focuses on total wage bill in the occupations. Sample: All registry data.
+
+
+
+
+D.2          By Age Groups (Brynjolfsson, Chandar and Chen, 2025)
+
+In this section, we break down labor market trends by occupation and age group. Bryn-
+jolfsson, Chandar and Chen (2025) document that the employment of early-career workers
+(age 22-25) in AI-exposed occupations has fallen sharply in the United States since mid
+2022. We use our population-wide administrative data to replicate these facts in the
+Danish market.
+    Table D.1 shows the employment headcount in each occupation and age group in
+October 2022. We use the same age groups as Brynjolfsson, Chandar and Chen (2025):
+early career 1 (age 22-25), early career 2 (age 26-30), developing (31-34), mid career
+1 (35-40), mid career 2 (41-49), and senior (50+). Most occupational employment is
+concentrated in older categories, with the exception of customer support, which employs
+many early-career workers.
+    Figure D.2 shows the employment trends for each of the occupations and age groups,
+indexed to October 2022 as in Brynjolfsson, Chandar and Chen (2025). Panels (a)
+and (b) show aggregate trends inside and outside our 11 study occupations, with the
+remaining panels showing trends for each study occupation separately. The plots show
+that we replicate the declines in early-career jobs in many exposed occupations, including
+software developers, legal professionals, marketing professionals, IT support specialists,
+
+                                                          34

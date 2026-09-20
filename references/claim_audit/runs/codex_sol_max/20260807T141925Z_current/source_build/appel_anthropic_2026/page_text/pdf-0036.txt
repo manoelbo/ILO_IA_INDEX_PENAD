@@ -1,0 +1,46 @@
+            patterns do not hold. Task success and human education show opposite
+            relationships globally versus within the US.
+
+            The near-perfect correlation between human and AI education years
+            underscores that how users prompt Claude shapes how it responds.
+            Combined with the finding that higher-usage countries engage Claude
+            more collaboratively, this suggests that the skills required to use AI well may
+            themselves be unevenly distributed.
+
+            By measuring the characteristics of conversations with Claude, we find
+            important relationships with broader economic factors such as human capital.
+            These relationships may help predict labor market outcomes and inform
+            a smooth transition to an AI-enabled economy that will require different
+            skillsets.
+
+
+
+
+            1
+                For privacy reasons, our automated analysis system filters out any cells—
+                e.g., countries, and (country, task) intersections—with fewer than 15
+                conversations and 5 unique user accounts. For bottom-up request clusters,
+                we have an even higher privacy filter of at least 500 conversations and 250
+                unique accounts.
+
+            2
+                Data in this section covers 1 million Claude.ai Free, Pro and Max
+                conversations from November 13 to 20, 2025, randomly sampled from all
+                conversations in that period. We then excluded content that was flagged as
+                potential trust and safety violations. The unit of observation is a conversation
+                with Claude on Claude.ai, not a user, so it is possible that multiple
+                conversations from the same user are included, though our past work
+                suggests that sampling conversations at random versus stratified by user
+                does not yield substantively different results. Aggregate geographic statistics
+                at the country and US state level were assessed and tabulated from the IP
+                address of each conversation. For geolocation, we use ISO-3166 codes since
+                our provider for IP geolocation uses this standard. International locations use
+                ISO-3166-1 country codes, US state level data use ISO-3166-2 region codes,
+                which include all 50 US states and Washington DC. We exclude conversations
+                originating from VPN, anycast, or hosting services, as determined by our IP
+                geolocation provider.
+
+
+
+The Anthropic Economic Index Report                                                                36
+

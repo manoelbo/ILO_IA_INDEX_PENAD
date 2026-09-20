@@ -1,0 +1,53 @@
+changes the composition of labor demand across junior and senior workers, holding firm
+scale fixed, rather than to model total employment in general equilibrium. A firm pro-
+duces Y by combining a continuum of tasks indexed by x ∈ [0, 1] with a CES technology:
+
+                                 Z 1                          σ−σ 1
+                                                  σ −1
+                           Y=            y( x )     σ    dx             ,   σ > 0, σ ̸= 1,                          (1)
+                                     0
+
+
+where y( x ) is the output of task x and σ is the elasticity of substitution across tasks (the
+case σ = 1 is the Cobb-Douglas limit). The firm employs junior workers L J and se-
+nior workers LS . Tasks are ordered by complexity, reflecting the hierarchical structure
+of knowledge-based organizations (Garicano, 2000; Garicano and Rossi-Hansberg, 2006).
+When task x is performed by a worker of type k ∈ { J, S}, output is
+
+                                            y ( x ) = γk ( x ) · l k ( x ) ,                                        (2)
+
+where γk ( x ) is type-k productivity and lk ( x ) is the labor allocated. We assume:
+
+Assumption 1 (Comparative advantage). The productivity
+                                                      ratio γS ( x )/γ J ( x ) is continu-
+                                                         d                     γS ( x )
+ously differentiable and strictly increasing in x, with dx ln                  γ J (x)
+                                                                                          > 0 for all x ∈ (0, 1).
+
+Under cost minimization, there exists a threshold x̂ such that juniors perform all tasks
+x < x̂ and seniors perform all tasks x ≥ x̂.12
+    GenAI affects the production technology through two channels. First, task displace-
+ment: GenAI automates all tasks x ∈ [0, α] for some exogenous threshold α ∈ (0, x̂ ), re-
+moving them from human labor; automated tasks remain in the CES aggregator and are
+performed by GenAI at exogenous unit cost c A ( x ) < w J /γ J ( x ) for x ∈ [0, α].13 Second,
+within-task augmentation: on tasks that remain human-performed, GenAI augments pro-
+ductivity to γ̃k ( x ) = (1 + δk ) · γk ( x ), where δ J ≥ δS ≥ 0 captures the experimental finding
+that GenAI disproportionately increases the productivity of less-experienced workers.14
+  12 The threshold x̂ satisfies γ ( x̂ ) /w = γ ( x̂ ) /w , where w and w are wages.
+                                 J         J   S         S         J     S
+  13 We take α as given rather than modeling the adoption decision. The framework is a model of AI’s
+
+incidence across worker types, not of firms’ adoption choices. The assumption α < x̂ is a simplifying
+benchmark reflecting the empirically relevant case in which the bulk of automated tasks are routine tasks
+that juniors perform (Eloundou et al., 2024). If some senior tasks are also automated, seniors face a dis-
+placement channel too, but the asymmetry remains as long as a larger share of automated tasks falls in the
+junior range. The condition c A ( x ) < w J /γ J ( x ) ensures that automation is cost-reducing: only tasks for
+which GenAI is cheaper than human labor are automated.
+  14 The key results extend to task-specific augmentation δ ( x ) as long as the post-AI productivity ratio
+                                                                 k
+
+
+
+
+                                                               13
+

@@ -1,0 +1,24 @@
+Figure 4.6 Implied labor productivity effect from AI as a function of within-occupation task substitutability
+This figure shows the implied aggregate labor productivity growth over the next decade based on efficiency gains estimated for tasks
+with at least 200 observations in our sample of 1M conversations on Claude.ai and 1M records from 1P API traffic. The elasticity of
+substitution governs how the degree to which non-AI enhanced tasks constrain the occupational productivity gains implied by Claude
+usage under a model in which occupational output is a CES index across tasks. An elasticity of σ =1 reproduces our unadjusted
+baseline result of 1.8 percentage point increase in labor productivity growth over the next decade. Success-adjusted curves discount
+task-level speedups by task reliability. See text for more details.
+
+
+
+              When tasks are complements, however, the implied aggregate labor
+              productivity impact declines sharply as the economic effects are bottlenecked
+              by tasks that AI speeds up the least. For example, at σ =0.5 the implied overall
+              labor productivity effect is 0.7–0.9 percentage points per year—around half
+              the size as implied by our baseline estimates. Additionally adjusting for task
+              success further reduces the implied productivity effects to 0.8pp for Claude.ai
+              and 0.6pp for API.
+
+              On the other hand, when the elasticity of substitution is greater than one, the
+              implied labor productivity based on pre-Opus 4.5 usage patterns is materially
+              higher. For example, at σ =1.5 the implied labor productivity effect rises to
+
+The Anthropic Economic Index Report                                                                                               50
+

@@ -1,0 +1,63 @@
+these job titles to a 2010 Standard Occupational Classification (SOC) code, additionally using
+
+information such as the job description, industry, location, and other relevant data. We use these
+
+estimated SOC codes to merge our data to occupational AI exposure measures described below in
+
+Section 3.2.
+
+    After these restrictions we have records on between 3.5 and 5 million workers each month for
+
+our main analysis sample, though we consider robustness to alternative analyses such as allowing
+
+for firms to enter and leave the sample.
+
+    While the ADP data include millions of workers in each month, the distribution of firms using
+
+ADP services does not exactly match the distribution of firms across the broader US economy.
+
+Further details on differences in firm composition can be found in Cajner et al. (2018) and ADP
+
+Research (2025).13
+
+
+3.2    Occupational AI Exposure
+
+We use two different approaches for measuring occupational exposure to AI. The first uses exposure
+
+measures from Eloundou et al. (2024). Eloundou et al. (2024) estimate AI exposure by O*NET
+
+task using ChatGPT validated with human labeling. They then construct occupational exposure
+
+measures by aggregating the task data to the 2018 SOC code level. We focus on the GPT-4 based
+
+β exposure measures from their paper.
+
+    The second primary approach we take uses data on generative AI usage from the Anthropic
+
+Economic Index (Handa et al., 2025). This index reports the estimated share of queries pertaining
+
+to each O*NET task based on a sample of several million conversations with Claude, Anthropic’s
+
+generative AI model. It then aggregates the data to the occupational level based on these task
+
+shares. One feature of the Anthropic Economic Index is that for each task it also reports estimates
+
+of the share of queries pertaining to that task that are “automative,” “augmentative,” or none of
+
+the above. We use this information as an estimate of whether usage of AI for an occupation is
+
+primarily complementary or substitutable with labor.14
+   13
+      Cajner et al. (2018) find a somewhat higher share of manufacturing and services firms compared to the Quarterly
+Census of Employment and Wages (QCEW) using data from March 2016. They also find that ADP somewhat
+overrepresents firms in the Northeast. In addition, firms using ADP tend to grow faster on average than the typical
+firm in the US economy.
+   14
+      Specifically, Handa et al. (2025) first use Claude to classify conversations into six categories: Directive, meaning
+complete task delegation with minimal interaction; Feedback Loop, meaning task completion guided by environmen-
+tal feedback such as when repeatedly relaying coding errors to the model; Task Iteration, meaning a collaborative
+
+
+                                                            8
+

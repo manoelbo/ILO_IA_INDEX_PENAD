@@ -1,0 +1,69 @@
+to estimate the summarized average treatment effect parameters discussed in Section 3.
+
+Remark 9. In applications with limited covariate overlap (i.e., with propensity scores sufficiently close
+to one), IPW and DR estimators may lead to imprecise (irregular) inference procedures, see, e.g., Khan
+and Tamer (2010). In such cases, provided that one is comfortable with (parametric) extrapolation and
+is sufficiently confident that the outcome regression working models are correctly specified, relying on the
+OR estimation approach may lead to more informative inferences. Alternatively, one may choose to trim
+extreme propensity score estimates though proceeding in this manner would change the target parameter;
+i.e., we would not be recovering the AT T (g, t)’s; see, e.g., Crump et al. (2009) and Yang and Ding (2018)
+for related discussion in other contexts. In the rest of the paper, we abstract from these points.
+
+4.1    Asymptotic Theory for Group-Time Average Treatment Effects
+Next, we derive the asymptotic properties of our DR DiD estimators for the AT T (g, t)’s. To simplify
+exposition, we focus on the case with a never-treated comparison group as in (4.1); results that come from
+using the not-yet-treated group as the comparison group as in (4.2) follow from symmetric arguments
+and are therefore omitted. We also note that the theoretical results in this section are justified within
+the large n, fixed T paradigm.
+                p
+   Let kZk = trace (Z 0 Z) denote the Euclidean norm of Z and set W = (Y1 , . . . , YT , X, D1 , . . . , DT ).
+                                0
+For a generic κnev      0   nev
+                g,t = πg , βg,t,δ , let
+
+
+         hdr,nev W ; κnev        treat
+                                       (W ) − wgcomp,nev (W ; πg ) Yt − Yg−δ−1 − mnev       nev
+                                                                                                
+          g,t         g,t , δ = wg                                                g,t,δ X; βg,t,δ    ,
+
+where the normalized weights wgtreat (W ) and wgcomp,nev (W ; πg ) are given by
+                                                                                                          
+                         Gg                                          pg (X; πg ) C           pg (X; πg ) C
+       wgtreat (W ) =           ,          wgcomp,nev (W ; πg ) =                         E                   .   (4.3)
+                        E [Gg ]                                     1 − pg (X; πg )         1 − pg (X; πg )
+
+Let g (·) be a generic notation for pg (·) and mnev      g,t,δ (·). With some abuse of notation, let g (·; γ) be a
+                                                         
+                                             nev     nev
+generic notation for pg (·; πg ) and mg,t,δ ·; βg,t,δ . The vector of pseudo-true parameters is given by
+                        0                                                        . nev
+ ∗,nev           ∗,nev 0
+       = πg∗0 , βg,t,δ      . Finally, let ḣdr,nev      nev = ∂ hdr,nev W ; κnev
+                                                              
+κg,t                                         g,t    W ; κg,t         g,t       g,t   ∂κg,t .
+
+Assumption 7. (i) g (x; γ) is a parametric model for g (x), where γ ∈ Θ ⊂ Rk , Θ being compact; (ii)
+g (X; γ) is a.s. continuous at each γ ∈ Θ; (iii) there exists a unique pseudo-true parameter γ ∗ ∈ int (Θ);
+(iv) g (X; γ) is a.s. twice continuously differentiable in a neighborhood of γ ∗ , Θ∗ ⊂ Θ; (v) the estimator
+b is strongly consistent for γ ∗ and satisfies the following linear expansion:
+γ
+                                                           n
+                                    √           ∗  1 X
+                                           γ−γ )= √
+                                        n (b           lg,t (Wi ; γ ∗ ) + op (1) ,
+                                                    n
+                                                          i=1
+
+                                                          ∗                     ∗             ∗ 0
+                                                                                                 
+where lg,t (·; γ) is a k × 1 vector
+                                h such that E [lg,t (W ; γ )] = 0, E lg,t (W
+                                                                           i ; γ ) lg,t (W ; γ ) exists and is
+positive definite and lims→0 E supγ∈Θ∗ :kγ−γ ∗ k≤s klg (W ; γ) − lg (W ; γ ∗ )k2 = 0. In addition, (vi) for some
+ε > 0 and all g ∈ G, 0 ≤ pg (X; πg ) ≤ 1 − ε a.s., for all π ∈ int (Θps ), where Θps denotes the parameter
+space of πg .
+
+
+                                                           21
+

@@ -1,0 +1,63 @@
+                         Figure 5: Generative AI Work Adoption By Occupation
+
+
+
+                       Computer / Math                    20.7                                   27.8                     5.1          53.6
+
+                           Management                     20.2                                  28.0                     3.6          51.9
+
+                    Business / Finance                14.3                             26.9                        6.9         48.2
+
+                              Education           9.5                      24.0                      6.0       39.5
+
+                    Health Practitioners                15.9                    14.0           6.6          36.5
+
+              Design / Media / Entertain          10.4                    19.1                4.0       33.6
+
+               Archit. / Engin. / Science         9.6                   16.8             5.3         31.7
+
+                 Legal / Social Services    3.6                17.7              5.0       26.2
+
+                             Blue Collar          9.4            10.1           6.6        26.1
+
+                                   Sales        7.1              14.5            4.1      25.7
+
+                 Office / Administration        7.3             12.6                   22.9
+
+                     Personal Services                  9.8      3.1       15.8
+
+                                            0              10              20           30         40          50                            60       70
+                                                                                 Share Using Generative AI (%)
+
+                                                  Used every day last week              Used at least 1 day last week            Used, but not last week
+
+
+
+Notes: The figure shows adoption rates at work for genAI by occupation. The data source is the August and
+November 2024 waves of the RPS (blue bars). The sample is employed individuals age 18-64 (RPS, N = 6883).
+We exclude workers in “agriculture / forestry / fishing” due to a very low sample size. For details on occupation
+categories, see Appendix A.4.
+
+
+time, we also note particular occupations whose adoption rates deviate from what we would
+expect based on their exposure score. In particular, office and administrative occupations and
+managers are predicted to be similarly exposed to genAI, but actual adoption by managers
+is more than double that of office and administrative workers. One potential reason for these
+discrepancies could be that existing task-based predictions do not perfectly identify which oc-
+cupations would benefit from genAI.
+
+    To investigate this possibility, we leverage additional information about workers’ adoption
+decisions from the RPS. Among users who did not adopt genAI, we provided a list of potential
+reasons why they did not adopt. We then asked respondents to select the reasons that were
+relevant for their decision and to rank them in order of importance. We define the share of
+an occupation who does not use genAI because it is not useful for their job as the share of all
+workers in that occupation who ranked “GenAI cannot help me with my job” in their top two
+reasons for not using genAI . (For the full list of potential reasons, see Appendix A.5.)
+
+    Figure 6c plots genAI adoption against the share who reported that it was not useful. We
+find that occupational adoption is highly correlated (-0.88) with the share who reported genAI
+was not useful. For example, only 7% of workers in computer / math occupations reported
+that genAI was not useful for their job, compared with 30% of personal service workers.
+
+                                                                                 14
+

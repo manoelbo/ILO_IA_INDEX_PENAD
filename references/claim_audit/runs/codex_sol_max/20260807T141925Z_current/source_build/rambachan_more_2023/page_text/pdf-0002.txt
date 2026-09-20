@@ -1,0 +1,62 @@
+2556                               REVIEW OF ECONOMIC STUDIES
+
+a large class of restrictions that impose that the post-treatment violations of parallel trends can-
+not be “too different” from the pre-trends. We then introduce methods that yield uniformly valid
+inference for the treatment effect under the imposed restrictions. Intuitively, our inference meth-
+ods account for both statistical uncertainty (we can only noisily estimate the true pre-trend) as
+well as “identification uncertainty” (even if the true pre-trend were known, we may not know
+exactly how to extrapolate it). Our approach thus formalizes the intuition motivating pre-trends
+testing while avoiding the statistical issues described above.
+    More concretely, we consider a setting in which the researcher estimates a vector of “event-
+
+
+
+
+                                                                                                               Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                     
+study” coefficients β̂ = (β̂ pr e , β̂ post ) ∈ RT¯ +T̄ , where β̂ pr e and β̂ post respectively correspond
+with estimates for T pre-treatment periods and T̄ post-treatment periods. We assume that β̂ is
+                     ¯
+consistent for the reduced-form      parameter β, which can be decomposed as
+
+                                                                     
+                                                 0               δ pr e
+                                        β=                 +             ,                              (1)
+                                              τ post            δ post
+                                                             
+                                                 =:τ               =:δ
+
+
+where τ is a causal parameter of interest that is assumed to be 0 in the pre-treatment period and
+δ is a bias from a difference in trends. For instance, in the canonical (non-staggered) DiD frame-
+work, β̂ may be the coefficients from an “event-study regression” specification, τ the vector of
+period-specific average treatment effects on the treated (ATT) for some policy of interest, and
+δ the difference in trends of untreated potential outcomes between the treated and comparison
+groups. As we discuss in Section 2, this framework also applies to more complicated empiri-
+cal settings, such as those with staggered treatment timing (e.g. Callaway and Sant’Anna, 2020;
+Sun and Abraham, 2020). The usual parallel trends assumption used to point identify τ post is
+that δ post = 0, and researchers frequently assess the plausibility of this assumption by testing
+the null hypothesis δ pr e = 0 (a “pre-trends” test).
+    Instead of imposing that the parallel trends assumption holds exactly, we place restrictions on
+the possible post-treatment differences in trends δ post given the point identified pre-trends δ pr e .
+Such restrictions formalize the intuition motivating pre-trends tests, namely that pre-trends are
+informative about counterfactual post-treatment differences in trends. Formally, we assume that
+δ ∈  for some researcher-specified set , and show that the causal parameter τ post is partially
+identified under such restrictions.
+    Restrictions of this form can be used to formalize a wide variety of intuitions about possible
+violations of the parallel trends assumption that are commonly expressed in applied work. For
+example, as discussed in Manski and Pepper (2018), researchers may be willing to assume that
+the confounding factors that create post-treatment violations of parallel trends are similar in
+magnitude to those in the pre-treatment period. This intuition can be formalized by specifying a
+ that bounds the maximal post-treatment violation of parallel trends by a parameter M̄ times the
+maximal pre-treatment violation of parallel trends. In other contexts, researchers are concerned
+about violations of parallel trends from secular trends that are assumed to evolve smoothly over
+time. This intuition can be formalized by bounding the extent to which the slope of the violation
+of parallel trends can change over time. We adopt a flexible framework that allows researchers
+to capture these intuitions, as well as many other restrictions that are implied by context-specific
+knowledge about possible confounding factors.
+    We then introduce methods to conduct uniformly valid inference on a scalar parameter of
+the form θ = l  τ post under the restriction δ ∈ . As emphasized in the recent literature on pre-
+trends testing, the pre-treatment coefficients β̂ pr e are often imprecise estimates of δ pr e . It is
+therefore important to introduce inference methods that account for the statistical uncertainty
+

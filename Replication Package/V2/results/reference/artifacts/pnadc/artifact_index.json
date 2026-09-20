@@ -1,0 +1,8 @@
+{
+  "component": "pnadc",
+  "publication_tables": [
+    "tables/table_d_2_pnadc.csv",
+    "tables/table_b_2_pnadc_pretrends.csv"
+  ],
+  "status": "rendered"
+}

@@ -1,0 +1,65 @@
+O. Teutloff et al.                                                              Journal of Economic Behavior and Organization 235 (2025) 106845
+
+across a vast array of skills. By using GPT-4, we were able to efficiently label a wide range of skills, allowing for a comprehensive
+and consistent categorization of all job postings in the online labor market. We minimized errors using state-of-the-art prompt
+engineering, measuring accuracy with a test set, and performing manual checks.
+    In addition, this paper focuses on the partial equilibrium effects of new technology and does not capture potential productivity
+increases outside of the platform under study. Technological improvements can decrease worker demand, but productivity gains
+can lead to new capital and organizational investments, potentially increasing labor demand Acemoglu and Restrepo (2018), Autor
+and Salomons (2018). To better understand how substitution of freelancers with GenAI tools affects in house labor, one would need
+to model the fragmentation of production into tasks in more detail (Rubbo, 2023).
+    A further limitation is that we only observe labor demand but not wages. Thus, we cannot definitively attribute changes in
+job postings to shifts in the demand curve. Workers might decrease their wage bids if they face more competition, or they might
+increase their wage bids if they believe ChatGPT enhances their value. However, previous research (Dube et al., 2020; Duch-Brown
+et al., 2022; Horton, 2021) suggests that online labor market workers have low bargaining power and act as price-takers. Moreover,
+our analysis indicates, that our results are not substantially biased by simultaneity issues arising from labor supply responses to
+the ChatGPT launch. Specifically, we demonstrate that while the launch of ChatGPT led to a decrease in labor demand, average
+employer budgets remained unchanged. Additionally, we observe an increase in the number of applicants per job posting is of the
+same magnitude than the reduction in job postings. These findings collectively support the conclusion that ChatGPT’s launch led to
+reduced labor demand, with workers competing for a smaller pool of substitutable jobs.
+    While this analysis focuses on the short-term impacts of LLMs, understanding the long-term effects requires examining how these
+impacts vary based on workers’ skills (Teutloff et al., 2023; Mealy et al., 2018), location (Farinha et al., 2020; Braesemann et al.,
+2022), and the alignment between current skills and those needed for emerging jobs (Neffke et al., 2024; Neffke and Henning,
+2013). Our results provide evidence of first-order demand changes, which can be integrated into more complex models of worker
+adaptation (del Rio-Chanona et al., 2021; Acemoglu and Autor, 2011) to answer the broader question on the long-term effects of
+LLMs. Future research could examine the timing of demand shifts more precisely, investigating how long it takes employers to
+incorporate AI-driven tools and what the transition period looks like. Looking more at the firm side could reveal more about how to
+generalize from findings on contract work platforms to traditional labor markets. In addition, further work could explore whether
+the tasks whose demand decreased are now performed more effectively, performed differently, or not performed at all.
+    Our study reveals that a greater proportion of skill clusters are complemented by AI rather than substituted. However, while some
+of these complementary skill clusters experienced an increase in demand, others saw a decline. This underscores the critical role of
+public and private decision-makers in shaping the socio-economic impact of AI (Ritala et al., 2023; Gerling et al., 2024). Managers
+and policy-makers need to support workers in adapting and reskilling and should empower them to use LLMs in complementary
+ways (Retkowsky et al., 2024; Mollick et al., 2024). Our findings from online labor markets, which adapt quickly to technological
+changes, provide insights into potential future effects on traditional labor markets. Although traditional markets may adapt more
+slowly due to contract and severance laws, they will likely follow similar patterns over time. Policymakers must implement
+reskilling and upskilling programs to help workers transition into roles that complement AI technologies, focusing on foundational
+skills (Hosseinioun et al., 2023) and analytical thinking (Humburg and Van der Velden, 2017). Overall, our study demonstrates that
+while AI tools like ChatGPT can substitute some jobs, it also drives the development of new products and services, exemplifying
+creative destruction (Klimek et al., 2012) and contributing to the economy’s evolution towards greater complexity (Balland et al.,
+2022).
+
+Statements
+
+Declaration of generative AI in scientific writing
+
+    During the preparation of this work the authors used ChatGPT 4.0 in order to improve the readability and language of the
+manuscript. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content
+of the publication.
+
+Funding information
+
+   Otto Kässi’s work was funded by TT-säätiö (project title: ‘‘Tekoäly työelämässä – Miten käy Suomen kilpailukyvyn?’’).
+   R. Maria del Rio-Chanona’s research was supported by the James S. McDonnell Foundation.
+   Fabian Braesemann is supported by funding from the Oxford Internet Institute’s Research Programme on AI & Work, funded by
+the Dieter Schwarz Stiftung gGmbH.
+   We are grateful for the support obtained by Open AI in providing access to the GPT API.
+   The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+Declaration of competing interest
+
+    The authors declare that they have no known competing financial interests or personal relationships that could have appeared
+to influence the work reported in this paper.
+
+                                                                 17
+

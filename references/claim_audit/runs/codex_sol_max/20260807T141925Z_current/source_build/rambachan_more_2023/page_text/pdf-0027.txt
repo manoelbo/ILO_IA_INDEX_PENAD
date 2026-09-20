@@ -1,0 +1,48 @@
+      RAMBACHAN AND ROTH                     A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                           2581
+
+
+
+
+                                                                                                                                              Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+                                                          F IGURE 3
+          Simulation results for  S D R M ( M̄) and  R M ( M̄): Median efficiency ratios for proposed procedures.
+Note: Median efficiency ratios for our proposed confidence sets over  S D R M ( M̄) and  R M ( M̄) with M̄ = 1 under the assumption of
+zero treatment effects and a “pulse” pre-trend (i.e. β−1 = δ−1 and βt = 0 for all t = −1). The efficiency ratio for a procedure is defined
+as the efficiency bound divided by the procedure’s expected excess length. The results for the conditional-least favourable (“C-LF”)
+hybrid are plotted in blue, and conditional confidence set in green. Results are averaged over 1,000 simulations for each of the 12 papers
+surveyed, and the median across papers is reported here.
+
+
+
+    5.2.2. Results for  S D P B (M). The right panel of Figure 2 plots the efficiency ratio for
+each procedure as a function of M/σ1 when  =  S D P B (M). The efficiency ratios for the con-
+ditional and hybrid confidence sets are again (near-)optimal as M/σ1 grows large, highlighting
+our asymptotic (near-)optimality results for these procedures in this simulation design. By con-
+trast, the efficiency ratios for the FLCIs steadily decrease as M/σ1 increases, reflecting that the
+FLCIs are not consistent in this simulation design when M > 0. The conditional-LF hybrid con-
+fidence sets slightly improve efficiency relative to the conditional confidence sets when M/σ1 is
+small and retain near-optimal performance as M/σ1 grows large.
+
+    5.2.3. Results for  S D R M ( M̄). The left panel of Figure 3 plots the efficiency ratios for
+the conditional and conditional-least favourable hybrid confidence sets as a function of δ−1 /σ1
+when  =  S D R M ( M̄). We omit results for the optimal FLCI since the optimal FLCI has infi-
+nite length for this design. Both procedures perform well as δ−1 /σ1 grows large with efficiency
+ratios approaching 1, illustrating our asymptotic (near-) optimality result for this design. Both
+procedures also have similar power curves, with slightly higher power for the conditional.
+
+    5.2.4. Results for  R M ( M̄). The right panel of Figure 3 plots the efficiency ratio for the
+conditional and conditional-least favourable hybrid confidence sets as a function of δ−1 /σ1 when
+ =  R M ( M̄). We again omit results for the optimal FLCI since the optimal FLCI has infinite
+length for this design. The conditions for our asymptotic (near-) optimality result for unions of
+convex sets do not hold in this simulation design (as the maximum pre-period violation is not
+unique). Nonetheless, we find that the efficiency ratios for the conditional and hybrid confidence
+sets approach about 83% when δ−1 /σ1 grow large. We find it somewhat encouraging that these
+procedures can have excess length within 17% of the optimum even in cases where LICQ fails.
+Once again, we also find that the conditional and conditional-least favourable hybrid have similar
+power.
+
+    5.2.5. Takeaways from simulations. Two clear patterns emerge from our simulations.
+First, the conditional and hybrid confidence sets perform well across a wide range of speci-
+fications, with particularly good power when the length of the identified set is large relative to
+sampling variation. Second, the FLCIs have the best performance for SD (M), particularly when
+

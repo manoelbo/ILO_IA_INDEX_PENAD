@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-08-02T13:12:50-03:00",
+  "format_version": 1,
+  "git": {
+    "head": "a07fc06bae7585c09f2031893bdb73b0239a349a",
+    "status_porcelain_sha256": "688a3b9335669bf4bee56b0447ce3a3e5bfea5dd50f57a56f2079663a64d10d6",
+    "v2_tracked_diff_sha256": "fbfac6211531276f35342bf8b1e2980019467be7b78990e4da147a7a58e09c36",
+    "worktree_policy": "Preserve all pre-existing tracked and untracked changes; no reset, clean, or checkout is permitted."
+  },
+  "manuscript_authority": {
+    "computational_artifact_count": 52,
+    "excluded_noncomputational_artifact": "Table 2.1",
+    "fetched_at": "2026-08-02T16:12:50.048Z",
+    "normalized_fetch_sha256": "5543fd7b7b91cda694ae8f799e6ed31fd931b65392e72ed9625468eed14aa5ab",
+    "page_id": "325cc8ca-4610-82d7-94db-01323b295bb5",
+    "url": "https://app.notion.com/p/325cc8ca461082d794db01323b295bb5"
+  },
+  "directory_digests": {
+    "algorithm": "sha256(sorted sha256 file records)",
+    "v1_command_contract": "From V1 root: find . -type f excluding only ./.pytest_cache/* and ./__pycache__/*; byte-hash each file with SHA-256 in LC_ALL=C path order; SHA-256 the resulting shasum records.",
+    "v1_file_records": 310,
+    "v1_without_runtime_caches": "0cf0fbb567ce7d7794808bd44f9ce9a89a2d3954f1162cf9311e0abfa90fe8f4",
+    "v2_inputs": "de0eaab8dee62f130e9ea91ea0ad47c7960d0b160966cdde166b0abc402bd3be",
+    "v2_results": "be4868f25c100f8ccb683ef9a09a0bfe26cb654154a1589ebb32725707edd7e7",
+    "v2_public_and_internal_documents": "ef454efd29ae11a93dc13a0f292670234dc5333df25ec032bf1e68c3167d6d22"
+  },
+  "test_collection": {
+    "registered_total": 349,
+    "scopes": {
+      "v1_section3": 3,
+      "v2_caged_core": 178,
+      "v2_rais": 61,
+      "v2_pnadc": 74,
+      "v2_spatial": 33
+    },
+    "additional_frozen_v1_package_contract_tests": 13,
+    "collection_command": ".venv/bin/python -m pytest --collect-only -q"
+  }
+}

@@ -1,0 +1,43 @@
+            more autonomy on average, and are more likely to bring tasks they couldn’t
+            complete alone.
+
+            These differences are also reflected in the occupational distribution of tasks.
+            API usage is heavily concentrated in Computer & Mathematical tasks (52%
+            vs. 36%), consistent with its use for programmatic, automation-friendly
+            workflows like code generation and data processing. Office & Administrative
+            tasks are also more prevalent in the API (15% vs. 8%), reflecting routine
+            business operations suited to delegation. Claude.ai, by contrast, sees
+            substantially more Educational Instruction tasks (16% vs. 4%)—coursework
+            help, tutoring, and instructional material development—as well as more Arts,
+            Design, and Entertainment tasks (11% vs. 6%). Claude.ai also has a longer tail
+            of human-facing categories like Community & Social Service and Healthcare
+            Practitioners, where users seek advice, counseling, or information on personal
+            matters.
+
+            These patterns suggest that 1P API deployments concentrate on tasks
+            amenable to systematic automation, while Claude.ai serves a broader range of
+            use cases including learning, creative work, and personal assistance.
+
+            Chapter 4 explores task-level variation in greater depth.
+
+
+
+
+            1
+                A classifier is a model that assigns a given input (e.g., a user conversation) a
+                specific output (e.g., the use case “work”). In this report, we use Claude as a
+                classifier, meaning that we prompt Claude to select a specific output and then
+                use Claude’s response as the output (see Table 2.1 for the prompts).
+
+            2
+                Throughout this report, we use binned scatterplots to show bivariate
+                relationships. We divide observations into 20 equally-sized bins based on the
+                x variable, then plot the average x and y values for each bin. The leftmost dot,
+                for example, represents the averages for observations in the lowest 5% of the
+                x distribution.
+
+
+
+
+The Anthropic Economic Index Report                                                                27
+

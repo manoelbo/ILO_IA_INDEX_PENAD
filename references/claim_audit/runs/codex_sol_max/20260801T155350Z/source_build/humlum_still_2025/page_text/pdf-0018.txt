@@ -1,0 +1,59 @@
+large work-related benefits.
+
+
+Occupational Heterogeneity. The overall zero effects could mask important hetero-
+
+geneity across occupations. For instance, since teachers are covered by collective bargaining
+
+with centralized wage setting, it may be less surprising that individual productivity gains
+
+do not translate into higher earnings. By contrast, occupations such as marketing and
+
+software development feature decentralized wage setting, allowing more flexibility to adjust
+
+pay based on individual productivity. In Appendix C.1, we provide an overview of the
+
+wage-setting systems in each occupation. Comparing across occupations thus provides a
+
+way to assess whether the limited impacts of AI chatbots reflect labor market rigidities.12
+
+       Figure 5, Panel (a) shows the estimated effects of AI chatbots on worker earnings for
+
+each of the 11 occupations in our sample. We find no significant effects in any occupation:
+
+the point estimates are all near zero and the confidence bands generally rule out effects
+
+larger than 10%. Even in our two most contrasting occupation groups—software developers
+
+and marketers (with flexible wages) versus teachers (with centralized wage-setting)—we
+
+see no systematic differences in impact.
+
+
+Discussion. Our administrative data show that users of AI chatbots have not experi-
+
+enced better outcomes in the labor market. Even among workers who use the tools daily
+
+and report substantial benefits, we find no net changes in earnings or hours, not even a
+
+break in trend.
+
+       Are the weak wage effects of chatbot use theoretically surprising? Competitive labor
+
+markets (e.g., our framework in Appendix A.2) imply that workers should be compensated
+
+for productivity gains that are not driven by employer initiatives (Acemoglu and Pischke,
+
+1998; Becker, 1964). From this perspective, it is surprising that individual-specific
+
+benefits from AI chatbots—such as those among non-encouraged or high-use, high-benefit
+
+adopters—do not translate into higher earnings. On the other hand, if employers do
+  12
+    Furthermore, marketing professionals and software developers are exactly the occupations with the
+highest reported use and productivity gains from the tools (Appendix D.3).
+
+
+
+                                                 16
+

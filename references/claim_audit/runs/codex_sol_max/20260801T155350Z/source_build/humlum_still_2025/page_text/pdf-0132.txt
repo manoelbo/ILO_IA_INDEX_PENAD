@@ -1,0 +1,72 @@
+Figure E.21: Encouragement and Worker Gaps in Adoption (Own vs. Coworker Reports)
+
+                                                (a) Main Specification
+
+
+                        Female                       p< 0.01
+
+
+
+                Age (10 Years)                                      p< 0.01
+
+
+
+        Experience (10 Years)                                             p= 0.255
+
+
+
+                  log(Earnings)                                                                              p= 0.012
+
+
+
+         Net Wealth / Earnings                                                             p= 0.032
+
+
+                                  -.15               -.1                -.05                  0                      .05
+
+                                                           Encouraged          Non-Encouraged
+
+
+
+                                         (b) Coworker Encouragement
+
+                        Female                                      p< 0.01
+
+
+
+
+                Age (10 Years)                                                  p= 0.194
+
+
+
+
+        Experience (10 Years)                                                   p= 0.050
+
+
+
+
+                  log(Earnings)                                                                           p= 0.493
+
+
+
+
+          Net Wealth/Earnings                                                                     p= 0.558
+
+                                         -.15               -.1                -.05                   0                    .05
+
+                                             Encouraged Coworkers              Non-Encouraged Coworkers
+
+
+Notes: This figure presents the impact of coworker encouragement on worker disparities in AI chatbot adoption. The
+estimates are obtained from a multivariate regression of AI chatbot adoption on worker characteristics X, controlling for
+occupation-fixed effects, and all interacted with an indicator for employer encouragement. In Panel (b), we instrument these
+interaction effects using the corresponding interactions with our coworker encouragement variable. The point estimates
+show predicted adoption rates for an average worker, X̄, when Encouraged = 0 or 1, respectively. Whiskers denote 95%
+confidence intervals. Reported p-values test whether the coefficients differ between the two groups. Sample: All completed
+responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                            97
+

@@ -1,0 +1,43 @@
+because NTV does not exist yet. In 1999, 918 weights (47.4%) are strictly positive, while 1,020
+(52.6%) are strictly negative. The negative weights sum to -2.26. σ bf e = 0.91: βf e and δ T R may
+be of opposite signs if the standard deviation of the effect of NTV across subregions is above
+0.91 percentage point. σbf e = 1.23: βf e may be of a different sign than the treatment effect in
+every subregion if the standard deviation of the effect of NTV across subregions is above 1.23
+percentage point, a plausible amount of treatment effect heterogeneity.
+Therefore, βf e can only receive a causal interpretation if the effect of NTV is constant across
+subregions, or if the weights attached to it are uncorrelated with the intensity of that effect
+in each subregion (Assumption 7). These assumptions are not warranted. First, we estimate
+βbf e again, weighting the regression by subregions’ populations. We obtain βbf e = 14.89, more
+than twice its value in the unweighted regression, and the difference between the coefficients is
+significant (t-stat=2.46). Therefore, we can reject the null that the treatment effect is constant:
+if the treatment effect was constant across subregions, the weighting would not matter so both
+the unweighted and the weighted regressions would estimate the same parameter. Second, the
+weights attached to βbf e are correlated with variables that are likely to be themselves associated
+with the intensity of the effect in each subregion. For instance, the correlation between the
+weights and subregions’ populations is equal to 0.35 (t-stat=14.01). The effect of NTV may be
+higher in less populated subregions, as those regions are more rural and fewer other sources of
+information may be available there. This would lead to a violation of Assumption 7.
+
+
+3     Extensions of the decomposition results
+
+We consider hereafter several extensions of our decompositions of βf e and βf d in the paper. First,
+we consider decompositions under the common trends assumption, and under the assumption
+that the treatment effect is stable over time. Second, we extend our decompositions to ordered
+treatments. Third, we investigate the effect of including covariates in the regression. Fourth,
+we study two-way fixed effects 2SLS regressions. Throughout, we focus on sharp designs to ease
+the exposition. Nevertheless, all the results generalize to fuzzy designs.
+
+
+3.1   βf e and βf d as weighted sums of ATEs of switching groups
+
+We first show that under an additional condition, βf e and βf d can be written as a weighted sum
+of the ATEs of switching groups.
+
+Assumption S2 (Stable treatment effect) For all g and t ≥ 2,
+
+                            E (∆g,t |D) Dg,t−1 = E (∆g,t−1 |D) Dg,t−1 .
+
+
+                                                 5
+

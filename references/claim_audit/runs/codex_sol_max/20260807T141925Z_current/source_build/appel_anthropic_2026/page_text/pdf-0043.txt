@@ -1,0 +1,35 @@
+            Revisiting occupation penetration with effective
+            AI coverage
+
+            Our earlier work found that 36% of jobs had AI usage for at least a quarter of
+            their tasks, with about 4% reaching 75% task coverage. This measure was
+            based only on the appearance of a task in our data, however. The primitives
+            introduced in this report can help better characterize how AI is changing the
+            work content of occupations.3
+
+            First, we find that task coverage is increasing. Combining across reports, 49%
+            of jobs have seen AI usage for at least a quarter of their tasks. But incorporating
+            that task’s share of the job, and Claude’s average success rate, suggests a
+            different set of affected occupations.
+
+            We define effective AI coverage as the percent of a worker’s day that can be
+            performed successfully by Claude. It’s calculated as the weighted sum of
+            task success rates, where each task’s weight is its share of the worker’s time
+            adjusted by how frequently the task occurs. The success rate comes from
+            our primitives, the hours estimate from our previous work on productivity
+            effects, and the frequency estimate from O*NET data, where surveyed workers
+            indicate how often they perform the task.
+
+            The plot below shows how the effective AI coverage (y-axis) differs from task
+            coverage alone (x-axis). The two are highly correlated, but with key differences.
+            On the right side of the plot, occupations with high coverage—where almost
+            all tasks appear with some frequency in Claude data—generally fall below the
+            45-degree line. This suggests that even 90% task coverage does not necessarily
+            indicate large job impacts, since Claude may fail on key covered tasks or miss
+            the most time-intensive ones.
+
+
+
+
+The Anthropic Economic Index Report                                                               43
+

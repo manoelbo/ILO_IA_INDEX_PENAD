@@ -1,0 +1,31 @@
+model_id,dimension,source_dimension,group_id,group_label,outcome,estimator,event_window,reference_event_time,reference_period,source_panel,is_causal_effect,pre_window,pre_coefficient_count,pre_coefficient_mean
+group_event__sex__men__admissoes,sex,sex,men,Men,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.03205582209823901
+group_event__sex__men__ln_salario_real_adm,sex,sex,men,Men,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.047596797266007324
+group_event__sex__women__admissoes,sex,sex,women,Women,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.09510611237809076
+group_event__sex__women__ln_salario_real_adm,sex,sex,women,Women,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.022259210776415954
+group_event__race__race_white__admissoes,race,race_color,race_white,White,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.10367984389873804
+group_event__race__race_white__ln_salario_real_adm,race,race_color,race_white,White,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.03770059366316374
+group_event__race__race_negra__admissoes,race,race_aggregate,race_negra,Black or Pardo,admissoes,ppml,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,-0.09822823359394142
+group_event__race__race_negra__ln_salario_real_adm,race,race_aggregate,race_negra,Black or Pardo,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,0.033587914308466686
+group_event__age__age_18_24__admissoes,age,age_pnad,age_18_24,Age 18–24,admissoes,ppml,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,-0.11789393280124512
+group_event__age__age_18_24__ln_salario_real_adm,age,age_pnad,age_18_24,Age 18–24,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,0.023150533747491285
+group_event__age__age_25_34__admissoes,age,age_pnad,age_25_34,Age 25–34,admissoes,ppml,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,-0.08687308781884974
+group_event__age__age_25_34__ln_salario_real_adm,age,age_pnad,age_25_34,Age 25–34,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,0.023138031926055083
+group_event__age__age_35_44__admissoes,age,age_pnad,age_35_44,Age 35–44,admissoes,ppml,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,-0.08428869882061649
+group_event__age__age_35_44__ln_salario_real_adm,age,age_pnad,age_35_44,Age 35–44,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,0.062423527242443204
+group_event__age__age_45_54__admissoes,age,age_pnad,age_45_54,Age 45–54,admissoes,ppml,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,-0.09171576490066383
+group_event__age__age_45_54__ln_salario_real_adm,age,age_pnad,age_45_54,Age 45–54,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,0.024292878074716785
+group_event__age__age_55_65__admissoes,age,age_pnad,age_55_65,Age 55–65,admissoes,ppml,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,-0.039523017610377215
+group_event__age__age_55_65__ln_salario_real_adm,age,age_pnad,age_55_65,Age 55–65,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,alternative,False,-23_to_-2,22,0.07036282486313238
+group_event__education__fundamental_or_less__admissoes,education,education,fundamental_or_less,Primary or less,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.08844371843536249
+group_event__education__fundamental_or_less__ln_salario_real_adm,education,education,fundamental_or_less,Primary or less,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.02477363835649985
+group_event__education__high_school__admissoes,education,education,high_school,Secondary,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.09707396378930827
+group_event__education__high_school__ln_salario_real_adm,education,education,high_school,Secondary,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.04545113283497805
+group_event__education__higher_education__admissoes,education,education,higher_education,Higher education,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.08237882789356404
+group_event__education__higher_education__ln_salario_real_adm,education,education,higher_education,Higher education,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.023163833732930572
+group_event__income__low_income__admissoes,income,income,low_income,Up to 2 minimum wages,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.10220445351649832
+group_event__income__low_income__ln_salario_real_adm,income,income,low_income,Up to 2 minimum wages,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.028330884722618906
+group_event__income__middle_income__admissoes,income,income,middle_income,Over 2 through 5 minimum wages,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.05556783013563667
+group_event__income__middle_income__ln_salario_real_adm,income,income,middle_income,Over 2 through 5 minimum wages,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.06595930154918542
+group_event__income__high_income__admissoes,income,income,high_income,Over 5 minimum wages,admissoes,ppml,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,0.06299228115599546
+group_event__income__high_income__ln_salario_real_adm,income,income,high_income,Over 5 minimum wages,ln_salario_real_adm,ols,-23_to_41,-1,2022-11,frozen,False,-23_to_-2,22,-0.02005364481814088

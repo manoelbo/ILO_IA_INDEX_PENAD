@@ -1,0 +1,63 @@
+                                                                                                                             20
+
+ lower RMSE indicates higher performance.23 We pool the data for top-level pathologies with
+ AI for each radiologist’s reports and for the AI’s prediction.
+ Figure 1 shows significant heterogeneity in performance across radiologists as well as the scope
+ for AI assistance to improve radiologist performance. The AUROC shows that the bottom
+ tail of the distribution of radiologists performs worse than the AI, whereas the upper tail
+ predicts close to perfectly. This heterogeneity aligns with findings from observational data
+ based on only treatment decisions (see Chan et al., 2022). The AI is more predictive than
+ approximately two-thirds of radiologists, whether compared using AUROC or RMSE. Thus,
+ there is ample room for AI assistance to improve the performance of radiologists. In fact, a
+ majority of radiologists would do better on average by simply following the AI prediction.
+ We present pathology-specific comparison results in appendix C.2.
+
+                                 Figure 1: Comparing AI performance to radiologists
+                    (a) RMSE Radiologists and AI                                        (b) AUROC Radiologists and AI
+                            AI (Pct. 33)                                                              AI (Pct. 64)
+          8                                                                    8
+
+
+          6                                                                    6
+Density
+
+
+
+
+                                                                     Density
+
+
+
+
+          4                                                                    4
+
+
+          2                                                                    2
+
+
+          0                                                                    0
+               .2          .3          .4     .5          .6                       .6          .7        .8          .9        1
+                                    RMSE                                                              AUROC
+
+
+ Note: These histograms show distributions of two different accuracy measures of radiologist assessments alongside the AI’s
+ accuracy. The left graph shows the distribution of the RMSE while the right shows the distribution of the average AUROC.
+ Both distributions are shrunk to the grand mean using empircal Bayes. These measures are for each radiologist and include
+ the top-level pathologies. The dotted line is the average measure of the AI algorithm for the corresponding distribution. Only
+ the assessments where contextual history information is available for the radiologists but not the AI prediction are considered.
+ Robustness by design and ground truth definition can be found in sections C.4.1 & C.4.2.
+
+
+
+ We also compare the performances of our participants and the radiologist who originally
+ diagnosed each patient case in appendix C.3.24 There is no discernible difference between
+          23
+      An important distinction between the two measures is that the AUROC is ordinal whereas RMSE is
+ cardinal.
+   24
+      We classified the original free text radiology reports associated with each case as positive, negative, or
+ uncertain for each pathology using the CheXbert algorithm described in Smit et al. (2020). To facilitate
+ comparisons, we also discretized the probability assessments elicited during the experiment into these three
+ categorized. Then, we compared the accuracy of the original reads against the radiologists participating in
+ the experiment.
+

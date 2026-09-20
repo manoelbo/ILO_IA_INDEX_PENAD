@@ -1,0 +1,58 @@
+ensuring that differences across employer initiatives are not driven by variation in firm
+
+age, size, or productivity. Second, we show that the results are robust to controlling
+
+for workers’ detailed task mixes within occupations, demonstrating that the effects of
+
+employer initiatives are not driven by differences in the types of tasks more amenable to
+
+AI chatbot use.30 Finally, in our panel analyses in Section 3, we verify that adopters of
+
+different chatbot initiatives followed similar labor market trajectories prior to the arrival
+
+of AI chatbots. Together, these robustness checks help rule out confounding factors and
+
+support the validity of our estimated relationships.
+
+       Finally, since our data are collected from workers rather than senior leadership, our
+
+estimates reflect employer initiatives as perceived by workers. Since employer policies may
+
+not be perfectly communicated, worker self-reports may not fully align with employer
+
+intentions. Nonetheless, Appendix E.5 shows that our findings are largely robust to using
+
+coworker reports to measure employer initiatives, demonstrating these may be interpreted
+
+as workplace-wide treatments.
+
+D.2.2       Adoption
+
+Figure D.3 shows how AI chatbot adoption varies with employer initiatives for a typical
+
+worker. The top estimate (No Initiative) highlights the bottom-up nature of adoption:
+
+even among workers whose employers neither encourage chatbot use, provide an enterprise
+
+chatbot, nor offer training, about 41% have used AI chatbots at work at some point, and
+
+7% use them daily.
+
+       Despite this high baseline, employer initiatives are associated with substantially higher
+
+adoption. Implemented individually, Encouraged use, Own chatbot, and Training each
+
+raise extensive-margin take-up rates to 76%, 57%, and 69%, respectively. Encouraged-use
+
+policies are especially effective at increasing intensive usage, raising daily use from 7%
+
+to 18%. In contrast, providing training or an enterprise chatbot without encouragement
+  30
+    We do not include task controls in our main specification, as task mix may itself be endogenous to
+chatbot adoption. Indeed, Section E.1.6 shows that AI chatbots have created new job tasks for many
+workers.
+
+
+
+                                                 47
+

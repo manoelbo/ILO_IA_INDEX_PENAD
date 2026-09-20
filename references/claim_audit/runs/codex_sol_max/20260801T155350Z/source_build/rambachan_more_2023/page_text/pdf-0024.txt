@@ -1,0 +1,59 @@
+2578                                   REVIEW OF ECONOMIC STUDIES
+
+    Thus, if Assumption 9 fails, then Cα,n
+                                         F LC I
+                                                (β̂ n , n ) is inconsistent in the strong sense that it
+includes fixed points outside of the identified set with non-vanishing probability. It follows that
+there will be some δ ∈  such that the FLCI is inconsistent under δ unless the identified set is
+always the same length. Proposition 4.2 is new, and may be relevant for other settings in which
+FLCIs are used.
+    The intuition for the possible inconsistency of FLCIs is as follows: to ensure that an FLCI
+satisfies the coverage requirement (10), its length must be at least supδ̃ pr e ∈ pr e L I D(δ̃ pr e , ).
+However, this implies that if in fact L I D(δ pr e , ) < supδ̃ pr e ∈ pr e L I D(δ̃ pr e , ), then the FLCI
+
+
+
+
+                                                                                                                            Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+is strictly longer than the length of the identified set, regardless of the value of n , and thus
+some points outside of the identified set must be covered with non-vanishing probability. This
+reflects the fact that FLCIs are by construction fixed length, and thus their length does not adapt
+to information in the data about the length of the identified set. By contrast, the length of the
+conditional/hybrid confidence sets can depend on β̂ pr e and thus “adapts” to the length of the
+identified set.
+    In the three-period DiD example, Assumption 9 holds everywhere for SD (M) (since the
+identified set is always the same length, 2M), for values of δ where the sign restrictions do not
+bind for  S D P B (M), and nowhere for the polyhedra that form  R M ( M̄). The restrictiveness of
+Assumption 9 thus depends greatly on .
+    The results in this section establish that when certain conditions on  are satisfied, optimal
+FLCIs are consistent and have desirable finite-sample guarantees in terms of expected length.
+FLCIs are thus attractive for our baseline smoothness class SD (M), since they are guaranteed to
+be consistent and offer attractive finite-sample guarantees. Our inconsistency result shows, how-
+ever, that FLCIs may perform poorly for other choices of  that may be of interest in empirical
+applications, such as those that construct bounds using a pre-treatment maximum or incorporate
+sign and monotonicity restrictions.
+
+
+                                           5. SIMULATION STUDY
+In this section, we conduct a simulation study to investigate the performance of the discussed
+confidence sets across a range of relevant data-generating processes. We find good size control
+for all of the procedures, and therefore focus in the main text on a comparison of power to pro-
+vide concrete recommendations on the best approach in practice. In the supplementary material,
+we present results on size control and other additional simulation results.
+
+
+5.1.   Simulation design
+Our simulations are calibrated using the estimated covariance matrix from the 12 recently-
+published papers surveyed in Roth (2022). For any given paper in the survey, we denote by ˆ
+the estimated variance-covariance matrix from the event-study in the paper, calculated using the
+clustering scheme specified by the authors. For a chosen mean vector β, we simulate event-study
+coefficients β̂ s from a normal model, β̂ s ∼ N (β, ˆ ).28 In simulation s, we construct nominal
+95% confidence sets for the parameter of interest θ using the pair (β̂ s , ˆ ) for each proposed pro-
+cedure. The parameter of interest is the causal effect in the first post-treatment period (θ = τ1 );
+in the supplementary material, we present simulation results in which the parameter of interest
+
+
+       28. We focus on the normal simulations in the main text since it allows for a tractable computation of the optimal
+excess length of procedures that control size. In the supplementary material, we show that our procedures perform
+similarly in simulations based on the empirical distribution in the original paper.
+

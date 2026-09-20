@@ -1,0 +1,49 @@
+A.5      Theoretical Framework: Automation Tomorrow, Hiring Reductions
+         Today
+
+This section develops a parsimonious framework in which expectations of future labor-
+saving productivity gains depress current hiring when employment is costly to adjust. We
+first present a two-period model that delivers an explicit “firing wedge” in the period-0
+hiring condition. We then embed the same mechanism in a task-based production struc-
+ture in the spirit of Acemoglu and Restrepo (2019).
+
+
+A.5.1     A Baseline Two-Period Model
+
+Time is t ∈ {0, 1}. A representative firm chooses employment nt each period and pro-
+duces with a concave, increasing production function f (·); per-worker wages wt are ex-
+ogenous. The firm discounts with factor β ∈ (0, 1] and faces a per-unit hiring cost ch ≥ 0
+in t = 0. Reductions in employment incur a per-worker firing cost ϕ > 0 on separated
+workers, so that Φ = ϕ(n0 − n1 )+ . Let At > 0 denote period-t productivity. Anticipated
+labor-saving progress in period 1 is captured by a higher A1 that lowers the amount of
+labor required per unit of output.
+   The firm’s objective is
+
+        max Π = A0 f (n0 ) − (w0 + ch )n0 + β E0 [ A1 f (n1 ) − w1 n1 − ϕ(n0 − n1 )+ ] .   (16)
+        n0 ,n1
+
+
+   In period 1, conditional on n0 , the first-order condition (FOC) equates the marginal
+product of labor (MPL) to the effective marginal cost:
+                                            
+                                            w ,
+                                                1      if n1 ≥ n0 (no firing),
+                          A1 f ′ ( n1 ) =
+                                            w − ϕ,    if n1 < n0 (firing).
+                                                1
+
+
+In period 0, the hiring decision internalizes that raising n0 today can trigger firing tomor-
+row. The FOC is
+                                       
+                                       w + c ,            if no firing is expected,
+                                            0   h
+                     A0 f ′ ( n0 ) =                                                       (17)
+                                       w + c + βϕ,        if firing is anticipated,
+                                            0   h
+
+
+
+
+                                                    A.19
+

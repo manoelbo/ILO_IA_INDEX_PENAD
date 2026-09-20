@@ -1,0 +1,32 @@
+# Section 3 replication validation
+
+| Check | Status | Observed | Expected | Detail |
+|---|---:|---|---|---|
+| section3_rows | PASS | 207901 | 207901 | PNAD–ILO analytic cross-section observations. |
+| section3_states | PASS | 27 | 27 | Brazilian federal units represented. |
+| section3_year | PASS | [2025] | [2025] | The public Section 3 source period is fixed. |
+| section3_quarter | PASS | [3] | [3] | The public Section 3 source period is fixed. |
+| section3_weighted_population | PASS | 97783776.18040435 | 97783776.18040435 ± 1e-6 | Sum of PNAD person weights. |
+| section3_table_count | PASS | 5 | 5 | Published Section 3 tables. |
+| section3_figure_count | PASS | 10 | 10 | Published Section 3 figures. |
+| artifact_tables/table_3_1_base_specs.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_1_base_specs.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_2_gradients.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_2_gradients.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_3_high_exposure_occupations.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_3_high_exposure_occupations.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_4_sector_exposure.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_4_sector_exposure.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_5_demographics_summary.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_tables/table_3_5_demographics_summary.md | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_10_formality.png | PASS | dimensions=(2470, 1099); reference=(2470, 1099); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_1_histogram_kde.png | PASS | dimensions=(2642, 1631); reference=(2642, 1631); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_2_gradient_population.png | PASS | dimensions=(3205, 1667); reference=(3205, 1667); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_3_score_by_occupation_group.png | PASS | dimensions=(3916, 1677); reference=(3916, 1677); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_4_state_high_exposure.png | PASS | dimensions=(2664, 2000); reference=(2664, 2000); RMS=0.125973 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_5_sex.png | PASS | dimensions=(2461, 1099); reference=(2461, 1099); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_6_race.png | PASS | dimensions=(2443, 1099); reference=(2443, 1099); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_7_age.png | PASS | dimensions=(2419, 1272); reference=(2419, 1272); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_8_education.png | PASS | dimensions=(2763, 1528); reference=(2763, 1528); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_figures/figure_3_9_income.png | PASS | dimensions=(2483, 1272); reference=(2483, 1272); RMS=0.000000 | matches reference | Reference-to-reproduced artifact comparison. |
+| artifact_backing_data/data_build_diagnostics.csv | PASS | byte-identical | matches reference | Reference-to-reproduced artifact comparison. |

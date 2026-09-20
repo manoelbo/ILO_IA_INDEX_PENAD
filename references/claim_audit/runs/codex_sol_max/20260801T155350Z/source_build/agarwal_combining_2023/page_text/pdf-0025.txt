@@ -1,0 +1,53 @@
+                                                                                                                                                                                                            25
+
+                                                      Figure 2: Conditional treatment effect given radiologist prediction
+                                            (a) Deviation from Ground Truth                                                                         (b) Incorrect Decision
+ ATE of AI on deviation from ground truth
+
+
+
+
+                                             .05                                                                                               .1
+
+
+
+
+                                                                                                           ATE of AI on incorrect decision
+                                                                                                                                             .05
+                                              0
+                                                                                                                                               0
+                                            -.05
+                                                                                                                                             -.05
+
+                                             -.1
+                                                                                                                                              -.1
+
+
+                                            -.15                                                                                             -.15
+                                                   [0,0.2)   [0.2,0.4) [0.4,0.6) [0.6,0.8)       [0.8,1]                                            [0,0.2)   [0.2,0.4) [0.4,0.6) [0.6,0.8)       [0.8,1]
+                                                          Radiologist probability bins without AI                                                          Radiologist probability bins without AI
+
+
+Note: Panel (a) shows the conditional average treatment effect of providing AI information on the absolute value of difference
+between the radiologist probability and the ground truth. Panel (b) shows analogous treatment effects on incorrect diagnosis,
+where a correct diagnosis is defined as the treatment recommendation matching the ground truth. Both these treatment effects
+are conditional on the ranges of the expert’s prediction constructed using the no AI assistance. Standard errors are two-way
+clustered at the radiologist and patient-case level. The error bars depict 95% confidence intervals. Robustness to experimental
+design is in appendix C.4.1.
+
+
+
+While AI assistance can help uncertain experts, we find that providing uncertain AI predic-
+tions reduces performance. As with the analysis of conditional treatment effects given expert
+predictions, we estimate conditional treatment effects given AI predictions by partitioning
+                                           
+cases into five bins based on π ωi = 1|sA i . Figure 3 presents the estimates, pooling data
+from all three experimental designs. When the AI provides a confident prediction (e.g. either
+close to zero or close to one) performance is significantly improved. We see that in the lowest
+bins of AI signals, the deviation from the ground truth is reduced. In the second highest
+bin we also see a marked, though not statistically signficant, improvement in performance.
+However, in the middle range of signals, where the confidence of the AI is low, radiologists’
+diagnostic performance and probability of making a correct decision is lower when AI infor-
+mation is provided. This result reinforces the conclusion that radiologists err when updating
+their beliefs.
+

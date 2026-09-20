@@ -1,0 +1,38 @@
+                              Table 4: Estimates of the union premium
+
+                                        Estimate     Standard error   N
+                             βbf e       0.107           0.030      4,360
+                             βbf d       0.060           0.032      3,815
+                             DIDM        0.041           0.034      3,815
+                             DIDpl M     0.094           0.038      3,101
+                             DIDpl,2
+                                   M     -0.041          0.030      2,458
+                             DIDpl,3
+                                   M     -0.004          0.033      1,881
+
+Notes. This table reports estimates of the effect of the union premium, as well as placebo estimators of the
+common trends assumption. Estimators are computed using the data of Vella and Verbeek (1998). Standard
+errors are clustered at the worker level.
+
+
+
+7    Conclusion
+
+Almost 20% of empirical articles published in the AER between 2010 and 2012 use regressions
+with groups and period fixed effects to estimate treatment effects. In this paper, we show that
+under a common trends assumption, those regressions estimate weighted sums of the treatment
+effect in each group and period. The weights may be negative: in one application, we find that
+almost 50% of the weights are negative. The negative weights are an issue when the treatment
+effect is heterogeneous, between groups or over time. Then, one could have that the treatment’s
+coefficient in those regressions is negative while the treatment effect is positive in every group
+and time period. We therefore propose a new estimator to address this problem. This estimator
+estimates the treatment effect in the groups that switch treatment, at the time when they
+switch. It does not rely on any treatment effect homogeneity condition. It is computed by the
+fuzzydid and did_multiplegt Stata packages. In the two applications we revisit, this estimator
+is significantly and economically different from the two-way fixed effects estimators.
+
+
+
+
+                                                    25
+

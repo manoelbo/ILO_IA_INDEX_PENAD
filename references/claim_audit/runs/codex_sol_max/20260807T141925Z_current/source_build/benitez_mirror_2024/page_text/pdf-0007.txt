@@ -1,0 +1,46 @@
+human judgment, critical thinking, and persuasion. This interrelation will result in a lower AI
+exposure of journalism routine tasks than those of technical writers.
+    Another limitation of this approach is that it does not account for the ethical and social con-
+text of different occupations performing similar types of tasks. Consider, for example, judges and
+credit analysts. Both make decisions based on evaluating extensive information, and both roles
+can significantly impact individuals’ lives. However, the nature and scope of their impact differ
+in important ways. Judges deliver verdicts that can dramatically affect individuals’ well-being,
+freedom, rights, and long-term societal standing. Their role demands a profound understanding
+of ethical principles and the ability to balance complex cases. The ethical weight and social impact
+of their decisions, in addition to requiring human judgment and empathy, make it unlikely that
+societies would accept these roles being legitimately replaced by AI. Credit analysts, while also
+impacting individual well-being through their decisions on loan approvals or credit ratings, typi-
+cally operate within a more narrowly defined financial context. Their decisions can certainly affect
+a person’s economic opportunities and quality of life, but generally do not carry the same weight
+of personal liberty or broader societal impact as judicial decisions. This comparison highlights
+the importance of considering not just the technical similarities in task types, but also the broader
+ethical, social, and institutional contexts in which different occupations operate when assessing
+the potential for AI integration or replacement.
+    Our approach corrects the limitations of previous indexes by integrating a more holistic task-
+based analysis that captures the interrelations and complementarities between tasks within oc-
+cupations. Unlike previous methods that disaggregate occupations into isolated tasks, skills, or
+abilities, our AI-generated index considers the entire vector of tasks, reflecting a complete view of
+occupational contributions in production. To address the second limitation, we provide the model
+in the surveys with both the name of the occupation and its vector of tasks, allowing it to estimate
+the overall likelihood of AI replacement without imposing restrictive assumptions. This method
+allows the model to consider the ethical and social context of each occupation organically rather
+than through predefined criteria, offering a more holistic evaluation of exposure and replacement.
+Alternative prompt specifications and follow-up surveys suggest that our method effectively ac-
+counts for these considerations.
+    This second concern is also raised by Pizzinelli et al. (2023) and is somewhat addressed by their
+complementarity-adjusted occupational exposure index (C-AIOE). This measure incorporates fac-
+tors such as work contexts and job zones to account for the likelihood that AI will complement
+rather than replace human labor.4 Our approach goes further by imposing fewer assumptions
+    4 Notwithstanding its advancements over previous indexes, the work contexts and job zones retrieved from the
+
+O*NET contain several limitations and assumptions. Firstly, it assumes that higher levels of education and training
+automatically correlate with better integration of AI, which may not account for the specific skill sets and practical con-
+texts required in each occupation. Additionally, the chosen contexts, such as face-to-face communication, responsibility
+for others’ health, and physical proximity, might not fully capture the ethical reasoning required in certain roles, nor
+the degree of public resistance to AI replacing certain decision-making roles. Furthermore, as the index is built upon
+the AIOE, it relies solely on the isolated similarity of abilities to AI developments and thus does not account for the
+exposure of tasks and their interrelations in the workplace.
+
+
+                                                            3
+

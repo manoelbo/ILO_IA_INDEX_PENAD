@@ -1,0 +1,61 @@
+      Assumption 3 requires that each cohort experiences the same path of treatment effects. Treatment effects
+
+need to be the same across cohorts in every relative period for homogeneity to hold, whereas for heterogene-
+
+ity to occur, treatment effects only need to differ across cohorts in one relative period. The assumption of
+
+treatment effect homogeneity is therefore strong, and in Section 3.4.1, we describe how it can be violated in
+
+applied settings.
+
+      Our notion of treatment effect homogeneity does not preclude dynamic treatment effects; it only im-
+
+poses that cohorts share the same path of treatment effects. The related literature sometimes formulates
+
+restrictions on the dynamics of treatment effects as another notion of treatment effect homogeneity. Athey
+
+and Imbens (2018) propose an assumption that “restricts the heterogeneity of the treatment effects over
+
+time,” which implies C ATTe,` can vary over e but not over `. Borusyak and Jaravel (2017) refer to one
+
+type of treatment effects heterogeneity as “only across the time horizon,” which implies C ATTe,` can vary
+
+over ` but not over e. Callaway and Sant’Anna (2020a) allow for “arbitrary treatment effect heterogeneity”
+
+when C ATTe,` varies across cohorts and over time. Similarly, de Chaisemartin and D’Haultfœuille (2020)
+
+describe treatment effects that may be “heterogeneous across groups and over time periods.” Goodman-
+
+Bacon (2018) allow heterogenous effects to either “vary across units but not over time” or “vary over time
+
+but not across units.” The literature has not converged on a single notion of treatment effects heterogeneity
+
+with time-varying treatment. Since researchers are interested in dynamic treatment effects when using a
+
+“dynamic” specification, we do not restrict the path of treatment effects but rather use “heterogeneity” to
+
+describe variation across cohorts only.
+
+
+2.3      Relevance in the applied literature
+
+To gauge the empirical relevance of our results, we survey the estimation methods used by the twelve papers
+
+collected by Roth (2019) from three leading economics journals that contain the phrase “event study” in
+
+their main text.1 From this sample of applied papers, we learn what specifications empirical researchers are
+
+actually using when estimating two-way fixed effects regressions. Four papers in this sample consider the
+
+simple setting where units either receive their first treatment at the same time or never receive the treatment.
+
+The other eight papers in this sample consider the more complex setting where treated units receive their
+      1 We follow the selection criteria in Roth (2019): the original sample consists of 70 total papers, but is further constrained
+
+to these twelve papers with publicly available data and code. The data and code are used to determine exactly the specification
+estimated in these papers.
+
+
+
+                                                                  9
+

@@ -1,0 +1,57 @@
+Now, by definition of εg,t again,
+                                           T
+                                           X
+                                                  Ng,t εg,t = 0 for all g ∈ {1, ..., G},                    (5)
+                                           t=1
+                                           XG
+                                                  Ng,t εg,t = 0 for all t ∈ {1, ..., T }.                   (6)
+                                           g=1
+
+
+Then,
+            X
+                   Ng,t εg,t E (Yg,t |D)
+             g,t
+            X
+        =          Ng,t εg,t (E (Yg,t |D) − E (Yg,1 |D) − E (Y1,t |D) + E (Y1,1 |D))                        (7)
+             g,t
+            X
+        =          Ng,t εg,t (Dg,t E (∆g,t |D) − Dg,1 E (∆g,1 |D) − D1,t E (∆1,t |D) + D1,1 E (∆1,1 |D))
+             g,t
+            X
+        =          Ng,t εg,t Dg,t E (∆g,t |D)
+             g,t
+                   X
+        =                   Ng,t εg,t E (∆g,t |D) .                                                         (8)
+            (g,t):Dg,t =1
+
+
+The first and third equalities follow from Equations (5) and (6). The second equality follows
+from Lemma 1. The fourth equality follows from Assumption 2. Finally, Assumption 2 implies
+that
+                               X                     X
+                                    Ng,t εg,t Dg,t =     Ng,t εg,t .                       (9)
+                                            g,t                      (g,t):Dg,t =1
+
+Combining (4), (8), (9) yields
+                                                            X           Ng,t
+                                      E βbf e D =                              wg,t E (∆g,t |D) .          (10)
+                                                                          N1
+                                                          (g,t):Dg,t =1
+
+
+Then, the result follows from the law of iterated expectations.
+
+
+Proof of Proposition 1
+
+If for all t ≥ 2 Ng,t /Ng,t−1 does not depend on t, then it follows from the first order conditions
+attached to Regression 1 and a few lines of algebra that εg,t = Dg,t − Dg,. − D.,t + D.,. . Therefore,
+wg,t is proportional to Dg,t − Dg,. − D.,t + D.,. . Then, for all (g, t, t0 ) such that Dg,t = Dg,t0 = 1,
+D.,t > D.,t0 implies wg,t < wg,t0 . Similarly, for all (g, g 0 , t) such that Dg,t = Dg0 ,t = 1, Dg,. > Dg0 ,.
+implies wg,t < wg0 ,t .
+
+
+
+                                                                   29
+

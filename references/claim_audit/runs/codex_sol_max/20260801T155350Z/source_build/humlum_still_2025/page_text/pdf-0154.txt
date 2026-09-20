@@ -1,0 +1,46 @@
+                                 Survey Questionnaire – Danish Version
+
+                                                Block 2: Adoption
+4. Awareness of AI chatbots
+AI chatbots bruger kunstig intelligens til at læse og skrive tekst. Vi vil nu spørge ind til dine erfaringer
+med AI chatbots.
+Havde du hørt om følgende chatbots før denne undersøgelse?
+Markér alle værktøjer, du havde hørt om før denne undersøgelse.
+    • ChatGPT (udviklet af OpenAI)
+    • Claude (udviklet af Anthropic)
+    • Copilot (udviklet af Microsoft)
+    • Gemini (udviklet af Google)
+    • Perplexity (udviklet af Perplexity AI)”
+    • Andre AI chatbots
+    • Havde ikke hørt om AI chatbots før denne undersøgelse
+
+5. Prior Use of AI Chatbots [if 4 = ’Ja’]
+Har du benyttet følgende AI chatbots?
+[ChatGPT / Claude / Copilot / Gemini /Perplexity / Andre AI chatbots]
+    • Ja, kun til arbejde
+    • Ja, kun til fritid
+    • Ja, til arbejde og fritid
+
+6.a Purposes of Prior Use [if 5=’Ja, kun til fritid’ or ’Ja, til arbejde og fritid’]
+Hvor ofte har du benyttet følgende AI chatbots til fritid?
+[ChatGPT / Claude / Copilot / Gemini /Perplexity / Andre AI chatbots]
+    • Aldrig
+    • Et par gange
+    • Månedligt
+    • Ugentligt
+    • Dagligt
+
+6.b Purposes of Prior Use [if 5=’Ja, kun til arbejde or ’Ja, til arbejde og fritid’]
+Hvor ofte har du benyttet følgende AI chatbots til arbejde?
+[ChatGPT / Claude / Copilot / Gemini /Perplexity / Andre AI chatbots]
+    • Aldrig
+    • Et par gange
+    • Månedligt
+    • Ugentligt
+    • Dagligt
+
+
+
+
+                                                        119
+

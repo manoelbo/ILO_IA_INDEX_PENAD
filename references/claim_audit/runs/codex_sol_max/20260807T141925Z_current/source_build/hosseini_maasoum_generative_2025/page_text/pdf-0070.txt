@@ -1,0 +1,28 @@
+                                                            ¯ where l¯ = sup                ∗post
+The reallocation effect is bounded above by ( x̂ ′ − x̂ ) · l,               x ∈[α,x̂ ′ ] l J     ( x ). The
+                     R α ∗pre
+displacement effect 0 l J ( x ) dx > 0 for any α > 0. Therefore ∆L J < 0 whenever
+                                                                          ∗
+
+                                                         Z α
+                                       ′                        ∗pre
+                                    ( x̂ − x̂ ) · l¯ <         lJ      ( x ) dx.                       (33)
+                                                          0
+
+Note that (33) is only a sufficient condition for a net decline in junior labor demand, not a
+characterization of all parameter configurations under which the decline occurs; the net
+effect can be negative even when this bound is not satisfied, because the bound replaces
+the productivity effect with zero.
+    When δ J = δS , the augmented productivity ratio γ̃S ( x )/γ̃ J ( x ) = γS ( x )/γ J ( x ) is un-
+changed, so x̂ ′ = x̂ exactly. The reallocation effect is zero and ∆L∗J < 0 follows immedi-
+                                                                           d
+ately. More generally, by the implicit function theorem (applicable since dx ln(γS /γ J )| x̂ >
+0 by Assumption 1), x̂ ′ is continuous in (δ J , δS ). Since x̂ ′ − x̂ vanishes at δ J = δS while
+the displacement effect is bounded away from zero, there exists a neighborhood around
+δ J = δS in which (33) holds.
+
+
+
+
+                                                    A.25
+

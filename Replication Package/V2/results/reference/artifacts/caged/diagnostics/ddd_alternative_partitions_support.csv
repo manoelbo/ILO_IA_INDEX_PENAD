@@ -1,0 +1,7 @@
+dimension,dimension_kind,group_id,group_label,panel_cells,target_cells_with_flows,target_treated_cbo_with_flows,target_control_cbo_with_flows,support_status,negative_admission_cells,negative_separation_cells,family_id,family_size,multiplicity_method
+age_pnad,micro,age_18_24,Age 18-24,44098,21820,75,266,adequate,0,0,B,30,Benjamini-Hochberg
+age_pnad,micro,age_25_34,Age 25-34,44098,22001,75,266,adequate,0,0,B,30,Benjamini-Hochberg
+age_pnad,micro,age_35_44,Age 35-44,44098,21969,75,266,adequate,0,0,B,30,Benjamini-Hochberg
+age_pnad,micro,age_45_54,Age 45-54,44098,21810,75,266,adequate,0,0,B,30,Benjamini-Hochberg
+age_pnad,micro,age_55_65,Age 55-65,44098,21330,75,266,adequate,0,0,B,30,Benjamini-Hochberg
+race_aggregate,micro,race_negra,Black or Pardo,44098,21999,75,266,adequate,0,0,B,30,Benjamini-Hochberg

@@ -1,0 +1,43 @@
+                            Survey Questionnaire – English Translation
+
+                                       Block 4: Effects of AI chatbots
+12. Benefits from AI chatbots
+Have you experienced any of these benefits from using AI chatbots in your work?
+Please select all that apply.
+    • Saved time at work
+    • Improved work quality
+    • Increased creativity
+    • Higher job satisfaction
+    • Have not experienced benefits
+    • Don't know
+
+13. Time savings from AI chatbots [if 12=’Saved time at work’]
+Think back to the days when you used AI chatbots for your work. How much time did you save using AI
+chatbots on average?
+    • Less than 15 minutes per day
+    • Between 15 minutes and an hour per day
+    • More than an hour per day
+
+14.a Earnings impact of AI chatbots
+Have AI chatbots affected how much you earn today?
+    • I earn more today as a result of AI chatbots
+    • AI chatbots have not affected my income
+    • I earn less today as a result of AI chatbots
+
+14.b Earnings impact of AI chatbots [if 14.a=’ I earn more today as a result of AI chatbots‘]
+How much have AI chatbots increased your earnings?
+    • Under 5 percent
+    • Between 5 and 15 percent
+    • Over 15 percent
+
+14.c Earnings impact of AI chatbots [if 14.a=’ I earn less today as a result of AI chatbots‘]
+How much have AI chatbots reduced your earnings?
+    • Under 5 percent
+    • Between 5 and 15 percent
+    • Over 15 percent
+
+
+
+
+                                                    116
+

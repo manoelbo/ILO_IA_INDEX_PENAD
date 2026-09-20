@@ -1,0 +1,225 @@
+{
+  "crosswalk": {
+    "families": 629,
+    "without_score": 193,
+    "source": "../_bundle/v2/derived/cbo_treatment_classification.csv"
+  },
+  "observed_panel": {
+    "families": 630,
+    "without_score": 194,
+    "additional_cells": [
+      {
+        "cbo_4d": "2414",
+        "periodo": "2025-07",
+        "included_main": false
+      },
+      {
+        "cbo_4d": "2414",
+        "periodo": "2026-01",
+        "included_main": false
+      },
+      {
+        "cbo_4d": "2414",
+        "periodo": "2026-02",
+        "included_main": false
+      },
+      {
+        "cbo_4d": "2414",
+        "periodo": "2026-04",
+        "included_main": false
+      },
+      {
+        "cbo_4d": "2414",
+        "periodo": "2026-05",
+        "included_main": false
+      }
+    ],
+    "source": "../_bundle/v2/derived/painel_nacional.parquet",
+    "gradient_counts": {
+      "Exposed: Gradient 1": 13,
+      "Exposed: Gradient 2": 31,
+      "Exposed: Gradient 3": 31,
+      "Minimal Exposure": 95,
+      "No score": 194,
+      "Not Exposed": 266
+    }
+  },
+  "income_diagnostics": [
+    {
+      "group_id": "low_income",
+      "outcome": "admissoes",
+      "group_pretrend_n_obs": 12782,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 3.120008589e-53,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "low_income",
+      "outcome": "desligamentos",
+      "group_pretrend_n_obs": 12782,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 1.637611638e-27,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "low_income",
+      "outcome": "n_movimentacoes",
+      "group_pretrend_n_obs": 12782,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 4.15283717e-40,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "low_income",
+      "outcome": "ln_salario_real_adm",
+      "group_pretrend_n_obs": 12755,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 0.0156297035,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15907,
+      "ddd_pretrend_status": "warning"
+    },
+    {
+      "group_id": "low_income",
+      "outcome": "asinh_saldo",
+      "group_pretrend_n_obs": 12782,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 1.2026e-05,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "middle_income",
+      "outcome": "admissoes",
+      "group_pretrend_n_obs": 2726,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 3.0611463e-103,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "middle_income",
+      "outcome": "desligamentos",
+      "group_pretrend_n_obs": 2726,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 1.353190602e-43,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "middle_income",
+      "outcome": "n_movimentacoes",
+      "group_pretrend_n_obs": 2726,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 1.309689887e-38,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "middle_income",
+      "outcome": "ln_salario_real_adm",
+      "group_pretrend_n_obs": 2725,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 0.000169343,
+      "group_pretrend_pretrend_status": "fail",
+      "ddd_n_obs": 15907,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "middle_income",
+      "outcome": "asinh_saldo",
+      "group_pretrend_n_obs": 2726,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 22,
+      "group_pretrend_joint_lead_p_value": 0.1975958622,
+      "group_pretrend_pretrend_status": "warning",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "high_income",
+      "outcome": "admissoes",
+      "group_pretrend_n_obs": 423,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 7,
+      "group_pretrend_joint_lead_p_value": null,
+      "group_pretrend_pretrend_status": "not_interpretable_rank_deficient",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "high_income",
+      "outcome": "desligamentos",
+      "group_pretrend_n_obs": 423,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 7,
+      "group_pretrend_joint_lead_p_value": null,
+      "group_pretrend_pretrend_status": "not_interpretable_rank_deficient",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "high_income",
+      "outcome": "n_movimentacoes",
+      "group_pretrend_n_obs": 423,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 7,
+      "group_pretrend_joint_lead_p_value": null,
+      "group_pretrend_pretrend_status": "not_interpretable_rank_deficient",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "high_income",
+      "outcome": "ln_salario_real_adm",
+      "group_pretrend_n_obs": 423,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 7,
+      "group_pretrend_joint_lead_p_value": null,
+      "group_pretrend_pretrend_status": "not_interpretable_rank_deficient",
+      "ddd_n_obs": 15907,
+      "ddd_pretrend_status": "fail"
+    },
+    {
+      "group_id": "high_income",
+      "outcome": "asinh_saldo",
+      "group_pretrend_n_obs": 423,
+      "group_pretrend_joint_lead_count": 22,
+      "group_pretrend_lead_covariance_rank": 7,
+      "group_pretrend_joint_lead_p_value": null,
+      "group_pretrend_pretrend_status": "not_interpretable_rank_deficient",
+      "ddd_n_obs": 15935,
+      "ddd_pretrend_status": "fail"
+    }
+  ],
+  "income_source": "results/reference/artifacts/caged/diagnostics/ddd_pretrends.csv",
+  "window_sources": [
+    "results/reference/artifacts/caged/models/event_study_support.json",
+    "results/reference/artifacts/caged/models/national_event_study_extended_support.json",
+    "results/reference/artifacts/caged/models/group_event_study_support.json"
+  ],
+  "static_window": "2021-01 to 2026-05",
+  "balanced_event_window": "-23 to +23",
+  "extended_event_profiles": "-23 to +41",
+  "omitted_reference": "2022-11 (k=-1)",
+  "regressions_run": 0
+}

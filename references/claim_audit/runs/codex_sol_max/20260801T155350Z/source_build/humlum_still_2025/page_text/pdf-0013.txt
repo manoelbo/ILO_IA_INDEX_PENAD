@@ -1,0 +1,57 @@
+      spur demand, these workplaces could expand employment. In particular, Generative
+
+     AI is argued to reshape organizational hierarchies by displacing entry-level positions
+
+     (Brynjolfsson, Chandar and Chen, 2025). Section 3.3 analyzes these possibilities
+
+      by estimating the effects of employer chatbot initiatives on workplace employment,
+
+      early-career jobs, and job churn.
+
+  3. Job mobility and sorting: If chatbots are especially useful for newcomers to an
+
+      occupation, adopters may be more likely to switch occupations (Autor, 2024).
+
+      Furthermore, AI chatbots may prompt workers who want to use them to move into
+
+      firms that encourage their use. We examine these implications at both the worker
+
+      and workplace levels.
+
+   We use a series of difference-in-differences analyses to identify the relevant effects,
+
+comparing adopters and non-adopters before and after the introduction of AI chatbots and
+
+examining outcomes at both the worker and workplace levels. Appendix A.2 draws on our
+
+theoretical framework to clarify the identifying assumptions and to provide a structural
+
+interpretation of the estimates. Here, we highlight the key empirical challenges in our
+
+analysis.
+
+   A first concern in our analysis is that adoption may remain a relatively weak treatment:
+
+workers may struggle to use the tools effectively, and firms may provide limited guidance
+
+or infrastructure to support their implementation. Section 1.4 showed that employer
+
+encouragement is critical for unlocking both higher use and greater reported benefits.
+
+We use these “AI front-runner” workplaces—those with encouraged use—as our primary
+
+workplace treatment, as they offer a window into the effects of AI chatbots as employers
+
+embrace the tools. We also examine the effects of additional investments in employer-
+
+provided chatbots and training. At the individual level, we also analyze heterogeneity by
+
+intensity of use and reported gains.
+
+   A second key concern is that adopters may have fared differently in the labor market
+
+even without AI chatbots. We take two steps to address this issue. First, we control
+
+
+                                           11
+

@@ -1,0 +1,24 @@
+A.15      Descriptive Statistics: Adopters vs. Non-Adopters
+Table A.5 presents descriptive statistics for the full sample, adopters, and non-adopters. Several system-
+atic differences stand out. Adopting firms are much larger, averaging about 546 employees compared to
+roughly 108 for non-adopters. Their workforces are more senior-heavy, with juniors comprising only 41
+percent of employment versus 55 percent in non-adopting firms. Consistent with this pattern, adopters
+exhibit substantially higher hiring and separation volumes, with a smaller share involving junior positions.
+As expected, adopters also employ a significantly larger share of workers in highly exposed occupations:
+47 percent of their juniors are in high-exposure occupations (vs. 22 percent at non-adopters), and 33 percent
+of their seniors (vs. 12 percent at non-adopters).
+
+    While non-adopters are widely dispersed across sectors, GenAI adopters are heavily concentrated in
+professional services (28 percent) and information (24 percent). Geographically, adopters are dispropor-
+tionately headquartered in California, while being slightly less represented in Texas compared to non-
+adopters (Supplemental Appendix A.16 provides more details on the sectoral and geographic distribution
+of adopters versus non-adopters).
+
+    Taken together, the statistics depict GenAI adopters as larger, more senior-oriented firms, with stronger
+recruitment from exposed occupations, and greater presence in technology-intensive sectors and states.
+
+
+
+
+                                                     A.45
+

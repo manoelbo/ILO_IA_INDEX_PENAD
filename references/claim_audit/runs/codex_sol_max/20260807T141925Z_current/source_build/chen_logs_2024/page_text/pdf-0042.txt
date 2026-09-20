@@ -1,0 +1,51 @@
+Equation (B.1) then follows from applying this result for d “ 0, 1 and taking the difference of the
+limits.
+
+B.2        Extension to continuous treatments
+Although we focus on binary treatment in the main text for simplicity, similar issues arise with
+continuously distributed D. Suppose now that D can take a continuum of values on some set
+D Ď R. Let Y pdq denote the potential outcome at the dose d, and P the distribution of Y p¨q.
+Consider the parameter                                ż
+                                             θpaq “           ωpdqEP rmpaY pdqqs,
+                                                          D
+
+which is a weighted sum of the average values of mpaY pdqq across different values of d with weights
+ωpdq. For example, in an RCT with a continuous treatment, a regression of mpaY q on D yields a pa-
+rameter of the form θpaq where, by the Frisch–Waugh–Lovell theorem, the weights are proportional
+to pd ´ ErDsqppdq and integrate to 0.50
+       We now show that θpaq can be made to have arbitrary magnitude via the choice of a when
+there is an extensive margin effect. In particular, by an extensive margin effect we mean that
+ş
+  ωpdqP pY pdq ą 0q ‰ 0, i.e. when there is an average effect on the probability of a zero outcome,
+using the same weights ωpdq that are used for θpaq. When θpaq is the regression of mpaY q on D in
+an RCT, for example, ωpdqP pY pdq ą 0q ‰ 0 if the regression of 1rY ą 0s on D yields a non-zero
+                      ş
+
+coefficient.
+Proposition 5. Suppose that:
+
+   1. The function m satisfies parts 1 and 2 of Proposition 1.
+                                         ş
+   2. (Extensive margin effect)           D ωpdqP pY pdq ą 0q ‰ 0.
+
+   3. (Bounded expectations) For all d, EP r| logpY pdqq| | Y pdq ą 0s ă 8.
+                                                                         ş                 ş                  ş
+   4. (Regularity for weights) The weights ωpdq satisfy                      D ωpdq “ 0,   D |ωpdq| ă 8 and   D |ωpdq| ¨
+         EP r| logpY pdqq| | Y pdq ą 0s ă 8.
+
+Then for every θ ˚ P p0, 8q, there exists a ą 0 such |θpaq| “ θ ˚ . In particular, θpaq is continuous
+and θpaq Ñ 0 as a Ñ 0 and |θpaq| Ñ 8 as a Ñ 8.
+                                  ş
+Proof. Note that θp0q “               ωpdqmp0q “ 0. It thus suffices to show that θpaq is continuous for
+a P r0, 8q and that |θpaq| Ñ 8 as a Ñ 8. The result then follows from the intermediate value
+theorem.
+       We first show continuity. Fix a P r0, 8q and a sequence an Ñ a. Let fn pdq “ ωpdqEP rmpan Y pdqqs.
+We showed in the proof to Proposition 1 that EP rmpan Y pdqqs Ñ EP rmpaY pdqqs, and thus fn pdq Ñ
+  50
+       Here, ppdq denotes the density of D at d over the randomization distribution.
+
+
+
+
+                                                                 5
+

@@ -1,0 +1,79 @@
+      in Step 2).
+
+      To form an estimator alternative to the dynamic FE estimator b  µg from Regression (4), we can use
+                                      1 ÕÕ         Ne              1
+                                                                               f ` ) |b
+                                                                      Õ
+                              bνg B              Í        δ e,` =
+                                                          b                vec(b      δ.                (70)
+                                     |g| ` ∈g ` e ∈h ` Ne         |g| ` ∈g
+                                                e ∈h
+
+    With a few standard assumptions (which we present together below as Assumption 4) on Regression
+
+(26), we can show that the IW estimators are asymptotically normal.
+
+Assumption 4. (The saturated regression assumptions).
+
+   1. There are observations from at least two cohorts that are not treated in t = 0.
+
+   2. Independent, identically distributed cross-sectional observations: {(Ei, Yi ) : i = 1, 2, . . ., N } are i.i.d.
+
+      draws from their joint distribution where Yi = (Yi,0, . . .,Yi,T )| is a T × 1 vector.
+
+   3. Large outliers are unlikely: (Bi,t , i,t ) have nonzero finite fourth moments.
+
+                                                         Ü | , double-demeaned version of B| . Assume
+                Ü the data matrix, whose rows consist of B
+   4. Denote by B                                          i,t                             i,t
+      Ü has full rank. If B
+      B                   Ü is reduced-rank because cohort e is empty, then discard regressors involving
+
+      1{Ei = e}.
+
+    Denote by δ the probability limit of b
+                                         δ, which is a vector of C ATTe,` . We next state the asymptotic
+
+distribution of the IW estimators specifically for ν` , the average effect at relative time `. Results for the
+
+more general case of νg , which is the average effects across relative times ` ∈ g, can be derived similarly.
+
+Note that we use a clustered variance-covariance structure to allow the possibility that Yi,t are dependent
+
+across t due to serial correlation.
+
+Proposition 6. (Consistency and asymptotic normality of the IW estimators for ν` ). Under the assumptions
+
+of Proposition 5 and Assumption 4, the IW estimator converges in probability to
+
+                                     Pr Ei = e | Ei ∈ h` C ATTe,` = vec(f ` )| δ.
+                                Õ
+                         ν` → p
+                                        
+                         b                                                                                       (71)
+                                      e ∈h `
+The asymptotic distribution of this estimator is
+                                  √               |                                
+                                     N b ν` − vec f ` δ →d N 0, δ | Σ f ` δ + Σ`                                  (72)
+                                        √
+for Σ f ` the asymptotic variance of N(vec(b     f ` ) − vec(f ` )) where bf ` is the weight matrix estimator and
+                         Õi }−1
+                      max{E                                                      Õi }−1
+                                                                             max{E
+                                                                                                   !
+               V BÜ =                   Ü ] Σ` = vec(f ` )| V −1
+                                  Ü i,t B
+                                E[B
+                                          |
+                                                                    Ü V ar
+                                                                                        Ü i,t Üi,t V −1
+                                                                                        B                    `
+                                                                                                      Ü vec(f ).  (73)
+                                         i,t                        B                                 B
+                       t=0                                                 t=0
+
+
+
+
+                                                         48
+

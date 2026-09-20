@@ -1,0 +1,54 @@
+calibrated values of the demand elasticities η and ϵ.
+
+   Importantly, when both the firm-level employment difference-in-differences ∆N and the
+
+worker-level earnings difference-in-differences ∆Y are approximately zero (as in Figures 2
+
+and 3), this implies that the missing intercept, E[d log W0 ], is also close to zero.
+
+A.3.2    Heterogeneous Encouragement Costs
+
+For analytical simplicity, our main analysis focused on the case where firms face the same
+
+encouragement cost, κj = κ for all j. In this section, we consider the general case with
+
+heterogeneous encouragement costs, letting Fκ denote the CDF of employer encouragement
+
+costs.
+
+   When encouragement costs are heterogeneous, equilibrium skill price differentials reflect
+
+both the supply of and demand for human capital across encouraged and non-encouraged
+
+employers. These, in turn, depend on workers’ sorting and adoption decisions, as well as
+
+firms’ encouragement and hiring policies. We begin by characterizing these decision rules
+
+in terms of the relative skill price, W1:0 = W1 /W0 , and then combine supply and demand
+
+to solve for the resulting equilibrium skill differentials.
+
+
+Employer encouragement. Following the cutoff rule in Equation (19), the share of
+
+employers encouraging AI chatbots satisfies:
+
+
+                              P[Ej = 1] = Fκ [(1 − ϵ) log W1:0 ] ,                      (55)
+
+
+where Fκ denotes the CDF of encouragement costs.
+
+
+Workplace labor demand. Encouraged firms gain a marginal productivity advantage
+
+through lower skill prices, increasing their demand for human capital by:
+
+
+                                   log H1:0 = −ϵ log W1:0 .                             (56)
+
+
+
+
+                                              24
+

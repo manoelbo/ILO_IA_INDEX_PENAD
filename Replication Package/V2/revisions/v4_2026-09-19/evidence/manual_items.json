@@ -1,0 +1,74 @@
+[
+  {
+    "id": "M01",
+    "old": "Figura 5.2.1.1 — Admissões por sexo",
+    "dest": "Apêndice A.3, Figura A.3.1",
+    "section": "5.3.1"
+  },
+  {
+    "id": "M02",
+    "old": "Figura 5.2.1.2 — Salário real de admissão por sexo",
+    "dest": "Apêndice A.3, Figura A.3.2",
+    "section": "5.3.1"
+  },
+  {
+    "id": "M03",
+    "old": "Figura 5.2.2.1 — Admissões por raça/cor",
+    "dest": "Apêndice A.4, Figura A.4.1",
+    "section": "5.3.2"
+  },
+  {
+    "id": "M04",
+    "old": "Figura 5.2.2.2 — Salário por raça/cor",
+    "dest": "Apêndice A.4, Figura A.4.2",
+    "section": "5.3.2"
+  },
+  {
+    "id": "M05",
+    "old": "Figura 5.2.3.1 — Admissões por idade",
+    "dest": "Apêndice A.5, Figura A.5.1",
+    "section": "5.3.3"
+  },
+  {
+    "id": "M06",
+    "old": "Figura 5.2.3.2 — Salário por idade",
+    "dest": "Apêndice A.5, Figura A.5.2",
+    "section": "5.3.3"
+  },
+  {
+    "id": "M07",
+    "old": "Figura 5.2.3.3 — Salário da coorte 22–25 anos",
+    "dest": "Apêndice A.5, Figura A.5.3",
+    "section": "5.3.3"
+  },
+  {
+    "id": "M08",
+    "old": "Figura 5.2.4.1 — Admissões por escolaridade",
+    "dest": "Apêndice A.6, Figura A.6.1",
+    "section": "5.3.4"
+  },
+  {
+    "id": "M09",
+    "old": "Figura 5.2.4.2 — Salário por escolaridade",
+    "dest": "Apêndice A.6, Figura A.6.2",
+    "section": "5.3.4"
+  },
+  {
+    "id": "M10",
+    "old": "Figura 5.2.5.1 — Admissões por renda ocupacional",
+    "dest": "Apêndice A.7, Figura A.7.1",
+    "section": "5.3.5"
+  },
+  {
+    "id": "M11",
+    "old": "Figura 5.2.5.2 — Salário por renda ocupacional",
+    "dest": "Apêndice A.7, Figura A.7.2",
+    "section": "5.3.5"
+  },
+  {
+    "id": "M12",
+    "old": "Figura 5.2.6 — Síntese única dos 130 DiDs",
+    "dest": "Apêndice A.8, Figuras A.8.1–A.8.3; fluxo bruto e saldo nas Tabelas A.3.2–A.7.2",
+    "section": "5.3.6"
+  }
+]

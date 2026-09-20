@@ -1,0 +1,20 @@
+Title:           jensen07i.dvi
+Author:          tenreyro
+Creator:         PScript5.dll Version 5.2
+Producer:        Acrobat Distiller 5.0 (Windows)
+CreationDate:    Tue Dec 28 15:55:40 2004 -02
+ModDate:         Mon Jul 25 13:40:19 2005 -03
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            AcroForm
+JavaScript:      no
+Pages:           43
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       469459 bytes
+Optimized:       yes
+PDF version:     1.5

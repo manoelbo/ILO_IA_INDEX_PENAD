@@ -1,0 +1,48 @@
+                                             WORKING PAPER
+
+
+we refer to 𝛽 exposure – meaning all tasks directly exposed via tools like ChatGPT or the OpenAI Playground
+are considered twice as exposed as tasks requiring some complementary innovation.
+
+3.4     Limitations of our methodology
+3.4.1    Subjective human judgments
+A fundamental limitation of our approach lies in the subjectivity of the labeling. In our study, we employ
+annotators who are familiar with LLM capabilities. However, this group is not occupationally diverse,
+potentially leading to biased judgments regarding LLMs’ reliability and effectiveness in performing tasks
+within unfamiliar occupations. We acknowledge that obtaining high-quality labels for each task in an
+occupation requires workers engaged in those occupations or, at a minimum, possessing in-depth knowledge
+of the diverse tasks within those occupations. This represents an important area for future work in validating
+these results.
+
+3.4.2    Measuring LLMs with GPT-4
+Recent research indicates that GPT-4 serves as an effective discriminator, capable of applying intricate
+taxonomies and responding to changes in wording and emphasis (OpenAI, 2023b). The outcomes of GPT-4
+task classification are sensitive to alterations in the rubric’s wording, the prompt’s order and composition, the
+presence or absence of specific examples in the rubric, the level of detail provided, and the definitions given
+for key terms. Iterating on the prompt, based on observed outcomes in a small validation set, can enhance the
+agreement between model outputs and the rubric’s intent. Consequently, there are slight differences between
+the rubric presented to humans and the one used for GPT-4. This decision was made deliberately to guide
+the model towards reasonable labels without excessively influencing human annotators. As a result, we use
+multiple annotation sources, but none should be considered the definitive ground truth relative to the others.
+In this analysis, we present results from human annotators as our primary results. Further improvement and
+innovation in crafting effective rubrics for LLM classification remains possible. Still, we observe a high
+degree of agreement between human ratings and GPT-4 ratings at the occupation level concerning overall
+exposure to LLM systems (see Table 2, Figure 2).
+
+3.4.3    Additional Weaknesses
+      • Validity of task-based framework. It is unclear to what extent occupations can be entirely broken
+        down into tasks, and whether this approach systematically omits certain categories of skills or tasks
+        that are tacitly required for competent performance of a job. Additionally, tasks can be composed of
+        sub-tasks, some of which are more automatable than others. Some tasks may function as pre-cursor to
+        other tasks, such that the completion of downstream tasks is dependent on precursor tasks. If indeed,
+        the task-based breakdown is not a valid representation of how most work in an occupation is performed,
+        our exposure analysis would largely be invalidated.
+
+      • Lack of expertise and task interpretation. Human annotators were mostly unaware of the specific
+        occupations mapped to each DWA during the labeling process. This led to unclear logic for aggregating
+        tasks and occupations, as well as some evident discrepancies in labels, demonstrated in Table 1. We
+        experimented with various aggregation methods and discovered that even with a maximum-matching
+        approach (taking the matching human<>model label if one existed), the agreement remained relatively
+        consistent. Ultimately, we collected additional labels for task/occupation pairs where there was
+        significant disagreement.
+

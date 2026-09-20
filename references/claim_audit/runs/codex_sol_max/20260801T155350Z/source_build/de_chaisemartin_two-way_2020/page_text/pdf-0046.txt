@@ -1,0 +1,52 @@
+on Yi,g,t (Di,g,t (0)) instead of Yi,g,t (0), E[βbfYe ] is equal to a weighted sum of the average effects of
+the instrument on the outcome, again with potentially many negative weights. For instance, in
+Duflo (2001), under a common trends assumption on Di,g,t (0), the number of years of schooling
+individuals would complete if zero new schools were constructed in their district, the first stage
+coefficient identifies a weighted sum of the effect of one new school on years of schooling in every
+district, with many negative weights.9
+Hence, it is only if the average effects of Zg,t on Yi,g,t and Di,g,t are constant across groups and
+periods, or if the weights are uncorrelated to treatment effects as in Assumption 7, that the
+reduced-form and first-stage coefficients respectively identify the average effect of Zi,g,t on Yi,g,t
+and Di,g,t . Then, this implies that βf2SLS
+                                        e   identifies, under the conditions in Imbens and Angrist
+(1994), the LATE of Di,g,t on Yi,g,t among units that comply with the instrument.10
+
+
+4        Extending the DIDM estimator
+
+Theorem 3 can be extended to the case where Di,g,t is not binary but takes values in D =
+{0, ..., d}. The causal effect we consider is the switchers’ causal response
+                                                                                                     
+                   1           X
+   δ SCR = E                            [Yi,g,t (max(Dg,t , Dg,t−1 )) − Yi,g,t (min(Dg,t , Dg,t−1 ))] ,
+                 ND,S
+                        (i,g,t):t≥2,Dg,t 6=Dg,t−1
+
+                 P
+where ND,S =        (g,t):t≥2 Ng,t |Dg,t − Dg,t−1 |. Note that δ
+                                                                   SCR
+                                                                         = δ S when Di,g,t is binary.
+We identify δ SCR under the following two conditions, which generalize Assumptions 4-5 and 9-12
+to non-binary treatments.
+
+Assumption S5 (Mean independence between a group’s outcome and other groups treatments))
+For all (d, g, t) ∈ D × {1, ..., G} × {1, ..., T }, E(Yg,t (d)|D) = E(Yg,t (d)|Dg ).
+
+Assumption S6 (Strong exogeneity) For all (d, g, t) ∈ D × {1, ..., G} × {2, ..., T }, E(Yg,t (d) −
+Yg,t−1 (d)|Dg ) = E(Yg,t (d) − Yg,t−1 (d)).
+
+Assumption S7 (Common trends) For every d, for all t ≥ 2 and g, E(Yg,t (d) − Yg,t−1 (d)) does
+not vary across g.
+    9
+    New schools were constructed in every district, so this application falls into the heterogeneous adoption case.
+    10
+    In the special case with two groups and two periods, a binary incentive for treatment, and where only group 1
+in period 1 receives the incentive, de Chaisemartin (2010) and Hudson et al. (2015) show that in a 2SLS regression
+of Yi,g,t on 1{g = 2} , 1{t = 2} and Di,g,t , using Zg,t = 1{g = 2}1{t = 2} as the instrument, the coefficient
+of Di,g,t identifies a LATE under common trends assumptions on Yi,g,t (Di,g,t (0)) and Di,g,t (0). However, the
+discussion above shows that this result does not generalize to applications with multiple groups and periods or a
+non-binary instrument, as in Duflo (2001) where the number of new schools constructed varies across districts.
+
+
+                                                        10
+

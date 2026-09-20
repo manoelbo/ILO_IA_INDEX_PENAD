@@ -1,0 +1,24 @@
+Sianesi, B. (2004), “An evaluation of the Swedish system of active labor market programs in the 1990s,” The Review
+   of Economics and Statistics, 86(1), 133–155.
+Sloczyński, T. (2018), “A general weighted average representation of the ordinary and two-stage least squares
+   estimands,” Working Paper.
+Sun, L., and Abraham, S. (2020), “Estimating dynamic treatment effects in event studies with heterogeneous
+   treatment effects,” Working Paper.
+van der Vaart, A. W. (1998), Asymptotic Statistics, Cambridge: Cambridge University Press.
+van der Vaart, A. W., and Wellner, J. A. (1996), Weak Convergence and Empirical Processes, New York: Springer.
+Wooldridge, J. M. (2003), “Cluster-sample methods in applied econometrics,” American Economic Review P&P,
+   93(2), 133–138.
+Wooldridge, J. M. (2005a), “Fixed-effects and related estimators for correlated random-coefficient and treatment-
+   effect panel data models,” Review of Economics and Statistics, 87(2), 385–390.
+Wooldridge, J. M. (2005b), “Violating ignorability of treatment by controlling for too many factors,” Econometric
+   Theory, 21(5), 1026–1028.
+Wooldridge, J. M. (2007), “Inverse probability weighted estimation for general missing data problems,” Journal of
+   Econometrics, 141(2), 1281–1301.
+Yang, S., and Ding, P. (2018), “Asymptotic inference of causal effects with observational studies trimmed by the
+   estimated propensity scores,” Biometrika, 105(2), 487–493.
+
+
+
+
+                                                       45
+

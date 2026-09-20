@@ -1,0 +1,46 @@
+                 SKILL CONTENT OF TECHNICAL CHANGE                          1313
+
+manner: occupations undergoing rapid computerization should
+differentially reduce labor input of routine cognitive and manual
+tasks and increase labor input of nonroutine cognitive tasks. To
+provide one example, the 1976 edition of the Department of
+Labor’s Occupation Outlook Handbook described the job of Sec-
+retary as: “. . . Secretaries relieve their employers of routine du-
+ties so they can work on more important matters. Although most
+secretaries type, take shorthand, and deal with callers, the time
+spent on these duties varies in different types of organizations”
+[U. S. Department of Labor 1976, p. 94]. In 2000 the entry for
+Secretary reads: “As technology continues to expand in ofces
+across the Nation, the role of the secretary has greatly evolved.
+Ofce automation and organizational restructuring have led sec-
+retaries to assume a wide range of new responsibilities once
+reserved for managerial and professional staff. Many secretaries
+now provide training and orientation to new staff, conduct re-
+search on the Internet, and learn to operate new ofce technolo-
+gies” [U. S. Department of Labor 2000, p. 324].
+     To test whether this example captures a pervasive phenome-
+non, we match occupations from the 1977 and 1991 revisions of
+the DOT to estimate the following equation:
+(16)                     DT mkt 5 a 1 jDC m 1 e mkt.
+Here, DT m k t is the change in occupational input of task k between
+1977 and 1991 in three-digit COC occupation m, and DC m is the
+change in occupational computer penetration measured by the
+CPS. To provide a clean test, our data set is constructed using
+only the subset of occupations appearing in the 1977 DOT, which
+was used to create our original occupation crosswalk. Accord-
+ingly, the variation used to estimate equation (16) stems exclu-
+sively from DOT examiners’ reevaluation of the task content of
+individual occupations between 1977 and 1991.23
+     Table VI presents three estimates for each task measure. The
+rst column of each panel presents a bivariate regression of the
+within-occupation change in task content on occupational com-
+puterization and a constant. These estimates provide striking
+
+    23. The weighted fraction of employment reevaluated between 1978 and 1990
+in our data is 73 percent. Occupations were chosen for reevaluation by DOT
+examiners partly on the expectation that their content had changed. Hence, this
+is not a random sample. We assume that occupations that were not revised
+between the 1977 and 1991 DOT experienced no task change. Provided that these
+occupations did not experience offsetting shifts, our approach will provide a lower
+bound on the extent of task change.
+

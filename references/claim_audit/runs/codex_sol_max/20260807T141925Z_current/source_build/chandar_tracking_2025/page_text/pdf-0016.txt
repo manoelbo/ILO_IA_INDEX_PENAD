@@ -1,0 +1,37 @@
+Bick, A., A. Blandin, and D. J. Deming (2024): “The Rapid Adoption of Generative
+  AI,” . 4
+
+Bonney, K., C. Breaux, C. Buffington, E. Dinlersoz, L. Foster, N. Gold-
+  schlag, J. Haltiwanger, Z. Kroff, and K. Savage (2024): “The impact of AI on
+  the workforce: Tasks versus jobs?” Economics Letters, 244, 111971. 4
+
+Bryce Codell (2023): “2023 Trends Report | Applications Per Job,” Ashby Blog, accessed:
+  2025-05-30. 8
+
+Brynjolfsson, E., D. Li, and L. Raymond (2025): “Generative AI at Work*,” The
+  Quarterly Journal of Economics, 140, 889–942. 2, 4.2
+
+Brynjolfsson, E., T. Mitchell, and D. Rock (2018): “What Can Machines Learn,
+  and What Does It Mean for Occupations and the Economy?” AEA Papers and Proceed-
+  ings, 108, 43–47. 2
+
+Chen, W. X., S. Srinivasan, and S. Zakerinia (2025): “Displacement or Complemen-
+  tarity? The Labor Market Impact of Generative AI,” . 4
+
+Dell’Acqua, F., E. McFowland III, E. R. Mollick, H. Lifshitz-Assaf, K. Kel-
+  logg, S. Rajendran, L. Krayer, F. Candelon, and K. R. Lakhani (2023): “Nav-
+  igating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of
+  AI on Knowledge Worker Productivity and Quality,” . 3
+
+Deming, D. J., C. Ong, and L. H. Summers (2025): “Technological Disruption in the
+  Labor Market,” . 5
+
+Dillon, E., S. Jaffe, S. Peng, and A. Cambon (2025): “Early Impacts of M365
+  Copilot,” Tech. Rep. MSR-TR-2025-18, Microsoft. 2
+
+Eloundou, T., S. Manning, P. Mishkin, and D. Rock (2024): “GPTs are GPTs:
+
+
+
+                                           16
+

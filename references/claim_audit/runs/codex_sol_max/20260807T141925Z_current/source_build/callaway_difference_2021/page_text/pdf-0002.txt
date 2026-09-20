@@ -1,0 +1,46 @@
+1    Introduction
+Difference-in-Differences (DiD) has become one of the most popular research designs used to evaluate
+causal effects of policy interventions. In its canonical format, there are two time periods and two groups:
+in the first period no one is treated, and in the second period some units are treated (the treated group),
+and some units are not (the comparison group). If, in the absence of treatment, the average outcomes
+for treated and comparison groups would have followed parallel paths over time (which is the so-called
+parallel trends assumption), one can estimate the average treatment effect for the treated subpopulation
+(ATT) by comparing the average change in outcomes experienced by the treated group to the average
+change in outcomes experienced by the comparison group. Methodological extensions of DiD methods
+often focus on this standard two periods, two groups setup; see, e.g., Heckman et al. (1997, 1998), Abadie
+(2005), Athey and Imbens (2006), Qin and Zhang (2008), Bonhomme and Sauder (2011), de Chaisemartin
+and D’Haultfœuille (2017), Botosaru and Gutierrez (2018), Callaway et al. (2018), and Sant’Anna and
+Zhao (2020).1
+    Many DiD empirical applications, however, deviate from the canonical DiD setup and have more than
+two time periods and variation in treatment timing. In this article, we provide a unified framework for
+average treatment effects in DiD setups with multiple time periods, variation in treatment timing, and
+when the parallel trends assumption holds potentially only after conditioning on observed covariates. We
+concentrate our attention on DiD with staggered adoption, i.e., to DiD setups such that once units are
+treated, they remain treated in the following periods.
+    The core of our proposal relies on separating the DiD analysis into three separate steps: (i) identifi-
+cation of policy-relevant disaggregated causal parameters; (ii) aggregation of these parameters to form
+summary measures of the causal effects; and (iii) estimation and inference about these different target
+parameters. Our approach allows for estimation and inference on interpretable causal parameters al-
+lowing for arbitrary treatment effect heterogeneity and dynamic effects, thereby completely avoiding the
+issues of interpreting results of standard two-way fixed effects (TWFE) regressions as causal effects in
+DiD setups as pointed out by Borusyak and Jaravel (2017), de Chaisemartin and D’Haultfœuille (2020),
+Goodman-Bacon (2019), Sun and Abraham (2020), and Athey and Imbens (2018). In addition, it adds
+transparency and objectivity to the analysis (Rubin (2007, 2008)), and allows researchers to exploit a
+variety of estimation methods to answer different questions of interest.
+    The identification step of the analysis provides a blueprint for the other steps. In this paper, we pay
+particular attention to the disaggregated causal parameter that we call the group-time average treatment
+effect, i.e., the average treatment effect for group g at time t, where a “group” is defined by the time period
+when units are first treated. In the canonical DiD setup with two periods and two groups, these parameters
+reduce to the ATT which is typically the parameter of interest in that setup. An attractive feature of the
+group-time average treatment effect parameters is that they do not directly restrict heterogeneity with
+respect to observed covariates, the period in which units are first treated, or the evolution of treatment
+effects over time. As a consequence, these easy-to-interpret causal parameters can be directly used for
+learning about treatment effect heterogeneity, and/or to construct many other more aggregated causal
+
+    1
+      See Section 6 of Athey and Imbens (2006) and Theorem S1 in de Chaisemartin and D’Haultfœuille (2017) for notable
+exceptions that cover multiple periods and multiple groups.
+
+
+                                                          2
+

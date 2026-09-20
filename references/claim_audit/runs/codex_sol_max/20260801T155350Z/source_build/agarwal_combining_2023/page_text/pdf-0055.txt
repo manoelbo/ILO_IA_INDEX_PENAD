@@ -1,0 +1,60 @@
+                                                                                                                                 55
+
+                                                             Appendix
+
+
+A     Appendix of Proofs
+
+A.1     Proof of Proposition 1
+                                                                                                  
+Case b < 1 and d = 1: Suppose a∗ sE ; p = 0 and a∗ sA , sE ; p = 1. Equivalently,
+                π ( ω=1|sE )                    π ( sA |ω=1,sE )       π ( ω=1|sE )
+log crel > log π( ω=0|sE ) and log crel ≤ b log π( sA |ω=0,sE ) +log π( ω=0|sE ) . Since b ∈ (0, 1), it must
+             π ( sA |ω=1,sE )                         π ( sA |ω=1,sE )      π ( ω=1|sE )                  
+be that log π( sA |ω=0,sE ) > 0 and log crel < log π( sA |ω=0,sE ) +log π( ω=0|sE ) so that a∗ sA , sE ; π
+                                                                                                                     
+= 1. Hence, if 0 = a∗ sE ; p                         ̸= a∗ sA , sE ; p then a∗ sA , sE ; p               = a∗ sA , sE ; π       and
+                                                                                                                           
+V sE ; p ≤ V sA , sE ; π = V sA , sE ; p , with strict inequality if the measure on sA , sE
+                                                                          
+under π (·) such that 0 = a∗ sE ; p ̸= a∗ sA , sE ; π is strictly positive. The proof of the case
+                                                                                                                   
+when a∗ sE ; p = 1 and a∗ sA , sE ; p = 0 is analogous. If a∗ sE ; p = a∗ sA , sE ; p then
+                          
+V sE ; p = V sA , sE ; p .
+                                             π ( ω=1|sE )                π ( sA |ω=1,sE )
+Case b > 1 and d = 1: If log crel − log π( ω=0|sE ) > 0, then for log π( sA |ω=0,sE )
+                                                                                          π ( sA |ω=1,sE )
+                                                               
+   1           1     π ( ω=1|sE )                  π ( ω=1|sE )
+∈ b log crel − b log π( ω=0|sE ) , log crel − log π( ω=0|sE ) we have both log crel > log π( sA |ω=0,sE )
+      π ( ω=1|sE )                     π ( sA |ω=1,sE )      π ( ω=1|sE )                     
++ log π( ω=0|sE ) and log crel < b log π( sA |ω=0,sE ) + log π( ω=0|sE ) . Thus, 0 = a∗ sE ; p
+                                              
+̸= a∗ sE , sA ; p ̸= a∗ sE , sA ; π . An analogous argument for the case when log crel ≤
+    π ( ω=1|sE )
+log π( ω=0|sE ) completes this case.
+Case d ̸= 1: We analyze this in two subcases.
+                                                                                                               π ( sA |ω=1,sE )
+                                                                                                                                 
+                                                                                             π ( ω=1|sE )
+    • (1 − d) log crel > 0: We show that there exist values of                           log π( ω=0|sE ) , log π( sA |ω=0,sE )
+                                                                                                
+       such that a∗ sA , sE ; p              = 0, a∗ sE ; p
+                                                          = 1, and a∗ sA , sE ; π = 1. Equivalently,
+                                                                   π ( sA |ω=1,sE )    π ( ω=1|sE )
+       we need to find values such that log crel > b log π( sA |ω=0,sE ) + d log π( ω=0|sE ) , log crel <
+           π ( ω=1|sE )                   π ( sA |ω=1,sE )         π ( ω=1|sE )
+       log π( ω=0|sE ) and log crel < log π( sA |ω=0,sE ) +log π( ω=0|sE ) if d ̸= 1. Re-write this system
+                    π ( ω=1|sE )                          π ( sA |ω=1,sE )
+       as y = log π( ω=0|sE ) − log crel and x = log π( sA |ω=0,sE ) , we need to find a solution to the
+       system y > 0, x + y > 0 and bx + dy < (1 − d) log crel . Since (1 − d) log crel > 0, there
+       exist small enough values of x, y > 0 such that the solution exists.
+
+    • (1 −
+          d) log crel E< 0: An Aargument       analogous of case 1 shows that there exist values
+               π ( ω=1|s )     π ( s |ω=1,sE )                                       
+      of log π( ω=0|sE ) , log π( sA |ω=0,sE ) such that a∗ sA , sE ; p = 1, a∗ sE ; p = 0, and
+                    
+       a∗ sA , sE ; π = 0.
+

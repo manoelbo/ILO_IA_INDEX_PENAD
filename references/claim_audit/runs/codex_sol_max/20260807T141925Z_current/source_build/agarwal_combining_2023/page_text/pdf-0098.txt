@@ -1,0 +1,56 @@
+                                                                                                                               98
+
+                                           Table C.16: Average Treatment Effects
+
+                                                                 Deviation from GT
+                                       Treatment                                         (1)
+                                       AI × CH                                       0.000
+                                                                                    (0.004)
+                                       AI                                           −0.001
+                                                                                    (0.003)
+                                       CH                                           −0.002
+                                                                                    (0.003)
+                                       Control Mean                                  0.184
+                                                                                    (0.010)
+                                       Pathology FE                                  Yes
+                                       Observations                                 36279
+ Note: Main specifications similar to table 2 with the exception that reported probability of the radiologists is calibrated to the
+ ground truth and hence only the ATE on deviation from ground truth is reported.
+
+
+
+ C.4.7          All Pathologies and Abnormal with AI
+
+ All Pathologies with AI
+
+
+                             Figure C.32: Comparing AI performance to Radiologists
+                (a) RMSE Radiologists and AI                                              (b) AUROC Radiologists and AI
+                    AI (Pct. 28)                                                                                AI (Pct. 87)
+          10                                                                    6
+
+          8
+                                                                                4
+Density
+
+
+
+
+                                                                      Density
+
+
+
+
+          6
+
+          4
+                                                                                2
+          2
+
+          0                                                                     0
+               .1              .2             .3           .4                       .6          .7        .8           .9        1
+                                    RMSE                                                                AUROC
+
+
+ Note: Main specifications similar to figure 1 with the exception that all patholgies with AI are considered.
+

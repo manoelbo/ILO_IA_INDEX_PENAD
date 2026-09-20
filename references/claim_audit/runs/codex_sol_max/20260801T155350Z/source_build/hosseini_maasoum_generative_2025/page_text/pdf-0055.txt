@@ -1,0 +1,58 @@
+                                                                             Juniors                                             Seniors
+
+
+
+                                                2.0%
+   DiD coefficient relative to 2022Q4 (share)
+
+
+
+
+                                                1.0%
+
+
+
+
+                                                0.0%
+
+
+
+
+                                                -1.0%
+
+
+
+                                                        2020   2021   2022             2023   2024   2025   2020   2021   2022             2023   2024   2025
+
+
+
+                                                Figure A.9: Event Study: Differential Evolution of Matching-Keyword Shares
+         Notes: This figure plots quarterly event-study coefficients β k from the specification Sharematchf ,t =
+         α f + αt + ∑k̸=2022Q4 β k · 1{t = k} · Adopter f + ε f ,t , estimated separately for juniors (left panel:
+         share of positions with any junior-leaning keyword in title) and seniors (right panel: share with any
+         senior-leaning keyword). Regressions are weighted by the number of positions per firm-quarter
+         cell, and standard errors are clustered at the firm level. Shaded areas denote 95% confidence in-
+         tervals. The vertical dashed line marks the reference quarter 2022Q4 (the last pre-period quarter).
+         Sample: quarters 2020Q1–2025Q1.
+
+
+A.2.2                                              Worker Experience by Seniority and Adoption Status
+
+A potential concern with our seniority-based analysis is that the classification of positions
+may itself shift with GenAI diffusion—for instance, if adopting firms differentially rela-
+bel roles as more senior after 2022. If so, the decline in junior employment at adopting
+firms could partly reflect mechanical reclassification rather than genuine changes in labor
+demand. To assess this possibility, we examine the evolution of actual worker experience
+among juniors and seniors, separately at adopting and non-adopting firms. We measure
+experience as Labor Market Experience (LME): the number of years since the worker’s first
+observed position. For each firm-quarter-seniority cell, we compute the worker-weighted
+average LME and then aggregate across firms by adoption status.
+   Figure A.10 plots average LME over time, separately for juniors (left panel) and se-
+niors (right panel). For each seniority group, the adopter and non-adopter series evolve
+in close parallel. The pre-existing level gap between adopters and non-adopters—about
+
+
+
+
+                                                                                                     A.10
+

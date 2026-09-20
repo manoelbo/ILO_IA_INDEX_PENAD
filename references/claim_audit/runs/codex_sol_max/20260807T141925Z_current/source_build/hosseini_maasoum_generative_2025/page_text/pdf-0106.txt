@@ -1,0 +1,285 @@
+A.26   DiD for Hires and Exits—Time Series (Juniors)
+
+                                            10
+         Flows (Diff-in-Diff Coefficient)
+
+
+                                             5
+
+
+
+                                             0
+
+
+
+                                             -5
+
+
+
+                                            -10
+                                                                                 q1
+
+
+                                                                                               q1
+
+
+                                                                                                          q1
+
+
+                                                                                                                       q1
+
+
+                                                                                                                                  q1
+
+
+                                                                                                                                              q1
+
+
+                                                                                                                                                           q1
+
+
+                                                                                                                                                                      q1
+
+
+                                                                                                                                                                                 q1
+
+
+                                                                                                                                                                                            q1
+
+
+                                                                                                                                                                                                       q1
+                                                        15
+
+
+                                                                                           16
+
+
+                                                                                                         17
+
+
+                                                                                                                    18
+
+
+                                                                                                                                 19
+
+
+                                                                                                                                            20
+
+
+                                                                                                                                                        21
+
+
+                                                                                                                                                                     22
+
+
+                                                                                                                                                                                23
+
+
+                                                                                                                                                                                           24
+
+
+                                                                                                                                                                                                      25
+                                              20
+
+
+                                                                                          20
+
+
+                                                                                                     20
+
+
+                                                                                                                20
+
+
+                                                                                                                             20
+
+
+                                                                                                                                        20
+
+
+                                                                                                                                                      20
+
+
+                                                                                                                                                                 20
+
+
+                                                                                                                                                                            20
+
+
+                                                                                                                                                                                       20
+
+
+                                                                                                                                                                                                  20
+                                                                                                                                            Quarter
+
+                                                                                           Hires               Exits
+
+                                                                                                              (a) Not Seasonally Adjusted
+
+
+                                                                                     4
+                                                  Flows (Diff-in-Diff Coefficient)
+
+
+
+
+                                                                                     2
+
+
+                                                                                     0
+
+
+                                                                                     -2
+
+
+                                                                                     -4
+
+
+                                                                                     -6
+                                                                                           q1
+
+
+
+                                                                                                         q1
+
+
+
+                                                                                                                    q1
+
+
+
+                                                                                                                                 q1
+
+
+
+                                                                                                                                            q1
+
+
+
+                                                                                                                                                        q1
+
+
+
+                                                                                                                                                                     q1
+
+
+
+                                                                                                                                                                                q1
+
+
+
+                                                                                                                                                                                           q1
+
+
+
+                                                                                                                                                                                                      q1
+
+
+
+                                                                                                                                                                                                                 q1
+                                                                                          15
+
+
+
+                                                                                                     16
+
+
+
+                                                                                                                17
+
+
+
+                                                                                                                             18
+
+
+
+                                                                                                                                        19
+
+
+
+                                                                                                                                                      20
+
+
+
+                                                                                                                                                                 21
+
+
+
+                                                                                                                                                                            22
+
+
+
+                                                                                                                                                                                       23
+
+
+
+                                                                                                                                                                                                  24
+
+
+
+                                                                                                                                                                                                             25
+                                                                                      20
+
+
+
+                                                                                                    20
+
+
+
+                                                                                                               20
+
+
+
+                                                                                                                            20
+
+
+
+                                                                                                                                       20
+
+
+
+                                                                                                                                                   20
+
+
+
+                                                                                                                                                                20
+
+
+
+                                                                                                                                                                           20
+
+
+
+                                                                                                                                                                                      20
+
+
+
+                                                                                                                                                                                                 20
+
+
+
+                                                                                                                                                                                                            20
+
+
+
+
+                                                                                                                                                      Quarter
+
+                                                                                                    Hires                Exits
+
+                                                                                                               (b) Seasonally Adjusted (LOWESS)
+
+                                                                      Figure A.28: DiD for Hires and Exits—Time Series (Juniors)
+   Notes: This figure plots β j from Equation yit = α + ∑2025Q1
+                                                            j=2015Q2 β j 1 { t = j } × Adopti + δt + γi +
+   ξ pt + ε it , which corresponds to Equation 15 in Section 5.5, but replaces the single post-2023Q1
+   indicator with a full set of quarter dummies. Panel (a) presents the raw coefficient estimates,
+   while Panel (b) shows estimates adjusted for seasonal variation by smoothing the coefficients
+   using the LOWESS method (bandwidth = 0.5) prior to plotting. In both panels, the coefficients
+   are normalized to zero in 2015Q2.
+
+
+
+
+                                                                                                                                                 A.61
+

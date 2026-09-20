@@ -1,0 +1,28 @@
+              Table 2: Job Characteristics for Adopters Who Switch Occupations
+
+                                         Standard deviation from economy average                 Change in %
+                                         November 2022         December 2024                   Nov ‘22 to Dec ‘24
+                                              (1)                   (2)                               (3)
+  Earnings                                      0.27                       0.29                         0.12
+                                               (0.02)                     (0.02)                       (0.01)
+  Occupational Wage Premium                     0.46                       0.53                         0.03
+                                               (0.02)                     (0.02)                       (0.00)
+  LLM Exposure                                  0.92                       1.08
+                                               (0.02)                     (0.02)
+
+
+Notes: This table reports characteristics of origin and destination jobs for adopters who switch occupations between
+November 2022 and December 2024, measured relative to all Danish workers employed in both months. Adopters who
+switch occupations (AdoptSwitch) are defined as workers who (i) have used AI chatbots for work, (ii) since November
+2022, have increased their hours worked in their December 2024 occupations, and (iii) were employed in both months. Of
+workers satisfying (i) and (ii), 99% also satisfy (iii). We compare these to all Danish workers who were employed in both
+November 2022 and December 2024 (i.e., satisfied requirement (iii)). The estimates are OLS estimates of β1 from the
+regressions Yi = β0 + β1 AdoptSwitchi , with standard errors in parentheses. Outcomes in Columns (1) and (2) are measured
+in economy-wide standard deviations; Column (3) reports within-worker changes in percentage points. Occupational Wage
+Premium is the average hourly wage in the occupation. LLM Exposure is the “Direct Exposure (E1)” measure from
+Eloundou et al. (2024). Sample: All completed 2024 survey responses linked to registry data.
+
+
+
+
+                                                          48

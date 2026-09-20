@@ -1,0 +1,13 @@
+# Appendix education diagnostics
+
+| Grupo | Resultado | DDD grupo-complemento | p DDD | Pretrend grupo | Pretrend DDD | Suporte | N grupo | CBOs trat./controle |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fundamental ou menos | Admissões | 0,0478* (0,0284) | 0,093 | Aprovado (p=0,350) | Aprovado (p=0,510) | Adequado | 18.307 | 75/266 |
+| Fundamental ou menos | Desligamentos | 0,0450* (0,0273) | 0,099 | Falha (p=0,010) | Aprovado (p=0,220) | Adequado | 18.307 | 75/266 |
+| Fundamental ou menos | Salário de admissão | 0,0433* (0,0241) | 0,072 | Aprovado (p=0,684) | Aprovado (p=0,479) | Adequado | 16.758 | 74/265 |
+| Médio | Admissões | 0,0109 (0,0187) | 0,561 | Aprovado (p=0,203) | Aprovado (p=0,490) | Adequado | 18.307 | 75/266 |
+| Médio | Desligamentos | 0,0080 (0,0191) | 0,674 | Aprovado (p=0,951) | Aprovado (p=0,924) | Adequado | 18.307 | 75/266 |
+| Médio | Salário de admissão | -0,0101 (0,0177) | 0,570 | Aprovado (p=0,994) | Aprovado (p=0,644) | Adequado | 18.149 | 75/266 |
+| Superior | Admissões | -0,1038*** (0,0204) | &lt;0,001 | Aprovado (p=0,135) | Alerta (p=0,067) | Adequado | 18.307 | 75/266 |
+| Superior | Desligamentos | -0,0730*** (0,0228) | 0,001 | Aprovado (p=0,882) | Aprovado (p=0,501) | Adequado | 18.307 | 75/266 |
+| Superior | Salário de admissão | -0,0077 (0,0199) | 0,700 | Aprovado (p=0,959) | Aprovado (p=0,870) | Adequado | 17.095 | 75/265 |

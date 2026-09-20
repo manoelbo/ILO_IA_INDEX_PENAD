@@ -1,0 +1,63 @@
+Quarterly Census of Employment and Wages (QCEW).10 These prior papers use data that lack
+
+either sufficient granularity or immediacy to reliably study employment changes by AI exposure
+
+and age (O’Brien, 2025).11 In contrast, this paper uses large-scale, close to real-time data to take
+
+a step towards resolving the ongoing debate on the employment effects of AI on young workers.
+
+
+
+3         Data Description
+
+3.1        Payroll Data
+
+This study uses data from ADP, the largest payroll processing firm in America. The company
+
+provides payroll services for firms employing over 25 million workers in the US. We use this infor-
+
+mation to track employment changes for workers in occupations measured as more or less exposed
+
+to artificial intelligence.
+
+         We make several sample restrictions for our main analysis sample. We include only workers
+
+employed by firms that use ADP’s payroll product to maintain worker earnings records. We also
+
+exclude employees classified by firms as part-time from the analysis and subset to people between
+
+the age of 18 and 70.12
+
+         The set of firms using payroll services changes over time as companies join or leave ADP’s
+
+platform. We maintain a consistent set of firms across our main sample period by keeping only
+
+companies that have employee earnings records for each month from January 2021 through July
+
+2025.
+
+         In addition, ADP observes job titles for about 70% of workers in its system. We exclude workers
+
+who do not have a recorded job title. There are over 7,000 standardized job titles, examples of which
+
+include “Search engineer optimization specialist,” “Enterprise content management manager,” and
+
+“Plant documentation control specialist.” The company’s internal research team maps each of
+    10
+      Johnston and Makridis (2025) measure state-industry exposure by taking an average of Eloundou et al. (2024)’s
+occupational exposure weighted by state-industry employment. Industry-level labor market changes may be distinct
+from the occupation-level changes studied in this paper if firms make capital investments or become more productive
+in ways that increases overall labor demand (Hampole et al., 2025).
+   11
+      As a comparison, the CPS surveyed between 44,000 and 51,000 employed individuals in total across all age groups
+in each month since 2021. Between 10,000 and 12,000 of these observations were in the outgoing rotation group and
+included earnings records. The data in our main analysis sample includes between 250,000 and 350,000 employed
+individuals in each month just between the ages of 22 and 25, all with earnings records.
+   12
+      While we observe the year of birth for each worker, for privacy reasons we do not observe the exact date of birth.
+We impute month of birth from the distribution of birth months in the United States using data from the Center for
+Disease Control and Prevention.
+
+
+                                                           7
+

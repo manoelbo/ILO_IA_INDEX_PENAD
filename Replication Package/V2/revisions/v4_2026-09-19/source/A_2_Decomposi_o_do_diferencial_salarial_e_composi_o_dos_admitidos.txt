@@ -1,0 +1,30 @@
+### A.2 Decomposição do diferencial salarial e composição dos admitidos
+Esta seção apresenta os cálculos usados para avaliar quanto do diferencial do salário real de admissão está associado à mudança no perfil dos novos contratados. O exercício não identifica um mecanismo causal. Ele organiza o diferencial observado em uma parcela estimada dentro dos grupos e outra associada à composição dos admitidos.
+Primeiro, calculamos a participação de cada faixa de escolaridade no total de admissões antes e depois de dezembro de 2022, separadamente para ocupações expostas e não expostas.
+**Tabela A.2.1: Mudança na composição educacional dos admitidos**
+
+[TABLE]
+Faixa de escolaridade | Expostas: pré | Expostas: pós | Mudança expostas | Não expostas: pré | Não expostas: pós | Mudança não expostas | Diferença das mudanças
+Fundamental ou menos | 3,47% | 3,39% | −0,09 p.p. | 27,06% | 24,21% | −2,85 p.p. | +2,76 p.p.
+Ensino médio | 66,63% | 69,54% | +2,91 p.p. | 67,56% | 70,55% | +2,99 p.p. | −0,07 p.p.
+Ensino superior | 29,90% | 27,07% | −2,83 p.p. | 5,38% | 5,24% | −0,14 p.p. | −2,69 p.p.
+[/TABLE]
+
+> *Notas: as participações são ponderadas pelo número de admissões. O pré-período vai de janeiro de 2021 a novembro de 2022, e o pós-período vai de dezembro de 2022 a maio de 2026. A diferença das mudanças corresponde à variação nas ocupações expostas menos a variação nas não expostas. Fonte: \`results/audit/a1_education_composition_shift.csv\`.*
+No primeiro método, ponderamos o diferencial salarial estimado dentro de cada faixa de escolaridade pela participação dessa faixa nas admissões das ocupações expostas antes do evento:
+$$
+\widehat{\beta}_{\text{dentro}}=\sum_g s_{g,\text{expostas},\text{pré}}\widehat{\beta}_g=-0,03924
+$$
+O diferencial agregado é −0,05074. A diferença entre o resultado agregado e o componente ponderado dentro das faixas é −0,01150. Em valor absoluto, essa diferença corresponde a 22,66% do resultado agregado. Esse cálculo é uma aproximação, e não uma identidade de Oaxaca, porque os modelos de cada faixa educacional possuem seus próprios efeitos fixos.
+O segundo método compara o resultado agregado com uma especificação que interage o período posterior com quatro características das ocupações medidas antes do evento: idade média dos admitidos, participação feminina, participação com ensino superior e participação negra. Nessa especificação, o diferencial salarial é −0,035998. A diferença em relação ao resultado agregado é −0,014743, equivalente a 29,06%. Esse segundo número captura a composição demográfica conjunta e não pode ser atribuído exclusivamente à escolaridade.
+**Tabela A.2.2: Decomposição do diferencial salarial**
+
+[TABLE]
+Método | Diferencial agregado | Resultado após decomposição ou ajuste | Parcela associada à composição | Participação do agregado | Escopo
+Ponderação por escolaridade | −0,05074 | −0,03924 | −0,01150 | 22,66% | Composição educacional
+Características anteriores ao evento | −0,05074 | −0,035998 | −0,014743 | 29,06% | Escolaridade, idade, sexo e raça em conjunto
+[/TABLE]
+
+> *Notas: os coeficientes salariais estão em pontos log e são interpretados como variações percentuais aproximadas. No primeiro método, a parcela associada à composição é a diferença entre o diferencial agregado e a média ponderada dos diferenciais dentro das faixas educacionais. No segundo, é a diferença entre a especificação agregada e aquela que inclui as interações com características anteriores ao evento. Fonte: \`results/audit/a_wage_composition_summary.json\` e \`results/audit/a2_wage_price_composition_split.csv\`.*
+Como checagem complementar, o diferencial estimado para o salário mensal é −0,05074, para o salário-hora é −0,06951 e para as horas semanais é +0,00155. O resultado das horas não sugere que uma redução da jornada explique a queda do salário mensal.
+O conjunto dos resultados é compatível com a hipótese de uma redução relativa das oportunidades de entrada para trabalhadores com ensino superior nas ocupações expostas. Essa leitura permanece exploratória: as pré-tendências falham e a medida de exposição não observa diretamente a adoção de IA pelas empresas. Portanto, os cálculos não permitem atribuir a mudança à IA nem demonstrar uma perda de poder de barganha.

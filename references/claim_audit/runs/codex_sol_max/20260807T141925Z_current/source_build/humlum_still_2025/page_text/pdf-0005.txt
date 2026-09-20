@@ -1,0 +1,31 @@
+on monthly earnings, hours worked, and occupations through December 2024—two years
+after the launch of ChatGPT. Using a difference-in-differences framework, we compare
+adopters and non-adopters before and after the arrival of AI chatbots, estimating impacts
+at both the worker and workplace levels.
+   We first analyze workers who use AI chatbots. If chatbot use enhances individual
+productivity, a natural question is whether and how such gains affect their earnings
+(Krueger, 1993). The answer is theoretically ambiguous, depending on whether adoption
+is worker- or firm-driven (Becker, 1964), whether it displaces users from higher-value tasks
+(Autor and Thompson, 2025), whether chatbot use is valued as a nonpecuniary amenity
+(Rosen, 1986), and on the structure of wage setting (Card et al., 2018).
+   We find precisely null effects of AI chatbot use on earnings and hours. Difference-
+in-differences estimates for earnings, recorded hours, and wages all center on zero, with
+confidence intervals ruling out average effects larger than 2%. These null results hold even
+among workers who use chatbots daily, report substantial productivity gains, perform
+new AI-related tasks, or work in firms that encourage and invest in chatbots. Moreover,
+we find no significant effects in any of our 11 occupations, including those with flexible,
+decentralized wage-setting.
+   While chatbots have not led to earnings gains for users on average, we find a clear link
+to occupational mobility: since the arrival of AI chatbots, adopters are significantly more
+likely to have switched occupations, working about 4% of a full-time equivalent more in
+their most recent occupation by December 2024. These transitions are most pronounced
+into IT support specialist and clerical (office support) roles—occupations in which workers
+have greater discretion over their toolsets and that do not require formal educational
+credentials. These patterns align with experimental evidence that chatbots are especially
+beneficial for workers with less prior expertise (Brynjolfsson, Li and Raymond, 2025; Noy
+and Zhang, 2023) and support the view that generative AI helps workers move into new
+occupations by granting access to otherwise scarce expertise (Autor, 2024). In particular,
+adopters who switch occupations tend to move into roles with higher wage premia and
+
+
+                                             3

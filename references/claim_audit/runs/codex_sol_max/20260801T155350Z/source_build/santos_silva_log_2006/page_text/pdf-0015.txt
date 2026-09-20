@@ -1,0 +1,40 @@
+model, assumes that V [yi |x] is proportional to E [yi |x]2 . The first order conditions for
+the gamma PML estimator are given by
+                               n h
+                               X          ³ ´i      ³      ´
+                                  yi − exp xi β̆ exp −xi β̆ xi = 0.
+                               i=1
+
+  In the case of trade data, however, this estimator may have an important drawback.
+Trade data for larger countries (as gauged by GDP per capita) tend to be of higher quality
+(see Frankel and Wei, 1993, and Frankel 1997); hence, models assuming that V [yi |x] is
+a function of higher powers of E [yi |x] might give excessive weight to the observations
+that are more prone to measurement errors.14 Therefore, the Poisson regression emerges
+as a reasonable compromise, giving less weight to the observations with larger variance
+than the standard NLS estimator, without giving too much weight to observations more
+prone to contamination by measurement error and less informative about the curvature
+of E [yi |x].
+
+
+3.2 Testing
+
+In this section we consider tests for the particular pattern of heteroskedasticity assumed
+by PML estimators, focusing on the PPML estimator. Although PML estimators are
+consistent even when the variance function is misspecified, the researcher can use these
+tests to check if a diﬀerent PML estimator would be more appropriate and to decide
+whether or not the use of a nonparametric estimator of the variance is warranted.
+  Manning and Mullahy (2001) suggested that if
+
+                                         V [yi |x] = λ0 E [yi |x]λ1 ,                                (10)
+
+the choice of the appropriate PML estimator can be based on a Park-type regression
+(Park, 1966). Their approach is based on the idea that if (10) holds and an initial
+  14
+       Frankel and Wei (1993) and Frankel (1997) suggest that larger countries should be given more weight
+in the estimation of gravity equations. This would be appropriate if the errors in the model were just
+the result of measurement errors in the dependent variable. However, if it is accepted that the gravity
+equation does not hold exactly, measurement errors account for only part of the dispersion of trade data
+around the gravity equation.
+
+                                                     14
+

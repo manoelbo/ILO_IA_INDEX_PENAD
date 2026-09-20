@@ -1,0 +1,51 @@
+adoption in the literature. We interpret this assumption as if units do not “forget” about the treatment
+experience.4
+    Define G as the time period when a unit first becomes treated. Under Assumption 1, for all units
+that eventually participate in the treatment, G defines which “group” they belong to. If a unit does not
+participate in any time period, we arbitrarily set G = ∞. We define Gg to be a binary variable that is
+equal to one if a unit is first treated in period g (i.e., Gi,g = 1{Gi = g}) and define C to be a binary
+variable that is equal to one for units that do not participate in the treatment in any time period (i.e.,
+Ci = 1{Gi = ∞} = 1−Di,T ). Let ḡ = maxi=1,··· ,n Gi be the maximum G in the dataset. Next, denote the
+generalized propensity score as pg,s (X) = P (Gg = 1|X, Gg + (1 − Ds ) (1 − Gg ) = 1). Note that pg,s (X)
+indicates the probability of being first treated at time g, conditional on pre-treatment covariates X and
+on either being a member of group g (in this case, Gg = 1) or a member of the “not-yet-treated” group by
+time s (in this case, (1−Ds )(1−Gg ) = 1). Many of our results use a specialized version of this generalized
+propensity score, and, henceforth, we define pg (X) = pg,T (X) = P (Gg = 1|X, Gg + C = 1) which is the
+probability of being first treated in period g conditional on covariates and either being a member of group
+g or not participating in the treatment in any time period. Let G = supp(G)\ {ḡ} ⊆ {2, 3, . . . , T } denote
+the support of G excluding ḡ.5 Likewise, let X = supp(X) ⊆ Rk denote the support of the pre-treatment
+covariates. Finally, for a generic δ ≥ 0, let Gδ = G∩ {2 + δ, 3 + δ, . . . , T }.
+    Next, we set up the potential outcomes framework. Here, we combine the dynamic potential outcomes
+framework of Robins (1986, 1987) with the multi-stage treatment adoption setup discussed by Heckman
+et al. (2016); see also Sianesi (2004). Let Yi,t (0) denote unit i’s untreated potential outcome at time t
+if they remain untreated through time period T ; i.e., if they were not to participate in the treatment
+across all available time periods. For g = 2, . . . , T , let Yi,t (g) denote the potential outcome that unit i
+would experience at time t if they were to first become treated in time period g. Note that our potential
+outcomes notation accounts for potential dynamic treatment selection, though it also accommodates (pre-
+specified) treatment regimes (Murphy et al., 2001; Murphy, 2003). The observed and potential outcomes
+for each unit i are related through
+                                                        T
+                                                        X
+                                    Yi,t = Yi,t (0) +         (Yi,t (g) − Yi,t (0)) · Gi,g                          (2.1)
+                                                        g=2
+
+In other words, we only observe one potential outcome path for each unit. For those that do not participate
+in the treatment in any time period, observed outcomes are untreated potential outcomes in all periods.
+For units that do participate in the treatment, observed outcomes are the unit-specific potential outcomes
+corresponding to the particular time period when that unit adopts the treatment.
+    We also impose the following random sampling assumption.
+
+Assumption 2 (Random Sampling). {Yi,1 , Y,i2 , . . . Yi,T , Xi , Di,1 , Di,2 , . . . , Di,T }ni=1 is independent and
+identically distributed (iid).
+
+    Assumption 2 implies that we have access to panel data; our results extend essentially immediately
+   4
+      See Han (2020), de Chaisemartin and D’Haultfœuille (2020) and Bojinov et al. (2020) for alternative setups where
+treatment can “turn off”.
+    5
+      When there is a “never treated” set of units with G = ∞, G only excludes this group. When such “never-treated”
+group is not available, we exclude the latest-treated group as there will be no valid untreated comparison group for them.
+
+
+                                                               6
+

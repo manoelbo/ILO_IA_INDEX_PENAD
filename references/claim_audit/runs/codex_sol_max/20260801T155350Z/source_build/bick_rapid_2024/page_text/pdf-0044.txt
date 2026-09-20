@@ -1,0 +1,74 @@
+B     Comparison of Generative AI Use in the June (Pilot), August,
+      and November 2024 Waves
+
+                 Figure B.1: Share of Working Age Adults Using Generative AI
+                                                            (a) June 2024 (Pilot)
+
+                               Overall                   14.5                                  21.6                             7.8              43.9
+
+
+
+
+                             For Work                    14.2                          14.7                 4.0             32.9
+
+
+
+
+                       Outside of Work             9.8                              19.8                           7.3              36.9
+
+                                         0                      10                20             30                              40                   50
+                                                                             Share Using Generative AI (%)
+                                               Used every day last week             Used at least 1 day last week           Used, but not last week
+
+
+                                                                 (b) August 2024
+
+                               Overall              12.1                                   24.0                                    8.6            44.6
+
+
+
+
+                             For Work               12.1                            16.1                    5.1             33.3
+
+
+
+
+                       Outside of Work        6.9                             21.8                             7.4                 36.0
+
+                                         0                      10                20             30                              40                   50
+                                                                             Share Using Generative AI (%)
+                                               Used every day last week             Used at least 1 day last week           Used, but not last week
+
+
+                               (c) November 2024 (More Detailed Breakdown)
+
+                               Overall             8.9                       15.9                           13.4                    8.1               46.3
+
+
+
+                             For Work              9.1                 9.6              7.7           4.6            31.0
+
+
+
+                       Outside of Work       4.4                13.9                          13.7                   7.2                 39.3
+
+                                         0                      10                20            30                             40                 50
+                                                                             Share Using Generative AI (%)
+                                                                       Every day last week           Multiple days last week
+                                                                       One day last week             Used, but not last week
+
+
+
+
+Notes: The figure shows the share of respondents who use genAI for work, outside of work, and overall (either
+for work or outside of work). Intensity of use is broken down into every day last week (dark blue), at least one
+day but not every day last week (medium blue), and not last week (light blue). Data source is the June 2024
+wave of the RPS (Panel a), the August 2024 wave (Panel b), and the November 2024 wave (Panel c). The “For
+Work” samples are employed individuals (June, N = 1573; August, N = 3238; November, N = 3697). The
+other bars include all respondents (June, N = 2351; August, N = 4704; November, N = 5022).
+
+
+
+
+                                                                                12
+

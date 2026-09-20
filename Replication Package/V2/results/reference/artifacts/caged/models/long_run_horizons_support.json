@@ -1,0 +1,29 @@
+{
+  "all_models_converged": true,
+  "estimate_rows": 20,
+  "estimator_matches_principal": true,
+  "horizon_grid_months": 42,
+  "horizon_months": {
+    "2022-12_to_2023-11": 12,
+    "2023-12_to_2024-11": 12,
+    "2024-12_to_2025-11": 12,
+    "2025-12_to_cutoff": 6
+  },
+  "horizons": [
+    "2022-12_to_2023-11",
+    "2023-12_to_2024-11",
+    "2024-12_to_2025-11",
+    "2025-12_to_cutoff"
+  ],
+  "inference_matches_principal": "CRV1 cbo_4d with cluster-t",
+  "max_absolute_static_minus_horizon_average": 5.812785024832123e-05,
+  "outcomes": [
+    "admissoes",
+    "desligamentos",
+    "n_movimentacoes",
+    "ln_salario_real_adm",
+    "asinh_saldo"
+  ],
+  "partial_horizon": "2025-12_to_cutoff",
+  "task": "T8A.7"
+}

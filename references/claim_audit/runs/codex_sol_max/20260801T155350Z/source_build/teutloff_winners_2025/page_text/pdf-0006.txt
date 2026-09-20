@@ -1,0 +1,66 @@
+O. Teutloff et al.                                                                       Journal of Economic Behavior and Organization 235 (2025) 106845
+
+Complementary: A non-expert cannot use Large Language Models to complete these tasks without significantly compromising the
+     quality of execution. However, an expert freelancer can use Large Language models to reduce the time it takes them to
+     complete these tasks by at least half and without significantly compromising quality.
+
+Unaffected: While non-experts and experts may be able to use Large Language Models to help in these tasks, Large Language
+      Models can only provide limited help. In other words, having access to a large language model will not reduce the time it
+      takes an expert freelancer to complete the job by more than half.
+
+    These represent ex-ante definitions of the substitution, complemented and unaffected categories. While we conduct the manual
+and GPT-based labeling in 2024, we only consider LLM capabilities that were available by the time ChatGPT was released in
+November 2022 (for more details and showcase examples, see appendices B and C.
+    Manual labeling. To reliably classify skills clusters into these three groups, we combine several steps of manual analysis and
+GPT prompting as outlined in Fig. 1 sections two and three. First, two authors independently label all skill clusters. Reviewing
+and discussing the labels allows us to create a high-confidence set of 55 skill clusters for which we are confident about the AI
+exposure labels. This set includes 17 clusters in substitution, 14 in complementarity, and 24 in unaffected. However, since many of
+the skill clusters consist of highly specialized skills, reliable manual labeling would require expert knowledge in a variety of different
+occupational fields. Therefore, we rely on GPT-4o to extend our labels to the entire set of skill clusters using the high confidence
+set to optimize GPT prompts and benchmark the results.
+    Prompt engineering. To develop a prompt for GPT-4o that produces high-quality AI exposure labels for all skill clusters, we
+employ several validated prompt engineering best practices with the high confidence set serving as our test set on which to evaluate
+GPT output. As demonstrated by Brown et al. (2020), LLMs have been found to possess ’few-shot properties’, i. e. their performance
+across most tasks increases when the prompt includes several demonstrative examples. Additionally, so-called ’chain-of-thought’
+prompting, whereby the user also gives examples of the logical steps that should lead to the correct answer, has been shown to
+significantly improve the complex reasoning capabilities of LLMs (Wei et al., 2022). We consider these insights by including an
+example for each category and a precise description of the reasoning behind the classification to the prompt. Further, as suggested
+by OpenAI (2023), we format our prompt such that the instructions are at the beginning and are separated through quotation marks
+from the context part. We further explicitly articulate our desired output format (JSON).
+    For each cluster, our input in the prompt includes the top ten skills as identified by cTF-IDF from BERTopic and the cluster’s
+most frequent skills. We incorporate don’t solely rely on the skills identified by cTF-IDF since those may not include relevant skills
+that are common across many clusters. The final best-performing prompt achieves 93 percent accuracy on the high confidence set.
+The full prompt text and examples for GPT output can be found in Appendix B. Using this final prompt to generate labels for all
+skill clusters results in 31 clusters assigned to substitution, 164 to complementarity, and 91 to unaffected.
+    Consistency checks. To ensure consistent, high-quality labels, we manually review all GPT labels and the corresponding
+reasoning. Moreover, we use hierarchical clustering to aggregate the original 286 skill clusters into higher-level groups. Label
+coherence within the higher-level skill clusters corroborates the validity of the GPT labels. We change labels where the GPT reasoning
+is unconvincing and labels are not aligned within higher-level hierarchical skill clusters. Lastly, we manually merge small skill
+clusters following the hierarchical structure. While high granularity is beneficial when assigning AI exposure labels, small skill
+clusters are, at times, not stable over time. The online freelancing platform seems to periodically introduce new names for skills
+while discontinuing old ones. As a result, a few skill clusters suddenly disappear while other very similar skill clusters see sudden
+surges in their number of jobs. To smooth this noise, we merge problematic skill clusters into clusters with similar skills. This approach
+allows us to maximize the coherence of AI exposure labels while minimizing noise in the job count of skill clusters caused by the
+renaming of skills by the platform. We obtain a final set of 116 clusters, of which 12 are labeled as substitution, 59 as complementary
+and 45 as unaffected. Appendix section B provides additional information on how we create the AI exposure labels including details
+on manual labeling, prompts, label revision, and robustness.
+
+2.5. Difference-in-differences and causal inference
+
+    To estimate the causal effect of the ChatGPT launch on labor demand, we use a standard difference-in-differences design. Our
+control group consists of skill clusters where we assume ChatGPT cannot significantly aid in accomplishing tasks associated with
+jobs in those clusters. The treated clusters are labeled as either substitutable or complementary (examples of substitutable and
+complementary clusters can be found in Appendix C). We compare the two treated groups to the control group and estimate how
+the difference between them evolved since the launch of ChatGPT. More concretely, we express the log count of new job postings
+in cluster 𝑖 in week 𝑡 as:
+         log(𝑃 𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑖𝑡 ) = 𝛽0 + 𝛽1 Complementary𝑖 + 𝛽2 Substitutable𝑖 + 𝛾After𝑡
+                                                                                                                                                   (1)
+                          + 𝛿1 (Complementary𝑖 × After𝑡 ) + 𝛿2 (Substitutable𝑖 × After𝑡 ) + 𝜖𝑖𝑡 .
+After𝑡 is a dummy variable that gets value 1 after the public launch of ChatGPT on the week of the 30th of November 2022 (and
+zero before that week). The binary variable Complementary𝑖 gets value 1 if cluster 𝑖 is labeled as Complementary, and analogously,
+the binary variable Substitutable𝑖 has value 1 if the cluster is considered containing mainly skills relevant for tasks where humans
+can be substituted by LLMs. As sensitivity checks, we also estimate variations of Eq. (1) with cluster fixed and week fixed effects to
+account for seasonal variation in market labor demand and possible gaps in data collection.
+
+                                                                        6
+

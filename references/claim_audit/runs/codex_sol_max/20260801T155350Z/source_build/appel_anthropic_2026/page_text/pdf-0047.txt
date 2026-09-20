@@ -1,0 +1,41 @@
+            experimental activities” (13.5 years). Travel agents also experience deskilling
+            because AI covers tasks like “Plan, describe, arrange, and sell itinerary tour
+            packages” (13.5 years) and “Compute cost of travel and accommodations”
+            (13.4 years), while tasks like “Print or request transportation carrier tickets”
+            (12.0 years) and “Collect payment for transportation and accommodations”
+            (11.5 years) remain. Several teaching professions experience deskilling
+            because AI addresses tasks like grading, advising students, writing grants, and
+            conducting research without being able to do the hands-on work of delivering
+            lectures in person and managing a classroom.
+
+
+
+            Some jobs see average education levels increase. Real estate managers
+            experience upskilling because AI covers routine administrative tasks—
+            maintaining sales records (12.8 years), reviewing rents against market rates
+            (12.6 years)—while tasks requiring higher-level professional judgment and
+            in-person interaction remain, like securing loans, negotiating with
+            architecture firms, and meeting with boards.
+
+            These patterns illustrate how jobs may evolve over the coming years as their
+            task content adjusts in response to AI. If the education level can be interpreted
+            like expertise in Autor and Thompson’s analysis, their framework might
+            predict that wages will fall and employment will increase for technical writers
+            and travel agents; conversely, real estate managers will specialize in complex
+            negotiations and stakeholder management, shrinking employment while
+            increasing wages.5
+
+            However, our education-based measure differs from Autor and Thompson’s
+            expertise concept: their framework would label some tasks as high expertise
+            where ours specifies low education—for example, the Electrician task
+           “Connect wires to circuit breakers, transformers, or other components.” And
+            these predictions are based on current Claude usage patterns, which will
+            shift as models are trained on new capabilities and users discover new
+            applications—potentially changing which tasks are covered and whether the
+            net effect is deskilling or upskilling.
+
+
+
+
+The Anthropic Economic Index Report                                                             47
+

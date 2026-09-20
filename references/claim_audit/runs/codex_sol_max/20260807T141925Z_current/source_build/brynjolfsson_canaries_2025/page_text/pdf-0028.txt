@@ -1,0 +1,338 @@
+                                                                           Anthropic Usage Quintile
+                                    1.2
+
+
+                                    1.1
+
+
+
+
+                        Headcount
+                                    1.0
+
+
+                                    0.9
+                                                                                                Less                               More
+                                    0.8                                                         exposed                            exposed
+                                                                                                Overall
+                                    0.7
+                                              -01
+
+                                              -05
+
+                                              -09
+
+                                              -01
+
+                                              -05
+
+                                              -09
+
+                                              -01
+
+                                              -05
+
+                                              -09
+
+                                              -01
+
+                                              -05
+
+                                              -09
+
+                                              -01
+
+                                              -05
+
+                                              -09
+                                            21
+
+                                            21
+
+                                            21
+
+                                            22
+
+                                            22
+
+                                            22
+
+                                            23
+
+                                            23
+
+                                            23
+
+                                            24
+
+                                            24
+
+                                            24
+
+                                            25
+
+                                            25
+
+                                            25
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+
+                                          20
+                                                                                            Date
+                                                                              Automation Quintile
+                                    1.2
+
+
+                                    1.1
+                        Headcount
+
+
+
+
+                                    1.0
+
+
+                                    0.9
+                                                                                                Less                               More
+                                    0.8                                                         exposed                            exposed
+                                                                                                Overall
+                                    0.7
+                                            -01
+
+                                                   -05
+
+                                                          -09
+
+                                                                 -01
+
+                                                                        -05
+
+                                                                               -09
+
+                                                                                      -01
+
+                                                                                             -05
+
+                                                                                                    -09
+
+                                                                                                           -01
+
+                                                                                                                  -05
+
+                                                                                                                         -09
+
+                                                                                                                                -01
+
+                                                                                                                                       -05
+
+                                                                                                                                              -09
+                                           21
+
+                                                  21
+
+                                                         21
+
+                                                                22
+
+                                                                       22
+
+                                                                              22
+
+                                                                                     23
+
+                                                                                            23
+
+                                                                                                   23
+
+                                                                                                          24
+
+                                                                                                                 24
+
+                                                                                                                        24
+
+                                                                                                                               25
+
+                                                                                                                                      25
+
+                                                                                                                                             25
+                                          20
+
+                                                 20
+
+                                                        20
+
+                                                               20
+
+                                                                      20
+
+                                                                             20
+
+                                                                                    20
+
+                                                                                           20
+
+                                                                                                  20
+
+                                                                                                         20
+
+                                                                                                                20
+
+                                                                                                                       20
+
+                                                                                                                              20
+
+                                                                                                                                     20
+
+                                                                                                                                            20
+                                                                                            Date
+                                                                             Augmentation Quintile
+                                    1.2
+
+
+                                    1.1
+                        Headcount
+
+
+
+
+                                    1.0
+
+
+                                    0.9
+                                                                                                Less                               More
+                                    0.8                                                         exposed                            exposed
+                                                                                                Overall
+                                    0.7
+                                            -01
+
+                                                   -05
+
+                                                          -09
+
+                                                                 -01
+
+                                                                        -05
+
+                                                                               -09
+
+                                                                                      -01
+
+                                                                                             -05
+
+                                                                                                    -09
+
+                                                                                                           -01
+
+                                                                                                                  -05
+
+                                                                                                                         -09
+
+                                                                                                                                -01
+
+                                                                                                                                       -05
+
+                                                                                                                                              -09
+                                            21
+
+                                                   21
+
+                                                          21
+
+                                                                 22
+
+                                                                        22
+
+                                                                               22
+
+                                                                                      23
+
+                                                                                             23
+
+                                                                                                    23
+
+                                                                                                           24
+
+                                                                                                                  24
+
+                                                                                                                         24
+
+                                                                                                                                25
+
+                                                                                                                                       25
+
+                                                                                                                                              25
+                                          20
+
+                                                 20
+
+                                                        20
+
+                                                               20
+
+                                                                      20
+
+                                                                             20
+
+                                                                                    20
+
+                                                                                           20
+
+                                                                                                  20
+
+                                                                                                         20
+
+                                                                                                                20
+
+                                                                                                                       20
+
+                                                                                                                              20
+
+                                                                                                                                     20
+
+                                                                                                                                            20
+
+
+
+
+                                                                                            Date
+
+Figure 3: Automation and Augmentation. Employment changes by age and exposure quintile using
+measures from Handa et al. (2025). Panel A: Overall usage. Exposure quintiles are defined based
+on the share of queries to Claude that relate to tasks associated with an occupation. Occupations
+whose associated tasks all have fewer than the minimum number of queries to appear in the usage
+data are treated as a separate category, coded as 0. Panel B: Automation. Automation levels
+are defined based on the share of queries related to an occupation that are classified by Claude as
+automative in nature. Occupations whose associated tasks all have fewer than the minimum number
+of queries to appear in the usage data are coded as 0. Note that greater than 20% of occupations
+above the minimum query threshold have an estimated automation share of 0. All occupations in
+the first and second quintile are consequently grouped together in level 1. The remaining quintiles
+are coded as 2, 3 and 4. Panel C: Augmentation. Augmentation quintiles are defined based on the
+share of queries related to an occupation that are classified by Claude as augmentative.
+
+
+                                                                                         28

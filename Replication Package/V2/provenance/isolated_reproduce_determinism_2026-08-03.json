@@ -1,0 +1,44 @@
+{
+  "format_version": 1,
+  "execution": {
+    "bundle_mode": "reproduce",
+    "components": [
+      "section3",
+      "caged",
+      "rais",
+      "pnadc",
+      "spatial"
+    ],
+    "isolated_package_copy": true,
+    "network_access": "denied",
+    "original_workspace_access": "denied",
+    "runs": 2,
+    "target": "all"
+  },
+  "reconciliation": {
+    "numeric_claims": 92,
+    "numeric_claim_failures_per_run": 0,
+    "reference_artifacts_compared": 264,
+    "reference_failures_per_run": 0
+  },
+  "determinism": {
+    "all_files_byte_identical": true,
+    "artifact_manifest_entries_per_run": 274,
+    "diff_entries": 0,
+    "files_per_run": 275,
+    "run_manifest_sha256": "7563cfb8b04d36ba8ff480e1492ede180412816fdbaab49855c895d280075464",
+    "tree_hash_algorithm": "SHA-256 over the sorted stream of per-file SHA-256 records with paths relative to each output root",
+    "tree_sha256": "6678968e79a586dcefa7c9bf562c73b3352db14ca150eb1e02fca6b1fc6677b6"
+  },
+  "scientific_gates": {
+    "family_f_coefficients_created": 0,
+    "family_f_declared_slots": 12,
+    "family_f_p_values_created": 0,
+    "spatial_r_coefficient_rows": 184,
+    "spatial_r_maximum_coefficient_absolute_difference": 4.1511238890734603e-13,
+    "spatial_r_maximum_standard_error_absolute_difference": 3.583848912080967e-10,
+    "spatial_r_status": "pass",
+    "spatial_support_decision": "stop_front_at_A6_no_family_F_estimation"
+  },
+  "status": "pass"
+}

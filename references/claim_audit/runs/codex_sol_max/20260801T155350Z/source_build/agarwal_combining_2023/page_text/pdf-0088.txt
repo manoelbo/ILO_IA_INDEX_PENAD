@@ -1,0 +1,50 @@
+                                                                                                                                                                                                   88
+
+                                                        Figure C.22: Conditional treatment effect given AI prediction
+                                            (a) Deviation from Ground Truth                                                                           (b) Incorrect Decision
+                                                                                                                                    .15
+                                       .1
+ATE on deviation from ground truth
+
+
+
+
+                                                                                                        ATE on incorrect decision
+                                     .05                                                                                              .1
+
+
+                                       0                                                                                            .05
+
+
+                                     -.05                                                                                             0
+
+
+                                      -.1                                                                                           -.05
+                                             [0,0.2)   [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]                                         [0,0.2)      [0.2,0.4)   [0.4,0.6)    [0.6,0.8)   [0.8,1]
+                                                               AI prediction bins                                                                                AI prediction bins
+
+
+      Note: Main specifications similar to figure 3 with the exception that ground truth is constructed using experiment leave-one-out
+      average.
+
+
+
+
+                                                                            Table C.11: Average Treatment Effects
+
+                                                                                                 Deviation from Ground Truth
+                                                              Treatment                                                                    (1)
+                                                              AI × CH                                                                 0.009
+                                                                                                                                     (0.005)
+                                                              AI                                                                      0.007
+                                                                                                                                     (0.004)
+                                                              CH                                                                     −0.016
+                                                                                                                                     (0.004)
+                                                              Control Mean                                                            0.222
+                                                                                                                                     (0.010)
+                                                              Pathology FE                                                             Yes
+                                                              Observations                                                            36280
+
+      Note: Main specifications similar to table 2 with the exception that ground truth is constructed using experiment leave-one-out
+      average.
+

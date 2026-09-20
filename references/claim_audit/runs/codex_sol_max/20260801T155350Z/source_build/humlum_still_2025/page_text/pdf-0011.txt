@@ -1,0 +1,59 @@
+use them daily. Despite this high baseline, Table 1 shows that encouragement raises these
+
+rates by 35 and 11 percentage points, respectively (Columns 1-2), and is consistently
+
+associated with higher reported time savings, improved quality, and enhanced creativity
+
+(Columns 3-6).6 By contrast, training and enterprise tools alone do little to increase daily
+
+use and are associated with smaller reported gains.7 For this reason, our subsequent
+
+analysis uses encouragement as the primary workplace treatment.
+
+       AI chatbots are reshaping the nature of work. Among chatbot users with employer
+
+initiatives, about 12% report new tasks from chatbots (Table 1, Column 8). These tasks
+
+include both productive activities (e.g., content drafting, ideation) and non-productive
+
+ones (e.g., integration, compliance, oversight). Appendix B.3 classifies this new work
+
+using workers’ free-text descriptions. New tasks extend even to non-users (Column 10),
+
+signaling broader workplace transformations.
+
+       Substantial variation in use and perceived effects persists even among similar workers
+
+facing identical employer policies. While reported productivity gains are modest on average
+
+(2.8% time savings for the typical user; Appendix D.3), some report saving more than
+
+an hour per day, alongside improvements in quality, creativity, and new tasks. Section 3
+
+exploits this variation to test whether labor market impacts differ for those reporting
+
+larger effects.
+
+1.4.1      Robustness of Employer Initiative Measures
+
+Before using our measures of employer initiatives in the main analysis, we assess their
+
+validity with a series of robustness checks.
+
+       First, Appendix E.4 shows that all correlations with employer initiatives in Table 1
+
+remain stable when controlling for firms’ characteristics and workers’ detailed task mixes
+
+within occupations. This ensures that differences across initiatives are not driven by
+
+firm age, size, or productivity, nor by variation in the types of tasks more amenable to
+   6
+     Appendix A.1 presents a Roy-style model of chatbot adoption to help interpret the estimates in
+Table 1 on how employer initiatives affect adoption and user-reported benefits.
+   7
+     As Appendix D discusses, training and enterprise tools for non-encouraged workers are likely designed
+to prevent misuse rather than to enhance productivity.
+
+
+                                                    9
+

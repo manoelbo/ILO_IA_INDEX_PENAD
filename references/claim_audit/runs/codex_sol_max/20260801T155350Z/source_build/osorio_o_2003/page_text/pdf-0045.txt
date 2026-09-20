@@ -1,0 +1,48 @@
+         4. Médico do Instituto Médico Legal (IML) ou Perito Legista, nos casos de
+            óbitos por causas acidentais ou violentas.
+     • Quanto ao percentual de preenchimento do campo “cor ou raça” nas Declara-
+       ções de Óbito, o SIM deixa a desejar, embora tenha havido notável progresso
+       desde 1996. Nesse primeiro ano, o percentual de Declarações de Óbito com a in-
+       formação preenchida só é superior a 0,1% em São Paulo. Em 2000, o percentual
+       de preenchimento do campo continuava a variar muito segundo a Unidade da
+       Federação de residência do falecido: algumas apresentavam elevados níveis de
+       preenchimento, e outras níveis muito baixos. Em 2000, o percentual de Declara-
+       ções de Óbito com o campo em branco foi de 16% em todo o Brasil, um núme-
+       ro considerado por alguns elevado o suficiente a ponto de poder comprometer a
+       qualidade dos dados que envolvem a informação de “cor ou raça”.
+
+
+     Registros: Sistema de Informações de Nascidos Vivos (Sinasc) da
+     Fundação Nacional de Saúde (Funasa)
+
+O Sinasc é muito parecido com o SIM, pois também consiste no registro informatizado
+dos campos de um documento, a Declaração de Nascido Vivo. Tal declaração é necessá-
+ria para o registro das crianças nos Cartórios de Registro Civil e para a obtenção da Cer-
+tidão de Nascimento. Também baseado em recomendações da Organização Mundial da
+Saúde, o Sinasc foi implantado em 1990, existindo séries de dados anuais consolidadas a
+partir de 1994. Como o SIM, também apresenta problemas de subenumeração em de-
+terminadas áreas do país, notadamente nas Regiões Norte e Nordeste.
+     • A informação de “cor ou raça” do nascido passou a ser registrada em 1996;
+
+     • A informação de “cor ou raça” nas Declarações de Nascido Vivo (DN) é cole-
+       tada segundo o sistema classificatório de cinco categorias do IBGE;
+     • O método de identificação racial também é complexo e extremamente sujeito
+       a imperfeições, pois, como no SIM, os sujeitos da classificação não podem de-
+       clarar a própria cor. Assim, o responsável pelo preenchimento da DN – inclu-
+       sive do quesito de “cor ou raça”, pois não há previsão específica quanto a este
+       nas normas – será:
+         1. Alguém da unidade notificadora, para os partos hospitalares;
+         2. O médico responsável, para os partos domiciliares com assistência médica;
+         3. O Cartório de Registro Civil, para os partos domiciliares sem assistência
+            médica.
+     • Embora o preenchimento do campo de “cor ou raça” das Declarações de Nas-
+       cido Vivo venha melhorando, a quantidade de registros em branco ainda era
+       elevada em 2000: 13% do total de nascidos não tinha a raça declarada. A taxa
+       de registros não preenchidos variava bastante segundo a Unidade da Federação
+       considerada.
+
+
+
+
+ipea                        texto para discussão | 996 | nov. 2003                     43
+

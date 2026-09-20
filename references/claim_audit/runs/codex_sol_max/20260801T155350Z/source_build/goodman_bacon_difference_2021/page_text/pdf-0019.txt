@@ -1,0 +1,57 @@
+2018). Fadlon and Nielsen (2015) and Deshpande and Li (2017) use a novel estimator that matches
+
+treated units with controls that receive treatment a given amount of time later. This specification
+
+                                                                                         2𝑥𝑥2,𝑘𝑘
+                                                                         �
+does not use already treated units as controls, and yields an average of 𝛽𝛽                        terms with a fixed
+                                                                            𝑘𝑘ℓ
+
+post-period. Callaway and Sant'Anna (2018) discuss how to summarize heterogeneous treatment
+
+effects in this context and develop a reweighting estimator to do so. Summarizing time-varying
+
+effects using equation (2), however, yields estimates that are too small or even wrong-signed, and
+
+should not be used to judge the meaning or plausibility of effect sizes. 21
+
+B. What is the identifying assumption and how should we test it?
+The preceding analysis maintained the assumption of equal counterfactual trends across groups,
+
+but (12) shows that (as long as treatment effects do not vary over time) identification of VWATT
+
+only requires VWCT to equal zero. The assumption itself is untestable because we cannot, for
+
+example, observe changes in 𝑌𝑌 0 that occur after treatment or test for them using pre-treatment
+
+data. 22 Assuming that differential counterfactual trends, 𝛥𝛥𝑌𝑌𝑘𝑘0 , are linear throughout the panel leads
+
+to a convenient approximation to VWCT: 23
+
+                             𝑘𝑘−1                        𝐾𝐾
+
+         � Δ𝑌𝑌𝑘𝑘0 �𝜎𝜎𝑘𝑘𝑘𝑘 + � 𝜎𝜎𝑗𝑗𝑗𝑗 (1 − 2𝜇𝜇𝑗𝑗𝑗𝑗 ) + � 𝜎𝜎𝑘𝑘𝑘𝑘 (2𝜇𝜇𝑘𝑘𝑘𝑘 − 1)� − Δ𝑌𝑌𝑈𝑈0 � 𝜎𝜎𝑘𝑘𝑘𝑘 = 0            (16)
+         𝑘𝑘≠𝑈𝑈              𝑗𝑗=1                     𝑗𝑗=𝑘𝑘+1                           𝑘𝑘≠𝑈𝑈
+
+
+
+
+21
+   Borusyak and Jaravel (2017) show that that common, linear trends, in the post- and pre- periods cannot be estimated
+in this design. The decomposition theorem shows why: timing groups act as controls for each other, so permanent
+common trends difference out. This is not a meaningful limitation for treatment effect estimation, though, because
+“effects” must occur after treatment. Job displacement provides a clear example (Jacobson, LaLonde, and Sullivan
+1993, Krolikowski 2017). Comparisons based on displacement timing cannot identify whether all displaced workers
+have a permanently different earnings trajectory than never displaced workers (the unidentified linear component),
+but they can identify changes in the time-path of earnings around the displacement event (the treatment effect).
+22
+   One can use time-varying confounders as outcomes (Freyaldenhoven, Hansen, and Shapiro 2018, Pei, Pischke, and
+Schwandt 2017), but this does not test for balance in levels, nor can it be used for sparsely measured confounders.
+23
+   The path of counterfactual outcomes can affect each 2x2 DD’s bias term in different ways. Linearly trending
+unobservables, for example, lead to larger bias in 2x2 DD’s that use more periods. I show in the appendix that in the
+linear case differences in the magnitude of the bias cancel out across each group’s “treatment” and “control” terms,
+and equation (16) holds.
+
+                                                         17
+

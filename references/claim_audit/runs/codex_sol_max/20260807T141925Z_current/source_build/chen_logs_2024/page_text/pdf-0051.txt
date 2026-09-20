@@ -1,0 +1,50 @@
+               “ loooooooooooooooooooooooomoooooooooooooooooooooooon
+                 ErY p1q ´ Y p0q | Y p1q ą 0, Y p0q ą 0s
+                               Intensive margin effect
+
+                     ` α pErY   p1q | Y p1q ą 0, Y p0q “ 0s ´ ErY p1q | Y p1q ą 0, Y p0q ą 0sq,
+                         looooooooooooooooooooooooooooooooooooooooooomooooooooooooooooooooooooooooooooooooooooooon
+                                                              Selection term
+
+where the first equality uses iterated expectations, and the second re-arranges terms.
+    The previous display shows that τb is the sum of two terms. The first is the ATE for individuals
+who would have a positive outcome regardless of treatment status (similar to θIntensive in Section 4,
+except using Y instead of logpY q). The second term is not a causal effect, but rather represents
+a selection term: it is proportional to the difference in the average value of Y p1q for “compliers”
+who would have positive outcomes only under treatment versus “always-takers” who would have
+positive outcomes regardless of treatment status. In many economic contexts, we may expect this
+selection effect to be negative. For example, we may suspect that individuals who would only get
+a job if they receive a particular training have lower ability, and hence lower values of Y p1q, than
+individuals who would have a job regardless of training status. The marginal effect τb thus only has
+an interpretation as an ATE along the intensive margin if either (a) there is no extensive margin
+effect (α “ 0) or (b) we are willing to assume that the selection term is zero. Angrist (2001)
+provided a similar decomposition (without imposing monotonicity), concluding that the two-part
+model “seems ill-suited for causal inference,” at least without further restrictions on the potential
+outcomes. See, also, Mullahy (2001) for additional discussion.
+
+
+E     Details on Lee bounds using IV in Berkouwer and Dean (2022)
+We now describe in detail our approach for constructing Lee (2009)-type bounds in the IV setting
+of Berkouwer and Dean (2022).
+
+Estimating the instrument-complier distributions. The first step is to estimate the distri-
+bution of Y p0q and Y p1q for instrument-compliers. As shown in Abadie (2002), the CDF for Y p1q
+for instrument-compliers at a point y can be consistently estimated by using two-stage least squares
+to estimate the effect of treatment on the outcome Di 1rYi ď ys. The CDF for Y p0q for instrument-
+compliers can analogously be obtained using the outcome pDi ´ 1q1rYi ď ys. We estimate these
+TSLS regressions using analogues to (11) (except replacing arcsinhpYi q with the outcomes just de-
+scribed) for all values of y contained in the data. We thus obtain empirical estimates of the CDFs
+for instrument-compliers, F̂Y pdq pyq for d “ 0, 1.
+
+Constructing bounds. Note that if U „ U r0, 1s, then Y pdq „ FY´1                ´1
+                                                                pdq pU q, where FY pdq puq :“
+infty | FY pdq pyq ě uu. With this formulation in mind, Lee (2009)’s bounds for ErlogpY p1qq | Y p1q ą
+0, Y p0q ą 0s can be written as
+
+       ErlogpFY´1
+                p1q
+                    pU qq | U P rθN T , θN T ` θAT ss ď ErlogpY p1qq | Y p1q ą 0, Y p0q ą 0s
+
+
+                                                             14
+

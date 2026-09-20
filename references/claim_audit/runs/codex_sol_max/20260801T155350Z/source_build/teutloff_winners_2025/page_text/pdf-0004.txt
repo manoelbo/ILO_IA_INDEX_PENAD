@@ -1,0 +1,41 @@
+O. Teutloff et al.                                                                                 Journal of Economic Behavior and Organization 235 (2025) 106845
+
+
+
+
+Fig. 1. Methodological overview: From job postings to AI exposure label. Our approach for creating skill clusters from job postings and assigning them
+to a treatment group consists of three steps. First, we use the large language model SBERT to embed the skill requirements of each job posting, creating
+numerical high-dimensional job-level embeddings. Through UMAP, we reduce the dimensionality and then apply the HDBSCAN clustering algorithm. Second,
+we manually label the resulting skill clusters into substitutable, complementary, and unaffected to create a high-confidence set that serves as a benchmark for
+prompt engineering GPT-4o. The best prompt is used to label all skill clusters. Third, we use GPT-4o’s reasoning and the hierarchical structure of the skill clusters
+to verify the label consistency. Merging similar skill clusters ensures stable observations over time that are robust to the platform renaming skills.
+
+
+
+
+    When posting a job, the employer is initially asked to provide a title. Based on this job title, the platform automatically generates
+a set of skill requirements. Employers have the flexibility to edit this list of skills as they see fit. The platform curates the pool of
+available skills, adding new ones based on job postings and ongoing discussions with key clients (for instance, when Python2 was
+replaced by Python3, the relevant skill tags were updated for the new job postings. The old ones still show Python2.). The skill
+clusters are built in a way that the number of clusters does not change during the analysis period.
+    The granular information on skill demand and the fast-paced nature of this digital labor market make it an ideal setting to study
+the labor market implications of LLMs because changes in demand for specific skills should manifest much faster than in traditional
+labor market settings, making it an ideal real-world ‘‘lab’’ (Horton and Tambe, 2015) for observing the effects of LLMs.
+    Data for this study was gathered through the Online Labour Index project, as detailed by Kässi and Lehdonvirta (2018), which
+has been monitoring daily new job listings through the platform’s API since January 2017. Further data collection on job specifics
+took place in multiple phases from November 2021 to August 2023. The freelancing platform, while based in the United States,
+operates globally, drawing a significant number of workers from countries such as India, Pakistan, the Philippines, and East Europe,
+as noted by Stephany et al. (2021).
+    We have collected information on the daily new job postings between January 2021 and September 2023, covering several
+million job postings. In a few cases, there were gaps in the data collection due to various software errors. These are visible as
+sudden ‘‘blips’’ in the time series of postings. Reassuringly for us, the data collection worked without errors from May 2022 to
+September 2023. We also demonstrate that our results remain consistent even when controlling for these fluctuations using week
+dummies or when excluding the few problematic time periods from our data.
+    Besides detailed information on the skills required for the job posting, our data includes various other metadata. In particular, we
+use two variables as control variables when studying effect heterogeneity: expected project duration and worker experience level.
+When creating a job posting, the employer is asked to provide the expected duration of the job. The duration can be one of the
+following: under 3 weeks, 3–9 weeks, 9–18 weeks, or 18–52 weeks. This information is not binding for either the employer or the
+worker; it merely reflects the employer’s expectation about the contract length.
+
+                                                                                 4
+

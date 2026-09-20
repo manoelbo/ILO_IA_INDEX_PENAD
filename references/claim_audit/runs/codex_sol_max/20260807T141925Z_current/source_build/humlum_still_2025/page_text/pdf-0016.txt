@@ -1,0 +1,37 @@
+Still, the relative importance of encouraged-use policies may seem surprising, as such
+policies might appear inexpensive in monetary terms. But the low capital costs of chatbot
+solutions (Appendix E.2 details adoption by chatbot products) heighten the importance of
+complementary organizational practices, such as explicitly encouraging use. For example,
+Shopify has publicly reframed generative AI from something employees may use into
+a baseline expectation; Chicago Public Schools explicitly encourages faculty to engage
+with GenAI tools; and Denmark’s Agency for Digital Government similarly emphasizes
+that adoption requires clear usage guidelines and supportive organizational frameworks
+even when publicly available tools are used (Chicago Public Schools, 2024; Digitaliser-
+ingsstyrelsen, 2024; Lütke, 2025). Consistent with this interpretation, Dillon et al. (2025)
+show that firm effects are a key determinant of workers’ uptake of a randomized offer of
+Microsoft Copilot.
+
+
+2.3     New Workloads and Task Creation
+
+AI chatbots not only affect existing tasks—they transform the nature of work itself.
+Figure 3 shows how the emergence of new workloads from AI chatbots varies across
+employer initiatives. These new workloads may stem from individual workers taking on
+more work, from shifts in task allocation within teams, or from new demands generated
+by the tools themselves, such as oversight and integration.
+    The No Initiative estimates reveal that even in the absence of encouraged-use policies,
+enterprise solutions, or training, AI chatbots have generated new workloads for 12% of
+users (Panel (a)). Of these, about 5 percentage points report doing more of the same
+tasks, and 8 percentage points have taken on entirely new tasks.9
+    Notably, the share of users performing new tasks in Figure 3 increases to roughly 18%
+in workplaces with active chatbot initiatives. Training, in particular, is strongly associated
+with new job responsibilities, suggesting that these programs may be designed to help
+   9
+     Consistent with this reorganization of work, most chatbot users (85%) report reallocating time savings
+from AI chatbots to other job tasks (Table E.3). By contrast, fewer than 10% report taking additional
+breaks or leisure, and about 30% spend more time on the same tasks they initially saved time on.
+
+
+
+
+                                                    14

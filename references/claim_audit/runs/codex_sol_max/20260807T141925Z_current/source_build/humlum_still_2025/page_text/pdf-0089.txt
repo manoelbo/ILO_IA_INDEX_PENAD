@@ -1,0 +1,66 @@
+use through features such as data security compliance, training on internal data, and
+custom prompt creation.
+
+                             Figure E.1: The Adoption of AI Chatbot Products
+
+                                    (a) Prevalence of AI Chatbot Products
+
+
+         Any AI Chatbot
+
+         ChatGPT
+
+         Claude
+
+         Microsoft Copilot
+
+         Gemini
+
+         Perplexity
+
+         Other
+
+
+                                0          0.1         0.2         0.3         0.4         0.5         0.6      0.7      0.8     0.9   1
+                                                                 Daily     Weekly          Monthly           Few Times
+
+
+                                           (b) The Dominance of ChatGPT
+                                                             1
+
+          Marketing              Any
+                                 GPT
+          Software Developers    Any
+                                 GPT
+          Journalists            Any
+                                 GPT
+          HR Professionals       Any
+                                 GPT
+          IT Support             Any
+                                 GPT
+                                 Any
+          Financial Advisors     GPT
+                                 Any
+          Customer Service       GPT
+          Accountants            Any
+                                 GPT
+                                 Any
+          Office Clerks          GPT
+                                 Any
+          Legal Professionals    GPT
+                                 Any
+          Teachers               GPT
+
+                                       0         0.1         0.2         0.3         0.4         0.5     0.6      0.7      0.8   0.9   1
+                                                                     Daily      Weekly           Monthly       Few Times
+
+Notes: Panel (a) displays the share of workers who have used various AI chatbots for work, categorized by frequency of
+usage. Panel (b) shows the share of workers in our study occupations who have used AI chatbots for work, distinguishing
+between those who have used any AI chatbot and those who have specifically used ChatGPT. Sample: All completed
+responses from our 2024 survey round.
+                                                             1
+
+
+
+
+                                                                          39

@@ -1,0 +1,28 @@
+                                                         Table C.19: Summary of Bayesian Models
+
+                                                                        (1)      (2)      (3)      (4)      (5)      (6)      (7)      (8)     (9)    (10)    (11)     (12)
+                                                   Accuracy            0.88     0.91     0.88     0.89     0.90     0.90     0.89     0.90     0.89   0.89    0.91     0.90
+ Airspace Opacity
+                                                   AUC                 0.89     0.96     0.91     0.92     0.96     0.96     0.94     0.96     0.93   0.93    0.96     0.96
+                                                   Accuracy            0.90     0.92     0.90     0.91     0.93     0.92     0.92     0.92     0.91   0.91    0.93     0.93
+ Cardiomediastinal Abnorm.
+                                                   AUC                 0.90     0.96     0.91     0.93     0.96     0.96     0.94     0.96     0.94   0.94    0.96     0.96
+                                                   Accuracy            0.88     0.91     0.88     0.89     0.91     0.91     0.90     0.91     0.90   0.90    0.92     0.91
+ Abnormal
+                                                   AUC                 0.91     0.96     0.91     0.93     0.96     0.96     0.95     0.96     0.94   0.94    0.96     0.96
+ Focal sA                                                               ✓        ✓        ✓        ✓        ✓        ✓        ✓        ✓        ✓      ✓       ✓        ✓
+ Other sA                                                                        ✓                          ✓        ✓                 ✓                       ✓        ✓
+ Focal sE                                                                                 ✓        ✓        ✓        ✓                          ✓      ✓       ✓        ✓
+ Other sE                                                                                          ✓                 ✓                                 ✓                ✓
+ Clinical History sE                                                                                                          ✓        ✓        ✓      ✓        ✓       ✓
+
+Note: This table summarizes the models used to estimate the Bayesian benchmark. Each column corresponds to a random forest classification tree with varying signal
+structures. The rows Focal sA , Other sA , Focal sE , Other sE , and Clinical History sE indicate what features are included in the tree. Focal sA corresponds to the focal
+pathology’s AI score, Other sA corresponds to vector of AI scores for all pathologies, Focal (Other) sE includes the radiologist’s report without AI assistance on the focal
+pathology (all pathologies), and Clinical History sE contains summaries of the patient’s clinical history when available to the radiologist.
+
+
+
+
+                                                                                                                                                                               105
+

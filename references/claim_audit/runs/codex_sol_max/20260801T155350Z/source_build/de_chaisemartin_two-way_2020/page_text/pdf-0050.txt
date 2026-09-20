@@ -1,0 +1,43 @@
+2. Duggan and Morton (2010), The Effect of Medicare Part D on Pharmaceutical
+   Prices and Utilization. Tables 2 and 3.
+   In regression Equation (1), the dependent variable is the change in the price of drug j
+   between 2003 and 2006, the explanatory variables are the Medicare market share for drug
+   j in 2003, and some control variables. This regression corresponds to Regression 2, with
+   some control variables. The stable groups assumption is presumably not satisfied: it seems
+   unlikely that there are drugs whose Medicare market share in 2003 is equal to 0. This is
+   a sharp design.
+
+3. Aizer (2010), The Gender Wage Gap and Domestic Violence. Table 2.
+   In regression Equation (2), the dependent variable is the log of female assaults among
+   females of race r in county c and year t, and the explanatory variables are race, year,
+   county, race × year, race × county, and county × year fixed effects, as well as the gender
+   wage gap in county c, year t, and race r, and some control variables. This regression
+   is a “three-way fixed effects” version of Regression 1, with some control variables. The
+   stable groups assumption is presumably satisfied: it seems likely that between each pair
+   of consecutive years, there are counties where the gender wage gap does not change. This
+   is a fuzzy design: the treatment of interest is the gender wage gap in a couple (see the
+   bargaining model in Appendix 1), which varies within (year,county) cells.
+
+4. Algan and Cahuc (2010), Inherited Trust and Growth. Figure 4.
+   Figure 4 presents a regression of changes in income per capita from 1935 to 2000 on changes
+   in inherited trust over the same period and a constant. This regression corresponds to
+   Regression 2. The stable groups assumption is satisfied: there are countries where inherited
+   trust does not change from 1935 to 2000. This is a sharp design.
+
+5. Ellul et al. (2010), Inheritance Law and Investment in Family Firms. Table 7.
+   In the regressions presented in Table 7, the dependent variable is the capital expenditure
+   of firm j in year t, and the explanatory variables are firm fixed effects, an indicator for
+   whether year t is a succession period for firm j, some controls, and three treatment variables:
+   the interaction of the succession indicator with the level of investor protection in the
+   country where firm j is located, the interaction of the succession indicator with the level of
+   inheritance laws permissiveness in the country where firm j is located, and the interaction
+   of the succession indicator with the level of inheritance laws permissiveness and the level
+   of investor protection in the country where firm j is located. This regression is similar
+   to Regression 1 with controls, except that it has three treatment variables. The stable
+   groups assumption is presumably not satisfied: for instance, it seems unlikely that there
+   are countries with no investor protection at all. This is a sharp design.
+
+6. Bustos (2011), Trade Liberalization, Exports, and Technology Upgrading: Ev-
+
+                                              14
+

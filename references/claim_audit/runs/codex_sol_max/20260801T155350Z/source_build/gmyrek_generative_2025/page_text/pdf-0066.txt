@@ -1,0 +1,56 @@
+63     ILO Working Paper 140
+
+
+
+
+     b. Kuyavian-Pomeranian
+
+     c. Lublin
+
+     d. Lubusz
+
+     e. Łódź
+
+     f. Lesser Poland
+
+     g. Masovian (excluding Warsaw)
+
+     h. Masovian (Warsaw only)
+
+     i. Opole
+
+     j. Subcarpathian
+
+     k. Podlaskie
+
+     l. Pomeranian
+
+     m. Silesian
+
+     n. Świętokrzyskie
+
+     o. Warmian-Masurian
+
+     p. Greater Poland
+
+     q. West Pomeranian
+
+     r. I live abroad (end the survey)
+
+     5. What is your highest level of education?
+     (Please mark one [1] answer with an X)
+
+     a. Primary
+
+     b. Middle school
+
+     c. Vocational
+
+     d. Secondary
+
+     e. Post-secondary
+
+     f. Bachelor’s degree, engineering
+
+     g. Master’s degree
+

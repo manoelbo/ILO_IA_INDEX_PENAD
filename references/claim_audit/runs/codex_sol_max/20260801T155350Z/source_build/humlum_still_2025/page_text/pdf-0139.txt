@@ -1,0 +1,53 @@
+H      Estimation Procedures
+H.1     Adopter Propensity
+
+  • Appendix H.1 details the estimation of these adopter propensities, which our eco-
+
+      nomic framework in Section A.2 microfounds as workers’ latent willingness to use
+
+      AI chatbots.
+
+
+    We measure adopter propensity of job creation/destruction as the predicted adoption
+
+rate among hires/separations at workplace j in month t based solely on workers’ pre-
+
+determined individual characteristics:
+
+
+  1. Estimate adoption propensity:
+
+
+                          Adopti = γ ′ Xi + β ′ EmployerInitiativesi + εi ,                (73)
+
+
+      where Xi includes predetermined worker characteristics (occupation, gender, age,
+
+      experience, and earnings)
+
+  2. Among workplaces j with positive hires/separations in month t, measure the adopter
+
+      propensity of their job creation/destruction as:
+
+
+                 JobCreationAdopterPropensityjt = γ̂ ′ E[Xi | jt (i) = j, jt−1 (i) ̸= j]   (74)
+
+             JobDestructionAdopterPropensityjt = γ̂ ′ E[Xi | jt (i) ̸= j, jt−1 (i) = j],   (75)
+
+
+      where jt (i) is the workplace of worker i in month t.
+
+Workers’ adopter propensities γ̂ ′ Xi correspond to their willingness to adopt AI chatbots
+
+in our theoretical framework (Section A).
+
+
+H.2     Empirical Bayes Shrinkage
+
+As a robustness check, we estimate workplace rates of encouragement using Empirical
+
+Bayes shrinkage with a Beta-Binomial model; see Walters (2024) for a detailed introduction
+
+
+                                             104
+

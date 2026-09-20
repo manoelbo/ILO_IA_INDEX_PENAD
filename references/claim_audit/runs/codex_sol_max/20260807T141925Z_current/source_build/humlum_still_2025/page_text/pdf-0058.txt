@@ -1,0 +1,33 @@
+chatbots automate tasks previously performed by humans (e.g., automated copyediting);
+a positive task reinstatement effect, where new tasks for humans emerge (e.g., oversight
+or integration of AI outputs); and a positive productivity effect, where efficiency gains
+enable firms to scale up production, including labor demand—depending on the elasticity
+of product demand. Adoption of new technologies increases labor demand only when
+the combined productivity and reinstatement effects outweigh the displacement effect. A
+key consideration is whether chatbot use augments or displaces workers’ expertise (Autor
+and Thompson, 2025); several experiments show that chatbots benefit less experienced
+workers, helping to close skill gaps within professions (Brynjolfsson, Li and Raymond,
+2025; Noy and Zhang, 2023).
+   Modeling chatbots is further complicated by the fact that adoption is not solely a firm-
+level decision; it also depends on workers’ choices to use the tools. Following Section A.1,
+workers use chatbots if the productivity benefits exceed the adoption costs. In particular,
+if the amenity value of chatbot use is sufficiently high, workers may adopt even when
+doing so reduces their productivity.
+   In sum, the implications of chatbot adoption for labor demand and productivity
+are theoretically ambiguous at both the firm and worker levels. At the firm level, the
+outcome depends on whether the productivity and reinstatement effects together outweigh
+displacement. At the worker level, it depends on the amenity value of chatbot use.
+
+
+Firm and worker heterogeneity. Another key question is why some firms and workers
+adopt chatbots while others do not. Following Mas (2025); Rosen (1986), chatbots can be
+viewed as a “productive amenity”: firms encourage chatbot use if the profit gains exceed
+costs, while workers adopt if the productivity benefits outweigh adoption costs (as in
+Section A.1). In competitive labor markets, Rosen (1986) shows that the wage effects
+of an amenity depend on the tradeoffs at the margin—the costs and benefits faced by
+firms and workers just indifferent to providing or accepting it. This implies that the wage
+effects of chatbot encouragement hinge on the marginal firm and worker.
+
+
+
+                                             8

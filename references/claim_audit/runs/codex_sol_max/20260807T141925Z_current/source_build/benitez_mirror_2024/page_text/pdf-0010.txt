@@ -1,0 +1,48 @@
+veys. To ensure compatibility with standard occupational classifications, we translated these esti-
+mations to the SOC-18 classification using O*NET’s crosswalks for a total of 759 occupations.
+      To enhance our understanding of the GENOE’s effectiveness and to validate our methodology,
+we conducted several additional exercises. Firstly, we measured task-level exposure by assessing
+the proportion of tasks at risk within each occupation, allowing us to identify roles where AI might
+significantly impact certain tasks without necessarily replacing the entire job. We also evaluated
+tasks in isolation and compared the results with our holistic occupation-level approach to under-
+stand the value of considering tasks within their broader occupational context. Additionally, we
+tested the effect of withholding the occupation name from the model to gauge the importance of
+occupational context in the AI’s assessment. To incorporate broader societal considerations, we
+explicitly prompted the model to consider ethical and social factors in its assessments.
+      Furthermore, we conducted follow-up surveys, asking the AI to explain its reasoning behind
+the exposure estimates, effectively ”opening the black box” of its decision-making process. These
+additional analyses serve multiple purposes: they validate our methodology by providing al-
+ternative perspectives on AI exposure, offer insights into the factors influencing AI’s potential
+impact on various occupations, and help us understand the decision-making process of the AI
+model. This approach not only strengthens the robustness of our GENOE index but also poten-
+tially reveals any biases or limitations in the AI’s assessments, providing a more reliable picture
+of occupational exposure to AI.
+      To further validate our approach, we applied our synthetic survey methodology to replicate
+the Felten et al. (2021) index of occupational exposure. In this exercise, we substituted the original
+human expert surveys with synthetic surveys conducted using ChatGPT4o. The primary objective
+was to assess the capability of our AI-driven methodology to reproduce results comparable to
+those obtained through traditional human expert assessments. This replication serves as a crucial
+test of our approach’s reliability and accuracy, offering insights into the potential of large language
+models to emulate human expertise in evaluating occupational exposure to AI.
+
+
+                                                      3   RESULTS
+
+
+3.1     Baseline Estimations
+
+Figure 1 presents a comprehensive view of AI exposure across 759 occupations, illustrating the
+average, median, 25th percentile, and 75th percentile for the three defined time horizons. The
+analysis reveals a progressive increase in average AI exposure: 0.28 within one year, rising to 0.38
+over five years, and reaching 0.44 over a decade. This pattern suggests that as AI technologies
+advance and mature, their potential to reshape various professions grows significantly.5
+
+
+
+
+      5 Complete descriptive statistics can be found in Appendix Table A.1.
+
+
+
+                                                            6
+

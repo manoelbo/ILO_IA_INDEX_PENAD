@@ -1,0 +1,74 @@
+2. Validity of the confidence intervals
+                                 P                   P
+There exists σ 2G such that g ψbg2 /G − σ 2G −→ 0, with lim inf G σ 2G ≥ σ 2 .
+                                                                                 PG
+  Let Q∞   0
+        d,d ,t = limG→∞ E[Q d,d 0 ,t ] and λg be the column vector such that U =
+                                                                                     g=1 λg /G. Some
+tedious algebra show that Jf (U ) × λg = ψg , with
+                                      ∞
+
+                      1 X                                                            
+                 ψg = ∞      Ng,t 1{Dg,t 6= Dg,t−1 }(Yg,t − Yg,t−1 − f (U ∞ )) − ψg,t
+                                                                                  B
+                     PS t>1
+and
+                                                                                              
+            1                                                                            Q∞
+                                                                                          0,0,t
+    B
+   ψg,t =   ∞
+                    1{Dg,t > Dg,t−1 }Q∞        ∞
+                                      0,0,t + P1,0,t 1{Dg,t = Dg,t−1 = 0} Yg,t − Yg,t−1 − ∞
+          P0,0,t                                                                         P0,0,t
+                                                                                              
+            1                         ∞       ∞
+                                                                                         Q∞
+                                                                                          1,1,t
+        + ∞ 1{Dg,t < Dg,t−1 }Q1,1,t + P0,1,t 1{Dg,t = Dg,t−1 = 1} Yg,t − Yg,t−1 − ∞                .
+          P1,1,t                                                                         P1,1,t
+                                         P                                      P
+Hence, in view of (37)-(38), σ 2 = limG g V (ψg )/G. Next, we show that g ψbg2 /G is asymptoti-
+                                                       P
+cally larger than σ 2 . For that purpose, let σ 2G = g E(ψg2 )/G and remark that ψbg = Jf (U ) × λg .
+Then                                                            "               #
+                        1 X b2           1  Xh               i    1 X
+                              ψ − σ 2G =           ψbg2 − ψg2 +       ψ 2 − σ 2G .                (43)
+                       G g g             G g                      G g g
+Let λk,g denote the kth coordinate of λg . Assumption S9 ensures that
+                                                
+                                      sup E λ4k,g < +∞.                                          (44)
+                                           k,g
+
+Thus, we also have supg E(ψg2 ) < +∞. Therefore, by the weak law of large numbers, the second
+term on the right-hand side of (43) converges to 0. Next,
+                                                 "              #
+           1 X h b2        i                        1 X
+                         2                   ∞
+                  ψg − ψg = (Jf (U ) − Jf (U ))           λg λg (Jf (U ) + Jf (U ∞ ))0 .
+                                                              0
+                                                                                          (45)
+          G g                                      G g
+                                                           P
+By (44) again and the weak law of large numbers, U −→ U ∞ . Moreover, f is continuously differ-
+                                                                                              P
+entiable in a vicinity of U ∞ , Thus, by the continuous mapping theorem, Jf (U ) − Jf (U ∞ ) −→ 0.
+By (44) once again and the weak law of large numbers,
+                                   1 X                        P
+                                          λg λ0g − E[λg λ0g ] −→ 0.
+                                   G g
+
+Moreover, by the Cauchy-Schwarz inequality and (44), we have, for all k, `,
+                      1 X                                                    
+                          E[λk,g λ`,g ] ≤ sup E[|λk,g λ`,g |] ≤ sup E |λk,g |2 < +∞.
+                      G g                 k,`,g                 k,`,g
+              P
+As a result, g λg λ0g /G = OP (1). Finally, because Jf (U ) converges in probability, Jf (U ) +
+Jf (U ∞ ) = OP (1). Thus, in view of (45), the first term on the right-hand side of (43) converges
+                                                   P                 P
+in probability to 0. Hence, we have proven that g ψbg2 /G − σ 2G −→ 0. Finally, E(ψg2 ) ≥ V (ψg )
+                P
+and thus σ 2G − g V (ψg )/G ≥ 0. Therefore, lim inf G σ 2G ≥ σ 2 .
+
+                                                    31
+

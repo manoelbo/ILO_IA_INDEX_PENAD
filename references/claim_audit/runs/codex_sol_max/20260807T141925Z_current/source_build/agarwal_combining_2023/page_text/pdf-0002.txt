@@ -1,0 +1,42 @@
+                                                                                                              2
+
+“We should stop training radiologists now. Its just completely obvious that within five years,
+                   deep learning is going to do better than radiologists."
+                                                                 – Geoffrey Hinton (in 2016)
+
+
+1       Introduction
+
+Artificial intelligence (AI) is a general-purpose technology with transformative potential sim-
+ilar to that of the steam engine and electricity (Brynjolfsson and Mitchell, 2017; Brynjolfsson
+et al., 2017; Agrawal et al., 2018; Acemoglu and Johnson, 2023; Goldfarb et al., 2023; Frank
+et al., 2019). But, in contrast to the transformation during the industrial revolutions, AI can
+potentially displace humans from tasks that require complex reasoning (Webb, 2019; Felten
+et al., 2019; Brynjolfsson and Mitchell, 2017). Advances in AI have therefore caused concern
+about the role of human work, even in highly skilled occupations (Ford, 2015). Indeed, a
+growing literature shows that AI tools based on machine learning can outperform humans
+on a host of predictive tasks, including those typically performed by experts (Liu et al. 2019;
+Lai et al. 2021; Mullainathan and Obermeyer 2019; Kleinberg et al. 2017).
+However, Hinton’s prediction about radiology — an iconic example in machine learning —
+may have been premature.1 Many argue that instead of being replaced by AI, it is optimal to
+have human radiologists use AI assistance, at least for the foreseeable future (Langlotz, 2019;
+Agrawal et al., 2019). In addition to considerable legal and regulatory challenges that stand
+in the way of full automation, there may be potential gains from combining human expertise
+with AI input that cannot be realized by exclusively relying on one or the other. For example,
+radiologists may correct mistaken AI predictions or may have access to information about the
+clinical context that has not yet been systematized and built into AI tools. Current regulatory
+practice is consistent with these arguments – approved AI tools for clinical decision-making
+typically play a supporting role rather than operating autonomously (see Norden and Shah,
+2022; Harvey and Gowda, 2020, for example). Similar reasons are likely to result in partial
+task automation or collaboration between human experts and AI being optimal in other
+contexts.
+We run an experiment to examine how radiologists use AI predictions, whether AI assistance
+improves their performance, estimate a model of (potentially biased) belief updating, and
+analyze what this model implies about the optimal form of collaboration between AI and
+humans.2 If humans correctly combine AI predictions with their own information, then AI
+    1
+      A more nuanced but qualitatively similar prediction that machine learning tools will displace radiologists
+is conveyed in Obermeyer and Emanuel (2016).
+    2
+      We will use the terms ‘humans’, ‘radiologists’, and ‘participants’ interchangeably.
+

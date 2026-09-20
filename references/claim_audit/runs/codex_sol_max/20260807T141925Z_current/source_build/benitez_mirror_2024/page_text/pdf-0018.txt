@@ -1,0 +1,25 @@
+          Figure 2: Correlation of GENOE and Other Indexes of Occupational Exposure
+
+
+
+
+Source: Authors’ formulation based on data from O*NET Felten et al. (2021); Webb (2019); Pizzinelli et al. (2023). Note:
+This figure displays the GENOE for the next one, five, and 10 years. The index measures the likelihood that occupations
+will be displaced by AI within each time horizon.
+
+
+3.3     Alternative Methodologies
+
+      We explore how GENOE estimates vary under different methodologies and prompt choices.
+Our baseline specification involves providing the model with the occupation name and a vector
+of tasks and asking for an estimate of the likelihood of job replacement. We then introduce six
+alternative indexes, each employing a distinct approach:
+      Blind Index: This approach removes the occupation name, relying solely on the task vector for
+estimations. This allows us to isolate the impact of task-specific factors from occupation-specific
+context factors in the model’s predictions and analyze if the absence of the occupation name sig-
+nificantly alters the estimates.
+      Task-by-Task Index: Instead of aggregating tasks under an occupation, we estimate the likeli-
+
+
+                                                          14
+

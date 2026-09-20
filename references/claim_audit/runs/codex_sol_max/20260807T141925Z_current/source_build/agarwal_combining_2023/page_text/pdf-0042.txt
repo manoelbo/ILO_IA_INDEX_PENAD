@@ -1,0 +1,73 @@
+                                                                                                                                                                          42
+
+inattention as in Sims (2003). A potentially interesting aspect is whether a designer can lever-
+age such endogenous responses by designing an information revelation policy that induces
+effort. We leave such extensions that leverage insights from information design (Kamenica
+and Gentzkow, 2011; Bergemann and Morris, 2019) to future work, but measure the total
+amount of time taken by the experts in our experiment with and without AI assistance.
+
+
+6.2                                Results
+
+Figure 8 shows a possibilities frontier for the trade-off between diagnostic quality against
+decision time for the two top-level pathologies with AI, calculated by varying m. It also
+shows the corner solutions where all cases are assigned to each of the modalities. The results
+suggest that there are potential gains from the optimal delegation of cases. An unassisted
+radiologist takes 2.7 minutes per case, or about $11, and incurs a relative decision loss of
+approximately seven for both of the top level pathologies with AI assistance. By moving
+to a solution on the frontier with a human expert – one whose assessments are as in our
+experiment – the designer can reduce both decision loss and the time taken per case by
+delegating many cases to the AI. The frontier with a Bayesian expert, as expected, is much
+more favorable. Moreover, the frontier for both a Human and a Bayesian expert coincide
+when the dollar cost of incorrect decisions (m) is small because the vast majority of cases are
+assigned to the AI.
+
+                                                                      Figure 8: Loss-Time Frontier
+
+
+                              20         Optimal Delegation w/ Human Expert                                          20         Optimal Delegation w/ Human Expert
+                                         Optimal Delegation w/ Bayesian DM                                                      Optimal Delegation w/ Bayesian DM
+Relative Mean Decision Loss
+
+
+
+
+                                                                                       Relative Mean Decision Loss
+
+
+
+
+                                         AI Only                                                                                AI Only
+    (cF N per 100 Cases)
+
+
+
+
+                                                                                           (cF N per 100 Cases)
+
+
+
+
+                              15         AI assisted expert                                                          15         AI assisted expert
+                                         AI assisted Bayesian DM                                                                AI assisted Bayesian DM
+                                         Expert Only                                                                            Expert Only
+                              10                                                                                     10
+
+
+
+                               5                                                                                      5
+
+
+
+                               0                                                                                      0
+                                   0.0    0.5     1.0     1.5      2.0     2.5   3.0                                      0.0    0.5     1.0     1.5      2.0     2.5   3.0
+                                           Mean Time Spent on Case (Minutes)                                                      Mean Time Spent on Case (Minutes)
+
+                                          (a) Airspace Opacity                                                            (b) Cardiomediastinal Abnormality
+Note: This graph shows how radiologists and the AI perform relative to delegation systems on the frontier of the cost of human
+time versus decision loss. Panel (a) focuses on airspace opacity. Panel (b) focuses on cardiomediastinal abnormality.
+
+
+
+Next, we investigate the proportion of decisions assigned to the three modalities as we vary
+

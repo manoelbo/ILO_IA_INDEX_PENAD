@@ -1,0 +1,57 @@
+                                   evidence of an increase in employment in software development. These findings suggest
+                                   that job posting and employment trends need not coincide and may offer different,
+                                   complementary signals for tracking trends in the job market. Another way to see
+                                   this is that the trend in Figure 5 occurred across sectors even as the US national
+                                   unemployment rate and labor force participation rate remained relatively stable.
+
+                  What explains the divergence between job posting trends and employment trends? Grow-
+ing labor demand would explain employment growth for software developers but not declines
+in job postings. Growing labor supply would also explain greater employment for software
+developers but not stable wages, all else equal. Explaining these trends requires a more
+nuanced story that would be valuable to explore in future work.8
+
+                                                     Job Postings by Sector and Unemployment Rate
+                                                                                                                       6.5
+                                  2.50                                                                Sector
+                                                                                                Arts & Entertainment
+                                                                                                Banking & Finance
+                                  2.25                                                          Legal                  6.0
+                                                                                                Management
+                                                                                                Nursing
+                                  2.00                                                          Software Development
+                                                                                                Unemployment Rate      5.5
+  Normalized Job Postings Index
+
+
+
+
+                                                                                                                         Unemployment Rate (%)
+                                  1.75
+                                                                                                                       5.0
+
+                                  1.50
+
+                                                                                                                       4.5
+                                  1.25
+
+
+                                                                                                                       4.0
+                                  1.00
+
+
+                                  0.75                                                                                 3.5
+
+                                         2021         2022            2023            2024              2025
+                                                                             Date
+
+Figure 5: Job postings trends for software developers and other occupations. Data comes
+from Indeed. National unemployment rate is from the BLS.
+
+   8
+     Another explanation is that a smaller share of jobs are posted on Indeed, though sites such as Ashby
+and TrueUp find similar patterns (Bryce Codell, 2023; Lenny Rachitsky, 2025).
+
+
+
+                                                                             14
+

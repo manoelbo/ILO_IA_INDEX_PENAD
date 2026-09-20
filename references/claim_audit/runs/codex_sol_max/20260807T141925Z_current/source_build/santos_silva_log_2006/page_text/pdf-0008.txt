@@ -1,0 +1,39 @@
+observations were partially compensated by rounded-up ones, the overall eﬀect of these
+errors would be relatively minor. However, the rounding down is more likely to occur for
+small or distant countries and, therefore, the probability of rounding down will depend
+on the value of the covariates, leading to the inconsistency of the estimators. Finally, the
+zeros can just be missing observations which are wrongly recorded as zero. This problem
+is more likely to occur when small countries are considered and, again, measurement error
+will depend on the covariates, leading to inconsistency.
+
+
+2.2 The Anderson-van Wincoop Gravity Equation
+
+Anderson and van Wincoop (2003) argue that the traditional gravity equation is not
+correctly specified as it does not take into account multilateral resistance terms. One
+of the solutions for this problem that is suggested by these authors is to augment the
+traditional gravity equation with exporter and importer fixed eﬀects, leading to
+
+                                   Tij = α0 Yiα1 Yjα2 Dij
+                                                       α3 θi θj
+                                                          e e ,                          (4)
+
+where α0 , α1 , α2 , and α3 are the elasticities to be estimated and θi and θj indicate the
+exporter and importer fixed eﬀects.
+  Their model also yields the prediction that α1 = α2 = 1, which leads to the unit-
+income-elasticity model
+                                      Tij = α0 Yi Yj Dijα3 eθi eθj
+
+whose stochastic version has the form
+
+                        E(Tij |Yi , Yj , Dij , θi , θj ) = α0 Yi Yj Dijα3 eθi eθj .      (5)
+
+  As before, log-linearization of (5) raises the problem of how to treat zero-value obser-
+vations. Moreover, given that (5) is a multiplicative model, it is also subject to the biases
+caused by log-linearization in the presence of heteroskedasticity. Naturally, the presence
+of the individual eﬀects may reduce the severity of this problem, but whether or not that
+happens is an empirical issue.
+
+
+                                                    7
+

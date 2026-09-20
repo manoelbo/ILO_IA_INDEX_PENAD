@@ -1,0 +1,42 @@
+                              NBER WORKING PAPER SERIES
+
+
+
+
+                     STILL WATERS, RAPID CURRENTS:
+        EARLY LABOR MARKET TRANSFORMATION UNDER GENERATIVE AI
+
+                                       Anders Humlum
+                                      Emilie Vestergaard
+
+                                      Working Paper 33777
+                              http://www.nber.org/papers/w33777
+
+
+                    NATIONAL BUREAU OF ECONOMIC RESEARCH
+                             1050 Massachusetts Avenue
+                               Cambridge, MA 02138
+                           May 2025, Revised March 2026
+
+
+
+
+This paper was previously circulated under the title “Large Language Models, Small Labor Market
+Effects.” We thank David Autor, Marianne Bertrand, Jacob Conway, Matthew Notowidigdo,
+Lindsey Raymond (discussant), Chad Syverson, and seminar participants at the 2025 NBER SI:
+Digital Economics and Artificial Intelligence, the 2025 SED Meeting: Automation, the Becker
+Friedman Institute, UC Berkeley, Boston College, Chicago Booth, the Chicago Fed, ETUI,
+Northwestern Kellogg, OpenAI Economic Research Conference, INSEAD, Microsoft Research,
+and MIT Sloan FutureTech for helpful comments and suggestions. This project received financial
+support from the Center for Applied Artificial Intelligence and the Polsky Center for
+Entrepreneurship and Innovation. Caspar Ringhof and Claude Code (Opus 4.6) provided excellent
+research assistance. The views expressed herein are those of the authors and do not necessarily
+reflect the views of the National Bureau of Economic Research.
+
+NBER working papers are circulated for discussion and comment purposes. They have not been
+peer-reviewed or been subject to the review by the NBER Board of Directors that accompanies
+official NBER publications.
+
+© 2025 by Anders Humlum and Emilie Vestergaard. All rights reserved. Short sections of text, not
+to exceed two paragraphs, may be quoted without explicit permission provided that full credit,
+including © notice, is given to the source.

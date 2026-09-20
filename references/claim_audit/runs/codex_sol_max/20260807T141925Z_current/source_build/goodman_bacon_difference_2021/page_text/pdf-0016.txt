@@ -1,0 +1,54 @@
+VWATT weights together the group-specific ATTs not by sample shares, but by a function of
+
+sample shares and treatment variance. The weights in (13) equal the sum of the decomposition
+
+weights for all the terms in which group 𝑘𝑘 acts as the treatment group, defined as 𝑤𝑤𝑘𝑘𝑇𝑇 .
+
+         The parameter in (13) does not necessarily have a structural interpretation. In general,
+
+𝑤𝑤𝑘𝑘𝑇𝑇 ≠ 𝑛𝑛𝑘𝑘∗ , so the parameter does not equal the sample ATT. 17 Neither are the weights proportional
+
+to the share of time each unit spends under treatment, so VWATT also does not equal the effect in
+
+the average treated period. The weights, specifically the central role of treatment variance, comes
+
+from the use of least squares. OLS combines 2x2 DD’s efficiently by weighting them according
+
+to variances of the treatment dummy. 18 VWATT lies along the bias/variance tradeoff: the weights
+
+deliver efficiency by potentially moving the point estimate away from, say, the sample ATT.
+
+         This tradeoff may not be worthwhile, particularly when VWATT differs strongly from a
+
+given parameter of interest, which occurs when treatment effect heterogeneity is correlated with
+
+treatment timing. Therefore, the processes that determine treatment timing are central to the
+
+interpretation of VWATT (see Besley and Case 2002). For example, a Roy model of selection on
+
+gains (where the number of units treated in each period is constrained) implies that treatment rolls
+
+out first to units with the largest effects. Site selection in experimental evaluations of training
+
+programs (Joseph Hotz, Imbens, and Mortimer 2005) and energy conservation programs (Allcott
+
+2015) matches this pattern. In this case, regression DD underestimates the sample-weighted ATT
+
+                                                                       �1 is very small and 𝐷𝐷
+if 𝑡𝑡1∗ is early enough (or there are a lot of “post” periods) so that 𝐷𝐷                   �𝐾𝐾 ≈ 0.5,
+
+                                                                                          �1 ≈ 0.5 and
+and overestimates it if 𝑡𝑡1∗ is late enough (or there are a lot of “pre” periods) so that 𝐷𝐷
+
+
+
+17
+   Abraham and Sun (2018), Borusyak and Jaravel (2017), Chernozhukov et al. (2013), de Chaisemartin and
+D’HaultfŒuille (2018b), Gibbons, Serrato, and Urbancic (2018), Wooldridge (2005) all make a similar observation.
+The DD decomposition theorem, provides a new solution for the relevant weights.
+18
+   This is exactly analogous to the result that two-stage least squares is the estimator that “efficient combines alternative
+Wald estimates” (Angrist 1991).
+
+                                                            14
+

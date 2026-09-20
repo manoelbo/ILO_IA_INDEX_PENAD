@@ -1,0 +1,44 @@
+states that the trade flow from country i to country j, denoted by Tij , is proportional to
+the product of the two countries’ GDPs, denoted by Yi and Yj , and inversely proportional
+to their distance, Dij , broadly construed to include all factors that might create trade
+resistance. That is,
+                                          Tij = α0 Yiα1 Yjα2 Dijα3 ,                                       (1)
+
+where α0 , α1 , α2 , and α3 are parameters to be estimated.
+  The analogy between trade and the physical force of gravity, however, clashes with the
+observation that there is no set of parameters for which equation (1) will hold exactly for
+an arbitrary set of observations. To account for deviations from the theory, stochastic
+versions of the equation are used in empirical studies. Typically, the stochastic version of
+the gravity equation has the form
+
+                                         Tij = α0 Yiα1 Yjα2 Dijα3 η ij ,                                   (2)
+
+where η ij is an error term with E(η ij |Yi , Yj , Dij ) = 1, assumed to be statistically indepen-
+dent of the regressors, leading to
+
+                                  E(Tij |Yi , Yj , Dij ) = α0 Yiα1 Yjα2 Dij
+                                                                         α3
+                                                                            .
+
+  There is a long tradition in the trade literature of log-linearizing (2) and estimating the
+parameters of interest by least squares using the equation
+                                                                                    ¡ ¢
+                ln (Tij ) = ln (α0 ) + α1 ln (Yi ) + α2 ln (Yj ) + α3 ln (Dij ) + ln η ij .                (3)
+
+The validity of this procedure depends critically on the assumption that η ij , and therefore
+  ¡ ¢
+ln η ij , are statistically independent of the regressors. To see why this is so, notice that
+the expected value of the logarithm of a random variable depends both on its mean and
+on the higher-order moments of the distribution. Hence, for example, if the variance of
+                                                                                          ¡ ¢
+the error term η ij in equation (2) depends on Yi , Yj , or Dij , the expected value of ln η ij
+will also depend on the regressors, violating the condition for consistency of OLS.2
+   2
+       As an illustration, consider the case in which ηij follows a log-normal distribution, with
+E(ηij |Yi , Yj , Dij ) = 1 and variance σ 2ij = f (Yi , Yj , Dij ). The error term in the log-linearized repre-
+                                                                 £ ¡ ¢            ¤
+sentation will then follow a normal distribution, with E ln ηij |Yi , Yj , Dij = − 12 ln(1 + σ2ij ), which is
+also a function of the covariates.
+
+                                                       5
+

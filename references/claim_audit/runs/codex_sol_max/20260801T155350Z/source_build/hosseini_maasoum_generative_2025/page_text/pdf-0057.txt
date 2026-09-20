@@ -1,0 +1,48 @@
+niors, the pre-period coefficients are slightly positive and drift gently toward zero by
+late 2022; post-2022Q4 they turn mildly negative, reaching approximately −0.04 years by
+2025Q1. This indicates that, relative to 2022Q4, the average LME of seniors at adopting
+firms declined by about 0.04 years compared to non-adopting firms by 2025Q1. The mag-
+nitude is economically small, corresponding to less than three weeks of experience, or
+roughly 0.3% of the average post-period LME for seniors (approximately 14 years).
+
+                                                                        Juniors                                     Seniors
+                                                1.0
+   DiD coefficient relative to 2022Q4 (years)
+
+
+
+
+                                                0.5
+
+
+
+
+                                                0.0
+
+
+
+
+                                                -0.5
+
+
+
+
+                                                -1.0
+
+                                                       2020   2021   2022     2023   2024   2025   2020   2021   2022     2023   2024   2025
+
+
+
+                                                Figure A.11: Event Study: Differential Evolution of Labor Market Experience
+         Notes: This figure plots quarterly event-study coefficients β k from the specification LME f ,t = α f +
+         αt + ∑k̸=2022Q4 β k · 1{t = k} · Adopter f + ε f ,t , estimated separately for juniors (left panel) and
+         seniors (right panel). The outcome is the firm-quarter worker-weighted average LME. Regressions
+         are weighted by the number of workers per firm-quarter cell, and standard errors are clustered at
+         the firm level. Shaded areas denote 95% confidence intervals. The vertical dashed line marks the
+         reference quarter 2022Q4 (the last pre-period quarter). Sample: quarters 2020Q1–2025Q1.
+
+
+
+
+                                                                                            A.12
+

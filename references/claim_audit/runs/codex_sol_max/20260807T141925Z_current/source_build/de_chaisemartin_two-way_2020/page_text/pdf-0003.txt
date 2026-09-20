@@ -1,0 +1,42 @@
+the standard deviation of the weights is equal to the minimal value of the standard deviation
+of the ATEs across the treated (g, t) cells under which the average treatment on the treated
+(ATT) may actually have the opposite sign than that coefficient. One can estimate that ratio
+to assess the robustness of the two-way FE coefficient. If that ratio is close to 0, that coefficient
+and the ATT can be of opposite signs even under a small and plausible amount of treatment
+effect heterogeneity. In that case, treatment effect heterogeneity would be a serious concern for
+the validity of that coefficient. On the contrary, if that ratio is very large, that coefficient and
+the ATT can only be of opposite signs under a very large and implausible amount of treatment
+effect heterogeneity.
+Finally, we propose a new estimator, DIDM , that is valid even if the treatment effect is hetero-
+geneous over time or across groups. It estimates the average treatment effect across all the (g, t)
+cells whose treatment changes from t − 1 to t. It relies on common trends assumptions on both
+potential outcomes. Those conditions are partly testable, and we propose a test that amounts
+to looking at pre-trends. This test differs from the standard event study pre-trends test (see
+Autor, 2003), which has been shown to be invalid when treatment effects are heterogeneous (see
+Abraham and Sun, 2018). We show that our estimator is asymptotically normal. We compute
+it in the data sets of Gentzkow et al. (2011) and Vella and Verbeek (1998), and in both cases
+we find that it is significantly different from βbf e .2 Our estimator can be used in applications
+where, for each pair of consecutive dates, there are groups whose treatment does not change.
+We estimate that this condition is satisfied for around 80% of the papers using two-way fixed
+effects regressions found in our survey of the AER.
+Overall, our paper has implications for applied researchers estimating two-way fixed effects
+regressions. First, we recommend that they compute the weights attached to their regression
+and the ratio of |βbf e | divided by the standard deviation of the weights. To do so, they can use the
+twowayfeweights Stata package that is available from the SSC repository. If many weights are
+negative, and if the ratio is not very large, we recommend that they compute our new estimator,
+using the fuzzydid and did_multiplegt Stata packages, also available from the SSC repository
+(see de Chaisemartin et al., 2019, for explanations on how to use the former package).
+We extend our results in several important directions. First, another commonly-used regression
+is the first-difference regression of Yg,t − Yg,t−1 , the change in the mean outcome in group g, on
+period fixed effects and on Dg,t − Dg,t−1 , the change in the treatment. We let βf d denote the
+expectation of the coefficient of Dg,t − Dg,t−1 . We show that under common trends, βf d also
+identifies a weighted sum of treatment effects, with potentially some negative weights. Second,
+in our Web Appendix we show that our results extend to fuzzy designs, where the treatment
+varies within (g, t) cells, and to two-way fixed effects regressions with a non-binary treatment
+and with covariates.
+  2
+      In both cases, our estimator is also significantly different from βbf d .
+
+
+                                                             3
+

@@ -1,0 +1,50 @@
+           Table A4: Preferential Trade Agreements in 1990.
+      EEC/EC          CARICOM             CACM
+      Belgium         Bahamas             Costa Rica
+      Denmark         Barbados            El Salvador
+      France          Belize              Guatemala
+      Germany         Dominican Rp.       Honduras
+      Greece          Guyana              Nicaragua
+      Ireland         Haiti
+      Italy           Jamaica             Bilateral Agreements
+      Luxembourg      Trinidad and Tobago EC-Cyprus
+      Netherlands     St Kitts and Nevis  EC-Malta
+      Portugal        Suriname            EC-Egypt
+      Spain                               EC-Syria
+      United Kingdom SPARTECA             EC-Algeria
+                      Australia           EC-Norway
+      EFTA            New Zealand         EC-Iceland
+      Iceland         Fiji                EC-Switzerland
+      Norway          Kiribati            Canada-US
+      Switzerland     Papua New Guinea    Israel-US
+      Liechtenstein   Solomon Islands
+
+      CER              PATCRA
+      Australia        Australia
+      New Zealand      Papua New Guinea
+
+                        Table A5: Summary Statistics.
+                                        Full Sample          Trade > 0
+               Variable              Mean Std. Dev.      Mean Std. Dev.
+Trade                               172132.2 1828720 328757.7 2517139
+Log of trade                           –          –      8.43383    3.26819
+Log of exporter’s GDP               23.24975    2.39727 24.42503    2.29748
+Log of importer’s GDP               23.24975    2.39727 24.13243    2.43148
+Log of exporter’s per capita GDP     7.50538    1.63986 8.09600     1.65986
+Log of importer’s per capita GDP     7.50538    1.63986 7.98602     1.68649
+Log of distance                      8.78551    0.74168 8.69497     0.77283
+Contiguity dummy                     0.01961    0.13865 0.02361     0.15185
+Common-language dummy                0.20970    0.40710 0.21284     0.40933
+Colonial-tie dummy                   0.17048    0.37606 0.16894     0.37472
+Landlocked exporter dummy            0.15441    0.36135 0.10767     0.30998
+Landlocked importer dummy            0.15441    0.36135 0.11401     0.31784
+Exporter’s remoteness                8.94654    0.26389 8.90383     0.29313
+Emporter’s remoteness                8.94654    0.26389 8.90787     0.28412
+Preferential-trade agreement dummy 0.02505      0.15629 0.04452     0.20626
+Openness dummy                       0.56373    0.49594 0.65796     0.47442
+
+
+
+
+                                    40
+

@@ -1,0 +1,54 @@
+that are potentially associated with the outcome evolution of Y (0) during post-treatment periods. We ex-
+plicitly rule out incorporating post-treatment covariates as they can potentially be affected by the treatment;
+see, e.g., Wooldridge (2005b), for a related discussion under the unconfoundedness setup.
+
+
+3    Summarizing Group-Time Average Treatment Effects
+The previous section shows that we can identify the AT T (g, t)’s by restricting treatment anticipation
+behavior and imposing a conditional parallel trends assumption. In many applications, the AT T (g, t)’s
+can be the ultimate causal parameters of interest. They can be used to highlight treatment effect hetero-
+geneity across different groups g, at different points in time t, and across different lengths of treatment
+exposure, e = t − g. In other situations, however, researchers may want to combine these different
+AT T (g, t)’s to form more aggregated causal parameters. For instance, if the number of groups and time
+periods is relatively large, it may be challenging to interpret many group-time average treatment effects.
+    In this section, we consider different aggregation schemes for the AT T (g, t)’s that allow researchers
+to form a variety of summary measures of the causal effects of a given policy. Our aggregation schemes
+are of the form
+                                              T
+                                             XX
+                                       θ=              w (g, t) · AT T (g, t),                           (3.1)
+                                             g∈G t=2
+
+where w (g, t) are carefully-chosen (known or estimable) weighting functions specified by the researcher
+such that θ can be used to address a well-posed empirical/policy question. Difference choices of w (g, t)
+allows researchers to highlight different types of treatment effect heterogeneity. We pay particular at-
+tention to aggregations that result in a single overall treatment effect summary parameter as well as to
+aggregations related to understanding dynamic effects as is commonly done in event-study analysis. Of
+course, many other aggregated parameters of the type (3.1) can be easily constructed following our frame-
+work. We illustrate this point by also summarizing heterogeneity with respect to group or by calendar
+time.
+    Before proceeding with the discussion on how to construct these different aggregated parameters, it is
+worth revisiting the two most popular treatment effect summary measures used by practitioners in DiD
+setups. These are based on the “static” and “dynamic” two-way fixed effects (TWFE) linear regression
+specifications
+
+                          Yi,t = αt + αg + βDi,t + i,t ,                                                (3.2)
+                                              −2
+                                              X                          L
+                                                                         X
+                          Yi,t = αt + αg +                       e
+                                                    δeanticip · Di,t +               e
+                                                                               βe · Di,t + vi,t ,        (3.3)
+                                             e=−K                        e=0
+
+respectively, where αt is a time fixed effect, αg is a group fixed effect, i,t and vi,t are error terms,
+ e = 1 {t − G = e} is an an indicator for unit i being e periods away from initial treatment at time
+Di,t         i
+t, and K and L are positive constants. The parameter of interest in the static TWFE specification is
+β, which, in applications, is typically interpreted as an overall effect of participating in the treatment
+across groups and time periods. In the dynamic TWFE specification, practitioners usually focus on the
+βe , e ≥ 0, and these parameters are typically interpreted as measuring the effect of participating in the
+
+
+                                                          13
+

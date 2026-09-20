@@ -1,0 +1,56 @@
+Theorem S4 Suppose that Assumptions 1-2 and S3-S4 hold. Then,
+                                                       
+                                      X Ng,t
+                          βfXe = E             wX ∆g,t  .
+                                            N1 g,t
+                                                  (g,t):Dg,t =1
+
+
+
+
+Theorem S4 shows that under a modified version of the common trends assumption accounting
+for the covariates, βfXe identifies a weighted sum of the ∆Tg,tR s, as βf e in Theorem 1, with different
+but still potentially negative weights.7 Assumption S4 may be more plausible than Assumption
+5, but adding covariates may increase the prevalence of negative weights, or the correlation
+between the weights and the ∆g,t s, thus making βfXe less robust to heterogeneous effects than
+βf e .
+
+
+3.4    2SLS regressions
+
+Researchers have sometimes estimated 2SLS versions of Regressions 1 and 2. Our main con-
+clusions also apply to those regressions. Let βbf2SLS
+                                                    e    denote the coefficient of Di,g,t in a 2SLS
+regression of Yg,t on group and period fixed effects and Di,g,t , using a variable Zg,t constant
+within each group × period as the instrument for Di,g,t . Zg,t typically represents an incentive
+for treatment allocated at the group × period level. For instance, Duflo (2001) studies the effect
+of years of schooling on wages in Indonesia, using a primary school construction program as
+an instrument. Specifically, she estimates a 2SLS regression of wages on cohort and district of
+birth fixed effects and years of schooling, using the interaction of belonging to a cohort entering
+primary school after the program was completed and the number of schools constructed in one’s
+district of birth as the instrument for years of schooling.
+Remark that βbf2SLS
+                e    = βbfYe /βbfDe , where βbfYe (resp. βbfDe ) is the coefficient of Zg,t in the reduced-
+form regression of Yg,t (resp. the first-stage regression of Dg,t ) on group and period fixed effects
+and Zg,t . Then let βf2SLS
+                        e      = E[βbfYe ]/E[βbfDe ].8 Following Imbens and Angrist (1994), for any
+z ∈ Supp(Z) let Di,g,t (z) denote the potential treatment of unit i in (g, t) if Zi,g,t = z. It
+follows from Theorem 1 that under a common trends assumption on Di,g,t (0), E[βbfDe ] is equal to
+a weighted sum of the average effects of the instrument on the treatment in each group and time
+period, with potentially many negative weights. Similarly, under a common trends assumption
+   7
+     In a previous version of this paper, we had shown that under a different, and arguably less natural, common
+trends assumption, βfXe identifies a weighted sum of the ∆Tg,tR , with the same weights as in Theorem 1. We thank
+an anonymous referee for pointing out issues with the common trends assumption we had previously proposed.
+   8
+     We do not consider here E[βbf2SLS
+                                     e  ], as the 2SLS estimator may not have an expectation. Moreover, under
+conditions similar to those imposed in Section 5 of the paper, βf2SLS  e    is the probability limit of βbf2SLS
+                                                                                                            e   , which
+makes βf e
+         2SLS
+               the proper estimand here.
+
+
+                                                           9
+

@@ -1,0 +1,40 @@
+for some vector γ and constant λt , and where Xg = (Xg,1 , ..., Xg,T ). Importantly, when the
+covariates are group-specific linear trends, the equation above is equivalent to
+
+                       E (Yg,t (0)|Dg , Xg ) − E (Yg,t−1 (0)|Dg , Xg ) = γg + λt ,
+
+meaning that from t − 1 to t, the evolution of Y (0) in group g should deviate from its group-
+specific linear trend γg by an amount λt common to all groups. Second, the residual εg,t in the
+weights in Theorem 1 has to be replaced by εX   g,t , the residual of observations in cell (g, t) in the
+regression of Dg,t on group and period fixed effects and Xg,t . Some of the corresponding weights
+may still be negative, as in Theorem 1. Overall, two-way fixed effects regressions with covariates
+may rely on a more plausible common trends assumptions than those without covariates, but
+they still require that the treatment effect be homogeneous, across time and between groups.
+Third, we show that under the common trends assumption and the assumption that the ATE
+of a (g, t) cell does not change over time, βf e and βf d identify weighted sums of the ATEs of the
+(g, t) cells whose treatment changes between t − 1 and t. In sharp designs, the weights attached
+to βf d are all positive, while for βf e , the same only holds in staggered adoption designs.
+Fourth, we show that our DIDM estimator can easily be extended to non-binary, discrete treat-
+ments. Then, we define it as a weighted average of DIDs comparing the evolution of the outcome
+in groups whose treatment went from d to d0 between t − 1 and t and in groups with a treatment
+of d at both dates, across all possible values of d, d0 , and t.
+Finally, our twowayfeweights, fuzzydid, and did_multiplegt Stata packages can handle all
+of those extensions.
+
+
+6     Applicability, and applications
+
+6.1    Applicability
+
+We conducted a review of all papers published in the American Economic Review (AER) between
+2010 and 2012 to assess the importance of two-way fixed effects regressions in economics. Over
+these three years, the AER published 337 papers. Out of these 337 papers, 33 or 9.8% of them
+estimate the FE or FD Regression, or other regressions resembling closely those regressions.
+When one withdraws from the denominator theory papers and lab experiments, the proportion
+of papers using these regressions raises to 19.1%.
+
+
+
+
+                                                   19
+

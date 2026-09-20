@@ -1,0 +1,49 @@
+                                                   WORKING PAPER
+
+
+LLMs’ potential impact on the labor market is limited since it does not consider total factor productivity or
+capital input potential. In addition to their influence on labor, LLMs may also influence these dimensions.
+    At this stage, some general-purpose technology criteria are easier to evaluate than others. Our primary
+focus at this early stage is to test the hypothesis that LLMs have a pervasive influence on the economy,
+similar to the approach taken by (Goldfarb et al., 2023), who analyzed machine learning diffusion through
+job postings to assess its status as a general-purpose technology. Instead of using job postings or studying
+machine learning in general, we employ the task evaluation approach with both human and GPT-4 annotations.
+This analysis may reveal whether the impacts are limited to a specific set of similar tasks or occupations or if
+they will be more widespread.
+    Our findings suggest that, based on their task-level capabilities, LLMs have the potential to significantly
+affect a diverse range of occupations within the U.S. economy, demonstrating a key attribute of general-purpose
+technologies. In the following sections, we discuss results across various roles and wage structures. Additional
+results on the relative exposure of industries within the U.S. economy can be found in Appendix C.
+
+4.1    Summary Statistics
+Summary statistics for these measures can be found in Table 3. Both human and GPT-4 annotations indicate
+that average occupation-level 𝛼 values fall between 0.14 and 0.15, suggesting that, on average, approximately
+15% of tasks within an occupation are directly exposed to LLMs.6 This figure increases to over 30% for 𝛽
+and surpasses 50% for 𝜁. Coincidentally, human and GPT-4 annotations also tag between 15% and 14% of
+total tasks in the dataset as being exposed to LLMs. Based on the 𝛽 values, we estimate that 80% of workers
+belong to an occupation with at least 10% of its tasks exposed to LLMs, while 19% of workers are in an
+occupation where over half of its tasks are labeled as exposed.
+    We ran one set of analyses using O*NET’s "Importance" scores but did not find significant changes to our
+findings. Though we do acknowledge that not weighting relative importance of a task to a given occupation
+yields some curious results (e.g. ranking Barbers as having reasonably high exposure).
+    Although the potential for tasks to be affected is vast, LLMs and LLM-powered software must be
+incorporated into broader systems to fully realize this potential. As is common with general-purpose
+technologies, co-invention barriers may initially impede the rapid diffusion of GPTs into economic applications.
+Furthermore, predicting the need for human oversight is challenging, especially for tasks where model
+capabilities equal or surpass human levels. While the requirement for human supervision may initially slow
+down the speed at which these systems diffuse through the economy, users of LLMs and LLM-powered
+systems are likely to become increasingly acquainted with the technology over time, particularly in terms of
+understanding when and how to trust its outputs.
+
+4.2    Wages and Employment
+In Figure 3, we present exposure intensity across the economy. Each point on the plot displays occupational
+exposure, where the point’s x-axis value represents the share of an occupation’s tasks that are exposed (at
+each level 𝛼, 𝛽, and 𝜁) and the point’s y-axis value represents the share of all US occupations with that share
+of tasks exposed. For example, human annotators determined that 2.3% of occupations are 𝛼50 -exposed,
+21.6% are 𝛽50 -exposed, and 47.3% are 𝜁50 -exposed, where the threshold of 50% comes from the x-axis and
+the percentage of occupations comes from the y axis. At any given point on the x-axis, the vertical distance
+between the 𝛼 and the 𝜁 represents the exposure potential attributable to tools and applications beyond direct
+exposure to LLMs. All tasks within an occupation in this figure are given equal weight.
+   6We compute occupation-level scores for Table 3 assigning double the weight to tasks designated as "core" by O*NET as tasks
+designated "supplemental". All tasks weights sum to one within an occupation.
+

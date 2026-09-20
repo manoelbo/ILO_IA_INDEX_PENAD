@@ -1,0 +1,46 @@
+Physical, and Social Science Occupations (SOC=19); Community and Social Service Occupa-
+tions (SOC=21); Legal Occupations (SOC=23); Educational Instruction and Library Occu-
+pations (SOC=25); Arts, Design, Entertainment, Sports, and Media Occupations (SOC=27);
+Healthcare Practitioners and Technical Occupations (SOC=29); Healthcare Support Occupa-
+tions (SOC=31); Protective Service Occupations (SOC=33); Food Preparation and Serving Re-
+lated Occupations (SOC=35); Building and Grounds Cleaning and Maintenance Occupations
+(SOC=37); Personal Care and Service Occupations (SOC=39); Sales and Related Occupations
+(SOC=41); Office and Administrative Support Occupations (SOC=43); Farming, Fishing, and
+Forestry Occupations (SOC=45); Construction and Extraction Occupations (SOC=47); Instal-
+lation, Maintenance, and Repair Occupations (SOC=49); Production Occupations (SOC=51);
+Transportation and Material Moving Occupations (SOC=53).
+
+    The occupation groupings used in the main text figures are: Personal Services occupa-
+tions combine SOC codes 31-39: Healthcare support, Protective services, Food preparation
+and serving, Cleaning and maintenance, and Personal care. Blue Collar occupations combine
+SOC codes 47-53: Construction, Extraction, Installation, Maintenance and Repair, Production,
+Transportation, and Moving.
+
+    We elicited respondents’ job titles through a free text response with autocomplete sugges-
+tions covering over 40,000 occupations from O*NET and the Occupational Outlook Handbook
+and then match them to Standard Occupation Classification (SOC) codes using a parsing algo-
+rithm that identifies occupations in 97 percent of cases. For job titles that do not exactly match
+a unique SOC code, we present respondents with a choice of probabilistic matches using the
+job title to SOC code matching algorithm developed by the National Institute for Occupational
+Safety and Health (Laughlin et al., 2024).
+
+
+A.5   Reasons for Not Using Generative AI at Work
+
+In the November 2024 wave, we asked people who know about genAI but do not use it at work
+the following question.
+
+    You indicated that you do not use Generative AI for your job. Below is a list of common
+reasons why people do not use Generative AI for their job. Please select all that apply to you.
+
+   The answer options were:
+
+
+  1. Generative AI cannot help with my job.
+
+  2. I am unsure how to use Generative AI effectively for my job.
+
+  3. My employer does not allow me to use Generative AI.
+
+                                               10
+

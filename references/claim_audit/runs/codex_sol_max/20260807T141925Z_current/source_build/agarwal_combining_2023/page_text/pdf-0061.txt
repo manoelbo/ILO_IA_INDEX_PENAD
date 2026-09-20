@@ -1,0 +1,24 @@
+                                                                                            61
+
+[The probability for the sub-pathologies is required only if the parent pathology prevalence is
+greater than 10%]
+
+                              Figure B.4: Pathology Hierarchy
+
+
+
+
+AI Support Tool
+
+The AI support tool that is provided uses only the X-ray image to predict the probability of
+each potential pathology of interest. The tool is based on state-of-the-art machine learning
+algorithms developed by a leading team of researchers at Stanford University. The tool is
+trained only on X-ray images, meaning it does not incorporate the clinical history of the
+patients.
+Performance of the AI Support
+The AI tool is described in Irvin et al. [2019], which showed the AI tool performed at or near
+expert levels across the pathologies studied. Below we plot two measures of performance of
+the AI tool. We plot in blue the accuracy of the tool, defined as the share of cases correctly
+diagnosed when treating false positives and false negatives equally. In red, we plot the Area
+Under the ROC curve (AUC), which is another measure of AI classification performance.
+

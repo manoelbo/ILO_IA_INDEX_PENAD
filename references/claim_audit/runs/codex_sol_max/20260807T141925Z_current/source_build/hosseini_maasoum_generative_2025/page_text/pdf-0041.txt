@@ -1,0 +1,42 @@
+                          Table 4: Hiring, Separations, and Promotions
+
+                                    Hiring             Separation            Promotion (rate)
+       Treat × Post                −4.006∗∗∗            −1.089∗∗∗                  0.033∗∗
+                                    (0.221)              (0.163)                   (0.014)
+       Pre-period mean               5.059                4.154                     0.822
+       Observations                7,941,179            7,941,179                7,690,581
+       Clusters (firms)                                     280,866
+        Notes: This table reports the estimated β from Equation 15. Estimation begins in 2018 to
+       exclude early-sample trends. Standard errors clustered by firm in parentheses.
+       ∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+
+
+
+6    Conclusion
+
+This paper provides early, large-scale evidence that the diffusion of GenAI since 2023 is
+associated with seniority-biased employment effects within firms. Using résumé and job-
+posting data linked to roughly 281,000 U.S. firms, together with a firm-level adoption
+measure based on “GenAI integrator” vacancies, we document a decline in junior em-
+ployment relative to senior employment at adopting firms compared with non-adopting
+firms. This decline is concentrated in high-exposure occupations: within adopting firms,
+junior employment in high-exposure occupations contracts relative to low-exposure oc-
+cupations after 2022, while the corresponding senior series continues to rise. Task-level
+evidence from job postings points to the same mechanism: GenAI-exposed tasks become
+less likely to appear in junior task bundles at adopting firms. Finally, decomposing em-
+ployment flows shows that the decline is driven primarily by slower hiring rather than
+increased separations.
+    These findings should be interpreted with caution. Adopting firms differ systemat-
+ically in size, workforce composition, and industry. Although our research designs ab-
+sorb many observable and unobservable differences across firms, sectors, and time, un-
+observed confounding factors may remain. We therefore examine four prominent alterna-
+tive explanations: monetary tightening, post-pandemic hiring dynamics, the expansion
+of remote work, and labor-supply shocks. These tests support our interpretation, but they
+cannot rule out all alternative explanations. In addition, our adoption measure captures
+deliberate organizational integration of GenAI but may miss informal or “silent” adop-
+
+
+
+
+                                                  41
+

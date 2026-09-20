@@ -1,0 +1,21 @@
+Title:           Generative AI and Jobs
+Subject:         ILO WORKING PAPER 140
+Author:          Pawel Gmyrek, Janine Berg, Karol Kaminski, Filip Konopczynski, Agnieszka Ladna, Balint Nafradi, Konrad Roslaniec, Marek Troszynski
+Creator:         Adobe InDesign 14.0 (Windows)
+Producer:        Adobe PDF Library 15.0
+CreationDate:    Mon May 19 09:24:30 2025 -03
+ModDate:         Mon May 19 09:24:47 2025 -03
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           76
+Encrypted:       no
+Page size:       595.276 x 841.89 pts (A4)
+Page rot:        0
+File size:       4211233 bytes
+Optimized:       yes
+PDF version:     1.7

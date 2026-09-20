@@ -1,0 +1,30 @@
+                  Figure 2: Use of big Data Analytics and AI (% of firms)
+
+
+
+
+Note: Average share of firms reporting to use AI by country groups, controlling for firms’ sector. The
+error bars represent 95% confidence intervals. Source: EIBIS 2019-2024.
+
+
+
+   Beyond EIBIS data, a benchmark indicator of AI preparedness points to the US being
+more conducive to AI adoption and better suited to make the most of it. Figure 3 shows
+the IMF’s AI preparedness index, which measures how ready countries are to adopt AI
+based on factors like digital infrastructure, human capital, innovation, and regulation
+(Cazzaniga et al., 2024). Across the key categories of the index, the US scores lie in the
+upper range of scores for the European countries in our sample.
+
+                                Figure 3: AI Preparedness Index
+
+
+
+
+Note: The AI Preparedness Index for the EU ranges from the minimum to the maximum across EU
+countries. Source: Cazzaniga et al. (2024).
+
+
+
+
+                                                  8
+

@@ -1,0 +1,85 @@
+57    ILO Working Paper 140
+
+
+
+
+     Exposure      4-digit code   Occupation Name                                                  Mean   SD
+
+     Not Exposed   7521           Wood Treaters                                                    0.22   0.15
+
+     Not Exposed   7523           Woodworking Machine Tool Setters and Operators                   0.22   0.16
+
+     Not Exposed   8183           Packing, Bottling and Labelling Machine Operators                0.22   0.01
+
+     Not Exposed   2342           Early Childhood Educators                                        0.21   0.05
+
+     Not Exposed   2651           Visual Artists                                                   0.21   0.04
+
+     Not Exposed   3143           Forestry Technicians                                             0.21   0.07
+
+     Not Exposed   5169           Personal Services Workers Not Elsewhere Classified               0.21   0.07
+
+     Not Exposed   7127           Air Conditioning and Refrigeration Mechanics                     0.21   0.11
+
+     Not Exposed   7213           Sheet Metal Workers                                              0.21   0.09
+
+     Not Exposed   7311           Precision-instrument Makers and Repairers                        0.21   0.08
+
+     Not Exposed   8112           Mineral and Stone Processing Plant Operators                     0.21   0.1
+
+     Not Exposed   8154           Bleaching, Dyeing and Fabric Cleaning Machine Operators          0.21   0.15
+
+     Not Exposed   9331           Hand and Pedal Vehicle Drivers                                   0.21   0.08
+
+     Not Exposed   2269           Health Professionals Not Elsewhere Classified                    0.2    0.08
+
+     Not Exposed   3222           Midwifery Associate Professionals                                0.2    0.07
+
+     Not Exposed   5152           Domestic Housekeepers                                            0.2    0.1
+
+     Not Exposed   5165           Driving Instructors                                              0.2    0.03
+
+     Not Exposed   5414           Security Guards                                                  0.2    0.09
+
+     Not Exposed   5419           Protective Services Workers Not Elsewhere Classified             0.2    0.05
+
+     Not Exposed   6129           Animal Producers Not Elsewhere Classified                        0.2    0.14
+
+     Not Exposed   7222           Toolmakers and Related Workers                                   0.2    0.1
+
+     Not Exposed   8122           Metal Finishing, Plating and Coating Machine Operators           0.2    0.04
+
+     Not Exposed   8182           Steam Engine and Boiler Operators                                0.2    0.04
+
+     Not Exposed   8311           Locomotive Engine Drivers                                        0.2    0.08
+
+     Not Exposed   8344           Lifting Truck Operators                                          0.2    0.1
+
+     Not Exposed   9321           Hand Packers                                                     0.2    0.05
+
+     Not Exposed   9334           Shelf Fillers                                                    0.2    0.1
+
+     Not Exposed   9520           Street Vendors (excluding Food)                                  0.2    0.1
+
+     Not Exposed   2653           Dancers and Choreographers                                       0.19   0.1
+
+     Not Exposed   3230           Traditional and Complementary Medicine Associate Professionals   0.19   0.11
+
+     Not Exposed   5311           Child Care Workers                                               0.19   0.09
+
+     Not Exposed   6122           Poultry Producers                                                0.19   0.1
+
+     Not Exposed   6130           Mixed Crop and Animal Producers                                  0.19   0.11
+
+     Not Exposed   7232           Aircraft Engine Mechanics and Repairers                          0.19   0.07
+
+     Not Exposed   7315           Glass Makers, Cutters, Grinders and Finishers                    0.19   0.06
+
+     Not Exposed   7411           Building and Related Electricians                                0.19   0.06
+
+     Not Exposed   8113           Well Drillers and Borers and Related Workers                     0.19   0.12
+
+     Not Exposed   3214           Medical and Dental Prosthetic Technicians                        0.18   0.05
+
+     Not Exposed   5120           Cooks                                                            0.18   0.06
+

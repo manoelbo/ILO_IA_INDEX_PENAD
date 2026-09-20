@@ -1,0 +1,15 @@
+### C.1 Seleção e composição dos casos ocupacionais
+O primeiro achado é sobre as próprias ocupações, e está na Tabela C.1: a correspondência semântica não reproduz a ordenação do artigo. Desenvolvedores e atendimento caem no topo da escala da OIT, como lá, mas supervisores de produção são majoritariamente não expostos ou sem pontuação disponível, estoquistas ficam inteiros em exposição mínima e auxiliares de saúde se dividem entre não expostos e minimamente expostos. Uso essa composição para interpretar os casos, e não para reclassificá-los; ausência de pontuação não é exposição zero.
+**Tabela C.1: Seleção e composição da exposição dos casos ocupacionais**
+
+[TABLE]
+Caso ocupacional | CBOs (n) | Confiança semântica | Referência em *Canaries* | Composição OIT no Brasil | Admissões pré-tratamento
+Desenvolvedores de software | 7 | Alta | Alta exposição | G3 64,6%; G2 29,9%; sem pontuação 5,5% | 293.893
+Atendimento ao cliente | 2 | Alta | Alta exposição | G3 100,0% | 160.341
+Gerentes de marketing e vendas | 2 | Alta | Quintil 4 | G2 100,0% | 68.132
+Supervisores de produção | 53 | Moderada | Quintil 3 | não exposto 58,3%; exposição mínima 5,5%; sem pontuação 36,2% | 62.953
+Estoquistas e repositores | 5 | Alta | Quintil 2 | exposição mínima 100,0% | 1.593.069
+Auxiliares de saúde e cuidado | 7 | Moderada | Quintil 1 | não exposto 62,4%; exposição mínima 37,6% | 147.801
+[/TABLE]
+
+> *Nota: a composição da OIT é ponderada pelas admissões entre janeiro de 2021 e outubro de 2022. A seleção dos casos usa títulos e tarefas oficiais da CBO de seis dígitos e é independente dessa classificação. A composição do dicionário precisa ser declarada, porque ela não é equilibrada: dos 76 códigos principais, 53 pertencem a um único caso, o de supervisores de produção, e dos 80 mapeamentos registrados 60 têm confiança **`medium`**, não **`high`**. A cobertura da pontuação da OIT também varia entre os casos, de 63,8% em supervisores a 100% em quatro deles. Por isso o caso de supervisores é o menos homogêneo do conjunto e o que menos suporta leitura substantiva. Dicionário congelado com SHA-256 **`b8d0310606c37ed3…`**; fonte: **`results/tables/table_5_3_1_occupation_cases.md`**.*

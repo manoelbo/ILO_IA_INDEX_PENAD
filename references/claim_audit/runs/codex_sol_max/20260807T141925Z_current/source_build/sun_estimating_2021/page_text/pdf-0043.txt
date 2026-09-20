@@ -1,0 +1,87 @@
+B       Proofs of decomposition results
+
+Proof of Proposition 1
+                                                                                                           |
+Proof. Collect the relative time indicators in a column vector Di,t = (1{t − Ei ∈ g}) g ∈ G . Collect their cor-
+                                                                      |
+responding coefficients in a column vector µ = (µg )g ∈ G . Partialling out the unit and time fixed effects,
+
+Regression (4) is
+
+                                                        YÜi,t = µ| D
+                                                                   Ü i,t + υi,t                                              (42)
+
+where XÜi,t is time- and cross-sectional demeaned version of Xi,t as defined in Definition 3. By the idempotent
+
+property of Lemma 1
+                                                      T
+                                                                           ! −1 T
+                                                      Õ                        Õ
+                                               |              Ü i,t D| ]
+                                         µg = eg            E[D      i,t
+                                                                                      Ü i,t Yi,t ]
+                                                                                    E[D                                      (43)
+                                                      t=0                     t=0
+
+where eg is a column vector with one in the entry corresponding to the entry of 1{t − Ei ∈ g} in Di,t , and
+
+zero otherwise.
+
+    To further develop the expression for the population regression coefficients µg , we note that by Lemma
+
+1, we have Tt=0 E[D
+            Í       Ü i,t Y ∞ ] = ÍT E[Di,t YÜ ∞ ] = 0 since Y ∞ is time-invariant, and E[D
+                                                                                          Ü i,t ] = 0 by the zero-
+                           i,0     t=0        i,0             i,0
+
+mean property.
+ ÕT                   T
+                      Õ                  T
+                                         Õ                 T
+                                                           Õ                     ÕT
+    E[DÜ i,t Yi,t ] =     Ü i,t Yi,t ] −
+                        E[D                  Ü i,t Y ∞ ] =
+                                           E[D               E[ Ü i,t Yi,t −Y ∞ ] =
+                                                                D                       Ü i,t E[Yi,t −Y ∞ |Ei ]] (44)
+                                                                                      E[D
+                                                    i,0                      i,0                       i,0
+  t=0                 t=0                 t=0                    t=0                                 t=0
+                                          |     {z          }
+                                                 =0
+                      T
+                      Õ                                     T
+                                                            Õ
+                  =           Ü i,t E[Yi,t −Y ∞ |Ei ]] −
+                            E[D              i,0                E[DÜ i,t ] E[Y ∞ −Y ∞ ]
+                                                                              i,t  i,0                                       (45)
+                      t=0                                   t=0 | {z }
+                                                                   =0
+                      T
+                      Õ                                            
+                  =           Ü i,t E[Yi,t −Y ∞ |Ei ] − E[Y ∞ −Y ∞ ] ].
+                            E[D              i,0           i,t  i,0                                                          (46)
+                      t=0
+We can abbreviate the term in the parentheses as f (Ei, t) to emphasize it is a function of Ei and t. Since Ei
+
+and t take on discrete values, we can write
+                                                                      ∞
+                                                                      Õ
+                     ∞
+           E[Yi,t −Yi,0             ∞
+                        |Ei ] − E[Yi,t    ∞
+                                       −Yi,0 ] C f (Ei, t) =               f (e, t) · 1 {Ei = e}                             (47)
+                                                                      e=0
+                                                                      Õ∞ ÕT
+                                                                  =               f (e, e + `) · 1{t − e = `} · 1 {Ei = e}   (48)
+                                                                      e=0 `=−T
+                                                                       T Õ  ∞
+                                                                                  `
+                                                                      Õ
+                                                                  =              Di,t 1 {Ei = e} · f (e, e + `).             (49)
+                                                                      `=−T e=0
+Even though we sum over e ∈ {0, . . ., ∞}, if there are no never-treated units (or no units in a particular cohort
+
+
+
+                                                                   43
+

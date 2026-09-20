@@ -1,0 +1,46 @@
+            predictor of Claude usage (relevance) but being measured independently,
+            is expected to be uncorrelated with sampling noise in our AUI estimates
+            (validity). As noted above, states with more workers in high-Claude-usage
+            roles do tend to have systematically higher usage per capita.
+
+            The 2SLS estimates imply modestly slower convergence: ≈ 0.89 unweighted
+            and ≈ 0.86 when weighting by each state’s working-age population.
+            However, these estimates are less precise, and only the former is statistically
+            distinguishable from 1 at the 10% level. Despite implying a slower convergence
+            than OLS, the 2SLS estimates still imply rapid diffusion: just four to five years
+            for the log deviation of each state’s AUI to shrink by 90%.
+
+            That said, our estimates are based on just three months of data. And while the
+            2SLS specification may help address sampling noise, considerable uncertainty
+            remains. We will revisit this question of the pace of diffusion in future reports.
+
+
+
+
+            1
+                As with previous reports, all our analysis is based on privacy-preserving
+                analysis. Throughout the report we analyze a random sample of 1M
+                conversations from Claude.ai Free, Pro and Max conversations (we also
+                refer to this as “consumer data” since it mostly represents consumer use)
+                and 1M transcripts from our first-party (1P) API traffic (we also refer to this
+                as “enterprise data” since it mostly represents enterprise use). Both samples
+                come from November 13, 2025 to November 20, 2025. We continue to manage
+                data according to our privacy and retention policies, and our analysis is
+                consistent with our terms, policies, and contractual agreements. For 1P API
+                data, each record is a prompt-response pair from our sample period which in
+                some instances is mid-session for multi-turn interactions.
+
+            2
+                The share of conversations on Claude.ai that were classified into neither
+                automation nor augmentation categories fell from 3.9% to 3.0%.
+
+            3
+                See, for example, Kalanyi et al (2025): “Second, as the technologies mature
+                and the number of related jobs grows, hiring spreads geographically. This
+                process is very slow, taking around 50 years to disperse fully.”
+
+
+
+
+The Anthropic Economic Index Report                                                               17
+

@@ -1,0 +1,44 @@
+               SKILL CONTENT OF TECHNICAL CHANGE                       1303
+
+IV.A. Industry Computerization and Task Trends
+      over Four Decades
+     We begin by estimating a model for the within-industry re-
+lationship between computer adoption and task change over four
+decades. Specically, we t the equation
+(13)                    DT jkt 5 a 1 fDC j 1 e jkt,
+where DT j k t 5 T j k t 2 T j k t is the change in industry j’s input of
+task k between years t and t and DC j is the annual change in the
+percentage of industry workers using a computer at their jobs
+between 1984 and 1997 (estimated from the October Current
+Population Survey supplements). While our model predicts that
+computer adoption should be highly correlated with industry task
+change during the computer era, we would not anticipate a simi-
+lar relationship for the precomputer era of the 1960s. Accord-
+ingly, we estimate equation (13) separately for each of the four
+decades in our sample. This allows us to conrm that the rela-
+tionship between computerization and industry task change in
+the 1970s–1990s does not reect trends that predate the com-
+puter era.18
+     Estimates of equation (13) for each of the four task measures
+are given in Table III. The rst two panels show that during the
+1970s, 1980s, and 1990s, rapidly computerizing industries raised
+their input of nonroutine analytic and interactive tasks signi-
+cantly more than others. For example, the point estimate of 12.04
+(standard error of 4.74) in column 1 of panel A indicates that
+between 1990 and 1998, a 10 percentage point increase in com-
+puter use was associated with a 1.2 centile annualized increase in
+labor input of nonroutine analytic tasks. To evaluate the magni-
+tude of this relationship, note that the mean annualized industry
+level rise in nonroutine analytic task input during 1990 –1998,
+tabulated immediately below the regression estimate, was 2.5
+percentiles. By comparison, the intercept of the bivariate regres-
+sion for this period is 0.1. Hence, almost the entirety of the
+observed within-industry change in nonroutine analytic input is
+“explained” by the computerization measure. Similar compari-
+sons conrm that the relationship between industry computer-
+ization and rising input of nonroutine interactive and analytic
+
+    18. As noted by Autor, Katz, and Krueger [1998] and Bresnahan [1999], the
+era of rapid computer investment began in the 1970s. Desktop computing became
+widespread in the 1980s and 1990s.
+

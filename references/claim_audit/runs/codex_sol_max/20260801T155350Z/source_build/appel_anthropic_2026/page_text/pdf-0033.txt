@@ -1,0 +1,25 @@
+            primitives—suggesting education may be capturing variation that’s better
+            explained by economic development and other factors.
+
+
+
+
+            Institutional factors shape the relationship between
+            task success and education years
+
+            Economic and institutional context—such as how education levels vary
+            within a geography—are related to how AI is being used. Interestingly, we
+            observe that task success is negatively associated with human education at the
+            country level, but positively related at the US state level. However, the positive
+            relationship at the state level becomes insignificant when controlling for other
+            primitives (see Figure 3.5). This means the relationship pattern at one level
+            of observation (country) contradicts the relationship pattern at another level
+            (US state). Cross-country, educated populations may attempt harder tasks and
+            therefore see lower success rates. Within homogeneous contexts, education
+            may not improve task success.
+
+
+
+
+The Anthropic Economic Index Report                                                              33
+

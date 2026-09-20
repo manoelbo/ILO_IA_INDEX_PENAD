@@ -1,0 +1,58 @@
+0% to 0.5%, depending on their occupation and their employer’s policy on use. These
+
+estimates are an order of magnitude smaller than the time savings reported in Section 1.4
+
+and fall within the confidence intervals of the observed earnings effects in Section 3.1.19
+
+       Second, the limited average earnings impacts primarily reflect the overwhelming share
+
+of workers reporting no change in earnings due to AI chatbots—rather than large positive
+
+and negative effects offsetting each other. This supports our conclusion from Figures 4
+
+and 5 that AI chatbots have not had significant heterogeneous impacts on workers.
+
+       Finally, the fact that virtually 100% of non-adopters report no earnings impact suggests
+
+that occupation-wide spillovers are minimal. Despite broad adoption and changes in work
+
+content, AI chatbots do not appear to have shifted equilibrium wages or hours.
+
+       Taken together, these self-reported perceptions from front-line workers in the most
+
+exposed occupations reinforce our conclusion that AI chatbots have so far had limited
+
+impacts on labor markets.
+
+
+5        Conclusion
+
+Generative AI is heralded as the engine of a new industrial revolution (World Economic
+
+Forum, 2024), yet we lack evidence on its economic impacts outside laboratory settings
+
+and case studies (Brynjolfsson, Li and Raymond, 2025; Noy and Zhang, 2023).
+
+       This paper provides large-scale and representative evidence on the early labor market
+
+impacts of AI chatbots, the most widely adopted Generative AI tool to date. Our study
+
+is based on a series of extensive surveys on AI chatbot usage in 11 exposed occupations,
+
+linked to administrative labor market data in Denmark.
+
+       Despite rapid adoption and substantial investments by both workers and firms, our
+
+key takeaway is that AI chatbots have had minimal impact on earnings and total hours
+
+to date. Moreover, we find no evidence of differential trends over time—even among “AI
+
+front-runners”—suggesting that the limited effects may persist.
+  19
+    As shown in Figure E.19, workers themselves report that only 3-7% of their time savings translate
+into higher earnings.
+
+
+
+                                                 22
+

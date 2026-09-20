@@ -1,0 +1,43 @@
+estimates if not properly addressed.
+
+    To mitigate endogeneity concerns, we develop an identification strategy inspired by
+Rajan and Zingales (1998). Their seminal insight is that characteristics measured in a
+benchmark economy can serve as an exogenous source of variation when applied to other
+countries. Whereas Rajan and Zingales (1998) assign US sectoral rankings of financial
+dependence to all countries, we extend this logic using a more granular, firm-level design.
+Specifically, we construct an external proxy for AI exposure by matching each EU firm
+to a set of comparable US firms – similar in sector, size class, investment intensity, in-
+novation activity, financing structure and management practices – and transferring the
+US firms’ AI adoption scores to the EU firm. Because US firms operate in a technolog-
+ical and institutional environment that is arguably exogenous to the EU, the matched
+US adoption measure captures the component of AI exposure that is unrelated to EU-
+specific policies, economic conditions or unobserved firm characteristics. This firm-level
+matching approach, which exploits cross-continental variation while tightly conditioning
+on underlying fundamentals, refines earlier sector-level strategies, such as the use of US
+sectoral AI adoption rates as in Gambacorta et al. (2025).
+
+    The matching between EU and US firms is implemented using a stratified propen-
+sity score matching (PSM) approach, which ensures comparability across firms based on
+observable characteristics. Building on the firm characteristics reported in Section 3.1,
+our strategy is the following. We stratify firms by two main categorical dimensions that
+seem to be crucial for AI adoption: sector and size class. Within each stratum, we match
+firms on variables for which the observed difference is the highest between AI and non-AI
+firms, as reported in Table 1. The chosen four key covariates are: (i) investment intensity
+per employee (in log), (ii) a binary indicator for whether a company issued bonds or
+equity, (iii) a binary indicator for innovation activity, and (iv) a binary indicator for the
+use of a strategic business monitoring system. The variables are not only motivated by
+our initial investigation of the main drivers of AI adoption in the previous Section but
+are also closely linked to the literature on firm productivity and technology adoption,
+highlights the importance of financial capacity, innovation orientation and managerial
+quality as determinants of both AI adoption and productivity outcomes (Bloom, Sadun,
+and Van Reenen, 2016; Hall, 2010).4
+
+   4
+     We confirm that the selected variables have high predictive power over AI adoption decisions in
+the EU and US, using a stylized linear regression model. The results are presented in Table B.1 in the
+Appendix.
+
+
+
+                                                 12
+

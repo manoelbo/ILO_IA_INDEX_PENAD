@@ -1,0 +1,38 @@
+to senior employment. Before turning to this aggregate evidence, we first examine the
+framework’s underlying mechanisms. Using an LLM, we map a representative sample of
+our job postings to standardized O*NET tasks and show that AI-exposed tasks become
+disproportionately less likely to appear in junior task bundles at adopting firms after 2023,
+while no comparable pattern emerges for seniors. This provides evidence consistent with
+the displacement channel. By contrast, tasks that were ex ante concentrated among se-
+niors do not systematically migrate into junior task bundles, offering little support for
+the reallocation channel. We complement these tests with external task-level data from
+the Anthropic Economic Index (Appel et al., 2026), documenting that real-world GenAI
+use is more likely to take the form of automation for tasks characteristic of junior occupa-
+tions, whereas usage in senior occupations is more often augmentative, consistent with
+the framework’s assumption that junior tasks are more susceptible to displacement.
+   We then turn to the firm-level employment response. We first compare junior and se-
+nior employment at adopting and non-adopting firms. From 2018 through 2022, junior
+employment evolves similarly in the two groups. Beginning in late 2022, however, ju-
+nior employment at adopters diverges sharply downward relative to non-adopters, while
+senior employment shows no comparable break. To directly assess the seniority-biased
+effect, we estimate a triple-difference specification that compares junior versus senior em-
+ployment within adopting firms relative to non-adopters. This design includes firm-by-
+time fixed effects, which absorb shocks or trajectories specific to a given firm in a given
+period, and industry-by-time-by-seniority fixed effects, which account for sector-level
+dynamics that differentially affect juniors and seniors. The coefficients are flat through
+2022Q4 and then decline sharply from 2023Q1 onward, reaching roughly a 9 percent de-
+cline in junior employment relative to senior employment after six quarters.
+   We next examine which types of jobs drive our results, focusing on heterogeneity by
+occupational exposure to GenAI using the widely used exposure measure of Eloundou
+et al. (2024). Specifically, we estimate a triple-difference specification that compares em-
+ployment changes in high- versus low-exposure occupations within adopting and non-
+adopting firms, separately for junior and senior workers. Through the end of 2022, the es-
+timated coefficients for juniors and seniors follow nearly identical trajectories. Beginning
+in 2023Q1, however, the two series diverge sharply. Junior employment in high-exposure
+occupations declines by roughly 7 percent relative to low-exposure occupations over the
+
+
+
+
+                                             5
+

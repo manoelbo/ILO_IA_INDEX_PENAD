@@ -1,0 +1,47 @@
+junior bundles at adopting firms post-ChatGPT.
+    We operationalize the model’s notion of an “ex-ante senior task” with a task-level
+senior-intensity score. For each O*NET task j, define
+
+                               #{(posting, j) pairs in pre-period at senior level}
+                SenInt j =                                                         ,                     (10)
+                                     #{(posting, j) pairs in pre-period}
+
+restricted to tasks appearing in at least 20 pre-period posting-task pairs (6,985 tasks), and
+standardized to unit variance. SenInt j measures where, on the pre-AI seniority gradient,
+task j predominantly sat: tasks close to the boundary x̂ on the senior side score high.
+    We re-estimate equations (8) and (9) with SenInt j in place of Exp j , and denote the
+resulting coefficients with tildes. Under reallocation, the model predicts β̃ J > 0 (senior-
+intensive tasks shift into junior bundles at adopters), β̃ S ≤ 0 (the mirror image: those
+same tasks leave senior bundles), and in the pooled specification β̃ A > 0 with β̃ AS < 0.
+Table 2 reports the results.
+
+    Table 2: Task-Level DHS Demand by Senior-Intensity and Seniority (Reallocation)
+
+                                     Juniors only               Seniors only                   Pooled
+                                   (1)           (2)          (3)           (4)          (5)            (6)
+SenInt j × Adopti                −1.114        −2.097       −0.495       −1.657        −0.012       −1.783
+                                 (2.995)       (3.384)      (3.284)      (3.034)       (3.401)      (3.407)
+SenInt j × Adopti × Seniors                                                            −0.835       −0.468
+                                                                                       (5.031)      (4.354)
+Task FE                             ✓            ✓             ✓            ✓            ✓              ✓
+Firm FE                             ✓            ✓             ✓            ✓            ✓              ✓
+Occ FE                                           ✓                          ✓                           ✓
+Occ × Firm FE                                    ✓                          ✓                           ✓
+N                                189,495      189,495       377,846      377,846       567,341      567,341
+Firms                              923          923           969          969           997          997
+Notes: Unit of observation is (task × firm × 6-digit SOC occupation × seniority group). The dependent
+variable is 100× the Davis et al. (1998) (DHS) growth rate in the task’s share of the cell’s posting bundles,
+comparing post-ChatGPT (2023Q1 through early April 2025) to pre-ChatGPT (2021Q3–2022Q4). SenInt j is
+the task-level senior-intensity score defined in equation (10), standardized to unit variance and restricted
+to tasks with at least 20 pre-period (posting, task) pairs (6,985 tasks). Columns (5)–(6) include the lower-
+order terms Seniors , SenInt j × Seniors , and Adopti × Seniors (coefficients not reported). Observations are
+weighted by the harmonic mean of pre- and post-period cell sizes (the DHS weight). Standard errors in
+parentheses are clustered at the firm level. ∗ , ∗∗ , ∗∗∗ denote significance at 10%, 5%, and 1%.
+
+
+    The pattern is uniformly null. None of the six coefficients on SenInt j × Adopti is sta-
+
+
+
+                                                       27
+

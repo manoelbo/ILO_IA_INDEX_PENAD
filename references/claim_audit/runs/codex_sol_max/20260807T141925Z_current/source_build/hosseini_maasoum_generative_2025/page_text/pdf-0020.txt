@@ -1,0 +1,51 @@
+previously holding a lower-seniority role within the same firm.20, 21
+
+
+4.2     GenAI Adoption
+
+4.2.1   GenAI Integrator Vacancies
+
+We identify GenAI adoption by detecting job postings that explicitly seek workers to im-
+plement or integrate GenAI technologies into firm workflows. Inspired by the approach
+of Hampole et al. (2025), we proceed in two steps. First, we compile a list of GenAI-related
+keywords and flag all postings containing at least one of them.22 Out of 198.8 million
+postings, 603,152 (0.30 percent) include at least one keyword. Second, we apply a large
+language model (LLM) classifier to this subset to identify genuine “GenAI integrator”
+postings—vacancies reflecting an active attempt to recruit workers tasked with adopting
+or implementing GenAI in the firm’s workflows—from generic GenAI mentions in job
+postings. (Supplemental Appendix A.11.1 provides the exact prompt used). This process
+yields 131,845 postings, 0.066 percent of the full corpus, classified as GenAI integrator
+roles. Supplemental Appendix A.12 provides a graphical overview of the procedure, and
+Supplemental Appendix A.13 presents illustrative examples of postings classified as in-
+tegrators and non-integrators.23
+  20 Roughly 5 percent of positions are “contained positions,” meaning that another position for the same
+
+individual in the same firm fully overlaps their reported work period. We treat such positions as follows.
+If the container has lower seniority than the contained position, we shorten the container’s end date to the
+contained position’s start date, treating the latter as a promotion. If the container has higher seniority, we
+drop the contained position.
+   21 Appendix A.9 presents the aggregate time series of average junior and senior employment across firms.
+
+The two series expand in parallel through 2022 and then diverge: senior employment continues to grow
+while junior employment plateaus and begins to fall by mid-2023. This pattern is consistent with the
+findings of Brynjolfsson et al. (2025a), who document a comparable divergence in U.S. payroll data by
+worker age, and with the rising unemployment of recent college graduates documented in Supplemental
+Appendix A.10.
+   22 Keywords include: Copilot, Claude, Gemini, large language model, LLM, generative AI, ChatGPT,
+
+Gen AI, GPT, LangChain, RAG, retrieval-augmented generation, vector embeddings, vector database,
+transformer-based model, prompt engineering, prompt design, LlamaIndex, Pinecone, Weaviate, Milvus,
+OpenAI API, Anthropic Claude API, Azure OpenAI, Google Vertex AI Generative, HuggingFace Trans-
+formers, and RetrievalQA.
+   23 As shown in Supplemental Appendix A.11.1, we instructed the LLM to exclude AI producers. Upon
+
+manual inspection, however, we find that some vacancies are engaged in helping other firms integrate
+LLMs into their workflows, and we classify these postings as integrators. While this does not directly
+prove that such firms have embedded AI internally, we view it as a reasonable proxy, since firms offering
+integration services are highly likely to have adopted these technologies themselves.
+
+
+
+
+                                                     20
+

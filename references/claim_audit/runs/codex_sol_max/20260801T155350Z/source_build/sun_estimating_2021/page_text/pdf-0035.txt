@@ -1,0 +1,51 @@
+               Figure 2: FE vs IW Estimates of the Effects of Hospitalization on Outcomes
+
+                                            (a) Out-of-pocket Medical Spending
+
+
+
+
+                              6000
+                              4000
+                          Estimate
+                           2000
+                              0
+                              -2000
+
+
+
+
+                                       -4       -2                0             2   4
+                                                           Relative Wave
+
+                                                             FE            IW
+
+
+
+                                                     (b) Labor Earnings
+                              10000
+                              0
+                          Estimate
+                           -10000
+                              -20000
+                              -30000
+
+
+
+
+                                       -4       -2                0             2   4
+                                                           Relative Wave
+
+                                                             FE            IW
+
+
+Notes: Each figure plots FE estimates b   µ` from regression (29) in triangles and IW estimates b  ν` from re-
+gression (31) in circles against relative wave `, with their respective pointwise 95% confidence intervals.
+Both are estimates for the effect of hospitalization at relative wave `. The outcome variable is out-of-pocket
+medical spending in panel (a) and labor earnings in panel (b) respectively.
+
+
+
+
+                                                            35
+

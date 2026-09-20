@@ -1,0 +1,13 @@
+### B.1 Tendências prévias da RAIS
+**Tabela B.1: Tendências prévias no modelo e na amostra exatos — RAIS**
+
+[TABLE]
+Desfecho | Janela | Períodos pré | p conjunto | p linear | Períodos com p \< 0,05 | Classificação
+Estoque em 31 de dezembro | 2019–2024 | 3 | 0,082 | 0,145 | 2 | falha
+Rotatividade (log) | 2021–2024 | 1 | 0,469 | 0,469 | 0 | passa
+Tempo médio de emprego (log) | 2019–2024 | 3 | 0,047 | 0,800 | 0 | falha
+[/TABLE]
+
+> *Notas: cada teste é estimado sobre o modelo, a amostra e a estrutura de agrupamento exatos do resultado reportado na Tabela D.1. A agregação anual, portanto, não remove todas as diferenças de tendência detectáveis entre tratados e controle. A rotatividade dispõe de um único período anterior à referência, e sua não rejeição não é prova de tendências paralelas.*
+As sensibilidades declaradas da família D, que incluem a janela de 2019 a 2024, a exclusão de 2020 e a exclusão de 2022, preservam o sinal e a ordem de magnitude dos três coeficientes. A exclusão de 2022 deixa a rotatividade sem período pré-referência anterior, de modo que sua tendência prévia passa a ser explicitamente **não estimável**. Nenhuma sensibilidade substitui a especificação principal, e todas estão fora da família D.
+**Uma sensibilidade declarada não pôde ser executada.** O estoque médio anual, alternativa ao estoque em data fixa, exigiria resolver 2.749.713 meses de início e 316.377 meses de fim inativos que os campos da fonte não determinam. Construí-la exigiria um proxy não declarado, e por isso o item consta como inexequível, e não como omitido.

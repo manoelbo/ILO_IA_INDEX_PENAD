@@ -1,0 +1,33 @@
+6     Conclusion
+
+This paper provides causal evidence that the adoption of artificial intelligence significantly
+enhances productivity in European firms, while simultaneously reshaping our understand-
+ing of its labor market implications. The results show that the adoption of AI increases
+labor productivity by 4% on average – a substantial yet measured gain that aligns with
+mid-range macroeconomic projections rather than more transformative estimates. Cru-
+cially, the productivity improvements stem from capital deepening rather than workforce
+reduction: AI augments worker output without diminishing employment levels in the
+short term, countering prevalent concerns about immediate job displacement. Moreover,
+the evidence suggests that, so far, workers in AI-adopting firms have benefited in terms
+of higher wages. The productivity benefits are, however, disproportionately concentrated
+among larger firms, financially advanced regions and technology-intensive sectors, risking
+heightened economic polarization.
+
+    The findings yield two key policy directions. First, targeted financial support mecha-
+nisms can help companies grow and reach the critical mass to benefit from AI transforma-
+tion. Our analysis shows that firms in an environment with more sophisticated financial
+market options are better equipped to invest in AI. Therefore, developing more effec-
+tive and sophisticated financial markets is a priority. This underscores the importance
+of focusing on the EU Savings and Investment Union, which is crucial for fast-growing,
+innovative companies. Second, workforce development can prioritize human-AI comple-
+mentarity through retraining and upskilling programs that upgrade worker skills towards
+prompt engineering, data stewardship and AI-augmented decision-making. This requires
+coordinated investments in vocational training, tertiary education and lifelong learning
+programs that will equip workers with the technical and cognitive capabilities needed to
+collaborate effectively with AI systems.
+
+
+
+
+                                             23
+

@@ -10,7 +10,7 @@ import pandas as pd
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "stock_proxy.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "stock_proxy.py"
 
 
 def load_module():
@@ -90,13 +90,26 @@ def test_stock_proxy_uses_total_pretreatment_gross_flow_as_scale() -> None:
     )
 
 
-def test_generated_stock_proxy_reports_single_adjusted_contrast() -> None:
-    results = PACKAGE_ROOT / "results" / "mechanisms"
+def test_generated_stock_proxy_reports_single_adjusted_contrast(
+    tmp_path: Path,
+) -> None:
+    module = load_module()
+    results = (
+        PACKAGE_ROOT
+        / "results"
+        / "reference"
+        / "artifacts"
+        / "caged"
+        / "mechanisms"
+    )
     estimate = pd.read_csv(results / "stock_proxy_result.csv")
     status = json.loads(
         (results / "stock_proxy_status.json").read_text()
     )
-    report = (results / "STOCK_PROXY.md").read_text()
+    support = pd.read_csv(results / "stock_proxy_support.csv")
+    report_path = tmp_path / "stock_proxy_report.md"
+    module.write_report(estimate, support, report_path)
+    report = report_path.read_text()
 
     assert len(estimate) == 1
     assert estimate["bh_adjusted_p_value"].notna().all()

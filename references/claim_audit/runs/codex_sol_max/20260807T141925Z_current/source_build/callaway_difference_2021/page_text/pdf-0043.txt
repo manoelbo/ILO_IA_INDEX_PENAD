@@ -1,0 +1,51 @@
+Crump, R. K., Hotz, V. J., Imbens, G. W., and Mitnik, O. A. (2009), “Dealing with limited overlap in estimation
+  of average treatment effects,” Biometrika, 96(1), 187–199.
+de Chaisemartin, C., and D’Haultfœuille, X. (2017), “Fuzzy differences-in-differences,” The Review of Economic
+  Studies, 85, 999–1028.
+de Chaisemartin, C., and D’Haultfœuille, X. (2020), “Two-way fixed effects estimators with heterogeneous treat-
+  ment effects,” American Economic Review, 110(9), 2964–2996.
+Dube, A., Lester, T. W., and Reich, M. (2010), “Minimum wage effects across state borders: Estimates using
+  contiguous counties,” Review of Economics and Statistics, 92(4), 945–964.
+Dube, A., Lester, T. W., and Reich, M. (2016), “Minimum wage shocks, employment flows, and labor market
+  frictions,” Journal of Labor Economics, 34(3), 663–704.
+Farber, H. S. (2017), “Employment, hours, and earnings consequences of job loss: US evidence from the displaced
+  workers survey,” Journal of Labor Economics, 35(S1), S235–S272.
+Ferman, B., and Pinto, C. (2019), “Inference in differences-in-differences with few treated groups and heteroskedas-
+  ticity,” Review of Economics and Statistics, 101(3), 452–467.
+Freyberger, J., and Rai, Y. (2018), “Uniform confidence bands: Characterization and optimality,” Journal of
+  Econometrics, 204(1), 119–130.
+Gibbons, C. E., Suárez Serrato, J. C., and Urbancic, M. B. (2018), “Broken or Fixed Effects?,” Journal of Econo-
+  metric Methods, 8(1).
+Goodman-Bacon, A. (2019), “Difference-in-differences with variation in treatment timing,” Working Paper.
+Graham, B., Pinto, C., and Egel, D. (2012), “Inverse probability tilting for moment condition models with missing
+  data,” The Review of Economic Studies, 79(3), 1053–1079.
+Hájek, J. (1971), “Discussion of ‘An essay on the logical foundations of survey sampling, Part I’, by D. Basu,”
+  in Foundations of Statistical Inference, eds. V. P. Godambe, and D. A. Sprott, Toronto: Holt, Rinehart, and
+  Winston.
+Han, S. (2020), “Identification in nonparametric models for dynamic treatment effects,” Journal of Econometrics,
+  Forthcoming.
+Heckman, J. J., Humphries, J. E., and Veramendi, G. (2016), “Dynamic treatment effects,” Journal of Economet-
+  rics, 191(2), 276–292.
+Heckman, J. J., Ichimura, H., Smith, J., and Todd, P. (1998), “Characterizing selection bias using experimental
+  data,” Econometrica, 66(5), 1017–1098.
+Heckman, J. J., Ichimura, H., and Todd, P. (1997), “Matching as an econometric evaluation estimator: Evidence
+  from evaluating a job training programme,” The Review of Economic Studies, 64(4), 605–654.
+Imai, K., Kim, I. S., and Wang, E. (2018), “Matching methods for causal inference with time-series cross-section
+  data,” Working Paper.
+Khan, S., and Tamer, E. (2010), “Irregular identification, support conditions, and inverse weight estimation,”
+  Econometrica, 78(6), 2021–2042.
+Kline, P., and Santos, A. (2012), “A score based approach to wild bootstrap inference,” Journal of Econometric
+  Methods, 1(1), 1–40.
+Kosorok, M. R. (2008), Introduction to Empirical Processes and Semiparametric Inference, New York, NY: Springer.
+Laporte, A., and Windmeijer, F. (2005), “Estimation of panel data models with binary indicators when treatment
+  effects are not constant over time,” Economics Letters, 88(3), 389–396.
+MacKinnon, J. G., and Webb, M. D. (2018), “The wild bootstrap for few (treated) clusters,” The Econometrics
+  Journal, 21(2), 114–135.
+MacKinnon, J. G., and Webb, M. D. (2020), “Randomization inference for difference-in-differences with few treated
+  clusters,” Journal of Econometrics, 218(2), 435–450.
+
+
+
+
+                                                        43
+

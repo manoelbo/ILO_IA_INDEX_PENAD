@@ -1,0 +1,47 @@
+1984, three years after the release of the IBM PC (the first mass-market computer). The com-
+puter and related information technologies induced far-reaching changes in firm organization
+and management, which led to substantial productivity gains (Brynjolfsson and Hitt, 1996).
+The similar pace of genAI adoption thus far suggests that it has the potential to be similarly
+disruptive. Moreover, we show that genAI adoption by workers is proceeding at a faster pace
+than adoption by firms, highlighting both challenges and opportunities for managers seeking to
+capitalize on this new technology (Babina et al., 2024; Bonney et al., 2024; Doshi and Moore,
+2025; McElheran et al., 2024).2
+
+    Second, which workers are currently using genAI, and what factors contribute to an individ-
+ual’s adoption decision? We find substantial variation in genAI adoption across demographic
+and labor market characteristics. Adoption has been faster for male, younger, more educated,
+and higher-wage workers. Adoption also differs greatly by occupation, suggesting that differ-
+ences in job roles and responsibilities are an important determinant of adoption. Consistent
+with this, we show that recent estimates of genAI task-based exposure are highly predictive of
+actual adoption (Eloundou et al., 2024; Felten et al., 2021), and that occupations with lower
+adoption also have higher shares of workers who report that genAI is not useful for their job.
+These findings contribute to our understanding of how genAI maps onto specific tasks and
+roles within the firm, which is relevant both for allocating adoption support and adapting firm
+organization.
+
+   We provide evidence that firm climate and policies also appear to play an important role
+in workers’ adoption choice. A sizable share of workers who do not use genAI cite workplace
+barriers as a key reason, and this share is particularly large in a few occupations who may deal
+with sensitive data. Alternatively, workers whose employers encourage them to use genAI are
+much more likely to do so, even after controlling for other characteristics. This suggests that
+when job tasks are amenable to genAI adoption, firms can play an active role by promoting
+usage, offering training, and removing organizational barriers to adoption.
+
+   Third, how large are potential productivity gains from genAI? Based on self-reported time
+savings due to genAI, the average genAI user would need to work 5.2% more hours in order to
+complete their work without genAI, implying 1.4% time savings across all workers (including
+non-users). We use a standard production model to estimate potential productivity gains at the
+industry and aggregate level. We find wide variation in potential productivity gains by industry,
+   2
+    The Census BTOS Survey estimates between August and November 2024 5.4% of firms had incorporated
+AI technologies into their production process. This suggests that firm-based measures may miss an important
+share of genAI adoption. Aaron Levie, the founder and CEO of Box, a cloud storage provider, compares this
+pattern with past technologies: “It’s almost a one-to-one parallel with the early wave of consumerization of IT.
+We saw that exact same dynamic in the early 2010s, which was employees of enterprises were pretty frustrated
+with their traditional document management and collaboration technology, and so they would go out and just
+go onto a web browser, sign up for a Box account, and then bring it into their organization.” (Levine, 2024)
+
+
+
+                                                       2
+

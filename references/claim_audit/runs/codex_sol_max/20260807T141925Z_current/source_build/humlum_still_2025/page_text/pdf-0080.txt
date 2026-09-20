@@ -1,0 +1,68 @@
+                                Figure B.1: Workloads from AI Chatbots
+
+                                                     (a) Adopters
+     Teachers            Encouraged
+                         Non-Encouraged
+     Marketing           Encouraged
+                         Non-Encouraged
+     Customer Service    Encouraged
+                         Non-Encouraged
+     Journalists         Encouraged
+                         Non-Encouraged
+     IT Support          Encouraged
+                         Non-Encouraged
+     Software Developers Encouraged
+                         Non-Encouraged
+     Office Clerks       Encouraged
+                         Non-Encouraged
+     Legal Professionals Encouraged
+                         Non-Encouraged
+     Accountants         Encouraged
+                         Non-Encouraged
+     HR Professionals    Encouraged
+                         Non-Encouraged
+     Financial Advisors  Encouraged
+                         Non-Encouraged
+                                          0          0.05          0.1         0.15         0.2       0.25        0.3
+                                                            Same Tasks   New Tasks    Same and New Tasks
+
+
+                                                (b) Non-Adopters
+     Teachers            Encouraged
+                         Non-Encouraged
+     Marketing           Encouraged
+                         Non-Encouraged
+     Customer Service    Encouraged
+                         Non-Encouraged          1
+     Journalists         Encouraged
+                         Non-Encouraged
+     IT Support          Encouraged
+                         Non-Encouraged
+     Software Developers Encouraged
+                         Non-Encouraged
+     Office Clerks       Encouraged
+                         Non-Encouraged
+     Legal Professionals Encouraged
+                         Non-Encouraged
+     Accountants         Encouraged
+                         Non-Encouraged
+     HR Professionals    Encouraged
+                         Non-Encouraged
+     Financial Advisors  Encouraged
+                         Non-Encouraged
+                                          0          0.05          0.1         0.15         0.2       0.25        0.3
+                                                            Same Tasks   New Tasks    Same and New Tasks
+
+Notes: This figure presents the share of workers who report increased workloads due to AI chatbots, distinguishing between
+additional tasks of the same type, new job tasks, or both. The responses are broken down by occupation and by whether
+employers encourage AI chatbot use. Panel (a) focuses on adopters (workers who have ever used AI chatbots for work),
+while Panel (b) examines non-adopters. Sample: All completed responses from the 2024 survey round linked to registry
+data.
+
+
+                                                 1
+
+
+
+
+                                                              30

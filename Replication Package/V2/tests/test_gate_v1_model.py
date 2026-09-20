@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import hashlib
 from pathlib import Path
 
 import pandas as pd
@@ -8,7 +9,7 @@ import pytest
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-MODULE_PATH = PACKAGE_ROOT / "code" / "models" / "gate_v1_model.py"
+MODULE_PATH = PACKAGE_ROOT / "code" / "caged" / "models" / "gate_v1_model.py"
 
 
 def load_gate_module():
@@ -77,6 +78,11 @@ def test_comparison_flags_sign_and_significance_changes() -> None:
 
 def test_v1_reference_matches_preregistered_coefficients() -> None:
     module = load_gate_module()
+
+    assert module.DEFAULT_V1_REFERENCE.is_relative_to(PACKAGE_ROOT)
+    assert hashlib.sha256(module.DEFAULT_V1_REFERENCE.read_bytes()).hexdigest() == (
+        "caa8486a39097e5469cc32923b3184213597f9e4d39a17e2149c8713f1d94e84"
+    )
 
     reference = module.load_v1_reference(module.DEFAULT_V1_REFERENCE)
 

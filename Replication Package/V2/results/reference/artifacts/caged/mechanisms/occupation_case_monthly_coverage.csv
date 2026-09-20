@@ -1,0 +1,37 @@
+case_id,case_label_pt,age_group,expected_months,panel_months,months_with_admissions,months_with_wage,total_admissions,valid_wage_records,wage_record_coverage_pct,is_descriptive,has_counterfactual
+customer_service,Atendimento ao cliente,age_22_25,65,65,65,65,95026,94745,99.7042914570749,True,False
+customer_service,Atendimento ao cliente,age_26_30,65,65,65,65,81957,81745,99.74132776944008,True,False
+customer_service,Atendimento ao cliente,age_31_34,65,65,65,65,41686,41576,99.73612243918822,True,False
+customer_service,Atendimento ao cliente,age_35_40,65,65,65,65,41580,41493,99.7907647907648,True,False
+customer_service,Atendimento ao cliente,age_41_49,65,65,65,65,30132,30077,99.81746979954865,True,False
+customer_service,Atendimento ao cliente,age_50_plus,65,65,65,65,11013,10981,99.70943430491238,True,False
+health_care_aides,Auxiliares de saúde e cuidado,age_22_25,65,65,65,65,80823,80482,99.57809039506081,True,False
+health_care_aides,Auxiliares de saúde e cuidado,age_26_30,65,65,65,65,94714,94385,99.65263846949765,True,False
+health_care_aides,Auxiliares de saúde e cuidado,age_31_34,65,65,65,65,67872,67581,99.57125176803395,True,False
+health_care_aides,Auxiliares de saúde e cuidado,age_35_40,65,65,65,65,102738,102316,99.5892464326734,True,False
+health_care_aides,Auxiliares de saúde e cuidado,age_41_49,65,65,65,65,121886,121412,99.61111202270975,True,False
+health_care_aides,Auxiliares de saúde e cuidado,age_50_plus,65,65,65,65,65746,65351,99.399202993338,True,False
+marketing_sales_managers,Gerentes de marketing e vendas,age_22_25,65,65,65,65,16128,16009,99.26215277777777,True,False
+marketing_sales_managers,Gerentes de marketing e vendas,age_26_30,65,65,65,65,34311,33918,98.85459473638191,True,False
+marketing_sales_managers,Gerentes de marketing e vendas,age_31_34,65,65,65,65,32731,32305,98.69848156182212,True,False
+marketing_sales_managers,Gerentes de marketing e vendas,age_35_40,65,65,65,65,47650,46865,98.35257082896118,True,False
+marketing_sales_managers,Gerentes de marketing e vendas,age_41_49,65,65,65,65,45624,44814,98.224618621778,True,False
+marketing_sales_managers,Gerentes de marketing e vendas,age_50_plus,65,65,65,65,18816,18429,97.94323979591837,True,False
+production_supervisors,Supervisores de produção,age_22_25,65,65,65,65,12089,12072,99.85937629249732,True,False
+production_supervisors,Supervisores de produção,age_26_30,65,65,65,65,23619,23578,99.82641094034464,True,False
+production_supervisors,Supervisores de produção,age_31_34,65,65,65,65,23821,23775,99.80689307753663,True,False
+production_supervisors,Supervisores de produção,age_35_40,65,65,65,65,42119,41982,99.67473111897243,True,False
+production_supervisors,Supervisores de produção,age_41_49,65,65,65,65,53179,53008,99.67844449876831,True,False
+production_supervisors,Supervisores de produção,age_50_plus,65,65,65,65,31028,30904,99.60036096429032,True,False
+software_developers,Desenvolvedores de software,age_22_25,65,65,65,65,151560,151380,99.8812351543943,True,False
+software_developers,Desenvolvedores de software,age_26_30,65,65,65,65,171625,171427,99.88463219227968,True,False
+software_developers,Desenvolvedores de software,age_31_34,65,65,65,65,98966,98841,99.87369399591779,True,False
+software_developers,Desenvolvedores de software,age_35_40,65,65,65,65,99508,99380,99.8713671262612,True,False
+software_developers,Desenvolvedores de software,age_41_49,65,65,65,65,65498,65424,99.8870194509756,True,False
+software_developers,Desenvolvedores de software,age_50_plus,65,65,65,65,24319,24281,99.84374357498253,True,False
+stock_clerks,Estoquistas e repositores,age_22_25,65,65,65,65,1134071,1132265,99.84075071137521,True,False
+stock_clerks,Estoquistas e repositores,age_26_30,65,65,65,65,952092,950480,99.83068863093062,True,False
+stock_clerks,Estoquistas e repositores,age_31_34,65,65,65,65,507396,506540,99.83129547729978,True,False
+stock_clerks,Estoquistas e repositores,age_35_40,65,65,65,65,549838,548866,99.823220657721,True,False
+stock_clerks,Estoquistas e repositores,age_41_49,65,65,65,65,452540,451699,99.81416007424758,True,False
+stock_clerks,Estoquistas e repositores,age_50_plus,65,65,65,65,210018,209590,99.79620794408099,True,False

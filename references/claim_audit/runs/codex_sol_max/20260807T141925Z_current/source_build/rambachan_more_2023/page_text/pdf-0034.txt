@@ -1,0 +1,67 @@
+2588                                  REVIEW OF ECONOMIC STUDIES
+
+                                              7. CONCLUSION
+This paper considers the problem of conducting inference in DiD and related designs that is
+robust to violations of the parallel trends assumption. We introduce a variety of restrictions on
+the class of possible differences in trends that formalize commonly made arguments in empir-
+ical work, generalizing the framework for partial identification in Manski and Pepper (2018).
+We provide inference procedures that are uniformly valid so long as the difference in trends
+satisfies these restrictions, and derive novel results on the power of these procedures. We rec-
+
+
+
+
+                                                                                                                       Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+ommend that applied researchers report robust confidence sets under economically motivated
+restrictions on parallel trends. We also recommend that researchers conduct formal sensitivity
+analyses, in which they report confidence sets for the causal effect of interest under a variety of
+possible restrictions on the underlying trends. Such sensitivity analyses make transparent what
+assumptions are needed in order to draw particular conclusions.
+
+     Acknowledgments. This paper was previously titled, “An Honest Approach to Parallel Trends.” We are grate-
+ful to Isaiah Andrews, Elie Tamer, and Larry Katz for their invaluable advice and encouragement. We also thank
+Clément de Chaisemartin, Gary Chamberlain, Raj Chetty, Peter Ganong, Ed Glaeser, Nathan Hendren, Ryan Hill, Ariella
+Kahn-Lang, Jens Ludwig, Sendhil Mullainathan, Claudia Noack, Frank Pinter, Alex Poirier, Adrienne Sabety, Pedro
+Sant’Anna, Jesse Shapiro, Neil Shephard, Jann Spiess, Jim Stock, and seminar participants at Brown, Chicago Booth,
+Dartmouth, Harvard, Michigan, Microsoft, Princeton, Rochester, UCL, Yale, SEA 2021, and ASSA 2022 for helpful
+comments, and Dorian Carloni for kindly sharing data. We are grateful to Mauricio Cáceres Bravo for his help devel-
+oping the HonestDiD Stata package. We gratefully acknowledge financial support from the NSF Graduate Research
+Fellowship under Grant DGE1745303 (Rambachan) and Grant DGE1144152 (Roth).
+
+
+
+Supplementary Data
+Supplementary data are available at Review of Economic Studies online.
+
+
+
+Data Availability Statement
+The data and code underlying this research is available on Zenodo at https://doi.org/10.5281/zenodo.7388015.
+
+
+
+REFERENCES
+ABADIE, A. (2005), “Semiparametric Difference-in-Differences Estimators”, The Review of Economic Studies,
+  72, 1–19.
+ANDREWS, I., ROTH, J. and PAKES, A. Inference for Linear Conditional Moment Inequalities”, Review of Economic
+  Studies, forthcoming.
+ARMSTRONG, T. and KOLESÁR, M. (2018), “Optimal Inference in a Class of Regression Models”, Econometrica,
+  86, 655–683.
+ARMSTRONG, T. and KOLESÁR, M. (2020a), “Sensitivity Analysis Using Approximate Moment Condition Models”,
+  Quantitative Economics, 12, 77–108.
+ARMSTRONG, T. and KOLESÁR, M. (2020b), “Simple and Honest Confidence Intervals in Nonparametric Regres-
+  sion”, Quantitative Economics, 11, 1–39.
+ASHENFELTER, O. (1978), “Estimating the Effect of Training Programs on Earnings”, The Review of Economics and
+  Statistics, 60, 47–57.
+ATHEY, S. and IMBENS, G. W. (2021), “Design-based Analysis in Difference-In-Differences Settings with Staggered
+  Adoption”, Journal of Econometrics, 226, 62–79.
+BENZARTI, Y. and CARLONI, D. (2019a), “Replication Data For: Who Really Benefits from Consumption Tax Cuts?
+  Evidence from a Large VAT Reform in France” (Technical Report, American Economic Association [publisher],
+  Inter-university Consortium for Political and Social Research [distributor]). https://doi.org/10.3886/E114723V1.
+BENZARTI, Y. and CARLONI, D. (2019b), “Who Really Benefits from Consumption Tax Cuts? Evidence from a Large
+  VAT Reform in France”, American Economic Journal: Economic Policy, 11, 38–63.
+BHULLER, M., HAVNES, T., LEUVEN, E. and MOGSTAD, M. (2013), “Broadband Internet: An Information
+  Superhighway to Sex Crime?”, The Review of Economic Studies, 80, 1237–1266.
+BILINSKI, A. and HATFIELD, L. A. (2020), “Nothing to See Here? Non-inferiority Approaches to Parallel Trends and
+  Other Model Assumptions” arXiv:1805.03273 [stat.ME].
+

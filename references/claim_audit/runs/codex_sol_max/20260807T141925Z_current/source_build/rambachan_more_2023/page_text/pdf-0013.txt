@@ -1,0 +1,61 @@
+       RAMBACHAN AND ROTH                A MORE CREDIBLE APPROACH TO PARALLEL TRENDS                                     2567
+
+    For the purposes of developing tests, it will be useful to re-cast this null hypothesis in terms
+of moments involving an unrestricted nuisance parameter τ̃ of dimension T̄ − 1. By applying a
+change of basis to the matrix AL post , we can re-write the expression AL post τ post as Ã (θ, τ̃  )
+for τ̃ ∈ RT̄ −1 .13 The null H0 is then equivalent to
+
+                                                                            
+                                   H0 : ∃τ̃ ∈ RT̄ −1 s.t. E Ỹn (θ̄ ) − X̃ τ̃ ≤ 0,                                        (13)
+
+
+
+
+                                                                                                                                   Downloaded from https://academic.oup.com/restud/article/90/5/2555/7039335 by guest on 07 September 2023
+where Ỹ (θ̄ ) = Yn − Ã(·,1) θ̄ and X̃ = Ã(·,−1) .14 Since Ỹn (θ̄ ) is normally distributed with covari-
+ance matrix ˜ n = A n A under the finite-sample normal model, testing H0 : θ = θ̄, δ ∈  is
+equivalent to testing a system of moment inequalities with linear nuisance parameters.
+    The testing problem (13) is a special case of the problem studied in ARP, which focuses
+on testing null hypotheses of the form H0 : ∃τ s.t. E [Y (θ ) − X τ | X ] ≤ 0 (a.s.). Our setting is
+a special case of this framework in which: i) the variable X takes the degenerate distribution
+X = X̃ , and ii) Y (θ ) = Ỹ (θ ) is linear in θ . This additional structure will play an important role
+in the development of our asymptotic power results below.
+
+
+3.2.    Constructing conditional and hybrid confidence sets
+We consider tests for the system of moment inequalities described above using the conditional
+and hybrid methods proposed by ARP. This is for both computational and efficiency reasons.
+From the computational perspective, a practical challenge to testing the hypothesis (13) in our
+setting is that the dimension of the nuisance parameter τ̃ is T̄ − 1, and thus will be large if there
+are many post-treatment periods. For example, 5 of the 12 recent event-study papers reviewed
+in Roth (2022) have T̄ > 10. This renders many moment inequality methods, especially those
+which rely on test inversion over a grid for the full parameter vector, computationally infeasible.
+To tractably deal with the nuisance parameter, we consider tests based on the conditional and
+hybrid approaches of ARP, which directly exploit the linear structure of the hypothesis (13)
+to deliver computationally tractable tests even when the number of post-treatment periods T̄
+is large.15 From the perspective of power, we will show that the tests proposed by ARP have
+(near-)optimal local asymptotic power in our setting when an LICQ condition is satisfied.
+    We briefly sketch the construction of the conditional testing approach in our setting, and refer
+the reader to ARP for full details. These tests are implemented in the HonestDiD R and Stata
+packages that accompany the paper.
+
+
+
+
+       13. Let    be a square matrix with the vector l  in the firstrow and remaining
+                                                                                    rows chosen so that          has full rank.
+                                                                             θ
+Define Ã := AL post   −1 . Then AL
+                                      post τ post = Ã τ post = Ã       (−1,·) τ post
+                                                                                   . If T̄ = 1, then τ̃ is 0-dimensional and
+                                                                            :=τ̃
+should be interpreted as 0.
+        14. We use the notation V(·,1) to denote the first column of a matrix V , and V(·,−1) to denote the matrix containing
+all but the first column of V .
+        15. Other moment inequality methods have been proposed for subvector inference, but typically do not exploit
+the linear structure of our setting—see, e.g. Romano and Shaikh (2008), Chernozhukov et al. (2015), Bugni et al.
+(2017) and Chen et al. (2018) and Kaido et al. (2019). Cho and Russell (2019), Gafarov (2019), and Flynn (2019) also
+provide methods for subvector inference with linear moment inequalities, but in contrast to our approach require a linear
+independence constraint qualification (LICQ) assumption for size control. More recently, Cox and Shi (2022) introduced
+new tests for the linear moment inequality setting in ARP; see Section 3.5 below for further discussion.
+

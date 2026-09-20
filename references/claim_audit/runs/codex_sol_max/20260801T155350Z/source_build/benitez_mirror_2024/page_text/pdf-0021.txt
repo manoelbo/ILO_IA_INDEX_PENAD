@@ -1,0 +1,50 @@
+                          Table 4: Descriptive Statistics of Alternative Methodologies for GENOE
+
+                     Baseline       Blind to       Task-by-       Ethical        Ethical        LLMs           Non-AI         Only AI
+                     GENOE          occup.         task           emphasis       exclusion                     technolo-
+                                    name                                                                       gies
+ mean                0.382          0.391          0.560          0.370          0.423          0.204          0.343          0.039
+ p25                 0.245          0.283          0.446          0.238          0.277          0.100          0.216          0.005
+ p50                 0.317          0.325          0.546          0.312          0.355          0.175          0.295          0.031
+ p75                 0.475          0.469          0.680          0.438          0.594          0.261          0.399          0.068
+ min                 0.095          0.117          0.250          0.098          0.079          0.009          0.089          -0.108
+ max                 0.932          0.862          0.891          0.885          0.945          0.857          0.919          0.391
+ Corr with           1.000          0.947          0.888          0.992          0.982          0.475          0.946          0.346
+ baseline
+ Corr with FN        -0.081         -0.043         0.065          -0.102         -0.082         0.661          -0.261         0.507
+ Corr with PZ        0.569          0.559          0.616          0.560          0.564          0.666          0.430          0.511
+ Corr with WB        0.072          0.061          0.066          0.061          0.062          -0.036         0.048          0.085
+ Corr with FO        0.545          0.501          0.470          0.546          0.553          0.029          0.613          -0.082
+ P-value of diff     .              0.000          0.000          0.000          0.000          0.000          0.000          0.000
+ with baseline
+
+Source: Authors’ calculations using data from O*NET and surveys conducted with GPT-4o through OpenAI’s API. Note: This table shows
+the descriptive statistics of the alternative indexes at the SOC-2010 occupational level for the five-year horizon, the correlation with the
+baseline GENOE and other existing indexes, and the p-value of the mean difference with the baseline GENOE. FN refers to Felten et al.
+(2021), PZ to Pizzinelli et al. (2023), WB to Webb (2019) and FO to Frey and Osborne (2017).
+
+
+                  These alternative methodologies serve a dual purpose: they validate the robustness of our
+            baseline GENOE index while offering deeper insights into the complex landscape of AI’s poten-
+            tial impact on the workforce. By examining occupational exposure through various lenses—from
+            task-level granularity to ethical considerations and AI-specific advancements—we gain a more
+            comprehensive understanding of the challenges and opportunities that lie ahead. Our findings
+            underscore the necessity of a multifaceted approach in assessing the future of work, one that
+            considers not only the technical capabilities of AI but also the contextual, ethical, and broader
+            technological factors that shape occupational vulnerability. This perspective is crucial for policy-
+            makers, employers, and workers as they navigate the evolving dynamics of human-AI interaction
+            in the workplace and prepare for a future where the boundaries between human and artificial
+            intelligence continue to shift.
+
+
+            3.4    Replication of Felten et al. (2021)’s AIOE Using Synthetic Surveys
+
+                  To validate the effectiveness of synthetic surveys in producing assessments comparable to
+            those of human experts, we replicated the well-established AI Occupational Exposure Index (AIOE)
+            developed by Felten et al. (2021), which has been widely used in various empirical applications
+
+
+
+
+                                                                      17
+

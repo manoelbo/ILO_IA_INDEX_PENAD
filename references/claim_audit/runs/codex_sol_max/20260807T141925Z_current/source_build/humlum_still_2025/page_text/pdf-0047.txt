@@ -1,0 +1,70 @@
+         Figure 7: Difference-in-Differences Estimates: Heterogeneity by Occupation
+
+          (a) Worker Earnings (Adopter DiD)                                                                 (b) Occupational Mobility (Adopter DiD)
+                      All                                                                                                   All
+
+           Software Dev.                                                                                         Software Dev.
+
+              Legal Prof.                                                                                           Legal Prof.
+
+            Accountants                                                                                           Accountants
+
+       Customer Service                                                                                      Customer Service
+
+               Marketing                                                                                             Marketing
+
+       Financial Advisors                                                                                    Financial Advisors
+
+                HR Prof.                                                                                              HR Prof.
+
+            Office Clerks                                                                                         Office Clerks
+
+               Teachers                                                                                              Teachers
+
+              IT Support                                                                                            IT Support
+                                  -.1          -.05          0            .05         .1         .15                                    -.1          -.05      0          .05     .1   .15
+
+                                                             2023       2024                                                                                2023       2024
+
+
+
+
+ (c) Workplace Employment (Encouraged DiD)                                                                  (d) Early-Career Share (Encouraged DiD)
+                      All                                                                                                   All
+
+           Software Dev.                                                                                         Software Dev.
+
+              Legal Prof.                                                                                           Legal Prof.
+
+            Accountants                                                                                           Accountants
+
+       Customer Service                                                                                      Customer Service
+
+               Marketing                                                                                             Marketing
+
+       Financial Advisors                                                                                    Financial Advisors
+
+                HR Prof.                                                                                              HR Prof.
+
+            Office Clerks                                                                                         Office Clerks
+
+               Teachers                                                                                              Teachers
+
+              IT Support                                                                                            IT Support
+                            -.2         -.15   -.1    -.05          0      .05   .1        .15         .2                         -.1         -.05                 0            .05          .1
+
+                                                             2023       2024                                                                                2023       2024
+
+
+Notes: This figure shows occupation-specific effects of AI chatbot adoption. Estimates are based on the pooled specification
+in Equation (3), with 95% confidence intervals shown as whiskers. Panels (a) and (b) focus on log earnings and occupational
+mobility for adopters relative to non-encouraged non-adopters (Figure 5). Occupational mobility is defined as full-time-
+equivalent (FTE) employment in workers’ latest (December 2024) occupations. Panels (c) and (d) show workplace outcomes
+(log employment and early-career share) for workers who report encouraged usage policies relative to those without
+encouragement (Figure 8). Early-career workers are defined as workers aged 22-25; see Appendix D.2 for details. Sample:
+All completed 2024 survey responses linked to registry data.
+
+
+
+
+                                                                                                  45

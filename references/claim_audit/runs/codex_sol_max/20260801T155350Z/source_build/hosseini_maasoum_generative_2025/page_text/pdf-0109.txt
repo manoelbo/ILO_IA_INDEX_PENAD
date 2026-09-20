@@ -1,0 +1,226 @@
+A.28      The Junior Hiring Decline—Heterogeneity by Sector
+
+This appendix examines heterogeneity in the decline in junior hiring by sector. For this, we re-estimate
+Equation 15 for junior hires separately by sector. Results are presented in Figure A.30. Across all sectors,
+adopting firms exhibit a sharp and statistically significant relative decline in junior hiring after 2023Q1,
+while senior hiring remains stable or increases slightly. This pattern indicates that the contraction in junior
+hiring is broad-based across industries and not driven by any single sector disproportionately reducing
+demand for junior workers.
+
+
+                                            40
+             % Change in Number of Hires
+
+
+
+
+                                            20
+
+
+                                                                                                                                                            Juniors
+                                                0
+                                                                                                                                                            Seniors
+
+                                            -20
+
+
+                                            -40
+                                                    g
+
+
+
+
+                                                                       l
+
+
+
+
+                                                                                     n
+
+
+
+
+                                                                                                          e
+
+
+
+
+                                                                                                                           s
+
+
+
+
+                                                                                                                                     n
+
+
+
+
+                                                                                                                                                       l
+                                                                      ai
+
+
+
+
+                                                                                                                                                       ia
+                                                                                                                        ce
+                                                                                                      nc
+                                                rin
+
+
+
+
+                                                                                    io
+
+
+
+
+                                                                                                                                    io
+                                                                      et
+
+
+
+
+                                                                                                                                                      c
+                                                                                at
+
+
+
+
+                                                                                                                        vi
+
+
+
+
+                                                                                                                                    at
+                                                                                                      a
+
+
+
+
+                                                                                                                                                   So
+                                            tu
+
+
+
+
+                                                                 /R
+
+
+
+
+                                                                                                   ur
+                                                                                m
+
+
+
+
+                                                                                                                                uc
+                                                                                                                      er
+                                           ac
+
+
+
+
+                                                                                                  s
+                                                                 le
+
+
+
+
+                                                                                                                                                   &
+                                                                               r
+
+
+
+
+                                                                                                                   lS
+
+
+
+
+                                                                                                                               Ed
+                                                                                               In
+                                                                            fo
+                                           uf
+
+
+
+
+                                                            sa
+
+
+
+
+                                                                                                                                                re
+                                                                                                                 na
+                                                                           In
+                       an
+
+
+
+
+                                                                                              e&
+                                                            le
+
+
+
+
+                                                                                                                                              Ca
+                                                                                                              sio
+                                                        ho
+            M
+
+
+
+
+                                                                                          nc
+
+
+
+
+                                                                                                                                          lth
+                                                        W
+
+
+
+
+                                                                                                              es
+                                                                                         na
+
+
+
+
+                                                                                                            of
+
+
+
+
+                                                                                                                                         ea
+                                                                                     Fi
+
+
+
+
+                                                                                                          Pr
+
+
+
+
+                                                                                                                                     H
+
+
+
+
+                                                                                                      Sector
+
+      Figure A.30: Estimated Effects of Generative AI Adoption on Hiring by Sector
+  Notes: Sectors correspond to the following NAICS classifications: Manufacturing (31–33), Whole-
+  sale/Retail (42, 44–45), Information (51), Finance & Insurance (52), Professional Services (54), Edu-
+  cation (61), and Health Care & Social Assistance (62). All coefficients are normalized by the pre-2022
+  average number of hires in each sector-adoption group. Standard errors are clustered by firm.
+
+
+
+
+                                                                                                          A.64
+

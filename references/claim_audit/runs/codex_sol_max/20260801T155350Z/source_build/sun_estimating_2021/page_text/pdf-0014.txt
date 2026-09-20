@@ -1,0 +1,67 @@
+the closed-form expressions for the weights using the classical “omitted variables bias formula” in Section
+
+3.6. We defer the formal derivation to the Appendix. Here we mention the following four properties of the
+            g
+weights ωe,` .
+
+      • For relative periods of µg ’s own bin i.e. ` ∈ g, their associated weights as displayed in (9) sum to one
+        Í Í g
+          ` ∈g e ωe,` = 1.
+
+
+      • For relative periods belonging to some other bin included in (4) i.e. ` ∈ g 0 for g 0 , g and g 0 ∈ G, their
+                                                                  Í g
+        associated weights as displayed in (10) sum to zero ` ∈g0 e ωe,` = 0 for each bin g 0.
+                                                            Í
+
+
+      • For relative periods not included in G, their associated weights as displayed in (11) sum to negative
+                       Í g
+        one ` ∈g e x cl e ωe,` = −1.
+            Í
+
+
+                                                                             g
+      • If there are never-treated units i.e. ∞ ∈ supp(Ei ), we have ω∞,` = 0 for all g and `.
+
+                                           g
+We can easily estimate the weights ωe,` for any given specification of G using the following auxiliary
+
+regression:
+                               `
+                                                              Õ
+                                                                     g
+                              Di,t · 1 {Ei = e} = αi + λt +         ωe,` 1{t − Ei ∈ g} + υi,t                  (12)
+                                                              g∈G
+
+                 ` ·1
+which regresses Di,t  {Ei = e} on all bin indicators included in regression (4) and two-way fixed effects.
+
+      All of the above properties can be extended to a case where covariates are added to regression (4) by
+
+partialling out the covariates before proceeding. In other words, the terms in parentheses in (9), (10) and
+
+(11) would be replaced by terms for which the covariates are partialled out. The weights can be estimated by
+
+controlling for covariates in regression (12) the same way as they are controlled for in the original regression.
+
+      However, covariates complicate the interpretations of µg in terms of C ATTe,` as we describe below
+
+in Proposition 2-4. Depending on how covariates are controlled for in regression (4), we may need an
+
+additional assumption that the counterfactual trends are linear in the time-varying covariates Xi,t . We leave
+
+a full investigation of the introduction of covariates for future work.
+
+
+3.3     Interpreting the coefficients under parallel trends assumption only
+
+Proposition 2. Under Assumption 1 (parallel trends) only, the population regression coefficient on the
+
+indicator for relative period bin g is a linear combination of C ATTe,` ∈g as well as C ATTe,`0 from other
+
+
+
+
+                                                         14
+

@@ -1,0 +1,58 @@
+   employment identifies:
+                                     h                  i      h                   i
+                   ∆N
+                    E − NE = E ∆log Nj           Ej = 1 − E ∆log Nj      Ej = 0
+                                    ϵ−γ                                                    (45)
+                               =        κ − (1 − γ)(αb0 + αb1 ) − γ(αc0 + αc1 ),
+                                    ϵ−1
+
+2. Workplace wage bill effect of employer encouragement. Following Equation
+
+   (38), the difference-in-differences estimate of employer encouragement on the workplace
+
+   wage bill identifies:
+                                h                       i      h                       i
+                 ∆W H
+                  E − NE = E ∆log Wj Hj          Ej = 1 − E ∆log Wj Hj      Ej = 0
+                                                                                           (46)
+                           =κ
+
+A.3     Technical Derivations
+A.3.1    Missing Intercept
+
+The difference-in-differences estimators in Equations (41)–(43) identify earnings effects
+
+up to the skill price effect in non-encouraged firms, dlog W0 . This is the familiar missing
+
+intercept problem: within-sector difference-in-differences do not capture general equilibrium
+
+(sector-wide) effects.
+
+   In this section, we use the model’s structure to characterize the residual term. The
+
+basic idea is that adopters generate spillovers to non-adopters only when their own market
+
+outcomes change. Thus, observing null effects of adoption on market outcomes at both the
+
+worker and workplace levels implies that spillovers to non-adopters are likewise limited.
+
+   To formalize this idea, we need to take a stance on how firms compete and product
+
+markets interact. We assume a nested CES demand function with elasticity η across and
+
+elasticity ϵ within. The product demand curve (Equation (14)) then becomes:
+
+
+                                           Yj = Pj−ϵ P ϵ−η ,                               (47)
+
+                           1
+where P = ( Pj1−ϵ dj) 1−ϵ is the sectoral price index.
+             R
+
+
+   Combining this with Equations (10), (13), (15), and (47) implies that the skill price effect
+
+
+
+                                                  22
+

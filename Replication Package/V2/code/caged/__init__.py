@@ -1,0 +1,1 @@
+"""Novo CAGED replication component."""

@@ -1,0 +1,31 @@
+Figures and Tables
+
+                              Figure 1: Employer Policies for AI Chatbot Use
+
+
+ Marketing
+ Software Developers
+ Journalists
+ HR Professionals
+ IT Support
+ Financial Advisors
+ Customer Service
+ Accountants
+ Office Clerks
+ Legal Professionals
+ Teachers
+
+                          0       0.1       0.2       0.3        0.4     0.5      0.6       0.7      0.8       0.9        1
+                                    Encouraged        Allowed      Not Allowed       No Policy      Don’t Know
+
+
+Notes: This figure shows the share of workers subject to different employer policies on AI chatbot usage for work. Figure
+E.1 provides a workplace-level version of this graph,
+                                                   1 yielding similar results. Sample: All completed responses from the 2024
+survey.
+
+
+
+
+                                                            28
+

@@ -1,0 +1,69 @@
+the excluded periods ` 0 = −1 or 1.
+
+    The example shown in Figure 1 provides a visualization of three takeaways regarding the contamination
+
+in the pre-trend coefficient µ−2 . First, both panels show that weights are a non-linear function of cohort
+
+shares. Second, panel (a) confirms the structure for weights associated with ` 0 , ` but ` 0 ∈ g incl as described
+
+in Proposition 1, namely e ωe,`  0 = 0 for ` , −2. However, these weights have non-zero magnitude. When
+                         Í −2               0
+
+
+the effect is homogenous across cohorts, the contaminations are equal to e ωe,`
+                                                                             Í −2
+                                                                                       0 ATT` 0 and cancel each
+
+
+other out. In contrast, when effects are heterogeneous the different C ATTe,`0 will not necessarily cancel and
+
+will contaminate the estimate for µ−2 . Third, panel (b) confirms the structure for weights associated with
+
+excluded periods as described in Proposition 1, namely e ωe,`  0 ∈g e x cl = −1. In other words, contaminations
+                                                       Í −2
+
+from excluded periods can be thought of as a type of “normalization”: a weighted average of excluded
+
+C ATTe,`0 is subtracted off the estimated treatment effect. However because these weights are not contained
+
+in [0, −1], this average may lie outside of the convex hull of C ATTe,`0 for excluded periods. The latter issue
+
+can be alleviated by an assumption that C ATTe,`0 are the same in all excluded periods; we can fully avoid
+
+contamination from excluded period treatment effects by assuming all associated C ATTe,`0 are equal to zero.
+
+
+
+4    Alternative estimation method
+
+We propose a new estimation method that is robust to treatment effects heterogeneity. The goal of our
+
+method is to estimate a weighted average of C ATTe,` for ` ∈ g with reasonable weights, namely weights that
+
+sum to one and are non-negative. In particular, we focus on the following weighted average of C ATTe,` ,
+
+where the weights are shares of cohorts that experience at least ` periods relative to treatment, normalized
+
+by the size of g:
+                                    1 ÕÕ
+                            νg =              C ATTe,` Pr {Ei = e | Ei ∈ [−`,T − `]}.                        (25)
+                                   |g| ` ∈g e
+
+One can aggregate C ATTe,` to form other parameters of interest, such as those proposed by Callaway and
+
+Sant’Anna (2020a). We focus on the above aggregation νg since our goal is to improve the non-convex and
+
+non-zero weighting in µg . The weights in νg are guaranteed to be convex and have an interpretation as the
+
+                                                                                       νg improves upon the
+representative shares corresponding to each C ATTe,` . Thus, our alternative estimator b
+
+                                µg by estimating an interpretable weighted average of C ATTe,` ∈g .
+two-way fixed effects estimator b
+
+    Our method proceeds by replacing each component in νg with its consistent estimator. We first estimate
+
+
+
+                                                       21
+

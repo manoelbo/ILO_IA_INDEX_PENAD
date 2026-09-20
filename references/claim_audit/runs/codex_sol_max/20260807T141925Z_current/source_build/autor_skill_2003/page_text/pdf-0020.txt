@@ -1,0 +1,44 @@
+                                                           TABLE II
+            MEANS OF TASK INPUT BY DECADE AND DECOMPOSITION INTO WITHIN AND BETWEEN INDUSTRY COMPONENTS, 1960 –1998
+                                                                                                                                                                                    1298
+
+
+                                           A. Weighted means of economywide task input by decade (percentiles of 1960 task distribution)
+
+                     1. Nonroutine analytic          2. Nonroutine interactive         3. Routine cognitive            4. Routine manual             5. Nonroutine manual
+
+                      All      Male       Fem         All      Male       Fem         All      Male       Fem         All      Male       Fem        All       Male       Fem
+
+1960 (Census)        50.0      54.6       37.0      50.0       58.4       26.4      50.0       48.6       53.8      50.0       43.2       69.2      50.0       56.5       31.6
+1970 (Census)        52.5      57.5       41.5      51.1       61.7       27.5      52.2       49.8       57.5      54.0       44.9       74.4      46.9       54.1       30.8
+1970 (Census)        51.9      56.4       41.8      50.7       60.8       28.1      53.1       50.8       58.2      53.5       44.7       73.3      46.2       53.2       30.7
+1980 (Census)        54.9      58.2       49.2      55.4       63.3       41.8      52.9       50.0       58.0      55.1       44.6       73.3      44.0       53.2       28.1
+1980 (CPS)           53.2      56.6       47.9      53.3       61.4       40.4      51.8       50.0       54.8      53.8       43.3       70.4      44.4       55.0       27.5
+1990 (CPS)           56.2      57.4       54.6      58.6       62.7       53.0      48.3       48.1       48.6      52.3       42.8       65.5      41.8       53.1       26.3
+1998 (CPS)           58.7      59.3       58.0      62.2       63.9       59.9      44.4       46.6       41.6      49.2       41.5       59.3      41.3       52.6       26.5
+
+
+                                         B. Decomposition of task shifts into between and within industry components for combined genders
+                                                                   (10 3 annual changes in mean task percentile)
+
+                     Total     Btwn       Wthn       Total     Btwn       Wthn      Total      Bwtn      Wthn       Total      Btwn      Wthn       Total      Btwn       Wthn
+
+
+1960–1970             2.57       1.74      0.83       1.15     20.34       1.49      2.20      1.14       1.06       4.01      2.39       1.62      23.03     22.28      20.74
+1970–1980             3.02       1.54      1.48       4.68      0.26       4.42     20.14      0.33      20.47       1.63      0.79       0.84      22.25     21.00      21.25
+1980–1990             2.97       0.92      2.05       5.31      0.52       4.79     23.48     21.42      22.07      21.47     20.16      21.31      22.58     21.27      21.31
+                                                                                                                                                                                    QUARTERLY JOURNAL OF ECONOMICS
+
+
+
+
+1990–1998             3.12       0.67      2.45       4.48      0.54       3.94     24.88     21.31      23.57      23.88     20.38      23.50      20.63     20.31      20.31
+
+     Sources: Dictionary of Occupational Titles [1977], and all employed workers ages 18 – 64, Census IPUMS 1960, 1970, 1980, CPS MORG 1980, 1990, and 1998. Samples used for
+decadal changes in panel B are 1960 –1970, 1960 and 1970 Census; 1970 –1980, 1970 and 1980 Census; 1980 –1990, 1980 and 1990 CPS MORG; 1990 –1998, 1990 and 1998 CPS
+MORG. Two Census 1970 samples are used in panels A and B, one coded for consistency with the 1960 Census occupation codes and a second coded for consistency with the 1980
+Census occupation codes. Data are aggregated to 1120 industry-gender-education cells by year and each cell is assigned a value corresponding to its rank in the 1960 distribution
+of task input (calculated across the 1120, 1960 task cells). Panel A contains the employment-weighted mean of each assigned percentile in the indicated year. Panel B presents a
+decomposition of the aggregate change in task input over the indicated years into within and between industry components for 140 consistent Census Industry Code (CIC) industries
+(59 in manufacturing, 81 in nonmanufacturing). See Table I and Appendix 1 for denitions and examples of task variables.
+

@@ -1,0 +1,56 @@
+ωpdqEP rmpaY pdqqs pointwise. We also showed in the proof to Proposition 1 that for an sufficiently
+close to a,
+                                 |mpan Y q| ď κ ` 2 ¨ 1ry ą 0s ¨ | logpyq|,
+
+for a constant κ not depending on n. It follows that
+
+                    |fn pdq| ď |ωpdq| ¨ |κ| ` 2|ωpdq| ¨ EP r| logpY pdqq| | Y pdq ą 0s,
+
+and the upper bound is integrable by part 4 of the Proposition. Hence, by the dominated convergence
+                                ş           ş
+theorem, we have that θpan q “ D fn pdq Ñ D ωpdqEP rmpaY pdqs “ θpaq, as needed.
+   To show that |θpaq| Ñ 8 as a Ñ 8, we will show that
+                                                   ż
+                                      θpaq
+                                            Ñ          ωpdqP rY pdq ą 0s
+                                     logpaq        D
+
+as a Ñ 8. Consider an Ñ 8, and suppose without loss of generality that an ą e. Observe that
+
+                                   θpan q                   EP rmpan Y pdqqs
+                                               ż
+                                           “       ωpdq                      .
+                                  logpan q     D                logpan q
+
+We showed in the proof to Proposition 4 that for each d,
+
+                                   EP rmpan Y pdqqs
+                                                    Ñ P pY pdq ą 0q.
+                                       logpan q
+                     EP rmpan Y pdqqs
+Letting fn pdq “ ωpdq                 , we thus have that fn pdq Ñ ωpdqP pY pdq ą 0q pointwise.
+                         logpan q
+Moreover, we showed in the proof to Proposition 1 that
+
+                                   |mpyq| ď κ ` 2 ¨ 1ry ą 0s ¨ | logpyq|
+
+where κ is a constant not depending on y. It follows that
+
+                              |mpan yq|
+                                        ď κ ` 2 ¨ 1ry ą 0s ¨ p1 ` | logpyq|q
+                               logpan q
+and thus that
+                        |fn pdq| ď |ωpdq| ¨ pκ ` 2 ` 2EP r| logpY pdq| | Y pdq ą 0sq
+
+where the upper bound is integrable by the fourth part of the proposition. The result then follows
+from dominated convergence.
+
+
+
+B.3    Extension to OLS estimands and standard errors
+As noted in Remark 4, our results imply that any consistent estimator of the ATE for an outcome
+of the form mpaY q will be (asymptotically) sensitive to scaling when there is an extensive margin
+
+
+                                                        6
+

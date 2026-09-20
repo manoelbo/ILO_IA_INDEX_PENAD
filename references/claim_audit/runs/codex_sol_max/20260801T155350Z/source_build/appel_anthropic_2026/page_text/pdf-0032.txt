@@ -1,0 +1,30 @@
+Figure 3.4: Relationship between the Anthropic AI Usage Index and five core economic primitives and GDP per capita at the US
+state level.
+Each plot shows the bivariate relationship between the natural logarithm of the Anthropic AI Usage Index and a core economic
+primitive as well as log GDP per capita. Labels show the ISO-3166-2 region codes.6 We only include states with at least 100 observations
+in our sample for this figure because of the uncertainty of the measure for low-usage states in our random sample. The underlying data
+includes Claude.ai Free, Pro and Max usage. See chapter 2 for detailed definitions of human only time, human education, AI autonomy,
+work use case and task success.
+
+
+
+              However, the relationship between AUI and the primitives often differs
+              between country and US state level. For example, at the country level, the AUI
+              correlates negatively with the time it would take a human to complete a task
+              without AI, and with how much decision-making autonomy AI is given. At the
+              US state level, these relationships are not statistically significant–likely also
+              due to the smaller sample size for US states. Additionally, we observe a positive
+              correlation between the AUI and Claude.ai use for work at the US state, but not
+              at the country level.
+
+
+              Importantly, the primitives themselves are not necessarily causal factors—
+              we don’t know if income or education are truly driving adoption, or if they’re
+              proxies for other underlying conditions. Many of these factors are highly
+              correlated with one another. For example, at the US state level, human
+              education years show a strong association with the Anthropic AI Usage Index
+              in isolation, but this relationship disappears once we control for GDP and other
+
+
+The Anthropic Economic Index Report                                                                                                  32
+

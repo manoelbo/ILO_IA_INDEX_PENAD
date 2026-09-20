@@ -1,0 +1,38 @@
+in higher-wage segments of the labor market, contradicting historical automation
+patterns that predominantly affected routine middle-skill occupations. The concen-
+tration of employment losses and wage pressures in high-compensation firms and
+high-salary occupations implies that LLMs may have an equalizing effect on the
+income distribution, at least in the short run. This pattern aligns partially with the
+optimistic scenario outlined by Autor (2024) who argues that AI could help rebuild
+middle-class jobs by enabling workers with foundational expertise to perform higher-
+stakes decision-making tasks previously reserved for elite professionals. However, our
+findings suggest a more pessimistic mechanism: rather than elevating middle-skill
+workers to perform expert tasks, LLMs appear to be eroding demand for the expert
+tasks themselves. While this may compress wage inequality by reducing returns to
+education and expertise, it appears to achieve this through a leveling-down rather
+than the leveling-up process envisioned by Autor (2024).
+
+4.3.2   Geographic Heterogeneity
+
+Geographic concentration provides another lens for understanding differential treat-
+ment effects. Table A3 compares firms headquartered in London versus elsewhere
+in the UK. Surprisingly, London-based firms show minimal employment responses
+despite their concentration in LLM-exposed industries like finance and professional
+services. Total employment effects are statistically insignificant (0.1 percent per
+standard deviation), with similar null results for both seniority levels. In contrast,
+there is some evidence that firms headquartered outside London experience stronger
+employment declines from LLM exposure: a one standard deviation increase in LLM
+exposure reduces total employment by 0.4 percent (p = 0.042), with low-seniority
+positions declining by 0.5 percent (p = 0.020). That said, the firm-level hiring
+response shows the opposite pattern: a one standard deviation increase in LLM ex-
+posure reduces job postings by 1.6 percentage points for London-based firms versus
+0.8 percentage points for firms outside London, despite their more modest employ-
+ment stock adjustments.
+    At the occupation level, both London and non-London job markets experience
+significant disruption. A one standard deviation increase in LLM exposure is associ-
+ated with a 3.4 percent reduction in job postings in London (p = 0.047) with salary
+declines of £563 (p < 0.001), while positions outside London experience posting
+
+
+                                         24
+

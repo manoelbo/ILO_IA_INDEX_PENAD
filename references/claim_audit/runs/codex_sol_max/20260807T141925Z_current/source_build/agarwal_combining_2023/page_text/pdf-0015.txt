@@ -1,0 +1,44 @@
+                                                                                                              15
+
+is determined as described in section 3.3.1 below. This incentive scheme uses a loss function
+of the mean squared prediction error, averaging over patient cases and pathologies, and the
+respondents earn a fixed bonus of $120 if a random draw is less than the loss function.
+This bonus is more than 20% of the base payment to teleradiology firms. We explain to
+the participants that expected payments are maximized if they provide their best estimates
+using a non-mathematical description of the payment rule. We specify the distribution so
+that 30% of pilot participants would earn the bonus, cross-randomized with the other two
+treatment arms.
+
+
+3.3     Implementation and Data Collection
+
+3.3.1    Patient Cases and Ground Truth
+
+The experiment uses 324 historical patient cases with potential thoracic pathologies from
+Stanford University’s healthcare system. For each case, we have access to the chest X-ray
+and the clinical history in the form of the primary provider’s written notes, the patient vitals,
+and demographics.15 The use of retrospective cases allows us to avoid ethical and other issues
+that would arise when experimenting in high-stakes settings.
+Our analysis requires constructing ωi for each patient case. There are important challenges
+in using an observational dataset of patient health records to construct this field. One ap-
+proach would be to use the results from further medical tests. Unfortunately, definitive
+gold-standard tests do not exist for most thoracic pathologies.16 Even when follow-up tests
+are conducted, they are selected on the likely presence of a pathology, an issue referred to
+as the selective labels problem (e.g. Mullainathan and Obermeyer, 2019). Medical outcomes
+from patient health records also do not suffice because actions taken by the treating physi-
+cian in response to the radiology report contaminate these measures. Recent literature has
+suggested instrumental variables approaches for solving this selective labels problem, but this
+work targets population quantities and not a “ground truth” on each case (e.g. Chan et al.,
+2022; Mullainathan and Obermeyer, 2019).
+We construct ωi by aggregating the assessment of a group of expert radiologists, an approach
+common in computer science (Sheng et al., 2008; Mccluskey et al., 2021). Specifically, we
+  15
+     All cases are first encounters with no prior X-ray as a comparison. We started with 500 cases that fit these
+primary criteria. We omitted pediatric cases from this set. Finally, a radiologist reviewed the cases to remove
+instances with poor image quality. The clinical history was manually reviewed to remove patient-identifiable
+information and cleared for public release.
+  16
+     Many pathologies do not have commonly used non-imaging-based diagnostic tools. For instance, the
+presence of cardiomegaly – an enlarged heart – can only be determined using imaging tools, thoracic surgery,
+or an autopsy.
+

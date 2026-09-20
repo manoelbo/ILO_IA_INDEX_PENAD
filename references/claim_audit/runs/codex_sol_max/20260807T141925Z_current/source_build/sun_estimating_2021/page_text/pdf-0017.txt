@@ -1,0 +1,67 @@
+                g          g                          g
+The weight ω` =         e ωe,` sums over the weights ωe,` from Proposition 1, and is equal to the population
+                    Í
+
+regression coefficient from the following auxiliary regression:
+
+
+                                    `
+                                                      Õ
+                                                             g
+                                   Di,t = αi + λt +         ωe,` 1{t − Ei ∈ g} + υi,t                        (17)
+                                                      g∈G
+
+
+                 ` on all bin indicators included in regression (4) and two-way fixed effects.
+which regresses Di,t
+
+      We note that even under treatment effect homogeneity µ` can still be contaminated by treatment effects
+
+from the excluded periods. This contamination, however, can be avoided by adjusting the specification to
+
+only exclude periods with zero treatment effect.
+
+      For specifications with relative time bins, we note that there can still be contamination from other bins as
+
+suggested by the second term of expression (16). A sufficient condition to avoid such contamination would
+                                                                                                         g
+be to group relative periods ` 0 into a bin only when their effects are the same since their weights ω`0 would
+
+sum to zero.
+
+      For the “fully dynamic” specification (7) where all g’s are singletons of relative time periods, the weight
+
+ω``0 is zero for each relative period ` 0 , ` that is included in the specification. The decomposition therefore
+
+simplifies to
+                                                             Õ
+                                                                         g
+                                          µ` = ATT` +                   ω`0 ATT`0 .                          (18)
+                                                        ` 0 ∈g e x cl
+
+
+3.6     Intuition for contamination
+
+Proposition 3 demonstrates that even under the assumptions of parallel trends and no anticipation, estimates
+
+µg can still be contaminated by treatment effects from other periods. In this section we explain the intuition
+
+behind why this contamination occurs for the “fully dynamic” specification (7). A decomposition of µ`
+
+into a weighted average of C ATTe,`0 demonstrates that contamination is driven by the interaction of two
+
+elements: the weights and C ATTe,`0 . The weights underlying the contamination are non-linear functions of
+
+the distribution of the cohorts. We do not attempt to provide a heuristic for determining the magnitude of
+
+the weights, but instead describe how to estimate the weights and later on in Section 4 how to estimate each
+
+C ATTe,` . This allows researchers to directly determine the degree of contamination in their application.
+
+Our publicly-available Stata package eventstudyweights automates the estimation of these weights using the
+
+panel dataset underlying any given specification of (1).
+
+
+                                                            17
+

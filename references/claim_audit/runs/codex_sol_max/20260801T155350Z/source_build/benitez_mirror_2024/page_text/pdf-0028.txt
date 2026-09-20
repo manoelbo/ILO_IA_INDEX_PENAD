@@ -1,0 +1,45 @@
+   Extrapolating these findings to Latin America and the Caribbean, we estimate that approxi-
+mately 84 million jobs are exposed to AI within one year, rising to 114 million in 5 years, and 132
+million in 10 years. Extending this average exposure to global labor markets suggests that approx-
+imately 980 million, 1.33 billion, and 1.54 billion jobs may be exposed to AI over the one-, five-,
+and 10-year horizons, respectively. However, it is important to note that this projection assumes
+uniform AI adoption rates and labor market structures across countries, which may not accurately
+reflect the global economic landscape.
+
+
+                            5   LIMITATIONS AND CONSIDERATIONS
+
+
+While our methodology offers a novel and comprehensive approach to assessing occupational
+exposure to AI, it is important to acknowledge its limitations. Firstly, the assessments are based
+on the knowledge and potential biases inherent in the GPT-4o model. Although state-of-the-art,
+this model may have limitations in understanding certain specialized fields or future AI devel-
+opments. Additionally, predictions about future AI capabilities, especially in the five and 10-year
+horizons, are inherently uncertain and may not account for unforeseen breakthroughs or obsta-
+cles in AI development. Our method attempts to capture broader contextual factors, but it may
+not fully account for all social, economic, and regulatory factors that could influence the adoption
+of AI in various occupations. Lastly, while the O*NET task descriptions are detailed, they may
+not capture all ways in which tasks are performed in real-world settings, potentially affecting the
+accuracy of AI exposure estimates.
+   Another limitation of our index—and indeed, of all indexes that aim to capture occupational
+exposure to technology—is that it does not account for general equilibrium effects that can influ-
+ence social preferences and the demand for certain jobs. For instance, while firefighters currently
+exhibit low exposure estimates to technological displacement, advances in electrical systems, do-
+mestic safety features, and industrial processes could lead to a significant reduction in the occur-
+rence of fires. This, in turn, could decrease the overall demand for firefighters, despite their low
+exposure to direct technological replacement. Thus, our index may not fully capture how broader
+technological progress can indirectly impact the demand for certain occupations through changes
+in societal needs and preferences.
+   Despite these limitations, the GENOE index offers a unique and holistic perspective on the
+future of work in the age of artificial intelligence. By combining a robust data source, a novel AI-
+driven survey methodology, and comprehensive validation exercises, we have created a valuable
+tool for researchers, policymakers, and industry leaders to anticipate and prepare for the potential
+impacts of AI on the labor market. The index’s strengths lie in its comprehensive coverage, con-
+sistent evaluation criteria, and ability to capture more complex aspects like interactions between
+tasks and contextual factors. As such, while acknowledging its constraints, we believe the GE-
+NOE index provides a significant contribution to our understanding of occupational exposure to
+AI and can inform strategic decision-making in workforce planning and policy development.
+
+
+                                                24
+

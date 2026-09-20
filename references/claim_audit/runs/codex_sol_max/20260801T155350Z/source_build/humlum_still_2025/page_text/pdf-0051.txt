@@ -1,0 +1,65 @@
+                                                                            Figure A.2: Equilibrium Skill Price Differentials
+                   (a) Homogeneous Encouragement Costs (κ)                                                          (b) Heterogeneous Encouragement Costs (κj )
+ Relative skill prices at encouraged firms (W1:0 )
+
+
+
+
+                                                                                                                    Relative skill prices at encouraged firms (W1:0 )
+                                                                                                S                                                                                                            S
+                                                                                               H1:0                                                                                                         H1:0
+
+
+
+
+                                                                                           D
+                                                                                          H1:0 = exp(κ/(1 − ϵ))
+
+                                                                                                                                                                                                             D
+                                                                                                                                                                                                            H1:0
+
+
+                                                         Relative human capital at encouraged firms (H1:0 )                                                             Relative human capital at encouraged firms (H1:0 )
+
+Notes: This figure illustrates the labor market equilibrium across encouraged and non-encouraged firms. Equilibrium
+                                                                                   S = H S /H S and aggregate demand
+skill price differentials, W1:0 = W1 /W0 , are determined by the aggregate supply H1:0  1    0
+  D = H D /H D for relative human capital at encouraged vs. non-encouraged firms.
+H1:0       1     0
+
+
+
+
+A.2.4                                                      Model Predictions
+
+In this section, we use the model to derive predictions for how the arrival of AI chatbots
+
+affects labor market outcomes, including worker earnings, occupational mobility, and
+
+sorting across firms.
+
+
+Worker earnings. Combining Equations (9)–(10) yields the following expression for
+
+the log change in earnings of worker i at firm j:
+
+
+                                                                   d log Yij =        d log Wj           +         Ai Bij                                                                                                    (28)
+                                                                                      |      {z   }                | {z }
+                                                                                    skill–price effect        productivity effect
+                                                                                                 κ
+                                                                                = d log W0 + Ej     + Ai (αb0 + βb × i) + Ej Ai αb1 ,                                                                                        (29)
+                                                                                                1−ϵ
+
+Equation (29) yields three key predictions about how AI chatbots affect worker earnings.
+
+                                                     1. Workers who do not use chatbots experience an earnings loss at encouraged firms:
+
+                                                                                                                                                                                       κ
+                                                                                 log Yi1 (Ai = 0) − log Yi0 (Ai = 0) = −                                                                  ≤0                                 (30)
+                                                                                                                                                                                      ϵ−1
+
+                                                     2. Holding encouragement status fixed, adoption increases worker earnings by the
+
+                                                                                                                  16
+

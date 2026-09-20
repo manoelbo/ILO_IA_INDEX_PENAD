@@ -9,7 +9,7 @@ import pytest
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-INGEST_ROOT = PACKAGE_ROOT / "code" / "ingest"
+INGEST_ROOT = PACKAGE_ROOT / "code" / "caged" / "ingest"
 MODULE_PATH = INGEST_ROOT / "build_movements.py"
 if str(INGEST_ROOT) not in sys.path:
     sys.path.insert(0, str(INGEST_ROOT))

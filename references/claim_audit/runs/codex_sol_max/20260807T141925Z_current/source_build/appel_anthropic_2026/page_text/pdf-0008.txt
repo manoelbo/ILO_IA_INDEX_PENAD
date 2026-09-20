@@ -1,0 +1,30 @@
+Figure 1.2: Claude.ai and API usage over time.
+Each panel shows the share of sampled conversations on Claude.ai and 1P API records associated with tasks from each Standard
+Occupation Classification (SOC) major group.
+
+
+
+             The second largest share of Claude.ai usage in November 2025 was in the
+             Educational Instruction and Library category. This corresponds mostly to
+             help with coursework and review, and the development of instructional
+             materials. Such usage has risen steadily since our first report, up from 9% of
+             conversations on Claude.ai in January 2025 to 15% in November.
+
+             The share of usage on Claude.ai for Arts, Design, Entertainment, Sports,
+             and Media tasks increased between August and November 2025 as Claude
+             was used in a growing share of conversations for writing tasks, primarily
+             copyediting and the writing and refinement of fictional pieces. This jump in
+             the prevalence of design- and writing-related tasks reversed a steady decline
+             across earlier reports. For both Claude.ai and API customers, there was a drop
+             in the share of conversations/transcripts where Claude was used for Life,
+             Physical, and Social Science-related tasks.
+
+             Perhaps the most notable development for API customers was the increase
+             in the share of transcripts associated with Office and Administrative Support
+             related tasks, which rose 3pp in August to 13% in November 2025. Because
+             API use is automation-dominant, this suggests that businesses are increasingly
+
+
+
+The Anthropic Economic Index Report                                                                                            8
+

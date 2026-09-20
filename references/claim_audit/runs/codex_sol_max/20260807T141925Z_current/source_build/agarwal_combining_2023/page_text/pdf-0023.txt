@@ -1,0 +1,47 @@
+                                                                                              23
+
+The above analysis focuses on the effects on the marginal distributions of the outcome vari-
+ables Yirt for each pathology. Thus, the specification abstracts away from interactions between
+pathologies in the effects on information provision, for example due to potential dependence
+between the predictions and decisions. In section 5, we will present evidence showing that
+the best fitting model has radiologists updating their beliefs as-if they do not account for
+dependence between pathologies.
+The treatment effect analysis in the main text pools the three experimental designs and
+does not condition on the sequence in which subjects encounter information treatments.
+Appendix C.4.5 shows that our results are robust to including controls for order effects.
+The estimates from all three designs are similar to each other. They are also statistically
+indistinguishable from those that use only an across participant comparison from the first
+treatment encountered in design 1 (appendix C.4.3).
+
+
+4.2.1   Do Radiologists Utilize AI Predictions?
+
+We begin by testing whether radiologists respond to the information that the AI pro-
+vides. The left panel in table 2 shows how the different information environments affect
+the disagreement of the radiologists’ report with the AI’s assessment, which is defined
+                                           
+as Yirt = pr (ωi = 1| sirt ) − π ωi = 1| sA
+                                          i   . The term pr (ωi = 1| sirt ) is elicited whereas
+            
+π ωi = 1| sA
+           i is the AI’s predicted probability that ωi = 1. When t indicates that AI as-
+                                          
+sistance is provided, then sirt = sE       A
+                                     ir , si , and when t indicates that AI assistance is not
+provided, then sirt = sE                  E
+                       ir . The signal s also depends on whether contextual information is
+provided.
+The results show that radiologists utilize AI assistance: their predictions are closer to the
+AI predictions when provided with assistance. To see this, observe that the control means
+for the deviation from the AI are approximately 0.21 for both when we pool designs and for
+design 1 only. Treatments where AI is provided reduce this baseline average deviation by
+18% (all designs) and 16% (design 1). (p < 0.01).
+
+
+4.2.2   Treatment Effects on Diagnostic Performance
+
+We next ask whether the information treatments affect radiologists’ diagnostic performance.
+As a measure, we consider the absolute deviation of the radiologist’s probability report from
+the binary ground truth, Yirt = |pr (ωi = 1| sirt ) − ωi | where lower values implies better per-
+formance. Appendix C.4.2 contains results that use a continuous ground truth, which are
+

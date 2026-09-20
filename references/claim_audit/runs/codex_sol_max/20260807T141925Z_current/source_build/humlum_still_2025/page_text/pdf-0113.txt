@@ -1,0 +1,38 @@
+Figure F.10: Have Adopting Workplaces Fared Differently? (Coworker Encouraged DiD)
+
+
+                                          log(Employment)
+
+
+                           Empl. of Early Career Workers
+
+
+                                               Job Creation
+
+
+                                            Job Destruction
+
+
+                                log(Hours) for Incumbents
+
+
+      FTE Empl. in Original Occupation for Incumbents
+
+                                                                -.15    -.1     -.05      0       .05      .1      .15
+
+                                                                                   2023        2024
+
+
+Notes: This figure shows workplace employment outcomes for encouraged-use workplaces relative to those without
+encouragement, indexed to November 2022. It replicates our “Encouraged” estimates from Figure 8, now using coworker
+reports to measure employer encouragement (see Section F.6.1). The estimates correspond to the following outcome variables
+(from top to bottom): log employment, employment share of early-career workers (aged 22–25), job creation and destruction
+rates (hires and separations as shares of total employment), log total hours of incumbent workers (those employed at
+the workplace throughout the pre-period, 2021M1–2022M11), and FTE hours in incumbent workers’ original occupation.
+Estimates are based on the pooled specification in Equation (3), with 95% confidence intervals shown as whiskers. Sample:
+All completed responses from the 2024 survey linked to registry data.
+
+
+
+
+                                                           63

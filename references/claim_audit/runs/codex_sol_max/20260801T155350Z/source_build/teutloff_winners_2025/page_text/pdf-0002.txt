@@ -1,0 +1,66 @@
+O. Teutloff et al.                                                                Journal of Economic Behavior and Organization 235 (2025) 106845
+
+understand the impact of generative AI on work and employment, we examine the effects of the ChatGPT launch on labor demand
+across fine-grained skill clusters that can be substituted or complemented by LLMs.
+     While LLMs and Generative AI (Gen AI) are fairly new, there is extensive literature estimating the exposure to automation –
+i.e., the technical feasibility of occupations being replaced by AI – using O*NET task data on occupations and patent data. Frey and
+Osborne (2017) estimated that half of the US labor force could be in occupations at risk of automation. Arntz et al. (2016) offered
+a nuanced view of these findings through a task-level analysis and concluded that less than 10% of the jobs in OECD countries
+were at high risk of automation. In 2017, Brynjolfsson and Mitchell (2017) argued that AI would most likely redefine work within
+occupations. Webb (2019) used Natural Language Processing (NLP) to study occupation task descriptions and patent documents,
+suggesting that high-skill tasks are more amenable to AI replacement, potentially decreasing wage inequality between the highest
+and lowest earners without impacting the top 1% of earners. Albanesi et al. (2023) highlighted a positive association between AI
+exposure scores and employment growth across 16 European countries from 2011 to 2019.
+     Several empirical studies have explored the impact of recent technological innovations on the labor market. Autor et al. (2024)
+found that in recent decades, labor demand-eroding effects of technologies intensified while demand-increasing effects did not.
+Using online platform data, Stephany and Teutloff (2024) documented that workers with machine learning and AI skills can earn a
+premium compared to workers who have otherwise similar skill sets but lack AI proficiency. For online freelancers, Lysyakov and
+Viswanathan (2023) found that in response to the threat of image-generating AI, designers on an online crowd-sourcing platform
+split into two groups: low-tier designers exited the market, while higher-capability designers moved away from direct competition
+with AI by focusing on more complex tasks.
+     Regarding LLMs, a small but rapidly growing literature examines their labor market impacts. Eloundou et al. (2023) estimated
+that approximately 80% of the U.S. workforce could see at least 10% of their job tasks influenced by the deployment of (LLMs),
+with around 19% of employees potentially experiencing an impact on at least half of their tasks. Noy and Zhang (2023) conducted
+an experiment and found that ChatGPT increased the productivity of mid-level professional writing tasks. Similarly, Brynjolfsson
+et al. (2023) found that access to a generative AI tool led to a 14% increase in productivity, as indicated by the number of issues
+resolved per hour. Novice and low-skilled workers experienced the highest increase in productivity, while the impact on seasoned,
+skilled workers was negligible. Experimental evidence also showed that LLM-based code writing assistants such as GitHub Copilot
+increased developer speed by over 50% (Peng et al., 2023), with less experienced programmers benefiting the most.
+     Outside laboratory settings, initial evidence shows the short-term effects of LLMs on labor markets from online labor platforms.
+On the demand side, generative AI significantly reduces the number of freelance projects in automation-prone occupations (Demirci
+et al., 2023). Demirci et al. (2023) used a skill co-occurrence network approach to create 15 clusters of jobs that fall within three
+broad groups: manual-intensive, writing automation-prone, and image-generation jobs. They find that writing automation-prone
+and image-generation jobs decrease compared to manual-intensive jobs. On the supply side, effects vary between workers: those in
+occupations highly exposed to generative AI substitution suffer reductions in earnings and employment opportunities (Hui et al.,
+2023; Liu et al., 2023). However, while top-performing freelancers might be disproportionately affected by generative AI (Hui et al.,
+2023), those who integrate generative AI into their work attract more jobs (Liu et al., 2023). Freelancers in web development whose
+jobs are complemented by AI may increase their earnings, while translators face fewer opportunities and lower wages (Qiao et al.,
+2023).
+     Both experimental studies and those based on online labor platforms offer initial insights into how LLMs may affect the labor
+market. However, these studies have either focused on controlled laboratory settings, which may not translate to complex labor
+markets, or on a limited group of broad skills, potentially obscuring heterogeneous effects. Moreover, online labor platform studies
+have primarily examined substitution effects, while LLMs often serve complementary roles, enhancing certain tasks without fully
+replacing entire jobs (Eloundou et al., 2023). Given that the effects of new technologies depend significantly on their implementation
+and the specific skills they impact (Autor, 2024), we need a deeper understanding of the impact across skill heterogeneity and to
+distinguish between substitutable and complementary skills. However, conducting such a study poses two main challenges. First,
+skill categories on online labor markets evolve over time, complicating the use of co-occurrence networks at a fine-grained level.
+Second, it is manually infeasible to categorize the impact of LLMs on millions of job postings into substitutable, complementary, or
+unaffected categories.
+     NLP tools, which are frequently used in economic research, can help us overcome these challenges. As Ash and Hansen (2023)
+pointed out, text algorithms can solve several common problems in applied economics, including document similarity measurement
+and concept detection. For example, Hoberg and Phillips (2016) quantifies the relatedness of firms based on the similarity of their
+product offer descriptions. Hansen et al. (2023) and Adams-Prassl et al. (2020) use a language-processing framework to determine
+whether job postings refer to hybrid or fully remote work. del Rio-Chanona et al. (2023) use topic modeling to study how the
+prevalence of topics across the work discourse evolved during the Covid-19 pandemic and the Great Resignation. Most recently,
+LLMs have been shown to perform near the human level on a range of qualitative data analysis tasks, such as e. g. text annotation,
+interview analysis, or automated lexicography (Karjus, 2023). Following this line of work, Eloundou et al. (2023) used ChatGPT to
+quantify the extent to which occupations’ work activities can be performed by LLMs.
+     To tackle the first challenge of evolving skill categories, we use a topic modeling approach to group job postings into skill
+clusters with similar semantic meanings. This allows us to include more than 3 million job postings into our analysis and identify
+116 distinct skill clusters. To overcome the second challenge of assigning jobs AI exposure labels, we build upon recent LLM prompt
+engineering research (Eloundou et al., 2023; OpenAI, 2023; Wei et al., 2022) to classify the exposure of the skill clusters to LLMs into
+substitutable, complementary or unaffected groups. We identify 71 fine-grained skill clusters to be substitutable or complementary,
+and 45 to be unaffected. This classification allows us to move beyond existing research that manually defines writing-related services
+
+                                                                   2
+

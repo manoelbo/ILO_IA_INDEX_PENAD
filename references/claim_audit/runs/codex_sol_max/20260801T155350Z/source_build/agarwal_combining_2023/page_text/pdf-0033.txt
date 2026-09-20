@@ -1,0 +1,53 @@
+                                                                                                                     33
+
+the signal structure. The general signal structure makes it difficult to characterize mistakes
+in terms of over or under-updating, unlike in the case of a multivariate normal model. Even
+when b = d = 1 so that automation or own-information bias/neglect are not relevant, an
+examination of equations (4) and (5) reveals that whether or not a decision-maker exhibits
+                                                                π (sA |ω=1,sE )      π (sA |ω=1)
+under- or over-updating depends on the difference between log π(sA |ω=0,sE ) and log π(sA |ω=0) .
+The propositions above have important implications for the design of human-AI collaboration,
+which we consider in section 6. Specifically, we study an AI designer who only has access to
+the AI signal sA and must decide on one of the three modes of delegation – utilize only the
+AI prediction, delegate the case to the human, or provide AI assistance to a human expert.
+The results show that other than in the case when automation neglect is the only relevant
+                                                                                            
+bias, the designer must learn the types of biases as well as the distribution of π sA , sE |ω to
+determine which delegation modality yields the best decision.
+
+
+5.3     Estimating Deviations from Bayesian Updating
+
+We now turn to an empirical implementation of the model above. The analysis in this section
+will be based on designs 2 and 3 because they allow us to observe the same participant make
+decisions under all information-conditions on a given case. Start by considering an empirical
+analog to equation (5):
+
+
+                                                                                                    
+        pr ωi = 1|sA     E
+                   ir , sir                       π r sA            E
+                                                       ir |ωi = 1, sir                   πr ωi = 1|sE
+                                                                                                    ir
+  log                             = a + b · log                              + d · log                       + εir , (7)
+        pr (ωi = 0|sA     E
+                    ir , sir )                    πr (sA            E
+                                                       ir |ωi = 0, sir )                 πr (ωi = 0|sE
+                                                                                                     ir )
+
+
+where we have omitted heterogeneity across radiologists in br and dr . Appendix C.5.6 dis-
+cusses radiologist heterogeneity in our estimates. Two of the terms in this equation are
+directly elicited in the experiment: the probability in the second term on the right-hand side,
+πr (ωi = 1|sEir ), is equal to the radiologists’ assessment in the treatment arm where the subjects
+read cases without AI assistance and the term pr (ω = 1|sA             E
+                                                                 ir , sir ) in the dependent variable is
+                                                                                          πr (sA |ωi =1,sEir )
+the assessment in the treatment arm with AI. The “update term,” given by log π sir
+                                                                                           r ( ir |ωi =0,sir )
+                                                                                               A          E
+
+will be estimated and substituted into the equation above.
+There are three challenges in estimating the update term. The first challenge is that it is
+a ratio of conditional densities. We address this issue by rewriting it using Bayes’ rule as
+

@@ -1,0 +1,62 @@
+          δe,` is a DID estimator for C ATTe,` with pre-period s = e − 1 (because we exclude relative period
+estimator b
+
+` = −1) and some choice of control cohorts C. If there is a never-treated cohort i.e. ∞ ∈ supp{Ei }, then
+
+we set the control cohort to be never-treated units C = {∞}. If there are no never-treated units, i.e. ∞ <
+
+supp{Ei }, then we set the control cohort C = {max{Ei }}, i.e. the latest-treated cohort. Among all possible
+
+pre-periods, for regression (26) from step 1 of our proposed method we choose s = e − 1 and C = {∞} with
+
+never-treated units (or {max{Ei }} without never-treated units) because the resulting specification is a natural
+
+extension of the common specifications of two-way fixed effects regression.
+
+    Note that without never-treated units we need to drop time periods t ≥ max{Ei } from estimating re-
+
+gression (26) because every unit will be treated in these periods. The DID estimators for C ATTe,` for
+
+e + ` ≥ max{Ei } are thus not well-defined as the control cohort is empty C = ∅. For example, when there are
+
+just two cohorts with Ei ∈ {1,T }, one treated at t = 1 and the other treated in the last period, we then need
+
+to omit interaction terms involving the latest-treated cohorts as well as dropping observations from the last
+
+period t = T from estimation.
+
+                                               δe,` is an unbiased and consistent estimator for C ATTe,` ,
+    Under some assumptions, this DID estimator b
+
+a fact that we build on in deriving the probability limit of the IW estimator. We state this in the following
+
+proposition.
+
+Proposition 5. If Assumptions 1 and 2 hold, then the DID estimator using any pre-period s < e and non-
+
+empty control cohorts C is an unbiased and consistent estimator for C ATTe,` .
+
+    It is possible to relax the parallel trends assumption to allow the timing of treatment to depend on co-
+
+variates. One can estimate C ATTe,` consistently based on the inverse propensity score reweighted estimator
+
+proposed by Abadie (2005) and Callaway and Sant’Anna (2020a), the outcome regression approach by
+
+Heckman et al. (1997), and the doubly robust estimator recently proposed by Sant’Anna and Zhao (2020).
+
+The resulting estimates δ̂e,l can then be plugged into step 3 to form our IW estimator. In particular, without
+
+covariates and for the case with never treated units, our approach coincides with Callaway and Sant’Anna
+
+(2020a). Therefore one can use the did R package developed by Callaway and Sant’Anna (2020b) to form
+
+the IW estimator.
+
+    The choice of the pre-period s and the control cohorts C depends on the trade-off between relaxing As-
+
+sumption 1 or Assumption 2. If Assumption 2 is likely to hold, we can choose any pre-period s < e and in-
+
+clude not-yet-treated units in control cohorts C = {c : c > e + `} as in Callaway and Sant’Anna (2020a). This
+
+                                                      24
+

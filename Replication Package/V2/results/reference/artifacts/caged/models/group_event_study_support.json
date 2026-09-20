@@ -1,0 +1,17 @@
+{
+  "all_models_complete": true,
+  "beyond_frozen_window_starts": 24,
+  "coefficient_rows": 1950,
+  "dimensions": 5,
+  "estimated_models": 30,
+  "event_window": "-23_to_41",
+  "expected_coefficient_rows": 1950,
+  "expected_models": 30,
+  "failed_models": 0,
+  "groups": 15,
+  "is_causal_effect": false,
+  "outcomes": 2,
+  "pre_mean_rows": 30,
+  "reference_event_time": -1,
+  "task": "T8B.6"
+}

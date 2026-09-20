@@ -1,0 +1,12 @@
+                                                    WORKING PAPER
+
+
+mean an exacerbation of Baumol’s cost disease. In other words, if LLMs are likely to increase productivity
+differentially across industries, one concern is that the most productive would become even more productive.
+With inelastic demand for the production of those industries, the most productive sectors would shrink as a
+proportion of inputs in the economy. We see little to suggest this will be the case. Productivity growth since
+2012 and exposure to LLM technologies appear unrelated.10
+   10As above, aggregations are done according to the 𝛽 method described above. Task weights for supplemental tasks are half the
+core task weights, summing to one within an occupation. Occupation counts are used as weights to build industry-level measures of
+exposure.
+

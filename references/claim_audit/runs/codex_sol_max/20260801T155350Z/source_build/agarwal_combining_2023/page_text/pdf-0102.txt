@@ -1,0 +1,24 @@
+                                                          Table C.17: Average Treatment Effects
+
+                                                          Deviation from AI                    Deviation from Ground Truth
+                                                          Pooled    Abnormal                   Pooled     Pooled  Abnormal
+                                                          with AI                                         with AI
+                            Treatment                        (1)                (2)               (3)               (4)       (5)
+                            AI × CH                         0.000             0.001             0.001              0.001     0.009
+                                                           (0.001)           (0.005)           (0.001)            (0.002)   (0.008)
+                            AI                             −0.016            −0.054            −0.001              0.001     0.009
+                                                           (0.001)           (0.005)           (0.001)            (0.002)   (0.007)
+                            CH                             −0.000             0.001            −0.001             −0.003    −0.010
+                                                           (0.001)           (0.004)           (0.001)            (0.002)   (0.006)
+                            Control Mean                    0.108             0.271             0.033              0.085     0.421
+                                                           (0.003)           (0.010)           (0.002)            (0.005)   (0.013)
+                            Pathology FE                    Yes                No               Yes                Yes       No
+                            Observations                   235820             18140           1850280             235820    18140
+
+Note: Main specifications similar to table 2 with the exception that only the abnormal pathology is considered.
+
+
+
+
+                                                                                                                                      102
+

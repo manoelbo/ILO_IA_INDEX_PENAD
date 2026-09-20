@@ -1,0 +1,43 @@
+country (Brutscher et al., 2020), while its detailed questions identify AI adoption based on
+whether firms use big data analytics and AI technologies in their operations. Crucially,
+EIBIS also captures granular firm characteristics on investment behavior, investment
+finance and innovation activity, enabling a rigorous analysis of both the drivers and
+consequences of AI adoption.
+
+     Three stylized facts emerge from the data, informing our approach for causal iden-
+tification of the effects of AI. First, adoption is highly stratified: 45% of large firms
+(more than 250 employees) deploy AI, compared to only 24% of small firms (10 to 49
+employees).1 This echoes technology diffusion theories (Comin and Hobijn, 2010). Sec-
+ond, emerging EU economies (e.g., Romania, 22%) exhibit adoption rates substantially
+below more financially developed EU countries (e.g., Sweden, 52%) and the US (34%).
+Third, AI-adopting firms are more innovative in general, invest more intensively, and face
+tighter skilled-labor constraints – suggesting endogenous adoption patterns that require
+robust identification.
+
+    To establish causality, we develop a novel instrumental variable (IV) strategy inspired
+by the work on financial dependence and growth following Rajan and Zingales (1998). We
+match each EU firm with comparable US firms (same sector and size) that exhibit similar
+levels of innovation intensity, investment, managerial practices and external finance. We
+then assign the US firms’ AI adoption rate as an exogenous proxy for EU firms’ adoption
+rate. This approach leverages cross-continental variation in AI exposure, while holding
+firm characteristics constant, effectively isolating the effects of AI adoption. Propensity-
+score balancing tests confirm the validity of the identification strategy, with matched US
+and EU firms exhibiting near-identical distributions across key firm characteristics.
+
+    Our results show a robust causal link between AI adoption and productivity. Con-
+trolling for a wide set of country, sector and year fixed effects and observable financial
+variables, we find that firms adopting AI have 4% higher labor productivity. This effect
+is economically significant and aligns with mid-range macroeconomic projections recently
+reported in the literature (Acemoglu, 2024; Bergeaud, 2024), rather than with optimistic
+“productivity boom” scenarios (Baily, Brynjolfsson, and Korinek, 2023). Crucially, the
+gains reflect capital deepening: AI augments worker output without reducing employ-
+ment, consistent with micro-level evidence of AI-aided efficiency gains in cognitive tasks
+(Noy and Zhang, 2023; Gambacorta et al., 2024). Moreover, we find that workers in
+
+   1
+       The shares are calculated using value added (VA) weights.
+
+
+
+                                                    2
+

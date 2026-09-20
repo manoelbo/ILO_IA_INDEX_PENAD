@@ -1,0 +1,53 @@
+                                                                                      Juniors                                                         Seniors
+                                                           33%
+   Share of positions with matching keyword in raw title
+
+
+
+
+                                                           31%                                                          70%
+
+
+
+
+                                                           29%
+                                                                                                                        68%
+
+
+
+
+                                                           27%
+
+                                                                                                                        65%
+
+
+
+                                                           25%
+
+                                                                 2020   2021   2022             2023   2024    2025           2020         2021    2022     2023   2024   2025
+
+                                                                                                              Adopter                Non-Adopter
+
+
+
+  Figure A.8: Share of Positions with Matching Keywords, by Seniority and Adoption
+          Notes: This figure plots, for each quarter, the share of positions whose raw title contains a “match-
+          ing” keyword: junior-leaning keywords among junior-classified positions (left panel) and senior-
+          leaning keywords among senior-classified positions (right panel), at GenAI-adopting (solid) and
+          non-adopting (dashed) firms. Shares are position-weighted within each firm-quarter cell, then ag-
+          gregated across firms by adoption status. The vertical dashed line marks the launch of ChatGPT in
+          November 2022. Sample: quarters 2020Q1–2025Q1.
+
+
+coefficients hover around zero throughout the sample, with a visible quarterly saw-tooth
+that reflects the seasonal pattern of summer hiring and no discernible break at the Chat-
+GPT launch. For seniors, the coefficients drift mildly upward in the post-period, reaching
+approximately +0.3 percentage points by 2025Q1—a quantitatively small movement rel-
+ative to a baseline share of roughly 70%. Both patterns suggest that the seniority classifi-
+cation remains essentially stable across the diffusion of GenAI.
+
+
+
+
+                                                                                                                 A.9
+

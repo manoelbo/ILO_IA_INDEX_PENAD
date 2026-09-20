@@ -1,0 +1,16 @@
+panel_family_group,outcome,ddd_estimate_se,nominal_p_value,bh_adjusted_p_value,group_pretrend,ddd_pretrend,group_mde_80_power,n_and_cbo_support
+Contrastes DDD · Família A (100) · Fundamental ou menos,"Admissões (PPML, nível)","0,1231 (0,0502)",0.0147213157401291,0.0552935475537437,fail,fail,0.1491549091217212,N=15.879; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Fundamental ou menos,"Desligamentos (PPML, nível)","0,1321 (0,0531)",0.0134086955588503,0.0552935475537437,fail,fail,0.1316437795497771,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Fundamental ou menos,"Fluxo bruto (PPML, nível)","0,1284 (0,0504)",0.0112374552145182,0.0510793418841738,fail,fail,0.137001774360325,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Fundamental ou menos,Salário real de admissão (log),"0,0349 (0,0142)",0.0142010891087607,0.0552935475537437,fail,fail,0.0405284949089207,N=14.641; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Fundamental ou menos,Saldo líquido (asinh),"0,9560 (0,3619)",0.008631918435159,0.0431595921757954,fail,fail,0.4686762056210425,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Médio,"Admissões (PPML, nível)","−0,0057 (0,0344)",0.8677075350554064,0.9230931223993684,fail,fail,0.0881564208049898,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Médio,"Desligamentos (PPML, nível)","−0,0333 (0,0288)",0.2480964790889899,0.4510845074345271,fail,fail,0.086206596568042,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Médio,"Fluxo bruto (PPML, nível)","−0,0187 (0,0294)",0.5249542023419653,0.6907292136078491,fail,fail,0.0827035259682809,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Médio,Salário real de admissão (log),"−0,0014 (0,0112)",0.9024051079079768,0.9248946125721356,fail,fail,0.0342303567942461,N=15.801; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Médio,Saldo líquido (asinh),"0,1938 (0,2481)",0.4352638009672933,0.6045330568990185,fail,fail,0.9134126903831424,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Superior,"Admissões (PPML, nível)","−0,1108 (0,0451)",0.0145137668955905,0.0552935475537437,fail,fail,0.1041359467709151,N=15.926; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Superior,"Desligamentos (PPML, nível)","−0,1064 (0,0435)",0.0149292578395108,0.0552935475537437,fail,fail,0.1021201310790379,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Superior,"Fluxo bruto (PPML, nível)","−0,1083 (0,0418)",0.0100068544433171,0.0476516878253198,fail,fail,0.0929230036549056,N=15.935; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Superior,Salário real de admissão (log),"0,0076 (0,0128)",0.5513372641855896,0.7071146719110742,fail,warning,0.0261865435651397,N=14.892; CBOs 75/266; adequate
+Contrastes DDD · Família A (100) · Superior,Saldo líquido (asinh),"−0,8421 (0,2689)",0.0018888246955222,0.0145294207347862,fail,fail,0.8914686504983574,N=15.935; CBOs 75/266; adequate

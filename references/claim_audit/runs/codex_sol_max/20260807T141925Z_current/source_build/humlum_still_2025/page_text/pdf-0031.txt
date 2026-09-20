@@ -1,0 +1,32 @@
+switches may serve as early indicators of the longer-run impacts of AI chatbots (Kleven
+et al., 2025). To understand what occupational mobility means for adopters, Table 2
+compares the characteristics of origin and destination jobs for these switchers, measured
+in November 2022 and December 2024, respectively.
+   Adopters who switch occupations see 12 percentage points faster earnings growth
+between November 2022 and December 2024 relative to other Danish workers employed in
+both months. These switchers move into occupations with higher wage premia—rising from
+0.46 to 0.53 standard deviations above the economy average, contributing a 3 percentage
+point boost to earnings growth. Even though these workers already come from occupations
+with above-average exposure to AI chatbots (0.92 standard deviations above the economy
+average, as measured by Eloundou et al. (2024)), they switch into occupations with 0.16
+standard deviations higher exposure. In other words, adopters who switch occupations
+tend to move into ones where using AI chatbots is more relevant and where wages are
+higher—consistent with workers leveraging AI chatbots to access better-paying roles.
+
+
+Discussion. A consistent finding from experimental studies is that AI chatbots provide
+greater productivity benefits to workers with less prior expertise in their occupations
+(Brynjolfsson, Li and Raymond, 2025; Dell’Acqua et al., 2024; Noy and Zhang, 2023).
+This section presents evidence supporting a key implication of those studies: chatbot
+adoption is associated with occupational switching, and adopters who switch move into
+occupations with higher wage premia and where using AI chatbots is more relevant. This
+is consistent with the thesis of Autor (2024) that generative AI helps workers expand into
+new work by granting access to otherwise scarce expertise. Indeed, actual usage data from
+chatbot developers show that information seeking and practical guidance are among the
+most common tasks workers use chatbots for (Chatterji et al., 2025)—precisely the kinds
+of tasks where lack of prior expertise could otherwise be a barrier.
+   Occupational mobility is thus the one margin where the rapid currents of AI adoption
+break through to administrative labor market outcomes. While these switchers remain
+too few to move average adopter earnings, the substantial gains for those who do switch
+
+                                            29

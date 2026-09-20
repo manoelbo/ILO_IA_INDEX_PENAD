@@ -1,0 +1,43 @@
+degree are underrepresented in the RPS relative to the CPS, while individuals with household
+income of $50,000 or less are overrepresented. The bottom panel of Table A.1 compares em-
+ployment status in the CPS and RPS, statistics that have not been targeted in the sampling
+procedure. Employment rates are very similar across the two surveys, although individuals
+classified as unemployed according to the CPS definition are somewhat overrepresented in the
+RPS.
+
+
+A.2   Weighting
+
+As described in the body of the paper, we asked Qualtrics to administer the survey to a sample
+of respondents who match the U.S. population along a few broad demographic characteristics:
+gender, five age bins (18-24, 25-34, 35-44, 45-54, 55-64), race and ethnicity (non-Hispanic White,
+non-Hispanic Black, Hispanic, other), education (high school or less, some college or associate
+degree, bachelor’s degree or more), marital status (married or not), number of children in
+the household (0, 1, 2, 3 or more), three income bins for household income over the last
+12 months (<$50k, $50k-100k, >$100k), and four Census regions. Table A.1 compare the
+sample composition between the pooled August and November RPS and the CPS along the
+demographics targeted in the sampling procedure for our main survey. The tables look very
+similarly for each survey wave separately, including the June pilot, and are available upon
+request. As discussed in the paper, we also compare at the bottom of the table employment
+status in the CPS and RPS, as well as the demographic composition for the employed. None
+of this latter sets of moments were targeted during the sampling of survey respondents.
+
+   Using the iterative proportional fitting (raking) algorithm of Deming and Stephan (1940),
+we construct sampling weights to ensure the RPS matches the CPS sample proportions for
+the same set of demographic characteristics included in the Qualtrics sampling targets for the
+overall sample, i.e., independent of employment status. However, we use more disaggregated
+categories for education and marital status, and we interact all categories with gender. In
+particular, for education, we distinguish between less than high school, high school graduate
+or equivalent, some college but no degree, associate degree, bachelor’s degree, and graduate
+degree. For marital status, we distinguish between married + spouse present, divorced, never
+married, and ”other.” We also condition on relationship status (spouse living in the same
+household, partner living in the same household, other).
+
+   In addition, our sampling weights replicate the employed-at-work rates, the employment
+rates, and the labor force participation rates in each of the subsequent months. We match
+these key labor market statistics not only in the aggregate but also conditional on demographic
+characteristics. More specifically, we match the employed-at-work rate, the employment rate,
+and the labor force participation rate for the current month by gender, age (18-24, 25-34, 35-
+
+                                                2
+

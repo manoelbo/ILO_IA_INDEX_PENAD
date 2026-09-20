@@ -1,0 +1,56 @@
+                                                                                                                                 84
+
+ Design 3
+
+ This section presents summaries of key variables, radiologist accuracy and treatment effect
+ estimates using data from design 3.
+
+                                               Table C.9: Summary Statistics
+
+                                                                                         Mean          SD
+                                                                                          (1)          (2)
+
+                                         Reported Probability                            0.240        0.322
+                                         Decision                                        0.231        0.421
+                                         Deviation from Ground Truth                     0.212        0.297
+                                         Deviation from AI                               0.216        0.182
+                                         Correct Decision                                0.785        0.411
+                                         Active time                                     2.58         2.80
+                                         Observations                                       7, 000
+                                         Radiologists                                            35
+
+
+ Note: This table presents summary statistics of design 3 similar to table 1.
+
+
+
+
+                               Figure C.17: Comparing AI performance to Radiologists
+                 (a) RMSE Radiologists and AI                                            (b) AUROC Radiologists and AI
+                       AI (Pct. 26)                                                                          AI (Pct. 66)
+          15                                                                   15
+
+
+
+          10                                                                   10
+Density
+
+
+
+
+                                                                     Density
+
+
+
+
+          5                                                                    5
+
+
+
+          0                                                                    0
+               .25        .3            .35         .4      .45                     .6                .7           .8       .9    1
+                                      RMSE                                                                       AUROC
+
+
+ Note: Main specifications similar to figure 1 with the exception that observations are from design 3 only.
+

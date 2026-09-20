@@ -1,0 +1,70 @@
+52    ILO Working Paper 140
+
+
+
+
+     Exposure    4-digit code   Occupation Name                                               Mean   SD
+
+     Minimal
+     Exposure    1211           Finance Managers                                              0.37   0.04
+
+     Minimal
+     Exposure    1344           Social Welfare Managers                                       0.37   0.07
+
+     Minimal
+     Exposure    2141           Industrial and Production Engineers                           0.37   0.07
+
+     Minimal
+     Exposure    2161           Building Architects                                           0.37   0.08
+
+     Minimal
+     Exposure    2162           Landscape Architects                                          0.37   0.08
+
+     Minimal
+     Exposure    2310           University and Higher Education Teachers                      0.37   0.12
+
+     Minimal
+     Exposure    2619           Legal Professionals Not Elsewhere Classified                  0.37   0.09
+
+     Minimal
+     Exposure    2654           Film, Stage and Related Directors and Producers               0.37   0.07
+
+     Minimal
+     Exposure    3422           Sports Coaches, Instructors and Officials                     0.37   0.12
+
+     Minimal
+     Exposure    3432           Interior Designers and Decorators                             0.37   0.08
+
+     Minimal
+     Exposure    4321           Stock Clerks                                                  0.37   0.06
+
+     Minimal
+     Exposure    1212           Human Resource Managers                                       0.36   0.05
+
+     Minimal
+     Exposure    1342           Health Service Managers                                       0.36   0.05
+
+     Minimal
+     Exposure    1345           Education Managers                                            0.36   0.1
+
+     Minimal
+     Exposure    1412           Restaurant Managers                                           0.36   0.12
+
+     Minimal
+     Exposure    2114           Geologists and geophysicists                                  0.36   0.1
+
+     Minimal
+     Exposure    2611           Lawyers                                                       0.36   0.09
+
+     Minimal                    Government Regulatory AssociatePprofessionals Not Elsewhere
+     Exposure    3359           Classified                                                    0.36   0.1
+
+     Minimal
+     Exposure    5222           Shop Supervisors                                              0.36   0.12
+
+     Minimal
+     Exposure    1322           Mining Managers                                               0.35   0.11
+
+     Minimal
+     Exposure    2145           Chemical Engineers                                            0.35   0.12
+

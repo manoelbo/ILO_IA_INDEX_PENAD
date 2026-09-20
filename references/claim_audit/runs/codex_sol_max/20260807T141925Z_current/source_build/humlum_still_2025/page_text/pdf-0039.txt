@@ -1,0 +1,49 @@
+Edelman, Benjamin G, Donald Ngwe, and Sida Peng. 2023. “Measuring the Impact of
+ AI on Information Worker Productivity.” Available at SSRN 4648686.
+Eisfeldt, Andrea L, Gregor Schubert, Miao Ben Zhang, and Bledi Taska. 2024.
+ “Generative AI and Firm Values.” Available at SSRN 4436627.
+Eloundou, Tyna, Sam Manning, Pamela Mishkin, and Daniel Rock. 2024. “GPTs are
+  GPTs: Labor Market Impact Potential of LLMs.” Science, 384(6702): 1306–1308.
+Frank, Morgan R., Alireza Javadian Sabet, Lisa Simon, Sarah H. Bana, and Renzhe
+  Yu. 2026. “AI-Exposed Jobs Deteriorated before ChatGPT.” arXiv preprint arXiv:2601.02554.
+Freund, Lukas B, and Lukas F Mann. 2025. “Job Transformation, Specialization, and the
+  Labor Market Effects of AI.”
+Groes, Fane, Philipp Kircher, and Iourii Manovskii. 2015. “The U-Shapes of Occupational
+ Mobility.” The Review of Economic Studies, 82(2): 659–692.
+Handa, Kunal, Alex Tamkin, Miles McCain, Saffron Huang, Esin Durmus, Sarah
+ Heck, Jared Mueller, Jerry Hong, Stuart Ritchie, Tim Belonax, et al. 2025. “Which
+ economic tasks are performed with ai? evidence from millions of claude conversations.” arXiv
+ preprint arXiv:2503.04761.
+Hartley, Jonathan, Filip Jolevski, Vitor Melo, and Brendan Moore. 2025. “The labor
+ market effects of generative artificial intelligence.” Available at SSRN.
+Humlum, Anders. 2021. “Robot Adoption and Labor Market Dynamics.”
+Humlum, Anders, and Emilie Vestergaard. 2025. “The Unequal Adoption of ChatGPT
+ Exacerbates Existing Inequalities Among Workers.” Proceedings of the National Academy of
+ Sciences, 122(1): e2414972121.
+Hvidberg, Kristoffer B, Claus T Kreiner, and Stefanie Stantcheva. 2023. “Social
+ Positions and Fairness Views on Inequality.” Review of Economic Studies, 90(6): 3083–3118.
+Ide, Enrique, and Eduard Talamas. 2025. “Artificial Intelligence in the Knowledge Economy.”
+  Journal of Political Economy, 133(12).
+Iscenko, Zanna, and Fabien Curto Millet. 2026. “Looking for the Ladder: Is AI Impacting
+  Entry-Level Jobs?” Economic Innovation Group. The American Worker Project.
+Jäger, Simon, Suresh Naidu, and Benjamin Schoefer. 2025. “Collective Bargaining,
+   Unions, and the Wage Structure: An International Perspective.” In Handbook of Labor
+  Economics. Vol. 6. Elsevier.
+Kauhanen, Antti, and Petri Rouvinen. 2025. “Assessing early labour market effects of
+ generative AI: evidence from population data.” Applied Economics Letters, 1–4.
+Kleven, Henrik, Claus Kreiner, Kristian Larsen, and Jakob Søgaard. 2025. “Micro
+ versus macro labor supply elasticities: The role of dynamic returns to effort.” American
+ Economic Review, 115(9): 2849–2890.
+Krueger, Alan B. 1993. “How computers have changed the wage structure: evidence from
+ microdata, 1984–1989.” The Quarterly Journal of Economics, 108(1): 33–60.
+Lichtinger, Guy, and Seyed Mahdi Hosseini Maasoum. 2025. “Generative AI as Seniority-
+  Biased Technological Change: Evidence from US Résumé and Job Posting Data.” Available at
+  SSRN.
+Lütke, Tobi. 2025. “Reflexive AI usage is now a baseline expectation at Shopify.” X post
+  (sharing internal memo), Accessed 2026-02-15.
+Mas, Alexandre. 2025. “Non-Wage Amenities.” National Bureau of Economic Research 33643.
+
+
+
+
+                                             37

@@ -1,0 +1,16 @@
+{
+  "comparison_sha256": "45679034a2756b29e06eedbca6f2bdec290fa0ec5eef848f434ffa1f9a3171e9",
+  "input_rows": 5442,
+  "input_sha256": "be771ae377c65f70ebc711fca74ff4ae8cbf261d68bd4007f53d0258245ac9e2",
+  "max_coefficient_absolute_difference": 5.967448757360216e-16,
+  "max_standard_error_absolute_difference": 1.2127599272049316e-11,
+  "models": 3,
+  "p_values_created": 0,
+  "python_results_sha256": "4b3d025f2361a92081f63e9151fad2c7776edb15e5a753f26efed7df1c248c28",
+  "r_backend": "fixest",
+  "r_results_sha256": "b25ca4dcb4937e5b61ddf17099b2fdd9b80783dc05fbd6fc0f4a06ac21435979",
+  "r_script": "v2_rais/r12_cross_replication.R",
+  "same_n_and_clusters": true,
+  "six_decimal_agreement": true,
+  "status": "pass"
+}

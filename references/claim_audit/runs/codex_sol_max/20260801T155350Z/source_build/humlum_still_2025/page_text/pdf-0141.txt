@@ -1,0 +1,60 @@
+                      Figure H.1: Coworker Encouragement Rates (Raw vs. Shrinkage)
+
+            4
+
+
+
+
+            3
+  Density
+
+
+
+
+                                                                             Encouraged, Leave One Out
+            2
+                                                                             EBS Encouraged, Leave One Out
+
+
+
+
+            1
+
+
+
+
+            0
+                  0        .2     .4        .6        .8         1
+
+
+Notes: This figure compares the raw and adjusted distributions of coworker encouragement rates. The adjusted estimates
+are derived using an Empirical Bayes shrinkage procedure, as described in Section H.2. Sample: All completed responses
+from our 2024 survey round linked to registry data.
+
+
+
+
+                Table H.1: Coworker Encouragement Rates (Empirical Bayes Shrinkage)
+
+                                                         p25         p50    p75      sd
+                                 Journalists             .414        .457    .58   .138
+                                 Software Developers      .53         .68   .768    .16
+                                 Legal Professionals     .092        .178   .465    .23
+                                 Accountants             .289        .409   .555   .181
+                                 Customer Service Rep. .291          .358   .466   .116
+                                 Marketing Professionals .607        .823   .869    .18
+                                 Financial Advisors      .196         .35   .605   .237
+                                 HR Professionals        .289        .509   .737   .244
+                                 Office Clerks           .232         .31   .448   .149
+                                 Teachers                .116        .157   .243    .11
+                                 IT Support              .359         .48   .593   .162
+                                 All                     .310        .428   .575   .173
+Notes: This table presents summary statistics for the adjusted distributions of coworker encouragement rates, categorized
+by occupation. The adjusted estimates are derived using an Empirical Bayes shrinkage procedure, as described in Section
+H.2. Sample: All completed responses from our 2024 survey round linked to registry data.
+
+
+
+
+                                                           106
+
